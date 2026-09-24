@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "photographie_intermediaire2_001",
+    "title": "Photographie - Intermédiaire 2",
+    "specialty": "PHOT",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PHOT_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr RACHID doit photographier une couronne céramique. Dr REDA lui donne un conseil pour capturer la translucidité. Que faut-il faire ?",
+      "media": [],
+      "options": [
+        "Utiliser un éclairage latéral pour révéler la translucidité",
+        "Utiliser un éclairage frontal uniquement",
+        "Augmenter l'ISO",
+        "Diminuer la vitesse"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Un éclairage latéral révèle la translucidité des céramiques en créant des jeux de lumière.' Dr RACHID : 'Je vais positionner un flash latéral.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr REDA examine une photo d'une préparation pour facette. Dr RACHID demande : 'Quel est le protocole pour photographier une préparation pour facette ?'",
+      "media": [],
+      "options": [
+        "Utiliser un contraste élevé et un éclairage latéral pour révéler les marges",
+        "Utiliser un éclairage frontal uniquement",
+        "Ignorer les marges",
+        "Prendre la photo de loin"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Le contraste élevé et l'éclairage latéral révèlent les marges des préparations pour facettes.' Dr RACHID : 'Je vais ajuster l'éclairage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo de l'arcade dentaire. Dr REDA lui dit : 'La langue cache l'arcade.' Comment résoudre ce problème ?",
+      "media": [],
+      "options": [
+        "Utiliser un écarteur de langue ou demander au patient de la positionner",
+        "Ignorer la langue",
+        "Augmenter l'ISO",
+        "Changer d'objectif"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Un écarteur de langue ou une consigne claire au patient permettent de dégager l'arcade dentaire.' Dr RACHID : 'Je vais utiliser un écarteur de langue.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr REDA doit photographier un sourire avec une asymétrie. Dr RACHID lui demande : 'Comment capturer cette asymétrie ?'",
+      "media": [],
+      "options": [
+        "Prendre une photo de face parfaitement symétrique pour la référence",
+        "Ignorer l'asymétrie",
+        "Prendre une photo de profil uniquement",
+        "Utiliser un filtre"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Une photo de face parfaitement symétrique permet de documenter l'asymétrie comme référence.' Dr RACHID : 'Je vais prendre une photo de face standard.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo de la face d'un patient. Dr REDA lui dit : 'La tête est inclinée.' Comment corriger ce problème ?",
+      "media": [],
+      "options": [
+        "Redresser l'image en post-production ou repositionner le patient",
+        "Ignorer l'inclinaison",
+        "Augmenter l'ISO",
+        "Changer d'objectif"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Un patient mal positionné peut être corrigé en post-production ou en le repositionnant.' Dr RACHID : 'Je vais vérifier le positionnement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr REDA examine une photo d'une dent avec une restauration composite. Il dit à Dr RACHID : 'La texture du composite n'est pas visible.' Comment améliorer la texture ?",
+      "media": [],
+      "options": [
+        "Utiliser un éclairage rasante pour révéler la texture de surface",
+        "Augmenter l'ISO",
+        "Diminuer l'ouverture",
+        "Utiliser un filtre"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Un éclairage rasante crée des ombres qui révèlent la texture de surface des composites.' Dr RACHID : 'Je vais ajuster l'angle du flash.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo de l'arcade dentaire avec un miroir intra-oral. Dr REDA lui demande : 'Comment éviter la buée sur le miroir ?'",
+      "media": [],
+      "options": [
+        "Chauffer le miroir ou utiliser un anti-buée",
+        "Augmenter l'ISO",
+        "Diminuer la vitesse",
+        "Ignorer la buée"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Chauffer le miroir sous l'eau chaude ou utiliser un produit anti-buée évite la condensation.' Dr RACHID : 'Je vais chauffer le miroir avant.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr REDA doit photographier une dent avec une obturation. Dr RACHID lui demande : 'Quel est le défi particulier ?'",
+      "media": [],
+      "options": [
+        "Gérer les reflets des surfaces métalliques ou composites",
+        "La mise au point est difficile",
+        "La couleur est toujours fausse",
+        "Il n'y a pas de défi"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Les obturations métalliques ou composites peuvent créer des reflets gênants qu'il faut maîtriser.' Dr RACHID : 'Je vais utiliser un polariseur.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo avec une dominante de couleur. Dr REDA lui demande : 'Quel paramètre est en cause ?'",
+      "media": [],
+      "options": [
+        "La balance des blancs ou l'éclairage",
+        "La mise au point",
+        "La vitesse d'obturation",
+        "L'ouverture"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Une dominante de couleur est souvent due à une balance des blancs incorrecte ou à un éclairage inadéquat.' Dr RACHID : 'Je vais vérifier la balance des blancs.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr REDA explique à Dr RACHID l'importance de la post-production. Dr RACHID demande : 'Quelles sont les retouches éthiquement acceptables ?'",
+      "media": [],
+      "options": [
+        "Ajustement de l'exposition, du contraste et de la balance des blancs",
+        "Ajout de dents inexistantes",
+        "Modification de la couleur des dents",
+        "Suppression de défauts"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Les retouches éthiques sont limitées aux ajustements techniques comme l'exposition, le contraste et la balance des blancs.' Dr RACHID : 'Je resterai éthique dans mes retouches.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo d'une dent avec une carie. Dr REDA lui dit : 'La carie n'est pas visible.' Comment améliorer la visualisation des caries ?",
+      "media": [],
+      "options": [
+        "Utiliser un contraste élevé et une lumière rasante",
+        "Augmenter l'ISO",
+        "Diminuer la vitesse",
+        "Utiliser un filtre"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Un contraste élevé et une lumière rasante révèlent les caries en créant des ombres.' Dr RACHID : 'Je vais ajuster l'éclairage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr REDA doit créer une présentation de cas clinique. Dr RACHID lui demande : 'Quelles photos sont indispensables ?'",
+      "media": [],
+      "options": [
+        "Les photos pré-opératoires, per-opératoires et post-opératoires",
+        "Une seule photo",
+        "Uniquement la photo pré-opératoire",
+        "Uniquement la photo post-opératoire"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Un cas clinique complet nécessite des photos à chaque étape du traitement pour documenter l'évolution.' Dr RACHID : 'Je vais documenter chaque étape.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo de la face d'un patient en souriant. Dr REDA lui dit : 'Les lèvres sont gênantes.' Comment gérer les lèvres en photo de sourire ?",
+      "media": [],
+      "options": [
+        "Demander au patient de sourire naturellement sans forcer les lèvres",
+        "Ignorer les lèvres",
+        "Utiliser un écarteur à lèvres",
+        "Demander au patient de fermer les yeux"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Un sourire naturel sans forcer les lèvres donne le meilleur résultat esthétique.' Dr RACHID : 'Je vais mettre le patient à l'aise.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr REDA doit photographier une prothèse amovible. Dr RACHID lui demande : 'Quel est le protocole ?'",
+      "media": [],
+      "options": [
+        "Photographier la prothèse sur un fond neutre avec un bon éclairage",
+        "Photographier la prothèse en bouche uniquement",
+        "Ignorer la prothèse",
+        "Photographier la prothèse de loin"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Une prothèse amovible doit être photographiée sur un fond neutre pour montrer tous les détails.' Dr RACHID : 'Je vais utiliser un fond noir.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo d'une dent avec une fracture. Dr REDA lui demande : 'Comment mettre en évidence la fracture ?'",
+      "media": [],
+      "options": [
+        "Utiliser une lumière rasante pour créer des ombres qui révèlent la fracture",
+        "Augmenter l'ISO",
+        "Diminuer la vitesse",
+        "Utiliser un filtre"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Une lumière rasante crée des ombres qui mettent en évidence les fractures et les fissures.' Dr RACHID : 'Je vais ajuster l'éclairage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr REDA explique à Dr RACHID l'importance de la standardisation en photographie dentaire. Dr RACHID demande : 'Pourquoi standardiser ?'",
+      "media": [],
+      "options": [
+        "Pour comparer les photos de manière fiable dans le temps",
+        "Pour faire des photos plus belles",
+        "Pour gagner du temps",
+        "Pour économiser du matériel"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'La standardisation permet des comparaisons fiables des cas cliniques dans le temps.' Dr RACHID : 'Je vais standardiser mes réglages.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo d'une dent avec une restauration en or. Dr REDA lui dit : 'Il y a un reflet doré.' Comment gérer ce reflet ?",
+      "media": [],
+      "options": [
+        "Utiliser un polariseur ou ajuster la balance des blancs",
+        "Augmenter l'ISO",
+        "Diminuer l'ouverture",
+        "Ignorer le reflet"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Les reflets dorés peuvent être réduits avec un polariseur ou une balance des blancs ajustée.' Dr RACHID : 'Je vais utiliser un polariseur.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr REDA doit photographier une dent avec une obturation en amalgame. Dr RACHID demande : 'Quel est le défi ?'",
+      "media": [],
+      "options": [
+        "L'amalgame est très réfléchissant et peut créer des reflets",
+        "La mise au point est difficile",
+        "La couleur est toujours fausse",
+        "Il n'y a pas de défi"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'L'amalgame est très réfléchissant et peut créer des reflets qu'il faut maîtriser avec un polariseur.' Dr RACHID : 'Je vais utiliser un polariseur.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo de l'arcade dentaire avec le flash annulaire. Dr REDA lui demande : 'L'anneau lumineux est-il visible ?' Quelle est l'utilité de l'anneau lumineux ?",
+      "media": [],
+      "options": [
+        "Il crée un reflet esthétique et aide à la mise au point",
+        "Il n'a aucune utilité",
+        "Il augmente la luminosité",
+        "Il diminue la luminosité"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'L'anneau lumineux est un reflet esthétique et peut servir de guide pour la mise au point.' Dr RACHID : 'Je vais m'assurer qu'il est visible.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr REDA doit créer un portfolio de cas cliniques. Dr RACHID lui demande : 'Comment organiser les photos ?'",
+      "media": [],
+      "options": [
+        "Par cas clinique, avec photos pré, per et post-opératoires",
+        "Par date uniquement",
+        "Par patient uniquement",
+        "Par type de traitement uniquement"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Les photos doivent être organisées par cas clinique avec un ordre chronologique pour montrer l'évolution.' Dr RACHID : 'Je vais organiser mes photos par cas.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo de la langue d'un patient. Dr REDA lui demande : 'Quelle pathologie peut-on voir sur la langue ?'",
+      "media": [],
+      "options": [
+        "Signes de carences, infections ou pathologies systémiques",
+        "Uniquement la couleur",
+        "Uniquement la forme",
+        "Aucune pathologie"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'La langue peut révéler des signes de carences, d'infections ou de maladies systémiques.' Dr RACHID : 'Je vais toujours photographier la langue.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr REDA explique à Dr RACHID l'importance du consentement du patient pour les photos. Dr RACHID demande : 'Pourquoi est-ce important ?'",
+      "media": [],
+      "options": [
+        "Pour des raisons légales et éthiques, le patient doit donner son consentement",
+        "Ce n'est pas important",
+        "Le consentement est facultatif",
+        "Le consentement n'est pas nécessaire"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Le consentement du patient est obligatoire pour des raisons légales et éthiques, surtout si les photos sont utilisées pour des présentations.' Dr RACHID : 'Je vais toujours demander le consentement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr RACHID a pris une photo d'une dent avec une carie interproximale. Dr REDA lui demande : 'Comment visualiser les caries interproximales ?'",
+      "media": [],
+      "options": [
+        "Utiliser un contraste élevé et une lumière rasante",
+        "Augmenter l'ISO",
+        "Diminuer la vitesse",
+        "Utiliser un filtre"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'Le contraste élevé et la lumière rasante révèlent les caries interproximales.' Dr RACHID : 'Je vais ajuster l'éclairage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr REDA doit photographier un patient avec une pigmentation gingivale. Dr RACHID lui demande : 'Comment capturer la pigmentation ?'",
+      "media": [],
+      "options": [
+        "Utiliser une lumière rasante et un contraste élevé",
+        "Ignorer la pigmentation",
+        "Augmenter l'ISO",
+        "Diminuer la vitesse"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'La lumière rasante et le contraste élevé révèlent les pigmentation gingivales.' Dr RACHID : 'Je vais ajuster l'éclairage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr RACHID, après avoir géré des cas complexes de photographie dentaire avec Dr REDA, reçoit ses félicitations. Quelle est la prochaine étape pour Dr RACHID ?",
+      "media": [],
+      "options": [
+        "Devenir un expert en photographie dentaire clinique",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bonnes pratiques"
+      ],
+      "correct": 0,
+      "explanation": "Dr REDA explique : 'La maîtrise des cas complexes est une compétence précieuse. Devenir un expert est la prochaine étape.' Dr RACHID : 'Je vais approfondir mes compétences.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

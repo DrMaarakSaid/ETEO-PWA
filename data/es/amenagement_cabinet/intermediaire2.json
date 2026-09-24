@@ -1,0 +1,541 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_intermediaire2_001",
+    "title": "Acondicionamiento del Consultorio - Intermedio 2",
+    "specialty": "AMEN",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1750,
+    "chapter": "Negociaciones y conflictos"
+  },
+  "questions": [
+    {
+      "id": "AMEN_I2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan recibe una notificación de revisión del alquiler del 30% sin motivo justificado. Según el artículo 5, ¿cómo debe reaccionar?",
+      "media": [],
+      "options": [
+        "Aceptar la revisión para evitar conflictos",
+        "Impugnarla, invocando la ley nº 07-03 sobre revisión del alquiler",
+        "Pagar bajo reserva, esperando el juicio",
+        "Abandonar inmediatamente el local"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 5, párr. 3: la revisión del alquiler se somete a las disposiciones de la ley nº 07-03. Hay que impugnar la revisión abusiva.",
+      "difficulty": "intermedio",
+      "category": "Revisión del alquiler",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["revisión", "impugnación", "ley"],
+      "references": ["Ley 49-16 Art.5", "Ley 07-03"]
+    },
+    {
+      "id": "AMEN_I2_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha instalado un letrero luminoso sin autorización del propietario. Según el artículo 8, ¿puede esta conducta privarle del derecho a indemnización por desalojo?",
+      "media": [],
+      "options": [
+        "Sí, ya que constituye una transformación del local",
+        "No, el letrero se considera equipamiento necesario",
+        "Sí, pero solo si supera los 5 m²",
+        "No, el propietario debe primero autorizarlo"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 8, 2°: el arrendador queda exento de indemnización si el arrendatario transforma el local, a menos que lo restituya a su estado original en un plazo que no podrá exceder de 3 meses.",
+      "difficulty": "intermedio",
+      "category": "Obras no autorizadas",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["letrero", "transformación", "desalojo"],
+      "references": ["Ley 49-16 Art.8"]
+    },
+    {
+      "id": "AMEN_I2_Q03",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan quiere vender el edificio durante el arrendamiento. Según la ley 49-16, ¿cuáles son las obligaciones del vendedor?",
+      "media": [],
+      "options": [
+        "Resolver el arrendamiento antes de la venta",
+        "Informar al arrendatario y respetar su derecho de tanteo",
+        "Aumentar el alquiler para hacer la venta más atractiva",
+        "Nada, el arrendamiento no es oponible al nuevo propietario"
+      ],
+      "correct": 1,
+      "explanation": "El arrendatario tiene derecho de tanteo. El vendedor debe informarle y respetar este derecho.",
+      "difficulty": "intermedio",
+      "category": "Venta del edificio",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["venta", "tanteo", "información"],
+      "references": ["Ley 49-16 Art.26 bis"]
+    },
+    {
+      "id": "AMEN_I2_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha realizado una pericia de su consultorio y valora su fondo de comercio en 1.200.000 dirhams. Según el artículo 7, ¿sobre qué base se calculará la indemnización por desalojo?",
+      "media": [],
+      "options": [
+        "Sobre la base de la tasación del perito",
+        "Sobre la base de las declaraciones fiscales de los 4 últimos ejercicios",
+        "Sobre el precio de venta del equipo dental",
+        "Sobre la facturación anual"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 7, párr. 3: la indemnización se calcula sobre la base de las declaraciones fiscales de los últimos cuatro ejercicios.",
+      "difficulty": "intermedio",
+      "category": "Valoración del fondo",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["pericia", "fondo", "declaración"],
+      "references": ["Ley 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_I2_Q05",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan intenta desalojarlo por causa de recuperación personal. Según el artículo 26, ¿qué plazo se aplica?",
+      "media": [],
+      "options": [
+        "15 días",
+        "1 mes",
+        "3 meses",
+        "6 meses"
+      ],
+      "correct": 2,
+      "explanation": "Artículo 26, párr. 2: el plazo se fija en 3 meses cuando la demanda se basa en la voluntad de recuperar el local para uso personal.",
+      "difficulty": "intermedio",
+      "category": "Recuperación personal",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["recuperación", "plazo", "uso personal"],
+      "references": ["Ley 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I2_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Kamali quiere impugnar una cláusula de su contrato de arrendamiento que considera abusiva. Según el artículo 6, ¿cuál es el valor de dicha cláusula?",
+      "media": [],
+      "options": [
+        "Es válida, ya que las partes son libres de contratar",
+        "Es nula si contradice las disposiciones de la ley",
+        "Es válida durante los primeros 5 años",
+        "Debe ser homologada por el tribunal de comercio"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 6: toda disposición contraria a las disposiciones de la ley es nula. La ley es de orden público.",
+      "difficulty": "intermedio",
+      "category": "Cláusulas abusivas",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["cláusula abusiva", "nulidad", "orden público"],
+      "references": ["Ley 49-16 Art.6"]
+    },
+    {
+      "id": "AMEN_I2_Q07",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan le reprocha molestias sonoras procedentes de su consultorio. Según el artículo 26, ¿cómo se califica este tipo de litigio?",
+      "media": [],
+      "options": [
+        "Causa grave relacionada con el incumplimiento de las condiciones del arrendamiento",
+        "Simple molestia sin consecuencias jurídicas",
+        "Caso de fuerza mayor",
+        "Causa de rescisión anticipada del arrendamiento"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 26, párr. 2: las molestias sonoras constituyen una causa grave relacionada con el incumplimiento de las condiciones del arrendamiento (plazo de 3 meses).",
+      "difficulty": "intermedio",
+      "category": "Causas graves",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["molestia", "causa grave", "condiciones"],
+      "references": ["Ley 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I2_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha tomado posesión del local sin acta de entrada bilateral. Según el artículo 3, ¿cuáles son las consecuencias?",
+      "media": [],
+      "options": [
+        "Ninguna, el acta de entrada no es obligatoria",
+        "Será imposible probar el estado inicial del local",
+        "El contrato de arrendamiento es automáticamente nulo",
+        "El propietario puede aumentar el alquiler en un 20%"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 3, párr. 2: al tomar posesión del local, se debe redactar un acta descriptiva del estado del local para servir como prueba entre las partes.",
+      "difficulty": "intermedio",
+      "category": "Acta de entrada",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["acta de entrada", "prueba", "obligación"],
+      "references": ["Ley 49-16 Art.3"]
+    },
+    {
+      "id": "AMEN_I2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan quiere impugnar un aumento de los gastos de explotación. Según el artículo 5, ¿qué debe probar?",
+      "media": [],
+      "options": [
+        "Que los gastos no están previstos en el contrato de arrendamiento",
+        "Que los gastos son excesivos en comparación con el mercado",
+        "Que el propietario no aporta justificación",
+        "Todas las respuestas anteriores son correctas"
+      ],
+      "correct": 3,
+      "explanation": "Artículo 5: el arrendatario puede impugnar los gastos si no están previstos, si son excesivos o si el propietario no aporta justificación.",
+      "difficulty": "intermedio",
+      "category": "Gastos de explotación",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["gastos", "impugnación", "justificación"],
+      "references": ["Ley 49-16 Art.5"]
+    },
+    {
+      "id": "AMEN_I2_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Kamali recibe un requerimiento de pago del alquiler por 4 meses de atraso. Según el artículo 33, ¿qué riesgo corre?",
+      "media": [],
+      "options": [
+        "La rescisión del contrato de arrendamiento tras requerimiento infructuoso",
+        "El aumento automático del alquiler",
+        "Una multa fija de 10.000 dirhams",
+        "La prohibición de ejercer en el local"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 33: el arrendador puede actuar en caso de impago del alquiler durante tres meses, tras un requerimiento sin efecto en 15 días.",
+      "difficulty": "intermedio",
+      "category": "Impago del alquiler",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["impago", "rescisión", "requerimiento"],
+      "references": ["Ley 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_I2_Q11",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan debe realizar obras de reparación. Según la ley 49-16, ¿quién asume el coste de estas obras?",
+      "media": [],
+      "options": [
+        "Solo el arrendatario",
+        "Solo el propietario",
+        "El arrendatario y el propietario a partes iguales",
+        "El propietario, a menos que el contrato de arrendamiento disponga lo contrario"
+      ],
+      "correct": 3,
+      "explanation": "Las obras de reparación suelen ser responsabilidad del propietario. Sin embargo, el contrato de arrendamiento puede disponer lo contrario.",
+      "difficulty": "intermedio",
+      "category": "Obras de reparación",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["obras", "reparación", "propietario"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Kamali quiere rescindir el contrato de arrendamiento antes de su término. Según el artículo 26, ¿cuáles son sus obligaciones?",
+      "media": [],
+      "options": [
+        "Cumplir un preaviso de 3 meses",
+        "Cumplir un preaviso de 6 meses",
+        "Respetar las disposiciones contractuales del arrendamiento",
+        "La ley no prevé preaviso para el arrendatario"
+      ],
+      "correct": 2,
+      "explanation": "Las condiciones de rescisión del arrendamiento por el arrendatario suelen estar previstas en el contrato de arrendamiento. La ley no establece un preaviso específico.",
+      "difficulty": "intermedio",
+      "category": "Rescisión por el arrendatario",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["rescisión", "arrendatario", "preaviso"],
+      "references": ["Ley 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan descubre que en su local hay problemas de amianto. Según la ley 49-16, ¿cuál es la responsabilidad del propietario?",
+      "media": [],
+      "options": [
+        "Ninguna, el amianto no está regulado en el arrendamiento comercial",
+        "El propietario debe realizar las obras de retirada de amianto",
+        "El arrendatario debe asumir estas obras en solitario",
+        "Las obras se reparten entre las partes"
+      ],
+      "correct": 1,
+      "explanation": "El propietario está obligado a proporcionar un local conforme a las normas de seguridad. La retirada de amianto es de su responsabilidad.",
+      "difficulty": "intermedio",
+      "category": "Riesgos sanitarios",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["amianto", "seguridad", "propietario"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha subarrendado parte de su consultorio sin el consentimiento del propietario. Según el artículo 24, ¿cuáles son las consecuencias?",
+      "media": [],
+      "options": [
+        "El subarrendamiento es válido, ya que está permitido por defecto",
+        "El propietario puede solicitar la rescisión del contrato de arrendamiento",
+        "El subarrendamiento es nulo y el subarrendatario debe irse",
+        "El propietario solo puede aumentar el alquiler"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 24, párr. 1: el subarrendamiento está permitido si no hay cláusula en contrario. En caso de falta de consentimiento, si el arrendamiento prohíbe el subarrendamiento, el propietario puede actuar.",
+      "difficulty": "intermedio",
+      "category": "Subarrendamiento",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["subarrendamiento", "falta de consentimiento", "rescisión"],
+      "references": ["Ley 49-16 Art.24"]
+    },
+    {
+      "id": "AMEN_I2_Q15",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan quiere aumentar el alquiler basándose en una cláusula de indexación. Según el artículo 5, ¿cuál es el límite legal de este aumento?",
+      "media": [],
+      "options": [
+        "No hay límite, las partes son libres",
+        "El aumento está limitado por la ley nº 07-03",
+        "El aumento está limitado al 5% anual",
+        "El aumento está limitado al índice del coste de la construcción"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 5, párr. 3: la revisión del alquiler se somete a las disposiciones de la ley nº 07-03, que establece normas de indexación y límites.",
+      "difficulty": "intermedio",
+      "category": "Revisión del alquiler",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indexación", "límite", "ley"],
+      "references": ["Ley 49-16 Art.5", "Ley 07-03"]
+    },
+    {
+      "id": "AMEN_I2_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha recibido una citación judicial de desalojo. Según el artículo 28, ¿cuál es el plazo para el depósito de la indemnización por desalojo?",
+      "media": [],
+      "options": [
+        "1 mes después de la sentencia",
+        "2 meses después de la sentencia",
+        "3 meses desde la fecha de firmeza de la sentencia",
+        "6 meses después de la sentencia"
+      ],
+      "correct": 2,
+      "explanation": "Artículo 28: el arrendador está obligado a depositar el importe de la indemnización en un plazo de tres meses desde la fecha de firmeza de la sentencia.",
+      "difficulty": "intermedio",
+      "category": "Procedimiento de desalojo",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["citación", "plazo", "ejecución"],
+      "references": ["Ley 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_I2_Q17",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan le solicita que realice obras de mantenimiento corriente. Según la ley 49-16, ¿quién debe realizarlas?",
+      "media": [],
+      "options": [
+        "Solo el propietario",
+        "Solo el arrendatario",
+        "Ambos a partes iguales",
+        "El arrendatario, si las obras no son estructurales"
+      ],
+      "correct": 3,
+      "explanation": "Las obras de mantenimiento corriente suelen ser responsabilidad del arrendatario, mientras que las obras estructurales son responsabilidad del propietario.",
+      "difficulty": "intermedio",
+      "category": "Obras de mantenimiento",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["mantenimiento", "propietario", "arrendatario"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Kamali quiere impugnar una cláusula de su contrato de arrendamiento que le prohíbe ejercer otra actividad en el local. Según la ley 49-16, ¿es válida esta cláusula?",
+      "media": [],
+      "options": [
+        "Sí, las partes pueden limitar la actividad",
+        "No, contradice la libertad de empresa",
+        "Sí, si está limitada en el tiempo",
+        "No, si no está justificada por el objeto del arrendamiento"
+      ],
+      "correct": 0,
+      "explanation": "El contrato de arrendamiento puede limitar legalmente la actividad ejercida en el local para preservar el destino del lugar.",
+      "difficulty": "intermedio",
+      "category": "Limitaciones de actividad",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["actividad", "limitación", "cláusula"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q19",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan quiere modificar el horario de apertura del edificio. Según la ley 49-16, ¿debe el arrendatario aceptar?",
+      "media": [],
+      "options": [
+        "Sí, el propietario tiene derecho de administración",
+        "No, si modifica las condiciones de ejercicio del consultorio",
+        "Sí, si la modificación está justificada por razones de seguridad",
+        "No, el propietario no puede imponer horarios"
+      ],
+      "correct": 1,
+      "explanation": "Cualquier modificación que afecte sustancialmente al ejercicio del consultorio requiere el consentimiento del arrendatario.",
+      "difficulty": "intermedio",
+      "category": "Condiciones de ejercicio",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["horarios", "ejercicio", "modificación"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha cambiado de especialidad y quiere modificar la actividad de su consultorio. Según la ley 49-16, ¿cuál es el procedimiento?",
+      "media": [],
+      "options": [
+        "Puede hacerlo sin autorización",
+        "Debe obtener la autorización del propietario",
+        "Debe simplemente notificarlo al propietario",
+        "Debe esperar la prórroga del arrendamiento"
+      ],
+      "correct": 1,
+      "explanation": "Cualquier cambio de destino del local requiere el consentimiento del propietario, a menos que el contrato de arrendamiento permita lo contrario.",
+      "difficulty": "intermedio",
+      "category": "Cambio de actividad",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["actividad", "autorización", "destino"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan tiene dificultades para pagar el alquiler debido a una crisis. Según el artículo 33, ¿de qué plazo dispone para regularizar?",
+      "media": [],
+      "options": [
+        "15 días después del requerimiento",
+        "30 días después del requerimiento",
+        "45 días después del requerimiento",
+        "2 meses después del requerimiento"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 33: el arrendatario dispone de 15 días después del requerimiento para regularizar su situación.",
+      "difficulty": "intermedio",
+      "category": "Regularización",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["regularización", "plazo", "crisis"],
+      "references": ["Ley 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_I2_Q22",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Kamali le deniega la prórroga sin motivo. Según el artículo 6, ¿cuál es la posición de la ley?",
+      "media": [],
+      "options": [
+        "La denegación es válida si el propietario lo desea",
+        "La denegación es abusiva, ya que el derecho de prórroga está protegido",
+        "La denegación es válida después de 9 años de arrendamiento",
+        "La denegación debe ser apreciada por el tribunal"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 6: toda disposición contraria al derecho de prórroga es nula. La denegación sin motivo es abusiva.",
+      "difficulty": "intermedio",
+      "category": "Prórroga",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["denegación", "prórroga", "abusiva"],
+      "references": ["Ley 49-16 Art.6"]
+    },
+    {
+      "id": "AMEN_I2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan quiere realizar obras de ampliación. Según el artículo 8, ¿cuál es el procedimiento?",
+      "media": [],
+      "options": [
+        "Las obras son libres si no afectan a la estructura",
+        "Debe obtener el consentimiento por escrito del propietario",
+        "Puede realizar las obras y notificarlo después",
+        "Las obras están prohibidas"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 8: cualquier transformación del local requiere el consentimiento del propietario, bajo pena de pérdida del derecho a indemnización.",
+      "difficulty": "intermedio",
+      "category": "Obras",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["ampliación", "autorización", "obras"],
+      "references": ["Ley 49-16 Art.8"]
+    },
+    {
+      "id": "AMEN_I2_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha firmado un contrato de arrendamiento de 3 años prorrogable. Según el artículo 4, ¿bajo qué condición está garantizada la prórroga?",
+      "media": [],
+      "options": [
+        "Es automática después de 3 años",
+        "Está garantizada después de 2 años de ocupación",
+        "Depende del consentimiento del propietario",
+        "Es imposible para los arrendamientos de 3 años"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 4: el arrendatario tiene derecho a la prórroga después de 2 años de ocupación continua.",
+      "difficulty": "intermedio",
+      "category": "Prórroga",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["prórroga", "ocupación", "plazo"],
+      "references": ["Ley 49-16 Art.4"]
+    },
+    {
+      "id": "AMEN_I2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha llegado finalmente a un acuerdo con su propietario. Según la ley 49-16, ¿cómo formalizar este acuerdo?",
+      "media": [],
+      "options": [
+        "Con un simple apretón de manos",
+        "Mediante un acuerdo complementario por escrito al contrato de arrendamiento",
+        "Mediante intercambio de cartas certificadas",
+        "Mediante declaración ante la prefectura"
+      ],
+      "correct": 1,
+      "explanation": "Cualquier acuerdo que modifique el arrendamiento debe formalizarse por escrito en forma de acuerdo complementario para su validez y oponibilidad.",
+      "difficulty": "intermedio",
+      "category": "Acuerdo transaccional",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["acuerdo", "complementario", "formalización"],
+      "references": ["Ley 49-16"]
+    }
+  ]
+}

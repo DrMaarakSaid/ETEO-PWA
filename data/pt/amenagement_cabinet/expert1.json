@@ -1,0 +1,541 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_expert1_001",
+    "title": "Office Layout - Expert 1",
+    "specialty": "AMEN",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1800,
+    "chapter": "Litigation Strategy"
+  },
+  "questions": [
+    {
+      "id": "AMEN_X1_Q01",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord is suing him for non-payment of rent. According to Article 26, what is the deadline to regularize the situation before eviction?",
+      "media": [],
+      "options": [
+        "3 days",
+        "15 days",
+        "30 days",
+        "3 months"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26, para. 2: the period is set at 15 days when the request is based on non-payment of rent.",
+      "difficulty": "hard",
+      "category": "Eviction Procedure",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["summons", "payment", "deadline"],
+      "references": ["Law 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X1_Q02",
+      "type": "single-choice",
+      "question": "Dr Kamali received a notice for personal recovery but disputes the reason. According to case law, who bears the burden of proof?",
+      "media": [],
+      "options": [
+        "The landlord must prove his good faith",
+        "The tenant must prove the landlord's bad faith",
+        "The court must verify good faith ex officio",
+        "The burden of proof lies with the court"
+      ],
+      "correct": 0,
+      "explanation": "Case law requires the landlord to prove his good faith and the reality of his intention to repossess the premises.",
+      "difficulty": "hard",
+      "category": "Litigation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["repossession", "good faith", "proof"],
+      "references": ["Case law", "Law 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X1_Q03",
+      "type": "single-choice",
+      "question": "Dr Ramdan wishes to challenge the amount of the eviction compensation proposed by the landlord. According to Article 7, what recourse is available?",
+      "media": [],
+      "options": [
+        "Seize the court of first instance",
+        "Seize the commercial court",
+        "Appeal to a court-appointed expert",
+        "Both first two recourses are possible"
+      ],
+      "correct": 3,
+      "explanation": "The tenant may seize the court to challenge the compensation and request an expert appraisal if necessary.",
+      "difficulty": "hard",
+      "category": "Compensation Litigation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["compensation", "challenge", "expertise"],
+      "references": ["Law 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X1_Q04",
+      "type": "single-choice",
+      "question": "Dr Kamali's landlord refuses to pay the eviction compensation. According to Article 28, what can the tenant do?",
+      "media": [],
+      "options": [
+        "Seize the court to obtain enforcement of the judgment",
+        "Remain in the premises until payment",
+        "Request a seizure of the landlord's assets",
+        "All of the above answers are correct"
+      ],
+      "correct": 3,
+      "explanation": "Art. 28: the tenant may seize the court for enforcement of the judgment and benefit from enforcement procedures.",
+      "difficulty": "hard",
+      "category": "Judgment Enforcement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["enforcement", "compensation", "execution procedures"],
+      "references": ["Law 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X1_Q05",
+      "type": "single-choice",
+      "question": "Dr Ramdan carried out improvement works costing 300,000 DH. According to Article 7, are these works included in the eviction compensation?",
+      "media": [],
+      "options": [
+        "Yes, provided proof is provided",
+        "No, works are not compensated",
+        "Yes, only if amortized over 5 years",
+        "No, only the value of the business is taken into account"
+      ],
+      "correct": 0,
+      "explanation": "Art. 7, para. 3: the compensation includes works expenses, subject to their justification.",
+      "difficulty": "hard",
+      "category": "Compensation Assessment",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["works", "compensation", "proof"],
+      "references": ["Law 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X1_Q06",
+      "type": "single-choice",
+      "question": "Dr Kamali assigned his lease without complying with the notification formalities. According to Article 25, what does he risk?",
+      "media": [],
+      "options": [
+        "The assignment is unenforceable against the landlord",
+        "The landlord may terminate the lease",
+        "The assignee may be evicted",
+        "All of the above answers are correct"
+      ],
+      "correct": 3,
+      "explanation": "Art. 25, para. 3: the assignment is only enforceable against the lessor from the date of notification. In the absence, the assignment is unenforceable.",
+      "difficulty": "hard",
+      "category": "Lease Assignment",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["assignment", "notification", "enforceability"],
+      "references": ["Law 49-16 Art.25"]
+    },
+    {
+      "id": "AMEN_X1_Q07",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord included a resolutory clause in the lease. According to Article 33, how is this clause implemented?",
+      "media": [],
+      "options": [
+        "It applies automatically in case of arrears",
+        "It requires a prior formal notice of 15 days",
+        "It is null and void by law",
+        "It must be approved by the court"
+      ],
+      "correct": 1,
+      "explanation": "Art. 33: the resolutory clause requires a formal notice remaining unsuccessful for 15 days.",
+      "difficulty": "hard",
+      "category": "Resolutory Clause",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["resolutory clause", "formal notice", "deadline"],
+      "references": ["Law 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_X1_Q08",
+      "type": "single-choice",
+      "question": "Dr Kamali wishes to use the summary procedure to challenge an abusive notice. According to Law 49-16, is this possible?",
+      "media": [],
+      "options": [
+        "Yes, the summary judge may rule urgently",
+        "No, notice disputes must be heard on the merits",
+        "Yes, but only in matters of neighbor disputes",
+        "No, summary procedure does not exist in commercial lease matters"
+      ],
+      "correct": 0,
+      "explanation": "The summary judge may be seized in case of urgency to suspend the effects of an abusive notice.",
+      "difficulty": "hard",
+      "category": "Urgent Procedure",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["summary procedure", "urgency", "notice"],
+      "references": ["CPC", "Law 49-16"]
+    },
+    {
+      "id": "AMEN_X1_Q09",
+      "type": "single-choice",
+      "question": "Dr Ramdan was evicted without compensation even though he was entitled to renewal. According to case law, how can he be compensated?",
+      "media": [],
+      "options": [
+        "By awarding damages for abusive procedure",
+        "By nullifying the notice",
+        "By payment of the eviction compensation with interest",
+        "All of the above answers are possible"
+      ],
+      "correct": 3,
+      "explanation": "Case law offers several avenues of recourse: nullity of the notice, eviction compensation, damages.",
+      "difficulty": "hard",
+      "category": "Litigation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["eviction", "compensation", "recourse"],
+      "references": ["Case law"]
+    },
+    {
+      "id": "AMEN_X1_Q10",
+      "type": "single-choice",
+      "question": "Dr Kamali faced a bad faith landlord who simulated a personal recovery. According to Article 26, what sanctions are possible?",
+      "media": [],
+      "options": [
+        "Nullity of the notice",
+        "Payment of eviction compensation",
+        "Damages for abusive procedure",
+        "All of the above sanctions are possible"
+      ],
+      "correct": 3,
+      "explanation": "The landlord's bad faith exposes him to nullity of the notice, payment of compensation, and damages.",
+      "difficulty": "hard",
+      "category": "Bad Faith",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["bad faith", "sanctions", "repossession"],
+      "references": ["Law 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X1_Q11",
+      "type": "single-choice",
+      "question": "Dr Ramdan wishes to appeal a decision of the court of first instance. According to civil procedure, what is the appeal period?",
+      "media": [],
+      "options": [
+        "15 days",
+        "1 month",
+        "2 months",
+        "3 months"
+      ],
+      "correct": 0,
+      "explanation": "The appeal period in commercial lease matters is generally 15 days.",
+      "difficulty": "hard",
+      "category": "Avenues of Appeal",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["appeal", "deadline", "avenues of appeal"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q12",
+      "type": "single-choice",
+      "question": "Dr Kamali's landlord obtained an eviction judgment but does not pay the compensation. According to Article 28, what can the tenant do?",
+      "media": [],
+      "options": [
+        "Request forced execution of the judgment",
+        "Remain in the premises until payment",
+        "Request seizure of rents due by the landlord",
+        "All of these actions are possible"
+      ],
+      "correct": 3,
+      "explanation": "Art. 28: the tenant may request forced execution, remain in the premises, or seize rents.",
+      "difficulty": "hard",
+      "category": "Forced Execution",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["execution", "seizure", "execution procedures"],
+      "references": ["Law 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X1_Q13",
+      "type": "single-choice",
+      "question": "Dr Ramdan received a notice for demolition-reconstruction but the building permit has not yet been issued. According to Article 18, what must the landlord do?",
+      "media": [],
+      "options": [
+        "Wait for the permit before serving the notice",
+        "Serve the notice and produce the permit later",
+        "Serve the notice without a permit, as the permit is optional",
+        "Request a derogation from the court"
+      ],
+      "correct": 0,
+      "explanation": "Art. 18: the landlord must produce a valid building permit. The notice is null if the permit is not issued.",
+      "difficulty": "hard",
+      "category": "Demolition-Reconstruction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["building permit", "notice", "validity"],
+      "references": ["Law 49-16 Art.18"]
+    },
+    {
+      "id": "AMEN_X1_Q14",
+      "type": "single-choice",
+      "question": "Dr Kamali challenges the valuation of his business. According to Article 7, which method of proof is most admissible?",
+      "media": [],
+      "options": [
+        "Accounting expertise",
+        "Real estate agent valuation",
+        "Tax declaration of the last 4 financial years",
+        "Landlord's estimate"
+      ],
+      "correct": 2,
+      "explanation": "Art. 7, para. 3: the compensation is calculated on the basis of the tax declarations of the last four financial years, which are authoritative.",
+      "difficulty": "hard",
+      "category": "Business Valuation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["proof", "tax", "declaration"],
+      "references": ["Law 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X1_Q15",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord assigned the building during an eviction procedure. According to Article 26 bis, what are the consequences on the procedure?",
+      "media": [],
+      "options": [
+        "The procedure automatically lapses",
+        "The procedure continues against the new owner",
+        "The procedure must be restarted from scratch",
+        "The tenant must summon the new owner"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26 bis: the new owner is required to respect existing leases. The procedure continues against him.",
+      "difficulty": "hard",
+      "category": "Building Assignment",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["assignment", "procedure", "continuity"],
+      "references": ["Law 49-16 Art.26 bis"]
+    },
+    {
+      "id": "AMEN_X1_Q16",
+      "type": "single-choice",
+      "question": "Dr Kamali was illegally evicted by the landlord. According to case law, can the tenant request specific compensation?",
+      "media": [],
+      "options": [
+        "Yes, for disturbance of enjoyment",
+        "Yes, for commercial loss",
+        "Yes, for relocation costs",
+        "Yes, all of these compensations are possible"
+      ],
+      "correct": 3,
+      "explanation": "In case of illegal eviction, the tenant may obtain several compensations: disturbance of enjoyment, commercial loss, relocation costs.",
+      "difficulty": "hard",
+      "category": "Illegal Eviction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["illegal eviction", "compensations", "loss"],
+      "references": ["Case law"]
+    },
+    {
+      "id": "AMEN_X1_Q17",
+      "type": "single-choice",
+      "question": "Dr Ramdan wishes to have a clause in his lease declared null by the court. According to the code of civil procedure, what action must he bring?",
+      "media": [],
+      "options": [
+        "An action for nullity",
+        "A summary procedure",
+        "A declaratory action",
+        "An ordinary court action"
+      ],
+      "correct": 0,
+      "explanation": "The action for nullity is the appropriate action to have a clause declared null.",
+      "difficulty": "hard",
+      "category": "Nullity of Clauses",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["nullity", "action", "clause"],
+      "references": ["CPC", "Law 49-16"]
+    },
+    {
+      "id": "AMEN_X1_Q18",
+      "type": "single-choice",
+      "question": "Dr Kamali's landlord brought an action for validation of the notice. According to Article 27, can the tenant request compensation before the judgment?",
+      "media": [],
+      "options": [
+        "Yes, during the validation action",
+        "No, he must wait for the final judgment",
+        "Yes, only after eviction",
+        "No, compensation must be requested on appeal"
+      ],
+      "correct": 0,
+      "explanation": "Art. 27, para. 2: the tenant may file a request for compensation during the action for validation of the notice.",
+      "difficulty": "hard",
+      "category": "Validation Action",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["notice validation", "compensation", "procedure"],
+      "references": ["Law 49-16 Art.27"]
+    },
+    {
+      "id": "AMEN_X1_Q19",
+      "type": "single-choice",
+      "question": "Dr Ramdan and the landlord reached an amicable agreement. According to Law 49-16, is this agreement valid?",
+      "media": [],
+      "options": [
+        "Yes, subject to public policy provisions",
+        "No, only the court can validate an agreement",
+        "Yes, only with the agreement of a lawyer",
+        "No, settlement is prohibited in lease matters"
+      ],
+      "correct": 0,
+      "explanation": "Amicable agreements are valid provided they respect the public policy provisions of Law 49-16.",
+      "difficulty": "hard",
+      "category": "Settlement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["amicable agreement", "settlement", "public policy"],
+      "references": ["Law 49-16"]
+    },
+    {
+      "id": "AMEN_X1_Q20",
+      "type": "single-choice",
+      "question": "Dr Kamali won his appeal. According to civil procedure, is an appeal to the Court of Cassation possible in commercial lease matters?",
+      "media": [],
+      "options": [
+        "Yes, but only for questions of law",
+        "No, the appeal is the final instance",
+        "Yes, cassation is always possible",
+        "No, the appeal decision is final"
+      ],
+      "correct": 0,
+      "explanation": "Appeal to the Court of Cassation is possible for questions of law, even in commercial lease matters.",
+      "difficulty": "hard",
+      "category": "Avenues of Appeal",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["cassation", "appeal", "law"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q21",
+      "type": "single-choice",
+      "question": "Dr Ramdan was summoned to appear. According to civil procedure, what is the appearance period in commercial lease matters?",
+      "media": [],
+      "options": [
+        "8 days",
+        "15 days",
+        "1 month",
+        "2 months"
+      ],
+      "correct": 1,
+      "explanation": "The appearance period is generally 15 days in commercial lease matters.",
+      "difficulty": "hard",
+      "category": "Procedure",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["appearance", "deadline", "procedure"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q22",
+      "type": "single-choice",
+      "question": "Dr Kamali's landlord served a payment order. According to Article 33, what is a payment order?",
+      "media": [],
+      "options": [
+        "A simple informal request",
+        "A bailiff's act putting the tenant on notice to pay",
+        "A judicial procedure",
+        "A simple registered letter"
+      ],
+      "correct": 1,
+      "explanation": "Art. 33: the payment order is a bailiff's act putting the tenant on notice to pay.",
+      "difficulty": "hard",
+      "category": "Procedure",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["payment order", "payment", "bailiff"],
+      "references": ["Law 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_X1_Q23",
+      "type": "single-choice",
+      "question": "Dr Ramdan wishes to challenge a payment order. According to civil procedure, what recourse is possible?",
+      "media": [],
+      "options": [
+        "Seize the court to challenge the validity of the order",
+        "Ignore the order",
+        "Pay to avoid a conflict",
+        "Request a stay of payment"
+      ],
+      "correct": 0,
+      "explanation": "The tenant may seize the court to challenge the validity of the payment order.",
+      "difficulty": "hard",
+      "category": "Challenge",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["payment order", "challenge", "validity"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q24",
+      "type": "single-choice",
+      "question": "Dr Kamali obtained a court-appointed expert appraisal. According to the code of civil procedure, what is the purpose of the expert appraisal?",
+      "media": [],
+      "options": [
+        "To enlighten the court on technical questions",
+        "To speed up the procedure",
+        "To allow an amicable agreement",
+        "All of these answers are correct"
+      ],
+      "correct": 3,
+      "explanation": "The expert appraisal enlightens the court on technical questions and may facilitate an amicable agreement.",
+      "difficulty": "hard",
+      "category": "Expert Appraisal",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["expert appraisal", "procedure", "technical"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q25",
+      "type": "single-choice",
+      "question": "Dr Ramdan finally obtained satisfaction in court. According to Article 28, what compensation can he expect?",
+      "media": [],
+      "options": [
+        "The full amount of eviction compensation",
+        "Damages for the loss suffered",
+        "Reimbursement of his legal costs",
+        "All of these compensations are possible"
+      ],
+      "correct": 3,
+      "explanation": "Art. 28: the tenant may obtain eviction compensation, damages, and reimbursement of legal costs.",
+      "difficulty": "hard",
+      "category": "Compensation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["compensation", "damages", "costs"],
+      "references": ["Law 49-16 Art.28"]
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "pedodontie_debutant2_001",
+    "title": "Odontología Pediátrica - Principiante 2",
+    "specialty": "PEDO",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PEDO_D2_Q01",
+      "type": "single-choice",
+      "question": "📞 Sami llama a Mina con urgencia: «¡Tengo un niño de 8 años con un diente permanente roto! ¿Qué hago?» Mina responde con calma: «Primero evalúa el estadio de desarrollo radicular.» ¿Por qué es importante?",
+      "media": [],
+      "options": [
+        "El estadio de desarrollo determina el pronóstico y la técnica de tratamiento",
+        "No tiene importancia",
+        "Todos los dientes permanentes son iguales",
+        "Solo importa la edad del niño"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Un diente con raíz inmadura (ápice abierto) tiene un potencial de revascularización mucho mejor que un diente maduro.» 🦅 Sami: «No lo sabía, ¡gracias, Mina!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q02",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina atienden a un niño de 10 años con un diente temporal que no se cae. Sami dice: «Es un diente temporal persistente, ¡lo extraemos!» Mina responde: «¿Y el diente permanente?» ¿Qué hay que comprobar?",
+      "media": [],
+      "options": [
+        "La presencia del diente permanente en la radiografía",
+        "El color del diente",
+        "El tamaño del diente",
+        "La edad del niño"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Primero hay que comprobar si existe el diente permanente y si está en la posición correcta.» 🐆 Mina: «¡Sami, te has vuelto prudente!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q03",
+      "type": "single-choice",
+      "question": "🗣️ Sami, en consulta, dice al padre: «Su hijo tiene caries, hay que hacer un raspado.» Mina interviene: «¿Raspado en un niño de 5 años?» ¿Cuál es el tratamiento correcto?",
+      "media": [],
+      "options": [
+        "Restauración de la caries con material adaptado a la edad",
+        "Raspado completo",
+        "Extracción",
+        "No hacer nada, ya pasará"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El tratamiento de la caries en niños es la restauración, no el raspado.» 🦅 Sami: «Vale, haré la restauración... ¡pero rápido!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q04",
+      "type": "single-choice",
+      "question": "🎯 Sami, examinando a un niño de 6 años, dice: «Tiene mordida abierta, es genética.» Mina responde: «No necesariamente, ¡mira su succión del pulgar!» ¿Cuál es la relación entre la succión y la mordida abierta?",
+      "media": [],
+      "options": [
+        "La succión prolongada puede crear una mordida abierta anterior",
+        "La succión no tiene ningún efecto",
+        "La succión corrige las mordidas abiertas",
+        "La succión solo afecta a los dientes temporales"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La succión del pulgar ejerce presión sobre los incisivos, creando una mordida abierta.» 🐆 Mina: «¡Sami, tienes razón!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q05",
+      "type": "single-choice",
+      "question": "📝 Mina lee la historia clínica y dice: «El niño tiene amelogénesis imperfecta.» Sami pregunta: «¿Cómo se trata?» ¿Cuáles son las opciones terapéuticas?",
+      "media": [],
+      "options": [
+        "Coronas pediátricas, restauración estética, protección dental",
+        "Extracción de todos los dientes",
+        "Simple raspado",
+        "Implantes inmediatos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El tratamiento tiene como objetivo proteger los dientes frágiles y restaurar la estética.» 🦅 Sami: «¡Entonces le pondré coronas!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q06",
+      "type": "single-choice",
+      "question": "🤝 Sami y Mina atienden a un niño de 9 años con un diente retenido. Sami dice: «¡Operemos de inmediato!» Mina responde: «¿Y la ortodoncia?» ¿Cuál es la secuencia recomendada?",
+      "media": [],
+      "options": [
+        "Primero crear espacio ortodóncico, luego tracción del diente",
+        "Cirugía inmediata",
+        "Extracción del diente",
+        "No hacer nada, erupcionará solo"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La ortodoncia crea el espacio necesario antes de la tracción quirúrgica.» 🦅 Sami: «Vale, primero haremos ortodoncia...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q07",
+      "type": "single-choice",
+      "question": "📞 Mina llama a Sami: «¡Tengo un niño de 7 años con un diente temporal que sangra tras una caída!» Sami responde: «¡Extraigamos!» Mina dice: «¡No tan rápido!» ¿Qué hay que evaluar?",
+      "media": [],
+      "options": [
+        "El estado del diente permanente subyacente",
+        "El color del diente",
+        "El tamaño del diente",
+        "La edad del niño"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Hay que evaluar si el diente permanente está afectado o si el diente temporal se puede conservar.» 🦅 Sami: «Primero haré una radiografía.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q08",
+      "type": "single-choice",
+      "question": "🏥 Sami ve con urgencia a un niño con un diente temporal luxado. Dice: «¡Lo reimplantamos!» Mina responde: «No, ¡lo extraemos!» ¿Qué dice la literatura?",
+      "media": [],
+      "options": [
+        "Los dientes temporales luxados suelen extraerse para evitar complicaciones",
+        "Los dientes temporales siempre se reimplantan",
+        "Ambos enfoques son aceptables",
+        "Esperamos a que pase"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Los dientes temporales luxados tienen mal pronóstico y riesgo de anquilosis.» 🐆 Mina: «¡Sami, esta vez tienes razón!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q09",
+      "type": "single-choice",
+      "question": "🗣️ Sami, hablando con un padre, dice: «Su hijo de 4 años necesita tratamiento de ortodoncia.» Mina interviene: «¡No tan pronto!» ¿Qué edad se recomienda para la primera consulta de ortodoncia?",
+      "media": [],
+      "options": [
+        "Alrededor de los 7 años para una evaluación temprana",
+        "Desde el nacimiento",
+        "A los 4 años, como dice Sami",
+        "Solo en la adolescencia"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La edad de 7 años se recomienda para la primera evaluación ortodóncica.» 🦅 Sami: «Vale, esperaremos hasta los 7 años...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q10",
+      "type": "single-choice",
+      "question": "📝 Mina, analizando una radiografía, dice: «Hay un diente supernumerario.» Sami responde: «Lo dejamos, ¡no molesta!» ¿Qué riesgo conlleva un diente supernumerario?",
+      "media": [],
+      "options": [
+        "Puede bloquear la erupción de los dientes permanentes",
+        "No causa ningún problema",
+        "Desaparece solo",
+        "Mejora la mordida"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los dientes supernumerarios pueden causar retraso en la erupción y apiñamiento.» 🦅 Sami: «Vale, entonces lo extraemos...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q11",
+      "type": "single-choice",
+      "question": "🎯 Sami, examinando a un niño de 8 años, dice: «Tiene caries interproximal.» Mina pregunta: «¿Cómo lo sabes?» Sami responde: «¡Lo veo!» ¿Qué falta en su diagnóstico?",
+      "media": [],
+      "options": [
+        "Una radiografía para confirmarlo",
+        "Una inspección visual más cuidadosa",
+        "Una percusión",
+        "Una palpación"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Las caries interproximales a menudo no son visibles clínicamente, es necesaria una radiografía.» 🐆 Mina: «¡Sami, estás progresando!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q12",
+      "type": "single-choice",
+      "question": "📞 Mina llama a Sami: «¡Tengo un niño de 6 años con caries profunda en un diente temporal!» Sami responde: «¡Pulpotomía!» Mina dice: «¿Y si la caries es demasiado profunda?» ¿Qué es una pulpectomía?",
+      "media": [],
+      "options": [
+        "La eliminación completa de la pulpa para tratar una infección profunda",
+        "La eliminación parcial de la pulpa",
+        "Una restauración simple",
+        "La extracción del diente"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La pulpectomía está indicada cuando la pulpotomía ya no es suficiente.» 🦅 Sami: «¡Recuerdo la diferencia!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q13",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina atienden a un niño de 10 años con un diente permanente roto. Sami dice: «¡Lo extraemos!» Mina responde: «¡Se puede restaurar!» ¿Qué dice la literatura?",
+      "media": [],
+      "options": [
+        "Las fracturas coronales a menudo se pueden restaurar",
+        "Todas las fracturas requieren extracción",
+        "Solo se tratan las fracturas profundas",
+        "Siempre hay que extraer"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Las fracturas coronales no complicadas se pueden restaurar con materiales adhesivos.» 🐆 Mina: «¡Sami, estás realmente al día!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q14",
+      "type": "single-choice",
+      "question": "🗣️ Sami, hablando con un padre, dice: «Su hijo de 3 años tiene caries, ¡es culpa suya!» Mina interviene: «¡Eso no es constructivo!» ¿Cuál es el enfoque correcto?",
+      "media": [],
+      "options": [
+        "Explicar las causas y las soluciones sin culpar",
+        "Culpar a los padres",
+        "Ignorar el problema",
+        "Recetar antibióticos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Hay que educar y acompañar a los padres, no juzgarlos.» 🦅 Sami: «Tienes razón, cambiaré mi enfoque.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q15",
+      "type": "single-choice",
+      "question": "📝 Mina, analizando un caso, dice: «El niño tiene hipoplasia del esmalte.» Sami pregunta: «¿Qué es eso?» ¿Qué es la hipoplasia del esmalte?",
+      "media": [],
+      "options": [
+        "Un defecto cuantitativo del esmalte, a menudo debido a una alteración del desarrollo",
+        "Una caries severa",
+        "Un diente demasiado grande",
+        "Una infección bacteriana"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La hipoplasia es un defecto de formación del esmalte, a menudo relacionado con una deficiencia o infección.» 🦅 Sami: «¡No lo sabía!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q16",
+      "type": "single-choice",
+      "question": "🎯 Sami, examinando a un niño de 5 años, dice: «Tiene una maloclusión de clase III.» Mina responde: «¡Cuidado, el crecimiento puede cambiarlo todo!» ¿Qué cambia el crecimiento?",
+      "media": [],
+      "options": [
+        "El crecimiento mandibular puede empeorar o corregir la clase III",
+        "El crecimiento no cambia nada",
+        "El crecimiento solo afecta a los dientes",
+        "El crecimiento se completa a los 5 años"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El crecimiento mandibular es importante en la evolución de la clase III.» 🐆 Mina: «¡Sami, lo has entendido todo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q17",
+      "type": "single-choice",
+      "question": "📞 Mina llama a Sami: «¡Tengo un niño de 8 años con un diente temporal persistente y falta el diente permanente!» Sami responde: «¡Dejamos el diente temporal!» ¿Cuál es la estrategia?",
+      "media": [],
+      "options": [
+        "Conservar el diente temporal como mantenedor de espacio natural",
+        "Extraer el diente temporal",
+        "Colocar un implante",
+        "Hacer una prótesis"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El diente temporal puede servir como mantenedor de espacio natural si falta el diente permanente.» 🦅 Sami: «No había pensado en eso, ¡gracias, Mina!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q18",
+      "type": "single-choice",
+      "question": "🏥 Sami ve con urgencia a un niño de 9 años con un diente permanente avulsionado. Dice: «¡Lo reimplantamos!» Mina pregunta: «¿En qué medio?» ¿Cuál es el medio de conservación ideal?",
+      "media": [],
+      "options": [
+        "Leche fría, suero fisiológico o saliva",
+        "Agua del grifo",
+        "En un pañuelo seco",
+        "En alcohol"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La leche fría es ideal para conservar las células del ligamento periodontal.» 🐆 Mina: «¡Sami, estás salvando dientes!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q19",
+      "type": "single-choice",
+      "question": "🗣️ Sami, hablando con un padre, dice: «Su hijo debe evitar todos los azúcares.» Mina interviene: «Hay que controlar más bien la frecuencia.» ¿Cuál es la recomendación?",
+      "media": [],
+      "options": [
+        "Limitar la frecuencia de consumo de azúcar (máx. 4-5 veces al día)",
+        "Excluir todos los azúcares",
+        "Permitir azúcar solo por la noche",
+        "Los azúcares no importan"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La frecuencia de consumo de azúcar es más importante que la cantidad para el riesgo de caries.» 🦅 Sami: «Adaptaré mis consejos.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q20",
+      "type": "single-choice",
+      "question": "📝 Mina, analizando un caso, dice: «El niño tiene agenesia parcial.» Sami pregunta: «¿Qué es eso?» ¿Qué es la agenesia?",
+      "media": [],
+      "options": [
+        "La ausencia congénita de uno o varios dientes",
+        "Un diente adicional",
+        "Un diente temporal",
+        "Una infección"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La agenesia es una agenesia dental, a menudo de origen genético.» 🦅 Sami: «¡No conocía este término!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q21",
+      "type": "single-choice",
+      "question": "🎯 Sami, examinando a un niño de 7 años, dice: «Necesita flúor.» Mina pregunta: «¿En qué forma?» ¿Qué formas de flúor se recomiendan?",
+      "media": [],
+      "options": [
+        "Pasta dental fluorada, flúor tópico, suplementos en caso de deficiencia",
+        "Solo en comprimidos",
+        "Solo en colutorios",
+        "Solo en gel"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Las formas varían según la edad y el riesgo de caries.» 🐆 Mina: «¡Sami, estás realmente completo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q22",
+      "type": "single-choice",
+      "question": "📞 Mina llama a Sami: «¡Tengo un niño de 4 años con caries severa de la primera infancia!» Sami responde: «¡Extraemos todos los dientes temporales!» Mina dice: «¿Y la función masticatoria?» ¿Qué se propone?",
+      "media": [],
+      "options": [
+        "Coronas pediátricas para conservar la función",
+        "Extracción completa",
+        "No hacer nada, comerá blando",
+        "Prótesis removibles"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las coronas pediátricas conservan la función y la estética.» 🦅 Sami: «Entonces le pondré coronas.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q23",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina atienden a un niño de 8 años con un diente temporal que no quiere caerse. Sami dice: «¡Es un diente temporal persistente!» Mina responde: «¿Y si es anquilosis?» ¿Qué es la anquilosis?",
+      "media": [],
+      "options": [
+        "La fusión del diente con el hueso alveolar",
+        "Un diente demasiado móvil",
+        "Un diente cariado",
+        "Un diente ausente"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La anquilosis es la fusión del diente con el hueso, que bloquea la erupción.» 🐆 Mina: «¡Sami, conoces bien las patologías!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q24",
+      "type": "single-choice",
+      "question": "🗣️ Sami, hablando con un padre, dice: «Su hijo debe dejar el chupete.» Mina interviene: «Hay que hacerlo de forma gradual.» ¿Cuál es la recomendación?",
+      "media": [],
+      "options": [
+        "Abandono gradual antes de los 3-4 años",
+        "Abandono brusco a los 2 años",
+        "Mantener el chupete hasta los 6 años",
+        "El chupete no importa"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El abandono gradual es más eficaz y menos traumático.» 🦅 Sami: «Propondré un plan de abandono gradual.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q25",
+      "type": "single-choice",
+      "question": "📝 Mina, analizando un caso complejo, dice: «El niño tiene un diente temporal con reabsorción interna.» Sami pregunta: «¿Qué es eso?» ¿Qué es la reabsorción interna?",
+      "media": [],
+      "options": [
+        "La destrucción del diente desde el interior hacia el exterior",
+        "Una caries externa",
+        "Una fractura",
+        "Una infección bacteriana"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La reabsorción interna es una patología pulpar rara.» 🦅 Sami: «Estudiaré este tema.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q26",
+      "type": "single-choice",
+      "question": "🤝 Sami y Mina discuten sobre el futuro de la odontología pediátrica. Sami dice: «¡Los padres gestionarán todo a través de aplicaciones!» Mina responde: «El vínculo humano sigue siendo importante.» ¿Cuál es el futuro de la atención odontológica pediátrica?",
+      "media": [],
+      "options": [
+        "La tecnología ayuda, pero no sustituye la relación médico-niño-padre",
+        "Las aplicaciones lo reemplazarán todo",
+        "Los padres ya no necesitan al odontólogo",
+        "La teleconsulta es la única solución"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La tecnología es una herramienta, pero el contacto humano en odontología pediátrica es insustituible.» 🦅 Sami: «Estoy de acuerdo, ¡nuestros puestos de trabajo están a salvo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

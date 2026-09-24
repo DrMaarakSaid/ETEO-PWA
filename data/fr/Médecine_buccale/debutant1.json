@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "Médecine_buccale_debutant1_001",
+    "title": "Médecine_buccale - Débutant 1",
+    "specialty": "MÉDE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "MÉDE_D1_Q01",
+      "type": "single-choice",
+      "question": "Sami reçoit un patient avec une lésion blanche sur la joue. Il dit : 'C'est une leucoplasie, il faut biopsier !' Mina, plus prudente, lui demande : 'Tu es sûr ?' Qu'est-ce qu'une leucoplasie ?",
+      "media": [],
+      "options": [
+        "Une plaque blanche de la muqueuse buccale qui ne peut être attribuée à aucune autre maladie",
+        "Une infection fongique de la muqueuse buccale",
+        "Une lésion rouge inflammatoire de la muqueuse",
+        "Une réaction allergique aux dentifrices"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La leucoplasie est une lésion blanche potentiellement maligne, d'où l'importance de la biopsie.' Sami, un peu vexé, répond : 'Je le savais !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q02",
+      "type": "single-choice",
+      "question": "Mina examine une patiente avec des aphtes récurrents. Sami lui demande : 'C'est quoi la différence entre un aphte et un herpès ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Les aphtes sont des ulcérations douloureuses, l'herpès est une vésicule sur la muqueuse kératinisée",
+        "Les aphtes sont infectieux, l'herpès ne l'est pas",
+        "Les aphtes sont des lésions rouges, l'herpès est blanc",
+        "Les aphtes guérissent en 24h, l'herpès en 7 jours"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les aphtes sont des ulcérations douloureuses, l'herpès est une vésicule.' Sami, prenant note, comprend la différence.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q03",
+      "type": "single-choice",
+      "question": "Sami, en voyant une lésion rouge, demande à Mina : 'C'est une érythroplasie ?' Mina répond : 'Oui, et elle est plus dangereuse que la leucoplasie.' Pourquoi ?",
+      "media": [],
+      "options": [
+        "L'érythroplasie a un plus grand potentiel de transformation maligne",
+        "L'érythroplasie est plus douloureuse",
+        "L'érythroplasie est contagieuse",
+        "L'érythroplasie touche les jeunes patients"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'L'érythroplasie est une lésion rouge à haut risque de malignité.' Sami, un peu inquiet, demande comment la prendre en charge.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q04",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient, dit à Sami : 'Je pense à un lichen plan.' Sami demande : 'Qu'est-ce que le lichen plan ?'",
+      "media": [],
+      "options": [
+        "Une maladie inflammatoire chronique de la muqueuse buccale",
+        "Une infection virale",
+        "Une réaction allergique",
+        "Un cancer de la muqueuse"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le lichen plan est une maladie auto-immune chronique.' Sami, curieux, demande comment le diagnostiquer.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q05",
+      "type": "single-choice",
+      "question": "Sami, en voyant une lésion blanche réticulée, demande à Mina : 'C'est du lichen plan ?' Mina répond : 'Oui, c'est la forme réticulée.' Sami demande : 'Quelle est la particularité de cette forme ?'",
+      "media": [],
+      "options": [
+        "Elle est souvent asymptomatique et ne nécessite pas de traitement",
+        "Elle est toujours cancéreuse",
+        "Elle est très douloureuse",
+        "Elle est contagieuse"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La forme réticulée est la plus fréquente et souvent asymptomatique.' Sami, rassuré, rassure le patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q06",
+      "type": "single-choice",
+      "question": "Mina, en examinant une patiente, dit à Sami : 'Elle a une candidose buccale.' Sami demande : 'Qu'est-ce qui la favorise ?'",
+      "media": [],
+      "options": [
+        "Antibiothérapie, corticothérapie, immunosuppression, diabète",
+        "La consommation de fruits acides",
+        "Le stress psychologique",
+        "Les bains de bouche à l'eau salée"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La candidose est favorisée par les facteurs immunosuppresseurs.' Sami, prenant note, demande le traitement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q07",
+      "type": "single-choice",
+      "question": "Sami demande à Mina comment traiter une candidose buccale. Mina répond :",
+      "media": [],
+      "options": [
+        "Antimycosiques locaux (nystatine, miconazole) ou systémiques si sévère",
+        "Antibiotiques à large spectre",
+        "Corticostéroïdes locaux",
+        "Antiviraux"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le traitement de première ligne est local, parfois systémique.' Sami, attentif, applique le traitement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q08",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une sécheresse buccale, dit à Sami : 'Il a un syndrome de Sjögren.' Sami demande : 'Qu'est-ce que c'est ?'",
+      "media": [],
+      "options": [
+        "Une maladie auto-immune affectant les glandes salivaires et lacrymales",
+        "Une infection bactérienne des glandes salivaires",
+        "Une allergie alimentaire",
+        "Une carence en vitamines"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le Sjögren est une maladie auto-immune.' Sami, intéressé, demande comment le diagnostiquer.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q09",
+      "type": "single-choice",
+      "question": "Sami, en voyant une patiente avec une glossite, demande à Mina : 'Qu'est-ce qu'une glossite ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une inflammation de la langue",
+        "Une infection de la langue",
+        "Un cancer de la langue",
+        "Une langue géographique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La glossite est une inflammation de la langue.' Sami, curieux, demande les causes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q10",
+      "type": "single-choice",
+      "question": "Mina, en examinant une patiente, dit à Sami : 'Elle a une langue géographique.' Sami demande : 'Qu'est-ce que c'est ?'",
+      "media": [],
+      "options": [
+        "Une affection bénigne de la langue avec des zones dépapillées",
+        "Un cancer de la langue",
+        "Une infection fongique",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'C'est une affection bénigne.' Sami, rassuré, rassure la patiente.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q11",
+      "type": "single-choice",
+      "question": "Sami, en voyant un patient avec une stomatite, demande à Mina : 'Qu'est-ce qu'une stomatite ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une inflammation de la muqueuse buccale",
+        "Une infection de la gorge",
+        "Un cancer de la bouche",
+        "Une réaction allergique au dentifrice"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La stomatite est une inflammation de la muqueuse buccale.' Sami, prenant note, demande les causes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q12",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une stomatite aphteuse, dit à Sami : 'C'est une stomatite aphteuse récurrente.' Sami demande : 'Comment la traite-t-on ?'",
+      "media": [],
+      "options": [
+        "Traitement symptomatique - corticostéroïdes locaux, antalgiques",
+        "Antibiotiques",
+        "Antiviraux",
+        "Chirurgie"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le traitement est symptomatique.' Sami, attentif, suit ses conseils.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q13",
+      "type": "single-choice",
+      "question": "Sami, en voyant une lésion pigmentée, demande à Mina : 'C'est un mélanome ?' Mina répond : 'Pas forcément, ça peut être une pigmentation bénigne.' Quelles sont les causes de pigmentation buccale ?",
+      "media": [],
+      "options": [
+        "Mélanocytaire, médicamenteuse, endocrinienne, tabagique",
+        "Uniquement cancéreuse",
+        "Uniquement infectieuse",
+        "Uniquement traumatique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les pigmentations ont de nombreuses causes.' Sami, prenant note, est plus prudent.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q14",
+      "type": "single-choice",
+      "question": "Mina, en examinant une patiente, dit à Sami : 'Elle a un pemphigus vulgaire.' Sami demande : 'Qu'est-ce que c'est ?'",
+      "media": [],
+      "options": [
+        "Une maladie bulleuse auto-immune grave",
+        "Une infection bactérienne",
+        "Une allergie alimentaire",
+        "Un cancer de la peau"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le pemphigus est une maladie auto-immune grave.' Sami, inquiet, demande comment la prendre en charge.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q15",
+      "type": "single-choice",
+      "question": "Sami demande à Mina comment différencier le pemphigus de la pemphigoïde. Mina répond :",
+      "media": [],
+      "options": [
+        "Le pemphigus a des bulles intra-épithéliales, la pemphigoïde est sous-épithéliale",
+        "Le pemphigus touche la peau uniquement",
+        "La pemphigoïde est plus grave",
+        "Le pemphigus est viral"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La différence est histologique.' Sami, prenant note, comprend la distinction.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q16",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une douleur orofaciale, dit à Sami : 'Ça peut être une névralgie du trijumeau.' Sami demande : 'Comment la reconnaître ?'",
+      "media": [],
+      "options": [
+        "Douleur brève, intense, paroxystique, déclenchée par un stimulus",
+        "Douleur constante et sourde",
+        "Douleur pulsatile",
+        "Douleur associée à une fièvre"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La névralgie du trijumeau est caractéristique.' Sami, attentif, apprend à la reconnaître.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q17",
+      "type": "single-choice",
+      "question": "Sami, en voyant une patiente avec une brûlure de la langue, demande à Mina : 'C'est quoi le syndrome de la bouche brûlante ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une sensation de brûlure sans lésion clinique, souvent chez la femme ménopausée",
+        "Une infection de la langue",
+        "Un cancer de la langue",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'C'est un syndrome complexe.' Sami, compatissant, demande comment le traiter.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q18",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une chéilite, dit à Sami : 'C'est une chéilite.' Sami demande : 'Qu'est-ce qui la provoque ?'",
+      "media": [],
+      "options": [
+        "Froid, soleil, allergie, carence en vitamines B",
+        "Uniquement une infection",
+        "Uniquement un cancer",
+        "Uniquement une allergie"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les causes sont multiples.' Sami, prenant note, demande le traitement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q19",
+      "type": "single-choice",
+      "question": "Sami, en voyant une langue noire, demande à Mina : 'Qu'est-ce que c'est ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une hyperkératose des papilles linguales, souvent bénigne",
+        "Un cancer de la langue",
+        "Une infection fongique",
+        "Une réaction à un médicament"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'C'est une affection bénigne.' Sami, rassuré, explique au patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q20",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une lésion suspecte, dit à Sami : 'Il faut faire une biopsie.' Sami demande : 'Quand faut-il biopsier une lésion buccale ?'",
+      "media": [],
+      "options": [
+        "Lésion persistante > 3 semaines, aspect suspect, induration, ulcération",
+        "Toutes les lésions",
+        "Uniquement les lésions douloureuses",
+        "Uniquement les lésions blanches"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les critères de biopsie sont stricts.' Sami, appliquant, est plus rigoureux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q21",
+      "type": "single-choice",
+      "question": "Sami demande à Mina quels sont les facteurs de risque du cancer de la cavité buccale. Mina répond :",
+      "media": [],
+      "options": [
+        "Tabac, alcool, HPV, exposition solaire, âge",
+        "Uniquement le tabac",
+        "Uniquement l'alcool",
+        "Uniquement l'âge"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les facteurs de risque sont nombreux.' Sami, prenant note, informe ses patients.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q22",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une lésion blanche, dit à Sami : 'C'est une leucoplasie verruqueuse.' Sami demande : 'Quelle est sa particularité ?'",
+      "media": [],
+      "options": [
+        "Un risque accru de transformation maligne",
+        "Elle est toujours bénigne",
+        "Elle est contagieuse",
+        "Elle est réversible"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La leucoplasie verruqueuse a un risque élevé.' Sami, inquiet, demande une biopsie.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q23",
+      "type": "single-choice",
+      "question": "Sami, en voyant un patient avec une gingivite desquamative, demande à Mina : 'Qu'est-ce que c'est ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une desquamation de la gencive, souvent associée au lichen plan ou au pemphigoïde",
+        "Une infection bactérienne",
+        "Un cancer de la gencive",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'C'est souvent le signe d'une maladie auto-immune.' Sami, prenant note, demande un bilan.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q24",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une stomatite nicotinique, dit à Sami : 'C'est une stomatite nicotinique.' Sami demande : 'Qu'est-ce que c'est ?'",
+      "media": [],
+      "options": [
+        "Une kératose du palais due au tabac, souvent bénigne",
+        "Un cancer du palais",
+        "Une infection fongique",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'C'est une lésion bénigne liée au tabac.' Sami, conseillant, encourage le patient à arrêter de fumer.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D1_Q25",
+      "type": "single-choice",
+      "question": "Sami demande à Mina : 'Quels sont les signes d'alerte en médecine buccale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Lésion persistante, induration, saignement, ulcération, douleur",
+        "Uniquement la douleur",
+        "Uniquement l'ulcération",
+        "Uniquement le saignement"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Ces signes doivent alerter.' Sami, vigilant, les recherche systématiquement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

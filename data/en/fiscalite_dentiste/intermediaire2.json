@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "fiscalite_dentiste_intermediaire2_001",
+    "title": "Dentist Taxation - Intermediate 2",
+    "specialty": "FISC",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "FISC_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr. Marwani wishes to buy a professional premises for his practice. Dr. Soulami advises him to study the tax implications. According to the GTC, is the purchase of professional premises deductible from the taxable result?",
+      "media": [],
+      "options": [
+        "Yes, fully deductible in the year of purchase",
+        "No, but the depreciation of the building is deductible",
+        "Yes, but only for LLCs",
+        "No, real estate purchase is never deductible"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Soulami explains: 'The purchase of professional premises is not deductible, but the depreciation of the building and interest on loans are deductible.' Dr. Marwani: 'I will optimize the depreciation.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr. Soulami has an LLC with a profit of 1,500,000 DH. Dr. Marwani helps him calculate the CIT. According to the 2026 scale, what is the amount of CIT due?",
+      "media": [],
+      "options": [
+        "300,000 DH",
+        "420,000 DH",
+        "525,000 DH",
+        "600,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Marwani explains: 'CIT is calculated by brackets: 300,000 × 10% = 30,000 DH, 700,000 × 20% = 140,000 DH, 500,000 × 35% = 175,000 DH. Total = 345,000 DH.' Dr. Soulami: 'I will plan for this amount.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr. Marwani, a natural person, has a turnover of 1,000,000 DH and a profit of 200,000 DH. Dr. Soulami helps him calculate his PIT. What is the tax due if the CM is 60,000 DH?",
+      "media": [],
+      "options": [
+        "The PIT calculated on 200,000 DH",
+        "The CM of 60,000 DH",
+        "The higher amount between PIT and CM",
+        "No tax"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Soulami explains: 'The taxpayer pays the higher amount between PIT and CM. If CM is higher than PIT, they will pay the CM.' Dr. Marwani: 'I need to optimize my profit.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr. Soulami has an LLC with a profit of 400,000 DH. Dr. Marwani advises him to distribute dividends. According to the 2026 Finance Law, what is the withholding tax rate on dividends?",
+      "media": [],
+      "options": [
+        "5%",
+        "10%",
+        "11.25%",
+        "15%"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Marwani explains: 'The withholding tax on dividends in 2026 is 11.25%, gradually decreasing towards 10% in 2027.' Dr. Soulami: 'I will anticipate this distribution.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr. Marwani wishes to buy a vehicle for his practice. Dr. Soulami reminds him of the deductibility rules. According to the GTC, is a utility vehicle 100% deductible?",
+      "media": [],
+      "options": [
+        "No, the deduction is limited for all vehicles",
+        "Yes, utility vehicles are 100% deductible",
+        "Yes, but only for LLCs",
+        "No, personal vehicles are not deductible"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Soulami explains: 'Utility vehicles are 100% deductible. Passenger vehicles have a limited deduction.' Dr. Marwani: 'I will choose a utility vehicle.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr. Soulami, a natural person, has a taxable profit of 180,000 DH. Dr. Marwani reminds him of the deductions for family dependents. He has 2 dependent children. What is the amount of the reduction for family dependents?",
+      "media": [],
+      "options": [
+        "600 DH",
+        "1,200 DH",
+        "1,800 DH",
+        "3,600 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Marwani explains: 'The annual reduction is 600 DH per dependent, i.e. 1,200 DH for 2 children.' Dr. Soulami: 'I will apply this reduction.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr. Marwani has an LLC with a turnover of 3,000,000 DH. Dr. Soulami helps him calculate the CM. According to the 2026 Finance Law, what is the amount of CM due?",
+      "media": [],
+      "options": [
+        "3,000 DH",
+        "7,500 DH",
+        "12,000 DH",
+        "15,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Soulami explains: 'CM is 0.25% of turnover, i.e. 7,500 DH for 3,000,000 DH of turnover.' Dr. Marwani: 'This is a reasonable amount.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr. Soulami, a natural person, has a turnover of 450,000 DH. Dr. Marwani asks him to choose between RNS and RNR. According to the GTC, what is the main advantage of RNS?",
+      "media": [],
+      "options": [
+        "Deduction of all actual expenses",
+        "Simplified accounting",
+        "Lower tax rate",
+        "CM exemption"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Marwani explains: 'RNS offers simplified accounting, but expenses are flat-rate.' Dr. Soulami: 'I will compare the two regimes.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr. Marwani has an LLC with a profit of 150,000 DH. Dr. Soulami helps him calculate the CIT. According to the 2026 scale, what is the amount of CIT due?",
+      "media": [],
+      "options": [
+        "15,000 DH",
+        "20,000 DH",
+        "30,000 DH",
+        "45,000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Soulami explains: 'For the 0-300,000 DH bracket, the rate is 10%. The CIT due is 150,000 × 10% = 15,000 DH.' Dr. Marwani: 'This is very interesting.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr. Soulami, a natural person, has a tax deficit of 30,000 DH. Dr. Marwani reminds him of the carry-forward rules. Under RNS, is the deficit carry-forward allowed?",
+      "media": [],
+      "options": [
+        "Yes, against profits of the following 4 years",
+        "No, RNS does not allow deficit carry-forward",
+        "Yes, against profits of the following 2 years",
+        "Yes, only against the following year"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Marwani explains: 'Under RNS, the deficit can be carried forward against profits of the following 4 years.' Dr. Soulami: 'I will track this carry-forward.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr. Marwani wishes to hire an assistant. Dr. Soulami reminds him of social security contributions. According to Moroccan legislation, what are the mandatory social security contributions for the employer?",
+      "media": [],
+      "options": [
+        "CNSS only",
+        "CNSS and AMO",
+        "CNSS, AMO and CNOPS",
+        "CNSS, AMO and professional tax"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Soulami explains: 'The employer must contribute to CNSS (social insurance) and AMO (compulsory health insurance).' Dr. Marwani: 'I will plan for these charges.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr. Soulami has an LLC with a profit of 750,000 DH. Dr. Marwani helps him calculate the CIT. According to the 2026 scale, what is the amount of CIT due?",
+      "media": [],
+      "options": [
+        "75,000 DH",
+        "120,000 DH",
+        "150,000 DH",
+        "262,500 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Marwani explains: 'CIT is calculated by brackets: 300,000 × 10% = 30,000 DH, 450,000 × 20% = 90,000 DH. Total = 120,000 DH.' Dr. Soulami: 'Thank you for this calculation.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr. Marwani, a natural person, has a turnover of 2,000,000 DH. Dr. Soulami advises him to create an LLC. What is the main tax advantage of the LLC?",
+      "media": [],
+      "options": [
+        "Total tax exemption",
+        "CIT rate of 10% to 20% vs progressive PIT up to 37%",
+        "CM exemption",
+        "Deduction of all personal expenses"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Soulami explains: 'The LLC allows a CIT rate of 10% to 20% vs progressive PIT up to 37%, a significant saving.' Dr. Marwani: 'I will create my LLC.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr. Soulami has an LLC with a turnover of 500,000 DH. Dr. Marwani helps him calculate the CM. According to the 2026 Finance Law, what is the amount of CM due?",
+      "media": [],
+      "options": [
+        "1,250 DH",
+        "3,000 DH",
+        "5,000 DH",
+        "7,500 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Marwani explains: 'CM is 0.25% of turnover, i.e. 1,250 DH. The floor being 3,000 DH, this amount is due.' Dr. Soulami: 'I will plan for 3,000 DH.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr. Marwani wishes to invest in management software. Dr. Soulami reminds him of the depreciation rules. According to the GTC, is software depreciable?",
+      "media": [],
+      "options": [
+        "No, it is an immediate expense",
+        "Yes, over a period of 3 to 5 years",
+        "Yes, over a period of 10 years",
+        "No, software is non-depreciable intangible assets"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Soulami explains: 'Software is an intangible asset depreciable over 3 to 5 years depending on its useful life.' Dr. Marwani: 'I will depreciate this software.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr. Soulami, a natural person, has a taxable net income of 200,000 DH. Dr. Marwani helps him calculate his PIT. According to the 2026 scale, what is the amount of PIT due?",
+      "media": [],
+      "options": [
+        "20,000 DH",
+        "34,000 DH",
+        "44,000 DH",
+        "74,000 DH"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Marwani explains: 'The progressive scale applies: 0-30,000 DH = 0%, 30,001-50,000 DH = 10% (2,000 DH), 50,001-60,000 DH = 20% (2,000 DH), 60,001-180,000 DH = 34% (40,800 DH), 180,001-200,000 DH = 37% (7,400 DH). Total = 52,200 DH.' Dr. Soulami: 'This is a significant amount.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr. Marwani has an LLC with a profit of 300,000 DH. Dr. Soulami helps him calculate the CIT. According to the 2026 scale, what is the amount of CIT due?",
+      "media": [],
+      "options": [
+        "30,000 DH",
+        "60,000 DH",
+        "90,000 DH",
+        "105,000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Soulami explains: 'For the 0-300,000 DH bracket, the rate is 10%. The CIT due is 300,000 × 10% = 30,000 DH.' Dr. Marwani: 'This is very advantageous.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr. Soulami, a natural person, has a turnover of 700,000 DH. Dr. Marwani asks him to check his tax regime. Which regime is he automatically subject to?",
+      "media": [],
+      "options": [
+        "RNS",
+        "RNR",
+        "CPU",
+        "Flat-rate regime"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Marwani explains: 'RNR is the default regime for liberal professions whose annual turnover exceeds 500,000 DH.' Dr. Soulami: 'I am indeed under RNR.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr. Marwani wishes to buy dental consumables. Dr. Soulami reminds him of the deductibility rules. According to the GTC, are consumables deductible?",
+      "media": [],
+      "options": [
+        "Yes, fully deductible in the year of purchase",
+        "Yes, but depreciated over 3 years",
+        "Yes, but depreciated over 5 years",
+        "No, consumables are non-deductible expenses"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Soulami explains: 'Dental consumables are deductible expenses in the year of purchase.' Dr. Marwani: 'I will account for them properly.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr. Soulami has an LLC with a turnover of 1,000,000 DH and a taxable result of 0 DH. Dr. Marwani helps him calculate the CM. What is the amount of CM due?",
+      "media": [],
+      "options": [
+        "0 DH",
+        "2,500 DH",
+        "3,000 DH",
+        "5,000 DH"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Marwani explains: 'CM is 0.25% of turnover, i.e. 2,500 DH. The floor being 3,000 DH, this amount is due, even in case of zero result.' Dr. Soulami: 'I still have to pay 3,000 DH.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr. Marwani, a natural person, has a turnover of 800,000 DH and a profit of 400,000 DH. Dr. Soulami helps him calculate the CM. What is the amount of CM due?",
+      "media": [],
+      "options": [
+        "4,800 DH",
+        "6,000 DH",
+        "12,000 DH",
+        "48,000 DH"
+      ],
+      "correct": 3,
+      "explanation": "Dr. Soulami explains: 'CM for natural persons is 6% of turnover, i.e. 800,000 × 6% = 48,000 DH.' Dr. Marwani: 'This is a significant amount.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr. Soulami has an LLC with a profit of 1,000,000 DH. Dr. Marwani helps him calculate the CIT. According to the 2026 scale, what is the amount of CIT due?",
+      "media": [],
+      "options": [
+        "100,000 DH",
+        "200,000 DH",
+        "300,000 DH",
+        "350,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Marwani explains: 'CIT is calculated by brackets: 300,000 × 10% = 30,000 DH, 700,000 × 20% = 140,000 DH. Total = 170,000 DH.' Dr. Soulami: 'I will plan for this amount.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr. Marwani wishes to associate with a colleague. Dr. Soulami advises him to choose the legal form. According to the GTC, which legal form is most suitable for an association of dentists?",
+      "media": [],
+      "options": [
+        "LLC",
+        "SARLAU",
+        "SELARL",
+        "SCI"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Soulami explains: 'SELARL (Liberal Practice Limited Liability Company) is specifically designed for liberal professions.' Dr. Marwani: 'I will create a SELARL.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr. Soulami, a natural person, has a turnover of 1,500,000 DH. Dr. Marwani advises him to optimize his structure. What is the main disadvantage of being a natural person for a high turnover?",
+      "media": [],
+      "options": [
+        "No disadvantage",
+        "The PIT rate can reach 37%",
+        "The impossibility of hiring",
+        "The obligation to invoice VAT"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Marwani explains: 'The main disadvantage of being a natural person is the progressive PIT rate which can reach 37%, compared to 10% to 20% for CIT.' Dr. Soulami: 'I will create a company.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr. Marwani, after optimizing his tax management with Dr. Soulami, receives his congratulations. What is the next step for Dr. Marwani?",
+      "media": [],
+      "options": [
+        "Become an expert in tax management for dental practices",
+        "Retire",
+        "Change specialty",
+        "Forget good practices"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Soulami explains: 'Mastery of tax management is a valuable skill. Becoming an expert is the next step.' Dr. Marwani: 'I will train in advanced taxation.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

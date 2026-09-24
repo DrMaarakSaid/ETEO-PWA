@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "anesthesiologie_expert1_001",
+    "title": "Anestesiología - Experto 1",
+    "specialty": "ANES",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ANES_E1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe formar a jóvenes odontólogos en anestesia. ¿Qué primer consejo debe darles?",
+      "media": [],
+      "options": [
+        "La anestesia es un acto puramente mecánico y técnico",
+        "La anestesia es un acto médico que requiere conocimientos profundos",
+        "La anestesia es un acto simple sin riesgo",
+        "La anestesia es secundaria al tratamiento odontológico"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La anestesia es un acto médico completo. El conocimiento de las moléculas, las dosis y las técnicas es obligatorio.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q02",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe manejar una urgencia: un paciente presenta convulsiones tras la inyección de un anestésico. ¿Cuál es la primera acción?",
+      "media": [],
+      "options": [
+        "Administrar un anticonvulsivo",
+        "Asegurar la vía aérea y administrar oxígeno",
+        "Llamar a una ambulancia",
+        "Administrar un antídoto"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La prioridad es asegurar la vía aérea y la oxigenación del paciente.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe manejar una toxicidad sistémica grave (LAST). ¿Cuál es el tratamiento de referencia?",
+      "media": [],
+      "options": [
+        "Lidocaína intravenosa",
+        "Emulsión lipídica intravenosa",
+        "Adrenalina intravenosa",
+        "Bicarbonato sódico"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'La emulsión lipídica intravenosa es el tratamiento de referencia para el LAST grave.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q04",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe enseñar el manejo de urgencias anestesiológicas. ¿Cuál es el mensaje clave?",
+      "media": [],
+      "options": [
+        "Las urgencias anestesiológicas son raras",
+        "La preparación y el conocimiento de los protocolos son cruciales",
+        "La urgencia siempre la manejan los servicios de emergencia",
+        "Hay que esperar la llegada de los servicios de emergencia"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La preparación y el conocimiento de los protocolos son cruciales para un manejo eficaz de las urgencias.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe evaluar la eficacia de un joven odontólogo en anestesia. ¿Qué criterio es el más importante?",
+      "media": [],
+      "options": [
+        "La velocidad de la inyección",
+        "La técnica aséptica y el conocimiento de los protocolos",
+        "La elección de la aguja",
+        "La marca del anestésico"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'La técnica aséptica y el conocimiento de los protocolos son los criterios más importantes.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q06",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe crear un protocolo de anestesia para su consultorio. ¿Cuál es la base del protocolo?",
+      "media": [],
+      "options": [
+        "Las recomendaciones de los laboratorios",
+        "Las recomendaciones de las sociedades científicas",
+        "Los hábitos del consultorio",
+        "Las preferencias personales"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'Los protocolos deben basarse en las recomendaciones de las sociedades científicas para garantizar la seguridad.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe tratar a un paciente con alergia documentada a un anestésico amida. ¿Cuál es la táctica?",
+      "media": [],
+      "options": [
+        "Usar otra amida a dosis reducida",
+        "Usar un éster tras pruebas cutáneas",
+        "Usar una amida con otro conservante",
+        "Cancelar el tratamiento"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'En caso de alergia verdadera a las amidas, los ésteres pueden utilizarse tras pruebas cutáneas.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q08",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe enseñar farmacología de los anestésicos locales. ¿Cuál es el concepto fundamental?",
+      "media": [],
+      "options": [
+        "La forma ionizada es activa",
+        "La forma no ionizada penetra la membrana",
+        "La forma ionizada penetra la membrana",
+        "Todas las formas son equivalentes"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La forma no ionizada penetra la membrana nerviosa, mientras que la forma ionizada bloquea el canal.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe tratar a un paciente con metahemoglobinemia grave. ¿Cuál es el tratamiento?",
+      "media": [],
+      "options": [
+        "Solo oxigenoterapia",
+        "Azul de metileno intravenoso",
+        "Transfusión sanguínea",
+        "Terapia corticoesteroidea"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'El azul de metileno es el tratamiento de la metahemoglobinemia grave.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q10",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe enseñar a los jóvenes odontólogos el manejo de pacientes en tratamiento anticoagulante. ¿Qué regla deben recordar?",
+      "media": [],
+      "options": [
+        "Suspender sistemáticamente los anticoagulantes",
+        "Realizar infiltración local sin suspender el tratamiento",
+        "Usar solo bloqueos tronculares",
+        "No tratar a estos pacientes"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'Las infiltraciones locales son posibles sin suspender los anticoagulantes con una hemostasia meticulosa.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe tratar a un paciente con antecedentes de alergia a los sulfitos. ¿Qué precaución debe tomar?",
+      "media": [],
+      "options": [
+        "Usar un anestésico sin conservante",
+        "Usar un anestésico con epinefrina",
+        "Usar un anestésico con sulfitos",
+        "No usar anestésico"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Layla explica: 'La alergia a los sulfitos suele estar relacionada con los conservantes de los vasoconstrictores. Se recomienda el uso de soluciones sin conservantes.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q12",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe enseñar la técnica de Gow-Gates. ¿Cuál es la indicación principal de esta técnica?",
+      "media": [],
+      "options": [
+        "Pacientes con trismus grave",
+        "Pacientes con necesidad de anestesia profunda de un cuadrante",
+        "Pacientes con alergia a los anestésicos",
+        "Pacientes con anatomía particular"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La técnica de Gow-Gates está indicada para una anestesia profunda y completa de un cuadrante.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe tratar una parestesia persistente del nervio alveolar inferior. ¿Cuál es la táctica?",
+      "media": [],
+      "options": [
+        "Revisión quirúrgica inmediata",
+        "Observación clínica y rehabilitación sensorial",
+        "Antibioterapia de amplio espectro",
+        "Inyecciones locales de corticoesteroides"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'Las parestesias post-anestésicas suelen resolverse espontáneamente. Puede ofrecerse rehabilitación sensorial.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q14",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe crear un protocolo de manejo de urgencias anestesiológicas. ¿Qué elemento es clave en el protocolo?",
+      "media": [],
+      "options": [
+        "El número del servicio de emergencia",
+        "El reconocimiento de los signos de toxicidad",
+        "La lista de antídotos",
+        "Los contactos de los especialistas"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'El reconocimiento precoz de los signos de toxicidad es un elemento clave para una respuesta rápida.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe evaluar a un joven odontólogo en su técnica de inyección. ¿Qué punto crítico debe verificar?",
+      "media": [],
+      "options": [
+        "La velocidad de la inyección",
+        "La prueba de aspiración sistemática",
+        "La elección de la aguja",
+        "El volumen del cartucho"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'La prueba de aspiración es una etapa decisiva para evitar la inyección intravascular accidental.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q16",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe enseñar el manejo del paciente ansioso. ¿Qué enfoque es el mejor?",
+      "media": [],
+      "options": [
+        "Ignorar la ansiedad",
+        "Comunicar claramente y tranquilizar al paciente",
+        "Usar sistemáticamente sedantes",
+        "Realizar el procedimiento sin explicaciones"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La comunicación clara y la tranquilización son los primeros pasos en el manejo del paciente ansioso.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe tratar a un paciente con antecedentes de accidente cerebrovascular reciente. ¿Qué precaución debe tomar?",
+      "media": [],
+      "options": [
+        "Usar un anestésico sin vasoconstrictor",
+        "Usar articaína al 4%",
+        "Duplicar la dosis de lidocaína",
+        "Usar prilocaína al 4%"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Layla explica: 'La epinefrina está contraindicada en pacientes con accidente cerebrovascular reciente debido al riesgo de recidiva.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q18",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe crear un programa de formación continua en anestesia. ¿Cuál es el objetivo principal?",
+      "media": [],
+      "options": [
+        "Validar los conocimientos adquiridos",
+        "Mantener y mejorar las habilidades",
+        "Certificar a los profesionales",
+        "Evaluar los conocimientos"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La formación continua tiene como objetivo mantener y mejorar las habilidades en anestesia.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe tratar a un paciente con infección grave y anestesia ineficaz. ¿Cuál es la estrategia?",
+      "media": [],
+      "options": [
+        "Aumentar el volumen de inyección",
+        "Cambiar de técnica (intraligamentosa o intraósea)",
+        "Usar un anestésico sin vasoconstrictor",
+        "Cancelar el tratamiento"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'En caso de infección grave, las técnicas intraligamentosas o intraóseas pueden ser más eficaces.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q20",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe enseñar el manejo de las complicaciones anestesiológicas. ¿Cuál es el mensaje principal?",
+      "media": [],
+      "options": [
+        "Las complicaciones son raras",
+        "La prevención es la clave",
+        "Las complicaciones son inevitables",
+        "Hay que esperar a que se resuelvan"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La prevención de las complicaciones se basa en una buena técnica y conocimientos profundos.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe tratar a un paciente con feocromocitoma no diagnosticado. ¿Cuál es la principal complicación?",
+      "media": [],
+      "options": [
+        "Alergia al anestésico",
+        "Crisis hipertensiva grave",
+        "Reacción vagal",
+        "Toxicidad sistémica"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'La inyección de epinefrina en un paciente con feocromocitoma puede provocar una crisis hipertensiva mortal.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q22",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe crear un kit de urgencia para anestesia. ¿Qué elemento es obligatorio?",
+      "media": [],
+      "options": [
+        "Desfibrilador",
+        "Emulsión lipídica",
+        "Antibióticos",
+        "Corticoesteroides"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La emulsión lipídica es obligatoria para el tratamiento del LAST grave.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe evaluar la calidad de la anestesia en un paciente. ¿Qué signo es el más fiable?",
+      "media": [],
+      "options": [
+        "La sensibilidad al tacto",
+        "La ausencia de dolor a la estimulación",
+        "La palidez de la mucosa",
+        "La temperatura de la piel"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'La ausencia de dolor a la estimulación es el signo más fiable de una anestesia eficaz.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q24",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe tratar a un paciente con síncope vasovagal durante la inyección. ¿Cuál es la primera acción?",
+      "media": [],
+      "options": [
+        "Administrar un vasopresor",
+        "Colocar al paciente en posición de Trendelenburg",
+        "Administrar oxígeno",
+        "Llamar a una ambulancia"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'El síncope vasovagal se trata colocando al paciente en posición de Trendelenburg y tranquilizándolo.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_E1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Samir, después de formar a varios jóvenes odontólogos, recibe el reconocimiento de la Dra. Layla: 'Te has convertido en un verdadero experto en anestesia.' ¿Cuál es el siguiente paso?",
+      "media": [],
+      "options": [
+        "Escribir una guía de buenas prácticas",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar los fundamentos"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Layla explica: 'Escribir una guía de buenas prácticas permite transmitir conocimientos a gran escala.'",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

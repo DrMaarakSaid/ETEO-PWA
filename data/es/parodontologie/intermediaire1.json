@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "parodontologie_intermediaire1_001",
+    "title": "Periodoncia - Intermedio 1",
+    "specialty": "PARO",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PARO_I1_Q01",
+      "type": "single-choice",
+      "question": "Sami pregunta a Mina: «¿Cuál es la clave del diagnóstico periodontal?» Mina responde:",
+      "media": [],
+      "options": [
+        "Solo la inspección visual",
+        "El sondaje completo y las radiografías",
+        "Solo las radiografías",
+        "Solo el sondaje"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «El diagnóstico periodontal se basa en el sondaje y las radiografías.» 🦅 Sami: «Siempre haré ambas cosas.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q02",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo evaluar la pérdida ósea en la periodontitis?» Mina le responde:",
+      "media": [],
+      "options": [
+        "Mediante la simple inspección clínica",
+        "Con radiografías periapicales o panorámicas",
+        "Con tomografía",
+        "Con biopsia"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Las radiografías son necesarias para evaluar la pérdida ósea.» 🦅 Sami: «Siempre prescribiré radiografías.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q03",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es el sangrado al sondaje (BOP)?» Mina le responde:",
+      "media": [],
+      "options": [
+        "Un signo de inflamación activa",
+        "Un signo de cáncer",
+        "Un signo de deficiencia de vitaminas",
+        "Un signo solo de mala higiene"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El BOP es un indicador de inflamación activa.» 🦅 Sami: «Siempre registraré el BOP.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q04",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los factores de riesgo de la periodontitis?» Mina responde:",
+      "media": [],
+      "options": [
+        "Tabaco, diabetes, genética, estrés, obesidad",
+        "Solo tabaco",
+        "Solo diabetes",
+        "Solo genética"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los factores de riesgo son múltiples y deben tenerse en cuenta.» 🦅 Sami: «Identificaré sistemáticamente estos factores.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q05",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo se define una bolsa periodontal?» Mina responde:",
+      "media": [],
+      "options": [
+        "Profundidad de sondaje > 3 mm",
+        "Profundidad de sondaje > 5 mm",
+        "Profundidad de sondaje > 7 mm",
+        "Profundidad de sondaje normal"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La bolsa se define por una profundidad de sondaje > 3 mm.» 🦅 Sami: «Mediré sistemáticamente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q06",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la clasificación de Miller?» Mina le explica:",
+      "media": [],
+      "options": [
+        "Una clasificación de las recesiones gingivales",
+        "Una clasificación de las periodontitis",
+        "Una clasificación de las bolsas periodontales",
+        "Una clasificación de las movilidades"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Miller clasifica las recesiones según el pronóstico de cobertura.» 🦅 Sami: «Usaré esta clasificación.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q07",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los signos clínicos de la gingivitis?» Mina responde:",
+      "media": [],
+      "options": [
+        "Enrojecimiento, inflamación, sangrado al sondaje",
+        "Solo pérdida ósea",
+        "Movilidad dental",
+        "Recesión gingival"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La gingivitis se manifiesta por inflamación de los tejidos blandos.» 🦅 Sami: «Identificaré estos signos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q08",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuál es la diferencia entre gingivitis y periodontitis?» Mina responde:",
+      "media": [],
+      "options": [
+        "La gingivitis es reversible, en la periodontitis hay pérdida ósea",
+        "Es lo mismo",
+        "La periodontitis es reversible",
+        "La gingivitis es más grave"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La gingivitis es reversible, la periodontitis conlleva pérdida ósea.» 🦅 Sami: «Diferenciaré estos dos estados.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q09",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son las ventajas del tratamiento periodontal no quirúrgico?» Mina responde:",
+      "media": [],
+      "options": [
+        "Menos invasivo, eficaz para bolsas < 5 mm",
+        "Más eficaz que la cirugía",
+        "Indicado para todas las bolsas",
+        "No requiere seguimiento"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El tratamiento no quirúrgico es la primera fase para bolsas poco profundas.» 🦅 Sami: «Comenzaré con el tratamiento no quirúrgico.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q10",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuándo hay que realizar un colgajo periodontal?» Mina responde:",
+      "media": [],
+      "options": [
+        "Para bolsas > 5 mm con pérdida ósea",
+        "Para todas las bolsas",
+        "Para bolsas < 3 mm",
+        "Nunca"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El colgajo está indicado para acceder a las bolsas profundas.» 🦅 Sami: «Derivaré al especialista.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q11",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la terapia de mantenimiento periodontal?» Mina responde:",
+      "media": [],
+      "options": [
+        "Un seguimiento regular postratamiento para prevenir recidivas",
+        "Un tratamiento único",
+        "Un raspado anual",
+        "Una cirugía"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La terapia de mantenimiento es necesaria para la estabilidad a largo plazo.» 🦅 Sami: «Planificaré revisiones regulares.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q12",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los factores pronósticos en periodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Profundidad de bolsas, pérdida ósea, movilidad, furcas",
+        "Solo profundidad de bolsas",
+        "Solo pérdida ósea",
+        "Solo movilidad"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El pronóstico es multifactorial.» 🦅 Sami: «Evaluaré todos estos parámetros.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q13",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la regeneración tisular guiada?» Mina responde:",
+      "media": [],
+      "options": [
+        "Una técnica con membranas para regenerar el hueso",
+        "Una técnica de extracción",
+        "Una técnica de raspado",
+        "Una técnica protésica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La RTG permite regenerar el hueso perdido.» 🦅 Sami: «Me formaré en RTG.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q14",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una furca de grado 2?» Mina responde:",
+      "media": [],
+      "options": [
+        "Tratamiento periodontal específico, a veces quirúrgico",
+        "Extracción sistemática",
+        "Simple raspado",
+        "Solo antibióticos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las furcas requieren un enfoque adaptado.» 🦅 Sami: «Trataré las furcas con precaución.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q15",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los signos de periodontitis activa?» Mina responde:",
+      "media": [],
+      "options": [
+        "Sangrado al sondaje, supuración, pérdida ósea progresiva",
+        "Solo sangrado",
+        "Solo supuración",
+        "Solo pérdida ósea"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La actividad de la enfermedad es multifactorial.» 🦅 Sami: «Vigilaré estos signos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q16",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuándo usar antibióticos en periodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "En periodontitis agresivas o cuando el raspado es insuficiente",
+        "Para todas las periodontitis",
+        "Nunca",
+        "Para las gingivitis"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los antibióticos están indicados en casos específicos.» 🦅 Sami: «Los prescribiré con precaución.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q17",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la movilidad dental de grado 2?» Mina responde:",
+      "media": [],
+      "options": [
+        "Movilidad horizontal de 1–2 mm",
+        "Movilidad vertical",
+        "Movilidad horizontal inferior a 1 mm",
+        "Movilidad en todos los planos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La movilidad de grado 2 corresponde a un desplazamiento de 1–2 mm.» 🦅 Sami: «Usaré esta clasificación.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q18",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuál es el efecto de la diabetes en el periodonto?» Mina responde:",
+      "media": [],
+      "options": [
+        "La diabetes aumenta el riesgo y la gravedad de la periodontitis",
+        "La diabetes no afecta al periodonto",
+        "La diabetes protege el periodonto",
+        "La diabetes no tiene consecuencias"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La diabetes es un factor de riesgo importante.» 🦅 Sami: «Siempre preguntaré por el estado diabético.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q19",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los objetivos del tratamiento periodontal?» Mina responde:",
+      "media": [],
+      "options": [
+        "Eliminar la inflamación, reducir las bolsas, conservar la dentición",
+        "Solo eliminar el cálculo",
+        "Solo reducir las bolsas",
+        "Solo conservar los dientes"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los objetivos son múltiples y complementarios.» 🦅 Sami: «Buscaré todos estos objetivos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q20",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es una recesión gingival clase I de Miller?» Mina responde:",
+      "media": [],
+      "options": [
+        "Una recesión con posible cobertura completa",
+        "Una recesión con cobertura parcial",
+        "Una recesión sin posibilidad de cobertura",
+        "Una recesión menor"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Miller I tiene buen pronóstico de cobertura.» 🦅 Sami: «Ofreceré un injerto para esta recesión.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q21",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Por qué es importante la terapia de mantenimiento periodontal?» Mina responde:",
+      "media": [],
+      "options": [
+        "Para prevenir recidivas y mantener la estabilidad",
+        "Para ganar más dinero",
+        "Para usar más materiales",
+        "Para llenar papeles"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La terapia de mantenimiento es clave para la estabilidad a largo plazo.» 🦅 Sami: «Planificaré una terapia de mantenimiento regular.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q22",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar a un paciente fumador en periodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Informar de los riesgos y fomentar el abandono del tabaco",
+        "Ignorar el tabaquismo",
+        "Tratar sin mencionar el tabaquismo",
+        "El tabaquismo no tiene importancia"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El abandono del tabaco mejora los resultados del tratamiento.» 🦅 Sami: «Fomentaré el abandono del tabaco.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q23",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los signos de la periodontitis agresiva?» Mina responde:",
+      "media": [],
+      "options": [
+        "Pérdida ósea rápida en pacientes jóvenes y sanos",
+        "Pérdida ósea lenta en pacientes ancianos",
+        "Solo inflamación gingival",
+        "Ausencia de signos clínicos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La periodontitis agresiva aparece en pacientes jóvenes.» 🦅 Sami: «Identificaré estos casos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q24",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuál es el lugar del láser en periodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Una herramienta complementaria, pero no un sustituto del raspado",
+        "Un sustituto completo del raspado",
+        "Ineficaz",
+        "Peligroso"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El láser es un complemento, no un sustituto.» 🦅 Sami: «Usaré el láser como complemento.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q25",
+      "type": "single-choice",
+      "question": "Sami, tras dominar el diagnóstico periodontal con Mina, dice: «¡Estoy listo para cualquier desafío!» Mina concluye: «Dominar el diagnóstico periodontal es...»",
+      "media": [],
+      "options": [
+        "Una opción",
+        "La base del éxito en periodoncia",
+        "Una pérdida de tiempo",
+        "Secundario"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Dominar el diagnóstico periodontal es la base del éxito en periodoncia.» 🦅 Sami: «Seguiré aprendiendo.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

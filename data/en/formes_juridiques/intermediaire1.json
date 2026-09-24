@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "formes_juridiques_intermediaire1_001",
+    "title": "Legal Forms - Intermediate 1",
+    "specialty": "FORM",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "FORM_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Mamouni hesitates between sole proprietorship and LLC. His personal assets are significant. Dr. Ibrahimi advises him to choose the LLC. According to Law 5-96, what is the main advantage of the LLC for asset protection?",
+      "media": [],
+      "options": [
+        "Liability is limited to contributions",
+        "Liability is unlimited but shared",
+        "Liability is non-existent",
+        "Liability is limited to 50% of contributions"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Ibrahimi explains: 'In an LLC, your liability is limited to your contributions. Your personal assets are protected.' Dr. Mamouni: 'That's reassuring, I will create an LLC.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi practices as a natural person with a turnover of 900,000 DH. Dr. Mamouni advises him to create an LLC. According to the GTC, what is the main tax advantage of the LLC on this profit bracket?",
+      "media": [],
+      "options": [
+        "CIT at 10% on the 0-300,000 DH bracket vs progressive PIT",
+        "Total tax exemption",
+        "Reduced CM at 0.25%",
+        "Deduction of all personal expenses"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Mamouni explains: 'CIT is more advantageous than PIT for high profits. On 300,000 DH, CIT is 30,000 DH vs about 65,000 DH in PIT.' Dr. Ibrahimi: 'I will create an LLC.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr. Mamouni wishes to associate with 3 colleagues. Dr. Ibrahimi advises him to choose an LLC. According to Law 5-96, what is the maximum number of partners in a standard LLC?",
+      "media": [],
+      "options": [
+        "2",
+        "10",
+        "50",
+        "100"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Ibrahimi explains: 'The standard LLC can accommodate 2 to 50 partners. You are 4, that's perfect.' Dr. Mamouni: 'The LLC is the ideal structure for us.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi, the sole partner of a single-member LLC, wishes to know the creation formalities. Dr. Mamouni reminds him of the obligations. According to Law 5-96, must the single-member LLC have articles of association?",
+      "media": [],
+      "options": [
+        "No, the sole partner can decide alone",
+        "Yes, articles are mandatory",
+        "Yes, but only for standard LLCs",
+        "No, a simple private deed is sufficient"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'Articles are mandatory for any LLC, including the single-member LLC. They set the operating rules.' Dr. Ibrahimi: 'I will have articles drafted.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, as a natural person, has a dispute with a supplier. Dr. Ibrahimi warns him of the risks. Under Moroccan law, as a natural person, who is liable for professional debts?",
+      "media": [],
+      "options": [
+        "Only the professional assets",
+        "All personal and professional assets",
+        "The company's partners",
+        "The State as guarantor"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ibrahimi explains: 'As a natural person, there is confusion of assets. Your personal assets can be seized.' Dr. Mamouni: 'I will create an LLC to protect myself.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi has an LLC with a capital of 10,000 DH. Dr. Mamouni asks him if the capital can be increased. According to Law 5-96, is a capital increase possible?",
+      "media": [],
+      "options": [
+        "No, the capital is fixed",
+        "Yes, by decision of the partners",
+        "Yes, but only in the first 3 years",
+        "No, except in the event of dissolution"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'A capital increase is possible by a collective decision of the partners.' Dr. Ibrahimi: 'I can increase the capital if necessary.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, manager of an LLC, wishes to commit the company to an important contract. Dr. Ibrahimi reminds him of the rules. According to Article 63 of Law 5-96, what are the manager's powers?",
+      "media": [],
+      "options": [
+        "He can only commit the company for acts authorized by the articles",
+        "He commits the company through acts falling within the corporate purpose",
+        "He must obtain the agreement of all partners",
+        "He can only commit the company for acts under 50,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ibrahimi explains: 'The manager commits the company through acts falling within the corporate purpose. Statutory clauses limiting his powers are unenforceable against third parties.' Dr. Mamouni: 'I can therefore sign this contract.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi wishes to withdraw from the LLC. Dr. Mamouni informs him about the transfer of shares. According to Law 5-96, is the transfer of shares free?",
+      "media": [],
+      "options": [
+        "Yes, completely free",
+        "No, it is subject to approval if the articles provide for it",
+        "Yes, but only between partners",
+        "No, it is prohibited"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'The transfer of shares may be subject to approval if the articles provide for it. You must check the statutory clauses.' Dr. Ibrahimi: 'I will consult the articles.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, as a natural person, has a turnover of 400,000 DH. Dr. Ibrahimi asks him to check his tax regime. According to the GTC, which regime is he subject to?",
+      "media": [],
+      "options": [
+        "RNR",
+        "RNS",
+        "CPU",
+        "Flat-rate regime"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ibrahimi explains: 'For liberal professions, RNS applies to natural persons whose turnover is between 250,000 and 500,000 DH.' Dr. Mamouni: 'So I am under RNS.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi, manager of an LLC, wants to borrow from his company. Dr. Mamouni warns him of the prohibitions. According to Article 66 of Law 5-96, is this permitted?",
+      "media": [],
+      "options": [
+        "Yes, if the partners agree",
+        "No, the prohibition is absolute",
+        "Yes, for an amount under 50,000 DH",
+        "Yes, if the loan is for the practice"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'Article 66 prohibits managers from borrowing from the company, in any form whatsoever.' Dr. Ibrahimi: 'I will not make this loan.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr. Mamouni has an LLC with 5 partners. Dr. Ibrahimi asks him how decisions are made. According to Law 5-96, which decisions require unanimity?",
+      "media": [],
+      "options": [
+        "All decisions",
+        "Amendments to the articles",
+        "Ordinary management decisions",
+        "None, decisions are taken by majority"
+      ],
+      "correct": 3,
+      "explanation": "Dr. Ibrahimi explains: 'In an LLC, decisions are taken by majority of partners, unless the articles provide for a reinforced majority.' Dr. Mamouni: 'I will check our articles.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi, as a natural person, wishes to create a single-member LLC. Dr. Mamouni informs him about the formalities. According to Law 5-96, is the single-member LLC subject to the same obligations as a standard LLC?",
+      "media": [],
+      "options": [
+        "No, it is simpler",
+        "Yes, it is subject to the same obligations",
+        "No, it is exempt from certain formalities",
+        "Yes, but with reduced deadlines"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'The single-member LLC is subject to the same obligations as a standard LLC, except that general meetings are replaced by decisions of the sole partner.' Dr. Ibrahimi: 'That's a good option.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, manager of an LLC, wishes to create a branch. Dr. Ibrahimi asks him if this is possible. According to Law 5-96, can the manager create a branch without partners' authorization?",
+      "media": [],
+      "options": [
+        "No, a collective decision is required",
+        "Yes, it is an ordinary management act",
+        "Yes, but only if the articles allow it",
+        "No, creating a branch is prohibited"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ibrahimi explains: 'Creating a branch is an ordinary management act within the manager's powers.' Dr. Mamouni: 'I will create this branch.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi has an LLC with a profit of 400,000 DH. Dr. Mamouni helps him calculate the CIT. According to the 2026 scale, what is the amount of CIT due?",
+      "media": [],
+      "options": [
+        "40,000 DH",
+        "50,000 DH",
+        "80,000 DH",
+        "100,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'CIT is calculated by brackets: 300,000 × 10% = 30,000 DH, 100,000 × 20% = 20,000 DH. Total = 50,000 DH.' Dr. Ibrahimi: 'I will plan for this amount.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, the sole partner of a single-member LLC, dies. Dr. Ibrahimi informs him about the heirs' rights. According to the 2024 amendments, how many days do the heirs have to request the appointment of a representative?",
+      "media": [],
+      "options": [
+        "30 days",
+        "60 days",
+        "90 days",
+        "120 days"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ibrahimi explains: 'The 2024 amendments provide a 60-day period to request the appointment of a representative.' Dr. Mamouni: 'I will inform my heirs of this deadline.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi, as a natural person, has a tax deficit of 60,000 DH. Dr. Mamouni reminds him of the carry-forward rules. Under RNR, over how many years can he carry forward this deficit?",
+      "media": [],
+      "options": [
+        "2 years",
+        "3 years",
+        "4 years",
+        "5 years"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Mamouni explains: 'Under RNR, the deficit can be carried forward against profits of the following four years.' Dr. Ibrahimi: 'I will track this carry-forward.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, manager of an LLC, wishes to be remunerated. Dr. Ibrahimi asks him how his remuneration is determined. According to Law 5-96, the manager's remuneration is determined by:",
+      "media": [],
+      "options": [
+        "The articles definitively",
+        "An ordinary collective decision of the partners",
+        "A ministerial order",
+        "The commercial court"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ibrahimi explains: 'Managers' remuneration is determined by an ordinary collective decision of the partners.' Dr. Mamouni: 'I will propose my remuneration to the partners.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi, as a natural person, has a turnover of 1,200,000 DH. Dr. Mamouni advises him to create an LLC. What is the main disadvantage of being a natural person for a high turnover?",
+      "media": [],
+      "options": [
+        "No disadvantage",
+        "The PIT rate can reach 37%",
+        "The impossibility of hiring",
+        "The obligation to invoice VAT"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'The main disadvantage of being a natural person is the progressive PIT rate which can reach 37%.' Dr. Ibrahimi: 'I will create an LLC to optimize.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, a partner in an LLC, wishes to sell his shares. Dr. Ibrahimi reminds him of the rules. According to Law 5-96, is the transfer of shares to a third party subject to approval?",
+      "media": [],
+      "options": [
+        "No, it is completely free",
+        "Yes, if the articles provide for an approval clause",
+        "Yes, automatically for any transfer",
+        "No, unless the transfer is under 50,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ibrahimi explains: 'The transfer of shares may be subject to approval if the articles provide for it. You must consult the articles.' Dr. Mamouni: 'I will check our articles.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi has an LLC with a capital of 100,000 DH. Dr. Mamouni asks him if the capital can be reduced. According to Law 5-96, is a capital reduction possible?",
+      "media": [],
+      "options": [
+        "No, the capital is fixed",
+        "Yes, by decision of the partners",
+        "Yes, but only in the event of losses",
+        "No, except in the event of dissolution"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'A capital reduction is possible by decision of the partners, particularly in the event of losses.' Dr. Ibrahimi: 'I can reduce the capital if necessary.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, manager of an LLC, has a conflict with a partner. Dr. Ibrahimi advises him to consult the articles. According to Law 5-96, can the articles provide for conflict resolution clauses?",
+      "media": [],
+      "options": [
+        "No, the law does not allow it",
+        "Yes, the articles can provide for resolution clauses",
+        "Yes, but only for single-member LLCs",
+        "No, only courts are competent"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ibrahimi explains: 'The articles can provide for clauses for resolving conflicts between partners.' Dr. Mamouni: 'I will consult our articles.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi, as a natural person, wishes to hire his first employee. Dr. Mamouni reminds him of the obligations. According to the Labor Code, what are the mandatory declarations?",
+      "media": [],
+      "options": [
+        "Declaration to CNSS only",
+        "Declaration to CNSS and AMO",
+        "Declaration to CNSS, AMO and CNOPS",
+        "Declaration to the Ministry of Labor"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'The employer must declare his employee to CNSS (social insurance) and AMO (health insurance).' Dr. Ibrahimi: 'I will make the necessary declarations.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, the sole partner of a single-member LLC, wishes to dissolve his company. Dr. Ibrahimi informs him about the procedure. According to Law 5-96, can the sole partner dissolve the company alone?",
+      "media": [],
+      "options": [
+        "No, court approval is required",
+        "Yes, he can decide alone on dissolution",
+        "Yes, but only after 5 years of activity",
+        "No, a general meeting is required"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ibrahimi explains: 'The sole partner exercises the powers conferred on all partners. He can therefore decide alone on dissolution.' Dr. Mamouni: 'I can therefore dissolve whenever I want.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr. Ibrahimi has an LLC with 3 partners. Dr. Mamouni asks him how extraordinary decisions are taken. According to Law 5-96, what quorum is required for extraordinary decisions?",
+      "media": [],
+      "options": [
+        "Simple majority",
+        "Three-quarters of the votes",
+        "Absolute majority",
+        "Unanimity"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Mamouni explains: 'Extraordinary decisions (amendment of articles, dissolution) require a quorum of three-quarters of the votes.' Dr. Ibrahimi: 'I will check our articles.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr. Mamouni, after choosing the LLC with Dr. Ibrahimi, receives his congratulations. What is the next step for Dr. Mamouni?",
+      "media": [],
+      "options": [
+        "Become an expert in dental legal strategy",
+        "Retire",
+        "Change specialty",
+        "Forget good practices"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Ibrahimi explains: 'Mastery of legal forms is a valuable skill. Becoming an expert in legal strategy is the next step.' Dr. Mamouni: 'I will train in company law.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

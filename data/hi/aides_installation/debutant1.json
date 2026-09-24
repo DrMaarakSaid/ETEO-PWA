@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "aides_installation_beginner1_001",
+    "title": "Installation Support - Beginner 1",
+    "specialty": "AIDE",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "AIDE_D1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Hachimi is hesitating between two premises: one on the 2nd floor with an elevator, another on the 4th floor without an elevator. According to Article 1 of the law on accessibility of public establishments, which criterion should he prioritize?",
+      "media": [],
+      "options": [
+        "The quality of the panoramic view from the 4th floor",
+        "Total accessibility for people with reduced mobility",
+        "The immediate proximity to the rooftop terrace for maintenance",
+        "The higher exterior prestige of the building"
+      ],
+      "correct": 1,
+      "explanation": "PMR accessibility is a legal obligation for any establishment receiving the public, including dental practices.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q02",
+      "type": "single-choice",
+      "question": "Dr. Chaoui visits a premises with an 8 m² treatment room. According to ergonomic recommendations, what is the recommended minimum surface area?",
+      "media": [],
+      "options": [
+        "Six square meters for a standard treatment room",
+        "Twelve square meters for a standard treatment room",
+        "Twenty square meters for a standard treatment room",
+        "Five square meters for a standard treatment room"
+      ],
+      "correct": 1,
+      "explanation": "Twelve square meters of usable space ensures the necessary ergonomics for the movements of the practitioner, the assistant, and the dental chair.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q03",
+      "type": "single-choice",
+      "question": "Dr. Hachimi examines a premises set back from the main street. According to patient recruitment criteria, why is this positioning unfavorable?",
+      "media": [],
+      "options": [
+        "To guarantee the practitioner's prestige",
+        "To promote spontaneous patient recruitment",
+        "To minimize the monthly rent amount",
+        "To avoid direct competition"
+      ],
+      "correct": 1,
+      "explanation": "Visibility from the street facilitates natural recruitment of the neighborhood patient base, without requiring expensive advertising.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q04",
+      "type": "single-choice",
+      "question": "Dr. Chaoui chooses the flooring for his clinical area. According to hygiene standards, which characteristic is imperative?",
+      "media": [],
+      "options": [
+        "Thick carpet flooring for acoustic insulation",
+        "Varnished solid hardwood flooring for aesthetics",
+        "A smooth, non-porous, and disinfectable flooring",
+        "Very porous tiles for shock absorption"
+      ],
+      "correct": 2,
+      "explanation": "The floor must be impermeable and easily decontaminable to comply with hygiene standards in healthcare settings.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q05",
+      "type": "single-choice",
+      "question": "Dr. Hachimi is designing the organization of his practice. According to the principle of infection prevention, which area must be strictly separated from patient flow?",
+      "media": [],
+      "options": [
+        "The patient waiting room",
+        "The internal sterilization circuit",
+        "The general reception desk",
+        "The private consultation office"
+      ],
+      "correct": 1,
+      "explanation": "The separation of the dirty/clean circuit prevents any risk of cross-contamination, a fundamental principle of hygiene.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q06",
+      "type": "single-choice",
+      "question": "Dr. Chaoui visits a premises where the waiting room has no windows. According to patient well-being, why is this configuration problematic?",
+      "media": [],
+      "options": [
+        "To save the practice's electrical energy",
+        "For visual comfort and reduction of patient anxiety",
+        "To simplify wall decoration",
+        "To facilitate heating management"
+      ],
+      "correct": 1,
+      "explanation": "Natural light reduces patient anxiety in the waiting room and improves their care experience.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q07",
+      "type": "single-choice",
+      "question": "Dr. Hachimi checks the door dimensions of the premises. According to PMR regulations, what is the minimum required width?",
+      "media": [],
+      "options": [
+        "Sixty centimeters of clearance",
+        "Ninety centimeters of clearance",
+        "One hundred and twenty centimeters of clearance",
+        "Fifty centimeters of clearance"
+      ],
+      "correct": 1,
+      "explanation": "A width of 90 cm allows easy passage for wheelchairs and stretchers, in accordance with accessibility standards.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q08",
+      "type": "single-choice",
+      "question": "Dr. Chaoui wishes to install a CBCT scanner. According to radiation protection regulations, which element is imperative in the room?",
+      "media": [],
+      "options": [
+        "Double-glazed windows",
+        "Lead shielding on walls and ceiling",
+        "Low-temperature underfloor heating",
+        "High-power air conditioning"
+      ],
+      "correct": 1,
+      "explanation": "Lead shielding is a regulatory requirement for the radiation protection of patients and staff, in accordance with AMSSNuR standards.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q09",
+      "type": "single-choice",
+      "question": "Dr. Hachimi chooses the orientation of his treatment rooms. According to natural lighting principles, which exposure is recommended?",
+      "media": [],
+      "options": [
+        "North-facing exposure for constant light without glare",
+        "South-facing exposure for maximum sunlight",
+        "West-facing exposure without sun protection",
+        "East-facing exposure without an occultation system"
+      ],
+      "correct": 0,
+      "explanation": "North-facing light is constant throughout the day and avoids glare during precise treatments.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q10",
+      "type": "single-choice",
+      "question": "Dr. Chaoui is optimizing the organization of his treatment room. According to clinical ergonomics, what does the 'golden triangle' refer to?",
+      "media": [],
+      "options": [
+        "The ideal position between the practitioner, the chair, and the assistant",
+        "The relationship between the patient, the bank, and the practice",
+        "The distance between the waiting room and the practice",
+        "The ratio between rent price and surface area"
+      ],
+      "correct": 0,
+      "explanation": "The golden triangle optimizes access around the chair to reduce fatigue for the practitioner and assistant.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q11",
+      "type": "single-choice",
+      "question": "Dr. Hachimi is hesitating between a ground-floor premises and one on the 2nd floor. According to accessibility, what is the main advantage of the ground floor?",
+      "media": [],
+      "options": [
+        "A significant reduction in surrounding noise",
+        "Immediate accessibility without the need for an elevator",
+        "A very low overall rent cost",
+        "Better solar exposure"
+      ],
+      "correct": 1,
+      "explanation": "Direct access greatly facilitates the passage of patients, especially those with reduced mobility and the elderly.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q12",
+      "type": "single-choice",
+      "question": "Dr. Chaoui installs a mechanical ventilation system (VMC). According to health standards, what is the main purpose of this equipment?",
+      "media": [],
+      "options": [
+        "To cool rotary instruments",
+        "To renew the air and evacuate contaminated aerosols",
+        "To attenuate external noise",
+        "To diffuse ambient fragrances"
+      ],
+      "correct": 1,
+      "explanation": "Ventilation is essential for the sanitation of clinical air and the evacuation of infectious aerosols.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q13",
+      "type": "single-choice",
+      "question": "Dr. Hachimi visits a premises with a ceiling height of 2.70 m. According to building standards, is this height sufficient?",
+      "media": [],
+      "options": [
+        "No, it is too low for a practice",
+        "Yes, it is a very sufficient and standard height",
+        "No, at least four meters are needed for surgical lights",
+        "Yes, if the ceiling is painted in a dark color"
+      ],
+      "correct": 1,
+      "explanation": "This height is standard and allows the safe installation of lighting and surgical lights.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q14",
+      "type": "single-choice",
+      "question": "Dr. Chaoui chooses the location of his practice. According to patient loyalty, why should he prioritize a neighborhood close to public transport?",
+      "media": [],
+      "options": [
+        "For the tranquility of the immediate neighborhood",
+        "To facilitate access for patients",
+        "To reduce professional rent",
+        "To be close to colleagues"
+      ],
+      "correct": 1,
+      "explanation": "Proximity to public transport promotes patient loyalty and the accessibility of the practice.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q15",
+      "type": "single-choice",
+      "question": "Dr. Hachimi is designing the sterilization flow. According to good practices, which condition must the internal circuit respect?",
+      "media": [],
+      "options": [
+        "A mixed dirty/clean circulation corridor",
+        "A closed circuit with forward flow (dirty → clean)",
+        "Two separate working levels",
+        "Three assistants present at all times"
+      ],
+      "correct": 1,
+      "explanation": "The forward flow circuit prevents any cross-contamination between dirty and sterile equipment.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q16",
+      "type": "single-choice",
+      "question": "Dr. Chaoui chooses his surgical lighting. According to clinical requirements, what index is required for the surgical light?",
+      "media": [],
+      "options": [
+        "A low color rendering index",
+        "A high color rendering index",
+        "A blue-dominant lighting",
+        "A variable intensity lighting"
+      ],
+      "correct": 1,
+      "explanation": "A high CRI is crucial for identifying dental shades and performing precise treatments.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q17",
+      "type": "single-choice",
+      "question": "Dr. Hachimi examines a premises with a cramped treatment room. According to occupational health, what is the major risk for the practitioner?",
+      "media": [],
+      "options": [
+        "Premature wear of the dental chair",
+        "Ergonomic trauma and musculoskeletal disorders",
+        "An increase in monthly rent",
+        "A lack of oxygen supply"
+      ],
+      "correct": 1,
+      "explanation": "Forced postures in a cramped space generate musculoskeletal disorders in the practitioner.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q18",
+      "type": "single-choice",
+      "question": "Dr. Chaoui checks the wastewater evacuation system. According to plumbing standards, what is the critical element?",
+      "media": [],
+      "options": [
+        "The water pressure arriving at the practice",
+        "The slope and diameter of the evacuation pipes",
+        "The external color of the pipes",
+        "The temperature of the discharged liquid"
+      ],
+      "correct": 1,
+      "explanation": "A sufficient slope (minimum 2%) ensures flow without risk of obstruction or backflow.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q19",
+      "type": "single-choice",
+      "question": "Dr. Hachimi installs acoustic insulation in his treatment room. According to medical ethics, why is this important?",
+      "media": [],
+      "options": [
+        "For the practitioner's sound comfort",
+        "To respect the confidentiality of medical discussions",
+        "To speed up working time",
+        "To improve interior design"
+      ],
+      "correct": 1,
+      "explanation": "The confidentiality of medical discussions is an ethical and legal obligation, protected by professional secrecy.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q20",
+      "type": "single-choice",
+      "question": "Dr. Chaoui installs his compressor. According to technical requirements, where should it be positioned?",
+      "media": [],
+      "options": [
+        "In the middle of the waiting room for accessibility",
+        "In a ventilated and accessible room for maintenance",
+        "Enclosed in an airtight cabinet without ventilation",
+        "Installed directly under the dental chair"
+      ],
+      "correct": 1,
+      "explanation": "Regular compressor maintenance requires easy access and ventilation to dissipate heat and humidity.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q21",
+      "type": "single-choice",
+      "question": "Dr. Hachimi evaluates the potential of a neighborhood. According to market study, which criterion must he absolutely integrate into his choice?",
+      "media": [],
+      "options": [
+        "The density of local dental competition",
+        "The total number of cafes in the neighborhood",
+        "The average height of buildings",
+        "The color of surrounding facades"
+      ],
+      "correct": 0,
+      "explanation": "The study of the local market, particularly competitive density, is vital to assess the potential for patient recruitment.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q22",
+      "type": "single-choice",
+      "question": "Dr. Chaoui is arranging his clinical space. According to ergonomics, what does the 'transfer zone' refer to in the treatment room?",
+      "media": [],
+      "options": [
+        "A dedicated rest area for staff",
+        "The transition space to guide the patient to the chair",
+        "A storage space for hygiene products",
+        "The main entrance of the building"
+      ],
+      "correct": 1,
+      "explanation": "The transfer zone allows the patient to be comfortably seated and to access the chair safely.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q23",
+      "type": "single-choice",
+      "question": "Dr. Hachimi installs air conditioning. According to hygiene rules, which position must be absolutely avoided?",
+      "media": [],
+      "options": [
+        "Blowing directly on the patient during treatment",
+        "Never aiming directly at the work area",
+        "Staying on continuously in the evening",
+        "Being fixed at floor level"
+      ],
+      "correct": 0,
+      "explanation": "Direct airflow is uncomfortable for the patient and disperses contaminated aerosols, increasing infectious risks.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q24",
+      "type": "single-choice",
+      "question": "Dr. Chaoui is considering taking over an existing dental practice. According to layout logic, what is the main advantage of this option?",
+      "media": [],
+      "options": [
+        "The reduced cost of decoration only",
+        "The pre-existing compliance of water supply and drainage systems",
+        "The reduction of local taxes",
+        "Easier compliance with disability standards"
+      ],
+      "correct": 1,
+      "explanation": "This allows the reuse of existing water, drainage, and technical systems, reducing renovation costs.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q25",
+      "type": "single-choice",
+      "question": "Dr. Hachimi is considering installing a glass wall in the sterilization area. According to patient relationship, what is the benefit of this configuration?",
+      "media": [],
+      "options": [
+        "To reassure the patient about the practice's hygiene processes",
+        "To comply with a specific building standard",
+        "To gain storage space",
+        "To optimize interior design only"
+      ],
+      "correct": 0,
+      "explanation": "Visibility of the sterilization process reinforces patient trust and their feeling of safety.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

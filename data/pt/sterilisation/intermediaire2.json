@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_intermediaire2_001",
+    "title": "Sterilization - Intermediate 2",
+    "specialty": "STER",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr. Yassine faces an emergency: a patient needs immediate intervention. The material is not yet sterilized. What should he do?",
+      "media": [],
+      "options": [
+        "Use the material as is",
+        "Use the Flash cycle if available",
+        "Cancel the procedure",
+        "Ask the patient to come back"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'In an emergency, the Flash cycle can be used. But beware, it does not allow storage.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr. Yassine discovers that his autoclave displays a pressure error. Dr. Fatima tells him: 'You must not use it.' What is the first action to take?",
+      "media": [],
+      "options": [
+        "Restart the autoclave",
+        "Contact technical service",
+        "Perform a leak test",
+        "Ignore the error"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'A pressure error is a serious signal. Technical service must be contacted before any use.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr. Yassine must manage a shortage of sterile packaging. Dr. Fatima offers an alternative. What is the best solution?",
+      "media": [],
+      "options": [
+        "Use aluminum foil",
+        "Use validated rigid containers",
+        "Use plastic wrap",
+        "Use freezer bags"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Validated rigid containers are a safe alternative to classic packaging.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr. Yassine notices that biological tests are sometimes positive. Dr. Fatima explains the possible causes. What is the most frequent cause?",
+      "media": [],
+      "options": [
+        "A temperature problem",
+        "A load problem (overload)",
+        "A water problem",
+        "A time problem"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Overloading the autoclave is the most frequent cause of biological test failure.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train a new assistant. Dr. Fatima advises him to show the procedures step by step. What is the first thing to show him?",
+      "media": [],
+      "options": [
+        "How to use the autoclave",
+        "The complete sterilization circuit (from dirty to sterile zone)",
+        "How to package instruments",
+        "How to perform tests"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'You must first show the complete circuit so he understands the entire chain.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr. Yassine wonders about the effectiveness of different disinfectants. Dr. Fatima gives him a comparative table. Which disinfectant is most effective against spores?",
+      "media": [],
+      "options": [
+        "Alcohol",
+        "Peracetic acid",
+        "Glutaraldehyde",
+        "Bleach"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Peracetic acid is one of the few disinfectants with high sporicidal power.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr. Yassine must handle an incident: an instrument was used without being sterilized. Dr. Fatima explains the procedure to follow. What is the priority?",
+      "media": [],
+      "options": [
+        "Hide the incident",
+        "Inform the patient and take necessary measures",
+        "Continue as if nothing happened",
+        "Wait to see if a problem occurs"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Transparency is essential. The patient must be informed and corrective measures taken.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr. Yassine must optimize the sterilization flow in his office. Dr. Fatima suggests organizing the space. What is the best organization?",
+      "media": [],
+      "options": [
+        "Do everything in the same room",
+        "Separate dirty, clean, and sterile zones",
+        "Do sterilization in the treatment room",
+        "Use a single room for everything"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Separation of zones is essential to avoid cross-contamination.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr. Yassine must replace an autoclave. Dr. Fatima gives him selection criteria. What is the most important criterion?",
+      "media": [],
+      "options": [
+        "Price",
+        "Brand",
+        "Compliance with standards (class B)",
+        "Color"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Fatima explains: 'The most important criterion is compliance. An autoclave must be class B to treat hollow instruments.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr. Yassine wonders about the storage of sterile instruments. Dr. Fatima explains that the shelf life depends on several factors. What is the main factor?",
+      "media": [],
+      "options": [
+        "The type of packaging",
+        "The ambient temperature",
+        "The humidity level",
+        "The brand of instruments"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'The type of packaging is the main factor. Good packaging can preserve sterility for a long time.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr. Yassine must manage a suspected case of cross-contamination. Dr. Fatima explains the protocol to follow. What is the first action?",
+      "media": [],
+      "options": [
+        "Identify the source of contamination",
+        "Close the office",
+        "Call the authorities",
+        "Wait for it to pass"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'The source of contamination must first be identified in order to act.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr. Yassine must explain the importance of daily tests to a new assistant. Dr. Fatima advises him to emphasize safety. Which test is the most important?",
+      "media": [],
+      "options": [
+        "The leak test",
+        "The Bowie-Dick test",
+        "The biological test",
+        "The chemical test"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'The Bowie-Dick test is daily and essential for checking steam penetration.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr. Yassine discovers that his osmosis water is contaminated. Dr. Fatima explains the risks. What is the main risk?",
+      "media": [],
+      "options": [
+        "Instruments may rust",
+        "Instruments may discolor",
+        "Instruments may break",
+        "Instruments may lose their sharpness"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'Contaminated water can cause instrument corrosion.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr. Yassine must manage a workload peak. Dr. Fatima reminds him not to neglect sterilization. What is the main risk?",
+      "media": [],
+      "options": [
+        "Patients may wait longer",
+        "Patient safety may be compromised",
+        "Staff may get tired",
+        "The office may lose money"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Workload peaks must never compromise patient safety.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr. Yassine must choose between several instrument brands. Dr. Fatima gives him advice. What criterion should be prioritized?",
+      "media": [],
+      "options": [
+        "Price",
+        "Ease of cleaning and sterilization",
+        "Aesthetics",
+        "Brand"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'An instrument must be easy to clean and sterilize. It is a safety criterion.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr. Yassine must organize the traceability of sterilized batches. Dr. Fatima explains its importance. Why is traceability essential?",
+      "media": [],
+      "options": [
+        "For administrative reasons",
+        "To be able to trace batches in case of a problem",
+        "To make statistics",
+        "To save time"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Traceability allows tracing a batch in case of an incident. It is a legal obligation.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr. Yassine must manage an immunocompromised patient. Dr. Fatima reminds him that precautions are reinforced. What additional measure should be taken?",
+      "media": [],
+      "options": [
+        "Use disposable instruments",
+        "Extra rinsing of instruments",
+        "More frequent surface disinfection",
+        "Wearing a surgical mask"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'For an immunocompromised patient, it is preferable to use disposable instruments.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr. Yassine must replace his washer-disinfector. Dr. Fatima gives him advice. What is the most important characteristic?",
+      "media": [],
+      "options": [
+        "Capacity",
+        "Thermal disinfection program",
+        "Color",
+        "Price"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'The thermal disinfection program is essential to guarantee safety.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr. Yassine wonders about the use of ethylene oxide. Dr. Fatima explains that this process is reserved for certain uses. Which materials require ethylene oxide?",
+      "media": [],
+      "options": [
+        "Steel instruments",
+        "Heat-sensitive instruments",
+        "Hard plastic instruments",
+        "Glass instruments"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Ethylene oxide is used for heat-sensitive instruments that cannot withstand heat.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr. Yassine must handle a case of suspected prion. Dr. Fatima explains the special precautions. What measure should be taken?",
+      "media": [],
+      "options": [
+        "Sterilization at 121°C",
+        "Prolonged sterilization at 134°C",
+        "Chemical disinfection",
+        "Incineration"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Prions are resistant. Prolonged sterilization at 134°C is necessary.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr. Yassine must evaluate the effectiveness of his sterilization system. Dr. Fatima suggests a control method. What is the most reliable method?",
+      "media": [],
+      "options": [
+        "Chemical indicators",
+        "Biological tests",
+        "Physical indicators",
+        "Leak tests"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Biological tests are the most reliable method because they directly check the destruction of microorganisms.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr. Yassine must manage a contamination outbreak in his office. Dr. Fatima explains the emergency protocol. What is the first measure?",
+      "media": [],
+      "options": [
+        "Close the office",
+        "Isolate the contaminated area",
+        "Disinfect all surfaces",
+        "Call the authorities"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'The contaminated area must first be isolated to prevent spread.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr. Yassine must prepare instruments for complex surgery. Dr. Fatima reminds him of the importance of packaging. What type of packaging is recommended?",
+      "media": [],
+      "options": [
+        "A simple plastic bag",
+        "Double packaging for complex instruments",
+        "Paper packaging",
+        "Aluminum packaging"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'For complex surgeries, double packaging is recommended for maximum safety.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr. Yassine must update the sterilization protocol. Dr. Fatima advises him to consult official recommendations. Which reference should be followed?",
+      "media": [],
+      "options": [
+        "WHO recommendations",
+        "The code of ethics",
+        "ISO standards (EN 13060, EN ISO 17665)",
+        "The assistant's advice"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Fatima explains: 'ISO standards are the reference for sterilization protocols.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr. Yassine, after handling several complex situations, receives congratulations from Dr. Fatima: 'You are ready for the Expert level.' What is the next step?",
+      "media": [],
+      "options": [
+        "Become a trainer for new interns",
+        "Create your own sterilization protocol",
+        "Participate in conferences",
+        "All answers are correct"
+      ],
+      "correct": 3,
+      "explanation": "Dr. Fatima explains: 'You are now capable of training, innovating, and participating in the scientific community. The Expert level awaits you.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

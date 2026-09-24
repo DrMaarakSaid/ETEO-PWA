@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "Informatique Logiciels dentaires_debutant1_001",
+    "title": "Informatique Logiciels dentaires - Débutant 1",
+    "specialty": "INFO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "INFO_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a numérisé tous ses dossiers patients et les stocke sur son ordinateur. Le Dr Tazi conserve ses dossiers en version papier. Selon l'article 12 de la loi 09-08, quelle est leur obligation respective vis-à-vis de la CNDP ?",
+      "media": [],
+      "options": [
+        "Seul le Dr Chamssi doit déclarer un traitement de données personnelles, car il utilise un support numérique",
+        "Ni l'un ni l'autre n'a d'obligation car les données de santé sont exclues de la loi",
+        "Les deux doivent déclarer leur traitement de données, car la loi s'applique quel que soit le support",
+        "Seul le Dr Tazi doit déclarer car le papier est plus risqué en cas de vol"
+      ],
+      "correct": 2,
+      "explanation": "La loi 09-08 s'applique à tout traitement de données personnelles, quel que soit le support (papier ou numérique). Les deux dentistes traitent des données personnelles de leurs patients, ils doivent donc déclarer leur traitement à la CNDP.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a fait une déclaration CNDP et a reçu son récépissé. Le Dr Tazi n'a jamais effectué de déclaration pour ses dossiers papiers. Selon l'article 52 de la loi 09-08, à quelle amende le Dr Tazi s'expose-t-il ?",
+      "media": [],
+      "options": [
+        "Aucune amende, car les dossiers papier sont exclus du champ d'application de la loi",
+        "Une amende de 1 000 à 5 000 DH pour défaut de déclaration",
+        "Une amende de 10 000 à 100 000 DH pour défaut de déclaration préalable",
+        "Une amende de 100 000 à 500 000 DH pour les données médicales"
+      ],
+      "correct": 2,
+      "explanation": "L'article 52 de la loi 09-08 prévoit une amende de 10 000 à 100 000 DH pour le défaut de déclaration préalable, quel que soit le support utilisé.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a intégré le numéro de récépissé CNDP dans ses formulaires de collecte et ses mentions d'information. Le Dr Tazi affiche simplement une mention dans la salle d'attente. Quelle est la situation juridique du Dr Tazi ?",
+      "media": [],
+      "options": [
+        "Il est en conformité, car l'affichage en salle d'attente suffit pour les dossiers papier",
+        "Il est en infraction, car le numéro de récépissé doit figurer dans toutes les mentions d'information",
+        "Il est en conformité, car les dossiers papier ne nécessitent pas de numéro de récépissé",
+        "Il est en infraction, car il ne peut pas utiliser le papier selon la loi 09-08"
+      ],
+      "correct": 1,
+      "explanation": "Le numéro de récépissé ou d'autorisation CNDP doit être intégré dans toutes les mentions d'information, les formulaires de collecte et les conditions générales, quel que soit le support.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi utilise un logiciel de gestion patient en mode cloud (hébergé à l'étranger). Le Dr Tazi conserve ses dossiers patients dans des classeurs au cabinet. Selon les articles 43 et 44 de la loi 09-08, quelle démarche supplémentaire doit effectuer le Dr Chamssi ?",
+      "media": [],
+      "options": [
+        "Aucune, le cloud est considéré comme un support local en droit marocain",
+        "Une demande de transfert de données à l'étranger auprès de la CNDP",
+        "Une déclaration simplifiée uniquement",
+        "Une notification au ministère de la santé"
+      ],
+      "correct": 1,
+      "explanation": "L'hébergement cloud à l'étranger implique un transfert de données personnelles hors du Maroc. Le Dr Chamssi doit effectuer une demande de transfert de données à l'étranger auprès de la CNDP, démarche que le Dr Tazi n'a pas à effectuer.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a fait une déclaration CNDP pour son logiciel de gestion patient. Le Dr Tazi a fait une déclaration pour ses dossiers papiers. Selon l'article 19 de la loi 09-08, quel est le délai de délivrance du récépissé ?",
+      "media": [],
+      "options": [
+        "Le délai de 24 heures ne s'applique qu'aux traitements numériques",
+        "Le délai de 8 jours ne s'applique qu'aux traitements papier",
+        "Le délai est le même pour les deux : la CNDP délivre le récépissé dans un délai de 24 heures",
+        "Le Dr Chamssi doit attendre 8 jours car son traitement est plus complexe"
+      ],
+      "correct": 2,
+      "explanation": "L'article 19 de la loi 09-08 prévoit que la CNDP délivre le récépissé de déclaration dans un délai de 24 heures, quel que soit le support, sous réserve que le dossier soit complet.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a installé une caméra de vidéosurveillance numérique dans sa salle d'attente. Le Dr Tazi a simplement un miroir sans caméra. Selon la délibération CNDP n° 350-2013, quel régime de notification s'applique au Dr Chamssi ?",
+      "media": [],
+      "options": [
+        "Une autorisation préalable obligatoire pour la vidéosurveillance numérique",
+        "Une déclaration simplifiée conforme à la délibération CNDP",
+        "Aucune déclaration, car la vidéosurveillance est libre dans les cabinets médicaux",
+        "Une déclaration normale avec délai de 8 jours"
+      ],
+      "correct": 1,
+      "explanation": "La vidéosurveillance relève du régime de la déclaration simplifiée (formulaire F214) conformément à la délibération n° 350-2013, avec obligation d'informer les personnes concernées par un pictogramme.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q07",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi utilise un scanner numérique pour archiver ses documents. Le Dr Tazi utilise encore le papier. Concernant la valeur probante des documents conservés, quelle est la situation juridique du Dr Chamssi ?",
+      "media": [],
+      "options": [
+        "Ses documents numériques n'ont aucune valeur légale, seul le papier fait foi",
+        "Ses documents numériques ont la même force probante que le papier s'ils sont conservés dans des conditions garantissant leur intégrité",
+        "Ses documents numériques ont une valeur probante supérieure au papier",
+        "Il doit conserver les deux versions, papier et numérique, pour que l'archive soit valable"
+      ],
+      "correct": 1,
+      "explanation": "Le principe de l'archivage électronique à valeur probante, en application du Code civil, prévoit que l'écrit électronique a la même force probante que l'écrit sur support papier, sous réserve que son intégrité soit garantie.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a numérisé toutes ses factures. Le Dr Tazi conserve encore ses factures papier. Quelle est la durée de conservation légale des documents comptables pour les deux dentistes ?",
+      "media": [],
+      "options": [
+        "5 ans pour le numérique, 10 ans pour le papier",
+        "10 ans pour les deux, quel que soit le support",
+        "6 ans pour les deux, selon le code général des impôts",
+        "3 ans pour le numérique, 6 ans pour le papier"
+      ],
+      "correct": 1,
+      "explanation": "La durée de conservation légale des documents comptables est de 10 ans, quel que soit le support, conformément au Code de commerce. Cette obligation s'applique aussi bien au numérique qu'au papier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a installé un logiciel CRM pour gérer sa patientèle. Le Dr Tazi utilise un simple carnet de rendez-vous papier. Selon la loi 09-08, quelle est l'obligation commune aux deux dentistes ?",
+      "media": [],
+      "options": [
+        "Tenir un registre des traitements de données personnelles, quel que soit le support",
+        "Seul le Dr Chamssi doit tenir un registre car son traitement est numérique",
+        "Seul le Dr Tazi doit tenir un registre car le papier est moins sécurisé",
+        "Aucun des deux n'a d'obligation de registre"
+      ],
+      "correct": 0,
+      "explanation": "La loi 09-08 impose aux responsables de traitement de tenir un registre des traitements de données personnelles, documentant les finalités, les catégories de données, les destinataires et les mesures de sécurité. Cette obligation s'applique quel que soit le support.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a fait une demande d'autorisation préalable pour ses données de santé. Le Dr Tazi estime que ses dossiers papier sont dispensés d'autorisation. Selon l'article 21 de la loi 09-08, qui a raison ?",
+      "media": [],
+      "options": [
+        "Le Dr Tazi a raison : les données de santé sur papier sont dispensées d'autorisation",
+        "Le Dr Chamssi a raison : les données de santé sont des données sensibles et nécessitent une autorisation, quel que soit le support",
+        "Le Dr Chamssi a tort : les données de santé numériques relèvent d'une simple déclaration",
+        "Le Dr Tazi a raison : seul le stockage numérique des données de santé est réglementé"
+      ],
+      "correct": 1,
+      "explanation": "L'article 21 de la loi 09-08 considère les données de santé comme des données sensibles, quel que soit le support. Leur traitement est soumis au régime de l'autorisation préalable, que les données soient sur papier ou en numérique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a subi une perte de données suite à une panne informatique. Le Dr Tazi a vu ses dossiers papiers détruits par un incendie. Quel est le point commun entre leurs deux situations ?",
+      "media": [],
+      "options": [
+        "L'obligation de notifier la perte de données à la CNDP",
+        "L'obligation de notifier la violation à la CNSS",
+        "L'obligation d'informer les patients concernés en cas de violation",
+        "L'obligation de faire une déclaration à l'Ordre des dentistes"
+      ],
+      "correct": 2,
+      "explanation": "En cas de violation de données (perte, destruction, fuite), le responsable du traitement doit, conformément aux évolutions récentes du droit, informer les personnes concernées dès lors que la violation est susceptible de créer un risque élevé pour leurs droits et libertés, quel que soit le support.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a fait une déclaration CNDP pour son logiciel de gestion en ligne (SaaS). Le Dr Tazi a fait une déclaration pour ses dossiers papiers. Quelle est la différence fondamentale dans la responsabilité du Dr Chamssi par rapport à celle du Dr Tazi ?",
+      "media": [],
+      "options": [
+        "Le Dr Chamssi n'est pas responsable des données, car c'est l'hébergeur qui est responsable",
+        "Le Dr Chamssi a une obligation de sous-traiter avec des clauses de sécurité renforcées",
+        "Le Dr Tazi a plus de responsabilités car ses dossiers papiers sont moins sécurisés",
+        "Il n'y a aucune différence de responsabilité entre les deux"
+      ],
+      "correct": 1,
+      "explanation": "Lorsqu'il fait appel à un sous-traitant (hébergeur cloud, éditeur de logiciel), le Dr Chamssi doit conclure un contrat de sous-traitance avec des clauses garantissant la sécurité et la confidentialité des données. C'est une obligation que le Dr Tazi n'a pas.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a numérisé ses dossiers et les a rendus consultables à distance par les patients via un portail. Le Dr Tazi conserve le système traditionnel de consultation sur rendez-vous. Selon l'article 5 de la loi 09-08, les deux dentistes doivent-ils informer leurs patients différemment ?",
+      "media": [],
+      "options": [
+        "Oui, le Dr Chamssi doit fournir une mention d'information plus détaillée pour le portail",
+        "Non, les mentions d'information doivent être les mêmes pour tous les traitements, quel que soit le support",
+        "Oui, seul le Dr Tazi doit informer ses patients car le papier est moins sécurisé",
+        "Non, la loi ne prévoit pas d'obligation d'information pour les cabinets dentaires"
+      ],
+      "correct": 0,
+      "explanation": "Le Dr Chamssi, en proposant une consultation à distance, collecte des données supplémentaires (identifiants de connexion, logs, adresses IP) et doit donc informer ses patients de ces nouveaux traitements. La finalité, le support et les moyens de traitement peuvent nécessiter des mentions d'information adaptées.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi utilise des signatures électroniques pour ses ordonnances. Le Dr Tazi utilise encore la signature manuscrite. Selon les normes d'archivage, quel avantage offre la signature électronique au Dr Chamssi ?",
+      "media": [],
+      "options": [
+        "Aucun avantage, les deux signatures ont la même valeur légale",
+        "La signature électronique permet de garantir l'intégrité du document et son authenticité",
+        "La signature électronique dispense de conserver les documents",
+        "La signature électronique est moins fiable que la signature manuscrite"
+      ],
+      "correct": 1,
+      "explanation": "La signature électronique, associée à un horodatage et à une empreinte numérique, garantit l'intégrité et l'authenticité du document, en réponse aux critères de la piste d'audit fiable. C'est un avantage dans le cadre de l'archivage électronique à valeur probante.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q15",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a opté pour un système de gestion électronique de documents (GED) pour ses archives. Le Dr Tazi conserve ses archives dans des armoires physiques. Selon les normes de conservation, quel est l'avantage du système du Dr Chamssi ?",
+      "media": [],
+      "options": [
+        "Le stockage est moins coûteux, mais la recherche est plus longue",
+        "La recherche est plus rapide et l'accès aux documents est facilité, mais les exigences de sécurité sont renforcées",
+        "Il n'y a aucun avantage, les deux systèmes sont équivalents",
+        "Le système papier est plus fiable car il n'y a pas de risque de panne"
+      ],
+      "correct": 1,
+      "explanation": "La GED permet une recherche rapide et un accès facilité aux documents. Cependant, elle impose des exigences de sécurité renforcées pour garantir l'intégrité et l'authenticité des données numériques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a fait une déclaration CNDP pour son traitement numérique. Le Dr Tazi a fait une déclaration pour ses dossiers papiers. Qu'est-ce qui doit impérativement figurer dans les mentions d'information des deux dentistes ?",
+      "media": [],
+      "options": [
+        "Le numéro de téléphone du président de l'Ordre des dentistes",
+        "Le numéro de récépissé CNDP et les droits d'accès, rectification et opposition",
+        "La couleur des classeurs utilisés pour les dossiers",
+        "Le modèle exact du logiciel utilisé"
+      ],
+      "correct": 1,
+      "explanation": "Les mentions d'information doivent inclure l'identité du responsable du traitement, les finalités, les destinataires, les droits d'accès, de rectification et d'opposition, ainsi que le numéro de récépissé CNDP une fois obtenu.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a hébergé ses données chez un prestataire certifié HDS. Le Dr Tazi n'a pas besoin de prestataire. Qu'est-ce que la certification HDS apporte au Dr Chamssi ?",
+      "media": [],
+      "options": [
+        "Une réduction d'impôt sur les investissements numériques",
+        "Une garantie supplémentaire de sécurité et de conformité aux exigences des données de santé",
+        "Une exonération de déclaration CNDP",
+        "Une dispense de sous-traitance"
+      ],
+      "correct": 1,
+      "explanation": "La certification HDS (Hébergeur de Données de Santé) garantit que le prestataire respecte des exigences de sécurité et de conformité spécifiques aux données de santé, renforçant ainsi la protection des données des patients.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a intégré son logiciel de gestion à une plateforme de prise de rendez-vous en ligne. Le Dr Tazi utilise le téléphone pour ses rendez-vous. Selon la délibération CNDP sur les cookies, quelle obligation supplémentaire a le Dr Chamssi ?",
+      "media": [],
+      "options": [
+        "Aucune, car les rendez-vous en ligne ne sont pas réglementés",
+        "Recueillir le consentement préalable des visiteurs pour les cookies de son site",
+        "Déclarer l'outil de prise de rendez-vous à l'Ordre des dentistes",
+        "Installer un antivirus sur son site web"
+      ],
+      "correct": 1,
+      "explanation": "L'utilisation de cookies sur un site web de prise de rendez-vous en ligne nécessite de recueillir le consentement préalable des visiteurs, conformément à la délibération CNDP sur les cookies et traceurs web.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a mis en place un système de sauvegarde automatique de ses données. Le Dr Tazi a simplement une copie de ses dossiers chez un confrère. Selon les obligations légales, les deux approches sont-elles équivalentes ?",
+      "media": [],
+      "options": [
+        "Oui, les deux approches sont valables",
+        "Non, la sauvegarde automatique du Dr Chamssi doit respecter des normes de sécurité et de confidentialité",
+        "Oui, car les deux sont des sauvegardes",
+        "Non, la copie papier chez un confrère est interdite"
+      ],
+      "correct": 1,
+      "explanation": "La sauvegarde des données personnelles, y compris les sauvegardes, est soumise aux mêmes exigences de sécurité et de confidentialité que le traitement principal. Le Dr Chamssi doit veiller à la sécurité de ses sauvegardes et à leur conformité avec la loi 09-08.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a numérisé les dossiers de ses patients pour une durée indéterminée. Le Dr Tazi les conserve sur papier sans limite fixe. Selon l'article 6 de la loi 09-08, quelle est l'obligation des deux dentistes ?",
+      "media": [],
+      "options": [
+        "Conserver les données indéfiniment pour des raisons médicales",
+        "Fixer une durée de conservation limitée, proportionnée aux finalités du traitement",
+        "Il n'y a pas de durée de conservation pour les dossiers médicaux",
+        "Détruire les dossiers après 3 ans"
+      ],
+      "correct": 1,
+      "explanation": "Le principe de proportionnalité impose de ne pas conserver les données au-delà de la durée nécessaire à l'accomplissement de la finalité du traitement, tant pour le numérique que pour le papier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a fait une déclaration CNDP pour son traitement de données. Le Dr Tazi a fait une demande d'autorisation préalable. Quelle est la principale différence entre les deux démarches ?",
+      "media": [],
+      "options": [
+        "Il n'y a pas de différence, les deux démarches sont équivalentes",
+        "La déclaration est pour les données non sensibles, l'autorisation pour les données sensibles",
+        "La déclaration concerne uniquement les données numériques, l'autorisation concerne les données papier",
+        "L'autorisation est plus rapide que la déclaration"
+      ],
+      "correct": 1,
+      "explanation": "La déclaration préalable est le régime de droit commun pour la majorité des traitements. L'autorisation préalable est exigée pour les données sensibles (santé, CIN, etc.) et les traitements présentant des risques particuliers.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q22",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a fait une déclaration CNDP. Le Dr Tazi doit faire une autorisation préalable. Quel est le risque pour le Dr Tazi s'il met en œuvre son traitement sans avoir obtenu l'autorisation ?",
+      "media": [],
+      "options": [
+        "Aucun risque, l'autorisation n'est qu'une formalité administrative",
+        "Une amende de 10 000 à 100 000 DH et/ou des peines d'emprisonnement",
+        "Une simple mise en demeure de la CNDP",
+        "Une interdiction d'exercer la profession"
+      ],
+      "correct": 1,
+      "explanation": "Mettre en œuvre un traitement soumis à autorisation sans l'avoir obtenue expose le responsable à l'amende prévue à l'article 52 de la loi 09-08, tout comme le défaut de déclaration.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a installé un logiciel de gestion de cabinet. Le Dr Tazi utilise encore des classeurs. Selon la loi 09-08, le Dr Chamssi peut-il utiliser les données de ses patients pour des études statistiques anonymisées ?",
+      "media": [],
+      "options": [
+        "Oui, car les données sont anonymisées et ne permettent plus d'identifier les personnes",
+        "Oui, s'il le déclare à la CNDP",
+        "Non, car les données médicales ne peuvent pas être utilisées pour des statistiques",
+        "Non, l'étude statistique nécessite une autorisation préalable"
+      ],
+      "correct": 0,
+      "explanation": "La loi 09-08 ne s'applique pas aux données anonymisées, car elles ne permettent plus d'identifier les personnes concernées. L'anonymisation est une exception au champ d'application de la loi.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi numérise ses données et souhaite utiliser des technologies de reconnaissance faciale pour l'accès à son cabinet. Le Dr Tazi utilise des clés physiques. Selon la délibération CNDP D-108-EUS/2020, le Dr Chamssi doit-il une autorisation préalable ?",
+      "media": [],
+      "options": [
+        "Non, la reconnaissance faciale est libre dans les cabinets médicaux",
+        "Oui, une autorisation préalable spécifique est requise",
+        "Oui, mais uniquement s'il utilise les données à des fins de recherche",
+        "Non, il peut installer ce système librement"
+      ],
+      "correct": 1,
+      "explanation": "L'utilisation de la reconnaissance faciale est considérée comme un traitement sensible et requiert généralement une autorisation préalable de la CNDP, comme le prévoit la délibération D-108-EUS/2020.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Chamssi a un site web de présentation de son cabinet. Le Dr Tazi n'a pas de site web. Selon la délibération CNDP sur les cookies, qu'est-ce que le Dr Chamssi doit faire ?",
+      "media": [],
+      "options": [
+        "Rien, la délibération ne concerne pas les cabinets dentaires",
+        "Obtenir le consentement préalable des visiteurs pour les cookies non strictement nécessaires",
+        "Faire une déclaration spéciale à la CNSS",
+        "Afficher un simple bandeau d'information"
+      ],
+      "correct": 1,
+      "explanation": "La délibération CNDP encadrant l'utilisation des cookies et traceurs web impose de recueillir le consentement préalable des visiteurs pour les cookies non strictement nécessaires au fonctionnement du site.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

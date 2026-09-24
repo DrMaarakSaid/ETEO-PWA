@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_debutant1_001",
+    "title": "Acondicionamiento del Consultorio - Principiante 1",
+    "specialty": "AMEN",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "AMEN_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan quiere alquilar un local para su clínica dental. Según el artículo 1 de la ley 49-16, ¿se aplica esta ley a su contrato de arrendamiento?",
+      "media": [],
+      "options": [
+        "No, las clínicas dentales están excluidas del ámbito de aplicación",
+        "Sí, porque las clínicas y establecimientos similares están mencionados expresamente",
+        "No, la ley solo se aplica al comercio minorista",
+        "Sí, pero solo si la clínica tiene más de 5 empleados"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 1, II-3: las disposiciones de la ley se aplican a los edificios o locales donde las clínicas y establecimientos similares ejercen su actividad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q02",
+      "type": "single-choice",
+      "question": "Según el artículo 1, ¿a qué tipos de arrendamiento se aplica principalmente la ley 49-16?",
+      "media": [],
+      "options": [
+        "Solo a los contratos de arrendamiento de vivienda",
+        "Al arrendamiento de edificios o locales para uso comercial, industrial o artesanal",
+        "Solo a los arrendamientos agrícolas",
+        "Al arrendamiento de locales administrativos"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 1, I: la ley se aplica al arrendamiento de edificios o locales para uso comercial, industrial o artesanal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Kamali abre un consultorio en un local comercial. Según el artículo 3, ¿qué requisito imperativo tiene su contrato de arrendamiento?",
+      "media": [],
+      "options": [
+        "Un acuerdo verbal entre profesionales es suficiente",
+        "Un acto escrito con fecha cierta es obligatorio",
+        "Un simple acuerdo de principios es suficiente",
+        "Una declaración ante el ayuntamiento sustituye al contrato"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 3: los contratos de arrendamiento para uso comercial deben celebrarse por escrito con fecha cierta.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q04",
+      "type": "single-choice",
+      "question": "Según el artículo 3, ¿qué documento debe redactarse al tomar posesión del local por parte del Dr. Ramdan?",
+      "media": [],
+      "options": [
+        "Un simple recibo de entrega de llaves",
+        "Un acta descriptiva del estado del local para servir como prueba entre las partes",
+        "Un certificado de buena conducta",
+        "Un certificado de conformidad de la instalación eléctrica"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 3, párr. 2: al tomar posesión del local, se debe redactar un acta descriptiva del estado del local para servir como prueba entre las partes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ocupa su consultorio desde hace 18 meses. Según el artículo 4, ¿tiene derecho a la prórroga del contrato de arrendamiento?",
+      "media": [],
+      "options": [
+        "Sí, porque ocupa el local desde hace más de un año",
+        "No, debe justificar una ocupación de al menos dos años",
+        "Sí, porque los odontólogos tienen un régimen especial",
+        "No, porque no ha pagado un derecho de entrada"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 4, párr. 1: el arrendatario tiene derecho a la prórroga del arrendamiento si justifica una ocupación continua del local de al menos dos años.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q06",
+      "type": "single-choice",
+      "question": "Según el artículo 4, ¿bajo qué condición el Dr. Ramdan queda exento del requisito de dos años para la prórroga del arrendamiento?",
+      "media": [],
+      "options": [
+        "Si es odontólogo con más de 10 años de experiencia",
+        "Si ha pagado una suma de dinero en concepto de derecho de entrada",
+        "Si ha realizado obras en el local",
+        "Si ha firmado un contrato de arrendamiento de 5 años"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 4, párr. 2: el arrendatario queda exento del requisito de antigüedad si ha pagado una suma de dinero en concepto de derecho de entrada.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q07",
+      "type": "single-choice",
+      "question": "Según el artículo 5, ¿cómo se fijan el alquiler y los gastos del local del Dr. Kamali?",
+      "media": [],
+      "options": [
+        "El alquiler se fija por decreto del prefecto",
+        "El alquiler y los gastos se fijan de común acuerdo entre las partes",
+        "El alquiler lo fija el secretario del tribunal",
+        "El alquiler se indexa automáticamente a la inflación"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 5, párr. 1: el alquiler, así como todos los gastos, se fijan de común acuerdo entre las partes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q08",
+      "type": "single-choice",
+      "question": "Según el artículo 5, si las partes no especifican quién asume los gastos de explotación, ¿qué ocurre?",
+      "media": [],
+      "options": [
+        "Se reparten a partes iguales",
+        "Se consideran incluidos en el alquiler",
+        "Los asume exclusivamente el propietario",
+        "Los asume exclusivamente el arrendatario"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 5, párr. 2: en caso de silencio sobre la parte que asume los gastos, se consideran incluidos en el alquiler.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q09",
+      "type": "single-choice",
+      "question": "La revisión del alquiler del consultorio del Dr. Ramdan se rige por qué ley según el artículo 5?",
+      "media": [],
+      "options": [
+        "Ley nº 9-88 sobre obligaciones contables",
+        "Ley nº 07-03 sobre revisión del importe del alquiler",
+        "Ley nº 65-00 sobre seguro médico",
+        "Solo la propia ley nº 49-16"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 5, párr. 3: la revisión del alquiler se somete a las disposiciones de la ley nº 07-03.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q10",
+      "type": "single-choice",
+      "question": "Según el artículo 6, ¿qué ocurre si el propietario del Dr. Kamali incluye en el contrato una cláusula contraria al derecho de prórroga?",
+      "media": [],
+      "options": [
+        "La cláusula es válida si está firmada por ambas partes",
+        "La cláusula es nula, ya que toda disposición contraria es nula",
+        "La cláusula es válida durante los primeros 3 años",
+        "La cláusula debe ser homologada por el tribunal"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 6: los contratos de arrendamiento regulados por la ley solo terminan conforme al artículo 26. Toda disposición contraria es nula.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q11",
+      "type": "single-choice",
+      "question": "Según el artículo 7, ¿a qué corresponde la indemnización por rescisión que le corresponde al Dr. Ramdan en caso de desalojo?",
+      "media": [],
+      "options": [
+        "Solo al importe del último alquiler anual",
+        "Al perjuicio sufrido por el arrendatario por el desalojo",
+        "A una indemnización fija de 50.000 dirhams",
+        "Solo al reembolso de los gastos de mudanza"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 7, párr. 2: la indemnización corresponde al perjuicio sufrido por el arrendatario por el desalojo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q12",
+      "type": "single-choice",
+      "question": "Según el artículo 7, ¿sobre qué elementos se calcula la indemnización por desalojo del Dr. Kamali?",
+      "media": [],
+      "options": [
+        "Solo sobre el valor del equipo dental",
+        "Sobre el valor del fondo de comercio, las obras y los gastos de mudanza",
+        "Solo sobre el número de años de ocupación",
+        "Solo sobre la facturación del último mes"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 7, párr. 3: la indemnización incluye el valor del fondo de comercio, los gastos de obras y los gastos de mudanza.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q13",
+      "type": "single-choice",
+      "question": "Según el artículo 7, ¿qué ocurre si una cláusula del contrato de arrendamiento intenta limitar el derecho del Dr. Ramdan a la indemnización por desalojo?",
+      "media": [],
+      "options": [
+        "La cláusula es válida si es aceptada por el arrendatario",
+        "La cláusula se considera nula",
+        "La cláusula es válida durante los primeros 5 años",
+        "La cláusula debe ser homologada por el tribunal"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 7, párr. 5: se considera nula toda cláusula o acuerdo que pueda limitar el derecho del arrendatario a la indemnización por rescisión.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q14",
+      "type": "single-choice",
+      "question": "Según el artículo 8, ¿puede el Dr. Ramdan perder el derecho a la indemnización por desalojo si no paga el alquiler?",
+      "media": [],
+      "options": [
+        "No, el derecho a indemnización siempre se mantiene",
+        "Sí, si no paga en los 15 días siguientes al requerimiento y la deuda es de al menos 3 meses de alquiler",
+        "Sí, con solo un retraso en el pago",
+        "No, el propietario debe acudir primero a los tribunales"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 8, 1°: el arrendador no está obligado a pagar la indemnización si el arrendatario no paga en los 15 días siguientes al requerimiento por una cantidad de al menos 3 meses.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q15",
+      "type": "single-choice",
+      "question": "Según el artículo 8, ¿puede el Dr. Kamali perder el derecho a indemnización si ha transformado el local sin el consentimiento del propietario?",
+      "media": [],
+      "options": [
+        "No, si lo restituye a su estado original en un plazo de 3 meses",
+        "Sí, de forma definitiva sin posibilidad de reparación",
+        "No, el propietario debe aceptar todas las transformaciones",
+        "Sí, pero solo si el coste de las obras supera los 100.000 dirhams"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 8, 2°: el arrendador queda exento de indemnización si el arrendatario transforma el local, a menos que lo restituya a su estado original en un plazo que no podrá exceder de 3 meses.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q16",
+      "type": "single-choice",
+      "question": "Según el artículo 9, si el propietario del Dr. Ramdan quiere demoler y reconstruir el local, ¿qué condición debe cumplir?",
+      "media": [],
+      "options": [
+        "Sin condiciones especiales",
+        "Justificando la propiedad durante al menos un año desde la notificación",
+        "Solo con el consentimiento de los vecinos",
+        "Depositando una fianza de 500.000 dirhams"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 9, párr. 1: el arrendador debe justificar la propiedad durante al menos un año desde la fecha de notificación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q17",
+      "type": "single-choice",
+      "question": "Según el artículo 9, en caso de demolición y reconstrucción, ¿qué indemnización temporal debe recibir el Dr. Kamali?",
+      "media": [],
+      "options": [
+        "Una indemnización equivalente a un año de alquiler",
+        "Una indemnización equivalente a tres años de alquiler",
+        "Una indemnización equivalente a seis meses de alquiler",
+        "Una indemnización fija de 100.000 dirhams"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 9, párr. 1: el arrendador debe pagar una indemnización temporal equivalente a tres años de alquiler.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q18",
+      "type": "single-choice",
+      "question": "Según el artículo 10, ¿en qué plazo debe el propietario iniciar la reconstrucción después del desalojo del Dr. Ramdan?",
+      "media": [],
+      "options": [
+        "En un plazo de 6 meses",
+        "En un plazo de 2 meses",
+        "En un plazo de un año",
+        "En un plazo de 3 meses"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 10: el arrendador está obligado a iniciar la reconstrucción en un plazo de dos meses desde la fecha del desalojo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q19",
+      "type": "single-choice",
+      "question": "Según el artículo 11, ¿en qué plazo máximo debe ponerse a disposición del Dr. Ramdan el nuevo local después del desalojo?",
+      "media": [],
+      "options": [
+        "En un plazo de un año",
+        "En un plazo de dos años",
+        "En un plazo de tres años",
+        "En un plazo de cinco años"
+      ],
+      "correct": 2,
+      "explanation": "Artículo 11, párr. 1: el local debe ponerse a disposición en un plazo que no exceda de tres años desde la fecha del desalojo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q20",
+      "type": "single-choice",
+      "question": "Según el artículo 16, en caso de ampliación o elevación, ¿cuál es la duración máxima del desalojo temporal del Dr. Kamali?",
+      "media": [],
+      "options": [
+        "6 meses",
+        "1 año",
+        "2 años",
+        "3 años"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 16, párr. 1: la duración del desalojo temporal no podrá exceder de un año desde la fecha del desalojo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q21",
+      "type": "single-choice",
+      "question": "Según el artículo 18, ¿qué documento debe presentar el propietario para el desalojo por demolición del Dr. Ramdan?",
+      "media": [],
+      "options": [
+        "Una simple carta certificada",
+        "Un permiso de construcción válido y un plano aprobado",
+        "Un certificado del ayuntamiento",
+        "El consentimiento de los vecinos"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 18, párr. 1: el propietario debe presentar un permiso de construcción válido y un plano aprobado por la autoridad competente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q22",
+      "type": "single-choice",
+      "question": "Según el artículo 24, ¿puede el Dr. Kamali subarrendar su consultorio dental?",
+      "media": [],
+      "options": [
+        "No, el subarrendamiento está siempre prohibido",
+        "Sí, si el contrato de arrendamiento no contiene cláusula en contrario",
+        "Sí, pero solo a otro odontólogo",
+        "No, sin el consentimiento por escrito del propietario"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 24, párr. 1: el arrendatario puede subarrendar todo o parte del local, a menos que exista cláusula en contrario.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q23",
+      "type": "single-choice",
+      "question": "Según el artículo 25, ¿puede el Dr. Ramdan ceder su contrato de arrendamiento sin el consentimiento del propietario?",
+      "media": [],
+      "options": [
+        "No, el consentimiento del propietario es siempre necesario",
+        "Sí, sin el consentimiento del arrendador y a pesar de cualquier cláusula en contrario",
+        "Sí, pero solo con el consentimiento del tribunal",
+        "No, la cesión del arrendamiento está prohibida"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 25, párr. 1: el arrendatario tiene derecho a la cesión del arrendamiento sin el consentimiento del arrendador y a pesar de cualquier cláusula en contrario.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q24",
+      "type": "single-choice",
+      "question": "Según el artículo 26, ¿cuál es el plazo de desalojo por impago del alquiler?",
+      "media": [],
+      "options": [
+        "3 días",
+        "15 días",
+        "1 mes",
+        "3 meses"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 26, párr. 2: el plazo se fija en 15 días cuando la demanda se basa en el impago del alquiler.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q25",
+      "type": "single-choice",
+      "question": "Según el artículo 26, ¿cuál es el plazo de desalojo para uso personal del local?",
+      "media": [],
+      "options": [
+        "15 días",
+        "1 mes",
+        "3 meses",
+        "6 meses"
+      ],
+      "correct": 2,
+      "explanation": "Artículo 26, párr. 2: el plazo se fija en 3 meses cuando la demanda se basa en la voluntad de recuperar el local para uso personal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

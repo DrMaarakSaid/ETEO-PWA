@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "formes_juridiques_intermediaire1_001",
+    "title": "Formas Jurídicas – Intermedio 1",
+    "specialty": "FORM",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "FORM_I1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni duda entre la persona física y la SARL. Su patrimonio personal es considerable. La Dra. Ibrahimí le aconseja la SARL. Según la ley 5-96, ¿cuál es la principal ventaja de la SARL para la protección del patrimonio?",
+      "media": [],
+      "options": [
+        "La responsabilidad está limitada a las aportaciones",
+        "La responsabilidad es ilimitada pero compartida",
+        "No hay responsabilidad",
+        "La responsabilidad está limitada al 50 % de las aportaciones"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Ibrahimí explica: 'En la SARL, su responsabilidad está limitada a sus aportaciones. Su patrimonio personal está protegido.' El Dr. Mamouni: 'Es tranquilizador, crearé una SARL.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q02",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí ejerce como persona física con un volumen de negocios de 900 000 DH. El Dr. Mamouni le aconseja crear una SARL. Según el Código General de Impuestos, ¿cuál es la principal ventaja fiscal de la SARL en este nivel de beneficios?",
+      "media": [],
+      "options": [
+        "IS del 10 % sobre la parte de 0–300 000 DH frente al IR progresivo",
+        "Exención fiscal total",
+        "CM reducida al 0,25 %",
+        "Deducción de todos los gastos personales"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Mamouni explica: 'El IS es más ventajoso que el IR para beneficios elevados. Sobre 300 000 DH, el IS es de 30 000 DH frente a unos 65 000 DH de IR.' La Dra. Ibrahimí: 'Crearé una SARL.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni quiere asociarse con 3 colegas. La Dra. Ibrahimí le aconseja la SARL. Según la ley 5-96, ¿cuál es el número máximo de socios en una SARL clásica?",
+      "media": [],
+      "options": [
+        "2",
+        "10",
+        "50",
+        "100"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. Ibrahimí explica: 'La SARL clásica puede tener de 2 a 50 socios. Son 4, es ideal.' El Dr. Mamouni: 'La SARL es la estructura ideal para nosotros.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q04",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí, única socia de una SARL-AU, quiere conocer las formalidades de creación. El Dr. Mamouni le recuerda las obligaciones. Según la ley 5-96, ¿son obligatorios los estatutos para una SARL-AU?",
+      "media": [],
+      "options": [
+        "No, la única socia puede decidir unilateralmente",
+        "Sí, los estatutos son obligatorios",
+        "Sí, pero solo para las SARL clásicas",
+        "No, basta con un simple acto privado"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'Los estatutos son obligatorios para cualquier SARL, incluida la SARL-AU. Establecen las reglas de funcionamiento.' La Dra. Ibrahimí: 'Encargaré la redacción de los estatutos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, como persona física, tiene un litigio con un proveedor. La Dra. Ibrahimí le advierte de los riesgos. Según el derecho marroquí, ¿quién responde de las deudas profesionales como persona física?",
+      "media": [],
+      "options": [
+        "Solo el patrimonio profesional",
+        "Todo el patrimonio personal y profesional",
+        "Los socios de la sociedad",
+        "El Estado como garante"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Ibrahimí explica: 'Como persona física, el patrimonio no está diferenciado. Su patrimonio personal puede ser embargado.' El Dr. Mamouni: 'Crearé una SARL para protegerme.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q06",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí tiene una SARL con un capital de 10 000 DH. El Dr. Mamouni pregunta si se puede aumentar el capital. Según la ley 5-96, ¿es posible el aumento de capital?",
+      "media": [],
+      "options": [
+        "No, el capital es fijo",
+        "Sí, por decisión de los socios",
+        "Sí, pero solo en los primeros 3 años",
+        "No, salvo en caso de liquidación"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'El aumento de capital es posible por decisión colectiva de los socios.' La Dra. Ibrahimí: 'Podré aumentar el capital si es necesario.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, gerente de una SARL, quiere firmar un contrato importante en nombre de la sociedad. La Dra. Ibrahimí le recuerda las reglas. Según el artículo 63 de la ley 5-96, ¿cuáles son las facultades del gerente?",
+      "media": [],
+      "options": [
+        "Solo puede obligar a la sociedad con actos autorizados por los estatutos",
+        "Obliga a la sociedad con actos que forman parte del objeto social",
+        "Debe obtener el consentimiento de todos los socios",
+        "Solo puede obligar a la sociedad con actos de menos de 50 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Ibrahimí explica: 'El gerente obliga a la sociedad con actos que forman parte del objeto social. Las restricciones estatutarias son inoponibles a terceros.' El Dr. Mamouni: 'Puedo firmar este contrato.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q08",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí quiere retirarse de la SARL. El Dr. Mamouni le informa sobre la transferencia de participaciones. Según la ley 5-96, ¿es libre la transferencia de participaciones?",
+      "media": [],
+      "options": [
+        "Sí, completamente libre",
+        "No, está sujeta a aprobación si los estatutos lo prevén",
+        "Sí, pero solo entre socios",
+        "No, está prohibida"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'La transferencia de participaciones puede estar sujeta a aprobación si los estatutos lo prevén. Hay que verificar las cláusulas estatutarias.' La Dra. Ibrahimí: 'Verificaré los estatutos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, como persona física, tiene un volumen de negocios de 400 000 DH. La Dra. Ibrahimí le pide que verifique su régimen fiscal. Según el Código General de Impuestos, ¿a qué régimen está sujeto?",
+      "media": [],
+      "options": [
+        "RNR",
+        "RNS",
+        "CPU",
+        "Régimen fijo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Ibrahimí explica: 'Para las profesiones liberales, el RNS se aplica a las personas físicas con un volumen de negocios de 250 000 a 500 000 DH.' El Dr. Mamouni: 'Entonces estoy en el RNS.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q10",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí, gerente de una SARL, quiere pedir un préstamo a su sociedad. El Dr. Mamouni le advierte de las prohibiciones. Según el artículo 66 de la ley 5-96, ¿está permitido?",
+      "media": [],
+      "options": [
+        "Sí, si los socios están de acuerdo",
+        "No, la prohibición es absoluta",
+        "Sí, por un importe inferior a 50 000 DH",
+        "Sí, si el préstamo está destinado al consultorio"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'El artículo 66 prohíbe a los gerentes pedir préstamos a la sociedad en cualquier forma.' La Dra. Ibrahimí: 'No pediré este préstamo.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni tiene una SARL con 5 socios. La Dra. Ibrahimí pregunta cómo se toman las decisiones. Según la ley 5-96, ¿qué decisiones requieren unanimidad?",
+      "media": [],
+      "options": [
+        "Todas las decisiones",
+        "La modificación de los estatutos",
+        "Las decisiones de gestión corriente",
+        "Ninguna, las decisiones se toman por mayoría"
+      ],
+      "correct": 3,
+      "explanation": "La Dra. Ibrahimí explica: 'En la SARL, las decisiones se toman por mayoría de los socios, a menos que los estatutos prevean una mayoría reforzada.' El Dr. Mamouni: 'Verificaré nuestros estatutos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q12",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí, como persona física, quiere crear una SARL-AU. El Dr. Mamouni le informa sobre las formalidades. Según la ley 5-96, ¿está la SARL-AU sujeta a las mismas obligaciones que la SARL clásica?",
+      "media": [],
+      "options": [
+        "No, es más simple",
+        "Sí, está sujeta a las mismas obligaciones",
+        "No, está exenta de algunas formalidades",
+        "Sí, pero con plazos reducidos"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'La SARL-AU está sujeta a las mismas obligaciones que la SARL clásica, excepto las asambleas generales que se sustituyen por decisiones del socio único.' La Dra. Ibrahimí: 'Es una buena opción.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, gerente de una SARL, quiere crear una sucursal. La Dra. Ibrahimí pregunta si es posible. Según la ley 5-96, ¿puede el gerente crear una sucursal sin autorización de los socios?",
+      "media": [],
+      "options": [
+        "No, se necesita una decisión colectiva",
+        "Sí, es un acto de gestión ordinario",
+        "Sí, pero solo si los estatutos lo permiten",
+        "No, la creación de una sucursal está prohibida"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Ibrahimí explica: 'La creación de una sucursal es un acto de gestión ordinario que entra en las facultades del gerente.' El Dr. Mamouni: 'Crearé esta sucursal.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q14",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí tiene una SARL con un beneficio de 400 000 DH. El Dr. Mamouni le ayuda a calcular el IS. Según la escala de 2026, ¿cuál es el importe del IS?",
+      "media": [],
+      "options": [
+        "40 000 DH",
+        "50 000 DH",
+        "80 000 DH",
+        "100 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'El IS se calcula por partes: 300 000 × 10 % = 30 000 DH, 100 000 × 20 % = 20 000 DH. Total = 50 000 DH.' La Dra. Ibrahimí: 'Tendré en cuenta esta cantidad.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, único socio de una SARL-AU, fallece. La Dra. Ibrahimí le informa sobre los derechos de los herederos. Según las modificaciones de 2024, ¿cuántos días tienen los herederos para solicitar el nombramiento de un representante?",
+      "media": [],
+      "options": [
+        "30 días",
+        "60 días",
+        "90 días",
+        "120 días"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Ibrahimí explica: 'Las modificaciones de 2024 prevén un plazo de 60 días para solicitar el nombramiento de un representante.' El Dr. Mamouni: 'Informaré a mis herederos de este plazo.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q16",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí, como persona física, tiene una pérdida fiscal de 60 000 DH. El Dr. Mamouni le recuerda las reglas de compensación. Según el RNR, ¿durante cuántos años se puede compensar esta pérdida?",
+      "media": [],
+      "options": [
+        "2 años",
+        "3 años",
+        "4 años",
+        "5 años"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Mamouni explica: 'En el marco del RNR, la pérdida se compensa con los beneficios de los cuatro años siguientes.' La Dra. Ibrahimí: 'Seguiré esta compensación.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, gerente de una SARL, quiere recibir una remuneración. La Dra. Ibrahimí pregunta cómo se determina. Según la ley 5-96, la remuneración del gerente se fija por:",
+      "media": [],
+      "options": [
+        "Los estatutos definitivamente",
+        "Decisión colectiva ordinaria de los socios",
+        "Decreto ministerial",
+        "El tribunal de comercio"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Ibrahimí explica: 'La remuneración de los gerentes se determina por decisión colectiva ordinaria de los socios.' El Dr. Mamouni: 'Propondré mi remuneración a los socios.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q18",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí, como persona física, tiene un volumen de negocios de 1 200 000 DH. El Dr. Mamouni le aconseja crear una SARL. ¿Cuál es el principal inconveniente de la persona física con un volumen de negocios elevado?",
+      "media": [],
+      "options": [
+        "No hay inconvenientes",
+        "El tipo del IR puede alcanzar el 37 %",
+        "Imposibilidad de contratar empleados",
+        "Obligación de facturar con IVA"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'El principal inconveniente de la persona física es el tipo progresivo del IR, que puede alcanzar el 37 %.' La Dra. Ibrahimí: 'Crearé una SARL para optimizar.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, socio de una SARL, quiere vender sus participaciones. La Dra. Ibrahimí le recuerda las reglas. Según la ley 5-96, ¿está la transferencia de participaciones a un tercero sujeta a aprobación?",
+      "media": [],
+      "options": [
+        "No, es completamente libre",
+        "Sí, si los estatutos prevén una cláusula de aprobación",
+        "Sí, automáticamente para cualquier transferencia",
+        "No, si la transferencia es inferior a 50 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Ibrahimí explica: 'La transferencia de participaciones puede estar sujeta a aprobación si los estatutos lo prevén. Hay que verificar los estatutos.' El Dr. Mamouni: 'Verificaré nuestros estatutos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q20",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí tiene una SARL con un capital de 100 000 DH. El Dr. Mamouni pregunta si se puede reducir el capital. Según la ley 5-96, ¿es posible la reducción de capital?",
+      "media": [],
+      "options": [
+        "No, el capital es fijo",
+        "Sí, por decisión de los socios",
+        "Sí, pero solo en caso de pérdidas",
+        "No, salvo en caso de liquidación"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'La reducción de capital es posible por decisión de los socios, especialmente en caso de pérdidas.' La Dra. Ibrahimí: 'Podré reducir el capital si es necesario.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, gerente de una SARL, tiene un conflicto con un socio. La Dra. Ibrahimí le aconseja verificar los estatutos. Según la ley 5-96, ¿pueden los estatutos prever mecanismos de resolución de conflictos?",
+      "media": [],
+      "options": [
+        "No, la ley no lo permite",
+        "Sí, los estatutos pueden prever cláusulas de resolución de conflictos",
+        "Sí, pero solo para las SARL-AU",
+        "No, solo los tribunales son competentes"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Ibrahimí explica: 'Los estatutos pueden prever cláusulas de resolución de conflictos entre socios.' El Dr. Mamouni: 'Verificaré nuestros estatutos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q22",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí, como persona física, quiere contratar a su primer empleado. El Dr. Mamouni le recuerda las obligaciones. Según el Código de Trabajo, ¿qué declaraciones son obligatorias?",
+      "media": [],
+      "options": [
+        "Solo la declaración en la CNSS",
+        "Declaración en la CNSS y la AMO",
+        "Declaración en la CNSS, AMO y CNOPS",
+        "Declaración en el Ministerio de Trabajo"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'El empleador debe declarar al empleado en la CNSS (seguridad social) y la AMO (seguro médico obligatorio).' La Dra. Ibrahimí: 'Haré las declaraciones necesarias.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, único socio de una SARL-AU, quiere liquidar su sociedad. La Dra. Ibrahimí le informa sobre el procedimiento. Según la ley 5-96, ¿puede el socio único liquidar la sociedad unilateralmente?",
+      "media": [],
+      "options": [
+        "No, se necesita la aprobación del tribunal",
+        "Sí, puede decidir unilateralmente la liquidación",
+        "Sí, pero solo después de 5 años de actividad",
+        "No, se necesita una asamblea general"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Ibrahimí explica: 'El socio único ejerce las facultades conferidas a todos los socios. Puede decidir unilateralmente la liquidación.' El Dr. Mamouni: 'Entonces puedo liquidar cuando quiera.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q24",
+      "type": "single-choice",
+      "question": "La Dra. Ibrahimí tiene una SARL con 3 socios. El Dr. Mamouni pregunta cómo se toman las decisiones extraordinarias. Según la ley 5-96, ¿qué quórum se requiere para las decisiones extraordinarias?",
+      "media": [],
+      "options": [
+        "Mayoría simple",
+        "Tres cuartos de los votos",
+        "Mayoría absoluta",
+        "Unanimidad"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mamouni explica: 'Las decisiones extraordinarias (modificación de estatutos, liquidación) requieren un quórum de tres cuartos de los votos.' La Dra. Ibrahimí: 'Verificaré nuestros estatutos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, después de elegir la SARL con la Dra. Ibrahimí, recibe felicitaciones. ¿Cuál es el siguiente paso para el Dr. Mamouni?",
+      "media": [],
+      "options": [
+        "Convertirse en experto en estrategia jurídica para dentistas",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar las buenas prácticas"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Ibrahimí explica: 'El dominio de las formas jurídicas es una habilidad valiosa. Convertirse en experto en estrategia jurídica es el siguiente paso.' El Dr. Mamouni: 'Estudiaré derecho societario.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

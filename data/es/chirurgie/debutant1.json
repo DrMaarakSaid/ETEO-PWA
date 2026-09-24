@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "chirurgie_debutant1_001",
+    "title": "Cirugía - Principiante 1",
+    "specialty": "CHIR",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "CHIR_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Sami Kiku y la Dra. Mina Lilu atienden a un paciente para la extracción del diente 46. Sami, seguro de sí mismo, toma su elevador. Mina le pregunta: '¿Estás seguro de que quieres empezar con esto?' Sami responde: 'Claro, una extracción simple se define como:'",
+      "media": [],
+      "options": [
+        "Extracción sin seccionar el diente ni cirugía ósea",
+        "Extracción con osteotomía y colgajo",
+        "Extracción de un diente retenido complejo",
+        "Extracción bajo sedación intravenosa"
+      ],
+      "correct": 0,
+      "explanation": "¡Sami tiene razón! La extracción simple se realiza con elevador y fórceps, sin cirugía ósea. Mina, que lo asiste, añade: 'Ya que tiene razón, ¡le dejaré disfrutar del momento!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q02",
+      "type": "single-choice",
+      "question": "Mina asiste a Sami en una extracción. Le pasa el instrumento para luxar el diente. Sami lo toma y dice: 'Perfecto, ¡como siempre!' Mina replica: '¿Nunca te equivocas?' El elevador se utiliza para:",
+      "media": [],
+      "options": [
+        "Luxar el diente antes de la extracción con fórceps",
+        "Extraer el diente directamente sin fórceps",
+        "Seccionar el diente en varios fragmentos",
+        "Desinfectar el alvéolo tras la extracción"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica al estudiante: 'El elevador sirve para luxar el diente.' Sami añade: '¡Y la próxima vez intenta no romper la tabla ósea!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q03",
+      "type": "single-choice",
+      "question": "Sami debe extraer un incisivo superior. Mina, que conoce sus costumbres, le pasa los fórceps que siempre usa. Estos son:",
+      "media": [],
+      "options": [
+        "Fórceps nº 1 (rectos)",
+        "Fórceps nº 16 (en bayoneta)",
+        "Fórceps nº 150 (universales)",
+        "Fórceps nº 88 (cuernos de vaca)"
+      ],
+      "correct": 0,
+      "explanation": "Mina le pasa los fórceps nº 1. 'Siempre el mismo, ¡qué predecible eres, Sami!' —dice ella. '¿Para qué cambiar si he encontrado la perfección?' —replica él.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q04",
+      "type": "single-choice",
+      "question": "Mina debe extraer un molar superior. Sami, que la asiste, le pasa los fórceps especiales:",
+      "media": [],
+      "options": [
+        "Fórceps nº 18 (anatómicos para molares superiores)",
+        "Fórceps nº 1 (rectos universales)",
+        "Fórceps nº 150 (inferiores universales)",
+        "Fórceps nº 65 (fragmentarios superiores)"
+      ],
+      "correct": 0,
+      "explanation": "Sami le pasa los fórceps nº 18. '¿Ves? ¡Yo también conozco mis fórceps!' Mina responde: 'Sí, ¿pero sabes usarlos?'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q05",
+      "type": "single-choice",
+      "question": "La Sra. Hadja, paciente habitual, vuelve 3 días después de una extracción. Sami diagnostica una alveolitis. Mina, que la examina después, lo confirma. Mina explica a la paciente que la alveolitis es:",
+      "media": [],
+      "options": [
+        "Una inflamación dolorosa del alvéolo post-extracción",
+        "Una infección bacteriana aguda del hueso maxilar",
+        "Un sangrado persistente por ausencia de coágulo",
+        "Una fractura de la tabla ósea vestibular"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La alveolitis se produce por la pérdida del coágulo.' Sami añade: 'Y si fumara, Hadja, ¡se lo diría!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q06",
+      "type": "single-choice",
+      "question": "Sami y Mina discuten sobre el principal factor de riesgo de la alveolitis. Sami afirma que es el tabaquismo. Mina le pregunta: '¿Estás seguro?'",
+      "media": [],
+      "options": [
+        "Sí, el tabaquismo es el principal factor de riesgo",
+        "No, es la edad avanzada",
+        "No, es el sexo del paciente",
+        "No, es la diabetes no controlada"
+      ],
+      "correct": 0,
+      "explanation": "Sami tiene razón, aunque gracias a un artículo que Mina le envió. '¡Te lo dije, Mina!' —exclama él.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q07",
+      "type": "single-choice",
+      "question": "Mina trata con gran minuciosidad la alveolitis de la Sra. Hadja. Sami, que la asiste, observa y comenta: '¿Ves? ¡Te enseñé a hacerlo bien!' El tratamiento comienza con:",
+      "media": [],
+      "options": [
+        "Un lavado suave y un apósito alveolar calmante",
+        "Antibióticos sistémicos",
+        "Un legrado quirúrgico de los fragmentos óseos",
+        "Antiinflamatorios no esteroideos"
+      ],
+      "correct": 0,
+      "explanation": "Mina realiza un lavado suave y coloca un apósito calmante. Sami, bromeando, dice: '¿Ves? Te lo he enseñado todo.' Mina responde: 'Sí, ¡pero yo lo hago mejor!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q08",
+      "type": "single-choice",
+      "question": "Sami explica al paciente que un diente de juicio retenido es un diente que no ha erupcionado normalmente. Mina, que está a su lado, añade: 'Y si escuchas a Sami, te lo repetirá cinco veces.'",
+      "media": [],
+      "options": [
+        "Un diente que no ha erupcionado normalmente",
+        "Un diente fracturado a nivel apical",
+        "Un diente cariado con necrosis pulpar",
+        "Un diente móvil tras un traumatismo"
+      ],
+      "correct": 0,
+      "explanation": "Sami tiene razón: el tercer molar inferior suele ser el que más se retiene. Mina lo confirma, bromeando con él.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q09",
+      "type": "single-choice",
+      "question": "Mina atiende a una paciente asintomática con un diente de juicio retenido. Explica que el tratamiento recomendado es:",
+      "media": [],
+      "options": [
+        "Extracción o vigilancia según la edad",
+        "Extracción sistemática",
+        "Vigilancia radiológica anual",
+        "Tratamiento endodóntico preventivo"
+      ],
+      "correct": 0,
+      "explanation": "Mina presenta dos opciones. Sami interviene: 'Yo lo extraería de inmediato.' Mina: 'Por eso soy más competente.'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q10",
+      "type": "single-choice",
+      "question": "En la extracción de un diente de juicio retenido, Sami y Mina coinciden en la complicación más grave. Sami: '¡El nervio alveolar inferior!' Mina: 'De acuerdo, esta vez.'",
+      "media": [],
+      "options": [
+        "Lesión del nervio alveolar inferior",
+        "Alveolitis",
+        "Hemorragia postoperatoria",
+        "Fractura del ángulo mandibular"
+      ],
+      "correct": 0,
+      "explanation": "Ambos coinciden: el nervio alveolar inferior está en peligro. Un raro momento de acuerdo, seguido de una nueva pulla: '¿Ves, Sami, podemos ponernos de acuerdo!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q11",
+      "type": "single-choice",
+      "question": "Mina, siempre precisa, explica al estudiante que la osteotomía consiste en seccionar el hueso alrededor del diente. Sami interviene: 'Seccionar es la palabra que uso cuando corto el queso.'",
+      "media": [],
+      "options": [
+        "Seccionar el hueso alrededor del diente",
+        "Extraer el diente sin colgajo",
+        "Incidir solo la mucosa",
+        "Suturar los bordes del colgajo"
+      ],
+      "correct": 0,
+      "explanation": "Mina es firme: la osteotomía consiste en cortar el hueso. Sami, bromeando, añade: 'Y yo lo hago con el elevador, ¡es más rápido!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q12",
+      "type": "single-choice",
+      "question": "Sami realiza una odontectomía frente al estudiante. Explica que esta técnica consiste en seccionar el diente en varios fragmentos. Mina, que lo asiste, añade: 'Y cuanto más seccionas, más posibilidades hay de dejar un fragmento.'",
+      "media": [],
+      "options": [
+        "Seccionar el diente en varios fragmentos",
+        "Extraer el diente en una sola pieza",
+        "Realizar un tratamiento endodóntico",
+        "Colocar una corona provisional"
+      ],
+      "correct": 0,
+      "explanation": "Sami secciona el diente para facilitar la extracción. Mina, que lo asiste, vigila que no quede ningún fragmento.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q13",
+      "type": "single-choice",
+      "question": "Mina, que no deja nada al azar, pide a su asistente el instrumento para seccionar el diente. Sami, a su lado, le ofrece: 'El elevador, como yo.' Mina: 'No, la fresa quirúrgica.'",
+      "media": [],
+      "options": [
+        "Fresa quirúrgica",
+        "Elevador recto",
+        "Fórceps de extracción",
+        "Cureta periodontal"
+      ],
+      "correct": 0,
+      "explanation": "Mina utiliza una fresa ósea o dental para la sección. Sami, observándola, reconoce: 'Vale, es más preciso.'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q14",
+      "type": "single-choice",
+      "question": "En la extracción de un molar superior, Sami sospecha una comunicación oroantral. Explica a Mina que esto es:",
+      "media": [],
+      "options": [
+        "Una perforación entre el seno y la boca",
+        "Una fractura del tubérculo maxilar",
+        "Una alveolitis supurada",
+        "Un hematoma submucoso"
+      ],
+      "correct": 0,
+      "explanation": "Sami tiene razón: es una posible complicación. Mina, que lo asiste, dice: 'Qué suerte tienes de que esté aquí para corregir tus errores.'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q15",
+      "type": "single-choice",
+      "question": "Mina encuentra una COA pequeña de menos de 2 mm. Decide observar y proteger el coágulo. Sami: '¡Yo la suturaría!' Mina: 'Por eso pones más puntos que yo.'",
+      "media": [],
+      "options": [
+        "Observar y proteger el coágulo",
+        "Suturar inmediatamente con un colgajo",
+        "Realizar un colgajo rotacional palatino",
+        "Recetar antibióticos sin cierre"
+      ],
+      "correct": 0,
+      "explanation": "Una COA pequeña puede cicatrizar espontáneamente. Sami, un poco dolido, reconoce: 'Vale, tienes razón.'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q16",
+      "type": "single-choice",
+      "question": "Sami es llamado para una COA grande de más de 4 mm. Decide cerrarla con un colgajo de reparación. Mina, que lo asiste, dice: '¿Ves que sabes hacerlo cuando no tienes prisa?'",
+      "media": [],
+      "options": [
+        "Cerrar con un colgajo de reparación",
+        "Observar clínicamente",
+        "Recetar solo antibióticos",
+        "Usar pegamento biológico"
+      ],
+      "correct": 0,
+      "explanation": "Sami realiza el cierre quirúrgico con la precisión que le inspira la presencia de Mina.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q17",
+      "type": "single-choice",
+      "question": "Mina realiza un colgajo para acceder a un diente retenido. Sami, que la asiste, le pregunta: '¿Quieres que te enseñe cómo se hace?' Mina: 'No, gracias, ya he visto tus colgajos.'",
+      "media": [],
+      "options": [
+        "Despegar la encía para acceder al hueso",
+        "Incisión de descarga",
+        "Extracción compleja",
+        "Sutura hermética"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica que el colgajo proporciona acceso quirúrgico. Sami, bromeando, añade: 'Y yo lo hago más rápido sin colgajo.' '¡Y menos preciso!' —replica ella.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q18",
+      "type": "single-choice",
+      "question": "Sami muestra al estudiante los tipos de colgajos más comunes. Destaca el colgajo en sobre o triangular. Mina, a su lado, interviene: '¿Te olvidas del colgajo semilunar?'",
+      "media": [],
+      "options": [
+        "Colgajo en sobre o triangular",
+        "Colgajo circular",
+        "Colgajo rectangular",
+        "Colgajo ovalado"
+      ],
+      "correct": 0,
+      "explanation": "Sami presenta los colgajos básicos. Mina añade: 'Y el semilunar, ¿lo conoces?' 'Lo conozco, pero no lo uso, ¡es demasiado lento!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q19",
+      "type": "single-choice",
+      "question": "Mina sutura el colgajo tras una extracción compleja. Sami, observándola, dice: 'Siempre pones demasiados puntos.' Mina: 'Más vale que sobre a que falte.'",
+      "media": [],
+      "options": [
+        "Cerrar y estabilizar el colgajo",
+        "Realizar una incisión de acceso",
+        "Drenar un absceso",
+        "Aplicar compresión mecánica"
+      ],
+      "correct": 0,
+      "explanation": "Mina sutura con cuidado. Sami, que la asiste, comenta cada punto, lo que la hace sonreír.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q20",
+      "type": "single-choice",
+      "question": "Sami utiliza suturas reabsorbibles para ahorrar tiempo. Explica al paciente que esto evita la retirada de puntos. Mina, a su lado, interviene: 'Sí, pero las no reabsorbibles son más fiables.'",
+      "media": [],
+      "options": [
+        "Las suturas reabsorbibles evitan la retirada",
+        "Solo se pueden utilizar hilos de nailon",
+        "Solo los hilos de seda son eficaces",
+        "Las grapas metálicas son preferibles"
+      ],
+      "correct": 0,
+      "explanation": "Sami defiende sus suturas reabsorbibles. Mina, que lo asiste, le recuerda que prefiere las no reabsorbibles.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q21",
+      "type": "single-choice",
+      "question": "La Sra. Hadja vuelve con un sangrado persistente. Sami diagnostica una hemorragia post-extracción. Mina, llamada a consulta, lo confirma. Sami: '¿Ves? Estamos de acuerdo.'",
+      "media": [],
+      "options": [
+        "Hemorragia post-extracción",
+        "Alveolitis infectada",
+        "Infección de partes blandas",
+        "Dolor pulsátil"
+      ],
+      "correct": 0,
+      "explanation": "Ambos coinciden en el diagnóstico. Sami añade: 'Te dejo el manejo, tú eres mejor con los puntos.'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q22",
+      "type": "single-choice",
+      "question": "Mina trata el sangrado persistente con compresión, agente hemostático y sutura. Sami, que la asiste, dice: '¿Ves? Si yo estuviera aquí, haría lo mismo.'",
+      "media": [],
+      "options": [
+        "Compresión, agente hemostático, sutura",
+        "Extracción de los dientes vecinos",
+        "Antibióticos",
+        "Corticosteroides locales"
+      ],
+      "correct": 0,
+      "explanation": "Mina sigue su protocolo metódico. Sami, que la asiste, dice: 'Yo hago lo mismo.' 'No, tú haces compresión-sutura y te olvidas del hemostático.'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q23",
+      "type": "single-choice",
+      "question": "Sami atiende a un paciente con una infección aguda no controlada. Sabe que esto es una contraindicación para la extracción. Mina, a su lado, añade: 'Por fin piensas antes de actuar.'",
+      "media": [],
+      "options": [
+        "Contraindicación para la extracción",
+        "Indicación de extracción inmediata",
+        "Situación sin riesgo",
+        "Indicación de cirugía ambulatoria"
+      ],
+      "correct": 0,
+      "explanation": "Sami sabe que a veces hay que tratar primero la infección. Mina, que lo asiste, dice: '¡Estás progresando!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q24",
+      "type": "single-choice",
+      "question": "Mina prescribe profilaxis antibiótica a un paciente con riesgo de endocarditis infecciosa. Sami: 'Eres demasiado cautelosa.' Mina: 'Y tú demasiado audaz.'",
+      "media": [],
+      "options": [
+        "Recomendada según las guías",
+        "Para todos los pacientes",
+        "Para fumadores crónicos",
+        "Para diabéticos"
+      ],
+      "correct": 0,
+      "explanation": "Mina sigue estrictamente las recomendaciones. Sami, que la asiste, reconoce: 'Vale, tienes razón esta vez.'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q25",
+      "type": "single-choice",
+      "question": "Sami prescribe el antibiótico de primera línea. Mina, que lo asiste, pregunta: '¿Estás seguro?' Sami: 'Amoxicilina 2 g, ¡como siempre!'",
+      "media": [],
+      "options": [
+        "Amoxicilina 2 g antes de la intervención",
+        "Clindamicina",
+        "Azitromicina",
+        "Cefalexina"
+      ],
+      "correct": 0,
+      "explanation": "Sami prescribe amoxicilina. Mina, que lo asiste, le recuerda: '¡No olvides la alergia a la penicilina!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q26",
+      "type": "single-choice",
+      "question": "Mina recuerda a su estudiante que cualquier intervención quirúrgica debe ir precedida de un consentimiento informado. Sami, a su lado, añade: 'Tiene razón, pero yo lo hago en 30 segundos.'",
+      "media": [],
+      "options": [
+        "Consentimiento informado del paciente",
+        "Solo el examen radiológico",
+        "La opinión del laboratorio de prótesis",
+        "La consulta postoperatoria"
+      ],
+      "correct": 0,
+      "explanation": "Mina es estricta con el consentimiento. Sami, que la asiste, dice: 'Eres demasiado lenta, yo ya lo he hecho.' 'No lo suficientemente bien, ¡por eso lo compruebo!'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_intermediaire2_001",
+    "title": "Sterilisation - Intermédiaire 2",
+    "specialty": "STER",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Yassine fait face à une urgence : un patient nécessite une intervention immédiate. Le matériel n'est pas encore stérilisé. Que doit-il faire ?",
+      "media": [],
+      "options": [
+        "Utiliser le matériel tel quel",
+        "Utiliser le cycle Flash si disponible",
+        "Annuler l'intervention",
+        "Demander au patient de revenir"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'En cas d'urgence, le cycle Flash peut être utilisé. Mais attention, il ne permet pas le stockage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Yassine découvre que son autoclave affiche une erreur de pression. Dr Fatima lui dit : 'Il ne faut pas l'utiliser.' Quelle est la première action à mener ?",
+      "media": [],
+      "options": [
+        "Redémarrer l'autoclave",
+        "Contacter le service technique",
+        "Faire un test de fuite",
+        "Ignorer l'erreur"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Une erreur de pression est un signal sérieux. Il faut contacter le service technique avant toute utilisation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Yassine doit gérer une pénurie d'emballages stériles. Dr Fatima lui propose une alternative. Quelle est la meilleure solution ?",
+      "media": [],
+      "options": [
+        "Utiliser du papier aluminium",
+        "Utiliser des contenants rigides validés",
+        "Utiliser du film plastique",
+        "Utiliser des sachets de congélation"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Les contenants rigides validés sont une alternative sûre aux emballages classiques.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Yassine remarque que les tests biologiques sont parfois positifs. Dr Fatima lui explique les causes possibles. Quelle est la cause la plus fréquente ?",
+      "media": [],
+      "options": [
+        "Un problème de température",
+        "Un problème de charge (surcharge)",
+        "Un problème d'eau",
+        "Un problème de temps"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La surcharge de l'autoclave est la cause la plus fréquente d'échec des tests biologiques.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Yassine doit former un nouvel assistant. Dr Fatima lui conseille de lui montrer les procédures pas à pas. Quelle est la première chose à lui montrer ?",
+      "media": [],
+      "options": [
+        "Comment utiliser l'autoclave",
+        "Le circuit complet de la stérilisation (de la zone sale à la zone stérile)",
+        "Comment emballer les instruments",
+        "Comment faire les tests"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Il faut d'abord montrer le circuit complet pour qu'il comprenne toute la chaîne.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Yassine s'interroge sur l'efficacité des différents désinfectants. Dr Fatima lui dresse un tableau comparatif. Quel désinfectant est le plus efficace contre les spores ?",
+      "media": [],
+      "options": [
+        "L'alcool",
+        "L'acide peracétique",
+        "Le glutaraldéhyde",
+        "L'eau de Javel"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'L'acide peracétique est l'un des rares désinfectants ayant un pouvoir sporicide élevé.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Yassine doit gérer un incident : un instrument a été utilisé sans être stérilisé. Dr Fatima lui explique la conduite à tenir. Quelle est la priorité ?",
+      "media": [],
+      "options": [
+        "Cacher l'incident",
+        "Informer le patient et prendre les mesures nécessaires",
+        "Continuer comme si de rien n'était",
+        "Attendre de voir si un problème survient"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La transparence est essentielle. Le patient doit être informé et les mesures correctives prises.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Yassine doit optimiser le flux de stérilisation dans son cabinet. Dr Fatima lui propose d'organiser l'espace. Quelle est la meilleure organisation ?",
+      "media": [],
+      "options": [
+        "Tout faire dans la même pièce",
+        "Séparer les zones sale, propre et stérile",
+        "Faire la stérilisation dans la salle de soins",
+        "Utiliser une seule salle pour tout"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La séparation des zones est essentielle pour éviter la contamination croisée.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Yassine doit remplacer un autoclave. Dr Fatima lui donne des critères de choix. Quel est le critère le plus important ?",
+      "media": [],
+      "options": [
+        "Le prix",
+        "La marque",
+        "La conformité aux normes (classe B)",
+        "La couleur"
+      ],
+      "correct": 2,
+      "explanation": "Dr Fatima explique : 'Le critère le plus important est la conformité. Un autoclave doit être de classe B pour traiter les instruments creux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Yassine s'interroge sur la conservation des instruments stériles. Dr Fatima lui explique que la durée de conservation dépend de plusieurs facteurs. Quel est le facteur principal ?",
+      "media": [],
+      "options": [
+        "Le type d'emballage",
+        "La température ambiante",
+        "Le taux d'humidité",
+        "La marque des instruments"
+      ],
+      "correct": 0,
+      "explanation": "Dr Fatima explique : 'Le type d'emballage est le facteur principal. Un bon emballage peut conserver la stérilité longtemps.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Yassine doit gérer un cas de contamination croisée suspectée. Dr Fatima lui explique le protocole à suivre. Quelle est la première action ?",
+      "media": [],
+      "options": [
+        "Identifier la source de contamination",
+        "Fermer le cabinet",
+        "Appeler les autorités",
+        "Attendre que ça passe"
+      ],
+      "correct": 0,
+      "explanation": "Dr Fatima explique : 'Il faut d'abord identifier la source de contamination pour pouvoir agir.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Yassine doit expliquer l'importance des tests quotidiens à un nouvel assistant. Dr Fatima lui conseille de mettre l'accent sur la sécurité. Quel test est le plus important ?",
+      "media": [],
+      "options": [
+        "Le test de fuite",
+        "Le test de Bowie-Dick",
+        "Le test biologique",
+        "Le test chimique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Le test de Bowie-Dick est quotidien et essentiel pour vérifier la pénétration de la vapeur.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Yassine découvre que son eau osmosée est contaminée. Dr Fatima lui explique les risques. Quel est le principal risque ?",
+      "media": [],
+      "options": [
+        "Les instruments peuvent rouiller",
+        "Les instruments peuvent se colorer",
+        "Les instruments peuvent se casser",
+        "Les instruments peuvent perdre leur tranchant"
+      ],
+      "correct": 0,
+      "explanation": "Dr Fatima explique : 'L'eau contaminée peut provoquer la corrosion des instruments.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Yassine doit gérer une surcharge de travail. Dr Fatima lui rappelle de ne pas négliger la stérilisation. Quel est le risque principal ?",
+      "media": [],
+      "options": [
+        "Les patients peuvent attendre plus longtemps",
+        "La sécurité des patients peut être compromise",
+        "Le personnel peut se fatiguer",
+        "Le cabinet peut perdre de l'argent"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La surcharge de travail ne doit jamais compromettre la sécurité des patients.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr Yassine doit choisir entre plusieurs marques d'instruments. Dr Fatima lui donne un conseil. Quel est le critère à privilégier ?",
+      "media": [],
+      "options": [
+        "Le prix",
+        "La facilité de nettoyage et de stérilisation",
+        "L'esthétique",
+        "La marque"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Un instrument doit être facile à nettoyer et à stériliser. C'est un critère de sécurité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr Yassine doit organiser la traçabilité des lots stérilisés. Dr Fatima lui explique son importance. Pourquoi la traçabilité est-elle essentielle ?",
+      "media": [],
+      "options": [
+        "Pour des raisons administratives",
+        "Pour pouvoir retracer les lots en cas de problème",
+        "Pour faire des statistiques",
+        "Pour gagner du temps"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La traçabilité permet de retracer un lot en cas d'incident. C'est une obligation légale.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr Yassine doit gérer un patient immunodéprimé. Dr Fatima lui rappelle que les précautions sont renforcées. Quelle est la mesure supplémentaire à prendre ?",
+      "media": [],
+      "options": [
+        "Utiliser des instruments jetables",
+        "Rinçage supplémentaire des instruments",
+        "Désinfection des surfaces plus fréquente",
+        "Port de masque chirurgical"
+      ],
+      "correct": 0,
+      "explanation": "Dr Fatima explique : 'Pour un patient immunodéprimé, il est préférable d'utiliser des instruments jetables.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr Yassine doit remplacer son laveur-désinfecteur. Dr Fatima lui donne des conseils. Quelle est la caractéristique la plus importante ?",
+      "media": [],
+      "options": [
+        "La capacité",
+        "Le programme de désinfection thermique",
+        "La couleur",
+        "Le prix"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Le programme de désinfection thermique est essentiel pour garantir la sécurité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr Yassine s'interroge sur l'utilisation de l'oxyde d'éthylène. Dr Fatima lui explique que ce procédé est réservé à certains usages. Quels matériaux nécessitent l'oxyde d'éthylène ?",
+      "media": [],
+      "options": [
+        "Les instruments en acier",
+        "Les instruments thermosensibles",
+        "Les instruments en plastique dur",
+        "Les instruments en verre"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'L'oxyde d'éthylène est utilisé pour les instruments thermosensibles qui ne supportent pas la chaleur.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr Yassine doit gérer un cas de suspicion de prion. Dr Fatima lui explique les précautions particulières. Quelle est la mesure à prendre ?",
+      "media": [],
+      "options": [
+        "Stérilisation à 121°C",
+        "Stérilisation à 134°C prolongée",
+        "Désinfection chimique",
+        "Incinération"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Les prions sont résistants. Une stérilisation à 134°C prolongée est nécessaire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr Yassine doit évaluer l'efficacité de son système de stérilisation. Dr Fatima lui propose une méthode de contrôle. Quelle est la méthode la plus fiable ?",
+      "media": [],
+      "options": [
+        "Les indicateurs chimiques",
+        "Les tests biologiques",
+        "Les indicateurs physiques",
+        "Les tests de fuite"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Les tests biologiques sont la méthode la plus fiable car ils vérifient directement la destruction des micro-organismes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr Yassine doit gérer un pic de contamination dans son cabinet. Dr Fatima lui explique le protocole d'urgence. Quelle est la première mesure ?",
+      "media": [],
+      "options": [
+        "Fermer le cabinet",
+        "Isoler la zone contaminée",
+        "Désinfecter toutes les surfaces",
+        "Appeler les autorités"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Il faut d'abord isoler la zone contaminée pour éviter la propagation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr Yassine doit préparer des instruments pour une chirurgie complexe. Dr Fatima lui rappelle l'importance du conditionnement. Quel type de conditionnement est recommandé ?",
+      "media": [],
+      "options": [
+        "Un simple sachet plastique",
+        "Un double emballage pour les instruments complexes",
+        "Un emballage en papier",
+        "Un emballage en aluminium"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Pour les chirurgies complexes, un double emballage est recommandé pour une sécurité maximale.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr Yassine doit mettre à jour le protocole de stérilisation. Dr Fatima lui conseille de consulter les recommandations officielles. Quelle est la référence à suivre ?",
+      "media": [],
+      "options": [
+        "Les recommandations de l'OMS",
+        "Le code de déontologie",
+        "Les normes ISO (EN 13060, EN ISO 17665)",
+        "Les conseils de l'assistant"
+      ],
+      "correct": 2,
+      "explanation": "Dr Fatima explique : 'Les normes ISO sont la référence pour les protocoles de stérilisation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr Yassine, après avoir géré plusieurs situations complexes, reçoit les félicitations de Dr Fatima : 'Tu es prêt pour le niveau Expert.' Quelle est la prochaine étape ?",
+      "media": [],
+      "options": [
+        "Devenir formateur pour les nouveaux internes",
+        "Créer son propre protocole de stérilisation",
+        "Participer à des congrès",
+        "Toutes les réponses sont correctes"
+      ],
+      "correct": 3,
+      "explanation": "Dr Fatima explique : 'Tu es maintenant capable de former, d'innover et de participer à la communauté scientifique. Le niveau Expert t'attend.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

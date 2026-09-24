@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "comptabilite_fiscalite_intermediaire2_001",
+    "title": "Comptabilite_fiscalite - Intermédiaire 2",
+    "specialty": "COMP",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1450
+  },
+  "questions": [
+    {
+      "id": "COMP_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer sa déclaration d'impôt sur les sociétés (IS). Selon la législation fiscale marocaine, quel est le taux normal de l'IS pour les sociétés ?",
+      "media": [],
+      "options": [
+        "20%",
+        "25%",
+        "30%",
+        "35%"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Le taux normal de l'IS au Maroc est de 25% pour les sociétés.' Dr Amrani : 'Je vais prévoir ce taux dans mes prévisions.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Bennani, exerçant en nom propre, est soumis à l'impôt sur le revenu (IR). Selon le barème progressif marocain, quelle est la tranche minimale imposable ?",
+      "media": [],
+      "options": [
+        "0% jusqu'à 30.000 DH",
+        "10% jusqu'à 30.000 DH",
+        "20% jusqu'à 30.000 DH",
+        "30% jusqu'à 30.000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Dr Amrani explique : 'La tranche minimale de l'IR est de 0% jusqu'à 30.000 DH. C'est une exonération pour les plus petits revenus.' Dr Bennani : 'Je vais vérifier le barème.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Amrani doit s'acquitter de la TVA sur ses prestations. Selon la législation marocaine, quel est le taux normal de TVA applicable aux soins dentaires ?",
+      "media": [],
+      "options": [
+        "7%",
+        "10%",
+        "14%",
+        "20%"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'Les soins dentaires sont soumis à un taux réduit de TVA de 7% au Maroc.' Dr Amrani : 'Je vais appliquer ce taux sur mes factures.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Bennani doit déclarer ses revenus professionnels. Selon la législation fiscale, quel est le délai de déclaration annuelle des revenus ?",
+      "media": [],
+      "options": [
+        "31 mars",
+        "30 avril",
+        "31 mai",
+        "30 juin"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'La déclaration annuelle des revenus doit être déposée avant le 30 avril.' Dr Bennani : 'Je vais respecter ce délai.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Amrani souhaite amortir l'acquisition d'un nouveau fauteuil dentaire. Selon la législation fiscale, quelle est la durée d'amortissement couramment admise ?",
+      "media": [],
+      "options": [
+        "5 ans",
+        "7 ans",
+        "10 ans",
+        "15 ans"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'Un fauteuil dentaire est généralement amorti sur 5 ans, conformément aux pratiques fiscales.' Dr Amrani : 'Je vais appliquer cette durée.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Bennani doit gérer une vérification fiscale de son cabinet. Selon les droits du contribuable, quel est le délai de prescription pour les impôts ?",
+      "media": [],
+      "options": [
+        "3 ans",
+        "5 ans",
+        "7 ans",
+        "10 ans"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'Le délai de prescription pour les impôts est généralement de 5 ans.' Dr Bennani : 'Je vais conserver mes documents pendant 5 ans au minimum.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer la taxation des plus-values sur la cession de son cabinet. Selon la législation, quel est le taux applicable aux plus-values professionnelles ?",
+      "media": [],
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "30%"
+      ],
+      "correct": 2,
+      "explanation": "Dr Bennani explique : 'Le taux applicable aux plus-values professionnelles est de 25%.' Dr Amrani : 'Je vais prendre ce taux en compte dans mes calculs.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Bennani doit gérer les charges déductibles de son cabinet. Selon la législation, quel type de charges est déductible fiscalement ?",
+      "media": [],
+      "options": [
+        "Les charges personnelles du praticien",
+        "Les charges professionnelles liées à l'activité",
+        "Les charges de la famille du praticien",
+        "Les charges de vacances"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'Seules les charges professionnelles liées à l'activité du cabinet sont déductibles.' Dr Bennani : 'Je vais veiller à bien séparer mes charges personnelles et professionnelles.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer le paiement de la taxe professionnelle. Selon la législation marocaine, quel est l'assiette de cette taxe ?",
+      "media": [],
+      "options": [
+        "Le chiffre d'affaires",
+        "La valeur locative des locaux",
+        "Le nombre de salariés",
+        "Le bénéfice net"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'La taxe professionnelle est basée sur la valeur locative des locaux professionnels.' Dr Amrani : 'Je vais vérifier ma valeur locative.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite optimiser sa fiscalité en utilisant des dispositifs de défiscalisation. Selon la législation, quel dispositif est accessible aux professions libérales ?",
+      "media": [],
+      "options": [
+        "L'investissement locatif",
+        "Le statut de loueur meublé professionnel",
+        "La création d'une SCI pour les locaux professionnels",
+        "L'investissement en start-up"
+      ],
+      "correct": 2,
+      "explanation": "Dr Amrani explique : 'La création d'une SCI pour les locaux professionnels permet d'optimiser la fiscalité immobilière du cabinet.' Dr Bennani : 'Je vais étudier cette option.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer les cotisations sociales de son cabinet. Selon la législation, quel est le taux de cotisation à la CNSS pour le salarié ?",
+      "media": [],
+      "options": [
+        "4,48%",
+        "6,48%",
+        "8,48%",
+        "10,48%"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Le taux de cotisation à la CNSS pour le salarié est de 6,48%.' Dr Amrani : 'Je vais appliquer ce taux sur les salaires.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Bennani doit gérer la déclaration des salaires de son personnel. Selon la législation, quel est le délai de déclaration mensuelle des salaires à la CNSS ?",
+      "media": [],
+      "options": [
+        "Le 10 du mois suivant",
+        "Le 15 du mois suivant",
+        "Le 20 du mois suivant",
+        "Le dernier jour du mois suivant"
+      ],
+      "correct": 3,
+      "explanation": "Dr Amrani explique : 'La déclaration des salaires à la CNSS doit être effectuée avant le dernier jour du mois suivant.' Dr Bennani : 'Je vais respecter ce délai.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Amrani souhaite investir dans un nouveau logiciel de gestion. Selon la législation, comment sont traités les logiciels sur le plan fiscal ?",
+      "media": [],
+      "options": [
+        "Ils sont amortis sur 3 ans",
+        "Ils sont amortis sur 5 ans",
+        "Ils sont totalement déductibles l'année de l'achat",
+        "Ils ne sont pas déductibles"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'Les logiciels sont généralement amortis sur 3 ans.' Dr Amrani : 'Je vais prévoir cet amortissement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Bennani doit gérer la transmission de son cabinet à un successeur. Selon la législation, quel est le régime fiscal applicable à la transmission ?",
+      "media": [],
+      "options": [
+        "Les droits d'enregistrement",
+        "La TVA",
+        "L'impôt sur les sociétés",
+        "La taxe professionnelle"
+      ],
+      "correct": 0,
+      "explanation": "Dr Amrani explique : 'La transmission d'un cabinet est soumise aux droits d'enregistrement.' Dr Bennani : 'Je vais me renseigner sur le montant des droits.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer un contrôle fiscal. Selon les droits du contribuable, peut-il contester une décision de l'administration fiscale ?",
+      "media": [],
+      "options": [
+        "Non, la décision est définitive",
+        "Oui, il peut former un recours gracieux puis contentieux",
+        "Oui, mais uniquement par voie judiciaire",
+        "Non, il doit accepter la décision"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Le contribuable peut contester une décision fiscale par un recours gracieux puis par voie contentieuse.' Dr Amrani : 'Je vais me renseigner sur les procédures de recours.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite optimiser la structure juridique de son cabinet. Selon la législation, quelle forme juridique offre la meilleure protection patrimoniale ?",
+      "media": [],
+      "options": [
+        "L'entreprise individuelle",
+        "La SARL",
+        "La SCI",
+        "La SAS"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'La SARL offre une protection patrimoniale en limitant la responsabilité de l'associé à ses apports.' Dr Bennani : 'Je vais envisager de créer une SARL.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer les charges sociales de son cabinet. Selon la législation, quel est le taux de cotisation patronale à la CNSS ?",
+      "media": [],
+      "options": [
+        "8,98%",
+        "10,98%",
+        "12,98%",
+        "14,98%"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'Le taux de cotisation patronale à la CNSS est de 8,98%.' Dr Amrani : 'Je vais prévoir ce taux dans mon budget.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr Bennani doit gérer la TVA sur les prestations de prothèse. Selon la législation, quel est le taux de TVA applicable aux prothèses dentaires ?",
+      "media": [],
+      "options": [
+        "7%",
+        "10%",
+        "14%",
+        "20%"
+      ],
+      "correct": 0,
+      "explanation": "Dr Amrani explique : 'Les prothèses dentaires sont soumises au taux réduit de TVA de 7%.' Dr Bennani : 'Je vais appliquer ce taux sur mes factures de prothèse.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr Amrani souhaite investir dans des équipements médicaux neufs. Selon la législation, existe-t-il des avantages fiscaux pour ce type d'investissement ?",
+      "media": [],
+      "options": [
+        "Non, aucun avantage fiscal",
+        "Oui, la TVA est récupérable sur les équipements neufs",
+        "Oui, une réduction d'impôt de 50%",
+        "Oui, une exonération totale de TVA"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'La TVA sur les équipements neufs est récupérable, ce qui représente un avantage fiscal significatif.' Dr Amrani : 'Je vais profiter de cet avantage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr Bennani doit gérer la déclaration de la TVA de son cabinet. Selon la législation, quel est le délai de déclaration mensuelle de la TVA ?",
+      "media": [],
+      "options": [
+        "Le 20 du mois suivant",
+        "Le 25 du mois suivant",
+        "Le dernier jour du mois suivant",
+        "Le 15 du mois suivant"
+      ],
+      "correct": 0,
+      "explanation": "Dr Amrani explique : 'La déclaration mensuelle de TVA doit être effectuée avant le 20 du mois suivant.' Dr Bennani : 'Je vais respecter ce délai.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer la situation fiscale de ses associés. Selon la législation, quel est le régime fiscal applicable aux associés d'une SARL ?",
+      "media": [],
+      "options": [
+        "Ils sont imposés sur les dividendes",
+        "Ils sont imposés sur les bénéfices de la société",
+        "Ils sont imposés sur les plus-values",
+        "Ils sont exonérés d'impôt"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'Les associés d'une SARL sont imposés sur les dividendes qu'ils perçoivent.' Dr Amrani : 'Je vais prévoir cette imposition.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite anticiper la fiscalité de sa retraite. Selon la législation, quel dispositif permet de se constituer une épargne retraite avantageuse ?",
+      "media": [],
+      "options": [
+        "Le PER",
+        "Le Plan Epargne Retraite Marocain",
+        "L'assurance vie",
+        "Le compte épargne logement"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'Le Plan Epargne Retraite Marocain permet de se constituer une épargne retraite avec des avantages fiscaux.' Dr Bennani : 'Je vais m'y intéresser.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer la taxation des bénéfices réinvestis. Selon la législation, existe-t-il un avantage fiscal pour les bénéfices réinvestis ?",
+      "media": [],
+      "options": [
+        "Non, les bénéfices sont imposés quel que soit leur usage",
+        "Oui, les bénéfices réinvestis bénéficient d'un abattement",
+        "Oui, les bénéfices réinvestis sont exonérés",
+        "Non, il n'y a aucun avantage"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Les bénéfices réinvestis dans l'entreprise peuvent bénéficier d'un abattement fiscal.' Dr Amrani : 'Je vais étudier les modalités de cet abattement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr Bennani doit gérer la transmission de son cabinet à ses enfants. Selon la législation, quel est le régime fiscal applicable à cette transmission ?",
+      "media": [],
+      "options": [
+        "Les droits de succession",
+        "La TVA",
+        "L'impôt sur les sociétés",
+        "La taxe professionnelle"
+      ],
+      "correct": 0,
+      "explanation": "Dr Amrani explique : 'La transmission à un descendant est soumise aux droits de succession.' Dr Bennani : 'Je vais me renseigner sur les abattements éventuels.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr Amrani, après avoir optimisé la fiscalité de son cabinet, reçoit les félicitations de Dr Bennani. Quelle est la prochaine étape pour Dr Amrani ?",
+      "media": [],
+      "options": [
+        "Transmettre son expertise fiscale aux jeunes praticiens",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bonnes pratiques"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'La transmission de votre expertise fiscale est la prochaine étape. Vous pouvez former les jeunes praticiens à la gestion de leur cabinet.' Dr Amrani : 'Je vais partager mon expérience.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

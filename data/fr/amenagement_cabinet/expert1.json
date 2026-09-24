@@ -1,0 +1,541 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_expert1_001",
+    "title": "Amenagement_cabinet - Expert 1",
+    "specialty": "AMEN",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1800,
+    "chapter": "La Stratégie Contentieuse"
+  },
+  "questions": [
+    {
+      "id": "AMEN_X1_Q01",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan l'assigne en justice pour non-paiement de loyers. Selon l'article 26, quel est le délai pour régulariser la situation avant l'éviction ?",
+      "media": [],
+      "options": [
+        "3 jours",
+        "15 jours",
+        "30 jours",
+        "3 mois"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26, al. 2 : le délai est fixé à 15 jours lorsque la requête est basée sur le défaut de paiement des loyers.",
+      "difficulty": "difficile",
+      "category": "Procédure d'éviction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["assignation", "paiement", "delai"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X1_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a reçu un congé pour reprise personnelle mais conteste le motif. Selon la jurisprudence, quelle est la charge de la preuve ?",
+      "media": [],
+      "options": [
+        "Le propriétaire doit prouver sa bonne foi",
+        "Le locataire doit prouver la mauvaise foi du propriétaire",
+        "Le tribunal doit vérifier d'office la bonne foi",
+        "La charge de la preuve incombe au tribunal"
+      ],
+      "correct": 0,
+      "explanation": "La jurisprudence impose au propriétaire de prouver sa bonne foi et la réalité de sa volonté de reprendre le local.",
+      "difficulty": "difficile",
+      "category": "Contentieux",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["reprise", "bonne foi", "preuve"],
+      "references": ["Jurisprudence", "Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X1_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan souhaite contester le montant de l'indemnité d'éviction proposée par le propriétaire. Selon l'article 7, quel est le recours possible ?",
+      "media": [],
+      "options": [
+        "Saisir le tribunal de première instance",
+        "Saisir le tribunal de commerce",
+        "Faire appel à un expert judiciaire",
+        "Les deux premiers recours sont possibles"
+      ],
+      "correct": 3,
+      "explanation": "Le locataire peut saisir le tribunal pour contester l'indemnité et demander une expertise si nécessaire.",
+      "difficulty": "difficile",
+      "category": "Contentieux de l'indemnité",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indemnite", "contestation", "expertise"],
+      "references": ["Loi 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X1_Q04",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Kamali refuse de lui verser l'indemnité d'éviction. Selon l'article 28, que peut faire le locataire ?",
+      "media": [],
+      "options": [
+        "Saisir le tribunal pour obtenir l'exécution du jugement",
+        "Rester dans les lieux jusqu'au paiement",
+        "Demander une saisie sur les biens du propriétaire",
+        "Toutes les réponses ci-dessus sont correctes"
+      ],
+      "correct": 3,
+      "explanation": "Art. 28 : le locataire peut saisir le tribunal pour l'exécution du jugement et bénéficier des voies d'exécution.",
+      "difficulty": "difficile",
+      "category": "Exécution du jugement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["execution", "indemnite", "voies d'execution"],
+      "references": ["Loi 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X1_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a fait réaliser des travaux d'embellissement d'un montant de 300.000 DH. Selon l'article 7, ces travaux sont-ils inclus dans l'indemnité d'éviction ?",
+      "media": [],
+      "options": [
+        "Oui, à condition d'en apporter la preuve",
+        "Non, les travaux ne sont pas indemnisés",
+        "Oui, seulement s'ils sont amortis sur 5 ans",
+        "Non, seule la valeur du fonds est prise en compte"
+      ],
+      "correct": 0,
+      "explanation": "Art. 7, al. 3 : l'indemnité comprend les dépenses de travaux, sous réserve de leur justification.",
+      "difficulty": "difficile",
+      "category": "Évaluation de l'indemnité",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["travaux", "indemnite", "preuve"],
+      "references": ["Loi 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X1_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a cédé son bail sans respecter les formalités de notification. Selon l'article 25, que risque-t-il ?",
+      "media": [],
+      "options": [
+        "La cession est inopposable au propriétaire",
+        "Le propriétaire peut résilier le bail",
+        "Le cessionnaire peut être expulsé",
+        "Toutes les réponses ci-dessus sont correctes"
+      ],
+      "correct": 3,
+      "explanation": "Art. 25, al. 3 : la cession n'est opposable au bailleur qu'à partir de la date de la notification. En l'absence, la cession est inopposable.",
+      "difficulty": "difficile",
+      "category": "Cession du bail",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["cession", "notification", "opposabilite"],
+      "references": ["Loi 49-16 Art.25"]
+    },
+    {
+      "id": "AMEN_X1_Q07",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan a inclus une clause résolutoire dans le bail. Selon l'article 33, comment cette clause est-elle mise en œuvre ?",
+      "media": [],
+      "options": [
+        "Elle s'applique automatiquement en cas d'impayé",
+        "Elle nécessite une mise en demeure préalable de 15 jours",
+        "Elle est nulle de plein droit",
+        "Elle doit être homologuée par le tribunal"
+      ],
+      "correct": 1,
+      "explanation": "Art. 33 : la clause résolutoire nécessite une mise en demeure restée infructueuse de 15 jours.",
+      "difficulty": "difficile",
+      "category": "Clause résolutoire",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["clause resolutoire", "mise en demeure", "delai"],
+      "references": ["Loi 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_X1_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Kamali souhaite utiliser la procédure de référé pour contester un congé abusif. Selon la loi 49-16, est-ce possible ?",
+      "media": [],
+      "options": [
+        "Oui, le juge des référés peut statuer en urgence",
+        "Non, les contestations de congé doivent se faire au fond",
+        "Oui, mais uniquement en matière de troubles de voisinage",
+        "Non, le référé n'existe pas en matière de bail commercial"
+      ],
+      "correct": 0,
+      "explanation": "Le juge des référés peut être saisi en cas d'urgence pour suspendre les effets d'un congé abusif.",
+      "difficulty": "difficile",
+      "category": "Procédure d'urgence",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["referé", "urgence", "congé"],
+      "references": ["CPC", "Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X1_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a été victime d'une éviction sans indemnité alors qu'il avait droit au renouvellement. Selon la jurisprudence, comment peut-il être indemnisé ?",
+      "media": [],
+      "options": [
+        "Par l'octroi de dommages-intérêts pour procédure abusive",
+        "Par la nullité du congé",
+        "Par le paiement de l'indemnité d'éviction avec intérêts",
+        "Toutes les réponses ci-dessus sont possibles"
+      ],
+      "correct": 3,
+      "explanation": "La jurisprudence offre plusieurs voies de recours : nullité du congé, indemnité d'éviction, dommages-intérêts.",
+      "difficulty": "difficile",
+      "category": "Contentieux",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["eviction", "indemnisation", "recours"],
+      "references": ["Jurisprudence"]
+    },
+    {
+      "id": "AMEN_X1_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a fait face à un propriétaire de mauvaise foi qui a simulé une reprise personnelle. Selon l'article 26, quelles sont les sanctions possibles ?",
+      "media": [],
+      "options": [
+        "Nullité du congé",
+        "Paiement de l'indemnité d'éviction",
+        "Dommages-intérêts pour procédure abusive",
+        "Toutes les sanctions ci-dessus sont possibles"
+      ],
+      "correct": 3,
+      "explanation": "La mauvaise foi du propriétaire expose à la nullité du congé, au paiement de l'indemnité et à des dommages-intérêts.",
+      "difficulty": "difficile",
+      "category": "Mauvaise foi",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["mauvaise foi", "sanctions", "reprise"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X1_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan souhaite faire appel d'une décision du tribunal de première instance. Selon la procédure civile, quel est le délai d'appel ?",
+      "media": [],
+      "options": [
+        "15 jours",
+        "1 mois",
+        "2 mois",
+        "3 mois"
+      ],
+      "correct": 0,
+      "explanation": "Le délai d'appel en matière de bail commercial est généralement de 15 jours.",
+      "difficulty": "difficile",
+      "category": "Voies de recours",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["appel", "delai", "voies de recours"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q12",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Kamali a obtenu un jugement d'éviction mais ne paie pas l'indemnité. Selon l'article 28, que peut faire le locataire ?",
+      "media": [],
+      "options": [
+        "Demander l'exécution forcée du jugement",
+        "Rester dans les lieux jusqu'au paiement",
+        "Demander la saisie des loyers dus par le propriétaire",
+        "Toutes ces actions sont envisageables"
+      ],
+      "correct": 3,
+      "explanation": "Art. 28 : le locataire peut demander l'exécution forcée, rester dans les lieux ou saisir les loyers.",
+      "difficulty": "difficile",
+      "category": "Exécution forcée",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["execution", "saisie", "voies d'execution"],
+      "references": ["Loi 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X1_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a reçu un congé pour démolition-reconstruction mais le permis de construire n'est pas encore délivré. Selon l'article 18, que doit faire le propriétaire ?",
+      "media": [],
+      "options": [
+        "Attendre l'obtention du permis avant de signifier le congé",
+        "Signifier le congé et produire le permis ultérieurement",
+        "Signifier le congé sans permis, le permis étant facultatif",
+        "Demander une dérogation au tribunal"
+      ],
+      "correct": 0,
+      "explanation": "Art. 18 : le propriétaire doit produire un permis de construire valide. Le congé est nul si le permis n'est pas délivré.",
+      "difficulty": "difficile",
+      "category": "Démolition-reconstruction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["permis de construire", "congé", "validite"],
+      "references": ["Loi 49-16 Art.18"]
+    },
+    {
+      "id": "AMEN_X1_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Kamali conteste l'évaluation de son fonds de commerce. Selon l'article 7, quel mode de preuve est le plus recevable ?",
+      "media": [],
+      "options": [
+        "L'expertise comptable",
+        "L'évaluation d'un agent immobilier",
+        "La déclaration fiscale des 4 derniers exercices",
+        "L'estimation du propriétaire"
+      ],
+      "correct": 2,
+      "explanation": "Art. 7, al. 3 : l'indemnité est calculée sur la base des déclarations fiscales des quatre derniers exercices, qui font foi.",
+      "difficulty": "difficile",
+      "category": "Évaluation du fonds",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["preuve", "fiscal", "declaration"],
+      "references": ["Loi 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X1_Q15",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan a cédé l'immeuble pendant une procédure d'éviction. Selon l'article 26 bis, quelles sont les conséquences sur la procédure ?",
+      "media": [],
+      "options": [
+        "La procédure s'éteint automatiquement",
+        "La procédure continue contre le nouveau propriétaire",
+        "La procédure doit être reprise de zéro",
+        "Le locataire doit assigner le nouveau propriétaire"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26 bis : le nouveau propriétaire est tenu de respecter les baux en cours. La procédure continue contre lui.",
+      "difficulty": "difficile",
+      "category": "Cession de l'immeuble",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["cession", "procedure", "continuite"],
+      "references": ["Loi 49-16 Art.26 bis"]
+    },
+    {
+      "id": "AMEN_X1_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a été évincé illégalement par le propriétaire. Selon la jurisprudence, le locataire peut-il demander une indemnité spécifique ?",
+      "media": [],
+      "options": [
+        "Oui, pour le trouble de jouissance",
+        "Oui, pour le préjudice commercial",
+        "Oui, pour les frais de réinstallation",
+        "Oui, toutes ces indemnités sont possibles"
+      ],
+      "correct": 3,
+      "explanation": "En cas d'éviction illégale, le locataire peut obtenir plusieurs indemnités : trouble de jouissance, préjudice commercial, frais de réinstallation.",
+      "difficulty": "difficile",
+      "category": "Éviction illégale",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["eviction illegale", "indemnites", "prejudice"],
+      "references": ["Jurisprudence"]
+    },
+    {
+      "id": "AMEN_X1_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan souhaite faire constater la nullité d'une clause de son bail par le tribunal. Selon le code de procédure civile, quelle action doit-il intenter ?",
+      "media": [],
+      "options": [
+        "Une action en nullité",
+        "Un référé",
+        "Une action déclaratoire",
+        "Une action en justice ordinaire"
+      ],
+      "correct": 0,
+      "explanation": "L'action en nullité est l'action appropriée pour faire constater la nullité d'une clause.",
+      "difficulty": "difficile",
+      "category": "Nullité des clauses",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["nullite", "action", "clause"],
+      "references": ["CPC", "Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X1_Q18",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Kamali a intenté une action en validation de congé. Selon l'article 27, le locataire peut-il demander une indemnité avant le jugement ?",
+      "media": [],
+      "options": [
+        "Oui, au cours de l'action en validation",
+        "Non, il doit attendre le jugement définitif",
+        "Oui, seulement après l'éviction",
+        "Non, l'indemnité doit être demandée en appel"
+      ],
+      "correct": 0,
+      "explanation": "Art. 27, al. 2 : le locataire peut introduire une requête aux fins d'indemnisation au cours de l'action en validation du congé.",
+      "difficulty": "difficile",
+      "category": "Action en validation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["validation du congé", "indemnisation", "procedure"],
+      "references": ["Loi 49-16 Art.27"]
+    },
+    {
+      "id": "AMEN_X1_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan et le propriétaire sont parvenus à un accord amiable. Selon la loi 49-16, cet accord est-il valable ?",
+      "media": [],
+      "options": [
+        "Oui, sous réserve des dispositions d'ordre public",
+        "Non, seul le tribunal peut valider un accord",
+        "Oui, uniquement avec l'accord d'un avocat",
+        "Non, la transaction est interdite en matière de bail"
+      ],
+      "correct": 0,
+      "explanation": "Les accords amiables sont valables dans le respect des dispositions d'ordre public de la loi 49-16.",
+      "difficulty": "difficile",
+      "category": "Transaction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["accord amiable", "transaction", "ordre public"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X1_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a gagné son procès en appel. Selon la procédure civile, le pourvoi en cassation est-il possible en matière de bail commercial ?",
+      "media": [],
+      "options": [
+        "Oui, mais uniquement pour des questions de droit",
+        "Non, l'appel est la dernière instance",
+        "Oui, la cassation est toujours possible",
+        "Non, la décision d'appel est définitive"
+      ],
+      "correct": 0,
+      "explanation": "Le pourvoi en cassation est possible pour des questions de droit, même en matière de bail commercial.",
+      "difficulty": "difficile",
+      "category": "Voies de recours",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["cassation", "pourvoi", "droit"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a été cité à comparaître. Selon la procédure civile, quel est le délai de comparution en matière de bail commercial ?",
+      "media": [],
+      "options": [
+        "8 jours",
+        "15 jours",
+        "1 mois",
+        "2 mois"
+      ],
+      "correct": 1,
+      "explanation": "Le délai de comparution est généralement de 15 jours en matière de bail commercial.",
+      "difficulty": "difficile",
+      "category": "Procédure",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["comparution", "delai", "procedure"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q22",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Kamali a fait un commandement de payer. Selon l'article 33, qu'est-ce qu'un commandement de payer ?",
+      "media": [],
+      "options": [
+        "Une simple demande informelle",
+        "Un acte d'huissier mettant en demeure de payer",
+        "Une procédure judiciaire",
+        "Une lettre recommandée simple"
+      ],
+      "correct": 1,
+      "explanation": "Art. 33 : le commandement de payer est un acte d'huissier mettant en demeure le locataire de payer.",
+      "difficulty": "difficile",
+      "category": "Procédure",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["commandement", "paiement", "huissier"],
+      "references": ["Loi 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_X1_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan souhaite contester un commandement de payer. Selon la procédure civile, quel est le recours possible ?",
+      "media": [],
+      "options": [
+        "Saisir le tribunal pour contester la validité du commandement",
+        "Ignorer le commandement",
+        "Payer pour éviter un conflit",
+        "Demander un sursis à paiement"
+      ],
+      "correct": 0,
+      "explanation": "Le locataire peut saisir le tribunal pour contester la validité du commandement de payer.",
+      "difficulty": "difficile",
+      "category": "Contestation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["commandement", "contestation", "validite"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a obtenu une expertise judiciaire. Selon le code de procédure civile, quelle est l'utilité de l'expertise ?",
+      "media": [],
+      "options": [
+        "Éclairer le tribunal sur des questions techniques",
+        "Accélérer la procédure",
+        "Permettre un accord amiable",
+        "Toutes ces réponses sont correctes"
+      ],
+      "correct": 3,
+      "explanation": "L'expertise éclaire le tribunal sur des questions techniques et peut faciliter un accord amiable.",
+      "difficulty": "difficile",
+      "category": "Expertise",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["expertise", "procedure", "technique"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X1_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a finalement obtenu satisfaction en justice. Selon l'article 28, que peut-il espérer comme indemnité ?",
+      "media": [],
+      "options": [
+        "Le montant intégral de l'indemnité d'éviction",
+        "Des dommages-intérêts pour le préjudice subi",
+        "Le remboursement de ses frais de justice",
+        "Toutes ces indemnités sont possibles"
+      ],
+      "correct": 3,
+      "explanation": "Art. 28 : le locataire peut obtenir l'indemnité d'éviction, des dommages-intérêts et le remboursement des frais de justice.",
+      "difficulty": "difficile",
+      "category": "Indemnisation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indemnisation", "dommages-interets", "frais"],
+      "references": ["Loi 49-16 Art.28"]
+    }
+  ]
+}

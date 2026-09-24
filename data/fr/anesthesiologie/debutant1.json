@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "anesthesiologie_debutant1_001",
+    "title": "Anesthesiologie - Débutant 1",
+    "specialty": "ANES",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ANES_D1_Q01",
+      "type": "single-choice",
+      "question": "Comment l'anesthésie locale est-elle précisément définie dans la pratique dentaire contemporaine ?",
+      "media": [],
+      "options": [
+        "La perte complète et induite des réflexes de protection et de la conscience associée à une hypnose pharmacologique",
+        "La modification des seuils de perception corticale par des techniques de dissociation psychologique et de relaxation",
+        "La suppression temporaire et réversible de la sensibilité douloureuse et thermique dans une région anatomique restreinte sans altération de la conscience",
+        "La réduction élective de l'anxiété situationnelle par l'administration de dépresseurs centraux à faible dose"
+      ],
+      "correct": 2,
+      "explanation": "L'anesthésie locale bloque de manière réversible la conduction nerveuse le long des axones dans une zone ciblée, sans modifier la vigilance du patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q02",
+      "type": "single-choice",
+      "question": "Quelle molécule pharmacologique représente historiquement l'étalon-or et la molécule de référence du groupe des amides ?",
+      "media": [],
+      "options": [
+        "Le chlorhydrate de lidocaïne à 2%",
+        "Le chlorhydrate d'articaïne à 4%",
+        "Le chlorhydrate de mépivacaïne à 3%",
+        "Le chlorhydrate de prilocaine à 4%"
+      ],
+      "correct": 0,
+      "explanation": "La lidocaïne 2% reste la molécule de référence internationale par rapport à laquelle toutes les autres amides sont comparées, bien que l'articaïne soit cliniquement très prépondérante.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q03",
+      "type": "single-choice",
+      "question": "Quel agent vasoconstricteur est le plus fréquemment associé aux formulations commerciales de lidocaïne et d'articaïne ?",
+      "media": [],
+      "options": [
+        "La norépinéphrine (noradrénaline) à une concentration fixe de 1:50 000",
+        "Le chlorhydrate de phényléphrine, un agoniste adrénergique sélectif alpha-1",
+        "La vasopressine, une hormone peptidique à activité vasoconstrictrice directe",
+        "L'épinéphrine (adrénaline) formulée à des concentrations standards de 1:100 000 ou 1:200 000"
+      ],
+      "correct": 3,
+      "explanation": "L'épinéphrine est le vasoconstricteur de choix, agissant sur les récepteurs alpha-1 pour la vasoconstriction locale et bêta pour la sécurité systémique relative.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q04",
+      "type": "single-choice",
+      "question": "Quelle est la principale justification clinique de l'ajout d'un vasoconstricteur à une solution anesthésique locale ?",
+      "media": [],
+      "options": [
+        "Prolonger la durée de l'anesthésie pulpaire, réduire les risques de toxicité systémique en ralentissant l'absorption et améliorer l'hémostase",
+        "Accélérer le délai d'action initial en augmentant le taux de base de molécules non ionisées",
+        "Modifier le pH chimique de la solution pour réduire la douleur ressentie lors de l'injection tissulaire",
+        "Diminuer la viscosité de la solution afin de faciliter son passage à travers des aiguilles de très faible diamètre"
+      ],
+      "correct": 0,
+      "explanation": "En resserrant les vaisseaux locaux, le vasoconstricteur maintient la molécule plus longtemps au contact du nerf et diminue le pic de concentration plasmatique dans le sang.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q05",
+      "type": "single-choice",
+      "question": "Quelle est la dose maximale de sécurité reconnue pour la lidocaïne avec épinéphrine chez un patient adulte sain ?",
+      "media": [],
+      "options": [
+        "4,4 mg/kg de poids corporel, sans jamais dépasser un seuil absolu de 200 mg",
+        "7 mg/kg de poids corporel, jusqu'à un seuil limite absolu ne dépassant pas 500 mg",
+        "10 mg/kg de poids corporel, un seuil élevé toléré uniquement en cas d'acte chirurgical lourd",
+        "2 mg/kg de poids corporel, une limite restrictive réservée aux patients polymédiqués"
+      ],
+      "correct": 1,
+      "explanation": "Pour un adulte sain, la limite est de 7 mg/kg (maximum 500 mg), ce qui équivaut environ à 13 cartouches de 1,8 mL à 2% pour un individu de 70 kg.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q06",
+      "type": "single-choice",
+      "question": "Quels sont les critères de dosage maximal pour un adulte sain recevant de l'articaïne à 4% avec épinéphrine ?",
+      "media": [],
+      "options": [
+        "7 mg/kg de poids corporel, avec un plafond absolu de 500 mg en raison d'une métabolisation plasmatique rapide",
+        "4,4 mg/kg de poids corporel, représentant un plafond restrictif universel pour éviter la cardiotoxicité",
+        "12 mg/kg de poids corporel, justifiée par l'absence totale de liaison de l'articaïne aux protéines",
+        "3 mg/kg de poids corporel, limite réglementaire obligatoire pour toute infiltration maxillaire"
+      ],
+      "correct": 0,
+      "explanation": "Grâce à son groupe ester supplémentaire, l'articaïne est rapidement hydrolysée par les cholinestérases plasmatiques, ce qui lui confère une demi-vie courte (environ 20 min) et un profil de sécurité élevé à 7 mg/kg.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q07",
+      "type": "single-choice",
+      "question": "Quelle est la dose maximale de sécurité de la lidocaïne lorsqu'elle est administrée pure (sans vasoconstricteur) ?",
+      "media": [],
+      "options": [
+        "7 mg/kg de poids corporel, car l'absence de vasoconstricteur ne modifie pas la pharmacocinétique de la molécule",
+        "10 mg/kg de poids corporel, en raison du pouvoir sédatif propre de la forme libre",
+        "4,4 mg/kg de poids corporel, jusqu'à un plafond systémique absolu ne dépassant pas 300 mg",
+        "1,5 mg/kg de poids corporel, afin de prévenir le risque d'hypertension pulmonaire réflexe"
+      ],
+      "correct": 2,
+      "explanation": "Sans épinéphrine, la lidocaïne provoque une vasodilatation locale. Elle est absorbée beaucoup plus vite par la circulation générale, ce qui abaisse sa dose maximale de sécurité à 4,4 mg/kg.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q08",
+      "type": "single-choice",
+      "question": "Quel est le délai d'action (temps de latence) clinique typique pour obtenir une anesthésie efficace avec de la lidocaïne à 2% lors d'une infiltration ?",
+      "media": [],
+      "options": [
+        "Immédiat (moins de 10 secondes), par diffusion ionique instantanée",
+        "2 à 3 minutes après le dépôt réussi de la solution dans l'espace anatomique cible",
+        "7 à 10 minutes, en raison de la lenteur de dissociation des liaisons amides",
+        "15 minutes au minimum, nécessitant l'activation thermique par les tissus"
+      ],
+      "correct": 1,
+      "explanation": "La lidocaïne possède un pKa de 7,9, ce qui lui permet d'avoir une fraction libre non ionisée suffisante à pH physiologique pour pénétrer l'axone en 2 à 3 minutes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q09",
+      "type": "single-choice",
+      "question": "Quelle est la durée moyenne attendue d'une anesthésie pulpaire (tissus durs) efficace avec de la lidocaïne à 2% adrénalinée ?",
+      "media": [],
+      "options": [
+        "15 à 20 minutes, ce qui limite son usage aux gestes d'urgence superficiels",
+        "30 à 45 minutes maximum, insuffisante pour les dents pluriradiculées",
+        "60 à 90 minutes d'analgésie endodontique et opératoire profonde",
+        "180 à 240 minutes d'insensibilité pulpaire continue"
+      ],
+      "correct": 2,
+      "explanation": "L'anesthésie des tissus mous persiste de 3 à 5 heures, mais l'anesthésie pulpaire utile (durant laquelle la dent est totalement insensible) dure en moyenne 60 à 90 minutes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q10",
+      "type": "single-choice",
+      "question": "Comment les modalités d'anesthésie locale sont-elles classées en pratique odontologique ?",
+      "media": [],
+      "options": [
+        "Techniques topique, infiltrative (parapériostée), régionale (tronculaire), intraligamentaire et intra-osseuse",
+        "Protocoles par inhalation, intraveineux, intramusculaire et sédation consciente exclusive",
+        "Thérapies hypnotiques, cognitives, dissociatives et blocs ganglionnaires profonds",
+        "Voies trans-muqueuse, trans-dermique, intra-thécale et péri-apicale non pressurisée"
+      ],
+      "correct": 0,
+      "explanation": "Cette classification repose sur le site de dépôt de la solution par rapport aux structures nerveuses (terminaisons fines, troncs principaux ou desmodonte).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q11",
+      "type": "single-choice",
+      "question": "Comment une technique d'anesthésie infiltrative ou parapériostée est-elle précisément caractérisée ?",
+      "media": [],
+      "options": [
+        "Le dépôt de la solution près d'un tronc nerveux principal pour bloquer un vaste quadrant",
+        "Le dépôt de la solution anesthésique dans le repli muco-buccal au-dessus du périoste, à proximité des branches nerveuses terminales",
+        "L'introduction forcée d'un fluide hyperbare au sein de la masse du muscle masséter",
+        "L'administration directe dans la circulation sanguine d'un capillaire osseux de surface"
+      ],
+      "correct": 1,
+      "explanation": "L'infiltration parapériostée s'appuie sur la porosité de l'os pour atteindre les apex. Elle est hautement efficace au maxillaire, mais limitée à la mandibule chez l'adulte en raison de la corticale épaisse.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q12",
+      "type": "single-choice",
+      "question": "Comment une anesthésie régionale ou tronculaire (bloc nerveux) est-elle caractérisée ?",
+      "media": [],
+      "options": [
+        "L'application passive d'un agent liquide hautement concentré sur une muqueuse intacte",
+        "La perforation mécanique de la corticale osseuse pour infiltrer la moelle de l'os spongieux",
+        "Le dépôt de la solution autour d'un tronc nerveux périphérique majeur, à distance du site opératoire immédiat",
+        "L'injection sous haute pression dans l'espace étroit compris entre le cément et l'os alvéolaire"
+      ],
+      "correct": 2,
+      "explanation": "Le bloc tronculaire interrompt la conduction nerveuse en amont, ce qui permet de désensibiliser un grand territoire à l'aide d'un seul point d'injection.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q13",
+      "type": "single-choice",
+      "question": "Quelle structure nerveuse principale est ciblée lors d'une anesthésie régionale mandibulaire classique (Spix) ?",
+      "media": [],
+      "options": [
+        "Le nerf buccal long lorsqu'il croise la ligne oblique externe",
+        "Le nerf mentonnier à son émergence du foramen homonyme entre les prémolaires",
+        "Le nerf lingual situé sous la muqueuse du plancher buccal postérieur",
+        "Le nerf alvéolaire inférieur (NAI) avant son entrée dans le foramen mandibulaire au sein de l'espace ptérygo-mandiculaire"
+      ],
+      "correct": 3,
+      "explanation": "L'anesthésie au niveau de l'épine de Spix vise le nerf alvéolaire inférieur avant qu'il ne soit protégé par la structure osseuse de la mandibule.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q14",
+      "type": "single-choice",
+      "question": "Comment la technique d'anesthésie intraligamentaire est-elle définie ?",
+      "media": [],
+      "options": [
+        "L'injection de la solution sous haute pression mécanique directement dans le ligament parodontal (desmodonte)",
+        "Le dépôt lâche d'un fluide sous la muqueuse attachée au niveau de la ligne de jonction muco-gingivale",
+        "L'administration de principes actifs au sein des espaces intercellulaires de la papille interdentaire libre",
+        "La diffusion obtenue par le placement d'une mèche imprégnée au fond du sulcus gingivo-dentaire"
+      ],
+      "correct": 0,
+      "explanation": "Cette technique utilise une seringue spécifique pour vaincre la résistance du ligament. La solution diffuse en réalité vers l'os spongieux adjacent à travers les perforations de la lamina dura.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q15",
+      "type": "single-choice",
+      "question": "Quelles configurations d'aiguilles sont les plus fréquemment choisies pour les injections locales de routine en omnipratique ?",
+      "media": [],
+      "options": [
+        "Des aiguilles rigides de diamètre supérieur à 21 Gauges pour forcer le passage trans-périosté",
+        "Des aiguilles jetables ultra-fines, courtes ou longues, allant généralement de 27 à 30 Gauges",
+        "Des aiguilles à biseau inversé calibrées pour les injections intra-artérielles rétrogrades",
+        "Des micro-canules à bout mousse utilisées pour le rinçage des poches parodontales"
+      ],
+      "correct": 1,
+      "explanation": "Les aiguilles 27G (souvent longues pour les blocs) et 30G (courtes ou ultra-courtes pour les infiltrations) offrent le meilleur compromis entre flexibilité, guidage et réduction de la douleur à la pénétration.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q16",
+      "type": "single-choice",
+      "question": "Quelle est la principale raison de la standardisation des cartouches d'anesthésie (carpules) à un volume de 1,8 mL (ou 1,7 mL) ?",
+      "media": [],
+      "options": [
+        "Elle représente la capacité volumétrique universelle conçue pour s'insérer précisément dans les seringues d'omnipratique",
+        "Elle correspond à la dose toxique minimale d'adrénaline tolérée par le système cardiovasculaire",
+        "Elle constitue le volume de fluide exact au-delà duquel une ischémie muqueuse devient systématique",
+        "Elle est calculée pour saturer exactement les récepteurs nerveux d'une seule molaire supérieure"
+      ],
+      "correct": 0,
+      "explanation": "Il s'agit d'une norme industrielle internationale permettant la compatibilité parfaite entre les seringues métalliques ou plastiques, les cartouches de verre et les aiguilles vissables.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q17",
+      "type": "single-choice",
+      "question": "Quel est l'objectif clinique de l'application d'un agent anesthésique topique avant l'injection ?",
+      "media": [],
+      "options": [
+        "Obtenir une analgésie pulpaire transitoire permettant la taille de cavités de Classe I superficielles",
+        "Neutraliser les agents pathogènes de la flore de surface pour éviter une bactériémie transitoire",
+        "Désensibiliser les récepteurs nerveux muqueux superficiels afin de minimiser l'inconfort de la piqûre",
+        "Provoquer une vasoconstriction de surface pour éliminer le saignement lors de l'insertion"
+      ],
+      "correct": 2,
+      "explanation": "L'anesthésie topique (gel de benzocaïne à 20% ou lidocaïne) abolit la sensibilité de la muqueuse superficielle si elle est appliquée sur un tissu préalablement séché pendant au moins 1 à 2 minutes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q18",
+      "type": "single-choice",
+      "question": "Quel est le risque physiologique immédiat associé à une injection intravasculaire accidentelle de la solution anesthésique ?",
+      "media": [],
+      "options": [
+        "Une baisse brutale de l'efficacité de la molécule liée à sa dilution instantanée dans la masse sanguine",
+        "Une réaction d'hypersensibilité immédiate de type I induisant un œdème de Quincke",
+        "La formation d'une embolie gazeuse massive provoquée par le relargage des conservateurs",
+        "L'apparition immédiate d'un pic de concentration plasmatique élevé, risquant de déclencher une toxicité systémique"
+      ],
+      "correct": 3,
+      "explanation": "L'injection directe dans un vaisseau envoie la totalité de l'anesthésique et du vasoconstricteur vers les organes cibles (SNC et cœur), simulant un surdosage massif même avec un faible volume.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q19",
+      "type": "single-choice",
+      "question": "Quels sont les premiers signes cliniques d'appel d'une toxicité systémique (LAST) liée à un surdosage d'anesthésique local ?",
+      "media": [],
+      "options": [
+        "Un engourdissement péri-oral, un goût métallique, des acouphènes, suivis d'une phase d'excitation (secousses musculaires, convulsions)",
+        "Une baisse immédiate de la température corporelle associée à une éruption cutanée prurigineuse",
+        "Une somnolence instantanée menant à un coma calme sans signes neurologiques d'excitation préalables",
+        "Des douleurs articulaires aiguës bilatérales localisées au niveau des membres inférieurs"
+      ],
+      "correct": 0,
+      "explanation": "Les amides traversent la barrière hémato-encéphalique. À dose toxique, ils bloquent d'abord les voies inhibitrices corticales, ce qui libère les voies excitatrices (goût métallique, vertiges, secousses puis convulsions) avant la dépression globale du SNC.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q20",
+      "type": "single-choice",
+      "question": "Quel est le protocole de prise en charge immédiate au fauteuil face aux signes initiaux d'une toxicité systémique modérée ?",
+      "media": [],
+      "options": [
+        "Augmenter le débit d'injection pour saturer rapidement les récepteurs et bloquer la crise",
+        "Interrompre immédiatement l'injection, sécuriser le patient en position déclive, administrer de l'oxygène et monitorer",
+        "Injecter une seconde cartouche d'une molécule différente pour créer une compétition compétitive",
+        "Administrer immédiatement un puissant stimulant cardiaque par voie intra-musculaire"
+      ],
+      "correct": 1,
+      "explanation": "L'arrêt de l'apport pharmacologique est la première mesure d'urgence. L'oxygénation prévient l'hypoxie et l'acidose, qui aggravent la toxicité cardiaque des anesthésiques locaux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q21",
+      "type": "single-choice",
+      "question": "Comment une authentique réaction d'hypersensibilité allergique aux anesthésiques locaux de type amide modernes est-elle qualifiée ?",
+      "media": [],
+      "options": [
+        "Courante, représentant près de 30% des syncopes observées au cours d'une carrière clinique",
+        "Inévitable en cas d'injections répétées sur une période inférieure à quinze jours",
+        "Spécifique aux patients présentant des pathologies auto-immunes cutanées majeures",
+        "Extrêmement rare, les incidents rapportés étant le plus souvent des malaises psychogènes ou des réactions aux conservateurs"
+      ],
+      "correct": 3,
+      "explanation": "La structure chimique des amides est très peu allergisante. Les véritables réactions immuno-médiées sont rarissimes et souvent imputables au métabisulfite de sodium (antioxydant du vasoconstricteur) ou au latex des opercules.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q22",
+      "type": "single-choice",
+      "question": "Quelle option clinique est indiquée pour un patient présentant une allergie vraie et documentée à une molécule de type amide ?",
+      "media": [],
+      "options": [
+        "Utiliser une autre molécule de la même famille des amides à une concentration réduite de moitié",
+        "Réaliser le geste sous sédation consciente au protoxyde d'azote sans aucun apport d'anesthésique local",
+        "Recourir à un anesthésique local de la famille des esters (comme la procaïne) après tests, ou programmer l'acte sous anesthésie générale",
+        "Pratiquer une prémédication sédative lourde 48 heures avant la séance pour inhiber la réponse immunitaire"
+      ],
+      "correct": 2,
+      "explanation": "L'allergie croisée au sein du groupe des amides étant fréquente, la confirmation d'une allergie impose le changement de famille chimique (esters, sans conservateurs) ou une prise en charge en milieu hospitalier sécurisé.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q23",
+      "type": "single-choice",
+      "question": "Quelles conditions systémiques constituent des contre-indications absolues à l'utilisation clinique de l'épinéphrine en omnipratique ?",
+      "media": [],
+      "options": [
+        "Un phéochromocytome non opéré, une hyperthyroïdie sévère non contrôlée et un infarctus du myocarde datant de moins de 3 à 6 mois",
+        "Une hypertension artérielle essentielle stabilisée par un traitement diurétique au long cours",
+        "Un diabète de type II contrôlé par des antidiabétiques oraux sans hypoglycémie majeure",
+        "Un antécédent d'accident vasculaire cérébral datant de plus de cinq ans sans séquelles neurologiques"
+      ],
+      "correct": 0,
+      "explanation": "Dans ces pathologies cardiovasculaires et endocriniennes instables, l'injection d'amines sympathomimétiques même à faible dose peut déclencher une crise hypertensive létale, un AVC ou une arythmie ventriculaire maligne.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q24",
+      "type": "single-choice",
+      "question": "Quel est le risque cardiovasculaire majeur lors de l'administration d'une solution d'épinéphrine chez un patient traité par bêtabloquants non sélectifs (ex: Propranolol) ?",
+      "media": [],
+      "options": [
+        "Un effondrement tensionnel brutal par vasodilatation périphérique généralisée",
+        "Une crise hypertensive aiguë sévère associée à une bradycardie réflexe",
+        "Une accélération immédiate de la métabolisation hépatique annulant l'effet analgésique",
+        "Une inhibition complète de la fonction de pompe cardiaque par blocage des canaux calciques"
+      ],
+      "correct": 1,
+      "explanation": "Les bêtabloquants non sélectifs bloquent les récepteurs bêta-2 (qui induisent normalement une vasodilatation compensatrice). L'adrénaline injectée agit alors de manière exclusive sur les récepteurs alpha-1, provoquant une vasoconstriction systémique massive avec poussée hypertensive et ralentissement cardiaque réflexe.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q25",
+      "type": "single-choice",
+      "question": "Quel est l'objectif technique fondamental de l'exécution d'un test d'aspiration (test de reflux) avant toute injection d'anesthésique local ?",
+      "media": [],
+      "options": [
+        "Vérifier que l'extrémité active de l'aiguille ne se situe pas à l'intérieur de la lumière d'un vaisseau sanguin",
+        "Mesurer de manière indirecte la pression hydrostatique régnant au sein du tissu interstitiel",
+        "S'assurer que le piston en caoutchouc de la carpule coulisse librement sans résistance mécanique",
+        "Créer une micro-déchirure contrôlée du périoste pour accélérer la pénétration de la solution"
+      ],
+      "correct": 0,
+      "explanation": "Le test d'aspiration consiste à créer une pression négative. Si du sang apparaît dans la cartouche, l'aiguille est intravasculaire ; il faut impérativement la retirer ou la repositionner pour éviter une injection systémique directe.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

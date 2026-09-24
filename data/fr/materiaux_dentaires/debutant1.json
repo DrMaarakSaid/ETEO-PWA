@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "materiaux_dentaires_debutant1_001",
+    "title": "Materiaux_dentaires - Débutant 1",
+    "specialty": "MATE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "MATE_D1_Q01",
+      "type": "single-choice",
+      "question": "Qu'est-ce qu'un matériau dentaire ?",
+      "media": [],
+      "options": [
+        "Un produit destiné à restaurer, remplacer ou traiter les tissus dentaires",
+        "Un instrument manuel utilisé pour l'examen clinique de la cavité buccale",
+        "Un dispositif électronique permettant de mesurer la vitalité pulpaire",
+        "Une solution médicamenteuse administrée pour limiter l'inflammation gingivale"
+      ],
+      "correct": 0,
+      "explanation": "Les matériaux dentaires englobent tous les produits servant à la reconstruction et à la thérapeutique dentaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q02",
+      "type": "single-choice",
+      "question": "Quel est le matériau de choix pour les restaurations directes esthétiques ?",
+      "media": [],
+      "options": [
+        "La résine composite photopolymérisable",
+        "L'alliage métallique à base d'amalgame",
+        "Le ciment verre ionomère conventionnel",
+        "L'alliage précieux à base d'or coulé"
+      ],
+      "correct": 0,
+      "explanation": "Le composite est privilégié pour sa capacité d'adhésion et sa capacité à imiter la teinte naturelle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q03",
+      "type": "single-choice",
+      "question": "Quel est le rôle principal des charges minérales dans un composite ?",
+      "media": [],
+      "options": [
+        "Améliorer la résistance mécanique et réduire le retrait de prise",
+        "Modifier la saturation de la teinte pour un meilleur rendu",
+        "Augmenter la fluidité pour faciliter la mise en place",
+        "Accélérer la réaction de polymérisation chimique"
+      ],
+      "correct": 0,
+      "explanation": "Les charges renforcent la structure du composite et limitent la contraction volumétrique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q04",
+      "type": "single-choice",
+      "question": "Quelle est la propriété biologique unique du Ciment Verre Ionomère (CVI) ?",
+      "media": [],
+      "options": [
+        "Sa capacité de libération prolongée d'ions fluor",
+        "Sa résistance exceptionnelle à l'abrasion occlusale",
+        "Sa facilité de polymérisation sous lumière bleue",
+        "Son excellente translucidité similaire à l'émail"
+      ],
+      "correct": 0,
+      "explanation": "La libération de fluor favorise la reminéralisation et prévient les caries secondaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q05",
+      "type": "single-choice",
+      "question": "Que se produit-il lors de la photopolymérisation ?",
+      "media": [],
+      "options": [
+        "Le passage de l'état pâteux à l'état solide par activation lumineuse",
+        "Le séchage complet de la dent par un flux d'air chaud et sec",
+        "Une réaction exothermique intense causant une cristallisation",
+        "La libération de monomères résiduels pour une meilleure adhésion"
+      ],
+      "correct": 0,
+      "explanation": "La lumière bleue active l'initiateur pour transformer la résine liquide en polymère solide.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q06",
+      "type": "single-choice",
+      "question": "Pourquoi utilise-t-on la technique de stratification incrémentale ?",
+      "media": [],
+      "options": [
+        "Pour réduire les tensions liées au retrait de polymérisation",
+        "Pour augmenter la rapidité de la procédure clinique globale",
+        "Pour simplifier le polissage final de la surface restaurée",
+        "Pour diminuer la quantité de résine composite nécessaire"
+      ],
+      "correct": 0,
+      "explanation": "La stratification permet de mieux gérer le facteur de configuration cavitaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q07",
+      "type": "single-choice",
+      "question": "Qu'est-ce que le système adhésif dentaire ?",
+      "media": [],
+      "options": [
+        "Une interface de liaison micromécanique entre dent et composite",
+        "Un ciment de scellement définitif pour les restaurations",
+        "Une colle métallique destinée aux prothèses fixées",
+        "Un vernis de protection posé en fin de traitement"
+      ],
+      "correct": 0,
+      "explanation": "Le système adhésif crée l'union indispensable entre les tissus dentaires et la résine.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q08",
+      "type": "single-choice",
+      "question": "Quelle est la concentration standard de l'acide phosphorique pour le mordançage ?",
+      "media": [],
+      "options": [
+        "Environ 37% de concentration en poids",
+        "Environ 10% de concentration en poids",
+        "Environ 50% de concentration en poids",
+        "Environ 5% de concentration en poids"
+      ],
+      "correct": 0,
+      "explanation": "Le gel d'acide phosphorique à 37% est le standard pour le mordançage de l'émail.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q09",
+      "type": "single-choice",
+      "question": "Quel est le principal composant de la matrice organique des composites ?",
+      "media": [],
+      "options": [
+        "Une résine organique type Bis-GMA ou TEGDMA",
+        "Une charge minérale à base de silice colloïdale",
+        "Un verre de baryum pour la radio-opacité",
+        "Un métal lourd liquide tel que le mercure"
+      ],
+      "correct": 0,
+      "explanation": "Le Bis-GMA est la base organique fondamentale de la majorité des composites.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q10",
+      "type": "single-choice",
+      "question": "Quelle est la fonction essentielle de l'agent de couplage (silane) ?",
+      "media": [],
+      "options": [
+        "Lier chimiquement les charges à la matrice résineuse",
+        "Modifier la teinte pour mieux correspondre à la dent",
+        "Augmenter la dureté de surface du matériau final",
+        "Diminuer la viscosité du matériau avant la prise"
+      ],
+      "correct": 0,
+      "explanation": "Le silane assure l'interface d'union entre la charge minérale et la résine organique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q11",
+      "type": "single-choice",
+      "question": "Qu'est-ce qu'une résine dite 'flowable' ou fluide ?",
+      "media": [],
+      "options": [
+        "Un composite caractérisé par une faible viscosité",
+        "Un amalgame métallique pur sans mercure",
+        "Un ciment définitif pour scellement prothétique",
+        "Une base isolante hautement radiopaque"
+      ],
+      "correct": 0,
+      "explanation": "Leur fluidité permet une adaptation précise aux parois de la cavité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q12",
+      "type": "single-choice",
+      "question": "Quel est le risque environnemental majeur lié à l'amalgame ?",
+      "media": [],
+      "options": [
+        "La libération potentielle de mercure dans l'environnement",
+        "La corrosion rapide des bords de la restauration",
+        "La fragilité extrême face aux contraintes masticatoires",
+        "Le coût très élevé de sa mise en œuvre clinique"
+      ],
+      "correct": 0,
+      "explanation": "Le mercure contenu dans l'amalgame est un polluant toxique majeur.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q13",
+      "type": "single-choice",
+      "question": "Quelle norme définit la biocompatibilité des matériaux dentaires ?",
+      "media": [],
+      "options": [
+        "La norme internationale ISO 7405",
+        "La norme de gestion ISO 9001",
+        "Le marquage CE pour la conformité européenne",
+        "La norme française NF de qualité"
+      ],
+      "correct": 0,
+      "explanation": "L'ISO 7405 spécifie les méthodes d'essai pour l'évaluation biologique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q14",
+      "type": "single-choice",
+      "question": "Quelle est la dureté de l'émail dentaire ?",
+      "media": [],
+      "options": [
+        "La plus élevée parmi tous les tissus de l'organisme",
+        "Une valeur intermédiaire entre la dentine et l'os",
+        "Une dureté assez faible par rapport à la dentine",
+        "Une dureté équivalente à celle de la dentine"
+      ],
+      "correct": 0,
+      "explanation": "L'émail est la substance la plus minéralisée et la plus dure du corps humain.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q15",
+      "type": "single-choice",
+      "question": "Quel matériau présente la meilleure résistance à l'usure clinique ?",
+      "media": [],
+      "options": [
+        "Les céramiques pressées ou usinées",
+        "Les résines composites nanohybrides",
+        "Les amalgames d'argent classiques",
+        "Les ciments verre ionomères hybrides"
+      ],
+      "correct": 0,
+      "explanation": "Les céramiques offrent une stabilité structurelle et une résistance à l'abrasion supérieures.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q16",
+      "type": "single-choice",
+      "question": "Qu'est-ce que le retrait de polymérisation ?",
+      "media": [],
+      "options": [
+        "La contraction du matériau lors de sa prise",
+        "La dilatation thermique lors de la mastication",
+        "Le changement de teinte après la photopolymérisation",
+        "La perte d'adhésion due à une mauvaise technique"
+      ],
+      "correct": 0,
+      "explanation": "La contraction volumétrique lors de la prise est inhérente aux résines.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q17",
+      "type": "single-choice",
+      "question": "Qu'est-ce qu'un matériau CVIMR ?",
+      "media": [],
+      "options": [
+        "Un ciment verre ionomère modifié par adjonction de résine",
+        "Un composite pur à haute teneur en charges minérales",
+        "Un alliage métallique de type amalgame restaurateur",
+        "Une céramique vitreuse utilisée pour les facettes"
+      ],
+      "correct": 0,
+      "explanation": "Le CVIMR combine les propriétés des CVI et des résines.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q18",
+      "type": "single-choice",
+      "question": "Quelle est la longueur d'onde optimale pour la photopolymérisation ?",
+      "media": [],
+      "options": [
+        "Un spectre situé entre 440 et 480 nm",
+        "Un spectre situé entre 200 et 300 nm",
+        "Un spectre situé entre 600 et 700 nm",
+        "Un spectre situé entre 900 et 1000 nm"
+      ],
+      "correct": 0,
+      "explanation": "La lumière bleue (440-480 nm) est nécessaire pour activer le photo-initiateur.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q19",
+      "type": "single-choice",
+      "question": "Quel est l'effet principal du mordançage sur l'émail ?",
+      "media": [],
+      "options": [
+        "La création de micro-rugosités pour l'adhésion",
+        "Le nettoyage complet du tartre et des débris",
+        "Le polissage de la surface pour limiter la plaque",
+        "Le blanchiment esthétique de la surface dentaire"
+      ],
+      "correct": 0,
+      "explanation": "Le mordançage dissout partiellement les prismes pour créer une rétention micromécanique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q20",
+      "type": "single-choice",
+      "question": "Quel est le risque d'un composite mal polymérisé ?",
+      "media": [],
+      "options": [
+        "Une sensibilité post-opératoire et une faiblesse mécanique",
+        "Une modification permanente vers une couleur plus claire",
+        "Une absence totale de propriétés de libération de fluor",
+        "Une dureté excessive empêchant tout ajustement"
+      ],
+      "correct": 0,
+      "explanation": "Une conversion incomplète altère les propriétés physiques et la biocompatibilité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q21",
+      "type": "single-choice",
+      "question": "Quelle est la fonction principale d'un liner ?",
+      "media": [],
+      "options": [
+        "Assurer une protection pulpaire et thérapeutique",
+        "Réaliser la restauration anatomique complète",
+        "Assurer le scellement externe de la dent",
+        "Polir la surface finale de l'obturation"
+      ],
+      "correct": 0,
+      "explanation": "Le liner est posé en couche fine pour protéger la pulpe.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q22",
+      "type": "single-choice",
+      "question": "Quel matériau est généralement le plus radiopaque ?",
+      "media": [],
+      "options": [
+        "Un composite hautement chargé en métaux ou baryum",
+        "Un ciment verre ionomère pur non modifié",
+        "La dentine saine des tissus coronaires",
+        "Une résine fluide non chargée en particules"
+      ],
+      "correct": 0,
+      "explanation": "Les charges lourdes (baryum, strontium) permettent de voir le matériau sur les radios.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q23",
+      "type": "single-choice",
+      "question": "Qu'est-ce que le facteur C en dentisterie ?",
+      "media": [],
+      "options": [
+        "Le ratio entre les surfaces liées et libres d'une cavité",
+        "La mesure de la profondeur totale de la cavité",
+        "Le coefficient de dureté des matériaux restaurateurs",
+        "La valeur d'adhérence d'un système adhésif"
+      ],
+      "correct": 0,
+      "explanation": "Un facteur C élevé signifie plus de surfaces liées, donc plus de tensions.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q24",
+      "type": "single-choice",
+      "question": "Pourquoi réalise-t-on le polissage d'une restauration ?",
+      "media": [],
+      "options": [
+        "Pour réduire la rétention de plaque et améliorer l'esthétique",
+        "Pour augmenter le volume global de la restauration",
+        "Pour modifier la teinte finale de la dent",
+        "Pour renforcer la vitalité de la pulpe dentaire"
+      ],
+      "correct": 0,
+      "explanation": "Une surface lisse est moins propice au développement du biofilm bactérien.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D1_Q25",
+      "type": "single-choice",
+      "question": "Comment se lie le ciment verre ionomère à la dent ?",
+      "media": [],
+      "options": [
+        "Par une liaison chimique directe de type acide-base",
+        "Par une simple rétention mécanique sans interaction",
+        "Par l'utilisation d'une colle résineuse intermédiaire",
+        "Par une friction mécanique lors de la mise en place"
+      ],
+      "correct": 0,
+      "explanation": "Le CVI adhère chimiquement aux tissus dentaires par échange d'ions.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

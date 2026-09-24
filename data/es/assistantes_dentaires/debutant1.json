@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "assistantes_dentaires_debutant1_001",
+    "title": "Asistentes Dentales - Principiante 1",
+    "specialty": "ASSI",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ASSI_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Chiba contrató a una asistente sin título, formada 'sobre la marcha'. El Dr. Zaki contrató a una asistente con el título DUT 'Asistente Dental'. Según las recomendaciones profesionales, ¿qué situación es más arriesgada?",
+      "media": [],
+      "options": [
+        "Ambas situaciones son equivalentes en términos de riesgo",
+        "La situación del Dr. Chiba es más arriesgada, ya que la asistente no tiene formación reconocida",
+        "La situación del Dr. Zaki es más arriesgada, ya que el título no es garantía",
+        "Ninguna de las dos situaciones presenta un riesgo especial"
+      ],
+      "correct": 1,
+      "explanation": "El DUT 'Asistente Dental' es la formación de referencia en Marruecos. Contratar a una asistente sin esta formación expone el consultorio a riesgos en materia de higiene, esterilización y gestión del consultorio.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Chiba formó a su asistente 'sobre la marcha' en unos días. El Dr. Zaki contrató a una asistente titulada. Según los estándares de formación, ¿cuál es la duración de la formación DUT 'Asistente Dental'?",
+      "media": [],
+      "options": [
+        "6 meses",
+        "1 año",
+        "2 años",
+        "3 años"
+      ],
+      "correct": 2,
+      "explanation": "El DUT 'Asistente Dental' es una formación de dos años que incluye módulos de gestión de la práctica dental, higiene, ergonomía, asistencia clínica, comunicación y ética.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q03",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba fue formada sobre la marcha y no domina las técnicas de esterilización. La asistente del Dr. Zaki estudió estas técnicas durante su formación. Según las buenas prácticas, ¿cuál es la consecuencia más probable?",
+      "media": [],
+      "options": [
+        "Ninguna consecuencia, la esterilización es fácil de aprender",
+        "Un mayor riesgo de infecciones nosocomiales en el consultorio del Dr. Chiba",
+        "La esterilización será más difícil en el consultorio del Dr. Zaki",
+        "Ambos consultorios están expuestos al mismo riesgo"
+      ],
+      "correct": 1,
+      "explanation": "La esterilización de instrumentos es un proceso técnico complejo que requiere formación específica. Una mala esterilización expone a los pacientes a graves riesgos infecciosos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Chiba está satisfecho con su asistente sin título, a quien formó él mismo. El Dr. Zaki tiene una asistente titulada. Según los estudios sobre asistentes dentales, ¿cuál es la principal ventaja de una asistente titulada?",
+      "media": [],
+      "options": [
+        "Un salario más bajo",
+        "Un mejor dominio de las técnicas de higiene y esterilización",
+        "Una mayor disponibilidad",
+        "Una mejor apariencia"
+      ],
+      "correct": 1,
+      "explanation": "Las asistentes tituladas del DUT han recibido una formación específica en higiene, asepsia y esterilización, lo que garantiza una mejor calidad de la atención y una reducción de los riesgos infecciosos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q05",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba no domina la gestión de inventarios de consumibles. La asistente del Dr. Zaki estudió esta habilidad durante su formación. Según el programa DUT, ¿qué módulos incluye la formación?",
+      "media": [],
+      "options": [
+        "Solo módulos de atención dental",
+        "Módulos de gestión de la práctica dental, higiene, asistencia clínica y comunicación",
+        "Solo módulos de secretaría",
+        "Solo módulos de contabilidad"
+      ],
+      "correct": 1,
+      "explanation": "El DUT 'Asistente Dental' incluye módulos de gestión de la práctica dental (gestión del consultorio, recepción, inventarios), medidas de higiene y ergonomía, asistencia clínica y comunicación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Chiba contrató a una asistente sin título. El Dr. Zaki exige el DUT. Según la legislación marroquí, ¿qué título está reconocido para la profesión de asistente dental?",
+      "media": [],
+      "options": [
+        "No se requiere ningún título para esta profesión",
+        "DUT 'Asistente Dental'",
+        "Certificado de secretaria médica",
+        "Título de enfermería"
+      ],
+      "correct": 1,
+      "explanation": "El DUT 'Asistente Dental' es el título de referencia reconocido en Marruecos para la profesión de asistente dental, accesible tras el bachillerato científico.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q07",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba desconoce las normas de confidencialidad médica. La asistente del Dr. Zaki estudió estas normas durante su formación. Según la deontología, ¿cuál es la situación del Dr. Chiba?",
+      "media": [],
+      "options": [
+        "No es responsable de las acciones de su asistente",
+        "Es responsable de las acciones de su asistente, incluidas las cuestiones de confidencialidad",
+        "Solo la asistente es responsable de sus acciones",
+        "Puede delegar su responsabilidad en la asistente"
+      ],
+      "correct": 1,
+      "explanation": "El odontólogo es responsable de las acciones de sus empleados, incluida la asistente. Una asistente no formada en las normas deontológicas expone al consultorio a riesgos legales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q08",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba no domina el circuito de esterilización (sucio/limpio). La asistente del Dr. Zaki respeta estrictamente el protocolo. Según las buenas prácticas, ¿cuál es la consecuencia?",
+      "media": [],
+      "options": [
+        "Ninguna consecuencia, el circuito no es importante",
+        "Riesgo de contaminación cruzada en el consultorio del Dr. Chiba",
+        "El consultorio del Dr. Zaki será menos eficiente",
+        "El circuito de esterilización es el mismo para ambos"
+      ],
+      "correct": 1,
+      "explanation": "El circuito sucio/limpio es fundamental para la prevención de infecciones cruzadas. El mal dominio de este circuito expone a los pacientes a riesgos de contaminación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Chiba formó a su asistente en unos días. El Dr. Zaki contrató a una asistente titulada. ¿Cuál es la principal diferencia en términos de calidad de la formación?",
+      "media": [],
+      "options": [
+        "No hay diferencia, la formación sobre la marcha es igualmente eficaz",
+        "La formación sobre la marcha suele ser incompleta y no estructurada, a diferencia del DUT que es un programa integral",
+        "La formación del DUT es demasiado teórica y no suficientemente práctica",
+        "La formación sobre la marcha es más completa que el DUT"
+      ],
+      "correct": 1,
+      "explanation": "La formación sobre la marcha suele ser incompleta y depende de las habilidades del formador, mientras que el DUT es un programa estructurado que cubre todos los aspectos de la profesión.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q10",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba no sabe cómo manejar las urgencias en el consultorio. La asistente del Dr. Zaki estudió técnicas de primeros auxilios. Según las competencias requeridas, ¿qué situación es mejor?",
+      "media": [],
+      "options": [
+        "Ambas situaciones son equivalentes",
+        "La situación del Dr. Zaki es mejor, ya que la asistente titulada domina las técnicas de primeros auxilios",
+        "La situación del Dr. Chiba es mejor, ya que él mismo maneja las urgencias",
+        "Las técnicas de primeros auxilios no forman parte de la profesión de asistente"
+      ],
+      "correct": 1,
+      "explanation": "Las asistentes tituladas reciben formación en primeros auxilios y manejo de urgencias, lo que aumenta la seguridad de los pacientes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Chiba contrató a una asistente sin título para reducir costes. El Dr. Zaki invirtió en una asistente titulada. Según las normas profesionales, ¿qué elección es más razonable a largo plazo?",
+      "media": [],
+      "options": [
+        "La elección del Dr. Chiba es más razonable, ya que ahorra dinero",
+        "La elección del Dr. Zaki es más razonable, ya que la formación garantiza la calidad de la atención y la seguridad",
+        "Ambas elecciones son equivalentes a largo plazo",
+        "La elección depende solo del tamaño del consultorio"
+      ],
+      "correct": 1,
+      "explanation": "Invertir en una asistente titulada es invertir en la calidad de la atención, la seguridad de los pacientes y la reducción de los riesgos legales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q12",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba no sabe cómo manejar las historias clínicas informatizadas. La asistente del Dr. Zaki fue formada en estas herramientas. Según la evolución de la profesión, ¿qué competencias se esperan de una asistente dental?",
+      "media": [],
+      "options": [
+        "Solo competencias clínicas",
+        "Competencias en gestión, informática y comunicación con los pacientes",
+        "Solo competencias administrativas",
+        "Solo competencias de esterilización"
+      ],
+      "correct": 1,
+      "explanation": "La asistente dental moderna debe dominar las herramientas informáticas (gestión de historias clínicas, software del consultorio), la gestión administrativa y la comunicación con los pacientes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Chiba tiene una asistente sin título que no habla inglés. El Dr. Zaki tiene una asistente titulada que habla inglés. Según la evolución de la profesión, ¿cuál es la ventaja de la asistente del Dr. Zaki?",
+      "media": [],
+      "options": [
+        "Ninguna ventaja, el inglés no es necesario en el consultorio",
+        "Puede atender mejor a los pacientes extranjeros y leer literatura científica",
+        "Puede sustituir al odontólogo en su ausencia",
+        "Puede facturar a los pacientes en moneda extranjera"
+      ],
+      "correct": 1,
+      "explanation": "El dominio del inglés es una ventaja para la recepción de clientela internacional, la lectura de instrucciones de equipos y la formación continua.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q14",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba desconoce las normas de protección radiológica. La asistente del Dr. Zaki fue formada en estas normas. Según los requisitos normativos, ¿qué situación es más conforme?",
+      "media": [],
+      "options": [
+        "Ambas situaciones son conformes",
+        "La situación del Dr. Zaki es más conforme, ya que la asistente titulada conoce las normas de protección radiológica",
+        "La situación del Dr. Chiba es más conforme, ya que él mismo maneja la radiología",
+        "La protección radiológica solo concierne a los odontólogos"
+      ],
+      "correct": 1,
+      "explanation": "Las asistentes tituladas reciben formación en protección radiológica, necesaria para el manejo seguro del equipo de radiología.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Chiba contrató a una asistente sin título sin contrato de trabajo. El Dr. Zaki tiene un contrato de trabajo con su asistente titulada. Según el Código del Trabajo, ¿cuál es la situación del Dr. Chiba?",
+      "media": [],
+      "options": [
+        "No necesita contrato para una asistente sin título",
+        "Está infringiendo la ley, ya que todo empleado debe tener un contrato de trabajo",
+        "Solo las asistentes tituladas tienen derecho a contrato",
+        "Puede regularizar la situación más tarde"
+      ],
+      "correct": 1,
+      "explanation": "El Código del Trabajo marroquí obliga a todo empleador a firmar un contrato de trabajo con sus empleados, independientemente de su título.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q16",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba desconoce los derechos de los pacientes. La asistente del Dr. Zaki estudió estos derechos durante su formación. Según la deontología, ¿qué conocimientos se requieren para una asistente?",
+      "media": [],
+      "options": [
+        "Solo se requieren conocimientos clínicos",
+        "Los conocimientos en ética, deontología y derechos de los pacientes forman parte de la formación",
+        "Los derechos de los pacientes solo conciernen al odontólogo",
+        "La asistente no necesita conocer los derechos de los pacientes"
+      ],
+      "correct": 1,
+      "explanation": "La formación DUT incluye módulos de comunicación, ética y deontología que cubren los derechos de los pacientes y la confidencialidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Chiba contrató a una asistente sin título sin formación en ergonomía. El Dr. Zaki tiene una asistente titulada formada en ergonomía. Según las buenas prácticas, ¿cuál es la ventaja para el Dr. Zaki?",
+      "media": [],
+      "options": [
+        "Ninguna ventaja, la ergonomía no es importante",
+        "Reducción del riesgo de trastornos musculoesqueléticos para el odontólogo y la asistente",
+        "La ergonomía solo es útil para la asistente",
+        "La ergonomía solo concierne al sillón dental"
+      ],
+      "correct": 1,
+      "explanation": "Una buena ergonomía en el consultorio permite reducir la fatiga y los riesgos de trastornos musculoesqueléticos tanto para el odontólogo como para la asistente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q18",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba fue formada apresuradamente en el manejo de urgencias. La asistente del Dr. Zaki recibió una formación completa en primeros auxilios. Según las competencias requeridas, ¿qué situación es mejor?",
+      "media": [],
+      "options": [
+        "No hay diferencia, ambas asistentes pueden manejar las urgencias",
+        "La situación del Dr. Zaki es mejor, ya que la formación completa garantiza un mejor manejo de las urgencias",
+        "La situación del Dr. Chiba es mejor, ya que la formación rápida es más eficaz",
+        "Las urgencias siempre las maneja el odontólogo"
+      ],
+      "correct": 1,
+      "explanation": "Una formación completa en primeros auxilios permite a la asistente reaccionar eficazmente en caso de urgencia, lo que puede salvar vidas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Chiba contrató a una asistente sin título y no le entregó su libreta de trabajo. El Dr. Zaki entregó la libreta de trabajo a su asistente titulada. Según el Código del Trabajo, ¿cuál es la situación del Dr. Chiba?",
+      "media": [],
+      "options": [
+        "No está obligado a entregar la libreta de trabajo",
+        "Está infringiendo la ley, ya que la libreta de trabajo es obligatoria para todo empleado",
+        "Solo las asistentes tituladas tienen derecho a libreta de trabajo",
+        "Puede entregar la libreta de trabajo más tarde"
+      ],
+      "correct": 1,
+      "explanation": "El Código del Trabajo obliga a todo empleador a entregar una libreta de trabajo a sus empleados, independientemente de su título.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q20",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba desconoce los protocolos de desinfección de superficies. La asistente del Dr. Zaki respeta estrictamente los protocolos. Según las buenas prácticas, ¿cuál es el riesgo para el consultorio del Dr. Chiba?",
+      "media": [],
+      "options": [
+        "Ningún riesgo, la desinfección no es importante",
+        "Riesgo de transmisión de infecciones nosocomiales",
+        "Riesgo de daños al equipo",
+        "Riesgo de exceso de consumo de productos de limpieza"
+      ],
+      "correct": 1,
+      "explanation": "Una mala desinfección de las superficies expone a los pacientes a riesgos de infecciones nosocomiales, lo que puede tener graves consecuencias.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Chiba contrató a una asistente sin título porque acepta un salario más bajo. El Dr. Zaki paga a su asistente titulada según las escalas salariales. Según las normas profesionales, ¿qué situación es más justa?",
+      "media": [],
+      "options": [
+        "La situación del Dr. Chiba es más justa, ya que permite reducir los costes",
+        "La situación del Dr. Zaki es más justa, ya que retribuye las competencias y la cualificación",
+        "Ambas situaciones son igualmente justas",
+        "La justicia salarial no concierne a las asistentes"
+      ],
+      "correct": 1,
+      "explanation": "Remunerar a la asistente según su cualificación es un reconocimiento de sus competencias y contribuye a su motivación y retención.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q22",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba no domina la secretaría médica. La asistente del Dr. Zaki estudió técnicas de secretaría durante su formación. Según las competencias requeridas, ¿cuál es la ventaja para el consultorio del Dr. Zaki?",
+      "media": [],
+      "options": [
+        "Ninguna ventaja, la secretaría no es importante",
+        "Mejor gestión de citas e historias clínicas",
+        "Reducción de los costes de explotación",
+        "Aumento del número de pacientes"
+      ],
+      "correct": 1,
+      "explanation": "Una asistente formada en secretaría médica garantiza una mejor gestión de las citas, las historias clínicas y las relaciones con los pacientes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Chiba tiene una asistente sin título que tiene dificultades con el software de gestión. El Dr. Zaki tiene una asistente titulada que domina el software. Según la evolución de la profesión, ¿qué situación está más adaptada?",
+      "media": [],
+      "options": [
+        "La situación del Dr. Chiba está adaptada, ya que la informática no es obligatoria",
+        "La situación del Dr. Zaki está más adaptada, ya que el dominio del software se ha vuelto necesario",
+        "Ambas situaciones están igualmente adaptadas",
+        "Solo el odontólogo debe dominar el software"
+      ],
+      "correct": 1,
+      "explanation": "El dominio del software de gestión del consultorio, las herramientas de facturación y las plataformas de teletransmisión se ha vuelto obligatorio para la asistente dental moderna.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q24",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Chiba fue formada sobre la marcha por el propio Dr. Chiba. Según los riesgos legales, ¿cuál es la situación del Dr. Chiba en caso de error?",
+      "media": [],
+      "options": [
+        "No es responsable, ya que el error lo cometió su asistente",
+        "Es responsable de los errores de su asistente, ya que él mismo la formó",
+        "Solo la asistente es penalmente responsable",
+        "Puede eludir su responsabilidad alegando la formación sobre la marcha"
+      ],
+      "correct": 1,
+      "explanation": "El odontólogo es responsable de las acciones de sus empleados. Al formar él mismo a la asistente, asume la responsabilidad de la calidad de la formación impartida.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Zaki contrató a una asistente titulada DUT. Según el programa de formación, ¿cuáles son las principales áreas de competencia adquiridas?",
+      "media": [],
+      "options": [
+        "Solo la atención dental",
+        "Gestión de la práctica dental, higiene, asistencia clínica, comunicación y ética",
+        "Solo la esterilización",
+        "Solo la gestión administrativa"
+      ],
+      "correct": 1,
+      "explanation": "El DUT 'Asistente Dental' cubre cinco áreas: gestión de la práctica dental, medidas de higiene y ergonomía, asistencia clínica, comunicación y ética.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q26",
+      "type": "single-choice",
+      "question": "El Dr. Chiba tiene una asistente sin título que desconoce las técnicas de toma de impresiones. El Dr. Zaki tiene una asistente titulada formada en técnicas de toma de impresiones. Según las competencias requeridas, ¿qué situación es mejor para el consultorio?",
+      "media": [],
+      "options": [
+        "La situación del Dr. Chiba, ya que él prefiere tomar él mismo las impresiones",
+        "La situación del Dr. Zaki, ya que la asistente titulada puede ayudar al odontólogo en la toma de impresiones",
+        "Ambas situaciones son equivalentes",
+        "La toma de impresiones no forma parte de las funciones de la asistente"
+      ],
+      "correct": 1,
+      "explanation": "Una asistente titulada puede ayudar al odontólogo en la toma de impresiones, lo que permite ahorrar tiempo y garantizar una mejor calidad del trabajo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "fiscalite_dentiste_debutant2_001",
+    "title": "Fiscalidad del Dentista – Principiante 2",
+    "specialty": "FISC",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "FISC_D2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Sharif, dentista que ejerce como persona física, obtiene un beneficio imponible de 250 000 DH. ¿Cuál sería la ventaja fiscal aproximada si eligiera una SARL sujeta al IS?",
+      "media": [],
+      "options": [
+        "Ahorro fiscal de unos 10 000–15 000 DH",
+        "Ahorro fiscal de unos 25 000–30 000 DH",
+        "Aumento del impuesto de unos 5 000 DH",
+        "No hay diferencia significativa entre los dos regímenes"
+      ],
+      "correct": 1,
+      "explanation": "A partir de aproximadamente 200 000–250 000 DH de beneficio, el IS (10 % sobre la parte de 0–300 000 DH) se vuelve más ventajoso que el IR (escala progresiva hasta el 37 %), lo que supone un ahorro de unos 25 000–30 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q02",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el tipo del IS para las sociedades con un beneficio neto inferior a 100 millones de DH?",
+      "media": [],
+      "options": [
+        "10 %",
+        "20 %",
+        "25 %",
+        "35 %"
+      ],
+      "correct": 1,
+      "explanation": "La Ley de Finanzas 2026 completa la unificación de los tipos del IS con un tipo único del 20 % para las sociedades con un beneficio neto inferior a 100 millones de DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Falahi tiene una SARL con un beneficio neto de 250 000 DH. ¿Cuál será el importe del IS según la escala de 2026?",
+      "media": [],
+      "options": [
+        "25 000 DH",
+        "30 000 DH",
+        "37 500 DH",
+        "50 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Para la parte de 0 a 300 000 DH, el tipo del IS es del 10 %. El impuesto es de 250 000 × 10 % = 25 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q04",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el tipo de retención en la fuente aplicable a los dividendos distribuidos por una SARL en 2026?",
+      "media": [],
+      "options": [
+        "10 %",
+        "11,25 %",
+        "12,5 %",
+        "15 %"
+      ],
+      "correct": 1,
+      "explanation": "La Ley de Finanzas 2026 continúa la reducción progresiva del tipo de retención en la fuente sobre los dividendos, fijado en el 11,25 % para 2026 con el objetivo de alcanzar el 10 % en 2027.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Sharif tiene una SARL con un beneficio neto después de impuestos de 300 000 DH, que distribuye en forma de dividendos. ¿Cuál será el importe de la retención en la fuente en 2026?",
+      "media": [],
+      "options": [
+        "30 000 DH",
+        "33 750 DH",
+        "37 500 DH",
+        "45 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "La retención en la fuente sobre los dividendos en 2026 es del 11,25 %. El importe es de 300 000 × 11,25 % = 33 750 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q06",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el tipo marginal máximo del IR para un dentista que ejerce como persona física?",
+      "media": [],
+      "options": [
+        "34 %",
+        "37 %",
+        "38 %",
+        "40 %"
+      ],
+      "correct": 1,
+      "explanation": "La Ley de Finanzas 2026 mantiene el tipo marginal máximo del IR en el 37 % para la renta neta imponible que supera los 180 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q07",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el umbral de exención del IR para un dentista soltero sin hijos a cargo?",
+      "media": [],
+      "options": [
+        "30 000 DH",
+        "35 000 DH",
+        "40 000 DH",
+        "45 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "La Ley de Finanzas 2026 mantiene el umbral de exención del IR en 40 000 DH de renta neta imponible, eximiendo las rentas inferiores a 6 000 DH al mes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q08",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el importe anual de la deducción por cargas de familia por hijo a cargo?",
+      "media": [],
+      "options": [
+        "360 DH",
+        "500 DH",
+        "600 DH",
+        "750 DH"
+      ],
+      "correct": 2,
+      "explanation": "La Ley de Finanzas 2026 ha aumentado la deducción anual por cargas de familia de 500 a 600 DH por hijo a cargo, con un límite de 3 600 DH para 6 hijos a cargo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Falahi, dentista que ejerce como persona física, tiene 3 hijos a cargo. ¿Cuál es el importe total de la deducción por cargas de familia que puede deducir en 2026?",
+      "media": [],
+      "options": [
+        "1 080 DH",
+        "1 500 DH",
+        "1 800 DH",
+        "2 160 DH"
+      ],
+      "correct": 2,
+      "explanation": "La deducción anual es de 600 DH por hijo a cargo × 3 hijos = 1 800 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q10",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el tipo ordinario de la contribución mínima para las sociedades sujetas al IS?",
+      "media": [],
+      "options": [
+        "0,15 %",
+        "0,25 %",
+        "0,40 %",
+        "0,50 %"
+      ],
+      "correct": 1,
+      "explanation": "Desde la reforma introducida por la Ley de Finanzas 2023, el tipo ordinario de la contribución mínima es del 0,25 % del volumen de negocios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Sharif tiene una SARL con un volumen de negocios de 2 000 000 DH. ¿Cuál es el importe mínimo de su contribución mínima?",
+      "media": [],
+      "options": [
+        "3 000 DH",
+        "5 000 DH",
+        "8 000 DH",
+        "10 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Para las sociedades sujetas al IS, la contribución mínima no puede ser inferior a 3 000 DH, incluso si el 0,25 % del volumen de negocios es inferior a esta cantidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Falahi tiene una SARL con un volumen de negocios de 1 000 000 DH. ¿Cuál es el importe de su contribución mínima al tipo ordinario?",
+      "media": [],
+      "options": [
+        "2 000 DH",
+        "2 500 DH",
+        "3 000 DH",
+        "4 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "El tipo ordinario es del 0,25 % del volumen de negocios, es decir, 2 500 DH. Dado que el mínimo es de 3 000 DH, se paga esta cantidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Sharif creó una SARL en enero de 2026. ¿Durante cuántos meses está exenta de la contribución mínima?",
+      "media": [],
+      "options": [
+        "12 meses",
+        "24 meses",
+        "36 meses",
+        "60 meses"
+      ],
+      "correct": 2,
+      "explanation": "Las empresas de nueva creación se benefician de una exención de la contribución mínima durante los primeros 36 meses de actividad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q14",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el tipo reducido de la contribución mínima para ciertos productos de primera necesidad?",
+      "media": [],
+      "options": [
+        "0,10 %",
+        "0,15 %",
+        "0,20 %",
+        "0,25 %"
+      ],
+      "correct": 1,
+      "explanation": "El tipo reducido del 0,15 % se aplica a las operaciones con productos de primera necesidad (petróleo, gas, aceite, azúcar, harina, agua, electricidad, medicamentos).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Falahi, persona física, tiene un volumen de negocios de 800 000 DH. ¿Cuál es el tipo de la contribución mínima?",
+      "media": [],
+      "options": [
+        "0,25 %",
+        "0,50 %",
+        "4 %",
+        "6 %"
+      ],
+      "correct": 3,
+      "explanation": "Para las personas físicas sujetas al IR, el tipo de la contribución mínima es del 6 % del volumen de negocios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Sharif, persona física, tiene un volumen de negocios de 800 000 DH y un beneficio imponible de 80 000 DH. ¿Qué impuesto pagará si la contribución mínima supera el IR calculado?",
+      "media": [],
+      "options": [
+        "El IR calculado sobre 80 000 DH",
+        "La contribución mínima de 48 000 DH",
+        "La mayor cantidad entre el IR y la contribución mínima",
+        "Ningún impuesto, ya que el beneficio es pequeño"
+      ],
+      "correct": 2,
+      "explanation": "El contribuyente paga la mayor cantidad entre el IR calculado y la contribución mínima. La contribución mínima para una persona física es del 6 % del volumen de negocios, es decir, 800 000 × 6 % = 48 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q17",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el tipo del IS para las sociedades con un beneficio neto superior a 100 millones de DH?",
+      "media": [],
+      "options": [
+        "20 %",
+        "30 %",
+        "35 %",
+        "40 %"
+      ],
+      "correct": 2,
+      "explanation": "La Ley de Finanzas 2026 completa la unificación de los tipos del IS con un tipo del 35 % para las sociedades con un beneficio neto igual o superior a 100 millones de DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Falahi tiene una SARL con un beneficio neto de 150 000 DH. ¿Cuál es el tipo del IS para esta parte del beneficio?",
+      "media": [],
+      "options": [
+        "10 %",
+        "20 %",
+        "25 %",
+        "35 %"
+      ],
+      "correct": 0,
+      "explanation": "El tipo del IS para la parte del beneficio neto fiscal de 0 a 300 000 DH es del 10 %, independientemente de la cantidad dentro de esta parte.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Sharif tiene una SARL con un beneficio neto de 2 000 000 DH. ¿Cuál es el importe del IS a pagar en 2026?",
+      "media": [],
+      "options": [
+        "400 000 DH",
+        "520 000 DH",
+        "700 000 DH",
+        "800 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El IS se calcula por partes: 300 000 × 10 % = 30 000 DH, 700 000 × 20 % = 140 000 DH, y 1 000 000 × 35 % = 350 000 DH. Total = 520 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q20",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el tipo de retención en la fuente sobre los dividendos en 2027 (objetivo fijado por la ley)?",
+      "media": [],
+      "options": [
+        "5 %",
+        "10 %",
+        "11,25 %",
+        "12,5 %"
+      ],
+      "correct": 1,
+      "explanation": "La Ley de Finanzas 2026 continúa la reducción progresiva del tipo de retención en la fuente sobre los dividendos para alcanzar el objetivo del 10 % en 2027.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Falahi vende su empresa comercial en 2026 a la edad de 67 años. Según la Ley de Finanzas 2026, ¿qué deducción obtiene sobre la plusvalía?",
+      "media": [],
+      "options": [
+        "25 %",
+        "50 %",
+        "75 %",
+        "100 %"
+      ],
+      "correct": 1,
+      "explanation": "Las personas físicas cuyas rentas se determinan según el régimen de la Cotización profesional única se benefician de una deducción del 50 % sobre la plusvalía de los activos intangibles de la empresa comercial dentro del límite de 1 000 000 DH, siempre que tengan al menos 65 años.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q22",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿están exentas de IR las pensiones a partir de 2026?",
+      "media": [],
+      "options": [
+        "No, solo están exentas las rentas vitalicias",
+        "Sí, exención total del IR para las pensiones y rentas vitalicias a título gratuito",
+        "Sí, pero solo para las pensiones inferiores a 10 000 DH",
+        "No, las pensiones siguen sujetas a la escala progresiva"
+      ],
+      "correct": 1,
+      "explanation": "La Ley de Finanzas 2026 introduce la exención total del IR para las pensiones y rentas vitalicias a título gratuito a partir del 1 de enero de 2026.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Sharif opta por la Cotización profesional única. ¿Cuál es el tipo fijo del impuesto?",
+      "media": [],
+      "options": [
+        "4 %",
+        "6 %",
+        "10 %",
+        "15 %"
+      ],
+      "correct": 2,
+      "explanation": "La Cotización profesional única ofrece una imposición fija del 10 %, aplicada al beneficio fijo determinado en función del volumen de negocios, sin deducción de gastos reales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q24",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el umbral de beneficio neto a partir del cual las sociedades están sujetas al IS al tipo del 35 %?",
+      "media": [],
+      "options": [
+        "300 000 DH",
+        "1 000 000 DH",
+        "50 000 000 DH",
+        "100 000 000 DH"
+      ],
+      "correct": 3,
+      "explanation": "La Ley de Finanzas 2026 completa la unificación de los tipos del IS con un tipo del 35 % para las sociedades con un beneficio neto igual o superior a 100 millones de DH. Por debajo de este umbral, el tipo es del 20 %.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Falahi crea una SARL en 2026. ¿Cuál es la principal ventaja fiscal de la SARL en comparación con el ejercicio como persona física con un beneficio de 200 000 DH?",
+      "media": [],
+      "options": [
+        "No hay ventaja, el IR es más ventajoso",
+        "El tipo del IS del 10 % sobre la primera parte hasta 300 000 DH",
+        "Exención fiscal total durante 3 años",
+        "El tipo del IS del 20 % sobre todo el beneficio"
+      ],
+      "correct": 1,
+      "explanation": "Para las sociedades, el IS se aplica al tipo del 10 % sobre la parte del beneficio de 0 a 300 000 DH, lo que es significativamente más ventajoso que la escala progresiva del IR, que puede alcanzar el 37 % sobre la misma parte de los ingresos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

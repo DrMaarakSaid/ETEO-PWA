@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "implantologie_intermediaire1_001",
+    "title": "Implantologie - Intermédiaire 1",
+    "specialty": "IMPL",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "IMPL_I1_Q01",
+      "type": "single-choice",
+      "question": "Sami demande à Mina : 'Quelle est la clé d'une planification implantologique réussie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un simple examen clinique",
+        "Une analyse CBCT avec évaluation osseuse en 3D",
+        "Uniquement des radiographies",
+        "Uniquement un scanner médical"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Le CBCT est l'outil de référence pour évaluer le volume osseux en 3D.' 🦅 Sami : 'Je vais toujours prescrire un CBCT.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q02",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment évaluer la densité osseuse ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Par la classification de Misch",
+        "Par la classification d'Angle",
+        "Par la classification de Miller",
+        "Par la classification de Black"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La classification de Misch évalue la densité osseuse de D1 (très dense) à D4 (très peu dense).' 🦅 Sami : 'Je vais utiliser cette classification.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q03",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quelle est la distance de sécurité par rapport au nerf alvéolaire inférieur ?' Mina répond :",
+      "media": [],
+      "options": [
+        "1 mm",
+        "2 mm",
+        "3 mm",
+        "5 mm"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La distance de sécurité recommandée est de 2 mm au-dessus du canal mandibulaire.' 🦅 Sami : 'Je vais toujours vérifier cette distance.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q04",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les avantages des guides chirurgicaux ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Précision millimétrique et sécurité accrue",
+        "Temps de chirurgie plus long",
+        "Coût plus élevé uniquement",
+        "Moins de précision"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les guides chirurgicaux permettent un placement précis et sécurisé.' 🦅 Sami : 'Je vais utiliser des guides systématiquement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q05",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la stabilité primaire en implantologie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La fixation mécanique immédiate de l'implant dans l'os",
+        "La cicatrisation de la gencive",
+        "La solidité de la couronne",
+        "L'ostéointégration secondaire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La stabilité primaire est essentielle pour l'ostéointégration.' 🦅 Sami : 'Je vais toujours vérifier la stabilité primaire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q06",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les facteurs influençant l'ostéointégration ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Qualité osseuse, surface de l'implant, charge, hygiène",
+        "Uniquement la qualité osseuse",
+        "Uniquement la surface de l'implant",
+        "Uniquement l'hygiène"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'ostéointégration dépend de multiples facteurs.' 🦅 Sami : 'Je vais prendre en compte tous ces facteurs.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q07",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quand faut-il utiliser un implant court ?' Mina répond :",
+      "media": [],
+      "options": [
+        "En cas d'atrophie osseuse sévère",
+        "Pour toutes les molaires",
+        "Pour les dents antérieures",
+        "Jamais"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les implants courts (< 8mm) sont une alternative aux greffes osseuses.' 🦅 Sami : 'Je vais proposer des implants courts pour ce patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q08",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les signes d'une péri-implantite ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Saignement, suppuration, perte osseuse, mobilité",
+        "Uniquement le saignement",
+        "Uniquement la suppuration",
+        "Uniquement la perte osseuse"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La péri-implantite se manifeste par des signes inflammatoires et une perte osseuse.' 🦅 Sami : 'Je vais surveiller ces signes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q09",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la mise en charge immédiate ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La pose d'une couronne provisoire dans les 48h suivant la pose de l'implant",
+        "La pose de l'implant sans chirurgie",
+        "La pose d'une couronne définitive le jour même",
+        "L'absence de couronne"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La mise en charge immédiate est possible dans des cas sélectionnés avec une excellente stabilité primaire.' 🦅 Sami : 'Je vais sélectionner les cas avec soin.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q10",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les risques d'une surcharge occlusale sur un implant ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Fracture de l'implant, perte osseuse, échec",
+        "Uniquement la fracture",
+        "Uniquement la perte osseuse",
+        "Uniquement l'échec"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La surcharge peut compromettre la pérennité de l'implant.' 🦅 Sami : 'Je vais toujours équilibrer l'occlusion.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q11",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la régénération osseuse guidée en implantologie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une technique utilisant des membranes pour régénérer l'os",
+        "Une technique d'extraction",
+        "Une technique de détartrage",
+        "Une technique prothétique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La ROG permet de régénérer l'os perdu autour de l'implant.' 🦅 Sami : 'Je vais me former à la ROG.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q12",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer un échec précoce d'implant ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Retirer l'implant, analyser les causes, attendre la cicatrisation",
+        "Laisser l'implant en place",
+        "Mettre une couronne immédiatement",
+        "Donner des antibiotiques"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'échec précoce nécessite une analyse et une reprise.' 🦅 Sami : 'Je vais retirer et analyser.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q13",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les avantages des implants en zircone ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Meilleure esthétique, absence de métal, biocompatibilité",
+        "Moins chers",
+        "Plus rapides à poser",
+        "Plus résistants"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les implants en zircone offrent une esthétique supérieure et une absence de métal.' 🦅 Sami : 'Je vais proposer des implants en zircone.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q14",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les critères de succès d'un implant ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Absence de douleur, de mobilité, perte osseuse < 1,5mm la 1ère année",
+        "Uniquement l'absence de douleur",
+        "Uniquement l'absence de mobilité",
+        "Uniquement la perte osseuse"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les critères de succès sont multiples et validés par la littérature.' 🦅 Sami : 'Je vais évaluer tous ces critères.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q15",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la maintenance implantologique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Des contrôles réguliers et un suivi de l'hygiène",
+        "Un détartrage annuel",
+        "Une radiographie annuelle",
+        "Aucun suivi"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La maintenance est essentielle pour la longévité des implants.' 🦅 Sami : 'Je vais planifier des contrôles réguliers.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q16",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les facteurs de risque de péri-implantite ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Tabac, diabète, mauvaise hygiène, antécédents parodontaux",
+        "Uniquement le tabac",
+        "Uniquement le diabète",
+        "Uniquement la mauvaise hygiène"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les facteurs de risque sont multiples et doivent être pris en compte.' 🦅 Sami : 'Je vais évaluer les facteurs de risque.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q17",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la greffe en bloc en implantologie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une greffe osseuse prélevée en bloc et fixée avec des vis",
+        "Une greffe de gencive",
+        "Une greffe de cellules souches",
+        "Une greffe de tissu mou"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La greffe en bloc est utilisée pour les gros défauts osseux.' 🦅 Sami : 'Je vais orienter vers un spécialiste.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q18",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer une communication bucco-sinusienne après extraction ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Fermeture chirurgicale et antibiothérapie",
+        "Attendre la cicatrisation spontanée",
+        "Mettre un implant immédiatement",
+        "Donner des corticoïdes"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La communication bucco-sinusienne nécessite une fermeture chirurgicale.' 🦅 Sami : 'Je vais référer à un chirurgien.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q19",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que le sinus lift par voie crestale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une technique pour augmenter l'os maxillaire par la crête",
+        "Une technique par fenêtre latérale",
+        "Une extraction",
+        "Une greffe de gencive"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le sinus lift crestal est une technique mini-invasive.' 🦅 Sami : 'Je vais utiliser cette technique pour les petits défauts.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q20",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les matériaux de greffe osseuse disponibles ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Autogreffe, allogreffe, xénogreffe, synthétiques",
+        "Uniquement l'autogreffe",
+        "Uniquement l'allogreffe",
+        "Uniquement les synthétiques"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les matériaux sont multiples avec des avantages et inconvénients.' 🦅 Sami : 'Je vais choisir le matériau adapté.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q21",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la charge différée en implantologie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La pose de la couronne après 3-6 mois",
+        "La pose immédiate",
+        "La pose après 1 mois",
+        "La pose après 1 an"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La charge différée est le protocole standard pour la majorité des cas.' 🦅 Sami : 'Je vais attendre le délai nécessaire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q22",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer une fracture de l'implant ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Retirer l'implant et évaluer la possibilité de reprise",
+        "Laisser l'implant en place",
+        "Mettre une couronne dessus",
+        "Donner des antibiotiques"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La fracture est une complication rare mais grave.' 🦅 Sami : 'Je vais retirer l'implant fracture.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q23",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les avantages de la planification inversée en implantologie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La prothèse guide le positionnement de l'implant",
+        "L'implant guide la prothèse",
+        "La planification est standardisée",
+        "La planification est plus rapide"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La planification inversée (prothèse d'abord) est la référence.' 🦅 Sami : 'Je vais toujours planifier la prothèse en premier.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q24",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les signes d'un échec tardif d'implant ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Perte osseuse progressive, mobilité, péri-implantite",
+        "Uniquement la perte osseuse",
+        "Uniquement la mobilité",
+        "Uniquement la péri-implantite"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les échecs tardifs sont souvent liés à des problèmes à long terme.' 🦅 Sami : 'Je vais surveiller ces signes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_I1_Q25",
+      "type": "single-choice",
+      "question": "Sami, après avoir maîtrisé la planification implantologique avec Mina, dit : 'Je suis prêt à relever tous les défis !' Mina conclut : 'La maîtrise de la planification est...'",
+      "media": [],
+      "options": [
+        "Une option",
+        "La base de la réussite en implantologie",
+        "Une perte de temps",
+        "Secondaire"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La maîtrise de la planification est la base de la réussite en implantologie.' 🦅 Sami : 'Je vais continuer à me former.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

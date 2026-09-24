@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "chirurgie_intermediaire1_001",
+    "title": "Chirurgie - Intermédiaire 1",
+    "specialty": "CHIR",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "CHIR_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Sami doit extraire une dent de sagesse mandibulaire incluse. Dr Mina lui rappelle la classification de Pell et Gregory. Quelle est la classification la plus défavorable ?",
+      "media": [],
+      "options": [
+        "Classe I, position A",
+        "Classe II, position B",
+        "Classe III, position C",
+        "Classe I, position C"
+      ],
+      "correct": 2,
+      "explanation": "Dr Mina explique : 'La classe III avec position C est la plus défavorable. La dent est profondément incluse avec un risque élevé de lésion du nerf alvéolaire inférieur.' Dr Sami : 'Je vais faire attention.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Mina doit réaliser une extraction d'une racine résiduelle enfouie. Dr Sami lui demande quel instrument est le plus adapté. Elle répond :",
+      "media": [],
+      "options": [
+        "L'élévateur de Luxator",
+        "La pince à fragments",
+        "L'élévateur droit",
+        "La curette chirurgicale"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'Le Luxator est idéal pour les racines enfouies car sa lame fine permet de sectionner le ligament parodontal sans traumatisme osseux.' Dr Sami : 'Je vais m'en acheter un.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Sami doit extraire une dent de sagesse maxillaire avec une communication sinusienne suspectée. Dr Mina lui conseille de vérifier un signe clinique. Quel est ce signe ?",
+      "media": [],
+      "options": [
+        "La manœuvre de Valsalva",
+        "Le test de percussion",
+        "La palpation vestibulaire",
+        "L'inspection du palais"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La manœuvre de Valsalva permet de visualiser le passage d'air par l'alvéole, confirmant la communication sinusienne.' Dr Sami : 'Je vais la pratiquer.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Mina doit réaliser un lambeau pour accéder à une dent incluse. Dr Sami lui demande quelle incision est la plus appropriée. Elle choisit :",
+      "media": [],
+      "options": [
+        "Une incision intrasulculaire avec une incision de décharge mésiale",
+        "Une incision en envelope simple",
+        "Une incision semi-lunaire",
+        "Une incision en trapèze"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'L'incision intrasulculaire avec décharge mésiale offre un accès optimal pour les dents incluses.' Dr Sami : 'Je vais t'assister.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Sami a extrait une dent avec une fracture radiculaire verticale. Dr Mina lui demande de vérifier un élément crucial. Quel est cet élément ?",
+      "media": [],
+      "options": [
+        "L'intégrité de l'alvéole et l'absence de fragments",
+        "La présence d'un kyste résiduel",
+        "L'état de la dent adjacente",
+        "La mobilité de la table osseuse"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'Après une fracture radiculaire, il faut s'assurer qu'aucun fragment n'est resté dans l'alvéole.' Dr Sami : 'Je vérifie toujours maintenant.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Mina doit gérer une hémorragie post-extractionnelle persistante. Dr Sami lui demande quel agent hémostatique est le plus efficace. Elle répond :",
+      "media": [],
+      "options": [
+        "La cellulose régénérée oxydée",
+        "L'éponge de gélatine",
+        "La compression simple",
+        "Le ciment à l'oxyde de zinc"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La cellulose régénérée oxydée est l'agent hémostatique de choix pour les hémorragies persistantes.' Dr Sami : 'Je vais m'en procurer pour mon cabinet.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Sami doit extraire une dent avec une racine en crochet. Dr Mina lui conseille une technique spécifique. Quelle est cette technique ?",
+      "media": [],
+      "options": [
+        "L'utilisation d'un élévateur courbe",
+        "La section de la racine",
+        "L'extraction par voie vestibulaire",
+        "L'utilisation d'une pince à baïonnette"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'La section de la racine permet de faciliter l'extraction d'une racine en crochet.' Dr Sami : 'Je vais suivre ton conseil.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Mina doit réaliser une ostéotomie pour extraire une dent incluse. Dr Sami lui demande la profondeur de l'incision osseuse. Elle répond :",
+      "media": [],
+      "options": [
+        "Jusqu'à la surface radiculaire",
+        "Jusqu'à la corticale vestibulaire",
+        "Jusqu'à la moelle osseuse",
+        "Jusqu'à la corticale linguale"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'L'ostéotomie doit être réalisée jusqu'à la surface radiculaire pour libérer la dent sans fragiliser l'os.' Dr Sami : 'Je vais être précis.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Sami a réalisé une extraction et une alvéolite s'est déclarée. Dr Mina lui demande quel est le traitement de première intention. Il répond :",
+      "media": [],
+      "options": [
+        "L'irrigation et le pansement alvéolaire",
+        "La curette et l'antibiothérapie",
+        "La suture de l'alvéole",
+        "La prescription d'anti-inflammatoires"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'L'irrigation et le pansement alvéolaire sont le traitement de première intention de l'alvéolite.' Dr Sami : 'Je vais suivre le protocole.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Mina doit choisir un type de suture pour un lambeau. Dr Sami lui demande quel est le fil le plus adapté. Elle répond :",
+      "media": [],
+      "options": [
+        "Le fil résorbable",
+        "Le fil non résorbable",
+        "Le fil de soie",
+        "Le fil de nylon"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'Le fil résorbable est recommandé pour les lambeaux car il évite une deuxième intervention.' Dr Sami : 'Je vais utiliser du Vicryl.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Sami doit extraire une dent avec une lésion kystique associée. Dr Mina lui rappelle une précaution importante. Quelle est cette précaution ?",
+      "media": [],
+      "options": [
+        "La cystectomie complète",
+        "La marsupialisation",
+        "La résection osseuse",
+        "La surveillance radiologique"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La cystectomie complète est essentielle pour éviter la récidive du kyste.' Dr Sami : 'Je vais être minutieux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr Mina doit réaliser une extraction chez un patient sous anticoagulants. Dr Sami lui demande la conduite à tenir. Elle répond :",
+      "media": [],
+      "options": [
+        "Maintenir le traitement et renforcer l'hémostase locale",
+        "Arrêter le traitement 5 jours avant",
+        "Remplacer par de l'aspirine",
+        "Reporter l'intervention"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'Les recommandations actuelles favorisent le maintien des anticoagulants avec une hémostase locale rigoureuse.' Dr Sami : 'Je vais suivre ce protocole.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Sami a extrait une dent et le patient présente une tuméfaction importante. Dr Mina lui demande de rechercher un signe d'alerte. Quel est ce signe ?",
+      "media": [],
+      "options": [
+        "La dyspnée",
+        "La douleur modérée",
+        "L'œdème localisé",
+        "La fièvre légère"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La dyspnée est un signe d'alerte qui peut indiquer une extension de l'infection vers les espaces profonds.' Dr Sami : 'Je vais surveiller ce signe.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Mina doit réaliser une exérèse d'une lésion muqueuse. Dr Sami lui demande quelle est la marge de sécurité à respecter. Elle répond :",
+      "media": [],
+      "options": [
+        "2 à 3 mm de tissu sain",
+        "5 mm de tissu sain",
+        "1 cm de tissu sain",
+        "Aucune marge nécessaire"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La marge de sécurité pour une lésion muqueuse est de 2 à 3 mm.' Dr Sami : 'Je vais respecter cette règle.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Sami doit extraire une dent avec une racine divergente. Dr Mina lui conseille une technique. Quelle est cette technique ?",
+      "media": [],
+      "options": [
+        "La section coronaire",
+        "La section radiculaire",
+        "L'ostéotomie périphérique",
+        "L'utilisation d'un élévateur droit"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'La section radiculaire est recommandée pour les dents avec des racines divergentes.' Dr Sami : 'Je vais suivre ton conseil.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Mina doit gérer un patient avec une allergie à la pénicilline. Dr Sami lui demande l'antibiotique de substitution. Elle répond :",
+      "media": [],
+      "options": [
+        "La clindamycine",
+        "L'azithromycine",
+        "La céphalexine",
+        "Le métronidazole"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La clindamycine est l'antibiotique de substitution recommandé en cas d'allergie à la pénicilline.' Dr Sami : 'Je vais retenir cette information.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Sami a réalisé une extraction et le patient présente un saignement important. Dr Mina lui demande la première mesure à prendre. Il répond :",
+      "media": [],
+      "options": [
+        "La compression avec une gaze",
+        "La suture de l'alvéole",
+        "L'application d'un agent hémostatique",
+        "La prescription d'un vasoconstricteur"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La compression avec une gaze est la première mesure à prendre en cas de saignement.' Dr Sami : 'Je vais commencer par ça.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Mina doit réaliser une biopsie d'une lésion muqueuse. Dr Sami lui demande le type de biopsie à réaliser. Elle répond :",
+      "media": [],
+      "options": [
+        "La biopsie excisionnelle",
+        "La biopsie incisionnelle",
+        "La biopsie à l'emporte-pièce",
+        "La biopsie par aspiration"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La biopsie excisionnelle est recommandée pour les lésions muqueuses de petite taille.' Dr Sami : 'Je vais te laisser faire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Sami doit extraire une dent avec une couronne fracturée. Dr Mina lui demande l'instrument le plus adapté. Il répond :",
+      "media": [],
+      "options": [
+        "L'élévateur de Luxator",
+        "La pince à fragments",
+        "L'élévateur droit",
+        "La pince universelle"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'Le Luxator est idéal pour les couronnes fracturées car il permet de sectionner le ligament parodontal.' Dr Sami : 'Je vais l'utiliser.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Mina doit réaliser une extraction avec une technique atraumatique. Dr Sami lui demande l'objectif de cette technique. Elle répond :",
+      "media": [],
+      "options": [
+        "Préserver le maximum d'os alvéolaire",
+        "Réduire le temps opératoire",
+        "Diminuer les risques infectieux",
+        "Améliorer l'esthétique"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La technique atraumatique vise à préserver le maximum d'os alvéolaire pour la pose d'implants.' Dr Sami : 'Je vais m'y entraîner.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Sami a extrait une dent et le patient présente une douleur post-opératoire intense. Dr Mina lui demande la cause la plus probable. Il répond :",
+      "media": [],
+      "options": [
+        "L'alvéolite",
+        "L'infection",
+        "La fracture radiculaire",
+        "Le saignement"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'L'alvéolite est la cause la plus fréquente de douleur post-opératoire intense.' Dr Sami : 'Je vais la traiter.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Mina doit réaliser une suture en cas de lambeau. Dr Sami lui demande le type de suture le plus adapté. Elle répond :",
+      "media": [],
+      "options": [
+        "La suture en matelas",
+        "La suture simple",
+        "La suture continue",
+        "La suture en X"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La suture en matelas est recommandée pour les lambeaux car elle assure une bonne éversion des berges.' Dr Sami : 'Je vais la pratiquer.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Sami doit extraire une dent de sagesse avec un risque de lésion du nerf alvéolaire inférieur. Dr Mina lui demande de réaliser un examen complémentaire. Quel est cet examen ?",
+      "media": [],
+      "options": [
+        "Le CBCT",
+        "La radiographie panoramique",
+        "La rétro-alvéolaire",
+        "La radiographie occlusale"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'Le CBCT permet d'évaluer précisément la relation entre la dent et le nerf alvéolaire inférieur.' Dr Sami : 'Je vais le prescrire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Mina doit réaliser une extraction chez un patient diabétique. Dr Sami lui demande les précautions à prendre. Elle répond :",
+      "media": [],
+      "options": [
+        "Contrôle glycémique et antibioprophylaxie",
+        "Arrêt du traitement antidiabétique",
+        "Utilisation de corticoïdes",
+        "Intervention sous sédation"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'Le contrôle glycémique et l'antibioprophylaxie sont essentiels chez le patient diabétique.' Dr Sami : 'Je vais suivre ce protocole.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Sami, après avoir réalisé plusieurs extractions complexes, reçoit les félicitations de Dr Mina. Quelle est la prochaine étape pour Dr Sami ?",
+      "media": [],
+      "options": [
+        "Se spécialiser en chirurgie avancée",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bases"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mina explique : 'La spécialisation en chirurgie avancée est la prochaine étape pour continuer à progresser.' Dr Sami : 'Je vais me former.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

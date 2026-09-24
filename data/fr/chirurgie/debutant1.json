@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "chirurgie_debutant1_001",
+    "title": "Chirurgie - Débutant 1",
+    "specialty": "CHIR",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "CHIR_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Sami Kikou et la Dr Mina Lilou reçoivent un patient pour l'extraction de la dent 46. Sami, confiant, saisit son élévateur. Mina lui demande : « Tu es sûr de vouloir commencer par ça ? » Sami répond : « Bien sûr, une extraction simple se définit comme : »",
+      "media": [],
+      "options": [
+        "Une extraction sans sectionnement dentaire ni chirurgie osseuse",
+        "Une extraction avec ostéotomie et lambeau",
+        "Une extraction d'une dent incluse complexe",
+        "Une extraction sous sédation intraveineuse"
+      ],
+      "correct": 0,
+      "explanation": "Sami a raison ! Une extraction simple se fait à l'élévateur et à la pince, sans chirurgie osseuse. Mina, qui l'assiste, ajoute : « Pour une fois qu'il a raison, je lui laisse le bénéfice du doute ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q02",
+      "type": "single-choice",
+      "question": "Mina assiste Sami lors d'une extraction. Elle lui tend l'instrument pour luxer la dent. Sami le prend et dit : « Parfait, comme d'habitude ! » Mina rétorque : « Tu ne te trompes jamais ? » L'élévateur est utilisé pour :",
+      "media": [],
+      "options": [
+        "Luxer la dent avant l'extraction à la pince",
+        "Extraire la dent directement sans pince",
+        "Sectionner la dent en plusieurs fragments",
+        "Désinfecter l'alvéole après l'extraction"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique à l'étudiant : « L'élévateur sert à luxer la dent. » Sami ajoute : « Et la prochaine fois, essaie de ne pas casser la table osseuse ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q03",
+      "type": "single-choice",
+      "question": "Sami doit extraire une incisive maxillaire. Mina, qui connaît ses habitudes, lui tend la pince qu'il utilise toujours. Il s'agit de :",
+      "media": [],
+      "options": [
+        "La pince N° 1 (droite)",
+        "La pince N° 16 (baïonnette)",
+        "La pince N° 150 (universelle)",
+        "La pince N° 88 (cornes de vache)"
+      ],
+      "correct": 0,
+      "explanation": "Mina lui tend la pince N° 1. « Toujours le même, tu es tellement prévisible Sami ! » dit-elle. « Pourquoi changer quand on a trouvé la perfection ? » rétorque-t-il.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q04",
+      "type": "single-choice",
+      "question": "Mina doit extraire une molaire maxillaire. Sami, qui l'assiste, lui tend la pince spécifique :",
+      "media": [],
+      "options": [
+        "La pince N° 18 (anatomique pour molaires maxillaires)",
+        "La pince N° 1 (droite universelle)",
+        "La pince N° 150 (inférieure universelle)",
+        "La pince N° 65 (fragment maxillaire)"
+      ],
+      "correct": 0,
+      "explanation": "Sami lui tend la pince N° 18. « Tu vois, je connais aussi mes pinces ! » Mina répond : « Oui, mais tu sais t'en servir ? »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q05",
+      "type": "single-choice",
+      "question": "Mme Khadija, une patiente fidèle, revient 3 jours après une extraction. Sami diagnostique une alvéolite. Mina, qui l'examine ensuite, confirme. Mina explique à la patiente qu'une alvéolite est :",
+      "media": [],
+      "options": [
+        "Une inflammation douloureuse de l'alvéole post-extractionnelle",
+        "Une infection bactérienne aiguë de l'os maxillaire",
+        "Un saignement persistant dû à l'absence de caillot",
+        "Une fracture de la table osseuse vestibulaire"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : « L'alvéolite est due à la perte du caillot. » Sami ajoute : « Et si tu avais fumé, Khadija, je te l'aurais dit ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q06",
+      "type": "single-choice",
+      "question": "Sami et Mina se disputent sur le principal facteur de risque de l'alvéolite. Sami affirme que c'est le tabagisme. Mina lui demande : « Tu en es sûr ? »",
+      "media": [],
+      "options": [
+        "Oui, le tabagisme est le principal facteur de risque",
+        "Non, c'est l'âge avancé",
+        "Non, c'est le sexe du patient",
+        "Non, c'est le diabète non contrôlé"
+      ],
+      "correct": 0,
+      "explanation": "Sami a raison, même si c'est grâce à un article que Mina lui avait envoyé. « Je te l'avais dit, Mina ! » s'exclame-t-il.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q07",
+      "type": "single-choice",
+      "question": "Mina, avec beaucoup de rigueur, traite l'alvéolite de Mme Khadija. Sami, qui l'assiste, observe et commente : « Tu vois, je t'ai appris à bien faire ! » Le traitement commence par :",
+      "media": [],
+      "options": [
+        "Un irrigation douce et un pansement alvéolaire sédatif",
+        "Des antibiotiques par voie générale",
+        "Un curetage chirurgical des débris osseux",
+        "Des anti-inflammatoires non stéroïdiens"
+      ],
+      "correct": 0,
+      "explanation": "Mina réalise une irrigation douce et met en place un pansement sédatif. Sami, taquin, dit : « Tu vois, je t'ai tout appris. » Mina répond : « Oui, mais je le fais mieux ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q08",
+      "type": "single-choice",
+      "question": "Sami explique à un patient qu'une dent de sagesse incluse est une dent qui n'a pas fait son éruption normale. Mina, à côté de lui, ajoute : « Et si tu écoutes Sami, il va te le répéter cinq fois. »",
+      "media": [],
+      "options": [
+        "Une dent qui n'a pas fait son éruption normale",
+        "Une dent fracturée au niveau apical",
+        "Une dent cariée avec nécrose pulpaire",
+        "Une dent mobile suite à un traumatisme"
+      ],
+      "correct": 0,
+      "explanation": "Sami a raison : la dent de sagesse mandibulaire est la plus fréquemment incluse. Mina confirme tout en le taquinant.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q09",
+      "type": "single-choice",
+      "question": "Mina reçoit une patiente asymptomatique avec une dent de sagesse incluse. Elle explique que la prise en charge recommandée est :",
+      "media": [],
+      "options": [
+        "L'extraction ou la surveillance selon l'âge",
+        "L'extraction systématique",
+        "La surveillance radiologique annuelle",
+        "Le traitement endodontique prophylactique"
+      ],
+      "correct": 0,
+      "explanation": "Mina présente les deux options. Sami intervient : « Moi j'aurais extrait directement. » Mina : « C'est pour ça que je suis la plus compétente. »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q10",
+      "type": "single-choice",
+      "question": "Lors d'une extraction de dent de sagesse incluse, Sami et Mina s'accordent sur la complication la plus grave. Sami : « Le nerf alvéolaire inférieur ! » Mina : « Je suis d'accord, pour une fois. »",
+      "media": [],
+      "options": [
+        "La lésion du nerf alvéolaire inférieur",
+        "L'alvéolite",
+        "L'hémorragie post-opératoire",
+        "La fracture de l'angle mandibulaire"
+      ],
+      "correct": 0,
+      "explanation": "Les deux sont d'accord : le nerf alvéolaire inférieur est en danger. Un rare moment de concorde suivi d'une nouvelle pique : « Tu vois Sami, on peut s'entendre ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q11",
+      "type": "single-choice",
+      "question": "Mina, toujours précise, explique à un stagiaire que l'ostéotomie consiste à sectionner l'os autour de la dent. Sami intervient : « Sectionner, c'est le mot que j'utilise quand je coupe du fromage. »",
+      "media": [],
+      "options": [
+        "Sectionner l'os autour de la dent",
+        "Extraire la dent sans lambeau",
+        "Inciser uniquement la muqueuse",
+        "Suturer les berges d'un lambeau"
+      ],
+      "correct": 0,
+      "explanation": "Mina est ferme : l'ostéotomie consiste à couper l'os. Sami, taquin, ajoute : « Et moi je le fais à l'élévateur, c'est plus rapide ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q12",
+      "type": "single-choice",
+      "question": "Sami réalise une odontectomie devant un stagiaire. Il explique que cette technique consiste à sectionner la dent en plusieurs fragments. Mina, qui l'assiste, ajoute : « Et plus tu sections, plus tu as de chances de rater un fragment. »",
+      "media": [],
+      "options": [
+        "Sectionner la dent en plusieurs fragments",
+        "Extraire la dent en un seul bloc",
+        "Réaliser un traitement endodontique",
+        "Poser une couronne provisoire"
+      ],
+      "correct": 0,
+      "explanation": "Sami sectionne la dent pour faciliter l'extraction. Mina, qui l'assiste, veille à ce qu'aucun fragment ne soit oublié.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q13",
+      "type": "single-choice",
+      "question": "Mina, qui ne laisse rien au hasard, demande à son assistant l'instrument pour sectionner une dent. Sami, à côté d'elle, suggère : « Un élévateur, comme moi ! » Mina : « Non, une fraise chirurgicale. »",
+      "media": [],
+      "options": [
+        "Une fraise chirurgicale",
+        "Un élévateur droit",
+        "Une pince d'extraction",
+        "Une curette parodontale"
+      ],
+      "correct": 0,
+      "explanation": "Mina utilise la fraise osseuse ou dentaire pour sectionner. Sami, qui l'observe, admet : « D'accord, c'est plus précis. »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q14",
+      "type": "single-choice",
+      "question": "Lors d'une extraction de molaire maxillaire, Sami suspecte une communication oro-sinusienne. Il explique à Mina qu'il s'agit d'une :",
+      "media": [],
+      "options": [
+        "Perforation entre le sinus et la bouche",
+        "Fracture de la tubérosité maxillaire",
+        "Alvéolite suppurée",
+        "Hématome sous-muqueux"
+      ],
+      "correct": 0,
+      "explanation": "Sami a raison : c'est une complication possible. Mina, qui l'assiste, dit : « Tu as de la chance que je sois là pour réparer tes erreurs ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q15",
+      "type": "single-choice",
+      "question": "Mina trouve une petite COS de moins de 2mm. Elle décide de surveiller et de protéger le caillot. Sami : « Moi j'aurais suturé ! » Mina : « C'est pour ça que tu fais plus de sutures que moi ! »",
+      "media": [],
+      "options": [
+        "Surveiller et protéger le caillot",
+        "Suturer immédiatement avec un lambeau",
+        "Réaliser un lambeau de rotation palatin",
+        "Prescrire des antibiotiques sans fermeture"
+      ],
+      "correct": 0,
+      "explanation": "Une petite COS peut cicatriser spontanément. Sami, un peu vexé, admet : « D'accord, tu as raison. »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q16",
+      "type": "single-choice",
+      "question": "Sami est appelé pour une grande COS de plus de 4mm. Il décide de fermer par un lambeau de réparation. Mina, qui l'assiste, dit : « Tu vois, tu sais faire quand tu prends ton temps ! »",
+      "media": [],
+      "options": [
+        "Fermer par un lambeau de réparation",
+        "Surveiller cliniquement",
+        "Prescrire des antibiotiques seuls",
+        "Utiliser de la colle biologique"
+      ],
+      "correct": 0,
+      "explanation": "Sami réalise la fermeture chirurgicale avec la précision que lui inspire la présence de Mina.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q17",
+      "type": "single-choice",
+      "question": "Mina réalise un lambeau pour accéder à une dent incluse. Sami, qui l'assiste, lui demande : « Tu veux que je te montre comment on fait ? » Mina : « Non merci, j'ai déjà vu tes lambeaux. »",
+      "media": [],
+      "options": [
+        "Un décollement gingival pour accéder à l'os",
+        "Une incision de décharge",
+        "Une extraction complexe",
+        "Une suture hermétique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique que le lambeau permet l'accès chirurgical. Sami, taquin, ajoute : « Et moi je suis plus rapide sans lambeau. » « Et moins précis ! » rétorque-t-elle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q18",
+      "type": "single-choice",
+      "question": "Sami montre à un stagiaire les types de lambeaux courants. Il met l'accent sur le lambeau en enveloppe ou triangulaire. Mina, à côté de lui, intervient : « Tu oublies le lambeau semi-lunaire ? »",
+      "media": [],
+      "options": [
+        "Lambeau en enveloppe ou triangulaire",
+        "Lambeau circulaire",
+        "Lambeau rectangulaire",
+        "Lambeau ovale"
+      ],
+      "correct": 0,
+      "explanation": "Sami présente les lambeaux de base. Mina ajoute : « Et le semi-lunaire, tu le connais ? » « Je le connais, mais je ne l'utilise pas, c'est trop long ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q19",
+      "type": "single-choice",
+      "question": "Mina suture un lambeau après une extraction complexe. Sami, qui l'observe, dit : « Tu fais toujours trop de points ! » Mina : « Mieux vaut trop que pas assez. »",
+      "media": [],
+      "options": [
+        "Fermer et stabiliser le lambeau",
+        "Réaliser une incision d'accès",
+        "Drainer un abcès",
+        "Appliquer une compression mécanique"
+      ],
+      "correct": 0,
+      "explanation": "Mina suture avec soin. Sami, qui l'assiste, commente chaque point, ce qui la fait sourire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q20",
+      "type": "single-choice",
+      "question": "Sami utilise des sutures résorbables pour gagner du temps. Il explique à son patient que cela évite l'ablation. Mina, à côté de lui, intervient : « Oui, mais les sutures non résorbables sont plus sûres. »",
+      "media": [],
+      "options": [
+        "Les sutures résorbables évitent l'ablation",
+        "Seuls les fils de nylon sont utilisables",
+        "Seuls les fils de soie sont efficaces",
+        "Les agrafes métalliques sont préférables"
+      ],
+      "correct": 0,
+      "explanation": "Sami défend ses sutures résorbables. Mina, qui l'assiste, lui rappelle qu'elle préfère les non résorbables.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q21",
+      "type": "single-choice",
+      "question": "Mme Khadija revient avec un saignement persistant. Sami diagnostique une hémorragie post-extractionnelle. Mina, consultée en second, confirme. Sami : « Tu vois, on est d'accord ! »",
+      "media": [],
+      "options": [
+        "Une hémorragie post-extractionnelle",
+        "Une alvéolite infectée",
+        "Une infection des tissus mous",
+        "Une douleur pulsatile"
+      ],
+      "correct": 0,
+      "explanation": "Les deux sont d'accord sur le diagnostic. Sami ajoute : « Je te laisse gérer, tu es meilleure en sutures. »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q22",
+      "type": "single-choice",
+      "question": "Mina traite l'hémorragie persistante par compression, agent hémostatique et suture. Sami, qui l'assiste, dit : « Tu vois, si j'avais été là, j'aurais fait pareil. »",
+      "media": [],
+      "options": [
+        "Compression, agent hémostatique, suture",
+        "Extraction des dents adjacentes",
+        "Antibiotiques",
+        "Corticoïdes topiques"
+      ],
+      "correct": 0,
+      "explanation": "Mina suit son protocole méthodique. Sami, qui l'assiste, dit : « Je fais pareil. » « Non, tu fais compression-suture et tu oublies l'hémostatique ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q23",
+      "type": "single-choice",
+      "question": "Sami reçoit un patient avec une infection aiguë non contrôlée. Il sait que c'est une contre-indication à l'extraction. Mina, à côté de lui, ajoute : « Enfin tu réfléchis avant d'agir ! »",
+      "media": [],
+      "options": [
+        "Contre-indication à l'extraction",
+        "Indication à l'extraction immédiate",
+        "Situation sans risque",
+        "Indication à la chirurgie ambulatoire"
+      ],
+      "correct": 0,
+      "explanation": "Sami sait qu'il faut parfois traiter d'abord l'infection. Mina, qui l'assiste, dit : « Tu progresses ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q24",
+      "type": "single-choice",
+      "question": "Mina prescrit une antibioprophylaxie à un patient à risque d'endocardite infectieuse. Sami : « Tu es trop prudente ! » Mina : « Et toi trop téméraire. »",
+      "media": [],
+      "options": [
+        "Recommandée selon les recommandations",
+        "Pour tous les patients",
+        "Pour les fumeurs chroniques",
+        "Pour les diabétiques"
+      ],
+      "correct": 0,
+      "explanation": "Mina suit strictement les recommandations. Sami, qui l'assiste, admet : « D'accord, tu as raison pour une fois. »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q25",
+      "type": "single-choice",
+      "question": "Sami prescrit l'antibiotique de première intention. Mina, qui l'assiste, lui demande : « Tu en es sûr ? » Sami : « Amoxicilline 2g, comme toujours ! »",
+      "media": [],
+      "options": [
+        "Amoxicilline 2g avant l'intervention",
+        "Clindamycine",
+        "Azithromycine",
+        "Céphalexine"
+      ],
+      "correct": 0,
+      "explanation": "Sami prescrit l'amoxicilline. Mina, qui l'assiste, lui rappelle : « N'oublie pas l'allergie à la pénicilline ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_D1_Q26",
+      "type": "single-choice",
+      "question": "Mina rappelle à son stagiaire que tout acte chirurgical doit être précédé d'un consentement éclairé. Sami, à côté d'elle, ajoute : « Elle a raison, mais je le fais en 30 secondes ! »",
+      "media": [],
+      "options": [
+        "Le consentement éclairé du patient",
+        "L'examen radiologique uniquement",
+        "L'avis du laboratoire de prothèse",
+        "La consultation post-opératoire"
+      ],
+      "correct": 0,
+      "explanation": "Mina est stricte sur le consentement. Sami, qui l'assiste, dit : « Tu es trop lente, moi j'ai déjà fait. » « Pas assez bien, c'est pour ça que je vérifie ! »",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_intermediaire2_001",
+    "title": "Cfao_impression3d - Intermédiaire 2",
+    "specialty": "CFAO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Samia doit choisir entre la stéréolithographie (SLA) et la DLP pour l'impression 3D. Quelle est la principale différence entre ces deux technologies ?",
+      "media": [],
+      "options": [
+        "La SLA est moins chère",
+        "La SLA utilise un laser, la DLP utilise un projecteur",
+        "La DLP est plus précise",
+        "La SLA est plus rapide"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La SLA utilise un faisceau laser pour polymériser la résine point par point, tandis que la DLP projette une image complète de la couche en une seule fois.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Rachid souhaite imprimer des guides chirurgicaux. Quelle technologie d'impression 3D est la plus adaptée pour cette application ?",
+      "media": [],
+      "options": [
+        "Le FDM",
+        "La SLA ou la DLP",
+        "Le jet de matière",
+        "Le frittage laser"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'La SLA et la DLP offrent la précision et la qualité de surface nécessaires pour les guides chirurgicaux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Samia a imprimé un modèle en résine pour un aligneur orthodontique. Dr Rachid lui demande de vérifier la précision. Quelle est la tolérance acceptable ?",
+      "media": [],
+      "options": [
+        "1 mm",
+        "0,5 mm",
+        "0,1 mm",
+        "Aucune tolérance"
+      ],
+      "correct": 2,
+      "explanation": "Dr Rachid explique : 'La tolérance acceptable pour un modèle d'aligneur est de 0,1 mm pour garantir un résultat clinique optimal.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Rachid doit choisir une résine pour l'impression de guides chirurgicaux. Quelle caractéristique est la plus importante ?",
+      "media": [],
+      "options": [
+        "La couleur de la résine",
+        "La biocompatibilité et la stérilité",
+        "Le prix de la résine",
+        "La viscosité de la résine"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'La biocompatibilité et la stérilité sont essentielles pour les guides chirurgicaux qui seront en contact avec les tissus du patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Samia doit gérer un échec d'impression 3D. Dr Rachid lui explique les causes possibles. Quelle est la cause la plus fréquente ?",
+      "media": [],
+      "options": [
+        "Un problème de logiciel",
+        "Un problème de calibration de l'imprimante",
+        "Un problème de qualité de la résine",
+        "Un problème de température ambiante"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La calibration de l'imprimante est la cause la plus fréquente d'échec d'impression 3D.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Rachid doit imprimer plusieurs guides chirurgicaux en une seule session. Quelle est la meilleure stratégie d'organisation ?",
+      "media": [],
+      "options": [
+        "Imprimer un guide à la fois",
+        "Optimiser le placement des pièces sur le plateau",
+        "Imprimer en les superposant",
+        "Utiliser une imprimante différente pour chaque guide"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'L'optimisation du placement des pièces sur le plateau permet de maximiser l'efficacité de l'impression.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Samia doit choisir entre l'impression en résine standard et la résine dentaire spécifique. Quelle est la différence majeure ?",
+      "media": [],
+      "options": [
+        "Le prix",
+        "La biocompatibilité et les propriétés mécaniques",
+        "La couleur",
+        "La viscosité"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'Les résines dentaires spécifiques sont formulées pour être biocompatibles et répondre aux exigences mécaniques des applications dentaires.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Rachid doit imprimer des modèles pour des aligneurs orthodontiques. Quelle est la qualité de surface requise ?",
+      "media": [],
+      "options": [
+        "Une surface rugueuse pour l'adhérence",
+        "Une surface lisse et précise",
+        "Une surface poreuse",
+        "Une surface texturée"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Une surface lisse et précise est essentielle pour la fabrication d'aligneurs orthodontiques.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Samia doit gérer un cas de modèle imprimé déformé. Dr Rachid lui demande de vérifier un paramètre critique. Quel est ce paramètre ?",
+      "media": [],
+      "options": [
+        "La température de l'imprimante",
+        "Le temps d'impression",
+        "Le support de l'impression",
+        "La qualité de la résine"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explique : 'La température de l'imprimante peut influencer la déformation des modèles imprimés.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Rachid doit imprimer un guide chirurgical avec des anneaux métalliques. Quelle est la meilleure approche ?",
+      "media": [],
+      "options": [
+        "Imprimer le guide avec les anneaux intégrés",
+        "Imprimer le guide et ajouter les anneaux après",
+        "Utiliser une imprimante métal",
+        "Ne pas utiliser d'anneaux métalliques"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'La meilleure approche est d'imprimer le guide et d'ajouter les anneaux métalliques après pour garantir leur positionnement précis.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Samia doit former son assistant au post-traitement des pièces imprimées en 3D. Quelle est l'étape essentielle du post-traitement ?",
+      "media": [],
+      "options": [
+        "Le polissage",
+        "Le nettoyage et le séchage",
+        "La peinture",
+        "L'assemblage"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'Le nettoyage et le séchage sont essentiels pour éliminer les résidus de résine et assurer la précision de la pièce.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Rachid a imprimé un guide chirurgical. Dr Samia lui demande de vérifier la stérilisation. Quelle est la méthode de stérilisation recommandée ?",
+      "media": [],
+      "options": [
+        "L'autoclave",
+        "La stérilisation par plasma",
+        "La stérilisation chimique",
+        "L'oxyde d'éthylène"
+      ],
+      "correct": 3,
+      "explanation": "Dr Samia explique : 'L'oxyde d'éthylène est la méthode de stérilisation recommandée pour les guides chirurgicaux imprimés en résine.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Samia doit choisir un logiciel de découpage (slicer) pour son imprimante 3D. Quel critère est le plus important ?",
+      "media": [],
+      "options": [
+        "Le prix du logiciel",
+        "La compatibilité avec l'imprimante et la qualité des paramètres",
+        "La couleur de l'interface",
+        "La popularité du logiciel"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La compatibilité et la qualité des paramètres sont essentielles pour obtenir des impressions de qualité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Rachid doit gérer une imprimante 3D qui produit des pièces avec des défauts de surface. Quelle est la cause la plus probable ?",
+      "media": [],
+      "options": [
+        "Un problème de logiciel",
+        "Un problème de résine ou de paramètres d'impression",
+        "Un problème de niveau de l'imprimante",
+        "Un problème de température ambiante"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Les défauts de surface sont souvent dus à un problème de résine ou à des paramètres d'impression inadaptés.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr Samia doit imprimer un modèle pour un cas d'implants multiples. Quelle est la résolution d'impression recommandée ?",
+      "media": [],
+      "options": [
+        "50 microns",
+        "100 microns",
+        "200 microns",
+        "500 microns"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explique : 'Une résolution de 50 microns est recommandée pour les modèles d'implants multiples pour garantir la précision des positions.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr Rachid a imprimé un modèle pour un aligneur orthodontique. Dr Samia lui demande de vérifier les finitions. Quelle est l'étape de finition recommandée ?",
+      "media": [],
+      "options": [
+        "Le sablage",
+        "Le polissage des surfaces",
+        "L'application d'un revêtement",
+        "La peinture"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Le polissage des surfaces est recommandé pour obtenir un modèle lisse et précis pour la fabrication d'aligneurs.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr Samia doit gérer un cas d'impression 3D avec des supports complexes. Dr Rachid lui conseille de vérifier un paramètre. Quel est ce paramètre ?",
+      "media": [],
+      "options": [
+        "La température du plateau",
+        "La densité des supports",
+        "La vitesse d'impression",
+        "La qualité de la résine"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La densité des supports est un paramètre critique pour les impressions avec des supports complexes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr Rachid doit choisir une imprimante 3D pour son cabinet. Quel est le critère le plus important pour un usage clinique ?",
+      "media": [],
+      "options": [
+        "La vitesse d'impression",
+        "La précision et la qualité de surface",
+        "La taille de l'imprimante",
+        "Le prix"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'La précision et la qualité de surface sont les critères les plus importants pour un usage clinique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr Samia a imprimé un guide chirurgical mais l'adaptation n'est pas parfaite. Dr Rachid lui suggère de vérifier un élément. Quel est cet élément ?",
+      "media": [],
+      "options": [
+        "La qualité du scan",
+        "La température de l'imprimante",
+        "La vitesse d'impression",
+        "La qualité de la résine"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explique : 'La qualité du scan initial est souvent la cause d'une mauvaise adaptation du guide chirurgical.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr Rachid doit former son assistant à l'utilisation de l'imprimante 3D. Quelle est la première règle de sécurité à enseigner ?",
+      "media": [],
+      "options": [
+        "Le port de gants et de lunettes de protection",
+        "La vérification de la température",
+        "La vitesse d'impression",
+        "La gestion des fichiers"
+      ],
+      "correct": 0,
+      "explanation": "Dr Samia explique : 'Le port de gants et de lunettes de protection est essentiel pour manipuler les résines photopolymères.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr Samia doit gérer un cas de résine photopolymère non polymérisée. Dr Rachid lui demande de vérifier un paramètre. Quel est ce paramètre ?",
+      "media": [],
+      "options": [
+        "La température de l'imprimante",
+        "La durée d'exposition aux UV",
+        "La qualité de la résine",
+        "La vitesse d'impression"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La durée d'exposition aux UV est un paramètre critique pour la polymérisation complète de la résine.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr Rachid a imprimé un modèle pour un cas complexe. Dr Samia lui demande de vérifier l'état de surface. Quelle est l'importance de l'état de surface ?",
+      "media": [],
+      "options": [
+        "Il est purement esthétique",
+        "Il influence la précision de la restauration",
+        "Il est une obligation réglementaire",
+        "Il est secondaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'L'état de surface du modèle influence directement la précision de la restauration prothétique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr Samia doit choisir une résine pour l'impression de modèles de travail. Quelle caractéristique est la plus importante ?",
+      "media": [],
+      "options": [
+        "La couleur de la résine",
+        "La stabilité dimensionnelle",
+        "Le prix de la résine",
+        "La viscosité de la résine"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La stabilité dimensionnelle est essentielle pour les modèles de travail afin de garantir la précision des restaurations.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr Rachid a imprimé un guide chirurgical mais des bulles d'air sont apparues. Dr Samia lui explique la cause. Quelle est la cause la plus probable ?",
+      "media": [],
+      "options": [
+        "Un problème de résine",
+        "Un problème de calibration",
+        "Un problème de température",
+        "Un problème de vitesse d'impression"
+      ],
+      "correct": 0,
+      "explanation": "Dr Samia explique : 'Les bulles d'air dans la résine sont souvent la cause des bulles dans les pièces imprimées.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr Samia, après avoir surmonté de nombreux défis d'impression 3D, reçoit les félicitations de Dr Rachid. Quelle est la prochaine étape pour Dr Samia ?",
+      "media": [],
+      "options": [
+        "Devenir une référente en impression 3D dentaire",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bases"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explique : 'Devenir une référente en impression 3D dentaire est la prochaine étape pour partager son expertise.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

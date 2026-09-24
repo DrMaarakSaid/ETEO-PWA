@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "materiaux_dentaires_intermediaire2_001",
+    "title": "Materiaux_dentaires - Intermédiaire 2",
+    "specialty": "MATE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "MATE_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une empreinte pour une couronne sur une molaire. Dr Asma lui conseille sur le choix du matériau. Selon les propriétés physiques, quel matériau offre la meilleure précision pour une empreinte de prothèse fixe ?",
+      "media": [],
+      "options": [
+        "L'alginate",
+        "Le silicone par addition (polyvinylsiloxane)",
+        "Le plâtre de type I",
+        "La cire dentaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Les silicones par addition offrent une excellente stabilité dimensionnelle et une précision optimale pour les prothèses fixes.' Dr Kamal : 'Je vais utiliser un silicone par addition.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une empreinte pour un modèle d'étude. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés cliniques, quel est le matériau d'empreinte le plus indiqué pour un modèle d'étude ?",
+      "media": [],
+      "options": [
+        "L'alginate",
+        "Le silicone par addition",
+        "Le polyéther",
+        "La cire thermo-plastique"
+      ],
+      "correct": 0,
+      "explanation": "Dr Kamal explique : 'L'alginate est le matériau de choix pour les modèles d'étude en raison de son faible coût et de sa facilité d'utilisation.' Dr Asma : 'Je vais utiliser de l'alginate pour ce modèle d'étude.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Kamal a réalisé une empreinte en alginate et doit la couler en plâtre. Dr Asma lui rappelle les précautions. Selon les principes de la matériovigilance, quel est le risque majeur de l'alginate après son retrait de la bouche ?",
+      "media": [],
+      "options": [
+        "La dilatation thermique",
+        "La synérèse (perte d'eau) et l'imbibition (absorption d'eau)",
+        "La polymérisation continue",
+        "La dégradation bactérienne"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'L'alginate est très sensible aux variations d'eau ; la synérèse provoque un retrait, tandis que l'imbibition entraîne une expansion.' Dr Kamal : 'Je vais couler l'empreinte immédiatement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une empreinte pour un inlay. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés physiques, quel matériau offre la meilleure reproduction des détails pour les préparations intracoronaires ?",
+      "media": [],
+      "options": [
+        "L'alginate",
+        "Le polyéther",
+        "La cire dentaire",
+        "Le plâtre de type I"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Les polyéthers offrent une excellente reproduction des détails et une rigidité idéale pour les préparations intracoronaires.' Dr Asma : 'Je vais utiliser un polyéther.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Kamal doit choisir un plâtre pour réaliser un modèle de travail pour une couronne. Dr Asma lui demande quel type de plâtre est le plus indiqué. Selon les normes internationales, quel plâtre est utilisé pour les modèles de travail de haute précision ?",
+      "media": [],
+      "options": [
+        "Le plâtre de type I",
+        "Le plâtre de type II",
+        "Le plâtre de type III",
+        "Le plâtre de type IV"
+      ],
+      "correct": 3,
+      "explanation": "Dr Asma explique : 'Le plâtre de type IV (pierre dure de haute résistance) est utilisé pour les modèles de travail de haute précision en prothèse fixe.' Dr Kamal : 'Je vais utiliser du plâtre de type IV.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser un modèle d'étude pour une prothèse amovible. Dr Kamal lui conseille sur le choix du plâtre. Selon les propriétés mécaniques, quel type de plâtre est indiqué pour les modèles d'étude ?",
+      "media": [],
+      "options": [
+        "Le plâtre de type I",
+        "Le plâtre de type II",
+        "Le plâtre de type III",
+        "Le plâtre de type IV"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Le plâtre de type II est réservé aux modèles d'étude et de montage.' Dr Asma : 'Je vais utiliser du plâtre de type II pour ce modèle d'étude.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser un patron en cire pour un inlay-core. Dr Asma lui rappelle les précautions. Selon les propriétés physiques des cires, quel est le risque majeur lors de la manipulation d'un patron en cire ?",
+      "media": [],
+      "options": [
+        "La fragilité excessive",
+        "L'accumulation de contraintes internes et la relaxation dans le temps",
+        "La dissolution dans la salive",
+        "La polymérisation spontanée"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Les cires accumulent des contraintes internes ; un stockage prolongé peut induire des distorsions.' Dr Kamal : 'Je vais couler le patron rapidement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une couronne provisoire sur une incisive. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés esthétiques et mécaniques, quel matériau est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "La résine acrylique auto-polymérisable",
+        "Le composite fluide",
+        "Le CVI esthétique",
+        "La cire dentaire"
+      ],
+      "correct": 0,
+      "explanation": "Dr Kamal explique : 'Les résines acryliques auto-polymérisables offrent un bon compromis esthétique et mécanique pour les couronnes provisoires.' Dr Asma : 'Je vais utiliser une résine acrylique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Kamal doit sceller une couronne céramique. Dr Asma lui conseille sur le choix du ciment. Selon les propriétés d'adhésion, quel ciment offre la meilleure liaison avec la céramique ?",
+      "media": [],
+      "options": [
+        "Le ciment phosphate de zinc",
+        "Le ciment polycarboxylate",
+        "Le ciment verre ionomère",
+        "Le ciment résine avec silane"
+      ],
+      "correct": 3,
+      "explanation": "Dr Asma explique : 'Les ciments résine avec silane offrent une excellente adhésion à la céramique après mordançage.' Dr Kamal : 'Je vais utiliser un ciment résine.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Asma doit sceller une couronne métallique. Dr Kamal lui conseille sur le choix du ciment. Selon les propriétés cliniques, quel ciment est le plus indiqué pour le scellement des couronnes métalliques ?",
+      "media": [],
+      "options": [
+        "Le ciment phosphate de zinc",
+        "Le ciment résine",
+        "Le ciment verre ionomère",
+        "Le ciment polycarboxylate"
+      ],
+      "correct": 2,
+      "explanation": "Dr Kamal explique : 'Les ciments verre ionomère offrent une bonne adhésion et une libération de fluor pour les couronnes métalliques.' Dr Asma : 'Je vais utiliser un CVI.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une empreinte pour un bridge de 3 éléments. Dr Asma lui conseille sur le choix du matériau. Selon les propriétés de stabilité dimensionnelle, quel matériau est le plus adapté ?",
+      "media": [],
+      "options": [
+        "L'alginate",
+        "Le silicone par addition",
+        "Le plâtre de type I",
+        "La cire dentaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Les silicones par addition offrent une stabilité dimensionnelle optimale pour les empreintes de bridges.' Dr Kamal : 'Je vais utiliser un silicone par addition.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser un scellement temporaire sur une couronne provisoire. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés cliniques, quel ciment temporaire est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "Le ciment phosphate de zinc",
+        "Le ciment oxyde de zinc-eugénol",
+        "Le ciment résine",
+        "Le ciment verre ionomère"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Le ciment oxyde de zinc-eugénol est idéal pour les scellements temporaires en raison de ses propriétés sédatives.' Dr Asma : 'Je vais utiliser ce ciment temporaire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Kamal doit choisir un ciment pour un scellement définitif sur une couronne céramo-métallique. Dr Asma lui conseille sur le choix. Selon les propriétés d'adhésion, quel ciment offre la meilleure rétention ?",
+      "media": [],
+      "options": [
+        "Le ciment phosphate de zinc",
+        "Le ciment polycarboxylate",
+        "Le ciment verre ionomère",
+        "Le ciment résine"
+      ],
+      "correct": 3,
+      "explanation": "Dr Asma explique : 'Les ciments résine offrent la meilleure rétention pour les couronnes céramo-métalliques.' Dr Kamal : 'Je vais utiliser un ciment résine.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser un enregistrement occlusal. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés physiques, quel matériau est le plus indiqué pour un enregistrement occlusal ?",
+      "media": [],
+      "options": [
+        "L'alginate",
+        "La cire dentaire",
+        "Le silicone de prise d'occlusion",
+        "Le plâtre de type I"
+      ],
+      "correct": 2,
+      "explanation": "Dr Kamal explique : 'Les silicones de prise d'occlusion offrent une excellente précision pour les enregistrements occlusaux.' Dr Asma : 'Je vais utiliser un silicone occlusal.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une empreinte pour une prothèse amovible complète. Dr Asma lui conseille sur le choix du matériau. Selon les propriétés cliniques, quel matériau d'empreinte est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "L'alginate",
+        "Le silicone par addition",
+        "Le plâtre de type I",
+        "Le polyéther"
+      ],
+      "correct": 0,
+      "explanation": "Dr Asma explique : 'L'alginate est le matériau de choix pour les empreintes primaires en prothèse amovible complète.' Dr Kamal : 'Je vais utiliser de l'alginate.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr Asma doit choisir une céramique pour une couronne unitaire antérieure. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés esthétiques, quelle céramique offre la meilleure translucidité ?",
+      "media": [],
+      "options": [
+        "La zircone monolithique",
+        "Le disilicate de lithium",
+        "Le chrome-cobalt",
+        "Le titane commercial"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Le disilicate de lithium offre une excellente translucidité pour les couronnes antérieures.' Dr Asma : 'Je vais utiliser du disilicate de lithium.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une infrastructure en zircone pour un bridge postérieur. Dr Asma lui demande les avantages de la zircone. Selon les propriétés mécaniques, quel est l'avantage majeur de la zircone ?",
+      "media": [],
+      "options": [
+        "Sa translucidité parfaite",
+        "Sa résistance à la flexion et à la fracture",
+        "Son faible coût",
+        "Sa facilité de collage"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'La zircone offre une résistance à la flexion exceptionnelle pour les infrastructures postérieures.' Dr Kamal : 'Je vais utiliser de la zircone pour ce bridge.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une facette en céramique. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés esthétiques, quelle céramique est la plus indiquée pour les facettes ?",
+      "media": [],
+      "options": [
+        "Le disilicate de lithium",
+        "La zircone monolithique",
+        "Le chrome-cobalt",
+        "Le titane commercial"
+      ],
+      "correct": 0,
+      "explanation": "Dr Kamal explique : 'Le disilicate de lithium est la céramique de choix pour les facettes en raison de sa translucidité et de son esthétique.' Dr Asma : 'Je vais utiliser du disilicate de lithium.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr Kamal doit choisir un alliage pour un châssis de prothèse amovible. Dr Asma lui conseille sur le choix. Selon les propriétés mécaniques, quel alliage est le plus indiqué pour un châssis de prothèse amovible ?",
+      "media": [],
+      "options": [
+        "L'or 18 carats",
+        "Le chrome-cobalt",
+        "Le titane pur",
+        "Le nickel-chrome"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Le chrome-cobalt offre une rigidité et une résistance à la corrosion exceptionnelles pour les châssis.' Dr Kamal : 'Je vais utiliser du chrome-cobalt.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une empreinte pour un implant. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés physiques, quel matériau offre la meilleure précision pour les empreintes implanto-portées ?",
+      "media": [],
+      "options": [
+        "L'alginate",
+        "Le silicone par addition",
+        "Le polyéther",
+        "Le plâtre de type I"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Les silicones par addition offrent une précision optimale pour les empreintes implanto-portées.' Dr Asma : 'Je vais utiliser un silicone par addition.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr Kamal doit choisir un ciment pour un scellement définitif sur un implant. Dr Asma lui conseille sur le choix. Selon les propriétés cliniques, quel ciment est le plus indiqué pour le scellement implantaire ?",
+      "media": [],
+      "options": [
+        "Le ciment phosphate de zinc",
+        "Le ciment verre ionomère",
+        "Le ciment résine",
+        "Le ciment oxyde de zinc-eugénol"
+      ],
+      "correct": 2,
+      "explanation": "Dr Asma explique : 'Les ciments résine offrent une excellente rétention pour les prothèses sur implants.' Dr Kamal : 'Je vais utiliser un ciment résine.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une restauration provisoire sur une dent préparée. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés cliniques, quel matériau est le plus indiqué pour une restauration provisoire de longue durée ?",
+      "media": [],
+      "options": [
+        "La résine acrylique auto-polymérisable",
+        "Le composite fluide",
+        "Le polymère à haute performance (PMMA)",
+        "La cire dentaire"
+      ],
+      "correct": 2,
+      "explanation": "Dr Kamal explique : 'Les polymères à haute performance comme le PMMA offrent une excellente résistance pour les provisoires de longue durée.' Dr Asma : 'Je vais utiliser du PMMA.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une empreinte pour un inlay-onlay en céramique. Dr Asma lui conseille sur le choix du matériau. Selon les propriétés physiques, quel matériau offre la meilleure précision marginale ?",
+      "media": [],
+      "options": [
+        "L'alginate",
+        "Le silicone par addition",
+        "Le polyéther",
+        "Le plâtre de type I"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Les silicones par addition offrent une précision marginale exceptionnelle pour les inlays-onlays.' Dr Kamal : 'Je vais utiliser un silicone par addition.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr Asma doit choisir un matériau pour un noyau de reconstruction corono-radiculaire. Dr Kamal lui conseille sur le choix. Selon les propriétés mécaniques, quel matériau est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "Le composite fluide",
+        "Le CVI renforcé",
+        "Le composite à haute teneur en charges",
+        "L'amalgame d'argent"
+      ],
+      "correct": 2,
+      "explanation": "Dr Kamal explique : 'Les composites à haute teneur en charges offrent une excellente résistance pour les noyaux de reconstruction.' Dr Asma : 'Je vais utiliser un composite haute résistance.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr Kamal, après avoir réalisé plusieurs empreintes et restaurations avec Dr Asma, reçoit ses félicitations. Quelle est la prochaine étape pour Dr Kamal ?",
+      "media": [],
+      "options": [
+        "Devenir un expert en matériaux et techniques d'empreinte",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bonnes pratiques"
+      ],
+      "correct": 0,
+      "explanation": "Dr Asma explique : 'La maîtrise des matériaux et des techniques d'empreinte est une compétence précieuse. Devenir un expert est la prochaine étape.' Dr Kamal : 'Je vais me former aux nouvelles techniques d'empreinte.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "materiaux_dentaires_intermediaire2_001",
+    "title": "Materiales Dentales – Intermedio 2",
+    "specialty": "MATE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "MATE_I2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe tomar una impresión para una corona en un molar. La Dra. Asma le aconseja sobre la elección del material. Según las propiedades físicas, ¿qué material ofrece la mejor precisión para la impresión de una prótesis fija?",
+      "media": [],
+      "options": [
+        "Alginato",
+        "Silicona de adición (polivinilsiloxano)",
+        "Yeso tipo I",
+        "Cera dental"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Asma explica: 'Las siliconas de adición ofrecen una excelente estabilidad dimensional y una precisión óptima para prótesis fijas.' El Dr. Kamal: 'Usaré silicona de adición.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q02",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe tomar una impresión para un modelo de diagnóstico. El Dr. Kamal le aconseja sobre la elección del material. Según las propiedades clínicas, ¿qué material de impresión está más indicado para un modelo de diagnóstico?",
+      "media": [],
+      "options": [
+        "Alginato",
+        "Silicona de adición",
+        "Poliéter",
+        "Cera termoplástica"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Kamal explica: 'El alginato es el material de elección para los modelos de diagnóstico por su bajo coste y facilidad de uso.' La Dra. Asma: 'Usaré alginato para este modelo de diagnóstico.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Kamal ha tomado una impresión de alginato y debe vaciarla en yeso. La Dra. Asma le recuerda las precauciones. Según los principios de la ciencia de materiales, ¿cuál es el principal riesgo del alginato después de su extracción de la boca?",
+      "media": [],
+      "options": [
+        "Expansión térmica",
+        "Sinéresis (pérdida de agua) e imbibición (absorción de agua)",
+        "Polimerización continua",
+        "Degradación bacteriana"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Asma explica: 'El alginato es muy sensible a los cambios de agua; la sinéresis produce contracción y la imbibición produce expansión.' El Dr. Kamal: 'Vaciaré la impresión inmediatamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q04",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe tomar una impresión para una incrustación. El Dr. Kamal le aconseja sobre la elección del material. Según las propiedades físicas, ¿qué material ofrece la mejor reproducción de detalles para preparaciones intracoronarias?",
+      "media": [],
+      "options": [
+        "Alginato",
+        "Poliéter",
+        "Cera dental",
+        "Yeso tipo I"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Kamal explica: 'Los poliéteres ofrecen una excelente reproducción de detalles y una rigidez ideal para preparaciones intracoronarias.' La Dra. Asma: 'Usaré poliéter.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe elegir un yeso para fabricar un modelo de trabajo para una corona. La Dra. Asma pregunta qué tipo de yeso está más indicado. Según los estándares internacionales, ¿qué yeso se utiliza para modelos de trabajo de alta precisión?",
+      "media": [],
+      "options": [
+        "Yeso tipo I",
+        "Yeso tipo II",
+        "Yeso tipo III",
+        "Yeso tipo IV"
+      ],
+      "correct": 3,
+      "explanation": "La Dra. Asma explica: 'El yeso tipo IV (piedra dura de alta resistencia) se utiliza para modelos de trabajo de alta precisión en prótesis fija.' El Dr. Kamal: 'Usaré yeso tipo IV.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q06",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe fabricar un modelo de diagnóstico para una prótesis removible. El Dr. Kamal le aconseja sobre la elección del yeso. Según las propiedades mecánicas, ¿qué tipo de yeso está indicado para modelos de diagnóstico?",
+      "media": [],
+      "options": [
+        "Yeso tipo I",
+        "Yeso tipo II",
+        "Yeso tipo III",
+        "Yeso tipo IV"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Kamal explica: 'El yeso tipo II está destinado a modelos de diagnóstico y montaje.' La Dra. Asma: 'Usaré yeso tipo II para este modelo de diagnóstico.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe fabricar un modelo de cera para una incrustación-muñón. La Dra. Asma le recuerda las precauciones. Según las propiedades físicas de las ceras, ¿cuál es el principal riesgo al manipular el modelo de cera?",
+      "media": [],
+      "options": [
+        "Fragilidad excesiva",
+        "Acumulación de tensiones internas y relajación en el tiempo",
+        "Disolución en la saliva",
+        "Polimerización espontánea"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Asma explica: 'Las ceras acumulan tensiones internas; el almacenamiento prolongado puede provocar deformaciones.' El Dr. Kamal: 'Vaciaré el modelo rápidamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q08",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe fabricar una corona provisional en un incisivo. El Dr. Kamal le aconseja sobre la elección del material. Según las propiedades estéticas y mecánicas, ¿qué material está más indicado?",
+      "media": [],
+      "options": [
+        "Resina acrílica autopolimerizable",
+        "Composite fluido",
+        "CIV estético",
+        "Cera dental"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Kamal explica: 'Las resinas acrílicas autopolimerizables ofrecen un buen compromiso estético y mecánico para coronas provisionales.' La Dra. Asma: 'Usaré resina acrílica.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe cementar una corona cerámica. La Dra. Asma le aconseja sobre la elección del cemento. Según las propiedades adhesivas, ¿qué cemento ofrece la mejor unión con la cerámica?",
+      "media": [],
+      "options": [
+        "Cemento de fosfato de zinc",
+        "Cemento policarboxilato",
+        "Cemento de ionómero de vidrio",
+        "Cemento de composite con silano"
+      ],
+      "correct": 3,
+      "explanation": "La Dra. Asma explica: 'Los cementos de composite con silano ofrecen una excelente adhesión a la cerámica después del grabado.' El Dr. Kamal: 'Usaré cemento de composite.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q10",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe cementar una corona metálica. El Dr. Kamal le aconseja sobre la elección del cemento. Según las propiedades clínicas, ¿qué cemento está más indicado para la fijación de coronas metálicas?",
+      "media": [],
+      "options": [
+        "Cemento de fosfato de zinc",
+        "Cemento de composite",
+        "Cemento de ionómero de vidrio",
+        "Cemento policarboxilato"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Kamal explica: 'Los cementos de ionómero de vidrio ofrecen una buena adhesión y liberación de flúor para coronas metálicas.' La Dra. Asma: 'Usaré CIV.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe tomar una impresión para un puente de 3 elementos. La Dra. Asma le aconseja sobre la elección del material. Según las propiedades de estabilidad dimensional, ¿qué material es más adecuado?",
+      "media": [],
+      "options": [
+        "Alginato",
+        "Silicona de adición",
+        "Yeso tipo I",
+        "Cera dental"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Asma explica: 'Las siliconas de adición ofrecen una estabilidad dimensional óptima para impresiones de puentes.' El Dr. Kamal: 'Usaré silicona de adición.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q12",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe realizar una fijación provisional sobre una corona provisional. El Dr. Kamal le aconseja sobre la elección del material. Según las propiedades clínicas, ¿qué cemento provisional está más indicado?",
+      "media": [],
+      "options": [
+        "Cemento de fosfato de zinc",
+        "Cemento de óxido de zinc-eugenol",
+        "Cemento de composite",
+        "Cemento de ionómero de vidrio"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Kamal explica: 'El cemento de óxido de zinc-eugenol es ideal para fijaciones provisionales por sus propiedades sedantes.' La Dra. Asma: 'Usaré este cemento provisional.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe elegir un cemento para la fijación definitiva de una corona metalocerámica. La Dra. Asma le aconseja sobre la elección. Según las propiedades adhesivas, ¿qué cemento ofrece la mejor retención?",
+      "media": [],
+      "options": [
+        "Cemento de fosfato de zinc",
+        "Cemento policarboxilato",
+        "Cemento de ionómero de vidrio",
+        "Cemento de composite"
+      ],
+      "correct": 3,
+      "explanation": "La Dra. Asma explica: 'Los cementos de composite ofrecen la mejor retención para coronas metalocerámicas.' El Dr. Kamal: 'Usaré cemento de composite.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q14",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe realizar un registro oclusal. El Dr. Kamal le aconseja sobre la elección del material. Según las propiedades físicas, ¿qué material está más indicado para el registro oclusal?",
+      "media": [],
+      "options": [
+        "Alginato",
+        "Cera dental",
+        "Silicona de registro oclusal",
+        "Yeso tipo I"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Kamal explica: 'Las siliconas de registro oclusal ofrecen una excelente precisión para los registros oclusales.' La Dra. Asma: 'Usaré silicona de registro oclusal.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe tomar una impresión para una prótesis completa removible. La Dra. Asma le aconseja sobre la elección del material. Según las propiedades clínicas, ¿qué material de impresión está más indicado?",
+      "media": [],
+      "options": [
+        "Alginato",
+        "Silicona de adición",
+        "Yeso tipo I",
+        "Poliéter"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Asma explica: 'El alginato es el material de elección para las impresiones primarias en prótesis completa removible.' El Dr. Kamal: 'Usaré alginato.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q16",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe elegir una cerámica para una corona anterior unitaria. El Dr. Kamal le aconseja sobre la elección del material. Según las propiedades estéticas, ¿qué cerámica ofrece la mejor translucidez?",
+      "media": [],
+      "options": [
+        "Cerámica de circonio monolítica",
+        "Disilicato de litio",
+        "Cromo-cobalto",
+        "Titanio comercial"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Kamal explica: 'El disilicato de litio ofrece una excelente translucidez para coronas anteriores.' La Dra. Asma: 'Usaré disilicato de litio.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe fabricar una infraestructura de circonio para un puente posterior. La Dra. Asma pregunta sobre las ventajas del circonio. Según las propiedades mecánicas, ¿cuál es la principal ventaja del circonio?",
+      "media": [],
+      "options": [
+        "Su translucidez ideal",
+        "Su resistencia a la flexión y su resistencia a las fracturas",
+        "Su bajo coste",
+        "Su facilidad de cementado"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Asma explica: 'El circonio ofrece una resistencia a la flexión excepcional para infraestructuras posteriores.' El Dr. Kamal: 'Usaré circonio para este puente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q18",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe fabricar una carilla cerámica. El Dr. Kamal le aconseja sobre la elección del material. Según las propiedades estéticas, ¿qué cerámica está más indicada para carillas?",
+      "media": [],
+      "options": [
+        "Disilicato de litio",
+        "Cerámica de circonio monolítica",
+        "Cromo-cobalto",
+        "Titanio comercial"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Kamal explica: 'El disilicato de litio es la cerámica de elección para carillas por su translucidez y estética.' La Dra. Asma: 'Usaré disilicato de litio.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe elegir una aleación para el armazón de una prótesis removible. La Dra. Asma le aconseja sobre la elección. Según las propiedades mecánicas, ¿qué aleación está más indicada para el armazón de una prótesis removible?",
+      "media": [],
+      "options": [
+        "Oro de 18 quilates",
+        "Cromo-cobalto",
+        "Titanio puro",
+        "Níquel-cromo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Asma explica: 'El cromo-cobalto ofrece una rigidez excepcional y una resistencia a la corrosión para los armazones.' El Dr. Kamal: 'Usaré cromo-cobalto.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q20",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe tomar una impresión para un implante. El Dr. Kamal le aconseja sobre la elección del material. Según las propiedades físicas, ¿qué material ofrece la mejor precisión para las impresiones de implantes?",
+      "media": [],
+      "options": [
+        "Alginato",
+        "Silicona de adición",
+        "Poliéter",
+        "Yeso tipo I"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Kamal explica: 'Las siliconas de adición ofrecen una precisión óptima para las impresiones de implantes.' La Dra. Asma: 'Usaré silicona de adición.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe elegir un cemento para la fijación definitiva sobre un implante. La Dra. Asma le aconseja sobre la elección. Según las propiedades clínicas, ¿qué cemento está más indicado para la fijación sobre implante?",
+      "media": [],
+      "options": [
+        "Cemento de fosfato de zinc",
+        "Cemento de ionómero de vidrio",
+        "Cemento de composite",
+        "Cemento de óxido de zinc-eugenol"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. Asma explica: 'Los cementos de composite ofrecen una excelente retención para las prótesis sobre implantes.' El Dr. Kamal: 'Usaré cemento de composite.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q22",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe realizar una restauración provisional en un diente tallado. El Dr. Kamal le aconseja sobre la elección del material. Según las propiedades clínicas, ¿qué material está más indicado para una restauración provisional a largo plazo?",
+      "media": [],
+      "options": [
+        "Resina acrílica autopolimerizable",
+        "Composite fluido",
+        "Polímero de alto rendimiento (PMMA)",
+        "Cera dental"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Kamal explica: 'Los polímeros de alto rendimiento como el PMMA ofrecen una excelente resistencia para restauraciones provisionales a largo plazo.' La Dra. Asma: 'Usaré PMMA.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Kamal debe tomar una impresión para una incrustación-onlay cerámica. La Dra. Asma le aconseja sobre la elección del material. Según las propiedades físicas, ¿qué material ofrece la mejor precisión marginal?",
+      "media": [],
+      "options": [
+        "Alginato",
+        "Silicona de adición",
+        "Poliéter",
+        "Yeso tipo I"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Asma explica: 'Las siliconas de adición ofrecen una precisión marginal excepcional para incrustaciones-onlays.' El Dr. Kamal: 'Usaré silicona de adición.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q24",
+      "type": "single-choice",
+      "question": "La Dra. Asma debe elegir un material para la reconstrucción del muñón coronorradicular. El Dr. Kamal le aconseja sobre la elección. Según las propiedades mecánicas, ¿qué material está más indicado?",
+      "media": [],
+      "options": [
+        "Composite fluido",
+        "CIV reforzado",
+        "Composite altamente cargado",
+        "Amalgama de plata"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Kamal explica: 'Los composites altamente cargados ofrecen una excelente resistencia para los muñones de reconstrucción coronorradicular.' La Dra. Asma: 'Usaré composite de alta resistencia.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Kamal, después de realizar varias impresiones y restauraciones con la Dra. Asma, recibe sus felicitaciones. ¿Cuál es el siguiente paso para el Dr. Kamal?",
+      "media": [],
+      "options": [
+        "Convertirse en experto en materiales y técnicas de impresión",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar las buenas prácticas"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Asma explica: 'El dominio de los materiales y las técnicas de impresión es una habilidad valiosa. Convertirse en experto es el siguiente paso.' El Dr. Kamal: 'Estudiaré nuevas técnicas de impresión.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

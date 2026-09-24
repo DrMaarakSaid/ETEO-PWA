@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "gestion_cabinet_debutant2_001",
+    "title": "Gestion_cabinet - Débutant 2",
+    "specialty": "GEST",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "GEST_D2_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Choumi a une assistante en CDD de 8 mois. Elle tombe enceinte et souhaite prendre son congé maternité. Selon les articles 32 et 159, le contrat de l'assistante prendra-t-il fin à son terme ?",
+      "media": [],
+      "options": [
+        "Non, le contrat est suspendu automatiquement durant le congé maternité",
+        "Oui, le CDD prend fin à son terme, même pendant le congé maternité",
+        "Oui, mais elle peut bénéficier d'une indemnité compensatrice",
+        "Non, le CDD est automatiquement transformé en CDI"
+      ],
+      "correct": 1,
+      "explanation": "L'article 159, dernier alinéa, prévoit que les dispositions protectrices de la femme enceinte ne font pas obstacle à l'échéance du contrat de travail à durée déterminée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Farouk souhaite licencier son assistante après 18 mois de travail pour des motifs économiques. Selon l'article 52, l'assistante a-t-elle droit à l'indemnité de licenciement ?",
+      "media": [],
+      "options": [
+        "Non, car elle n'a pas atteint 2 ans d'ancienneté",
+        "Oui, car elle a travaillé au moins 6 mois",
+        "Oui, mais seulement si le licenciement est pour faute",
+        "Non, les motifs économiques excluent l'indemnité"
+      ],
+      "correct": 1,
+      "explanation": "L'article 52 prévoit que le salarié lié par un contrat à durée indéterminée a droit à une indemnité en cas de licenciement après six mois de travail dans la même entreprise.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Choumi paie son assistante au mois. Selon l'article 13, s'il souhaite rompre la période d'essai, quel délai de préavis doit-il respecter ?",
+      "media": [],
+      "options": [
+        "Aucun préavis, la rupture est libre",
+        "Un préavis de 2 jours",
+        "Un préavis de 8 jours",
+        "Un préavis de 15 jours"
+      ],
+      "correct": 2,
+      "explanation": "L'article 13 dispose que si le salarié est payé au mois, un préavis de huit jours est requis avant la rupture de la période d'essai.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Farouk a une assistante en CDI. Il souhaite la mettre à pied à titre disciplinaire pour 5 jours. Selon l'article 37, est-ce autorisé ?",
+      "media": [],
+      "options": [
+        "Oui, sans aucune limite de durée",
+        "Oui, mais la mise à pied ne peut excéder 8 jours",
+        "Non, la mise à pied est interdite",
+        "Oui, mais seulement avec l'accord du salarié"
+      ],
+      "correct": 1,
+      "explanation": "L'article 37 prévoit la mise à pied comme sanction disciplinaire, pour une durée n'excédant pas huit jours.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Choumi envisage le licenciement de son assistante pour faute grave. Selon l'article 61, quelles indemnités doit-il lui verser ?",
+      "media": [],
+      "options": [
+        "Aucune indemnité, le licenciement pour faute grave dispense de tout versement",
+        "L'indemnité de préavis uniquement",
+        "L'indemnité de licenciement uniquement",
+        "Le préavis et l'indemnité de licenciement"
+      ],
+      "correct": 0,
+      "explanation": "L'article 61 prévoit qu'en cas de faute grave, le salarié peut être licencié sans préavis ni indemnité ni versement de dommages-intérêts.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Farouk, employeur de 12 salariés, souhaite modifier le règlement intérieur. Selon l'article 138, quelle est la procédure à suivre ?",
+      "media": [],
+      "options": [
+        "Il peut le modifier librement sans formalité",
+        "Il doit le communiquer aux délégués du personnel et le soumettre à l'approbation du ministère",
+        "Il doit le soumettre à un vote des salariés",
+        "Il doit l'afficher uniquement dans le cabinet"
+      ],
+      "correct": 1,
+      "explanation": "L'article 138 impose à l'employeur de communiquer le règlement intérieur aux délégués du personnel avant de le soumettre à l'approbation de l'autorité gouvernementale chargée du travail.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q07",
+      "type": "single-choice",
+      "question": "Selon l'article 138, quel est le délai pour établir le règlement intérieur après l'ouverture du cabinet employant au moins 10 salariés ?",
+      "media": [],
+      "options": [
+        "6 mois",
+        "1 an",
+        "2 ans",
+        "3 ans"
+      ],
+      "correct": 2,
+      "explanation": "L'article 138 prévoit que tout employeur occupant habituellement au moins dix salariés est tenu, dans les deux années suivant l'ouverture, d'établir un règlement intérieur.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Choumi a une assistante qui travaille 44 heures par semaine. Elle effectue 4 heures supplémentaires. Selon l'article 201, à quel taux ces heures sont-elles majorées ?",
+      "media": [],
+      "options": [
+        "15 %",
+        "25 %",
+        "50 %",
+        "75 %"
+      ],
+      "correct": 1,
+      "explanation": "L'article 201 prévoit une majoration de 25% pour les heures supplémentaires effectuées entre 6h et 21h dans les activités non agricoles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Farouk a une assistante qui prend son congé annuel. Selon l'article 247, si le cabinet ferme complètement pendant les congés, que doit faire l'employeur ?",
+      "media": [],
+      "options": [
+        "Ne rien payer aux salariés",
+        "Verser une indemnité de congé à tous les salariés, quelle que soit leur ancienneté",
+        "Verser une indemnité uniquement aux salariés ayant plus de 6 mois d'ancienneté",
+        "Fermer sans indemnité"
+      ],
+      "correct": 1,
+      "explanation": "L'article 247 prévoit que tous les salariés reçoivent une indemnité du congé annuel payé correspondant à la durée de la fermeture, quelle que soit la durée de leur service au jour de la fermeture.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Choumi, employeur de 15 salariés, souhaite connaître ses obligations en matière de délégués du personnel. Selon l'article 433, combien de délégués doit-il avoir ?",
+      "media": [],
+      "options": [
+        "1 titulaire et 1 suppléant",
+        "2 titulaires et 2 suppléants",
+        "3 titulaires et 3 suppléants",
+        "5 titulaires et 5 suppléants"
+      ],
+      "correct": 0,
+      "explanation": "L'article 433 prévoit que de 10 à 25 salariés, l'entreprise doit élire un délégué titulaire et un délégué suppléant.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Farouk a un salarié qui ne cesse de se plaindre du bruit. Selon l'article 281, quelle est l'obligation de l'employeur concernant les conditions de travail ?",
+      "media": [],
+      "options": [
+        "Rien, le bruit est inévitable",
+        "Veiller à ce que les locaux présentent des conditions d'hygiène et de sécurité",
+        "Installer une climatisation uniquement",
+        "Fournir des casques anti-bruit à tous"
+      ],
+      "correct": 1,
+      "explanation": "L'article 281 impose à l'employeur de veiller à ce que les locaux de travail présentent les conditions d'hygiène et de salubrité nécessaires à la santé des salariés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Choumi est employeur de 60 salariés. Selon l'article 304, quelle obligation a-t-il concernant le service médical du travail ?",
+      "media": [],
+      "options": [
+        "Aucune obligation particulière",
+        "Créer un service médical du travail indépendant",
+        "Adhérer à un service médical inter-entreprises",
+        "Juste fournir une trousse de premiers secours"
+      ],
+      "correct": 1,
+      "explanation": "L'article 304 impose la création d'un service médical du travail indépendant pour les entreprises occupant au moins cinquante salariés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q13",
+      "type": "single-choice",
+      "question": "Selon l'article 336, le Dr Farouk, employeur de 60 salariés, doit-il créer un comité de sécurité et d'hygiène ?",
+      "media": [],
+      "options": [
+        "Oui, à partir de 50 salariés",
+        "Non, seulement à partir de 100 salariés",
+        "Oui, à partir de 20 salariés",
+        "Non, les cabinets dentaires sont exemptés"
+      ],
+      "correct": 0,
+      "explanation": "L'article 336 prévoit la création de comités de sécurité et d'hygiène dans les entreprises occupant au moins 50 salariés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Choumi souhaite embaucher un salarié étranger. Selon l'article 516, quelle est la procédure à suivre ?",
+      "media": [],
+      "options": [
+        "Il peut l'embaucher librement",
+        "Il doit obtenir une autorisation de l'autorité gouvernementale chargée du travail",
+        "Il doit d'abord publier une annonce au Maroc",
+        "Il doit demander l'accord du ministère de l'intérieur"
+      ],
+      "correct": 1,
+      "explanation": "L'article 516 impose à tout employeur désireux de recruter un salarié étranger d'obtenir une autorisation de l'autorité gouvernementale chargée du travail.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q15",
+      "type": "single-choice",
+      "question": "Selon l'article 526, le Dr Farouk doit mettre à la retraite ses salariés qui atteignent l'âge de :",
+      "media": [],
+      "options": [
+        "55 ans",
+        "60 ans",
+        "62 ans",
+        "65 ans"
+      ],
+      "correct": 1,
+      "explanation": "L'article 526 prévoit que tout salarié qui atteint l'âge de soixante ans doit être mis à la retraite.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Choumi a un salarié qui a démissionné. Selon l'article 72, dans quel délai doit-il lui délivrer le certificat de travail ?",
+      "media": [],
+      "options": [
+        "3 jours",
+        "8 jours",
+        "15 jours",
+        "30 jours"
+      ],
+      "correct": 1,
+      "explanation": "L'article 72 impose à l'employeur de délivrer le certificat de travail dans un délai maximum de huit jours, sous peine de dommages-intérêts.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q17",
+      "type": "single-choice",
+      "question": "Selon l'article 15, le contrat de travail doit être établi en combien d'exemplaires ?",
+      "media": [],
+      "options": [
+        "1 exemplaire",
+        "2 exemplaires",
+        "3 exemplaires",
+        "4 exemplaires"
+      ],
+      "correct": 1,
+      "explanation": "L'article 15 prévoit que le contrat de travail doit être établi en deux exemplaires revêtus des signatures du salarié et de l'employeur.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Farouk a un salarié qui refuse d'exécuter un travail dangereux. Selon l'article 293, le salarié peut-il être sanctionné ?",
+      "media": [],
+      "options": [
+        "Oui, s'il a été dûment informé des risques",
+        "Non, le refus est légitime",
+        "Oui, immédiatement sans procédure",
+        "Non, il peut refuser tout travail"
+      ],
+      "correct": 0,
+      "explanation": "L'article 293 prévoit que les salariés dûment informés des prescriptions relatives à la sécurité et qui ne s'y conforment pas sont passibles de sanctions.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q19",
+      "type": "single-choice",
+      "question": "Selon l'article 172, quel est l'âge limite pour le travail de nuit des mineurs ?",
+      "media": [],
+      "options": [
+        "14 ans",
+        "15 ans",
+        "16 ans",
+        "18 ans"
+      ],
+      "correct": 2,
+      "explanation": "L'article 172 interdit d'employer à un travail de nuit des mineurs âgés de moins de seize ans, sous réserve des exceptions.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Choumi souhaite faire effectuer des heures supplémentaires à son assistante un dimanche. Selon l'article 205, cela est-il autorisé ?",
+      "media": [],
+      "options": [
+        "Oui, toujours",
+        "Non, le repos hebdomadaire est obligatoire",
+        "Oui, si elle est d'accord",
+        "Oui, mais avec une majoration de 50%"
+      ],
+      "correct": 1,
+      "explanation": "L'article 205 impose un repos hebdomadaire d'au moins vingt-quatre heures, qui doit être accordé obligatoirement aux salariés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Farouk a un salarié en CDI qui souhaite démissionner. Selon l'article 34, quel est son droit ?",
+      "media": [],
+      "options": [
+        "Il ne peut pas démissionner",
+        "Il peut démissionner par une lettre avec signature légalisée",
+        "Il doit attendre la fin de l'année",
+        "Il doit payer une indemnité à l'employeur"
+      ],
+      "correct": 1,
+      "explanation": "L'article 34 prévoit que le salarié peut mettre fin au CDI au moyen d'une démission portant la signature légalisée par l'autorité compétente.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q22",
+      "type": "single-choice",
+      "question": "Selon l'article 33, en cas de rupture anticipée d'un CDD sans faute grave, les dommages-intérêts correspondent à :",
+      "media": [],
+      "options": [
+        "3 mois de salaire",
+        "La période allant de la rupture jusqu'au terme du contrat",
+        "6 mois de salaire",
+        "Une indemnité forfaitaire de 50 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "L'article 33 prévoit que le montant des dommages-intérêts équivaut aux salaires correspondant à la période allant de la date de rupture jusqu'au terme fixé par le contrat.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Choumi, employeur de 25 salariés, doit organiser des élections de délégués du personnel. Selon l'article 438, qui est électeur ?",
+      "media": [],
+      "options": [
+        "Tous les salariés sans condition",
+        "Les salariés âgés de 16 ans révolus ayant au moins 6 mois de travail",
+        "Uniquement les salariés de plus de 18 ans",
+        "Uniquement les salariés en CDI"
+      ],
+      "correct": 1,
+      "explanation": "L'article 438 prévoit que sont électeurs les salariés des deux sexes âgés de seize ans révolus ayant travaillé au moins six mois dans l'établissement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q24",
+      "type": "single-choice",
+      "question": "Selon l'article 446, le Dr Farouk est tenu d'afficher les listes des candidats aux fonctions de délégués. Où doit-il les afficher ?",
+      "media": [],
+      "options": [
+        "Uniquement dans son bureau",
+        "Aux emplacements prévus par voie réglementaire",
+        "Dans la salle d'attente uniquement",
+        "Il n'a pas d'obligation d'affichage"
+      ],
+      "correct": 1,
+      "explanation": "L'article 446 impose à l'employeur d'afficher les listes des candidats aux emplacements prévus par voie réglementaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Choumi a un salarié qui a commis une faute grave. Selon l'article 62, dans quel délai doit-il entendre le salarié ?",
+      "media": [],
+      "options": [
+        "24 heures",
+        "8 jours",
+        "15 jours",
+        "30 jours"
+      ],
+      "correct": 1,
+      "explanation": "L'article 62 prévoit que le salarié doit être entendu dans un délai ne dépassant pas huit jours à compter de la date de constatation de l'acte qui lui est imputé.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

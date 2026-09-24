@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "formes_juridiques_debutant1_001",
+    "title": "Formas Jurídicas – Principiante 1",
+    "specialty": "FORM",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "FORM_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni ejerce como persona física. Según el Código de Deontología, ¿se considera su actividad como comercial?",
+      "media": [],
+      "options": [
+        "Sí, porque recibe honorarios",
+        "No, ejerce una profesión liberal no comercial",
+        "Sí, porque está sujeto al Código de Comercio",
+        "No, porque no tiene local profesional"
+      ],
+      "correct": 1,
+      "explanation": "El Código de Deontología del dentista (Decreto n° 2-96-989) especifica que la profesión de cirujano-dentista es una profesión liberal. No puede comportarse como un comerciante, y la publicidad comercial le está prohibida.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q02",
+      "type": "single-choice",
+      "question": "Si la profesión liberal no es comercial, ¿por qué el Dr. Ibrahimí debe inscribirse en el Registro de Comercio?",
+      "media": [],
+      "options": [
+        "Para obtener el estatuto de comerciante",
+        "Para cumplir con las obligaciones contables y fiscales",
+        "Para poder facturar a los pacientes",
+        "Para ser presidente del Consejo"
+      ],
+      "correct": 1,
+      "explanation": "A pesar de su estatuto liberal, el dentista es considerado comerciante en el sentido formal del derecho. La inscripción en el Registro de Comercio es consecuencia de las obligaciones contables y fiscales definidas por el Código de Comercio.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, persona física, responde de las deudas de su actividad:",
+      "media": [],
+      "options": [
+        "Solo con su patrimonio profesional",
+        "Con todo su patrimonio personal",
+        "Solo con su aportación inicial",
+        "Con ningún patrimonio, el Estado es el garante"
+      ],
+      "correct": 1,
+      "explanation": "Como persona física, no hay distinción jurídica entre el patrimonio personal y el profesional. El dentista responde de sus deudas con todo su patrimonio. Es el principio de responsabilidad ilimitada.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Ibrahimí está considerando crear una SARL para su clínica. Según la ley 5-96, ¿cuál es la principal ventaja de esta estructura?",
+      "media": [],
+      "options": [
+        "Simplificación de las declaraciones fiscales",
+        "Limitación de la responsabilidad al monto de las aportaciones",
+        "Exención fiscal total",
+        "Obligación de no tener empleados"
+      ],
+      "correct": 1,
+      "explanation": "La ley 5-96 sobre la SARL se basa en el principio de responsabilidad limitada. Los socios responden de las deudas de la sociedad solo en la medida de sus aportaciones, protegiendo así su patrimonio personal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q05",
+      "type": "single-choice",
+      "question": "Según el Código de Comercio, ¿puede el Dr. Mamouni, como persona física, abrir una cuenta bancaria personal para su actividad profesional?",
+      "media": [],
+      "options": [
+        "Sí, es la forma más sencilla",
+        "No, debe abrir una cuenta bancaria profesional separada",
+        "Sí, si el banco está de acuerdo",
+        "No, porque no tiene derecho a tener cuenta"
+      ],
+      "correct": 1,
+      "explanation": "El Código de Comercio obliga a los comerciantes a abrir una cuenta bancaria profesional para las operaciones de su empresa, con el fin de garantizar la trazabilidad de los flujos financieros.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni y su colega quieren asociarse. ¿Qué forma jurídica es la más adecuada y más común para un consultorio dental en Marruecos?",
+      "media": [],
+      "options": [
+        "Sociedad Anónima (SA)",
+        "Sociedad en Nombre Colectivo (SNC)",
+        "Sociedad de Responsabilidad Limitada (SARL)",
+        "Simple contrato de asociación"
+      ],
+      "correct": 2,
+      "explanation": "La SARL es la forma jurídica más común en Marruecos. Ofrece una estructura flexible con responsabilidad limitada a las aportaciones, lo que es ideal para profesionales que desean asociarse protegiendo su patrimonio personal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Ibrahimí crea una SARL. ¿Cuál es el capital social mínimo requerido por la ley 5-96?",
+      "media": [],
+      "options": [
+        "50 000 DH",
+        "10 000 DH",
+        "1 dírham",
+        "100 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "La ley 5-96 permite crear una SARL con un capital social simbólico de 1 dírham. Esta flexibilidad hace que la creación de empresa sea accesible para todos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni es el único socio de una SARL-AU. Según los textos, ¿qué ocurre en caso de fallecimiento?",
+      "media": [],
+      "options": [
+        "La sociedad se liquida automáticamente",
+        "El heredero puede solicitar el nombramiento de un representante para convocar una asamblea general en un plazo de 60 días",
+        "La sociedad se transmite automáticamente al cónyuge",
+        "La actividad se suspende definitivamente"
+      ],
+      "correct": 1,
+      "explanation": "La reciente modificación de la ley 5-96 prevé que, en caso de fallecimiento del único socio, el heredero puede recurrir al tribunal para solicitar el nombramiento de un representante con el fin de convocar una asamblea general para renovar los estatutos en un plazo de 60 días.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Ibrahimí, socio de una SARL, quiere retirarse. ¿Qué ocurre con su participación en el capital?",
+      "media": [],
+      "options": [
+        "Se pierde definitivamente",
+        "Se reembolsa o se transfiere según los estatutos",
+        "Se transfiere al Consejo de Dentistas",
+        "Pasa automáticamente al gerente"
+      ],
+      "correct": 1,
+      "explanation": "Las participaciones en una SARL representan un valor patrimonial. En caso de retirada, los socios pueden, de acuerdo con los estatutos, obtener su reembolso o transferirlas a un tercero.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni, como persona física, ¿está sujeto al Código de Comercio?",
+      "media": [],
+      "options": [
+        "No, porque es dentista",
+        "Sí, para sus obligaciones formales de gestión",
+        "No, porque el Código de Deontología lo protege",
+        "Sí, pero solo si es comerciante profesional"
+      ],
+      "correct": 1,
+      "explanation": "Aunque la deontología lo considera liberal, el Código de Comercio se aplica al dentista en lo que respecta a sus obligaciones formales, como la contabilidad, la inscripción o el pago del impuesto profesional.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q11",
+      "type": "single-choice",
+      "question": "¿Cuál es el número máximo de socios para crear una SARL de derecho común en Marruecos?",
+      "media": [],
+      "options": [
+        "2",
+        "50",
+        "100",
+        "Ilimitado"
+      ],
+      "correct": 1,
+      "explanation": "La SARL es una estructura que puede albergar de 2 a 50 socios, lo que la hace adecuada para consultorios de tamaño medio y proyectos empresariales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q12",
+      "type": "single-choice",
+      "question": "En una SARL, ¿en qué medida responden los socios de las deudas de la sociedad?",
+      "media": [],
+      "options": [
+        "Con todo su patrimonio personal",
+        "Hasta el monto de su aportación al capital",
+        "Hasta el monto de los beneficios del año",
+        "Nunca responden"
+      ],
+      "correct": 1,
+      "explanation": "La responsabilidad de los socios está limitada al monto de sus aportaciones. Este es el principio fundamental de la Sociedad de Responsabilidad Limitada.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni crea una SARL-AU. Esta forma jurídica combina ¿qué ventaja de la persona física y de la SARL?",
+      "media": [],
+      "options": [
+        "Protección del patrimonio personal y simplicidad de gestión",
+        "Gestión colectiva y responsabilidad ilimitada",
+        "Publicidad comercial y ausencia de impuestos",
+        "Liquidación automática y exención de cotizaciones"
+      ],
+      "correct": 0,
+      "explanation": "La SARL-AU permite al empresario individual beneficiarse de la protección de su patrimonio personal (como en la SARL) manteniendo la simplicidad de gestión de una estructura individual.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q14",
+      "type": "single-choice",
+      "question": "Según el Código de Deontología, ¿puede el Dr. Ibrahimí hacer publicidad de su consultorio utilizando descuentos comerciales?",
+      "media": [],
+      "options": [
+        "Sí, para atraer nuevos pacientes",
+        "No, la publicidad comercial está prohibida",
+        "Sí, si está aprobada por el Consejo",
+        "No, pero puede publicar ofertas en redes sociales"
+      ],
+      "correct": 1,
+      "explanation": "El Código de Deontología prohíbe cualquier publicidad comercial. El dentista no puede recurrir a prácticas mercantiles como descuentos para retener pacientes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q15",
+      "type": "single-choice",
+      "question": "La SARL del Dr. Mamouni está creada. Según la ley 5-96, ¿quién puede ser gerente de la sociedad?",
+      "media": [],
+      "options": [
+        "Solo un dentista titulado",
+        "Un socio o un tercero",
+        "Un miembro del Consejo de Dentistas",
+        "Un agente de la CNSS"
+      ],
+      "correct": 1,
+      "explanation": "Los estatutos de la SARL pueden confiar la gestión a uno o varios socios o a una persona que no sea socio de la sociedad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q16",
+      "type": "single-choice",
+      "question": "¿Puede el Dr. Ibrahimí, como persona física, deducir gastos personales de su resultado profesional?",
+      "media": [],
+      "options": [
+        "Sí, todos los gastos personales",
+        "No, solo se deducen los gastos profesionales",
+        "Sí, si están justificados con factura",
+        "No, ningún gasto es deducible"
+      ],
+      "correct": 1,
+      "explanation": "En contabilidad, solo se deducen los gastos incurridos en interés de la actividad profesional. Los gastos personales deben cubrirse con el patrimonio privado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q17",
+      "type": "single-choice",
+      "question": "¿Puede un dentista en SARL acogerse al régimen fiscal BNC (Beneficios No Comerciales)?",
+      "media": [],
+      "options": [
+        "Sí, como todos los dentistas",
+        "No, la SARL está sujeta al impuesto sobre sociedades (IS)",
+        "Sí, si ejerce como persona física",
+        "No, solo las personas jurídicas de derecho público"
+      ],
+      "correct": 1,
+      "explanation": "El régimen BNC está destinado a personas físicas (ejercicio individual). La SARL, como persona jurídica, está sujeta al impuesto sobre sociedades (IS).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni elige la SARL-AU. ¿Cuántos socios permite esta forma jurídica?",
+      "media": [],
+      "options": [
+        "Mínimo 2 socios",
+        "1 único socio",
+        "Mínimo 5 socios",
+        "Máximo 50 socios"
+      ],
+      "correct": 1,
+      "explanation": "La SARL-AU (SARL con socio único) es una forma particular de SARL que permite a una sola persona crear una sociedad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Ibrahimí, que ejerce como persona física, tiene el estatuto de comerciante para las obligaciones formales. ¿Significa esto que es 'comerciante' en el sentido común del término?",
+      "media": [],
+      "options": [
+        "Sí, puede hacer publicidad comercial",
+        "No, es una ficción jurídica para las obligaciones de gestión",
+        "Sí, puede especular con su fondo de comercio",
+        "No, no está sujeto al IVA"
+      ],
+      "correct": 1,
+      "explanation": "La calificación de comerciante según el Código de Comercio es una ficción jurídica que solo se refiere a los actos de gestión y las obligaciones formales. No modifica el estatuto liberal y deontológico del dentista.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q20",
+      "type": "single-choice",
+      "question": "En caso de litigio, ¿puede un acreedor embargar el patrimonio personal del Dr. Mamouni si es persona física?",
+      "media": [],
+      "options": [
+        "No, su patrimonio profesional está protegido",
+        "Sí, porque el patrimonio no está diferenciado",
+        "No, la SARL ofrece esa protección",
+        "Sí, pero solo si el litigio es de naturaleza fiscal"
+      ],
+      "correct": 1,
+      "explanation": "Como persona física, el patrimonio personal y profesional no están diferenciados. Un acreedor puede embargar el patrimonio personal del dentista para saldar una deuda profesional.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni crea una SARL con su colega. ¿Quién establece las reglas de funcionamiento y de distribución de beneficios?",
+      "media": [],
+      "options": [
+        "El tribunal de comercio",
+        "El Consejo Nacional de Dentistas",
+        "Los estatutos de la sociedad, redactados por los socios",
+        "El Ministerio de Sanidad"
+      ],
+      "correct": 2,
+      "explanation": "Los estatutos de la SARL, libremente redactados por los socios dentro del marco legal, establecen las reglas de funcionamiento, distribución de beneficios y toma de decisiones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q22",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal diferencia entre una SARL clásica y una SARL-AU?",
+      "media": [],
+      "options": [
+        "El capital mínimo es mayor en la SARL-AU",
+        "El número de socios (1 para la SARL-AU)",
+        "La SARL-AU está exenta del IS",
+        "La SARL clásica debe presentar el balance cada mes"
+      ],
+      "correct": 1,
+      "explanation": "La SARL clásica puede tener de 2 a 50 socios. La SARL-AU es una variante que permite a una sola persona crear una sociedad de responsabilidad limitada.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q23",
+      "type": "single-choice",
+      "question": "¿Debe el Dr. Ibrahimí, como persona física, llevar contabilidad?",
+      "media": [],
+      "options": [
+        "No, no está obligado",
+        "Sí, según la ley 9-88",
+        "No, porque es dentista",
+        "Sí, pero solo si está adherido a un convenio"
+      ],
+      "correct": 1,
+      "explanation": "La ley 9-88 sobre las obligaciones contables de los comerciantes se aplica a los dentistas, al igual que a otros comerciantes. Están obligados a llevar contabilidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Mamouni quiere abrir una SARL. ¿En qué registro debe inscribirse?",
+      "media": [],
+      "options": [
+        "El registro de pacientes",
+        "El Registro de Comercio",
+        "El registro de convenios",
+        "El registro de títulos"
+      ],
+      "correct": 1,
+      "explanation": "Cualquier sociedad comercial, incluida la SARL, debe inscribirse en el Registro de Comercio. Esta inscripción otorga personalidad jurídica a la sociedad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D1_Q25",
+      "type": "single-choice",
+      "question": "¿Puede el Dr. Ibrahimí, como persona física, contratar un seguro de responsabilidad profesional?",
+      "media": [],
+      "options": [
+        "No, solo la SARL puede contratarlo",
+        "Sí, es una obligación legal para todos los dentistas",
+        "No, porque no hay riesgo",
+        "Sí, pero no es obligatorio"
+      ],
+      "correct": 1,
+      "explanation": "La contratación de un seguro de responsabilidad profesional es una obligación legal para cualquier profesional de la salud, independientemente de su estatuto (persona física o SARL).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

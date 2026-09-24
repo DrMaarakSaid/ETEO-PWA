@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_debutant2_001",
+    "title": "Стерилизация - Начинающий 2",
+    "specialty": "STER",
+    "language": "ru",
+    "version": "2.0",
+    "author": "Д-р САИД МААРАК",
+    "status": "опубликовано",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_D2_Q01",
+      "type": "single-choice",
+      "question": "Почему ручная очистка настоятельно не рекомендуется?",
+      "media": [],
+      "options": [
+        "Недостаточная эффективность против накипи",
+        "Высокий риск травм от порезов",
+        "Стоимость щёток",
+        "Время сушки"
+      ],
+      "correct": 1,
+      "explanation": "Риск травмы от пореза является основным.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q02",
+      "type": "single-choice",
+      "question": "Каков основной механизм ультразвуковой очистки?",
+      "media": [],
+      "options": [
+        "Кавитация",
+        "Механическая абразия",
+        "Термическая дезинфекция",
+        "Растворение"
+      ],
+      "correct": 0,
+      "explanation": "Имплозия пузырьков (кавитация) отслаивает загрязнения.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q03",
+      "type": "single-choice",
+      "question": "Какова средняя продолжительность ультразвукового цикла?",
+      "media": [],
+      "options": [
+        "1 минута",
+        "30 минут",
+        "5–10 минут",
+        "1 час"
+      ],
+      "correct": 2,
+      "explanation": "5-10 минут достаточно для оптимальной эффективности.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q04",
+      "type": "single-choice",
+      "question": "Каково основное преимущество моечно-дезинфицирующей машины?",
+      "media": [],
+      "options": [
+        "Заменяет автоклав",
+        "Снижает затраты",
+        "Стандартизация и воспроизводимость",
+        "Пар высокого давления"
+      ],
+      "correct": 2,
+      "explanation": "Она автоматизирует и гарантирует постоянный уровень чистоты.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q05",
+      "type": "single-choice",
+      "question": "Каковы ключевые этапы цикла моечно-дезинфицирующей машины?",
+      "media": [],
+      "options": [
+        "Стерилизация, охлаждение",
+        "Мойка, стерилизация",
+        "Дезинфекция, ополаскивание",
+        "Предварительная мойка, мойка, ополаскивание, сушка"
+      ],
+      "correct": 3,
+      "explanation": "Этот полный цикл позволяет перейти от загрязнённого состояния к чистому.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q06",
+      "type": "single-choice",
+      "question": "Термическая дезинфекция основана на:",
+      "media": [],
+      "options": [
+        "Ультрафиолетовых лучах",
+        "Воде при 80-90°C",
+        "Гидроударе",
+        "Распылении"
+      ],
+      "correct": 1,
+      "explanation": "Влажное тепло уничтожает большинство патогенов.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q07",
+      "type": "single-choice",
+      "question": "Химические дезинфицирующие средства (альдегиды и др.) предназначены для:",
+      "media": [],
+      "options": [
+        "Стерилизации инструментов",
+        "Неживых поверхностей",
+        "Ополаскивания",
+        "Хранения"
+      ],
+      "correct": 1,
+      "explanation": "Они эффективны на поверхностях, но не заменяют стерилизацию.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q08",
+      "type": "single-choice",
+      "question": "Какова основная опасность альдегидов?",
+      "media": [],
+      "options": [
+        "Неэффективность",
+        "Высокая цена",
+        "Коррозия",
+        "Токсичность и раздражение"
+      ],
+      "correct": 3,
+      "explanation": "Их токсичность требует строгих мер предосторожности.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q09",
+      "type": "single-choice",
+      "question": "Почему используется над уксусная кислота?",
+      "media": [],
+      "options": [
+        "Высокое спороцидное действие",
+        "Смазка",
+        "Низкая стоимость",
+        "Простое ополаскивание"
+      ],
+      "correct": 0,
+      "explanation": "Это дезинфицирующее средство высокого уровня, активное против спор.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q10",
+      "type": "single-choice",
+      "question": "Польза осмотической воды в конце цикла:",
+      "media": [],
+      "options": [
+        "Фиксация белков",
+        "Охлаждение",
+        "Предотвращение отложений и коррозии",
+        "Дезинфекция"
+      ],
+      "correct": 2,
+      "explanation": "Она предотвращает образование накипи и защищает сталь.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q11",
+      "type": "single-choice",
+      "question": "Основная причина коррозии инструментов:",
+      "media": [],
+      "options": [
+        "Интенсивное использование",
+        "Влажность и неподходящие продукты",
+        "Сухое хранение",
+        "Перепад температур"
+      ],
+      "correct": 1,
+      "explanation": "Застойная вода и хлориды являются врагами стали.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q12",
+      "type": "single-choice",
+      "question": "Золотое правило предотвращения коррозии:",
+      "media": [],
+      "options": [
+        "Обильная смазка",
+        "Немедленная и тщательная сушка",
+        "Длительное замачивание",
+        "Металлические щётки"
+      ],
+      "correct": 1,
+      "explanation": "Сушка является самым важным этапом.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q13",
+      "type": "single-choice",
+      "question": "Почему следует смазывать шарнирные инструменты?",
+      "media": [],
+      "options": [
+        "Предотвратить заедание",
+        "Дезинфицировать",
+        "Заменить мойку",
+        "Ускорить сушку"
+      ],
+      "correct": 0,
+      "explanation": "Смазка необходима для шарниров.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q14",
+      "type": "single-choice",
+      "question": "Когда следует смазывать инструменты?",
+      "media": [],
+      "options": [
+        "Каждую неделю",
+        "После очистки, перед стерилизацией",
+        "Перед ежегодной стерилизацией",
+        "Если стали жёсткими"
+      ],
+      "correct": 1,
+      "explanation": "Регулярная смазка поддерживает оптимальное состояние.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q15",
+      "type": "single-choice",
+      "question": "Тест на утечку воздуха проверяет:",
+      "media": [],
+      "options": [
+        "Качество пара",
+        "Время",
+        "Наличие спор",
+        "Герметичность камеры"
+      ],
+      "correct": 3,
+      "explanation": "Утечка воздуха ставит под угрозу стерилизацию.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q16",
+      "type": "single-choice",
+      "question": "Частота теста на утечку:",
+      "media": [],
+      "options": [
+        "Каждый цикл",
+        "Ежедневно",
+        "Ежемесячно",
+        "Еженедельно"
+      ],
+      "correct": 1,
+      "explanation": "Необходим ежедневно.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q17",
+      "type": "single-choice",
+      "question": "Что проверяет тест Боуи-Дика?",
+      "media": [],
+      "options": [
+        "Температуру",
+        "Загрязнение",
+        "Удаление воздуха / проникновение пара",
+        "Качество упаковки"
+      ],
+      "correct": 2,
+      "explanation": "Подтверждает проникновение пара.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q18",
+      "type": "single-choice",
+      "question": "Цикл типа «Флэш»:",
+      "media": [],
+      "options": [
+        "Для хрупких предметов",
+        "Стандартный упакованный",
+        "Для незавёрнутых инструментов",
+        "Химическая дезинфекция"
+      ],
+      "correct": 2,
+      "explanation": "Незавёрнутые инструменты для немедленного использования.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q19",
+      "type": "single-choice",
+      "question": "Почему следует ограничивать использование цикла «Флэш»?",
+      "media": [],
+      "options": [
+        "Отсутствие сохранения стерильности",
+        "Высокая стоимость",
+        "Термическая неэффективность",
+        "Плавление пластиков"
+      ],
+      "correct": 0,
+      "explanation": "Не позволяет хранить стерильные предметы.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q20",
+      "type": "single-choice",
+      "question": "Место хранения инструментов:",
+      "media": [],
+      "options": [
+        "Влажное",
+        "Под воздействием света",
+        "Чистое, сухое, защищённое от пыли",
+        "При высокой температуре"
+      ],
+      "correct": 2,
+      "explanation": "Сохраняет стерильный барьер.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q21",
+      "type": "single-choice",
+      "question": "Срок годности стерильной упаковки:",
+      "media": [],
+      "options": [
+        "Ограничен 24 часами",
+        "Долгий при сохранении целостности",
+        "Ограничен 1 месяцем",
+        "Переменный"
+      ],
+      "correct": 1,
+      "explanation": "Пока упаковка цела и суха.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q22",
+      "type": "single-choice",
+      "question": "Если упаковка обнаружена влажной:",
+      "media": [],
+      "options": [
+        "Использовать после сушки",
+        "Использовать, если вода чистая",
+        "Нет, не стерильно",
+        "Использовать, если свежая"
+      ],
+      "correct": 2,
+      "explanation": "Указывает на нарушение барьера.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q23",
+      "type": "single-choice",
+      "question": "Почему следует избегать перегрузки автоклава?",
+      "media": [],
+      "options": [
+        "Износ уплотнений",
+        "Перегрев",
+        "Риск неудачи из-за блокировки пара",
+        "Повреждение двери"
+      ],
+      "correct": 2,
+      "explanation": "Пар должен циркулировать свободно.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q24",
+      "type": "single-choice",
+      "question": "Почему важно медленное охлаждение?",
+      "media": [],
+      "options": [
+        "Чтобы избежать внутренней конденсации",
+        "Чтобы сэкономить время",
+        "Чтобы закрепить цвета",
+        "Чтобы защитить машину"
+      ],
+      "correct": 0,
+      "explanation": "Быстрое падение температуры вызывает конденсацию влаги.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q25",
+      "type": "single-choice",
+      "question": "Польза периодического технического обслуживания:",
+      "media": [],
+      "options": [
+        "Экономия электроэнергии",
+        "Гарантия безопасности и соответствия",
+        "Очистка внешней поверхности",
+        "Учёт циклов"
+      ],
+      "correct": 1,
+      "explanation": "Юридическое обязательство для надёжности.",
+      "difficulty": "легкий",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

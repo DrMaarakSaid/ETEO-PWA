@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "radiologie_debutant1_001",
+    "title": "Radiologie - Débutant 1",
+    "specialty": "RADI",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "RADI_D1_Q01",
+      "type": "single-choice",
+      "question": "Comment définit-on précisément la radiologie dentaire au sein de la pratique odontologique moderne ?",
+      "media": [],
+      "options": [
+        "Une thérapeutique chirurgicale visant à éliminer les tissus carieux par rayonnements ionisants",
+        "Une modalité d'exérèse mini-invasive permettant l'avulsion des dents incluses sans instrumentation",
+        "Une spécialité de l'imagerie médicale dédiée à l'exploration diagnostique des tissus minéralisés et maxillo-faciaux",
+        "Un protocole de réhabilitation prothétique exploitant des polymères photopolymérisables"
+      ],
+      "correct": 2,
+      "explanation": "La radiologie dentaire est un outil diagnostique incontournable, permettant de visualiser les structures invisibles à l'examen clinique direct.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q02",
+      "type": "single-choice",
+      "question": "Quel examen radiographique intraoral constitue la base fondamentale de l'évaluation ciblée en omnipratique ?",
+      "media": [],
+      "options": [
+        "L'orthopantomogramme, pour une analyse globale",
+        "Le cliché rétro-alvéolaire, offrant une résolution spatiale élevée de l'organe dentaire et son environnement parodontal",
+        "La tomographie volumique (CBCT), réservée aux volumes osseux implantaires",
+        "Le scanner médical hélicoïdal, requis pour les dysmorphoses complexes"
+      ],
+      "correct": 1,
+      "explanation": "La radiographie rétro-alvéolaire reste l'examen de première intention pour l'étude détaillée d'un secteur localisé de deux à trois dents.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q03",
+      "type": "single-choice",
+      "question": "Quelle est la fonction principale d'un examen radiographique panoramique (orthopantomogramme) ?",
+      "media": [],
+      "options": [
+        "Permettre l'évaluation micrométrique fine des pertes osseuses aux bifurcations",
+        "Visualiser les détails morphologiques microscopiques du réseau canalaire",
+        "Analyser l'épaisseur précise des corticales osseuses avant pose d'implant",
+        "Fournir une vision bidimensionnelle d'ensemble des arcades, des maxillaires et structures adjacentes"
+      ],
+      "correct": 3,
+      "explanation": "L'orthopantomogramme est un examen de débrouillage et de synthèse, idéal pour un bilan bucco-dentaire global mais sujet à des distorsions géométriques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q04",
+      "type": "single-choice",
+      "question": "Qu'est-ce que la technologie CBCT (Cone Beam Computed Tomography) en imagerie maxillo-faciale ?",
+      "media": [],
+      "options": [
+        "Un système de tomographie volumique à faisceau conique générant des reconstructions 3D de haute précision",
+        "Un scanner médical conventionnel à balayage hélicoïdal à forte dose",
+        "Un protocole d'acquisition 2D standardisé utilisant un film argentique",
+        "Une imagerie par résonance magnétique exploitant les propriétés de spin"
+      ],
+      "correct": 0,
+      "explanation": "Le CBCT est l'examen 3D de référence en odontologie, offrant une résolution isotrope supérieure au scanner médical pour les tissus durs, avec une dose moindre.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q05",
+      "type": "single-choice",
+      "question": "Quel est l'ordre de grandeur de la dose efficace reçue lors d'un cliché rétro-alvéolaire numérique ?",
+      "media": [],
+      "options": [
+        "Une dose modérée de 50 µSv",
+        "Une dose ultra-faible comprise entre 1 et 5 µSv",
+        "Un niveau d'exposition de 100 µSv",
+        "Une charge radiologique lourde de 500 µSv"
+      ],
+      "correct": 1,
+      "explanation": "Grâce aux capteurs numériques modernes, la dose délivrée par une radiographie intraorale unitaire est extrêmement minime.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q06",
+      "type": "single-choice",
+      "question": "Quelle est l'exposition dosimétrique moyenne estimée pour la réalisation d'un orthopantomogramme ?",
+      "media": [],
+      "options": [
+        "Un seuil de 50 µSv",
+        "Une valeur critique de 500 µSv",
+        "Une valeur de 5 à 15 µSv",
+        "Une dose cumulée de 100 µSv"
+      ],
+      "correct": 2,
+      "explanation": "Une radiographie panoramique expose le patient à une dose équivalente à seulement quelques jours de rayonnement de fond naturel.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q07",
+      "type": "single-choice",
+      "question": "Dans quelle fourchette se situe généralement la dose efficace délivrée par un examen CBCT (champ moyen) ?",
+      "media": [],
+      "options": [
+        "Un intervalle de 20 à 100 µSv",
+        "Un plateau fixe de 200 µSv",
+        "Une valeur standardisée de 500 µSv",
+        "Un niveau d'irradiation de 1000 µSv"
+      ],
+      "correct": 0,
+      "explanation": "L'exposition en CBCT dépend fortement du volume ciblé (FOV). Elle reste nettement inférieure à celle d'un scanner CT médical équivalent.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q08",
+      "type": "single-choice",
+      "question": "Comment se définit le principe fondamental de radioprotection connu sous l'acronyme ALARA ?",
+      "media": [],
+      "options": [
+        "L'utilisation exclusive de dispositifs d'imagerie thermique",
+        "L'application systématique de la dose maximale tolérée",
+        "La délivrance d'une dose moyenne calculée d'après l'âge",
+        "Le maintien de l'exposition au niveau le plus bas qu'il soit raisonnablement possible d'atteindre"
+      ],
+      "correct": 3,
+      "explanation": "ALARA (As Low As Reasonably Achievable) impose de justifier chaque cliché et d'optimiser les paramètres pour réduire la dose sans perdre l'information diagnostique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q09",
+      "type": "single-choice",
+      "question": "En quoi consiste la règle d'orthogonalité ou des 90° lors de l'orientation du faisceau en rétro-alvéolaire ?",
+      "media": [],
+      "options": [
+        "Le positionnement de la tête avec plan de Francfort à angle droit",
+        "L'orientation du rayon central perpendiculairement à l'axe de la dent et au récepteur",
+        "L'inclinaison horizontale du tube visant à dédoubler les racines",
+        "Le réglage de la distance source-film avec contact osseux"
+      ],
+      "correct": 1,
+      "explanation": "L'orthogonalité du faisceau par rapport au complexe dent-récepteur garantit une reproduction fidèle sans distorsion majeure de la morphologie.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q10",
+      "type": "single-choice",
+      "question": "Quel est le principe directeur de la technique du parallélisme en radiographie intraorale ?",
+      "media": [],
+      "options": [
+        "Le placement du récepteur parallèlement au grand axe de la dent, le rayon central étant perpendiculaire",
+        "Le maintien du film au contact lingual à 45 degrés",
+        "L'alignement horizontal du tube avec le plan d'occlusion",
+        "Le positionnement oblique du récepteur pour projeter les sinus"
+      ],
+      "correct": 0,
+      "explanation": "La technique du parallélisme, utilisant des inclinateurs, est la méthode la plus précise pour éviter l'élongation ou le raccourcissement des images.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q11",
+      "type": "single-choice",
+      "question": "Quelle approche technique s'oppose historiquement à la méthode du parallélisme en imagerie rétro-alvéolaire ?",
+      "media": [],
+      "options": [
+        "La technique de la bissectrice",
+        "La méthode de tomographie linéaire",
+        "La technique d'acquisition tangentielle",
+        "La projection occlusale axiale"
+      ],
+      "correct": 0,
+      "explanation": "La technique de la bissectrice (ou règle de Cieszynski) dépanne lorsque l'anatomie empêche le parallélisme, mais génère plus de distorsions.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q12",
+      "type": "single-choice",
+      "question": "Quelles structures anatomiques spécifiques doivent impérativement figurer sur un cliché rétro-alvéolaire valide ?",
+      "media": [],
+      "options": [
+        "La texture superficielle de la muqueuse gingivale",
+        "La seule morphologie de la couronne clinique",
+        "Les limites du sinus maxillaire et le trajet du canal mandibulaire",
+        "L'intégralité de l'architecture radiculaire, la région apicale et 2mm d'os périapical"
+      ],
+      "correct": 3,
+      "explanation": "Une radiographie rétro-alvéolaire doit montrer la totalité de la dent, de la couronne à l'apex, pour permettre le diagnostic des lésions endodontiques ou parodontales.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q13",
+      "type": "single-choice",
+      "question": "Quelle est la spécificité diagnostique d'une radiographie de type interproximale (cliché Bitewing) ?",
+      "media": [],
+      "options": [
+        "La détection précoce des caries proximales et l'évaluation des crêtes alvéolaires",
+        "L'analyse approfondie des pathologies kystiques périapicales",
+        "La recherche de fractures radiculaires dans le tiers apical",
+        "La mise en évidence des résorptions internes"
+      ],
+      "correct": 0,
+      "explanation": "Le cliché Bitewing est l'examen roi pour dépister les caries interproximales et surveiller le niveau osseux marginal.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q14",
+      "type": "single-choice",
+      "question": "Quelle angulation verticale est généralement recommandée pour un cliché interproximal (Bitewing) ?",
+      "media": [],
+      "options": [
+        "Une inclinaison strictement neutre de 0 degré",
+        "Une angulation positive de +5 à +10 degrés",
+        "Une angulation fortement positive de +20 degrés",
+        "Une angulation négative de -10 degrés"
+      ],
+      "correct": 1,
+      "explanation": "Une angulation verticale légèrement positive (+5° à +10°) permet de projeter nettement l'espace interproximal sans superposition des cuspides.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q15",
+      "type": "single-choice",
+      "question": "Quelle est l'indication clinique principale d'une incidence radiographique de type occlusale ?",
+      "media": [],
+      "options": [
+        "La localisation de corps étrangers, de dents incluses ou de calculs salivaires",
+        "Le suivi de la cicatrisation après pose d'implant",
+        "L'évaluation fine de l'oblitération d'un canal radiculaire",
+        "La mesure de la perte d'attache conjonctive"
+      ],
+      "correct": 0,
+      "explanation": "Les clichés occlusaux offrent une vue en plan (axiale), idéale pour situer une structure par rapport aux tables corticales.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q16",
+      "type": "single-choice",
+      "question": "En quoi consiste l'examen radiographique appelé céphalogramme ?",
+      "media": [],
+      "options": [
+        "Une reconstruction 3D dynamique des condyles",
+        "Une imagerie focalisée sur l'analyse des sinus",
+        "Une prise de vue standardisée du crâne, de profil ou de face, à grande distance",
+        "Une exposition sectorielle des procès alvéolaires"
+      ],
+      "correct": 2,
+      "explanation": "Le céphalogramme est un outil indispensable en orthodontie (ODF) pour effectuer les analyses céphalométriques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q17",
+      "type": "single-choice",
+      "question": "Quelle est la caractéristique technique essentielle d'un cliché de type téléradiographie ?",
+      "media": [],
+      "options": [
+        "L'utilisation d'une grande distance source-patient pour limiter l'agrandissement",
+        "L'application d'un faisceau ultra-divergent",
+        "L'emploi de produit de contraste iodé",
+        "L'enregistrement sur support argentique endo-buccal"
+      ],
+      "correct": 0,
+      "explanation": "La grande distance source-sujet réduit l'effet de projection géométrique (agrandissement), permettant des mesures fiables à l'échelle 1:1.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q18",
+      "type": "single-choice",
+      "question": "Comment se définit la radiographie numérique directe (CCD ou CMOS) ?",
+      "media": [],
+      "options": [
+        "La numérisation secondaire d'un cliché papier",
+        "La conversion instantanée des photons X en signaux électriques transmis à l'ordinateur",
+        "L'utilisation de films argentiques conventionnels",
+        "L'enregistrement sur plaques au phosphore stimulables"
+      ],
+      "correct": 1,
+      "explanation": "Les capteurs rigides transmettent l'image en temps réel, supprimant tout délai de développement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q19",
+      "type": "single-choice",
+      "question": "Qu'est-ce que la radiographie numérique indirecte par plaques photostimulables (PSP) ?",
+      "media": [],
+      "options": [
+        "Un système utilisant des plaques au phosphore lues par un scanner laser",
+        "Un dispositif rigide relié par un câble USB",
+        "Une méthode d'imagerie thermique infrarouge",
+        "Une technique de duplication optique"
+      ],
+      "correct": 0,
+      "explanation": "Les plaques ERLM offrent la souplesse des films argentiques tout en basculant dans l'environnement numérique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q20",
+      "type": "single-choice",
+      "question": "Comment définit-on le contraste en image radiographique dentaire ?",
+      "media": [],
+      "options": [
+        "L'intensité globale du flux lumineux sur écran",
+        "La netteté intrinsèque des lignes de démarcation",
+        "La déformation géométrique induite par le tube",
+        "La variation de densité optique ou de niveaux de gris entre structures anatomiques"
+      ],
+      "correct": 3,
+      "explanation": "Le contraste permet de différencier émail, dentine, os et ligament. Il est principalement gouverné par la tension du tube (kV).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q21",
+      "type": "single-choice",
+      "question": "Qu'est-ce que la netteté (résolution spatiale) d'une image ?",
+      "media": [],
+      "options": [
+        "La précision avec laquelle l'image reproduit les contours et détails des tissus",
+        "La quantité totale d'énergie absorbée par les tissus",
+        "La différence d'opacité entre zones claires et sombres",
+        "L'apparition de structures anatomiques fantômes"
+      ],
+      "correct": 0,
+      "explanation": "La netteté dépend de facteurs géométriques (foyer, distances) et de la résolution intrinsèque du récepteur.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q22",
+      "type": "single-choice",
+      "question": "Quelle est la cause directe d'un flou de mouvement ?",
+      "media": [],
+      "options": [
+        "Un choix incorrect de la tension du tube",
+        "La diffusion secondaire des rayons X",
+        "Un déplacement physique du patient ou du tube durant l'exposition",
+        "Une usure de la cible de tungstène"
+      ],
+      "correct": 2,
+      "explanation": "Le flou cinétique compromet la valeur diagnostique ; il est prévenu en demandant une immobilité stricte.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q23",
+      "type": "single-choice",
+      "question": "Comment définit-on un artefact en radiologie ?",
+      "media": [],
+      "options": [
+        "Une anomalie ou fausse image créée par la technique ou des éléments exogènes",
+        "Une variante anatomique rare de la norme",
+        "Un filtre métallique éliminant les photons de faible énergie",
+        "L'activation des cristaux sous l'action de la lumière"
+      ],
+      "correct": 0,
+      "explanation": "Bijoux ou prothèses créent des artefacts (lignes blanches, ombres) pouvant masquer des lésions.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q24",
+      "type": "single-choice",
+      "question": "Quel mécanisme physique préside à l'agrandissement de l'image ?",
+      "media": [],
+      "options": [
+        "La diffraction des ondes électromagnétiques",
+        "L'amplification électronique du signal",
+        "La divergence inhérente des rayons X s'écartant de la source ponctuelle",
+        "La rétraction physique des polymères du capteur"
+      ],
+      "correct": 2,
+      "explanation": "L'agrandissement géométrique est inévitable mais minimisé en augmentant la distance source-objet.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q25",
+      "type": "single-choice",
+      "question": "Quelle est la cause principale d'une distorsion de l'image rétro-alvéolaire ?",
+      "media": [],
+      "options": [
+        "Une filtration insuffisante du faisceau",
+        "Un alignement incorrect entraînant une absence de perpendicularité faisceau-objet-récepteur",
+        "Une fluctuation du courant d'alimentation de l'anode",
+        "L'utilisation d'un temps de pause excessivement court"
+      ],
+      "correct": 1,
+      "explanation": "La distorsion modifie les rapports de proportionnalité (élongation ou raccourcissement), faussant les mesures cliniques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

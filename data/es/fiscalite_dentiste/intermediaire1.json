@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "fiscalite_dentiste_intermediaire1_001",
+    "title": "Fiscalidad del Dentista – Intermedio 1",
+    "specialty": "FISC",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "FISC_I1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Sulami duda entre ejercer como persona física o como SARL. Su beneficio previsto es de 300 000 DH. El Dr. Marwani le aconseja comparar las cargas fiscales. Según la escala de 2026, ¿cuál es la ventaja de la SARL en este nivel de beneficio?",
+      "media": [],
+      "options": [
+        "El IR es más ventajoso, ahorro de unos 15 000 DH",
+        "El IS es más ventajoso, ahorro de unos 35 000 DH",
+        "Ambos regímenes son equivalentes",
+        "La SARL es más cara en 10 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Marwani explica: 'Con un beneficio de 300 000 DH, el IR sería de unos 65 000 DH. Con el IS, la parte al 10 % da 30 000 DH, es decir, un ahorro de unos 35 000 DH.' El Dr. Sulami: 'La SARL parece más ventajosa.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene un volumen de negocios de 400 000 DH. Quiere elegir entre el RNS y el RNR. El Dr. Sulami le recuerda los umbrales. Según el Código General de Impuestos, ¿cuál es el umbral máximo para el RNS?",
+      "media": [],
+      "options": [
+        "250 000 DH",
+        "500 000 DH",
+        "1 000 000 DH",
+        "2 000 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Sulami explica: 'El RNS es posible hasta 500 000 DH de volumen de negocios. Por encima, el RNR se vuelve obligatorio.' El Dr. Marwani: 'Estoy por debajo del umbral, puedo optar por el RNS.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Sulami, persona física, tiene un beneficio imponible de 200 000 DH. El Dr. Marwani le sugiere estudiar la opción de la CPU. Según la Ley de Finanzas 2026, ¿cuál es el tipo fijo del impuesto de la CPU?",
+      "media": [],
+      "options": [
+        "4 %",
+        "6 %",
+        "10 %",
+        "15 %"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Marwani explica: 'La CPU ofrece un tipo fijo del 10 % sobre el beneficio fijo, sin deducción de gastos reales.' El Dr. Sulami: 'Es interesante si mis gastos son bajos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene una SARL con un beneficio neto de 250 000 DH. El Dr. Sulami le pide que calcule el IS. Según la escala de 2026, ¿cuál es el importe del IS?",
+      "media": [],
+      "options": [
+        "25 000 DH",
+        "30 000 DH",
+        "37 500 DH",
+        "50 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Sulami explica: 'Para la parte de 0–300 000 DH, el tipo es del 10 %. El IS es de 250 000 × 10 % = 25 000 DH.' El Dr. Marwani: 'Es mucho más ventajoso que el IR.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Sulami, persona física, tiene un volumen de negocios de 900 000 DH y un beneficio de 150 000 DH. El Dr. Marwani le ayuda a calcular la CM. ¿Cuál es el importe de la CM?",
+      "media": [],
+      "options": [
+        "5 400 DH",
+        "9 000 DH",
+        "18 000 DH",
+        "54 000 DH"
+      ],
+      "correct": 3,
+      "explanation": "El Dr. Marwani explica: 'La CM para las personas físicas es del 6 % del volumen de negocios, es decir, 900 000 × 6 % = 54 000 DH.' El Dr. Sulami: 'Es mucho más que el IR calculado sobre 150 000 DH.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene una SARL con un volumen de negocios de 2 000 000 DH. El Dr. Sulami le ayuda a calcular la CM. Según la Ley de Finanzas 2026, ¿cuál es el importe mínimo de la CM para una sociedad?",
+      "media": [],
+      "options": [
+        "1 500 DH",
+        "2 000 DH",
+        "3 000 DH",
+        "5 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Sulami explica: 'La CM mínima para las sociedades es de 3 000 DH. El tipo ordinario es del 0,25 %, es decir, 5 000 DH para un volumen de negocios de 2 000 000 DH.' El Dr. Marwani: 'Entonces debo pagar 5 000 DH.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Sulami tiene una SARL con un beneficio neto después de IS de 500 000 DH. Quiere distribuir dividendos. El Dr. Marwani le recuerda la retención en la fuente. ¿Cuál es el tipo de retención en la fuente sobre los dividendos en 2026?",
+      "media": [],
+      "options": [
+        "5 %",
+        "10 %",
+        "11,25 %",
+        "15 %"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Marwani explica: 'La retención en la fuente sobre los dividendos en 2026 es del 11,25 %, con una reducción progresiva hasta el 10 % en 2027.' El Dr. Sulami: 'Planificaré esta distribución.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Marwani, persona física, tiene un beneficio imponible de 250 000 DH. El Dr. Sulami le aconseja que verifique las deducciones por cargas de familia. Tiene 4 hijos a cargo. ¿Cuál es el importe total de la deducción por cargas de familia en 2026?",
+      "media": [],
+      "options": [
+        "1 800 DH",
+        "2 000 DH",
+        "2 400 DH",
+        "3 600 DH"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Sulami explica: 'La deducción es de 600 DH por hijo a cargo. Con 4 hijos, son 2 400 DH. El límite es de 3 600 DH para 6 hijos a cargo.' El Dr. Marwani: 'Aplicaré esta deducción.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Sulami tiene una pérdida fiscal de 80 000 DH de su actividad en RNR. El Dr. Marwani le recuerda las normas de compensación. ¿Durante cuántos años puede compensar esta pérdida?",
+      "media": [],
+      "options": [
+        "2 años",
+        "3 años",
+        "4 años",
+        "5 años"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Marwani explica: 'En el marco del RNR, la pérdida se compensa con los beneficios de los cuatro años siguientes.' El Dr. Sulami: 'Seguiré esta compensación.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Marwani planea comprar equipo dental por 200 000 DH. El Dr. Sulami le aconseja considerar la amortización. Según el Código General de Impuestos, ¿durante cuántos años se amortiza normalmente el equipo dental?",
+      "media": [],
+      "options": [
+        "3 años",
+        "5 años",
+        "7 años",
+        "10 años"
+      ],
+      "correct": 3,
+      "explanation": "El Dr. Sulami explica: 'El equipo dental suele amortizarse en 10 años, aunque algunos equipos pueden tener plazos más cortos.' El Dr. Marwani: 'Estudiaré los plazos de amortización.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Sulami tiene una SARL con un beneficio de 800 000 DH. El Dr. Marwani le ayuda a calcular el IS. Según la escala de 2026, ¿cuál es el importe total del IS?",
+      "media": [],
+      "options": [
+        "80 000 DH",
+        "130 000 DH",
+        "160 000 DH",
+        "280 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Marwani explica: 'El IS se calcula por partes: 300 000 × 10 % = 30 000 DH, 500 000 × 20 % = 100 000 DH. Total = 130 000 DH.' El Dr. Sulami: 'Gracias por el cálculo preciso.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Marwani, persona física, tiene un volumen de negocios de 600 000 DH y un beneficio de 300 000 DH. El Dr. Sulami le ayuda a comparar el IR y la CM. ¿Qué impuesto pagará si la CM supera el IR?",
+      "media": [],
+      "options": [
+        "El IR calculado sobre 300 000 DH",
+        "La CM de 36 000 DH",
+        "La mayor cantidad entre el IR y la CM",
+        "Ningún impuesto"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Sulami explica: 'El contribuyente paga la mayor cantidad entre el IR y la CM. La CM es del 6 % del volumen de negocios, es decir, 36 000 DH, que probablemente supera el IR.' El Dr. Marwani: 'Entonces pagaré 36 000 DH.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Sulami considera la posibilidad de optar por el RNR con un volumen de negocios de 350 000 DH. El Dr. Marwani pregunta si es posible. Según el Código General de Impuestos, ¿puede un contribuyente optar voluntariamente por el RNR por debajo de los umbrales?",
+      "media": [],
+      "options": [
+        "No, es imposible",
+        "Sí, la opción por el RNR es voluntaria",
+        "Sí, pero solo con el acuerdo de la administración",
+        "No, el RNS es obligatorio"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Marwani explica: 'Cualquier contribuyente puede optar voluntariamente por el RNR, incluso si su volumen de negocios es inferior a los umbrales establecidos.' El Dr. Sulami: 'Elegiré el RNR para una mejor gestión de gastos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene una SARL con un volumen de negocios de 1 500 000 DH. El Dr. Sulami le ayuda a calcular la CM. Según la Ley de Finanzas 2026, ¿cuál es el tipo ordinario de la CM para las sociedades?",
+      "media": [],
+      "options": [
+        "0,15 %",
+        "0,25 %",
+        "0,40 %",
+        "0,50 %"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Sulami explica: 'El tipo ordinario de la CM para las sociedades es del 0,25 % del volumen de negocios, es decir, 3 750 DH para un volumen de 1 500 000 DH.' El Dr. Marwani: 'Tendré en cuenta esta cantidad.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Sulami, persona física, tiene un volumen de negocios de 800 000 DH y un beneficio de 100 000 DH. El Dr. Marwani le aconseja optimizar los gastos. ¿Cuál es la principal ventaja del RNR en comparación con el RNS?",
+      "media": [],
+      "options": [
+        "Menos formalidades contables",
+        "Deducción de todos los gastos reales",
+        "Impuesto fijo reducido",
+        "Exención del IVA"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Marwani explica: 'El RNR permite deducir todos los gastos reales incurridos para la actividad, a diferencia del RNS con gastos fijos.' El Dr. Sulami: 'Optimizaré los gastos deducibles.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Marwani creó una SARL en enero de 2024. El Dr. Sulami le pregunta si todavía está exenta de la CM. Según la ley, ¿cuántos meses de exención de la CM reciben las sociedades de nueva creación?",
+      "media": [],
+      "options": [
+        "12 meses",
+        "24 meses",
+        "36 meses",
+        "60 meses"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Sulami explica: 'Las sociedades de nueva creación se benefician de una exención de la CM durante 36 meses. Su SARL, creada en 2024, todavía está exenta en 2026.' El Dr. Marwani: 'Aprovecharé esto para invertir.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Sulami tiene un paciente que le pide un presupuesto para servicios estéticos. El Dr. Marwani le recuerda las normas del IVA. Según el Código General de Impuestos, ¿están exentos de IVA los servicios dentales estéticos?",
+      "media": [],
+      "options": [
+        "Sí, todos los servicios dentales están exentos",
+        "No, los servicios de carácter estético están sujetos a IVA",
+        "Sí, pero solo los servicios conservadores",
+        "No, el IVA se aplica a todos los servicios dentales"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Marwani explica: 'Los servicios dentales están exentos de IVA, pero los servicios de carácter estético pueden estar sujetos a IVA.' El Dr. Sulami: 'Verificaré las normas para este presupuesto.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Marwani, persona física, tiene un volumen de negocios de 500 000 DH. El Dr. Sulami le pide que elija entre el RNS y el RNR. Según el Código General de Impuestos, ¿qué umbral hace obligatorio el RNR?",
+      "media": [],
+      "options": [
+        "250 000 DH",
+        "500 000 DH",
+        "1 000 000 DH",
+        "2 000 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Sulami explica: 'El RNR se vuelve obligatorio cuando el volumen de negocios supera los 500 000 DH. Estás justo en el límite, puedes elegir.' El Dr. Marwani: 'Estudiaré ambas opciones.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Sulami tiene una SARL con un beneficio neto de 2 500 000 DH. El Dr. Marwani le ayuda a calcular el IS. Según la escala de 2026, ¿cuál es el importe total del IS?",
+      "media": [],
+      "options": [
+        "500 000 DH",
+        "620 000 DH",
+        "700 000 DH",
+        "875 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Marwani explica: 'El IS se calcula por partes: 300 000 × 10 % = 30 000 DH, 700 000 × 20 % = 140 000 DH, 1 500 000 × 35 % = 525 000 DH. Total = 695 000 DH (redondeado a 700 000 DH).' El Dr. Sulami: 'Gracias por el cálculo preciso.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Marwani quiere invertir en un nuevo sillón dental. El Dr. Sulami le aconseja optimizar la deducción. Según el Código General de Impuestos, ¿es deducible la compra de un sillón dental?",
+      "media": [],
+      "options": [
+        "No, es una inversión inmobiliaria",
+        "Sí, es un gasto deducible como activo fijo material",
+        "Sí, pero solo para la SARL",
+        "No, solo se deducen los consumibles"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Sulami explica: 'La compra de un sillón dental es un activo fijo material, deducible mediante amortización.' El Dr. Marwani: 'Documentaré esta inversión.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Sulami, persona física, tiene una renta neta imponible de 150 000 DH. El Dr. Marwani le ayuda a calcular el IR. Según la escala de 2026, ¿cuál es el importe del IR?",
+      "media": [],
+      "options": [
+        "15 000 DH",
+        "25 000 DH",
+        "34 000 DH",
+        "45 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Marwani explica: 'Se aplica la escala progresiva: 0–30 000 DH = 0 %, 30 001–50 000 DH = 10 % (2 000 DH), 50 001–60 000 DH = 20 % (2 000 DH), 60 001–150 000 DH = 34 % (30 600 DH). Total = 34 600 DH.' El Dr. Sulami: 'Es importante calcular correctamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q22",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene una SARL con un beneficio de 180 000 DH. El Dr. Sulami le pide que compare con el IR. Según la escala de 2026, ¿cuál es la ventaja del IS en este nivel de beneficio?",
+      "media": [],
+      "options": [
+        "Ahorro de unos 10 000 DH",
+        "Ahorro de unos 20 000 DH",
+        "Ahorro de unos 30 000 DH",
+        "El IR es más ventajoso"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Sulami explica: 'Con el IS, el impuesto sería de 18 000 DH. Con el IR, sería de unos 45 000 DH. El ahorro es de unos 27 000 DH.' El Dr. Marwani: 'La SARL es claramente más ventajosa.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Sulami tiene un paciente que le pide un certificado para la compañía de seguros. El Dr. Marwani le recuerda las normas fiscales. Según el Código General de Impuestos, ¿están sujetos a IVA los honorarios del dentista?",
+      "media": [],
+      "options": [
+        "Sí, al tipo del 7 %",
+        "Sí, al tipo del 14 %",
+        "Sí, al tipo del 20 %",
+        "No, los servicios están exentos"
+      ],
+      "correct": 3,
+      "explanation": "El Dr. Marwani explica: 'Los servicios dentales están exentos de IVA, excepto los servicios de carácter estético.' El Dr. Sulami: 'Emitiré la factura correctamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Marwani, persona física, tiene un volumen de negocios de 1 200 000 DH. El Dr. Sulami le ayuda a calcular la CM. ¿Cuál es el importe de la CM?",
+      "media": [],
+      "options": [
+        "7 200 DH",
+        "12 000 DH",
+        "24 000 DH",
+        "72 000 DH"
+      ],
+      "correct": 3,
+      "explanation": "El Dr. Sulami explica: 'La CM para las personas físicas es del 6 % del volumen de negocios, es decir, 1 200 000 × 6 % = 72 000 DH.' El Dr. Marwani: 'Es una cantidad significativa, debo optimizar el beneficio.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Sulami, después de optimizar su estructura fiscal con el Dr. Marwani, recibe felicitaciones. ¿Cuál es el siguiente paso para el Dr. Sulami?",
+      "media": [],
+      "options": [
+        "Convertirse en experto en optimización fiscal para dentistas",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar las buenas prácticas"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Marwani explica: 'El dominio del sistema fiscal es una habilidad valiosa. Convertirse en experto en optimización fiscal es el siguiente paso.' El Dr. Sulami: 'Estudiaré fiscalidad avanzada.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

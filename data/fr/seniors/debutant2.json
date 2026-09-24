@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "seniors_debutant2_001",
+    "title": "Seniors - Débutant 2",
+    "specialty": "SENI",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "SENI_D2_Q01",
+      "type": "single-choice",
+      "question": "Dr Ahmed est décédé brutalement. Dr Sofia se rend au cabinet et trouve Nadia en pleurs. Sofia lui dit : 'La première chose à faire est de sécuriser le cabinet.' Nadia demande : 'Comment ?' Sofia répond :",
+      "media": [],
+      "options": [
+        "Fermer définitivement le cabinet",
+        "Verrouiller les accès et prévenir les patients",
+        "Vendre tout immédiatement",
+        "Ignorer complètement la situation"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Nadia, la première chose à faire est de verrouiller le cabinet pour sécuriser les dossiers et le matériel. Ensuite, il faut prévenir les patients par un mot sur la porte.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q02",
+      "type": "single-choice",
+      "question": "Karim demande à Sofia : 'Qui peut entrer dans le cabinet maintenant ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Tout le monde peut entrer",
+        "Seuls les ayants droit et les professionnels mandatés",
+        "Seuls les patients peuvent entrer",
+        "Personne ne peut entrer"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Karim, seuls les ayants droit (toi, ta mère, ta sœur) et les professionnels que vous mandaterez (notaire, expert-comptable) peuvent entrer. Il faut protéger les dossiers et le matériel.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q03",
+      "type": "single-choice",
+      "question": "Salma demande à Sofia : 'Qu'est-ce qu'un inventaire ?' Sofia lui explique qu'il s'agit de :",
+      "media": [],
+      "options": [
+        "Une liste des patients",
+        "Une liste détaillée des biens du cabinet",
+        "Une liste des dettes",
+        "Une liste des employés"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Salma, l'inventaire est une liste détaillée de tout ce qui se trouve dans le cabinet : matériel, équipements, stocks, dossiers. C'est la base pour évaluer la valeur du cabinet.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q04",
+      "type": "single-choice",
+      "question": "Nadia demande à Sofia : 'Comment évaluer la valeur du cabinet ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Estimer la valeur au jugé",
+        "Faire appel à un expert-comptable ou un évaluateur",
+        "Vendre sans évaluation",
+        "Demander l'avis des patients"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Nadia, il faut faire appel à un expert-comptable ou un évaluateur spécialisé. Il évaluera le fonds de commerce, le matériel, et la patientèle.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q05",
+      "type": "single-choice",
+      "question": "Karim demande : 'Que deviennent les dossiers patients ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "On les jette",
+        "On les conserve et on les transmet au repreneur",
+        "On les donne aux patients",
+        "On les brûle"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Karim, les dossiers patients sont confidentiels et doivent être conservés. Ils seront transmis au repreneur du cabinet ou aux confrères qui reprendront les patients.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q06",
+      "type": "single-choice",
+      "question": "Salma demande : 'Qui hérite du cabinet ?' Sofia lui répond que selon la loi, les héritiers sont :",
+      "media": [],
+      "options": [
+        "Uniquement la femme",
+        "La femme et les enfants",
+        "Uniquement les enfants",
+        "Les parents du défunt"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Salma, selon le droit successoral marocain, les héritiers sont la veuve et les enfants. Chacun a une part définie par la loi.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q07",
+      "type": "single-choice",
+      "question": "Karim demande : 'Peut-on vendre le cabinet tout de suite ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Oui, immédiatement",
+        "Non, il faut attendre la liquidation de la succession",
+        "Oui, sans formalités",
+        "Non, jamais"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Karim, il faut attendre la liquidation de la succession. Cela peut prendre plusieurs mois. Le cabinet ne peut pas être vendu avant que les héritiers ne soient clairement identifiés et que la succession ne soit réglée.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q08",
+      "type": "single-choice",
+      "question": "Nadia demande : 'Comment gérer les patients qui appellent ?' Sofia lui conseille de :",
+      "media": [],
+      "options": [
+        "Ne pas répondre",
+        "Préparer un message d'information",
+        "Les rediriger vers un autre cabinet",
+        "Ignorer les appels"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Nadia, prépare un message d'information à diffuser sur le répondeur du cabinet. Explique que le Dr Ahmed est décédé et que des solutions seront proposées prochainement.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q09",
+      "type": "single-choice",
+      "question": "Salma demande : 'Quelle est la valeur d'un cabinet dentaire ?' Sofia lui explique qu'elle dépend de :",
+      "media": [],
+      "options": [
+        "Seulement du matériel",
+        "Du fonds de commerce, de la patientèle et du matériel",
+        "Seulement des patients",
+        "Seulement de l'emplacement"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Salma, la valeur d'un cabinet dépend de plusieurs facteurs : le fonds de commerce (clientèle, réputation), la patientèle (nombre et fidélité), le matériel (équipements, instruments).'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q10",
+      "type": "single-choice",
+      "question": "Karim demande : 'Comment trouver un repreneur ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Par annonce dans le journal",
+        "Par le réseau professionnel et les cabinets de conseil",
+        "Par le bouche-à-oreille",
+        "Par les patients"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Karim, le meilleur moyen est de passer par le réseau professionnel (confrères, associations) ou par des cabinets de conseil spécialisés en transmission de cabinets dentaires.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q11",
+      "type": "single-choice",
+      "question": "Nadia demande : 'Comment gérer les dettes du cabinet ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Les ignorer",
+        "Les régler avec l'actif de la succession",
+        "Les laisser au repreneur",
+        "Les faire annuler"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Nadia, les dettes du cabinet doivent être réglées avec l'actif de la succession (l'argent du cabinet, la vente du matériel). Il faut faire un état des lieux avec le notaire.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q12",
+      "type": "single-choice",
+      "question": "Salma demande : 'Que faire du matériel dentaire ?' Sofia lui conseille de :",
+      "media": [],
+      "options": [
+        "Le jeter",
+        "Le vendre ou le transmettre au repreneur",
+        "Le donner",
+        "Le garder"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Salma, le matériel peut être vendu ou transmis au repreneur du cabinet. Il faut faire un inventaire précis et estimer sa valeur.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q13",
+      "type": "single-choice",
+      "question": "Karim demande : 'Puis-je reprendre le cabinet un jour ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Non, tu es étudiant",
+        "Oui, si tu obtiens ton diplôme et que tu te formes à la gestion",
+        "Oui, sans condition",
+        "Non, jamais"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Karim, tu peux reprendre le cabinet si tu termines tes études et que tu te formes à la gestion d'un cabinet. Mais il faut que tu en aies la volonté et les compétences.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q14",
+      "type": "single-choice",
+      "question": "Nadia demande : 'Comment annoncer la nouvelle aux patients ?' Sofia lui conseille de :",
+      "media": [],
+      "options": [
+        "Ne rien dire",
+        "Envoyer une lettre ou un email aux patients",
+        "Faire une annonce dans le journal",
+        "Afficher un mot sur la porte"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Nadia, envoie une lettre ou un email aux patients pour les informer du décès d'Ahmed. Explique-leur que des solutions seront proposées prochainement. Ils ont besoin de savoir.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q15",
+      "type": "single-choice",
+      "question": "Salma demande : 'Quels sont les droits des héritiers ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Droits limités",
+        "Droits sur la succession, incluant le cabinet",
+        "Aucun droit",
+        "Droits partiels"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Salma, les héritiers ont des droits sur l'ensemble de la succession, y compris le cabinet. Le notaire vous aidera à les faire valoir.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q16",
+      "type": "single-choice",
+      "question": "Karim demande : 'Comment gérer les employés du cabinet ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Les licencier immédiatement",
+        "Les informer et les accompagner",
+        "Les ignorer",
+        "Les garder sans les payer"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Karim, les employés doivent être informés de la situation. Ils ont des droits (indemnités, préavis). Il faut les accompagner et respecter la loi.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q17",
+      "type": "single-choice",
+      "question": "Nadia demande : 'Comment gérer le stress de cette situation ?' Sofia lui conseille de :",
+      "media": [],
+      "options": [
+        "S'isoler",
+        "S'entourer de proches et de professionnels",
+        "Ignorer le stress",
+        "Prendre des médicaments"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Nadia, le deuil et la gestion du cabinet sont deux épreuves. Entoure-toi de ta famille, de tes amis et de professionnels (notaire, expert-comptable). Tu n'es pas seule.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q18",
+      "type": "single-choice",
+      "question": "Salma demande : 'Combien de temps dure la liquidation d'une succession ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Une semaine",
+        "Plusieurs mois à un an",
+        "Un jour",
+        "Une heure"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Salma, la liquidation d'une succession peut prendre plusieurs mois, voire un an, selon la complexité. Il faut être patient et bien accompagné.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q19",
+      "type": "single-choice",
+      "question": "Karim demande : 'Que faire des rendez-vous déjà pris ?' Sofia lui conseille de :",
+      "media": [],
+      "options": [
+        "Les annuler sans prévenir",
+        "Contacter les patients pour les informer",
+        "Les maintenir",
+        "Les ignorer"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Karim, il faut contacter les patients qui avaient des rendez-vous pour les informer de la situation. Propose-leur de les reporter ou de les rediriger vers un autre confrère.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q20",
+      "type": "single-choice",
+      "question": "Nadia demande : 'Comment évaluer les dettes du cabinet ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "En les estimant",
+        "En rassemblant tous les documents financiers",
+        "En les ignorant",
+        "En les laissant au notaire"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Nadia, il faut rassembler tous les documents financiers (factures, contrats, relevés bancaires) pour évaluer les dettes. L'expert-comptable peut t'aider.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q21",
+      "type": "single-choice",
+      "question": "Salma demande : 'Peut-on vendre le cabinet à un confrère ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Non",
+        "Oui, c'est la solution la plus courante",
+        "Seulement à un membre de la famille",
+        "Non, c'est interdit"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Salma, la vente du cabinet à un confrère est la solution la plus courante. Elle permet de transmettre la patientèle et le savoir-faire.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q22",
+      "type": "single-choice",
+      "question": "Karim demande : 'Comment savoir si le cabinet est rentable ?' Sofia lui conseille de :",
+      "media": [],
+      "options": [
+        "Le deviner",
+        "Analyser les comptes des dernières années",
+        "Demander aux patients",
+        "Regarder le matériel"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Karim, pour savoir si le cabinet est rentable, il faut analyser les comptes des dernières années : chiffre d'affaires, charges, bénéfices. L'expert-comptable peut t'aider.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q23",
+      "type": "single-choice",
+      "question": "Nadia demande : 'Comment gérer le deuil et le cabinet en même temps ?' Sofia lui conseille de :",
+      "media": [],
+      "options": [
+        "Tout gérer seule",
+        "Se faire accompagner par des professionnels",
+        "Ignorer le deuil",
+        "Travailler plus"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Nadia, ne gère pas tout seule. Fais-toi accompagner par des professionnels pour les aspects juridiques et financiers. Et prends du temps pour toi et ta famille.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q24",
+      "type": "single-choice",
+      "question": "Salma demande : 'Quels documents sont importants pour la succession ?' Sofia lui répond :",
+      "media": [],
+      "options": [
+        "Seulement le testament",
+        "Les comptes bancaires, les contrats, les factures",
+        "Seulement les dossiers patients",
+        "Seulement le matériel"
+      ],
+      "correct": 1,
+      "explanation": "Sofia : 'Salma, les documents importants sont les comptes bancaires, les contrats de location, les factures d'équipement, les contrats de travail, et bien sûr le testament s'il existe.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SENI_D2_Q25",
+      "type": "single-choice",
+      "question": "Karim, à la fin de cette épreuve, dit : 'Sofia, merci. Si mon père avait préparé tout ça, on ne serait pas perdus.' Sofia lui répond que la préparation est essentielle. Karim conclut :",
+      "media": [],
+      "options": [
+        "Il est trop tard pour mon père, mais pas pour les autres",
+        "Il est trop tard pour tout",
+        "Il n'y a rien à faire",
+        "On ne peut rien changer"
+      ],
+      "correct": 0,
+      "explanation": "Karim : 'Sofia, merci pour tout. Si mon père avait préparé sa succession, on ne serait pas dans cette situation.' Sofia : 'Karim, il est trop tard pour ton père, mais pas pour les autres dentistes. Parle de cette expérience autour de toi.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

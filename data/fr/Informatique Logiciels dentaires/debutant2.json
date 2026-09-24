@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "Informatique Logiciels dentaires_debutant2_001",
+    "title": "Informatique Logiciels dentaires - Débutant 2",
+    "specialty": "INFO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "INFO_D2_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Fadili conserve tous ses dossiers patients en version papier dans son armoire. Le Dr Idrissi a numérisé ses dossiers et les héberge sur un serveur sécurisé. En cas d'incendie au cabinet, quel est le risque principal pour le Dr Fadili ?",
+      "media": [],
+      "options": [
+        "Aucun risque, les dossiers papiers sont protégés par la loi",
+        "La perte définitive de toutes les données médicales et comptables du cabinet",
+        "Il peut récupérer ses données via la CNSS",
+        "Les patients sont tenus de fournir une copie de leurs dossiers"
+      ],
+      "correct": 1,
+      "explanation": "La conservation exclusivement sur papier expose à une perte totale en cas de sinistre (incendie, inondation, vol). Une numérisation avec sauvegarde externalisée protège contre ces risques en assurant la continuité de l'activité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi a numérisé ses dossiers et effectue des sauvegardes quotidiennes sur un serveur externe. Le Dr Fadili conserve ses archives dans des classeurs au cabinet. Lequel des deux est le mieux protégé en cas de sinistre ?",
+      "media": [],
+      "options": [
+        "Le Dr Fadili, car les classeurs sont ininflammables",
+        "Le Dr Idrissi, grâce à la redondance et l'externalisation des données",
+        "Les deux sont également protégés par la loi",
+        "Le Dr Fadili, car les papiers sont plus résistants que les données numériques"
+      ],
+      "correct": 1,
+      "explanation": "La redondance des sauvegardes et l'externalisation offrent une protection contre les risques locaux (incendie, inondation, vol) et garantissent la continuité de l'activité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q03",
+      "type": "single-choice",
+      "question": "Selon l'article 211 du CGI, le Dr Fadili et le Dr Idrissi doivent conserver leurs documents comptables pendant combien d'années ?",
+      "media": [],
+      "options": [
+        "5 ans",
+        "10 ans",
+        "15 ans",
+        "20 ans"
+      ],
+      "correct": 1,
+      "explanation": "L'article 211 du Code Général des Impôts impose une conservation de 10 ans pour les documents comptables et pièces justificatives, quel que soit le support.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Fadili a perdu ses dossiers patients dans un incendie. Selon la loi marocaine, doit-il informer l'administration fiscale de cette perte ?",
+      "media": [],
+      "options": [
+        "Non, la perte de dossiers médicaux ne concerne pas l'administration fiscale",
+        "Oui, dans les 15 jours suivant la constatation de la perte",
+        "Oui, mais uniquement si la perte concerne des documents comptables",
+        "Non, la déclaration de perte est facultative"
+      ],
+      "correct": 1,
+      "explanation": "Les contribuables doivent informer l'inspecteur des impôts par lettre recommandée dans les 15 jours suivant la constatation de la perte, en précisant les circonstances et les documents perdus.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q05",
+      "type": "single-choice",
+      "question": "En cas de perte de documents comptables, quelle est la sanction prévue par l'article 191 du CGI si le Dr Fadili ne déclare pas cette perte ?",
+      "media": [],
+      "options": [
+        "Une simple mise en demeure",
+        "Une amende forfaitaire de 50 000 DH par exercice",
+        "Une peine d'emprisonnement de 6 mois",
+        "Une interdiction d'exercer la profession"
+      ],
+      "correct": 1,
+      "explanation": "Le projet de loi de finances 2017 instaure une pénalité de 50.000 dirhams par exercice en cas de non-respect des obligations de conservation des documents comptables.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi a fait une déclaration CNDP pour son logiciel de gestion de cabinet. Le Dr Fadili n'a jamais fait de déclaration pour ses dossiers papiers. Selon l'article 52 de la loi 09-08, qu'encourt le Dr Fadili ?",
+      "media": [],
+      "options": [
+        "Aucune sanction, car les dossiers papiers sont exclus du champ de la loi 09-08",
+        "Une amende de 10 000 à 100 000 DH pour défaut de déclaration préalable",
+        "Une peine d'emprisonnement de 3 mois à 1 an",
+        "Une amende de 1 000 à 5 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "L'article 52 de la loi 09-08 prévoit une amende de 10 000 à 100 000 DH pour le défaut de déclaration préalable, quel que soit le support utilisé.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q07",
+      "type": "single-choice",
+      "question": "Le Dr Fadili a vu ses dossiers papiers volés lors d'une effraction. Quelle est sa responsabilité vis-à-vis de ses patients ?",
+      "media": [],
+      "options": [
+        "Aucune, le vol est un cas de force majeure",
+        "Il doit informer les patients concernés et la CNDP du vol",
+        "Il n'a pas besoin d'informer les patients car ils ne sont pas concernés",
+        "Il doit faire une déclaration à la CNSS uniquement"
+      ],
+      "correct": 1,
+      "explanation": "En cas de violation de données (perte, vol, destruction), le responsable du traitement doit informer les personnes concernées et la CNDP lorsque la violation est susceptible de créer un risque élevé pour leurs droits et libertés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi a installé un système de sauvegarde automatisée de ses données. Quel est l'avantage principal de ce système par rapport à la méthode papier du Dr Fadili ?",
+      "media": [],
+      "options": [
+        "La sauvegarde numérique est moins coûteuse",
+        "La sauvegarde automatisée assure la continuité de l'activité en cas de sinistre et la traçabilité des accès",
+        "La sauvegarde numérique est plus lente à restaurer",
+        "La sauvegarde automatisée est moins fiable qu'une copie papier"
+      ],
+      "correct": 1,
+      "explanation": "Les sauvegardes automatisées avec copies externalisées (cloud) garantissent la récupération des données en cas de sinistre et assurent une traçabilité des accès, contrairement aux archives papier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi utilise un logiciel de gestion de cabinet qui génère un journal d'audit. Le Dr Fadili note ses opérations sur un carnet. Quel avantage le journal d'audit offre-t-il au Dr Idrissi ?",
+      "media": [],
+      "options": [
+        "Il permet de conserver les documents indéfiniment",
+        "Il permet de tracer toutes les actions effectuées sur les données (qui, quoi, quand)",
+        "Il dispense de déclaration CNDP",
+        "Il permet de supprimer les données sans trace"
+      ],
+      "correct": 1,
+      "explanation": "Le journal d'audit offre une traçabilité complète : il enregistre qui a accédé aux données, quand et pourquoi. Cela permet de prouver l'intégrité des données et de répondre aux exigences de la loi 09-08.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Fadili conserve des radiographies en format papier. Le Dr Idrissi les stocke en format numérique sécurisé. Quel est l'avantage de la version numérique pour la traçabilité ?",
+      "media": [],
+      "options": [
+        "Aucun avantage, les deux formats sont équivalents",
+        "La version numérique permet de tracer les accès et les modifications",
+        "La version papier est plus facile à vérifier",
+        "La version numérique ne peut pas être tracée"
+      ],
+      "correct": 1,
+      "explanation": "L'archivage numérique avec journal d'audit permet de tracer qui a consulté ou modifié une radiographie, quand et pourquoi, ce qui est impossible avec les formats papier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q11",
+      "type": "single-choice",
+      "question": "Selon la loi 09-08, les données de santé sont considérées comme des données sensibles. Le Dr Fadili conserve ses dossiers papiers, le Dr Idrissi les numérise. Tous les deux doivent-ils obtenir une autorisation préalable de la CNDP ?",
+      "media": [],
+      "options": [
+        "Non, seuls les traitements numériques sont concernés par l'autorisation",
+        "Oui, le traitement des données de santé nécessite une autorisation, quel que soit le support",
+        "Non, les données papiers sont exemptées d'autorisation",
+        "Seul le Dr Idrissi doit demander une autorisation"
+      ],
+      "correct": 1,
+      "explanation": "L'article 21 de la loi 09-08 considère les données de santé comme des données sensibles, quel que soit le support. Leur traitement est soumis au régime de l'autorisation préalable.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Fadili a des classeurs entiers de documents. Le Dr Idrissi utilise un système de gestion électronique de documents (GED) avec indexation. Quel avantage la GED offre-t-elle par rapport aux classeurs ?",
+      "media": [],
+      "options": [
+        "La GED est plus lourde à gérer que les classeurs",
+        "La GED permet une recherche rapide des documents et un accès facilité",
+        "La GED ne permet pas de retrouver les anciens documents",
+        "La GED est moins sécurisée que le stockage papier"
+      ],
+      "correct": 1,
+      "explanation": "La GED avec indexation permet une recherche rapide et un accès facilité aux documents, avec des exigences de sécurité renforcées pour garantir l'intégrité et l'authenticité des données.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Fadili a subi un vol de ses dossiers patients. Quelle est la conséquence immédiate pour le Dr Fadili ?",
+      "media": [],
+      "options": [
+        "Il peut continuer à exercer comme si de rien n'était",
+        "Il doit interrompre son activité et informer ses patients",
+        "Il peut reconstituer les dossiers à partir de sa mémoire",
+        "Il doit attendre un remboursement de son assurance"
+      ],
+      "correct": 1,
+      "explanation": "La perte de dossiers papiers expose à une rupture de la continuité des soins et à des obligations d'information des patients, conformément aux exigences de la loi 09-08 sur la protection des données.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi a choisi un hébergeur cloud marocain pour ses données. Le Dr Fadili conserve tout au cabinet. Selon la loi 09-08 et les exigences de la CNDP, pourquoi le choix du Dr Idrissi est-il plus sûr ?",
+      "media": [],
+      "options": [
+        "L'hébergement local facilite le transfert de données à l'étranger",
+        "L'hébergement local respecte les exigences de souveraineté des données",
+        "L'hébergement local est plus coûteux mais moins sécurisé",
+        "L'hébergement local dispense de déclaration CNDP"
+      ],
+      "correct": 1,
+      "explanation": "La CNDP interdit le transfert de données personnelles hors du Maroc sans autorisation explicite. Choisir un hébergeur marocain facilite la conformité et évite les démarches de transfert international.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q15",
+      "type": "single-choice",
+      "question": "Le Dr Fadili veut installer une caméra de vidéosurveillance dans son cabinet. Selon la délibération CNDP n° 350-2013, quelle formalité doit-il accomplir ?",
+      "media": [],
+      "options": [
+        "Aucune, la vidéosurveillance est libre",
+        "Une déclaration simplifiée auprès de la CNDP",
+        "Une autorisation préalable obligatoire",
+        "Une simple affiche dans le cabinet"
+      ],
+      "correct": 1,
+      "explanation": "La vidéosurveillance relève du régime de la déclaration simplifiée (formulaire F214) conformément à la délibération n° 350-2013, avec obligation d'informer les personnes concernées par un pictogramme.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q16",
+      "type": "single-choice",
+      "question": "Selon la délibération CNDP, où le Dr Fadili peut-il installer ses caméras de vidéosurveillance ?",
+      "media": [],
+      "options": [
+        "Dans tous les locaux du cabinet, y compris les toilettes",
+        "Aux entrées, sorties, parkings et zones de circulation",
+        "Uniquement dans la salle d'attente",
+        "Partout, sans restriction"
+      ],
+      "correct": 1,
+      "explanation": "Les caméras doivent être installées dans les entrées/sorties, voies de circulation, parkings, sans jamais filmer les espaces de repos, vestiaires ou toilettes pour respecter la vie privée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Fadili a installé une caméra sans déclaration CNDP. Selon l'article 54 de la loi 09-08, à quelle sanction s'expose-t-il ?",
+      "media": [],
+      "options": [
+        "Aucune, la vidéosurveillance est libre",
+        "Une amende de 20 000 à 200 000 DH et/ou 3 mois à 1 an de prison",
+        "Une simple mise en demeure",
+        "Une amende de 1 000 à 5 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "L'article 54 de la loi 09-08 prévoit une amende de 20 000 à 200 000 DH et/ou une peine d'emprisonnement de 3 mois à 1 an pour défaut d'autorisation ou détournement de finalité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi conserve ses enregistrements vidéo pendant 6 mois. Selon la délibération CNDP, quelle est la durée maximale de conservation ?",
+      "media": [],
+      "options": [
+        "1 mois",
+        "3 mois",
+        "6 mois",
+        "12 mois"
+      ],
+      "correct": 1,
+      "explanation": "La durée de conservation des enregistrements vidéo ne doit pas dépasser trois mois, sauf en cas de procédure judiciaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi a opté pour l'archivage numérique à valeur probante de ses documents. Le Dr Fadili conserve ses originaux papier. Quel est l'avantage de l'archivage à valeur probante ?",
+      "media": [],
+      "options": [
+        "Il permet de réduire les coûts de stockage",
+        "Il garantit l'authenticité, l'intégrité et la traçabilité des documents dans le temps",
+        "Il dispense de conserver les originaux papiers",
+        "Il permet de supprimer les documents après 5 ans"
+      ],
+      "correct": 1,
+      "explanation": "L'archivage à valeur probante garantit l'authenticité (identité de l'auteur), l'intégrité (absence de modification) et la traçabilité (journal d'audit) des documents, leur conférant une force probante opposable en justice.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi souhaite se passer des documents papier dans son cabinet. Selon les normes d'archivage, que doit-il garantir pour que ses documents numériques aient la même valeur que les papiers ?",
+      "media": [],
+      "options": [
+        "Un simple stockage sur un cloud",
+        "L'intégrité, l'authenticité et l'accessibilité des documents",
+        "Une sauvegarde sur un disque dur externe",
+        "La possibilité d'imprimer les documents à tout moment"
+      ],
+      "correct": 1,
+      "explanation": "Pour que les documents numériques aient la même force probante que le papier, ils doivent être conservés dans des conditions garantissant leur intégrité (empreinte cryptographique), leur authenticité (signature électronique) et leur accessibilité (formats pérennes).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Fadili a vu ses dossiers papiers détruits par l'eau suite à une fuite. Que doit-il faire selon la loi 09-08 ?",
+      "media": [],
+      "options": [
+        "Rien, c'est un cas de force majeure",
+        "Informer la CNDP et les patients concernés",
+        "Reconstituer les dossiers avec les souvenirs des patients",
+        "Attendre un retour des patients"
+      ],
+      "correct": 1,
+      "explanation": "En cas de violation de données (perte, destruction), le responsable du traitement doit informer la CNDP et les personnes concernées lorsque la violation est susceptible de créer un risque élevé pour leurs droits et libertés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q22",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi utilise une signature électronique pour ses ordonnances. Le Dr Fadili utilise encore la signature manuscrite. Quel avantage offre la signature électronique au Dr Idrissi ?",
+      "media": [],
+      "options": [
+        "Aucun avantage, les deux signatures ont la même valeur",
+        "La signature électronique garantit l'intégrité et l'authenticité de l'ordonnance",
+        "La signature électronique est moins sécurisée",
+        "La signature électronique dispense de conserver l'ordonnance"
+      ],
+      "correct": 1,
+      "explanation": "La signature électronique, associée à un horodatage et à une empreinte numérique, garantit l'intégrité (le document n'a pas été modifié) et l'authenticité (identification du signataire) du document.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi a mis en place des contrôles d'accès à son logiciel de gestion. Le Dr Fadili a ses classeurs accessibles à tous. Quel est l'avantage des contrôles d'accès pour le Dr Idrissi ?",
+      "media": [],
+      "options": [
+        "Aucun avantage, les deux systèmes sont équivalents",
+        "Ils permettent de limiter l'accès aux données aux seules personnes habilitées et de tracer les consultations",
+        "Ils compliquent l'accès aux documents",
+        "Ils sont plus chers mais moins efficaces"
+      ],
+      "correct": 1,
+      "explanation": "Les contrôles d'accès par rôles et droits permettent de limiter l'accès aux données aux seules personnes habilitées et de tracer les consultations, conformément aux exigences de la loi 09-08.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Fadili conserve ses factures clients en version papier. Le Dr Idrissi les conserve en version électronique. Quelle est la durée de conservation légale pour les deux ?",
+      "media": [],
+      "options": [
+        "5 ans pour le papier, 10 ans pour l'électronique",
+        "10 ans pour les deux, quel que soit le support",
+        "3 ans pour le papier, 10 ans pour l'électronique",
+        "6 ans pour les deux"
+      ],
+      "correct": 1,
+      "explanation": "La durée légale de conservation des factures clients est de 10 ans, quel que soit le support (papier ou électronique), conformément à l'article 211 du CGI.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Idrissi a subi une panne de son serveur. Grâce à ses sauvegardes externalisées, il récupère ses données. Quelle est la principale protection qu'offre ce système au Dr Idrissi ?",
+      "media": [],
+      "options": [
+        "La récupération rapide des données en cas de sinistre",
+        "La réduction des coûts de stockage",
+        "La simplification des déclarations fiscales",
+        "L'exonération de la déclaration CNDP"
+      ],
+      "correct": 0,
+      "explanation": "Les sauvegardes externalisées permettent une récupération rapide des données en cas de sinistre (panne, incendie, inondation), garantissant ainsi la continuité de l'activité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

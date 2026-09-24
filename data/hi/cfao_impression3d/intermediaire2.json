@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_intermediaire2_001",
+    "title": "CAD/CAM & 3D Printing - Intermediate 2",
+    "specialty": "CFAO",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Samia must choose between stereolithography (SLA) and DLP for 3D printing. What is the main difference between these two technologies?",
+      "media": [],
+      "options": [
+        "SLA is cheaper",
+        "SLA uses a laser, DLP uses a projector",
+        "DLP is more precise",
+        "SLA is faster"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'SLA uses a laser beam to polymerize the resin point by point, while DLP projects a complete image of the layer at once.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Rachid wants to print surgical guides. Which 3D printing technology is best suited for this application?",
+      "media": [],
+      "options": [
+        "FDM",
+        "SLA or DLP",
+        "Material jetting",
+        "Laser sintering"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'SLA and DLP offer the precision and surface quality required for surgical guides.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Samia has printed a resin model for an orthodontic aligner. Dr Rachid asks her to check the accuracy. What is the acceptable tolerance?",
+      "media": [],
+      "options": [
+        "1 mm",
+        "0.5 mm",
+        "0.1 mm",
+        "No tolerance"
+      ],
+      "correct": 2,
+      "explanation": "Dr Rachid explains: 'The acceptable tolerance for an aligner model is 0.1 mm to guarantee an optimal clinical result.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Rachid must choose a resin for printing surgical guides. Which characteristic is the most important?",
+      "media": [],
+      "options": [
+        "The color of the resin",
+        "Biocompatibility and sterility",
+        "The price of the resin",
+        "The viscosity of the resin"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Biocompatibility and sterility are essential for surgical guides that will be in contact with the patient's tissues.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Samia must manage a 3D printing failure. Dr Rachid explains the possible causes. What is the most frequent cause?",
+      "media": [],
+      "options": [
+        "A software problem",
+        "A printer calibration problem",
+        "A resin quality problem",
+        "An ambient temperature problem"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Printer calibration is the most frequent cause of 3D printing failure.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Rachid must print several surgical guides in a single session. What is the best organization strategy?",
+      "media": [],
+      "options": [
+        "Print one guide at a time",
+        "Optimize the placement of parts on the platform",
+        "Print them by stacking them",
+        "Use a different printer for each guide"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Optimizing the placement of parts on the platform maximizes printing efficiency.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Samia must choose between standard resin and specific dental resin. What is the major difference?",
+      "media": [],
+      "options": [
+        "The price",
+        "Biocompatibility and mechanical properties",
+        "The color",
+        "The viscosity"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Specific dental resins are formulated to be biocompatible and meet the mechanical requirements of dental applications.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Rachid must print models for orthodontic aligners. What surface quality is required?",
+      "media": [],
+      "options": [
+        "A rough surface for adhesion",
+        "A smooth and precise surface",
+        "A porous surface",
+        "A textured surface"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'A smooth and precise surface is essential for the manufacture of orthodontic aligners.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Samia must manage a case of deformed printed model. Dr Rachid asks her to check a critical parameter. What is this parameter?",
+      "media": [],
+      "options": [
+        "The printer temperature",
+        "The printing time",
+        "The printing support",
+        "The quality of the resin"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explains: 'The printer temperature can influence the deformation of printed models.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Rachid must print a surgical guide with metal sleeves. What is the best approach?",
+      "media": [],
+      "options": [
+        "Print the guide with integrated sleeves",
+        "Print the guide and add the sleeves after",
+        "Use a metal printer",
+        "Do not use metal sleeves"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'The best approach is to print the guide and add the metal sleeves after to guarantee their precise positioning.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Samia must train her assistant in post-processing of 3D printed parts. What is the essential post-processing step?",
+      "media": [],
+      "options": [
+        "Polishing",
+        "Cleaning and drying",
+        "Painting",
+        "Assembly"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Cleaning and drying are essential to remove resin residues and ensure the precision of the part.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Rachid has printed a surgical guide. Dr Samia asks him to check the sterilization. What is the recommended sterilization method?",
+      "media": [],
+      "options": [
+        "Autoclave",
+        "Plasma sterilization",
+        "Chemical sterilization",
+        "Ethylene oxide"
+      ],
+      "correct": 3,
+      "explanation": "Dr Samia explains: 'Ethylene oxide is the recommended sterilization method for resin-printed surgical guides.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Samia must choose a slicing software for her 3D printer. Which criterion is the most important?",
+      "media": [],
+      "options": [
+        "The price of the software",
+        "Compatibility with the printer and the quality of parameters",
+        "The color of the interface",
+        "The popularity of the software"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Compatibility and parameter quality are essential for obtaining quality prints.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Rachid must manage a 3D printer that produces parts with surface defects. What is the most likely cause?",
+      "media": [],
+      "options": [
+        "A software problem",
+        "A resin or printing parameters problem",
+        "A printer level problem",
+        "An ambient temperature problem"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Surface defects are often due to a resin problem or unsuitable printing parameters.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr Samia must print a model for a multiple implant case. What printing resolution is recommended?",
+      "media": [],
+      "options": [
+        "50 microns",
+        "100 microns",
+        "200 microns",
+        "500 microns"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explains: 'A resolution of 50 microns is recommended for multiple implant models to guarantee the precision of positions.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr Rachid has printed a model for an orthodontic aligner. Dr Samia asks him to check the finishes. What is the recommended finishing step?",
+      "media": [],
+      "options": [
+        "Sandblasting",
+        "Surface polishing",
+        "Application of a coating",
+        "Painting"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Surface polishing is recommended to obtain a smooth and precise model for aligner manufacturing.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr Samia must manage a 3D printing case with complex supports. Dr Rachid advises her to check a parameter. What is this parameter?",
+      "media": [],
+      "options": [
+        "The bed temperature",
+        "The support density",
+        "The printing speed",
+        "The quality of the resin"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Support density is a critical parameter for prints with complex supports.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr Rachid must choose a 3D printer for his practice. Which criterion is the most important for clinical use?",
+      "media": [],
+      "options": [
+        "Printing speed",
+        "Precision and surface quality",
+        "Printer size",
+        "Price"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Precision and surface quality are the most important criteria for clinical use.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr Samia has printed a surgical guide but the fit is not perfect. Dr Rachid suggests she check one element. What is this element?",
+      "media": [],
+      "options": [
+        "The quality of the scan",
+        "The printer temperature",
+        "The printing speed",
+        "The quality of the resin"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explains: 'The quality of the initial scan is often the cause of poor fit of the surgical guide.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr Rachid must train his assistant in the use of the 3D printer. What is the first safety rule to teach?",
+      "media": [],
+      "options": [
+        "Wearing gloves and protective glasses",
+        "Checking the temperature",
+        "Printing speed",
+        "File management"
+      ],
+      "correct": 0,
+      "explanation": "Dr Samia explains: 'Wearing gloves and protective glasses is essential for handling photopolymer resins.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr Samia must manage a case of non-polymerized photopolymer resin. Dr Rachid asks her to check a parameter. What is this parameter?",
+      "media": [],
+      "options": [
+        "The printer temperature",
+        "The UV exposure time",
+        "The quality of the resin",
+        "The printing speed"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'The UV exposure time is a critical parameter for the complete polymerization of the resin.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr Rachid has printed a model for a complex case. Dr Samia asks him to check the surface condition. What is the importance of the surface condition?",
+      "media": [],
+      "options": [
+        "It is purely aesthetic",
+        "It influences the precision of the restoration",
+        "It is a regulatory obligation",
+        "It is secondary"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'The surface condition of the model directly influences the precision of the prosthetic restoration.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr Samia must choose a resin for printing working models. Which characteristic is the most important?",
+      "media": [],
+      "options": [
+        "The color of the resin",
+        "Dimensional stability",
+        "The price of the resin",
+        "The viscosity of the resin"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Dimensional stability is essential for working models to guarantee the precision of restorations.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr Rachid has printed a surgical guide but air bubbles appeared. Dr Samia explains the cause. What is the most likely cause?",
+      "media": [],
+      "options": [
+        "A resin problem",
+        "A calibration problem",
+        "A temperature problem",
+        "A printing speed problem"
+      ],
+      "correct": 0,
+      "explanation": "Dr Samia explains: 'Air bubbles in the resin are often the cause of bubbles in printed parts.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr Samia, after overcoming many 3D printing challenges, receives congratulations from Dr Rachid. What is the next step for Dr Samia?",
+      "media": [],
+      "options": [
+        "Become a reference in dental 3D printing",
+        "Retire",
+        "Change specialty",
+        "Forget the basics"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explains: 'Becoming a reference in dental 3D printing is the next step to share her expertise.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "Informatique Logiciels dentaires_debutant2_001",
+    "title": "Informática y Software Dental – Principiante 2",
+    "specialty": "INFO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "INFO_D2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Fadili guarda todas sus fichas de pacientes en papel en un armario. El Dr. Idrissi ha digitalizado sus fichas y las almacena en un servidor seguro. En caso de incendio en el consultorio, ¿cuál es el principal riesgo para el Dr. Fadili?",
+      "media": [],
+      "options": [
+        "Ningún riesgo, las fichas en papel están protegidas por la ley",
+        "Pérdida total de todos los datos médicos y contables del consultorio",
+        "Puede recuperar sus datos a través de la CNSS",
+        "Los pacientes están obligados a proporcionar una copia de sus fichas"
+      ],
+      "correct": 1,
+      "explanation": "El almacenamiento exclusivamente en papel expone a la pérdida total en caso de catástrofe (incendio, inundación, robo). La digitalización con copia de seguridad externa protege contra estos riesgos, garantizando la continuidad de la actividad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi ha digitalizado sus fichas y realiza copias de seguridad diarias en un servidor externo. El Dr. Fadili guarda sus archivos en carpetas en el consultorio. ¿Quién de los dos está mejor protegido en caso de catástrofe?",
+      "media": [],
+      "options": [
+        "El Dr. Fadili, ya que las carpetas son ignífugas",
+        "El Dr. Idrissi, gracias a la redundancia y al almacenamiento externo de los datos",
+        "Ambos están igualmente protegidos por la ley",
+        "El Dr. Fadili, ya que el papel es más resistente que los datos digitales"
+      ],
+      "correct": 1,
+      "explanation": "La redundancia de las copias de seguridad y el almacenamiento externo proporcionan protección contra los riesgos locales (incendio, inundación, robo) y garantizan la continuidad de la actividad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q03",
+      "type": "single-choice",
+      "question": "Según el artículo 211 del Código General de Impuestos, el Dr. Fadili y el Dr. Idrissi deben conservar sus documentos contables durante ¿cuántos años?",
+      "media": [],
+      "options": [
+        "5 años",
+        "10 años",
+        "15 años",
+        "20 años"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 211 del Código General de Impuestos prescribe la conservación de los documentos contables y justificativos durante 10 años, independientemente del soporte.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Fadili ha perdido las fichas de los pacientes debido a un incendio. Según la ley marroquí, ¿debe notificar esta pérdida a la administración fiscal?",
+      "media": [],
+      "options": [
+        "No, la pérdida de historias clínicas no afecta a la administración fiscal",
+        "Sí, en un plazo de 15 días desde la constatación de la pérdida",
+        "Sí, pero solo si la pérdida afecta a documentos contables",
+        "No, la declaración de pérdida no es obligatoria"
+      ],
+      "correct": 1,
+      "explanation": "Los contribuyentes deben notificar al inspector de impuestos por carta certificada en un plazo de 15 días desde la constatación de la pérdida, indicando las circunstancias y los documentos perdidos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q05",
+      "type": "single-choice",
+      "question": "En caso de pérdida de documentos contables, ¿qué sanción prevé el artículo 191 del Código General de Impuestos si el Dr. Fadili no declara esta pérdida?",
+      "media": [],
+      "options": [
+        "Una simple advertencia",
+        "Una multa fija de 50 000 DH por cada ejercicio fiscal",
+        "Prisión de 6 meses",
+        "Prohibición del ejercicio de la profesión"
+      ],
+      "correct": 1,
+      "explanation": "El proyecto de ley de finanzas 2017 introduce una multa de 50 000 dírhams por cada ejercicio fiscal en caso de incumplimiento de las obligaciones de conservación de documentos contables.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi ha presentado una declaración ante la CNDP para su software de gestión de consultorio. El Dr. Fadili nunca ha presentado una declaración para sus fichas en papel. Según el artículo 52 de la ley 09-08, ¿qué riesgo corre el Dr. Fadili?",
+      "media": [],
+      "options": [
+        "Ninguna sanción, ya que las fichas en papel están excluidas del ámbito de la ley 09-08",
+        "Multa de 10 000 a 100 000 DH por falta de declaración previa",
+        "Prisión de 3 meses a 1 año",
+        "Multa de 1 000 a 5 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 52 de la ley 09-08 prevé una multa de 10 000 a 100 000 DH por falta de declaración previa, independientemente del soporte utilizado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Fadili ha perdido sus fichas en papel durante un robo. ¿Cuál es su responsabilidad hacia los pacientes?",
+      "media": [],
+      "options": [
+        "Ninguna, el robo es un caso de fuerza mayor",
+        "Debe notificar a los pacientes afectados y a la CNDP sobre el robo",
+        "No necesita notificar a los pacientes, ya que no se ven afectados",
+        "Debe hacer una declaración solo a la CNSS"
+      ],
+      "correct": 1,
+      "explanation": "En caso de violación de datos (pérdida, robo, destrucción), el responsable del tratamiento debe notificar a las personas afectadas y a la CNDP cuando la violación pueda crear un alto riesgo para sus derechos y libertades.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi ha configurado un sistema de copia de seguridad automática de los datos. ¿Cuál es la principal ventaja de este sistema en comparación con el método en papel del Dr. Fadili?",
+      "media": [],
+      "options": [
+        "La copia de seguridad digital es más barata",
+        "La copia de seguridad automática garantiza la continuidad de la actividad en caso de catástrofe y la trazabilidad de los accesos",
+        "La copia de seguridad digital se recupera más lentamente",
+        "La copia de seguridad automática es menos fiable que una copia en papel"
+      ],
+      "correct": 1,
+      "explanation": "La copia de seguridad automatizada con copias externas (nube) garantiza la recuperación de los datos en caso de catástrofe y proporciona trazabilidad de los accesos, a diferencia de los archivos en papel.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi utiliza un software de gestión de consultorio que genera un registro de auditoría. El Dr. Fadili anota sus operaciones en un cuaderno. ¿Qué ventaja ofrece el registro de auditoría al Dr. Idrissi?",
+      "media": [],
+      "options": [
+        "Permite conservar los documentos de forma indefinida",
+        "Permite rastrear todas las acciones sobre los datos (quién, qué, cuándo)",
+        "Exime de la declaración ante la CNDP",
+        "Permite eliminar los datos sin dejar rastro"
+      ],
+      "correct": 1,
+      "explanation": "El registro de auditoría proporciona una trazabilidad completa: registra quién tuvo acceso a los datos, cuándo y por qué. Permite demostrar la integridad de los datos y cumplir con los requisitos de la ley 09-08.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Fadili guarda las radiografías en formato papel. El Dr. Idrissi las guarda en formato digital seguro. ¿Cuál es la ventaja de la versión digital para la trazabilidad?",
+      "media": [],
+      "options": [
+        "No hay ventaja, ambos formatos son equivalentes",
+        "La versión digital permite rastrear los accesos y las modificaciones",
+        "La versión en papel es más fácil de verificar",
+        "La versión digital no puede ser rastreada"
+      ],
+      "correct": 1,
+      "explanation": "El archivo digital con registro de auditoría permite rastrear quién ha consultado o modificado la radiografía, cuándo y por qué, lo que es imposible con los formatos en papel.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q11",
+      "type": "single-choice",
+      "question": "Según la ley 09-08, los datos de salud se consideran datos sensibles. El Dr. Fadili guarda las fichas en papel, el Dr. Idrissi las digitaliza. ¿Ambos deben obtener la autorización previa de la CNDP?",
+      "media": [],
+      "options": [
+        "No, solo el tratamiento digital requiere autorización",
+        "Sí, el tratamiento de datos de salud requiere autorización, independientemente del soporte",
+        "No, los datos en papel están exentos de autorización",
+        "Solo el Dr. Idrissi debe solicitar la autorización"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 21 de la ley 09-08 considera los datos de salud como datos sensibles, independientemente del soporte. Su tratamiento está sujeto al régimen de autorización previa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Fadili tiene armarios llenos de documentos. El Dr. Idrissi utiliza un sistema de gestión documental electrónica (GDE) con indexación. ¿Qué ventaja ofrece la GDE en comparación con las carpetas?",
+      "media": [],
+      "options": [
+        "La GDE es más difícil de gestionar que las carpetas",
+        "La GDE permite una búsqueda rápida de documentos y un acceso más fácil",
+        "La GDE no permite encontrar documentos antiguos",
+        "La GDE es menos segura que el almacenamiento en papel"
+      ],
+      "correct": 1,
+      "explanation": "La GDE con indexación permite una búsqueda rápida y un acceso más fácil a los documentos, con requisitos de seguridad reforzados para garantizar la integridad y autenticidad de los datos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Fadili ha sido víctima del robo de las fichas de los pacientes. ¿Cuál es la consecuencia inmediata para el Dr. Fadili?",
+      "media": [],
+      "options": [
+        "Puede seguir trabajando como si nada hubiera pasado",
+        "Debe suspender la actividad y notificar a los pacientes",
+        "Puede recuperar las fichas de memoria",
+        "Debe esperar la indemnización del seguro"
+      ],
+      "correct": 1,
+      "explanation": "La pérdida de las fichas en papel pone en riesgo la continuidad de los tratamientos y requiere la notificación a los pacientes de acuerdo con los requisitos de la ley 09-08 sobre protección de datos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi ha elegido un proveedor de alojamiento en la nube marroquí para sus datos. El Dr. Fadili guarda todo en el consultorio. Según la ley 09-08 y los requisitos de la CNDP, ¿por qué la elección del Dr. Idrissi es más segura?",
+      "media": [],
+      "options": [
+        "El alojamiento local facilita la transferencia de datos al extranjero",
+        "El alojamiento local cumple con los requisitos de soberanía de datos",
+        "El alojamiento local es más caro pero menos seguro",
+        "El alojamiento local exime de la declaración ante la CNDP"
+      ],
+      "correct": 1,
+      "explanation": "La CNDP prohíbe la transferencia de datos personales fuera de Marruecos sin autorización expresa. Elegir un proveedor de alojamiento marroquí facilita el cumplimiento y evita los procedimientos de transferencia internacional.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Fadili quiere instalar una cámara de videovigilancia en su consultorio. Según la decisión CNDP n° 350-2013, ¿qué trámite debe realizar?",
+      "media": [],
+      "options": [
+        "Ninguno, la videovigilancia es libre",
+        "Una declaración simplificada ante la CNDP",
+        "Una autorización previa obligatoria",
+        "Un simple anuncio en el consultorio"
+      ],
+      "correct": 1,
+      "explanation": "La videovigilancia se rige por el régimen de declaración simplificada (formulario F214) según la decisión n° 350-2013, con la obligación de informar a los interesados mediante un pictograma.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q16",
+      "type": "single-choice",
+      "question": "Según la decisión de la CNDP, ¿dónde puede el Dr. Fadili instalar las cámaras de videovigilancia?",
+      "media": [],
+      "options": [
+        "En todas las dependencias del consultorio, incluidos los aseos",
+        "En las entradas, salidas, aparcamientos y zonas de circulación",
+        "Solo en la sala de espera",
+        "En cualquier lugar, sin restricciones"
+      ],
+      "correct": 1,
+      "explanation": "Las cámaras deben instalarse en las entradas/salidas, zonas de circulación, aparcamientos, y nunca deben filmar zonas de descanso, vestuarios o aseos para respetar la privacidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Fadili ha instalado una cámara sin declaración ante la CNDP. Según el artículo 54 de la ley 09-08, ¿qué sanción le corresponde?",
+      "media": [],
+      "options": [
+        "Ninguna, la videovigilancia es libre",
+        "Multa de 20 000 a 200 000 DH y/o de 3 meses a 1 año de prisión",
+        "Una simple advertencia",
+        "Multa de 1 000 a 5 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 54 de la ley 09-08 prevé una multa de 20 000 a 200 000 DH y/o prisión de 3 meses a 1 año por falta de autorización o cambio de finalidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi conserva las grabaciones de vídeo durante 6 meses. Según la decisión de la CNDP, ¿cuál es la duración máxima de conservación?",
+      "media": [],
+      "options": [
+        "1 mes",
+        "3 meses",
+        "6 meses",
+        "12 meses"
+      ],
+      "correct": 1,
+      "explanation": "La duración de conservación de las grabaciones de vídeo no debe exceder de tres meses, salvo en caso de procedimiento judicial.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi ha elegido el archivo digital con valor probatorio para sus documentos. El Dr. Fadili conserva los originales en papel. ¿Cuál es la ventaja del archivo con valor probatorio?",
+      "media": [],
+      "options": [
+        "Permite reducir los costes de almacenamiento",
+        "Garantiza la autenticidad, integridad y trazabilidad de los documentos en el tiempo",
+        "Exime de la conservación de los originales en papel",
+        "Permite eliminar los documentos después de 5 años"
+      ],
+      "correct": 1,
+      "explanation": "El archivo con valor probatorio garantiza la autenticidad (identidad del autor), la integridad (ausencia de modificaciones) y la trazabilidad (registro de auditoría) de los documentos, otorgándoles un valor probatorio que tiene validez en los tribunales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi quiere prescindir de los documentos en papel en su consultorio. Según las normas de archivado, ¿qué debe garantizar para que sus documentos digitales tengan la misma fuerza que los de papel?",
+      "media": [],
+      "options": [
+        "Simplemente almacenarlos en la nube",
+        "La integridad, autenticidad y disponibilidad de los documentos",
+        "Una copia de seguridad en un disco duro externo",
+        "La posibilidad de imprimir los documentos en cualquier momento"
+      ],
+      "correct": 1,
+      "explanation": "Para que los documentos digitales tengan el mismo valor probatorio que los de papel, deben conservarse en condiciones que garanticen su integridad (huella criptográfica), autenticidad (firma electrónica) y disponibilidad (formatos sostenibles).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Fadili ha perdido las fichas en papel debido a una fuga de agua. ¿Qué debe hacer según la ley 09-08?",
+      "media": [],
+      "options": [
+        "Nada, es un caso de fuerza mayor",
+        "Notificar a la CNDP y a los pacientes afectados",
+        "Reconstruir las fichas según los recuerdos de los pacientes",
+        "Esperar el regreso de los pacientes"
+      ],
+      "correct": 1,
+      "explanation": "En caso de violación de datos (pérdida, destrucción), el responsable del tratamiento debe notificar a la CNDP y a las personas afectadas cuando la violación pueda crear un alto riesgo para sus derechos y libertades.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q22",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi utiliza firma electrónica para sus recetas. El Dr. Fadili sigue utilizando la firma manuscrita. ¿Qué ventaja ofrece la firma electrónica al Dr. Idrissi?",
+      "media": [],
+      "options": [
+        "Ninguna ventaja, ambas firmas tienen la misma fuerza",
+        "La firma electrónica garantiza la integridad y autenticidad de la receta",
+        "La firma electrónica es menos segura",
+        "La firma electrónica exime de la conservación de la receta"
+      ],
+      "correct": 1,
+      "explanation": "La firma electrónica, asociada a un sello de tiempo y una huella digital, garantiza la integridad (el documento no ha sido modificado) y la autenticidad (identificación del firmante) del documento.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi ha configurado un control de acceso a su software de gestión. El Dr. Fadili tiene carpetas accesibles para todos. ¿Cuál es la ventaja del control de acceso para el Dr. Idrissi?",
+      "media": [],
+      "options": [
+        "No hay ventaja, ambos sistemas son equivalentes",
+        "Permiten limitar el acceso a los datos solo a las personas autorizadas y rastrear las consultas",
+        "Dificultan el acceso a los documentos",
+        "Son más caros pero menos eficaces"
+      ],
+      "correct": 1,
+      "explanation": "El control de acceso por roles y permisos permite limitar el acceso a los datos solo a las personas autorizadas y rastrear las consultas de acuerdo con los requisitos de la ley 09-08.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Fadili guarda las facturas de los clientes en papel. El Dr. Idrissi las guarda en formato electrónico. ¿Cuál es la duración legal de conservación para ambos?",
+      "media": [],
+      "options": [
+        "5 años para el papel, 10 años para los electrónicos",
+        "10 años para ambos, independientemente del soporte",
+        "3 años para el papel, 10 años para los electrónicos",
+        "6 años para ambos"
+      ],
+      "correct": 1,
+      "explanation": "La duración legal de conservación de las facturas de clientes es de 10 años, independientemente del soporte (papel o electrónico), según el artículo 211 del Código General de Impuestos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Idrissi ha sufrido una avería del servidor. Gracias a la copia de seguridad externa, recupera los datos. ¿Cuál es la principal protección que ofrece este sistema al Dr. Idrissi?",
+      "media": [],
+      "options": [
+        "La recuperación rápida de los datos en caso de catástrofe",
+        "La reducción de los costes de almacenamiento",
+        "La simplificación de las declaraciones fiscales",
+        "La exención de declaración ante la CNDP"
+      ],
+      "correct": 0,
+      "explanation": "La copia de seguridad externa permite una recuperación rápida de los datos en caso de catástrofe (avería, incendio, inundación), garantizando así la continuidad de la actividad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

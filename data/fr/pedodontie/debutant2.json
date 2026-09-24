@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "pedodontie_debutant2_001",
+    "title": "Pedodontie - Débutant 2",
+    "specialty": "PEDO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PEDO_D2_Q01",
+      "type": "single-choice",
+      "question": "📞 Sami appelle Mina en urgence : 'J'ai un enfant de 8 ans avec une dent permanente fracturée ! Que faire ?' Mina répond calmement : 'D'abord, évalue le stade de développement radiculaire.' Pourquoi est-ce crucial ?",
+      "media": [],
+      "options": [
+        "Le stade de développement détermine le pronostic et la technique de traitement",
+        "Ça n'a pas d'importance",
+        "Toutes les dents permanentes sont identiques",
+        "Seul l'âge de l'enfant compte"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Une dent avec une racine immature (apex ouvert) a un potentiel de revascularisation bien meilleur qu'une dent mature.' 🦅 Sami : 'Je ne le savais pas, merci Mina !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q02",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un enfant de 10 ans avec une dent de lait qui ne tombe pas. Sami dit : 'C'est une dent de lait persistante, on extrait !' Mina répond : 'Et la dent permanente ?' Que faut-il vérifier ?",
+      "media": [],
+      "options": [
+        "La présence de la dent permanente sur une radiographie",
+        "La couleur de la dent",
+        "La taille de la dent",
+        "L'âge de l'enfant"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Il faut d'abord vérifier si la dent permanente existe et si elle est en bonne position.' 🐆 Mina : 'Sami, tu es devenu prudent !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q03",
+      "type": "single-choice",
+      "question": "🗣️ Sami, lors d'une consultation, dit au parent : 'Votre enfant a une carie, il faut un détartrage.' Mina intervient : 'Un détartrage chez un enfant de 5 ans ?' Quel est le traitement approprié ?",
+      "media": [],
+      "options": [
+        "Une restauration de la carie avec un matériau adapté à l'âge",
+        "Un détartrage complet",
+        "Une extraction",
+        "Rien, ça passera"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement d'une carie chez l'enfant est une restauration, pas un détartrage.' 🦅 Sami : 'Bon, je vais faire une restauration... mais vite !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q04",
+      "type": "single-choice",
+      "question": "🎯 Sami, en examinant un enfant de 6 ans, dit : 'Il a une béance, c'est génétique.' Mina répond : 'Pas si sûr, regarde sa succion du pouce !' Quel est le lien entre succion et béance ?",
+      "media": [],
+      "options": [
+        "La succion prolongée peut créer une béance antérieure",
+        "La succion n'a aucun effet",
+        "La succion corrige les béances",
+        "La succion n'affecte que les dents de lait"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La succion du pouce exerce une pression sur les incisives, créant une béance.' 🐆 Mina : 'Sami, tu as raison !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q05",
+      "type": "single-choice",
+      "question": "📝 Mina lit un dossier et dit : 'L'enfant a une amélogenèse imparfaite.' Sami demande : 'Comment on traite ça ?' Quelles sont les options thérapeutiques ?",
+      "media": [],
+      "options": [
+        "Couronnes pédiatriques, restauration esthétique, protection des dents",
+        "Extractions de toutes les dents",
+        "Un simple détartrage",
+        "Des implants immédiats"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement vise à protéger les dents fragiles et à restaurer l'esthétique.' 🦅 Sami : 'Je vais lui poser des couronnes alors !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q06",
+      "type": "single-choice",
+      "question": "🤝 Sami et Mina reçoivent un enfant de 9 ans avec une dent incluse. Sami dit : 'Opérons tout de suite !' Mina répond : 'Et l'orthodontie ?' Quelle est la séquence recommandée ?",
+      "media": [],
+      "options": [
+        "Création d'espace orthodontique d'abord, puis traction de la dent",
+        "Chirurgie immédiate",
+        "Extraction de la dent",
+        "Rien, elle sortira toute seule"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'orthodontie crée l'espace nécessaire avant la traction chirurgicale.' 🦅 Sami : 'Bon, on va faire de l'orthodontie d'abord...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q07",
+      "type": "single-choice",
+      "question": "📞 Mina appelle Sami : 'J'ai un enfant de 7 ans avec une dent de lait qui saigne après une chute !' Sami répond : 'Extrayons-la !' Mina dit : 'Pas si vite !' Que faut-il évaluer ?",
+      "media": [],
+      "options": [
+        "L'état de la dent permanente sous-jacente",
+        "La couleur de la dent",
+        "La taille de la dent",
+        "L'âge de l'enfant"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Il faut évaluer si la dent permanente est touchée ou si la dent de lait peut être conservée.' 🦅 Sami : 'Je vais faire une radio d'abord.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q08",
+      "type": "single-choice",
+      "question": "🏥 Sami, en urgence, voit un enfant avec une dent de lait luxée. Il dit : 'On la replace !' Mina répond : 'Non, on l'extrait !' Que dit la littérature ?",
+      "media": [],
+      "options": [
+        "Les dents de lait luxées sont généralement extraites pour éviter les complications",
+        "On replace toujours les dents de lait",
+        "Les deux approches sont valables",
+        "On attend que ça passe"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les dents de lait luxées ont un mauvais pronostic et risquent d'ankyloser.' 🐆 Mina : 'Sami, tu as raison cette fois !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q09",
+      "type": "single-choice",
+      "question": "🗣️ Sami, discutant avec un parent, dit : 'Votre enfant de 4 ans a besoin d'un traitement orthodontique.' Mina intervient : 'Pas si tôt !' Quelle est l'âge recommandé pour une première consultation orthodontique ?",
+      "media": [],
+      "options": [
+        "Vers 7 ans pour une évaluation précoce",
+        "Dès la naissance",
+        "À 4 ans comme le dit Sami",
+        "Seulement à l'adolescence"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'âge de 7 ans est recommandé pour une première évaluation orthodontique.' 🦅 Sami : 'Bon, on va attendre 7 ans...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q10",
+      "type": "single-choice",
+      "question": "📝 Mina, analysant une radio, dit : 'Il y a une dent surnuméraire.' Sami répond : 'On la garde, elle ne gêne pas !' Que risque-t-on avec une dent surnuméraire ?",
+      "media": [],
+      "options": [
+        "Elle peut bloquer l'éruption des dents permanentes",
+        "Elle ne pose aucun problème",
+        "Elle disparaît toute seule",
+        "Elle améliore l'occlusion"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les dents surnuméraires peuvent causer des retards d'éruption et des encombrements.' 🦅 Sami : 'Bon, on va l'extraire alors...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q11",
+      "type": "single-choice",
+      "question": "🎯 Sami, examinant un enfant de 8 ans, dit : 'Il a une carie interproximale.' Mina demande : 'Comment tu le sais ?' Sami répond : 'Je le vois !' Que manque-t-il à son diagnostic ?",
+      "media": [],
+      "options": [
+        "Une radiographie pour confirmer",
+        "Un examen visuel plus poussé",
+        "Une percussion",
+        "Une palpation"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les caries interproximales sont souvent invisibles cliniquement, une radio est indispensable.' 🐆 Mina : 'Sami, tu progresses !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q12",
+      "type": "single-choice",
+      "question": "📞 Mina appelle Sami : 'J'ai un enfant de 6 ans avec une dent de lait qui a une carie profonde !' Sami répond : 'Pulpotomie !' Mina dit : 'Et si la carie est trop profonde ?' Qu'est-ce qu'une pulpectomie ?",
+      "media": [],
+      "options": [
+        "L'ablation complète de la pulpe pour traiter une infection profonde",
+        "L'ablation partielle de la pulpe",
+        "Une simple restauration",
+        "Une extraction"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La pulpectomie est indiquée quand la pulpotomie n'est plus suffisante.' 🦅 Sami : 'Je retiens la différence !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q13",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un enfant de 10 ans avec une dent permanente fracturée. Sami dit : 'On extrait !' Mina répond : 'On peut la restaurer !' Que dit la littérature ?",
+      "media": [],
+      "options": [
+        "Les fractures coronaires peuvent souvent être restaurées",
+        "Toutes les fractures nécessitent une extraction",
+        "Seules les fractures profondes sont traitables",
+        "Il faut toujours extraire"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les fractures coronaires non compliquées peuvent être restaurées avec des matériaux adhésifs.' 🐆 Mina : 'Sami, tu es vraiment à jour !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q14",
+      "type": "single-choice",
+      "question": "🗣️ Sami, parlant à un parent, dit : 'Votre enfant de 3 ans a une carie, c'est votre faute !' Mina intervient : 'Ce n'est pas constructif !' Quelle est la bonne approche ?",
+      "media": [],
+      "options": [
+        "Expliquer les causes et les solutions sans culpabiliser",
+        "Blâmer les parents",
+        "Ignorer le problème",
+        "Prescrire des antibiotiques"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Il faut éduquer et accompagner les parents, pas les juger.' 🦅 Sami : 'Tu as raison, je vais changer mon approche.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q15",
+      "type": "single-choice",
+      "question": "📝 Mina, analysant un cas, dit : 'L'enfant a une hypoplasie de l'émail.' Sami demande : 'Qu'est-ce que c'est ?' Qu'est-ce qu'une hypoplasie de l'émail ?",
+      "media": [],
+      "options": [
+        "Un défaut quantitatif de l'émail, souvent dû à un trouble du développement",
+        "Une carie sévère",
+        "Une dent trop grande",
+        "Une infection bactérienne"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'hypoplasie est un défaut de formation de l'émail, souvent lié à une carence ou une infection.' 🦅 Sami : 'Je ne connaissais pas !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q16",
+      "type": "single-choice",
+      "question": "🎯 Sami, examinant un enfant de 5 ans, dit : 'Il a une malocclusion de Classe III.' Mina répond : 'Attention, la croissance peut encore changer les choses !' Qu'est-ce que la croissance modifie ?",
+      "media": [],
+      "options": [
+        "La croissance mandibulaire peut aggraver ou corriger une Classe III",
+        "La croissance ne change rien",
+        "La croissance n'affecte que les dents",
+        "La croissance est terminée à 5 ans"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La croissance mandibulaire est importante dans l'évolution des Classe III.' 🐆 Mina : 'Sami, tu as tout compris !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q17",
+      "type": "single-choice",
+      "question": "📞 Mina appelle Sami : 'J'ai un enfant de 8 ans avec une dent de lait persistante et la dent permanente est absente !' Sami répond : 'On garde la dent de lait !' Quelle est la stratégie ?",
+      "media": [],
+      "options": [
+        "Conserver la dent de lait comme espaceur naturel",
+        "Extraire la dent de lait",
+        "Mettre un implant",
+        "Faire une prothèse"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La dent de lait peut servir de mainteneur d'espace naturel si la dent permanente est absente.' 🦅 Sami : 'Je ne pensais pas à ça, merci Mina !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q18",
+      "type": "single-choice",
+      "question": "🏥 Sami, en urgence, voit un enfant de 9 ans avec une dent permanente expulsée. Il dit : 'On la réimplante !' Mina demande : 'Dans quel milieu ?' Quel est le milieu de conservation idéal ?",
+      "media": [],
+      "options": [
+        "Lait froid, sérum physiologique ou salive",
+        "Eau du robinet",
+        "Dans un mouchoir sec",
+        "Dans l'alcool"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le lait froid est idéal pour préserver les cellules du ligament parodontal.' 🐆 Mina : 'Sami, tu sauves des dents !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q19",
+      "type": "single-choice",
+      "question": "🗣️ Sami, discutant avec un parent, dit : 'Votre enfant doit éviter tous les sucres.' Mina intervient : 'Il faut plutôt gérer la fréquence.' Quelle est la recommandation ?",
+      "media": [],
+      "options": [
+        "Limiter la fréquence des prises sucrées (max 4-5 par jour)",
+        "Éliminer tous les sucres",
+        "Autoriser les sucres uniquement le soir",
+        "Les sucres n'ont pas d'importance"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La fréquence des prises sucrées est plus importante que la quantité pour le risque carieux.' 🦅 Sami : 'Je vais adapter mes conseils.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q20",
+      "type": "single-choice",
+      "question": "📝 Mina, analysant un cas, dit : 'L'enfant a une anodontie partielle.' Sami demande : 'C'est quoi ?' Qu'est-ce que l'anodontie ?",
+      "media": [],
+      "options": [
+        "L'absence congénitale d'une ou plusieurs dents",
+        "Une dent en trop",
+        "Une dent de lait",
+        "Une infection"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'anodontie est une agénésie dentaire, souvent d'origine génétique.' 🦅 Sami : 'Je ne connaissais pas ce terme !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q21",
+      "type": "single-choice",
+      "question": "🎯 Sami, examinant un enfant de 7 ans, dit : 'Il a besoin de fluor.' Mina demande : 'Sous quelle forme ?' Quelles sont les formes de fluor recommandées ?",
+      "media": [],
+      "options": [
+        "Dentifrice fluoré, fluor topique, compléments si carence",
+        "Uniquement en comprimés",
+        "Uniquement en bain de bouche",
+        "Uniquement en gel"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les formes varient selon l'âge et le risque carieux.' 🐆 Mina : 'Sami, tu es vraiment complet !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q22",
+      "type": "single-choice",
+      "question": "📞 Mina appelle Sami : 'J'ai un enfant de 4 ans avec une carie de la petite enfance sévère !' Sami répond : 'On extrait toutes les dents de lait !' Mina dit : 'Et la fonction masticatoire ?' Que propose-t-on ?",
+      "media": [],
+      "options": [
+        "Des couronnes pédiatriques pour préserver la fonction",
+        "Des extractions totales",
+        "Rien, il mangera mou",
+        "Des prothèses amovibles"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les couronnes pédiatriques préservent la fonction et l'esthétique.' 🦅 Sami : 'Je vais lui poser des couronnes alors.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q23",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un enfant de 8 ans avec une dent de lait qui ne veut pas tomber. Sami dit : 'C'est une dent de lait persistante !' Mina répond : 'Et si c'est une ankylose ?' Qu'est-ce qu'une ankylose ?",
+      "media": [],
+      "options": [
+        "Une fusion de la dent à l'os alvéolaire",
+        "Une dent qui bouge trop",
+        "Une dent cariée",
+        "Une dent absente"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'ankylose est une fusion dent-os qui bloque l'éruption.' 🐆 Mina : 'Sami, tu connais bien les pathologies !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q24",
+      "type": "single-choice",
+      "question": "🗣️ Sami, parlant à un parent, dit : 'Votre enfant doit arrêter la tétine.' Mina intervient : 'Il faut le faire progressivement.' Quelle est la recommandation ?",
+      "media": [],
+      "options": [
+        "Arrêt progressif avant 3-4 ans",
+        "Arrêt brutal à 2 ans",
+        "Conserver la tétine jusqu'à 6 ans",
+        "La tétine n'a pas d'impact"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Un arrêt progressif est plus efficace et moins traumatisant.' 🦅 Sami : 'Je vais proposer un plan d'arrêt progressif.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q25",
+      "type": "single-choice",
+      "question": "📝 Mina, analysant un cas complexe, dit : 'L'enfant a une dent de lait avec une résorption interne.' Sami demande : 'Qu'est-ce que c'est ?' Qu'est-ce qu'une résorption interne ?",
+      "media": [],
+      "options": [
+        "Une destruction de la dent de l'intérieur vers l'extérieur",
+        "Une carie externe",
+        "Une fracture",
+        "Une infection bactérienne"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La résorption interne est une pathologie rare de la pulpe.' 🦅 Sami : 'Je vais me documenter sur ce sujet.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PEDO_D2_Q26",
+      "type": "single-choice",
+      "question": "🤝 Sami et Mina discutent de l'avenir de la pédodontie. Sami dit : 'Les parents vont tout gérer via des applis !' Mina répond : 'Le lien humain reste essentiel.' Quel est l'avenir des soins pédodontiques ?",
+      "media": [],
+      "options": [
+        "La technologie aide mais ne remplace pas la relation médecin-enfant-parent",
+        "Les applis remplaceront tout",
+        "Les parents n'ont plus besoin de dentiste",
+        "La téléconsultation est la seule solution"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La technologie est un outil, mais le contact humain est irremplaçable en pédodontie.' 🦅 Sami : 'Je suis d'accord, on garde nos emplois !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

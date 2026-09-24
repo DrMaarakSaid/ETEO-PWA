@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "endo_intermediaire1_001",
+    "title": "Endo - Intermédiaire 1",
+    "specialty": "ENDO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ENDO_I1_Q01",
+      "type": "single-choice",
+      "question": "Sami demande à Mina : 'Quelle est la clé d'un traitement canalaire réussi ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La rapidité d'exécution",
+        "La désinfection rigoureuse et l'obturation étanche",
+        "Uniquement l'instrumentation",
+        "Uniquement l'obturation"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La désinfection et l'étanchéité sont les clés du succès.' 🦅 Sami : 'Je vais soigner ces deux aspects.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q02",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Pourquoi la digue est-elle obligatoire en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Pour protéger la langue",
+        "Pour isoler la dent et éviter la contamination salivaire",
+        "Pour faire plus de temps",
+        "Pour impressionner le patient"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La digue isole la dent, empêche la contamination et protège les voies aériennes.' 🦅 Sami : 'Je vais toujours utiliser la digue.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q03",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la longueur de travail ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La distance de la couronne à l'apex",
+        "La distance entre le point de référence et le foramen apical",
+        "La longueur totale de la racine",
+        "La profondeur du canal"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La longueur de travail est la distance du repère coronaire au foramen apical.' 🦅 Sami : 'Je vais toujours mesurer avec le localisateur.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q04",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment déterminer la longueur de travail avec précision ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Avec un localisateur d'apex seul",
+        "Avec une radiographie seule",
+        "Avec un localisateur d'apex confirmé par radiographie",
+        "À l'œil nu"
+      ],
+      "correct": 2,
+      "explanation": "🐆 Mina explique : 'La combinaison localisateur + radiographie est la plus fiable.' 🦅 Sami : 'Je vais toujours utiliser les deux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q05",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que le crown-down en instrumentation ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une technique d'instrumentation de l'apex vers la couronne",
+        "Une technique d'instrumentation de la couronne vers l'apex",
+        "Une technique d'obturation",
+        "Une technique d'irrigation"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La technique crown-down permet un débridement progressif et réduit les risques de fausses routes.' 🦅 Sami : 'Je vais utiliser cette technique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q06",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quelle est la solution d'irrigation la plus utilisée en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "L'eau distillée",
+        "L'hypochlorite de sodium",
+        "Le sérum physiologique",
+        "L'alcool à 70°"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'L'hypochlorite de sodium est la solution de référence pour la désinfection.' 🦅 Sami : 'Je vais l'utiliser avec précaution.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q07",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quelle concentration d'hypochlorite est recommandée ?' Mina répond :",
+      "media": [],
+      "options": [
+        "0,5 à 1 %",
+        "2,5 à 5,25 %",
+        "10 %",
+        "20 %"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les concentrations de 2,5 à 5,25 % sont efficaces pour la désinfection.' 🦅 Sami : 'Je vais utiliser une concentration de 2,5 %.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q08",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les risques de l'extrusion d'hypochlorite ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Douleur intense, œdème, nécrose tissulaire",
+        "Aucun risque",
+        "Uniquement une douleur légère",
+        "Uniquement un gonflement"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'extrusion d'hypochlorite peut provoquer des réactions inflammatoires sévères.' 🦅 Sami : 'Je vais faire attention à la pression.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q09",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la gutta-percha ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un matériau d'obturation canalaire en caoutchouc naturel",
+        "Un ciment scellant",
+        "Une lime endodontique",
+        "Une solution d'irrigation"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La gutta-percha est le matériau standard pour l'obturation des canaux.' 🦅 Sami : 'Je vais utiliser de la gutta-percha.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q10",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quel est le rôle du ciment scellant en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Remplir les espaces entre la gutta-percha et la dentine",
+        "Fixer la couronne",
+        "Désinfecter le canal",
+        "Blanchir la dent"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le ciment scellant assure l'étanchéité de l'obturation.' 🦅 Sami : 'Je vais toujours utiliser du ciment scellant.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q11",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la condensation latérale en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une technique d'obturation avec compression de la gutta-percha",
+        "Une technique d'instrumentation",
+        "Une technique d'irrigation",
+        "Une technique d'anesthésie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La condensation latérale est une technique d'obturation classique.' 🦅 Sami : 'Je vais utiliser cette technique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q12",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les avantages de la gutta-percha thermoplastifiée ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Meilleure adaptation aux irrégularités canalaires",
+        "Moins chère",
+        "Plus rapide à utiliser",
+        "Plus résistante"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La gutta-percha thermoplastifiée épouse mieux la morphologie canalaire.' 🦅 Sami : 'Je vais utiliser la thermoplastifiée.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q13",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer un canal calcifié ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Avec des limes à extrémité active et de la patience",
+        "Avec des fraises en acier",
+        "En abandonnant le canal",
+        "Avec des ultrasons seuls"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les canaux calcifiés nécessitent des limes spéciales et de la patience.' 🦅 Sami : 'Je vais prendre mon temps.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q14",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment identifier les canaux supplémentaires ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Par une exploration minutieuse et des radiographies",
+        "Par hasard",
+        "Par la couleur de la dent",
+        "Par la taille de la couronne"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'exploration minutieuse est la clé pour trouver tous les canaux.' 🦅 Sami : 'Je vais toujours chercher les canaux supplémentaires.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q15",
+      "type": "single-choice",
+      "question": "Sami demande : 'Combien de canaux a une molaire maxillaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "3 canaux",
+        "3 à 4 canaux (souvent 4)",
+        "2 canaux",
+        "5 canaux"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les molaires maxillaires ont souvent 4 canaux, dont un mésio-lingual fréquemment négligé.' 🦅 Sami : 'Je vais toujours chercher le 4ème canal.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q16",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce que la patency apicale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Le maintien du foramen apical ouvert après instrumentation",
+        "L'obturation du foramen apical",
+        "La fermeture de l'apex",
+        "L'élargissement du foramen"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La patency apicale permet de s'assurer de la perméabilité du foramen.' 🦅 Sami : 'Je vais maintenir la patency.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q17",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les avantages des limes en Nickel-Titane ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Flexibilité et mémoire de forme",
+        "Moins chères",
+        "Plus rigides",
+        "Plus rapides"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les limes NiTi sont plus flexibles et suivent mieux les courbures.' 🦅 Sami : 'Je vais utiliser des limes NiTi.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q18",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment éviter la fracture des limes ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Utiliser des limes adaptées et ne pas forcer",
+        "Utiliser des limes neuves",
+        "Tourner plus vite",
+        "Utiliser des limes plus épaisses"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Il ne faut jamais forcer une lime et les utiliser avec précaution.' 🦅 Sami : 'Je vais être prudent.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q19",
+      "type": "single-choice",
+      "question": "Sami demande : 'Que faire en cas de fracture de lime dans le canal ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Tenter de la retirer avec des instruments spéciaux",
+        "Abandonner le traitement",
+        "Ignorer la lime",
+        "Extraire la dent"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Des instruments spéciaux et des ultrasons peuvent souvent retirer la lime fracturée.' 🦅 Sami : 'Je vais essayer de la retirer.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q20",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quand peut-on laisser une lime fracturée dans le canal ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Si elle est confinée dans le canal et ne dépasse pas l'apex",
+        "Toujours",
+        "Jamais",
+        "Si le patient est âgé"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Si la lime est dans le canal et ne dépasse pas l'apex, elle peut être incluse dans l'obturation.' 🦅 Sami : 'Je vais évaluer la situation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q21",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce qu'une fausse route (ledge) en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une déviation du canal créée par une instrumentation incorrecte",
+        "Une fracture de la racine",
+        "Une perforation canalaire",
+        "Un canal accessoire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La fausse route est une déviation dans la paroi canalaire.' 🦅 Sami : 'Je vais éviter les fausses routes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q22",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment corriger une fausse route ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Avec des limes pré-courbées et une technique de pre-flaring",
+        "En forçant avec une lime droite",
+        "En utilisant une fraise",
+        "En abandonnant le canal"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les limes pré-courbées permettent de retrouver le canal d'origine.' 🦅 Sami : 'Je vais utiliser des limes pré-courbées.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q23",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce qu'une perforation canalaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une communication artificielle entre le canal et les tissus péri-radiculaires",
+        "Une fracture de la couronne",
+        "Une carie profonde",
+        "Un abcès péri-apical"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La perforation est une ouverture accidentelle dans la paroi du canal.' 🦅 Sami : 'Je vais faire attention à ne pas perforer.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q24",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment traiter une perforation canalaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Réparation avec du MTA ou un matériau biocéramique",
+        "Extraction de la dent",
+        "Antibiotiques uniquement",
+        "Surveillance"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les matériaux biocéramiques permettent de réparer les perforations.' 🦅 Sami : 'Je vais me former à la réparation des perforations.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I1_Q25",
+      "type": "single-choice",
+      "question": "Sami, après avoir maîtrisé le traitement canalaire avec Mina, dit : 'Je suis prêt à relever tous les défis !' Mina conclut : 'La maîtrise du traitement canalaire est...'",
+      "media": [],
+      "options": [
+        "Une option",
+        "La base de l'endodontie",
+        "Une perte de temps",
+        "Secondaire"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La maîtrise du traitement canalaire est la base de l'endodontie.' 🦅 Sami : 'Je vais continuer à me perfectionner.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

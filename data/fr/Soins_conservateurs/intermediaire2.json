@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "Soins_conservateurs_intermediaire2_001",
+    "title": "Soins_conservateurs - Intermédiaire 2",
+    "specialty": "SOIN",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "SOIN_I2_Q01",
+      "type": "single-choice",
+      "question": "Sami appelle Mina : 'J'ai une fracture de cuspide sur une molaire ! Que faire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une couronne immédiatement",
+        "Évaluer la fracture et proposer un onlay si possible",
+        "Extraire la dent",
+        "Mettre un composite"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Si la fracture est cuspidienne sans atteinte pulpaire, un onlay est une solution conservatrice.' 🦅 Sami : 'Je vais faire un onlay.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q02",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer une carie sous un inlay ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Refaire l'inlay systématiquement",
+        "Évaluer l'accessibilité et la taille de la carie",
+        "Ignorer la carie",
+        "Changer l'inlay"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Si la carie est périphérique et accessible, une réparation est possible.' 🦅 Sami : 'Je vais évaluer avant de décider.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q03",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quand utiliser un composite fluide ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Pour les inlays",
+        "Pour les petites cavités ou comme couche de base",
+        "Pour les couronnes",
+        "Pour les facettes"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les composites fluides sont indiqués pour les petites cavités ou comme couche de base.' 🦅 Sami : 'Je vais utiliser du fluide pour les petites caries.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q04",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent des échecs de restauration. Mina dit : 'La cause la plus fréquente est...'",
+      "media": [],
+      "options": [
+        "Un mauvais choix de matériau",
+        "Un défaut d'adhésion ou d'étanchéité",
+        "La faute du patient",
+        "Un défaut de polymérisation"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les échecs sont le plus souvent liés à des défauts d'adhésion ou d'étanchéité.' 🦅 Sami : 'Je vais contrôler mon adhésion.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q05",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une carie récurrente sous une facette ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Refaire la facette",
+        "Réparer si la carie est petite et accessible",
+        "Ignorer la carie",
+        "Extraire la dent"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les petites caries sous facette peuvent être réparées sans refaire la facette.' 🦅 Sami : 'Je vais réparer cette facette.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q06",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce qu'une dent dévitalisée ? Comment la restaurer ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Avec un simple composite",
+        "Avec un inlay-core si la structure est suffisante",
+        "Avec une extraction",
+        "Avec un implant"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'L'inlay-core renforce la dent dévitalisée avant la couronne.' 🦅 Sami : 'Je vais faire un inlay-core.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q07",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une carie radiculaire profonde ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Un verre ionomère ou un composite avec adhésion",
+        "Un amalgame",
+        "Une extraction",
+        "Un inlay"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le verre ionomère est idéal pour les caries radiculaires.' 🦅 Sami : 'Je vais utiliser du verre ionomère.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q08",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent des onlays. Mina dit : 'L'onlay renforce la dent.' Sami demande : 'Quand est-il indiqué ?'",
+      "media": [],
+      "options": [
+        "Pour les fractures de cuspides sans atteinte pulpaire",
+        "Pour les caries profondes",
+        "Pour les dents de lait",
+        "Pour les dents antérieures"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'onlay est indiqué pour les fractures cuspidiennes conservables.' 🦅 Sami : 'Je vais proposer un onlay.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q09",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une dent fracturée verticalement ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Toujours la restaurer",
+        "Évaluer le pronostic, souvent extraction si fracture profonde",
+        "Toujours l'extraire",
+        "Mettre une couronne"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les fractures verticales profondes ont un mauvais pronostic.' 🦅 Sami : 'Je vais évaluer la profondeur de la fracture.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q10",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment améliorer l'esthétique d'un composite antérieur ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Utiliser une seule teinte",
+        "Utiliser la stratification avec plusieurs teintes",
+        "Mettre une facette",
+        "Changer de matériau"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La stratification permet un rendu esthétique naturel.' 🦅 Sami : 'Je vais apprendre la stratification.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q11",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce qu'un core composite ?' Mina lui explique :",
+      "media": [],
+      "options": [
+        "Un noyau de reconstruction coronaire en composite",
+        "Un composite pour les inlays",
+        "Un composite pour les facettes",
+        "Un composite pour les dents de lait"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le core composite reconstruit le noyau de la dent avant la couronne.' 🦅 Sami : 'Je vais faire un core composite.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q12",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent des bridges collés. Mina dit : 'On peut réparer sous un bridge.' Sami demande : 'Quand ?'",
+      "media": [],
+      "options": [
+        "Toujours",
+        "Jamais",
+        "Si la carie est accessible sans déposer le bridge",
+        "Uniquement si le bridge est en céramique"
+      ],
+      "correct": 2,
+      "explanation": "🐆 Mina explique : 'Les caries accessibles sous bridge peuvent être réparées.' 🦅 Sami : 'Je vais évaluer l'accessibilité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q13",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une carie sous une couronne provisoire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Refaire la couronne",
+        "Traiter la carie et refaire la couronne provisoire",
+        "Ignorer la carie",
+        "Extraire la dent"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La carie sous couronne provisoire doit être traitée avant la pose de la couronne définitive.' 🦅 Sami : 'Je vais traiter la carie.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q14",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment choisir entre un composite et une céramique ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Le composite est toujours meilleur",
+        "La céramique est toujours meilleure",
+        "Le choix dépend de la situation clinique",
+        "Les deux sont équivalents"
+      ],
+      "correct": 2,
+      "explanation": "🐆 Mina explique : 'Le choix dépend de l'étendue, de la localisation et des contraintes occlusales.' 🦅 Sami : 'Je vais peser le pour et le contre.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q15",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une sensibilité après un composite ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Donner des antidouleurs",
+        "Vérifier l'adhésion et les fuites",
+        "Refaire la restauration",
+        "Ignorer la sensibilité"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La sensibilité est souvent liée à un défaut d'adhésion.' 🦅 Sami : 'Je vais vérifier l'étanchéité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q16",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent des matériaux. Mina dit : 'Le verre ionomère libère du fluor.' Sami demande : 'Pourquoi est-ce important ?'",
+      "media": [],
+      "options": [
+        "Pour blanchir les dents",
+        "Pour prévenir les caries récurrentes",
+        "Pour renforcer le composite",
+        "Pour améliorer l'esthétique"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La libération de fluor prévient les caries récurrentes.' 🦅 Sami : 'Je vais utiliser plus de verre ionomère.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q17",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une dent avec une fissure symptomatique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Surveiller simplement",
+        "Restaurer si la fissure est douloureuse",
+        "Extraire immédiatement",
+        "Mettre une couronne"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les fissures symptomatiques nécessitent une restauration.' 🦅 Sami : 'Je vais restaurer cette fissure.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q18",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quand utiliser un inlay en céramique plutôt qu'en composite ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Pour les dents antérieures",
+        "Pour les cavités étendues avec occlusion sévère",
+        "Pour les dents de lait",
+        "Pour les dents dévitalisées"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La céramique est plus résistante pour les cavités étendues.' 🦅 Sami : 'Je vais utiliser de la céramique pour ce patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q19",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une carie sous une prothèse amovible ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Refaire la prothèse",
+        "Traiter la carie si accessible",
+        "Ignorer la carie",
+        "Extraire la dent"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Si la carie est accessible, elle peut être traitée sans refaire la prothèse.' 🦅 Sami : 'Je vais traiter cette carie.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q20",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent des composites. Mina dit : 'Les composites bulk-fill simplifient la vie.' Sami demande : 'Quel est le risque des bulk-fill ?'",
+      "media": [],
+      "options": [
+        "Moins esthétiques",
+        "Contraction de polymérisation plus élevée",
+        "Plus chers",
+        "Plus fragiles"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les bulk-fill peuvent avoir une contraction plus élevée.' 🦅 Sami : 'Je vais les utiliser avec précaution.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q21",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une carie récurrente sur une dent dévitalisée ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Extraire la dent",
+        "Traiter la carie et évaluer la nécessité d'une couronne",
+        "Ignorer la carie",
+        "Mettre un composite"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La carie doit être traitée, et une couronne est souvent indiquée.' 🦅 Sami : 'Je vais traiter et proposer une couronne.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q22",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment améliorer la rétention d'un composite ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Faire une cavité plus grande",
+        "Soigner la préparation et l'adhésion",
+        "Utiliser plus de composite",
+        "Polymériser plus longtemps"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La rétention dépend de la préparation et de l'adhésion.' 🦅 Sami : 'Je vais soigner ces deux aspects.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q23",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quand utiliser un composite microhybride ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Pour les dents antérieures",
+        "Pour les dents postérieures avec contraintes occlusales",
+        "Pour les facettes",
+        "Pour les dents de lait"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les microhybrides sont résistants pour les dents postérieures.' 🦅 Sami : 'Je vais utiliser un microhybride pour cette molaire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q24",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent de la CFAO. Mina dit : 'La CFAO permet des inlays en une séance.' Sami demande : 'Quel est l'inconvénient ?'",
+      "media": [],
+      "options": [
+        "Moins esthétiques",
+        "Coût élevé de l'équipement",
+        "Moins résistants",
+        "Plus longs à réaliser"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La CFAO a un coût d'investissement élevé.' 🦅 Sami : 'Je vais évaluer la rentabilité de la CFAO.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q25",
+      "type": "single-choice",
+      "question": "Sami, après avoir affronté des cas complexes avec Mina, dit : 'Je suis fier de nos réussites !' Mina conclut : 'Les techniques avancées sont...'",
+      "media": [],
+      "options": [
+        "Une option pour les experts",
+        "La clé pour sauver des dents",
+        "Une perte de temps",
+        "Secondaire"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les techniques avancées sont la clé pour sauver des dents.' 🦅 Sami : 'Je vais continuer à me perfectionner.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

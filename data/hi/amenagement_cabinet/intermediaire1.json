@@ -1,0 +1,541 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_intermediaire1_001",
+    "title": "Office Layout - Intermediate 1",
+    "specialty": "AMEN",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1750,
+    "chapter": "The Pitfalls of the Commercial Lease"
+  },
+  "questions": [
+    {
+      "id": "AMEN_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Ramdan discovers that his lease does not specify who should pay the condominium charges. According to Article 5 of Law 49-16, what should he do?",
+      "media": [],
+      "options": [
+        "Pay the charges because he is the tenant",
+        "Contest because unspecified charges are included in the rent",
+        "Share the charges 50/50 with the landlord",
+        "Request an immediate court-appointed expert appraisal"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, para. 2: in the absence of a stipulation as to which party bears the charges, they are considered to be included in the rent.",
+      "difficulty": "medium",
+      "category": "Rental Charges",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["charges", "condominium", "lease"],
+      "references": ["Law 49-16 Art.5"]
+    },
+    {
+      "id": "AMEN_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Kamali receives a rent revision proposal of 50% without valid justification. According to Article 5, which law governs this revision?",
+      "media": [],
+      "options": [
+        "Law No. 49-16 only",
+        "Law No. 07-03 relating to rent revision",
+        "Law No. 65-00 on health insurance",
+        "Law No. 15-95 of the commercial code"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, para. 3: the revision of the rent is subject to the provisions of Law No. 07-03.",
+      "difficulty": "medium",
+      "category": "Rent Revision",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["revision", "rent", "law"],
+      "references": ["Law 49-16 Art.5", "Law 07-03"]
+    },
+    {
+      "id": "AMEN_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord includes a clause stating: 'The tenant expressly waives the renewal of the lease'. According to Article 6, is this clause valid?",
+      "media": [],
+      "options": [
+        "Yes, if signed before a notary",
+        "No, because it is contrary to public policy",
+        "Yes, because the tenant is free to waive",
+        "No, but only during the first 3 years"
+      ],
+      "correct": 1,
+      "explanation": "Art. 6: leases governed by the law only terminate by application of Article 26. Any contrary stipulation is null.",
+      "difficulty": "medium",
+      "category": "Abusive Clauses",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["nullity", "clause", "renewal"],
+      "references": ["Law 49-16 Art.6"]
+    },
+    {
+      "id": "AMEN_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Kamali has installed expensive dental equipment in his practice. According to Article 7, how will this installation be valued in the event of eviction?",
+      "media": [],
+      "options": [
+        "It is not taken into account",
+        "It is included in the value of the business",
+        "It is compensated separately at the purchase price",
+        "It is only tax deductible"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, para. 3: the compensation includes the value of the business, estimated on the basis of the tax declarations of the last four financial years.",
+      "difficulty": "medium",
+      "category": "Eviction Compensation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["eviction", "compensation", "value"],
+      "references": ["Law 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Ramdan carried out compliance works without the landlord's authorization. According to Article 8, what risk does he face?",
+      "media": [],
+      "options": [
+        "No risk if the works are useful",
+        "Loss of his right to eviction compensation, unless regularized within 3 months",
+        "A simple reminder letter",
+        "A 20% rent increase"
+      ],
+      "correct": 1,
+      "explanation": "Art. 8, 2°: the landlord is exempt from compensation if the tenant transforms the premises, unless he restores the premises within a period not exceeding 3 months.",
+      "difficulty": "medium",
+      "category": "Works",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["works", "eviction", "deadline"],
+      "references": ["Law 49-16 Art.8"]
+    },
+    {
+      "id": "AMEN_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Kamali's landlord wishes to demolish and rebuild the building. According to Article 9, what prerequisite condition must he respect?",
+      "media": [],
+      "options": [
+        "Obtain the tenant's written consent",
+        "Prove ownership for 1 year from the date of the notice",
+        "Pay a deposit of 200,000 DH",
+        "Obtain a certificate of conformity"
+      ],
+      "correct": 1,
+      "explanation": "Art. 9, para. 1: the landlord must prove ownership for a period of at least one year from the date of the notice.",
+      "difficulty": "medium",
+      "category": "Demolition-Reconstruction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["demolition", "ownership", "deadline"],
+      "references": ["Law 49-16 Art.9"]
+    },
+    {
+      "id": "AMEN_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Ramdan estimates his eviction loss at 800,000 DH. According to Article 7, on what document does he base his justification?",
+      "media": [],
+      "options": [
+        "On equipment purchase invoices",
+        "On the tax declarations of the last four financial years",
+      "On a real estate agent's valuation",
+        "On the amount of rent paid"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, para. 3: the compensation is calculated on the basis of the tax declarations for the last four financial years.",
+      "difficulty": "medium",
+      "category": "Loss Calculation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["loss", "tax", "declaration"],
+      "references": ["Law 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Kamali has sublet part of his practice to a colleague. According to Article 24, if the sublease rent is higher than the main rent, what can the landlord do?",
+      "media": [],
+      "options": [
+        "Nothing, he has no rights",
+        "Request a revision of the main rent",
+        "Immediately terminate the lease",
+        "Evict the subtenant"
+      ],
+      "correct": 1,
+      "explanation": "Art. 24, last para.: when the value of the sublease exceeds that of the main lease, the lessor is entitled to a revision of the rent amicably or by judicial means.",
+      "difficulty": "medium",
+      "category": "Subletting",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["subletting", "revision", "rent"],
+      "references": ["Law 49-16 Art.24"]
+    },
+    {
+      "id": "AMEN_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Ramdan wishes to assign his lease to a young dentist. According to Article 25, what obligation must he respect?",
+      "media": [],
+      "options": [
+        "Obtain the landlord's consent before the assignment",
+        "Notify the assignment to the landlord for it to be enforceable",
+        "Pay an assignment fee of 10% of the rent",
+        "Wait for the end of the lease to assign"
+      ],
+      "correct": 1,
+      "explanation": "Art. 25, para. 3: the assignment is only enforceable against the lessor from the date of notification.",
+      "difficulty": "medium",
+      "category": "Lease Assignment",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["assignment", "notification", "enforceability"],
+      "references": ["Law 49-16 Art.25"]
+    },
+    {
+      "id": "AMEN_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Kamali's landlord evicts him for non-payment of rent. According to Article 26, what is the applicable eviction period?",
+      "media": [],
+      "options": [
+        "3 days",
+        "15 days",
+        "1 month",
+        "3 months"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26, para. 2: the period is set at 15 days when the request is based on non-payment of rent.",
+      "difficulty": "medium",
+      "category": "Eviction Deadlines",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["eviction", "deadline", "payment"],
+      "references": ["Law 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Ramdan is being sued for non-compliance with the clauses of his lease. According to Article 26, what deadline can the tenant benefit from?",
+      "media": [],
+      "options": [
+        "15 days",
+        "1 month",
+        "3 months",
+        "6 months"
+      ],
+      "correct": 2,
+      "explanation": "Art. 26, para. 2: the period is set at 3 months when the request is based on a serious reason relating to the tenant's non-compliance with the lease clauses.",
+      "difficulty": "medium",
+      "category": "Eviction Deadlines",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["clauses", "deadline", "eviction"],
+      "references": ["Law 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I1_Q12",
+      "type": "single-choice",
+      "question": "According to Article 26, does Dr Kamali's landlord have a deadline to request validation of the notice?",
+      "media": [],
+      "options": [
+        "Yes, he has 3 months",
+        "Yes, he has 6 months",
+        "Yes, he has 1 year",
+        "No, validation can be requested at any time"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26, para. 6: the lessor is forfeited from the right to request validation of the notice after six months from the expiry of the period granted to the tenant.",
+      "difficulty": "medium",
+      "category": "Notice Validation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["notice", "validation", "deadline"],
+      "references": ["Law 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Ramdan discovers that the landlord sold the building without notifying him. According to Article 26 bis, what right must the new owner respect?",
+      "media": [],
+      "options": [
+        "He may terminate the lease without notice",
+        "He must respect the existing lease",
+        "He may increase the rent by 30%",
+        "He may require a new security deposit"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26 bis: the new owner is required to respect existing leases regularly concluded.",
+      "difficulty": "medium",
+      "category": "Building Sale",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["sale", "new owner", "lease"],
+      "references": ["Law 49-16 Art.26 bis"]
+    },
+    {
+      "id": "AMEN_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Kamali has requested eviction compensation. According to Article 27, when can he request it?",
+      "media": [],
+      "options": [
+        "Only after effective eviction",
+        "During the action for validation of the notice",
+        "After the construction of the new building",
+        "Only on appeal"
+      ],
+      "correct": 1,
+      "explanation": "Art. 27, para. 2: the tenant may file a request for compensation during the action for validation of the notice.",
+      "difficulty": "medium",
+      "category": "Compensation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["compensation", "notice", "procedure"],
+      "references": ["Law 49-16 Art.27"]
+    },
+    {
+      "id": "AMEN_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord obtains an eviction judgment. According to Article 28, within what time limit must he deposit the compensation?",
+      "media": [],
+      "options": [
+        "1 month",
+        "2 months",
+        "3 months",
+        "6 months"
+      ],
+      "correct": 2,
+      "explanation": "Art. 28: the lessor is required to deposit the amount of compensation within a period of three months from the date on which the judgment becomes enforceable.",
+      "difficulty": "medium",
+      "category": "Eviction Compensation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["compensation", "deadline", "judgment"],
+      "references": ["Law 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Kamali wishes to know which premises are excluded from the benefit of Law 49-16. According to Article 1, which types of premises are not covered?",
+      "media": [],
+      "options": [
+        "Office premises",
+        "Premises of liberal professionals",
+        "Tourism premises",
+        "Premises of training establishments"
+      ],
+      "correct": 2,
+      "explanation": "Art. 1, II-6: tourism premises benefit from an express exclusion from the scope of the law.",
+      "difficulty": "medium",
+      "category": "Scope of Application",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["exclusion", "tourism", "scope"],
+      "references": ["Law 49-16 Art.1"]
+    },
+    {
+      "id": "AMEN_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Ramdan notices that his lease mentions a duration of 9 years. According to Law 49-16, is this duration compliant?",
+      "media": [],
+      "options": [
+        "Yes, the minimum duration is 9 years",
+        "No, the maximum duration is 9 years, not minimum",
+        "Yes, it is the recommended standard duration",
+        "No, the duration must be 3 years renewable"
+      ],
+      "correct": 1,
+      "explanation": "Law 49-16 sets a maximum duration of 9 years, not a minimum. The parties are free to agree on a shorter duration.",
+      "difficulty": "medium",
+      "category": "Lease Duration",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["duration", "lease", "compliance"],
+      "references": ["Law 49-16"]
+    },
+    {
+      "id": "AMEN_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Kamali wishes to renew his lease after 9 years. According to Article 4, what are his chances of renewal?",
+      "media": [],
+      "options": [
+        "None, the lease ends after 9 years",
+        "He benefits from the right to renewal",
+        "He must negotiate a new lease at the same value",
+        "He is only entitled to a 3-year extension"
+      ],
+      "correct": 1,
+      "explanation": "Art. 4: the tenant benefits from the renewal of the lease when he proves continuous enjoyment of the premises for at least two years.",
+      "difficulty": "medium",
+      "category": "Renewal",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["renewal", "right", "lease"],
+      "references": ["Law 49-16 Art.4"]
+    },
+    {
+      "id": "AMEN_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord imposes a mandatory arbitration clause. According to the general provisions of Law 49-16, is this clause valid?",
+      "media": [],
+      "options": [
+        "Yes, arbitration is recommended",
+        "No, because it is contrary to the right of access to justice",
+        "Yes, if accepted with full knowledge",
+        "No, unless both parties are merchants"
+      ],
+      "correct": 1,
+      "explanation": "Law 49-16 protects the rights of the parties. A mandatory arbitration clause would be contrary to the right of access to justice.",
+      "difficulty": "medium",
+      "category": "Abusive Clauses",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["arbitration", "access to justice", "nullity"],
+      "references": []
+    },
+    {
+      "id": "AMEN_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Kamali receives a court summons. According to Article 28, what must the landlord do after the judgment for the eviction to be effective?",
+      "media": [],
+      "options": [
+        "Deposit the amount of compensation within 3 months",
+        "Wait for the tenant's appeal",
+        "Proceed with immediate eviction",
+        "Wait for the tenant to find other premises"
+      ],
+      "correct": 0,
+      "explanation": "Art. 28: the lessor is required to deposit the amount of compensation within a period of three months from the date on which the judgment becomes enforceable.",
+      "difficulty": "medium",
+      "category": "Judgment Enforcement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["judgment", "enforcement", "compensation"],
+      "references": ["Law 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Ramdan signed a lease without an initial inventory. According to Article 3, how will he prove the initial condition of the premises?",
+      "media": [],
+      "options": [
+        "He cannot prove it, which is to his disadvantage",
+        "He can use photos and testimonies",
+        "He can request a judicial inventory",
+        "All of these solutions are possible"
+      ],
+      "correct": 3,
+      "explanation": "Art. 3: the inventory is mandatory. In its absence, the tenant may use other means of proof.",
+      "difficulty": "medium",
+      "category": "Inventory",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["inventory", "proof", "absence"],
+      "references": ["Law 49-16 Art.3"]
+    },
+    {
+      "id": "AMEN_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Kamali received a notice of eviction for demolition. According to Article 18, what document must the landlord produce?",
+      "media": [],
+      "options": [
+        "A building permit and an approved plan",
+        "A simple project declaration",
+        "An agreement from the co-owners",
+        "A certificate from the town hall"
+      ],
+      "correct": 0,
+      "explanation": "Art. 18: the landlord must produce a valid building permit and a plan approved by the competent authority.",
+      "difficulty": "medium",
+      "category": "Demolition",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["building permit", "demolition", "plan"],
+      "references": ["Law 49-16 Art.18"]
+    },
+    {
+      "id": "AMEN_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Ramdan has doubts about the legality of his lease. According to Article 3, what is the mandatory form requirement for a commercial lease?",
+      "media": [],
+      "options": [
+        "An oral contract is sufficient between professionals",
+        "A written deed with a fixed date is mandatory",
+        "A declaration to the town hall replaces the contract",
+        "A simple agreement in principle is sufficient"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3: commercial leases must be concluded by written deed with a fixed date.",
+      "difficulty": "medium",
+      "category": "Lease Form",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["written deed", "fixed date", "obligation"],
+      "references": ["Law 49-16 Art.3"]
+    },
+    {
+      "id": "AMEN_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Kamali wonders about the eviction compensation. According to Article 7, what is the nature of this compensation?",
+      "media": [],
+      "options": [
+        "A flat-rate compensation",
+        "A compensation for the loss suffered",
+        "A punitive compensation",
+        "A voluntary departure allowance"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7: the compensation corresponds to the loss suffered by the tenant as a result of the eviction.",
+      "difficulty": "medium",
+      "category": "Eviction Compensation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["compensation", "loss", "compensatory"],
+      "references": ["Law 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Ramdan obtained a favorable judgment. According to Article 28, what is the deadline for the landlord to execute the judgment?",
+      "media": [],
+      "options": [
+        "1 month",
+        "2 months",
+        "3 months",
+        "6 months"
+      ],
+      "correct": 2,
+      "explanation": "Art. 28: the lessor is required to execute the judgment within a period of three months from the date on which the judgment becomes enforceable.",
+      "difficulty": "medium",
+      "category": "Judgment Enforcement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["enforcement", "deadline", "judgment"],
+      "references": ["Law 49-16 Art.28"]
+    }
+  ]
+}

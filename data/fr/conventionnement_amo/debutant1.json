@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "conventionnement_amo_debutant1_001",
+    "title": "Conventionnement_amo - Débutant 1",
+    "specialty": "CONV",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CONV_D1_Q01",
+      "type": "single-choice",
+      "question": "Quelle est la nature juridique de l'ANAM selon la loi 65-00 ?",
+      "media": [],
+      "options": [
+        "Un établissement public doté de la personnalité morale",
+        "Une société anonyme sous tutelle privée intégrale",
+        "Un département rattaché au ministère des finances",
+        "Une association à but non lucratif de praticiens"
+      ],
+      "correct": 0,
+      "explanation": "L'ANAM est un établissement public, garantissant son indépendance administrative.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q02",
+      "type": "single-choice",
+      "question": "Comment sont régies les conventions nationales ?",
+      "media": [],
+      "options": [
+        "Par un accord entre gestionnaires et prestataires",
+        "Par une décision unilatérale de l'État central",
+        "Par un contrat privé signé entre deux dentistes",
+        "Par un vote annuel des patients dans les régions"
+      ],
+      "correct": 0,
+      "explanation": "La convention nationale cadre les relations entre les parties.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q03",
+      "type": "single-choice",
+      "question": "Qu'est-ce qu'un organisme gestionnaire de l'AMO ?",
+      "media": [],
+      "options": [
+        "Une institution publique chargée du recouvrement",
+        "Une structure privée de gestion des assurances",
+        "Une officine agréée pour la vente des médicaments",
+        "Un cabinet dentaire indépendant en zone rurale"
+      ],
+      "correct": 0,
+      "explanation": "Le gestionnaire (CNSS/CNOPS) assure le service des prestations.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q04",
+      "type": "single-choice",
+      "question": "Quelle est la limite de prise en charge en soins ?",
+      "media": [],
+      "options": [
+        "Elle est définie par des nomenclatures des actes",
+        "Elle est fixée par le libre choix du praticien",
+        "Elle dépend du montant annuel total cotisé",
+        "Elle est décrétée par les associations médicales"
+      ],
+      "correct": 0,
+      "explanation": "La nomenclature fixe les tarifs de référence des actes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q05",
+      "type": "single-choice",
+      "question": "L'exonération du ticket modérateur est possible pour :",
+      "media": [],
+      "options": [
+        "Des affections lourdes ou chroniques listées",
+        "La totalité des actes réalisés par le dentiste",
+        "Les patients souhaitant un confort esthétique",
+        "Toutes les prestations en secteur privé libéral"
+      ],
+      "correct": 0,
+      "explanation": "L'exonération vise spécifiquement les ALD (Affection Longue Durée).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q06",
+      "type": "single-choice",
+      "question": "Comment se gère le risque en cas d'accident tiers ?",
+      "media": [],
+      "options": [
+        "L'organisme gestionnaire exerce un recours légal",
+        "Le patient doit assumer la totalité des coûts",
+        "Le dentiste supporte la perte financière totale",
+        "La loi interdit toute demande de remboursement"
+      ],
+      "correct": 0,
+      "explanation": "La loi permet le recours contre le tiers responsable.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q07",
+      "type": "single-choice",
+      "question": "La commission permanente est un organe de :",
+      "media": [],
+      "options": [
+        "La régulation au sein du conseil de l'ANAM",
+        "La gestion comptable interne des cliniques",
+        "La vérification des diplômes des praticiens",
+        "La fixation des salaires des aides-soignants"
+      ],
+      "correct": 0,
+      "explanation": "La commission veille à la régulation du système.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q08",
+      "type": "single-choice",
+      "question": "Quelles sont les obligations du dentiste conventionné ?",
+      "media": [],
+      "options": [
+        "Appliquer les tarifs fixés par la convention",
+        "Réaliser gratuitement tous les actes d'urgence",
+        "Transmettre les dossiers au ministère des finances",
+        "Offrir des réductions selon le statut du patient"
+      ],
+      "correct": 0,
+      "explanation": "Le respect des tarifs conventionnés est une obligation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q09",
+      "type": "single-choice",
+      "question": "L'immatriculation à l'AMO est-elle obligatoire ?",
+      "media": [],
+      "options": [
+        "Oui, pour toute personne exerçant une activité",
+        "Non, elle reste facultative selon le contrat",
+        "Oui, uniquement pour le secteur public royal",
+        "Non, sauf en cas de maladie grave constatée"
+      ],
+      "correct": 0,
+      "explanation": "L'obligation d'immatriculation est le socle de l'AMO.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q10",
+      "type": "single-choice",
+      "question": "Que prévoit la loi pour le contrôle des flux ?",
+      "media": [],
+      "options": [
+        "Un système d'information de gestion intégré",
+        "Une déclaration papier envoyée par courrier",
+        "Une vérification manuelle par les agents ANAM",
+        "Un contrôle par échantillonnage aléatoire annuel"
+      ],
+      "correct": 0,
+      "explanation": "La loi favorise la digitalisation et l'informatisation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q11",
+      "type": "single-choice",
+      "question": "Les prestations dentaires incluent-elles l'imagerie ?",
+      "media": [],
+      "options": [
+        "Oui, si nécessaire au diagnostic des soins",
+        "Non, seuls les actes chirurgicaux sont inclus",
+        "Oui, uniquement pour les patients de moins 10ans",
+        "Non, l'imagerie est toujours hors périmètre"
+      ],
+      "correct": 0,
+      "explanation": "Les actes techniques incluent les examens radiologiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q12",
+      "type": "single-choice",
+      "question": "Comment est financé le fonds de réserve de l'AMO ?",
+      "media": [],
+      "options": [
+        "Par une part des cotisations des assurés",
+        "Par les taxes directes sur les cabinets privés",
+        "Par les amendes versées par les pharmaciens",
+        "Par les dons volontaires des mutuelles privées"
+      ],
+      "correct": 0,
+      "explanation": "Les cotisations alimentent les réserves techniques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q13",
+      "type": "single-choice",
+      "question": "Quelle est la sanction en cas de fausse déclaration ?",
+      "media": [],
+      "options": [
+        "Des poursuites judiciaires pénales encourues",
+        "Une simple mise en garde par l'organisme",
+        "Une réduction temporaire des remboursements",
+        "La mutation forcée vers un autre organisme"
+      ],
+      "correct": 0,
+      "explanation": "La loi prévoit des sanctions contre la fraude.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q14",
+      "type": "single-choice",
+      "question": "L'assurance maladie couvre-t-elle l'étranger ?",
+      "media": [],
+      "options": [
+        "Non, sauf en cas d'accord bilatéral spécifique",
+        "Oui, pour toutes les prestations réalisées",
+        "Non, la loi interdit le remboursement hors pays",
+        "Oui, uniquement pour les soins dentaires urgents"
+      ],
+      "correct": 0,
+      "explanation": "La territorialité est le principe, sauf exception.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q15",
+      "type": "single-choice",
+      "question": "Le dossier médical partagé est-il régi par la loi ?",
+      "media": [],
+      "options": [
+        "Oui, il assure la continuité des soins et flux",
+        "Non, le dossier reste la propriété du patient",
+        "Oui, uniquement pour les données radiologiques",
+        "Non, la loi ne mentionne pas cet outil digital"
+      ],
+      "correct": 0,
+      "explanation": "La loi encourage l'interopérabilité des données.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q16",
+      "type": "single-choice",
+      "question": "Quel est le rôle du conseil d'administration CNSS ?",
+      "media": [],
+      "options": [
+        "Superviser la gestion des fonds de l'AMO",
+        "Définir les techniques de soins dentaires",
+        "Vérifier la stérilisation des instruments",
+        "Accréditer les cabinets dentaires privés"
+      ],
+      "correct": 0,
+      "explanation": "La gestion financière est sous sa responsabilité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q17",
+      "type": "single-choice",
+      "question": "Les actes préventifs sont-ils encouragés ?",
+      "media": [],
+      "options": [
+        "Oui, car ils réduisent les coûts des soins",
+        "Non, la loi se concentre sur le curatif seul",
+        "Oui, uniquement pour les populations rurales",
+        "Non, la prévention est à la charge du patient"
+      ],
+      "correct": 0,
+      "explanation": "La prévention est un axe majeur de la loi 65-00.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q18",
+      "type": "single-choice",
+      "question": "Qui vérifie la conformité des soins réalisés ?",
+      "media": [],
+      "options": [
+        "Le service médical de l'organisme gestionnaire",
+        "Le conseil de l'ordre des médecins dentistes",
+        "La direction des impôts dans la commune",
+        "L'association des patients de la région"
+      ],
+      "correct": 0,
+      "explanation": "Le service médical valide l'adéquation soins/actes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q19",
+      "type": "single-choice",
+      "question": "L'AMO peut-elle rembourser des médicaments ?",
+      "media": [],
+      "options": [
+        "Oui, selon une liste de médicaments admis",
+        "Non, les médicaments sont à charge complète",
+        "Oui, tous les médicaments sans exception",
+        "Non, seulement pour les patients hospitalisés"
+      ],
+      "correct": 0,
+      "explanation": "La loi prévoit une liste limitative (génériques).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q20",
+      "type": "single-choice",
+      "question": "Quel est le délai de prescription des factures ?",
+      "media": [],
+      "options": [
+        "Fixé par la réglementation en vigueur",
+        "Librement choisi par chaque dentiste",
+        "Uniquement de deux années après l'acte",
+        "Imposé par le ministère de la santé publique"
+      ],
+      "correct": 0,
+      "explanation": "Le délai est strictement réglementé.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q21",
+      "type": "single-choice",
+      "question": "Le statut des ayants droit est-il protégé ?",
+      "media": [],
+      "options": [
+        "Oui, par le maintien des droits garantis",
+        "Non, la protection cesse avec le décès",
+        "Oui, seulement pour les enfants mineurs",
+        "Non, seul l'assuré principal est couvert"
+      ],
+      "correct": 0,
+      "explanation": "La loi protège la famille de l'assuré.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q22",
+      "type": "single-choice",
+      "question": "L'ANAM peut-elle infliger des sanctions ?",
+      "media": [],
+      "options": [
+        "Oui, en cas de manquement aux conventions",
+        "Non, elle n'a aucun pouvoir disciplinaire",
+        "Oui, elle peut révoquer les dentistes",
+        "Non, elle doit passer par le ministère"
+      ],
+      "correct": 0,
+      "explanation": "L'ANAM régule et peut sanctionner les abus.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q23",
+      "type": "single-choice",
+      "question": "Les tarifs sont-ils révisables dans la loi ?",
+      "media": [],
+      "options": [
+        "Oui, lors de la renégociation conventionnelle",
+        "Non, les tarifs sont fixes et définitifs",
+        "Oui, par décision unilatérale du dentiste",
+        "Non, sauf en période de crise économique"
+      ],
+      "correct": 0,
+      "explanation": "La révision périodique est prévue par convention.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q24",
+      "type": "single-choice",
+      "question": "Que signifie la tarification nationale ?",
+      "media": [],
+      "options": [
+        "Le tarif de base pour le remboursement",
+        "Le tarif libre choisi par le praticien",
+        "Le tarif maximal autorisé en urgence",
+        "Le tarif réduit pour les bas revenus"
+      ],
+      "correct": 0,
+      "explanation": "La tarification nationale sert de référence AMO.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D1_Q25",
+      "type": "single-choice",
+      "question": "L'information du patient est-elle une règle ?",
+      "media": [],
+      "options": [
+        "Oui, le patient doit connaître les tarifs",
+        "Non, le secret est gardé par le médecin",
+        "Oui, uniquement par le gestionnaire AMO",
+        "Non, cela n'est pas stipulé par la loi"
+      ],
+      "correct": 0,
+      "explanation": "La transparence des tarifs est obligatoire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

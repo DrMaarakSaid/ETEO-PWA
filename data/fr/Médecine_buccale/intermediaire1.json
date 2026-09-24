@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "Médecine_buccale_intermediaire1_001",
+    "title": "Médecine_buccale - Intermédiaire 1",
+    "specialty": "MÉDE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "MÉDE_I1_Q01",
+      "type": "single-choice",
+      "question": "Sami demande à Mina : 'Quelle est la clé du diagnostic en médecine buccale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La rapidité du diagnostic",
+        "Une observation minutieuse et une approche méthodique",
+        "Le nombre de biopsies",
+        "L'utilisation de la technologie"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'L'observation minutieuse et l'approche méthodique sont les clés du diagnostic.' 🦅 Sami : 'Je vais prendre le temps d'observer.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q02",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment différencier une leucoplasie d'un lichen plan ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La leucoplasie est souvent unilatérale, le lichen plan est bilatéral et strié",
+        "C'est la même chose",
+        "La leucoplasie est bilatérale, le lichen plan est unilatéral",
+        "Le lichen plan est plus blanc que la leucoplasie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le lichen plan est bilatéral et strié, la leucoplasie est souvent unilatérale.' 🦅 Sami : 'Je vais toujours vérifier la bilatéralité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q03",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quand faut-il biopsier une leucoplasie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Systématiquement",
+        "Jamais",
+        "En cas de forme non homogène, verruqueuse ou sous-linguale",
+        "Uniquement si elle est douloureuse"
+      ],
+      "correct": 2,
+      "explanation": "🐆 Mina explique : 'Les leucoplasies non homogènes, verruqueuses ou sous-linguales ont un risque plus élevé.' 🦅 Sami : 'Je vais biopsier les formes à risque.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q04",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quelle est la différence entre une leucoplasie et une érythroplasie en termes de risque ?' Mina répond :",
+      "media": [],
+      "options": [
+        "L'érythroplasie a un risque de transformation maligne plus élevé",
+        "La leucoplasie est plus dangereuse",
+        "Les deux ont le même risque",
+        "L'érythroplasie est bénigne"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'érythroplasie a un risque de transformation maligne beaucoup plus élevé (jusqu'à 90%).' 🦅 Sami : 'Je vais traiter les érythroplasies comme des urgences.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q05",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce qu'une leucoplasie verruqueuse ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une forme de leucoplasie avec une surface verruqueuse, à haut risque",
+        "Une forme bénigne de leucoplasie",
+        "Une infection virale",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La leucoplasie verruqueuse a un risque plus élevé de transformation maligne.' 🦅 Sami : 'Je vais biopsier cette forme.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q06",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment traiter un lichen plan érosif ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Corticostéroïdes topiques ou systémiques selon la sévérité",
+        "Antibiotiques",
+        "Antiviraux",
+        "Chirurgie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le lichen plan érosif nécessite souvent des corticostéroïdes.' 🦅 Sami : 'Je vais orienter vers un spécialiste.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q07",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les signes de gravité d'un lichen plan ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Forme érosive, atrophique ou bulleuse",
+        "Forme réticulée asymptomatique",
+        "Forme papuleuse",
+        "Forme atrophique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les formes érosives, atrophiques ou bulleuses sont plus sévères.' 🦅 Sami : 'Je vais surveiller ces formes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q08",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce qu'une stomatite de contact ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une réaction inflammatoire à un allergène local (dentifrice, aliment, matériau)",
+        "Une infection bactérienne",
+        "Une infection virale",
+        "Une maladie auto-immune"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La stomatite de contact est une réaction à un allergène.' 🦅 Sami : 'Je vais interroger le patient sur ses habitudes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q09",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment diagnostiquer une candidose buccale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Aspect clinique (plaques blanches) et examen direct ou culture",
+        "Biopsie systématique",
+        "Prise de sang",
+        "Scanner"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le diagnostic est clinique, parfois confirmé par examen direct.' 🦅 Sami : 'Je vais reconnaître l'aspect clinique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q10",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les facteurs de risque de candidose buccale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Antibiothérapie, corticothérapie, immunosuppression, diabète, xérostomie",
+        "Uniquement l'antibiothérapie",
+        "Uniquement le diabète",
+        "Uniquement la xérostomie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les facteurs de risque sont multiples.' 🦅 Sami : 'Je vais rechercher ces facteurs.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q11",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment traite-t-on une candidose buccale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Antimycosiques locaux (nystatine, miconazole) ou systémiques si sévère",
+        "Antibiotiques",
+        "Corticostéroïdes",
+        "Antiviraux"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement est antimycosique.' 🦅 Sami : 'Je vais prescrire de la nystatine.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q12",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce qu'une glossite atrophique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une inflammation de la langue avec atrophie des papilles, souvent liée à une carence",
+        "Une infection de la langue",
+        "Un cancer de la langue",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La glossite atrophique est souvent liée à des carences.' 🦅 Sami : 'Je vais demander un bilan sanguin.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q13",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quelles sont les causes d'une glossite atrophique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Carence en fer, vitamine B12, acide folique",
+        "Infection virale",
+        "Traumatisme",
+        "Allergie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les carences nutritionnelles sont les causes principales.' 🦅 Sami : 'Je vais prescrire un bilan carentiel.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q14",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce que la langue géographique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une affection bénigne de la langue avec des zones dépapillées et des bords surélevés",
+        "Un cancer de la langue",
+        "Une infection fongique",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La langue géographique est une affection bénigne.' 🦅 Sami : 'Je vais rassurer le patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q15",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que le syndrome de la bouche brûlante ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une sensation de brûlure sans lésion clinique, souvent chez la femme ménopausée",
+        "Une infection de la langue",
+        "Un cancer de la langue",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'C'est un syndrome complexe, souvent chez la femme ménopausée.' 🦅 Sami : 'Je vais chercher les facteurs associés.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q16",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment traite-t-on le syndrome de la bouche brûlante ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Traitement des causes sous-jacentes, antalgiques, anxiolytiques si nécessaire",
+        "Antibiotiques",
+        "Antiviraux",
+        "Chirurgie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement est symptomatique et étiologique.' 🦅 Sami : 'Je vais rechercher la cause.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q17",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce qu'une chéilite angulaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une inflammation des commissures labiales, souvent due à Candida ou à une carence",
+        "Un cancer de la lèvre",
+        "Une infection virale",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La chéilite angulaire est souvent due à Candida et aux carences.' 🦅 Sami : 'Je vais traiter la cause.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q18",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment traite-t-on une chéilite angulaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Antimycosique local, correction des carences, hydratation",
+        "Antibiotiques",
+        "Antiviraux",
+        "Corticostéroïdes"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement est multifactoriel.' 🦅 Sami : 'Je vais prescrire un antimycosique et des vitamines.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q19",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la stomatite nicotinique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une kératose du palais due au tabac, souvent bénigne",
+        "Un cancer du palais",
+        "Une infection fongique",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'C'est une lésion bénigne liée au tabac.' 🦅 Sami : 'Je vais conseiller l'arrêt du tabac.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q20",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les signes d'alerte en médecine buccale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Lésion persistante > 3 semaines, induration, saignement, ulcération, douleur",
+        "Uniquement la douleur",
+        "Uniquement l'ulcération",
+        "Uniquement le saignement"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Ces signes doivent alerter.' 🦅 Sami : 'Je vais toujours rechercher ces signes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q21",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quand faut-il faire une biopsie en médecine buccale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Devant toute lésion persistante > 3 semaines ou suspecte",
+        "Devant toute lésion",
+        "Uniquement les lésions douloureuses",
+        "Uniquement les lésions blanches"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La biopsie est indiquée devant une lésion persistante ou suspecte.' 🦅 Sami : 'Je vais biopsier les lésions persistantes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q22",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les facteurs de risque du cancer de la cavité buccale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Tabac, alcool, HPV, exposition solaire, âge",
+        "Uniquement le tabac",
+        "Uniquement l'alcool",
+        "Uniquement l'âge"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les facteurs de risque sont nombreux.' 🦅 Sami : 'Je vais informer mes patients des risques.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q23",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quelles sont les mesures de prévention du cancer buccal ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Arrêt du tabac et de l'alcool, vaccination HPV, protection solaire, auto-examen",
+        "Uniquement l'arrêt du tabac",
+        "Uniquement l'arrêt de l'alcool",
+        "Uniquement la vaccination HPV"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La prévention est multifactorielle.' 🦅 Sami : 'Je vais sensibiliser mes patients.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q24",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce qu'une biopsie buccale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un prélèvement tissulaire pour analyse histopathologique",
+        "Une prise de sang",
+        "Une radiographie",
+        "Un scanner"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La biopsie est un prélèvement tissulaire.' 🦅 Sami : 'Je vais apprendre à faire des biopsies.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_I1_Q25",
+      "type": "single-choice",
+      "question": "Sami, après avoir maîtrisé le diagnostic avec Mina, dit : 'Je suis prêt à relever tous les défis !' Mina conclut : 'La maîtrise du diagnostic en médecine buccale est...'",
+      "media": [],
+      "options": [
+        "Une option",
+        "La base de la prise en charge",
+        "Une perte de temps",
+        "Secondaire"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La maîtrise du diagnostic en médecine buccale est la base de la prise en charge.' 🦅 Sami : 'Je vais continuer à me perfectionner.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

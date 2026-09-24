@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "anesthesiologie_intermediaire2_001",
+    "title": "Anesthesiologie - Intermédiaire 2",
+    "specialty": "ANES",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ANES_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Samir doit gérer un patient avec une allergie vraie aux amides. Dr Leila lui propose une alternative. Quelle molécule de la famille des esters peut être utilisée ?",
+      "media": [],
+      "options": [
+        "Lidocaïne",
+        "Articaïne",
+        "Procaïne",
+        "Mépivacaïne"
+      ],
+      "correct": 2,
+      "explanation": "Dr Leila explique : 'Les esters comme la procaïne sont métabolisés différemment et peuvent être une alternative en cas d'allergie vraie aux amides.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Leila doit anesthésier un patient sous bêtabloquants non sélectifs. Quelle est la principale précaution à prendre ?",
+      "media": [],
+      "options": [
+        "Augmenter la dose d'épinéphrine",
+        "Réduire ou éviter l'épinéphrine",
+        "Utiliser uniquement de la mépivacaïne",
+        "Doubler la dose d'anesthésique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explique : 'Les bêtabloquants non sélectifs bloquent les effets compensateurs de l'épinéphrine, ce qui peut provoquer une hypertension sévère.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Samir doit réaliser une anesthésie chez un patient avec une phéochromocytome non opéré. Quelle est la conduite à tenir ?",
+      "media": [],
+      "options": [
+        "Utiliser de l'articaïne 4%",
+        "Contre-indiquer formellement l'épinéphrine",
+        "Doubler la dose de lidocaïne",
+        "Utiliser de la prilocaïne 4%"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explique : 'Le phéochromocytome est une contre-indication absolue à l'épinéphrine, qui pourrait déclencher une crise hypertensive létale.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Leila doit gérer une patiente enceinte pour une urgence dentaire. Quel anesthésique est le plus sûr ?",
+      "media": [],
+      "options": [
+        "Articaïne 4%",
+        "Lidocaïne 2% avec adrénaline",
+        "Mépivacaïne 3% pure",
+        "Prilocaïne 4%"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explique : 'La lidocaïne 2% avec adrénaline est la molécule la plus étudiée et la plus sûre chez la femme enceinte.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Samir a injecté 4 cartouches d'articaïne 4% à un patient de 50 kg. Quel est le risque principal ?",
+      "media": [],
+      "options": [
+        "Méthémoglobinémie",
+        "Toxicité systémique",
+        "Allergie croisée",
+        "Nécrose tissulaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila calcule : '4 cartouches × 72 mg = 288 mg. Pour 50 kg, cela fait 5,76 mg/kg, approchant de la dose maximale de 7 mg/kg. Le risque de toxicité systémique est présent.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Leila doit réaliser un bloc du nerf alvéolaire inférieur. Elle utilise la technique de Spix. Quel est le volume recommandé ?",
+      "media": [],
+      "options": [
+        "0,5 ml",
+        "1,0 ml",
+        "1,5 à 1,8 ml",
+        "3,0 ml"
+      ],
+      "correct": 2,
+      "explanation": "Dr Samir explique : 'Pour un bloc de Spix, le volume standard est d'une cartouche entière (1,8 ml).'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Samir a réalisé un bloc de Spix et le patient a une anesthésie linguale mais pas d'anesthésie dentaire. Quelle est la cause la plus probable ?",
+      "media": [],
+      "options": [
+        "L'aiguille était trop superficielle",
+        "L'aiguille était trop en arrière",
+        "L'aiguille était trop en avant",
+        "La dose était insuffisante"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila explique : 'Si l'aiguille est trop superficielle, le nerf lingual est bloqué mais pas le NAI. L'anesthésie dentaire est absente.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Leila doit anesthésier une molaire mandibulaire chez un patient avec une infection sévère. L'anesthésie n'est pas efficace. Quelle est la cause ?",
+      "media": [],
+      "options": [
+        "Résistance à l'anesthésique",
+        "pH acide dans la zone infectée",
+        "Mauvaise technique d'injection",
+        "Allergie à l'anesthésique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explique : 'Le pH acide des zones infectées réduit la fraction non ionisée de l'anesthésique, diminuant son efficacité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Samir a injecté de l'articaïne 4% dans une zone infectée. Pourquoi l'anesthésie pourrait-elle échouer ?",
+      "media": [],
+      "options": [
+        "L'articaïne est moins efficace en milieu acide",
+        "L'articaïne est dégradée par les bactéries",
+        "L'articaïne nécessite un pH basique",
+        "L'articaïne est inactive en présence de pus"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila explique : 'L'acidité du milieu infecté diminue la fraction non ionisée de l'articaïne, réduisant son passage à travers la membrane nerveuse.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Leila doit réaliser une anesthésie intraligamentaire. Quelle est la particularité de cette technique ?",
+      "media": [],
+      "options": [
+        "Elle utilise une aiguille très fine",
+        "Elle nécessite une seringue spécifique à haute pression",
+        "Elle est indolore pour le patient",
+        "Elle ne nécessite pas d'aspiration"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explique : 'L'anesthésie intraligamentaire nécessite une seringue spécifique capable de générer une haute pression pour injecter dans le ligament parodontal.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Samir a réalisé une anesthésie intraligamentaire et le patient présente une douleur post-opératoire intense. Quelle est la cause ?",
+      "media": [],
+      "options": [
+        "Nécrose du ligament",
+        "Injection trop rapide",
+        "Réaction allergique",
+        "Infection secondaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explique : 'Une injection trop rapide lors d'une intraligamentaire peut provoquer des douleurs post-opératoires intenses.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Leila doit utiliser de la prilocaïne 4% chez un patient de 60 kg. Quelle est la dose maximale à ne pas dépasser ?",
+      "media": [],
+      "options": [
+        "240 mg (4 mg/kg)",
+        "360 mg (6 mg/kg)",
+        "480 mg (8 mg/kg)",
+        "600 mg (10 mg/kg)"
+      ],
+      "correct": 2,
+      "explanation": "Dr Samir explique : 'La dose maximale de prilocaïne 4% est de 8 mg/kg. Pour 60 kg, cela donne 480 mg.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Samir a injecté 5 cartouches de prilocaïne 4% à un patient de 70 kg. Quel est le risque principal ?",
+      "media": [],
+      "options": [
+        "Méthémoglobinémie",
+        "Tachycardie sévère",
+        "Allergie croisée",
+        "Nécrose tissulaire"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila explique : '5 cartouches × 72 mg = 360 mg. Pour 70 kg, cela fait 5,1 mg/kg. Mais le risque de méthémoglobinémie est présent même à dose modérée.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Leila doit gérer un patient avec une méthémoglobinémie induite par la prilocaïne. Quel est le traitement de première intention ?",
+      "media": [],
+      "options": [
+        "Oxygénothérapie",
+        "Injection de bleu de méthylène",
+        "Transfusion sanguine",
+        "Corticothérapie"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explique : 'Le traitement de la méthémoglobinémie repose sur l'injection de bleu de méthylène en cas de signes cliniques sévères.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr Samir doit réaliser une anesthésie chez un patient avec une hyperthyroïdie sévère. Quelle précaution doit-il prendre ?",
+      "media": [],
+      "options": [
+        "Augmenter la dose d'épinéphrine",
+        "Utiliser un anesthésique sans vasoconstricteur",
+        "Doubler la dose de lidocaïne",
+        "Utiliser de l'articaïne 4%"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explique : 'L'épinéphrine est contre-indiquée en cas d'hyperthyroïdie sévère non contrôlée, car elle peut déclencher une crise thyrotoxique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr Leila doit anesthésier un patient avec un infarctus du myocarde récent (moins de 3 mois). Quelle est la conduite à tenir ?",
+      "media": [],
+      "options": [
+        "Utiliser de l'articaïne 4%",
+        "Utiliser de la lidocaïne 2% sans adrénaline",
+        "Contre-indiquer toute anesthésie locale avec adrénaline",
+        "Doubler la dose de vasoconstricteur"
+      ],
+      "correct": 2,
+      "explanation": "Dr Samir explique : 'L'épinéphrine est contre-indiquée chez les patients avec un infarctus récent en raison du risque d'arythmie.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr Samir doit réaliser une anesthésie chez un patient épileptique. Quelle est la principale précaution ?",
+      "media": [],
+      "options": [
+        "Augmenter la dose d'anesthésique",
+        "Éviter les anesthésiques locaux",
+        "Utiliser des doses minimales et aspirer avant d'injecter",
+        "Utiliser uniquement de la mépivacaïne"
+      ],
+      "correct": 2,
+      "explanation": "Dr Leila explique : 'Les anesthésiques locaux peuvent abaisser le seuil épileptogène. Une injection intravasculaire doit être évitée.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr Leila a réalisé un bloc mandibulaire et le patient présente un hématome immédiat. Quelle est la cause ?",
+      "media": [],
+      "options": [
+        "Allergie à l'anesthésique",
+        "Lacération d'un vaisseau sanguin",
+        "Surdosage d'épinéphrine",
+        "Infection secondaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explique : 'Un hématome immédiat est souvent dû à la lacération d'un vaisseau sanguin lors de l'injection.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr Samir a injecté de la lidocaïne 2% avec adrénaline et le patient présente une tachycardie marquée. Quelle est la cause ?",
+      "media": [],
+      "options": [
+        "Allergie à la lidocaïne",
+        "Injection intravasculaire d'épinéphrine",
+        "Surdosage de lidocaïne",
+        "Syncope vagale"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explique : 'La tachycardie est un signe typique d'une injection intravasculaire d'épinéphrine.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr Leila doit gérer un patient avec une paresthésie du nerf lingual après une avulsion de 48. Quelle est la conduite à tenir ?",
+      "media": [],
+      "options": [
+        "Réexploration chirurgicale immédiate",
+        "Surveillance clinique et information du patient",
+        "Antibiothérapie à large spectre",
+        "Injections de corticoïdes locaux"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explique : 'La majorité des paresthésies post-opératoires se résolvent spontanément en quelques semaines.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr Samir a réalisé une anesthésie infiltrative au maxillaire. Le patient ressent encore une douleur à la dent. Quelle est la cause la plus probable ?",
+      "media": [],
+      "options": [
+        "Résistance à l'anesthésique",
+        "Mauvaise technique d'injection",
+        "Allergie à l'anesthésique",
+        "Inflammation pulpaire sévère"
+      ],
+      "correct": 3,
+      "explanation": "Dr Leila explique : 'Une pulpite sévère peut rendre l'anesthésie difficile même avec une technique correcte.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr Leila doit anesthésier une dent avec une pulpite sévère. Quelle technique est recommandée ?",
+      "media": [],
+      "options": [
+        "Augmenter le volume d'injection",
+        "Changer de molécule",
+        "Réaliser une anesthésie intraligamentaire ou intra-osseuse",
+        "Utiliser un anesthésique sans vasoconstricteur"
+      ],
+      "correct": 2,
+      "explanation": "Dr Samir explique : 'En cas de pulpite sévère, les techniques intraligamentaires ou intra-osseuses sont plus efficaces.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr Samir a réalisé un bloc de Spix et le patient a une anesthésie complète mais avec une paralysie faciale transitoire. Quelle est la cause ?",
+      "media": [],
+      "options": [
+        "Injection dans la glande parotide",
+        "Injection trop profonde",
+        "Injection dans le nerf facial",
+        "Toxicité systémique"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila explique : 'Une injection trop en arrière pénètre dans la glande parotide et bloque le nerf facial.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr Leila doit gérer un patient avec un trismus post-anesthésique. Quelle est la prise en charge ?",
+      "media": [],
+      "options": [
+        "Chirurgie immédiate",
+        "Antalgiques, anti-inflammatoires et rééducation douce",
+        "Antibiothérapie à large spectre",
+        "Injections de corticoïdes locaux"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explique : 'Le trismus post-anesthésique se résout souvent avec des antalgiques, des anti-inflammatoires et une rééducation douce.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr Samir, après avoir géré de nombreuses complications, reçoit les félicitations de Dr Leila : 'Tu es un véritable maître en anesthésie.' Quelle est la prochaine étape ?",
+      "media": [],
+      "options": [
+        "Former les jeunes dentistes à l'anesthésie",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bases"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila explique : 'La transmission du savoir est la marque des vrais maîtres. La formation des jeunes dentistes est essentielle.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

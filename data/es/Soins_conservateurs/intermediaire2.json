@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "Soins_conservateurs_intermediaire2_001",
+    "title": "Odontología Conservadora - Intermedio 2",
+    "specialty": "SOIN",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "SOIN_I2_Q01",
+      "type": "single-choice",
+      "question": "Sami llama a Mina: \"¡Tengo una fractura de cúspide en un molar! ¿Qué hago?\" Mina responde:",
+      "media": [],
+      "options": [
+        "Corona inmediata",
+        "Evaluar la fractura y proponer una sobreincrustación si es posible",
+        "Extraer el diente",
+        "Poner composite"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Si la fractura de cúspide no tiene afectación pulpar, la sobreincrustación es una solución conservadora.\" 🦅 Sami: \"Haré una sobreincrustación.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q02",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo manejar una caries bajo una incrustación?\" Mina le aconseja:",
+      "media": [],
+      "options": [
+        "Siempre rehacer la incrustación",
+        "Evaluar la accesibilidad y el tamaño de la caries",
+        "Ignorar la caries",
+        "Cambiar la incrustación"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Si la caries es periférica y accesible, la reparación es posible.\" 🦅 Sami: \"Evaluaré antes de decidir.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q03",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cuándo usar composite fluido?\" Mina le responde:",
+      "media": [],
+      "options": [
+        "Para incrustaciones",
+        "Para cavidades pequeñas o como capa base",
+        "Para coronas",
+        "Para carillas"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Los composites fluidos están indicados para cavidades pequeñas o como capa base.\" 🦅 Sami: \"Usaré fluido para caries pequeñas.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q04",
+      "type": "single-choice",
+      "question": "Sami y Mina discuten sobre los fracasos de restauración. Mina dice: \"La causa más frecuente es...\"",
+      "media": [],
+      "options": [
+        "La elección incorrecta del material",
+        "Un defecto de adhesión o de hermeticidad",
+        "La culpa del paciente",
+        "Un defecto de polimerización"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Los fracasos suelen estar relacionados con defectos de adhesión o hermeticidad.\" 🦅 Sami: \"Controlaré mi adhesión.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q05",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo manejar una caries recidivante bajo una carilla?\" Mina responde:",
+      "media": [],
+      "options": [
+        "Rehacer la carilla",
+        "Reparar si la caries es pequeña y accesible",
+        "Ignorar la caries",
+        "Extraer el diente"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Las caries pequeñas bajo una carilla se pueden reparar sin rehacerla.\" 🦅 Sami: \"Repararé esta carilla.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q06",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Qué es un diente desvitalizado? ¿Cómo restaurarlo?\" Mina le responde:",
+      "media": [],
+      "options": [
+        "Con composite simple",
+        "Con un perno intrarradicular, si la estructura es suficiente",
+        "Con extracción",
+        "Con implante"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"El perno intrarradicular refuerza el diente desvitalizado antes de la corona.\" 🦅 Sami: \"Haré un perno intrarradicular.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q07",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo manejar una caries cervical profunda?\" Mina le aconseja:",
+      "media": [],
+      "options": [
+        "Vidrio ionómero o composite con adhesión",
+        "Amalgama",
+        "Extracción",
+        "Incrustación"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: \"El vidrio ionómero es ideal para las caries cervicales.\" 🦅 Sami: \"Usaré vidrio ionómero.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q08",
+      "type": "single-choice",
+      "question": "Sami y Mina discuten sobre las sobreincrustaciones. Mina dice: \"La sobreincrustación refuerza el diente.\" Sami pregunta: \"¿Cuándo está indicada?\"",
+      "media": [],
+      "options": [
+        "En fracturas de cúspides sin afectación pulpar",
+        "En caries profundas",
+        "Para dientes temporales",
+        "Para dientes anteriores"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: \"La sobreincrustación está indicada en fracturas conservables de cúspides.\" 🦅 Sami: \"Propondré una sobreincrustación.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q09",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo manejar un diente con fractura vertical?\" Mina responde:",
+      "media": [],
+      "options": [
+        "Siempre restaurar",
+        "Evaluar el pronóstico; a menudo extracción si la fractura es profunda",
+        "Siempre extraer",
+        "Poner una corona"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Las fracturas verticales profundas tienen mal pronóstico.\" 🦅 Sami: \"Evaluaré la profundidad de la fractura.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q10",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo mejorar la estética de un composite anterior?\" Mina le aconseja:",
+      "media": [],
+      "options": [
+        "Usar un solo tono",
+        "Usar la estratificación con varios tonos",
+        "Poner una carilla",
+        "Cambiar de material"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"La estratificación proporciona un resultado estético natural.\" 🦅 Sami: \"Aprenderé la estratificación.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q11",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Qué es un core de composite?\" Mina le explica:",
+      "media": [],
+      "options": [
+        "Un núcleo para reconstruir la corona con composite",
+        "Un composite para incrustaciones",
+        "Un composite para carillas",
+        "Un composite para dientes temporales"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: \"El core de composite reconstruye el núcleo del diente antes de la corona.\" 🦅 Sami: \"Haré un core de composite.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q12",
+      "type": "single-choice",
+      "question": "Sami y Mina discuten sobre los puentes adheridos. Mina dice: \"Se puede reparar bajo un puente.\" Sami pregunta: \"¿Cuándo?\"",
+      "media": [],
+      "options": [
+        "Siempre",
+        "Nunca",
+        "Si la caries es accesible sin retirar el puente",
+        "Solo si el puente es de cerámica"
+      ],
+      "correct": 2,
+      "explanation": "🐆 Mina explica: \"Las caries accesibles bajo un puente se pueden reparar.\" 🦅 Sami: \"Evaluaré la accesibilidad.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q13",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo manejar una caries bajo una corona temporal?\" Mina responde:",
+      "media": [],
+      "options": [
+        "Rehacer la corona",
+        "Tratar la caries y rehacer la corona temporal",
+        "Ignorar la caries",
+        "Extraer el diente"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"La caries bajo una corona temporal debe tratarse antes de colocar la corona definitiva.\" 🦅 Sami: \"Trataré la caries.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q14",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo elegir entre composite y cerámica?\" Mina le responde:",
+      "media": [],
+      "options": [
+        "El composite siempre es mejor",
+        "La cerámica siempre es mejor",
+        "La elección depende de la situación clínica",
+        "Son equivalentes"
+      ],
+      "correct": 2,
+      "explanation": "🐆 Mina explica: \"La elección depende de la extensión, la localización y las cargas oclusales.\" 🦅 Sami: \"Sopesaré los pros y los contras.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q15",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo manejar la sensibilidad después de un composite?\" Mina le aconseja:",
+      "media": [],
+      "options": [
+        "Dar analgésicos",
+        "Verificar la adhesión y las filtraciones",
+        "Rehacer la restauración",
+        "Ignorar la sensibilidad"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"La sensibilidad suele estar relacionada con un defecto de adhesión.\" 🦅 Sami: \"Verificaré la hermeticidad.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q16",
+      "type": "single-choice",
+      "question": "Sami y Mina discuten sobre materiales. Mina dice: \"El vidrio ionómero libera flúor.\" Sami pregunta: \"¿Por qué es importante?\"",
+      "media": [],
+      "options": [
+        "Para blanquear los dientes",
+        "Para prevenir caries recidivantes",
+        "Para reforzar el composite",
+        "Para mejorar la estética"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"La liberación de flúor previene las caries recidivantes.\" 🦅 Sami: \"Usaré vidrio ionómero con más frecuencia.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q17",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo manejar un diente con grieta sintomática?\" Mina responde:",
+      "media": [],
+      "options": [
+        "Simplemente observar",
+        "Restaurar si la grieta es dolorosa",
+        "Extraer inmediatamente",
+        "Poner una corona"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Las grietas sintomáticas requieren restauración.\" 🦅 Sami: \"Restauraré esta grieta.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q18",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cuándo usar una incrustación de cerámica en lugar de una de composite?\" Mina le responde:",
+      "media": [],
+      "options": [
+        "Para dientes anteriores",
+        "Para cavidades extensas con oclusión intensa",
+        "Para dientes temporales",
+        "Para dientes desvitalizados"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"La cerámica es más resistente para cavidades extensas.\" 🦅 Sami: \"Usaré cerámica para este paciente.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q19",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo manejar una caries bajo una prótesis removible?\" Mina responde:",
+      "media": [],
+      "options": [
+        "Rehacer la prótesis",
+        "Tratar la caries si es accesible",
+        "Ignorar la caries",
+        "Extraer el diente"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Si la caries es accesible, se puede tratar sin rehacer la prótesis.\" 🦅 Sami: \"Trataré esta caries.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q20",
+      "type": "single-choice",
+      "question": "Sami y Mina discuten sobre composites. Mina dice: \"Los bulk-fill simplifican la vida.\" Sami pregunta: \"¿Cuál es el riesgo de los bulk-fill?\"",
+      "media": [],
+      "options": [
+        "Menos estéticos",
+        "Mayor contracción de polimerización",
+        "Más caros",
+        "Más frágiles"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Los bulk-fill pueden tener una mayor contracción.\" 🦅 Sami: \"Los usaré con precaución.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q21",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo manejar una caries recidivante en un diente desvitalizado?\" Mina responde:",
+      "media": [],
+      "options": [
+        "Extraer el diente",
+        "Tratar la caries y evaluar la necesidad de una corona",
+        "Ignorar la caries",
+        "Poner composite"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"La caries debe tratarse y, a menudo, está indicada una corona.\" 🦅 Sami: \"Trataré y propondré una corona.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q22",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cómo mejorar la retención del composite?\" Mina le aconseja:",
+      "media": [],
+      "options": [
+        "Hacer la cavidad más grande",
+        "Realizar cuidadosamente la preparación y la adhesión",
+        "Usar más composite",
+        "Polimerizar más tiempo"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"La retención depende de la preparación y la adhesión.\" 🦅 Sami: \"Realizaré cuidadosamente estos dos aspectos.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q23",
+      "type": "single-choice",
+      "question": "Sami pregunta: \"¿Cuándo usar un composite microhíbrido?\" Mina responde:",
+      "media": [],
+      "options": [
+        "Para dientes anteriores",
+        "Para dientes posteriores con cargas oclusales",
+        "Para carillas",
+        "Para dientes temporales"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Los microhíbridos son resistentes para dientes posteriores.\" 🦅 Sami: \"Usaré microhíbrido para este molar.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q24",
+      "type": "single-choice",
+      "question": "Sami y Mina discuten sobre CAD/CAM. Mina dice: \"El CAD/CAM permite hacer incrustaciones en una sola visita.\" Sami pregunta: \"¿Cuál es el inconveniente?\"",
+      "media": [],
+      "options": [
+        "Menos estéticas",
+        "El alto coste del equipo",
+        "Menos resistentes",
+        "Tardan más en fabricarse"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"El CAD/CAM requiere una alta inversión.\" 🦅 Sami: \"Evaluaré la rentabilidad del CAD/CAM.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_I2_Q25",
+      "type": "single-choice",
+      "question": "Sami, tras superar casos complejos con Mina, dice: \"¡Estoy orgulloso de nuestros éxitos!\" Mina concluye: \"Las técnicas avanzadas son...\"",
+      "media": [],
+      "options": [
+        "Una opción para expertos",
+        "La clave para conservar los dientes",
+        "Una pérdida de tiempo",
+        "Secundarias"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: \"Las técnicas avanzadas son la clave para conservar los dientes.\" 🦅 Sami: \"Seguiré mejorando.\"",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

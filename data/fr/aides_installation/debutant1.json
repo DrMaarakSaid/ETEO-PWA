@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "aides_installation_debutant1_001",
+    "title": "Aides_installation - Débutant 1",
+    "specialty": "AIDE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "AIDE_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi hésite entre deux locaux : un au 2ème étage avec ascenseur, un autre au 4ème sans ascenseur. Selon l'article 1er de la loi sur l'accessibilité des ERP, quel critère doit-il prioriser ?",
+      "media": [],
+      "options": [
+        "La qualité de la vue panoramique depuis le 4ème étage",
+        "L'accessibilité totale aux personnes à mobilité réduite",
+        "La proximité immédiate du toit terrasse pour l'entretien",
+        "Le standing extérieur plus élevé de l'immeuble"
+      ],
+      "correct": 1,
+      "explanation": "L'accessibilité PMR est une obligation légale pour tout établissement recevant du public, y compris les cabinets dentaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui visite un local avec une salle de soins de 8 m². Selon les recommandations ergonomiques, quelle est la surface minimale conseillée ?",
+      "media": [],
+      "options": [
+        "Six mètres carrés pour une salle de soins standard",
+        "Douze mètres carrés pour une salle de soins standard",
+        "Vingt mètres carrés pour une salle de soins standard",
+        "Cinq mètres carrés pour une salle de soins standard"
+      ],
+      "correct": 1,
+      "explanation": "Douze mètres carrés de surface utile assurent l'ergonomie nécessaire aux mouvements du praticien, de l'assistante et du fauteuil.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi examine un local en retrait de la rue principale. Selon les critères de recrutement de patientèle, pourquoi ce positionnement est-il défavorable ?",
+      "media": [],
+      "options": [
+        "Pour garantir le prestige du praticien",
+        "Pour favoriser le recrutement spontané de patientèle",
+        "Pour minimiser le montant du loyer mensuel",
+        "Pour éviter la concurrence directe"
+      ],
+      "correct": 1,
+      "explanation": "La visibilité depuis la rue facilite le recrutement naturel de la patientèle de quartier, sans nécessiter de publicité coûteuse.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui choisit le revêtement de sol pour sa zone clinique. Selon les normes d'hygiène, quelle caractéristique est impérative ?",
+      "media": [],
+      "options": [
+        "Un revêtement en moquette épaisse pour l'isolation acoustique",
+        "Un parquet en bois massif verni pour l'esthétique",
+        "Un revêtement lisse, non poreux et désinfectable",
+        "Un carrelage très poreux pour l'absorption des chocs"
+      ],
+      "correct": 2,
+      "explanation": "Le sol doit être imperméable et facilement décontaminable pour respecter les règles d'hygiène en milieu de soins.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi conçoit l'organisation de son cabinet. Selon le principe de prévention des infections, quelle zone doit être strictement séparée du flux patients ?",
+      "media": [],
+      "options": [
+        "La salle d'attente des patients",
+        "Le circuit interne de stérilisation",
+        "Le secrétariat d'accueil général",
+        "Le bureau de consultation privé"
+      ],
+      "correct": 1,
+      "explanation": "La séparation du circuit sale/propre empêche tout risque de contamination croisée, principe fondamental en hygiène.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui visite un local dont la salle d'attente est aveugle. Selon le bien-être du patient, pourquoi cette configuration est-elle problématique ?",
+      "media": [],
+      "options": [
+        "Pour économiser l'énergie électrique du cabinet",
+        "Pour le confort visuel et la réduction de l'anxiété du patient",
+        "Pour simplifier la décoration murale",
+        "Pour faciliter la gestion du chauffage"
+      ],
+      "correct": 1,
+      "explanation": "La lumière naturelle diminue l'anxiété du patient en salle d'attente et améliore son expérience de soins.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q07",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi vérifie les dimensions des portes du local. Selon la réglementation PMR, quelle est la largeur minimale requise ?",
+      "media": [],
+      "options": [
+        "Soixante centimètres de passage",
+        "Quatre-vingt-dix centimètres de passage",
+        "Cent vingt centimètres de passage",
+        "Cinquante centimètres de passage"
+      ],
+      "correct": 1,
+      "explanation": "Une largeur de 90 cm permet le passage aisé des fauteuils roulants et des brancards, conformément aux normes d'accessibilité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui souhaite installer un CBCT. Selon la réglementation de radioprotection, quel élément est impératif dans la salle ?",
+      "media": [],
+      "options": [
+        "Des fenêtres avec double vitrage",
+        "Un blindage plombé sur les parois et le plafond",
+        "Un sol chauffant basse température",
+        "Une climatisation à haute puissance"
+      ],
+      "correct": 1,
+      "explanation": "Le blindage plombé est une exigence réglementaire pour la radioprotection des patients et du personnel, conformément aux normes de l'AMSSNuR.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi choisit l'orientation de ses salles de soins. Selon les principes d'éclairage naturel, quelle exposition est recommandée ?",
+      "media": [],
+      "options": [
+        "Une exposition Nord pour une lumière constante sans éblouissement",
+        "Une exposition Sud pour un ensoleillement maximal",
+        "Une exposition Ouest sans protection solaire",
+        "Une exposition Est sans système d'occultation"
+      ],
+      "correct": 0,
+      "explanation": "La lumière Nord est constante tout au long de la journée et évite l'éblouissement durant les soins précis.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui optimise l'organisation de sa salle de soins. Selon l'ergonomie clinique, que désigne le 'triangle d'or' ?",
+      "media": [],
+      "options": [
+        "La position idéale entre le praticien, le fauteuil et l'assistante",
+        "La relation entre le patient, la banque et le cabinet",
+        "La distance entre la salle d'attente et le cabinet",
+        "Le ratio entre le prix du loyer et la superficie"
+      ],
+      "correct": 0,
+      "explanation": "Le triangle d'or optimise les accès autour du fauteuil pour réduire la fatigue du praticien et de l'assistante.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi hésite entre un local au rez-de-chaussée et un au 2ème étage. Selon l'accessibilité, quel est l'avantage principal du rez-de-chaussée ?",
+      "media": [],
+      "options": [
+        "Une réduction significative du bruit environnant",
+        "Une accessibilité immédiate sans recours à l'ascenseur",
+        "Un coût global de loyer très peu élevé",
+        "Une meilleure exposition solaire"
+      ],
+      "correct": 1,
+      "explanation": "L'accès direct facilite grandement le passage des patients, notamment les PMR et les personnes âgées.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui installe une ventilation mécanique contrôlée (VMC). Selon les normes sanitaires, quel est l'objectif principal de cet équipement ?",
+      "media": [],
+      "options": [
+        "Refroidir les instruments rotatifs",
+        "Renouveler l'air et évacuer les aérosols contaminés",
+        "Atténuer les bruits extérieurs",
+        "Diffuser des parfums d'ambiance"
+      ],
+      "correct": 1,
+      "explanation": "La ventilation est primordiale pour l'assainissement de l'air clinique et l'évacuation des aérosols infectieux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi visite un local avec une hauteur sous plafond de 2,70 m. Selon les normes de construction, cette hauteur est-elle suffisante ?",
+      "media": [],
+      "options": [
+        "Non, c'est une mesure trop basse pour un cabinet",
+        "Oui, c'est une hauteur très suffisante et standard",
+        "Non, il faut quatre mètres minimum pour les scialytiques",
+        "Oui, si le plafond est peint en couleur sombre"
+      ],
+      "correct": 1,
+      "explanation": "Cette hauteur est standard et permet l'installation des éclairages et des scialytiques en toute sécurité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui choisit l'emplacement de son cabinet. Selon la fidélisation de la patientèle, pourquoi privilégier un quartier proche des transports ?",
+      "media": [],
+      "options": [
+        "Pour le calme du voisinage immédiat",
+        "Pour faciliter l'accès à la patientèle",
+        "Pour réduire le loyer professionnel",
+        "Pour être proche des confrères"
+      ],
+      "correct": 1,
+      "explanation": "La proximité des transports en commun favorise la fidélisation des patients et l'accessibilité du cabinet.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q15",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi conçoit le flux de stérilisation. Selon les bonnes pratiques, quelle condition doit respecter le circuit interne ?",
+      "media": [],
+      "options": [
+        "Un couloir de circulation mixte sale/propre",
+        "Un circuit fermé en marche en avant (sale → propre)",
+        "Deux étages de travail séparés",
+        "Trois assistants présents en permanence"
+      ],
+      "correct": 1,
+      "explanation": "Le circuit en marche en avant évite toute contamination croisée entre le matériel sale et le matériel stérile.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui choisit son éclairage chirurgical. Selon les exigences cliniques, quel indice est requis pour le scialytique ?",
+      "media": [],
+      "options": [
+        "Un indice de rendu des couleurs faible",
+        "Un indice de rendu des couleurs élevé",
+        "Un éclairage à dominante bleue",
+        "Un éclairage à intensité variable"
+      ],
+      "correct": 1,
+      "explanation": "Un IRC élevé est crucial pour identifier les teintes dentaires et effectuer des soins précis.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi examine un local avec une salle de soins exiguë. Selon la santé au travail, quel est le risque majeur pour le praticien ?",
+      "media": [],
+      "options": [
+        "Une usure prématurée du fauteuil",
+        "Un traumatisme ergonomique et des troubles musculo-squelettiques",
+        "Une augmentation du loyer mensuel",
+        "Un manque d'apport en oxygène"
+      ],
+      "correct": 1,
+      "explanation": "Les postures forcées dans un espace exigu génèrent des troubles musculo-squelettiques chez le praticien.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui vérifie le système d'évacuation des eaux usées. Selon les normes de plomberie, quel est l'élément critique ?",
+      "media": [],
+      "options": [
+        "La pression de l'eau arrivant au cabinet",
+        "La pente et le diamètre des conduits d'évacuation",
+        "La couleur externe des tuyaux",
+        "La température du liquide rejeté"
+      ],
+      "correct": 1,
+      "explanation": "Une pente suffisante (minimum 2%) assure l'écoulement sans risque d'obstruction ou de reflux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi installe l'isolation acoustique de sa salle de soins. Selon la déontologie médicale, pourquoi est-ce important ?",
+      "media": [],
+      "options": [
+        "Pour le confort sonore du praticien",
+        "Pour respecter la confidentialité des propos médicaux",
+        "Pour accélérer le temps de travail",
+        "Pour améliorer le design intérieur"
+      ],
+      "correct": 1,
+      "explanation": "La confidentialité des propos médicaux est une obligation déontologique et légale, protégée par le secret professionnel.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui installe son compresseur. Selon les exigences techniques, où doit-il être positionné ?",
+      "media": [],
+      "options": [
+        "Au milieu de la salle d'attente pour l'accessibilité",
+        "Dans un local ventilé et accessible pour l'entretien",
+        "Fermé par un placard hermétique sans aération",
+        "Installé directement sous le fauteuil dentaire"
+      ],
+      "correct": 1,
+      "explanation": "L'entretien régulier du compresseur nécessite un accès facile et une aération pour évacuer la chaleur et l'humidité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi évalue le potentiel d'un quartier. Selon l'étude de marché, quel critère doit-il impérativement intégrer dans son choix ?",
+      "media": [],
+      "options": [
+        "La densité de la concurrence dentaire locale",
+        "Le nombre total de cafés dans le voisinage",
+        "La hauteur moyenne des immeubles",
+        "La couleur des façades environnantes"
+      ],
+      "correct": 0,
+      "explanation": "L'étude du marché local, notamment la densité concurrentielle, est vitale pour évaluer le potentiel de recrutement de patientèle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q22",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui aménage son espace clinique. Selon l'ergonomie, que désigne la 'zone de transfert' en salle de soins ?",
+      "media": [],
+      "options": [
+        "Une zone dédiée au repos du personnel",
+        "L'espace de transition pour guider le patient au fauteuil",
+        "Un espace de stockage des produits d'hygiène",
+        "L'entrée principale de l'immeuble"
+      ],
+      "correct": 1,
+      "explanation": "La zone de transfert permet d'installer confortablement le patient et de lui donner accès au fauteuil en toute sécurité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi installe la climatisation. Selon les règles d'hygiène, quelle est la position à éviter absolument ?",
+      "media": [],
+      "options": [
+        "Souffler directement sur le patient pendant les soins",
+        "Ne jamais viser directement la zone de travail",
+        "Rester allumée en continu le soir",
+        "Être fixée au ras du plancher"
+      ],
+      "correct": 0,
+      "explanation": "Le flux direct est inconfortable pour le patient et disperse les aérosols contaminés, augmentant les risques infectieux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Chaoui envisage de reprendre un ancien cabinet dentaire. Selon la logique d'aménagement, quel est l'avantage principal de cette option ?",
+      "media": [],
+      "options": [
+        "Le coût réduit de la décoration uniquement",
+        "La conformité préexistante des arrivées d'eau et d'évacuation",
+        "La réduction des impôts locaux",
+        "Le passage facilité des normes handicapés"
+      ],
+      "correct": 1,
+      "explanation": "Cela permet de réutiliser les circuits d'eau, d'évacuation et les réseaux techniques existants, réduisant les coûts de travaux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D1_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Hachimi envisage d'installer une baie vitrée dans la zone de stérilisation. Selon la relation patient, quel est l'intérêt de cette configuration ?",
+      "media": [],
+      "options": [
+        "Rassurer le patient sur les processus d'hygiène du cabinet",
+        "Respecter une norme de construction spécifique",
+        "Gagner de l'espace de rangement",
+        "Optimiser uniquement le design intérieur"
+      ],
+      "correct": 0,
+      "explanation": "La visibilité de la stérilisation renforce la confiance du patient et son sentiment de sécurité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

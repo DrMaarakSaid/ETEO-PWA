@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "assistantes_dentaires_intermediaire1_001",
+    "title": "Asistentes Dentales - Intermedio 1",
+    "specialty": "ASSI",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ASSI_I1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Chiba quiere contratar a una nueva asistente. Dudá entre una candidata con título DUT y una candidata con 5 años de experiencia práctica. El Dr. Zaki le da un consejo. ¿Qué criterio de selección es el mejor?",
+      "media": [],
+      "options": [
+        "La experiencia es más importante que el título",
+        "El título es más importante que la experiencia",
+        "Es necesario combinar el título y la experiencia para una evaluación completa",
+        "El título no tiene importancia"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Zaki explica: 'El título garantiza una formación estructurada, la experiencia aporta habilidades prácticas. Ambos se complementan.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Zaki debe formar a su nueva asistente. ¿Qué método de formación es más eficaz según las ciencias pedagógicas?",
+      "media": [],
+      "options": [
+        "Solo formación teórica",
+        "Solo formación práctica",
+        "Formación que combina teoría y práctica con un tutor",
+        "Solo formación a distancia"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Chiba explica: 'La alternancia de teoría y práctica con un tutor permite desarrollar tanto las habilidades técnicas como el comportamiento profesional.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Chiba tiene una asistente que tiene dificultades para manejar el estrés. Según las reglas de gestión de personal, ¿qué enfoque es el mejor?",
+      "media": [],
+      "options": [
+        "Pedirle que lo maneje sola",
+        "Ofrecerle apoyo y técnicas de manejo del estrés",
+        "Trasladarla a otro puesto",
+        "Ignorar el problema"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'El apoyo y la formación en manejo del estrés son inversiones en la productividad y el bienestar del equipo.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Zaki debe evaluar las habilidades de su asistente. ¿Qué método de evaluación es más objetivo?",
+      "media": [],
+      "options": [
+        "Una entrevista informal anual",
+        "Una parrilla de evaluación estandarizada con criterios claros",
+        "Una evaluación basada en la antigüedad",
+        "Una evaluación por parte de los pacientes"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'Una parrilla de evaluación estandarizada permite evaluar objetivamente las habilidades técnicas, comunicativas y organizativas.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe organizar la formación continua de su equipo. ¿Cuál es la frecuencia recomendada?",
+      "media": [],
+      "options": [
+        "Una vez al año",
+        "Varias veces al año, de forma regular",
+        "Nunca",
+        "Solo al ser contratado"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'La formación continua regular permite al equipo mantenerse actualizado y perfeccionar sus habilidades.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Zaki tiene una asistente a la que le falta confianza en sí misma. ¿Qué enfoque es mejor para desarrollar su autonomía?",
+      "media": [],
+      "options": [
+        "Darle tareas simples",
+        "Encomendarle tareas cada vez más complejas con el apoyo adecuado",
+        "Dejarla que se las arregle sola",
+        "Crear competencia con otras asistentes"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'La delegación progresiva con apoyo permite desarrollar la confianza y la autonomía.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe resolver un conflicto entre dos asistentes. ¿Cuál es el primer paso?",
+      "media": [],
+      "options": [
+        "Ignorar el conflicto",
+        "Escuchar a ambas partes por separado",
+        "Sancionar a las dos asistentes",
+        "Cambiar sus horarios"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'La escucha individual permite comprender las causas del conflicto antes de buscar una solución.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Zaki debe motivar a su equipo de asistentes. ¿Qué estrategia es más eficaz?",
+      "media": [],
+      "options": [
+        "Primas puntuales",
+        "Reconocimiento regular y perspectivas de desarrollo",
+        "Aumento de salario",
+        "Regalos"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'El reconocimiento regular y las perspectivas de desarrollo son las palancas de motivación más sostenibles.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe contratar a una asistente. ¿Cuáles son los principales criterios para evaluar en la entrevista?",
+      "media": [],
+      "options": [
+        "Solo las habilidades técnicas",
+        "Habilidades técnicas, habilidades comunicativas y comportamiento profesional",
+        "Solo la experiencia",
+        "Solo el título"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'La evaluación debe tener en cuenta las habilidades técnicas, comunicativas y el comportamiento profesional para una contratación exitosa.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Zaki tiene una asistente que tiene dificultades con el software de gestión. ¿Qué solución es la mejor?",
+      "media": [],
+      "options": [
+        "Obligarla a usar el software sin formación",
+        "Ofrecerle una formación específica en el software",
+        "Cambiar de software",
+        "Asignarle otras tareas"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'La formación específica permite a la asistente dominar las herramientas y ser más eficiente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe organizar el trabajo de su asistente. ¿Qué método de distribución de tareas es el mejor?",
+      "media": [],
+      "options": [
+        "Distribución basada en preferencias",
+        "Distribución equilibrada basada en habilidades",
+        "Distribución basada en la antigüedad",
+        "Distribución aleatoria"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'La distribución de tareas debe tener en cuenta las habilidades de cada uno para optimizar la eficiencia del equipo.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Zaki debe evaluar la eficiencia de su asistente. ¿Qué indicadores son los más relevantes?",
+      "media": [],
+      "options": [
+        "El tiempo pasado en el consultorio",
+        "La calidad de la asistencia al tratamiento y la satisfacción de los pacientes",
+        "El número de días de vacaciones",
+        "La apariencia"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'La calidad de la asistencia al tratamiento y la satisfacción de los pacientes son los indicadores más relevantes de eficiencia.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe manejar a una asistente que está teniendo dificultades. ¿Qué enfoque es el correcto?",
+      "media": [],
+      "options": [
+        "Ignorar las dificultades",
+        "Identificar las causas y ofrecer un plan de apoyo",
+        "Despedirla",
+        "Trasladarla a otro puesto"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'Identificar las causas e implementar un plan de apoyo permite superar las dificultades.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Zaki debe formar a una nueva asistente en el circuito de esterilización. ¿Qué método es más eficaz?",
+      "media": [],
+      "options": [
+        "Darle el manual para que lo lea",
+        "Un acompañamiento paso a paso con demostración práctica",
+        "Mostrarle un vídeo",
+        "Dejar que aprenda sobre la marcha"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'La demostración práctica con acompañamiento permite a la asistente comprender y dominar el circuito de esterilización.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe gestionar el calendario de vacaciones de su asistente. ¿Qué práctica es la correcta?",
+      "media": [],
+      "options": [
+        "Conceder las vacaciones a última hora",
+        "Planificar las vacaciones con antelación en consulta con el equipo",
+        "Denegar las vacaciones en períodos de actividad",
+        "Conceder las vacaciones sin planificación"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'La planificación anticipada de las vacaciones permite mantener la continuidad del servicio y tener en cuenta las necesidades de cada uno.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Zaki debe evaluar el profesionalismo de su asistente. ¿Qué criterios debe tener en cuenta?",
+      "media": [],
+      "options": [
+        "La apariencia",
+        "La puntualidad, la ética y la calidad del trabajo",
+        "La antigüedad",
+        "La velocidad de ejecución"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'El profesionalismo se mide por la puntualidad, la ética y la calidad del trabajo realizado.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe manejar a una asistente que se niega a seguir los protocolos. ¿Qué enfoque es el correcto?",
+      "media": [],
+      "options": [
+        "Ignorar la negativa",
+        "Explicar la importancia de los protocolos y ofrecer formación",
+        "Sancionarla inmediatamente",
+        "Cambiar los protocolos"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'La explicación y la formación permiten convencer a la asistente de que respete los protocolos, en lugar de imponerlos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Zaki debe organizar la comunicación en el equipo. ¿Qué herramienta es más eficaz?",
+      "media": [],
+      "options": [
+        "Mensajes por teléfono",
+        "Un cuaderno de comunicaciones o una herramienta digital compartida",
+        "Reuniones improvisadas",
+        "Post-it en la pared"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'Una herramienta compartida garantiza una comunicación clara y trazable entre todos los miembros del equipo.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe manejar a una asistente en estado de agotamiento. ¿Cuál es el objetivo?",
+      "media": [],
+      "options": [
+        "Mantener la producción",
+        "Proteger la salud de la asistente y ofrecer apoyo",
+        "Reemplazarla",
+        "Ignorar el problema"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'La salud de la asistente es una prioridad. El apoyo y la prevención del agotamiento son necesarios.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Zaki debe evaluar las necesidades de formación de su asistente. ¿Qué método es el más adecuado?",
+      "media": [],
+      "options": [
+        "Evaluación basada en impresiones",
+        "Entrevista individual con análisis de habilidades",
+        "Evaluación por los compañeros",
+        "Autoevaluación sin acompañamiento"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'La entrevista individual con análisis de habilidades permite determinar con precisión las necesidades de formación.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe crear un plan de desarrollo profesional para su asistente. ¿Cuál es el objetivo principal?",
+      "media": [],
+      "options": [
+        "Retener a la asistente",
+        "Desarrollar sus habilidades y motivación",
+        "Reducir los costes de contratación",
+        "Mejorar la imagen del consultorio"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'Un plan de desarrollo profesional permite desarrollar las habilidades de la asistente y fortalecer su motivación.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q22",
+      "type": "single-choice",
+      "question": "El Dr. Zaki debe manejar a una asistente que tiene dificultades para comunicarse con los pacientes. ¿Qué enfoque es el correcto?",
+      "media": [],
+      "options": [
+        "Reemplazarla",
+        "Ofrecerle formación en comunicación",
+        "Ponerla en contacto con pacientes difíciles",
+        "Ignorar el problema"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba explica: 'La formación en comunicación permite a la asistente desarrollar sus habilidades interpersonales.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Chiba debe organizar el trabajo en pareja con su asistente. ¿Cuál es la clave del éxito?",
+      "media": [],
+      "options": [
+        "La compatibilidad personal",
+        "La complementariedad de habilidades y una buena comunicación",
+        "La antigüedad de la asistente",
+        "El tamaño del consultorio"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Zaki explica: 'La complementariedad de habilidades y una buena comunicación son las claves para un trabajo en pareja eficaz.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Zaki, después de formar a varias asistentes, recibe felicitaciones del Dr. Chiba. ¿Cuál es el siguiente paso para el Dr. Zaki?",
+      "media": [],
+      "options": [
+        "Crear un programa de mentoría para nuevas asistentes",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar los fundamentos"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Chiba explica: 'Crear un programa de mentoría permite transmitir conocimientos y formar a la nueva generación.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Chiba y el Dr. Zaki, después de muchos años de colaboración, han formado un equipo excepcional. ¿Qué mensaje quieren transmitir a los jóvenes profesionales?",
+      "media": [],
+      "options": [
+        "La asistente es secundaria",
+        "La asistente es un pilar indispensable del consultorio",
+        "La asistente es una secretaria",
+        "La asistente no es importante"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chiba y el Dr. Zaki concluyen: 'La asistente es un pilar indispensable del consultorio, al mismo nivel que el odontólogo.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

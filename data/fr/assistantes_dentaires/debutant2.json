@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "assistantes_dentaires_debutant2_001",
+    "title": "Assistantes_dentaires - Débutant 2",
+    "specialty": "ASSI",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ASSI_D2_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Tarik a demandé à son assistante de préparer un plateau pour une extraction, mais elle a oublié d'inclure un instrument essentiel. Pendant l'intervention, le Dr Tarik doit interrompre le soin pour chercher l'instrument. Selon la responsabilité professionnelle, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable de l'erreur",
+        "Le Dr Tarik est responsable car il aurait dû vérifier le plateau avant de commencer",
+        "La responsabilité est partagée entre le dentiste et l'assistante",
+        "Aucune faute n'est engagée car l'erreur est mineure"
+      ],
+      "correct": 2,
+      "explanation": "La responsabilité est partagée : l'assistante a commis une erreur de préparation, mais le dentiste a le devoir de vérifier que tout est prêt avant de commencer un acte invasif.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Sami a confié à son assistante la tâche de stériliser les instruments, mais celle-ci a oublié de lancer le cycle de stérilisation. Un patient a été soigné avec des instruments non stérilisés. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable car elle a oublié de lancer le cycle",
+        "Le Dr Sami est seul responsable car il a délégué une tâche critique",
+        "Le Dr Sami est responsable car il a l'obligation de contrôler le travail de son assistante",
+        "Aucune responsabilité n'est engagée car le patient n'a pas eu d'infection"
+      ],
+      "correct": 2,
+      "explanation": "Le dentiste est responsable de la qualité des soins dispensés dans son cabinet, y compris de la stérilisation. Il a l'obligation de contrôler le travail de son assistante et de s'assurer que les protocoles sont respectés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q03",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a mal enregistré les coordonnées d'un patient, ce qui a entraîné un retard dans la transmission des résultats d'analyse. Selon les obligations de l'assistante, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante n'est pas responsable car l'erreur est administrative",
+        "L'assistante est responsable de la qualité des informations saisies",
+        "Le Dr Tarik est seul responsable car il a délégué cette tâche",
+        "Aucune faute n'est engagée car les résultats sont arrivés"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire a le devoir de saisir correctement les informations des patients, car toute erreur peut avoir des conséquences sur la prise en charge. La rigueur administrative est une obligation professionnelle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Sami a demandé à son assistante de prendre un rendez-vous pour un patient, mais elle a mal noté la date, entraînant un retard dans le traitement. Selon la gestion de la relation patient, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable de l'erreur de planning",
+        "Le Dr Sami est responsable car il aurait dû vérifier le planning",
+        "La responsabilité est partagée, mais le dentiste doit assumer la gestion de la plainte du patient",
+        "Aucune faute n'est engagée car l'erreur est mineure"
+      ],
+      "correct": 2,
+      "explanation": "L'assistante a commis une erreur, mais c'est le dentiste qui, en tant que responsable du cabinet, doit gérer la relation avec le patient et s'assurer de la satisfaction de ce dernier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q05",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a reçu une plainte d'un patient concernant un dépassement d'honoraires non justifié. Elle a reçu le patient en salle d'attente sans l'informer de la facture. Selon les obligations en matière de transparence financière, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante n'est pas responsable des questions financières",
+        "L'assistante a le devoir d'informer le patient sur les tarifs avant le soin",
+        "Le Dr Tarik est seul responsable car il fixe les tarifs",
+        "Le patient doit se renseigner lui-même sur les tarifs"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire a un devoir d'information envers les patients, notamment en matière de tarifs. Elle doit s'assurer que le patient est informé du coût des soins avant qu'ils ne soient réalisés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Sami a été poursuivi par un patient qui a eu une infection après une extraction. L'assistante a signé la fiche de stérilisation sans avoir effectué le contrôle des indicateurs. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable car elle a falsifié le document",
+        "Le Dr Sami est responsable car il a délégué le contrôle de stérilisation",
+        "La responsabilité est partagée, car le dentiste a le devoir de contrôler le processus",
+        "Aucune responsabilité n'est engagée"
+      ],
+      "correct": 2,
+      "explanation": "La responsabilité est partagée : l'assistante a signé sans vérifier, mais le dentiste a l'obligation de contrôler le processus de stérilisation et de s'assurer que les protocoles sont respectés avant toute intervention.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q07",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a refusé de réaliser une tâche qu'elle jugeait dangereuse (préparation d'un produit chimique sans équipement de protection). Selon la sécurité au travail, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est en faute car elle doit obéir au dentiste",
+        "L'assistante a le droit de refuser une tâche dangereuse si les conditions de sécurité ne sont pas réunies",
+        "Le Dr Tarik peut la licencier pour insubordination",
+        "La tâche n'est pas dangereuse"
+      ],
+      "correct": 1,
+      "explanation": "Tout salarié a le droit de refuser une tâche qu'il estime dangereuse pour sa santé ou sa sécurité si les conditions de protection ne sont pas réunies. L'employeur a l'obligation de fournir les équipements de protection nécessaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Sami a donné une consigne à son assistante qui va à l'encontre des bonnes pratiques d'hygiène (ne pas changer de gants entre deux patients). Selon la déontologie, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante doit obéir à la consigne du dentiste",
+        "L'assistante doit refuser d'appliquer une consigne contraire aux bonnes pratiques",
+        "L'assistante peut appliquer la consigne mais en informer l'Ordre",
+        "La consigne est valable"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire a un devoir envers la sécurité des patients. Elle doit refuser d'appliquer toute consigne contraire aux bonnes pratiques d'hygiène et de sécurité, même si elle vient du dentiste.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q09",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a accidentellement divulgué des informations médicales confidentielles d'un patient à un tiers. Selon le secret professionnel, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante n'est pas tenue au secret professionnel",
+        "L'assistante est tenue au secret professionnel comme le dentiste",
+        "Seul le dentiste est responsable du secret professionnel",
+        "La divulgation est excusable car elle était accidentelle"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire est tenue au secret professionnel, comme tout le personnel du cabinet. La divulgation accidentelle d'informations confidentielles engage la responsabilité de l'assistante et celle du dentiste.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Sami a demandé à son assistante de signer une attestation de soins pour un patient qu'elle n'a pas assisté. Selon la déontologie, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante peut signer car elle fait confiance au dentiste",
+        "L'assistante doit refuser de signer un document qu'elle ne peut pas authentifier",
+        "L'assistante peut signer si le dentiste lui demande",
+        "La signature n'est pas importante"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire ne doit jamais signer un document qu'elle ne peut pas authentifier personnellement. Elle ne doit pas participer à une fraude ou à une fausse déclaration, sous peine d'engager sa responsabilité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q11",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a constaté que des instruments étaient manquants après une intervention. Elle n'a pas signalé la perte. Un patient a été exposé à un risque infectieux. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est responsable car elle a omis de signaler la perte",
+        "Le Dr Tarik est responsable car il n'a pas vérifié le matériel",
+        "La responsabilité est partagée, mais l'omission de signaler est une faute grave",
+        "Aucune faute n'est engagée"
+      ],
+      "correct": 2,
+      "explanation": "L'assistante a le devoir de signaler toute anomalie (instruments manquants) au dentiste. L'omission de signaler une perte qui expose le patient à un risque est une faute grave partagée avec le dentiste qui aurait dû contrôler.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Sami a été mis en cause par un patient qui a eu une complication après un soin. L'assistante qui assistait l'intervention affirme avoir suivi toutes les procédures. Selon la responsabilité en cas de litige, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante n'est pas concernée par le litige",
+        "L'assistante peut être appelée comme témoin mais n'est pas responsable",
+        "L'assistante peut être mise en cause si sa négligence est prouvée",
+        "Seul le dentiste est responsable des complications"
+      ],
+      "correct": 2,
+      "explanation": "En cas de litige, l'assistante peut être mise en cause si sa négligence (erreur de préparation, mauvaise stérilisation, etc.) est prouvée et a contribué à la complication.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q13",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a refusé d'effectuer une tâche qu'elle n'avait pas apprise, par crainte de mal faire. Selon les responsabilités, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est en faute car elle doit apprendre sur le tas",
+        "L'assistante a raison de refuser car elle ne maîtrise pas la tâche",
+        "Le Dr Tarik peut la licencier pour refus de travail",
+        "La tâche n'est pas dangereuse"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire a le droit de refuser d'effectuer une tâche qu'elle ne maîtrise pas, car elle engage sa responsabilité. Le dentiste a l'obligation de former son personnel et de s'assurer de ses compétences.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Sami a constaté que son assistante a utilisé des produits de désinfection périmés. Selon les obligations en matière d'hygiène, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable car elle a utilisé les produits",
+        "Le Dr Sami est responsable car il doit contrôler les stocks",
+        "La responsabilité est partagée, car le dentiste doit s'assurer de la validité des produits",
+        "Les produits périmés ne sont pas dangereux"
+      ],
+      "correct": 2,
+      "explanation": "L'assistante a utilisé les produits, mais le dentiste a l'obligation de s'assurer que les stocks sont valides et que les protocoles sont respectés. La responsabilité est partagée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q15",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a mal positionné le patient sur le fauteuil, causant une douleur cervicale. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable car elle a positionné le patient",
+        "Le Dr Tarik est responsable car il doit superviser le positionnement",
+        "La responsabilité est partagée, car le dentiste doit vérifier la position du patient avant l'intervention",
+        "Aucune faute n'est engagée"
+      ],
+      "correct": 2,
+      "explanation": "Le positionnement du patient est une tâche importante qui engage la responsabilité de l'assistante, mais le dentiste doit vérifier la position avant de commencer l'intervention. La responsabilité est donc partagée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Sami a demandé à son assistante de faire une radiographie sans protection, car 'c'était urgent'. Selon la radioprotection, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante doit obéir à la consigne du dentiste",
+        "L'assistante doit refuser et rappeler les règles de radioprotection",
+        "L'assistante peut faire la radio mais en informer l'Ordre",
+        "La radiographie urgente justifie la non-protection"
+      ],
+      "correct": 1,
+      "explanation": "La radioprotection est une obligation légale. L'assistante a le devoir de refuser de faire une radiographie sans protection, même en urgence, car cela met en danger la santé du patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q17",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a constaté que le Dr Tarik a facturé un acte qu'il n'a pas réalisé. Selon la déontologie, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante doit garder le silence",
+        "L'assistante doit signaler cette fraude à l'Ordre ou aux autorités",
+        "L'assistante peut participer à la facturation sans problème",
+        "La facturation ne concerne pas l'assistante"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire a un devoir d'intégrité. Si elle constate une fraude, elle doit la signaler aux autorités compétentes. La participation à une fraude engage sa responsabilité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Sami a été poursuivi par un patient pour une erreur de diagnostic. L'assistante affirme avoir transmis correctement toutes les informations au dentiste. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante n'est pas responsable du diagnostic",
+        "L'assistante peut être responsable si elle a omis de transmettre une information",
+        "Seul le dentiste est responsable du diagnostic",
+        "Le patient est responsable de son propre diagnostic"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante n'est pas responsable du diagnostic en lui-même, mais elle peut être responsable si elle a omis de transmettre une information importante au dentiste (ex: antécédent médical, allergie).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q19",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a perdu un dossier patient contenant des informations médicales. Selon la protection des données, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable de la perte",
+        "Le Dr Tarik est responsable car il a délégué la gestion des dossiers",
+        "La responsabilité est partagée, mais la perte engage la responsabilité du cabinet",
+        "La perte de dossier n'est pas grave"
+      ],
+      "correct": 2,
+      "explanation": "La perte d'un dossier patient engage la responsabilité du cabinet. L'assistante a une obligation de diligence, mais le dentiste est responsable de la gestion des données de son cabinet.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Sami a demandé à son assistante de falsifier un document médical. Selon la déontologie, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante doit obéir à la demande du dentiste",
+        "L'assistante doit refuser et signaler la tentative de fraude",
+        "L'assistante peut participer à la falsification",
+        "La falsification est acceptable dans certains cas"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire a un devoir d'intégrité. Elle doit refuser toute tentative de falsification de documents et signaler cette pratique aux autorités compétentes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q21",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a reçu un patient en urgence alors que le Dr Tarik était en retard. Elle a commencé à préparer le patient sans attendre le dentiste. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante peut commencer les soins en urgence",
+        "L'assistante ne doit pas commencer les soins sans la présence du dentiste",
+        "L'assistante peut faire des soins de première urgence",
+        "Le patient peut être soigné sans le dentiste"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire ne peut pas réaliser d'actes médicaux sans la présence du dentiste. Elle ne peut pas soigner le patient, même en urgence, car cela constitue un exercice illégal de la médecine.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q22",
+      "type": "single-choice",
+      "question": "Le Dr Sami a été mis en cause pour un défaut d'information du patient. L'assistante affirme avoir remis la notice d'information au patient. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est responsable car elle a remis la notice",
+        "Le Dr Sami est responsable car c'est lui qui doit informer le patient",
+        "La responsabilité est partagée, mais c'est au dentiste de s'assurer que l'information a été comprise",
+        "Le patient est responsable de la lecture de la notice"
+      ],
+      "correct": 2,
+      "explanation": "L'assistante peut contribuer à l'information, mais c'est au dentiste de s'assurer que le patient a compris les risques et les alternatives avant de donner son consentement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q23",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Tarik a mal nettoyé le circuit d'eau de l'unité dentaire, causant une contamination bactérienne. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable car elle a mal nettoyé",
+        "Le Dr Tarik est responsable car il doit contrôler l'entretien",
+        "La responsabilité est partagée, car le dentiste doit s'assurer de la qualité de l'eau",
+        "La contamination n'est pas grave"
+      ],
+      "correct": 2,
+      "explanation": "L'assistante a une obligation de diligence, mais le dentiste est responsable de la qualité de l'eau utilisée dans son cabinet. Il doit contrôler l'entretien des circuits d'eau.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Sami a demandé à son assistante de remplacer un instrument défectueux, mais elle a utilisé un instrument de remplacement non stérile. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable de l'utilisation de l'instrument non stérile",
+        "Le Dr Sami est responsable car il a donné la consigne de remplacer l'instrument",
+        "La responsabilité est partagée, car le dentiste a le devoir de vérifier la stérilité des instruments",
+        "L'instrument non stérile est acceptable"
+      ],
+      "correct": 2,
+      "explanation": "L'assistante doit vérifier la stérilité des instruments avant de les utiliser, mais le dentiste a l'obligation de s'assurer que tous les instruments utilisés sont stériles. La responsabilité est partagée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Tarik a été poursuivi pour une erreur de médication. L'assistante avait préparé un produit d'anesthésie mais n'a pas vérifié la date de péremption. Selon la responsabilité, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante est seule responsable de l'erreur",
+        "Le Dr Tarik est responsable car il doit vérifier avant d'injecter",
+        "La responsabilité est partagée, car le dentiste a l'obligation de vérifier avant l'injection",
+        "La date de péremption n'est pas importante"
+      ],
+      "correct": 2,
+      "explanation": "L'assistante a préparé le produit, mais le dentiste a l'obligation de vérifier le produit avant de l'injecter au patient. La responsabilité est donc partagée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q26",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Sami a été témoin d'un échange verbal violent entre le Dr Sami et un patient. Selon la déontologie, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'assistante doit prendre parti pour le Dr Sami",
+        "L'assistante peut intervenir pour apaiser le conflit, sans prendre parti",
+        "L'assistante doit garder le silence",
+        "L'assistante doit prendre parti pour le patient"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante peut jouer un rôle de médiation dans un conflit, en restant neutre et en cherchant à apaiser les tensions. Cependant, elle ne doit pas prendre parti ni s'immiscer dans des décisions cliniques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

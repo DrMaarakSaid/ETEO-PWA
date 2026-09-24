@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "mutuelles_prises_en_charge_debutant1_001",
+    "title": "Mutualidades y Coberturas – Principiante 1",
+    "specialty": "MUTU",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "MUTU_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Mabrouki atiende a un paciente asegurado en la CNSS (sector privado). Según la ley 65-00, ¿qué organización gestiona el AMO para este paciente?",
+      "media": [],
+      "options": [
+        "CNOPS",
+        "CNSS",
+        "CMAM",
+        "RAMED"
+      ],
+      "correct": 1,
+      "explanation": "La CNSS (Caja Nacional de Seguridad Social) gestiona el AMO para el sector privado, mientras que la CNOPS gestiona el sector público.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Alami atiende a un funcionario público. Según la ley 65-00, ¿qué organización gestiona el AMO para este paciente?",
+      "media": [],
+      "options": [
+        "CNSS",
+        "CNOPS",
+        "RAMED",
+        "La aseguradora del paciente"
+      ],
+      "correct": 1,
+      "explanation": "La CNOPS (Caja Nacional de Organismos de Previsión Social) gestiona el AMO para los funcionarios públicos, empleados de autoridades locales y establecimientos públicos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q03",
+      "type": "single-choice",
+      "question": "Según la ley 65-00, ¿qué es el seguro médico obligatorio (AMO)?",
+      "media": [],
+      "options": [
+        "Un seguro privado voluntario",
+        "Un seguro médico básico obligatorio, basado en el principio de cotización",
+        "Un sistema de asistencia solo para los más desfavorecidos",
+        "Un seguro solo para funcionarios públicos"
+      ],
+      "correct": 1,
+      "explanation": "El AMO es un seguro médico básico obligatorio, basado en el principio de cotización y reparto de riesgos, establecido por la ley 65-00.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Mabrouki tiene un paciente que no tiene cobertura AMO y no puede pagar cotizaciones. Según la ley 65-00, ¿qué régimen puede beneficiarle?",
+      "media": [],
+      "options": [
+        "El régimen básico del AMO",
+        "El régimen de asistencia médica (RAMED)",
+        "El seguro privado obligatorio",
+        "Ningún régimen, debe pagar sus cuidados"
+      ],
+      "correct": 1,
+      "explanation": "La ley 65-00 establece, además del AMO, el régimen de asistencia médica (RAMED), basado en la solidaridad nacional para las poblaciones económicamente desfavorecidas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Alami atiende a un paciente asegurado en una compañía de seguros. ¿Cuál es el papel principal de esta aseguradora en relación con el AMO?",
+      "media": [],
+      "options": [
+        "Reemplaza al AMO obligatorio",
+        "Ofrece una cobertura complementaria al AMO",
+        "Gestiona el AMO para el sector público",
+        "Es obligatoria para todos los pacientes"
+      ],
+      "correct": 1,
+      "explanation": "Las compañías de seguros desempeñan un papel de cobertura complementaria, aumentando los porcentajes de reembolso o ampliando la lista de servicios cubiertos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q06",
+      "type": "single-choice",
+      "question": "Según la ley 65-00, ¿qué tipo de servicio está excluido del catálogo de servicios garantizados por el AMO?",
+      "media": [],
+      "options": [
+        "La atención dental",
+        "Las intervenciones quirúrgicas de carácter estético",
+        "Los exámenes radiológicos",
+        "La atención obstétrica"
+      ],
+      "correct": 1,
+      "explanation": "La ley 65-00 excluye las intervenciones quirúrgicas de carácter estético, el tratamiento termal, la acupuntura, la mesoterapia, la talasoterapia, la homeopatía y la medicina alternativa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Mabrouki ofrece a un paciente un procedimiento de blanqueamiento dental. ¿Estará cubierto este procedimiento por el AMO?",
+      "media": [],
+      "options": [
+        "Sí, completamente",
+        "Sí, parcialmente al 80%",
+        "No, porque el blanqueamiento es un procedimiento estético",
+        "Sí, si el dentista lo prescribe"
+      ],
+      "correct": 2,
+      "explanation": "Las intervenciones quirúrgicas de carácter estético están excluidas del catálogo de servicios garantizados por el AMO. El blanqueamiento dental, al ser un procedimiento estético, no se reembolsa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q08",
+      "type": "single-choice",
+      "question": "Según la ley 65-00, ¿quiénes son los beneficiarios a cargo cubiertos por el AMO?",
+      "media": [],
+      "options": [
+        "El cónyuge y los padres del asegurado",
+        "El cónyuge y los hijos a cargo menores de 21 años",
+        "Los hijos a cargo hasta 30 años sin condiciones",
+        "Todos los miembros de la familia sin límite de edad"
+      ],
+      "correct": 1,
+      "explanation": "Los beneficiarios a cargo son el cónyuge y los hijos a cargo menores de 21 años, excepto los hijos solteros que continúan estudios superiores hasta 30 años según la ley 54.23.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Alami atiende a un paciente cuyos hijos de 25 años continúan estudios superiores. Según la ley 54.23, ¿están estos hijos cubiertos por el AMO?",
+      "media": [],
+      "options": [
+        "No, porque tienen más de 21 años",
+        "Sí, hasta 26 años",
+        "No, deben ser independientes",
+        "Sí, hasta 30 años"
+      ],
+      "correct": 3,
+      "explanation": "La ley 54.23 amplió la edad de cobertura para los estudiantes solteros que continúan estudios hasta 30 años, en lugar de 26 años.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q10",
+      "type": "single-choice",
+      "question": "Según el artículo 5 de la ley 65-00, ¿cómo se cubre un hijo discapacitado por el AMO?",
+      "media": [],
+      "options": [
+        "Solo hasta 21 años",
+        "Hasta 26 años",
+        "Sin límite de edad",
+        "Hasta 30 años"
+      ],
+      "correct": 2,
+      "explanation": "Los hijos discapacitados a cargo se benefician de la cobertura del AMO sin límite de edad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Mabrouki tiene un paciente que quiere colocarse un implante dental. Según las reglas del AMO, ¿está cubierto este tratamiento?",
+      "media": [],
+      "options": [
+        "Sí, al 80% de la TNR",
+        "Sí, completamente",
+        "No, los implantes dentales no están cubiertos por el AMO",
+        "Sí, si el paciente tiene un seguro complementario"
+      ],
+      "correct": 2,
+      "explanation": "Los implantes dentales, las carillas estéticas o las coronas cerámicas generalmente no están cubiertos por el AMO, que solo reembolsa los cuidados básicos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q12",
+      "type": "single-choice",
+      "question": "Según la ley 54.23, ¿qué organización única gestionará el AMO en el futuro?",
+      "media": [],
+      "options": [
+        "CNOPS",
+        "CNSS",
+        "CMAM",
+        "El Ministerio de Sanidad"
+      ],
+      "correct": 1,
+      "explanation": "El proyecto de ley 54.23 prevé la transferencia de la gestión del régimen básico del AMO a una organización única: la Caja Nacional de Seguridad Social (CNSS).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Alami atiende a un paciente estudiante. Según la ley 54.23, ¿qué prevé la nueva ley para el régimen AMO de los estudiantes?",
+      "media": [],
+      "options": [
+        "Se mantiene sin cambios",
+        "Se suprime y los estudiantes pasan a otros mecanismos",
+        "Lo gestiona la CNOPS",
+        "Se vuelve voluntario"
+      ],
+      "correct": 1,
+      "explanation": "La ley 54.23 suprime el régimen especial AMO para estudiantes como mecanismo autónomo. Los estudiantes ahora se cubren como beneficiarios a cargo o a través de otros mecanismos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q14",
+      "type": "single-choice",
+      "question": "Según la ley 65-00, ¿cuál es el porcentaje de reembolso de una consulta de medicina general por el AMO?",
+      "media": [],
+      "options": [
+        "50 % de la Tarifa Nacional de Referencia (TNR)",
+        "80 % de la Tarifa Nacional de Referencia (TNR)",
+        "100 % de la Tarifa Nacional de Referencia (TNR)",
+        "Reembolso total"
+      ],
+      "correct": 1,
+      "explanation": "El AMO reembolsa generalmente el 80% de la Tarifa Nacional de Referencia (TNR) para consultas y cuidados básicos, el resto lo paga el paciente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Mabrouki atiende a un paciente que tiene un seguro complementario. ¿Cómo se distribuye el reembolso?",
+      "media": [],
+      "options": [
+        "La aseguradora reembolsa el 80%, el AMO el resto",
+        "El AMO reembolsa el 80%, la aseguradora complementa el resto",
+        "La aseguradora reembolsa el 100% sin intervención del AMO",
+        "El paciente elige qué organización paga"
+      ],
+      "correct": 1,
+      "explanation": "El AMO reembolsa el 80% de la Tarifa Nacional de Referencia, luego la aseguradora complementaria cubre total o parcialmente el resto.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q16",
+      "type": "single-choice",
+      "question": "Según la ley 65-00, ¿qué cuidados dentales básicos cubre el AMO?",
+      "media": [],
+      "options": [
+        "Prótesis e implantes",
+        "Consultas, tratamientos de caries y extracciones dentales",
+        "Ortodoncia para todas las edades",
+        "Blanqueamiento y carillas"
+      ],
+      "correct": 1,
+      "explanation": "El AMO cubre las consultas, los tratamientos de caries, las extracciones dentales y los tratamientos conservadores, pero no las prótesis ni los implantes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Alami debe realizar una prótesis de puente a un paciente. Según las reglas del AMO, ¿cuál es el procedimiento?",
+      "media": [],
+      "options": [
+        "El paciente puede empezar el tratamiento sin trámites",
+        "Es necesaria una autorización previa",
+        "El dentista debe realizar primero el tratamiento y luego solicitar el reembolso",
+        "El AMO no reembolsa ninguna prótesis"
+      ],
+      "correct": 1,
+      "explanation": "Los servicios como prótesis dentales u ortodoncia requieren una autorización previa: hay que enviar un presupuesto detallado al organismo correspondiente antes de iniciar el tratamiento.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q18",
+      "type": "single-choice",
+      "question": "Según el artículo 114 de la ley 65-00, ¿bajo qué condiciones pueden los empleadores sustituir el AMO por una compañía de seguros?",
+      "media": [],
+      "options": [
+        "Sí, sin condiciones",
+        "Sí, siempre que las prestaciones sean al menos equivalentes al AMO",
+        "No, está estrictamente prohibido",
+        "Sí, si el empleador paga más cotizaciones"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 114 de la ley 65-00 permite, durante un período transitorio, que las organizaciones públicas o privadas mantengan una cobertura médica voluntaria siempre que las prestaciones sean al menos equivalentes al AMO.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Mabrouki tiene un paciente con una factura de servicios dentales. ¿Cuál es el plazo máximo para presentar la solicitud de reembolso?",
+      "media": [],
+      "options": [
+        "15 días",
+        "30 días",
+        "60 días",
+        "6 meses"
+      ],
+      "correct": 2,
+      "explanation": "Los documentos deben presentarse en los plazos fijados por la organización, a menudo en un plazo de 60 días desde la fecha de la prestación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q20",
+      "type": "single-choice",
+      "question": "Según la ley 65-00, ¿qué es la 'participación del paciente' para un asegurado del AMO?",
+      "media": [],
+      "options": [
+        "Un impuesto adicional sobre los servicios médicos",
+        "La cantidad que paga el paciente después del reembolso del AMO",
+        "La cantidad reembolsada por la aseguradora",
+        "La contribución del Estado"
+      ],
+      "correct": 1,
+      "explanation": "La participación del paciente es la parte que queda a cargo del asegurado después del reembolso del AMO, generalmente el 20% de la Tarifa Nacional de Referencia.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q21",
+      "type": "single-choice",
+      "question": "Según la ley 65-00, ¿cubren los accidentes de trabajo el AMO?",
+      "media": [],
+      "options": [
+        "Sí, como cualquier enfermedad",
+        "No, se rigen por una legislación específica",
+        "Sí, pero solo para los funcionarios públicos",
+        "Parcialmente, según la gravedad"
+      ],
+      "correct": 1,
+      "explanation": "La ley 65-00 precisa que los riesgos relacionados con los accidentes de trabajo y las enfermedades profesionales siguen rigiéndose por una legislación específica.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q22",
+      "type": "single-choice",
+      "question": "El Dr. Alami atiende a un paciente que tiene una mutua interna en su empresa. Según los cambios de la ley 54.23, ¿qué ocurre con estos convenios?",
+      "media": [],
+      "options": [
+        "Se anulan inmediatamente",
+        "Siguen vigentes durante un período transitorio",
+        "Se convierten en la única cobertura posible",
+        "Se transfieren automáticamente a la CNSS"
+      ],
+      "correct": 1,
+      "explanation": "Los convenios suscritos con compañías de seguros siguen vigentes por el plazo que fije el decreto, en el marco de la transición hacia el sistema único.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q23",
+      "type": "single-choice",
+      "question": "Según la ley 65-00, ¿qué servicios garantiza el AMO?",
+      "media": [],
+      "options": [
+        "Solo las intervenciones quirúrgicas",
+        "La atención preventiva y curativa, la obstetricia, la rehabilitación y la atención dental",
+        "Solo los medicamentos",
+        "Solo los servicios relacionados con accidentes de trabajo"
+      ],
+      "correct": 1,
+      "explanation": "El AMO garantiza la cobertura de los riesgos y gastos de tratamiento relacionados con la enfermedad, la obstetricia, la rehabilitación, incluyendo la atención preventiva y curativa, así como la atención dental.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Mabrouki tiene un paciente que quiere carillas estéticas. Según la ley 65-00, ¿cómo se cubren estos servicios?",
+      "media": [],
+      "options": [
+        "Al 80%, como los servicios habituales",
+        "Están excluidos del ámbito del AMO como procedimientos estéticos",
+        "Al 100%, si el dentista los prescribe",
+        "Parcialmente, según la aseguradora"
+      ],
+      "correct": 1,
+      "explanation": "Las intervenciones quirúrgicas de carácter estético, incluidas las carillas estéticas, están excluidas del catálogo de servicios garantizados por el AMO.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q25",
+      "type": "single-choice",
+      "question": "Según la ley 65-00, ¿quién se considera 'beneficiario a cargo' del asegurado del AMO?",
+      "media": [],
+      "options": [
+        "Solo el cónyuge",
+        "El cónyuge y los hijos a cargo",
+        "Los padres del asegurado",
+        "Todos los miembros de la familia"
+      ],
+      "correct": 1,
+      "explanation": "Los beneficiarios a cargo son el cónyuge y los hijos a cargo del asegurado según la ley 65-00.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "parodontologie_intermediaire1_001",
+    "title": "Parodontologie - Intermédiaire 1",
+    "specialty": "PARO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PARO_I1_Q01",
+      "type": "single-choice",
+      "question": "Sami demande à Mina : 'Quelle est la clé du diagnostic parodontal ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un simple examen visuel",
+        "Un sondage complet et des radiographies",
+        "Uniquement des radiographies",
+        "Uniquement le sondage"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Le diagnostic parodontal repose sur le sondage et les radiographies.' 🦅 Sami : 'Je vais toujours faire les deux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q02",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment évaluer la perte osseuse parodontale ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Par un simple examen clinique",
+        "Par des radiographies rétro-alvéolaires ou panoramiques",
+        "Par une tomographie",
+        "Par une biopsie"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les radiographies sont indispensables pour évaluer la perte osseuse.' 🦅 Sami : 'Je vais toujours prescrire des radios.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q03",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que le saignement au sondage (BOP) ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Un signe d'inflammation active",
+        "Un signe de cancer",
+        "Un signe de carence en vitamines",
+        "Un signe de mauvaise hygiène uniquement"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le BOP est un indicateur d'inflammation active.' 🦅 Sami : 'Je vais toujours noter le BOP.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q04",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les facteurs de risque de la parodontite ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Tabac, diabète, génétique, stress, obésité",
+        "Uniquement le tabac",
+        "Uniquement le diabète",
+        "Uniquement la génétique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les facteurs de risque sont multiples et doivent être pris en compte.' 🦅 Sami : 'Je vais rechercher ces facteurs systématiquement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q05",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment se définit une poche parodontale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une profondeur de sondage > 3 mm",
+        "Une profondeur de sondage > 5 mm",
+        "Une profondeur de sondage > 7 mm",
+        "Une profondeur de sondage normale"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Une poche se définit par un sondage > 3 mm.' 🦅 Sami : 'Je vais mesurer systématiquement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q06",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce que la classification de Miller ?' Mina lui explique :",
+      "media": [],
+      "options": [
+        "Une classification des récessions gingivales",
+        "Une classification des parodontites",
+        "Une classification des poches parodontales",
+        "Une classification des mobilités"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Miller classe les récessions selon le pronostic de recouvrement.' 🦅 Sami : 'Je vais utiliser cette classification.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q07",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les signes cliniques de la gingivite ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Rougeur, gonflement, saignement au sondage",
+        "Perte osseuse uniquement",
+        "Mobilité dentaire",
+        "Récession gingivale"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La gingivite se manifeste par une inflammation des tissus mous.' 🦅 Sami : 'Je vais repérer ces signes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q08",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quelle est la différence entre gingivite et parodontite ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La gingivite est réversible, la parodontite a une perte osseuse",
+        "C'est la même chose",
+        "La parodontite est réversible",
+        "La gingivite est plus sévère"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La gingivite est réversible, la parodontite implique une perte osseuse.' 🦅 Sami : 'Je vais différencier les deux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q09",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les avantages du traitement parodontal non chirurgical ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Moins invasif, efficace sur les poches < 5 mm",
+        "Plus efficace que la chirurgie",
+        "Indiqué pour toutes les poches",
+        "Ne nécessite pas de suivi"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement non chirurgical est la première étape pour les poches peu profondes.' 🦅 Sami : 'Je vais commencer par le non chirurgical.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q10",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quand faut-il réaliser un lambeau parodontal ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Pour les poches > 5 mm avec perte osseuse",
+        "Pour toutes les poches",
+        "Pour les poches < 3 mm",
+        "Jamais"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le lambeau est indiqué pour l'accès aux poches profondes.' 🦅 Sami : 'Je vais orienter vers un spécialiste.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q11",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la maintenance parodontale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Le suivi régulier après traitement pour prévenir les récidives",
+        "Un traitement unique",
+        "Un détartrage annuel",
+        "Une chirurgie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La maintenance est essentielle pour la stabilité à long terme.' 🦅 Sami : 'Je vais planifier des contrôles réguliers.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q12",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les facteurs pronostiques en parodontologie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Profondeur des poches, perte osseuse, mobilité, furcations",
+        "Uniquement la profondeur des poches",
+        "Uniquement la perte osseuse",
+        "Uniquement la mobilité"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le pronostic est multifactoriel.' 🦅 Sami : 'Je vais évaluer tous ces paramètres.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q13",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la régénération tissulaire guidée ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une technique utilisant des membranes pour régénérer l'os",
+        "Une technique d'extraction",
+        "Une technique de détartrage",
+        "Une technique prothétique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La RTG permet de régénérer l'os perdu.' 🦅 Sami : 'Je vais me former à la RTG.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q14",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer une furcation de grade 2 ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Traitement parodontal spécifique, parfois chirurgical",
+        "Extraction systématique",
+        "Détartrage simple",
+        "Antibiotiques seuls"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les furcations nécessitent une approche adaptée.' 🦅 Sami : 'Je vais traiter les furcations avec soin.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q15",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les signes d'une parodontite active ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Saignement au sondage, suppuration, perte osseuse progressive",
+        "Uniquement le saignement",
+        "Uniquement la suppuration",
+        "Uniquement la perte osseuse"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'activité de la maladie est multifactorielle.' 🦅 Sami : 'Je vais surveiller ces signes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q16",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quand utiliser des antibiotiques en parodontologie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Dans les parodontites agressives ou lorsque le détartrage est insuffisant",
+        "Pour toutes les parodontites",
+        "Jamais",
+        "Pour les gingivites"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les antibiotiques sont indiqués dans des cas spécifiques.' 🦅 Sami : 'Je vais les prescrire avec parcimonie.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q17",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la mobilité dentaire de grade 2 ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une mobilité horizontale de 1 à 2 mm",
+        "Une mobilité verticale",
+        "Une mobilité horizontale de moins de 1 mm",
+        "Une mobilité dans tous les plans"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La mobilité de grade 2 correspond à un déplacement de 1-2 mm.' 🦅 Sami : 'Je vais utiliser cette classification.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q18",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quel est l'impact du diabète sur le parodonte ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Le diabète augmente le risque et la sévérité de la parodontite",
+        "Le diabète n'a pas d'impact",
+        "Le diabète protège le parodonte",
+        "Le diabète est sans conséquence"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le diabète est un facteur de risque majeur.' 🦅 Sami : 'Je vais toujours demander le statut diabétique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q19",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les objectifs du traitement parodontal ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Éliminer l'inflammation, réduire les poches, préserver la denture",
+        "Uniquement éliminer le tartre",
+        "Uniquement réduire les poches",
+        "Uniquement préserver les dents"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les objectifs sont multiples et complémentaires.' 🦅 Sami : 'Je vais viser tous ces objectifs.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q20",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce que la récession gingivale de classe I de Miller ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une récession avec recouvrement complet possible",
+        "Une récession avec recouvrement partiel",
+        "Une récession sans recouvrement possible",
+        "Une récession négligeable"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Miller I a un bon pronostic de recouvrement.' 🦅 Sami : 'Je vais proposer une greffe pour cette récession.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q21",
+      "type": "single-choice",
+      "question": "Sami demande : 'Pourquoi la maintenance parodontale est-elle importante ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Pour prévenir les récidives et maintenir la stabilité",
+        "Pour faire payer plus cher",
+        "Pour utiliser plus de matériel",
+        "Pour remplir des papiers"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La maintenance est la clé de la stabilité à long terme.' 🦅 Sami : 'Je vais planifier des maintenances régulières.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q22",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer un patient fumeur en parodontologie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Informer sur les risques et encourager l'arrêt du tabac",
+        "Ignorer le tabagisme",
+        "Traiter sans mentionner le tabac",
+        "Le tabac n'a pas d'importance"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'arrêt du tabac améliore les résultats du traitement.' 🦅 Sami : 'Je vais encourager l'arrêt du tabac.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q23",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les signes d'une parodontite agressive ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Perte osseuse rapide chez des patients jeunes et en bonne santé",
+        "Perte osseuse lente chez les patients âgés",
+        "Inflammation gingivale seulement",
+        "Absence de signes cliniques"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La parodontite agressive survient chez des patients jeunes.' 🦅 Sami : 'Je vais dépister ces cas.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q24",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quelle est la place du laser en parodontologie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un outil complémentaire, mais pas un remplacement du détartrage",
+        "Un remplacement total du détartrage",
+        "Inefficace",
+        "Dangereux"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le laser est complémentaire, pas un substitut.' 🦅 Sami : 'Je vais utiliser le laser en complément.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_I1_Q25",
+      "type": "single-choice",
+      "question": "Sami, après avoir maîtrisé le diagnostic parodontal avec Mina, dit : 'Je suis prêt à relever tous les défis !' Mina conclut : 'La maîtrise du diagnostic parodontal est...'",
+      "media": [],
+      "options": [
+        "Une option",
+        "La base de la réussite en parodontologie",
+        "Une perte de temps",
+        "Secondaire"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La maîtrise du diagnostic parodontal est la base de la réussite en parodontologie.' 🦅 Sami : 'Je vais continuer à me former.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

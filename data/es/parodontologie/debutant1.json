@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "parodontologie_debutant1_001",
+    "title": "Periodoncia - Principiante 1",
+    "specialty": "PARO",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "PARO_D1_Q01",
+      "type": "single-choice",
+      "question": "🦅 Sami examina a un paciente con encía roja e inflamada. Dice: «Es gingivitis, ¡recetaré antibióticos!» 🐆 Mina le responde: «¡No tan rápido!» ¿Cuál es la causa principal de la gingivitis?",
+      "media": [],
+      "options": [
+        "La placa dental (biopelícula bacteriana)",
+        "La deficiencia de vitaminas",
+        "La infección vírica",
+        "El estrés psicológico"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La placa dental es el principal factor etiológico de la gingivitis. Los antibióticos no están indicados en primer lugar.» 🐆 Mina, sorprendida: «¡Sami, sabes de lo que hablas!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q02",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una recesión gingival en un paciente, dice: «¡Hay que hacer un injerto!» 🦅 Sami responde: «No, se puede esperar.» ¿Qué es una recesión gingival?",
+      "media": [],
+      "options": [
+        "El desplazamiento apical del margen gingival con exposición de la raíz",
+        "La inflamación de la encía",
+        "La infección de la encía",
+        "El tumor de la encía"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La recesión expone la raíz y puede causar hipersensibilidad.» 🦅 Sami: «Prefiero esperar, pero reconozco que en el fondo tienes razón.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q03",
+      "type": "single-choice",
+      "question": "🦅 Sami, sondando a un paciente, dice: «¡Profundidad de bolsa de 5 mm, es periodontitis!» 🐆 Mina le pregunta: «¿Y otros signos?» ¿Qué es una bolsa periodontal?",
+      "media": [],
+      "options": [
+        "Un surco patológico > 3 mm",
+        "Un espacio normal entre el diente y la encía",
+        "Una cavidad en el diente",
+        "Un absceso gingival"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La bolsa periodontal se define por una profundidad de sondaje > 3 mm.» 🐆 Mina: «¡Bien, Sami, estás progresando!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q04",
+      "type": "single-choice",
+      "question": "🐆 Mina, analizando radiografías, dice: «Hay pérdida ósea vertical.» 🦅 Sami responde: «No es grave, ya lo resolveremos más tarde.» ¿Por qué la pérdida ósea es preocupante?",
+      "media": [],
+      "options": [
+        "Es irreversible y compromete el pronóstico de los dientes",
+        "Siempre es reversible",
+        "No supone un problema",
+        "Solo afecta a los dientes anteriores"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La pérdida ósea es irreversible y puede provocar la pérdida de dientes.» 🦅 Sami: «Vale, la trataremos, ¡pero es largo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q05",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo cálculo dental en un paciente, dice: «¡El cálculo es la causa de la periodontitis!» 🐆 Mina lo corrige: «¡No exactamente!» ¿Cuál es el papel del cálculo dental?",
+      "media": [],
+      "options": [
+        "Sirve como soporte y reservorio de la placa bacteriana",
+        "Es directamente patógeno",
+        "No juega ningún papel en la periodontitis",
+        "Protege los dientes"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El cálculo dental no es directamente patógeno, pero su superficie rugosa retiene la placa.» 🐆 Mina: «¡Sami, te estás convirtiendo en un verdadero especialista!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q06",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una bolsa de 7 mm, propone: «Colgajo periodontal.» 🦅 Sami responde: «No, ¡solo raspado!» ¿Qué dice la literatura?",
+      "media": [],
+      "options": [
+        "Las bolsas > 5 mm suelen requerir un abordaje quirúrgico",
+        "El raspado siempre es suficiente",
+        "La cirugía nunca está indicada",
+        "Solo los antibióticos son eficaces"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las bolsas profundas (> 5 mm) con pérdida ósea suelen requerir tratamiento quirúrgico.» 🦅 Sami: «Prefiero el raspado, pero tienes razón...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q07",
+      "type": "single-choice",
+      "question": "🦅 Sami, examinando a un fumador, dice: «El tabaco no afecta al periodonto.» 🐆 Mina responde: «¡Es falso!» ¿Cuál es el efecto del tabaco en el periodonto?",
+      "media": [],
+      "options": [
+        "Aumenta el riesgo de periodontitis y enmascara los signos inflamatorios",
+        "Protege el periodonto",
+        "No tiene ningún efecto",
+        "Reduce la placa dental"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El tabaco es un factor de riesgo importante. Reduce la vascularización y enmascara los signos de inflamación.» 🐆 Mina: «¡Sami, hoy estás en forma!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q08",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente diabético, dice: «Hay que controlar su diabetes antes del tratamiento periodontal.» 🦅 Sami responde: «¡Se puede tratar así!» ¿Quién tiene razón?",
+      "media": [],
+      "options": [
+        "Mina, la diabetes no controlada agrava la periodontitis",
+        "Sami, el tratamiento se puede iniciar de inmediato",
+        "Ambos enfoques son aceptables",
+        "Ninguno, hay que esperar"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La diabetes y la periodontitis tienen una relación bidireccional. La diabetes controlada es fundamental.» 🦅 Sami: «Vale, coordinaremos con su médico...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q09",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo movilidad dental de grado 2, dice: «¡Hay que extraer el diente!» 🐆 Mina responde: «¡No tan rápido!» ¿Qué significa la movilidad de grado 2?",
+      "media": [],
+      "options": [
+        "Movilidad horizontal de 1–2 mm",
+        "Movilidad vertical",
+        "Movilidad horizontal inferior a 1 mm",
+        "Movilidad en todos los planos"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La movilidad de grado 2 corresponde a un desplazamiento horizontal de 1–2 mm.» 🐆 Mina: «¡Sami, conoces tu clasificación!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q10",
+      "type": "single-choice",
+      "question": "🐆 Mina, analizando una radiografía, dice: «Hay afectación de furca de grado 2.» 🦅 Sami pregunta: «¿Qué es eso?» La afectación de furca es:",
+      "media": [],
+      "options": [
+        "La afectación del espacio entre las raíces de los dientes multirradiculares",
+        "La caries entre dos dientes",
+        "La inflamación de la encía",
+        "La fractura radicular"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las furcas son las zonas de separación de las raíces. Su afectación complica el tratamiento.» 🦅 Sami: «Lo recordaré para poder diagnosticarlo.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q11",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una bolsa de 4 mm con sangrado, dice: «No es grave.» 🐆 Mina responde: «No, ¡es significativo!» ¿Qué significa el sangrado al sondaje?",
+      "media": [],
+      "options": [
+        "Un signo de inflamación activa de la encía",
+        "Un signo de cáncer",
+        "Un signo de deficiencia de vitaminas",
+        "Un signo solo de mala higiene"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El sangrado al sondaje (BOP) es un indicador de inflamación activa.» 🐆 Mina: «¡Sami, estás progresando!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q12",
+      "type": "single-choice",
+      "question": "🐆 Mina propone un tratamiento periodontal no quirúrgico a un paciente. 🦅 Sami dice: «No, ¡operemos de inmediato!» ¿Qué incluye el tratamiento no quirúrgico?",
+      "media": [],
+      "options": [
+        "Raspado, alisado radicular y control de placa",
+        "Cirugía de colgajo",
+        "Extracción de dientes",
+        "Implantación"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El tratamiento no quirúrgico es la primera fase para eliminar la biopelícula.» 🦅 Sami: «Vale, lo intentaremos, ¡pero es largo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q13",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo a un paciente con hiperplasia gingival, dice: «¡Es genética!» 🐆 Mina responde: «¡No solo eso!» ¿Cuáles son las causas de la hiperplasia gingival?",
+      "media": [],
+      "options": [
+        "Medicamentos (antiepilépticos, inmunosupresores), inflamación, genética",
+        "Solo genética",
+        "Solo inflamación",
+        "Solo medicamentos"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Las causas son múltiples: medicamentos, inflamación o factores genéticos.» 🐆 Mina: «¡Sami, estás realmente al día!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q14",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente con periodontitis agresiva, dice: «Se necesitan antibióticos.» 🦅 Sami responde: «No, ¡solo raspado!» ¿Qué antibióticos se utilizan?",
+      "media": [],
+      "options": [
+        "Combinación de amoxicilina y metronidazol",
+        "Solo penicilina",
+        "Cefalosporinas",
+        "Macrólidos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La combinación de amoxicilina y metronidazol es el estándar de oro.» 🦅 Sami: «Prefiero evitar los antibióticos, pero reconozco tu experiencia.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q15",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una recesión clase III de Miller, dice: «Se puede hacer un injerto con éxito.» 🐆 Mina responde: «El pronóstico es dudoso.» ¿Qué es la clasificación de Miller?",
+      "media": [],
+      "options": [
+        "Una clasificación de las recesiones gingivales para evaluar el pronóstico",
+        "Una clasificación de las periodontitis",
+        "Una clasificación de las bolsas periodontales",
+        "Una clasificación de las movilidades"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La clasificación de Miller evalúa el potencial de cobertura de las recesiones.» 🐆 Mina: «¡Sami, conoces tu clasificación!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q16",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente con bolsa de 6 mm, propone: «Cirugía de colgajo.» 🦅 Sami responde: «No, ¡láser!» ¿Qué enfoque está validado?",
+      "media": [],
+      "options": [
+        "La cirugía de colgajo es el estándar de oro",
+        "El láser es más eficaz",
+        "Ambos métodos son equivalentes",
+        "Ninguno, hay que extraer"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La cirugía de colgajo proporciona acceso y limpieza de las bolsas profundas.» 🦅 Sami: «Prefiero el láser, pero reconozco que tienes razón.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q17",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo a un paciente con absceso periodontal, dice: «¡Hay que extraer!» 🐆 Mina responde: «¡No tan rápido!» ¿Qué es un absceso periodontal?",
+      "media": [],
+      "options": [
+        "Una acumulación localizada de pus en el periodonto profundo",
+        "Una caries infectada",
+        "Una infección pulpar",
+        "Una reacción alérgica"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El absceso es una infección localizada. El drenaje y los antibióticos son el tratamiento.» 🐆 Mina: «¡Sami, esta vez tienes razón!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q18",
+      "type": "single-choice",
+      "question": "🐆 Mina, analizando a un paciente con periodontitis, dice: «Hay que hacer una exploración completa.» 🦅 Sami responde: «Inútil, el diagnóstico ya está hecho.» ¿Qué incluye la exploración periodontal completa?",
+      "media": [],
+      "options": [
+        "Sondaje completo, radiografías, índices de placa y sangrado",
+        "Solo sondaje",
+        "Solo radiografías",
+        "Solo inspección visual"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La exploración completa es necesaria para evaluar la gravedad y la extensión.» 🦅 Sami: «Vale, haremos todo... ¡pero es largo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q19",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una pérdida ósea horizontal, dice: «¡Es periodontitis!» 🐆 Mina pregunta: «¿Y la vertical?» ¿Cuál es la diferencia?",
+      "media": [],
+      "options": [
+        "La pérdida horizontal es uniforme, la vertical es en forma de nicho",
+        "Es lo mismo",
+        "La vertical es más benigna",
+        "La horizontal es más grave"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La pérdida horizontal es difusa, la vertical localizada y puede ser regenerada.» 🐆 Mina: «¡Sami, te estás convirtiendo en un experto!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q20",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente con periodontitis severa, dice: «Se necesitan extracciones.» 🦅 Sami responde: «No, ¡todo se puede salvar!» ¿Quién tiene razón?",
+      "media": [],
+      "options": [
+        "Mina, algunos dientes con pronóstico dudoso deben ser extraídos",
+        "Sami, los dientes siempre se pueden salvar",
+        "Ambos enfoques son posibles",
+        "Ninguno, hay que esperar"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El pronóstico dental determina la decisión. Algunos dientes tienen un pronóstico demasiado dudoso.» 🦅 Sami: «Quería salvar todo, pero tienes razón.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q21",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo a un paciente con gingivitis, dice: «Basta con un cepillado enérgico.» 🐆 Mina responde: «No, ¡se necesita la técnica adecuada!» ¿Qué técnica se recomienda?",
+      "media": [],
+      "options": [
+        "La técnica de Bass modificada (cepillo a 45°)",
+        "El cepillado horizontal enérgico",
+        "El cepillado vertical",
+        "Un simple enjuague bucal"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La técnica de Bass modificada es la más eficaz para eliminar la placa subgingival.» 🐆 Mina: «¡Sami, estás estudiando el tema!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q22",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una bolsa de 8 mm, propone: «Regeneración tisular guiada.» 🦅 Sami responde: «No, simple colgajo.» ¿Qué es la RTG?",
+      "media": [],
+      "options": [
+        "Una técnica con membranas para la regeneración ósea",
+        "Una técnica de extracción",
+        "Una técnica de raspado",
+        "Una técnica de implantación"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La regeneración tisular guiada permite regenerar el hueso perdido.» 🦅 Sami: «Prefiero el colgajo simple, pero la RTG es más eficaz.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q23",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo a un paciente con periodontitis, dice: «El tratamiento termina tras el raspado.» 🐆 Mina responde: «No, ¡se necesita seguimiento!» ¿Por qué es importante la terapia de mantenimiento?",
+      "media": [],
+      "options": [
+        "Para prevenir recidivas y mantener la estabilidad periodontal",
+        "Para ganar más dinero",
+        "Para usar más materiales",
+        "Para llenar papeles"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La terapia de mantenimiento periodontal es la clave de la estabilidad a largo plazo.» 🐆 Mina: «¡Sami, por fin lo has entendido!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q24",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente con periodontitis, dice: «Los factores de riesgo deben ser controlados.» 🦅 Sami pregunta: «¿Cuáles?» ¿Cuáles son los principales factores de riesgo?",
+      "media": [],
+      "options": [
+        "Tabaco, diabetes, genética, estrés, obesidad",
+        "Solo tabaco",
+        "Solo diabetes",
+        "Solo genética"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los factores de riesgo son múltiples y deben tenerse en cuenta.» 🦅 Sami: «Vale, los identificaré sistemáticamente.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami y 🐆 Mina discuten sobre el futuro de la periodoncia. Sami dice: «¡La IA reemplazará el diagnóstico clínico!» Mina responde: «¡No tan rápido!» ¿Cuál es el papel de la IA?",
+      "media": [],
+      "options": [
+        "La IA es una herramienta de ayuda al diagnóstico, no un reemplazo",
+        "La IA reemplazará a todos los periodoncistas",
+        "La IA es inútil en periodoncia",
+        "La IA solo sirve para hacer presupuestos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La IA puede ayudar a analizar radiografías y sondajes, pero el clínico sigue siendo insustituible.» 🦅 Sami: «Estoy tranquilo, ¡nuestros puestos de trabajo están a salvo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

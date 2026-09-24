@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "radiologie_debutant2_001",
+    "title": "Radiología - Principiante 2",
+    "specialty": "RADI",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "RADI_D2_Q01",
+      "type": "single-choice",
+      "question": "La resolución espacial en radiografía designa:",
+      "media": [],
+      "options": [
+        "La saturación de color de la imagen",
+        "La capacidad del sistema para distinguir dos detalles anatómicos cercanos",
+        "La intensidad luminosa general de la imagen tras el revelado",
+        "El tamaño físico real del objeto representado"
+      ],
+      "correct": 1,
+      "explanation": "Una alta resolución permite distinguir mejor los detalles anatómicos con mayor precisión.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q02",
+      "type": "single-choice",
+      "question": "La densidad óptica de una radiografía depende principalmente de:",
+      "media": [],
+      "options": [
+        "La cantidad de radiación absorbida por el receptor",
+        "La velocidad de rotación del ánodo al arrancar",
+        "La nitidez de los contornos de la imagen",
+        "El tamaño físico del sensor utilizado"
+      ],
+      "correct": 0,
+      "explanation": "Representa el grado de ennegrecimiento de la imagen tras la exposición y el procesamiento.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q03",
+      "type": "single-choice",
+      "question": "El aumento del kilovoltaje (kV) produce:",
+      "media": [],
+      "options": [
+        "Un aumento del contraste general",
+        "Una reducción drástica de la dosis emitida",
+        "Un aumento del tiempo de exposición necesario",
+        "Una disminución del contraste"
+      ],
+      "correct": 3,
+      "explanation": "Un kV alto aumenta la energía de los fotones, favoreciendo la penetración del haz, lo que reduce el contraste (la imagen se vuelve más gris).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q04",
+      "type": "single-choice",
+      "question": "¿Qué papel desempeña el miliamperaje (mA) durante la obtención de la imagen?",
+      "media": [],
+      "options": [
+        "Controla la intensidad del haz y el número de fotones (dosis)",
+        "Determina la calidad de penetración en los tejidos",
+        "Regula la distancia focal fuente-objeto",
+        "Gestiona la velocidad de almacenamiento digital"
+      ],
+      "correct": 0,
+      "explanation": "El mA regula el número de electrones que inciden en el ánodo y, por tanto, la intensidad del haz y el ennegrecimiento general.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q05",
+      "type": "single-choice",
+      "question": "¿Por qué debe limitarse estrictamente el tiempo de exposición?",
+      "media": [],
+      "options": [
+        "Para aumentar la densidad óptica de la imagen",
+        "Para reducir el riesgo de desenfoque cinético por movimientos del paciente",
+        "Para mejorar artificialmente la resolución espacial",
+        "Para reducir la potencia necesaria en kV"
+      ],
+      "correct": 1,
+      "explanation": "Cuanto más largo es el tiempo, mayor es la probabilidad de movimiento del paciente, lo que deteriora la nitidez de la imagen.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q06",
+      "type": "single-choice",
+      "question": "La distancia focal-película estándar se elige para:",
+      "media": [],
+      "options": [
+        "Evitar los efectos de dispersión Compton",
+        "Aumentar el efecto ánodo parásito",
+        "Reducir el aumento geométrico y mejorar la precisión",
+        "Reducir la dosis total recibida por el paciente"
+      ],
+      "correct": 2,
+      "explanation": "Una mayor distancia permite proyectar la anatomía con mayor precisión, limitando el aumento.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q07",
+      "type": "single-choice",
+      "question": "El efecto ánodo (efecto talón) corresponde a:",
+      "media": [],
+      "options": [
+        "La pérdida de nitidez en los bordes de la imagen",
+        "La reflexión parásita del haz sobre la película",
+        "La absorción por el colimador de plomo",
+        "La variación de la intensidad del haz entre el lado del ánodo y el del cátodo"
+      ],
+      "correct": 3,
+      "explanation": "La intensidad de la radiación es más débil en el lado del ánodo que en el del cátodo debido a la autoabsorción por el blanco.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q08",
+      "type": "single-choice",
+      "question": "El efecto talón es especialmente pronunciado cuando:",
+      "media": [],
+      "options": [
+        "La distancia foco-película es corta",
+        "El kilovoltaje es muy bajo",
+        "El miliamperaje es alto",
+        "El tiempo de exposición es muy largo"
+      ],
+      "correct": 0,
+      "explanation": "Se acentúa con distancias cortas o ángulos de ánodo pequeños.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q09",
+      "type": "single-choice",
+      "question": "¿Qué es la radiografía extraoral?",
+      "media": [],
+      "options": [
+        "Un examen realizado sin radiación ionizante",
+        "Una imagen en la que el sensor se coloca fuera de la cavidad oral",
+        "Una técnica destinada exclusivamente a la endodoncia",
+        "Un análisis microscópico de los tejidos blandos"
+      ],
+      "correct": 1,
+      "explanation": "La radiografía panorámica o la telerradiografía son ejemplos típicos de imagen extraoral.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q10",
+      "type": "single-choice",
+      "question": "El principio de la radiografía estereoscópica se basa en:",
+      "media": [],
+      "options": [
+        "El uso de dos imágenes desplazadas para crear una percepción de profundidad",
+        "La fusión digital de dos imágenes obtenidas con diferentes energías",
+        "El uso sistemático de contraste intravenoso",
+        "La técnica clásica de tomografía lineal"
+      ],
+      "correct": 0,
+      "explanation": "El desplazamiento permite obtener una percepción de profundidad (visión 3D) mediante el uso del paralaje.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q11",
+      "type": "single-choice",
+      "question": "La proyección frontal (postero-anterior) es útil para:",
+      "media": [],
+      "options": [
+        "Detectar caries proximales",
+        "Analizar la oclusión dinámica de los dientes",
+        "Estudiar la simetría facial y los senos frontales",
+        "Visualizar la ATM en corte fino"
+      ],
+      "correct": 2,
+      "explanation": "Permite obtener una visión general de la cara y comparar los lados derecho e izquierdo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q12",
+      "type": "single-choice",
+      "question": "La proyección de Blondeau está destinada principalmente al estudio de:",
+      "media": [],
+      "options": [
+        "Los senos maxilares",
+        "Los cóndilos mandibulares",
+        "Las glándulas parótidas",
+        "Los conductos mandibulares"
+      ],
+      "correct": 0,
+      "explanation": "Libera los senos maxilares proyectando las pirámides temporales por debajo del fondo del seno.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q13",
+      "type": "single-choice",
+      "question": "La proyección de Hirtz proporciona una vista:",
+      "media": [],
+      "options": [
+        "Estrictamente de perfil de la cara",
+        "Oblicua de las ramas ascendentes",
+        "Frontal de las órbitas",
+        "Axial (basal) de la base del cráneo"
+      ],
+      "correct": 3,
+      "explanation": "Permite estudiar la base del cráneo, los arcos cigomáticos y los senos esfenoidales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q14",
+      "type": "single-choice",
+      "question": "La proyección de Schüller se utiliza clásicamente para visualizar:",
+      "media": [],
+      "options": [
+        "La articulación temporomandibular (ATM)",
+        "Los ápices de los molares superiores",
+        "El seno maxilar en su conjunto",
+        "Las fosas nasales"
+      ],
+      "correct": 0,
+      "explanation": "Se utiliza históricamente para el examen radiológico de la ATM.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q15",
+      "type": "single-choice",
+      "question": "La artrografía de la ATM consiste en:",
+      "media": [],
+      "options": [
+        "Realizar una simple radiografía de perfil sin medios adicionales",
+        "Inyectar un medio de contraste radiopaco en el espacio articular",
+        "Utilizar un escáner de alta resolución sin inyección",
+        "Realizar una ecografía funcional dinámica"
+      ],
+      "correct": 1,
+      "explanation": "Permite visualizar la forma, la posición y las perforaciones del disco articular.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q16",
+      "type": "single-choice",
+      "question": "La sialografía permite visualizar:",
+      "media": [],
+      "options": [
+        "La morfología general de los dientes temporales",
+        "El drenaje de los senos frontales",
+        "La vascularización arterial del cráneo",
+        "La red de conductos de las glándulas salivales"
+      ],
+      "correct": 3,
+      "explanation": "Se inyecta un medio de contraste en el conducto excretor para visualizar el sistema de conductos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q17",
+      "type": "single-choice",
+      "question": "La fistulografía está indicada para:",
+      "media": [],
+      "options": [
+        "Estudiar el trayecto de una fístula mediante inyección de contraste",
+        "Medir la longitud de las raíces dentales",
+        "Detectar caries profundas asintomáticas",
+        "Verificar la osteointegración de un implante"
+      ],
+      "correct": 0,
+      "explanation": "Permite determinar el origen profundo del proceso infeccioso fistuloso.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q18",
+      "type": "single-choice",
+      "question": "La cefalometría es una técnica estandarizada utilizada para:",
+      "media": [],
+      "options": [
+        "El diagnóstico de la caries oclusal",
+        "El estudio detallado de la estructura pulpar",
+        "El análisis de las relaciones craneofaciales",
+        "La medición de la movilidad periodontal de los dientes"
+      ],
+      "correct": 2,
+      "explanation": "Indispensable para la ortodoncia y la planificación de la cirugía ortognática.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q19",
+      "type": "single-choice",
+      "question": "El trazado cefalométrico consiste en:",
+      "media": [],
+      "options": [
+        "Dibujar artísticamente el perfil con detalle",
+        "Medir ángulos y distancias entre puntos anatómicos específicos",
+        "Realizar una radiografía 3D volumétrica",
+        "Realizar una tomodensitometría rápida"
+      ],
+      "correct": 1,
+      "explanation": "Permite cuantificar objetivamente los desplazamientos esqueléticos y dentales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q20",
+      "type": "single-choice",
+      "question": "El punto Sella (S) está situado en el centro de:",
+      "media": [],
+      "options": [
+        "La silla turca",
+        "La raíz de la nariz",
+        "La espina nasal anterior",
+        "El ángulo de la mandíbula"
+      ],
+      "correct": 0,
+      "explanation": "Es un referente craneal estable, fundamental en cefalometría.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q21",
+      "type": "single-choice",
+      "question": "El punto Nasion (N) corresponde a:",
+      "media": [],
+      "options": [
+        "El borde superior de la órbita",
+        "La base de la barbilla",
+        "La sutura frontonasal",
+        "La punta de la espina nasal"
+      ],
+      "correct": 2,
+      "explanation": "El punto más anterior de la sutura frontonasal en la línea media.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q22",
+      "type": "single-choice",
+      "question": "El punto A (subespinal) designa:",
+      "media": [],
+      "options": [
+        "El punto más profundo del maxilar superior en la línea media",
+        "El vértice de la sínfisis mentoniana",
+        "La espina nasal posterior",
+        "El centro de la corona del incisivo"
+      ],
+      "correct": 0,
+      "explanation": "Es un punto de referencia para la posición sagital del maxilar superior.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q23",
+      "type": "single-choice",
+      "question": "El punto B (supramental) designa:",
+      "media": [],
+      "options": [
+        "El punto óseo de la barbilla",
+        "El ángulo de la mandíbula",
+        "El punto más profundo de la concavidad de la mandíbula",
+        "El borde alveolar superior"
+      ],
+      "correct": 2,
+      "explanation": "Es un punto de referencia para la posición sagital de la mandíbula.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q24",
+      "type": "single-choice",
+      "question": "El punto Gonion (Go) se encuentra a la altura de:",
+      "media": [],
+      "options": [
+        "La cabeza del cóndilo",
+        "El ángulo de la mandíbula",
+        "El centro de la barbilla",
+        "El ápice del incisivo inferior"
+      ],
+      "correct": 1,
+      "explanation": "Define la unión entre el borde inferior y el borde posterior de la mandíbula.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q25",
+      "type": "single-choice",
+      "question": "El plano de Frankfurt une:",
+      "media": [],
+      "options": [
+        "La silla turca y el nasion",
+        "El gonion y el mentón",
+        "El punto A y el punto B",
+        "El porion y el orbitale"
+      ],
+      "correct": 3,
+      "explanation": "Es una línea de referencia horizontal teórica utilizada para orientar el cráneo en los trazados.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

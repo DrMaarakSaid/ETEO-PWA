@@ -1,0 +1,542 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_expert2_001",
+    "title": "Amenagement_cabinet - Expert 2 (Certification)",
+    "specialty": "AMEN",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1900,
+    "chapter": "La Certification et la Transmission",
+    "isCertification": true
+  },
+  "questions": [
+    {
+      "id": "AMEN_X2_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan transmet son cabinet à son fils, le Dr Youssef. Selon l'article 25, comment s'opère la transmission du bail ?",
+      "media": [],
+      "options": [
+        "Par donation simple entre proches",
+        "Par cession du bail avec notification au propriétaire",
+        "Par un acte notarié obligatoire",
+        "Par une déclaration à la préfecture"
+      ],
+      "correct": 1,
+      "explanation": "Art. 25 : la transmission s'effectue par cession du bail, avec notification au propriétaire pour opposabilité.",
+      "difficulty": "très difficile",
+      "category": "Transmission du bail",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["transmission", "cession", "notification"],
+      "references": ["Loi 49-16 Art.25"]
+    },
+    {
+      "id": "AMEN_X2_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Kamali souhaite transmettre son fonds de commerce à son associé. Selon l'article 7, comment est évaluée la transmission ?",
+      "media": [],
+      "options": [
+        "Sur la valeur d'achat du matériel",
+        "Sur les déclarations fiscales des 4 derniers exercices",
+        "Sur l'évaluation d'un expert indépendant",
+        "Sur la valeur locative du local"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, al. 3 : la valeur du fonds est estimée sur la base des déclarations fiscales des quatre derniers exercices.",
+      "difficulty": "très difficile",
+      "category": "Transmission du fonds",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["fonds", "transmission", "fiscal"],
+      "references": ["Loi 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X2_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a obtenu un jugement d'éviction mais le propriétaire ne paie pas. Selon l'article 28, quelle est la procédure à suivre ?",
+      "media": [],
+      "options": [
+        "Demander la saisie des biens du propriétaire",
+        "Rester en place tant que le paiement n'est pas effectué",
+        "Demander l'exécution forcée au juge",
+        "Toutes ces procédures sont possibles"
+      ],
+      "correct": 3,
+      "explanation": "Art. 28 : plusieurs procédures sont disponibles : saisie, exécution forcée, maintien dans les lieux.",
+      "difficulty": "très difficile",
+      "category": "Exécution du jugement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["execution", "saisie", "maintien"],
+      "references": ["Loi 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X2_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Kamali doit former une équipe de juristes pour gérer son patrimoine. Selon la loi 49-16, quel est l'intérêt de la transmission anticipée ?",
+      "media": [],
+      "options": [
+        "Éviter les conflits successoraux",
+        "Permettre une transmission en connaissance de cause",
+        "Optimiser la fiscalité de la transmission",
+        "Tous ces avantages sont pertinents"
+      ],
+      "correct": 3,
+      "explanation": "La transmission anticipée permet d'éviter les conflits, d'optimiser la fiscalité et de préparer sereinement la succession.",
+      "difficulty": "très difficile",
+      "category": "Stratégie patrimoniale",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["transmission", "anticipation", "patrimoine"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q05",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan a inclus une clause de non-concurrence dans le bail. Selon la jurisprudence, cette clause est-elle valable ?",
+      "media": [],
+      "options": [
+        "Oui, si elle est limitée géographiquement et temporellement",
+        "Non, elle est contraire à la liberté d'entreprendre",
+        "Oui, sauf si elle est disproportionnée",
+        "Non, les clauses de non-concurrence sont interdites"
+      ],
+      "correct": 0,
+      "explanation": "Les clauses de non-concurrence sont valables si elles sont limitées dans l'espace et dans le temps.",
+      "difficulty": "très difficile",
+      "category": "Clauses restrictives",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["non-concurrence", "clause", "limitation"],
+      "references": ["Jurisprudence"]
+    },
+    {
+      "id": "AMEN_X2_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Kamali souhaite transmettre son cabinet à plusieurs repreneurs. Selon l'article 24, la sous-location est-elle autorisée ?",
+      "media": [],
+      "options": [
+        "Oui, sauf stipulation contraire dans le bail",
+        "Non, la sous-location est interdite par défaut",
+        "Oui, mais uniquement avec l'accord du propriétaire",
+        "Non, le bail est personnel au locataire"
+      ],
+      "correct": 0,
+      "explanation": "Art. 24, al. 1er : le locataire peut sous-louer tout ou partie du local, sauf stipulation contraire.",
+      "difficulty": "très difficile",
+      "category": "Sous-location",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["sous-location", "repreneurs", "autorisation"],
+      "references": ["Loi 49-16 Art.24"]
+    },
+    {
+      "id": "AMEN_X2_Q07",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a reçu une offre de rachat de son fonds de commerce. Selon l'article 7, comment l'indemnité d'éviction est-elle calculée ?",
+      "media": [],
+      "options": [
+        "Sur la valeur du fonds, des travaux et des frais de déménagement",
+        "Sur la seule valeur du fonds de commerce",
+        "Sur les seuls frais de déménagement",
+        "Sur la valeur du matériel dentaire"
+      ],
+      "correct": 0,
+      "explanation": "Art. 7, al. 3 : l'indemnité comprend la valeur du fonds, les dépenses de travaux et les frais de déménagement.",
+      "difficulty": "très difficile",
+      "category": "Évaluation de l'indemnité",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indemnite", "valeur", "travaux"],
+      "references": ["Loi 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X2_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Kamali doit rédiger un testament concernant son cabinet. Selon le droit des successions, quel est l'intérêt d'un testament ?",
+      "media": [],
+      "options": [
+        "Organiser la transmission selon ses souhaits",
+        "Éviter les conflits entre héritiers",
+        "Désigner les repreneurs du cabinet",
+        "Tous ces intérêts sont pertinents"
+      ],
+      "correct": 3,
+      "explanation": "Le testament permet d'organiser la transmission, d'éviter les conflits et de désigner les repreneurs.",
+      "difficulty": "très difficile",
+      "category": "Succession",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["testament", "succession", "transmission"],
+      "references": ["Droit des successions"]
+    },
+    {
+      "id": "AMEN_X2_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a fait face à une procédure d'éviction. Selon l'article 26, comment le bail peut-il prendre fin ?",
+      "media": [],
+      "options": [
+        "Uniquement par l'expiration du bail",
+        "Par l'expiration, la résiliation, l'annulation ou la renonciation",
+        "Uniquement par décision de justice",
+        "Par l'accord des deux parties uniquement"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26 : le bail peut prendre fin par expiration, résiliation, annulation ou renonciation.",
+      "difficulty": "très difficile",
+      "category": "Fin du bail",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["fin de bail", "expiration", "resiliation"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X2_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a été nommé expert judiciaire. Selon la loi 49-16, quelle est la responsabilité de l'expert ?",
+      "media": [],
+      "options": [
+        "Évaluer objectivement les biens",
+        "Rendre un rapport conforme à la loi",
+        "Être impartial et indépendant",
+        "Toutes ces responsabilités sont imposées"
+      ],
+      "correct": 3,
+      "explanation": "L'expert doit évaluer objectivement, rendre un rapport conforme à la loi et être impartial.",
+      "difficulty": "très difficile",
+      "category": "Expertise judiciaire",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["expert", "responsabilite", "impartialite"],
+      "references": ["Code de procédure civile"]
+    },
+    {
+      "id": "AMEN_X2_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan doit transmettre son savoir-faire à son successeur. Selon la loi 49-16, quel est l'impact sur le bail ?",
+      "media": [],
+      "options": [
+        "Aucun impact, le bail est autonome",
+        "Le successeur bénéficie du droit au renouvellement",
+        "Le successeur doit signer un nouveau bail",
+        "Le propriétaire peut refuser la transmission"
+      ],
+      "correct": 1,
+      "explanation": "Le successeur bénéficie des droits attachés au bail, notamment le droit au renouvellement.",
+      "difficulty": "très difficile",
+      "category": "Transmission du savoir-faire",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["savoir-faire", "successeur", "renouvellement"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a déposé une plainte contre son propriétaire. Selon l'article 28, comment l'éviction est-elle exécutée ?",
+      "media": [],
+      "options": [
+        "Après le dépôt de l'indemnité par le propriétaire",
+        "Après un délai de 3 mois suivant le jugement",
+        "Après l'expiration du délai d'appel",
+        "Tous ces éléments déterminent l'exécution"
+      ],
+      "correct": 3,
+      "explanation": "L'exécution est conditionnée par le dépôt de l'indemnité, le délai de 3 mois et l'expiration des délais de recours.",
+      "difficulty": "très difficile",
+      "category": "Exécution de l'éviction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["eviction", "execution", "delais"],
+      "references": ["Loi 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X2_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a bénéficié d'une transaction judiciaire. Selon la loi 49-16, cette transaction a-t-elle autorité de chose jugée ?",
+      "media": [],
+      "options": [
+        "Oui, si elle est homologuée par le tribunal",
+        "Non, la transaction n'a pas autorité de chose jugée",
+        "Oui, automatiquement",
+        "Non, elle doit être confirmée par un nouveau jugement"
+      ],
+      "correct": 0,
+      "explanation": "La transaction homologuée par le tribunal a l'autorité de la chose jugée.",
+      "difficulty": "très difficile",
+      "category": "Transaction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["transaction", "autorité", "chose jugée"],
+      "references": ["CPC"]
+    },
+    {
+      "id": "AMEN_X2_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a été évincé mais le propriétaire n'a pas reconstruit. Selon l'article 11, quelles sont les conséquences ?",
+      "media": [],
+      "options": [
+        "Le propriétaire doit verser une indemnité supplémentaire",
+        "Le locataire peut revenir dans les lieux",
+        "Le propriétaire perd son droit à la démolition",
+        "Toutes ces conséquences sont envisageables"
+      ],
+      "correct": 3,
+      "explanation": "Art. 11 : le non-respect des délais expose à des indemnités supplémentaires, à la réintégration ou à la perte du droit.",
+      "difficulty": "très difficile",
+      "category": "Non-respect des délais",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["delais", "reconstruction", "sanctions"],
+      "references": ["Loi 49-16 Art.11"]
+    },
+    {
+      "id": "AMEN_X2_Q15",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a fait face à un conflit de voisinage. Selon la loi 49-16, la responsabilité du bailleur est-elle engagée ?",
+      "media": [],
+      "options": [
+        "Oui, pour troubles de jouissance",
+        "Non, c'est un conflit privé entre locataires",
+        "Oui, seulement s'il a été informé",
+        "Non, sauf s'il existe des clauses spécifiques"
+      ],
+      "correct": 0,
+      "explanation": "Le bailleur peut être tenu responsable des troubles de jouissance causés par d'autres locataires.",
+      "difficulty": "très difficile",
+      "category": "Troubles de voisinage",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["voisinage", "troubles", "responsabilite"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a engagé un architecte pour des travaux. Selon l'article 3, la responsabilité du locataire est-elle engagée ?",
+      "media": [],
+      "options": [
+        "Oui, pour les dommages causés au local",
+        "Non, seul l'architecte est responsable",
+        "Oui, mais uniquement si les travaux sont mal exécutés",
+        "Non, le propriétaire est responsable des travaux"
+      ],
+      "correct": 0,
+      "explanation": "Art. 3 : le locataire est responsable des dommages causés au local, même par ses préposés.",
+      "difficulty": "très difficile",
+      "category": "Responsabilité des travaux",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["responsabilite", "travaux", "dommages"],
+      "references": ["Loi 49-16 Art.3"]
+    },
+    {
+      "id": "AMEN_X2_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a reçu une offre de reprise par un grand groupe. Selon la loi 49-16, quels sont les droits du locataire ?",
+      "media": [],
+      "options": [
+        "Le droit de céder son bail",
+        "Le droit de sous-louer",
+        "Le droit au renouvellement",
+        "Tous ces droits sont garantis"
+      ],
+      "correct": 3,
+      "explanation": "La loi 49-16 garantit les droits de cession, de sous-location et de renouvellement du bail.",
+      "difficulty": "très difficile",
+      "category": "Droits du locataire",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["droits", "cession", "sous-location", "renouvellement"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a contesté un congé en justice. Selon l'article 26, la justice peut-elle ordonner des dommages-intérêts ?",
+      "media": [],
+      "options": [
+        "Oui, en cas de congé abusif",
+        "Non, seuls les frais de justice sont alloués",
+        "Oui, mais uniquement si le locataire les demande",
+        "Non, la loi ne prévoit pas de dommages-intérêts"
+      ],
+      "correct": 0,
+      "explanation": "La justice peut accorder des dommages-intérêts en cas de congé abusif, pour réparer le préjudice subi.",
+      "difficulty": "très difficile",
+      "category": "Sanctions",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["congé abusif", "dommages-intérêts", "prejudice"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X2_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan termine sa carrière et transmet son cabinet. Selon la loi 49-16, quel est le dernier conseil à donner au repreneur ?",
+      "media": [],
+      "options": [
+        "Respecter scrupuleusement les clauses du bail",
+        "Entretenir de bonnes relations avec le propriétaire",
+        "Être attentif aux délais et aux formalités",
+        "Tous ces conseils sont essentiels"
+      ],
+      "correct": 3,
+      "explanation": "Les trois éléments sont essentiels pour une transmission réussie : respect des clauses, bonnes relations, vigilance sur les formalités.",
+      "difficulty": "très difficile",
+      "category": "Transmission réussie",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["transmission", "conseils", "repreneur"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a complété avec succès toutes les épreuves de certification. Selon la loi 49-16, quelle est la conclusion de cette formation ?",
+      "media": [],
+      "options": [
+        "La maîtrise de la loi 49-16 est acquise",
+        "Le locataire peut désormais gérer son bail en toute sérénité",
+        "La protection des droits du locataire est assurée",
+        "Toutes ces conclusions sont valables"
+      ],
+      "correct": 3,
+      "explanation": "La formation permet de maîtriser la loi 49-16, de gérer son bail en toute sérénité et d'assurer la protection de ses droits.",
+      "difficulty": "très difficile",
+      "category": "Conclusion",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["maîtrise", "sérénité", "protection"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a réussi à transmettre son cabinet dans les règles. Selon la loi 49-16, quel est le secret de cette réussite ?",
+      "media": [],
+      "options": [
+        "Une bonne connaissance de la loi",
+        "Des relations apaisées avec le propriétaire",
+        "Une anticipation des difficultés",
+        "Tous ces éléments sont clés"
+      ],
+      "correct": 3,
+      "explanation": "La réussite repose sur la connaissance de la loi, de bonnes relations et l'anticipation des difficultés.",
+      "difficulty": "très difficile",
+      "category": "Réussite",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["reussite", "loi", "anticipation"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q22",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a formé son successeur à la loi 49-16. Selon la formation, quel est le pilier central de cette loi ?",
+      "media": [],
+      "options": [
+        "La protection du droit au renouvellement",
+        "La protection du droit à l'indemnité d'éviction",
+        "La protection des droits du locataire en général",
+        "Tous ces piliers sont centraux"
+      ],
+      "correct": 3,
+      "explanation": "La loi 49-16 protège le droit au renouvellement, le droit à l'indemnité et les droits du locataire en général.",
+      "difficulty": "très difficile",
+      "category": "Piliers de la loi",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["piliers", "protection", "droits"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a rédigé un guide pratique de la loi 49-16. Selon ce guide, quel est le message principal à retenir ?",
+      "media": [],
+      "options": [
+        "Connaître ses droits est essentiel",
+        "La prévention vaut mieux que le contentieux",
+        "L'accompagnement juridique est recommandé",
+        "Tous ces messages sont essentiels"
+      ],
+      "correct": 3,
+      "explanation": "Le guide enseigne que la connaissance des droits, la prévention et l'accompagnement juridique sont essentiels.",
+      "difficulty": "très difficile",
+      "category": "Guide pratique",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["guide", "prevention", "accompagnement"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a obtenu sa certification en droit du bail commercial. Selon la loi 49-16, que signifie cette certification ?",
+      "media": [],
+      "options": [
+        "La maîtrise complète de la loi 49-16",
+        "La capacité à gérer tous les aspects d'un bail commercial",
+        "La compétence pour conseiller d'autres dentistes",
+        "Toutes ces significations sont valables"
+      ],
+      "correct": 3,
+      "explanation": "La certification atteste de la maîtrise de la loi, de la capacité de gestion et de la compétence pour conseiller.",
+      "difficulty": "très difficile",
+      "category": "Certification",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["certification", "maitrise", "competence"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan conclut cette formation en expert. Selon la loi 49-16, quel est le dernier mot pour les futurs dentistes ?",
+      "media": [],
+      "options": [
+        "La loi 49-16 est un bouclier pour votre cabinet",
+        "La connaissance est votre meilleure arme",
+        "La prévention est votre meilleure alliée",
+        "Tous ces conseils sont à retenir"
+      ],
+      "correct": 3,
+      "explanation": "La loi est un bouclier, la connaissance est une arme et la prévention est une alliée : les trois sont essentiels.",
+      "difficulty": "très difficile",
+      "category": "Conclusion",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["conclusion", "conseil", "avenir"],
+      "references": ["Loi 49-16"]
+    }
+  ]
+}

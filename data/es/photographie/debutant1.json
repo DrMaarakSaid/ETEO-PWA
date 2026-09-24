@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "photographie_debutant1_001",
+    "title": "Fotografía - Principiante 1",
+    "specialty": "PHOT",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PHOT_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. REDA muestra una cámara al Dr. RACHID y le pregunta: «¿Sabes qué elemento es más importante para una buena fotografía dental?» El Dr. RACHID duda. ¿Qué respondería usted?",
+      "media": [],
+      "options": [
+        "El macroobjetivo y la distancia de trabajo adecuada",
+        "El número de megapíxeles",
+        "La marca de la cámara",
+        "El color del cuerpo"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «El macroobjetivo (100 mm o 105 mm) permite capturar pequeños detalles de los dientes. La distancia de trabajo debe ser de 40 a 60 cm para una relación 1:1.» El Dr. RACHID toma nota diligentemente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q02",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Qué configuración de diafragma es mejor para la fotografía dental?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Diafragma de f/22 a f/32 para una profundidad de campo máxima",
+        "Diafragma f/2.8 para un desenfoque artístico del fondo",
+        "Diafragma f/8 para un buen equilibrio",
+        "El diafragma no tiene importancia"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Para fotografías dentales necesitamos ver todos los detalles del diente y los tejidos circundantes. Un diafragma de f/22 a f/32 proporciona la máxima profundidad de campo.» El Dr. RACHID: «¡Lo recordaré!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. REDA explica al Dr. RACHID: «La velocidad de obturación es crucial.» El Dr. RACHID pregunta: «¿Qué velocidad de obturación debo usar?»",
+      "media": [],
+      "options": [
+        "1/125 s o más rápido para evitar el desenfoque por movimiento",
+        "1/30 s para captar más luz",
+        "1/4000 s para congelar un movimiento muy rápido",
+        "La velocidad de obturación no es importante"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Una velocidad de obturación de 1/125 s o 1/160 s es ideal para fotografías dentales. Previene el desenfoque por movimiento y deja pasar suficiente luz.» El Dr. RACHID: «¡De acuerdo, lo ajustaré!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. RACHID, al tomar una foto, dice: «¡La imagen es demasiado oscura!» El Dr. REDA le responde: «Revisa la configuración.» ¿Qué parámetro debe ajustar primero?",
+      "media": [],
+      "options": [
+        "El ISO (sensibilidad) o la potencia del flash",
+        "El zoom",
+        "El enfoque",
+        "El balance de blancos"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Si la imagen es demasiado oscura, primero aumentamos el ISO o la potencia del flash. Se recomienda ISO 100-200 para una calidad óptima.» El Dr. RACHID: «¡Ahora lo entiendo mejor!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. REDA muestra una fotografía dental al Dr. RACHID. El Dr. RACHID dice: «En la imagen, los dientes parecen amarillos.» El Dr. REDA responde: «Es un problema de...»",
+      "media": [],
+      "options": [
+        "Balance de blancos",
+        "Enfoque",
+        "Diafragma",
+        "Velocidad de obturación"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «El balance de blancos corrige los colores para que coincidan con la realidad. Un balance de blancos incorrecto puede hacer que los dientes se vean amarillos o azules.» El Dr. RACHID: «¡Aprenderé a ajustarlo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Qué flash debo usar para fotografías dentales?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Un flash anular o macro para una iluminación sin sombras",
+        "El flash integrado de la cámara",
+        "Una linterna",
+        "Un flash de estudio"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «El flash anular o macro proporciona una iluminación uniforme sin sombras, ideal para fotografías dentales.» El Dr. RACHID: «¡Adquiriré el equipo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. REDA pregunta al Dr. RACHID: «¿Cuál es la distancia de trabajo ideal para un macroobjetivo de 100 mm?» El Dr. RACHID busca la respuesta.",
+      "media": [],
+      "options": [
+        "De 40 a 60 cm para una relación 1:1",
+        "10 cm para un primer plano",
+        "1 metro para una vista general",
+        "La distancia no tiene importancia"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «La distancia de trabajo para un macroobjetivo de 100 mm suele ser de 40 a 60 cm para obtener una relación de reproducción 1:1.» El Dr. RACHID: «¡Mediré la distancia!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q08",
+      "type": "single-choice",
+      "question": "El Dr. RACHID toma una foto y ve reflejos en los dientes. Pregunta al Dr. REDA: «¿Cómo evitar los reflejos?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Usar un filtro polarizador o ajustar el ángulo del flash",
+        "Aumentar el brillo",
+        "Reducir el enfoque",
+        "Cambiar el objetivo"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Los reflejos en los dientes se pueden reducir con un filtro polarizador o ajustando el ángulo del flash.» El Dr. RACHID: «¡Lo probaré!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. REDA pregunta al Dr. RACHID: «¿Cuáles son las ventajas del formato RAW en fotografía dental?» El Dr. RACHID reflexiona.",
+      "media": [],
+      "options": [
+        "El formato RAW conserva todos los datos de la imagen para un retoque preciso",
+        "El formato RAW ocupa menos espacio",
+        "El formato RAW se procesa más rápido",
+        "El formato RAW es más fácil de compartir"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «El formato RAW conserva todos los datos sin procesar del sensor, lo que permite un retoque preciso sin pérdida de calidad.» El Dr. RACHID: «¡Siempre dispararé en RAW!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q10",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Cómo obtener una buena fotografía oclusal?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Usar retractores de mejillas y una buena iluminación",
+        "Disparar desde lejos",
+        "Usar un teléfono móvil",
+        "Disparar sin retractores"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Para una fotografía oclusal, es necesario usar retractores de mejillas para una buena visualización del arco dental y una buena iluminación para evitar sombras.» El Dr. RACHID: «¡Adquiriré el equipo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. REDA muestra una imagen y dice: «Esta imagen no es suficientemente nítida.» El Dr. RACHID pregunta: «¿Cómo mejorar la nitidez?»",
+      "media": [],
+      "options": [
+        "Usar un trípode o una velocidad de obturación más corta",
+        "Aumentar el ISO",
+        "Reducir el enfoque",
+        "Usar un filtro"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Para una imagen nítida, hay que estabilizar la cámara con un trípode o usar una velocidad de obturación suficientemente corta para evitar el desenfoque por movimiento.» El Dr. RACHID: «¡Usaré un trípode!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q12",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Por qué son importantes las fotografías dentales en la práctica clínica?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Son necesarias para documentar, diagnosticar y comunicarse con el paciente",
+        "Solo son estéticas",
+        "Son inútiles",
+        "Están destinadas solo a los cirujanos"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Las fotografías dentales son necesarias para la documentación clínica, la ayuda al diagnóstico, la planificación del tratamiento y la comunicación con el paciente.» El Dr. RACHID: «¡Entiendo su importancia!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. REDA muestra una imagen al Dr. RACHID y dice: «El color no se corresponde con la realidad.» El Dr. RACHID pregunta: «¿Cómo solucionar este problema?»",
+      "media": [],
+      "options": [
+        "Usar una carta de color (X-Rite ColorChecker)",
+        "Cambiar el objetivo",
+        "Aumentar el ISO",
+        "Reducir la velocidad de obturación"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «La carta de color permite ajustar el balance de blancos y garantizar una reproducción cromática precisa durante el retoque.» El Dr. RACHID: «¡Compraré una!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q14",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Qué resolución mínima se recomienda para la fotografía dental?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Al menos 12 megapíxeles para una calidad profesional",
+        "5 megapíxeles son suficientes",
+        "La resolución no tiene importancia",
+        "2 megapíxeles son suficientes"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «12 megapíxeles permiten obtener imágenes de calidad profesional con suficientes detalles para diagnósticos y presentaciones.» El Dr. RACHID: «¡Mi cámara es de 24 megapíxeles, estoy bien!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. REDA muestra una imagen y dice: «La imagen está borrosa.» El Dr. RACHID pregunta: «¿Cuál podría ser la causa?»",
+      "media": [],
+      "options": [
+        "Enfoque incorrecto o velocidad de obturación demasiado larga",
+        "Problema con el balance de blancos",
+        "Problema con el formato de la imagen",
+        "Problema con la tarjeta de memoria"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Las principales causas del desenfoque son el enfoque incorrecto o una velocidad de obturación demasiado larga.» El Dr. RACHID: «¡Revisaré la configuración!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q16",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Cuáles son los parámetros principales para la fotografía dental?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "ISO 100-200, f/22-f/32, 1/125 s, flash anular",
+        "ISO 800, f/2.8, 1/30 s, sin flash",
+        "ISO 400, f/8, 1/1000 s, flash integrado",
+        "ISO 100, f/16, 1/60 s, flash de estudio"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Las configuraciones principales son: ISO 100-200 para máxima calidad, f/22-f/32 para profundidad de campo total, 1/125 s para evitar el desenfoque, y flash anular.» El Dr. RACHID: «¡Anoto estos parámetros!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. REDA pregunta al Dr. RACHID: «¿Cómo fotografiar un diente individual?» El Dr. RACHID responde:",
+      "media": [],
+      "options": [
+        "Usar un macroobjetivo y la distancia de trabajo adecuada",
+        "Usar un teléfono móvil",
+        "Tomar la foto desde lejos y recortar",
+        "Usar un microscopio"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Para un diente individual, hay que usar un macroobjetivo con la distancia de trabajo adecuada para obtener una relación de reproducción 1:1 o superior.» El Dr. RACHID: «¡Practicaré!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q18",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Por qué es importante llevar un registro fotográfico de los pacientes?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Para el seguimiento clínico, la evaluación del tratamiento y aspectos médico-legales",
+        "Para crear álbumes de fotos como recuerdo",
+        "Para publicar en redes sociales",
+        "Para vender las fotografías"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «El registro fotográfico permite seguir la evolución clínica, evaluar objetivamente el tratamiento y sirve como prueba médico-legal.» El Dr. RACHID: «¡Documentaré todos los casos!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. REDA explica al Dr. RACHID: «El modo 'P' (Programa) no es ideal para fotografías dentales.» El Dr. RACHID pregunta: «¿Por qué?»",
+      "media": [],
+      "options": [
+        "No permite un control total sobre parámetros como el diafragma y la velocidad de obturación",
+        "Es demasiado complejo",
+        "Está destinado solo a profesionales",
+        "No existe en las cámaras"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «El modo automático programado no da el control necesario sobre el diafragma y la velocidad de obturación. Para fotografías dentales es mejor usar el modo manual (M).» El Dr. RACHID: «¡Aprenderé a usar el modo manual!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q20",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Qué tomas básicas hay que hacer para un paciente?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Vista frontal, vista de perfil, vistas de los arcos dentales (superior e inferior)",
+        "Solo una foto frontal",
+        "Solo una foto del arco superior",
+        "Solo una foto del diente problemático"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «El protocolo estándar incluye vista frontal (sonrisa), vista de perfil (relación de labios) y vistas de los arcos superior e inferior con retractores.» El Dr. RACHID: «¡Seguiré este protocolo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. REDA muestra al Dr. RACHID una imagen subexpuesta. El Dr. RACHID pregunta: «¿Cómo corregir este problema en postproducción?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Aumentar la exposición y el brillo en el software de retoque",
+        "Recortar la imagen",
+        "Cambiar el balance de blancos",
+        "Añadir un filtro"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Una imagen subexpuesta se puede corregir aumentando la exposición y el brillo en un software de retoque como Lightroom o Photoshop.» El Dr. RACHID: «¡Aprenderé a retocar!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q22",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Cuándo es mejor hacer una fotografía postoperatoria?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Cuando la cicatrización está completa y los tejidos se han estabilizado",
+        "Inmediatamente después de la cirugía",
+        "Una semana después de la cirugía",
+        "Nunca, no es necesario"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «Las fotografías postoperatorias deben tomarse cuando la cicatrización está completa y los tejidos estabilizados, para reflejar el resultado final.» El Dr. RACHID: «¡Planificaré las sesiones!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. REDA pregunta al Dr. RACHID: «¿Por qué usar un fondo negro para las fotografías dentales?» El Dr. RACHID reflexiona.",
+      "media": [],
+      "options": [
+        "El fondo negro permite resaltar los dientes y eliminar elementos distractores",
+        "El fondo negro es más estético",
+        "El fondo negro es más fácil de usar",
+        "El fondo negro es obligatorio"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «El fondo negro elimina los elementos distractores y permite resaltar las estructuras dentales, especialmente para imágenes de contraste.» El Dr. RACHID: «¡Usaré fondo negro!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q24",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Cómo mejorar la calidad de mis fotografías dentales?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Practicar regularmente, dominar la configuración y usar equipo de calidad",
+        "Comprar la cámara más cara",
+        "Usar un teléfono móvil",
+        "No usar flash"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «La calidad de las fotos mejora con la práctica, el dominio de la configuración y el uso de equipo adaptado (macroobjetivo, flash anular).» El Dr. RACHID: «¡Practicaré cada día!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. REDA muestra una imagen con un tono de color. El Dr. RACHID pregunta: «¿Cómo corregirlo?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "Ajustar el balance de blancos en postproducción",
+        "Cambiar el objetivo",
+        "Aumentar el ISO",
+        "Reducir la velocidad de obturación"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «El tono de color se puede corregir ajustando el balance de blancos en el software de retoque, especialmente si has disparado en RAW.» El Dr. RACHID: «¡Siempre dispararé en RAW!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PHOT_D1_Q26",
+      "type": "single-choice",
+      "question": "El Dr. RACHID pregunta al Dr. REDA: «¿Qué mensaje quieres transmitir a los jóvenes odontólogos sobre la fotografía dental?» El Dr. REDA responde:",
+      "media": [],
+      "options": [
+        "La fotografía dental es una herramienta indispensable para el diagnóstico, la comunicación y el seguimiento del tratamiento",
+        "La fotografía dental está destinada solo a expertos",
+        "La fotografía dental es demasiado compleja",
+        "La fotografía dental es inútil"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. REDA explica: «La fotografía dental es una herramienta indispensable que mejora el diagnóstico, la comunicación con el paciente y el seguimiento del tratamiento.» El Dr. RACHID: «Estoy convencido, ¡me formaré!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

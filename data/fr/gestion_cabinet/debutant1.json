@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "gestion_cabinet_debutant1_001",
+    "title": "Gestion_cabinet - Débutant 1",
+    "specialty": "GEST",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "GEST_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Mourad souhaite embaucher une assistante dentaire. Selon l'article 6 du Code du Travail, qu'est-ce qu'un salarié ?",
+      "media": [],
+      "options": [
+        "Toute personne qui exerce son activité sous la direction d'un employeur moyennant rémunération",
+        "Toute personne qui travaille à son compte sans lien de subordination",
+        "Toute personne qui possède un diplôme universitaire",
+        "Toute personne qui gère son propre cabinet dentaire"
+      ],
+      "correct": 0,
+      "explanation": "L'article 6 définit le salarié comme toute personne qui s'est engagée à exercer son activité professionnelle sous la direction d'un ou plusieurs employeurs moyennant rémunération.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q02",
+      "type": "single-choice",
+      "question": "Selon l'article 6 du Code du Travail, qui est considéré comme employeur ?",
+      "media": [],
+      "options": [
+        "Toute personne qui loue les services d'une ou plusieurs personnes physiques",
+        "Tout patient qui consulte un dentiste",
+        "Tout salarié qui perçoit un salaire",
+        "Tout représentant syndical dans l'entreprise"
+      ],
+      "correct": 0,
+      "explanation": "L'article 6 définit l'employeur comme toute personne physique ou morale, privée ou publique, qui loue les services d'une ou plusieurs personnes physiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Sidki souhaite embaucher une assistante en CDI. Selon l'article 16, quel est le principe général pour la durée du contrat de travail ?",
+      "media": [],
+      "options": [
+        "Le contrat est conclu pour une durée indéterminée par défaut",
+        "Le contrat est toujours conclu pour une durée déterminée",
+        "Le contrat doit être reconduit chaque mois",
+        "Le contrat ne peut excéder une année"
+      ],
+      "correct": 0,
+      "explanation": "L'article 16 dispose que le contrat de travail est conclu pour une durée indéterminée, pour une durée déterminée ou pour accomplir un travail déterminé, le principe étant la durée indéterminée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Mourad souhaite remplacer une assistante en congé maternité. Selon l'article 16, quel type de contrat peut-il conclure ?",
+      "media": [],
+      "options": [
+        "Un contrat à durée déterminée pour le remplacement",
+        "Un contrat à durée indéterminée uniquement",
+        "Un contrat d'apprentissage",
+        "Un contrat de travail à domicile"
+      ],
+      "correct": 0,
+      "explanation": "L'article 16 prévoit le contrat à durée déterminée notamment dans le cas du remplacement d'un salarié en cas de suspension du contrat de travail.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q05",
+      "type": "single-choice",
+      "question": "Selon l'article 14, quelle est la durée de la période d'essai maximale pour un employé (assistant dentaire) ?",
+      "media": [],
+      "options": [
+        "15 jours",
+        "1 mois et demi",
+        "3 mois",
+        "6 mois"
+      ],
+      "correct": 1,
+      "explanation": "L'article 14 fixe la période d'essai à un mois et demi pour les employés, renouvelable une seule fois.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Sidki souhaite embaucher un cadre pour son cabinet. Selon l'article 14, quelle est la durée de la période d'essai maximale ?",
+      "media": [],
+      "options": [
+        "15 jours",
+        "1 mois et demi",
+        "3 mois",
+        "6 mois"
+      ],
+      "correct": 2,
+      "explanation": "L'article 14 fixe la période d'essai à trois mois pour les cadres et assimilés, renouvelable une seule fois.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q07",
+      "type": "single-choice",
+      "question": "Selon l'article 14, la période d'essai pour les contrats à durée déterminée ne peut dépasser :",
+      "media": [],
+      "options": [
+        "15 jours pour les contrats de moins de 6 mois et 1 mois pour ceux de plus de 6 mois",
+        "3 mois pour tous les contrats",
+        "6 mois pour tous les contrats",
+        "Aucune période d'essai n'est autorisée"
+      ],
+      "correct": 0,
+      "explanation": "L'article 14 prévoit que la période d'essai pour les CDD ne peut dépasser une journée par semaine de travail dans la limite de deux semaines pour les contrats de moins de 6 mois, et un mois pour ceux de plus de 6 mois.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q08",
+      "type": "single-choice",
+      "question": "Selon l'article 13, le Dr Mourad peut-il rompre la période d'essai de sa nouvelle assistante sans préavis ?",
+      "media": [],
+      "options": [
+        "Oui, sans aucune formalité pendant toute la période",
+        "Oui, mais après une semaine, un préavis de 2 ou 8 jours est requis selon la périodicité de paie",
+        "Non, la rupture doit toujours être motivée",
+        "Oui, mais uniquement avec l'accord du salarié"
+      ],
+      "correct": 1,
+      "explanation": "L'article 13 précise que si la rupture intervient après au moins une semaine de travail, un délai de préavis de 2 jours (paiement à la journée/semaine) ou 8 jours (paiement au mois) est requis.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Sidki souhaite licencier une assistante pour faute grave. Selon l'article 39, quel acte est considéré comme une faute grave ?",
+      "media": [],
+      "options": [
+        "Le refus délibéré d'exécuter un travail de sa compétence",
+        "Un simple retard de 5 minutes",
+        "Une demande de congé annuel",
+        "Le fait de demander une augmentation de salaire"
+      ],
+      "correct": 0,
+      "explanation": "L'article 39 énumère les fautes graves, incluant notamment le refus délibéré et injustifié du salarié d'exécuter un travail de sa compétence.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q10",
+      "type": "single-choice",
+      "question": "Selon l'article 39, l'absence non justifiée du salarié pour plus de combien de jours constitue une faute grave ?",
+      "media": [],
+      "options": [
+        "2 jours",
+        "4 jours",
+        "8 jours",
+        "15 jours"
+      ],
+      "correct": 1,
+      "explanation": "L'article 39 considère comme faute grave l'absence non justifiée du salarié pour plus de quatre jours ou de huit demi-journées pendant une période de douze mois.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q11",
+      "type": "single-choice",
+      "question": "Selon l'article 62, avant un licenciement pour faute grave, le Dr Mourad doit :",
+      "media": [],
+      "options": [
+        "Donner la possibilité au salarié de se défendre et d'être entendu",
+        "Licencier immédiatement sans formalité",
+        "Attendre 30 jours avant d'agir",
+        "Demander l'avis du syndicat uniquement"
+      ],
+      "correct": 0,
+      "explanation": "L'article 62 impose que le salarié puisse se défendre et être entendu par l'employeur avant le licenciement, en présence du délégué des salariés ou du représentant syndical.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q12",
+      "type": "single-choice",
+      "question": "Selon l'article 35, le licenciement d'un salarié sans motif valable est :",
+      "media": [],
+      "options": [
+        "Autorisé dans tous les cas",
+        "Interdit",
+        "Autorisé si le salarié est d'accord",
+        "Autorisé pendant la période d'essai uniquement"
+      ],
+      "correct": 1,
+      "explanation": "L'article 35 interdit le licenciement d'un salarié sans motif valable, sauf s'il est lié à son aptitude ou à sa conduite, ou fondé sur les nécessités de fonctionnement de l'entreprise.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Sidki, employeur, doit délivrer une carte de travail à ses salariés. Selon l'article 23, que doit-elle contenir ?",
+      "media": [],
+      "options": [
+        "Les mentions fixées par voie réglementaire",
+        "Uniquement le nom du salarié",
+        "Uniquement la signature de l'employeur",
+        "La photo du salarié uniquement"
+      ],
+      "correct": 0,
+      "explanation": "L'article 23 impose à l'employeur de délivrer une carte de travail comportant les mentions fixées par voie réglementaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q14",
+      "type": "single-choice",
+      "question": "Selon l'article 43, quel est le délai de préavis minimum pour la rupture d'un CDI en l'absence de faute grave ?",
+      "media": [],
+      "options": [
+        "2 jours",
+        "8 jours",
+        "15 jours",
+        "30 jours"
+      ],
+      "correct": 1,
+      "explanation": "L'article 43 précise que toute clause fixant le délai de préavis à moins de huit jours est nulle. Le délai minimum est donc de 8 jours.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q15",
+      "type": "single-choice",
+      "question": "Selon l'article 52, un salarié a droit à une indemnité de licenciement après combien de mois de travail ?",
+      "media": [],
+      "options": [
+        "3 mois",
+        "6 mois",
+        "12 mois",
+        "24 mois"
+      ],
+      "correct": 1,
+      "explanation": "L'article 52 prévoit que le salarié lié par un contrat à durée indéterminée a droit à une indemnité en cas de licenciement après six mois de travail dans la même entreprise.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q16",
+      "type": "single-choice",
+      "question": "Selon l'article 53, combien d'heures de salaire représente l'indemnité de licenciement pour les 5 premières années d'ancienneté ?",
+      "media": [],
+      "options": [
+        "48 heures",
+        "96 heures",
+        "144 heures",
+        "192 heures"
+      ],
+      "correct": 1,
+      "explanation": "L'article 53 fixe l'indemnité de licenciement à 96 heures de salaire pour les cinq premières années d'ancienneté.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q17",
+      "type": "single-choice",
+      "question": "Selon l'article 184, quelle est la durée normale de travail pour les activités non agricoles au Maroc ?",
+      "media": [],
+      "options": [
+        "38 heures par semaine",
+        "40 heures par semaine",
+        "44 heures par semaine",
+        "48 heures par semaine"
+      ],
+      "correct": 2,
+      "explanation": "L'article 184 fixe la durée normale de travail dans les activités non agricoles à 2288 heures par année ou 44 heures par semaine.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q18",
+      "type": "single-choice",
+      "question": "Selon l'article 201, les heures supplémentaires effectuées entre 6h et 21h donnent droit à une majoration de :",
+      "media": [],
+      "options": [
+        "15 %",
+        "20 %",
+        "25 %",
+        "50 %"
+      ],
+      "correct": 2,
+      "explanation": "L'article 201 prévoit une majoration de 25% pour les heures supplémentaires effectuées entre 6h et 21h dans les activités non agricoles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q19",
+      "type": "single-choice",
+      "question": "Selon l'article 152, quelle est la durée du congé de maternité pour une salariée ?",
+      "media": [],
+      "options": [
+        "8 semaines",
+        "10 semaines",
+        "12 semaines",
+        "14 semaines"
+      ],
+      "correct": 3,
+      "explanation": "L'article 152 prévoit un congé de maternité de quatorze semaines, sauf stipulations plus favorables dans le contrat de travail ou la convention collective.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q20",
+      "type": "single-choice",
+      "question": "Selon l'article 231, après combien de mois de service continu le salarié a-t-il droit au congé annuel payé ?",
+      "media": [],
+      "options": [
+        "3 mois",
+        "6 mois",
+        "9 mois",
+        "12 mois"
+      ],
+      "correct": 1,
+      "explanation": "L'article 231 prévoit qu'après six mois de service continu, tout salarié a droit à un congé annuel payé.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q21",
+      "type": "single-choice",
+      "question": "Selon l'article 231, la durée du congé annuel payé est de :",
+      "media": [],
+      "options": [
+        "1 jour par mois de service",
+        "1,5 jour par mois de service",
+        "2 jours par mois de service",
+        "2,5 jours par mois de service"
+      ],
+      "correct": 1,
+      "explanation": "L'article 231 fixe la durée du congé annuel payé à un jour et demi de travail effectif par mois de service.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q22",
+      "type": "single-choice",
+      "question": "Selon l'article 153, pendant combien de semaines après l'accouchement la salariée ne peut-elle pas être occupée ?",
+      "media": [],
+      "options": [
+        "4 semaines",
+        "5 semaines",
+        "6 semaines",
+        "7 semaines"
+      ],
+      "correct": 3,
+      "explanation": "L'article 153 dispose que les salariées en couches ne peuvent être occupées pendant la période de sept semaines consécutives qui suivent l'accouchement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q23",
+      "type": "single-choice",
+      "question": "Selon l'article 346, quelle discrimination en matière de salaire est interdite ?",
+      "media": [],
+      "options": [
+        "La discrimination basée sur l'âge",
+        "La discrimination basée sur le sexe pour un travail de valeur égale",
+        "La discrimination basée sur la région d'origine",
+        "La discrimination basée sur la religion"
+      ],
+      "correct": 1,
+      "explanation": "L'article 346 interdit toute discrimination relative au salaire entre les deux sexes pour un travail de valeur égale.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q24",
+      "type": "single-choice",
+      "question": "Selon l'article 362, les salaires doivent être payés en :",
+      "media": [],
+      "options": [
+        "Monnaie marocaine",
+        "Euros",
+        "Dollars",
+        "Toute monnaie choisie par l'employeur"
+      ],
+      "correct": 0,
+      "explanation": "L'article 362 prévoit que les salaires doivent être payés en monnaie marocaine nonobstant toute clause contraire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q25",
+      "type": "single-choice",
+      "question": "Selon l'article 363, les ouvriers doivent être payés au moins :",
+      "media": [],
+      "options": [
+        "Une fois par mois",
+        "Deux fois par mois à seize jours d'intervalle maximum",
+        "Une fois par semaine",
+        "Une fois par trimestre"
+      ],
+      "correct": 1,
+      "explanation": "L'article 363 prévoit que le salaire doit être payé au moins deux fois par mois, à seize jours au plus d'intervalle, aux ouvriers.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q26",
+      "type": "single-choice",
+      "question": "Selon l'article 72, l'employeur doit délivrer un certificat de travail au salarié dans un délai maximum de :",
+      "media": [],
+      "options": [
+        "3 jours",
+        "8 jours",
+        "15 jours",
+        "30 jours"
+      ],
+      "correct": 1,
+      "explanation": "L'article 72 impose à l'employeur de délivrer un certificat de travail dans un délai maximum de huit jours, sous peine de dommages-intérêts.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

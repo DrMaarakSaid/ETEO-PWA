@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_debutant1_001",
+    "title": "Sterilization - Beginner 1",
+    "specialty": "STER",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_D1_Q01",
+      "type": "single-choice",
+      "question": "How is the sterilization process precisely defined in oral and dental medicine?",
+      "media": [],
+      "options": [
+        "A superficial surface cleaning protocol",
+        "An application of chemical agents neutralizing viruses",
+        "An operation aimed at destroying all living microorganisms and spores",
+        "A mechanical brushing reducing transient flora"
+      ],
+      "correct": 2,
+      "explanation": "Sterilization is distinguished by its absolute nature, guaranteeing the total absence of any viable microorganism, including endospores.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q02",
+      "type": "single-choice",
+      "question": "What fundamental difference separates sterilization from a classic disinfection process?",
+      "media": [],
+      "options": [
+        "Disinfection reduces the microbial load but does not necessarily destroy endospores",
+        "Sterilization applies only to living tissues",
+        "Disinfection uses only thermal physical agents",
+        "Sterilization offers a lower level of safety than decontamination"
+      ],
+      "correct": 0,
+      "explanation": "Disinfection is temporary; its spectrum of action does not systematically include sporulated forms.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q03",
+      "type": "single-choice",
+      "question": "What is a bacterial spore (or endospore)?",
+      "media": [],
+      "options": [
+        "An intracellular viral replication structure",
+        "A highly resistant survival form against hostile conditions",
+        "A thermolabile toxin secreted by bacteria",
+        "A membrane receptor involved in adhesion"
+      ],
+      "correct": 1,
+      "explanation": "Endospores have thick envelopes giving them extreme resistance to heat and disinfectants.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q04",
+      "type": "single-choice",
+      "question": "Which method is regulatory recommended for instrumentation in general practice?",
+      "media": [],
+      "options": [
+        "Prolonged exposure to hot air (Poupinel)",
+        "Continuous gamma irradiation from radioactive sources",
+        "Sterilization by moist heat (steam) in a class B autoclave",
+        "Prolonged immersion in ethyl alcohol"
+      ],
+      "correct": 2,
+      "explanation": "The class B autoclave is the reference for its ability to treat hollow bodies and porous loads.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q05",
+      "type": "single-choice",
+      "question": "What parameters define a standard 121°C cycle?",
+      "media": [],
+      "options": [
+        "121°C, 1 bar, 15 to 20 minutes",
+        "100°C, normal pressure, 30 minutes",
+        "150°C, 2 bars, 10 minutes",
+        "134°C, 2 bars, 5 minutes"
+      ],
+      "correct": 0,
+      "explanation": "The 121°C plateau requires about 1 bar for 15-20 minutes to ensure the destruction of resistant forms.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q06",
+      "type": "single-choice",
+      "question": "What does the dry heat process consist of?",
+      "media": [],
+      "options": [
+        "Projection of infrared radiation",
+        "Treatment in a steam-saturated chamber",
+        "Exposure in a temperature-regulated oven between 160°C and 180°C",
+        "Molecular bombardment by high-frequency waves"
+      ],
+      "correct": 2,
+      "explanation": "Dry heat requires high temperatures and very long contact times.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q07",
+      "type": "single-choice",
+      "question": "What is the major disadvantage of dry heat (Poupinel)?",
+      "media": [],
+      "options": [
+        "Excessively long cycle time and risk of thermal deterioration of cutting edges",
+        "Accumulation of moisture causing oxidation",
+        "Prohibitive cost of rare gases used",
+        "Structural instability of carbon molecules"
+      ],
+      "correct": 0,
+      "explanation": "Dry heat tempers steel and is less effective than steam.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q08",
+      "type": "single-choice",
+      "question": "What is the application of ionizing radiation (gamma)?",
+      "media": [],
+      "options": [
+        "Terminal disinfection of work surfaces",
+        "Industrial mass treatment of single-use equipment",
+        "Decontamination of handpieces at the chairside",
+        "Preparation of metal examination trays"
+      ],
+      "correct": 1,
+      "explanation": "Radiosterilization is exclusively industrial.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q09",
+      "type": "single-choice",
+      "question": "How does the hydrogen peroxide plasma process work?",
+      "media": [],
+      "options": [
+        "Thermal vaporization of saturated amino acids",
+        "Hydro-pneumatic projection of a cryogenic fluid",
+        "Excitation of peroxide vapors by an electromagnetic field (ionized gas)",
+        "Immersion in glutaraldehyde activated by ultrasound"
+      ],
+      "correct": 2,
+      "explanation": "Plasma generates highly biocidal free radicals under vacuum.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q10",
+      "type": "single-choice",
+      "question": "For which equipment is gas plasma indicated?",
+      "media": [],
+      "options": [
+        "Heat-sensitive medical devices",
+        "Massive steel surgical instrumentation",
+        "Cotton textile surgical drapes",
+        "Sandblasted titanium implants"
+      ],
+      "correct": 0,
+      "explanation": "It operates at low temperature, ideal for sensitive plastics or fiber optics.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q11",
+      "type": "single-choice",
+      "question": "What is the nature of ethylene oxide (ETO) sterilization?",
+      "media": [],
+      "options": [
+        "Heat treatment with peracetic acid",
+        "Low-temperature chemical sterilization using an alkylating gas",
+        "Exposure to ultraviolet C and laser",
+        "Immersion in boiling formaldehyde"
+      ],
+      "correct": 1,
+      "explanation": "ETO alkylates proteins and nucleic acids, making the material sterile.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q12",
+      "type": "single-choice",
+      "question": "Why is ethylene oxide restricted?",
+      "media": [],
+      "options": [
+        "Ineffectiveness against mycobacteria",
+        "Physicochemical instability on steel",
+        "Severe toxicity, flammability, and need for desorption",
+        "Prohibitive cost of vacuum pumps"
+      ],
+      "correct": 2,
+      "explanation": "It is a toxic, mutagenic, and carcinogenic gas requiring prolonged aeration.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q13",
+      "type": "single-choice",
+      "question": "What is the function of the Bowie-Dick test?",
+      "media": [],
+      "options": [
+        "Control the quality of the vacuum and steam penetration",
+        "Measure the concentration of ions in the water",
+        "Validate the destruction of spores in a specific load",
+        "Detect air leaks at the door seals"
+      ],
+      "correct": 0,
+      "explanation": "It checks the air removal and homogeneity of the steam.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q14",
+      "type": "single-choice",
+      "question": "Required frequency for the Bowie-Dick test?",
+      "media": [],
+      "options": [
+        "Once a year",
+        "Once a month",
+        "Once a week",
+        "Once a day, before the first cycle"
+      ],
+      "correct": 3,
+      "explanation": "It is mandatory daily, with a hot chamber, for cycle safety.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q15",
+      "type": "single-choice",
+      "question": "What does a biological test consist of?",
+      "media": [],
+      "options": [
+        "Insertion of a reactive strip changing color",
+        "Exposure of living bacterial spores then verification of their non-growth",
+        "Programming an empty cycle to check pressure",
+        "Analysis of amino acid residues"
+      ],
+      "correct": 1,
+      "explanation": "It is the only direct proof of biological inactivation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q16",
+      "type": "single-choice",
+      "question": "Which microorganism is the indicator for autoclaves?",
+      "media": [],
+      "options": [
+        "Geobacillus stearothermophilus",
+        "Escherichia coli",
+        "Staphylococcus aureus",
+        "Candida albicans"
+      ],
+      "correct": 0,
+      "explanation": "It is the international reference strain for moist heat.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q17",
+      "type": "single-choice",
+      "question": "What is a chemical indicator?",
+      "media": [],
+      "options": [
+        "A reactive device changing color upon critical variables",
+        "A suspension of purified enzymes",
+        "An autonomous electronic probe",
+        "A bottle of liquid reagent"
+      ],
+      "correct": 0,
+      "explanation": "It visually confirms the pouch's exposure to cycle parameters.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q18",
+      "type": "single-choice",
+      "question": "Specificity of a Class 5 integrator?",
+      "media": [],
+      "options": [
+        "Temperature control only",
+        "Reaction to all critical variables, correlated with biological tests",
+        "Validation of initial air removal",
+        "Precise dating of pressure data"
+      ],
+      "correct": 1,
+      "explanation": "Class 5 is very precise and follows performance close to biological indicators.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q19",
+      "type": "single-choice",
+      "question": "Primary function of packaging?",
+      "media": [],
+      "options": [
+        "Allow penetration of the agent and maintain sterility afterward",
+        "Thermal insulation to avoid burns",
+        "Increase mechanical resistance to vibrations",
+        "Mask visual imperfections"
+      ],
+      "correct": 0,
+      "explanation": "It must be permeable to steam but impermeable to microorganisms after the cycle.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q20",
+      "type": "single-choice",
+      "question": "What factors does the storage life of sterility depend on?",
+      "media": [],
+      "options": [
+        "The type of packaging and storage conditions",
+        "The number of microorganisms initially destroyed",
+        "The brand of the autoclave",
+        "The nature of the metal alloy"
+      ],
+      "correct": 0,
+      "explanation": "Sterility is linked to the integrity of the protective barrier and the environment, not time itself.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q21",
+      "type": "single-choice",
+      "question": "How to manage ergonomics at the chairside to limit contamination?",
+      "media": [],
+      "options": [
+        "Apply a protective wax to instruments",
+        "Define strict zones (clean vs. contaminated)",
+        "Keep instruments in the open air",
+        "Increase ventilation airflow"
+      ],
+      "correct": 1,
+      "explanation": "Zoning prevents cross-contamination between dirty and clean areas.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q22",
+      "type": "single-choice",
+      "question": "Logistical principle of processing?",
+      "media": [],
+      "options": [
+        "Forward flow (no crossing back)",
+        "Continuous circular rotation",
+        "Storage in clean area before cleaning",
+        "Systematic return to the treatment room"
+      ],
+      "correct": 0,
+      "explanation": "The one-way circuit (dirty to clean to sterile) is a golden rule.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q23",
+      "type": "single-choice",
+      "question": "Attribution of the sorting area?",
+      "media": [],
+      "options": [
+        "Receive, check, and disassemble material before cleaning",
+        "Perform heat sealing of pouches",
+        "Store sterile containers",
+        "Incubate biological indicators"
+      ],
+      "correct": 0,
+      "explanation": "This is the reception and preparation step before washing.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q24",
+      "type": "single-choice",
+      "question": "Product required for initial cleaning?",
+      "media": [],
+      "options": [
+        "Concentrated sodium hypochlorite",
+        "Acetone-based solvent",
+        "Enzymatic detergent (proteases/lipases)",
+        "Aldehyde fixative"
+      ],
+      "correct": 2,
+      "explanation": "Tri-enzymatic detergents degrade organic residues without fixing them.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q25",
+      "type": "single-choice",
+      "question": "Mandatory operation before packaging?",
+      "media": [],
+      "options": [
+        "Rigorous cleaning followed by perfect drying",
+        "Immersion in silicone oil",
+        "Application of a protective varnish",
+        "Passage under unfiltered compressed air"
+      ],
+      "correct": 0,
+      "explanation": "Residual moisture under packaging prevents sterilization and promotes corrosion.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

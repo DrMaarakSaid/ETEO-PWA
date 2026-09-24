@@ -1,0 +1,541 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_intermediaire1_001",
+    "title": "Amenagement_cabinet - Intermédiaire 1",
+    "specialty": "AMEN",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1750,
+    "chapter": "Les Pièges du Bail Commercial"
+  },
+  "questions": [
+    {
+      "id": "AMEN_I1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan découvre que son bail ne précise pas qui doit payer les charges de copropriété. Selon l'article 5 de la loi 49-16, que doit-il faire ?",
+      "media": [],
+      "options": [
+        "Payer les charges car il est le locataire",
+        "Contester car les charges non stipulées sont incluses au loyer",
+        "Partager les charges à 50/50 avec le propriétaire",
+        "Demander une expertise judiciaire immédiate"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, al. 2 : en cas de non-stipulation de la partie à laquelle incombent les charges, elles sont considérées comme incluses au loyer.",
+      "difficulty": "moyen",
+      "category": "Charges locatives",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["charges", "copropriete", "bail"],
+      "references": ["Loi 49-16 Art.5"]
+    },
+    {
+      "id": "AMEN_I1_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Kamali reçoit une proposition de révision de loyer de 50% sans justification valable. Selon l'article 5, quelle loi encadre cette révision ?",
+      "media": [],
+      "options": [
+        "La loi n° 49-16 uniquement",
+        "La loi n° 07-03 relative à la révision des loyers",
+        "La loi n° 65-00 sur la couverture médicale",
+        "La loi n° 15-95 du code de commerce"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, al. 3 : la révision du loyer est soumise aux dispositions de la loi n° 07-03.",
+      "difficulty": "moyen",
+      "category": "Révision du loyer",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["revision", "loyer", "loi"],
+      "references": ["Loi 49-16 Art.5", "Loi 07-03"]
+    },
+    {
+      "id": "AMEN_I1_Q03",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan inclut une clause disant : 'Le locataire renonce expressément au renouvellement du bail'. Selon l'article 6, cette clause est-elle valable ?",
+      "media": [],
+      "options": [
+        "Oui, si elle est signée devant notaire",
+        "Non, car elle est contraire à l'ordre public",
+        "Oui, car le locataire est libre de renoncer",
+        "Non, mais uniquement pendant les 3 premières années"
+      ],
+      "correct": 1,
+      "explanation": "Art. 6 : les baux régis par la loi ne cessent qu'en application de l'article 26. Toute stipulation contraire est nulle.",
+      "difficulty": "moyen",
+      "category": "Clauses abusives",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["nullite", "clause", "renouvellement"],
+      "references": ["Loi 49-16 Art.6"]
+    },
+    {
+      "id": "AMEN_I1_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a installé des équipements dentaires coûteux dans son cabinet. Selon l'article 7, comment sera valorisée cette installation en cas d'éviction ?",
+      "media": [],
+      "options": [
+        "Elle n'est pas prise en compte",
+        "Elle est incluse dans la valeur du fonds de commerce",
+        "Elle est indemnisée séparément au prix d'achat",
+        "Elle est uniquement déductible des impôts"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, al. 3 : l'indemnité comprend la valeur du fonds de commerce, estimée sur la base des déclarations fiscales des quatre derniers exercices.",
+      "difficulty": "moyen",
+      "category": "Indemnité d'éviction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["eviction", "indemnite", "valeur"],
+      "references": ["Loi 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_I1_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a effectué des travaux de mise aux normes sans autorisation du propriétaire. Selon l'article 8, quel risque court-il ?",
+      "media": [],
+      "options": [
+        "Aucun risque si les travaux sont utiles",
+        "Perte de son droit à l'indemnité d'éviction, sauf régularisation dans les 3 mois",
+        "Une simple lettre de rappel",
+        "Une augmentation de loyer de 20%"
+      ],
+      "correct": 1,
+      "explanation": "Art. 8, 2° : le bailleur est exonéré de l'indemnité si le locataire transforme le local, à moins qu'il ne remette les lieux en état dans un délai n'excédant pas 3 mois.",
+      "difficulty": "moyen",
+      "category": "Travaux",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["travaux", "eviction", "delai"],
+      "references": ["Loi 49-16 Art.8"]
+    },
+    {
+      "id": "AMEN_I1_Q06",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Kamali souhaite démolir et reconstruire l'immeuble. Selon l'article 9, quelle condition préalable doit-il respecter ?",
+      "media": [],
+      "options": [
+        "Obtenir le consentement écrit du locataire",
+        "Justifier de la propriété pendant 1 an à compter du congé",
+        "Verser une caution de 200.000 DH",
+        "Obtenir un certificat de conformité"
+      ],
+      "correct": 1,
+      "explanation": "Art. 9, al. 1er : le bailleur doit justifier de la propriété pendant une durée d'au moins une année, à compter de la date du congé.",
+      "difficulty": "moyen",
+      "category": "Démolition-reconstruction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["demolition", "propriete", "delai"],
+      "references": ["Loi 49-16 Art.9"]
+    },
+    {
+      "id": "AMEN_I1_Q07",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan évalue son préjudice d'éviction à 800.000 DH. Selon l'article 7, sur quel document se base-t-il pour le justifier ?",
+      "media": [],
+      "options": [
+        "Sur les factures d'achat du matériel",
+        "Sur les déclarations fiscales des quatre derniers exercices",
+        "Sur l'évaluation d'un agent immobilier",
+        "Sur le montant des loyers versés"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, al. 3 : l'indemnité est calculée sur la base des déclarations fiscales au titre des quatre derniers exercices.",
+      "difficulty": "moyen",
+      "category": "Calcul du préjudice",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["prejudice", "fiscal", "declaration"],
+      "references": ["Loi 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_I1_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a sous-loué une partie de son cabinet à un confrère. Selon l'article 24, si le loyer de la sous-location est supérieur au loyer principal, que peut faire le propriétaire ?",
+      "media": [],
+      "options": [
+        "Rien, il n'a aucun droit",
+        "Demander la révision du loyer principal",
+        "Résilier le bail immédiatement",
+        "Expulser le sous-locataire"
+      ],
+      "correct": 1,
+      "explanation": "Art. 24, dernier al. : lorsque la valeur de la sous-location dépasse celle du bail principal, le bailleur a droit à la révision du loyer à l'amiable ou par voie judiciaire.",
+      "difficulty": "moyen",
+      "category": "Sous-location",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["sous-location", "revision", "loyer"],
+      "references": ["Loi 49-16 Art.24"]
+    },
+    {
+      "id": "AMEN_I1_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan souhaite céder son bail à un jeune dentiste. Selon l'article 25, quelle obligation doit-il respecter ?",
+      "media": [],
+      "options": [
+        "Obtenir l'accord du propriétaire avant la cession",
+        "Notifier la cession au propriétaire pour qu'elle soit opposable",
+        "Payer une indemnité de cession de 10% du loyer",
+        "Attendre la fin du bail pour céder"
+      ],
+      "correct": 1,
+      "explanation": "Art. 25, al. 3 : la cession n'est opposable au bailleur qu'à partir de la date de la notification.",
+      "difficulty": "moyen",
+      "category": "Cession du bail",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["cession", "notification", "opposabilite"],
+      "references": ["Loi 49-16 Art.25"]
+    },
+    {
+      "id": "AMEN_I1_Q10",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Kamali l'évince pour non-paiement des loyers. Selon l'article 26, quel est le délai d'éviction applicable ?",
+      "media": [],
+      "options": [
+        "3 jours",
+        "15 jours",
+        "1 mois",
+        "3 mois"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26, al. 2 : le délai est fixé à 15 jours lorsque la requête est basée sur le défaut de paiement des loyers.",
+      "difficulty": "moyen",
+      "category": "Délais d'éviction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["eviction", "delai", "paiement"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I1_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan est poursuivi pour non-respect des clauses de son bail. Selon l'article 26, quel délai pourra bénéficier le locataire ?",
+      "media": [],
+      "options": [
+        "15 jours",
+        "1 mois",
+        "3 mois",
+        "6 mois"
+      ],
+      "correct": 2,
+      "explanation": "Art. 26, al. 2 : le délai est fixé à 3 mois lorsque la requête est basée sur un motif sérieux relatif à l'inobservation par le locataire des clauses du bail.",
+      "difficulty": "moyen",
+      "category": "Délais d'éviction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["clauses", "delai", "eviction"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I1_Q12",
+      "type": "single-choice",
+      "question": "Selon l'article 26, le propriétaire du Dr Kamali a-t-il un délai pour demander la validation du congé ?",
+      "media": [],
+      "options": [
+        "Oui, il dispose de 3 mois",
+        "Oui, il dispose de 6 mois",
+        "Oui, il dispose de 1 an",
+        "Non, la validation peut être demandée à tout moment"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26, al. 6 : le bailleur est déchu du droit de demander la validation du congé après six mois de la date d'expiration du délai accordé au locataire.",
+      "difficulty": "moyen",
+      "category": "Validation du congé",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["congé", "validation", "delai"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I1_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan découvre que le propriétaire a vendu l'immeuble sans lui notifier. Selon l'article 26 bis, quel droit le nouveau propriétaire doit-il respecter ?",
+      "media": [],
+      "options": [
+        "Il peut résilier le bail sans préavis",
+        "Il doit respecter le bail en cours",
+        "Il peut augmenter le loyer de 30%",
+        "Il peut exiger un nouveau dépôt de garantie"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26 bis : le nouveau propriétaire est tenu de respecter les baux en cours régulièrement conclus.",
+      "difficulty": "moyen",
+      "category": "Vente de l'immeuble",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["vente", "nouveau proprietaire", "bail"],
+      "references": ["Loi 49-16 Art.26 bis"]
+    },
+    {
+      "id": "AMEN_I1_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a demandé une indemnité d'éviction. Selon l'article 27, à quel moment peut-il la demander ?",
+      "media": [],
+      "options": [
+        "Uniquement après l'éviction effective",
+        "Au cours de l'action en validation du congé",
+        "Après la construction du nouvel immeuble",
+        "Uniquement en appel"
+      ],
+      "correct": 1,
+      "explanation": "Art. 27, al. 2 : le locataire peut introduire une requête aux fins d'indemnisation au cours de l'action en validation du congé.",
+      "difficulty": "moyen",
+      "category": "Indemnisation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indemnisation", "congé", "procedure"],
+      "references": ["Loi 49-16 Art.27"]
+    },
+    {
+      "id": "AMEN_I1_Q15",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan obtient un jugement d'éviction. Selon l'article 28, dans quel délai doit-il déposer l'indemnité ?",
+      "media": [],
+      "options": [
+        "1 mois",
+        "2 mois",
+        "3 mois",
+        "6 mois"
+      ],
+      "correct": 2,
+      "explanation": "Art. 28 : le bailleur est tenu de déposer le montant d'indemnité dans un délai de trois mois à partir de la date à laquelle le jugement devient exécutable.",
+      "difficulty": "moyen",
+      "category": "Indemnité d'éviction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indemnite", "delai", "jugement"],
+      "references": ["Loi 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_I1_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Kamali souhaite savoir quels locaux sont exclus du bénéfice de la loi 49-16. Selon l'article 1er, quels types de locaux ne sont pas concernés ?",
+      "media": [],
+      "options": [
+        "Les locaux à usage de bureau",
+        "Les locaux des professionnels libéraux",
+        "Les locaux à usage de tourisme",
+        "Les locaux des établissements de formation"
+      ],
+      "correct": 2,
+      "explanation": "Art. 1er, II-6 : les locaux à usage de tourisme bénéficient d'une exclusion expresse du champ d'application de la loi.",
+      "difficulty": "moyen",
+      "category": "Champ d'application",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["exclusion", "tourisme", "champ"],
+      "references": ["Loi 49-16 Art.1er"]
+    },
+    {
+      "id": "AMEN_I1_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan constate que son bail mentionne une durée de 9 ans. Selon la loi 49-16, cette durée est-elle conforme ?",
+      "media": [],
+      "options": [
+        "Oui, la durée minimale est de 9 ans",
+        "Non, la durée maximale est de 9 ans, pas minimale",
+        "Oui, c'est la durée standard recommandée",
+        "Non, la durée doit être de 3 ans renouvelables"
+      ],
+      "correct": 1,
+      "explanation": "Loi 49-16 fixe une durée maximale de 9 ans, pas une durée minimale. Les parties sont libres de convenir d'une durée plus courte.",
+      "difficulty": "moyen",
+      "category": "Durée du bail",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["duree", "bail", "conformite"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_I1_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Kamali souhaite renouveler son bail après 9 ans. Selon l'article 4, quelles sont ses chances de renouvellement ?",
+      "media": [],
+      "options": [
+        "Aucune, le bail prend fin après 9 ans",
+        "Il bénéficie du droit au renouvellement",
+        "Il doit négocier un nouveau bail à la même valeur",
+        "Il n'a droit qu'à une prolongation de 3 ans"
+      ],
+      "correct": 1,
+      "explanation": "Art. 4 : le locataire bénéficie du renouvellement du bail lorsqu'il justifie d'une jouissance consécutive du local d'au moins deux années.",
+      "difficulty": "moyen",
+      "category": "Renouvellement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["renouvellement", "droit", "bail"],
+      "references": ["Loi 49-16 Art.4"]
+    },
+    {
+      "id": "AMEN_I1_Q19",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan lui impose une clause d'arbitrage obligatoire. Selon les dispositions générales de la loi 49-16, cette clause est-elle valable ?",
+      "media": [],
+      "options": [
+        "Oui, l'arbitrage est recommandé",
+        "Non, car elle est contraire au droit d'accès au juge",
+        "Oui, si elle est acceptée en connaissance de cause",
+        "Non, sauf si les deux parties sont des commerçants"
+      ],
+      "correct": 1,
+      "explanation": "La loi 49-16 protège les droits des parties. Une clause d'arbitrage obligatoire serait contraire au droit d'accès au juge.",
+      "difficulty": "moyen",
+      "category": "Clauses abusives",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["arbitrage", "acces au juge", "nullite"],
+      "references": []
+    },
+    {
+      "id": "AMEN_I1_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Kamali reçoit une assignation en justice. Selon l'article 28, que doit faire le propriétaire après le jugement pour que l'éviction soit effective ?",
+      "media": [],
+      "options": [
+        "Déposer le montant de l'indemnité dans les 3 mois",
+        "Attendre l'appel du locataire",
+        "Procéder à l'expulsion immédiate",
+        "Attendre que le locataire trouve un autre local"
+      ],
+      "correct": 0,
+      "explanation": "Art. 28 : le bailleur est tenu de déposer le montant d'indemnité dans un délai de trois mois à partir de la date à laquelle le jugement devient exécutable.",
+      "difficulty": "moyen",
+      "category": "Exécution du jugement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["jugement", "execution", "indemnite"],
+      "references": ["Loi 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_I1_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a signé un bail sans état des lieux d'entrée. Selon l'article 3, comment prouvera-t-il l'état initial des lieux ?",
+      "media": [],
+      "options": [
+        "Il ne peut pas le prouver, ce qui est à son désavantage",
+        "Il peut utiliser des photos et des témoignages",
+        "Il peut demander un état des lieux judiciaire",
+        "Toutes ces solutions sont possibles"
+      ],
+      "correct": 3,
+      "explanation": "Art. 3 : l'état des lieux est obligatoire. En son absence, le locataire peut utiliser d'autres moyens de preuve.",
+      "difficulty": "moyen",
+      "category": "État des lieux",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["etat des lieux", "preuve", "absence"],
+      "references": ["Loi 49-16 Art.3"]
+    },
+    {
+      "id": "AMEN_I1_Q22",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a reçu une notification de congé pour démolition. Selon l'article 18, quel document le propriétaire doit-il produire ?",
+      "media": [],
+      "options": [
+        "Un permis de construire et un plan approuvé",
+        "Une simple déclaration de projet",
+        "Un accord des copropriétaires",
+        "Une attestation de la mairie"
+      ],
+      "correct": 0,
+      "explanation": "Art. 18 : le propriétaire doit produire un permis de construire valide et un plan approuvé par l'autorité compétente.",
+      "difficulty": "moyen",
+      "category": "Démolition",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["permis de construire", "demolition", "plan"],
+      "references": ["Loi 49-16 Art.18"]
+    },
+    {
+      "id": "AMEN_I1_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a des doutes sur la légalité de son bail. Selon l'article 3, quelle est la condition de forme impérative du bail commercial ?",
+      "media": [],
+      "options": [
+        "Un contrat oral suffit entre professionnels",
+        "Un acte écrit à date certaine est obligatoire",
+        "Une déclaration à la mairie remplace le contrat",
+        "Un simple accord de principe est suffisant"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3 : les baux à usage commercial doivent être conclus par acte écrit à date certaine.",
+      "difficulty": "moyen",
+      "category": "Forme du bail",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["acte ecrit", "date certaine", "obligation"],
+      "references": ["Loi 49-16 Art.3"]
+    },
+    {
+      "id": "AMEN_I1_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Kamali s'interroge sur l'indemnité d'éviction. Selon l'article 7, quelle est la nature de cette indemnité ?",
+      "media": [],
+      "options": [
+        "Une indemnité forfaitaire",
+        "Une indemnité compensatrice du préjudice subi",
+        "Une indemnité punitive",
+        "Une indemnité de départ volontaire"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7 : l'indemnité correspond au préjudice subi par le locataire du fait de l'éviction.",
+      "difficulty": "moyen",
+      "category": "Indemnité d'éviction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indemnite", "prejudice", "compensatrice"],
+      "references": ["Loi 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_I1_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a obtenu un jugement favorable. Selon l'article 28, quel est le délai pour que le propriétaire exécute le jugement ?",
+      "media": [],
+      "options": [
+        "1 mois",
+        "2 mois",
+        "3 mois",
+        "6 mois"
+      ],
+      "correct": 2,
+      "explanation": "Art. 28 : le bailleur est tenu d'exécuter le jugement dans un délai de trois mois à partir de la date à laquelle le jugement devient exécutable.",
+      "difficulty": "moyen",
+      "category": "Exécution du jugement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["execution", "delai", "jugement"],
+      "references": ["Loi 49-16 Art.28"]
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "prothese_debutant2_001",
+    "title": "Prótesis Dental - Principiante 2",
+    "specialty": "PROT",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "PROT_D2_Q01",
+      "type": "single-choice",
+      "question": "📞 Sami llama con urgencia a Mina: «¡Tengo un paciente al que se le ha despegado una corona! La voy a pegar de nuevo ahora mismo.» Mina responde: «¡No tan rápido! Hay que analizar primero la causa.» ¿Por qué hay que analizar la causa antes de volver a pegar?",
+      "media": [],
+      "options": [
+        "Para identificar un problema de oclusión, preparación o material que pueda repetirse",
+        "Porque es más rentable",
+        "Porque el paciente quiere una corona nueva",
+        "Para contentar al laboratorio"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El despegue puede indicar un problema oculto. Volver a pegar sin analizar el riesgo de recidiva es alto.» 🦅 Sami: «Vale, primero haré un análisis oclusal...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q02",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina atienden a un paciente con una prótesis removible que ya no sujeta. Sami dice: «¡Hay que rehacerla!» Mina responde: «¿Y si solo es cuestión de los ganchos?» ¿Qué puede causar la pérdida de retención?",
+      "media": [],
+      "options": [
+        "Desgaste de los ganchos, reabsorción ósea o deformación de la prótesis",
+        "Solo desgaste de los ganchos",
+        "Solo reabsorción ósea",
+        "Solo problema del material"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La pérdida de retención suele ser multifactorial. Un simple cambio de ganchos puede ser suficiente.» 🐆 Mina: «Sami, tienes razón, ¡empecemos por revisar los ganchos!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q03",
+      "type": "single-choice",
+      "question": "🗣️ Sami, en consulta, dice al paciente: «Para su puente de 3 elementos, necesitamos coronas sobre dos pilares.» Mina interviene: «¿Y si hacemos un puente adherido?» ¿Qué es un puente adherido?",
+      "media": [],
+      "options": [
+        "Un puente fijado con alas a los dientes vecinos, sin tallar los pilares",
+        "Un puente convencional con coronas",
+        "Un puente sobre implantes",
+        "Una prótesis removible"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El puente adherido es una opción conservadora cuando no se tallan los dientes pilares.» 🦅 Sami: «Prefiero los puentes convencionales, pero reconozco que este es menos invasivo.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q04",
+      "type": "single-choice",
+      "question": "📞 Mina llama a Sami: «Tengo un paciente que quiere una corona de circonio, ¡pero tiene bruxismo severo!» Sami responde: «El circonio es resistente, ¡todo irá bien!» Mina dice: «¡No estoy tan segura!» ¿Qué material es más indicado para el bruxismo?",
+      "media": [],
+      "options": [
+        "Metal-cerámica o circonio monolítico por su resistencia",
+        "Solo cerámica pura",
+        "Solo composite",
+        "Solo oro"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «En caso de bruxismo, hay que dar prioridad a materiales resistentes como la metal-cerámica o el circonio monolítico.» 🐆 Mina: «¡Sami, conoces bien los materiales!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q05",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina examinan a un paciente con una dentadura completa inestable. Sami dice: «¡Necesita implantes!» Mina responde: «¿Y si solo es un problema de oclusión?» ¿Cuál es la causa más frecuente de inestabilidad?",
+      "media": [],
+      "options": [
+        "Defecto de oclusión o adaptación de la prótesis",
+        "Solo reabsorción ósea",
+        "Solo problema del material",
+        "Solo problema del laboratorio"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La inestabilidad suele estar relacionada con la oclusión o la adaptación. Una corrección oclusal puede ser suficiente.» 🦅 Sami: «Vale, primero revisaremos la oclusión antes de considerar implantes.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q06",
+      "type": "single-choice",
+      "question": "🗣️ Sami, discutiendo con un paciente, dice: «Su corona de cerámica es la más estética.» Mina interviene: «Pero es más frágil según las cargas oclusales.» ¿Dónde colocar una corona de cerámica?",
+      "media": [],
+      "options": [
+        "En dientes anteriores o premolares con oclusión controlada",
+        "Solo en molares",
+        "Solo en incisivos",
+        "En todos los dientes sin restricciones"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La cerámica pura está indicada para la estética de los dientes anteriores, pero es más frágil en zonas de alta carga.» 🐆 Mina: «¡Sami, eres realmente un experto en materiales!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q07",
+      "type": "single-choice",
+      "question": "📞 Sami llama a Mina: «¡Tengo un paciente con una prótesis removible que irrita la encía!» Mina responde: «Revisa la adaptación y el equilibrio oclusal.» ¿Cuáles son las causas de la irritación bajo la prótesis?",
+      "media": [],
+      "options": [
+        "Presión excesiva, defecto de adaptación o desequilibrio oclusal",
+        "Solo defecto de adaptación",
+        "Solo presión excesiva",
+        "Solo problema del material"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Las irritaciones suelen estar causadas por presión local o un desequilibrio oclusal.» 🐆 Mina: «Sami, tienes razón, ¡corregiremos el equilibrio!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q08",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina atienden a un paciente con un puente móvil. Sami dice: «¡Hay que rehacerlo!» Mina responde: «¿Y si solo es cuestión de cemento?» ¿Cuál es la causa más frecuente de movilidad de un puente?",
+      "media": [],
+      "options": [
+        "Descementado, fractura o pérdida de retención",
+        "Solo descementado",
+        "Solo fractura",
+        "Solo problema del laboratorio"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Un puente móvil puede deberse a un descementado o una fractura.» 🦅 Sami: «¡Primero comprobaré el cemento!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q09",
+      "type": "single-choice",
+      "question": "🗣️ Sami, en consulta, dice: «Para su diente desvitalizado, necesita un perno intrarradicular.» Mina pregunta: «¿Y si solo hacemos un composite?» ¿Qué es un perno intrarradicular?",
+      "media": [],
+      "options": [
+        "Un núcleo para reconstruir la raíz para fijar una corona sobre un diente desvitalizado",
+        "Un composite simple",
+        "Una corona temporal",
+        "Un implante"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El perno intrarradicular refuerza el diente desvitalizado para recibir la corona.» 🐆 Mina: «Sami, tienes razón, es la solución más duradera.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q10",
+      "type": "single-choice",
+      "question": "📞 Mina llama a Sami: «Tengo un paciente que quiere carillas, ¡pero tiene los dientes muy oscuros!» Sami responde: «¡Las carillas de cerámica lo enmascaran todo!» Mina dice: «¡No siempre!» ¿Cuál es la limitación de las carillas?",
+      "media": [],
+      "options": [
+        "Las carillas no enmascaran los oscurecimientos muy profundos o discoloraciones severas",
+        "Las carillas enmascaran todos los oscurecimientos",
+        "Las carillas solo son estéticas",
+        "Las carillas no son duraderas"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las carillas tienen limitaciones para oscurecimientos profundos. El blanqueamiento o una corona pueden ser más indicados.» 🦅 Sami: «Primero ofreceré un blanqueamiento.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q11",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina examinan a un paciente desdentado total. Sami dice: «Prótesis convencional, ¡es más barata!» Mina responde: «Los implantes podrían mejorar su calidad de vida.» ¿Cuáles son las ventajas de los implantes?",
+      "media": [],
+      "options": [
+        "Estabilidad mejorada, comodidad y preservación del hueso alveolar",
+        "Solo estética",
+        "Solo estabilidad",
+        "Solo comodidad"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Los implantes proporcionan una estabilidad y comodidad inigualables, además de preservar el hueso.» 🐆 Mina: «¡Sami, eres realmente convincente!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q12",
+      "type": "single-choice",
+      "question": "🗣️ Sami, hablando con un paciente, dice: «El circonio es el mejor material para su corona.» Mina interviene: «Es estético, pero puede ser abrasivo para los dientes antagonistas.» ¿Qué es el circonio?",
+      "media": [],
+      "options": [
+        "Un material cerámico de alta resistencia, muy estético, pero potencialmente abrasivo",
+        "Un metal precioso",
+        "Un composite reforzado",
+        "Una resina acrílica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El circonio es estético y resistente, pero su abrasividad es un factor a tener en cuenta.» 🦅 Sami: «Vale, puliré el circonio para reducir la abrasión.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q13",
+      "type": "single-choice",
+      "question": "📞 Sami llama a Mina: «Tengo un paciente que quiere una prótesis sobre 4 implantes, ¡pero tiene poco hueso!» Mina responde: «Se pueden colocar implantes más cortos o inclinados.» ¿Qué es un implante inclinado?",
+      "media": [],
+      "options": [
+        "Un implante colocado en ángulo para aprovechar al máximo el hueso disponible",
+        "Un implante más corto",
+        "Un implante más ancho",
+        "Un implante de titanio"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Los implantes inclinados permiten utilizar el hueso disponible en zonas con poca altura.» 🐆 Mina: «¡Sami, eres todo un especialista en implantes!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q14",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina atienden a un paciente con una prótesis maxilar removible. Sami dice: «¡La placa palatina es demasiado grande!» Mina responde: «Es necesaria para la retención.» ¿Cuál es el papel de la placa palatina?",
+      "media": [],
+      "options": [
+        "Proporcionar retención y estabilidad a la prótesis maxilar",
+        "Solo estética",
+        "Solo fonética",
+        "Solo protección de la encía"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La placa palatina es necesaria para la retención de la prótesis maxilar.» 🦅 Sami: «OK, la optimizaré, pero no la eliminaré.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q15",
+      "type": "single-choice",
+      "question": "🗣️ Sami, en consulta, dice: «Su puente de metal-cerámica durará 15 años.» Mina interviene: «¡Si la higiene es buena!» ¿Qué factor es clave para la durabilidad de un puente?",
+      "media": [],
+      "options": [
+        "Buena higiene y control regular",
+        "Solo el material",
+        "Solo la calidad del laboratorio",
+        "Solo la oclusión"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La durabilidad del puente depende de la higiene y el seguimiento regular.» 🐆 Mina: «¡Sami, eres realmente previsor!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q16",
+      "type": "single-choice",
+      "question": "📞 Mina llama a Sami: «¡Tengo un paciente al que se le ha roto la corona temporal!» Sami responde: «¡Pongamos la definitiva de inmediato!» Mina dice: «¡No tan rápido!» ¿Por qué es importante la corona temporal?",
+      "media": [],
+      "options": [
+        "Para proteger el diente, mantener el espacio y evaluar la estética y la función",
+        "Para ganar más dinero",
+        "Porque la corona definitiva no está lista",
+        "Para que el paciente se acostumbre"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La corona temporal es una etapa importante para validar el proyecto protésico.» 🦅 Sami: «OK, haremos una corona temporal de calidad.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q17",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina examinan a un paciente con un diente fracturado. Sami dice: «Extraemos y colocamos un implante.» Mina responde: «¿Y si se puede conservar con una corona?» ¿Cuándo se puede conservar un diente fracturado?",
+      "media": [],
+      "options": [
+        "Si la fractura no sobrepasa la encía y queda suficiente estructura dental",
+        "Siempre",
+        "Nunca",
+        "Solo si el diente está desvitalizado"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Las fracturas subgingivales profundas tienen mal pronóstico.» 🐆 Mina: «Sami, tienes razón, en este caso el implante es la mejor solución.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q18",
+      "type": "single-choice",
+      "question": "🗣️ Sami, hablando con un paciente, dice: «Su prótesis removible es ideal.» Mina interviene: «Aun así, hay que revisarla cada año.» ¿Por qué se recomienda una revisión anual?",
+      "media": [],
+      "options": [
+        "Para comprobar la adaptación, el estado de los ganchos y la salud de los tejidos",
+        "Para ganar más dinero",
+        "Porque las prótesis se desgastan",
+        "Para reemplazar la prótesis"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La revisión anual permite detectar problemas de adaptación o desgaste.» 🦅 Sami: «Planificaré revisiones regulares.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q19",
+      "type": "single-choice",
+      "question": "📞 Sami llama a Mina: «¡Tengo un paciente con una prótesis rota!» Mina responde: «¿Es reparable?» ¿Cuándo se puede reparar una prótesis removible?",
+      "media": [],
+      "options": [
+        "Si la fractura es simple y la prótesis es reciente",
+        "Siempre",
+        "Nunca",
+        "Solo si la prótesis es de resina"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Las fracturas simples en prótesis recientes son reparables.» 🐆 Mina: «Sami, tienes razón, la repararemos.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q20",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina atienden a un paciente con una dentadura inferior que flota. Sami dice: «¡Se necesita un implante!» Mina responde: «¿Y si solo corregimos la prótesis?» ¿Cuál es la causa más frecuente?",
+      "media": [],
+      "options": [
+        "Reabsorción ósea y falta de retención",
+        "Solo problema de oclusión",
+        "Solo problema del material",
+        "Solo problema del laboratorio"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La reabsorción ósea es la causa principal de la pérdida de retención de las dentaduras inferiores.» 🦅 Sami: «Vale, discutiremos las opciones con el paciente.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q21",
+      "type": "single-choice",
+      "question": "🗣️ Sami, en consulta, dice: «¡El CAD/CAM reemplazará al laboratorio!» Mina responde: «El laboratorio sigue siendo necesario para casos complejos.» ¿Qué es el CAD/CAM en prótesis?",
+      "media": [],
+      "options": [
+        "Diseño y fabricación asistidos por ordenador para crear prótesis",
+        "Un software de gestión de consulta",
+        "Una técnica de impresión",
+        "Un nuevo material"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El CAD/CAM permite fabricar prótesis más rápidamente.» 🐆 Mina: «Sami, el CAD/CAM es una herramienta, no un sustituto del laboratorio.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q22",
+      "type": "single-choice",
+      "question": "📞 Mina llama a Sami: «¡Tengo un paciente que quiere un puente de 6 elementos!» Sami responde: «¡Es demasiado largo, necesita implantes!» Mina dice: «Depende de los pilares.» ¿Cuál es la limitación de un puente?",
+      "media": [],
+      "options": [
+        "La longitud está limitada por la calidad de los pilares y la oclusión",
+        "Un puente puede reemplazar hasta 10 dientes",
+        "Un puente solo puede reemplazar un diente",
+        "Un puente puede reemplazar todos los dientes"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La longitud del puente depende de la calidad de los pilares.» 🦅 Sami: «Vale, evaluaremos los pilares antes de decidir.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q23",
+      "type": "single-choice",
+      "question": "🏥 Sami y Mina atienden a un paciente con una corona de color diferente. Sami dice: «¡Hay que rehacerla!» Mina responde: «¿Y si corregimos el color en el laboratorio?» ¿Cómo elegir el color de una corona?",
+      "media": [],
+      "options": [
+        "Con una guía de colores bajo luz natural o neutra",
+        "Solo con una fotografía",
+        "Con una muestra de laboratorio",
+        "Con un software"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La elección del color se realiza con una guía de colores bajo una iluminación adaptada.» 🐆 Mina: «¡Sami, eres un experto en estética!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q24",
+      "type": "single-choice",
+      "question": "🗣️ Sami, discutiendo con un paciente, dice: «La prótesis sobre implantes es la mejor solución.» Mina interviene: «Pero es más cara y requiere cirugía.» ¿Cuáles son los inconvenientes de los implantes?",
+      "media": [],
+      "options": [
+        "Mayor coste, mayor tiempo de tratamiento y riesgo quirúrgico",
+        "Solo coste",
+        "Solo tiempo de tratamiento",
+        "Solo riesgo quirúrgico"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los implantes tienen inconvenientes que hay que explicar al paciente.» 🦅 Sami: «Presentaré todas las opciones al paciente.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D2_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami y 🐆 Mina discuten sobre el futuro de la prótesis. Sami dice: «¡La inteligencia artificial nos reemplazará!» Mina responde: «No tan rápido, el diagnóstico clínico sigue siendo humano.» ¿Cuál es el futuro de la prótesis?",
+      "media": [],
+      "options": [
+        "La IA ayuda en el diagnóstico y el diseño, pero el clínico sigue siendo el responsable",
+        "La IA reemplazará a los técnicos dentales",
+        "La IA reemplazará a los odontólogos",
+        "La IA es inútil en prótesis"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La IA es una herramienta poderosa, pero el juicio clínico sigue siendo insustituible.» 🦅 Sami: «Estoy tranquilo, ¡nuestros puestos de trabajo están a salvo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

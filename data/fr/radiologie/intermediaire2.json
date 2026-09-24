@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "radiologie_intermediaire2_001",
+    "title": "Radiologie - Intermédiaire 2",
+    "specialty": "RADI",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "RADI_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Nadia examine une radiographie d'une tumeur bénigne. Dr Ayoub demande : 'Quel est l'aspect radiographique typique d'une tumeur bénigne ?'",
+      "media": [],
+      "options": [
+        "Des bords bien délimités et une corticalisation",
+        "Des bords irréguliers et infiltrants",
+        "Une radiotransparence diffuse",
+        "Une radio-opacité homogène"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'Les tumeurs bénignes ont généralement des bords bien délimités avec une corticalisation.' Dr Ayoub : 'Je vais évaluer les bords de la lésion.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Ayoub a pris un cliché d'une dent avec une lésion périapicale. Dr Nadia lui demande de différencier le granulome du kyste. Quel est le critère clé ?",
+      "media": [],
+      "options": [
+        "La taille de la lésion (> 1,5 cm pour un kyste)",
+        "La forme de la lésion",
+        "La localisation de la lésion",
+        "La densité de la lésion"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'Un kyste est généralement plus grand qu'un granulome (> 1,5-2 cm).' Dr Ayoub : 'Je vais mesurer la lésion.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Nadia montre une radiographie d'une dent avec une résorption externe. Dr Ayoub demande : 'Comment se présente une résorption externe ?'",
+      "media": [],
+      "options": [
+        "Une zone radiotransparente irrégulière sur le contour externe de la racine",
+        "Une zone radiotransparente symétrique centrée sur le canal",
+        "Une perte osseuse horizontale",
+        "Une fracture radiculaire verticale"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'La résorption externe se manifeste par une perte de substance irrégulière sur le contour externe.' Dr Ayoub : 'Je vais surveiller l'évolution.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Ayoub a réalisé un CBCT pour une pose d'implant. Dr Nadia lui demande d'évaluer la hauteur osseuse. Quel paramètre mesure-t-on sur le CBCT ?",
+      "media": [],
+      "options": [
+        "La hauteur d'os disponible de la crête au sinus ou au nerf",
+        "La largeur de la dent",
+        "La longueur de la racine",
+        "La densité de l'os en unités Hounsfield"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'Le CBCT permet de mesurer précisément la hauteur osseuse disponible.' Dr Ayoub : 'Je vais toujours réaliser un CBCT pré-implantaire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Nadia montre une radiographie d'une lésion kystique mandibulaire. Dr Ayoub demande : 'Quel est le kyste odontogène le plus fréquent ?'",
+      "media": [],
+      "options": [
+        "Le kyste radiculaire (périapical)",
+        "Le kyste dentigère",
+        "Le kyste odontogène kératinisé",
+        "Le kyste de la fente"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'Le kyste radiculaire est le plus fréquent des kystes odontogènes.' Dr Ayoub : 'Je vais rechercher les lésions apicales.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Ayoub a pris une radiographie d'un patient avec une tumeur maligne. Dr Nadia lui demande d'identifier les signes radiographiques. Quel est le signe clé ?",
+      "media": [],
+      "options": [
+        "Des bords irréguliers et une destruction osseuse",
+        "Des bords bien délimités",
+        "Une corticalisation",
+        "Une radiotransparence homogène"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'Les tumeurs malignes présentent des bords irréguliers et une destruction osseuse.' Dr Ayoub : 'Je vais orienter le patient rapidement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Nadia montre une radiographie d'un ostéosarcome. Dr Ayoub demande : 'Quel est l'aspect radiographique typique ?'",
+      "media": [],
+      "options": [
+        "Une lésion mixte radio-opaque et radiotransparente avec spicules",
+        "Une lésion purement radiotransparente",
+        "Une lésion purement radio-opaque",
+        "Une expansion corticale sans spicule"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'L'ostéosarcome présente des spicules (aspect en rayons de soleil) et une lésion mixte.' Dr Ayoub : 'Je vais rechercher ces signes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Ayoub a pris une radiographie d'un patient avec un fibrome ossifiant. Dr Nadia lui demande : 'Quel est l'aspect radiographique du fibrome ossifiant ?'",
+      "media": [],
+      "options": [
+        "Une lésion radiotransparente avec des zones radio-opaques internes",
+        "Une lésion purement radiotransparente",
+        "Une lésion purement radio-opaque",
+        "Une expansion corticale massive"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'Le fibrome ossifiant présente des zones radiotransparentes avec des îlots radio-opaques.' Dr Ayoub : 'Je vais surveiller l'évolution.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Nadia montre une radiographie d'une dent avec une carie profonde. Dr Ayoub demande : 'Comment se présente une carie profonde sur une radiographie ?'",
+      "media": [],
+      "options": [
+        "Une zone radiotransparente qui pénètre dans la dentine",
+        "Une zone radio-opaque",
+        "Une fracture radiculaire",
+        "Une perte osseuse"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'La carie se présente comme une zone radiotransparente (claire) qui progresse dans la dentine.' Dr Ayoub : 'Je vais évaluer la profondeur.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Ayoub a pris une radiographie d'un patient avec une ostéite. Dr Nadia lui demande : 'Comment se présente l'ostéite alvéolaire ?'",
+      "media": [],
+      "options": [
+        "Une zone radiotransparente diffuse autour de l'alvéole",
+        "Une zone radio-opaque",
+        "Une fracture radiculaire",
+        "Une carie interproximale"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'L'ostéite alvéolaire se manifeste par une radiotransparence diffuse autour de l'alvéole.' Dr Ayoub : 'Je vais prescrire un traitement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Nadia montre une radiographie d'une dent avec un amalgame. Dr Ayoub demande : 'Pourquoi l'amalgame apparaît-il radio-opaque ?'",
+      "media": [],
+      "options": [
+        "En raison de sa forte densité (métaux lourds)",
+        "En raison de sa faible densité",
+        "En raison de sa composition organique",
+        "En raison de sa couleur"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'L'amalgame contient des métaux lourds qui absorbent les rayons X, apparaissant radio-opaque (blanc).' Dr Ayoub : 'Je vais identifier les restaurations.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Ayoub a pris une radiographie d'un patient avec une ostéomyélite. Dr Nadia lui demande : 'Comment se présente l'ostéomyélite à la radiographie ?'",
+      "media": [],
+      "options": [
+        "Une zone radiotransparente avec séquestre (séparation osseuse)",
+        "Une zone radio-opaque",
+        "Une fracture radiculaire",
+        "Une carie interproximale"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'L'ostéomyélite présente une radiotransparence avec un séquestre radio-opaque central.' Dr Ayoub : 'Je vais prescrire un traitement urgent.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Nadia montre une radiographie d'une dent avec une calcification pulpaire. Dr Ayoub demande : 'Comment se présente une calcification pulpaire ?'",
+      "media": [],
+      "options": [
+        "Des zones radio-opaques ponctuées dans la chambre pulpaire",
+        "Une zone radiotransparente apicale",
+        "Une fracture radiculaire",
+        "Une perte osseuse"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'Les calcifications pulpaires sont des zones radio-opaques (blanches) dans le canal.' Dr Ayoub : 'Je vais identifier la calcification.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Ayoub a pris une radiographie d'un patient avec une hypercémentose. Dr Nadia lui demande : 'Comment se présente l'hypercémentose ?'",
+      "media": [],
+      "options": [
+        "Un épaississement radio-opaque du cément radiculaire",
+        "Une zone radiotransparente apicale",
+        "Une fracture radiculaire",
+      "Une perte osseuse"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'L'hypercémentose se manifeste par un épaississement radio-opaque du cément.' Dr Ayoub : 'Je vais surveiller l'évolution.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q15",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie d'une dent avec une ankylose. Dr Ayoub demande : 'Quel est le signe radiographique de l'ankylose ?'",
+    "media": [],
+    "options": [
+      "La disparition du ligament parodontal sur une zone",
+      "Une zone radiotransparente apicale",
+      "Une fracture radiculaire",
+      "Une carie interproximale"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'L'ankylose se caractérise par la disparition du ligament parodontal.' Dr Ayoub : 'Je vais évaluer le ligament.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q16",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie d'un patient avec un kyste dentigère. Dr Nadia lui demande : 'Comment se présente un kyste dentigère ?'",
+    "media": [],
+    "options": [
+      "Une zone radiotransparente autour de la couronne d'une dent incluse",
+      "Une zone radiotransparente apicale",
+      "Une zone radio-opaque",
+      "Une fracture radiculaire"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Le kyste dentigère se présente comme une radiotransparence autour de la couronne d'une dent incluse.' Dr Ayoub : 'Je vais surveiller l'évolution.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q17",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie d'une dent avec une lésion de la carie de l'émail. Dr Ayoub demande : 'Comment se présente une carie de l'émail à la radiographie ?'",
+    "media": [],
+    "options": [
+      "Une zone radiotransparente limitée à l'émail",
+      "Une zone radiotransparente qui pénètre dans la dentine",
+      "Une zone radio-opaque",
+      "Une fracture radiculaire"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'La carie de l'émail est une zone radiotransparente limitée à l'émail.' Dr Ayoub : 'Je vais surveiller la progression.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q18",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie d'un patient avec une fibrose. Dr Nadia lui demande : 'Comment se présente la fibrose à la radiographie ?'",
+    "media": [],
+    "options": [
+      "Une zone radiotransparente avec des trabéculations",
+      "Une zone radio-opaque",
+      "Une fracture radiculaire",
+      "Une carie interproximale"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'La fibrose présente une radiotransparence avec des trabéculations.' Dr Ayoub : 'Je vais surveiller l'évolution.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q19",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie d'une dent avec une dent incluse. Dr Ayoub demande : 'Quelle est la localisation la plus fréquente des canines incluses ?'",
+    "media": [],
+    "options": [
+      "Les canines maxillaires",
+      "Les canines mandibulaires",
+      "Les incisives",
+      "Les prémolaires"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Les canines maxillaires sont les deuxièmes dents incluses les plus fréquentes.' Dr Ayoub : 'Je vais toujours vérifier les canines.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q20",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie d'un patient avec une tumeur odontogène. Dr Nadia lui demande : 'Quelle est la tumeur odontogène bénigne la plus fréquente ?'",
+    "media": [],
+    "options": [
+      "L'odontome",
+      "L'améloblastome",
+      "Le kyste radiculaire",
+      "Le fibrome ossifiant"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'L'odontome est la tumeur odontogène bénigne la plus fréquente.' Dr Ayoub : 'Je vais surveiller l'évolution.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q21",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie d'une dent avec une fracture apicale. Dr Ayoub demande : 'Comment se présente une fracture apicale ?'",
+    "media": [],
+    "options": [
+      "Une ligne radiotransparente fine au niveau de l'apex",
+      "Une zone radiotransparente apicale",
+      "Une perte osseuse",
+      "Une carie interproximale"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'La fracture apicale se présente comme une ligne radiotransparente fine au niveau de l'apex.' Dr Ayoub : 'Je vais rechercher cette ligne.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q22",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie d'un patient avec une ostéodystrophie. Dr Nadia lui demande : 'Comment se présente l'ostéodystrophie ?'",
+    "media": [],
+    "options": [
+      "Une zone radiotransparente avec des anomalies osseuses",
+      "Une zone radio-opaque",
+      "Une fracture radiculaire",
+      "Une carie interproximale"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'L'ostéodystrophie se manifeste par des anomalies osseuses.' Dr Ayoub : 'Je vais surveiller l'évolution.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q23",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie d'une dent avec une ankylose dentaire. Dr Ayoub demande : 'Quel est le signe radiographique de l'ankylose ?'",
+    "media": [],
+    "options": [
+      "La disparition du ligament parodontal sur une zone",
+      "Une zone radiotransparente apicale",
+      "Une fracture radiculaire",
+      "Une carie interproximale"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'L'ankylose se caractérise par la disparition du ligament parodontal.' Dr Ayoub : 'Je vais évaluer le ligament.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q24",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie d'un patient avec une hyperdontie. Dr Nadia lui demande : 'Comment se présente l'hyperdontie ?'",
+    "media": [],
+    "options": [
+      "Une dent surnuméraire",
+      "Une zone radiotransparente",
+      "Une fracture radiculaire",
+      "Une carie interproximale"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'L'hyperdontie se manifeste par une dent surnuméraire.' Dr Ayoub : 'Je vais identifier la dent supplémentaire.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I2_Q25",
+    "type": "single-choice",
+    "question": "Dr Ayoub, après avoir géré des cas complexes de radiologie avec Dr Nadia, reçoit ses félicitations. Quelle est la prochaine étape pour Dr Ayoub ?",
+    "media": [],
+    "options": [
+      "Devenir un expert en radiologie clinique et en imagerie 3D",
+      "Prendre sa retraite",
+      "Changer de spécialité",
+      "Oublier les bonnes pratiques"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'La maîtrise des cas complexes est une compétence précieuse. Devenir un expert est la prochaine étape.' Dr Ayoub : 'Je vais me former à l'imagerie 3D.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  }
+]
+}

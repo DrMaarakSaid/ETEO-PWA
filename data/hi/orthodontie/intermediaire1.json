@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "orthodontie_intermediaire1_001",
+    "title": "Orthodontics - Intermediate 1",
+    "specialty": "ORTH",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ORTH_I1_Q01",
+      "type": "single-choice",
+      "question": "Sami asks Mina: 'What is the key to a good orthodontic diagnosis?' Mina replies:",
+      "media": [],
+      "options": [
+        "A simple clinical examination",
+        "A complete assessment: clinical, cephalometric, and radiological",
+        "Only cephalometry",
+        "Only X-rays"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'Orthodontic diagnosis is based on a complete clinical, cephalometric, and radiological assessment.' 🦅 Sami: 'Fine, I'll do the whole assessment... but it's long!'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q02",
+      "type": "single-choice",
+      "question": "Sami wonders: 'How do you evaluate a child's growth?' Mina replies:",
+      "media": [],
+      "options": [
+        "By measuring their height",
+        "By analyzing cervical vertebral maturation (CVM)",
+        "By weighing the child",
+        "By counting their teeth"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'Cervical vertebral maturation (CVM) is the best indicator of residual growth.' 🦅 Sami: 'I will learn to read CVM.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q03",
+      "type": "single-choice",
+      "question": "Sami asks: 'What is the Bolton method?' Mina replies:",
+      "media": [],
+      "options": [
+        "An extraction technique",
+        "An analysis of dental crowding",
+        "A method of bracket placement",
+        "An X-ray technique"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'The Bolton method calculates crowding and guides the decision between extraction and expansion.' 🦅 Sami: 'I will always calculate the Bolton.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q04",
+      "type": "single-choice",
+      "question": "Sami wonders: 'What is the curve of Spee?' Mina replies:",
+      "media": [],
+      "options": [
+        "An aesthetic curve",
+        "The sagittal occlusal curve of the teeth",
+        "A growth curve",
+        "A temperature curve"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'The curve of Spee is an important occlusal parameter. A deep curve > 2 mm is often associated with a Class II.' 🦅 Sami: 'I will measure the curve of Spee systematically.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q05",
+      "type": "single-choice",
+      "question": "Sami asks: 'What are the key cephalometric parameters?' Mina replies:",
+      "media": [],
+      "options": [
+        "SNA, SNB, ANB, FMA, IMPA",
+        "Only SNA and SNB",
+        "Only ANB",
+        "Only FMA"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'The key parameters include SNA, SNB, ANB, FMA, and IMPA to evaluate skeletal relationships.' 🦅 Sami: 'I will learn all these parameters.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q06",
+      "type": "single-choice",
+      "question": "Sami wonders: 'What is overjet?' Mina replies:",
+      "media": [],
+      "options": [
+        "The vertical overlap of incisors",
+        "The horizontal distance between incisors",
+        "The color of the teeth",
+        "The size of the teeth"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'Overjet is the horizontal distance between the upper and lower incisors.' 🦅 Sami: 'I will measure my patients' overjet.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q07",
+      "type": "single-choice",
+      "question": "Sami asks: 'What is overbite?' Mina replies:",
+      "media": [],
+      "options": [
+        "The horizontal distance between incisors",
+        "The vertical overlap of upper incisors over lower incisors",
+        "The color of the teeth",
+        "The size of the teeth"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'Overbite is the vertical overlap of upper incisors over lower incisors.' 🦅 Sami: 'I will measure overbite systematically.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q08",
+      "type": "single-choice",
+      "question": "Sami wonders: 'When should a panoramic X-ray be taken in orthodontics?' Mina replies:",
+      "media": [],
+      "options": [
+        "Never, it's useless",
+        "Systematically for the initial assessment",
+        "Only in case of suspected impaction",
+        "Only for adults"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'The panoramic X-ray is essential to evaluate tooth germs, impactions, and pathologies.' 🦅 Sami: 'I will always prescribe a panoramic X-ray.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q09",
+      "type": "single-choice",
+      "question": "Sami asks: 'What is lateral cephalometry?' Mina replies:",
+      "media": [],
+      "options": [
+        "A standardized profile X-ray for cephalometric analysis",
+        "A frontal X-ray",
+        "A panoramic X-ray",
+        "A sinus X-ray"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Lateral cephalometry is a standardized profile X-ray for analysis of skeletal relationships.' 🦅 Sami: 'I will always take a cephalogram.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q10",
+      "type": "single-choice",
+      "question": "Sami wonders: 'How do you evaluate skeletal maturity?' Mina replies:",
+      "media": [],
+      "options": [
+        "By chronological age",
+        "By analyzing cervical vertebral maturation (CVM)",
+        "By the child's height",
+        "By the child's weight"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'Cervical vertebral maturation is the best indicator of skeletal maturity.' 🦅 Sami: 'I will learn to read CVM.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q11",
+      "type": "single-choice",
+      "question": "Sami asks: 'What are the signs of a skeletal Class II?' Mina replies:",
+      "media": [],
+      "options": [
+        "ANB > 4° and a low SNB",
+        "ANB < 0°",
+        "FMA > 30°",
+        "IMPA > 90°"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'A skeletal Class II is characterized by ANB > 4° and a low SNB.' 🦅 Sami: 'I will calculate the ANB systematically.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q12",
+      "type": "single-choice",
+      "question": "Sami wonders: 'What are the signs of a skeletal Class III?' Mina replies:",
+      "media": [],
+      "options": [
+        "ANB < 0° and a high SNB",
+        "ANB > 4°",
+        "FMA > 30°",
+        "IMPA > 90°"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'A skeletal Class III is characterized by ANB < 0° and a high SNB.' 🦅 Sami: 'I will always check the ANB.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q13",
+      "type": "single-choice",
+      "question": "Sami asks: 'What is the Nolla space?' Mina replies:",
+      "media": [],
+      "options": [
+        "An index of dental development",
+        "An extraction technique",
+        "A method of bracket placement",
+        "An X-ray technique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'The Nolla space evaluates the stage of development of teeth, particularly canines.' 🦅 Sami: 'I will use the Nolla space for impacted canines.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q14",
+      "type": "single-choice",
+      "question": "Sami wonders: 'When should a tooth be extracted in orthodontics?' Mina replies:",
+      "media": [],
+      "options": [
+        "Only in cases of severe crowding > 6-8 mm",
+        "Always for Class II",
+        "Never, expansion should always be done",
+        "Only for Class III"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Extractions are indicated for severe crowding > 6-8 mm.' 🦅 Sami: 'I will calculate the crowding before extracting.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q15",
+      "type": "single-choice",
+      "question": "Sami asks: 'What is retention in orthodontics?' Mina replies:",
+      "media": [],
+      "options": [
+        "A negligible phase of treatment",
+        "The post-treatment phase to stabilize the results",
+        "An extraction technique",
+        "A method of bracket placement"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'Retention is the essential post-treatment phase to stabilize the results.' 🦅 Sami: 'I will always plan for retention.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q16",
+      "type": "single-choice",
+      "question": "Sami wonders: 'What are the advantages of aligners?' Mina replies:",
+      "media": [],
+      "options": [
+        "Aesthetic, comfortable, hygienic",
+        "Faster than braces",
+        "Cheaper",
+        "More effective for all cases"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Aligners offer superior aesthetics, comfort, and hygiene.' 🦅 Sami: 'I will propose aligners to my patients.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q17",
+      "type": "single-choice",
+      "question": "Sami asks: 'What are the limits of aligners?' Mina replies:",
+      "media": [],
+      "options": [
+        "Limited for complex movements and severe rotations",
+        "They only work for simple cases",
+        "They are ineffective",
+        "They only work in adults"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Aligners have limits for complex movements and severe rotations.' 🦅 Sami: 'I will use braces for complex cases.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q18",
+      "type": "single-choice",
+      "question": "Sami wonders: 'What is a mini-screw in orthodontics?' Mina replies:",
+      "media": [],
+      "options": [
+        "A temporary implant for orthodontic anchorage",
+        "A definitive implant",
+        "A screw for prosthetics",
+        "A screw for surgery"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Mini-screws are temporary implants for orthodontic anchorage.' 🦅 Sami: 'I will use mini-screws for anchorage.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q19",
+      "type": "single-choice",
+      "question": "Sami asks: 'What is orthognathic surgery?' Mina replies:",
+      "media": [],
+      "options": [
+        "Surgery to correct severe skeletal malocclusions",
+        "An extraction",
+        "An implant placement",
+        "A scaling technique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Orthognathic surgery corrects severe skeletal malocclusions.' 🦅 Sami: 'I will refer patients to surgeons.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q20",
+      "type": "single-choice",
+      "question": "Sami wonders: 'What are the risk factors for relapse in orthodontics?' Mina replies:",
+      "media": [],
+      "options": [
+        "Lack of retention, residual growth, parafunctions",
+        "Only the lack of retention",
+        "Only growth",
+        "Only parafunctions"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Relapse is multifactorial: insufficient retention, growth, parafunctions.' 🦅 Sami: 'I will prevent relapse with good retention.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q21",
+      "type": "single-choice",
+      "question": "Sami asks: 'What is the Downs method in cephalometry?' Mina replies:",
+      "media": [],
+      "options": [
+        "A cephalometric analysis of facial angles",
+        "An extraction technique",
+        "A method of bracket placement",
+        "An X-ray technique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Downs' analysis evaluates facial angles and dental inclinations.' 🦅 Sami: 'I will use Downs' analysis.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q22",
+      "type": "single-choice",
+      "question": "Sami wonders: 'How to manage a dental agenesis in orthodontics?' Mina replies:",
+      "media": [],
+      "options": [
+        "Space closure or preservation for implant",
+        "Always close the spaces",
+        "Always keep the spaces",
+        "Always extract"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'The strategy depends on the location and the occlusion.' 🦅 Sami: 'I will plan the management of agenesis.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q23",
+      "type": "single-choice",
+      "question": "Sami asks: 'What is maxillary expansion?' Mina replies:",
+      "media": [],
+      "options": [
+        "A technique to widen the maxilla (quad-helix, disjunctor)",
+        "An extraction",
+        "Surgery",
+        "A scaling technique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Maxillary expansion is indicated for crossbites and crowding.' 🦅 Sami: 'I will propose expansions.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q24",
+      "type": "single-choice",
+      "question": "Sami wonders: 'What are the risks of excessive orthodontic forces?' Mina replies:",
+      "media": [],
+      "options": [
+        "Root fractures, recessions, resorptions",
+        "Only fractures",
+        "Only recessions",
+        "Only resorptions"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Excessive forces can cause fractures, recessions, and resorptions.' 🦅 Sami: 'I will use adapted forces.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q25",
+      "type": "single-choice",
+      "question": "Sami, after having mastered orthodontic diagnosis with Mina, says: 'I am ready to take on all challenges!' Mina concludes: 'Mastering orthodontic diagnosis is...'",
+      "media": [],
+      "options": [
+        "An option",
+        "The basis of success in orthodontics",
+        "A waste of time",
+        "Secondary"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explains: 'Mastering orthodontic diagnosis is the basis of success in orthodontics.' 🦅 Sami: 'I will continue to train.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

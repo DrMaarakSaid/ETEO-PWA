@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_debutant2_001",
+    "title": "Esterilización - Principiante 2",
+    "specialty": "STER",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_D2_Q01",
+      "type": "single-choice",
+      "question": "¿Por qué se desaconseja encarecidamente la limpieza manual?",
+      "media": [],
+      "options": [
+        "Eficacia insuficiente contra la cal",
+        "Alto riesgo de lesiones por cortes",
+        "Costo de los cepillos",
+        "Tiempo de secado"
+      ],
+      "correct": 1,
+      "explanation": "El riesgo de lesión por corte es el principal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q02",
+      "type": "single-choice",
+      "question": "¿Cuál es el mecanismo principal de la limpieza por ultrasonidos?",
+      "media": [],
+      "options": [
+        "Cavitación",
+        "Abrasión mecánica",
+        "Desinfección térmica",
+        "Disolución"
+      ],
+      "correct": 0,
+      "explanation": "La implosión de burbujas (cavitación) desprende la suciedad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q03",
+      "type": "single-choice",
+      "question": "¿Cuál es la duración media de un ciclo de ultrasonidos?",
+      "media": [],
+      "options": [
+        "1 minuto",
+        "30 minutos",
+        "5–10 minutos",
+        "1 hora"
+      ],
+      "correct": 2,
+      "explanation": "5-10 minutos son suficientes para una eficacia óptima.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q04",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal ventaja de la lavadora-desinfectadora?",
+      "media": [],
+      "options": [
+        "Reemplaza al autoclave",
+        "Reduce los costos",
+        "Estandarización y reproducibilidad",
+        "Vapor a alta presión"
+      ],
+      "correct": 2,
+      "explanation": "Automatiza y garantiza un nivel constante de limpieza.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q05",
+      "type": "single-choice",
+      "question": "¿Cuáles son las etapas clave del ciclo de la lavadora-desinfectadora?",
+      "media": [],
+      "options": [
+        "Esterilización, enfriamiento",
+        "Lavado, esterilización",
+        "Desinfección, enjuague",
+        "Prelavado, lavado, enjuague, secado"
+      ],
+      "correct": 3,
+      "explanation": "Este ciclo completo permite pasar del estado contaminado al limpio.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q06",
+      "type": "single-choice",
+      "question": "La desinfección térmica se basa en:",
+      "media": [],
+      "options": [
+        "Rayos ultravioleta",
+        "Agua a 80-90°C",
+        "Golpe hidráulico",
+        "Pulverización"
+      ],
+      "correct": 1,
+      "explanation": "El calor húmedo destruye la mayoría de los patógenos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q07",
+      "type": "single-choice",
+      "question": "Los desinfectantes químicos (aldehídos, etc.) están destinados a:",
+      "media": [],
+      "options": [
+        "Esterilización de instrumentos",
+        "Superficies inanimadas",
+        "Enjuague",
+        "Almacenamiento"
+      ],
+      "correct": 1,
+      "explanation": "Son eficaces en superficies, pero no sustituyen la esterilización.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q08",
+      "type": "single-choice",
+      "question": "¿Cuál es el principal peligro de los aldehídos?",
+      "media": [],
+      "options": [
+        "Ineficacia",
+        "Precio elevado",
+        "Corrosión",
+        "Toxicidad e irritación"
+      ],
+      "correct": 3,
+      "explanation": "Su toxicidad exige estrictas medidas de precaución.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q09",
+      "type": "single-choice",
+      "question": "¿Por qué se utiliza el ácido peracético?",
+      "media": [],
+      "options": [
+        "Alta acción esporicida",
+        "Lubricación",
+        "Bajo costo",
+        "Enjuague simple"
+      ],
+      "correct": 0,
+      "explanation": "Es un desinfectante de alto nivel, activo contra esporas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q10",
+      "type": "single-choice",
+      "question": "Beneficio del agua osmótica al final del ciclo:",
+      "media": [],
+      "options": [
+        "Fijación de proteínas",
+        "Enfriamiento",
+        "Prevención de depósitos y corrosión",
+        "Desinfección"
+      ],
+      "correct": 2,
+      "explanation": "Evita la formación de cal y protege el acero.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q11",
+      "type": "single-choice",
+      "question": "Causa principal de la corrosión de los instrumentos:",
+      "media": [],
+      "options": [
+        "Uso intensivo",
+        "Humedad y productos inadecuados",
+        "Almacenamiento en seco",
+        "Cambio de temperatura"
+      ],
+      "correct": 1,
+      "explanation": "El agua estancada y los cloruros son enemigos del acero.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q12",
+      "type": "single-choice",
+      "question": "Regla de oro para prevenir la corrosión:",
+      "media": [],
+      "options": [
+        "Lubricación abundante",
+        "Secado inmediato y minucioso",
+        "Remojo prolongado",
+        "Cepillos metálicos"
+      ],
+      "correct": 1,
+      "explanation": "El secado es la etapa más importante.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q13",
+      "type": "single-choice",
+      "question": "¿Por qué se deben lubricar los instrumentos articulados?",
+      "media": [],
+      "options": [
+        "Prevenir el agarrotamiento",
+        "Desinfectar",
+        "Sustituir el lavado",
+        "Acelerar el secado"
+      ],
+      "correct": 0,
+      "explanation": "La lubricación es esencial para las articulaciones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q14",
+      "type": "single-choice",
+      "question": "¿Cuándo se deben lubricar los instrumentos?",
+      "media": [],
+      "options": [
+        "Cada semana",
+        "Después de la limpieza, antes de la esterilización",
+        "Antes de la esterilización anual",
+        "Si se han vuelto rígidos"
+      ],
+      "correct": 1,
+      "explanation": "La lubricación regular mantiene un estado óptimo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q15",
+      "type": "single-choice",
+      "question": "El test de fuga de aire verifica:",
+      "media": [],
+      "options": [
+        "La calidad del vapor",
+        "El tiempo",
+        "La presencia de esporas",
+        "La estanqueidad de la cámara"
+      ],
+      "correct": 3,
+      "explanation": "Una fuga de aire pone en peligro la esterilización.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q16",
+      "type": "single-choice",
+      "question": "Frecuencia del test de fuga:",
+      "media": [],
+      "options": [
+        "Cada ciclo",
+        "Diariamente",
+        "Mensualmente",
+        "Semanalmente"
+      ],
+      "correct": 1,
+      "explanation": "Es necesario a diario.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q17",
+      "type": "single-choice",
+      "question": "¿Qué verifica el test de Bowie-Dick?",
+      "media": [],
+      "options": [
+        "La temperatura",
+        "La contaminación",
+        "La eliminación de aire / penetración del vapor",
+        "La calidad del embalaje"
+      ],
+      "correct": 2,
+      "explanation": "Confirma la penetración del vapor.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q18",
+      "type": "single-choice",
+      "question": "Ciclo tipo «Flash»:",
+      "media": [],
+      "options": [
+        "Para objetos frágiles",
+        "Estándar embolsado",
+        "Para instrumentos sin envolver",
+        "Desinfección química"
+      ],
+      "correct": 2,
+      "explanation": "Instrumentos sin envolver para uso inmediato.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q19",
+      "type": "single-choice",
+      "question": "¿Por qué se debe limitar el uso del ciclo «Flash»?",
+      "media": [],
+      "options": [
+        "Falta de preservación de la esterilidad",
+        "Costo elevado",
+        "Ineficacia térmica",
+        "Fusión de plásticos"
+      ],
+      "correct": 0,
+      "explanation": "No permite almacenar los objetos estériles.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q20",
+      "type": "single-choice",
+      "question": "Lugar de almacenamiento de los instrumentos:",
+      "media": [],
+      "options": [
+        "Húmedo",
+        "Expuesto a la luz",
+        "Limpio, seco, protegido del polvo",
+        "A alta temperatura"
+      ],
+      "correct": 2,
+      "explanation": "Preserva la barrera estéril.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q21",
+      "type": "single-choice",
+      "question": "Vida útil del embalaje estéril:",
+      "media": [],
+      "options": [
+        "Limitada a 24 horas",
+        "Larga mientras se mantenga la integridad",
+        "Limitada a 1 mes",
+        "Variable"
+      ],
+      "correct": 1,
+      "explanation": "Mientras el embalaje esté intacto y seco.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q22",
+      "type": "single-choice",
+      "question": "Si se encuentra un embalaje húmedo:",
+      "media": [],
+      "options": [
+        "Usar después del secado",
+        "Usar si el agua está limpia",
+        "No, no está estéril",
+        "Usar si es reciente"
+      ],
+      "correct": 2,
+      "explanation": "Indica una ruptura de la barrera.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q23",
+      "type": "single-choice",
+      "question": "¿Por qué se debe evitar sobrecargar el autoclave?",
+      "media": [],
+      "options": [
+        "Desgaste de las juntas",
+        "Sobrecalentamiento",
+        "Riesgo de fallo por bloqueo del vapor",
+        "Daño a la puerta"
+      ],
+      "correct": 2,
+      "explanation": "El vapor debe circular libremente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q24",
+      "type": "single-choice",
+      "question": "¿Por qué es importante un enfriamiento lento?",
+      "media": [],
+      "options": [
+        "Para evitar la condensación interna",
+        "Para ahorrar tiempo",
+        "Para fijar los colores",
+        "Para proteger la máquina"
+      ],
+      "correct": 0,
+      "explanation": "Una caída rápida de temperatura provoca condensación de humedad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q25",
+      "type": "single-choice",
+      "question": "Beneficio del mantenimiento técnico periódico:",
+      "media": [],
+      "options": [
+        "Ahorro de energía",
+        "Garantía de seguridad y conformidad",
+        "Limpieza de la superficie externa",
+        "Registro de ciclos"
+      ],
+      "correct": 1,
+      "explanation": "Obligación legal para la fiabilidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_intermediaire2_001",
+    "title": "Esterilización - Nivel Intermedio 2",
+    "specialty": "STER",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_I2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN se enfrenta a una situación de emergencia: un paciente requiere una intervención inmediata. El material aún no está esterilizado. ¿Qué debe hacer?",
+      "media": [],
+      "options": [
+        "Usar el material tal como está",
+        "Usar el ciclo Flash, si está disponible",
+        "Cancelar la intervención",
+        "Pedir al paciente que venga más tarde"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «En urgencias se puede usar el ciclo Flash. Pero atención: no permite almacenar los instrumentos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q02",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN descubre que su autoclave muestra un error de presión. La Dra. FATIMA le dice: «No se puede usar.» ¿Cuál es la primera acción que debe tomar?",
+      "media": [],
+      "options": [
+        "Reiniciar el autoclave",
+        "Contactar al servicio técnico",
+        "Hacer un test de fuga",
+        "Ignorar el error"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Un error de presión es una señal grave. Hay que contactar al servicio técnico antes de cualquier uso.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe gestionar la escasez de embalajes estériles. La Dra. FATIMA le propone una alternativa. ¿Cuál es la mejor solución?",
+      "media": [],
+      "options": [
+        "Usar papel de aluminio",
+        "Usar contenedores rígidos validados",
+        "Usar film de polietileno",
+        "Usar bolsas de congelación"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Los contenedores rígidos validados son una alternativa segura a los embalajes clásicos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q04",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN observa que las pruebas biológicas a veces dan positivo. La Dra. FATIMA le explica las posibles causas. ¿Cuál es la causa más frecuente?",
+      "media": [],
+      "options": [
+        "Problema de temperatura",
+        "Problema de carga (sobrecarga)",
+        "Problema de agua",
+        "Problema de tiempo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La sobrecarga del autoclave es la causa más frecuente de fallo en las pruebas biológicas.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q05",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe formar a un nuevo asistente. La Dra. FATIMA le aconseja mostrarle los procedimientos paso a paso. ¿Qué debe mostrarle en primer lugar?",
+      "media": [],
+      "options": [
+        "Cómo usar el autoclave",
+        "El ciclo completo de esterilización (de la zona sucia a la estéril)",
+        "Cómo embalar los instrumentos",
+        "Cómo realizar las pruebas"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Primero hay que mostrarle el ciclo completo para que comprenda toda la cadena.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q06",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN pregunta sobre la eficacia de los diferentes desinfectantes. La Dra. FATIMA le prepara una tabla comparativa. ¿Qué desinfectante es más eficaz contra las esporas?",
+      "media": [],
+      "options": [
+        "Alcohol",
+        "Ácido peracético",
+        "Glutaraldehído",
+        "Lejía"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El ácido peracético es uno de los pocos desinfectantes con alta acción esporicida.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q07",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe gestionar un incidente: se utilizó un instrumento sin esterilizar. La Dra. FATIMA le explica el procedimiento. ¿Cuál es la prioridad?",
+      "media": [],
+      "options": [
+        "Ocultar el incidente",
+        "Informar al paciente y tomar las medidas necesarias",
+        "Continuar como si nada hubiera pasado",
+        "Esperar a ver si surge un problema"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La transparencia es necesaria. El paciente debe ser informado y deben tomarse medidas correctivas.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q08",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe optimizar el flujo de esterilización en su consultorio. La Dra. FATIMA le propone organizar el espacio. ¿Cuál es la mejor organización?",
+      "media": [],
+      "options": [
+        "Hacer todo en una sola sala",
+        "Dividir en zonas: sucia, limpia y estéril",
+        "Realizar la esterilización en la sala de tratamiento",
+        "Usar una sola sala para todo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La separación de zonas es necesaria para prevenir la contaminación cruzada.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe reemplazar el autoclave. La Dra. FATIMA le da criterios de elección. ¿Qué criterio es el más importante?",
+      "media": [],
+      "options": [
+        "Precio",
+        "Marca",
+        "Conformidad normativa (clase B)",
+        "Color"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. FATIMA explica: «El criterio más importante es la conformidad normativa. El autoclave debe ser clase B para procesar instrumentos huecos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q10",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN pregunta sobre el almacenamiento de instrumentos estériles. La Dra. FATIMA le explica que la duración del almacenamiento depende de varios factores. ¿Qué factor es el principal?",
+      "media": [],
+      "options": [
+        "Tipo de embalaje",
+        "Temperatura ambiente",
+        "Nivel de humedad",
+        "Marca de los instrumentos"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «El tipo de embalaje es el factor principal. Un buen embalaje puede conservar la esterilidad durante mucho tiempo.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q11",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe gestionar un caso de sospecha de contaminación cruzada. La Dra. FATIMA le explica el protocolo. ¿Cuál es la primera acción?",
+      "media": [],
+      "options": [
+        "Identificar la fuente de contaminación",
+        "Cerrar el consultorio",
+        "Llamar a las autoridades",
+        "Esperar a que pase"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «Primero hay que identificar la fuente de contaminación para poder actuar.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe explicar al nuevo asistente la importancia de las pruebas diarias. La Dra. FATIMA le aconseja enfatizar la seguridad. ¿Qué prueba es la más importante?",
+      "media": [],
+      "options": [
+        "Test de fuga",
+        "Test de Bowie-Dick",
+        "Test biológico",
+        "Test químico"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El test de Bowie-Dick se realiza a diario y es esencial para verificar la penetración del vapor.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN descubre que su agua osmótica está contaminada. La Dra. FATIMA le explica los riesgos. ¿Cuál es el riesgo principal?",
+      "media": [],
+      "options": [
+        "Los instrumentos pueden oxidarse",
+        "Los instrumentos pueden cambiar de color",
+        "Los instrumentos pueden romperse",
+        "Los instrumentos pueden perder el filo"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «El agua contaminada puede provocar corrosión en los instrumentos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q14",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe gestionar la sobrecarga de trabajo. La Dra. FATIMA le recuerda no descuidar la esterilización. ¿Cuál es el riesgo principal?",
+      "media": [],
+      "options": [
+        "Los pacientes pueden esperar más",
+        "La seguridad de los pacientes puede verse comprometida",
+        "El personal puede cansarse",
+        "El consultorio puede perder dinero"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La sobrecarga de trabajo nunca debe comprometer la seguridad de los pacientes.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q15",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe elegir entre varias marcas de instrumentos. La Dra. FATIMA le da un consejo. ¿Qué criterio debe preferir?",
+      "media": [],
+      "options": [
+        "Precio",
+        "Facilidad de limpieza y esterilización",
+        "Estética",
+        "Marca"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El instrumento debe ser fácil de limpiar y esterilizar. Es un criterio de seguridad.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q16",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe organizar la trazabilidad de los lotes esterilizados. La Dra. FATIMA le explica su importancia. ¿Por qué es importante la trazabilidad?",
+      "media": [],
+      "options": [
+        "Por razones administrativas",
+        "Para poder rastrear los lotes en caso de problema",
+        "Para estadísticas",
+        "Para ahorrar tiempo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La trazabilidad permite rastrear un lote en caso de incidente. Es una obligación legal.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q17",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe tratar a un paciente inmunocomprometido. La Dra. FATIMA le recuerda que las precauciones son mayores. ¿Qué medida adicional se requiere?",
+      "media": [],
+      "options": [
+        "Usar instrumentos de un solo uso",
+        "Enjuague adicional de los instrumentos",
+        "Desinfección más frecuente de las superficies",
+        "Uso de mascarilla quirúrgica"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «Para un paciente inmunocomprometido es preferible usar instrumentos de un solo uso.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q18",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe reemplazar su lavadora-desinfectadora. La Dra. FATIMA le da consejos. ¿Qué característica es la más importante?",
+      "media": [],
+      "options": [
+        "Capacidad",
+        "Programa de desinfección térmica",
+        "Color",
+        "Precio"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El programa de desinfección térmica es esencial para garantizar la seguridad.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q19",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN pregunta sobre el uso del óxido de etileno. La Dra. FATIMA le explica que este método está destinado a fines específicos. ¿Qué materiales requieren óxido de etileno?",
+      "media": [],
+      "options": [
+        "Instrumentos de acero",
+        "Instrumentos termosensibles",
+        "Instrumentos de plástico duro",
+        "Instrumentos de vidrio"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El óxido de etileno se usa para instrumentos termosensibles que no soportan el calor.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q20",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe gestionar un caso de sospecha de prion. La Dra. FATIMA le explica las precauciones especiales. ¿Qué medida debe tomar?",
+      "media": [],
+      "options": [
+        "Esterilización a 121°C",
+        "Esterilización prolongada a 134°C",
+        "Desinfección química",
+        "Incineración"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Los priones son resistentes. Se necesita una esterilización prolongada a 134°C.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe evaluar la eficacia de su sistema de esterilización. La Dra. FATIMA le propone un método de control. ¿Qué método es el más fiable?",
+      "media": [],
+      "options": [
+        "Indicadores químicos",
+        "Pruebas biológicas",
+        "Indicadores físicos",
+        "Tests de fuga"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Las pruebas biológicas son el método más fiable, ya que verifican directamente la destrucción de los microorganismos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q22",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe gestionar un brote de contaminación en su consultorio. La Dra. FATIMA le explica el protocolo de actuación en emergencia. ¿Cuál es la primera medida?",
+      "media": [],
+      "options": [
+        "Cerrar el consultorio",
+        "Aislar la zona contaminada",
+        "Desinfectar todas las superficies",
+        "Llamar a las autoridades"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Primero hay que aislar la zona contaminada para prevenir la propagación.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe preparar instrumentos para una operación compleja. La Dra. FATIMA le recuerda la importancia del embalaje. ¿Qué tipo de embalaje se recomienda?",
+      "media": [],
+      "options": [
+        "Bolsa de plástico simple",
+        "Doble embalaje para instrumentos complejos",
+        "Embalaje de papel",
+        "Embalaje de aluminio"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Para operaciones complejas se recomienda el doble embalaje para máxima seguridad.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q24",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe actualizar el protocolo de esterilización. La Dra. FATIMA le aconseja consultar las recomendaciones oficiales. ¿Qué norma debe cumplir?",
+      "media": [],
+      "options": [
+        "Recomendaciones de la OMS",
+        "Código de ética",
+        "Normas ISO (EN 13060, EN ISO 17665)",
+        "Consejos del asistente"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. FATIMA explica: «Las normas ISO son la referencia para los protocolos de esterilización.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN, tras gestionar varias situaciones complejas, recibe felicitaciones de la Dra. FATIMA: «Estás listo para el nivel Experto.» ¿Cuál es el siguiente paso?",
+      "media": [],
+      "options": [
+        "Convertirse en docente para nuevos internos",
+        "Crear su propio protocolo de esterilización",
+        "Participar en congresos",
+        "Todas las respuestas son correctas"
+      ],
+      "correct": 3,
+      "explanation": "La Dra. FATIMA explica: «Ahora eres capaz de formar, innovar y participar en la comunidad científica. El nivel Experto te espera.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

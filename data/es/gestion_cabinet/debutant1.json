@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "gestion_cabinet_debutant1_001",
+    "title": "Gestión de Consultorio – Principiante 1",
+    "specialty": "GEST",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "GEST_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Mourad quiere contratar a una asistente dental. Según el artículo 6 del Código de Trabajo, ¿qué es un trabajador asalariado?",
+      "media": [],
+      "options": [
+        "Toda persona que ejerce su actividad bajo la dirección de un empleador a cambio de una remuneración",
+        "Toda persona que trabaja por cuenta propia sin subordinación",
+        "Toda persona que posee un título universitario",
+        "Toda persona que gestiona su propio consultorio dental"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 6 define al trabajador asalariado como toda persona que se ha comprometido a ejercer su actividad profesional bajo la dirección de uno o varios empleadores a cambio de una remuneración.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q02",
+      "type": "single-choice",
+      "question": "Según el artículo 6 del Código de Trabajo, ¿quién es considerado empleador?",
+      "media": [],
+      "options": [
+        "Toda persona que contrata los servicios de una o varias personas físicas",
+        "Todo paciente que consulta a un dentista",
+        "Todo trabajador asalariado que recibe un salario",
+        "Todo representante sindical en la empresa"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 6 define al empleador como toda persona física o jurídica, privada o pública, que contrata los servicios de una o varias personas físicas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Sidki quiere contratar a una asistente mediante un contrato de trabajo indefinido. Según el artículo 16, ¿cuál es el principio general para la duración del contrato de trabajo?",
+      "media": [],
+      "options": [
+        "El contrato se presume celebrado por tiempo indefinido",
+        "El contrato siempre se celebra por tiempo determinado",
+        "El contrato debe renovarse cada mes",
+        "El contrato no puede exceder de un año"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 16 establece que el contrato de trabajo se celebra por tiempo indefinido, por tiempo determinado o para la realización de una obra determinada, siendo el principio el contrato por tiempo indefinido.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Mourad quiere sustituir a una asistente en baja por maternidad. Según el artículo 16, ¿qué tipo de contrato puede celebrar?",
+      "media": [],
+      "options": [
+        "Contrato de trabajo temporal por sustitución",
+        "Solo contrato de trabajo indefinido",
+        "Contrato de aprendizaje",
+        "Contrato de trabajo a domicilio"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 16 prevé el contrato de trabajo temporal, en particular en caso de sustitución de un trabajador durante el período de suspensión del contrato de trabajo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q05",
+      "type": "single-choice",
+      "question": "Según el artículo 14, ¿cuál es la duración máxima del período de prueba para un empleado (asistente dental)?",
+      "media": [],
+      "options": [
+        "15 días",
+        "1,5 meses",
+        "3 meses",
+        "6 meses"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 14 establece un período de prueba de un mes y medio para los empleados, renovable una vez.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Sidki quiere contratar a un responsable para su consultorio. Según el artículo 14, ¿cuál es la duración máxima del período de prueba?",
+      "media": [],
+      "options": [
+        "15 días",
+        "1,5 meses",
+        "3 meses",
+        "6 meses"
+      ],
+      "correct": 2,
+      "explanation": "El artículo 14 establece un período de prueba de tres meses para los responsables y asimilados, renovable una vez.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q07",
+      "type": "single-choice",
+      "question": "Según el artículo 14, el período de prueba para los contratos de trabajo temporales no puede exceder de:",
+      "media": [],
+      "options": [
+        "15 días para contratos de menos de 6 meses y 1 mes para contratos de más de 6 meses",
+        "3 meses para todos los contratos",
+        "6 meses para todos los contratos",
+        "No se permite período de prueba"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 14 establece que el período de prueba para los contratos temporales no puede exceder de un día por semana de trabajo dentro del límite de dos semanas para contratos de menos de 6 meses y de un mes para contratos de más de 6 meses.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q08",
+      "type": "single-choice",
+      "question": "Según el artículo 13, ¿puede el Dr. Mourad rescindir el período de prueba de su nueva asistente sin preaviso?",
+      "media": [],
+      "options": [
+        "Sí, sin ninguna formalidad durante todo el período",
+        "Sí, pero después de una semana de trabajo se requiere un preaviso de 2 u 8 días según la periodicidad del pago",
+        "No, la rescisión siempre debe estar justificada",
+        "Sí, pero solo con el consentimiento del trabajador"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 13 precisa que si la rescisión se produce después de al menos una semana de trabajo, se requiere un plazo de preaviso de 2 días (para pago diario/semanal) u 8 días (para pago mensual).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Sidki quiere despedir a una asistente por falta grave. Según el artículo 39, ¿qué acción se considera falta grave?",
+      "media": [],
+      "options": [
+        "La negativa deliberada a realizar un trabajo que le corresponde",
+        "Un simple retraso de 5 minutos",
+        "La solicitud de vacaciones anuales",
+        "La solicitud de un aumento de sueldo"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 39 enumera las faltas graves, incluyendo en particular la negativa deliberada e injustificada del trabajador a realizar un trabajo que le corresponde.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q10",
+      "type": "single-choice",
+      "question": "Según el artículo 39, la ausencia injustificada de un trabajador durante más de ¿cuántos días constituye una falta grave?",
+      "media": [],
+      "options": [
+        "2 días",
+        "4 días",
+        "8 días",
+        "15 días"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 39 considera falta grave la ausencia injustificada del trabajador durante más de cuatro días u ocho medias jornadas en el plazo de doce meses.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q11",
+      "type": "single-choice",
+      "question": "Según el artículo 62, antes de despedir por falta grave, el Dr. Mourad debe:",
+      "media": [],
+      "options": [
+        "Dar al trabajador la oportunidad de defenderse y ser escuchado",
+        "Despedir inmediatamente sin formalidades",
+        "Esperar 30 días antes de actuar",
+        "Solicitar únicamente la opinión del sindicato"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 62 exige que el trabajador pueda defenderse y ser escuchado por el empleador antes del despido, en presencia del delegado de personal o del representante sindical.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q12",
+      "type": "single-choice",
+      "question": "Según el artículo 35, el despido de un trabajador sin causa justificada:",
+      "media": [],
+      "options": [
+        "Está permitido en todos los casos",
+        "Está prohibido",
+        "Está permitido si el trabajador está de acuerdo",
+        "Está permitido solo durante el período de prueba"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 35 prohíbe el despido de un trabajador sin causa justificada, si no está relacionado con sus aptitudes o comportamiento, o no se basa en las necesidades de funcionamiento de la empresa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Sidki, como empleador, debe entregar a los trabajadores una cartilla de trabajo. Según el artículo 23, ¿qué debe contener?",
+      "media": [],
+      "options": [
+        "Las menciones establecidas por las disposiciones reglamentarias",
+        "Solo el nombre del trabajador",
+        "Solo la firma del empleador",
+        "Solo la foto del trabajador"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 23 obliga al empleador a entregar una cartilla de trabajo con las menciones establecidas por las disposiciones reglamentarias.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q14",
+      "type": "single-choice",
+      "question": "Según el artículo 43, ¿cuál es el plazo mínimo de preaviso en caso de rescisión de un contrato indefinido en ausencia de falta grave?",
+      "media": [],
+      "options": [
+        "2 días",
+        "8 días",
+        "15 días",
+        "30 días"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 43 precisa que cualquier cláusula que establezca un plazo de preaviso inferior a ocho días es nula. El plazo mínimo es de 8 días.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q15",
+      "type": "single-choice",
+      "question": "Según el artículo 52, el trabajador tiene derecho a una indemnización por despido después de ¿cuántos meses de trabajo?",
+      "media": [],
+      "options": [
+        "3 meses",
+        "6 meses",
+        "12 meses",
+        "24 meses"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 52 establece que el trabajador vinculado por un contrato de trabajo indefinido tiene derecho a una indemnización por despido en caso de despido después de seis meses de trabajo en una misma empresa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q16",
+      "type": "single-choice",
+      "question": "Según el artículo 53, ¿cuántas horas de salario representa la indemnización por despido para los primeros 5 años de antigüedad?",
+      "media": [],
+      "options": [
+        "48 horas",
+        "96 horas",
+        "144 horas",
+        "192 horas"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 53 establece la indemnización por despido en 96 horas de salario para los primeros cinco años de antigüedad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q17",
+      "type": "single-choice",
+      "question": "Según el artículo 184, ¿cuál es la duración normal del trabajo para las actividades no agrícolas en Marruecos?",
+      "media": [],
+      "options": [
+        "38 horas semanales",
+        "40 horas semanales",
+        "44 horas semanales",
+        "48 horas semanales"
+      ],
+      "correct": 2,
+      "explanation": "El artículo 184 establece la duración normal del trabajo en las actividades no agrícolas en 2288 horas al año o 44 horas semanales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q18",
+      "type": "single-choice",
+      "question": "Según el artículo 201, las horas extraordinarias realizadas de 6 a 21 horas dan derecho a un recargo del:",
+      "media": [],
+      "options": [
+        "15 %",
+        "20 %",
+        "25 %",
+        "50 %"
+      ],
+      "correct": 2,
+      "explanation": "El artículo 201 prevé un recargo del 25% por las horas extraordinarias realizadas de 6 a 21 horas en las actividades no agrícolas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q19",
+      "type": "single-choice",
+      "question": "Según el artículo 152, ¿cuál es la duración de la baja por maternidad para una trabajadora?",
+      "media": [],
+      "options": [
+        "8 semanas",
+        "10 semanas",
+        "12 semanas",
+        "14 semanas"
+      ],
+      "correct": 3,
+      "explanation": "El artículo 152 prevé una baja por maternidad de catorce semanas, si no se prevén condiciones más favorables en el contrato de trabajo o en el convenio colectivo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q20",
+      "type": "single-choice",
+      "question": "Según el artículo 231, después de ¿cuántos meses de trabajo continuo tiene el trabajador derecho a vacaciones anuales retribuidas?",
+      "media": [],
+      "options": [
+        "3 meses",
+        "6 meses",
+        "9 meses",
+        "12 meses"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 231 establece que después de seis meses de trabajo continuo, cualquier trabajador tiene derecho a vacaciones anuales retribuidas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q21",
+      "type": "single-choice",
+      "question": "Según el artículo 231, la duración de las vacaciones anuales retribuidas es de:",
+      "media": [],
+      "options": [
+        "1 día por mes de trabajo",
+        "1,5 días por mes de trabajo",
+        "2 días por mes de trabajo",
+        "2,5 días por mes de trabajo"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 231 establece la duración de las vacaciones anuales retribuidas en un día y medio de trabajo efectivo por mes de trabajo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q22",
+      "type": "single-choice",
+      "question": "Según el artículo 153, ¿durante cuántas semanas después del parto no puede ser ocupada la trabajadora?",
+      "media": [],
+      "options": [
+        "4 semanas",
+        "5 semanas",
+        "6 semanas",
+        "7 semanas"
+      ],
+      "correct": 3,
+      "explanation": "El artículo 153 establece que las parturientas no pueden ser ocupadas durante siete semanas consecutivas después del parto.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q23",
+      "type": "single-choice",
+      "question": "Según el artículo 346, ¿qué discriminación salarial está prohibida?",
+      "media": [],
+      "options": [
+        "Discriminación por edad",
+        "Discriminación por sexo por trabajo de igual valor",
+        "Discriminación por región de origen",
+        "Discriminación por religión"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 346 prohíbe cualquier discriminación salarial entre hombres y mujeres por trabajo de igual valor.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q24",
+      "type": "single-choice",
+      "question": "Según el artículo 362, el salario debe pagarse en:",
+      "media": [],
+      "options": [
+        "Moneda marroquí",
+        "Euros",
+        "Dólares",
+        "Cualquier moneda elegida por el empleador"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 362 establece que el salario debe pagarse en moneda marroquí, a pesar de cualquier disposición en contrario.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q25",
+      "type": "single-choice",
+      "question": "Según el artículo 363, los trabajadores deben recibir su salario al menos:",
+      "media": [],
+      "options": [
+        "Una vez al mes",
+        "Dos veces al mes con un intervalo no superior a dieciséis días",
+        "Una vez a la semana",
+        "Una vez al trimestre"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 363 establece que el salario debe pagarse al menos dos veces al mes, con un intervalo no superior a dieciséis días, para los trabajadores.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q26",
+      "type": "single-choice",
+      "question": "Según el artículo 72, el empleador debe entregar al trabajador un certificado de trabajo en un plazo máximo de:",
+      "media": [],
+      "options": [
+        "3 días",
+        "8 días",
+        "15 días",
+        "30 días"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 72 obliga al empleador a entregar un certificado de trabajo en un plazo máximo de ocho días bajo pena de indemnización por daños y perjuicios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

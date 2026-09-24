@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_debutant1_001",
+    "title": "CAD/CAM & 3D Printing - Beginner 1",
+    "specialty": "CFAO",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_D1_Q01",
+      "type": "single-choice",
+      "question": "What is the exact and scientific meaning of the acronym CAD/CAM in the dental field?",
+      "media": [],
+      "options": [
+        "Computer Aided Design, exclusively describing the virtual phase of three-dimensional geometric modeling",
+        "Computer-Aided Design and Manufacturing, qualifying the integration of the global digital chain",
+        "Computer Aided Manufacturing, characterizing only the physical production processes by subtraction",
+        "Design Fusion and Optimized Assembly, defining the mechanical connection between an abutment and an infrastructure"
+      ],
+      "correct": 1,
+      "explanation": "CAD/CAM encompasses the entire digital workflow, from clinical data acquisition (optical impression) to the physical production of the prosthetic piece.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q02",
+      "type": "single-choice",
+      "question": "What are the two fundamental and interdependent software subsystems that make up the CAD/CAM chain?",
+      "media": [],
+      "options": [
+        "The CAD architecture dedicated to virtual 3D modeling and the CAM module managing manufacturing algorithms",
+        "The optical intraoral acquisition sensor and the additive printing unit by monomer polymerization",
+        "The central digital data processing unit and the mechanical infrastructure of the multi-axis micro-milling machine",
+        "The general operating system of the workstation and the peripheral communication drivers of the network"
+      ],
+      "correct": 0,
+      "explanation": "CAD (Computer-Aided Design) generates the prosthetic design, while CAM (Computer-Aided Manufacturing) translates this design into tool paths and manufacturing coordinates.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q03",
+      "type": "single-choice",
+      "question": "How is the CAD (Computer-Aided Design) phase precisely defined in dentistry?",
+      "media": [],
+      "options": [
+        "The material execution of the prosthetic project through mechanical machining or additive printing",
+        "The optical recording of intraoral anatomical structures via a coherent or structured light beam",
+        "The virtual three-dimensional geometric modeling of a restoration based on scan data",
+        "The post-production chemical treatment aimed at stabilizing the crystalline structure of a ceramic material"
+      ],
+      "correct": 2,
+      "explanation": "CAD replaces traditional wax-up with mathematical manipulation of a three-dimensional digital mesh on screen.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q04",
+      "type": "single-choice",
+      "question": "How is the CAM (Computer-Aided Manufacturing) phase precisely defined in dentistry?",
+      "media": [],
+      "options": [
+        "The physical materialization of a prosthesis through subtractive machining or additive 3D printing processes",
+        "The virtual positioning of cervical limits and insertion axes on the digital working model",
+        "The three-dimensional digitization of dental arches by an optical triangulation scanning system",
+        "The mathematical optimization of transition lines and occlusal reliefs by a biomimetic algorithm"
+      ],
+      "correct": 0,
+      "explanation": "CAM is the software and mechanical bridge that drives the production unit (milling machine or 3D printer) to shape the selected material.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q05",
+      "type": "single-choice",
+      "question": "Which optical intraoral acquisition systems constitute the reference standards of the dental industry?",
+      "media": [],
+      "options": [
+        "High-resolution digital reflex devices equipped with annular macroscope lenses",
+        "Industrial architectural photogrammetry cameras derived from geodetic sensing technologies",
+        "Integrated cutting-edge solutions such as iTero, 3Shape Trios, Medit and Carestream Dental platforms",
+        "High-definition flatbed document scanners using CCD linear scanning sensors"
+      ],
+      "correct": 2,
+      "explanation": "These leading intraoral scanners (IOS) measure oral topography in real-time without requiring physical physicochemical impression material.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q06",
+      "type": "single-choice",
+      "question": "What is the major clinical advantage of an intraoral scanner compared to physicochemical impression techniques?",
+      "media": [],
+      "options": [
+        "Optimizing patient comfort, reducing dimensional distortions and ensuring permanent archiving",
+        "Immediate and systematic reduction of financial costs related to the initial purchase of digitization equipment",
+        "Total and absolute elimination of any step of marginal preparation or gingival eviction in clinical practice",
+        "The definitive elimination of the need for the technical skills of the prosthetic laboratory for complex cases"
+      ],
+      "correct": 0,
+      "explanation": "The optical impression eliminates the gag reflex associated with elastomers, while offering instant file transfer, without thermal or mechanical deformation related to plaster casting.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q07",
+      "type": "single-choice",
+      "question": "How is the logical sequence of a direct digital workflow (Chairside Workflow) organized in restorative dentistry?",
+      "media": [],
+      "options": [
+        "Analog impression followed by plaster casting, articulator mounting and manual finishing",
+        "Intraoral optical acquisition followed by CAD modeling, CAM manufacturing and clinical integration",
+        "Direct occlusal adjustment followed by laboratory composite stratification without prior digitization",
+        "Temporary cementation of a wax pattern followed by radiographic control and chairside adjustment"
+      ],
+      "correct": 1,
+      "explanation": "The direct digital workflow streamlines clinical chairside steps by eliminating intermediate error sources inherent to the analog workflow.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q08",
+      "type": "single-choice",
+      "question": "What is the machining or milling process within a CAD/CAM production unit?",
+      "media": [],
+      "options": [
+        "A subtractive shaping technique where rotary tools remove material from an industrial block",
+        "An additive construction process consisting of depositing drops of fluid resin polymerized by infrared",
+        "A vacuum thermoforming method applying a softened polymer sheet on a synthetic plaster model",
+        "A lost-wax casting system assisted by an induction centrifuge under a totally inert gas atmosphere"
+      ],
+      "correct": 0,
+      "explanation": "Subtractive machining uses diamond or tungsten carbide burs to sculpt ceramics, composites or metals from homogeneous blocks or discs.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q09",
+      "type": "single-choice",
+      "question": "Which types of biomedical materials are currently suitable for subtractive machining in dental CAD/CAM?",
+      "media": [],
+      "options": [
+        "High-copper dispersed phase amalgams and zinc oxyphosphate-based luting cements",
+        "Resin-modified glass ionomer cements and calcium hydroxide pastes",
+        "Pure gutta-percha thermoplastic cones associated with canal sealing cements",
+        "Polycrystalline or glassy ceramics, nanohybrid resin composites and dedicated metal alloys"
+      ],
+      "correct": 3,
+      "explanation": "Zirconia (polycrystalline) and lithium disilicate (glassy) are the flagship materials of modern machining for monolithic or layered fixed prostheses.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q10",
+      "type": "single-choice",
+      "question": "What is the nature and function of a rotary machining tool (bur) inserted into a CAM machine?",
+      "media": [],
+      "options": [
+        "A calibrated carbide or diamond cutting instrument designed to sculpt the material according to geometric coordinates",
+        "A high-precision laser sensor designed to measure the surface roughness of the material block to be transformed",
+        "A visual rendering software module allowing the simulation of shade application on the virtual restoration",
+        "A thermal ejection device spraying molten polymers to build the external walls of a model"
+      ],
+      "correct": 0,
+      "explanation": "CAM burs have specific geometries (ball, conical, toroidal) and wear out over machining cycles, requiring strict computerized tracking of their life cycle by the machine.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q11",
+      "type": "single-choice",
+      "question": "What is the main clinical and technical distinction between dry machining and wet milling?",
+      "media": [],
+      "options": [
+        "Wet milling cools the tool-material interface, lubricates the cut and prevents micro-cracks in glassy ceramics",
+        "Dry machining accelerates the kinematics of the machine axes while guaranteeing a lower operating cost",
+        "Wet milling is exclusively reserved for shaping soft acrylic polymers such as polymethyl methacrylate",
+        "Dry machining increases the marginal geometric precision by avoiding light refraction phenomena"
+      ],
+      "correct": 0,
+      "explanation": "Wet milling is essential for hard ceramics (lithium disilicate, composites) to avoid critical tool overheating and microstructural fractures of the material. Pre-sintered zirconia is generally machined dry.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q12",
+      "type": "single-choice",
+      "question": "How is 3D printing technology fundamentally defined when applied to dental art?",
+      "media": [],
+      "options": [
+        "An abrasive sculpting method of mineral structures by means of an air flow charged with alumina particles",
+        "An additive engineering process consisting of building a physical object by successive layer deposits",
+        "A hot stamping technique of metal structures within a high-hardness tempered steel matrix",
+        "A global polymerization reaction initiated by the hydrostatic compression of a thermosetting monomer gel"
+      ],
+      "correct": 1,
+      "explanation": "Unlike machining which removes material (subtractive process), 3D printing (additive manufacturing) builds the object layer by layer, optimizing material use.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q13",
+      "type": "single-choice",
+      "question": "What are the main 3D printing technologies commonly used in dental laboratories or practices?",
+      "media": [],
+      "options": [
+        "Laser stereolithography (SLA), digital light projection (DLP), material jetting (PolyJet) and fused filament deposition (FDM)",
+        "Direct thermal transfer printing, wax sublimation, piezoelectric inkjet and heliographic laser",
+        "Photogravure on metal plate, rotary screen printing, silicone pad printing and selective chemical masking",
+        "Plasma projection of atomized metal powder, laser sintering of pure silica and dynamic injection molding"
+      ],
+      "correct": 0,
+      "explanation": "SLA (point-by-point laser) and DLP (whole layer projection) are the queens of dental production for their micrometric resolution.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q14",
+      "type": "single-choice",
+      "question": "What is a photopolymer resin used in SLA or DLP additive printing systems?",
+      "media": [],
+      "options": [
+        "A fine ceramic powder agglomerated by a liquid binder sprayed by a moving thermal printing nozzle",
+        "A solid thermoplastic polymer filament conditioned in a spool and melted through a heated extrusion nozzle",
+        "A mixture of liquid monomers whose radical polymerization reaction is initiated by UV exposure",
+        "A colloidal gel based on aluminum hydrochloride polymerizing under the action of a chemical catalyst agent"
+      ],
+      "correct": 2,
+      "explanation": "Under the effect of a precise light wavelength (generally 385 or 405 nm), the photo-initiators of the liquid resin trigger the cross-polymerization of monomers to form a solid.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q15",
+      "type": "single-choice",
+      "question": "What are the predominant clinical indications of additive manufacturing (3D printing) in dentistry?",
+      "media": [],
+      "options": [
+        "The making of study models, precision surgical guides, transitional prostheses and aligner models",
+        "The standardized production of definitive single crowns in high-translucency feldspathic ceramic",
+        "The direct construction of threaded endosseous implants in pure grade IV titanium for immediate implantation",
+        "The production of monolithic bridge infrastructures of large extent pressure-cast in precious metals"
+      ],
+      "correct": 0,
+      "explanation": "3D printing excels in the rapid, personalized and simultaneous production of guidance elements, precise working models and biocompatible resin provisional restorations.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q16",
+      "type": "single-choice",
+      "question": "What is a surgical implant guide designed and produced through the digital chain?",
+      "media": [],
+      "options": [
+        "A removable device materializing guidance cylinders to orient drills during implant placement",
+        "A release occlusal splint aimed at reprogramming the neuro-muscular activity of masticatory muscles",
+        "A thermal transfer matrix allowing the duplication of the position of occlusion waxes in clinical practice",
+        "An internal metal framework intended to stabilize the margins of a mucosal wound after bone grafting"
+      ],
+      "correct": 0,
+      "explanation": "The surgical guide materializes in the mouth the virtual implant planning resulting from the fusion (matching) of STL files (optical impression) and DICOM (3D/Cone Beam imaging).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q17",
+      "type": "single-choice",
+      "question": "What fundamental advantage results from the use of a computer-planned surgical guide in implantology?",
+      "media": [],
+      "options": [
+        "The drastic and linear reduction of the biological healing time of alveolar bone structures",
+        "The complete elimination of the clinical requirement for short and long-term postoperative radiographic follow-up",
+        "The possibility of dispensing with any local or locoregional anesthesia during bone drilling phases",
+        "The securing of drilling axes, the precision of three-dimensional positioning and the respect of noble anatomical structures"
+      ],
+      "correct": 3,
+      "explanation": "The surgical guide provides predictable safety by limiting the risks of axis errors and protecting sensitive structures such as the inferior alveolar nerve or the sinus floor.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q18",
+      "type": "single-choice",
+      "question": "How are transparent orthodontic aligners manufactured using digital tools?",
+      "media": [],
+      "options": [
+        "By direct subtractive machining of a block of medical-grade polycarbonate in an active water milling machine",
+        "By thermoforming transparent polymer sheets on a series of 3D printed arch models",
+        "By manual molding of a self-polymerizing acrylic resin directly on the patient's arch in clinical practice",
+        "By high-pressure injection of a fluid silicone within a pre-calibrated plaster mold"
+      ],
+      "correct": 1,
+      "explanation": "Each step of the sequential tooth movement planned virtually (setup) generates the printing of a physical resin model, on which the polyurethane or PETG aligner is thermoformed.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q19",
+      "type": "single-choice",
+      "question": "What is the operating principle of stereolithography (SLA) printing technology?",
+      "media": [],
+      "options": [
+        "The selective polymerization of a liquid resin by means of a mobile ultraviolet laser beam scanning the surface",
+        "The global projection of a light image through a liquid crystal display acting as a dynamic mask",
+        "The high-temperature mechanical extrusion of a plastic filament deposited according to orthogonal coordinates",
+        "The thermal sintering of a powder bed operated by a high-energy electron beam"
+      ],
+      "correct": 0,
+      "explanation": "SLA uses a precise laser beam guided by galvanometric mirrors that traces the object point by point, offering an optimal surface finish and fit precision.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q20",
+      "type": "single-choice",
+      "question": "What is the operating principle of DLP (Digital Light Processing) printing technology?",
+      "media": [],
+      "options": [
+        "The continuous vector scanning of a low-power laser point focused on an oscillating mirror",
+        "The simultaneous projection of millions of micro-droplets of heated wax solidifying instantly on contact with air",
+        "The instantaneous polymerization of a complete resin layer by the light of a digital micro-mirror projector (DMD)",
+        "The deposition of polylactic acid polymer filaments crossed on a movable heated platform"
+      ],
+      "correct": 2,
+      "explanation": "DLP technology projects a light mask corresponding to the entire surface of a layer in a single exposure, making it generally faster than SLA for the manufacture of dental elements in series.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q21",
+      "type": "single-choice",
+      "question": "What is the place of the fused filament deposition (FDM) process in the professional dental environment?",
+      "media": [],
+      "options": [
+        "An economical technology of moderate precision, limited to the making of study or didactic models",
+        "The system of choice required to manufacture transparent surgical guides sterilizable in an autoclave",
+        "A cutting-edge method dedicated to the direct printing of definitive monolithic ceramic prosthetic elements",
+        "A printing protocol for removable prosthetic structures based on chemopolymerizable resin"
+      ],
+      "correct": 0,
+      "explanation": "FDM (Fused Deposition Modeling) presents a visible striation effect (layer lines) and a geometric tolerance too loose for the marginal fit requirements of fixed prosthetic parts.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q22",
+      "type": "single-choice",
+      "question": "What are the standard open 3D file export formats in dental CAD/CAM?",
+      "media": [],
+      "options": [
+        "Standardized extensions such as STL (stereolithography), OBJ (with textured data) and 3MF",
+        "Compressed raster image encoding formats such as JPEG, PNG, TIFF or GIF graphics",
+        "Portable text document formats such as PDF as well as editable DOCX file structures",
+        "Tabular vector spreadsheet structures managed by spreadsheet software such as XLS or CSV"
+      ],
+      "correct": 0,
+      "explanation": "These open export formats guarantee interoperability, allowing the connection of a scanner, CAD software and a production unit from different manufacturers (open vs closed systems).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q23",
+      "type": "single-choice",
+      "question": "What is the mathematical and geometric structural nature of a file in the universal STL format?",
+      "media": [],
+      "options": [
+        "A matrix of colored pixels storing depth and texture information in a two-dimensional manner",
+        "A sequence of mathematical equations describing complex Bézier curves and solid full volumes",
+        "A non-parametric polygonal mesh composed of interconnected triangles describing the external surface of an object",
+        "A binary event log compiling the chronology of digital commands sent to the machine motors"
+      ],
+      "correct": 2,
+      "explanation": "An STL file (Standard Tessellation Language) represents the surface of a 3D object in the form of triangular facets. It ignores textures, colors or internal structures.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q24",
+      "type": "single-choice",
+      "question": "Which prosthetic engineering software currently dominates the global dental CAD market?",
+      "media": [],
+      "options": [
+        "Expert dedicated software suites such as exocad, 3Shape Dental System or Dental Wings",
+        "Generic mechanical and industrial architecture modeling programs such as AutoCAD or SolidWorks",
+        "Mainstream polygon 3D animation and rendering engines such as Blender or Maya",
+        "Algorithmic development and programming environments such as MATLAB or Python-SciPy"
+      ],
+      "correct": 0,
+      "explanation": "exocad and 3Shape are the reference tools for laboratories and clinics (Chairside versions). They integrate anatomical tooth libraries and automated assistants dedicated to oral biomechanical constraints.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q25",
+      "type": "single-choice",
+      "question": "What exactly does the CAD software operation consist of during the virtual design of a single crown?",
+      "media": [],
+      "options": [
+        "The digital modeling of coronal morphology, occlusal relationships and interproximal contact areas",
+        "The parameterization of the rotation speeds of the mechanical spindles and the choice of the diameter of the cutting burs",
+        "The calibration of the intensity of the laser radiation required to harden the acrylic monomer bath",
+        "The physical digitization of the plaster master model by means of an optical table scanning sensor"
+      ],
+      "correct": 0,
+      "explanation": "During the CAD step, the designer adapts the virtual anatomy of the future tooth (choice of morphology, management of contact points, minimum material thickness) before compiling the file for the CAM phase.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

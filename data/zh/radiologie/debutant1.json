@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "radiologie_debutant1_001",
+    "title": "Radiology - Beginner 1",
+    "specialty": "RADI",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "RADI_D1_Q01",
+      "type": "single-choice",
+      "question": "How is dental radiology precisely defined within modern odontological practice?",
+      "media": [],
+      "options": [
+        "A surgical therapy aimed at eliminating carious tissues through ionizing radiation",
+        "A minimally invasive excision modality allowing avulsion of impacted teeth without instrumentation",
+        "A specialty of medical imaging dedicated to the diagnostic exploration of mineralized and maxillofacial tissues",
+        "A prosthetic rehabilitation protocol using photopolymerizable polymers"
+      ],
+      "correct": 2,
+      "explanation": "Dental radiology is an essential diagnostic tool, allowing visualization of structures invisible to direct clinical examination.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q02",
+      "type": "single-choice",
+      "question": "Which intraoral radiographic examination constitutes the fundamental basis of targeted assessment in general practice?",
+      "media": [],
+      "options": [
+        "The orthopantomogram, for a global analysis",
+        "The periapical radiograph, offering high spatial resolution of the dental organ and its periodontal environment",
+        "Volumetric tomography (CBCT), reserved for implant bone volumes",
+        "Helical medical CT, required for complex dysmorphoses"
+      ],
+      "correct": 1,
+      "explanation": "The periapical radiograph remains the first-line examination for the detailed study of a localized area of two to three teeth.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q03",
+      "type": "single-choice",
+      "question": "What is the main function of a panoramic radiographic examination (orthopantomogram)?",
+      "media": [],
+      "options": [
+        "Allow fine micrometric evaluation of bone loss at bifurcations",
+        "Visualize the microscopic morphological details of the canal network",
+        "Analyze the precise thickness of cortical bone before implant placement",
+        "Provide a two-dimensional overview of the arches, maxillae, and adjacent structures"
+      ],
+      "correct": 3,
+      "explanation": "The orthopantomogram is a screening and synthesis examination, ideal for a comprehensive oral assessment but subject to geometric distortions.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q04",
+      "type": "single-choice",
+      "question": "What is CBCT (Cone Beam Computed Tomography) technology in maxillofacial imaging?",
+      "media": [],
+      "options": [
+        "A cone beam volumetric tomography system generating high-precision 3D reconstructions",
+        "A conventional helical medical CT scanner with high dose",
+        "A standardized 2D acquisition protocol using silver film",
+        "Magnetic resonance imaging exploiting spin properties"
+      ],
+      "correct": 0,
+      "explanation": "CBCT is the reference 3D examination in dentistry, offering superior isotropic resolution to medical CT for hard tissues, with a lower dose.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q05",
+      "type": "single-choice",
+      "question": "What is the order of magnitude of the effective dose received during a digital periapical radiograph?",
+      "media": [],
+      "options": [
+        "A moderate dose of 50 µSv",
+        "An ultra-low dose between 1 and 5 µSv",
+        "An exposure level of 100 µSv",
+        "A heavy radiological load of 500 µSv"
+      ],
+      "correct": 1,
+      "explanation": "Thanks to modern digital sensors, the dose delivered by a single intraoral radiograph is extremely minimal.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q06",
+      "type": "single-choice",
+      "question": "What is the average estimated dosimetric exposure for performing an orthopantomogram?",
+      "media": [],
+      "options": [
+        "A threshold of 50 µSv",
+        "A critical value of 500 µSv",
+        "A value of 5 to 15 µSv",
+        "A cumulative dose of 100 µSv"
+      ],
+      "correct": 2,
+      "explanation": "A panoramic radiograph exposes the patient to a dose equivalent to only a few days of natural background radiation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q07",
+      "type": "single-choice",
+      "question": "In what range does the effective dose delivered by a CBCT examination (medium field) generally fall?",
+      "media": [],
+      "options": [
+        "A range of 20 to 100 µSv",
+        "A fixed plateau of 200 µSv",
+        "A standardized value of 500 µSv",
+        "An irradiation level of 1000 µSv"
+      ],
+      "correct": 0,
+      "explanation": "CBCT exposure depends heavily on the targeted volume (FOV). It remains significantly lower than that of an equivalent medical CT scan.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q08",
+      "type": "single-choice",
+      "question": "How is the fundamental principle of radiation protection known by the acronym ALARA defined?",
+      "media": [],
+      "options": [
+        "The exclusive use of thermal imaging devices",
+        "The systematic application of the maximum tolerated dose",
+        "The delivery of an average dose calculated according to age",
+        "Keeping exposure at the lowest level reasonably achievable"
+      ],
+      "correct": 3,
+      "explanation": "ALARA (As Low As Reasonably Achievable) requires justifying each X-ray and optimizing parameters to reduce dose without losing diagnostic information.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q09",
+      "type": "single-choice",
+      "question": "What does the rule of orthogonality or the 90° rule consist of when orienting the beam in periapical radiography?",
+      "media": [],
+      "options": [
+        "Positioning the head with the Frankfort plane at a right angle",
+        "Orienting the central ray perpendicular to the tooth axis and the receptor",
+        "Horizontal inclination of the tube aimed at doubling the roots",
+        "Adjusting the source-film distance with bone contact"
+      ],
+      "correct": 1,
+      "explanation": "The orthogonality of the beam relative to the tooth-receptor complex ensures faithful reproduction without major morphological distortion.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q10",
+      "type": "single-choice",
+      "question": "What is the guiding principle of the paralleling technique in intraoral radiography?",
+      "media": [],
+      "options": [
+        "Placing the receptor parallel to the long axis of the tooth, with the central ray perpendicular",
+        "Maintaining the film in lingual contact at 45 degrees",
+        "Horizontal alignment of the tube with the occlusal plane",
+        "Oblique positioning of the receptor to project the sinuses"
+      ],
+      "correct": 0,
+      "explanation": "The paralleling technique, using holders, is the most accurate method to avoid elongation or shortening of images.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q11",
+      "type": "single-choice",
+      "question": "Which technical approach historically opposes the paralleling method in periapical imaging?",
+      "media": [],
+      "options": [
+        "The bisecting angle technique",
+        "The linear tomography method",
+        "The tangential acquisition technique",
+        "The axial occlusal projection"
+      ],
+      "correct": 0,
+      "explanation": "The bisecting angle technique (or Cieszynski's rule) is used when anatomy prevents paralleling, but generates more distortions.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q12",
+      "type": "single-choice",
+      "question": "Which specific anatomical structures must imperatively appear on a valid periapical radiograph?",
+      "media": [],
+      "options": [
+        "The superficial texture of the gingival mucosa",
+        "Only the morphology of the clinical crown",
+        "The limits of the maxillary sinus and the path of the mandibular canal",
+        "The entirety of the root architecture, the apical region, and 2mm of periapical bone"
+      ],
+      "correct": 3,
+      "explanation": "A periapical radiograph must show the entire tooth, from crown to apex, to allow diagnosis of endodontic or periodontal lesions.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q13",
+      "type": "single-choice",
+      "question": "What is the diagnostic specificity of an interproximal radiograph (Bitewing)?",
+      "media": [],
+      "options": [
+        "Early detection of proximal caries and evaluation of alveolar ridges",
+        "In-depth analysis of periapical cystic pathologies",
+        "Search for root fractures in the apical third",
+        "Detection of internal resorptions"
+      ],
+      "correct": 0,
+      "explanation": "The Bitewing is the gold standard for detecting interproximal caries and monitoring marginal bone level.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q14",
+      "type": "single-choice",
+      "question": "What vertical angulation is generally recommended for an interproximal (Bitewing) radiograph?",
+      "media": [],
+      "options": [
+        "A strictly neutral inclination of 0 degrees",
+        "A positive angulation of +5 to +10 degrees",
+        "A strongly positive angulation of +20 degrees",
+        "A negative angulation of -10 degrees"
+      ],
+      "correct": 1,
+      "explanation": "A slightly positive vertical angulation (+5° to +10°) allows clear projection of the interproximal space without cusp overlap.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q15",
+      "type": "single-choice",
+      "question": "What is the main clinical indication of an occlusal radiographic view?",
+      "media": [],
+      "options": [
+        "Localization of foreign bodies, impacted teeth, or salivary calculi",
+        "Follow-up of healing after implant placement",
+        "Fine evaluation of root canal obliteration",
+        "Measurement of connective tissue attachment loss"
+      ],
+      "correct": 0,
+      "explanation": "Occlusal views offer a plan (axial) view, ideal for locating a structure relative to the cortical plates.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q16",
+      "type": "single-choice",
+      "question": "What does the radiographic examination called a cephalogram consist of?",
+      "media": [],
+      "options": [
+        "A dynamic 3D reconstruction of the condyles",
+        "An imaging focused on sinus analysis",
+        "A standardized view of the skull, profile or frontal, at a great distance",
+        "A sectoral exposure of the alveolar processes"
+      ],
+      "correct": 2,
+      "explanation": "The cephalogram is an essential tool in orthodontics for performing cephalometric analyses.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q17",
+      "type": "single-choice",
+      "question": "What is the essential technical characteristic of a teleradiography image?",
+      "media": [],
+      "options": [
+        "The use of a large source-patient distance to limit magnification",
+        "The application of an ultra-divergent beam",
+        "The use of iodinated contrast agent",
+        "Recording on intraoral silver-based media"
+      ],
+      "correct": 0,
+      "explanation": "The large source-subject distance reduces the geometric projection effect (magnification), allowing reliable measurements at a 1:1 scale.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q18",
+      "type": "single-choice",
+      "question": "How is direct digital radiography (CCD or CMOS) defined?",
+      "media": [],
+      "options": [
+        "Secondary digitization of a paper image",
+        "Instant conversion of X-ray photons into electrical signals transmitted to the computer",
+        "The use of conventional silver films",
+        "Recording on photostimulable phosphor plates"
+      ],
+      "correct": 1,
+      "explanation": "Rigid sensors transmit the image in real time, eliminating any development delay.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q19",
+      "type": "single-choice",
+      "question": "What is indirect digital radiography using photostimulable phosphor plates (PSP)?",
+      "media": [],
+      "options": [
+        "A system using phosphor plates read by a laser scanner",
+        "A rigid device connected by a USB cable",
+        "An infrared thermal imaging method",
+        "An optical duplication technique"
+      ],
+      "correct": 0,
+      "explanation": "PSP plates offer the flexibility of silver films while transitioning to the digital environment.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q20",
+      "type": "single-choice",
+      "question": "How is contrast defined in dental radiographic imaging?",
+      "media": [],
+      "options": [
+        "The overall intensity of the light flux on the screen",
+        "The intrinsic sharpness of demarcation lines",
+        "The geometric deformation induced by the tube",
+        "The variation in optical density or gray levels between anatomical structures"
+      ],
+      "correct": 3,
+      "explanation": "Contrast allows differentiation of enamel, dentin, bone, and ligament. It is primarily governed by tube voltage (kV).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q21",
+      "type": "single-choice",
+      "question": "What is image sharpness (spatial resolution)?",
+      "media": [],
+      "options": [
+        "The precision with which the image reproduces the contours and details of tissues",
+        "The total amount of energy absorbed by tissues",
+        "The difference in opacity between light and dark areas",
+        "The appearance of ghost anatomical structures"
+      ],
+      "correct": 0,
+      "explanation": "Sharpness depends on geometric factors (focal spot, distances) and the intrinsic resolution of the receptor.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q22",
+      "type": "single-choice",
+      "question": "What is the direct cause of motion blur?",
+      "media": [],
+      "options": [
+        "An incorrect choice of tube voltage",
+        "Secondary scattering of X-rays",
+        "Physical movement of the patient or tube during exposure",
+        "Wear of the tungsten target"
+      ],
+      "correct": 2,
+      "explanation": "Kinetic blur compromises diagnostic value; it is prevented by requiring strict immobility.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q23",
+      "type": "single-choice",
+      "question": "How is an artifact defined in radiology?",
+      "media": [],
+      "options": [
+        "An anomaly or false image created by the technique or exogenous elements",
+        "A rare anatomical variant of the norm",
+        "A metallic filter eliminating low-energy photons",
+        "The activation of crystals under the action of light"
+      ],
+      "correct": 0,
+      "explanation": "Jewelry or prostheses create artifacts (white lines, shadows) that can mask lesions.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q24",
+      "type": "single-choice",
+      "question": "What physical mechanism governs image magnification?",
+      "media": [],
+      "options": [
+        "The diffraction of electromagnetic waves",
+        "The electronic amplification of the signal",
+        "The inherent divergence of X-rays emanating from a point source",
+        "The physical retraction of sensor polymers"
+      ],
+      "correct": 2,
+      "explanation": "Geometric magnification is inevitable but minimized by increasing the source-object distance.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q25",
+      "type": "single-choice",
+      "question": "What is the main cause of distortion in a periapical image?",
+      "media": [],
+      "options": [
+        "Insufficient beam filtration",
+        "Incorrect alignment resulting in a lack of perpendicularity of the beam-object-receptor",
+        "Fluctuation of the anode power supply current",
+        "The use of an excessively short exposure time"
+      ],
+      "correct": 1,
+      "explanation": "Distortion modifies proportionality relationships (elongation or shortening), falsifying clinical measurements.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

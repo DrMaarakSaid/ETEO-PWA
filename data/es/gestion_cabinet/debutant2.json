@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "gestion_cabinet_debutant2_001",
+    "title": "Gestión de Consultorio – Principiante 2",
+    "specialty": "GEST",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "GEST_D2_Q01",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Choumi tiene un contrato temporal de 8 meses. Se queda embarazada y quiere tomar la baja por maternidad. Según los artículos 32 y 159, ¿finaliza el contrato de trabajo de la asistente en el plazo previsto?",
+      "media": [],
+      "options": [
+        "No, el contrato se suspende automáticamente durante la baja por maternidad",
+        "Sí, el contrato temporal finaliza en el plazo previsto, incluso durante la baja por maternidad",
+        "Sí, pero puede recibir una indemnización compensatoria",
+        "No, el contrato temporal se convierte automáticamente en indefinido"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 159, último párrafo, establece que las disposiciones protectoras para la mujer embarazada no impiden la finalización del contrato de trabajo temporal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Farouk quiere despedir a su asistente después de 18 meses de trabajo por razones económicas. Según el artículo 52, ¿tiene la asistente derecho a la indemnización por despido?",
+      "media": [],
+      "options": [
+        "No, porque no ha alcanzado los 2 años de antigüedad",
+        "Sí, porque ha trabajado al menos 6 meses",
+        "Sí, pero solo si el despido es por falta",
+        "No, las razones económicas excluyen la indemnización"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 52 establece que el trabajador vinculado por un contrato de trabajo indefinido tiene derecho a una indemnización por despido en caso de despido después de seis meses de trabajo en una misma empresa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Choumi paga a su asistente mensualmente. Según el artículo 13, si quiere rescindir el período de prueba, ¿qué plazo de preaviso debe respetar?",
+      "media": [],
+      "options": [
+        "Sin preaviso, la rescisión es libre",
+        "Preaviso de 2 días",
+        "Preaviso de 8 días",
+        "Preaviso de 15 días"
+      ],
+      "correct": 2,
+      "explanation": "El artículo 13 establece que si el trabajador recibe un salario mensual, se requiere un preaviso de ocho días para la rescisión del período de prueba.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Farouk tiene una asistente con contrato indefinido. Quiere suspenderla disciplinariamente durante 5 días. Según el artículo 37, ¿está permitido?",
+      "media": [],
+      "options": [
+        "Sí, sin límite de duración",
+        "Sí, pero la suspensión no puede exceder de 8 días",
+        "No, la suspensión está prohibida",
+        "Sí, pero solo con el consentimiento del trabajador"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 37 prevé la suspensión como sanción disciplinaria por un plazo que no exceda de ocho días.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Choumi está considerando despedir a su asistente por falta grave. Según el artículo 61, ¿qué indemnizaciones debe pagarle?",
+      "media": [],
+      "options": [
+        "Ninguna indemnización, el despido por falta grave exime de cualquier pago",
+        "Solo la indemnización por despido",
+        "Solo la compensación por vacaciones no disfrutadas",
+        "Preaviso e indemnización por despido"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 61 establece que en caso de falta grave, el trabajador puede ser despedido sin preaviso y sin indemnización por despido y sin pago de indemnización por daños y perjuicios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Farouk, empleador de 12 trabajadores, quiere modificar el reglamento interno. Según el artículo 138, ¿cuál es el procedimiento?",
+      "media": [],
+      "options": [
+        "Puede modificarlo libremente sin formalidades",
+        "Debe comunicarlo a los delegados de personal y presentarlo para su aprobación al ministerio",
+        "Debe someterlo a votación de los trabajadores",
+        "Debe simplemente exponerlo en el consultorio"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 138 obliga al empleador a comunicar el reglamento interno a los delegados de personal antes de presentarlo para su aprobación a la autoridad gubernamental encargada del trabajo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q07",
+      "type": "single-choice",
+      "question": "Según el artículo 138, ¿cuál es el plazo para redactar el reglamento interno después de la apertura de un consultorio que emplea al menos a 10 trabajadores?",
+      "media": [],
+      "options": [
+        "6 meses",
+        "1 año",
+        "2 años",
+        "3 años"
+      ],
+      "correct": 2,
+      "explanation": "El artículo 138 establece que cualquier empleador que tenga habitualmente al menos diez trabajadores está obligado, en el plazo de dos años desde la apertura, a redactar un reglamento interno.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q08",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Choumi trabaja 44 horas semanales. Realiza 4 horas extraordinarias. Según el artículo 201, ¿a qué tipo se pagan estas horas?",
+      "media": [],
+      "options": [
+        "15 %",
+        "25 %",
+        "50 %",
+        "75 %"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 201 prevé un recargo del 25% por las horas extraordinarias realizadas de 6 a 21 horas en las actividades no agrícolas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Farouk tiene una asistente que toma vacaciones anuales. Según el artículo 247, si el consultorio cierra completamente durante las vacaciones, ¿qué debe hacer el empleador?",
+      "media": [],
+      "options": [
+        "No pagar nada a los trabajadores",
+        "Pagar las vacaciones a todos los trabajadores, independientemente de la antigüedad",
+        "Pagar las vacaciones solo a los trabajadores con más de 6 meses de antigüedad",
+        "Cerrar sin pagos"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 247 establece que todos los trabajadores reciben las vacaciones correspondientes a la duración del cierre, independientemente de la duración de su trabajo en la fecha del cierre.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Choumi, empleador de 15 trabajadores, quiere conocer sus obligaciones respecto a los delegados de personal. Según el artículo 433, ¿cuántos delegados debe tener?",
+      "media": [],
+      "options": [
+        "1 titular y 1 suplente",
+        "2 titulares y 2 suplentes",
+        "3 titulares y 3 suplentes",
+        "5 titulares y 5 suplentes"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 433 establece que de 10 a 25 trabajadores, la empresa debe elegir un delegado titular y un suplente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Farouk tiene un trabajador que se queja constantemente del ruido. Según el artículo 281, ¿cuál es la obligación del empleador respecto a las condiciones de trabajo?",
+      "media": [],
+      "options": [
+        "Nada, el ruido es inevitable",
+        "Velar por que los locales reúnan las condiciones de higiene y seguridad",
+        "Instalar solo aire acondicionado",
+        "Entregar a todos auriculares antirruido"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 281 obliga al empleador a velar por que los locales de trabajo reúnan las condiciones de higiene y salubridad necesarias para la salud de los trabajadores.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Choumi es empleador de 60 trabajadores. Según el artículo 304, ¿cuál es su obligación respecto al servicio médico del trabajo?",
+      "media": [],
+      "options": [
+        "No hay obligaciones especiales",
+        "Crear un servicio médico de trabajo autónomo",
+        "Adherirse a un servicio médico interempresarial",
+        "Proporcionar simplemente un botiquín de primeros auxilios"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 304 exige la creación de un servicio médico de trabajo autónomo para las empresas que empleen al menos a cincuenta trabajadores.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q13",
+      "type": "single-choice",
+      "question": "Según el artículo 336, ¿debe el Dr. Farouk, empleador de 60 trabajadores, crear un comité de seguridad e higiene?",
+      "media": [],
+      "options": [
+        "Sí, a partir de 50 trabajadores",
+        "No, solo a partir de 100 trabajadores",
+        "Sí, a partir de 20 trabajadores",
+        "No, los consultorios dentales están exentos"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 336 prevé la creación de comités de seguridad e higiene en las empresas que empleen al menos a 50 trabajadores.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Choumi quiere contratar a un trabajador extranjero. Según el artículo 516, ¿cuál es el procedimiento?",
+      "media": [],
+      "options": [
+        "Puede contratarlo libremente",
+        "Debe obtener una autorización de la autoridad gubernamental encargada del trabajo",
+        "Debe publicar primero un anuncio en Marruecos",
+        "Debe solicitar el consentimiento del ministerio del interior"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 516 obliga a cualquier empleador que desee contratar a un trabajador extranjero a obtener una autorización de la autoridad gubernamental encargada del trabajo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q15",
+      "type": "single-choice",
+      "question": "Según el artículo 526, el Dr. Farouk debe jubilar a sus trabajadores que hayan alcanzado la edad de:",
+      "media": [],
+      "options": [
+        "55 años",
+        "60 años",
+        "62 años",
+        "65 años"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 526 establece que cualquier trabajador que haya alcanzado la edad de sesenta años debe ser jubilado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Choumi tiene un trabajador que ha dimitido. Según el artículo 72, ¿en qué plazo debe entregarle el certificado de trabajo?",
+      "media": [],
+      "options": [
+        "3 días",
+        "8 días",
+        "15 días",
+        "30 días"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 72 obliga al empleador a entregar el certificado de trabajo en un plazo máximo de ocho días bajo pena de indemnización por daños y perjuicios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q17",
+      "type": "single-choice",
+      "question": "Según el artículo 15, el contrato de trabajo debe redactarse en ¿cuántos ejemplares?",
+      "media": [],
+      "options": [
+        "1 ejemplar",
+        "2 ejemplares",
+        "3 ejemplares",
+        "4 ejemplares"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 15 establece que el contrato de trabajo debe redactarse en dos ejemplares con las firmas del trabajador y del empleador.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Farouk tiene un trabajador que se niega a realizar un trabajo peligroso. Según el artículo 293, ¿puede ser sancionado el trabajador?",
+      "media": [],
+      "options": [
+        "Sí, si ha sido debidamente informado de los riesgos",
+        "No, la negativa es legítima",
+        "Sí, inmediatamente sin procedimiento",
+        "No, puede negarse a cualquier trabajo"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 293 establece que los trabajadores debidamente informados de las normas de seguridad y que no las respeten están sujetos a sanción.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q19",
+      "type": "single-choice",
+      "question": "Según el artículo 172, ¿cuál es la edad límite para el trabajo nocturno de los menores?",
+      "media": [],
+      "options": [
+        "14 años",
+        "15 años",
+        "16 años",
+        "18 años"
+      ],
+      "correct": 2,
+      "explanation": "El artículo 172 prohíbe la utilización de menores de dieciséis años en el trabajo nocturno, con excepciones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Choumi quiere que su asistente trabaje horas extraordinarias en domingo. Según el artículo 205, ¿está permitido?",
+      "media": [],
+      "options": [
+        "Sí, siempre",
+        "No, el descanso semanal es obligatorio",
+        "Sí, si ella está de acuerdo",
+        "Sí, pero con un recargo del 50%"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 205 establece un descanso semanal de al menos veinticuatro horas, que debe concederse obligatoriamente a los trabajadores.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Farouk tiene un trabajador con contrato indefinido que quiere dimitir. Según el artículo 34, ¿cuál es su derecho?",
+      "media": [],
+      "options": [
+        "No puede dimitir",
+        "Puede dimitir mediante carta con firma legalizada",
+        "Debe esperar el final del año",
+        "Debe pagar una indemnización al empleador"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 34 establece que el trabajador puede rescindir el contrato de trabajo indefinido mediante dimisión con firma legalizada por la autoridad competente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q22",
+      "type": "single-choice",
+      "question": "Según el artículo 33, en caso de rescisión anticipada de un contrato temporal sin falta grave, la indemnización por daños y perjuicios corresponde a:",
+      "media": [],
+      "options": [
+        "3 meses de salario",
+        "El período desde la fecha de rescisión hasta el término del contrato",
+        "6 meses de salario",
+        "Una indemnización fija de 50 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 33 establece que el monto de la indemnización por daños y perjuicios es igual al salario del período comprendido entre la fecha de rescisión y el término del contrato.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Choumi, empleador de 25 trabajadores, debe organizar las elecciones de delegados de personal. Según el artículo 438, ¿quién es elector?",
+      "media": [],
+      "options": [
+        "Todos los trabajadores sin condiciones",
+        "Los trabajadores de al menos 16 años que hayan trabajado al menos 6 meses",
+        "Solo los trabajadores mayores de 18 años",
+        "Solo los trabajadores con contrato indefinido"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 438 establece que son electores los trabajadores de ambos sexos de al menos dieciséis años que hayan trabajado al menos seis meses en el establecimiento.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q24",
+      "type": "single-choice",
+      "question": "Según el artículo 446, el Dr. Farouk está obligado a exponer las listas de candidatos a delegados. ¿Dónde debe exponerlas?",
+      "media": [],
+      "options": [
+        "Solo en su despacho",
+        "En los lugares previstos por las disposiciones reglamentarias",
+        "Solo en la sala de espera",
+        "No tiene obligación de exponer"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 446 obliga al empleador a exponer las listas de candidatos en los lugares previstos por las disposiciones reglamentarias.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Choumi tiene un trabajador que ha cometido una falta grave. Según el artículo 62, ¿en qué plazo debe escuchar al trabajador?",
+      "media": [],
+      "options": [
+        "24 horas",
+        "8 días",
+        "15 días",
+        "30 días"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 62 establece que el trabajador debe ser escuchado en un plazo no superior a ocho días desde la fecha de constatación del hecho que se le imputa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "prothese_debutant1_001",
+    "title": "Prótesis Dental - Principiante 1",
+    "specialty": "PROT",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PROT_D1_Q01",
+      "type": "single-choice",
+      "question": "🦅 Sami atiende a un paciente con un diente fracturado. Dice: «¡La corona de cerámica es la mejor solución!» 🐆 Mina le pregunta: «¿Y el material?» ¿Qué es una corona de cerámica?",
+      "media": [],
+      "options": [
+        "Una prótesis fija de cerámica pura, sin metal, muy estética",
+        "Una corona metálica recubierta de resina",
+        "Una prótesis removible de plástico",
+        "Un composite simple pegado al diente"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La cerámica pura proporciona una estética excepcional y una biocompatibilidad ideal.» 🐆 Mina: «¡Sami, conoces bien los materiales estéticos!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q02",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinando un puente, dice: «Los dientes pilares están sanos.» 🦅 Sami responde: «Se puede hacer sobre 2 dientes.» ¿Qué es un puente?",
+      "media": [],
+      "options": [
+        "Una prótesis fija que reemplaza uno o varios dientes ausentes, apoyada en dientes pilares",
+        "Una prótesis removible de resina",
+        "Un implante dental",
+        "Una corona sobre un solo diente"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El puente es una prótesis fija que reemplaza uno o varios dientes.» 🦅 Sami: «Prefiero los puentes cortos, ¡son más rápidos de hacer!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q03",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una prótesis removible, dice: «¡Esto es para viejos!» 🐆 Mina responde: «¡Para nada!» ¿Qué es una prótesis parcial removible?",
+      "media": [],
+      "options": [
+        "Una prótesis que el paciente puede quitar y poner, que reemplaza varios dientes ausentes",
+        "Una prótesis fija sobre implantes",
+        "Una corona sobre un diente natural",
+        "Un puente adherido"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Las prótesis parciales removibles están indicadas para reemplazar varios dientes con un presupuesto limitado.» 🐆 Mina: «¡Sami, eres más abierto de lo que pensaba!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q04",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una impresión digital, dice: «Es precisa y rápida.» 🦅 Sami responde: «¡La impresión convencional es más fiable!» ¿Qué es una impresión digital?",
+      "media": [],
+      "options": [
+        "Una impresión realizada con un escáner intraoral, sin materiales tradicionales",
+        "Una impresión clásica con alginato",
+        "Una fotografía del diente",
+        "Un modelo de escayola"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La impresión digital es precisa, cómoda y rápida.» 🦅 Sami: «Prefiero el alginato, pero reconozco que el escáner es más cómodo para el paciente.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q05",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una corona de metal-cerámica, dice: «¡Esto es del siglo pasado!» 🐆 Mina responde: «¡No tan rápido!» ¿Cuáles son las ventajas de la metal-cerámica?",
+      "media": [],
+      "options": [
+        "Resistencia, durabilidad, estética aceptable y precio accesible",
+        "Solo estética ideal",
+        "Solo resistencia a la corrosión",
+        "Ligereza y translucidez"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La metal-cerámica sigue siendo el estándar por su resistencia y durabilidad.» 🐆 Mina: «¡Sami, hoy estás sensato!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q06",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinando una dentadura completa, dice: «La oclusión es primordial.» 🦅 Sami responde: «¡La estética es más importante!» ¿Qué es una dentadura completa?",
+      "media": [],
+      "options": [
+        "Una prótesis removible que reemplaza todos los dientes de una arcada",
+        "Una prótesis fija sobre implantes",
+        "Un puente extenso",
+        "Una corona en cada diente"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La dentadura completa reemplaza todos los dientes, y la oclusión es importante para la estabilidad.» 🦅 Sami: «Vale, trabajaremos la oclusión, ¡pero haremos una estética bonita!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q07",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo un perno intrarradicular, dice: «¡Esto es inútil!» 🐆 Mina responde: «¡Es necesario!» ¿Qué es un perno intrarradicular?",
+      "media": [],
+      "options": [
+        "Un núcleo para reconstruir la raíz para fijar una corona sobre un diente desvitalizado",
+        "Un composite simple",
+        "Una corona temporal",
+        "Un implante dental"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El perno intrarradicular refuerza el diente desvitalizado antes de colocar la corona.» 🐆 Mina: «¡Sami, estás progresando!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q08",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una carilla de cerámica, dice: «Es muy estética.» 🦅 Sami responde: «¡Es frágil!» ¿Qué es una carilla dental?",
+      "media": [],
+      "options": [
+        "Una fina lámina de cerámica adherida a la superficie externa del diente para estética",
+        "Una corona completa",
+        "Un composite directo",
+        "Un blanqueamiento dental"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las carillas proporcionan una estética notable con una preparación mínima.» 🦅 Sami: «Prefiero las coronas, son más resistentes, pero reconozco que las carillas son más estéticas.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q09",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo un puente adherido, dice: «¡Es una prótesis para pobres!» 🐆 Mina responde: «¡Es una técnica validada!» ¿Qué es un puente adherido (Maryland)?",
+      "media": [],
+      "options": [
+        "Un puente fijado con alas metálicas o cerámicas a los dientes vecinos",
+        "Un puente convencional con coronas sobre pilares",
+        "Una prótesis removible",
+        "Un implante"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El puente adherido es una opción conservadora para reemplazar un diente sin tallar los pilares.» 🐆 Mina: «¡Sami, eres realmente abierto a lo nuevo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q10",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinando una prótesis sobre implantes, dice: «La osteointegración es crucial.» 🦅 Sami responde: «¡Primero la prótesis!» ¿Qué es la osteointegración?",
+      "media": [],
+      "options": [
+        "La conexión directa entre el implante de titanio y el hueso alveolar",
+        "La fijación de la corona sobre el implante",
+        "La cicatrización de la encía",
+        "La colocación del implante"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La osteointegración es la clave del éxito de los implantes.» 🦅 Sami: «Debo reconocer que Mina tiene razón en este tema.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q11",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una corona temporal, dice: «¡No sirve para nada!» 🐆 Mina responde: «¡Es necesaria!» ¿Cuál es el papel de la corona temporal?",
+      "media": [],
+      "options": [
+        "Proteger el diente, mantener el espacio y la estética hasta la colocación de la prótesis definitiva",
+        "Servir como prótesis definitiva",
+        "Proteger solo la encía",
+        "Reemplazar un diente ausente"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La corona temporal es necesaria para la protección y la función.» 🐆 Mina: «¡Sami, por fin has entendido la importancia de la prótesis temporal!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q12",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una resina compuesta, dice: «Es ideal para pequeñas restauraciones.» 🦅 Sami responde: «¡La cerámica siempre es mejor!» ¿Qué es una resina compuesta?",
+      "media": [],
+      "options": [
+        "Un material de restauración estético aplicado directamente sobre el diente",
+        "Un material solo para laboratorio",
+        "Un cemento temporal",
+        "Un material para prótesis removibles"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El composite es versátil y permite restauraciones estéticas directas.» 🦅 Sami: «Prefiero la cerámica, pero el composite tiene sus ventajas.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q13",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo un puente de 3 elementos, dice: «Es demasiado largo de hacer.» 🐆 Mina responde: «¡Hay que tomarse el tiempo necesario!» ¿Cuántos dientes puede reemplazar un puente?",
+      "media": [],
+      "options": [
+        "Un puente puede reemplazar 1-3 dientes según la situación clínica",
+        "Solo 1 diente",
+        "Hasta 10 dientes",
+        "Todos los dientes de la arcada"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La longitud del puente depende de la calidad de los pilares y la oclusión.» 🐆 Mina: «¡Sami, conoces las limitaciones de los puentes!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q14",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinando a un paciente con prótesis removible, dice: «Los ganchos deben ser discretos.» 🦅 Sami responde: «¡Lo importante es que sujete!» ¿Qué es un gancho de prótesis?",
+      "media": [],
+      "options": [
+        "Un elemento metálico o flexible que sujeta la prótesis removible a los dientes",
+        "Un implante",
+        "Un puente",
+        "Una corona"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los ganchos proporcionan la retención de la prótesis removible.» 🦅 Sami: «Prefiero los ganchos rígidos, pero reconozco que los flexibles son más estéticos.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q15",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una impresión con alginato, dice: «¡Esto es obsoleto!» 🐆 Mina responde: «¡Todavía se usa!» ¿Qué es el alginato?",
+      "media": [],
+      "options": [
+        "Un material de impresión hidrocoloide utilizado para modelos de diagnóstico",
+        "Un material para prótesis definitiva",
+        "Un cemento de fijación",
+        "Un composite"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El alginato es rápido y económico para impresiones preliminares.» 🐆 Mina: «¡Sami, eres pragmático!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q16",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente desdentado total, dice: «Dentadura completa convencional.» 🦅 Sami responde: «No, ¡implantes!» ¿Qué determina la elección?",
+      "media": [],
+      "options": [
+        "El estado del hueso, el presupuesto y las expectativas del paciente",
+        "Solo el presupuesto",
+        "Solo la edad",
+        "Solo las preferencias del odontólogo"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La elección depende de múltiples factores clínicos y financieros.» 🦅 Sami: «Vale, haremos una dentadura completa convencional para este paciente.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q17",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo un laboratorio de prótesis dental, dice: «¡Ellos hacen todo el trabajo!» 🐆 Mina responde: «¡El clínico es insustituible!» ¿Cuál es el papel del clínico en la prótesis?",
+      "media": [],
+      "options": [
+        "Preparación, impresión, elección del color y pruebas",
+        "Solo preparación",
+        "Solo impresión",
+        "Ningún papel, el laboratorio lo hace todo"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El clínico es responsable de todo el proceso protésico.» 🐆 Mina: «¡Sami, tienes razón!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q18",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una corona de dióxido de circonio, dice: «Es muy estética y resistente.» 🦅 Sami responde: «¡Es demasiado cara!» ¿Qué es el dióxido de circonio?",
+      "media": [],
+      "options": [
+        "Un material cerámico de alta resistencia sin metal, muy estético",
+        "Un metal precioso",
+        "Un composite reforzado",
+        "Una resina acrílica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El dióxido de circonio combina resistencia y estética sin riesgo de alergia al metal.» 🦅 Sami: «Prefiero la metal-cerámica por su relación calidad-precio, pero reconozco que el circonio es estéticamente superior.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q19",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una prótesis sobre 4 implantes, dice: «¡Es demasiado compleja!» 🐆 Mina responde: «¡Es una técnica validada!» ¿Qué es una prótesis implantológica?",
+      "media": [],
+      "options": [
+        "Una prótesis fijada sobre implantes dentales, que proporciona una estabilidad óptima",
+        "Una prótesis removible sobre la encía",
+        "Una corona sobre un diente natural",
+        "Un puente convencional"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Las prótesis sobre implantes proporcionan una estabilidad y comodidad inigualables.» 🐆 Mina: «¡Sami, estás realmente al día!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q20",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinando una prótesis de resina, dice: «Es ligera y económica.» 🦅 Sami responde: «¡Es frágil!» ¿Cuáles son las ventajas de la resina?",
+      "media": [],
+      "options": [
+        "Ligereza, bajo coste, facilidad de reparación",
+        "Resistencia y durabilidad",
+        "Solo estética ideal",
+        "Biocompatibilidad absoluta"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La resina es ideal para prótesis temporales o con presupuesto limitado.» 🦅 Sami: «Prefiero la cerámica, pero entiendo las ventajas de la resina.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q21",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo un puente adherido, dice: «¡No es duradero!» 🐆 Mina responde: «¡Con una buena técnica, sí lo es!» ¿Cuál es la clave del éxito de un puente adherido?",
+      "media": [],
+      "options": [
+        "Buena adhesión y oclusión adaptada",
+        "Solo la fuerza del adhesivo",
+        "Solo la elección del material",
+        "Solo la estética"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El éxito del puente adherido depende de la adhesión y la oclusión.» 🐆 Mina: «¡Sami, eres un experto en puentes adheridos!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q22",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una corona temporal, dice: «Hay que llevarla 15 días.» 🦅 Sami responde: «¡Se puede poner la definitiva de inmediato!» ¿Por qué es necesaria la prótesis temporal?",
+      "media": [],
+      "options": [
+        "Para dejar cicatrizar los tejidos y evaluar la función y la estética",
+        "Para ganar más dinero",
+        "Porque la corona definitiva no está lista",
+        "Para que el paciente se acostumbre"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La prótesis temporal es una etapa importante para validar el proyecto protésico.» 🦅 Sami: «Vale, ¡haremos una prótesis temporal de calidad!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q23",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una prótesis removible con placa palatina, dice: «¡Es incómoda!» 🐆 Mina responde: «¡Es necesaria!» ¿Cuál es el papel de la placa palatina?",
+      "media": [],
+      "options": [
+        "Proporcionar retención y estabilidad a la prótesis maxilar",
+        "Solo estética",
+        "Solo fonética",
+        "Proteger la encía"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La placa palatina es necesaria para la estabilidad de la prótesis maxilar.» 🐆 Mina: «¡Sami, conoces bien las prótesis removibles!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q24",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinando una incrustación, dice: «Es una restauración indirecta.» 🦅 Sami responde: «Prefiero el composite directo.» ¿Qué es una incrustación?",
+      "media": [],
+      "options": [
+        "Una restauración fabricada en laboratorio y cementada en el diente",
+        "Una restauración directa de composite",
+        "Una corona completa",
+        "Un implante"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La incrustación es una restauración indirecta de cerámica o composite, más resistente.» 🦅 Sami: «Prefiero el método directo por rapidez, pero la incrustación es más duradera.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo a un paciente con una prótesis móvil, dice: «¡Es culpa del laboratorio!» 🐆 Mina responde: «¡Quizás sea la oclusión!» ¿Cuál es la causa más frecuente de inestabilidad de una prótesis?",
+      "media": [],
+      "options": [
+        "Defecto de oclusión, retención o adaptación",
+        "Solo culpa del laboratorio",
+        "Solo culpa del paciente",
+        "Solo el material"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La inestabilidad suele ser multifactorial: oclusión, retención, adaptación.» 🐆 Mina: «¡Sami, eres todo un profesional!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q26",
+      "type": "single-choice",
+      "question": "🦅 Sami y 🐆 Mina discuten sobre el futuro de la prótesis. Sami dice: «¡Las impresoras 3D lo cambiarán todo!» Mina responde: «El dominio clínico sigue siendo clave.» ¿Cuál es el futuro de la prótesis?",
+      "media": [],
+      "options": [
+        "La tecnología ayuda, pero no sustituye al clínico ni al laboratorio",
+        "La impresión 3D lo reemplazará todo",
+        "Las prótesis tradicionales desaparecerán",
+        "El laboratorio desaparecerá"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La tecnología es una herramienta valiosa, pero la experiencia clínica es insustituible.» 🦅 Sami: «Estoy de acuerdo, ¡nuestros puestos de trabajo están a salvo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "informatique_logiciels_dentaires_expert1_001",
+    "title": "Informatique_logiciels_dentaires - Expert 1",
+    "specialty": "INFO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "INFO_E1_Q01",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit former les jeunes dentistes à la protection des données. Quel est le premier conseil qu'il doit leur donner ?",
+      "media": [],
+      "options": [
+        "La protection des données est une contrainte administrative",
+        "La protection des données est un pilier de la confiance patient",
+        "La protection des données est facultative",
+        "La protection des données est secondaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : La protection des données est un pilier de la confiance patient et de l'éthique professionnelle. Dr Tazi : Je suis entièrement d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q02",
+      "type": "single-choice",
+      "question": "Dr Tazi doit créer un centre de formation en protection des données dentaires. Quel est l'objectif principal ?",
+      "media": [],
+      "options": [
+        "Former des juristes",
+        "Former des dentistes à la conformité et à la sécurité numérique",
+        "Former des avocats spécialisés",
+        "Former des gestionnaires de cabinet"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : L'objectif principal est de former des dentistes à la conformité et à la sécurité numérique. Dr Chamssi : Je vais participer à cette formation.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q03",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit évaluer la performance en protection des données d'un jeune dentiste. Quelle mesure est la plus importante ?",
+      "media": [],
+      "options": [
+        "Le nombre de déclarations CNDP effectuées",
+        "La qualité de la conformité et de la sécurité des données",
+        "Le chiffre d'affaires du cabinet",
+        "Le nombre de patients traités"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : La qualité de la conformité et de la sécurité des données est la mesure la plus importante. Dr Tazi : Je suis d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q04",
+      "type": "single-choice",
+      "question": "Dr Tazi doit gérer une crise : une fuite de données de patients. Quelle est la priorité ?",
+      "media": [],
+      "options": [
+        "Cacher l'incident",
+        "Protéger les patients et informer la CNDP",
+        "Ignorer la fuite",
+        "Supprimer les preuves"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : La priorité est de protéger les patients et d'informer la CNDP. Dr Chamssi : Je vais t'aider à gérer cette crise.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q05",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit former les internes à la gestion des risques numériques. Quel est le principe fondamental ?",
+      "media": [],
+      "options": [
+        "La gestion des risques est une option",
+        "La gestion des risques numériques est une responsabilité",
+        "La gestion des risques est secondaire",
+        "La gestion des risques est une contrainte"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : La gestion des risques numériques est une responsabilité professionnelle fondamentale. Dr Tazi : Je suis entièrement d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q06",
+      "type": "single-choice",
+      "question": "Dr Tazi doit créer un guide de bonnes pratiques en protection des données. Quelle est la référence principale ?",
+      "media": [],
+      "options": [
+        "Les recommandations des experts",
+        "La loi 09-08 et les délibérations de la CNDP",
+        "Les habitudes du cabinet",
+        "Les préférences personnelles"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : Les bonnes pratiques doivent être basées sur la loi 09-08 et les délibérations de la CNDP. Dr Chamssi : Je vais contribuer à ce guide.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q07",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit former les jeunes dentistes à la sécurité des données. Quel est le message clé ?",
+      "media": [],
+      "options": [
+        "La sécurité est facultative",
+        "La sécurité est un processus continu et une culture",
+        "La sécurité est une contrainte",
+        "La sécurité est secondaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : La sécurité est un processus continu et une culture à développer au quotidien. Dr Tazi : Je suis d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q08",
+      "type": "single-choice",
+      "question": "Dr Tazi doit créer un programme de recherche en protection des données dentaires. Quel est l'objectif principal ?",
+      "media": [],
+      "options": [
+        "Publier des articles",
+        "Améliorer les pratiques de protection des données",
+        "Gagner de l'argent",
+        "Concurrencer d'autres programmes"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : La recherche vise à améliorer les pratiques de protection des données. Dr Chamssi : Je vais participer à la recherche.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q09",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit gérer un cabinet de référence en protection des données. Quel est le pilier de l'excellence ?",
+      "media": [],
+      "options": [
+        "La qualité des équipements",
+        "La conformité et la sécurité des données",
+        "Le nombre de patients",
+        "Le chiffre d'affaires"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : L'excellence repose sur la conformité et la sécurité des données. Dr Tazi : Je suis d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q10",
+      "type": "single-choice",
+      "question": "Dr Tazi doit évaluer l'impact de la protection des données sur la confiance patient. Quel est le rôle de la protection des données ?",
+      "media": [],
+      "options": [
+        "Elle est secondaire",
+        "Elle est essentielle pour la confiance patient",
+        "Elle est facultative",
+        "Elle est une contrainte"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : La protection des données est essentielle pour la confiance patient. Dr Chamssi : Je suis entièrement d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q11",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit former les internes à l'innovation en protection des données. Quelle tendance actuelle est importante ?",
+      "media": [],
+      "options": [
+        "L'intelligence artificielle et l'éthique des données",
+        "La cybersécurité et la résilience",
+        "Le RGPD et les nouvelles réglementations",
+        "Toutes les réponses sont correctes"
+      ],
+      "correct": 3,
+      "explanation": "Dr Chamssi explique : L'innovation concerne l'IA, la cybersécurité et les nouvelles réglementations. Dr Tazi : Je suis d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q12",
+      "type": "single-choice",
+      "question": "Dr Tazi doit créer un système d'évaluation des compétences en protection des données. Quel est l'objectif ?",
+      "media": [],
+      "options": [
+        "Sanctionner les praticiens",
+        "Améliorer les pratiques de protection des données",
+        "Réduire les coûts",
+        "Augmenter la productivité"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : L'évaluation vise à améliorer les pratiques de protection des données. Dr Chamssi : Je vais participer à l'évaluation.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q13",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit gérer un conflit éthique lié à l'utilisation de l'IA en dentisterie. Quelle est la bonne attitude ?",
+      "media": [],
+      "options": [
+        "Ignorer le conflit",
+        "Agir conformément à la loi 09-08 et aux principes éthiques",
+        "Cacher le conflit",
+        "Changer de pratique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : La loi 09-08 et les principes éthiques sont les guides pour résoudre les conflits liés à l'IA. Dr Tazi : Je suis d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q14",
+      "type": "single-choice",
+      "question": "Dr Tazi doit écrire un article sur l'avenir de la protection des données dentaires. Quelle tendance faut-il souligner ?",
+      "media": [],
+      "options": [
+        "Le déclin de la protection des données",
+        "La protection des données au service de l'innovation et de la confiance",
+        "La baisse des besoins en protection",
+        "La disparition de la protection des données"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : L'avenir repose sur la protection des données au service de l'innovation et de la confiance. Dr Chamssi : Je suis entièrement d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q15",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit créer un label de qualité en protection des données pour les cabinets. Quels sont les critères principaux ?",
+      "media": [],
+      "options": [
+        "L'équipement et la taille du cabinet",
+        "La conformité et la sécurité des données",
+        "Le chiffre d'affaires",
+        "Le nombre de patients"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : La conformité et la sécurité des données sont les critères fondamentaux. Dr Tazi : Je suis d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q16",
+      "type": "single-choice",
+      "question": "Dr Tazi doit prononcer un discours sur l'importance de la protection des données. Quel message doit-elle faire passer ?",
+      "media": [],
+      "options": [
+        "La protection des données est une contrainte",
+        "La protection des données est un pilier de l'éthique professionnelle",
+        "La protection des données est secondaire",
+        "La protection des données est sans intérêt"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : La protection des données est un pilier de l'éthique professionnelle. Dr Chamssi : Je suis entièrement d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q17",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit créer une bourse pour les étudiants en protection des données dentaires. Quel est l'objectif ?",
+      "media": [],
+      "options": [
+        "Créer un réseau d'influence",
+        "Encourager l'excellence en protection des données",
+        "Faire des bénéfices",
+        "Concurrencer d'autres bourses"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : Encourager l'excellence en protection des données est un investissement pour l'avenir. Dr Tazi : Je vais soutenir cette initiative.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q18",
+      "type": "single-choice",
+      "question": "Dr Tazi doit transmettre son savoir en protection des données. Quelle est la méthode la plus efficace ?",
+      "media": [],
+      "options": [
+        "Des cours magistraux",
+        "Un mentorat personnalisé et des cas pratiques",
+        "Des vidéos en ligne",
+        "Des livres"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : Le mentorat personnalisé et les cas pratiques sont les méthodes les plus efficaces. Dr Chamssi : Je vais m'investir dans le mentorat.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q19",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit créer un réseau de pairs pour les jeunes dentistes en protection des données. Quel est l'objectif ?",
+      "media": [],
+      "options": [
+        "Créer un réseau d'influence",
+        "Favoriser l'entraide et le partage d'expériences",
+        "Faire des bénéfices",
+        "Concurrencer d'autres réseaux"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : L'entraide et le partage sont essentiels pour les jeunes dentistes en protection des données. Dr Tazi : Je vais soutenir ce réseau.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q20",
+      "type": "single-choice",
+      "question": "Dr Tazi doit écrire une conclusion à son ouvrage sur la protection des données. Quelle est la phrase finale ?",
+      "media": [],
+      "options": [
+        "La protection des données est une contrainte",
+        "La protection des données est un gage de confiance et d'éthique",
+        "La protection des données est secondaire",
+        "La protection des données est inutile"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : La protection des données est un gage de confiance et d'éthique. Dr Chamssi : Je suis entièrement d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q21",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit laisser un héritage à la profession. Quel est le plus beau legs ?",
+      "media": [],
+      "options": [
+        "Une fortune",
+        "Des compétences en protection des données et un exemple à suivre",
+        "Un réseau d'influence",
+        "Des bâtiments"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : Les compétences en protection des données et l'exemple sont le plus beau legs qu'on puisse laisser. Dr Tazi : Je suis entièrement d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q22",
+      "type": "single-choice",
+      "question": "Dr Tazi doit former les futurs mentors en protection des données. Quel est le premier message à transmettre ?",
+      "media": [],
+      "options": [
+        "Le mentorat est une obligation",
+        "Le mentorat est une mission d'accompagnement et de transmission",
+        "Le mentorat est une source de revenus",
+        "Le mentorat est une compétition"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : Le mentorat est une mission d'accompagnement et de transmission des compétences en protection des données. Dr Chamssi : Je vais transmettre ce message.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q23",
+      "type": "single-choice",
+      "question": "Dr Chamssi doit écrire une lettre aux futurs dentistes sur la protection des données. Quel message doit-il faire passer ?",
+      "media": [],
+      "options": [
+        "La protection des données est difficile",
+        "La protection des données est un pilier de la profession",
+        "La protection des données est sans intérêt",
+        "La protection des données est secondaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi explique : La protection des données est un pilier de la profession. Dr Tazi : Je suis d'accord.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q24",
+      "type": "single-choice",
+      "question": "Dr Tazi doit créer un prix pour les jeunes dentistes en protection des données. Quel est le but ?",
+      "media": [],
+      "options": [
+        "Encourager la compétition",
+        "Stimuler l'excellence en protection des données",
+        "Faire des bénéfices",
+        "Concurrencer d'autres prix"
+      ],
+      "correct": 1,
+      "explanation": "Dr Tazi explique : Stimuler l'excellence en protection des données est essentiel pour l'évolution de la profession. Dr Chamssi : Je vais soutenir ce prix.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_E1_Q25",
+      "type": "single-choice",
+      "question": "Dr Chamssi, après une carrière dédiée à la protection des données, reçoit un hommage national. Dr Tazi est à ses côtés. Quel est le message de Dr Chamssi aux jeunes dentistes ?",
+      "media": [],
+      "options": [
+        "La protection des données est finie",
+        "La protection des données est un gage de confiance et d'éthique",
+        "La protection des données n'a pas d'avenir",
+        "La protection des données est sans intérêt"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chamssi conclut : La protection des données est un gage de confiance et d'éthique pour notre profession. Dr Tazi : Je suis fière de toi.",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

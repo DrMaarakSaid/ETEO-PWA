@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "comptabilite_fiscalite_intermediaire1_001",
+    "title": "Comptabilite_fiscalite - Intermédiaire 1",
+    "specialty": "COMP",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1450
+  },
+  "questions": [
+    {
+      "id": "COMP_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Amrani doit établir un budget prévisionnel pour son cabinet. Dr Bennani lui conseille d'analyser les postes de dépenses. Selon les bonnes pratiques de gestion, quel poste représente généralement le plus gros investissement initial ?",
+      "media": [],
+      "options": [
+        "Les fournitures de bureau",
+        "Les équipements médicaux (fauteuils, scanners)",
+        "Les frais de communication",
+        "Les frais de déplacement"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'L'investissement en équipements médicaux est le poste le plus important. Un fauteuil dentaire et un CBCT représentent des sommes considérables.' Dr Amrani : 'Je vais prévoir un budget conséquent.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite optimiser la gestion de trésorerie de son cabinet. Selon les principes de gestion, quelle est la première étape pour une bonne gestion de trésorerie ?",
+      "media": [],
+      "options": [
+        "Augmenter les prix des soins",
+        "Établir un tableau des flux de trésorerie prévisionnels",
+        "Réduire les salaires du personnel",
+        "Diminuer les achats de consommables"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'Le tableau des flux de trésorerie permet d'anticiper les rentrées et sorties d'argent. C'est la base d'une bonne gestion.' Dr Bennani : 'Je vais en établir un.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Amrani doit analyser la rentabilité de son cabinet. Dr Bennani lui propose de calculer le seuil de rentabilité. Que mesure cet indicateur ?",
+      "media": [],
+      "options": [
+        "Le montant des dettes du cabinet",
+        "Le chiffre d'affaires minimum pour couvrir les charges",
+        "Le nombre de patients à recevoir par mois",
+        "Le montant des investissements à réaliser"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Le seuil de rentabilité est le CA minimum pour couvrir toutes les charges. En dessous, vous êtes en perte.' Dr Amrani : 'Je vais le calculer.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite évaluer la performance financière de son cabinet. Selon les indicateurs de gestion, quel ratio est le plus pertinent pour mesurer l'efficacité opérationnelle ?",
+      "media": [],
+      "options": [
+        "Le ratio d'endettement",
+        "Le ratio de marge brute",
+        "Le ratio de liquidité générale",
+        "Le ratio de rotation des stocks"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'La marge brute mesure la différence entre le CA et les charges directes. C'est un indicateur clé de l'efficacité du cabinet.' Dr Bennani : 'Je vais analyser cette marge.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer un déficit de trésorerie. Dr Bennani lui propose plusieurs solutions. Quelle est la solution la plus adaptée pour un cabinet dentaire ?",
+      "media": [],
+      "options": [
+        "Contracter un découvert bancaire",
+        "Négocier des délais de paiement avec les fournisseurs",
+        "Augmenter les honoraires de 20%",
+        "Licencier un assistant"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Négocier des délais de paiement permet de gérer les flux sans augmenter les charges. C'est une solution durable.' Dr Amrani : 'Je vais contacter mes fournisseurs.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Bennani doit analyser le bilan de son cabinet. Selon l'article 10 de la loi 9-88, que représente le passif du bilan ?",
+      "media": [],
+      "options": [
+        "Les biens et créances du cabinet",
+        "Les dettes et capitaux propres du cabinet",
+        "Les honoraires encaissés",
+        "Les charges de l'exercice"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'Le passif représente les dettes et les capitaux propres. C'est l'origine des ressources du cabinet.' Dr Bennani : 'Je vais examiner le passif attentivement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Amrani souhaite investir dans un nouveau scanner CBCT. Dr Bennani lui conseille de calculer le retour sur investissement. Quels éléments faut-il prendre en compte ?",
+      "media": [],
+      "options": [
+        "Le prix d'achat uniquement",
+        "Le prix d'achat et les bénéfices attendus",
+        "Les frais d'installation uniquement",
+        "Le coût de la maintenance uniquement"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Le ROI compare le coût de l'investissement aux bénéfices qu'il génère. C'est essentiel pour décider.' Dr Amrani : 'Je vais faire ce calcul.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Bennani doit établir le compte de résultats de son cabinet. Selon l'article 10, que récapitule le compte de produits et charges ?",
+      "media": [],
+      "options": [
+        "Les flux de trésorerie",
+        "Les produits et charges de l'exercice",
+        "Les investissements réalisés",
+        "Les dettes à long terme"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'Le CPC récapitule les produits et charges de l'exercice. Il permet de déterminer le résultat net.' Dr Bennani : 'Je vais l'analyser.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer les honoraires impayés de ses patients. Selon l'article 16, comment doit-il traiter ces créances ?",
+      "media": [],
+      "options": [
+        "Les maintenir à leur valeur nominale",
+        "Constituer des provisions pour créances douteuses",
+        "Les annuler purement et simplement",
+        "Les déclarer à l'administration fiscale"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Les créances douteuses doivent faire l'objet de provisions pour dépréciation. Cela permet d'ajuster la valeur des actifs.' Dr Amrani : 'Je vais constituer des provisions.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite analyser la performance de son cabinet par rapport à la concurrence. Selon les pratiques de gestion, quel outil est le plus adapté ?",
+      "media": [],
+      "options": [
+        "Le benchmarking",
+        "Le tableau de bord",
+        "Le budget prévisionnel",
+        "Le plan d'affaires"
+      ],
+      "correct": 0,
+      "explanation": "Dr Amrani explique : 'Le benchmarking permet de comparer ses performances à celles des cabinets similaires. C'est un outil d'analyse stratégique.' Dr Bennani : 'Je vais en réaliser un.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Amrani doit évaluer la liquidité de son cabinet. Selon les ratios financiers, quel indicateur mesure la capacité à payer les dettes à court terme ?",
+      "media": [],
+      "options": [
+        "Le ratio de liquidité générale",
+        "Le ratio de marge brute",
+        "Le ratio d'endettement",
+        "Le ratio de rotation des actifs"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'Le ratio de liquidité générale compare les actifs à court terme aux dettes à court terme. C'est un indicateur de solvabilité immédiate.' Dr Amrani : 'Je vais le calculer.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite optimiser sa gestion des stocks de consommables. Selon les bonnes pratiques, quelle méthode est recommandée ?",
+      "media": [],
+      "options": [
+        "La méthode juste-à-temps",
+        "Le stock de sécurité",
+        "La commande en grande quantité",
+        "L'approvisionnement aléatoire"
+      ],
+      "correct": 0,
+      "explanation": "Dr Amrani explique : 'La méthode juste-à-temps permet de réduire les coûts de stockage et d'éviter les surstocks. C'est une pratique efficace.' Dr Bennani : 'Je vais l'adopter.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer une variation saisonnière de l'activité. Dr Bennani lui conseille d'établir un budget flexible. Quel est l'avantage de ce type de budget ?",
+      "media": [],
+      "options": [
+        "Il permet de s'adapter aux variations d'activité",
+        "Il est plus simple à établir",
+        "Il réduit les coûts de gestion",
+        "Il est obligatoire pour les cabinets"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'Le budget flexible s'ajuste aux variations d'activité. Il permet de mieux gérer les périodes de forte ou faible activité.' Dr Amrani : 'Je vais en établir un.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite évaluer la valeur de son cabinet. Selon les méthodes d'évaluation, quelle approche est généralement utilisée pour les cabinets dentaires ?",
+      "media": [],
+      "options": [
+        "La méthode des flux de trésorerie actualisés",
+        "La méthode des multiples de CA",
+        "La méthode de l'actif net comptable",
+        "La méthode des comparables de marché"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'La méthode des multiples de CA est couramment utilisée pour les cabinets dentaires, car elle est simple et reflète la valeur de la patientèle.' Dr Bennani : 'Je vais explorer cette méthode.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer une difficulté de trésorerie temporaire. Dr Bennani lui propose de recourir à un financement. Quelle solution est la plus adaptée à un cabinet ?",
+      "media": [],
+      "options": [
+        "Un emprunt bancaire à long terme",
+        "Une ligne de crédit de trésorerie",
+        "Une augmentation de capital",
+        "Un leasing d'équipement"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Une ligne de crédit de trésorerie permet de faire face aux besoins temporaires. C'est flexible et adapté aux cabinets.' Dr Amrani : 'Je vais en parler à ma banque.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Bennani doit analyser l'évolution de son chiffre d'affaires. Selon les outils de gestion, quel indicateur mesure la croissance de l'activité ?",
+      "media": [],
+      "options": [
+        "Le taux de croissance annuel",
+        "Le nombre de patients",
+        "Le panier moyen",
+        "Le taux de marge"
+      ],
+      "correct": 0,
+      "explanation": "Dr Amrani explique : 'Le taux de croissance annuel mesure l'évolution du CA d'un exercice à l'autre. C'est un indicateur de dynamisme.' Dr Bennani : 'Je vais le calculer.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer une augmentation des charges fixes. Dr Bennani lui conseille d'identifier les postes compressibles. Quelle approche est la plus efficace ?",
+      "media": [],
+      "options": [
+        "Réduire les salaires",
+        "Négocier les contrats fournisseurs",
+        "Diminuer les heures d'ouverture",
+        "Augmenter les honoraires"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Négocier les contrats fournisseurs permet de réduire les charges fixes sans impacter la qualité des soins.' Dr Amrani : 'Je vais renégocier mes contrats.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite créer un tableau de bord de gestion. Selon les bonnes pratiques, quels indicateurs doit-il inclure ?",
+      "media": [],
+      "options": [
+        "Le nombre de patients et le CA",
+        "Les indicateurs financiers et d'activité",
+        "La satisfaction des patients uniquement",
+        "Les dépenses uniquement"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'Un tableau de bord doit inclure des indicateurs financiers (CA, marge) et d'activité (patients, taux d'occupation).' Dr Bennani : 'Je vais construire le mien.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer la rémunération de son personnel. Selon les pratiques RH, quelle est la meilleure approche pour motiver l'équipe ?",
+      "media": [],
+      "options": [
+        "Une augmentation annuelle fixe",
+        "Une prime basée sur la performance",
+        "Des avantages en nature",
+        "Une participation aux bénéfices"
+      ],
+      "correct": 3,
+      "explanation": "Dr Bennani explique : 'La participation aux bénéfices motive l'équipe en la faisant participer aux résultats du cabinet.' Dr Amrani : 'Je vais étudier cette option.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite analyser la composition de son chiffre d'affaires. Selon l'analyse des revenus, quel est le poste principal pour un cabinet dentaire ?",
+      "media": [],
+      "options": [
+        "Les prothèses",
+        "Les soins conservateurs",
+        "Les consultations",
+        "Les implants"
+      ],
+      "correct": 0,
+      "explanation": "Dr Amrani explique : 'Les prothèses représentent souvent le poste principal du CA des cabinets dentaires, avec des actes à forte valeur ajoutée.' Dr Bennani : 'Je vais analyser la répartition de mon CA.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer une baisse de l'activité. Dr Bennani lui conseille de diversifier son offre. Quelle diversification est la plus pertinente pour un cabinet dentaire ?",
+      "media": [],
+      "options": [
+        "L'orthodontie",
+        "La chirurgie avancée",
+        "L'endodontie",
+        "L'implantologie"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'L'orthodontie est une diversification pertinente qui permet de fidéliser les patients jeunes et leurs familles.' Dr Amrani : 'Je vais me former à l'orthodontie.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite optimiser la gestion des rendez-vous. Selon les bonnes pratiques, quel outil est le plus efficace ?",
+      "media": [],
+      "options": [
+        "Un agenda papier",
+        "Un logiciel de planification avec rappels automatiques",
+        "Une secrétaire dédiée",
+        "Un tableau blanc"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'Un logiciel de planification avec rappels automatiques réduit les absences et optimise le taux d'occupation.' Dr Bennani : 'Je vais investir dans ce logiciel.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Amrani doit gérer un conflit avec un fournisseur sur des factures impayées. Dr Bennani lui conseille de revoir les délais de paiement. Quelle est la meilleure approche ?",
+      "media": [],
+      "options": [
+        "Ignorer le conflit",
+        "Négocier un échéancier de paiement",
+        "Changer de fournisseur",
+        "Payer immédiatement"
+      ],
+      "correct": 1,
+      "explanation": "Dr Bennani explique : 'Négocier un échéancier de paiement permet de résoudre le conflit tout en préservant la relation commerciale.' Dr Amrani : 'Je vais proposer un échéancier.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Bennani souhaite évaluer la performance de son équipe. Selon les pratiques RH, quel outil est le plus approprié ?",
+      "media": [],
+      "options": [
+        "Une évaluation annuelle informelle",
+        "Un entretien individuel avec des objectifs clairs",
+        "Une évaluation par les pairs",
+        "Une grille de compétences"
+      ],
+      "correct": 1,
+      "explanation": "Dr Amrani explique : 'L'entretien individuel avec des objectifs clairs permet de motiver l'équipe et d'aligner les efforts sur la stratégie du cabinet.' Dr Bennani : 'Je vais organiser ces entretiens.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Amrani, après avoir mis en place une gestion rigoureuse, reçoit les félicitations de Dr Bennani. Quelle est la prochaine étape pour Dr Amrani ?",
+      "media": [],
+      "options": [
+        "Anticiper la transmission du cabinet",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bonnes pratiques"
+      ],
+      "correct": 0,
+      "explanation": "Dr Bennani explique : 'La transmission du cabinet est une étape clé qui nécessite une anticipation et une préparation financière.' Dr Amrani : 'Je vais commencer à préparer ma succession.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

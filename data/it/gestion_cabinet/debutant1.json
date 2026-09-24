@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "gestion_cabinet_debutant1_001",
+    "title": "Practice Management - Beginner 1",
+    "specialty": "GEST",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "GEST_D1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Mourad wishes to hire a dental assistant. According to Article 6 of the Labor Code, what is an employee?",
+      "media": [],
+      "options": [
+        "Any person who exercises their activity under the direction of an employer in exchange for remuneration",
+        "Any person who works independently without a subordinate relationship",
+        "Any person who holds a university degree",
+        "Any person who manages their own dental practice"
+      ],
+      "correct": 0,
+      "explanation": "Article 6 defines the employee as any person who has undertaken to exercise their professional activity under the direction of one or more employers in exchange for remuneration.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q02",
+      "type": "single-choice",
+      "question": "According to Article 6 of the Labor Code, who is considered an employer?",
+      "media": [],
+      "options": [
+        "Any person who hires the services of one or more natural persons",
+        "Any patient who consults a dentist",
+        "Any employee who receives a salary",
+        "Any union representative in the company"
+      ],
+      "correct": 0,
+      "explanation": "Article 6 defines the employer as any natural or legal person, private or public, who hires the services of one or more natural persons.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q03",
+      "type": "single-choice",
+      "question": "Dr. Sidki wishes to hire an assistant on a permanent contract. According to Article 16, what is the general principle for the duration of the employment contract?",
+      "media": [],
+      "options": [
+        "The contract is concluded for an indefinite period by default",
+        "The contract is always concluded for a fixed term",
+        "The contract must be renewed each month",
+        "The contract cannot exceed one year"
+      ],
+      "correct": 0,
+      "explanation": "Article 16 provides that the employment contract is concluded for an indefinite period, for a fixed term, or to perform a specific job, the principle being the indefinite period.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q04",
+      "type": "single-choice",
+      "question": "Dr. Mourad wishes to replace an assistant on maternity leave. According to Article 16, what type of contract can he conclude?",
+      "media": [],
+      "options": [
+        "A fixed-term contract for replacement",
+        "Only an indefinite-term contract",
+        "An apprenticeship contract",
+        "A home employment contract"
+      ],
+      "correct": 0,
+      "explanation": "Article 16 provides for the fixed-term contract particularly in the case of replacing an employee in the event of suspension of the employment contract.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q05",
+      "type": "single-choice",
+      "question": "According to Article 14, what is the maximum probation period for an employee (dental assistant)?",
+      "media": [],
+      "options": [
+        "15 days",
+        "1.5 months",
+        "3 months",
+        "6 months"
+      ],
+      "correct": 1,
+      "explanation": "Article 14 sets the probation period at one and a half months for employees, renewable once.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q06",
+      "type": "single-choice",
+      "question": "Dr. Sidki wishes to hire a manager for his practice. According to Article 14, what is the maximum probation period?",
+      "media": [],
+      "options": [
+        "15 days",
+        "1.5 months",
+        "3 months",
+        "6 months"
+      ],
+      "correct": 2,
+      "explanation": "Article 14 sets the probation period at three months for managers and equivalent positions, renewable once.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q07",
+      "type": "single-choice",
+      "question": "According to Article 14, the probation period for fixed-term contracts cannot exceed:",
+      "media": [],
+      "options": [
+        "15 days for contracts under 6 months and 1 month for those over 6 months",
+        "3 months for all contracts",
+        "6 months for all contracts",
+        "No probation period is allowed"
+      ],
+      "correct": 0,
+      "explanation": "Article 14 provides that the probation period for fixed-term contracts cannot exceed one day per week of work, up to a limit of two weeks for contracts under 6 months, and one month for those over 6 months.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q08",
+      "type": "single-choice",
+      "question": "According to Article 13, can Dr. Mourad terminate the probation period of his new assistant without notice?",
+      "media": [],
+      "options": [
+        "Yes, without any formalities throughout the period",
+        "Yes, but after one week, a notice period of 2 or 8 days is required depending on the pay period",
+        "No, termination must always be justified",
+        "Yes, but only with the employee's agreement"
+      ],
+      "correct": 1,
+      "explanation": "Article 13 specifies that if termination occurs after at least one week of work, a notice period of 2 days (daily/weekly pay) or 8 days (monthly pay) is required.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q09",
+      "type": "single-choice",
+      "question": "Dr. Sidki wishes to dismiss an assistant for gross misconduct. According to Article 39, which act is considered gross misconduct?",
+      "media": [],
+      "options": [
+        "Deliberate refusal to perform work within their competence",
+        "A simple 5-minute lateness",
+        "A request for annual leave",
+        "Asking for a salary increase"
+      ],
+      "correct": 0,
+      "explanation": "Article 39 lists gross misconduct, including notably the deliberate and unjustified refusal of the employee to perform work within their competence.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q10",
+      "type": "single-choice",
+      "question": "According to Article 39, an unjustified absence of the employee for more than how many days constitutes gross misconduct?",
+      "media": [],
+      "options": [
+        "2 days",
+        "4 days",
+        "8 days",
+        "15 days"
+      ],
+      "correct": 1,
+      "explanation": "Article 39 considers as gross misconduct the unjustified absence of the employee for more than four days or eight half-days over a twelve-month period.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q11",
+      "type": "single-choice",
+      "question": "According to Article 62, before a dismissal for gross misconduct, Dr. Mourad must:",
+      "media": [],
+      "options": [
+        "Give the employee the opportunity to defend themselves and be heard",
+        "Dismiss immediately without formalities",
+        "Wait 30 days before acting",
+        "Only ask for the union's opinion"
+      ],
+      "correct": 0,
+      "explanation": "Article 62 requires that the employee be able to defend themselves and be heard by the employer before dismissal, in the presence of the employee delegate or union representative.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q12",
+      "type": "single-choice",
+      "question": "According to Article 35, dismissal of an employee without valid reason is:",
+      "media": [],
+      "options": [
+        "Allowed in all cases",
+        "Prohibited",
+        "Allowed if the employee agrees",
+        "Allowed only during the probation period"
+      ],
+      "correct": 1,
+      "explanation": "Article 35 prohibits the dismissal of an employee without valid reason, unless it is related to their aptitude or conduct, or based on the operational requirements of the company.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q13",
+      "type": "single-choice",
+      "question": "Dr. Sidki, as an employer, must issue a work card to his employees. According to Article 23, what must it contain?",
+      "media": [],
+      "options": [
+        "The details set by regulation",
+        "Only the employee's name",
+        "Only the employer's signature",
+        "Only the employee's photo"
+      ],
+      "correct": 0,
+      "explanation": "Article 23 requires the employer to issue a work card containing the details set by regulation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q14",
+      "type": "single-choice",
+      "question": "According to Article 43, what is the minimum notice period for termination of a permanent contract in the absence of gross misconduct?",
+      "media": [],
+      "options": [
+        "2 days",
+        "8 days",
+        "15 days",
+        "30 days"
+      ],
+      "correct": 1,
+      "explanation": "Article 43 specifies that any clause setting the notice period at less than eight days is null and void. The minimum period is therefore 8 days.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q15",
+      "type": "single-choice",
+      "question": "According to Article 52, an employee is entitled to severance pay after how many months of work?",
+      "media": [],
+      "options": [
+        "3 months",
+        "6 months",
+        "12 months",
+        "24 months"
+      ],
+      "correct": 1,
+      "explanation": "Article 52 provides that an employee bound by an indefinite-term contract is entitled to severance pay in the event of dismissal after six months of work in the same company.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q16",
+      "type": "single-choice",
+      "question": "According to Article 53, how many hours of salary does the severance pay represent for the first 5 years of seniority?",
+      "media": [],
+      "options": [
+        "48 hours",
+        "96 hours",
+        "144 hours",
+        "192 hours"
+      ],
+      "correct": 1,
+      "explanation": "Article 53 sets the severance pay at 96 hours of salary for the first five years of seniority.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q17",
+      "type": "single-choice",
+      "question": "According to Article 184, what is the normal working hours for non-agricultural activities in Morocco?",
+      "media": [],
+      "options": [
+        "38 hours per week",
+        "40 hours per week",
+        "44 hours per week",
+        "48 hours per week"
+      ],
+      "correct": 2,
+      "explanation": "Article 184 sets the normal working hours for non-agricultural activities at 2288 hours per year or 44 hours per week.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q18",
+      "type": "single-choice",
+      "question": "According to Article 201, overtime worked between 6am and 9pm entitles to a supplement of:",
+      "media": [],
+      "options": [
+        "15%",
+        "25%",
+        "50%",
+        "75%"
+      ],
+      "correct": 2,
+      "explanation": "Article 201 provides for a 25% supplement for overtime worked between 6am and 9pm in non-agricultural activities.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q19",
+      "type": "single-choice",
+      "question": "According to Article 152, what is the duration of maternity leave for an employee?",
+      "media": [],
+      "options": [
+        "8 weeks",
+        "10 weeks",
+        "12 weeks",
+        "14 weeks"
+      ],
+      "correct": 3,
+      "explanation": "Article 152 provides for maternity leave of fourteen weeks, unless more favorable provisions are provided in the employment contract or collective agreement.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q20",
+      "type": "single-choice",
+      "question": "According to Article 231, after how many months of continuous service is the employee entitled to paid annual leave?",
+      "media": [],
+      "options": [
+        "3 months",
+        "6 months",
+        "9 months",
+        "12 months"
+      ],
+      "correct": 1,
+      "explanation": "Article 231 provides that after six months of continuous service, every employee is entitled to paid annual leave.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q21",
+      "type": "single-choice",
+      "question": "According to Article 231, the duration of paid annual leave is:",
+      "media": [],
+      "options": [
+        "1 day per month of service",
+        "1.5 days per month of service",
+        "2 days per month of service",
+        "2.5 days per month of service"
+      ],
+      "correct": 1,
+      "explanation": "Article 231 sets the duration of paid annual leave at one and a half days of actual work per month of service.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q22",
+      "type": "single-choice",
+      "question": "According to Article 153, for how many weeks after childbirth can the employee not be employed?",
+      "media": [],
+      "options": [
+        "4 weeks",
+        "5 weeks",
+        "6 weeks",
+        "7 weeks"
+      ],
+      "correct": 3,
+      "explanation": "Article 153 provides that employees who have given birth cannot be employed during the period of seven consecutive weeks following childbirth.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q23",
+      "type": "single-choice",
+      "question": "According to Article 346, what discrimination in wages is prohibited?",
+      "media": [],
+      "options": [
+        "Discrimination based on age",
+        "Discrimination based on sex for work of equal value",
+        "Discrimination based on region of origin",
+        "Discrimination based on religion"
+      ],
+      "correct": 1,
+      "explanation": "Article 346 prohibits any discrimination in wages between the two sexes for work of equal value.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q24",
+      "type": "single-choice",
+      "question": "According to Article 362, wages must be paid in:",
+      "media": [],
+      "options": [
+        "Moroccan currency",
+        "Euros",
+        "Dollars",
+        "Any currency chosen by the employer"
+      ],
+      "correct": 0,
+      "explanation": "Article 362 provides that wages must be paid in Moroccan currency notwithstanding any contrary clause.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q25",
+      "type": "single-choice",
+      "question": "According to Article 363, workers must be paid at least:",
+      "media": [],
+      "options": [
+        "Once a month",
+        "Twice a month at a maximum interval of sixteen days",
+        "Once a week",
+        "Once a quarter"
+      ],
+      "correct": 1,
+      "explanation": "Article 363 provides that wages must be paid at least twice a month, at a maximum interval of sixteen days, to workers.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_D1_Q26",
+      "type": "single-choice",
+      "question": "According to Article 72, the employer must issue a work certificate to the employee within a maximum period of:",
+      "media": [],
+      "options": [
+        "3 days",
+        "8 days",
+        "15 days",
+        "30 days"
+      ],
+      "correct": 1,
+      "explanation": "Article 72 requires the employer to issue a work certificate within a maximum period of eight days, under penalty of damages.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

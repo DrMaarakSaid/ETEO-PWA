@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "informatique_logiciels_dentaires_intermediaire2_001",
+    "title": "Informática y Software Dental – Intermedio 2",
+    "specialty": "INFO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "INFO_I2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha recibido un correo sospechoso con un adjunto. La Dra. Tazi le aconseja no abrirlo. ¿Cuál es la principal amenaza de los correos de phishing en un consultorio dental?",
+      "media": [],
+      "options": [
+        "Pérdida de tiempo",
+        "Robo de datos personales e instalación de malware",
+        "Aumento de la factura de Internet",
+        "Eliminación de correos legítimos"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'El phishing tiene como objetivo robar credenciales e instalar programas maliciosos que pueden cifrar sus datos.' El Dr. Chamsi: 'Formaré a mi equipo para reconocer estos correos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi utiliza la misma contraseña para todos los programas. La Dra. Tazi le recomienda cambiar esta práctica. ¿Cuál es la regla fundamental de las contraseñas en un consultorio dental?",
+      "media": [],
+      "options": [
+        "Usar la misma contraseña en todas partes para no olvidarla",
+        "Usar contraseñas únicas, complejas y cambiarlas regularmente",
+        "Anotar las contraseñas en una nota adhesiva pegada a la pantalla",
+        "Usar contraseñas simples para programas no importantes"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'Las contraseñas únicas y complejas limitan el impacto de una filtración de datos.' El Dr. Chamsi: 'Usaré un gestor de contraseñas.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha sido víctima de un ransomware. La Dra. Tazi le ayuda a gestionar la crisis. ¿Qué debe hacer primero en caso de ataque de ransomware?",
+      "media": [],
+      "options": [
+        "Pagar el rescate inmediatamente",
+        "Aislar el ordenador infectado de la red y contactar a un experto en ciberseguridad",
+        "Reiniciar el ordenador",
+        "Ignorar el ataque"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'Aislar el ordenador infectado evita que el ransomware se propague a otras máquinas del consultorio.' El Dr. Chamsi: 'Desconectaré la red inmediatamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha perdido todos los datos debido a un ransomware. La Dra. Tazi ha conservado sus fichas en papel. ¿Qué le falta al Dr. Chamsi para evitar esta situación?",
+      "media": [],
+      "options": [
+        "Un antivirus más potente",
+        "Un plan de copia de seguridad (PRA) con copias offline",
+        "Un ordenador más nuevo",
+        "Un programa de detección de intrusiones"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'Un plan de copia de seguridad regular con copias offline permite recuperar los datos sin pagar el rescate.' El Dr. Chamsi: 'Configuraré una copia de seguridad automática.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi debe notificar un incidente de seguridad. La Dra. Tazi le pregunta sobre las obligaciones. Según la CNDP, ¿cuál es el plazo máximo para notificar una violación de datos personales?",
+      "media": [],
+      "options": [
+        "48 horas",
+        "72 horas",
+        "7 días",
+        "30 días"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'La CNDP recomienda notificar la violación en un plazo de 72 horas desde el conocimiento del incidente.' El Dr. Chamsi: 'Prepararé un procedimiento de notificación de emergencia.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha instalado un software de gestión sin verificar las actualizaciones de seguridad. La Dra. Tazi le recuerda la importancia de las actualizaciones. ¿Por qué son tan importantes las actualizaciones?",
+      "media": [],
+      "options": [
+        "Añaden nuevas funciones",
+        "Corrigen vulnerabilidades de seguridad conocidas",
+        "Aceleran el funcionamiento del programa",
+        "Son opcionales"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'Las actualizaciones corrigen vulnerabilidades que podrían ser explotadas por ciberdelincuentes.' El Dr. Chamsi: 'Activaré las actualizaciones automáticas.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha digitalizado sus fichas y las pone a disposición de forma remota a través de una VPN. La Dra. Tazi sigue usando fichas en papel. Según la CNDP, ¿debe el Dr. Chamsi proteger su VPN?",
+      "media": [],
+      "options": [
+        "No, la VPN está protegida por defecto",
+        "Sí, la VPN debe configurarse con protocolos seguros y autenticación fuerte",
+        "Sí, pero solo si el paciente lo solicita",
+        "No, ya que los datos ya están cifrados"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'Una VPN mal configurada puede exponer los datos. Se deben utilizar protocolos seguros como OpenVPN o WireGuard.' El Dr. Chamsi: 'Revisaré la configuración de mi VPN.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi y la Dra. Tazi comparan el RGPD europeo y la ley marroquí 09-08. ¿Cuál es la principal diferencia en las sanciones financieras?",
+      "media": [],
+      "options": [
+        "No hay diferencia",
+        "El RGPD prevé multas de hasta 20 millones de euros, la ley 09-08 hasta 100 000 DH",
+        "La ley 09-08 es más estricta que el RGPD",
+        "Ambos prevén las mismas cantidades"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chamsi explica: 'El RGPD es más severo en las sanciones financieras, pero la ley 09-08 impone obligaciones similares.' La Dra. Tazi: 'Debemos cumplir con ambas si tratamos datos europeos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi utiliza un software de telerradiología para compartir imágenes con un colega. La Dra. Tazi utiliza el correo postal. Según la CNDP, ¿qué obligación se aplica al Dr. Chamsi?",
+      "media": [],
+      "options": [
+        "Ninguna obligación especial",
+        "Cifrar el intercambio y obtener el consentimiento del paciente",
+        "Presentar una declaración adicional al ministerio",
+        "Utilizar un software certificado por el Consejo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'El intercambio de datos de salud debe estar cifrado y el paciente debe estar informado.' El Dr. Chamsi: 'Protegeré el intercambio de radiografías.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha instalado cámaras de videovigilancia. La Dra. Tazi tiene un espejo sin cámara. Según la CNDP, ¿dónde debe el Dr. Chamsi informar a los pacientes sobre la presencia de cámaras?",
+      "media": [],
+      "options": [
+        "Solo en la sala de espera",
+        "En la entrada del consultorio y en la zona de grabación",
+        "Solo en la factura",
+        "No se requiere información"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'La información debe ser visible en la entrada y en la zona de grabación, para que los pacientes estén informados.' El Dr. Chamsi: 'Instalaré carteles informativos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi quiere utilizar inteligencia artificial para analizar radiografías. La Dra. Tazi pregunta sobre el cumplimiento. Según la CNDP, ¿debe el Dr. Chamsi obtener una autorización previa?",
+      "media": [],
+      "options": [
+        "No, la IA es libre",
+        "Sí, ya que la IA implica un tratamiento automatizado de datos de salud",
+        "Sí, pero solo para investigación",
+        "No, ya que las radiografías son anónimas"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'La IA que analiza datos de salud se considera un tratamiento automatizado que requiere autorización previa.' El Dr. Chamsi: 'Presentaré una solicitud de autorización.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi se ha suscrito a un servicio de almacenamiento en la nube para las copias de seguridad. La Dra. Tazi guarda las copias de seguridad localmente. Según la ley 09-08, ¿debe el Dr. Chamsi informar a los pacientes sobre el lugar de almacenamiento de sus datos?",
+      "media": [],
+      "options": [
+        "No, el lugar de almacenamiento no importa",
+        "Sí, el paciente debe ser informado sobre el país de almacenamiento de sus datos",
+        "Sí, pero solo si el almacenamiento está fuera de Marruecos",
+        "No, ya que la nube siempre está protegida"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. Tazi explica: 'El paciente debe ser informado si sus datos se transfieren fuera de Marruecos, ya que implica una protección diferente.' El Dr. Chamsi: 'Informaré a mis pacientes sobre el lugar de almacenamiento.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha digitalizado sus fichas con un escáner. La Dra. Tazi sigue fotocopiando documentos. En cuanto a la conservación de datos, ¿cuál es la obligación común de ambos?",
+      "media": [],
+      "options": [
+        "Conservar los documentos de forma indefinida",
+        "Garantizar la integridad y confidencialidad de los datos, independientemente del soporte",
+        "Conservar los documentos solo en formato papel",
+        "Destruir los documentos después de 5 años"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Chamsi explica: 'Independientemente del soporte, estamos obligados a garantizar la integridad y confidencialidad de los datos.' La Dra. Tazi: 'Aseguraré la seguridad de mis archivos en papel.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi utiliza un software de reserva de citas en línea. La Dra. Tazi utiliza una agenda en papel. Según la CNDP, ¿debe el Dr. Chamsi declarar este software?",
+      "media": [],
+      "options": [
+        "No, las citas no son datos personales",
+        "Sí, ya que recoge datos personales (nombre, teléfono, email)",
+        "Sí, pero solo si el software es de pago",
+        "No, si el software está alojado en Marruecos"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'La recogida de datos personales a través de un software de reserva en línea debe ser declarada ante la CNDP.' El Dr. Chamsi: 'Presentaré una declaración para mi software.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha sido víctima de una filtración de datos debido a un hackeo. La Dra. Tazi le aconseja sobre el procedimiento. ¿Qué debe hacer primero el Dr. Chamsi?",
+      "media": [],
+      "options": [
+        "Contactar inmediatamente a la CNDP",
+        "Notificar a los pacientes afectados",
+        "Proteger el sistema para detener la filtración",
+        "Cambiar todas las contraseñas"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. Tazi explica: 'La prioridad es detener la filtración protegiendo el sistema, luego notificar a la CNDP y a los pacientes.' El Dr. Chamsi: 'Primero aislaré el sistema infectado.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha instalado un antivirus pero no ha activado el cortafuegos. La Dra. Tazi le explica su error. ¿Cuál es la función del cortafuegos en un consultorio dental?",
+      "media": [],
+      "options": [
+        "Analizar los correos entrantes",
+        "Bloquear el acceso no autorizado a la red del consultorio",
+        "Escanear archivos en busca de virus",
+        "Cifrar los datos en tránsito"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'El cortafuegos actúa como una barrera que filtra el acceso a la red del consultorio.' El Dr. Chamsi: 'Activaré mi cortafuegos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha recibido una solicitud de acceso a los datos de un paciente. La Dra. Tazi le recuerda el procedimiento. Según la ley 09-08, ¿en qué plazo debe responder el Dr. Chamsi a esta solicitud?",
+      "media": [],
+      "options": [
+        "24 horas",
+        "48 horas",
+        "1 mes",
+        "2 meses"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. Tazi explica: 'El plazo legal para responder a una solicitud de acceso a datos personales es de 1 mes.' El Dr. Chamsi: 'Prepararé los documentos para responder al paciente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha respondido a la solicitud de acceso del paciente. La Dra. Tazi le pregunta si ha justificado correctamente su respuesta. ¿Qué debe contener la respuesta a una solicitud de acceso?",
+      "media": [],
+      "options": [
+        "Solo los datos solicitados",
+        "Los datos solicitados y una copia de los consentimientos",
+        "Los datos solicitados, información sobre los derechos y un formulario de reclamación",
+        "Una simple confirmación de recepción"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. Tazi explica: 'La respuesta debe incluir los datos, información sobre los derechos y el procedimiento de reclamación.' El Dr. Chamsi: 'Prepararé una respuesta completa.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha recibido una solicitud de un paciente para rectificar datos personales. La Dra. Tazi explica el procedimiento. Según la ley 09-08, ¿cuál es el derecho del paciente?",
+      "media": [],
+      "options": [
+        "El paciente puede solicitar la rectificación de datos inexactos",
+        "El paciente no puede rectificar sus datos médicos",
+        "El paciente debe pasar por un abogado",
+        "La rectificación requiere el consentimiento de la CNDP"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Tazi explica: 'El derecho de rectificación permite al paciente corregir datos inexactos sobre sí mismo.' El Dr. Chamsi: 'Rectificaré los datos del paciente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha recibido una advertencia de la CNDP por incumplimiento. La Dra. Tazi le ayuda a entender los riesgos. ¿Qué le espera al Dr. Chamsi en caso de continuar con el incumplimiento?",
+      "media": [],
+      "options": [
+        "Multa de 100 a 1 000 DH",
+        "Multa de 10 000 a 100 000 DH y/o sanciones penales",
+        "Suspensión de la actividad",
+        "Cierre definitivo del consultorio"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'La CNDP puede imponer multas de 10 000 a 100 000 DH e iniciar un proceso penal.' El Dr. Chamsi: 'Regularizaré mi situación inmediatamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha subcontratado el almacenamiento de sus datos a un proveedor externo. La Dra. Tazi le advierte sobre la responsabilidad. Según la ley 09-08, ¿debe el Dr. Chamsi controlar a su proveedor?",
+      "media": [],
+      "options": [
+        "No, el proveedor es el único responsable",
+        "Sí, el Dr. Chamsi sigue siendo responsable del tratamiento y debe controlar a su subcontratista",
+        "Sí, pero solo si el proveedor es extranjero",
+        "No, la ley no prevé esta obligación"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'El responsable del tratamiento sigue siendo plenamente responsable de la protección de los datos, incluso cuando los subcontrata.' El Dr. Chamsi: 'Auditaré a mi proveedor.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q22",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha perdido un portátil con datos de pacientes sin cifrar. La Dra. Tazi le informa sobre las consecuencias. ¿Cuál es la primera obligación del Dr. Chamsi?",
+      "media": [],
+      "options": [
+        "Reemplazar el ordenador",
+        "Notificar a la CNDP y a los pacientes afectados sobre la pérdida",
+        "Cambiar de proveedor",
+        "Desconectar las cuentas"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'La pérdida de un dispositivo con datos sin cifrar es una violación de datos que requiere notificación.' El Dr. Chamsi: 'Notificaré a la CNDP y a los pacientes.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha decidido usar contraseñas para sus programas. La Dra. Tazi le recomienda utilizar la autenticación de dos factores (2FA). ¿Cuál es la ventaja de la 2FA?",
+      "media": [],
+      "options": [
+        "Una sola contraseña es suficiente",
+        "Doble nivel de seguridad: contraseña + código temporal",
+        "La 2FA es opcional",
+        "La 2FA ralentiza el trabajo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'La 2FA añade un nivel adicional de seguridad a la contraseña, dificultando el robo de credenciales.' El Dr. Chamsi: 'Activaré la 2FA en todos mis programas.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi ha sufrido un incidente de seguridad. La Dra. Tazi le recomienda llevar un registro de incidentes. ¿Por qué es importante este registro?",
+      "media": [],
+      "options": [
+        "Es una obligación legal sin utilidad práctica",
+        "Permite rastrear los incidentes para la CNDP y mejorar la seguridad",
+        "Sirve solo para la facturación",
+        "Es opcional"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Tazi explica: 'El registro de incidentes permite rastrear los eventos de seguridad y demostrar el cumplimiento en caso de auditoría.' El Dr. Chamsi: 'Crearé un registro de incidentes.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Chamsi, después de asegurar su sistema informático con la Dra. Tazi, recibe felicitaciones. ¿Cuál es el siguiente paso para el Dr. Chamsi?",
+      "media": [],
+      "options": [
+        "Convertirse en experto en ciberseguridad en odontología",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar las buenas prácticas"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Tazi explica: 'El dominio de la ciberseguridad es una habilidad valiosa. Convertirse en experto es el siguiente paso.' El Dr. Chamsi: 'Me formaré en ciberseguridad.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "syndicat_intermediaire1_001",
+    "title": "Syndicat - Intermédiaire 1",
+    "specialty": "SYND",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "SYND_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr YOUSSEF explique à Dr MIKOU le processus électoral syndical. Selon le code du travail, comment les représentants syndicaux sont-ils élus ?",
+      "media": [],
+      "options": [
+        "Par cooptation entre membres fondateurs",
+        "Par scrutin secret au sein de la profession",
+        "Par nomination du ministère de la Santé",
+        "Par tirage au sort parmi les adhérents"
+      ],
+      "correct": 1,
+      "explanation": "YOUSSEF explique : 'Les représentants syndicaux sont élus au scrutin secret par les adhérents.' MIKOU : 'Donc ma voix compte ?' YOUSSEF : 'Oui, c'est une démocratie professionnelle !'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SYND_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr MIKOU s'interroge sur la structure d'un syndicat. Dr YOUSSEF lui explique qu'il y a différents niveaux. Selon le code du travail, quels sont les échelons syndicaux ?",
+      "media": [],
+      "options": [
+        "National et régional uniquement",
+        "National, régional, départemental et local",
+        "International et national",
+        "Uniquement le niveau national"
+      ],
+      "correct": 1,
+      "explanation": "YOUSSEF explique : 'Le syndicat a des structures nationales, régionales, départementales et locales.' MIKOU : 'Donc je peux m'impliquer près de chez moi.' YOUSSEF : 'Exactement !'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SYND_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr MIKOU demande comment une convention collective est négociée. Dr YOUSSEF lui explique que le processus est structuré. Quelle est la première étape ?",
+      "media": [],
+      "options": [
+        "La grève immédiate",
+        "La notification de la demande de négociation",
+        "La saisine du tribunal",
+        "L'appel à la presse"
+      ],
+      "correct": 1,
+      "explanation": "YOUSSEF explique : 'La première étape est la notification officielle de la demande de négociation.' MIKOU : 'Donc on ne fait pas grève tout de suite ?' YOUSSEF : 'Non, on négocie d'abord, c'est plus civilisé !'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SYND_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr MIKOU veut comprendre le rôle des sections syndicales. Selon le code du travail, à quoi servent les sections syndicales ?",
+      "media": [],
+      "options": [
+        "À organiser des grèves exclusivement",
+      "À représenter les adhérents au niveau de l'entreprise ou du cabinet",
+      "À gérer le budget du syndicat",
+      "À élire le président du syndicat"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Les sections syndicales représentent les adhérents au niveau local.' MIKOU : 'Donc je peux créer une section dans mon cabinet ?' YOUSSEF : 'Si tu as assez de collègues, oui !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q05",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF explique à Dr MIKOU le concept de 'délégué syndical'. Quelle est la fonction principale d'un délégué syndical ?",
+    "media": [],
+    "options": [
+      "Organiser des fêtes de cabinet",
+      "Représenter les salariés auprès de l'employeur",
+      "Gérer les comptes du syndicat",
+      "Recruter de nouveaux patients"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Le délégué syndical représente les salariés auprès de l'employeur.' MIKOU : 'Donc si j'ai un problème avec mon assistant, je vois le délégué ?' YOUSSEF : 'Oui, c'est lui l'intermédiaire !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q06",
+    "type": "single-choice",
+    "question": "Dr MIKOU s'inquiète : 'Et si l'employeur refuse de négocier ?' Dr YOUSSEF lui explique les recours. Selon le code du travail, que peut faire un syndicat en cas de refus de négocier ?",
+    "media": [],
+    "options": [
+      "Rien, il doit accepter",
+      "Saisir le tribunal ou organiser une grève",
+      "Fermer le cabinet",
+      "Appeler la police"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'En cas de refus, le syndicat peut saisir le tribunal ou organiser une grève légale.' MIKOU : 'Donc on a des armes !' YOUSSEF : 'Des armes légales, oui !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q07",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF évoque l'importance des élections professionnelles. Selon le code du travail, à quelle fréquence ont lieu les élections des représentants syndicaux ?",
+    "media": [],
+    "options": [
+      "Tous les ans",
+      "Tous les 2 ans",
+      "Tous les 4 ans",
+      "Tous les 5 ans"
+    ],
+    "correct": 2,
+    "explanation": "YOUSSEF explique : 'Les élections syndicales ont lieu tous les 4 ans.' MIKOU : 'Comme les élections présidentielles, mais avec moins de médiatisation !' YOUSSEF : 'Et avec des vrais enjeux pour notre profession !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q08",
+    "type": "single-choice",
+    "question": "Dr MIKOU demande : 'Peut-on créer un syndicat facilement ?' Dr YOUSSEF lui explique la procédure. Selon le code du travail, combien de fondateurs sont nécessaires pour créer un syndicat ?",
+    "media": [],
+    "options": [
+      "2 fondateurs",
+      "5 fondateurs",
+      "10 fondateurs",
+      "20 fondateurs"
+    ],
+    "correct": 2,
+    "explanation": "YOUSSEF explique : 'Il faut au moins 10 fondateurs pour créer un syndicat.' MIKOU : 'Donc avec mes 10 meilleurs amis dentistes, on peut créer le nôtre ?' YOUSSEF : 'Oui, mais ça demande du travail !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q09",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF explique à Dr MIKOU la notion de 'syndicat représentatif'. Qu'est-ce qui rend un syndicat représentatif ?",
+    "media": [],
+    "options": [
+      "Son ancienneté",
+      "Le nombre d'adhérents et les résultats électoraux",
+      "La taille de son budget",
+      "Le nombre de ses salariés"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Un syndicat est représentatif par le nombre d'adhérents et les résultats électoraux.' MIKOU : 'Donc il faut des adhérents pour être écouté.' YOUSSEF : 'Exactement, la force du nombre !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q10",
+    "type": "single-choice",
+    "question": "Dr MIKOU s'interroge sur le financement des syndicats. Selon le code du travail, quelles sont les sources de financement d'un syndicat ?",
+    "media": [],
+    "options": [
+      "Les subventions de l'État uniquement",
+      "Les cotisations des adhérents et les subventions",
+      "Les dons des patients",
+      "Le financement des laboratoires dentaires"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Les syndicats sont financés par les cotisations des adhérents et les subventions.' MIKOU : 'Donc ma cotisation sert à financer le syndicat.' YOUSSEF : 'Oui, et c'est un investissement pour ta protection !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q11",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF explique le droit de grève. Selon le code du travail, quelles sont les conditions pour une grève légale ?",
+    "media": [],
+    "options": [
+      "Aucune condition, la grève est libre",
+      "Préavis et respect des procédures légales",
+      "Autorisation du ministère",
+      "Unanimité des adhérents"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Une grève légale doit respecter un préavis et les procédures légales.' MIKOU : 'Donc on ne peut pas faire grève du jour au lendemain.' YOUSSEF : 'Non, il faut organiser et prévenir.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q12",
+    "type": "single-choice",
+    "question": "Dr MIKOU demande : 'Le syndicat peut-il m'aider pour mes impôts ?' Dr YOUSSEF précise le rôle du syndicat. Quelle est la réponse ?",
+    "media": [],
+    "options": [
+      "Non, le syndicat ne s'occupe pas des impôts",
+      "Oui, il peut conseiller sur la fiscalité professionnelle",
+      "Oui, il paie les impôts à ta place",
+      "Non, c'est le rôle exclusif du comptable"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Le syndicat peut te conseiller sur la fiscalité professionnelle.' MIKOU : 'Donc je peux économiser des sous ?' YOUSSEF : 'Peut-être, en tout cas tu seras mieux informé !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q13",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF évoque la solidarité syndicale. Selon lui, quel est le principe fondamental de la solidarité syndicale ?",
+    "media": [],
+    "options": [
+      "La compétition entre dentistes",
+      "L'entraide et la défense collective",
+      "L'isolement des adhérents",
+      "La rivalité entre syndicats"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Le syndicat, c'est l'entraide et la défense collective.' MIKOU : 'Donc si j'ai un problème, je ne suis pas seul.' YOUSSEF : 'Exactement, unis on est plus forts !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q14",
+    "type": "single-choice",
+    "question": "Dr MIKOU s'interroge sur la protection syndicale. Selon le code du travail, les représentants syndicaux bénéficient-ils d'une protection particulière ?",
+    "media": [],
+    "options": [
+      "Non, ils sont comme tout le monde",
+      "Oui, ils bénéficient d'une protection contre le licenciement abusif",
+      "Oui, ils sont intouchables",
+      "Non, ils peuvent être licenciés sans motif"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Les représentants syndicaux bénéficient d'une protection contre le licenciement abusif.' MIKOU : 'Donc ils sont plus protégés ?' YOUSSEF : 'Oui, pour qu'ils puissent exercer leur mission sereinement.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q15",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF explique le rôle du syndicat dans la formation continue. Quelle est la position du syndicat sur la formation ?",
+    "media": [],
+    "options": [
+      "La formation est inutile",
+      "La formation est un droit et une nécessité",
+      "La formation est réservée aux jeunes",
+      "La formation est une perte de temps"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'La formation continue est un droit et une nécessité pour les dentistes.' MIKOU : 'Donc le syndicat milite pour plus de formations.' YOUSSEF : 'Oui, pour qu'on reste compétents !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q16",
+    "type": "single-choice",
+    "question": "Dr MIKOU demande : 'Le syndicat peut-il aider les dentistes en difficulté financière ?' Dr YOUSSEF répond :",
+    "media": [],
+    "options": [
+      "Non, le syndicat n'aide pas financièrement",
+      "Oui, des fonds de solidarité existent",
+      "Oui, le syndicat paie les dettes",
+      "Non, ce n'est pas son rôle"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Des fonds de solidarité existent pour aider les dentistes en difficulté.' MIKOU : 'Donc si je fais faillite, le syndicat m'aide ?' YOUSSEF : 'Il peut t'accompagner, oui.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q17",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF évoque l'importance de la communication syndicale. Selon lui, pourquoi est-il important de communiquer sur les actions du syndicat ?",
+    "media": [],
+    "options": [
+      "Pour se faire de la publicité",
+      "Pour informer les adhérents et renforcer l'unité",
+      "Pour concurrencer les autres syndicats",
+      "Pour attirer des patients"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'La communication informe les adhérents et renforce l'unité du syndicat.' MIKOU : 'Donc il faut que je sois informé des actions.' YOUSSEF : 'Oui, pour que tu puisses participer !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q18",
+    "type": "single-choice",
+    "question": "Dr MIKOU demande : 'Y a-t-il des conflits entre syndicats ?' Dr YOUSSEF répond :",
+    "media": [],
+    "options": [
+      "Non, ils sont toujours unis",
+      "Oui, des divergences de stratégie existent",
+      "Oui, ils sont en guerre permanente",
+      "Non, ils travaillent tous ensemble"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Des divergences de stratégie peuvent exister entre syndicats.' MIKOU : 'Donc ils ne sont pas toujours d'accord ?' YOUSSEF : 'Non, mais ils se retrouvent souvent sur l'essentiel.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q19",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF explique le rôle du syndicat dans les relations avec les institutions. Avec quelles institutions le syndicat interagit-il principalement ?",
+    "media": [],
+    "options": [
+      "Les banques uniquement",
+      "Le ministère de la Santé, la CNSS, l'ONMD",
+      "Les écoles dentaires uniquement",
+      "Les laboratoires pharmaceutiques"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Le syndicat interagit avec le ministère, la CNSS et l'ONMD.' MIKOU : 'Donc il est au cœur des décisions.' YOUSSEF : 'Oui, pour défendre nos intérêts !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q20",
+    "type": "single-choice",
+    "question": "Dr MIKOU s'interroge sur l'avenir du syndicalisme dentaire. Dr YOUSSEF lui répond que l'avenir repose sur :",
+    "media": [],
+    "options": [
+      "L'individualisme des dentistes",
+      "La mobilisation et l'engagement collectif",
+      "La technologie uniquement",
+      "La disparition des syndicats"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'L'avenir du syndicalisme repose sur la mobilisation et l'engagement collectif.' MIKOU : 'Donc il faut que je m'engage !' YOUSSEF : 'Exactement, MIKOU, un par un !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q21",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF explique le principe de l'action syndicale. Selon lui, l'action syndicale doit être :",
+    "media": [],
+    "options": [
+      "Violente pour se faire entendre",
+      "Légale et constructive",
+      "Secrète et discrète",
+      "Spectaculaire pour les médias"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'L'action syndicale doit être légale et constructive.' MIKOU : 'Donc pas de débordements ?' YOUSSEF : 'Non, on est des professionnels !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q22",
+    "type": "single-choice",
+    "question": "Dr MIKOU demande : 'Le syndicat peut-il aider à la formation des assistants dentaires ?' Dr YOUSSEF répond :",
+    "media": [],
+    "options": [
+      "Non, le syndicat ne s'occupe que des dentistes",
+      "Oui, il peut contribuer à leur formation",
+      "Seulement si les assistants sont syndiqués",
+      "Non, c'est le rôle de l'Ordre"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Le syndicat peut contribuer à la formation des assistants dentaires.' MIKOU : 'Donc il s'intéresse à toute l'équipe.' YOUSSEF : 'Oui, parce qu'une bonne équipe, c'est une bonne pratique !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q23",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF explique la notion de 'dialogue social'. Qu'est-ce que le dialogue social ?",
+    "media": [],
+    "options": [
+      "Une conversation entre amis dentistes",
+      "Un échange entre les syndicats et les autorités",
+      "Un débat télévisé sur la dentisterie",
+      "Une réunion de famille"
+    ],
+    "correct": 1,
+    "explanation": "YOUSSEF explique : 'Le dialogue social est l'échange entre les syndicats et les autorités.' MIKOU : 'Donc ils discutent des problèmes de la profession.' YOUSSEF : 'Oui, c'est essentiel pour avancer !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q24",
+    "type": "single-choice",
+    "question": "Dr MIKOU veut comprendre comment le syndicat gère les conflits internes. Dr YOUSSEF lui explique que la gestion des conflits se fait par :",
+    "media": [],
+    "options": [
+      "L'arbitrage et le dialogue",
+      "L'exclusion pure et simple",
+      "La mise à l'écart",
+      "Le silence"
+    ],
+    "correct": 0,
+    "explanation": "YOUSSEF explique : 'Les conflits internes se règlent par l'arbitrage et le dialogue.' MIKOU : 'Donc on discute avant de s'énerver ?' YOUSSEF : 'Oui, c'est plus constructif !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "SYND_I1_Q25",
+    "type": "single-choice",
+    "question": "Dr YOUSSEF, après avoir expliqué les rouages du syndicat à Dr MIKOU, lui demande s'il est prêt à s'engager. MIKOU répond :",
+    "media": [],
+    "options": [
+      "Je préfère rester isolé",
+      "Je suis prêt à m'engager et à adhérer",
+      "Le syndicat ne sert à rien",
+      "Je vais créer mon propre syndicat"
+    ],
+    "correct": 1,
+    "explanation": "MIKOU conclut : 'Je suis prêt à m'engager et à adhérer !' YOUSSEF, ému : 'Enfin ! Tu verras, MIKOU, le syndicat change une carrière !' MIKOU : 'Je te fais confiance, YOUSSEF !'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  }
+]
+}

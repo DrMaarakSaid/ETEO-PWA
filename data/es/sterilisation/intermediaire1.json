@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_intermediaire1_001",
+    "title": "Esterilización - Nivel Intermedio 1",
+    "specialty": "STER",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_I1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN, ahora independiente, prepara su primer set quirúrgico. La Dra. FATIMA le explicó que el movimiento hacia adelante es crucial. ¿Cuál es la regla fundamental del movimiento hacia adelante?",
+      "media": [],
+      "options": [
+        "Los instrumentos deben moverse en ambos sentidos",
+        "El camino siempre va de la zona sucia a la limpia",
+        "Se puede retroceder si se olvidó un instrumento",
+        "La dirección del movimiento no importa"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El movimiento hacia adelante es la regla de oro. Nunca retrocedemos.» El Dr. YASSIN anota cuidadosamente esta regla.",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q02",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN atiende a un paciente urgente. Necesita esterilizar rápidamente un instrumento. La Dra. FATIMA le recuerda: «El ciclo Flash es una opción, pero...» ¿Cuál es la limitación principal del ciclo Flash?",
+      "media": [],
+      "options": [
+        "Es demasiado largo",
+        "No permite almacenar los instrumentos",
+        "Es demasiado caro",
+        "Es ineficaz"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA precisa: «El Flash es práctico para urgencias, pero después los instrumentos no se pueden almacenar.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN pregunta sobre la frecuencia de las pruebas. La Dra. FATIMA le dice: «Hay pruebas diarias, semanales y mensuales.» ¿Qué verifica el test de Bowie-Dick?",
+      "media": [],
+      "options": [
+        "La temperatura del autoclave",
+        "La penetración del vapor en la carga",
+        "La calidad del agua",
+        "La presión del aire"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El Bowie-Dick se realiza a diario. Verifica que el vapor penetre en todas partes.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN prepara su primer lote de instrumentos para el autoclave. Recuerda lo que la Dra. FATIMA le dijo sobre la carga. ¿Cuál es la regla de carga del autoclave?",
+      "media": [],
+      "options": [
+        "Se puede cargar todo lo que se quiera",
+        "Los instrumentos deben colocarse con espacios para la circulación del vapor",
+        "Hay que apilarlos para ahorrar espacio",
+        "El orden de carga no importa"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El vapor debe circular libremente. Un autoclave sobrecargado es un fracaso.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN observa marcas blancas en los instrumentos después de la esterilización. La Dra. FATIMA le dice: «Es un problema de calidad del agua.» ¿Cuál es la solución?",
+      "media": [],
+      "options": [
+        "Usar agua del grifo",
+        "Usar agua osmótica o desmineralizada",
+        "Limpiar los instrumentos antes de la esterilización",
+        "Aumentar la temperatura"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Los depósitos son causados por los minerales. El agua osmótica es la solución.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe esterilizar instrumentos huecos (con canales). Recuerda lo que la Dra. FATIMA le dijo sobre las clases de autoclaves. ¿Qué tipo de autoclave es obligatorio para instrumentos huecos?",
+      "media": [],
+      "options": [
+        "Clase B",
+        "Clase S",
+        "Clase N",
+        "Clase A"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «Solo el autoclave clase B puede procesar instrumentos huecos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN se preocupa por los riesgos de contaminación cruzada. La Dra. FATIMA le recuerda la regla fundamental. ¿Cómo organizar las zonas en el consultorio para evitar la contaminación?",
+      "media": [],
+      "options": [
+        "Una zona para todo",
+        "Tres zonas: sucia, limpia, estéril",
+        "Dos zonas: sucia y limpia",
+        "Las zonas no importan"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La sectorización es necesaria: zona sucia (recepción), zona limpia (lavado), zona estéril (almacenamiento).»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q08",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe elegir el embalaje para sus instrumentos. La Dra. FATIMA le recuerda los criterios de elección. ¿Cuál es el primer criterio para el embalaje?",
+      "media": [],
+      "options": [
+        "Estética",
+        "Precio",
+        "Permeabilidad al vapor y hermeticidad a los microorganismos",
+        "Color"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. FATIMA explica: «El embalaje debe dejar pasar el vapor, pero bloquear los microorganismos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN pregunta sobre el test biológico. La Dra. FATIMA le dice: «Es la única prueba que da una prueba directa.» ¿Qué verifica el test biológico?",
+      "media": [],
+      "options": [
+        "La temperatura",
+        "La destrucción de esporas",
+        "La presión",
+        "La humedad"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El test biológico expone esporas y verifica que sean destruidas. Es la prueba definitiva.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q10",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe lubricar sus instrumentos. La Dra. FATIMA le dice: «La lubricación es esencial, pero hay una regla.» ¿Cuándo se deben lubricar los instrumentos?",
+      "media": [],
+      "options": [
+        "Antes de la limpieza",
+        "Después de la limpieza, antes de la esterilización",
+        "Después de la esterilización",
+        "Una vez al mes"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La lubricación se realiza después de la limpieza, antes de la esterilización. En el autoclave, la lubricación se vuelve definitiva.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN recibe un set de laboratorio para esterilizar. La Dra. FATIMA le explica la diferencia entre esterilización y desinfección. ¿Cuál es la diferencia fundamental?",
+      "media": [],
+      "options": [
+        "La esterilización es más rápida",
+        "La esterilización es más cara",
+        "La esterilización destruye todo, incluidas las esporas",
+        "La esterilización utiliza productos químicos"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. FATIMA explica: «La esterilización elimina toda la vida microbiana, incluidas las esporas. La desinfección solo reduce la carga microbiana.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q12",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe organizar la zona de clasificación. La Dra. FATIMA le explica el papel de esta zona. ¿Cuál es la función principal de la zona de clasificación?",
+      "media": [],
+      "options": [
+        "Almacenamiento de instrumentos estériles",
+        "Recepción, verificación y desmontaje del material",
+        "Esterilización de instrumentos",
+        "Embalaje de instrumentos"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La zona de clasificación es la primera etapa. Allí se recibe, verifica y prepara el material antes del lavado.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN descubre que uno de sus embalajes estériles está húmedo. La Dra. FATIMA le dice: «No se puede usar.» ¿Por qué?",
+      "media": [],
+      "options": [
+        "Es antiestético",
+        "La humedad indica una ruptura de la barrera estéril",
+        "Es demasiado blando",
+        "Es difícil de abrir"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La humedad en un embalaje estéril es una señal de alarma. La barrera estéril está comprometida.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q14",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN pregunta sobre el mantenimiento técnico de los autoclaves. La Dra. FATIMA le dice: «Es obligatorio.» ¿Cuál es la frecuencia recomendada de mantenimiento técnico?",
+      "media": [],
+      "options": [
+        "Una vez al año",
+        "Una vez al mes",
+        "Una vez al trimestre",
+        "Una vez a la semana"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «El mantenimiento anual es obligatorio para garantizar la seguridad y la conformidad.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe formar a un nuevo miembro del equipo de esterilización. La Dra. FATIMA le da un consejo. ¿Cuál es el primer mensaje que debe transmitir?",
+      "media": [],
+      "options": [
+        "La esterilización es rápida",
+        "La esterilización es una cadena donde cada eslabón importa",
+        "La esterilización es simple",
+        "La esterilización es secundaria"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «El primer mensaje: la esterilización es una cadena. Un eslabón débil y todo el sistema se derrumba.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q16",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN descubre que el test de fuga ha fallado. La Dra. FATIMA le dice: «Hay que actuar de inmediato.» ¿Qué debe hacer?",
+      "media": [],
+      "options": [
+        "Ignorar el problema",
+        "Llamar al servicio técnico",
+        "Usar el autoclave con normalidad",
+        "Aumentar la temperatura"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Un test de fuga fallido significa que el autoclave no es estanco. No se puede usar.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN prepara una carga de instrumentos para el autoclave. La Dra. FATIMA le recuerda que la sobrecarga es peligrosa. ¿Por qué?",
+      "media": [],
+      "options": [
+        "El autoclave puede explotar",
+        "El vapor no circula y la esterilización falla",
+        "Los instrumentos pueden dañarse",
+        "El ciclo es demasiado largo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Una carga demasiado densa bloquea la circulación del vapor y pone en peligro la esterilización.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q18",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe elegir un desinfectante para superficies. La Dra. FATIMA le recuerda las precauciones. ¿Cuál es la principal precaución al manipular aldehídos?",
+      "media": [],
+      "options": [
+        "Su alto precio",
+        "Su toxicidad e irritación",
+        "Su ineficacia",
+        "Su olor"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Los aldehídos son eficaces, pero tóxicos. Hay que usarlos con precaución.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN pregunta sobre el almacenamiento de instrumentos estériles. La Dra. FATIMA le da instrucciones claras. ¿Dónde se deben almacenar los instrumentos estériles?",
+      "media": [],
+      "options": [
+        "En un lugar húmedo",
+        "En un lugar seco, limpio y protegido del polvo",
+        "Al sol",
+        "En un lugar frío"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Los instrumentos estériles deben almacenarse en un lugar seco y limpio para preservar la barrera estéril.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q20",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe explicar a un paciente preocupado la importancia de la esterilización. La Dra. FATIMA le aconseja enfatizar la seguridad. ¿Cuál es el mensaje clave?",
+      "media": [],
+      "options": [
+        "La esterilización garantiza la seguridad de los pacientes",
+        "La esterilización es rutina",
+        "La esterilización es obligatoria por ley",
+        "La esterilización es una práctica común"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «El paciente debe entender que la esterilización está destinada ante todo a su seguridad.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN descubre que el indicador químico del autoclave no alcanzó la etapa requerida. La Dra. FATIMA le dice: «Es una señal de alarma.» ¿Qué significa esto?",
+      "media": [],
+      "options": [
+        "El autoclave no alcanzó los parámetros de esterilización",
+        "El indicador está defectuoso",
+        "El ciclo ha terminado",
+        "La carga es correcta"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «Un indicador químico que no cambia de color significa que no se alcanzaron las condiciones de esterilización.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q22",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe gestionar un pico de actividad con muchos pacientes. La Dra. FATIMA le recuerda la importancia de no sacrificar la esterilización. ¿Cuál es la regla?",
+      "media": [],
+      "options": [
+        "Se pueden acelerar los ciclos en urgencias",
+        "Nunca se debe comprometer la esterilización, incluso en urgencias",
+        "Se pueden omitir las pruebas en periodos de sobrecarga",
+        "Se puede esterilizar menos tiempo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «La esterilización nunca debe comprometerse. La seguridad de los pacientes está por encima de todo.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe reemplazar un instrumento dañado. La Dra. FATIMA le explica la importancia del estado de los instrumentos. ¿Por qué es peligroso un instrumento dañado?",
+      "media": [],
+      "options": [
+        "Es antiestético",
+        "En las grietas pueden esconderse microorganismos",
+        "Es más difícil de usar",
+        "Es más caro de reemplazar"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. FATIMA explica: «Las grietas y rayones pueden servir de refugio a los microorganismos. Un instrumento dañado es un riesgo.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q24",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe organizar la formación continua del equipo de esterilización. La Dra. FATIMA le aconseja planificar sesiones. ¿Cuál es la frecuencia recomendada?",
+      "media": [],
+      "options": [
+        "Una vez al año",
+        "Cada seis meses",
+        "Cada trimestre",
+        "Cada mes"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. FATIMA explica: «La formación trimestral permite mantener las habilidades y recordar las buenas prácticas.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN, orgulloso de sus éxitos, recibe un cumplido de la Dra. FATIMA: «Estás empezando a dominar la cadena de esterilización.» ¿Cuál es el siguiente paso para el Dr. YASSIN?",
+      "media": [],
+      "options": [
+        "Formar a otros miembros del equipo",
+        "Descansar",
+        "Cambiar de especialidad",
+        "Olvidar los fundamentos"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «El siguiente paso es la transmisión de conocimientos. La formación es la clave de un equipo eficaz.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

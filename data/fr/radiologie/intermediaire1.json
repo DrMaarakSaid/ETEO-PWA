@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "radiologie_intermediaire1_001",
+    "title": "Radiologie - Intermédiaire 1",
+    "specialty": "RADI",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "RADI_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Ayoub a pris un cliché rétro-alvéolaire qui semble trop clair. Dr Nadia lui demande de vérifier ses réglages. Quel paramètre est probablement en cause ?",
+      "media": [],
+      "options": [
+        "Un kilovoltage (kV) trop élevé",
+        "Un milliampérage (mA) trop faible",
+        "Un temps d'exposition trop long",
+        "Une distance foyer-film trop courte"
+      ],
+      "correct": 1,
+      "explanation": "Dr Nadia explique : 'Un mA trop faible produit moins de photons, rendant l'image sous-exposée donc trop claire.' Dr Ayoub : 'Je vais augmenter le mA.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Nadia examine une radiographie avec un contraste très faible. Dr Ayoub lui demande quel réglage pourrait améliorer le contraste. Dr Nadia répond :",
+      "media": [],
+      "options": [
+        "Augmenter le kV pour plus de pénétration",
+        "Diminuer le kV pour augmenter le contraste",
+        "Augmenter le mA pour plus de photons",
+        "Diminuer le temps d'exposition"
+      ],
+      "correct": 1,
+      "explanation": "Dr Nadia explique : 'Un kV plus bas produit un contraste plus élevé (image plus contrastée).' Dr Ayoub : 'Je vais baisser le kV à 60-65.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Ayoub a réalisé une panoramique sur un patient avec des bijoux. Dr Nadia lui montre un artefact linéaire blanc. Quelle est la cause de cet artefact ?",
+      "media": [],
+      "options": [
+        "Un mouvement du patient pendant l'acquisition",
+        "La présence d'un bijou métallique (boucle d'oreille, piercing)",
+        "Un défaut du capteur panoramique",
+        "Une tension du tube inadéquate"
+      ],
+      "correct": 1,
+      "explanation": "Dr Nadia explique : 'Les bijoux métalliques créent des artefacts de rayonnement (lignes blanches ou bandes sombres) sur les panoramiques.' Dr Ayoub : 'Je vais toujours demander de retirer les bijoux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Nadia montre un cliché rétro-alvéolaire avec une image élongée. Dr Ayoub demande : 'Quelle erreur technique a été commise ?' Dr Nadia répond :",
+      "media": [],
+      "options": [
+        "Une angulation verticale trop positive",
+        "Une angulation verticale trop négative",
+        "Une distance foyer-film trop longue",
+        "Une orientation horizontale incorrecte"
+      ],
+      "correct": 0,
+      "explanation": "Dr Nadia explique : 'Une angulation verticale trop positive (angle trop ouvert) élonge la dent (image plus longue que la réalité).' Dr Ayoub : 'Je vais corriger mon angulation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Ayoub constate que l'image est raccourcie sur un cliché rétro-alvéolaire. Dr Nadia lui demande de vérifier son angulation. Quelle est l'erreur probable ?",
+      "media": [],
+      "options": [
+        "Une angulation verticale trop positive",
+        "Une angulation verticale trop négative",
+        "Une angulation horizontale trop importante",
+        "Une distance foyer-film trop courte"
+      ],
+      "correct": 1,
+      "explanation": "Dr Nadia explique : 'Une angulation verticale trop négative (trop fermée) raccourcit l'image.' Dr Ayoub : 'Je vais ajuster mon angle.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Nadia explique à Dr Ayoub le phénomène de l'effet anodique (effet de talon). Elle lui demande de positionner correctement la cathode. Où doit être orientée la cathode ?",
+      "media": [],
+      "options": [
+      "Vers les tissus les plus épais (molaires mandibulaires)",
+      "Vers les tissus les plus fins (incisives)",
+      "Peu importe la position",
+      "Vers le haut du crâne"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'L'effet anodique rend le faisceau plus intense du côté cathode. Pour les molaires, on oriente la cathode vers l'épaisseur osseuse.' Dr Ayoub : 'Je vais positionner correctement.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q07",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris un cliché Bitewing sur un patient. Dr Nadia lui demande de vérifier si les espaces interproximaux sont bien visibles. Quel est le réglage clé pour un Bitewing de qualité ?",
+    "media": [],
+    "options": [
+      "Une angulation verticale de +5 à +10 degrés",
+      "Une angulation verticale de 0 degré",
+      "Une angulation verticale de -5 degrés",
+      "Une angulation horizontale de 15 degrés"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Une légère angulation positive (+5 à +10°) ouvre les espaces interproximaux.' Dr Ayoub : 'Je vais toujours utiliser cette angulation.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q08",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie où le sinus maxillaire est mal visualisé. Dr Ayoub demande : 'Quelle incidence permettrait de mieux visualiser les sinus ?'",
+    "media": [],
+    "options": [
+      "L'incidence de Blondeau",
+      "L'incidence de Hirtz",
+      "L'incidence de Schüller",
+      "L'incidence de face standard"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'L'incidence de Blondeau dégage les sinus maxillaires en projetant les rochers sous le plancher sinusal.' Dr Ayoub : 'Je vais utiliser cette incidence.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q09",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie d'un implant. Dr Nadia lui demande de vérifier la qualité de l'image. Quel paramètre est crucial pour évaluer l'ostéointégration ?",
+    "media": [],
+    "options": [
+      "La résolution spatiale élevée pour voir l'interface os-implant",
+      "Le contraste élevé pour voir les tissus mous",
+      "Une faible résolution pour réduire la dose",
+      "Une exposition prolongée pour plus de détails"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'La résolution spatiale élevée est essentielle pour évaluer l'interface os-implant.' Dr Ayoub : 'Je vais utiliser le plus petit pixel possible.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q10",
+    "type": "single-choice",
+    "question": "Dr Nadia explique à Dr Ayoub l'importance du collimateur. Dr Ayoub demande : 'À quoi sert le collimateur en radiologie dentaire ?'",
+    "media": [],
+    "options": [
+      "À réduire la diffusion secondaire et limiter le champ d'exposition",
+      "À augmenter la dose de rayonnement",
+      "À améliorer le contraste",
+      "À accélérer le temps d'acquisition"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Le collimateur limite le champ d'exposition, réduit la diffusion et protège les tissus adjacents.' Dr Ayoub : 'Je vais toujours utiliser le collimateur.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q11",
+    "type": "single-choice",
+    "question": "Dr Ayoub remarque une zone opaque sur une radiographie panoramique. Dr Nadia lui demande d'identifier la structure. Il s'agit probablement de :",
+    "media": [],
+    "options": [
+      "La colonne vertébrale projetée sur la rampe mandibulaire",
+      "Un calcul salivaire",
+      "Une carie interproximale",
+      "Un kyste dentaire"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Sur une panoramique, la colonne vertébrale peut se projeter sur la rampe mandibulaire, créant une zone opaque (ombre cervicale).' Dr Ayoub : 'Je vais apprendre à reconnaître cette projection.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q12",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie d'une carie interproximale. Dr Ayoub demande : 'Quelle incidence permet de détecter les caries interproximales ?'",
+    "media": [],
+    "options": [
+      "Le cliché Bitewing",
+      "Le cliché rétro-alvéolaire apical",
+      "Le cliché occlusal",
+      "La panoramique"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Le Bitewing est l'examen de référence pour les caries interproximales.' Dr Ayoub : 'Je vais systématiquement prescrire des Bitewings.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q13",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie d'un patient enceinte. Dr Nadia lui rappelle les règles de radioprotection. Quelle est la règle absolue ?",
+    "media": [],
+    "options": [
+      "Ne jamais réaliser d'examen radiographique pendant la grossesse",
+      "Réaliser uniquement si l'examen est justifié et avec une protection absolue",
+      "Limiter l'examen au CBCT uniquement",
+      "Augmenter la dose pour réduire le temps d'exposition"
+    ],
+    "correct": 1,
+    "explanation": "Dr Nadia explique : 'On réalise une radio uniquement si strictement justifiée, avec tablier plombé et en limitant la zone.' Dr Ayoub : 'Je vais toujours justifier mes examens.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q14",
+    "type": "single-choice",
+    "question": "Dr Nadia explique à Dr Ayoub le principe de la technique de la bissectrice. Dr Ayoub demande : 'Quand utilise-t-on cette technique ?'",
+    "media": [],
+    "options": [
+      "Quand le parallélisme est impossible anatomiquement",
+      "Quand on veut plus de contraste",
+      "Quand on veut réduire la dose",
+      "Quand on utilise un capteur numérique"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'La technique de la bissectrice est utilisée quand l'anatomie ne permet pas le parallélisme (ex: palais profond).' Dr Ayoub : 'Je vais l'utiliser en cas de besoin.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q15",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie de l'ATM. Dr Nadia lui demande quelle incidence est la plus adaptée. Dr Nadia répond :",
+    "media": [],
+    "options": [
+      "L'incidence de Schüller",
+      "L'incidence de Blondeau",
+      "L'incidence de Hirtz",
+      "L'incidence postéro-antérieure"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'L'incidence de Schüller est classique pour visualiser l'ATM.' Dr Ayoub : 'Je vais utiliser cette incidence.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q16",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie avec un effet de flou cinétique. Dr Ayoub demande : 'Comment éviter le flou cinétique ?'",
+    "media": [],
+    "options": [
+      "Diminuer le temps d'exposition et immobiliser le patient",
+      "Augmenter le kV",
+      "Augmenter le mA",
+      "Augmenter la distance foyer-film"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Un temps court et une immobilisation stricte évitent le flou de mouvement.' Dr Ayoub : 'Je vais utiliser un temps très court.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q17",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie d'un enfant. Dr Nadia lui demande d'adapter les paramètres. Quelle est la modification à apporter ?",
+    "media": [],
+    "options": [
+      "Diminuer le kV et le mA pour réduire la dose",
+      "Augmenter le kV pour plus de pénétration",
+      "Augmenter le temps d'exposition",
+      "Utiliser les mêmes paramètres que l'adulte"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Les enfants ont une densité osseuse plus faible. On réduit les paramètres (kV, mA, temps).' Dr Ayoub : 'Je vais toujours adapter les paramètres.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q18",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie avec une zone radiotransparente apicale. Dr Ayoub demande : 'Quel est le diagnostic différentiel le plus probable ?'",
+    "media": [],
+    "options": [
+      "Lésion apicale (granulome, kyste ou abcès)",
+      "Carie interproximale",
+      "Calcul salivaire",
+      "Fracture radiculaire"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Une zone radiotransparente apicale évoque une pathologie périapicale.' Dr Ayoub : 'Je vais prescrire un traitement endodontique.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q19",
+    "type": "single-choice",
+    "question": "Dr Ayoub a réalisé un CBCT sur un patient. Dr Nadia lui demande de vérifier le champ de vue (FOV). Pourquoi le FOV doit-il être limité ?",
+    "media": [],
+    "options": [
+      "Pour réduire la dose d'irradiation",
+      "Pour améliorer la résolution",
+      "Pour accélérer l'acquisition",
+      "Toutes les réponses sont correctes"
+    ],
+    "correct": 3,
+    "explanation": "Dr Nadia explique : 'Un petit FOV réduit la dose, améliore la résolution et accélère l'acquisition.' Dr Ayoub : 'Je vais toujours utiliser le plus petit FOV possible.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q20",
+    "type": "single-choice",
+    "question": "Dr Nadia explique à Dr Ayoub les signes radiographiques de la parodontite. Dr Ayoub demande : 'Quel est le signe radiographique caractéristique de la parodontite ?'",
+    "media": [],
+    "options": [
+      "La perte de l'os alvéolaire (trame osseuse horizontale ou verticale)",
+      "La présence de caries",
+      "L'élargissement du ligament",
+      "La radiotransparence apicale"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'La parodontite se manifeste par une perte osseuse alvéolaire (horizontal ou vertical).' Dr Ayoub : 'Je vais évaluer l'os alvéolaire.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q21",
+    "type": "single-choice",
+    "question": "Dr Ayoub a pris une radiographie d'une dent avec une résorption interne. Dr Nadia lui demande de décrire l'image. Comment se présente une résorption interne ?",
+    "media": [],
+    "options": [
+      "Une zone radiotransparente symétrique centrée sur le canal",
+      "Une zone radio-opaque apicale",
+      "Une perte osseuse horizontale",
+      "Une fracture radiculaire verticale"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'La résorption interne est une zone radiotransparente symétrique qui suit le contour du canal.' Dr Ayoub : 'Je vais surveiller l'évolution.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q22",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie d'une dent avec une fracture radiculaire. Dr Ayoub demande : 'Quel est le signe radiographique d'une fracture radiculaire ?'",
+    "media": [],
+    "options": [
+      "Une ligne radiotransparente verticale traversant la racine",
+      "Une zone radiotransparente apicale",
+      "Une perte osseuse horizontale",
+      "Une carie interproximale"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Une fracture radiculaire se présente comme une ligne radiotransparente verticale.' Dr Ayoub : 'Je vais orienter le faisceau perpendiculairement.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q23",
+    "type": "single-choice",
+    "question": "Dr Ayoub s'interroge sur la différence entre le granulome et le kyste apical. Dr Nadia lui répond : 'La différence se fait sur :'",
+    "media": [],
+    "options": [
+      "La taille de la lésion (kyste > granulome)",
+      "La localisation de la lésion",
+      "La forme de la lésion",
+      "La densité de la lésion"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Le kyste est généralement plus grand que le granulome (> 1,5-2 cm).' Dr Ayoub : 'Je vais mesurer la lésion.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q24",
+    "type": "single-choice",
+    "question": "Dr Nadia montre une radiographie d'un patient avec une dent incluse. Dr Ayoub demande : 'Quelle est la localisation la plus fréquente des dents incluses ?'",
+    "media": [],
+    "options": [
+      "Les troisièmes molaires mandibulaires (dents de sagesse)",
+      "Les canines maxillaires",
+      "Les prémolaires",
+      "Les incisives"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'Les dents de sagesse mandibulaires sont les dents incluses les plus fréquentes.' Dr Ayoub : 'Je vais toujours vérifier les dents de sagesse.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  },
+  {
+    "id": "RADI_I1_Q25",
+    "type": "single-choice",
+    "question": "Dr Ayoub, après avoir maîtrisé les techniques radiologiques avec Dr Nadia, reçoit ses félicitations. Quelle est la prochaine étape pour Dr Ayoub ?",
+    "media": [],
+    "options": [
+      "Devenir un expert en radiologie et imagerie dentaire",
+      "Prendre sa retraite",
+      "Changer de spécialité",
+      "Oublier les bonnes pratiques"
+    ],
+    "correct": 0,
+    "explanation": "Dr Nadia explique : 'La maîtrise de la radiologie est une compétence précieuse. Devenir un expert est la prochaine étape.' Dr Ayoub : 'Je vais approfondir l'imagerie 3D.'",
+    "difficulty": "intermediaire",
+    "category": "",
+    "timeLimit": 50,
+    "shuffleOptions": false,
+    "tts": true,
+    "tags": [],
+    "references": []
+  }
+]
+}

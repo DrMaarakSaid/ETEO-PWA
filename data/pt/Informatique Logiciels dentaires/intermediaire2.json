@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "informatique_logiciels_dentaires_intermediaire2_001",
+    "title": "Dental IT & Software - Intermediate 2",
+    "specialty": "INFO",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "INFO_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr. Chamssi received a suspicious email with an attachment. Dr. Tazi advises him not to open it. What is the main threat of phishing emails in a dental practice?",
+      "media": [],
+      "options": [
+        "Loss of time",
+        "Theft of personal data and installation of malware",
+        "Increase in the internet bill",
+        "Deletion of legitimate emails"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Phishing aims to steal credentials and install malware that can encrypt your data.' Dr. Chamssi: 'I will train my team to recognize these emails.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr. Chamssi uses the same password for all his software. Dr. Tazi recommends changing this practice. What is the fundamental rule of passwords in a dental practice?",
+      "media": [],
+      "options": [
+        "Use the same password everywhere to avoid forgetting",
+        "Use unique, complex passwords and change them regularly",
+        "Write passwords on a Post-it stuck to the screen",
+        "Use simple passwords for less important software"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Unique and complex passwords limit the impact of a data leak.' Dr. Chamssi: 'I will use a password manager.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr. Chamssi was a victim of ransomware. Dr. Tazi helps him manage the crisis. What is the first thing to do in the event of a ransomware attack?",
+      "media": [],
+      "options": [
+        "Pay the ransom immediately",
+        "Isolate the infected machine from the network and contact a cybersecurity expert",
+        "Restart the machine",
+        "Ignore the attack"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Isolating the infected machine prevents the ransomware from spreading to other machines in the practice.' Dr. Chamssi: 'I will cut the network immediately.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr. Chamssi lost all his data due to ransomware. Dr. Tazi kept his paper files. What is Dr. Chamssi missing to avoid this situation?",
+      "media": [],
+      "options": [
+        "A more powerful antivirus",
+        "A backup plan (BCP) with offline copies",
+        "A more recent computer",
+        "Intrusion detection software"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'A regular backup plan with offline copies allows restoring data without paying the ransom.' Dr. Chamssi: 'I will set up automated backups.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr. Chamssi must notify a security incident. Dr. Tazi asks him about his obligations. According to the CNDP, what is the maximum deadline for notifying a personal data breach?",
+      "media": [],
+      "options": [
+        "48 hours",
+        "72 hours",
+        "7 days",
+        "30 days"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The CNDP recommends notifying the breach within 72 hours of becoming aware of it.' Dr. Chamssi: 'I will prepare an urgent notification procedure.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr. Chamssi installed management software without checking its security updates. Dr. Tazi reminds him of the importance of updates. Why are updates crucial?",
+      "media": [],
+      "options": [
+        "They bring new features",
+        "They fix known security vulnerabilities",
+        "They speed up the software",
+        "They are optional"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Updates fix vulnerabilities that could be exploited by cyber attackers.' Dr. Chamssi: 'I will enable automatic updates.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized his files and makes them remotely accessible via a VPN. Dr. Tazi still uses paper files. According to the CNDP, must Dr. Chamssi secure his VPN?",
+      "media": [],
+      "options": [
+        "No, the VPN is secure by default",
+        "Yes, the VPN must be configured with secure protocols and strong authentication",
+        "Yes, but only if the patient requests it",
+        "No, because the data is already encrypted"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'A poorly configured VPN can expose data. You must use secure protocols like OpenVPN or WireGuard.' Dr. Chamssi: 'I will check my VPN configuration.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr. Chamssi and Dr. Tazi compare the European GDPR and Moroccan Law 09-08. What is the main difference regarding financial sanctions?",
+      "media": [],
+      "options": [
+        "No difference",
+        "The GDPR provides for fines up to 20 million euros, Law 09-08 up to 100,000 DH",
+        "Law 09-08 is stricter than the GDPR",
+        "Both provide for the same amounts"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Chamssi explains: 'The GDPR is more severe in terms of financial sanctions, but Law 09-08 imposes similar obligations.' Dr. Tazi: 'We must respect both if we process European data.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr. Chamssi uses teleradiology software to exchange images with a colleague. Dr. Tazi uses mail. According to the CNDP, what obligation applies to Dr. Chamssi?",
+      "media": [],
+      "options": [
+        "No particular obligation",
+        "Encrypt exchanges and obtain patient consent",
+        "Make an additional declaration to the ministry",
+        "Use software certified by the Order"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Exchanges of health data must be encrypted and the patient must be informed.' Dr. Chamssi: 'I will secure my radiology exchanges.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has installed video surveillance cameras. Dr. Tazi has a mirror without a camera. According to the CNDP, where must Dr. Chamssi inform patients of the presence of cameras?",
+      "media": [],
+      "options": [
+        "Only in the waiting room",
+        "At the entrance of the practice and in the filmed area",
+        "On the invoice only",
+        "No information is necessary"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Information must be visible at the entrance and in the filmed area so that patients are informed.' Dr. Chamssi: 'I will install information signs.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr. Chamssi wishes to use artificial intelligence to analyze X-rays. Dr. Tazi questions the compliance. According to the CNDP, must Dr. Chamssi obtain prior authorization?",
+      "media": [],
+      "options": [
+        "No, AI is free",
+        "Yes, because AI involves automated processing of health data",
+        "Yes, but only for research",
+        "No, because X-rays are anonymous"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'AI analyzing health data is considered automated processing requiring prior authorization.' Dr. Chamssi: 'I will make an authorization request.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has subscribed to a cloud storage service for his backups. Dr. Tazi keeps his backups locally. According to Law 09-08, must Dr. Chamssi inform his patients of the location where their data is stored?",
+      "media": [],
+      "options": [
+        "No, the storage location does not matter",
+        "Yes, the patient must be informed of the country where their data is stored",
+        "Yes, but only if the storage is outside Morocco",
+        "No, because the cloud is always secure"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Tazi explains: 'The patient must be informed if their data is transferred outside Morocco, because it involves different protection.' Dr. Chamssi: 'I will inform my patients of the storage location.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized his files with a scanner. Dr. Tazi still photocopies his documents. Regarding data retention, what is the common obligation for both?",
+      "media": [],
+      "options": [
+        "Keep documents indefinitely",
+        "Guarantee the integrity and confidentiality of data, regardless of the medium",
+        "Keep documents only in paper format",
+        "Destroy documents after 5 years"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Chamssi explains: 'Regardless of the medium, we have the obligation to guarantee the integrity and confidentiality of data.' Dr. Tazi: 'I will secure my paper archives.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr. Chamssi uses online appointment management software. Dr. Tazi uses a paper diary. According to the CNDP, must Dr. Chamssi declare this software?",
+      "media": [],
+      "options": [
+        "No, appointments are not personal data",
+        "Yes, because it collects personal data (name, phone, email)",
+        "Yes, but only if the software is paid",
+        "No, if the software is hosted in Morocco"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Collecting personal data via online appointment software must be declared to the CNDP.' Dr. Chamssi: 'I will make the declaration for my software.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr. Chamssi was a victim of a data leak following a hack. Dr. Tazi advises him on the procedure. What should Dr. Chamssi do first?",
+      "media": [],
+      "options": [
+        "Contact the CNDP immediately",
+        "Inform the patients concerned",
+        "Secure the system to stop the leak",
+        "Change all his passwords"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Tazi explains: 'The first priority is to stop the leak by securing the system, then inform the CNDP and patients.' Dr. Chamssi: 'I will first isolate the infected system.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr. Chamssi installed an antivirus but did not activate the firewall. Dr. Tazi explains his mistake. What is the function of a firewall in a dental practice?",
+      "media": [],
+      "options": [
+        "Analyze incoming emails",
+        "Block unauthorized access to the practice's network",
+        "Scan files to detect viruses",
+        "Encrypt data in transit"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The firewall acts as a barrier that filters access to the practice's network.' Dr. Chamssi: 'I will activate my firewall.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr. Chamssi received a request for access to his data from a patient. Dr. Tazi reminds him of the procedure. According to Law 09-08, within what period must Dr. Chamssi respond to this request?",
+      "media": [],
+      "options": [
+        "24 hours",
+        "48 hours",
+        "1 month",
+        "2 months"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Tazi explains: 'The legal deadline for responding to a request for access to personal data is 1 month.' Dr. Chamssi: 'I will prepare the documents to respond to the patient.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr. Chamssi responded to a patient's access request. Dr. Tazi asks him if he has properly justified his response. What must the response to an access request contain?",
+      "media": [],
+      "options": [
+        "Only the requested data",
+        "The requested data and a copy of the consents",
+        "The requested data, information on rights, and the complaint form",
+        "A simple acknowledgment of receipt"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Tazi explains: 'The response must include the data, information on rights, and the complaint procedure.' Dr. Chamssi: 'I will prepare a complete response.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr. Chamssi was contacted by a patient who wishes to rectify their personal data. Dr. Tazi explains the procedure. According to Law 09-08, what is the patient's right?",
+      "media": [],
+      "options": [
+        "The patient can request the rectification of inaccurate data",
+        "The patient cannot rectify their medical data",
+        "The patient must go through a lawyer",
+        "Rectification requires the consent of the CNDP"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Tazi explains: 'The right of rectification allows the patient to have inaccurate data corrected.' Dr. Chamssi: 'I will correct the patient's data.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr. Chamssi received a formal notice from the CNDP concerning a breach. Dr. Tazi helps him understand the stakes. What does Dr. Chamssi risk in the event of persistent non-compliance?",
+      "media": [],
+      "options": [
+        "A fine of 100 to 1,000 DH",
+        "A fine of 10,000 to 100,000 DH and/or criminal sanctions",
+        "A suspension of activity",
+        "The definitive closure of the practice"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The CNDP can impose fines of 10,000 to 100,000 DH and initiate criminal proceedings.' Dr. Chamssi: 'I will regularize my situation immediately.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has outsourced the hosting of his data to a provider. Dr. Tazi warns him of his responsibilities. According to Law 09-08, must Dr. Chamssi control his provider?",
+      "media": [],
+      "options": [
+        "No, the provider is solely responsible",
+        "Yes, Dr. Chamssi remains responsible for the processing and must control his subcontractor",
+        "Yes, but only if the provider is foreign",
+        "No, the law does not provide for this obligation"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The data controller remains fully responsible for data protection, even when outsourced.' Dr. Chamssi: 'I will audit my provider.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr. Chamssi lost his laptop containing unencrypted patient data. Dr. Tazi informs him of the consequences. What is Dr. Chamssi's first obligation?",
+      "media": [],
+      "options": [
+        "Replace the computer",
+        "Notify the loss to the CNDP and the patients concerned",
+        "Change provider",
+        "Disable user accounts"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The loss of a device containing unencrypted data constitutes a data breach requiring notification.' Dr. Chamssi: 'I will notify the CNDP and the patients.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr. Chamssi decided to use passwords for his software. Dr. Tazi recommends using two-factor authentication (2FA). What is the advantage of 2FA?",
+      "media": [],
+      "options": [
+        "A single password is sufficient",
+        "A double layer of security: password + temporary code",
+        "2FA is optional",
+        "2FA slows down work"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: '2FA adds an extra layer of security beyond the password, making credential theft more difficult.' Dr. Chamssi: 'I will enable 2FA on all my software.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr. Chamssi was confronted with a security incident. Dr. Tazi recommends keeping an incident register. Why is this register important?",
+      "media": [],
+      "options": [
+        "It is a legal obligation without practical interest",
+        "It allows tracking incidents for the CNDP and improving security",
+        "It only serves for billing",
+        "It is optional"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The incident register allows tracking security events and proving compliance during an audit.' Dr. Chamssi: 'I will create an incident register.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr. Chamssi, after securing his IT system with Dr. Tazi, receives his congratulations. What is the next step for Dr. Chamssi?",
+      "media": [],
+      "options": [
+        "Become an expert in dental cybersecurity",
+        "Retire",
+        "Change specialty",
+        "Forget good practices"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Tazi explains: 'Mastery of cybersecurity is a valuable skill. Becoming an expert is the next step.' Dr. Chamssi: 'I will train in cybersecurity.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

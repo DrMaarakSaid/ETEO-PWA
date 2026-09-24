@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "code_deontologie_debutant1_001",
+    "title": "Code_deontologie - Débutant 1",
+    "specialty": "CODE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "CODE_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Mourad, jeune diplômé, s'apprête à ouvrir son cabinet. Selon l'article 2 du Code de déontologie, quelle est sa mission principale envers la personne humaine ?",
+      "media": [],
+      "options": [
+        "Maximiser ses revenus financiers",
+        "Respecter la vie de la personne humaine dans l'exercice de sa mission",
+        "Développer sa clientèle par tous les moyens",
+        "Exercer en dehors du cadre légal"
+      ],
+      "correct": 1,
+      "explanation": "L'article 2 stipule que le chirurgien-dentiste exerce sa mission dans le respect de la vie de la personne humaine.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Manal, dentiste expérimentée, rappelle au Dr Mourad que selon l'article 3, il doit s'abstenir de tout acte de nature à déconsidérer sa profession. Cela signifie-t-il qu'il peut exercer une autre activité en parallèle ?",
+      "media": [],
+      "options": [
+        "Oui, s'il s'agit d'une activité lucrative",
+        "Oui, si elle n'est pas incompatible avec sa dignité professionnelle",
+        "Non, aucune autre activité n'est autorisée",
+        "Oui, s'il en informe le conseil de l'ordre"
+      ],
+      "correct": 1,
+      "explanation": "L'article 3 interdit au médecin-dentiste d'exercer une autre activité incompatible avec sa dignité professionnelle, mais autorise les activités compatibles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Mourad souhaite utiliser des données de ses patients pour une publication scientifique. Selon l'article 4, quelle est son obligation principale ?",
+      "media": [],
+      "options": [
+        "Obtenir une autorisation écrite du patient",
+        "Rendre impossible l'identification du patient",
+        "Payer des droits d'auteur au patient",
+        "Publier sans aucune modification"
+      ],
+      "correct": 1,
+      "explanation": "L'article 4 précise que le médecin-dentiste doit faire en sorte que l'identification du patient soit impossible lorsqu'il utilise ses observations médicales pour des publications scientifiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q04",
+      "type": "single-choice",
+      "question": "Selon l'article 4, le Dr Manal doit veiller à ce que les personnes qui l'assistent soient instruites de leur obligation en matière de secret professionnel. Qui est concerné par cette obligation ?",
+      "media": [],
+      "options": [
+        "Uniquement les médecins",
+        "Toutes les personnes qui assistent le dentiste",
+        "Uniquement les assistantes diplômées",
+        "Seul le dentiste est concerné"
+      ],
+      "correct": 1,
+      "explanation": "L'article 4 précise que le médecin-dentiste doit veiller à ce que les personnes qui l'assistent soient instruites de leur obligation en matière de secret professionnel et s'y conforment.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Mourad s'interroge sur la publicité pour son nouveau cabinet. Selon l'article 11, quelle est la règle concernant la publicité ?",
+      "media": [],
+      "options": [
+        "La publicité est autorisée dans les journaux",
+        "La publicité est strictement interdite",
+        "La publicité est autorisée sur les réseaux sociaux",
+        "La publicité est autorisée avec l'accord de l'Ordre"
+      ],
+      "correct": 1,
+      "explanation": "L'article 11 interdit tous procédés directs ou indirects de réclame ou de publicité, ainsi que les manifestations spectaculaires n'ayant pas exclusivement un but scientifique ou éducatif.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Manal explique au Dr Mourad que selon l'article 13, les plaques professionnelles ont des dimensions réglementaires. Quelles sont-elles ?",
+      "media": [],
+      "options": [
+        "20 cm sur 25 cm",
+        "25 cm sur 30 cm",
+        "30 cm sur 40 cm",
+        "40 cm sur 50 cm"
+      ],
+      "correct": 1,
+      "explanation": "L'article 13 fixe les dimensions des plaques professionnelles à 25 centimètres sur 30 centimètres.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q07",
+      "type": "single-choice",
+      "question": "Selon l'article 13, quelles sont les mentions autorisées sur une plaque professionnelle ?",
+      "media": [],
+      "options": [
+        "Uniquement le nom et la qualité du dentiste",
+        "Le nom, prénom, qualité, spécialité, jours et heures de consultation",
+        "Le prix des consultations",
+        "Les promotions et réductions"
+      ],
+      "correct": 1,
+      "explanation": "L'article 13 autorise le nom, prénom, qualité, spécialité, l'origine du diplôme, les jours et heures de consultation, l'étage, le numéro de téléphone et les titres reconnus.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q08",
+      "type": "single-choice",
+      "question": "Selon l'article 14, le Dr Mourad doit-il soumettre à l'agrément préalable du conseil supérieur de l'ordre les communiqués concernant l'ouverture de son cabinet ?",
+      "media": [],
+      "options": [
+        "Non, c'est facultatif",
+        "Oui, c'est obligatoire",
+        "Oui, mais seulement pour la fermeture",
+        "Non, seulement pour les transferts"
+      ],
+      "correct": 1,
+      "explanation": "L'article 14 stipule que les communiqués concernant l'ouverture, la fermeture ou le transfert de cabinet sont obligatoirement soumis à l'agrément préalable du conseil supérieur de l'ordre.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Manal met en garde le Dr Mourad contre la ristourne. Selon l'article 16, quelle est la règle concernant les ristournes aux patients ?",
+      "media": [],
+      "options": [
+        "Les ristournes sont autorisées pour les patients fidèles",
+        "Les ristournes sont interdites",
+        "Les ristournes sont autorisées avec accord de l'Ordre",
+        "Les ristournes sont autorisées pour les familles nombreuses"
+      ],
+      "correct": 1,
+      "explanation": "L'article 16 interdit toute ristourne en argent ou en nature faite à un malade, ainsi que tout versement, acceptation ou partage d'argent entre praticiens.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q10",
+      "type": "single-choice",
+      "question": "Selon l'article 16, qu'est-ce que la dichotomie dans la profession dentaire ?",
+      "media": [],
+      "options": [
+        "Une technique chirurgicale",
+        "Un partage d'argent interdit entre praticiens",
+        "Une méthode de stérilisation",
+        "Un type de prothèse"
+      ],
+      "correct": 1,
+      "explanation": "L'article 16 interdit tout partage d'argent entre des praticiens ou entre praticiens et d'autres personnes (dichotomie).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Mourad souhaite s'associer avec un confrère. Selon l'article 18, qu'est-ce que le compérage et pourquoi est-il interdit ?",
+      "media": [],
+      "options": [
+        "Une collaboration légale entre dentistes",
+        "Une entente secrète en vue de léser une autre personne",
+        "Un contrat d'association professionnel",
+        "Un partage équitable des patients"
+      ],
+      "correct": 1,
+      "explanation": "L'article 18 définit le compérage comme l'intelligence secrète entre deux personnes en vue d'en léser une autre et l'interdit formellement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q12",
+      "type": "single-choice",
+      "question": "Selon l'article 6, quels sont les principes traditionnels de la pratique dentaire ?",
+      "media": [],
+      "options": [
+        "La publicité et la réclame",
+        "Le libre choix du dentiste, liberté des prescriptions, entente directe sur les honoraires",
+        "Les prix réglementés pour tous les actes",
+        "L'obligation de tiers payant"
+      ],
+      "correct": 1,
+      "explanation": "L'article 6 énumère les principes : libre choix du dentiste, liberté des prescriptions, entente directe entre patient et dentiste en matière d'honoraires, et paiement direct des honoraires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Manal explique au Dr Mourad que selon l'article 7, il doit soigner tous ses patients :",
+      "media": [],
+      "options": [
+        "Uniquement les patients qui peuvent payer",
+        "Avec la même conscience, quels que soient leur condition, nationalité, religion",
+        "Uniquement les patients marocains",
+        "Uniquement les patients qui ont une mutuelle"
+      ],
+      "correct": 1,
+      "explanation": "L'article 7 impose au dentiste de soigner avec la même conscience tous ses malades, quels que soient leur condition, leur nationalité, leur religion, leur réputation et les sentiments qu'ils lui inspirent.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q14",
+      "type": "single-choice",
+      "question": "Selon l'article 9, est-il autorisé pour un dentiste de délivrer un certificat de complaisance ?",
+      "media": [],
+      "options": [
+        "Oui, si le patient le demande",
+        "Non, c'est strictement interdit",
+        "Oui, moyennant des honoraires supplémentaires",
+        "Oui, si c'est pour un proche"
+      ],
+      "correct": 1,
+      "explanation": "L'article 9 interdit d'établir un rapport tendancieux ou de délivrer un certificat de complaisance.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q15",
+      "type": "single-choice",
+      "question": "Selon l'article 11, le Dr Mourad peut-il exercer sa profession dans une boutique commerciale ?",
+      "media": [],
+      "options": [
+        "Oui, c'est autorisé",
+        "Non, c'est interdit",
+        "Oui, avec l'accord du propriétaire",
+        "Oui, si la boutique est fermée"
+      ],
+      "correct": 1,
+      "explanation": "L'article 11 interdit l'exercice de la profession dentaire en boutique ou en tout local où s'exerce une activité commerciale.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Manal rappelle au Dr Mourad que selon l'article 12, quelles sont les indications autorisées sur les cartes professionnelles ?",
+      "media": [],
+      "options": [
+        "Les tarifs et promotions",
+        "Les noms, prénoms, adresse, téléphone, jours et heures de consultations",
+        "Les témoignages de patients",
+        "Les récompenses et distinctions non officielles"
+      ],
+      "correct": 1,
+      "explanation": "L'article 12 autorise sur les imprimés professionnels : les noms, prénoms, adresse, numéros de téléphone, télécopies, jours et heures de consultations, les titres reconnus valables par le conseil national de l'ordre, et les distinctions honorifiques reconnues.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q17",
+      "type": "single-choice",
+      "question": "Selon l'article 15, l'usurpation de titres par un dentiste est :",
+      "media": [],
+      "options": [
+        "Autorisée si c'est pour un bon usage",
+        "Strictement interdite",
+        "Autorisée avec l'accord du patient",
+        "Autorisée pour les étudiants"
+      ],
+      "correct": 1,
+      "explanation": "L'article 15 interdit l'usurpation des titres, l'usage de faux titres ainsi que tous les procédés destinés à tromper le public sur la valeur des titres indiqués.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Mourad s'interroge sur le paiement des honoraires. Selon l'article 6, quel est le principe ?",
+      "media": [],
+      "options": [
+        "Le paiement par la mutuelle uniquement",
+        "Le paiement direct des honoraires par le patient au médecin-dentiste",
+        "Le paiement différé systématique",
+        "Le paiement en nature"
+      ],
+      "correct": 1,
+      "explanation": "L'article 6 prévoit le paiement direct des honoraires par le patient au médecin-dentiste comme principe fondamental.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q19",
+      "type": "single-choice",
+      "question": "Selon l'article 30, le Dr Mourad doit-il fournir des explications sur ses honoraires à un patient qui les demande ?",
+      "media": [],
+      "options": [
+        "Non, les honoraires sont confidentiels",
+        "Oui, il doit fournir des explications",
+        "Oui, mais uniquement si le patient a une mutuelle",
+        "Non, les patients doivent accepter les tarifs sans discussion"
+      ],
+      "correct": 1,
+      "explanation": "L'article 30 précise que le médecin-dentiste n'est jamais en droit de refuser à son patient des explications sur le montant de ses honoraires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q20",
+      "type": "single-choice",
+      "question": "Selon l'article 30, dans quel cas le Dr Manal peut-elle solliciter un acompte ?",
+      "media": [],
+      "options": [
+        "Toujours, c'est son droit",
+        "Lorsque l'importance des soins le justifie",
+        "Jamais, les acomptes sont interdits",
+        "Uniquement pour les patients étrangers"
+      ],
+      "correct": 1,
+      "explanation": "L'article 30 autorise le dentiste à solliciter un acompte lorsque l'importance des soins le justifie, en se conformant aux usages de la profession.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q21",
+      "type": "single-choice",
+      "question": "Selon l'article 30, lorsque le Dr Mourad propose un traitement d'un coût élevé, quelle est son obligation ?",
+      "media": [],
+      "options": [
+        "Commencer le traitement immédiatement",
+        "Établir un devis écrit qu'il remet à son patient",
+        "Demander un paiement intégral avant le traitement",
+        "Refuser le traitement si le patient ne peut pas payer"
+      ],
+      "correct": 1,
+      "explanation": "L'article 30 impose au dentiste d'établir un devis écrit lorsqu'il est conduit à proposer un traitement d'un coût élevé.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q22",
+      "type": "single-choice",
+      "question": "Selon l'article 35, le Dr Manal peut-elle diminuer ses honoraires dans un but de concurrence ?",
+      "media": [],
+      "options": [
+        "Oui, pour attirer de nouveaux patients",
+        "Non, elle ne doit pas abaisser ses honoraires dans un but de concurrence",
+        "Oui, si les patients le demandent",
+        "Oui, pendant les périodes creuses"
+      ],
+      "correct": 1,
+      "explanation": "L'article 35 interdit au dentiste d'abaisser ses honoraires dans un but de concurrence, en dessous des barèmes en usage.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q23",
+      "type": "single-choice",
+      "question": "Selon l'article 24, quelles sont les obligations du Dr Mourad envers ses patients ?",
+      "media": [],
+      "options": [
+        "Assurer des soins rapides sans se soucier de la qualité",
+        "Assurer des soins éclairés et conformes aux données acquises de la science",
+        "Se limiter à des soins basiques",
+        "Refuser les patients difficiles"
+      ],
+      "correct": 1,
+      "explanation": "L'article 24 impose au dentiste d'assurer des soins éclairés et conformes aux données acquises de la science, et d'agir toujours avec correction envers le malade.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q24",
+      "type": "single-choice",
+      "question": "Selon l'article 25, le Dr Manal peut-elle se dégager de sa mission auprès d'un patient ?",
+      "media": [],
+      "options": [
+        "Oui, à tout moment sans justification",
+        "Oui, à condition de ne jamais nuire au patient et d'assurer la continuité des soins",
+        "Non, elle doit suivre tous ses patients jusqu'à la fin",
+        "Oui, si le patient ne paie pas"
+      ],
+      "correct": 1,
+      "explanation": "L'article 25 autorise le dentiste à se dégager de sa mission à condition de ne jamais nuire au patient et de s'assurer de la continuité des soins.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q25",
+      "type": "single-choice",
+      "question": "Selon l'article 48, comment le Dr Mourad doit-il gérer un dissentiment professionnel avec un confrère ?",
+      "media": [],
+      "options": [
+        "Le régler par la force",
+        "Tenter d'abord de se réconcilier, puis aviser le président du conseil national",
+        "Le rendre public",
+        "Ignorer le problème"
+      ],
+      "correct": 1,
+      "explanation": "L'article 48 impose au dentiste de tenter d'abord de se réconcilier avec son confrère, et s'il n'a pu réussir, d'en aviser le président du conseil national de l'ordre aux fins de conciliation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CODE_D1_Q26",
+      "type": "single-choice",
+      "question": "Selon l'article 51, le Dr Manal peut-elle détourner la clientèle d'un confrère ?",
+      "media": [],
+      "options": [
+        "Oui, si le confrère est moins compétent",
+        "Non, le détournement de clientèle est interdit",
+        "Oui, si les patients le demandent",
+        "Oui, si elle propose des tarifs plus bas"
+      ],
+      "correct": 1,
+      "explanation": "L'article 51 interdit formellement le détournement ou la tentative de détournement de clientèle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

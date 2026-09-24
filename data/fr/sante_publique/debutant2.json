@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sante_publique_debutant2_001",
+    "title": "Sante_publique - Débutant 2",
+    "specialty": "SANT",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "SANT_D2_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Hafssi est membre de l'ONMD. Selon la loi 07-05, quel est le statut de l'Ordre National des Médecins Dentistes ?",
+      "media": [],
+      "options": [
+        "Un organisme public rattaché au ministère de la Santé",
+        "Un organisme de droit privé chargé d'une mission de service public",
+        "Une association professionnelle à but non lucratif",
+        "Un syndicat défendant les intérêts des dentistes libéraux"
+      ],
+      "correct": 1,
+      "explanation": "L'ONMD est un organisme de droit privé chargé d'une mission de service public, doté de la personnalité morale et régi par la loi 07-05 promulguée par le Dahir du 17 avril 2007.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q02",
+      "type": "single-choice",
+      "question": "Selon la loi 07-05, tous les dentistes exerçant au Maroc sont-ils obligatoirement membres de l'ONMD ?",
+      "media": [],
+      "options": [
+        "Non, l'adhésion à l'Ordre est facultative",
+        "Oui, l'Ordre regroupe obligatoirement tous les dentistes exerçant à titre privé",
+        "Oui, mais uniquement les dentistes exerçant dans le secteur public",
+        "Non, seuls les dentistes de nationalité marocaine sont concernés"
+      ],
+      "correct": 1,
+      "explanation": "L'article 1er de la loi 07-05 dispose que l'ONMD regroupe obligatoirement tous les médecins dentistes exerçant leur profession à titre privé au Maroc.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Fadli est inscrit au tableau de l'ONMD. Selon une étude sur la perception des dentistes, quel aspect de la gestion du tableau de l'Ordre a reçu le plus de satisfaction ?",
+      "media": [],
+      "options": [
+        "Le contrôle du libellé des plaques professionnelles",
+        "L'examen des contrats de collaboration",
+        "La facilitation de l'inscription au tableau de l'Ordre",
+        "L'organisation de la permanence des soins"
+      ],
+      "correct": 2,
+      "explanation": "Une étude menée en 2016-2017 a montré que 67,5% des dentistes étaient satisfaits de la facilitation de l'inscription au tableau de l'Ordre, contre seulement 21,9% pour le contrôle des plaques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q04",
+      "type": "single-choice",
+      "question": "Selon la même étude, quel aspect de la réglementation exercée par l'ONMD est jugé insuffisant par la majorité des dentistes ?",
+      "media": [],
+      "options": [
+        "La délivrance des autorisations de remplacement",
+        "Le contrôle du libellé des plaques professionnelles",
+        "L'examen des diplômes nationaux",
+        "L'organisation de la permanence des soins"
+      ],
+      "correct": 1,
+      "explanation": "48,2% des dentistes interrogés se sont déclarés insatisfaits du contrôle du libellé des plaques professionnelles, ce qui en fait le point le plus critiqué.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Hafssi s'inquiète de l'exercice illégal de la profession. Selon l'ONMD, combien de faux dentistes exercent illégalement au Maroc ?",
+      "media": [],
+      "options": [
+        "Environ 500",
+        "Environ 1 000",
+        "Plus de 3 300",
+        "Plus de 10 000"
+      ],
+      "correct": 2,
+      "explanation": "Selon l'ONMD, plus de 3 300 faux médecins dentistes exercent illégalement au Maroc, mettant quotidiennement la vie des citoyens en danger.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Fadli est alerté par les pratiques de certains 'fabricants de prothèses dentaires'. Selon l'ONMD, quel est le problème principal ?",
+      "media": [],
+      "options": [
+        "Ils fabriquent des prothèses de mauvaise qualité",
+        "Ils reçoivent des patients pour des traitements pseudo-médicaux en dehors de leur autorisation",
+        "Ils vendent des prothèses trop chères",
+        "Ils ne déclarent pas leurs revenus fiscaux"
+      ],
+      "correct": 1,
+      "explanation": "L'ONMD alerte sur les 'fabricants de prothèses dentaires' qui reçoivent des patients pour des traitements pseudo-médicaux réalisés dans une illégalité flagrante, en dehors du cadre de leur autorisation qui se limite à la fabrication sur prescription.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q07",
+      "type": "single-choice",
+      "question": "Selon l'ONMD, quelles sont les conséquences des pratiques illégales en médecine dentaire ?",
+      "media": [],
+      "options": [
+        "Des soins de qualité insuffisante uniquement",
+        "Des décès, des handicaps permanents et des maladies infectieuses",
+        "Des coûts plus élevés pour les patients",
+        "Une simple concurrence déloyale pour les dentistes légaux"
+      ],
+      "correct": 1,
+      "explanation": "L'ONMD dénonce des incidents dramatiques : décès dus à l'utilisation de produits anesthésiants falsifiés ou périmés, surdosages aléatoires, handicaps permanents ou maladies infectieuses contractées dans des conditions d'hygiène déplorables.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Hafssi s'interroge sur le projet de loi 25-14. Quel est l'objectif principal de ce texte selon l'ONMD ?",
+      "media": [],
+      "options": [
+        "Augmenter les tarifs des actes dentaires",
+        "Protéger la pratique légale et réglementée et lutter contre les usurpateurs",
+        "Créer de nouvelles facultés de médecine dentaire",
+        "Modifier les conditions d'inscription à l'Ordre"
+      ],
+      "correct": 1,
+      "explanation": "Le projet de loi n°25-14 vise la protection de la pratique légale et réglementée de l'exercice des professions des préparateurs et manipulateurs des produits de santé, y compris celle des prothésistes dentaires, pour écarter les usurpateurs.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q09",
+      "type": "single-choice",
+      "question": "Selon l'ONMD, pourquoi les charlatans de la dentisterie mènent-ils une campagne contre le projet de loi 25-14 ?",
+      "media": [],
+      "options": [
+        "Pour obtenir une meilleure rémunération",
+        "Pour créer la confusion et tenter d'amender le texte",
+        "Pour protester contre les conditions de travail",
+        "Pour demander une formation académique"
+      ],
+      "correct": 1,
+      "explanation": "L'ONMD dénonce une campagne de désinformation des charlatans, visant à créer la confusion auprès du citoyen et des parlementaires pour tenter de faire amender le projet de loi.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Fadli a appris que plusieurs régions du Maroc connaissent une pénurie de dentistes. Quelle solution a été mise en place pour y remédier ?",
+      "media": [],
+      "options": [
+        "Le recrutement de dentistes étrangers uniquement",
+        "Le conventionnement de dentistes du secteur privé via le Décret 2.12.507",
+        "La fermeture des cabinets en zones rurales",
+        "L'augmentation des frais de consultation"
+      ],
+      "correct": 1,
+      "explanation": "Le Décret n°2.12.507 permet au ministère de la Santé de recourir à des dentistes du secteur privé pour exercer à temps partiel dans les hôpitaux publics, notamment pour la permanence des soins.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q11",
+      "type": "single-choice",
+      "question": "Selon le Décret 2.12.507, quel est le plafond de rémunération mensuelle pour un dentiste conventionné ?",
+      "media": [],
+      "options": [
+        "5 000 DH",
+        "7 143 DH",
+        "10 000 DH",
+        "15 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Le Décret 2.12.507 fixe la rémunération mensuelle brute maximum à 7 143 DH, payable à terme échu dans la limite de 11 mois par an.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Hafssi souhaite se conventionner. Selon l'article 6 du Décret 2.12.507, quelles sont les conditions d'éligibilité ?",
+      "media": [],
+      "options": [
+        "Avoir moins de 30 ans",
+        "Être inscrit à l'Ordre et ne pas avoir fait l'objet de sanctions disciplinaires",
+        "Exercer exclusivement en zone rurale",
+        "Avoir plus de 10 ans d'expérience"
+      ],
+      "correct": 1,
+      "explanation": "L'article 6 du Décret 2.12.507 stipule que les candidats doivent être inscrits à l'ordre professionnel, ne pas avoir fait l'objet d'une sanction disciplinaire ordinale, et ne pas avoir été condamnés pour crime contre les personnes ou atteinte à la moralité publique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q13",
+      "type": "single-choice",
+      "question": "Selon le Décret 2.12.507, quelle est la durée maximum d'une convention type ?",
+      "media": [],
+      "options": [
+        "6 mois",
+        "11 mois, reconductible tacitement 3 fois",
+        "2 ans",
+        "5 ans"
+      ],
+      "correct": 1,
+      "explanation": "Conformément à l'article 5 du Décret 2.12.507, la convention est conclue pour une durée maximum de onze mois, reconductible tacitement trois fois au plus.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Fadli est conventionné et exerce à l'hôpital. Selon le Décret 2.12.507, à quelle autorité est-il soumis ?",
+      "media": [],
+      "options": [
+        "À l'Ordre National des Médecins Dentistes uniquement",
+        "À l'autorité du chef hiérarchique de l'établissement public de santé",
+        "À aucune autorité, il est indépendant",
+        "Au ministère du Commerce"
+      ],
+      "correct": 1,
+      "explanation": "L'article 9 du Décret 2.12.507 précise que le dentiste conventionné est soumis à l'autorité du chef hiérarchique de l'établissement sanitaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q15",
+      "type": "single-choice",
+      "question": "Selon le Décret 2.12.507, quelles sont les obligations d'un dentiste conventionné en matière de responsabilité ?",
+      "media": [],
+      "options": [
+        "Il n'est pas responsable de ses actes",
+        "Il dirige et surveille le travail des internes placés sous son autorité",
+        "La responsabilité incombe uniquement à l'hôpital",
+        "Il est dispensé de toute responsabilité"
+      ],
+      "correct": 1,
+      "explanation": "L'article 9 du Décret 2.12.507 dispose que les dentistes conventionnés dirigent et surveillent le travail des internes et du personnel placés directement sous leur autorité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q16",
+      "type": "single-choice",
+      "question": "Selon l'ONMD, quel est l'impact de l'exercice illégal sur la réputation du Maroc à l'international ?",
+      "media": [],
+      "options": [
+        "Aucun impact, le phénomène est marginal",
+        "Certaines ambassades étrangères ont émis des alertes à leurs ressortissants",
+        "Le Maroc est salué pour sa lutte contre ce phénomène",
+        "Les touristes sont attirés par les prix bas"
+      ],
+      "correct": 1,
+      "explanation": "Certaines ambassades étrangères ont émis des alertes officielles à leurs ressortissants, les mettant en garde contre les risques liés à des soins reçus dans des établissements non agréés au Maroc.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Hafssi s'intéresse à la lutte contre l'exercice illégal. Quels types de locaux sont particulièrement visés par l'ONMD ?",
+      "media": [],
+      "options": [
+        "Les cabinets dentaires en zone rurale",
+        "Les établissements connus sous le nom de 'fabricants de prothèses dentaires'",
+        "Les cliniques dentaires privées conventionnées",
+        "Les services dentaires des hôpitaux publics"
+      ],
+      "correct": 1,
+      "explanation": "L'ONMD alerte sur des locaux connus sous le nom de 'fabricants de prothèses dentaires' où des citoyens sont reçus pour des traitements pseudo-médicaux réalisés dans une illégalité flagrante.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q18",
+      "type": "single-choice",
+      "question": "Selon les données démographiques, quelle est la disparité de répartition des dentistes dans le secteur public au Maroc ?",
+      "media": [],
+      "options": [
+        "Elle est parfaitement équilibrée",
+        "Elle varie de 1 dentiste pour 12 631 à 1 pour 728 634 habitants selon les régions",
+        "Toutes les régions ont un ratio similaire",
+        "Les zones rurales sont mieux desservies que les zones urbaines"
+      ],
+      "correct": 1,
+      "explanation": "La proportion de dentistes publics varie considérablement, passant de 1 dentiste pour 12 631 habitants dans certaines régions à 1 dentiste pour 728 634 habitants dans d'autres.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q19",
+      "type": "single-choice",
+      "question": "Selon l'ONMD, quel est l'impact des pratiques illégales sur la santé publique ?",
+      "media": [],
+      "options": [
+        "Un risque minime pour les patients",
+        "Une menace directe à la santé des citoyens et à la sécurité du système national de santé",
+        "Un simple problème de concurrence économique",
+        "Un enjeu exclusivement déontologique"
+      ],
+      "correct": 1,
+      "explanation": "L'ONMD considère ces pratiques comme une 'menace directe à la santé des citoyens et à la sécurité du système national de santé', appelant à une action urgente.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q20",
+      "type": "single-choice",
+      "question": "Selon l'ONMD, quel est le rôle des prothésistes dentaires dans le cadre légal ?",
+      "media": [],
+      "options": [
+        "Ils peuvent recevoir des patients pour des consultations",
+        "Leur autorisation se limite à la fabrication de prothèses sur prescription du dentiste",
+        "Ils peuvent réaliser des actes médicaux dans leur laboratoire",
+        "Ils sont habilités à poser des implants dentaires"
+      ],
+      "correct": 1,
+      "explanation": "L'ONMD rappelle que l'autorisation des prothésistes dentaires se limite à la fabrication de prothèses sur prescription du médecin dentiste, sans accueil de patients ni réalisation d'actes médicaux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Fadli souhaite connaître l'avis de la Fédération Dentaire Internationale (FDI) sur l'exercice illégal au Maroc. Quelle est sa position ?",
+      "media": [],
+      "options": [
+        "Elle soutient les charlatans dans leur démarche",
+        "Elle a exprimé son indignation et soutient l'action de l'ONMD",
+        "Elle est neutre sur la question",
+        "Elle ne s'est pas prononcée"
+      ],
+      "correct": 1,
+      "explanation": "La FDI, qui regroupe 900 000 médecins dentistes dans 137 pays, a exprimé son 'indignation' dans un courrier au président de l'ONMD, soutenant la lutte contre l'exercice illégal.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q22",
+      "type": "single-choice",
+      "question": "Selon une étude sur la perception des dentistes, quel pourcentage d'entre eux juge nécessaire l'instauration de commissions de contrôle permanentes ?",
+      "media": [],
+      "options": [
+        "50 %",
+        "76,3 %",
+        "21,9 %",
+        "67,5 %"
+      ],
+      "correct": 1,
+      "explanation": "L'étude a montré que 76,3% des dentistes interrogés ont jugé nécessaire l'instauration de commissions de contrôle permanentes pour lutter contre les pratiques illégales.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q23",
+      "type": "single-choice",
+      "question": "Selon la loi 07-05, quelles sont les missions principales de l'ONMD ?",
+      "media": [],
+      "options": [
+        "Uniquement la gestion du tableau de l'Ordre",
+        "La réglementation, la gestion des plaintes, la lutte contre l'exercice illégal, la formation continue et le partenariat public-privé",
+        "La fixation des tarifs des actes dentaires",
+        "La gestion des mutuelles dentaires"
+      ],
+      "correct": 1,
+      "explanation": "Les missions de l'ONMD décrites à l'article 13 de la loi 07-05 couvrent la gestion du tableau, la réglementation, les réclamations et plaintes, la lutte contre l'exercice illégal, la formation continue, le partenariat public-privé et la prévoyance sociale.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Hafssi s'interroge sur le rôle du Maroc dans la santé dentaire en Afrique. Quelle est l'ambition du Royaume selon l'ONMD ?",
+      "media": [],
+      "options": [
+        "Devenir un pôle médical de référence en Afrique",
+        "Se contenter de former des dentistes pour le marché local",
+        "Réduire le nombre de facultés de médecine dentaire",
+        "Limiter l'accès aux soins dentaires"
+      ],
+      "correct": 0,
+      "explanation": "L'ONMD souligne que le Maroc ambitionne de devenir un pôle médical de référence en Afrique, ce qui nécessite de lutter contre les pratiques illégales qui nuisent à cette image.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q25",
+      "type": "single-choice",
+      "question": "Selon le Décret 2.12.507, qu'est-ce qui peut entraîner la résiliation de la convention d'un dentiste conventionné ?",
+      "media": [],
+      "options": [
+        "Une simple demande du dentiste sans préavis",
+        "Une absence pendant trois séances de travail sans motif valable",
+        "Un désaccord avec les horaires de travail",
+        "Une demande du ministère à tout moment"
+      ],
+      "correct": 1,
+      "explanation": "L'article 10 du Décret 2.12.507 prévoit que toute absence pendant trois séances de travail, sans information préalable et sans motif valable, est une cause de résiliation de la convention par l'administration sans préavis.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q26",
+      "type": "single-choice",
+      "question": "Selon l'ONMD, quel est le lien entre les grandes manifestations internationales et la lutte contre l'exercice illégal ?",
+      "media": [],
+      "options": [
+        "Aucun lien, les manifestations ne sont pas concernées",
+        "Le Maroc se prépare à accueillir des touristes, ce qui nécessite une vigilance sanitaire renforcée",
+        "Les manifestations attirent uniquement des dentistes légaux",
+        "L'exercice illégal est un problème uniquement local"
+      ],
+      "correct": 1,
+      "explanation": "L'ONMD souligne que le Maroc se prépare à accueillir de grandes manifestations touristiques et sportives internationales, ce qui rend essentielle une vigilance renforcée pour garantir les normes de sécurité sanitaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

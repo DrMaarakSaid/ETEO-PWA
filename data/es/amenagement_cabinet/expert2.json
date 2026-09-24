@@ -1,0 +1,542 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_expert2_001",
+    "title": "Acondicionamiento del Consultorio - Experto 2 (Certificación)",
+    "specialty": "AMEN",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1900,
+    "chapter": "Certificación y transmisión de conocimientos",
+    "isCertification": true
+  },
+  "questions": [
+    {
+      "id": "AMEN_X2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan transmite su consultorio a su hijo, el Dr. Youssef. Según el artículo 25, ¿cómo se realiza la cesión del arrendamiento?",
+      "media": [],
+      "options": [
+        "Mediante una simple donación entre familiares",
+        "Mediante la cesión del arrendamiento con notificación al propietario",
+        "Mediante acta notarial obligatoria",
+        "Mediante declaración ante la prefectura"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 25: la cesión se realiza mediante la cesión del arrendamiento con notificación al propietario para que sea oponible.",
+      "difficulty": "muy difícil",
+      "category": "Cesión del arrendamiento",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["cesión", "notificación"],
+      "references": ["Ley 49-16 Art.25"]
+    },
+    {
+      "id": "AMEN_X2_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Kamali quiere transmitir su fondo de comercio a su socio. Según el artículo 7, ¿cómo se valora la transmisión?",
+      "media": [],
+      "options": [
+        "Por el precio de compra del equipo",
+        "Sobre la base de las declaraciones fiscales de los 4 últimos ejercicios",
+        "Sobre la base de la tasación de un perito independiente",
+        "Por el valor del alquiler del local"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 7, párr. 3: el valor del fondo se valora sobre la base de las declaraciones fiscales de los últimos cuatro ejercicios.",
+      "difficulty": "muy difícil",
+      "category": "Transmisión del fondo",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["fondo", "transmisión", "fiscal"],
+      "references": ["Ley 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha obtenido una sentencia de desalojo, pero el propietario no paga. Según el artículo 28, ¿qué procedimiento debe seguir?",
+      "media": [],
+      "options": [
+        "Solicitar el embargo de los bienes del propietario",
+        "Permanecer en el local hasta el pago",
+        "Solicitar la ejecución forzosa ante el juez",
+        "Todos estos procedimientos son posibles"
+      ],
+      "correct": 3,
+      "explanation": "Artículo 28: están disponibles varios procedimientos: embargo, ejecución forzosa, permanencia en el local.",
+      "difficulty": "muy difícil",
+      "category": "Ejecución de la sentencia",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["ejecución", "embargo", "permanencia"],
+      "references": ["Ley 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X2_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Kamali debe formar un equipo de abogados para gestionar su patrimonio. Según la ley 49-16, ¿cuál es el interés de la transmisión anticipada?",
+      "media": [],
+      "options": [
+        "Evitar conflictos hereditarios",
+        "Garantizar una transmisión reflexiva",
+        "Optimizar la fiscalidad de la transmisión",
+        "Todas estas ventajas son relevantes"
+      ],
+      "correct": 3,
+      "explanation": "La transmisión anticipada permite evitar conflictos, optimizar la fiscalidad y preparar serenamente la sucesión.",
+      "difficulty": "muy difícil",
+      "category": "Estrategia patrimonial",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["transmisión", "anticipada", "patrimonio"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q05",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan ha incluido en el contrato de arrendamiento una cláusula de no competencia. Según la jurisprudencia, ¿es válida esta cláusula?",
+      "media": [],
+      "options": [
+        "Sí, si está limitada geográfica y temporalmente",
+        "No, contradice la libertad de empresa",
+        "Sí, si no es desproporcionada",
+        "No, las cláusulas de no competencia están prohibidas"
+      ],
+      "correct": 0,
+      "explanation": "Las cláusulas de no competencia son válidas si están limitadas en el espacio y en el tiempo.",
+      "difficulty": "muy difícil",
+      "category": "Cláusulas restrictivas",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["no competencia", "cláusula", "limitación"],
+      "references": ["Jurisprudencia"]
+    },
+    {
+      "id": "AMEN_X2_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Kamali quiere transmitir su consultorio a varios compradores. Según el artículo 24, ¿está permitido el subarrendamiento?",
+      "media": [],
+      "options": [
+        "Sí, si el contrato de arrendamiento no contiene cláusula en contrario",
+        "No, el subarrendamiento está prohibido por defecto",
+        "Sí, pero solo con el consentimiento del propietario",
+        "No, el arrendamiento es personal para el arrendatario"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 24, párr. 1: el arrendatario puede subarrendar todo o parte del local, a menos que exista cláusula en contrario.",
+      "difficulty": "muy difícil",
+      "category": "Subarrendamiento",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["subarrendamiento", "compradores", "autorización"],
+      "references": ["Ley 49-16 Art.24"]
+    },
+    {
+      "id": "AMEN_X2_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha recibido una oferta de compra de su fondo de comercio. Según el artículo 7, ¿cómo se calcula la indemnización por desalojo?",
+      "media": [],
+      "options": [
+        "Sobre la base del valor del fondo, las obras y los gastos de mudanza",
+        "Solo sobre la base del valor del fondo de comercio",
+        "Solo sobre la base de los gastos de mudanza",
+        "Sobre la base del valor del equipo dental"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 7, párr. 3: la indemnización incluye el valor del fondo, los gastos de obras y los gastos de mudanza.",
+      "difficulty": "muy difícil",
+      "category": "Valoración de la indemnización",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indemnización", "valor", "obras"],
+      "references": ["Ley 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X2_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Kamali debe redactar un testamento sobre su consultorio. Según el derecho sucesorio, ¿cuál es el interés del testamento?",
+      "media": [],
+      "options": [
+        "Organizar la transmisión según su voluntad",
+        "Evitar conflictos entre herederos",
+        "Designar a los compradores del consultorio",
+        "Todos estos intereses son relevantes"
+      ],
+      "correct": 3,
+      "explanation": "El testamento permite organizar la transmisión, evitar conflictos y designar a los compradores.",
+      "difficulty": "muy difícil",
+      "category": "Sucesión",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["testamento", "sucesión", "transmisión"],
+      "references": ["Derecho sucesorio"]
+    },
+    {
+      "id": "AMEN_X2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan se enfrenta a un procedimiento de desalojo. Según el artículo 26, ¿cómo puede terminar el contrato de arrendamiento?",
+      "media": [],
+      "options": [
+        "Solo por expiración del plazo",
+        "Por expiración del plazo, rescisión, anulación o renuncia",
+        "Solo por decisión judicial",
+        "Solo por acuerdo de ambas partes"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 26: el contrato de arrendamiento puede terminar por expiración del plazo, rescisión, anulación o renuncia.",
+      "difficulty": "muy difícil",
+      "category": "Terminación del arrendamiento",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["terminación", "expiración", "rescisión"],
+      "references": ["Ley 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X2_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha sido nombrado perito judicial. Según la ley 49-16, ¿cuál es la responsabilidad del perito?",
+      "media": [],
+      "options": [
+        "Valorar objetivamente los bienes",
+        "Redactar un informe conforme a la ley",
+        "Ser imparcial e independiente",
+        "Todas estas obligaciones están establecidas"
+      ],
+      "correct": 3,
+      "explanation": "El perito debe valorar objetivamente, redactar un informe conforme a la ley y ser imparcial.",
+      "difficulty": "muy difícil",
+      "category": "Pericia judicial",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["perito", "responsabilidad", "imparcialidad"],
+      "references": ["Código de procedimiento civil"]
+    },
+    {
+      "id": "AMEN_X2_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan debe transmitir sus conocimientos a su sucesor. Según la ley 49-16, ¿cuál es la incidencia sobre el contrato de arrendamiento?",
+      "media": [],
+      "options": [
+        "Ninguna, el arrendamiento es autónomo",
+        "El sucesor se beneficia del derecho de prórroga",
+        "El sucesor debe firmar un nuevo contrato de arrendamiento",
+        "El propietario puede negarse a la transmisión"
+      ],
+      "correct": 1,
+      "explanation": "El sucesor se beneficia de los derechos vinculados al arrendamiento, en particular el derecho de prórroga.",
+      "difficulty": "muy difícil",
+      "category": "Transmisión de conocimientos",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["conocimientos", "sucesor", "prórroga"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha interpuesto un recurso contra su propietario. Según el artículo 28, ¿cómo se ejecuta el desalojo?",
+      "media": [],
+      "options": [
+        "Después del depósito de la indemnización por el propietario",
+        "Transcurridos 3 meses desde la sentencia",
+        "Transcurrido el plazo de recurso",
+        "Todos estos factores determinan la ejecución"
+      ],
+      "correct": 3,
+      "explanation": "La ejecución está condicionada por el depósito de la indemnización, el plazo de 3 meses y la expiración de los plazos de recurso.",
+      "difficulty": "muy difícil",
+      "category": "Ejecución del desalojo",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["desalojo", "ejecución", "plazos"],
+      "references": ["Ley 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha recurrido a una transacción judicial. Según la ley 49-16, ¿tiene esta transacción fuerza de cosa juzgada?",
+      "media": [],
+      "options": [
+        "Sí, si está homologada por el tribunal",
+        "No, la transacción no tiene fuerza de cosa juzgada",
+        "Sí, automáticamente",
+        "No, debe ser confirmada por una nueva sentencia"
+      ],
+      "correct": 0,
+      "explanation": "La transacción homologada por el tribunal tiene fuerza de cosa juzgada.",
+      "difficulty": "muy difícil",
+      "category": "Transacción",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["transacción", "fuerza", "cosa juzgada"],
+      "references": ["Código de procedimiento civil"]
+    },
+    {
+      "id": "AMEN_X2_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha sido desalojado, pero el propietario no ha reconstruido el edificio. Según el artículo 11, ¿cuáles son las consecuencias?",
+      "media": [],
+      "options": [
+        "El propietario debe pagar una indemnización adicional",
+        "El arrendatario puede recuperar el local",
+        "El propietario pierde el derecho a demoler",
+        "Todas estas consecuencias son posibles"
+      ],
+      "correct": 3,
+      "explanation": "Artículo 11: el incumplimiento de plazos conlleva indemnizaciones adicionales, recuperación o pérdida del derecho.",
+      "difficulty": "muy difícil",
+      "category": "Incumplimiento de plazos",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["plazos", "reconstrucción", "sanciones"],
+      "references": ["Ley 49-16 Art.11"]
+    },
+    {
+      "id": "AMEN_X2_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan se enfrenta a un conflicto de vecindad. Según la ley 49-16, ¿es responsable el arrendador?",
+      "media": [],
+      "options": [
+        "Sí, por violación del derecho de uso",
+        "No, es un conflicto privado entre arrendatarios",
+        "Sí, solo si ha sido notificado",
+        "No, si no hay cláusulas especiales"
+      ],
+      "correct": 0,
+      "explanation": "El arrendador puede ser responsable de la violación del derecho de uso causada por otros arrendatarios.",
+      "difficulty": "muy difícil",
+      "category": "Conflictos de vecindad",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["vecindad", "conflictos", "responsabilidad"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha contratado a un arquitecto para realizar obras. Según el artículo 3, ¿es responsable el arrendatario?",
+      "media": [],
+      "options": [
+        "Sí, por los daños causados al local",
+        "No, solo el arquitecto responde",
+        "Sí, pero solo si las obras están mal ejecutadas",
+        "No, de las obras responde el propietario"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 3: el arrendatario es responsable de los daños causados al local, incluso por las personas que haya contratado.",
+      "difficulty": "muy difícil",
+      "category": "Responsabilidad por obras",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["responsabilidad", "obras", "daños"],
+      "references": ["Ley 49-16 Art.3"]
+    },
+    {
+      "id": "AMEN_X2_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha recibido una oferta de absorción por un gran grupo. Según la ley 49-16, ¿cuáles son los derechos del arrendatario?",
+      "media": [],
+      "options": [
+        "El derecho a ceder el arrendamiento",
+        "El derecho a subarrendar",
+        "El derecho a la prórroga",
+        "Todos estos derechos están garantizados"
+      ],
+      "correct": 3,
+      "explanation": "La ley 49-16 garantiza los derechos de cesión, subarrendamiento y prórroga del arrendamiento.",
+      "difficulty": "muy difícil",
+      "category": "Derechos del arrendatario",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["derechos", "cesión", "subarrendamiento", "prórroga"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha impugnado la notificación ante los tribunales. Según el artículo 26, ¿puede el tribunal conceder una reparación de perjuicios?",
+      "media": [],
+      "options": [
+        "Sí, en caso de notificación abusiva",
+        "No, solo se conceden las costas judiciales",
+        "Sí, pero solo si el arrendatario las solicita",
+        "No, la ley no prevé la reparación de perjuicios"
+      ],
+      "correct": 0,
+      "explanation": "El tribunal puede conceder una reparación de perjuicios en caso de notificación abusiva para compensar el daño sufrido.",
+      "difficulty": "muy difícil",
+      "category": "Sanciones",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["notificación abusiva", "reparación", "perjuicio"],
+      "references": ["Ley 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X2_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan finaliza su carrera y transmite su consultorio. Según la ley 49-16, ¿qué último consejo dar al comprador?",
+      "media": [],
+      "options": [
+        "Respetar estrictamente las condiciones del arrendamiento",
+        "Mantener buenas relaciones con el propietario",
+        "Estar atento a los plazos y formalidades",
+        "Todos estos consejos son importantes"
+      ],
+      "correct": 3,
+      "explanation": "Tres elementos son importantes para una transmisión exitosa: respetar las condiciones, buenas relaciones, atención a las formalidades.",
+      "difficulty": "muy difícil",
+      "category": "Transmisión exitosa",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["transmisión", "consejos", "comprador"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha superado con éxito todas las pruebas de certificación. Según la ley 49-16, ¿cuál es la conclusión de esta formación?",
+      "media": [],
+      "options": [
+        "El dominio de la ley 49-16 está logrado",
+        "El arrendatario ahora puede gestionar el arrendamiento con total tranquilidad",
+        "La protección de los derechos del arrendatario está garantizada",
+        "Todas estas conclusiones son correctas"
+      ],
+      "correct": 3,
+      "explanation": "La formación permite dominar la ley 49-16, gestionar el arrendamiento con tranquilidad y garantizar la protección de los derechos.",
+      "difficulty": "muy difícil",
+      "category": "Conclusión",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["dominio", "tranquilidad", "protección"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha transmitido con éxito su consultorio siguiendo todas las reglas. Según la ley 49-16, ¿cuál es el secreto de este éxito?",
+      "media": [],
+      "options": [
+        "Un buen conocimiento de la ley",
+        "Relaciones serenas con el propietario",
+        "La anticipación de las dificultades",
+        "Todos estos factores son importantes"
+      ],
+      "correct": 3,
+      "explanation": "El éxito se basa en el conocimiento de la ley, las buenas relaciones y la anticipación de las dificultades.",
+      "difficulty": "muy difícil",
+      "category": "Éxito",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["éxito", "ley", "anticipación"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q22",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha formado a su sucesor en la ley 49-16. Según la formación, ¿cuál es el pilar fundamental de esta ley?",
+      "media": [],
+      "options": [
+        "La protección del derecho de prórroga",
+        "La protección del derecho a indemnización por desalojo",
+        "La protección de los derechos del arrendatario en general",
+        "Todos estos pilares son fundamentales"
+      ],
+      "correct": 3,
+      "explanation": "La ley 49-16 protege el derecho de prórroga, el derecho a indemnización y los derechos del arrendatario en general.",
+      "difficulty": "muy difícil",
+      "category": "Pilares de la ley",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["pilares", "protección", "derechos"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha redactado una guía práctica sobre la ley 49-16. Según la guía, ¿cuál es el mensaje principal que hay que recordar?",
+      "media": [],
+      "options": [
+        "El conocimiento de los derechos es necesario",
+        "La prevención es mejor que el litigio",
+        "El asesoramiento jurídico es recomendable",
+        "Todos estos mensajes son importantes"
+      ],
+      "correct": 3,
+      "explanation": "La guía enseña que el conocimiento de los derechos, la prevención y el asesoramiento jurídico son importantes.",
+      "difficulty": "muy difícil",
+      "category": "Guía práctica",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["guía", "prevención", "asesoramiento"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha obtenido la certificación en arrendamiento comercial. Según la ley 49-16, ¿qué significa esta certificación?",
+      "media": [],
+      "options": [
+        "El dominio completo de la ley 49-16",
+        "La capacidad para gestionar todos los aspectos del arrendamiento comercial",
+        "La competencia para asesorar a otros odontólogos",
+        "Todos estos significados son correctos"
+      ],
+      "correct": 3,
+      "explanation": "La certificación confirma el dominio de la ley, la capacidad de gestión y la competencia para asesorar.",
+      "difficulty": "muy difícil",
+      "category": "Certificación",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["certificación", "dominio", "competencia"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan finaliza esta formación como experto. Según la ley 49-16, ¿cuál es la última palabra para los futuros odontólogos?",
+      "media": [],
+      "options": [
+        "La ley 49-16 es un escudo para su consultorio",
+        "El conocimiento es su mejor arma",
+        "La prevención es su mejor aliada",
+        "Todos estos consejos deben recordarse"
+      ],
+      "correct": 3,
+      "explanation": "La ley es un escudo, el conocimiento es un arma, la prevención es una aliada: los tres son importantes.",
+      "difficulty": "muy difícil",
+      "category": "Conclusión",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["conclusión", "consejo", "futuro"],
+      "references": ["Ley 49-16"]
+    }
+  ]
+}

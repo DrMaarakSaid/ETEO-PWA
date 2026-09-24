@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_intermediaire1_001",
+    "title": "Cfao_impression3d - Intermédiaire 1",
+    "specialty": "CFAO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Rachid a réussi à numériser sa première empreinte optique. Dr Samia lui explique que le fichier STL généré est un maillage de triangles. Quelle est la caractéristique principale de ce format ?",
+      "media": [],
+      "options": [
+        "Il contient des informations de couleur et de texture",
+        "Il représente la surface de l'objet par des facettes triangulaires",
+        "Il est compressé pour réduire la taille du fichier",
+        "Il contient les coordonnées exactes des axes d'insertion"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Le format STL est un maillage de triangles qui décrit la surface de l'objet. C'est le format standard pour l'impression 3D et l'usinage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Samia doit choisir un scanner intra-oral pour son cabinet. Elle hésite entre plusieurs marques. Selon les critères de choix, quel élément est le plus important ?",
+      "media": [],
+      "options": [
+        "La couleur de l'appareil",
+        "La précision de numérisation et la fluidité du logiciel",
+        "Le prix d'achat uniquement",
+        "La marque de l'appareil"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La précision et la fluidité du logiciel sont essentielles pour un flux de travail efficace et des résultats fiables.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Rachid a réalisé un scan intra-oral mais le fichier STL présente des artéfacts. Dr Samia lui conseille une solution. Quelle est la cause la plus probable des artéfacts ?",
+      "media": [],
+      "options": [
+        "Un problème de connexion internet",
+        "Un mouvement du patient ou une mauvaise gestion de la salive",
+        "Un défaut de la cartouche d'encre",
+        "Un problème de compatibilité du logiciel"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Les artéfacts sont souvent dus à des mouvements du patient ou à la présence de salive ou de sang sur les structures dentaires.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Samia doit concevoir une couronne sur le logiciel de CAO. Dr Rachid lui rappelle l'importance des marges. Quelle est la fonction des marges cervicales ?",
+      "media": [],
+      "options": [
+        "Elles définissent la couleur de la couronne",
+        "Elles assurent l'adaptation de la couronne à la préparation dentaire",
+        "Elles déterminent la hauteur de la couronne",
+        "Elles sont esthétiques"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'Les marges cervicales sont essentielles pour l'adaptation de la couronne à la préparation. Une mauvaise adaptation peut entraîner des caries secondaires.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Rachid doit choisir entre un flux de travail 'chairside' et un flux 'laboratoire'. Selon les contraintes du cabinet, quel est l'avantage principal du flux 'chairside' ?",
+      "media": [],
+      "options": [
+        "Il est moins cher à l'achat",
+        "Il permet de finaliser la restauration en une seule séance",
+        "Il est plus précis que le laboratoire",
+        "Il nécessite moins de formation"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Le flux chairside permet de réaliser l'empreinte, la conception et la fabrication de la restauration en une seule séance, ce qui élimine la temporisation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Samia doit former un assistant à l'utilisation du scanner intra-oral. Quelle est la première règle à lui enseigner ?",
+      "media": [],
+      "options": [
+        "La gestion des couleurs",
+        "La gestion des mouvements du patient et l'aspiration de la salive",
+        "La programmation des séquences de scans",
+        "Le choix des filtres d'éclairage"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La première règle est de maîtriser la gestion des mouvements et l'aspiration pour obtenir un scan de qualité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Rachid a conçu une couronne sur le logiciel de CAO. Dr Samia lui demande de vérifier les contacts proximaux. Pourquoi cette vérification est-elle importante ?",
+      "media": [],
+      "options": [
+        "Pour l'esthétique de la couronne",
+        "Pour éviter les aliments entre les dents et assurer la stabilité",
+        "Pour la couleur de la couronne",
+        "Pour la hauteur de la couronne"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Des contacts proximaux corrects évitent les aliments entre les dents et assurent la stabilité de la restauration.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Samia doit choisir le format d'exportation de son fichier pour l'usinage. Quel format est le plus couramment utilisé pour la FAO ?",
+      "media": [],
+      "options": [
+        "Le format JPEG",
+        "Le format STL",
+        "Le format PDF",
+        "Le format DOCX"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'Le format STL est le plus couramment utilisé pour l'exportation vers les machines de FAO.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Rachid a reçu un fichier STL d'un laboratoire. Il doit vérifier la qualité du scan. Quel élément est le plus critique à contrôler ?",
+      "media": [],
+      "options": [
+        "La couleur du scan",
+        "La présence de zones manquantes ou d'artéfacts",
+        "La résolution de l'image",
+        "La taille du fichier"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'La présence de zones manquantes ou d'artéfacts peut compromettre la conception et la fabrication de la restauration.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Samia doit optimiser le flux de travail numérique. Quelle étape est la plus sensible aux erreurs ?",
+      "media": [],
+      "options": [
+        "La conception CAO",
+        "L'acquisition optique (empreinte)",
+        "L'usinage",
+        "Le scellement de la restauration"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'L'acquisition optique est l'étape la plus sensible. Une empreinte numérique de mauvaise qualité compromet toutes les étapes suivantes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Rachid doit calibrer sa machine d'usinage. Quelle est la fréquence recommandée pour la calibration ?",
+      "media": [],
+      "options": [
+        "Une fois par an",
+        "Régulièrement, selon les recommandations du fabricant",
+        "Une seule fois à l'achat",
+        "Jamais"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'La calibration régulière est essentielle pour maintenir la précision de l'usinage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr Samia a usiné une couronne en disilicate de lithium. Dr Rachid lui demande de vérifier l'ajustage. Quel est l'outil de contrôle le plus précis ?",
+      "media": [],
+      "options": [
+        "L'œil nu",
+        "Le détartreur",
+        "Le fil de contrôle ou le colorant de vérification",
+        "La loupe binoculaire"
+      ],
+      "correct": 2,
+      "explanation": "Dr Rachid explique : 'Le fil de contrôle ou le colorant de vérification permet d'évaluer précisément l'ajustage marginal de la couronne.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Rachid doit choisir entre une couronne en zircone monolithique ou en disilicate de lithium. Quel est l'avantage principal de la zircone monolithique ?",
+      "media": [],
+      "options": [
+        "Sa translucidité supérieure",
+        "Sa résistance mécanique élevée",
+        "Sa capacité à être réparée au fauteuil",
+        "Son prix plus bas"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'La zircone monolithique offre une résistance mécanique très élevée, idéale pour les secteurs postérieurs et les bridges.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Samia doit décider du type de couronne pour un patient avec un bruxisme sévère. Quel matériau est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "Le disilicate de lithium",
+        "La zircone monolithique",
+        "Le composite usinable",
+        "La céramique feldspathique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La zircone monolithique est le matériau de choix pour les patients bruxeurs en raison de sa résistance élevée.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Rachid a usiné une couronne en zircone monolithique. Dr Samia lui rappelle l'importance du glaçage. Quelle est la fonction du glaçage ?",
+      "media": [],
+      "options": [
+        "Augmenter la résistance de la couronne",
+        "Donner un aspect esthétique et lisse à la surface",
+        "Changer la couleur de la couronne",
+        "Réduire l'épaisseur de la couronne"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Le glaçage donne un aspect esthétique et lisse à la surface de la zircone, améliorant son intégration dans le sourire du patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Samia doit gérer un cas complexe nécessitant un bridge de 4 éléments. Quel matériau est le plus adapté pour ce type de restauration ?",
+      "media": [],
+      "options": [
+        "Le disilicate de lithium",
+        "La zircone",
+        "Le composite usinable",
+        "Le PMMA"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La zircone est le matériau de choix pour les bridges de grande étendue en raison de sa résistance et de sa stabilité dimensionnelle.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Rachid doit choisir une fraise pour l'usinage d'une céramique vitreuse. Quelle caractéristique doit-il rechercher ?",
+      "media": [],
+      "options": [
+        "Une fraise en carbure de tungstène",
+        "Une fraise diamantée",
+        "Une fraise en acier rapide",
+        "Une fraise en céramique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Les fraises diamantées sont recommandées pour l'usinage des céramiques vitreuses en raison de leur dureté et de leur résistance à l'usure.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Samia a usiné une couronne en composite usinable. Dr Rachid lui demande de vérifier la finition. Quelle est l'étape de finition recommandée ?",
+      "media": [],
+      "options": [
+        "Le glaçage",
+        "Le polissage avec des disques de polissage",
+        "L'application d'un vernis",
+        "Le sablage"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'Le polissage avec des disques de polissage permet d'obtenir une surface lisse et esthétique sur les composites usinables.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Rachid a reçu un guide chirurgical imprimé en 3D. Dr Samia lui demande de vérifier l'adaptation. Quelle est la méthode de vérification la plus fiable ?",
+      "media": [],
+      "options": [
+        "L'essayage sur le modèle imprimé",
+        "L'essayage clinique direct sur le patient",
+        "La vérification radiographique",
+        "La vérification visuelle"
+      ],
+      "correct": 2,
+      "explanation": "Dr Samia explique : 'La vérification radiographique est la méthode la plus fiable pour vérifier l'adaptation du guide chirurgical.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Samia doit former son assistant à la gestion des fichiers numériques. Quelle est la règle de base pour l'archivage ?",
+      "media": [],
+      "options": [
+        "Supprimer les fichiers après utilisation",
+        "Archiver sur plusieurs supports (cloud et local)",
+        "Utiliser un seul format de fichier",
+        "Ne pas archiver les fichiers"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'L'archivage sur plusieurs supports garantit la sécurité et la pérennité des données numériques.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Rachid a conçu une couronne sur le logiciel de CAO. Dr Samia lui demande de vérifier l'occlusion. Pourquoi cette vérification est-elle essentielle ?",
+      "media": [],
+      "options": [
+        "Pour l'esthétique de la couronne",
+        "Pour éviter les interférences occlusales et les douleurs",
+        "Pour la couleur de la couronne",
+        "Pour la hauteur de la couronne"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'Une occlusion mal ajustée peut entraîner des douleurs, des usures prématurées et un échec de la restauration.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Samia doit gérer un cas de zircone mal frittée. Dr Rachid lui explique les causes possibles. Quelle est la cause la plus fréquente ?",
+      "media": [],
+      "options": [
+        "Une température de frittage trop basse",
+        "Un temps de frittage trop long",
+        "Un problème de qualité du bloc",
+        "Une humidité ambiante excessive"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explique : 'Une température de frittage trop basse est la cause la plus fréquente de zircone mal frittée, qui peut compromettre la résistance de la restauration.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Rachid doit choisir entre l'usinage à sec et l'usinage sous irrigation. Quel est l'avantage de l'usinage sous irrigation ?",
+      "media": [],
+      "options": [
+        "Il est plus rapide",
+        "Il réduit l'usure des fraises et évite la surchauffe",
+        "Il est moins cher",
+        "Il est plus précis"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explique : 'L'usinage sous irrigation réduit l'usure des fraises, évite la surchauffe et améliore la qualité de la surface usinée.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Samia a usiné une couronne en disilicate de lithium. Dr Rachid lui demande de vérifier la translucidité. Quelle est l'importance de la translucidité ?",
+      "media": [],
+      "options": [
+        "Elle est purement esthétique",
+        "Elle influence l'intégration de la couronne dans le sourire",
+        "Elle augmente la résistance de la couronne",
+        "Elle est une obligation réglementaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explique : 'La translucidité du disilicate de lithium permet à la couronne de s'intégrer harmonieusement dans le sourire du patient, en imitant les propriétés optiques des dents naturelles.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Rachid, après avoir maîtrisé le flux numérique, reçoit les félicitations de Dr Samia : 'Tu es prêt à former d'autres praticiens.' Quelle est la prochaine étape pour Dr Rachid ?",
+      "media": [],
+      "options": [
+        "Créer un programme de formation en CFAO",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bases"
+      ],
+      "correct": 0,
+      "explanation": "Dr Samia explique : 'La formation des autres praticiens est la meilleure façon de partager son expertise et de faire évoluer la profession.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

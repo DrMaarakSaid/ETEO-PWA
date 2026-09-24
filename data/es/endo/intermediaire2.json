@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "endo_intermediaire2_001",
+    "title": "Endodoncia - Intermedio 2",
+    "specialty": "ENDO",
+    "language": "ru",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ENDO_I2_Q01",
+      "type": "single-choice",
+      "question": "Sami llama a Mina con urgencia: '¡El paciente tiene un dolor intenso después del tratamiento de conducto!' Mina responde:",
+      "media": [],
+      "options": [
+        "Es normal, pasará",
+        "Evaluar si es dolor postoperatorio o infección",
+        "Recetar antibióticos de inmediato",
+        "Extraer el diente"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: 'Hay que distinguir entre el dolor postoperatorio habitual y una infección activa.' 🦅 Sami: 'Examinaré al paciente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q02",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuáles son los signos de infección persistente después del tratamiento de conducto?' Mina responde:",
+      "media": [],
+      "options": [
+        "Dolor, fístula, radiolucidez apical persistente",
+        "Solo dolor",
+        "Solo fístula",
+        "Solo radiolucidez apical"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'Los signos son múltiples y deben correlacionarse.' 🦅 Sami: 'Buscaré todos estos signos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q03",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Qué hacer en caso de radiolucidez apical persistente después del tratamiento?' Mina responde:",
+      "media": [],
+      "options": [
+        "Repetir el tratamiento o considerar la cirugía apical",
+        "Ignorar la radiolucidez",
+        "Extraer el diente",
+        "Recetar antibióticos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'La radiolucidez persistente puede requerir un retratamiento o una apicectomía.' 🦅 Sami: 'Discutiré las opciones con el paciente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q04",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Qué es un ápice abierto en endodoncia?' Mina responde:",
+      "media": [],
+      "options": [
+        "Un ápice inmaduro o ancho, a menudo en pacientes jóvenes",
+        "Un ápice fracturado",
+        "Un ápice calcificado",
+        "Un ápice con lesión"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'El ápice abierto se encuentra a menudo en dientes inmaduros.' 🦅 Sami: 'Usaré MTA para crear una barrera.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q05",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Qué es el MTA en endodoncia?' Mina responde:",
+      "media": [],
+      "options": [
+        "Un cemento biocerámico para reparación apical",
+        "Un cemento dental convencional",
+        "Un agente blanqueador",
+        "Un material de impresión"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'El MTA es un material biocerámico para ápices abiertos y perforaciones.' 🦅 Sami: 'Me formaré en el uso del MTA.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q06",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cómo manejar un conducto con curvatura apical pronunciada?' Mina responde:",
+      "media": [],
+      "options": [
+        "Con limas de NiTi flexibles y técnica adaptada",
+        "Con limas rígidas de acero",
+        "Abandonando el conducto",
+        "Con fresas"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'Las limas de NiTi flexibles son necesarias para curvaturas pronunciadas.' 🦅 Sami: 'Usaré limas de NiTi.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q07",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuándo se deben recetar antibióticos en endodoncia?' Mina responde:",
+      "media": [],
+      "options": [
+        "En caso de infección sistémica (fiebre, celulitis, trismo)",
+        "Sistemáticamente después de cada tratamiento",
+        "Nunca",
+        "Solo si el paciente lo pide"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'Los antibióticos están reservados para infecciones graves.' 🦅 Sami: 'Recetaré con criterio.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q08",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Qué es una medicación intraconducto?' Mina responde:",
+      "media": [],
+      "options": [
+        "Un producto desinfectante colocado en el conducto entre sesiones",
+        "La obturación definitiva",
+        "Un sellador",
+        "Una solución de irrigación"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'La medicación continúa la desinfección entre sesiones.' 🦅 Sami: 'Usaré hidróxido de calcio.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q09",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Qué material es el de elección para la medicación intraconducto?' Mina responde:",
+      "media": [],
+      "options": [
+        "Hidróxido de calcio",
+        "Gutapercha",
+        "Cemento dental",
+        "Hipoclorito de sodio"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'El hidróxido de calcio es un excelente antiséptico.' 🦅 Sami: 'Usaré hidróxido de calcio.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q10",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cómo manejar un diente con fractura radicular vertical?' Mina responde:",
+      "media": [],
+      "options": [
+        "Pronóstico dudoso, a menudo extracción",
+        "El tratamiento de conducto puede salvar el diente",
+        "Solo la corona es suficiente",
+        "Injerto óseo"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'Las fracturas verticales tienen mal pronóstico.' 🦅 Sami: 'Informaré al paciente del pronóstico.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q11",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Qué es la revascularización pulpar?' Mina responde:",
+      "media": [],
+      "options": [
+        "Una técnica para estimular la regeneración pulpar en dientes inmaduros",
+        "El tratamiento de conducto clásico",
+        "La extracción",
+        "Una corona"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'La revascularización es una técnica innovadora para dientes inmaduros.' 🦅 Sami: 'Me formaré en esta técnica.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q12",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuáles son los signos de pulpitis irreversible?' Mina responde:",
+      "media": [],
+      "options": [
+        "Dolor espontáneo, nocturno, provocado por el calor",
+        "Dolor leve e intermitente",
+        "Ausencia de dolor",
+        "Dolor solo al frío"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'La pulpitis irreversible se manifiesta con dolor espontáneo y nocturno.' 🦅 Sami: 'Reconoceré estos signos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q13",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuál es la diferencia entre pulpitis reversible e irreversible?' Mina responde:",
+      "media": [],
+      "options": [
+        "La pulpitis reversible responde al frío, la irreversible es espontánea",
+        "Son lo mismo",
+        "La pulpitis reversible es más dolorosa",
+        "La irreversible es menos dolorosa"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'La pulpitis reversible desaparece con el tratamiento de la caries; la irreversible requiere tratamiento de conducto.' 🦅 Sami: 'Las distinguiré bien.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q14",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cómo manejar a un paciente con absceso agudo?' Mina responde:",
+      "media": [],
+      "options": [
+        "Drenaje, tratamiento de conducto o extracción, antibióticos si es necesario",
+        "Solo antibióticos",
+        "Solo extracción",
+        "Solo tratamiento de conducto"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'El absceso agudo requiere drenaje y tratamiento de la causa.' 🦅 Sami: 'Drenaré y trataré.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q15",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuáles son los criterios de éxito de un tratamiento de conducto?' Mina responde:",
+      "media": [],
+      "options": [
+        "Ausencia de dolor, cicatrización radiológica, función normal",
+        "Solo ausencia de dolor",
+        "Solo cicatrización radiológica",
+        "Solo función normal"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'Los criterios de éxito son clínicos y radiológicos.' 🦅 Sami: 'Evaluaré todos estos criterios.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q16",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Qué es la regeneración endodóntica?' Mina responde:",
+      "media": [],
+      "options": [
+        "Una técnica para regenerar la pulpa y los tejidos periapicales",
+        "El tratamiento de conducto clásico",
+        "La extracción",
+        "Una corona"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'La regeneración es una técnica prometedora para dientes inmaduros.' 🦅 Sami: 'Seguiré la evolución de esta técnica.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q17",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuándo se debe considerar una apicectomía?' Mina responde:",
+      "media": [],
+      "options": [
+        "En caso de fracaso del tratamiento de conducto y cuando el retratamiento no es posible",
+        "Siempre en primer lugar",
+        "Nunca",
+        "Solo para molares"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'La apicectomía es una opción en caso de fracaso del tratamiento de conducto.' 🦅 Sami: 'Derivaré al cirujano.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q18",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuáles son las ventajas de la endodoncia con microscopio?' Mina responde:",
+      "media": [],
+      "options": [
+        "Visualización de conductos adicionales y calcificaciones",
+        "Solo para casos simples",
+        "Solo para molares",
+        "No hay ventajas"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'El microscopio mejora la visualización y el tratamiento.' 🦅 Sami: 'Usaré el microscopio.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q19",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cómo manejar un diente con reabsorción interna?' Mina responde:",
+      "media": [],
+      "options": [
+        "Tratamiento de conducto con MTA, si es posible",
+        "Extracción inmediata",
+        "Observación",
+        "Solo corona"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'La reabsorción interna puede tratarse con materiales biocerámicos.' 🦅 Sami: 'Trataré con MTA.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q20",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Qué es el dolor postoperatorio en endodoncia?' Mina responde:",
+      "media": [],
+      "options": [
+        "Un dolor inflamatorio frecuente después del tratamiento",
+        "Un signo de fracaso",
+        "Una infección",
+        "Un signo de fractura"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'El dolor postoperatorio es frecuente y generalmente benigno.' 🦅 Sami: 'Tranquilizaré a los pacientes.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q21",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cómo manejar el dolor postoperatorio?' Mina responde:",
+      "media": [],
+      "options": [
+        "Analgésicos, antiinflamatorios, hielo",
+        "Antibióticos",
+        "Retratamiento",
+        "Extracción"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'El dolor postoperatorio se maneja con analgésicos y antiinflamatorios.' 🦅 Sami: 'Recetaré analgésicos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q22",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuáles son los factores de riesgo de fracaso endodóntico?' Mina responde:",
+      "media": [],
+      "options": [
+        "Infección persistente, fractura, obturación deficiente",
+        "Solo infección",
+        "Solo fractura",
+        "Solo obturación deficiente"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'Los fracasos son multifactoriales.' 🦅 Sami: 'Minimizaré estos riesgos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q23",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuál es la importancia de la restauración coronaria en endodoncia?' Mina responde:",
+      "media": [],
+      "options": [
+        "Importante para proteger el diente de la fractura",
+        "Poco importante",
+        "Solo por estética",
+        "Solo por función"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'La restauración coronaria es fundamental para la supervivencia del diente.' 🦅 Sami: 'Siempre planificaré la corona.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q24",
+      "type": "single-choice",
+      "question": "Sami pregunta: '¿Cuáles son los signos de fractura radicular?' Mina responde:",
+      "media": [],
+      "options": [
+        "Dolor a la percusión, movilidad, imagen radiológica",
+        "Solo dolor",
+        "Solo movilidad",
+        "Solo imagen radiológica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: 'Las fracturas radiculares tienen varios signos.' 🦅 Sami: 'Buscaré estos signos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q25",
+      "type": "single-choice",
+      "question": "Sami, después de enfrentar complicaciones junto a Mina, dice: '¡Estoy orgulloso de nuestros éxitos!' Mina concluye: 'Las complicaciones en endodoncia son...'",
+      "media": [],
+      "options": [
+        "Una opción para expertos",
+        "La clave para salvar dientes",
+        "Una pérdida de tiempo",
+        "Secundarias"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: 'Las complicaciones en endodoncia son la clave para salvar dientes.' 🦅 Sami: 'Seguiré perfeccionándome.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

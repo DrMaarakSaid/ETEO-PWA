@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "materiaux_dentaires_debutant2_001",
+    "title": "Materiaux_dentaires - Débutant 2",
+    "specialty": "MATE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "MATE_D2_Q01",
+      "type": "single-choice",
+      "question": "Quelle est la définition physico-chimique et l'indication principale d'un hydrocolloïde irréversible tel que l'alginate ?",
+      "media": [],
+      "options": [
+        "Un matériau élastique thermoplastique réservé aux restaurations indirectes de haute précision",
+        "Un matériau élastique irréversible qui réticule par une réaction chimique, principalement indiqué pour les modèles d'étude et les prothèses amovibles",
+        "Un polymère fluide photopolymérisable utilisé pour le regarnissage des bridges provisoires",
+        "Un ciment minéral à prise hydraulique indiqué pour les rétro-obturations canalaires"
+      ],
+      "correct": 1,
+      "explanation": "L'alginate est un hydrocolloïde irréversible dont la gélification résulte d'une réaction chimique entre l'alginate de sodium et le sulfate de calcium.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q02",
+      "type": "single-choice",
+      "question": "Quels phénomènes physiques majeurs liés à l'eau conditionnent la stabilité dimensionnelle d'une empreinte en alginate après son retrait de la bouche ?",
+      "media": [],
+      "options": [
+        "La dilatation thermique linéaire et la thixotropie",
+        "La synérèse (perte d'eau) et l'imbibition (absorption d'eau), nécessitant un coulage immédiat en plâtre",
+        "La polymérisation radicalaire continue et le retrait volumétrique",
+        "La sublimation des composants volatils sous l'exposition à la lumière du jour"
+      ],
+      "correct": 1,
+      "explanation": "L'alginate est très sensible aux variations d'eau dans son environnement ; la synérèse provoque un retrait, tandis que l'imbibition entraîne une expansion.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q03",
+      "type": "single-choice",
+      "question": "Quelle classe de matériau à empreinte est préférée pour réaliser des inlays, onlays et prothèses fixes de haute précision ?",
+      "media": [],
+      "options": [
+        "Les hydrocolloïdes réversibles de faible viscosité",
+        "Les élastomères synthétiques (silicones par addition ou polyéthers)",
+        "Les plâtres à empreinte de type I à prise rapide",
+        "Les cires thermoplastiques conçues pour l'enregistrement occlusal"
+      ],
+      "correct": 1,
+      "explanation": "Les élastomères offrent une excellente reproduction des détails des marges de préparation cervicale et une stabilité dimensionnelle optimale dans le temps.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q04",
+      "type": "single-choice",
+      "question": "Concernant les propriétés physiques, quel est l'avantage majeur des silicones par addition (polyvinylsiloxanes) par rapport aux alginates ?",
+      "media": [],
+      "options": [
+        "Une hydrophilie initiale naturellement supérieure sans surfactants",
+        "Une stabilité dimensionnelle à long terme et une excellente récupération élastique",
+        "Un coût d'acquisition inférieur pour les approvisionnements du cabinet",
+        "Une cinétique de prise accélérée par l'humidité salivaire"
+      ],
+      "correct": 1,
+      "explanation": "Les silicones par addition ne libèrent pas de sous-produits secondaires lors de la polymérisation, ce qui leur confère une stabilité dimensionnelle et une précision exceptionnelles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q05",
+      "type": "single-choice",
+      "question": "Quelle est l'indication principale du plâtre dentaire de type IV (pierre dure de haute résistance) selon les normes internationales ?",
+      "media": [],
+      "options": [
+        "La fabrication de modèles d'étude et de bases pour articulateur",
+        "La confection de modèles de travail de haute précision pour les prothèses fixes ou implanto-portées (dies)",
+        "La prise d'empreinte primaire en prothèse complète amovible",
+        "L'enrobage des motifs en cire pour le coulage des alliages précieux"
+      ],
+      "correct": 1,
+      "explanation": "Le plâtre de type IV présente une expansion de prise minimale et une dureté de surface élevée, essentielles pour résister aux rayures lors de la manipulation en laboratoire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q06",
+      "type": "single-choice",
+      "question": "Qu'est-ce qui différencie fondamentalement le plâtre dentaire de type II de la pierre de type IV dans les flux de travail en laboratoire ?",
+      "media": [],
+      "options": [
+        "Le type II présente une résistance à la compression supérieure à celle de la pierre de type IV",
+        "Le type II est réservé aux modèles d'étude et de montage, tandis que le type IV possède une dureté élevée pour les dies de travail",
+        "Le type IV est une pierre synthétique qui ne nécessite pas de mélange avec de l'eau",
+        "Le type II possède une température de fusion significativement inférieure à celle du type IV"
+      ],
+      "correct": 1,
+      "explanation": "La taille et la faible porosité des cristaux d'hémihydrate de sulfate de calcium (forme alpha pour le type IV) lui confèrent des propriétés mécaniques bien supérieures au type II (forme bêta).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q07",
+      "type": "single-choice",
+      "question": "Comment sont définies les cires dentaires de modelage utilisées pour la réalisation des patrons prothétiques ?",
+      "media": [],
+      "options": [
+        "Des élastomères thermodurcissables qui réticulent à température ambiante",
+        "Des matériaux thermoplastiques composés de mélanges de cires naturelles et synthétiques, de polymères et de résines",
+        "Des ciments de scellement temporaires formulés à partir de stéarine",
+        "Des céramiques présentant une basse température de vitrification"
+      ],
+      "correct": 1,
+      "explanation": "Les cires dentaires sont des structures thermoplastiques qui deviennent malléables lorsqu'elles sont chauffées et rigides à température ambiante, utilisées pour sculpter les futures pièces prothétiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q08",
+      "type": "single-choice",
+      "question": "Quelle propriété physique des cires dentaires nécessite une attention particulière lors de la fabrication d'un patron d'inlay-core ?",
+      "media": [],
+      "options": [
+        "Le coefficient de dilatation thermique élevé et la relaxation des contraintes internes dans le temps",
+        "La valeur de conductivité thermique exceptionnellement élevée",
+        "La mémoire élastique immédiate se produisant après un refroidissement brusque",
+        "L'absence totale de résidus carbonés lors des procédures de cuisson"
+      ],
+      "correct": 0,
+      "explanation": "Les cires accumulent des contraintes internes lors de la manipulation ; un stockage prolongé du patron avant l'enrobage peut induire des distorsions nuisant à l'ajustement de la pièce coulée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q09",
+      "type": "single-choice",
+      "question": "Quelle est la fonction biologique et mécanique essentielle d'une couronne provisoire en résine acrylique ou composite ?",
+      "media": [],
+      "options": [
+        "Assurer la fixation définitive de la future prothèse fixe",
+        "Protéger le complexe dentino-pulpaire, maintenir l'espace sur l'arcade dentaire et préserver la santé parodontale",
+        "Modifier irréversiblement la voie d'insertion de la préparation",
+        "Servir de barrière absolue contre les rayonnements radiographiques"
+      ],
+      "correct": 1,
+      "explanation": "Les restaurations provisoires protègent les dents vitales contre les agressions thermiques et bactériennes tout en empêchant la migration dentaire (extrusion ou basculement).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q10",
+      "type": "single-choice",
+      "question": "Quels critères cliniques majeurs valident le choix d'un matériau temporaire pour les dents antérieures préparées ?",
+      "media": [],
+      "options": [
+        "Une résistance mécanique égale à celle des alliages de titane",
+        "La biocompatibilité parodontale, l'étanchéité marginale et les qualités esthétiques de translucidité",
+        "Une solubilité élevée dans les fluides buccaux pour faciliter son retrait",
+        "Une absence totale de porosités de surface vérifiée par microscopie"
+      ],
+      "correct": 1,
+      "explanation": "Les matériaux temporaires utilisés dans la zone esthétique doivent offrir un aspect visuel naturel tout en maintenant la santé des tissus gingivaux environnants.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q11",
+      "type": "single-choice",
+      "question": "Quel est le rôle principal d'un ciment de scellement conventionnel (ex : phosphate de zinc) en prothèse fixe ?",
+      "media": [],
+      "options": [
+        "Créer une liaison covalente chimique inséparable avec les structures de l'émail",
+        "Assurer une rétention mécanique par friction en comblant les micro-espaces entre la prothèse et la dent préparée",
+        "Permettre la régénération de la dentine tertiaire sous la couronne",
+        "Modifier la teinte intrinsèque de l'infrastructure en zircone sous-jacente"
+      ],
+      "correct": 1,
+      "explanation": "Les ciments de scellement traditionnels fonctionnent par ancrage mécanique (frottement macro et micro-géométrique) plutôt que par adhésion chimique directe.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q12",
+      "type": "single-choice",
+      "question": "Quelles sont les principales familles de ciments de scellement et d'assemblage dentaire validées pour la pratique clinique ?",
+      "media": [],
+      "options": [
+        "Les phosphates de zinc, les polycarboxylates, les ciments verre ionomère (CVI/CVMR) et les ciments résine",
+        "Les composites fluides de restauration directe et les amalgames dentaires enrichis",
+        "Les plâtres synthétiques de type V combinés à des résines époxy",
+        "Les gels de silice colloïdale mélangés à des incorporations d'hydroxyde de calcium"
+      ],
+      "correct": 0,
+      "explanation": "L'éventail des matériaux d'assemblage va du scellement purement mécanique (phosphate de zinc) à l'adhésion chimiquement assistée (ciments résine).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q13",
+      "type": "single-choice",
+      "question": "Pourquoi la présence d'eugénol dans les ciments de scellement temporaires (ex : oxyde de zinc-eugénol) contre-indique-t-elle l'utilisation ultérieure de systèmes d'assemblage résineux ?",
+      "media": [],
+      "options": [
+        "L'eugénol induit une corrosion électrochimique des structures composites sous-jacentes",
+        "L'eugénol inhibe la polymérisation radicalaire des résines de scellement et des composites de collage",
+        "L'eugénol opacifie irréversiblement les facettes en céramique",
+        "L'eugénol accélère de manière incontrôlable le temps de prise des ciments verre ionomère"
+      ],
+      "correct": 1,
+      "explanation": "L'eugénol agit comme un piégeur des radicaux libres nécessaires à la polymérisation des monomères méthacrylates, compromettant l'adhésion future des colles résineuses.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q14",
+      "type": "single-choice",
+      "question": "Quelle est la nature d'une restauration indirecte telle qu'un inlay ou un onlay fabriqué en laboratoire ou via CFAO ?",
+      "media": [],
+      "options": [
+        "Une obturation en plastique insérée directement en bouche lors d'une seule séance clinique",
+        "Une pièce en composite ou céramique monolithique ou stratifiée collée ou scellée dans une cavité préformée",
+        "Une infrastructure métallique coulée exclusivement sous des environnements de pression d'argon",
+        "Une structure de dispositif de rétention orthodontique amovible"
+      ],
+      "correct": 1,
+      "explanation": "Les inlays et onlays sont des blocs rigides personnalisés qui restaurent les pertes de structure étendues tout en optimisant les points de contact occlusaux et l'intégrité marginale.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q15",
+      "type": "single-choice",
+      "question": "Quelle est la différence structurelle et clinique majeure entre un inlay et un onlay ?",
+      "media": [],
+      "options": [
+        "Un inlay remplace le volume radiculaire tandis qu'un onlay coiffe toute la structure dentaire",
+        "Un inlay est strictement intracoronaire sans recouvrement cuspidien, tandis qu'un onlay englobe et protège une ou plusieurs cuspides",
+        "Un inlay est exclusivement métallique tandis qu'un onlay est toujours composé de résine",
+        "Il n'y a pas de différence ; les deux termes décrivent la même préparation cavitaire"
+      ],
+      "correct": 1,
+      "explanation": "Un onlay est indiqué lorsque les parois cuspidiennes sont affaiblies, nécessitant un chaussage occlusal pour prévenir le risque de fracture dentaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q16",
+      "type": "single-choice",
+      "question": "Comment est définie la céramique dentaire conçue pour les restaurations à haute exigence esthétique ?",
+      "media": [],
+      "options": [
+        "Un polymère organique hautement réticulé enrichi en fibres de carbone",
+        "Un matériau inorganique non métallique consolidé par un traitement thermique à haute température (frittage ou vitrification)",
+        "Un alliage métallique non précieux à base de chrome et de nickel de qualité médicale",
+        "Une matrice résineuse fortement chargée de microparticules de verre au baryum"
+      ],
+      "correct": 1,
+      "explanation": "Les céramiques dentaires sont des structures minérales qui se distinguent par leur excellente biocompatibilité et leur comportement optique proche de l'émail naturel.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q17",
+      "type": "single-choice",
+      "question": "Quelles propriétés optiques et biologiques font de la céramique le matériau de choix pour la prothèse fixe antérieure ?",
+      "media": [],
+      "options": [
+        "L'opacité totale aux rayonnements ultraviolets et une flexibilité mécanique significative",
+        "La translucidité et la réflexion de la lumière similaires aux dents naturelles, associées à une excellente inertie biologique",
+        "Une conductivité thermique équivalente à celle des alliages précieux",
+        "Une capacité intrinsèque à libérer continuellement du fluor dans l'environnement buccal"
+      ],
+      "correct": 1,
+      "explanation": "La céramique assure une intégration esthétique invisible grâce à sa gestion de la lumière (réfraction, réflexion, translucidité) et respecte parfaitement le parodonte marginal.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q18",
+      "type": "single-choice",
+      "question": "Qu'est-ce que la zircone (dioxyde de zirconium) en prothèse dentaire ?",
+      "media": [],
+      "options": [
+        "Un polymère composite fluide enrichi en éléments de charge en quartz",
+        "Une céramique cristalline polycristalline opaque et à haute résistance, idéale pour les infrastructures prothétiques supportant les charges",
+        "Un alliage métallique malléable à base d'argent et de palladium",
+        "Une cire de haute dureté utilisée pour l'enregistrement des trajets condyliens"
+      ],
+      "correct": 1,
+      "explanation": "La zircone est une céramique technique dépourvue de phase vitreuse. Ses excellentes propriétés mécaniques lui permettent de se substituer aux métaux dans les infrastructures de ponts.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q19",
+      "type": "single-choice",
+      "question": "Quelle est la particularité mécanique unique de la zircone face à la propagation des fissures (phénomène de durcissement par transformation) ?",
+      "media": [],
+      "options": [
+        "Elle se déforme plastiquement comme un alliage d'or très ductile",
+        "Elle subit un durcissement par transformation de phase sous contrainte, bloquant la propagation des microfissures",
+        "Elle s'effrite instantanément dès que la contrainte dépasse un faible seuil de 100 MPa",
+        "Sa dureté structurelle chute considérablement en présence de salive ou d'humidité buccale"
+      ],
+      "correct": 1,
+      "explanation": "Sous contrainte, la zircone passe de la phase tétragonale à la phase monoclinique. L'augmentation de volume locale qui en résulte comprime les marges de la fissure, arrêtant sa progression.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q20",
+      "type": "single-choice",
+      "question": "Qu'est-ce que le disilicate de lithium (ex : IPS e.max) dans le domaine des biomatériaux prothétiques ?",
+      "media": [],
+      "options": [
+        "Une résine autopolymérisable conçue pour la réparation des bases de prothèses partielles amovibles",
+        "Une céramique renforcée à dominante vitreuse présentant un excellent compromis entre résistance mécanique (environ 350-500 MPa) et haute esthétique",
+        "Un alliage métallique noble utilisé pour la technique traditionnelle de la cire perdue",
+        "Un gel d'acide phosphorique utilisé pour le mordançage micromécanique de la dentine"
+      ],
+      "correct": 1,
+      "explanation": "Le disilicate de lithium est la céramique de choix pour les facettes, les couronnes unitaires et les inlays/onlays en raison de son intégration optique remarquable et de sa nature mordançable à l'acide.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q21",
+      "type": "single-choice",
+      "question": "Quelle est la valeur moyenne de résistance à la flexion du disilicate de lithium par rapport aux porcelaines feldspathiques traditionnelles ?",
+      "media": [],
+      "options": [
+        "Elle est à peu près équivalente, se situant autour de 70 MPa",
+        "Elle est significativement plus élevée, se situant généralement entre 360 et 400 MPa, contre moins de 100 MPa pour la céramique feldspathique",
+        "Elle dépasse 1200 MPa, dépassant le seuil des zircones monolithiques",
+        "Elle est très instable et chute à 10 MPa après vieillissement en milieu humide"
+      ],
+      "correct": 1,
+      "explanation": "Sa microstructure d'aiguilles cristallines imbriquées offre une résistance structurelle environ 4 fois supérieure à celle des céramiques feldspathiques conventionnelles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q22",
+      "type": "single-choice",
+      "question": "Comment est défini un alliage dentaire utilisé en prothèse fixe ou amovible ?",
+      "media": [],
+      "options": [
+        "Une solution solide combinant au moins deux éléments chimiques, dont un métal, formulée pour résister à la corrosion du milieu buccal",
+        "Un mélange hétérogène de poudres de verre et d'acides organiques polymérisés",
+        "Une structure purement organique extraite de polymères végétaux",
+        "Un minerai brut extrait directement du sous-sol sans traitement thermique"
+      ],
+      "correct": 0,
+      "explanation": "Les alliages dentaires combinent différents métaux pour obtenir des propriétés spécifiques (rigidité, ductilité, biocompatibilité) adaptées aux exigences prothétiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q23",
+      "type": "single-choice",
+      "question": "Pourquoi l'alliage Chrome-Cobalt (Co-Cr) est-il le matériau de référence pour le coulage des châssis de prothèses partielles amovibles ?",
+      "media": [],
+      "options": [
+        "Pour sa grande malléabilité et son extrême flexibilité sous de faibles forces mécaniques",
+        "Pour son module d'élasticité élevé conférant une rigidité structurelle dans des sections fines, sa faible densité et son excellente résistance à la corrosion",
+        "Parce qu'il s'use spontanément au contact de l'émail dentaire antagoniste",
+        "Pour son indice de solubilité élevé permettant une libération régulière de minéraux bénéfiques"
+      ],
+      "correct": 1,
+      "explanation": "L'alliage Co-Cr fournit la rigidité nécessaire pour assurer les fonctions de soutien et de stabilisation de la prothèse partielle amovible sans encombrer le volume du châssis.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q24",
+      "type": "single-choice",
+      "question": "Qu'est-ce que le titane commercialement pur (grades 1 à 4) ou ses alliages (grade 5) en implantologie dentaire ?",
+      "media": [],
+      "options": [
+        "Un métal lourd hautement toxique réservé strictement aux modèles de laboratoire externes",
+        "Un métal remarquablement biocompatible capable d'ostéointégration et présentant une excellente résistance mécanique et chimique",
+        "Une variété de résine thermoplastique injectée sous des paramètres de haute pression",
+        "Un composé de ciment endodontique de scellement canalaire de dernière génération"
+      ],
+      "correct": 1,
+      "explanation": "La biocompatibilité du titane est pilotée par la formation instantanée d'une couche passive protectrice de dioxyde de titane (TiO2) à sa surface, favorisant le contact osseux direct.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_D2_Q25",
+      "type": "single-choice",
+      "question": "Quelle propriété mécanique et biologique majeure caractérise le titane utilisé pour la fabrication des implants dentaires au Maroc ?",
+      "media": [],
+      "options": [
+        "Un module d'élasticité proche de celui de l'os humain, une haute résistance à la fatigue et une remarquable bio-inertie",
+        "Une couleur blanche brillante permettant des propriétés de translucidité prothétique parfaites",
+        "Une résorption progressive sur dix ans favorisant des cascades de régénération osseuse naturelles",
+        "Une solubilité élevée permettant la libération programmée d'ions métalliques dans les blocs tissulaires"
+      ],
+      "correct": 0,
+      "explanation": "Le titane combine une résistance mécanique élevée pour supporter les charges occlusales avec un module d'élasticité plus proche de l'os que les autres métaux, minimisant les phénomènes de protection contre les contraintes (stress-shielding).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

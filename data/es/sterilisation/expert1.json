@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_expert1_001",
+    "title": "Esterilización - Experto 1",
+    "specialty": "STER",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_E1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN, ahora convertido en profesor, debe enseñar a los internos los principios de la esterilización. ¿Cuál es la primera regla que debe enseñarles?",
+      "media": [],
+      "options": [
+        "La esterilización es una cadena donde cada eslabón importa",
+        "La esterilización es un proceso simple",
+        "La esterilización es rápida",
+        "La esterilización es secundaria"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. YASSIN explica: «La esterilización es una cadena. Un eslabón débil y todo el sistema se derrumba.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q02",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos las pruebas de control. Les muestra el test de Bowie-Dick. ¿Cuál es la particularidad de esta prueba?",
+      "media": [],
+      "options": [
+        "Se realiza una vez al mes",
+        "Verifica la penetración del vapor en la carga",
+        "Es biológico",
+        "Es opcional"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «El test de Bowie-Dick verifica la penetración del vapor. Se realiza a diario.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe explicar la importancia del agua osmótica. Recuerda que el agua es un elemento clave de la esterilización. ¿Cuál es el papel del agua osmótica?",
+      "media": [],
+      "options": [
+        "Lubricar los instrumentos",
+        "Prevenir depósitos y corrosión",
+        "Desinfectar los instrumentos",
+        "Enfriar los instrumentos"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «El agua osmótica previene los depósitos de cal y la corrosión de los instrumentos.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la gestión de situaciones de emergencia en esterilización. Les recuerda las limitaciones del ciclo Flash. ¿Cuál es la limitación principal?",
+      "media": [],
+      "options": [
+        "Es demasiado largo",
+        "No permite almacenar los instrumentos",
+        "Es demasiado caro",
+        "Es ineficaz"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «El ciclo Flash permite una esterilización rápida, pero los instrumentos no se pueden almacenar.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe explicar la diferencia entre esterilización y desinfección. Utiliza una analogía simple. La esterilización es a la desinfección como:",
+      "media": [],
+      "options": [
+        "La destrucción total es a la reducción parcial",
+        "La reducción parcial es a la destrucción total",
+        "La desinfección es más fuerte",
+        "La esterilización es menos eficaz"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. YASSIN explica: «La esterilización destruye todo (incluidas las esporas), la desinfección solo reduce la carga microbiana.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe evaluar el rendimiento del autoclave. Realiza una serie de pruebas. ¿Qué prueba es la más fiable para evaluar la eficacia de la esterilización?",
+      "media": [],
+      "options": [
+        "Test de fuga",
+        "Test de Bowie-Dick",
+        "Test biológico",
+        "Test químico"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. YASSIN explica: «El test biológico es el más fiable, ya que verifica directamente la destrucción de los microorganismos.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la gestión de instrumentos dañados. Les recuerda que un instrumento dañado es un riesgo. ¿Por qué?",
+      "media": [],
+      "options": [
+        "Es antiestético",
+        "En las grietas pueden esconderse microorganismos",
+        "Es más difícil de usar",
+        "Es más caro de reemplazar"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «Las grietas y rayones pueden servir de refugio a los microorganismos. Un instrumento dañado es un riesgo para el paciente.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q08",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe explicar la importancia del movimiento hacia adelante. Recuerda que es una regla fundamental. ¿Cuál es la justificación de esta regla?",
+      "media": [],
+      "options": [
+        "Ahorra tiempo",
+        "Previene la contaminación cruzada",
+        "Permite gestionar emergencias",
+        "Es estético"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «El movimiento hacia adelante previene la contaminación cruzada entre zonas sucias y limpias.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la trazabilidad. Les explica que es necesaria. ¿Por qué es obligatoria la trazabilidad?",
+      "media": [],
+      "options": [
+        "Por razones administrativas",
+        "Para poder rastrear los lotes en caso de problema",
+        "Para estadísticas",
+        "Para ahorrar tiempo"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «La trazabilidad permite rastrear un lote en caso de incidente. Es una obligación legal y una garantía de seguridad.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q10",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe gestionar un incidente de contaminación. Aplica el protocolo de actuación en emergencia. ¿Cuál es el primer paso del protocolo?",
+      "media": [],
+      "options": [
+        "Cerrar el consultorio",
+        "Aislar la zona contaminada",
+        "Desinfectar todas las superficies",
+        "Llamar a las autoridades"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «Primero hay que aislar la zona contaminada para prevenir la propagación.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe explicar el uso de los indicadores biológicos. Recuerda que son pruebas importantes. ¿Cuál es la particularidad de los indicadores biológicos?",
+      "media": [],
+      "options": [
+        "Son fáciles de usar",
+        "Son económicos",
+        "Verifican directamente la destrucción de los microorganismos",
+        "Son rápidos"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. YASSIN explica: «Los indicadores biológicos son la única prueba que da una prueba directa de la eficacia de la esterilización.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q12",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos el mantenimiento técnico de los autoclaves. Les recuerda que es una obligación legal. ¿Cuál es la frecuencia del mantenimiento técnico?",
+      "media": [],
+      "options": [
+        "Una vez al año",
+        "Una vez al mes",
+        "Una vez al trimestre",
+        "Una vez a la semana"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. YASSIN explica: «El mantenimiento anual es obligatorio para garantizar la seguridad y la conformidad.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar la gestión de instrumentos termosensibles. Explica que estos instrumentos requieren precauciones especiales. ¿Qué método de esterilización es adecuado?",
+      "media": [],
+      "options": [
+        "Calor seco",
+        "Óxido de etileno",
+        "Autoclave a 121°C",
+        "Vapor de agua"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «El óxido de etileno es adecuado para instrumentos termosensibles, ya que funciona a baja temperatura.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q14",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la comunicación con los pacientes sobre la esterilización. Les da consejos. ¿Cuál es el mensaje clave?",
+      "media": [],
+      "options": [
+        "La esterilización es compleja",
+        "La esterilización garantiza la seguridad del paciente",
+        "La esterilización es rutina",
+        "La esterilización es secundaria"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «El paciente debe entender que la esterilización está destinada ante todo a su seguridad.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe crear un nuevo protocolo de esterilización para su consultorio. Se inspira en las mejores prácticas. ¿Cuál es la base de su protocolo?",
+      "media": [],
+      "options": [
+        "Su experiencia personal",
+        "Las recomendaciones de las normas ISO",
+        "Los consejos de colegas",
+        "Los hábitos del consultorio"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «El protocolo debe basarse en las normas ISO para garantizar la seguridad y la conformidad.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q16",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la gestión de residuos contaminados. Les recuerda las reglas. ¿Cuál es la regla principal para los residuos?",
+      "media": [],
+      "options": [
+        "Tirarlos con la basura doméstica",
+        "Clasificarlos y eliminarlos por los canales correspondientes",
+        "Reutilizarlos",
+        "Almacenarlos en el consultorio"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «Los residuos contaminados deben clasificarse y eliminarse por los canales correspondientes para prevenir riesgos.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la prevención de infecciones. Les recuerda que la esterilización es la base de la prevención. ¿Cuál es la cadena de prevención de infecciones?",
+      "media": [],
+      "options": [
+        "Limpieza → Desinfección → Esterilización",
+        "Esterilización → Limpieza → Desinfección",
+        "Desinfección → Limpieza → Esterilización",
+        "Limpieza → Esterilización → Desinfección"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. YASSIN explica: «La cadena de prevención: limpieza, desinfección, luego esterilización.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q18",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos el uso de autoclaves clase B. Explica sus características. ¿Cuál es la particularidad de los autoclaves clase B?",
+      "media": [],
+      "options": [
+        "Son más baratos",
+        "Son más rápidos",
+        "Pueden procesar instrumentos huecos",
+        "Utilizan productos químicos"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. YASSIN explica: «Los autoclaves clase B son los únicos que pueden procesar instrumentos huecos gracias a su sistema de vacío.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la gestión de riesgos. Les recuerda que la esterilización es una herramienta de gestión de riesgos. ¿Cuál es el riesgo principal de una esterilización incorrecta?",
+      "media": [],
+      "options": [
+        "Pérdida de tiempo",
+        "Infección nosocomial",
+        "Pérdida de dinero",
+        "Insatisfacción del paciente"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «El riesgo principal de una esterilización incorrecta es la infección nosocomial.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q20",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos las innovaciones en esterilización. Les habla de las nuevas tecnologías. ¿Cuál es la tendencia actual en esterilización?",
+      "media": [],
+      "options": [
+        "Esterilización ultravioleta",
+        "Esterilización por plasma",
+        "Esterilización por ultrasonidos",
+        "Esterilización por láser"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «La esterilización por plasma es una tecnología innovadora para instrumentos termosensibles.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la documentación. Les recuerda que todo debe estar documentado. ¿Qué elemento es más importante documentar?",
+      "media": [],
+      "options": [
+        "El tiempo de los ciclos",
+        "Los resultados de las pruebas",
+        "Las temperaturas",
+        "Las presiones"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «Los resultados de las pruebas son el elemento más importante a documentar para demostrar la eficacia de la esterilización.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q22",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la gestión de proveedores. Les recuerda que los proveedores deben estar cualificados. ¿Cuál es el primer paso de la cualificación?",
+      "media": [],
+      "options": [
+        "Precio",
+        "Certificación ISO",
+        "Marca",
+        "Plazo de entrega"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «La certificación ISO es el primer paso para la cualificación de un proveedor.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la gestión de no conformidades. Les explica el procedimiento. ¿Cuál es la primera acción en caso de no conformidad?",
+      "media": [],
+      "options": [
+        "Ignorar el problema",
+        "Identificar la causa",
+        "Llamar al responsable",
+        "Repetir el ciclo"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «Primero hay que identificar la causa para poder tomar medidas correctivas.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q24",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN debe enseñar a los internos la comunicación en equipo. Les recuerda que la comunicación es importante. ¿Qué mensaje debe transmitirse en primer lugar?",
+      "media": [],
+      "options": [
+        "La esterilización es simple",
+        "La seguridad del paciente es primordial",
+        "La esterilización es rutina",
+        "La esterilización es secundaria"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. YASSIN explica: «El mensaje que debe transmitirse en primer lugar: la seguridad del paciente es primordial.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. YASSIN, ahora reconocido experto, recibe una solicitud para formar a internos de todo el país. La Dra. FATIMA está orgullosa de él. ¿Cuál es el siguiente paso?",
+      "media": [],
+      "options": [
+        "Crear un programa nacional de formación en esterilización",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar los fundamentos"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. FATIMA explica: «Ahora te has convertido en una autoridad. El siguiente paso es compartir tus conocimientos a escala nacional.»",
+      "difficulty": "experto",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

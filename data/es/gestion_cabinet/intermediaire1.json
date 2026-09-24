@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "gestion_cabinet_intermediaire1_001",
+    "title": "Gestión de Consultorio – Intermedio 1",
+    "specialty": "GEST",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "GEST_I1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Mourad quiere contratar a una asistente con contrato indefinido. La Dra. Sidki le recuerda las reglas. Según el artículo 16 del Código de Trabajo, ¿cuál es el principio general para la duración del contrato de trabajo?",
+      "media": [],
+      "options": [
+        "El contrato siempre se celebra por tiempo determinado",
+        "El contrato se presume celebrado por tiempo indefinido",
+        "El contrato debe renovarse cada mes",
+        "El contrato no puede exceder de un año"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Sidki explica: 'El artículo 16 establece que el contrato de trabajo se celebra por tiempo indefinido por defecto, siendo el principio el contrato por tiempo indefinido.' El Dr. Mourad: 'Ofreceré un contrato indefinido.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q02",
+      "type": "single-choice",
+      "question": "La Dra. Sidki quiere sustituir a una asistente en baja por maternidad. El Dr. Mourad le aconseja el tipo de contrato. Según el artículo 16, ¿qué contrato puede celebrar?",
+      "media": [],
+      "options": [
+        "Contrato de trabajo temporal por sustitución",
+        "Solo contrato de trabajo indefinido",
+        "Contrato de aprendizaje",
+        "Contrato de trabajo a domicilio"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Mourad explica: 'El artículo 16 prevé el contrato temporal, en particular en caso de sustitución de un trabajador durante el período de suspensión del contrato.' La Dra. Sidki: 'Celebraré un contrato temporal por sustitución.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q03",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Mourad lleva 3 semanas en período de prueba. Él quiere despedirla. La Dra. Sidki le recuerda las reglas. Según el artículo 13, ¿qué plazo de preaviso debe respetar si ella recibe salario mensual?",
+      "media": [],
+      "options": [
+        "2 días",
+        "8 días",
+        "15 días",
+        "30 días"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Sidki explica: 'El artículo 13 prevé un preaviso de 8 días para los trabajadores con pago mensual en período de prueba después de una semana de trabajo.' El Dr. Mourad: 'Respetaré este plazo.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q04",
+      "type": "single-choice",
+      "question": "La Dra. Sidki quiere contratar a un responsable. El Dr. Mourad pregunta sobre la duración del período de prueba. Según el artículo 14, ¿cuál es la duración máxima para un responsable?",
+      "media": [],
+      "options": [
+        "15 días",
+        "1,5 meses",
+        "3 meses",
+        "6 meses"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Mourad explica: 'El artículo 14 establece un período de prueba de tres meses para los responsables, renovable una vez.' La Dra. Sidki: 'Preveré 3 meses para mi nuevo responsable.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Mourad tiene un trabajador con contrato temporal de 8 meses. La Dra. Sidki pregunta si es posible un período de prueba. Según el artículo 14, ¿cuál es la duración máxima del período de prueba para este contrato temporal?",
+      "media": [],
+      "options": [
+        "15 días",
+        "1 mes",
+        "2 meses",
+        "3 meses"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Sidki explica: 'El artículo 14 prevé un mes de período de prueba para los contratos temporales de más de 6 meses.' El Dr. Mourad: 'Preveré un mes de período de prueba.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q06",
+      "type": "single-choice",
+      "question": "La Dra. Sidki quiere despedir a una asistente por falta grave. El Dr. Mourad le informa sobre los motivos. Según el artículo 39, la ausencia injustificada durante ¿cuántos días constituye una falta grave?",
+      "media": [],
+      "options": [
+        "2 días",
+        "4 días",
+        "8 días",
+        "15 días"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mourad explica: 'El artículo 39 considera falta grave la ausencia injustificada de más de cuatro días.' La Dra. Sidki: 'Verificaré las ausencias.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q07",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Mourad ha cometido una falta grave. La Dra. Sidki le recuerda el procedimiento. Según el artículo 62, ¿en qué plazo debe escucharla?",
+      "media": [],
+      "options": [
+        "24 horas",
+        "8 días",
+        "15 días",
+        "30 días"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Sidki explica: 'El artículo 62 establece que el trabajador debe ser escuchado en un plazo no superior a 8 días desde la fecha de constatación del hecho.' El Dr. Mourad: 'Citaré a la asistente rápidamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q08",
+      "type": "single-choice",
+      "question": "La asistente de la Dra. Sidki tiene contrato indefinido desde hace 18 meses. Quiere despedirla por razones económicas. El Dr. Mourad pregunta si la asistente tiene derecho a indemnización por despido. Según el artículo 52, ¿cuál es la respuesta?",
+      "media": [],
+      "options": [
+        "No, porque tiene menos de 2 años de antigüedad",
+        "Sí, porque ha trabajado al menos 6 meses",
+        "Sí, pero solo si el despido es por falta",
+        "No, las razones económicas excluyen la indemnización"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mourad explica: 'El artículo 52 establece el derecho a indemnización después de seis meses de trabajo en una misma empresa.' La Dra. Sidki: 'Le pagaré la indemnización.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q09",
+      "type": "single-choice",
+      "question": "La asistente del Dr. Mourad trabaja regularmente horas extraordinarias. La Dra. Sidki le informa sobre los recargos. Según el artículo 201, ¿cuál es el tipo de recargo para las horas extraordinarias de 6 a 21 horas?",
+      "media": [],
+      "options": [
+        "15 %",
+        "25 %",
+        "50 %",
+        "75 %"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Sidki explica: 'El artículo 201 prevé un recargo del 25% para las horas extraordinarias de 6 a 21 horas.' El Dr. Mourad: 'Calcularé correctamente las horas extraordinarias.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q10",
+      "type": "single-choice",
+      "question": "La asistente de la Dra. Sidki está en baja por maternidad. El Dr. Mourad pregunta sobre la duración de la baja. Según el artículo 152, ¿cuál es la duración de la baja por maternidad?",
+      "media": [],
+      "options": [
+        "8 semanas",
+        "10 semanas",
+        "12 semanas",
+        "14 semanas"
+      ],
+      "correct": 3,
+      "explanation": "El Dr. Mourad explica: 'El artículo 152 prevé una baja por maternidad de catorce semanas.' La Dra. Sidki: 'Respetaré esta duración.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Mourad quiere suspender a su asistente durante 5 días. La Dra. Sidki le informa sobre los límites. Según el artículo 37, la suspensión disciplinaria no puede exceder de:",
+      "media": [],
+      "options": [
+        "3 días",
+        "5 días",
+        "8 días",
+        "15 días"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. Sidki explica: 'El artículo 37 establece que la suspensión disciplinaria no puede exceder de ocho días.' El Dr. Mourad: '5 días, por lo tanto es posible.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q12",
+      "type": "single-choice",
+      "question": "La asistente de la Dra. Sidki tiene un contrato temporal de 10 meses y se queda embarazada. El Dr. Mourad le informa sobre la finalización del contrato. Según el artículo 159, ¿finaliza el contrato temporal en el plazo previsto?",
+      "media": [],
+      "options": [
+        "No, se suspende automáticamente",
+        "Sí, finaliza en el plazo previsto",
+        "Sí, pero con indemnización compensatoria",
+        "No, se convierte en indefinido"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mourad explica: 'El artículo 159 establece que las disposiciones protectoras para la mujer embarazada no impiden la finalización del contrato temporal.' La Dra. Sidki: 'El contrato finalizará en el plazo previsto.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Mourad tiene un trabajador que ha dimitido. La Dra. Sidki le recuerda las formalidades. Según el artículo 72, ¿en qué plazo debe entregar el certificado de trabajo?",
+      "media": [],
+      "options": [
+        "3 días",
+        "8 días",
+        "15 días",
+        "30 días"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Sidki explica: 'El artículo 72 obliga al empleador a entregar el certificado de trabajo en un plazo máximo de ocho días.' El Dr. Mourad: 'Lo prepararé inmediatamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q14",
+      "type": "single-choice",
+      "question": "La Dra. Sidki tiene un trabajador que se niega a realizar un trabajo peligroso. El Dr. Mourad le informa sobre los derechos del trabajador. Según el artículo 293, ¿puede ser sancionado el trabajador?",
+      "media": [],
+      "options": [
+        "Sí, si ha sido informado de los riesgos",
+        "No, la negativa es legítima",
+        "Sí, inmediatamente sin procedimiento",
+        "No, puede negarse a cualquier trabajo"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mourad explica: 'El artículo 293 establece que los trabajadores informados de las normas de seguridad y que no las respeten están sujetos a sanción.' La Dra. Sidki: 'Debo informarle primero de los riesgos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Mourad, empleador de 15 trabajadores, quiere redactar un reglamento interno. La Dra. Sidki le informa sobre sus obligaciones. Según el artículo 138, ¿cuál es el plazo para redactar el reglamento interno?",
+      "media": [],
+      "options": [
+        "6 meses",
+        "1 año",
+        "2 años",
+        "3 años"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. Sidki explica: 'El artículo 138 establece que el empleador que tenga al menos 10 trabajadores debe redactar un reglamento interno en el plazo de dos años desde la apertura.' El Dr. Mourad: 'Lo redactaré.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q16",
+      "type": "single-choice",
+      "question": "La asistente de la Dra. Sidki tiene derecho a vacaciones anuales. El Dr. Mourad pregunta sobre la duración. Según el artículo 231, las vacaciones anuales retribuidas son de:",
+      "media": [],
+      "options": [
+        "1 día por mes de trabajo",
+        "1,5 días por mes de trabajo",
+        "2 días por mes de trabajo",
+        "2,5 días por mes de trabajo"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mourad explica: 'El artículo 231 establece las vacaciones anuales en un día y medio de trabajo efectivo por mes de trabajo.' La Dra. Sidki: 'Calcularé las vacaciones de mi asistente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Mourad quiere contratar a un trabajador extranjero. La Dra. Sidki le informa sobre el procedimiento. Según el artículo 516, ¿qué autorización es necesaria?",
+      "media": [],
+      "options": [
+        "Ninguna autorización",
+        "Autorización de la autoridad gubernamental encargada del trabajo",
+        "Autorización del ministerio del interior",
+        "Simple visado de turista"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Sidki explica: 'El artículo 516 obliga a obtener una autorización de la autoridad gubernamental encargada del trabajo para contratar a un trabajador extranjero.' El Dr. Mourad: 'Presentaré la solicitud.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q18",
+      "type": "single-choice",
+      "question": "La asistente de la Dra. Sidki trabaja horas extraordinarias nocturnas. El Dr. Mourad le informa sobre los recargos. Según el artículo 201, ¿cuál es el tipo para las horas nocturnas?",
+      "media": [],
+      "options": [
+        "15 %",
+        "25 %",
+        "50 %",
+        "75 %"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Mourad explica: 'El artículo 201 prevé un recargo del 50% para las horas extraordinarias de 21 a 6 horas.' La Dra. Sidki: 'Aplicaré este tipo.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Mourad tiene un trabajador con contrato indefinido que quiere dimitir. La Dra. Sidki le recuerda las formalidades. Según el artículo 34, la dimisión debe ser:",
+      "media": [],
+      "options": [
+        "Verbal",
+        "Mediante carta con firma legalizada",
+        "Por correo electrónico",
+        "Por SMS"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Sidki explica: 'El artículo 34 establece que la dimisión debe formalizarse mediante carta con firma legalizada por la autoridad competente.' El Dr. Mourad: 'Esperaré la carta oficial.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q20",
+      "type": "single-choice",
+      "question": "La Dra. Sidki, empleadora de 60 trabajadores, quiere crear un servicio médico. El Dr. Mourad le informa sobre sus obligaciones. Según el artículo 304, ¿qué debe hacer?",
+      "media": [],
+      "options": [
+        "Nada",
+        "Crear un servicio médico autónomo",
+        "Adherirse a un servicio médico interempresarial",
+        "Proporcionar un simple botiquín"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mourad explica: 'El artículo 304 exige la creación de un servicio médico de trabajo autónomo para las empresas que empleen al menos a 50 trabajadores.' La Dra. Sidki: 'Crearé este servicio.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Mourad tiene un trabajador que ha cometido una falta grave. La Dra. Sidki pregunta si debe pagar indemnizaciones. Según el artículo 61, ¿exime el despido por falta grave de los pagos?",
+      "media": [],
+      "options": [
+        "Sí, sin preaviso ni indemnización",
+        "No, el preaviso es pagadero",
+        "No, la indemnización por despido es pagadera",
+        "Sí, pero el preaviso es pagadero"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Sidki explica: 'El artículo 61 establece que en caso de falta grave, el trabajador puede ser despedido sin preaviso ni indemnización.' El Dr. Mourad: 'No pagaré nada.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q22",
+      "type": "single-choice",
+      "question": "La asistente de la Dra. Sidki tiene un contrato temporal de 5 meses. El Dr. Mourad pregunta sobre la duración del período de prueba. Según el artículo 14, el período de prueba para un contrato temporal de menos de 6 meses es de:",
+      "media": [],
+      "options": [
+        "1 semana",
+        "2 semanas",
+        "1 mes",
+        "1,5 meses"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Mourad explica: 'El artículo 14 prevé dos semanas de período de prueba para los contratos temporales de menos de 6 meses.' La Dra. Sidki: 'Preveré 2 semanas de período de prueba.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Mourad tiene un trabajador que se niega a cumplir las normas de seguridad. La Dra. Sidki le informa sobre las posibles sanciones. Según el artículo 293, ¿está sujeta a sanción esta negativa?",
+      "media": [],
+      "options": [
+        "No, el trabajador tiene derecho a negarse",
+        "Sí, si ha sido informado de las normas",
+        "Sí, solo en caso de accidente",
+        "No, la seguridad es una opción"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Sidki explica: 'El artículo 293 establece que los trabajadores informados de las normas de seguridad y que no las respeten están sujetos a sanción.' El Dr. Mourad: 'Le recordaré las normas.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q24",
+      "type": "single-choice",
+      "question": "La Dra. Sidki, empleadora de 25 trabajadores, debe organizar las elecciones de delegados de personal. Según el artículo 433, ¿cuántos delegados debe tener?",
+      "media": [],
+      "options": [
+        "1 titular y 1 suplente",
+        "2 titulares y 2 suplentes",
+        "3 titulares y 3 suplentes",
+        "5 titulares y 5 suplentes"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Mourad explica: 'El artículo 433 establece que de 10 a 25 trabajadores, la empresa debe elegir un delegado titular y un suplente.' La Dra. Sidki: 'Organizaré estas elecciones.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "GEST_I1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Mourad, después de gestionar varios aspectos de la gestión de personal con la Dra. Sidki, recibe felicitaciones. ¿Cuál es el siguiente paso para el Dr. Mourad?",
+      "media": [],
+      "options": [
+        "Convertirse en experto en gestión de personal de consultorios dentales",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar las buenas prácticas"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Sidki explica: 'El dominio de la gestión de personal es una habilidad valiosa. Convertirse en experto es el siguiente paso.' El Dr. Mourad: 'Estudiaré gestión de recursos humanos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

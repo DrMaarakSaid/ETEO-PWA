@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "fiscalite_dentiste_debutant1_001",
+    "title": "Fiscalite_dentiste - Débutant 1",
+    "specialty": "FISC",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "FISC_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Soulami exerce en tant que personne physique. Selon le Code Général des Impôts, ses revenus professionnels relèvent de quelle catégorie d'impôt sur le revenu ?",
+      "media": [],
+      "options": [
+        "Des Bénéfices Industriels et Commerciaux (BIC)",
+        "Des Bénéfices Non Commerciaux (BNC)",
+        "Des Traitements et Salaires",
+        "Des Revenus Fonciers"
+      ],
+      "correct": 1,
+      "explanation": "Les professions libérales, incluant les dentistes, génèrent des Bénéfices Non Commerciaux (BNC) au sens du Code Général des Impôts.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q02",
+      "type": "single-choice",
+      "question": "En 2026, quel est le taux marginal maximum de l'Impôt sur le Revenu (IR) au Maroc pour un dentiste exerçant en personne physique ?",
+      "media": [],
+      "options": [
+        "34 %",
+        "37 %",
+        "38 %",
+        "40 %"
+      ],
+      "correct": 1,
+      "explanation": "Le barème progressif de l'IR s'applique avec un taux marginal de 37 % pour la tranche de revenu net imposable dépassant 180 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Marwani a un chiffre d'affaires annuel de 600 000 DH. À quel régime d'imposition est-il soumis de plein droit ?",
+      "media": [],
+      "options": [
+        "Au régime du Résultat Net Simplifié (RNS)",
+        "Au régime du Résultat Net Réel (RNR)",
+        "À la Contribution Professionnelle Unique (CPU)",
+        "Au régime forfaitaire"
+      ],
+      "correct": 1,
+      "explanation": "Le RNR est le régime de droit commun pour les professions libérales dont le CA annuel dépasse 500 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q04",
+      "type": "single-choice",
+      "question": "Quel est le seuil de chiffre d'affaires à ne pas dépasser pour qu'un dentiste puisse opter pour le régime du Résultat Net Simplifié (RNS) ?",
+      "media": [],
+      "options": [
+        "250 000 DH",
+        "500 000 DH",
+        "1 000 000 DH",
+        "2 000 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Le RNS est un régime intermédiaire destiné aux professions libérales dont le CA annuel ne dépasse pas 500 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Soulami démarre son activité en 2026. Pendant combien de mois est-il exonéré de la Cotisation Minimale (CM) ?",
+      "media": [],
+      "options": [
+        "12 mois",
+        "24 mois",
+        "36 mois",
+        "60 mois"
+      ],
+      "correct": 2,
+      "explanation": "Les nouveaux contribuables exerçant à titre individuel bénéficient d'une exonération de la cotisation minimale pendant les 36 premiers mois d'activité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Marwani, personne physique, a un chiffre d'affaires de 800 000 DH. Quel est le montant minimum de sa Cotisation Minimale (CM) ?",
+      "media": [],
+      "options": [
+        "1 500 DH",
+        "2 000 DH",
+        "3 000 DH",
+        "4 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Pour les personnes physiques soumises à l'IR, la cotisation minimale ne peut être inférieure à 1 500 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q07",
+      "type": "single-choice",
+      "question": "Le Dr Soulami a un chiffre d'affaires de 800 000 DH et un résultat fiscal de 100 000 DH. Quel impôt paiera-t-il si la CM est supérieure à l'IR calculé ?",
+      "media": [],
+      "options": [
+        "L'impôt sur le revenu calculé sur 100 000 DH",
+        "La Cotisation Minimale de 48 000 DH",
+        "Le montant le plus élevé entre l'IR et la CM",
+        "Aucun impôt car le bénéfice est faible"
+      ],
+      "correct": 2,
+      "explanation": "Le contribuable paie le montant le plus élevé entre l'IR calculé et la CM. La CM pour une personne physique est de 6% du CA.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Marwani, personne physique, a un chiffre d'affaires de 800 000 DH. Quel est le taux de la Cotisation Minimale (CM) applicable ?",
+      "media": [],
+      "options": [
+        "0,25 %",
+        "0,50 %",
+        "4 %",
+        "6 %"
+      ],
+      "correct": 3,
+      "explanation": "Le taux de la CM pour les professions libérales exerçant à titre individuel est de 6 % du chiffre d'affaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q09",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le seuil d'exonération de l'IR pour un dentiste célibataire sans charge de famille ?",
+      "media": [],
+      "options": [
+        "30 000 DH",
+        "35 000 DH",
+        "40 000 DH",
+        "45 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "La Loi de Finances 2026 maintient le seuil de revenu net imposable exonéré d'IR à 40 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Soulami souhaite opter pour le RNR alors que son CA est de 300 000 DH. Est-ce possible ?",
+      "media": [],
+      "options": [
+        "Oui, l'option pour le RNR est volontaire même en dessous des seuils",
+        "Non, le RNR est obligatoire au-delà de 500 000 DH",
+        "Oui, mais uniquement avec l'accord de l'administration fiscale",
+        "Non, le RNS est imposé en dessous de 500 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Tout contribuable peut opter volontairement pour le RNR, même si son CA est inférieur aux seuils réglementaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Marwani a un déficit fiscal de 50 000 DH sur son activité. Selon le régime RNR, sur combien d'années peut-il reporter ce déficit ?",
+      "media": [],
+      "options": [
+        "2 ans",
+        "3 ans",
+        "4 ans",
+        "5 ans"
+      ],
+      "correct": 2,
+      "explanation": "Dans le cadre du RNR, le déficit est reportable sur les bénéfices des quatre années suivantes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q12",
+      "type": "single-choice",
+      "question": "Quelle est la particularité de la Contribution Professionnelle Unique (CPU) par rapport au RNR et au RNS ?",
+      "media": [],
+      "options": [
+        "Elle permet de déduire toutes les charges réelles",
+        "Elle offre un impôt libératoire de 10 % sur un bénéfice forfaitaire",
+        "Elle impose une comptabilité complète",
+        "Elle est exclusive aux professions libérales"
+      ],
+      "correct": 1,
+      "explanation": "La CPU propose un impôt libératoire au taux de 10 % appliqué à un bénéfice forfaitaire calculé sur le CA, sans déduction des charges réelles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q13",
+      "type": "single-choice",
+      "question": "Selon le barème progressif, quel est le taux d'IR applicable à la tranche de revenu comprise entre 60 001 et 180 000 DH ?",
+      "media": [],
+      "options": [
+        "10 %",
+        "20 %",
+        "30 %",
+        "34 %"
+      ],
+      "correct": 3,
+      "explanation": "Le barème progressif de l'IR prévoit un taux de 34 % pour la tranche de revenu net imposable entre 60 001 et 180 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Soulami envisage de créer une SARL pour son activité. À quel impôt sera soumise la société ?",
+      "media": [],
+      "options": [
+        "À l'Impôt sur le Revenu (IR)",
+        "À l'Impôt sur les Sociétés (IS)",
+        "À la Contribution Professionnelle Unique (CPU)",
+        "À la Taxe Professionnelle uniquement"
+      ],
+      "correct": 1,
+      "explanation": "Une société (SARL, SARLAU, SAS) est soumise à l'Impôt sur les Sociétés (IS).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q15",
+      "type": "single-choice",
+      "question": "En 2026, quel est le taux d'IS applicable à la tranche de bénéfice de 0 à 300 000 DH pour une SARL ?",
+      "media": [],
+      "options": [
+        "10 %",
+        "15 %",
+        "20 %",
+        "35 %"
+      ],
+      "correct": 0,
+      "explanation": "Le barème progressif de l'IS prévoit un taux de 10 % pour la tranche de bénéfice net fiscal comprise entre 0 et 300 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Marwani a une SARL avec un bénéfice de 500 000 DH. Quel est le taux d'IS applicable à la tranche de bénéfice comprise entre 300 001 et 1 000 000 DH ?",
+      "media": [],
+      "options": [
+        "10 %",
+        "20 %",
+        "25 %",
+        "35 %"
+      ],
+      "correct": 1,
+      "explanation": "Le barème progressif de l'IS prévoit un taux de 20 % pour la tranche de bénéfice net fiscal comprise entre 300 001 et 1 000 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Soulami a une SARL avec un bénéfice net après IS de 400 000 DH qu'il distribue en dividendes. Quel est le taux de retenue à la source sur ces dividendes ?",
+      "media": [],
+      "options": [
+        "5 %",
+        "10 %",
+        "15 %",
+        "20 %"
+      ],
+      "correct": 1,
+      "explanation": "La distribution de dividendes est soumise à une retenue à la source (RAS) de 10 %.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q18",
+      "type": "single-choice",
+      "question": "À partir de quel niveau de bénéfice l'IS devient-il généralement plus avantageux que l'IR sur le plan strictement fiscal ?",
+      "media": [],
+      "options": [
+        "100 000 DH",
+        "200 000 à 250 000 DH",
+        "500 000 DH",
+        "1 000 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Le point de bascule se situe aux alentours de 200 000 à 250 000 DH de bénéfice net, où l'IS commence à être plus avantageux que l'IR.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Marwani a une SARL. Quelle est la Cotisation Minimale (CM) minimum due par sa société ?",
+      "media": [],
+      "options": [
+        "1 500 DH",
+        "2 000 DH",
+        "3 000 DH",
+        "5 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "Pour les sociétés soumises à l'IS, la cotisation minimale ne peut être inférieure à 3 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Soulami a une SARL créée en 2026. Pendant combien de mois est-elle exonérée de la Cotisation Minimale (CM) ?",
+      "media": [],
+      "options": [
+        "12 mois",
+        "24 mois",
+        "36 mois",
+        "60 mois"
+      ],
+      "correct": 2,
+      "explanation": "Les sociétés nouvellement créées bénéficient d'une exonération de la CM pendant leurs 36 premiers mois d'activité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Marwani a une SARL avec un chiffre d'affaires de 1 000 000 DH. Quel est le montant de sa Cotisation Minimale (CM) au taux de droit commun ?",
+      "media": [],
+      "options": [
+        "2 500 DH",
+        "3 000 DH",
+        "4 000 DH",
+        "5 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Le taux de droit commun de la CM est de 0,25 % du CA, soit 2 500 DH. Le plancher étant de 3 000 DH, c'est ce montant qui est dû.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q22",
+      "type": "single-choice",
+      "question": "Selon le CGI, les actes de soins dentaires sont généralement :",
+      "media": [],
+      "options": [
+        "Soumis à la TVA au taux de 7 %",
+        "Soumis à la TVA au taux de 14 %",
+        "Soumis à la TVA au taux de 20 %",
+        "Exonérés de TVA"
+      ],
+      "correct": 3,
+      "explanation": "Les actes de soins dentaires sont généralement exonérés de TVA, bien que les actes à visée esthétique puissent être soumis à la TVA.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Soulami exerce en personne physique. Il peut déduire de ses recettes les charges suivantes, sauf :",
+      "media": [],
+      "options": [
+        "Le loyer de son cabinet",
+        "Les salaires de son assistante",
+        "Les frais d'achat de son véhicule personnel à usage privé",
+        "Les cotisations CNSS"
+      ],
+      "correct": 2,
+      "explanation": "Seules les charges engagées pour les besoins de l'activité professionnelle sont déductibles. Les frais d'un véhicule à usage privé ne sont pas déductibles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Marwani a une SARL avec un bénéfice de 2 000 000 DH. Quel est le taux d'IS applicable à la tranche de bénéfice supérieure à 1 000 000 DH ?",
+      "media": [],
+      "options": [
+        "20 %",
+        "31 %",
+        "35 %",
+        "37 %"
+      ],
+      "correct": 2,
+      "explanation": "Le barème progressif de l'IS prévoit un taux de 35 % pour la tranche de bénéfice net fiscal supérieure à 1 000 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q25",
+      "type": "single-choice",
+      "question": "Quelle est la principale différence entre le RNR et le RNS en matière de comptabilité ?",
+      "media": [],
+      "options": [
+        "Le RNR impose une comptabilité complète, le RNS une comptabilité simplifiée",
+        "Le RNR ne nécessite pas de comptabilité, le RNS une comptabilité complète",
+        "Les deux régimes imposent une comptabilité complète",
+        "Le RNR impose une comptabilité simplifiée, le RNS aucune comptabilité"
+      ],
+      "correct": 0,
+      "explanation": "Le RNR nécessite une comptabilité complète conforme au CGNC, tandis que le RNS se contente d'une comptabilité simplifiée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

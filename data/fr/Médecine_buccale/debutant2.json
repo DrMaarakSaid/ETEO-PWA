@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "Médecine_buccale_debutant2_001",
+    "title": "Médecine_buccale - Débutant 2",
+    "specialty": "MÉDE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "MÉDE_D2_Q01",
+      "type": "single-choice",
+      "question": "Sami reçoit un patient avec une lésion blanche striée bilatérale sur les joues. Il dit : 'C'est du lichen plan, c'est bénin.' Mina lui demande : 'Et si c'était une leucoplasie ?' Quelle est la différence clé entre ces deux lésions ?",
+      "media": [],
+      "options": [
+        "Le lichen plan est bilatéral et strié, la leucoplasie est souvent unilatérale et non striée",
+        "Le lichen plan est toujours malin, la leucoplasie est bénigne",
+        "Le lichen plan est une infection, la leucoplasie est auto-immune",
+        "Le lichen plan touche les fumeurs, la leucoplasie touche les non-fumeurs"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le lichen plan est bilatéral et symétrique, tandis que la leucoplasie est souvent unilatérale.' Sami, prenant note, est plus attentif.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q02",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une lésion blanche, dit à Sami : 'Il faut faire une biopsie pour éliminer une dysplasie.' Sami demande : 'Quand la leucoplasie est-elle à risque de dégénérescence ?'",
+      "media": [],
+      "options": [
+        "Forme verruqueuse, non homogène, localisée sous la langue",
+        "Forme homogène, bien limitée, sur la joue",
+        "Forme réticulée, bilatérale, asymptomatique",
+        "Forme atrophique, localisée sur le palais"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les leucoplasies verruqueuses ou non homogènes ont un risque plus élevé.' Sami, inquiet, demande une biopsie.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q03",
+      "type": "single-choice",
+      "question": "Sami, en voyant une lésion rouge, demande à Mina : 'C'est une érythroplasie, c'est dangereux ?' Mina répond : 'Oui, le risque de cancer est élevé.' Quel est le taux de transformation maligne de l'érythroplasie ?",
+      "media": [],
+      "options": [
+        "Environ 10-15%",
+        "Environ 50%",
+        "Environ 90%",
+        "Moins de 1%"
+      ],
+      "correct": 2,
+      "explanation": "Mina explique : 'L'érythroplasie a un taux de transformation maligne élevé, environ 90%.' Sami, choqué, insiste pour une biopsie immédiate.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q04",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une stomatite, dit à Sami : 'Ça pourrait être une stomatite de contact.' Sami demande : 'Comment la différencier d'une stomatite aphteuse ?'",
+      "media": [],
+      "options": [
+        "La stomatite de contact est liée à un allergène et disparaît à l'arrêt de l'exposition",
+        "La stomatite de contact est douloureuse, la stomatite aphteuse ne l'est pas",
+        "La stomatite de contact est infectieuse, la stomatite aphteuse ne l'est pas",
+        "La stomatite de contact touche les jeunes, la stomatite aphteuse les personnes âgées"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La stomatite de contact est une réaction à un allergène.' Sami, prenant note, interroge le patient sur ses habitudes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q05",
+      "type": "single-choice",
+      "question": "Sami, en voyant une candidose, demande à Mina : 'Pourquoi certains patients développent-ils des candidoses chroniques ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Immunodépression, diabète, xérostomie, port de prothèses",
+        "Consommation excessive de sucre",
+        "Stress chronique",
+        "Allergie au gluten"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les candidoses chroniques sont souvent liées à des facteurs locaux ou généraux.' Sami, attentif, recherche ces facteurs.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q06",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une langue noire villeuse, dit à Sami : 'C'est une langue noire villeuse.' Sami demande : 'Qu'est-ce qui la provoque ?'",
+      "media": [],
+      "options": [
+        "Antibiothérapie, tabac, café, mauvaise hygiène buccale",
+        "Infection virale",
+        "Carence en fer",
+        "Allergie alimentaire"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La langue noire villeuse est souvent due à des facteurs locaux.' Sami, conseillant, recommande une meilleure hygiène.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q07",
+      "type": "single-choice",
+      "question": "Sami, en voyant une patiente avec une glossite atrophique, demande à Mina : 'Qu'est-ce qui peut causer une glossite atrophique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Carence en fer, en vitamine B12, en acide folique",
+        "Infection virale",
+        "Traumatisme",
+        "Allergie"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les carences nutritionnelles sont souvent en cause.' Sami, prenant note, demande un bilan sanguin.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q08",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une chéilite angulaire, dit à Sami : 'C'est une chéilite angulaire.' Sami demande : 'Qu'est-ce qui la provoque ?'",
+      "media": [],
+      "options": [
+        "Candida, carence en fer, carence en vitamine B, perte de dimension verticale",
+        "Infection virale",
+        "Allergie",
+        "Traumatisme"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La chéilite angulaire a des causes multiples.' Sami, attentif, cherche la cause sous-jacente.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q09",
+      "type": "single-choice",
+      "question": "Sami, en voyant une lésion pigmentée, demande à Mina : 'C'est un mélanome ?' Mina répond : 'Pas forcément, ça peut être une pigmentation mélanique.' Quelles sont les causes de pigmentation mélanique ?",
+      "media": [],
+      "options": [
+        "Mélanocytaire, médicamenteuse, endocrinienne, tabagique",
+        "Uniquement cancéreuse",
+        "Uniquement infectieuse",
+        "Uniquement traumatique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les pigmentations ont de nombreuses causes.' Sami, prenant note, est plus prudent.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q10",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec un pemphigus, dit à Sami : 'Le pemphigus est une urgence.' Sami demande : 'Pourquoi ?'",
+      "media": [],
+      "options": [
+        "Il peut être mortel sans traitement, avec dénutrition et infections",
+        "Il est très contagieux",
+        "Il provoque des douleurs intenses",
+        "Il est rapidement cancéreux"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le pemphigus peut engager le pronostic vital.' Sami, inquiet, demande un avis spécialisé.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q11",
+      "type": "single-choice",
+      "question": "Sami demande à Mina comment traiter un pemphigus. Mina répond :",
+      "media": [],
+      "options": [
+        "Corticostéroïdes systémiques et immunosuppresseurs, avec suivi spécialisé",
+        "Antibiotiques",
+        "Antiviraux",
+        "Chirurgie"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le traitement nécessite une prise en charge spécialisée.' Sami, prenant note, oriente le patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q12",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une pemphigoïde, dit à Sami : 'La pemphigoïde est moins grave que le pemphigus.' Sami demande : 'Pourquoi ?'",
+      "media": [],
+      "options": [
+        "Elle touche les sujets âgés et est souvent moins sévère",
+        "Elle est plus contagieuse",
+        "Elle est plus douloureuse",
+        "Elle est plus cancéreuse"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La pemphigoïde est souvent moins sévère.' Sami, rassuré, rassure le patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q13",
+      "type": "single-choice",
+      "question": "Sami, en voyant un patient avec un syndrome de Sjögren, demande à Mina : 'Quels sont les risques buccaux du Sjögren ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Caries, candidoses, glossite, difficultés de déglutition",
+        "Uniquement des caries",
+        "Uniquement des infections",
+        "Uniquement des douleurs"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le Sjögren expose à de nombreuses complications buccales.' Sami, prenant note, recommande un suivi régulier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q14",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une douleur orofaciale, dit à Sami : 'Ça pourrait être un SADAM.' Sami demande : 'Qu'est-ce que le SADAM ?'",
+      "media": [],
+      "options": [
+        "Syndrome algodystrophique de l'articulation temporo-mandibulaire",
+        "Une infection de l'ATM",
+        "Un cancer de l'ATM",
+        "Une fracture de l'ATM"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le SADAM est un syndrome douloureux de l'ATM.' Sami, prenant note, demande comment le traiter.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q15",
+      "type": "single-choice",
+      "question": "Sami demande à Mina comment traiter un SADAM. Mina répond :",
+      "media": [],
+      "options": [
+        "Physiothérapie, orthèse occlusale, antalgiques, gestion du stress",
+        "Chirurgie",
+        "Antibiotiques",
+        "Antiviraux"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le traitement est souvent conservateur.' Sami, attentif, suit ses conseils.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q16",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une brûlure de la langue, dit à Sami : 'Ça pourrait être un syndrome de la bouche brûlante.' Sami demande : 'Quels sont les facteurs associés ?'",
+      "media": [],
+      "options": [
+        "Ménopause, anxiété, carences, diabète",
+        "Uniquement le stress",
+        "Uniquement les carences",
+        "Uniquement le diabète"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les facteurs sont multiples.' Sami, compatissant, cherche à rassurer la patiente.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q17",
+      "type": "single-choice",
+      "question": "Sami, en voyant une lésion ulcérée persistante, demande à Mina : 'Quand faut-il suspecter un cancer ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Lésion > 3 semaines, indurée, saignant au contact, douloureuse",
+        "Toute lésion",
+        "Uniquement les lésions douloureuses",
+        "Uniquement les lésions blanches"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les signes d'alerte sont stricts.' Sami, vigilant, examine attentivement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q18",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une leucoplasie, dit à Sami : 'Il faut faire une biopsie.' Sami demande : 'Où faut-il biopsier ?'",
+      "media": [],
+      "options": [
+        "La zone la plus suspecte, souvent la plus indurée ou érythémateuse",
+        "Le centre de la lésion",
+        "La périphérie de la lésion",
+        "La zone asymptomatique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Il faut biopsier la zone la plus suspecte.' Sami, appliquant, est plus rigoureux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q19",
+      "type": "single-choice",
+      "question": "Sami, en voyant une lésion pigmentée, demande à Mina : 'Quand faut-il suspecter un mélanome ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Croissance rapide, asymétrie, bord irrégulier, couleur inhomogène",
+        "Toute pigmentation",
+        "Uniquement les pigmentations douloureuses",
+        "Uniquement les pigmentations récentes"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les critères d'alerte sont les mêmes que pour la peau.' Sami, vigilant, examine attentivement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q20",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une stomatite médicamenteuse, dit à Sami : 'C'est une stomatite médicamenteuse.' Sami demande : 'Quels médicaments peuvent la provoquer ?'",
+      "media": [],
+      "options": [
+        "AINS, antibiotiques, antihypertenseurs, antirétroviraux",
+        "Uniquement les antibiotiques",
+        "Uniquement les antihypertenseurs",
+        "Uniquement les AINS"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'De nombreux médicaments peuvent causer des stomatites.' Sami, prenant note, interroge le patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q21",
+      "type": "single-choice",
+      "question": "Sami, en voyant un patient avec une xérostomie, demande à Mina : 'Quelles sont les causes de la xérostomie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Médicaments, radiothérapie, Sjögren, diabète, vieillissement",
+        "Uniquement les médicaments",
+        "Uniquement la radiothérapie",
+        "Uniquement le Sjögren"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les causes sont nombreuses.' Sami, prenant note, cherche la cause.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q22",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une stomatite aphteuse majeure, dit à Sami : 'C'est une stomatite aphteuse majeure.' Sami demande : 'Quelle est sa particularité ?'",
+      "media": [],
+      "options": [
+        "Ulcérations profondes, étendues, cicatrisantes avec séquelles",
+        "Ulcérations superficielles, multiples",
+        "Ulcérations uniques, peu douloureuses",
+        "Ulcérations associées à de la fièvre"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les aphtes majeurs sont profonds et laissent des cicatrices.' Sami, inquiet, demande un traitement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q23",
+      "type": "single-choice",
+      "question": "Sami, en voyant un patient avec une herpès labial, demande à Mina : 'Comment traiter un herpès labial ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Antiviraux topiques (aciclovir) ou systémiques si sévère",
+        "Antibiotiques",
+        "Corticostéroïdes",
+        "Antifongiques"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le traitement est antiviral.' Sami, attentif, prescrit le traitement adapté.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q24",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient avec une chéilite exfoliative, dit à Sami : 'C'est une chéilite exfoliative.' Sami demande : 'Qu'est-ce qui la provoque ?'",
+      "media": [],
+      "options": [
+        "Traumatismes, carences, allergie, lèvres sèches",
+        "Infection virale",
+        "Cancer",
+        "Maladie auto-immune"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les causes sont variées.' Sami, conseillant, recommande une bonne hydratation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MÉDE_D2_Q25",
+      "type": "single-choice",
+      "question": "Sami demande à Mina : 'Quels sont les conseils pour la prévention du cancer buccal ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Arrêt du tabac et de l'alcool, vaccination HPV, protection solaire, auto-examen",
+        "Uniquement l'arrêt du tabac",
+        "Uniquement l'arrêt de l'alcool",
+        "Uniquement la vaccination HPV"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La prévention est multifactorielle.' Sami, convaincu, sensibilise ses patients.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

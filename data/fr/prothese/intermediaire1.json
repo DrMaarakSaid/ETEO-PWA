@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "prothese_intermediaire1_001",
+    "title": "Prothese - Intermédiaire 1",
+    "specialty": "PROT",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PROT_I1_Q01",
+      "type": "single-choice",
+      "question": "Sami demande à Mina : 'Quelle est la clé d'une couronne réussie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Uniquement l'esthétique",
+        "Un bon choix de matériau, une bonne préparation et une bonne occlusion",
+        "Uniquement le prix",
+        "Uniquement le laboratoire"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La réussite d'une couronne repose sur le matériau, la préparation et l'occlusion.' 🦅 Sami : 'Je vais soigner ces trois aspects.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q02",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quand choisir une couronne en zircone plutôt qu'en métallo-céramique ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "La zircone est toujours meilleure",
+        "La zircone offre une meilleure esthétique mais est plus chère",
+        "La métallo-céramique est toujours meilleure",
+        "Les deux sont équivalents"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La zircone offre une esthétique supérieure sans métal, mais à un coût plus élevé.' 🦅 Sami : 'Je vais proposer la zircone pour les dents antérieures.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q03",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment améliorer la rétention d'une couronne ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Utiliser un ciment plus fort",
+        "Soigner la préparation et l'adhésion",
+        "Allonger la couronne",
+        "Changer de matériau"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La rétention dépend de la qualité de la préparation et de l'adhésion.' 🦅 Sami : 'Je vais soigner mes préparations.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q04",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quelle est la différence entre un inlay et un onlay ?' Mina lui explique :",
+      "media": [],
+      "options": [
+        "L'onlay recouvre les cuspides, l'inlay n'en recouvre pas",
+        "C'est la même chose",
+        "L'inlay est plus grand",
+        "L'onlay est en céramique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'onlay est plus conservateur qu'une couronne et renforce les cuspides.' 🦅 Sami : 'Je vais proposer un onlay pour cette fracture.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q05",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quand utiliser un bridge collé plutôt qu'un bridge conventionnel ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Toujours",
+        "Jamais",
+        "Lorsque les dents piliers sont saines et qu'on veut éviter la préparation",
+        "Uniquement pour les dents antérieures"
+      ],
+      "correct": 2,
+      "explanation": "🐆 Mina explique : 'Le bridge collé est une option conservatrice quand les piliers ne nécessitent pas de préparation.' 🦅 Sami : 'Je vais proposer un bridge collé pour ce patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q06",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment choisir entre une prothèse amovible et des implants ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Les implants sont toujours meilleurs",
+        "La prothèse amovible est toujours meilleure",
+        "Le choix dépend de l'état osseux, du budget et des attentes du patient",
+        "Les deux sont équivalents"
+      ],
+      "correct": 2,
+      "explanation": "🐆 Mina explique : 'Le choix dépend de multiples facteurs cliniques et financiers.' 🦅 Sami : 'Je vais discuter des options avec mon patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q07",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment éviter les déscellements de couronnes ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Utiliser un ciment plus fort",
+        "Vérifier l'occlusion et la préparation",
+        "Changer de matériau",
+        "Allonger la couronne"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les déscellements sont souvent dus à des défauts d'occlusion ou de préparation.' 🦅 Sami : 'Je vais vérifier l'occlusion avant de sceller.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q08",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent des empreintes. Mina dit : 'L'empreinte numérique est plus confortable.' Sami demande : 'Quel est son inconvénient ?'",
+      "media": [],
+      "options": [
+        "Elle est moins précise",
+        "Elle nécessite un investissement élevé",
+        "Elle est plus longue à réaliser",
+        "Elle n'est pas compatible avec tous les matériaux"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Le scanner intra-oral a un coût d'investissement élevé.' 🦅 Sami : 'Je vais évaluer la rentabilité avant d'investir.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q09",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce qu'une couronne provisoire ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Une couronne définitive",
+        "Une couronne temporaire qui protège la dent en attendant la définitive",
+        "Un simple composite",
+        "Un implant"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Le provisoire protège la dent et permet d'évaluer l'esthétique et la fonction.' 🦅 Sami : 'Je vais faire un provisoire de qualité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q10",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer un patient avec un bruxisme sévère ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Proposer une couronne en céramique pure",
+        "Proposer une métallo-céramique ou une zircone monolithique",
+        "Proposer un composite",
+        "Proposer une prothèse amovible"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'En cas de bruxisme, il faut des matériaux résistants comme la métallo-céramique ou la zircone monolithique.' 🦅 Sami : 'Je vais prescrire une gouttière aussi.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q11",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que l'occlusion en prothèse ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "La couleur des dents",
+        "Les contacts entre les dents supérieures et inférieures",
+        "La forme des dents",
+        "La position des implants"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'L'occlusion est la clé de la stabilité prothétique et de la fonction masticatoire.' 🦅 Sami : 'Je vais travailler l'occlusion de chaque prothèse.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q12",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment choisir la couleur d'une couronne antérieure ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Au hasard",
+        "Avec une échelle de couleurs sous lumière naturelle",
+        "À la lumière du cabinet",
+        "Avec une photo"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Une échelle de couleurs sous lumière naturelle est la méthode fiable.' 🦅 Sami : 'Je vais investir dans une bonne échelle de couleurs.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q13",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quand utiliser une prothèse amovible partielle ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Pour remplacer une seule dent",
+        "Pour remplacer plusieurs dents avec un budget limité",
+        "Pour remplacer toutes les dents",
+        "Pour les dents antérieures uniquement"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les prothèses partielles sont indiquées pour le remplacement de plusieurs dents.' 🦅 Sami : 'Je vais proposer une prothèse partielle pour ce patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q14",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent des facettes. Mina dit : 'Les facettes sont très esthétiques.' Sami demande : 'Quel est leur inconvénient ?'",
+      "media": [],
+      "options": [
+        "Elles sont moins esthétiques",
+        "Elles sont fragiles et nécessitent une bonne hygiène",
+        "Elles sont moins chères",
+        "Elles sont plus rapides à poser"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les facettes sont fragiles et nécessitent une hygiène rigoureuse.' 🦅 Sami : 'Je vais prescrire une bonne hygiène à mes patients.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q15",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer un bridge qui bouge ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Le refaire immédiatement",
+        "Vérifier le ciment et l'occlusion",
+        "L'ignorer",
+        "Le remplacer par un implant"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Un bridge qui bouge peut être dû à un déscellement ou à un problème occlusal.' 🦅 Sami : 'Je vais vérifier le ciment d'abord.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q16",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les avantages de la CFAO en prothèse ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Rapidité, précision et confort pour le patient",
+        "Uniquement la rapidité",
+        "Uniquement la précision",
+        "Uniquement le confort"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La CFAO offre rapidité, précision et confort, mais nécessite un investissement.' 🦅 Sami : 'Je vais me former à la CFAO.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q17",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une prothèse amovible qui irrite la gencive ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "La refaire",
+        "Vérifier l'adaptation et l'équilibre occlusal",
+        "La jeter",
+        "Changer de matériau"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les irritations sont souvent dues à des pressions localisées ou à un mauvais équilibre.' 🦅 Sami : 'Je vais rectifier l'adaptation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q18",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quand utiliser un inlay-core ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Pour toutes les dents dévitalisées",
+        "Pour les dents dévitalisées ayant assez de structure coronaire",
+        "Pour les dents vitales",
+        "Pour les dents de lait"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'L'inlay-core est indiqué quand la dent dévitalisée conserve assez de structure pour recevoir une couronne.' 🦅 Sami : 'Je vais évaluer la structure avant de décider.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q19",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment améliorer l'esthétique d'une couronne antérieure ?' Mina lui conseille :",
+      "media": [],
+      "options": [
+        "Utiliser une métallo-céramique",
+        "Utiliser une céramique pure ou zircone avec stratification",
+        "Utiliser un composite",
+        "Utiliser une résine"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La céramique pure ou la zircone stratifiée offrent l'esthétique la plus naturelle.' 🦅 Sami : 'Je vais proposer une céramique pure pour ce patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q20",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent des crochets de prothèse. Mina dit : 'Les crochets flexibles sont plus esthétiques.' Sami demande : 'Quel est leur inconvénient ?'",
+      "media": [],
+      "options": [
+        "Ils sont moins esthétiques",
+        "Ils sont moins résistants que les crochets métalliques",
+        "Ils sont plus chers",
+        "Ils sont plus difficiles à poser"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les crochets flexibles sont esthétiques mais moins résistants à l'usure.' 🦅 Sami : 'Je vais choisir en fonction de l'usage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q21",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une couronne qui s'est déscellée ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "La recoller immédiatement",
+        "Analyser la cause avant de recoller",
+        "La refaire",
+        "Changer de matériau"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Il faut analyser la cause du déscellement pour éviter la récidive.' 🦅 Sami : 'Je vais vérifier l'occlusion avant de recoller.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q22",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les avantages de la zircone monolithique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Esthétique parfaite et solidité",
+        "Uniquement l'esthétique",
+        "Uniquement la solidité",
+        "Moins cher"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La zircone monolithique allie esthétique et solidité, idéale pour les zones de forte charge.' 🦅 Sami : 'Je vais utiliser la zircone monolithique pour les molaires.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q23",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce qu'une prothèse complète conventionnelle ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Une prothèse fixe sur implants",
+        "Une prothèse amovible remplaçant toutes les dents d'une arcade",
+        "Un bridge étendu",
+        "Une couronne sur chaque dent"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La prothèse complète est une prothèse amovible qui remplace toutes les dents.' 🦅 Sami : 'Je vais bien préparer l'empreinte.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q24",
+      "type": "single-choice",
+      "question": "Sami et Mina discutent de l'avenir de la prothèse. Mina dit : 'L'impression 3D va évoluer.' Sami demande : 'Vers quoi ?'",
+      "media": [],
+      "options": [
+        "Des prothèses plus rapides et plus précises",
+        "Des prothèses biodégradables",
+        "Des prothèses sans matériau",
+        "Des prothèses métalliques"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'impression 3D va offrir des prothèses plus rapides et plus précises.' 🦅 Sami : 'Je vais investir dans l'impression 3D.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I1_Q25",
+      "type": "single-choice",
+      "question": "Sami, après avoir maîtrisé les matériaux prothétiques avec Mina, dit : 'Je suis prêt à relever tous les défis !' Mina conclut : 'La maîtrise des matériaux est...'",
+      "media": [],
+      "options": [
+        "Une option",
+        "La base de la réussite en prothèse",
+        "Une perte de temps",
+        "Secondaire"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La maîtrise des matériaux est la base de la réussite en prothèse.' 🦅 Sami : 'Je vais continuer à me former.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

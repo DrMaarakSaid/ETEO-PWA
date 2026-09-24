@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "assistantes_dentaires_expert1_001",
+    "title": "Assistantes_dentaires - Expert 1",
+    "specialty": "ASSI",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ASSI_E1_Q01",
+      "type": "single-choice",
+      "question": "Dr Chiba doit former les jeunes dentistes à la gestion des assistantes. Quel est le premier conseil qu'il doit leur donner ?",
+      "media": [],
+      "options": [
+        "L'assistante est une employée comme une autre",
+        "L'assistante est un partenaire clé dans la qualité des soins",
+        "L'assistante est une secrétaire",
+        "L'assistante n'est pas importante"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'L'assistante est un partenaire clé dans la qualité des soins. La considérer comme telle est essentiel.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q02",
+      "type": "single-choice",
+      "question": "Dr Zaki doit créer un programme de mentorat pour les assistantes. Quel est l'objectif principal ?",
+      "media": [],
+      "options": [
+        "Réduire les coûts",
+        "Transmettre les compétences et les valeurs du cabinet",
+        "Augmenter la productivité",
+        "Faire des bénéfices"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'Le mentorat permet de transmettre les compétences et les valeurs du cabinet à la nouvelle génération.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q03",
+      "type": "single-choice",
+      "question": "Dr Chiba doit évaluer l'impact de ses assistantes sur la satisfaction des patients. Quel indicateur est le plus pertinent ?",
+      "media": [],
+      "options": [
+        "Le nombre de soins réalisés",
+        "Le taux de satisfaction des patients",
+        "Le nombre de plaintes",
+        "Le temps d'attente"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'Le taux de satisfaction des patients est l'indicateur le plus pertinent de l'impact des assistantes.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q04",
+      "type": "single-choice",
+      "question": "Dr Zaki doit gérer une crise de confiance avec son assistante. Quelle est la bonne approche ?",
+      "media": [],
+      "options": [
+        "Ignorer la crise",
+        "Dialoguer ouvertement et rétablir la confiance",
+        "Changer d'assistante",
+        "Sanctionner l'assistante"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Le dialogue ouvert est la clé pour rétablir la confiance après une crise.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q05",
+      "type": "single-choice",
+      "question": "Dr Chiba doit former les assistantes à la gestion des conflits. Quel est le message clé ?",
+      "media": [],
+      "options": [
+        "Les conflits sont inévitables",
+        "La communication et la médiation sont les clés de la résolution des conflits",
+        "Les conflits sont à éviter",
+        "Les conflits sont toujours négatifs"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La communication et la médiation permettent de transformer les conflits en opportunités de croissance.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q06",
+      "type": "single-choice",
+      "question": "Dr Zaki doit créer un guide de bonnes pratiques pour les assistantes. Quelle est la base du guide ?",
+      "media": [],
+      "options": [
+        "Les habitudes du cabinet",
+        "Les recommandations professionnelles",
+        "Les préférences personnelles",
+        "Les suggestions des patients"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Les bonnes pratiques doivent être basées sur les recommandations professionnelles.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q07",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de démotivation de son assistante. Quelle est la bonne approche ?",
+      "media": [],
+      "options": [
+        "Ignorer la démotivation",
+        "Identifier les causes et proposer des solutions",
+        "Changer d'assistante",
+        "Augmenter la charge de travail"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'L'identification des causes et la proposition de solutions permettent de restaurer la motivation.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q08",
+      "type": "single-choice",
+      "question": "Dr Zaki doit évaluer la qualité de la formation de ses assistantes. Quelle méthode est la plus fiable ?",
+      "media": [],
+      "options": [
+        "Une évaluation par les pairs",
+        "Une évaluation basée sur des critères objectifs et des cas pratiques",
+        "Une auto-évaluation",
+        "Une évaluation par les patients"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'L'évaluation basée sur des critères objectifs et des cas pratiques est la plus fiable.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q09",
+      "type": "single-choice",
+      "question": "Dr Chiba doit créer un plan de carrière pour ses assistantes. Quel est l'objectif principal ?",
+      "media": [],
+      "options": [
+        "Fidéliser les assistantes",
+        "Développer leurs compétences et leur motivation",
+        "Réduire les coûts de recrutement",
+        "Améliorer l'image du cabinet"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'Un plan de carrière permet de développer les compétences des assistantes et de renforcer leur motivation.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q10",
+      "type": "single-choice",
+      "question": "Dr Zaki doit gérer une situation de burnout chez son assistante. Quelle est la priorité ?",
+      "media": [],
+      "options": [
+        "Maintenir la production",
+        "Protéger la santé de l'assistante et proposer un accompagnement",
+        "La remplacer",
+        "Ignorer le problème"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'La santé de l'assistante est une priorité. L'accompagnement et la prévention du burnout sont essentiels.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q11",
+      "type": "single-choice",
+      "question": "Dr Chiba doit former les assistantes à la gestion des urgences. Quelle est la compétence clé à développer ?",
+      "media": [],
+      "options": [
+        "La rapidité d'exécution",
+        "La capacité à rester calme et à suivre les protocoles",
+        "La prise de décision autonome",
+        "La communication avec les patients"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La capacité à rester calme et à suivre les protocoles est la compétence clé pour gérer les urgences.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q12",
+      "type": "single-choice",
+      "question": "Dr Zaki doit évaluer la performance de ses assistantes. Quels sont les critères à considérer ?",
+      "media": [],
+      "options": [
+        "Uniquement les compétences techniques",
+        "Les compétences techniques, relationnelles et l'éthique professionnelle",
+        "Uniquement l'expérience",
+        "Uniquement le diplôme"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'L'évaluation doit prendre en compte les compétences techniques, relationnelles et l'éthique professionnelle.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q13",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de conflit d'intérêts avec son assistante. Quelle est la bonne attitude ?",
+      "media": [],
+      "options": [
+        "Ignorer le conflit",
+        "Déclarer le conflit et agir en toute transparence",
+        "Cacher le conflit",
+        "Changer d'assistante"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La transparence est la seule attitude acceptable face à un conflit d'intérêts.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q14",
+      "type": "single-choice",
+      "question": "Dr Zaki doit créer un programme de formation continue pour ses assistantes. Quelle est la base du programme ?",
+      "media": [],
+      "options": [
+        "Les besoins des patients",
+        "Les besoins des assistantes et les évolutions du métier",
+        "Les préférences du dentiste",
+        "Les contraintes budgétaires"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Le programme de formation doit être basé sur les besoins des assistantes et les évolutions du métier.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q15",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de discrimination envers son assistante. Quelle est la bonne approche ?",
+      "media": [],
+      "options": [
+        "Ignorer la situation",
+        "Sanctionner le comportement discriminatoire et protéger la victime",
+        "Changer d'assistante",
+        "Démissionner"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La discrimination est une faute grave. Le comportement discriminatoire doit être sanctionné et la victime protégée.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q16",
+      "type": "single-choice",
+      "question": "Dr Zaki doit évaluer l'impact de ses assistantes sur la qualité des soins. Quel indicateur est le plus pertinent ?",
+      "media": [],
+      "options": [
+        "Le nombre de soins réalisés",
+        "Le taux de satisfaction des patients et la qualité des soins assistés",
+        "Le nombre de plaintes",
+        "Le temps d'attente"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Le taux de satisfaction des patients et la qualité des soins assistés sont les indicateurs les plus pertinents.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q17",
+      "type": "single-choice",
+      "question": "Dr Chiba doit créer un système de reconnaissance pour ses assistantes. Quel est l'objectif principal ?",
+      "media": [],
+      "options": [
+        "Augmenter la productivité",
+        "Motiver et fidéliser les assistantes",
+        "Réduire les coûts",
+        "Améliorer l'image du cabinet"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La reconnaissance motive et fidélise les assistantes, ce qui bénéficie à l'ensemble du cabinet.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q18",
+      "type": "single-choice",
+      "question": "Dr Zaki doit gérer une situation de crise (accusation de négligence). L'assistante est mise en cause. Quelle est la bonne approche ?",
+      "media": [],
+      "options": [
+        "Ignorer l'accusation",
+        "Enquêter et défendre son assistante si elle est innocente",
+        "La licencier",
+        "Accepter l'accusation sans enquête"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'L'enquête et la défense de l'assistante innocente sont des devoirs du dentiste.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q19",
+      "type": "single-choice",
+      "question": "Dr Chiba doit former les assistantes à la gestion des patients difficiles. Quelle est la compétence clé ?",
+      "media": [],
+      "options": [
+        "La patience et l'écoute active",
+        "L'utilisation de la force",
+        "L'indifférence",
+        "La confrontation"
+      ],
+      "correct": 0,
+      "explanation": "Dr Zaki explique : 'La patience et l'écoute active sont les compétences clés pour gérer les patients difficiles.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q20",
+      "type": "single-choice",
+      "question": "Dr Zaki doit évaluer la compétence de son assistante en matière de stérilisation. Quel est le meilleur indicateur ?",
+      "media": [],
+      "options": [
+        "La vitesse de stérilisation",
+        "Le taux de conformité aux protocoles de stérilisation",
+        "Le nombre d'instruments stérilisés",
+        "La satisfaction du dentiste"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Le taux de conformité aux protocoles de stérilisation est l'indicateur le plus fiable de la compétence.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q21",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de harcèlement sexuel dans son équipe. L'assistante est concernée. Quelle est la priorité ?",
+      "media": [],
+      "options": [
+        "Protéger le cabinet",
+        "Protéger l'assistante et sanctionner le harceleur",
+        "Ignorer la situation",
+        "Cacher l'incident"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La protection de la victime et la sanction du harceleur sont des obligations légales et morales.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q22",
+      "type": "single-choice",
+      "question": "Dr Zaki doit créer un code de conduite pour les assistantes. Quels sont les piliers à inclure ?",
+      "media": [],
+      "options": [
+        "La ponctualité et la tenue vestimentaire",
+        "L'éthique, la confidentialité, la qualité des soins et le respect",
+        "La rapidité d'exécution",
+        "La disponibilité"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Le code de conduite doit reposer sur l'éthique, la confidentialité, la qualité des soins et le respect.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q23",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de conflit entre son assistante et un autre membre de l'équipe. Quelle est la bonne approche ?",
+      "media": [],
+      "options": [
+        "Ignorer le conflit",
+        "Faciliter la médiation et trouver un accord",
+        "Prendre parti",
+        "Changer l'équipe"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La médiation permet de trouver une solution acceptable pour les deux parties.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q24",
+      "type": "single-choice",
+      "question": "Dr Zaki doit former les assistantes à la gestion des dossiers patients. Quelle est la compétence clé ?",
+      "media": [],
+      "options": [
+        "La rapidité de saisie",
+        "La rigueur et le respect de la confidentialité",
+        "La créativité",
+        "L'utilisation de logiciels avancés"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'La rigueur et le respect de la confidentialité sont les compétences clés pour la gestion des dossiers patients.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_E1_Q25",
+      "type": "single-choice",
+      "question": "Dr Chiba, après avoir formé une équipe d'exception, reçoit la reconnaissance de Dr Zaki. Quelle est la prochaine étape pour Dr Chiba ?",
+      "media": [],
+      "options": [
+        "Créer un programme de mentorat pour les nouvelles assistantes",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bases"
+      ],
+      "correct": 0,
+      "explanation": "Dr Zaki explique : 'La création d'un programme de mentorat permet de transmettre son savoir et de former la nouvelle génération.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

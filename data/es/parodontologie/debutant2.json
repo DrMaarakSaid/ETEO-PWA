@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "parodontologie_debutant2_001",
+    "title": "Periodoncia - Principiante 2",
+    "specialty": "PARO",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "PARO_D2_Q01",
+      "type": "single-choice",
+      "question": "🦅 Sami examina a un paciente con una bolsa de 6 mm. Dice: «¡Alisado radicular y ya está!» 🐆 Mina responde: «¿Y la reevaluación?» ¿Por qué es importante la reevaluación?",
+      "media": [],
+      "options": [
+        "Permite evaluar la respuesta al tratamiento y ajustar el plan de cuidados",
+        "Es inútil, porque el tratamiento siempre es eficaz",
+        "Solo sirve para ganar más dinero",
+        "Está destinada solo a los casos complejos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La reevaluación a las 4-6 semanas es necesaria para medir la reducción de las bolsas y decidir los siguientes pasos.» 🦅 Sami: «Vale, pero es largo...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q02",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una bolsa de 8 mm con pérdida ósea, propone: «Colgajo periodontal.» 🦅 Sami responde: «No, ¡láser!» ¿Cuál es la indicación del colgajo?",
+      "media": [],
+      "options": [
+        "Bolsas profundas > 5 mm con pérdida ósea accesible",
+        "Todas las bolsas periodontales",
+        "Solo las bolsas anteriores",
+        "Ninguna bolsa requiere colgajo"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El colgajo está indicado para acceder y limpiar las bolsas profundas con pérdida ósea.» 🐆 Mina: «¡Sami, conoces tus indicaciones!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q03",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una periodontitis agresiva en un paciente de 25 años, dice: «Es genética, no se puede hacer nada.» 🐆 Mina responde: «No, ¡se puede tratar!» ¿Qué es la periodontitis agresiva?",
+      "media": [],
+      "options": [
+        "Una forma rápida de periodontitis en pacientes jóvenes y sanos",
+        "Una periodontitis en pacientes ancianos",
+        "Una infección vírica grave",
+        "Una reacción alérgica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La periodontitis agresiva aparece en pacientes jóvenes sin factores de riesgo locales.» 🦅 Sami: «No sabía que se podía tratar eficazmente.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q04",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo un paciente con periodontitis agresiva, dice: «Se necesita antibioterapia combinada.» 🦅 Sami responde: «No, el raspado es suficiente.» ¿Qué estrategia está validada?",
+      "media": [],
+      "options": [
+        "Amoxicilina + metronidazol combinado con raspado",
+        "Solo raspado",
+        "Solo antibióticos",
+        "Cirugía inmediata"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La combinación de amoxicilina y metronidazol se recomienda en las periodontitis agresivas.» 🦅 Sami: «Prefiero evitar los antibióticos, pero tienes razón.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q05",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una recesión clase II de Miller, dice: «Se puede cubrir al 100%.» 🐆 Mina responde: «El pronóstico es dudoso.» ¿Qué es la clasificación de Miller?",
+      "media": [],
+      "options": [
+        "Clase I y II: cobertura completa posible, clase III: parcial, clase IV: imposible",
+        "Todas las clases son tratables",
+        "Solo existen las clases I y II",
+        "La clasificación de Miller es inútil"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Miller clasifica las recesiones según el pronóstico de cobertura.» 🐆 Mina: «¡Sami, hoy estás imparable!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q06",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una furca de grado 3, dice: «El pronóstico es dudoso.» 🦅 Sami responde: «¡Siempre se puede tratar!» ¿Qué es una furca de grado 3?",
+      "media": [],
+      "options": [
+        "Una afectación furcal a través con comunicación entre raíces",
+        "Una afectación furcal superficial",
+        "Una afectación de menos de 2 mm",
+        "Una furca sana"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La furca de grado 3 es a través, lo que dificulta la higiene y el tratamiento.» 🦅 Sami: «Igualmente intentaré tratarla...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q07",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una bolsa de 5 mm después del tratamiento, dice: «El tratamiento ha fracasado.» 🐆 Mina responde: «¡No necesariamente!» ¿Qué dice la literatura?",
+      "media": [],
+      "options": [
+        "Una bolsa residual de 5 mm puede ser estable con un buen control de placa",
+        "Cualquier bolsa > 4 mm es un fracaso",
+        "Siempre hay que reoperar",
+        "Siempre hay que extraer"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Una bolsa residual puede permanecer estable con un buen control de placa.» 🐆 Mina: «¡Sami, esta vez tienes razón!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q08",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo un paciente con periodontitis severa, dice: «Hay que hacer una exploración completa.» 🦅 Sami responde: «Inútil, el diagnóstico es evidente.» ¿Qué incluye la exploración completa?",
+      "media": [],
+      "options": [
+        "Sondaje completo, radiografías, índices de placa, sangrado y movilidad",
+        "Solo sondaje",
+        "Solo radiografías",
+        "Solo inspección visual"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La exploración completa evalúa la gravedad, la extensión y el pronóstico.» 🦅 Sami: «Vale, haremos todo... ¡pero es largo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q09",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una pérdida ósea vertical, dice: «Todo está perdido, hay que extraer.» 🐆 Mina responde: «¡Se puede regenerar!» ¿Qué es la regeneración tisular guiada?",
+      "media": [],
+      "options": [
+        "Una técnica con membranas y biomateriales para regenerar el hueso",
+        "Una técnica de extracción",
+        "Una técnica de raspado",
+        "Una técnica protésica"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La RTG permite regenerar el hueso alrededor de los dientes.» 🐆 Mina: «¡Sami, estás realmente al día!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q10",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una movilidad de grado 3, dice: «El pronóstico es muy dudoso.» 🦅 Sami responde: «¡Aún se puede tratar!» ¿Qué significa la movilidad de grado 3?",
+      "media": [],
+      "options": [
+        "Movilidad horizontal > 2 mm o vertical",
+        "Movilidad horizontal de 1–2 mm",
+        "Movilidad horizontal inferior a 1 mm",
+        "Ausencia de movilidad"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La movilidad de grado 3 es severa, con un pronóstico muy dudoso.» 🦅 Sami: «Igualmente intentaré salvarlo...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q11",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una bolsa de 7 mm con sangrado, dice: «Es periodontitis activa.» 🐆 Mina pregunta: «¿Cómo confirmarlo?» ¿Qué es el sangrado al sondaje?",
+      "media": [],
+      "options": [
+        "Un signo de inflamación activa y progresión de la enfermedad",
+        "Un signo de cáncer",
+        "Un signo de deficiencia de vitaminas",
+        "Un signo solo de mala higiene"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El BOP es un indicador de actividad inflamatoria.» 🐆 Mina: «¡Sami, estás progresando!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q12",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente con periodontitis y diabetes no controlada, dice: «Primero hay que controlar la diabetes.» 🦅 Sami responde: «No, primero tratamos la periodontitis.» ¿Quién tiene razón?",
+      "media": [],
+      "options": [
+        "Mina, el control de la diabetes mejora la respuesta al tratamiento periodontal",
+        "Sami, el tratamiento periodontal debe preceder",
+        "Ambos enfoques son equivalentes",
+        "Ninguno, hay que esperar"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La relación es bidireccional, pero la diabetes controlada optimiza los resultados.» 🦅 Sami: «Vale, coordinaremos con su médico...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q13",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo a un paciente con periodontitis y tabaquismo activo, dice: «El tabaco no influye en el tratamiento.» 🐆 Mina responde: «No, influye totalmente.» ¿Cuál es el efecto del tabaco?",
+      "media": [],
+      "options": [
+        "Reduce la vascularización y la respuesta al tratamiento periodontal",
+        "No tiene ningún efecto",
+        "Mejora la respuesta al tratamiento",
+        "Reduce la placa dental"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «El tabaco altera la vascularización y la cicatrización.» 🐆 Mina: «¡Sami, hoy estás en forma!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q14",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente con periodontitis, dice: «Se necesitan radiografías.» 🦅 Sami responde: «Inútil, veo las bolsas.» ¿Qué tipo de radiografías están indicadas?",
+      "media": [],
+      "options": [
+        "Radiografías periapicales para evaluar la pérdida ósea",
+        "Solo radiografía panorámica",
+        "Telerradiografía",
+        "No se necesitan radiografías"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las radiografías periapicales muestran con precisión la pérdida ósea.» 🦅 Sami: «Vale, las haremos...»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q15",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una afectación de furca de grado 2, dice: «Se puede tratar con un empaste.» 🐆 Mina responde: «El pronóstico es dudoso.» ¿Qué es una furca de grado 2?",
+      "media": [],
+      "options": [
+        "Una afectación parcial de la furca, visible pero no a través",
+        "Una afectación a través",
+        "Una afectación superficial",
+        "Una furca sana"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La furca de grado 2 es parcial, accesible pero difícil de tratar.» 🐆 Mina: «¡Sami, conoces tu clasificación!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q16",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente con absceso periodontal, dice: «Hay que drenar inmediatamente.» 🦅 Sami responde: «No, basta con antibióticos.» ¿Quién tiene razón?",
+      "media": [],
+      "options": [
+        "Mina, el drenaje es necesario para evacuar el pus",
+        "Sami, los antibióticos son suficientes",
+        "Ambos enfoques son posibles",
+        "Ninguno, hay que extraer"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El drenaje es prioritario, luego los antibióticos.» 🦅 Sami: «Vale, drenaré... ¡pero rápido!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q17",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una bolsa de 6 mm después de la cirugía, dice: «La cirugía ha fracasado.» 🐆 Mina responde: «¡No necesariamente!» ¿Qué dice la literatura?",
+      "media": [],
+      "options": [
+        "Una bolsa estable de 5–6 mm puede ser aceptable en ausencia de inflamación",
+        "Cualquier bolsa > 4 mm es un fracaso",
+        "Siempre hay que reoperar",
+        "Siempre hay que extraer"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Una bolsa residual estable puede mantenerse con un buen control.» 🐆 Mina: «¡Sami, te has vuelto sensato!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q18",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una periodontitis generalizada severa, dice: «Hay que hacer un tratamiento global.» 🦅 Sami responde: «No, por cuadrantes.» ¿Qué enfoque se recomienda?",
+      "media": [],
+      "options": [
+        "El tratamiento por cuadrantes en varias sesiones está validado",
+        "El tratamiento global en una sola sesión",
+        "Solo el tratamiento por cuadrantes es eficaz",
+        "Ninguno, hay que extraer"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El tratamiento por cuadrantes es la estrategia estándar para minimizar las molestias.» 🦅 Sami: «Prefiero hacerlo todo de una vez, pero tienes razón.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q19",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una recesión clase III de Miller, dice: «Se puede injertar con éxito.» 🐆 Mina responde: «La cobertura será incompleta.» ¿Cuál es el pronóstico?",
+      "media": [],
+      "options": [
+        "Clase III: cobertura parcial posible",
+        "Cobertura completa posible",
+        "Cobertura imposible",
+        "El injerto está contraindicado"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Miller III tiene cobertura parcial, pero es posible mejorar.» 🐆 Mina: «¡Sami, eres realmente un experto!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q20",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente con periodontitis severa y antecedentes familiares, dice: «Hay un componente genético.» 🦅 Sami responde: «La genética no importa.» ¿Cuál es el papel de la genética?",
+      "media": [],
+      "options": [
+        "La genética influye en la susceptibilidad y la respuesta inmune",
+        "La genética no juega ningún papel",
+        "La genética es el único factor",
+        "La genética puede ser ignorada"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Algunas variantes genéticas aumentan la susceptibilidad a la periodontitis.» 🦅 Sami: «No lo sabía, ¡gracias, Mina!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q21",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo una bolsa de 4 mm después de la terapia de mantenimiento, dice: «Es una recidiva.» 🐆 Mina responde: «¡No necesariamente!» ¿Qué significa una bolsa de 4 mm?",
+      "media": [],
+      "options": [
+        "Una bolsa de 4 mm puede ser estable en ausencia de inflamación",
+        "Cualquier bolsa de 4 mm es una recidiva",
+        "Siempre hay que tratarla",
+        "Siempre hay que extraer"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «Una bolsa estable de 4 mm con BOP negativo es aceptable.» 🐆 Mina: «¡Sami, te estás volviendo prudente!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q22",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo una pérdida ósea generalizada, dice: «Se necesita una evaluación protésica.» 🦅 Sami responde: «No, primero tratamos la periodontitis.» ¿Cuál es la secuencia?",
+      "media": [],
+      "options": [
+        "El tratamiento periodontal precede a la evaluación protésica",
+        "La evaluación protésica precede al tratamiento periodontal",
+        "Ambas etapas simultáneamente",
+        "La secuencia no es importante"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El tratamiento periodontal debe estabilizar el periodonto antes de la prótesis.» 🦅 Sami: «¡Estoy de acuerdo contigo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q23",
+      "type": "single-choice",
+      "question": "🦅 Sami, viendo a un paciente con periodontitis, dice: «El tratamiento ha terminado.» 🐆 Mina responde: «No, comienza la terapia de mantenimiento.» ¿Por qué es importante la terapia de mantenimiento?",
+      "media": [],
+      "options": [
+        "Para prevenir recidivas a largo plazo",
+        "Para ganar más dinero",
+        "Para usar más materiales",
+        "Para llenar papeles"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explica: «La terapia de mantenimiento periodontal es necesaria para la estabilidad a largo plazo.» 🐆 Mina: «¡Sami, por fin lo has entendido!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q24",
+      "type": "single-choice",
+      "question": "🐆 Mina, viendo a un paciente con periodontitis y estrés severo, dice: «El estrés puede agravar la enfermedad.» 🦅 Sami responde: «No, es un mito.» ¿Cuál es el efecto del estrés?",
+      "media": [],
+      "options": [
+        "El estrés aumenta la inflamación y reduce la respuesta inmune",
+        "El estrés no tiene efecto",
+        "El estrés mejora la periodontitis",
+        "El estrés es beneficioso"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El estrés crónico altera la respuesta inflamatoria.» 🦅 Sami: «Lo tendré en cuenta en el tratamiento.»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami y 🐆 Mina discuten sobre el futuro de la periodoncia. Sami dice: «¡Los biomateriales revolucionarán la regeneración!» Mina responde: «El factor humano sigue siendo clave.» ¿Cuál es el futuro de la regeneración?",
+      "media": [],
+      "options": [
+        "Los biomateriales y los factores de crecimiento mejoran la regeneración, pero el clínico sigue siendo insustituible",
+        "Los biomateriales lo reemplazarán todo",
+        "La regeneración es imposible",
+        "Solo los factores de crecimiento son suficientes"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los avances en biomateriales son prometedores, pero la habilidad clínica es insustituible.» 🦅 Sami: «¡Nuestros puestos de trabajo están a salvo!»",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

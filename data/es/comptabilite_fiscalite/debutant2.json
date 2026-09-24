@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "comptabilite_fiscalite_debutant2_001",
+    "title": "Contabilidad y Fiscalidad - Principiante 2",
+    "specialty": "COMP",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "COMP_D2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Afif, cirujano dentista, ejerce en una Sociedad Civil Profesional (SCP). Según el artículo 1 de la ley 9-88, ¿está obligada su estructura a llevar contabilidad?",
+      "media": [],
+      "options": [
+        "No, las SCP están exentas de contabilidad",
+        "Sí, porque toda persona jurídica que tenga la condición de comerciante está obligada a llevar contabilidad",
+        "Solo si su volumen de negocios supera los 5 millones de dirhams",
+        "No, solo las sociedades anónimas están sujetas a esta obligación"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 1: toda persona física o jurídica que tenga la condición de comerciante está obligada a llevar contabilidad. La SCP que ejerce una actividad lucrativa entra en este ámbito.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Touzani, que ejerce como empresario individual, tiene un volumen de negocios de 2,3 millones de dirhams. ¿Puede beneficiarse de las simplificaciones previstas en el artículo 1?",
+      "media": [],
+      "options": [
+        "Sí, porque el umbral es de 3 millones de dirhams para las profesiones liberales",
+        "No, porque su volumen de negocios supera el umbral de 2 millones de dirhams",
+        "Sí, siempre que lleve un libro mayor detallado",
+        "No, los odontólogos están excluidos de las simplificaciones"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 1, párr. 5: el umbral de 2.000.000 de dirhams se aplica a las personas físicas. Por encima, las simplificaciones no están disponibles.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Afif, cuyo volumen de negocios es de 1,2 millones de dirhams, ¿puede registrar sus gastos basándose en documentos justificativos internos?",
+      "media": [],
+      "options": [
+        "No, todos los gastos deben ser justificados con facturas de proveedores",
+        "Sí, siempre que estén firmados por él mismo",
+        "No, solo las compras de equipos pueden justificarse con documentos internos",
+        "Sí, pero solo para gastos inferiores a 500 dirhams"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 1, último guion: los pequeños comerciantes pueden registrar los pequeños gastos basándose en documentos justificativos internos firmados por el comerciante.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q04",
+      "type": "single-choice",
+      "question": "Según el artículo 2, ¿qué tipos de cuentas debe incluir el plan de cuentas del consultorio dental?",
+      "media": [],
+      "options": [
+        "Solo cuentas de balance",
+        "Cuentas de estado, cuentas de gestión y cuentas especiales",
+        "Solo cuentas de clientes y proveedores",
+        "Cuentas de liquidez y de activos fijos"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 2, párr. 3: el plan de cuentas debe incluir clases de cuentas de estado, clases de cuentas de gestión y clases de cuentas especiales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Touzani, cuyo volumen de negocios es de 1,5 millones de dirhams, ¿está exento del libro mayor según el artículo 2?",
+      "media": [],
+      "options": [
+        "Sí, porque todas las empresas están exentas",
+        "Sí, si el balance resumido puede establecerse directamente a partir del diario",
+        "No, el libro mayor es obligatorio para las profesiones médicas",
+        "No, solo las sociedades pueden beneficiarse de esta exención"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 2, último párr.: las personas físicas mencionadas en el artículo 1, párr. 5, están exentas del libro mayor si el balance puede establecerse directamente a partir del diario.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Afif utiliza diarios auxiliares para sus operaciones de compra y venta. Según el artículo 3, ¿con qué frecuencia debe centralizar estos asientos?",
+      "media": [],
+      "options": [
+        "Una vez por semana para las operaciones de compra",
+        "Una vez al mes, conforme a la ley",
+        "Una vez al trimestre con autorización del secretario judicial",
+        "Una vez al año en el cierre del ejercicio"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 3, párr. 2: los asientos registrados en los diarios auxiliares se centralizan una vez al mes en el diario y el libro mayor.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Touzani (volumen de negocios ≤ 2 millones de dirhams) ¿puede centralizar sus diarios auxiliares con una frecuencia distinta a la prevista en el artículo 3?",
+      "media": [],
+      "options": [
+        "No, la centralización mensual es obligatoria para todos",
+        "Sí, puede centralizar una vez al ejercicio en el cierre",
+        "Sí, siempre que obtenga la autorización de la administración",
+        "No, para las profesiones liberales se aplican normas más estrictas"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 3, último párr.: los pequeños comerciantes pueden realizar la centralización de los asientos una vez al ejercicio en su cierre.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q08",
+      "type": "single-choice",
+      "question": "El consultorio del Dr. Afif, constituido en forma de sociedad, tiene un volumen de negocios de 8 millones de dirhams. ¿Qué obligación le impone el artículo 4?",
+      "media": [],
+      "options": [
+        "El nombramiento de un auditor",
+        "Ninguna, el umbral de 10 millones de dirhams no se alcanza",
+        "La elaboración de un manual de organización contable",
+        "La publicación anual de las cuentas en un periódico"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 4: la obligación del manual de organización contable solo se aplica a las empresas con un volumen de negocios superior a 10.000.000 de dirhams.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q09",
+      "type": "single-choice",
+      "question": "Según el artículo 5, ¿cuándo debe el Dr. Touzani realizar el inventario de sus activos y pasivos?",
+      "media": [],
+      "options": [
+        "Al final de cada semestre",
+        "Al menos una vez al ejercicio, al final del mismo",
+        "Solo en el momento de la venta del consultorio",
+        "Solo a petición de la administración fiscal"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 5: el inventario debe realizarse al menos una vez al ejercicio, al final del mismo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Afif compra un escáner CBCT para su consultorio. Según el artículo 14, ¿por qué valor debe registrarlo?",
+      "media": [],
+      "options": [
+        "Por su valor de reposición estimado",
+        "Por su coste de adquisición, incluidos los gastos accesorios",
+        "Por su valor de reventa en el mercado de segunda mano",
+        "Por el precio de catálogo del proveedor sin impuestos"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 14, párr. 1: los bienes adquiridos a título oneroso se registran por su coste de adquisición (precio de compra + gastos accesorios).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Touzani quiere valorar sus existencias de consumibles dentales. Según el artículo 14, ¿qué métodos puede utilizar?",
+      "media": [],
+      "options": [
+        "Solo el método del precio de venta",
+        "El coste medio de adquisición o el método FIFO",
+        "Solo el método LIFO",
+        "El método del último precio de compra conocido"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 14, párr. 9: los bienes intercambiables se valoran por el coste medio de adquisición o por el principio FIFO (primero en entrar, primero en salir).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Afif (volumen de negocios ≤ 2 millones de dirhams) ¿puede utilizar un método simplificado de valoración de sus existencias?",
+      "media": [],
+      "options": [
+        "Sí, mediante la estimación del coste de compra o a partir del precio de venta con coeficiente reductor",
+        "No, la valoración simplificada no está permitida por la ley",
+        "Sí, pero solo para las existencias de prótesis",
+        "No, solo las sociedades pueden utilizar métodos simplificados"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 14, último párr., 1er guion: los pequeños comerciantes pueden realizar una valoración simplificada de las existencias mediante la estimación del coste de compra o a partir del precio de venta con coeficiente reductor.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Touzani realiza una revalorización de sus activos fijos. Según el artículo 14, ¿cómo debe tratar la diferencia de revalorización?",
+      "media": [],
+      "options": [
+        "Puede utilizarla para compensar las pérdidas del ejercicio",
+        "Debe reflejarla por separado en el pasivo del balance",
+        "Debe reflejarla como ingresos extraordinarios",
+        "Debe presentarla a la aprobación del Colegio de Odontólogos"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 14, párr. 8: la diferencia de revalorización no puede utilizarse para compensar pérdidas; se refleja por separado en el pasivo del balance.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q14",
+      "type": "single-choice",
+      "question": "Según el artículo 9, ¿cuándo debe el consultorio dental, constituido en forma de sociedad, elaborar sus estados financieros?",
+      "media": [],
+      "options": [
+        "A petición de la administración fiscal",
+        "En el cierre de cada ejercicio a partir de los asientos contables y el inventario",
+        "Cada dos años para las profesiones liberales",
+        "Solo en caso de modificación de los estatutos"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 9: los estados financieros se elaboran en el cierre del ejercicio a partir de los asientos contables y el inventario.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Afif descubre que la aplicación de las normas contables no proporciona una imagen fiel de su situación. ¿Qué establece el artículo 19?",
+      "media": [],
+      "options": [
+        "Puede apartarse de las normas, justificándolo en el estado de información complementaria",
+        "Debe seguir obligatoriamente las normas sin excepción",
+        "Debe recurrir al tribunal de primera instancia",
+        "Puede cambiar la presentación sin justificación"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 19: en situaciones particulares, puede hacerse una excepción a las prescripciones si no permiten obtener una imagen fiel, siempre que se mencione y justifique esta excepción en el estado de información complementaria.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Touzani quiere cambiar la fecha de cierre de su ejercicio. ¿Qué le exige el artículo 19?",
+      "media": [],
+      "options": [
+        "La autorización previa del secretario judicial",
+        "Una simple notificación a su contable",
+        "Una justificación en el estado de información complementaria",
+        "La aprobación del Colegio Nacional de Odontólogos"
+      ],
+      "correct": 2,
+      "explanation": "Artículo 19, último párr.: el cambio de fecha de cierre debe estar debidamente justificado en el estado de información complementaria.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q17",
+      "type": "single-choice",
+      "question": "El consultorio del Dr. Afif (volumen de negocios de 9 millones de dirhams) está exento de qué estados financieros según el artículo 21?",
+      "media": [],
+      "options": [
+        "Del balance y la cuenta de resultados",
+        "Del estado de resultados de gestión, del cuadro de financiación y de la información complementaria",
+        "Solo del cuadro de financiación",
+        "Solo del estado de información complementaria"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 21: las empresas con un volumen de negocios inferior o igual a 10.000.000 de dirhams están exentas del estado de resultados de gestión, del cuadro de financiación y del estado de información complementaria.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Touzani (volumen de negocios de 1,8 millones de dirhams) ¿puede utilizar el modelo simplificado de balance y cuenta de resultados según el artículo 21?",
+      "media": [],
+      "options": [
+        "No, el modelo simplificado no está previsto por la ley",
+        "Sí, porque su volumen de negocios es inferior a 10 millones de dirhams",
+        "Sí, pero solo para el balance, no para la cuenta de resultados",
+        "No, los odontólogos están excluidos del modelo simplificado"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 21, párr. 2: las personas mencionadas en el párrafo anterior pueden adoptar el modelo simplificado de contabilidad adjunto a la ley.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q19",
+      "type": "single-choice",
+      "question": "¿Debe el Dr. Afif conservar sus documentos justificativos en moneda nacional según el artículo 22?",
+      "media": [],
+      "options": [
+        "No, puede conservarlos en euros",
+        "Sí, todos los documentos contables se redactan en moneda nacional",
+        "Sí, pero solo para las facturas de más de 1.000 dirhams",
+        "No, la ley no especifica la moneda de los documentos"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 22, párr. 1: los documentos contables se redactan en moneda nacional.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q20",
+      "type": "single-choice",
+      "question": "Según el artículo 22, ¿cuánto tiempo debe el Dr. Touzani conservar sus facturas de compra de equipo dental?",
+      "media": [],
+      "options": [
+        "5 años",
+        "10 años",
+        "15 años",
+        "Hasta el cese de la actividad"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 22, párr. 2: los documentos contables y justificantes se conservan durante diez años.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q21",
+      "type": "single-choice",
+      "question": "Si la administración fiscal considera que la contabilidad del Dr. Afif es irregular, ¿qué puede hacer según el artículo 23?",
+      "media": [],
+      "options": [
+        "Puede rechazar la contabilidad y proceder a un ajuste",
+        "Debe aceptarla obligatoriamente si se han pagado los impuestos",
+        "Puede suspender la actividad",
+        "Debe recurrir al Colegio Nacional de Odontólogos"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 23: la administración fiscal puede rechazar la contabilidad que no se lleve en las formas prescritas por la ley.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q22",
+      "type": "single-choice",
+      "question": "El Dr. Touzani confía la llevanza de su contabilidad a un contable titulado. Según el artículo 24, ¿qué le prescribe la ley?",
+      "media": [],
+      "options": [
+        "Debe respetar un pliego de condiciones específico para los odontólogos",
+        "Está obligado a respetar las disposiciones de la ley 9-88",
+        "Debe obtener una autorización especial del Ministerio de Sanidad",
+        "Puede aplicar las normas internacionales NIIF"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 24: los contables titulados y los contables jurados están obligados a respetar las disposiciones de la ley 9-88 en la llevanza de la contabilidad de las empresas de las que son responsables.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q23",
+      "type": "single-choice",
+      "question": "Según el artículo 10, ¿qué describe el estado de resultados de gestión que debe elaborar el consultorio dental?",
+      "media": [],
+      "options": [
+        "La formación del resultado neto y el autofinanciamiento",
+        "La liquidez disponible al final del ejercicio",
+        "El número de pacientes tratados en el mes",
+        "El importe de las facturas emitidas por prótesis"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 10, párr. 3: el estado de resultados de gestión describe la formación del resultado neto y el autofinanciamiento.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Afif (SCP, volumen de negocios de 12 millones de dirhams) debe elaborar un manual de organización contable. Según el artículo 4, ¿cuál es el objetivo de este manual?",
+      "media": [],
+      "options": [
+        "Describir la organización contable de la empresa",
+        "Enumerar los proveedores homologados del consultorio",
+        "Detallar los actos médicos realizados",
+        "Presentar las tarifas aplicadas por el consultorio"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 4: el manual tiene como objetivo describir la organización contable de la empresa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Touzani descubre que varios de sus pacientes no han pagado sus honorarios. Según el artículo 16, ¿cómo debe tratar esta deuda dudosa?",
+      "media": [],
+      "options": [
+        "Debe mantenerlas por su valor nominal sin provisionar",
+        "Debe tener en cuenta los riesgos y crear provisiones si es necesario",
+        "Puede simplemente anularlas",
+        "Debe declararlas al Colegio de Odontólogos"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 16: es necesario tener en cuenta los riesgos y gastos surgidos durante el ejercicio. Las deudas dudosas deben ser objeto de provisiones por depreciación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

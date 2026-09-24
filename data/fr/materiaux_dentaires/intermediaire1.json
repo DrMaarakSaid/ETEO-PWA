@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "materiaux_dentaires_intermediaire1_001",
+    "title": "Materiaux_dentaires - Intermédiaire 1",
+    "specialty": "MATE",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "MATE_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Asma doit restaurer une carie occlusale profonde sur une molaire. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés mécaniques, quel matériau offre la meilleure résistance à l'usure pour une restauration occlusale ?",
+      "media": [],
+      "options": [
+        "Le ciment verre ionomère conventionnel",
+        "La résine composite nanohybride ou microhybride",
+        "Le ciment verre ionomère modifié par résine",
+        "L'hydroxyde de calcium"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Les composites nanohybrides offrent une excellente résistance à l'usure pour les zones occlusales soumises à de fortes contraintes.' Dr Asma : 'Je vais utiliser un composite nanohybride pour cette restauration.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Kamal doit restaurer une lésion cervicale non cariense sur une prémolaire. Dr Asma lui conseille sur le choix du matériau. Selon les propriétés d'adhésion, quel matériau est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "L'amalgame d'argent",
+        "Le ciment verre ionomère ou un composite fluide avec adhésif",
+        "La céramique feldspathique",
+        "L'alliage chrome-cobalt"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Les lésions cervicales nécessitent un matériau adhésif comme le CVI ou un composite fluide avec un bon système adhésif.' Dr Kamal : 'Je vais utiliser un CVI pour son relargage de fluor.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une facette esthétique sur une incisive. Dr Kamal lui demande quel matériau offre le meilleur rendu esthétique. Selon les propriétés optiques, quel est le matériau de choix ?",
+      "media": [],
+      "options": [
+        "Le composite microhybride",
+        "La céramique feldspathique ou le disilicate de lithium",
+        "Le ciment verre ionomère esthétique",
+        "L'alliage or-céramique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Les céramiques comme le disilicate de lithium offrent une translucidité et une intégration optique exceptionnelles pour les facettes.' Dr Asma : 'Je vais utiliser du disilicate de lithium pour cette facette.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Kamal doit restaurer une carie profonde sur une dent temporaire chez un enfant. Dr Asma lui conseille sur le choix du matériau. Selon les propriétés biologiques, quel matériau est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "L'amalgame d'argent",
+        "Le ciment verre ionomère conventionnel",
+        "Le composite nanohybride",
+        "La céramique feldspathique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Le CVI est idéal pour les dents temporaires car il libère du fluor et adhère chimiquement à la dentine.' Dr Kamal : 'Je vais utiliser un CVI pour cette restauration.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une restauration postérieure sur une molaire avec une cavité de classe II. Dr Kamal lui demande comment gérer le facteur C. Selon les principes de l'odontologie adhésive, quelle technique permet de réduire le retrait de polymérisation ?",
+      "media": [],
+      "options": [
+        "La technique de stratification incrémentale",
+        "La technique de l'apport unique",
+        "La technique du sandwich",
+        "La technique de la couche de base"
+      ],
+      "correct": 0,
+      "explanation": "Dr Kamal explique : 'La stratification incrémentale permet de réduire le facteur C et les tensions liées au retrait de polymérisation.' Dr Asma : 'Je vais stratifier ma restauration en plusieurs couches.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Kamal doit choisir un système adhésif pour une restauration en composite. Dr Asma lui demande quel est le protocole standard pour l'adhésion à l'émail. Selon les principes de l'adhésion, quelle est la concentration standard de l'acide phosphorique ?",
+      "media": [],
+      "options": [
+        "10 %",
+        "20 %",
+        "37 %",
+        "50 %"
+      ],
+      "correct": 2,
+      "explanation": "Dr Asma explique : 'L'acide phosphorique à 37 % est le standard pour le mordançage de l'émail.' Dr Kamal : 'Je vais utiliser un gel d'acide phosphorique à 37 %.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Asma doit restaurer une cavité profonde avec une proximité pulpaire. Dr Kamal lui conseille d'utiliser un liner. Selon les propriétés thérapeutiques, quel matériau est indiqué comme liner protecteur ?",
+      "media": [],
+      "options": [
+        "Le composite nanohybride",
+        "L'hydroxyde de calcium ou un CVI",
+        "Le ciment phosphate de zinc",
+        "La résine fluide non chargée"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'L'hydroxyde de calcium et les CVI ont des propriétés thérapeutiques et protectrices pour la pulpe.' Dr Asma : 'Je vais poser un liner à l'hydroxyde de calcium.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une restauration esthétique sur une dent antérieure. Dr Asma lui conseille sur le choix de la teinte. Selon les principes de l'esthétique dentaire, à quel moment doit-on choisir la teinte du composite ?",
+      "media": [],
+      "options": [
+        "Après la préparation cavitaire",
+        "Avant toute préparation, sous un éclairage adapté",
+        "Après la polymérisation",
+        "Uniquement en fin de traitement"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'La teinte doit être choisie avant la préparation, sous un éclairage neutre et après hydratation de la dent.' Dr Kamal : 'Je vais choisir la teinte avant de commencer la préparation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une restauration en composite sur une dent vitale. Dr Kamal lui rappelle l'importance de la protection pulpaire. Selon les principes biologiques, quel est le risque d'un composite mal polymérisé ?",
+      "media": [],
+      "options": [
+        "Une modification de la teinte",
+        "Une sensibilité post-opératoire et une faiblesse mécanique",
+        "Une augmentation de la dureté",
+        "Une libération excessive de fluor"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Une polymérisation incomplète altère les propriétés physiques et peut entraîner une sensibilité post-opératoire.' Dr Asma : 'Je vais veiller à une polymérisation optimale.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Kamal doit restaurer une carie sur une dent avec un champ opératoire difficile. Dr Asma lui conseille sur le choix du matériau. Selon les propriétés de manipulation, quel matériau est le plus adapté en présence d'humidité ?",
+      "media": [],
+      "options": [
+        "Le composite nanohybride",
+        "Le ciment verre ionomère",
+        "L'amalgame d'argent",
+        "La céramique feldspathique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Le CVI est tolérant à l'humidité et adhère chimiquement à la dent, ce qui le rend adapté aux champs difficiles.' Dr Kamal : 'Je vais utiliser un CVI.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une restauration sur une dent avec une cavité de classe V. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés d'adhésion et de libération de fluor, quel matériau est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "Le composite nanohybride",
+        "Le ciment verre ionomère ou le composite fluide avec adhésif",
+        "La céramique feldspathique",
+        "L'alliage chrome-cobalt"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Les lésions cervicales bénéficient de la libération de fluor du CVI ou de l'adhésion du composite avec un système adhésif.' Dr Asma : 'Je vais utiliser un CVI modifié par résine.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une restauration directe sur une dent avec une cavité profonde. Dr Asma lui conseille d'utiliser la technique du sandwich. Selon les principes de l'odontologie adhésive, en quoi consiste cette technique ?",
+      "media": [],
+      "options": [
+        "L'application de plusieurs couches de composite de différentes teintes",
+        "L'utilisation d'un CVI en couche profonde recouvert de composite",
+        "L'utilisation d'un liner à l'hydroxyde de calcium uniquement",
+        "La stratification incrémentale du composite"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'La technique du sandwich consiste à placer un CVI en profondeur pour sa libération de fluor, puis à le recouvrir de composite pour sa résistance.' Dr Kamal : 'Je vais utiliser cette technique pour cette cavité profonde.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Asma doit polir une restauration en composite. Dr Kamal lui demande pourquoi le polissage est important. Selon les principes cliniques, quel est l'intérêt du polissage ?",
+      "media": [],
+      "options": [
+        "Augmenter le volume de la restauration",
+        "Réduire la rétention de plaque et améliorer l'esthétique",
+        "Modifier la teinte finale",
+        "Renforcer la résistance mécanique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Une surface lisse réduit l'accumulation de plaque et améliore l'intégration esthétique.' Dr Asma : 'Je vais réaliser un polissage soigneux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une restauration sur une dent avec une carie sous-gingivale. Dr Asma lui conseille sur le choix du matériau. Selon les propriétés cliniques, quel matériau est le plus adapté ?",
+      "media": [],
+      "options": [
+        "Le composite nanohybride",
+        "Le ciment verre ionomère renforcé",
+        "L'amalgame d'argent",
+        "La céramique feldspathique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Le CVI renforcé est tolérant à l'humidité et peut être utilisé en sous-gingival.' Dr Kamal : 'Je vais utiliser un CVI renforcé pour cette restauration.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une restauration composite sur une dent avec une grande cavité. Dr Kamal lui conseille d'utiliser un composite à haute teneur en charges. Selon les propriétés mécaniques, quel est l'avantage d'une haute teneur en charges ?",
+      "media": [],
+      "options": [
+        "Une meilleure fluidité",
+        "Une meilleure résistance à l'usure et un retrait de polymérisation réduit",
+        "Une meilleure adhésion à la dent",
+        "Un temps de polymérisation plus court"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Les composites hautement chargés offrent une meilleure résistance à l'usure et un retrait de polymérisation réduit.' Dr Asma : 'Je vais utiliser un composite à haute teneur en charges.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Kamal doit choisir un système adhésif pour une restauration composite. Dr Asma lui demande quel est le rôle de l'agent de couplage (silane). Selon les principes de l'adhésion, quelle est la fonction du silane ?",
+      "media": [],
+      "options": [
+        "Modifier la teinte du composite",
+        "Lier chimiquement les charges à la matrice résineuse",
+        "Accélérer la polymérisation",
+        "Augmenter la fluidité du matériau"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'Le silane assure l'interface d'union entre la charge minérale et la résine organique.' Dr Kamal : 'Je comprends mieux le rôle du silane.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une restauration sur une dent avec une carie récurrente. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés biologiques, quel matériau offre la meilleure protection contre les caries récurrentes ?",
+      "media": [],
+      "options": [
+        "Le composite nanohybride",
+        "Le ciment verre ionomère libérant du fluor",
+        "L'amalgame d'argent",
+        "La céramique feldspathique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Le CVI libère du fluor, ce qui aide à prévenir les caries récurrentes.' Dr Asma : 'Je vais utiliser un CVI pour cette restauration.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une restauration composite sur une dent avec une cavité de classe III. Dr Asma lui conseille sur la technique opératoire. Selon les principes de l'odontologie adhésive, quelle est l'étape clé de l'adhésion à l'émail ?",
+      "media": [],
+      "options": [
+        "Le mordançage à l'acide phosphorique 37%",
+        "L'application de l'agent de liaison",
+        "La polymérisation du composite",
+        "Le polissage final"
+      ],
+      "correct": 0,
+      "explanation": "Dr Asma explique : 'Le mordançage à l'acide phosphorique 37% est l'étape clé pour créer une rétention micromécanique sur l'émail.' Dr Kamal : 'Je vais bien réaliser le mordançage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une restauration sur une dent avec une cavité de classe IV. Dr Kamal lui conseille sur le choix du matériau. Selon les propriétés esthétiques et mécaniques, quel matériau est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "Le composite nanohybride avec système adhésif",
+        "Le CVI conventionnel",
+        "L'amalgame d'argent",
+        "Le ciment phosphate de zinc"
+      ],
+      "correct": 0,
+      "explanation": "Dr Kamal explique : 'Les composites nanohybrides offrent un excellent compromis esthétique et mécanique pour les restaurations de classe IV.' Dr Asma : 'Je vais utiliser un composite nanohybride.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une restauration sur une dent avec une carie profonde. Dr Asma lui conseille d'utiliser une base. Selon les principes de l'odontologie restauratrice, quel est le rôle d'une base ?",
+      "media": [],
+      "options": [
+        "Protéger la pulpe et compenser le volume perdu",
+        "Assurer l'adhésion du composite",
+        "Polir la surface finale",
+        "Modifier la teinte de la restauration"
+      ],
+      "correct": 0,
+      "explanation": "Dr Asma explique : 'Une base protège la pulpe et comble le volume perdu avant la mise en place de la restauration définitive.' Dr Kamal : 'Je vais poser une base avant le composite.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une restauration composite sur une dent avec une cavité de classe I. Dr Kamal lui demande comment gérer le facteur C. Selon les principes cliniques, quel est le facteur C d'une cavité de classe I ?",
+      "media": [],
+      "options": [
+        "Un facteur C élevé (plus de surfaces liées)",
+        "Un facteur C faible (moins de surfaces liées)",
+        "Un facteur C nul",
+        "Un facteur C négatif"
+      ],
+      "correct": 0,
+      "explanation": "Dr Kamal explique : 'Les cavités de classe I ont un facteur C élevé, ce qui signifie qu'il y a plus de surfaces liées que libres.' Dr Asma : 'Je vais utiliser la stratification pour gérer ce facteur C.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Kamal doit choisir une lampe à photopolymériser pour son cabinet. Dr Asma lui demande quelle est la longueur d'onde optimale pour la photopolymérisation des composites. Selon les principes physiques, quelle est cette longueur d'onde ?",
+      "media": [],
+      "options": [
+        "200 à 300 nm",
+        "440 à 480 nm",
+        "600 à 700 nm",
+        "900 à 1000 nm"
+      ],
+      "correct": 1,
+      "explanation": "Dr Asma explique : 'La lumière bleue (440-480 nm) est nécessaire pour activer le photo-initiateur des composites.' Dr Kamal : 'Je vais choisir une lampe avec cette longueur d'onde.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Asma doit réaliser une restauration composite sur une dent avec une cavité de classe V. Dr Kamal lui conseille sur le choix du système adhésif. Selon les principes de l'adhésion, quel type d'adhésif est recommandé pour la dentine ?",
+      "media": [],
+      "options": [
+        "Un adhésif auto-mordançant",
+        "Un adhésif total-etch",
+        "Un adhésif sans mordançage",
+        "Un adhésif universel"
+      ],
+      "correct": 1,
+      "explanation": "Dr Kamal explique : 'Les adhésifs total-etch sont recommandés pour une adhésion optimale à la dentine et à l'émail.' Dr Asma : 'Je vais utiliser un adhésif total-etch.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Kamal doit réaliser une restauration sur une dent avec une carie sous-occlusale. Dr Asma lui conseille sur le choix du matériau. Selon les propriétés mécaniques, quel matériau offre la meilleure résistance à la compression ?",
+      "media": [],
+      "options": [
+        "Le composite nanohybride",
+        "Le CVI conventionnel",
+        "L'amalgame d'argent",
+        "La céramique feldspathique"
+      ],
+      "correct": 2,
+      "explanation": "Dr Asma explique : 'L'amalgame offre une excellente résistance à la compression, bien qu'il soit moins esthétique.' Dr Kamal : 'Je vais considérer l'amalgame pour cette zone occlusale.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MATE_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Asma, après avoir réalisé plusieurs restaurations avec Dr Kamal, reçoit ses félicitations. Quelle est la prochaine étape pour Dr Asma ?",
+      "media": [],
+      "options": [
+        "Devenir une experte en matériaux dentaires",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bonnes pratiques"
+      ],
+      "correct": 0,
+      "explanation": "Dr Kamal explique : 'La maîtrise des matériaux dentaires est une compétence précieuse. Devenir une experte est la prochaine étape.' Dr Asma : 'Je vais me former aux nouveaux matériaux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

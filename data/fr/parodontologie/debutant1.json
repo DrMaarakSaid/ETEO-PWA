@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "parodontologie_debutant1_001",
+    "title": "Parodontologie - Débutant 1",
+    "specialty": "PARO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "PARO_D1_Q01",
+      "type": "single-choice",
+      "question": "🦅 Sami examine un patient avec une gencive rouge et gonflée. Il dit : 'C'est une gingivite, prescrivons des antibiotiques !' 🐆 Mina lui répond : 'Pas si vite !' Quelle est la cause principale de la gingivite ?",
+      "media": [],
+      "options": [
+        "La plaque dentaire (biofilm bactérien)",
+        "Une carence en vitamines",
+        "Une infection virale",
+        "Le stress psychologique"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La plaque dentaire est le facteur étiologique principal de la gingivite. Les antibiotiques ne sont pas indiqués en première intention.' 🐆 Mina, surprise : 'Sami, tu connais ton sujet !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q02",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant une récession gingivale chez un patient, dit : 'Il faut greffer !' 🦅 Sami répond : 'Non, on peut attendre !' Qu'est-ce qu'une récession gingivale ?",
+      "media": [],
+      "options": [
+        "Le déplacement apical de la marge gingivale exposant la racine",
+        "Une inflammation de la gencive",
+        "Une infection de la gencive",
+        "Une tumeur de la gencive"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La récession expose la racine et peut causer des hypersensibilités.' 🦅 Sami : 'Je préfère attendre, mais je reconnais que tu as raison sur le principe.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q03",
+      "type": "single-choice",
+      "question": "🦅 Sami, en sondant un patient, dit : 'Profondeur de poche à 5 mm, c'est une parodontite !' 🐆 Mina lui demande : 'Et les autres signes ?' Qu'est-ce qu'une poche parodontale ?",
+      "media": [],
+      "options": [
+        "Un approfondissement pathologique du sillon > 3 mm",
+        "Un espace normal entre la dent et la gencive",
+        "Une cavité dans la dent",
+        "Un abcès gingival"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Une poche parodontale se définit par une profondeur de sondage > 3 mm.' 🐆 Mina : 'Bravo Sami, tu progresses !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q04",
+      "type": "single-choice",
+      "question": "🐆 Mina, en analysant des radiographies, dit : 'Il y a une perte osseuse verticale.' 🦅 Sami répond : 'Ce n'est pas grave, on verra plus tard.' Pourquoi la perte osseuse est-elle préoccupante ?",
+      "media": [],
+      "options": [
+        "Elle est irréversible et compromet le pronostic des dents",
+        "Elle est toujours réversible",
+        "Elle ne pose pas de problème",
+        "Elle ne concerne que les dents antérieures"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La perte osseuse est irréversible et peut mener à la perte des dents.' 🦅 Sami : 'Bon, on va traiter, mais c'est long !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q05",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant du tartre chez un patient, dit : 'Le tartre est la cause de la parodontite !' 🐆 Mina le reprend : 'Pas exactement !' Quel est le rôle du tartre ?",
+      "media": [],
+      "options": [
+        "Il sert de support et de réservoir pour la plaque bactérienne",
+        "Il est directement pathogène",
+        "Il n'a aucun rôle dans la parodontite",
+        "Il protège les dents"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le tartre n'est pas directement pathogène, mais sa surface rugueuse retient la plaque.' 🐆 Mina : 'Sami, tu deviens un vrai spécialiste !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q06",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant une poche à 7 mm, propose : 'Un lambeau parodontal.' 🦅 Sami répond : 'Non, détartrage seulement !' Que dit la littérature ?",
+      "media": [],
+      "options": [
+        "Les poches > 5 mm nécessitent souvent une approche chirurgicale",
+        "Le détartrage suffit toujours",
+        "La chirurgie n'est jamais indiquée",
+        "Seuls les antibiotiques sont efficaces"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les poches profondes (> 5 mm) avec perte osseuse nécessitent souvent un traitement chirurgical.' 🦅 Sami : 'Je préfère le détartrage, mais tu as raison...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q07",
+      "type": "single-choice",
+      "question": "🦅 Sami, en examinant un fumeur, dit : 'Le tabac n'a pas d'impact sur le parodonte.' 🐆 Mina répond : 'C'est faux !' Quel est l'effet du tabac sur le parodonte ?",
+      "media": [],
+      "options": [
+        "Il augmente le risque de parodontite et masque les signes inflammatoires",
+        "Il protège le parodonte",
+        "Il n'a aucun effet",
+        "Il réduit la plaque dentaire"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le tabac est un facteur de risque majeur. Il réduit la vascularisation et masque les signes d'inflammation.' 🐆 Mina : 'Sami, tu es en forme aujourd'hui !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q08",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un patient diabétique, dit : 'Il faut contrôler son diabète avant le traitement parodontal.' 🦅 Sami répond : 'On peut traiter quand même !' Qui a raison ?",
+      "media": [],
+      "options": [
+        "Mina, le diabète non contrôlé aggrave la parodontite",
+        "Sami, le traitement peut commencer immédiatement",
+        "Les deux approches sont valables",
+        "Aucun, il faut attendre"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le diabète et la parodontite ont une relation bidirectionnelle. Un diabète contrôlé est essentiel.' 🦅 Sami : 'Bon, on va coordonner avec son médecin...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q09",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une mobilité dentaire de grade 2, dit : 'Il faut extraire la dent !' 🐆 Mina répond : 'Pas si vite !' Que signifie une mobilité de grade 2 ?",
+      "media": [],
+      "options": [
+        "Une mobilité horizontale de 1 à 2 mm",
+        "Une mobilité verticale",
+        "Une mobilité horizontale de moins de 1 mm",
+        "Une mobilité dans tous les plans"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La mobilité de grade 2 correspond à un déplacement horizontal de 1 à 2 mm.' 🐆 Mina : 'Sami, tu connais ta classification !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q10",
+      "type": "single-choice",
+      "question": "🐆 Mina, en analysant une radio, dit : 'Il y a une lésion de furcation de grade 2.' 🦅 Sami demande : 'C'est quoi ?' Une lésion de furcation, c'est :",
+      "media": [],
+      "options": [
+        "Une atteinte de l'espace entre les racines des dents pluriradiculaires",
+        "Une carie entre deux dents",
+        "Une inflammation de la gencive",
+        "Une fracture radiculaire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les furcations sont les zones de séparation des racines. Leur atteinte complique le traitement.' 🦅 Sami : 'Je retiens, comme ça je pourrai diagnostiquer !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q11",
+      "type": "single-choice",
+      "question": "🦅 Sami, en voyant une poche à 4 mm avec saignement, dit : 'Ce n'est pas grave.' 🐆 Mina répond : 'Si, c'est significatif !' Que signifie un saignement au sondage ?",
+      "media": [],
+      "options": [
+        "Un signe d'inflammation active de la gencive",
+        "Un signe de cancer",
+        "Un signe de carence en vitamines",
+        "Un signe de mauvaise hygiène uniquement"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le saignement au sondage (BOP) est un indicateur d'inflammation active.' 🐆 Mina : 'Sami, tu progresses !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q12",
+      "type": "single-choice",
+      "question": "🐆 Mina propose un traitement parodontal non chirurgical chez un patient. 🦅 Sami dit : 'Non, opérons directement !' Que comprend le traitement non chirurgical ?",
+      "media": [],
+      "options": [
+        "Détartrage, surfaçage radiculaire et contrôle de plaque",
+        "Chirurgie lambeau",
+        "Extractions",
+        "Implants"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement non chirurgical est la première étape pour éliminer le biofilm.' 🦅 Sami : 'Bon, on va essayer, mais c'est long !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q13",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une gencive hypertrophique, dit : 'C'est génétique !' 🐆 Mina répond : 'Pas seulement !' Quelles sont les causes d'hypertrophie gingivale ?",
+      "media": [],
+      "options": [
+        "Médicaments (anti-épileptiques, immunosuppresseurs), inflammation, génétique",
+        "Uniquement génétique",
+        "Uniquement inflammatoire",
+        "Uniquement médicamenteuse"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les causes sont multiples : médicaments, inflammation ou facteurs génétiques.' 🐆 Mina : 'Sami, tu es vraiment à jour !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q14",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant un patient avec une parodontite agressive, dit : 'Il faut des antibiotiques.' 🦅 Sami répond : 'Non, juste un détartrage !' Quels antibiotiques sont utilisés ?",
+      "media": [],
+      "options": [
+        "Amoxicilline + métronidazole en association",
+        "Pénicilline seule",
+        "Céphalosporines",
+        "Macrolides"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'association amoxicilline-métronidazole est le gold standard.' 🦅 Sami : 'Je préfère éviter les antibiotiques, mais je reconnais ton expertise.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q15",
+      "type": "single-choice",
+      "question": "🦅 Sami, en voyant une récession de classe III de Miller, dit : 'On peut greffer avec succès.' 🐆 Mina répond : 'Le pronostic est réservé.' Quelle est la classification de Miller ?",
+      "media": [],
+      "options": [
+        "Une classification des récessions gingivales pour évaluer le pronostic",
+        "Une classification des parodontites",
+        "Une classification des poches parodontales",
+        "Une classification des mobilités"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La classification de Miller évalue le potentiel de recouvrement des récessions.' 🐆 Mina : 'Sami, tu connais ta classification !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q16",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un patient avec une poche à 6 mm, propose : 'Chirurgie de lambeau.' 🦅 Sami répond : 'Non, laser !' Quelle approche est validée ?",
+      "media": [],
+      "options": [
+        "La chirurgie de lambeau est le gold standard",
+        "Le laser est plus efficace",
+        "Les deux sont équivalents",
+        "Aucun, il faut extraire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La chirurgie par lambeau permet l'accès et la débridement des poches profondes.' 🦅 Sami : 'Je préfère le laser, mais je reconnais que tu as raison.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q17",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec un abcès parodontal, dit : 'Il faut extraire !' 🐆 Mina répond : 'Pas si vite !' Qu'est-ce qu'un abcès parodontal ?",
+      "media": [],
+      "options": [
+        "Une collection localisée de pus dans le parodonte profond",
+        "Une carie infectée",
+        "Une infection pulpaire",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'abcès est une infection localisée. Le drainage et les antibiotiques sont le traitement.' 🐆 Mina : 'Sami, tu as raison cette fois !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q18",
+      "type": "single-choice",
+      "question": "🐆 Mina, en analysant un patient avec une parodontite, dit : 'Il faut faire un bilan complet.' 🦅 Sami répond : 'Inutile, le diagnostic est déjà fait.' Que comprend le bilan parodontal ?",
+      "media": [],
+      "options": [
+        "Sondage complet, radiographies, indices de plaque et de saignement",
+        "Uniquement le sondage",
+        "Uniquement les radiographies",
+        "Uniquement l'examen visuel"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le bilan complet est essentiel pour évaluer la sévérité et l'extension.' 🦅 Sami : 'Bon, OK, mais c'est long !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q19",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une perte osseuse horizontale, dit : 'C'est une parodontite !' 🐆 Mina demande : 'Et la verticale ?' Quelle est la différence ?",
+      "media": [],
+      "options": [
+        "La perte horizontale est uniforme, la verticale est en niche",
+        "C'est la même chose",
+        "La verticale est plus bénigne",
+        "L'horizontale est plus sévère"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La perte horizontale est diffuse, la verticale est localisée et peut être régénérée.' 🐆 Mina : 'Sami, tu deviens un expert !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q20",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un patient avec une parodontite sévère, dit : 'Il faut des extractions.' 🦅 Sami répond : 'Non, on peut tout sauver !' Qui a raison ?",
+      "media": [],
+      "options": [
+        "Mina, certaines dents avec un pronostic réservé doivent être extraites",
+        "Sami, on peut toujours sauver les dents",
+        "Les deux approches sont possibles",
+        "Aucun, il faut attendre"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le pronostic dentaire guide la décision. Certaines dents ont un pronostic trop réservé.' 🦅 Sami : 'Je voulais tout sauver, mais tu as raison.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q21",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une gingivite, dit : 'Un brossage vigoureux suffit.' 🐆 Mina répond : 'Non, il faut une technique adaptée !' Quelle technique est recommandée ?",
+      "media": [],
+      "options": [
+        "La technique de Bass modifiée (brossage incliné à 45°)",
+        "Le brossage horizontal vigoureux",
+        "Le brossage vertical",
+        "Un simple bain de bouche"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La technique de Bass modifiée est la plus efficace pour éliminer la plaque sous-gingivale.' 🐆 Mina : 'Sami, tu te renseignes !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q22",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une poche à 8 mm, propose : 'Régénération tissulaire guidée.' 🦅 Sami répond : 'Non, lambeau simple.' Qu'est-ce que la RTG ?",
+      "media": [],
+      "options": [
+        "Une technique utilisant des membranes pour régénérer l'os",
+        "Une technique d'extraction",
+        "Une technique de détartrage",
+        "Une technique d'implantologie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La régénération tissulaire guidée permet de régénérer l'os perdu.' 🦅 Sami : 'Je préfère le lambeau simple, mais la RTG est plus efficace.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q23",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une parodontite, dit : 'Le traitement est fini après le détartrage.' 🐆 Mina répond : 'Non, il faut un suivi !' Pourquoi la maintenance est-elle cruciale ?",
+      "media": [],
+      "options": [
+        "Pour prévenir les récidives et maintenir la stabilité parodontale",
+        "Pour faire payer plus cher",
+        "Pour utiliser plus de matériel",
+        "Pour remplir des papiers"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La maintenance parodontale est la clé de la stabilité à long terme.' 🐆 Mina : 'Sami, tu as enfin compris !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q24",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant un patient avec une parodontite, dit : 'Les facteurs de risque doivent être contrôlés.' 🦅 Sami demande : 'Lesquels ?' Quels sont les facteurs de risque majeurs ?",
+      "media": [],
+      "options": [
+        "Tabac, diabète, génétique, stress, obésité",
+        "Uniquement le tabac",
+        "Uniquement le diabète",
+        "Uniquement la génétique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les facteurs de risque sont multiples et doivent être pris en compte.' 🦅 Sami : 'Bon, je vais les rechercher systématiquement.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami et 🐆 Mina discutent de l'avenir de la parodontologie. Sami dit : 'L'IA va remplacer le diagnostic clinique !' Mina répond : 'Pas si vite !' Quel est le rôle de l'IA ?",
+      "media": [],
+      "options": [
+        "L'IA est un outil d'aide au diagnostic, pas un remplacement",
+        "L'IA va remplacer tous les parodontologues",
+        "L'IA est inutile en parodontologie",
+        "L'IA ne sert qu'à faire des devis"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'IA peut aider à analyser les radios et les sondages, mais le clinicien reste indispensable.' 🦅 Sami : 'Je suis rassuré, on garde nos emplois !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

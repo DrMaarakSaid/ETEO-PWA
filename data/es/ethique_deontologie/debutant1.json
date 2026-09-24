@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "ethique_deontologie_debutant1_001",
+    "title": "Ética y Deontología – Principiante 1",
+    "specialty": "ETHI",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ETHI_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Imad, un joven odontólogo, descubre que el programa de IA que utiliza para diagnosticar caries tiene un porcentaje de error del 15% en ciertos tipos de pacientes. Según el principio de no maleficencia, ¿cuál es su obligación?",
+      "media": [],
+      "options": [
+        "Seguir usando el programa porque es rápido",
+        "Informar a los pacientes sobre el porcentaje de error y ofrecer exámenes complementarios",
+        "Ignorar el problema, ya que un 85% de fiabilidad es aceptable",
+        "Usar solo la IA sin examen clínico"
+      ],
+      "correct": 1,
+      "explanation": "El principio de no maleficencia (no hacer daño) obliga al odontólogo a informar a los pacientes sobre las limitaciones de la tecnología y a garantizar una atención basada en la evidencia científica, como lo establece el artículo 24 del Código de Deontología.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q02",
+      "type": "single-choice",
+      "question": "Un laboratorio de prótesis dental se acerca al Dr. Saundus ofreciéndole ventajas económicas a cambio de derivaciones exclusivas. Según el artículo 16 del Código de Deontología, ¿cuál es la situación?",
+      "media": [],
+      "options": [
+        "Puede aceptar, ya que es una asociación legítima",
+        "Debe rechazarlo, ya que cualquier comisión está prohibida",
+        "Puede aceptar si las prótesis son de buena calidad",
+        "Debe informar al Consejo antes de aceptar"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 16 prohíbe cualquier pago, recepción o reparto de dinero entre profesionales o con terceros. Las comisiones y descuentos están estrictamente prohibidos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Imad tiene un paciente que rechaza un tratamiento que él considera necesario por razones religiosas. Según el principio de autonomía del paciente, ¿cómo debe reaccionar?",
+      "media": [],
+      "options": [
+        "Insistir en el tratamiento porque está médicamente indicado",
+        "Respetar el rechazo del paciente y ofrecer alternativas",
+        "Negarse a tratar al paciente",
+        "Contactar con la familia del paciente para convencerla"
+      ],
+      "correct": 1,
+      "explanation": "El principio de autonomía obliga a respetar la decisión del paciente, incluso si va en contra de la opinión médica, dentro de los límites de la legalidad. El odontólogo debe informar al paciente sobre las consecuencias de su rechazo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Saundus publica en Instagram una foto espectacular de \"antes/después\" de un tratamiento sin el consentimiento explícito del paciente. Según el artículo 4 del Código de Deontología, ¿qué infracción ha cometido?",
+      "media": [],
+      "options": [
+        "Una falta profesional menor",
+        "Una violación del secreto médico",
+        "Publicidad permitida",
+        "Un acto de formación continua"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 4 obliga al odontólogo a proteger de la divulgación los documentos relativos a los pacientes, incluidas las fotografías. La publicación sin consentimiento es una violación del secreto médico.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Imad, bajo presión de su empleador para aumentar los beneficios, recibe la oferta de prescribir procedimientos innecesarios. Según los principios deontológicos, ¿cuál es la posición correcta?",
+      "media": [],
+      "options": [
+        "Seguir las instrucciones del empleador",
+        "Rechazar la realización de procedimientos sin justificación médica",
+        "Realizar los procedimientos para satisfacer al empleador",
+        "Dimitar inmediatamente"
+      ],
+      "correct": 1,
+      "explanation": "El odontólogo tiene el deber de beneficencia hacia los pacientes. Debe rechazar cualquier acto sin justificación médica, incluso bajo presión económica.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q06",
+      "type": "single-choice",
+      "question": "Según el artículo 2 del Código de Deontología, ¿cuál es la misión principal del Dr. Saundus hacia la persona?",
+      "media": [],
+      "options": [
+        "Maximizar sus ingresos",
+        "Respetar la vida de la persona humana",
+        "Desarrollar su cartera de pacientes",
+        "Promover nuevas tecnologías"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 2 establece que el cirujano-dentista ejerce su misión con respeto a la vida de la persona humana.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Imad es invitado a participar en una campaña publicitaria de una marca de pasta dental. Según el artículo 11 del Código de Deontología, ¿cuál es la norma?",
+      "media": [],
+      "options": [
+        "La publicidad está permitida con el consentimiento del Consejo",
+        "La publicidad está estrictamente prohibida",
+        "La publicidad está permitida para productos de higiene",
+        "La publicidad está permitida si es científica"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 11 prohíbe cualquier medio directo o indirecto de publicidad o propaganda, incluso para productos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Saundus descubre que un colega ha prescrito un tratamiento inadecuado a un paciente. Según el artículo 42 del Código de Deontología, ¿cuál es el procedimiento a seguir?",
+      "media": [],
+      "options": [
+        "Informar inmediatamente al paciente",
+        "Informar confidencialmente a su colega de su desacuerdo",
+        "Cambiar el tratamiento sin avisar",
+        "Ignorar la situación"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 42 obliga al odontólogo, en caso de desacuerdo con un colega, a comunicárselo de forma confidencial y amistosa, sin interferir en el tratamiento.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Imad se enfrenta a un paciente que le pide un certificado de complacencia para su empleador. Según el artículo 9 del Código de Deontología, ¿cuál es la norma?",
+      "media": [],
+      "options": [
+        "Puede emitir el certificado si el paciente lo solicita",
+        "Está prohibido emitir un certificado de complacencia",
+        "Puede emitir el certificado con el consentimiento del Consejo",
+        "Puede emitir un certificado parcial"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 9 prohíbe redactar un informe tendencioso o emitir un certificado de complacencia. El odontólogo solo debe emitir certificados veraces.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q10",
+      "type": "single-choice",
+      "question": "Según el artículo 7 del Código de Deontología, ¿está el Dr. Saundus obligado a tratar a un paciente con opiniones políticas diferentes?",
+      "media": [],
+      "options": [
+        "Sí, con la misma conciencia que a los demás pacientes",
+        "No, puede negarse a tratarlo",
+        "Sí, pero solo si está de acuerdo",
+        "No, las opiniones políticas justifican la negativa de tratamiento"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 7 obliga al odontólogo a tratar con la misma conciencia a todos los enfermos, cualquiera que sea su condición, nacionalidad, religión, reputación y los sentimientos que le inspiren.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Imad prometió a un paciente un resultado estético perfecto, sin poder garantizarlo. Según el artículo 20 del Código de Deontología, ¿qué infracción ha cometido?",
+      "media": [],
+      "options": [
+        "Ninguna, la promesa forma parte de la relación comercial",
+        "Imprudencia censurable y engaño sobre los resultados",
+        "Publicidad permitida",
+        "Un acto de formación continua"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 20 prohíbe engañar la buena fe de los médicos o pacientes, presentando como útil y seguro un método insuficientemente probado. Prometer un resultado perfecto es una imprudencia censurable.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Saundus quiere asociarse con un colega. Según el artículo 59 del Código de Deontología, ¿cuál es la condición previa?",
+      "media": [],
+      "options": [
+        "Un acuerdo verbal entre los socios",
+        "Un contrato escrito que respete la independencia profesional de cada uno",
+        "Una simple notificación al consejo",
+        "El consentimiento del propietario del local"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 59 establece que no puede haber ejercicio en común sin un contrato escrito, que debe respetar la independencia profesional de cada cirujano-dentista.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Imad es invitado a sustituir a un colega. Según el artículo 63 del Código de Deontología, ¿cuáles son sus obligaciones?",
+      "media": [],
+      "options": [
+        "Firmar las hojas de cuidados en nombre del colega",
+        "Firmar personalmente las hojas de cuidados",
+        "Usar el sello del colega",
+        "No firmar las hojas de cuidados"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 63 establece que el médico sustituto está obligado a firmar personalmente las hojas de seguridad social de los pacientes que atiende.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Saundus es invitado a un congreso, y un laboratorio cubre todos sus gastos. Según el artículo 16 del Código de Deontología, ¿cuál es la situación?",
+      "media": [],
+      "options": [
+        "Puede aceptar, ya que es formación continua",
+        "Debe rechazarlo, ya que cualquier forma de comisión está prohibida",
+        "Puede aceptar si el contenido es científico",
+        "Puede aceptar si declara los gastos"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 16 prohíbe cualquier pago, recepción o reparto de dinero entre médicos y terceros. Aceptar ventajas de un laboratorio puede considerarse una infracción deontológica.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q15",
+      "type": "single-choice",
+      "question": "Según el artículo 6 del Código de Deontología, ¿puede el Dr. Imad imponer al paciente una forma de pago especial?",
+      "media": [],
+      "options": [
+        "Sí, es libre de establecer las condiciones de pago",
+        "No, no se puede imponer al paciente una forma de pago especial",
+        "Sí, si el paciente está de acuerdo",
+        "Sí, para tratamientos costosos"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 6 establece que no se puede imponer al paciente una forma de pago especial, respetando la libertad del paciente para elegir su forma de pago.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q16",
+      "type": "single-choice",
+      "question": "Un paciente pide al Dr. Saundus que lo trate fuera del consultorio, en su domicilio. Según el Código de Deontología, ¿cuál es la situación?",
+      "media": [],
+      "options": [
+        "Puede hacerlo si el paciente lo solicita",
+        "Debe respetar los principios del arte y las normas de seguridad",
+        "No puede negarse al paciente",
+        "Debe obtener el consentimiento del Consejo"
+      ],
+      "correct": 1,
+      "explanation": "El odontólogo puede ejercer fuera del consultorio, pero debe respetar las normas de seguridad e higiene, actuando de acuerdo con los principios deontológicos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Imad recibe a un paciente que ya está siendo tratado por un colega. Según el artículo 53 del Código de Deontología, ¿cuál es su primer paso?",
+      "media": [],
+      "options": [
+        "Aceptar al paciente inmediatamente",
+        "Ofrecer una consulta conjunta con el primer médico",
+        "Tomar al paciente sin avisar al colega",
+        "Rechazar al paciente"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 53 establece que el segundo médico debe ofrecer primero una consulta conjunta antes de examinar al paciente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q18",
+      "type": "single-choice",
+      "question": "Según el artículo 30 del Código de Deontología, ¿debe el Dr. Saundus proporcionar un presupuesto para un tratamiento costoso?",
+      "media": [],
+      "options": [
+        "No, los pacientes deben aceptar los honorarios sin discusión",
+        "Sí, debe establecer un presupuesto por escrito",
+        "Sí, pero solo si el paciente lo solicita",
+        "No, un presupuesto verbal es suficiente"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 30 obliga al odontólogo a establecer un presupuesto por escrito cuando ofrece un tratamiento costoso.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Imad, un paciente le pide información sobre un colega. Según el artículo 50 del Código de Deontología, ¿cuál es la norma?",
+      "media": [],
+      "options": [
+        "Puede dar su opinión sobre el colega",
+        "Debe abstenerse de difamar o calumniar al colega",
+        "Puede dar su opinión si el paciente insiste",
+        "Debe dar su opinión para ayudar al paciente"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 50 prohíbe calumniar a un colega, difamarlo o repetir comentarios que puedan perjudicarlo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Saundus, un paciente rechaza el tratamiento propuesto y quiere una segunda opinión. Según el artículo 55 del Código de Deontología, ¿cuál es la posición correcta?",
+      "media": [],
+      "options": [
+        "Rechazar la segunda opinión",
+        "Aceptar y facilitar la consulta con un colega",
+        "Insistir en su tratamiento",
+        "Abandonar al paciente"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 55 establece que el odontólogo debe, en principio, acceder a reunirse con cualquier otro odontólogo o médico cuando el paciente o su familia lo soliciten.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q21",
+      "type": "single-choice",
+      "question": "Según el artículo 22 del Código de Deontología, ¿puede el Dr. Imad, elegido concejal municipal, usar este cargo para aumentar su clientela?",
+      "media": [],
+      "options": [
+        "Sí, es una ventaja legítima",
+        "No, está prohibido",
+        "Sí, si los pacientes lo solicitan",
+        "Sí, si menciona el cargo en los letreros"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 22 prohíbe al odontólogo que ocupa un mandato electivo o un cargo administrativo utilizarlo para aumentar su clientela.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q22",
+      "type": "single-choice",
+      "question": "El Dr. Saundus se enfrenta a un paciente que insiste en un tratamiento que él considera inapropiado. Según el artículo 24 del Código de Deontología, ¿cuál es la norma?",
+      "media": [],
+      "options": [
+        "Debe seguir la voluntad del paciente",
+        "Puede negarse a un tratamiento que no considere basado en la evidencia científica",
+        "Debe realizar el tratamiento para satisfacer al paciente",
+        "Debe solicitar la opinión del Consejo"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 24 obliga al odontólogo a garantizar una atención informada, basada en la evidencia científica. Puede negarse a un tratamiento que no se ajuste a estos principios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q23",
+      "type": "single-choice",
+      "question": "Un paciente pide al Dr. Imad que no registre cierta información en su historia clínica. Según el Código de Deontología, ¿cuál es la situación?",
+      "media": [],
+      "options": [
+        "Puede aceptar la solicitud del paciente",
+        "Debe registrar toda la información necesaria según sus obligaciones",
+        "Puede registrar la información por separado",
+        "Puede prometer no registrarla"
+      ],
+      "correct": 1,
+      "explanation": "El odontólogo está obligado a llevar una historia clínica completa y veraz. No puede omitir información importante bajo la presión del paciente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q24",
+      "type": "single-choice",
+      "question": "Según el artículo 21 del Código de Deontología, ¿puede el Dr. Saundus ejercer otra profesión para aumentar los ingresos de sus consultas?",
+      "media": [],
+      "options": [
+        "Sí, está permitido",
+        "No, está prohibido, ya que podría comprometer su independencia",
+        "Sí, con el consentimiento del Consejo",
+        "Sí, si no perjudica a su clientela"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 21 prohíbe al odontólogo ejercer cualquier otra profesión o actividad que le permita aumentar los ingresos de sus consultas o consejos profesionales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ETHI_D1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Imad, un paciente quiere un tratamiento estético, aunque el conservador sería más adecuado. Según el principio de beneficencia, ¿cuál es la posición correcta?",
+      "media": [],
+      "options": [
+        "Realizar el tratamiento estético para satisfacer al paciente",
+        "Explicar al paciente las ventajas del tratamiento conservador y respetar su elección final",
+        "Negarse a tratar al paciente",
+        "Realizar ambos tratamientos"
+      ],
+      "correct": 1,
+      "explanation": "El principio de beneficencia obliga a informar al paciente sobre las diferentes opciones y sus ventajas, respetando su autonomía.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

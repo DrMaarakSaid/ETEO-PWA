@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "mutuelles_prises_en_charge_debutant1_001",
+    "title": "Mutual_Insurance_and_Coverage - Beginner 1",
+    "specialty": "MUTU",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "MUTU_D1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Mabrouki treats a patient affiliated with the CNSS (private sector). According to Law 65-00, which body manages the AMO for this patient?",
+      "media": [],
+      "options": [
+        "CNOPS",
+        "CNSS",
+        "CMAM",
+        "RAMED"
+      ],
+      "correct": 1,
+      "explanation": "The CNSS (National Social Security Fund) manages the AMO for the private sector, while the CNOPS manages it for the public sector.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q02",
+      "type": "single-choice",
+      "question": "Dr. Alami treats a civil servant. According to Law 65-00, which body manages the AMO for this patient?",
+      "media": [],
+      "options": [
+        "CNSS",
+        "CNOPS",
+        "RAMED",
+        "The patient's mutual insurance company"
+      ],
+      "correct": 1,
+      "explanation": "The CNOPS (National Fund of Social Welfare Organizations) manages the AMO for civil servants and agents of the State, local authorities, and public establishments.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q03",
+      "type": "single-choice",
+      "question": "According to Law 65-00, what is the Compulsory Health Insurance (AMO)?",
+      "media": [],
+      "options": [
+        "A voluntary private insurance",
+        "A mandatory basic health insurance based on the contributory principle",
+        "An assistance scheme only for underprivileged people",
+        "An insurance reserved only for civil servants"
+      ],
+      "correct": 1,
+      "explanation": "The AMO is a mandatory basic health insurance, based on the contributory principle and risk pooling, established by Law 65-00.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q04",
+      "type": "single-choice",
+      "question": "Dr. Mabrouki has a patient who has no AMO coverage and cannot pay their contributions. According to Law 65-00, which scheme can they benefit from?",
+      "media": [],
+      "options": [
+        "The basic AMO scheme",
+        "The medical assistance scheme (RAMED)",
+        "A mandatory private insurance",
+        "No scheme, they must pay for their care"
+      ],
+      "correct": 1,
+      "explanation": "In addition to the AMO, Law 65-00 establishes a medical assistance scheme (RAMED) based on national solidarity for economically disadvantaged people.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q05",
+      "type": "single-choice",
+      "question": "Dr. Alami treats a patient affiliated with a mutual insurance company. What is the main role of this mutual insurance company in relation to the AMO?",
+      "media": [],
+      "options": [
+        "It replaces the mandatory AMO",
+        "It provides complementary coverage to the AMO",
+        "It manages the AMO for the public sector",
+        "It is mandatory for all patients"
+      ],
+      "correct": 1,
+      "explanation": "Mutual insurance companies play a role of complementary coverage, increasing reimbursement rates or expanding the list of covered care.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q06",
+      "type": "single-choice",
+      "question": "According to Law 65-00, which type of procedure is excluded from the scope of benefits guaranteed by the AMO?",
+      "media": [],
+      "options": [
+        "Dental care",
+        "Cosmetic surgery procedures",
+        "Radiology procedures",
+        "Maternity care"
+      ],
+      "correct": 1,
+      "explanation": "Law 65-00 excludes cosmetic surgery procedures, spa treatments, acupuncture, mesotherapy, thalassotherapy, homeopathy, and alternative medicine.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q07",
+      "type": "single-choice",
+      "question": "Dr. Mabrouki proposes teeth whitening treatment to a patient. Will this treatment be covered by the AMO?",
+      "media": [],
+      "options": [
+        "Yes, fully",
+        "Yes, partially at 80%",
+        "No, because whitening is a cosmetic procedure",
+        "Yes, if the dentist prescribes it"
+      ],
+      "correct": 2,
+      "explanation": "Cosmetic surgery procedures are excluded from benefits guaranteed by the AMO. Since teeth whitening is a cosmetic procedure, it is not reimbursed.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q08",
+      "type": "single-choice",
+      "question": "According to Law 65-00, who are the dependents covered by the AMO?",
+      "media": [],
+      "options": [
+        "The spouse and parents of the insured",
+        "The spouse and dependent children up to age 21",
+        "Dependent children up to age 30 without conditions",
+        "All family members without age limit"
+      ],
+      "correct": 1,
+      "explanation": "The covered dependents are the spouse(s) and dependent children aged 21 or under, except for unmarried children pursuing higher education up to age 30 according to Law 54.23.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q09",
+      "type": "single-choice",
+      "question": "Dr. Alami treats a patient whose children are 25 years old and pursuing higher education. According to Law 54.23, are these children covered by the AMO?",
+      "media": [],
+      "options": [
+        "No, because they have exceeded 21 years",
+        "Yes, up to age 26",
+        "No, because they must be independent",
+        "Yes, up to age 30"
+      ],
+      "correct": 3,
+      "explanation": "Law 54.23 extended the coverage age for unmarried students pursuing their studies up to age 30, instead of 26.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q10",
+      "type": "single-choice",
+      "question": "According to Article 5 of Law 65-00, how is a disabled child covered by the AMO?",
+      "media": [],
+      "options": [
+        "Only up to age 21",
+        "Up to age 26",
+        "Without age limit",
+        "Up to age 30"
+      ],
+      "correct": 2,
+      "explanation": "Dependent disabled children benefit from AMO coverage without age limit.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q11",
+      "type": "single-choice",
+      "question": "Dr. Mabrouki has a patient who wants to get a dental implant. According to AMO rules, is this treatment covered?",
+      "media": [],
+      "options": [
+        "Yes, at 80% of the TNR",
+        "Yes, fully",
+        "No, dental implants are not covered by the AMO",
+        "Yes, if the patient has a mutual insurance company"
+      ],
+      "correct": 2,
+      "explanation": "Dental implants, aesthetic veneers, or ceramic-ceramic crowns are generally not covered by the AMO, which only reimburses basic care.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q12",
+      "type": "single-choice",
+      "question": "According to Law 54.23, which is the single body that will manage the AMO in the future?",
+      "media": [],
+      "options": [
+        "CNOPS",
+        "CNSS",
+        "CMAM",
+        "The Ministry of Health"
+      ],
+      "correct": 1,
+      "explanation": "The draft law 54.23 provides for entrusting the management of the basic AMO scheme to a single body, the National Social Security Fund (CNSS).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q13",
+      "type": "single-choice",
+      "question": "Dr. Alami treats a student patient. According to Law 54.23, what does the new law provide for the AMO scheme for students?",
+      "media": [],
+      "options": [
+        "It is maintained as is",
+        "It is abolished and students are transferred to other schemes",
+        "It is managed by the CNOPS",
+        "It becomes optional"
+      ],
+      "correct": 1,
+      "explanation": "Law 54.23 abolishes the specific AMO scheme for students as an autonomous scheme. Students now benefit from coverage as dependents or through other mechanisms.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q14",
+      "type": "single-choice",
+      "question": "According to Law 65-00, what is the reimbursement rate for a consultation with a general practitioner under the AMO?",
+      "media": [],
+      "options": [
+        "50% of the National Reference Tariff (TNR)",
+        "80% of the National Reference Tariff (TNR)",
+        "100% of the National Reference Tariff (TNR)",
+        "Full reimbursement"
+      ],
+      "correct": 1,
+      "explanation": "The AMO generally reimburses 80% of the National Reference Tariff (TNR) for consultations and basic care, with the remainder being the patient's responsibility.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q15",
+      "type": "single-choice",
+      "question": "Dr. Mabrouki treats a patient who has complementary mutual insurance. How is the reimbursement distribution done?",
+      "media": [],
+      "options": [
+        "The mutual insurance company reimburses 80%, the AMO the rest",
+        "The AMO reimburses 80%, the mutual insurance company covers the rest",
+        "The mutual insurance company reimburses 100% without AMO intervention",
+        "The patient chooses which body pays"
+      ],
+      "correct": 1,
+      "explanation": "The AMO reimburses 80% of the National Reference Tariff, then the complementary mutual insurance covers all or part of the co-payment.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q16",
+      "type": "single-choice",
+      "question": "According to Law 65-00, what basic dental care is covered by the AMO?",
+      "media": [],
+      "options": [
+        "Prostheses and implants",
+        "Consultations, caries treatment, and extractions",
+        "Orthodontics for all ages",
+        "Whitening and veneers"
+      ],
+      "correct": 1,
+      "explanation": "The AMO covers consultations, caries treatment, extractions, and conservative treatments, but not prostheses or implants.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q17",
+      "type": "single-choice",
+      "question": "Dr. Alami must perform a prosthetic bridge on a patient. According to AMO rules, what procedure should be followed?",
+      "media": [],
+      "options": [
+        "The patient can start treatment without formalities",
+        "A prior agreement is necessary",
+        "The dentist must first perform the treatment and then request reimbursement",
+        "The AMO does not reimburse any prostheses"
+      ],
+      "correct": 1,
+      "explanation": "Benefits such as dental prostheses or orthodontics require a prior agreement: a detailed quote must be sent to the relevant body before starting treatment.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q18",
+      "type": "single-choice",
+      "question": "According to Article 114 of Law 65-00, under what conditions can employers replace the AMO with a mutual insurance company?",
+      "media": [],
+      "options": [
+        "Yes, without conditions",
+        "Yes, provided that the benefits are at least equivalent to the AMO",
+        "No, it is strictly prohibited",
+        "Yes, if the employer pays higher contributions"
+      ],
+      "correct": 1,
+      "explanation": "Article 114 of Law 65-00 allows, on a transitional basis, public or private bodies to maintain optional medical coverage, provided that the benefits are at least equivalent to those of the AMO.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q19",
+      "type": "single-choice",
+      "question": "Dr. Mabrouki has a patient who has a dental care invoice. What is the maximum deadline for submitting a reimbursement request?",
+      "media": [],
+      "options": [
+        "15 days",
+        "30 days",
+        "60 days",
+        "6 months"
+      ],
+      "correct": 2,
+      "explanation": "Documents must be submitted within the deadlines set by the body, often within 60 days following the date of care.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q20",
+      "type": "single-choice",
+      "question": "According to Law 65-00, what is the 'co-payment' for an AMO patient?",
+      "media": [],
+      "options": [
+        "An additional tax on care",
+        "The amount the patient pays after AMO reimbursement",
+        "The amount reimbursed by the mutual insurance company",
+        "A contribution from the State"
+      ],
+      "correct": 1,
+      "explanation": "The co-payment is the portion remaining the responsibility of the insured after AMO reimbursement, generally 20% of the National Reference Tariff.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q21",
+      "type": "single-choice",
+      "question": "According to Law 65-00, are workplace accidents covered by the AMO?",
+      "media": [],
+      "options": [
+        "Yes, like all illnesses",
+        "No, they are governed by specific legislation",
+        "Yes, but only for civil servants",
+        "Partially, depending on severity"
+      ],
+      "correct": 1,
+      "explanation": "Law 65-00 specifies that risks related to workplace accidents and occupational diseases remain governed by specific legislation and regulations.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q22",
+      "type": "single-choice",
+      "question": "Dr. Alami treats a patient who has an internal mutual insurance company at their company. According to the developments of Law 54.23, what happens to these agreements?",
+      "media": [],
+      "options": [
+        "They are immediately abolished",
+        "They remain in force for a transitional period",
+        "They become the only possible coverage",
+        "They are automatically taken over by the CNSS"
+      ],
+      "correct": 1,
+      "explanation": "Agreements concluded with mutual insurance companies remain in force for a duration to be set by decree, as part of the transition to the unified system.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q23",
+      "type": "single-choice",
+      "question": "According to Law 65-00, what benefits are guaranteed by the AMO?",
+      "media": [],
+      "options": [
+        "Only surgical procedures",
+        "Preventive and curative care, maternity, rehabilitation, and dental care",
+        "Only medications",
+        "Only care related to workplace accidents"
+      ],
+      "correct": 1,
+      "explanation": "The AMO guarantees coverage for risks and care costs related to illness, maternity, rehabilitation, including preventive and curative care, and dental care.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q24",
+      "type": "single-choice",
+      "question": "Dr. Mabrouki has a patient who wants aesthetic veneers. According to Law 65-00, how are these procedures covered?",
+      "media": [],
+      "options": [
+        "At 80% like current care",
+        "They are excluded from the scope of the AMO as cosmetic procedures",
+        "At 100% if the dentist prescribes them",
+        "Partially depending on the mutual insurance company"
+      ],
+      "correct": 1,
+      "explanation": "Cosmetic surgery procedures, including aesthetic veneers, are excluded from the scope of benefits guaranteed by the AMO.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_D1_Q25",
+      "type": "single-choice",
+      "question": "According to Law 65-00, who is considered a 'dependent' of the AMO insured?",
+      "media": [],
+      "options": [
+        "Only the spouse",
+        "Spouses and dependent children",
+        "The insured's parents",
+        "All family members"
+      ],
+      "correct": 1,
+      "explanation": "Dependents are the spouse(s) and dependent children of the insured, in accordance with Law 65-00.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "prothese_debutant1_001",
+    "title": "Prosthetics - Beginner 1",
+    "specialty": "PROT",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PROT_D1_Q01",
+      "type": "single-choice",
+      "question": "🦅 Sami receives a patient with a fractured tooth. He says: 'Ceramic crown, it's the best!' 🐆 Mina asks him: 'And the material?' What is a ceramic crown?",
+      "media": [],
+      "options": [
+        "A fixed prosthesis in pure ceramic, without metal, highly aesthetic",
+        "A metal crown covered with resin",
+        "A removable plastic prosthesis",
+        "A simple composite bonded to the tooth"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Pure ceramic offers exceptional aesthetics and perfect biocompatibility.' 🐆 Mina: 'Sami, you know aesthetic materials well!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q02",
+      "type": "single-choice",
+      "question": "🐆 Mina, examining a bridge, says: 'The abutments are healthy.' 🦅 Sami replies: 'We can do it on only 2 teeth.' What is a bridge?",
+      "media": [],
+      "options": [
+        "A fixed prosthesis replacing one or more missing teeth, supported by abutments",
+        "A removable resin prosthesis",
+        "A dental implant",
+        "A crown on a single tooth"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'A bridge is a fixed prosthesis that replaces one or more teeth.' 🦅 Sami: 'I prefer short bridges, faster to make!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q03",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a removable prosthesis, says: 'That's for old people!' 🐆 Mina replies: 'Not at all!' What is a removable partial denture?",
+      "media": [],
+      "options": [
+        "A prosthesis that the patient can remove and replace, replacing a few missing teeth",
+        "A fixed implant-supported prosthesis",
+        "A crown on a natural tooth",
+        "A bonded bridge"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Removable partial dentures are indicated to replace several teeth with a limited budget.' 🐆 Mina: 'Sami, you're more open-minded than I thought!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q04",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a digital impression, says: 'It's precise and fast.' 🦅 Sami replies: 'Conventional impression is more reliable!' What is a digital impression?",
+      "media": [],
+      "options": [
+        "An impression taken with an intraoral scanner, without traditional material",
+        "A classic alginate impression",
+        "A photo of the tooth",
+        "A plaster cast"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Digital impression is precise, comfortable, and fast.' 🦅 Sami: 'I prefer alginate, but I admit the scanner is more comfortable for the patient.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q05",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a metal-ceramic crown, says: 'That's outdated!' 🐆 Mina replies: 'Not so fast!' What are the advantages of metal-ceramic?",
+      "media": [],
+      "options": [
+        "Strength, good longevity, acceptable aesthetics, and affordable price",
+        "Perfect aesthetics only",
+        "Corrosion resistance only",
+        "Lightness and translucency"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Metal-ceramic remains a standard for its strength and durability.' 🐆 Mina: 'Sami, you're being reasonable today!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q06",
+      "type": "single-choice",
+      "question": "🐆 Mina, examining a complete denture, says: 'Occlusion is paramount.' 🦅 Sami replies: 'Aesthetics first!' What is a complete denture?",
+      "media": [],
+      "options": [
+        "A removable prosthesis replacing all teeth in an arch",
+        "A fixed implant-supported prosthesis",
+        "An extended bridge",
+        "A crown on each tooth"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'A complete denture replaces all teeth and occlusion is essential for stability.' 🦅 Sami: 'Fine, we'll work on occlusion, but we'll also make it aesthetic!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q07",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a post and core, says: 'That's useless!' 🐆 Mina replies: 'It's essential!' What is a post and core?",
+      "media": [],
+      "options": [
+        "A core build-up for anchoring a crown on a root-treated tooth",
+        "A simple composite",
+        "A temporary crown",
+        "A dental implant"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The post and core reinforces the root-treated tooth before crown placement.' 🐆 Mina: 'Sami, you're making progress!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q08",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a ceramic veneer, says: 'It's very aesthetic.' 🦅 Sami replies: 'It's fragile!' What is a dental veneer?",
+      "media": [],
+      "options": [
+        "A thin ceramic shell bonded to the outer surface of the tooth for aesthetics",
+        "A full crown",
+        "A direct composite",
+        "A tooth whitening"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Veneers offer remarkable aesthetics with minimal preparation.' 🦅 Sami: 'I prefer crowns, more solid, but I admit veneers are more aesthetic.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q09",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a bonded bridge, says: 'That's a poor person's prosthesis!' 🐆 Mina replies: 'It's a validated technique!' What is a bonded (Maryland) bridge?",
+      "media": [],
+      "options": [
+        "A bridge fixed by metal or ceramic wings on the adjacent teeth",
+        "A conventional bridge with crowns on abutments",
+        "A removable prosthesis",
+        "An implant"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The bonded bridge is a conservative option to replace a tooth without preparing the abutments.' 🐆 Mina: 'Sami, you're really open-minded!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q10",
+      "type": "single-choice",
+      "question": "🐆 Mina, examining an implant-supported prosthesis, says: 'Osseointegration is crucial.' 🦅 Sami replies: 'The prosthesis first!' What is osseointegration?",
+      "media": [],
+      "options": [
+        "The direct bond between the titanium implant and the alveolar bone",
+        "The fixation of the crown on the implant",
+        "The healing of the gum",
+        "The placement of the implant"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Osseointegration is the key to implant success.' 🦅 Sami: 'I must admit Mina is right on this point.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q11",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a temporary crown, says: 'That's useless!' 🐆 Mina replies: 'It's essential!' What is the role of a temporary crown?",
+      "media": [],
+      "options": [
+        "Protect the tooth, maintain space, and aesthetics while waiting for the definitive prosthesis",
+        "Serve as a definitive prosthesis",
+        "Only protect the gum",
+        "Replace a missing tooth"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The temporary crown is essential for protection and function.' 🐆 Mina: 'Sami, you've finally understood the importance of the temporary!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q12",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a composite resin, says: 'It's perfect for small restorations.' 🦅 Sami replies: 'Ceramic is always better!' What is a composite resin?",
+      "media": [],
+      "options": [
+        "An aesthetic restorative material, bonded directly to the tooth",
+        "A laboratory material only",
+        "A temporary cement",
+        "A material for removable prostheses"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Composite is versatile and allows direct aesthetic restorations.' 🦅 Sami: 'I prefer ceramic, but composite has its advantages.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q13",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a 3-unit bridge, says: 'That's too long to make.' 🐆 Mina replies: 'You have to take your time!' How many teeth can a bridge replace?",
+      "media": [],
+      "options": [
+        "A bridge can replace 1 to 3 teeth depending on the clinical situation",
+        "Only 1 tooth",
+        "Up to 10 teeth",
+        "All teeth in an arch"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The length of the bridge depends on the quality of the abutments and the occlusion.' 🐆 Mina: 'Sami, you know the limits of the bridge!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q14",
+      "type": "single-choice",
+      "question": "🐆 Mina, examining a patient with a removable prosthesis, says: 'The clasps must be discreet.' 🦅 Sami replies: 'The essential thing is that it stays!' What is a prosthesis clasp?",
+      "media": [],
+      "options": [
+        "A metal or flexible element that holds the removable prosthesis on the teeth",
+        "An implant",
+        "A bridge",
+        "A crown"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Clasps ensure the retention of the removable prosthesis.' 🦅 Sami: 'I prefer rigid clasps, but I admit flexible ones are more aesthetic.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q15",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing an alginate impression, says: 'That's outdated!' 🐆 Mina replies: 'It's still used!' What is alginate?",
+      "media": [],
+      "options": [
+        "A hydrocolloid impression material, used for study models",
+        "A definitive material for prostheses",
+        "A luting cement",
+        "A composite"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Alginate is fast and economical for preliminary impressions.' 🐆 Mina: 'Sami, you're pragmatic!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q16",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a completely edentulous patient, says: 'Conventional complete denture.' 🦅 Sami replies: 'No, implants!' What guides the choice?",
+      "media": [],
+      "options": [
+        "Bone condition, budget, and patient expectations",
+        "Only the budget",
+        "Only the age",
+        "Only the dentist's preferences"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'The choice depends on multiple clinical and financial factors.' 🦅 Sami: 'Fine, we'll do a classic complete denture for this patient.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q17",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a prosthetic laboratory, says: 'They do all the work!' 🐆 Mina replies: 'The clinician is essential!' What is the clinician's role in prosthetics?",
+      "media": [],
+      "options": [
+        "Preparation, impression, color selection, and try-in",
+        "Only the preparation",
+        "Only the impression",
+        "No role, the laboratory does everything"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The clinician is responsible for the entire prosthetic process.' 🐆 Mina: 'Sami, you're right!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q18",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a zirconia crown, says: 'It's very aesthetic and strong.' 🦅 Sami replies: 'It's too expensive!' What is zirconia?",
+      "media": [],
+      "options": [
+        "A high-strength ceramic material, without metal, highly aesthetic",
+        "A precious metal",
+        "A reinforced composite",
+        "An acrylic resin"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Zirconia combines strength and aesthetics, without the risk of metal allergy.' 🦅 Sami: 'I prefer metal-ceramic for value for money, but I admit zirconia is aesthetically superior.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q19",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a prosthesis on 4 implants, says: 'That's too complicated!' 🐆 Mina replies: 'It's a validated technique!' What is an implant-supported prosthesis?",
+      "media": [],
+      "options": [
+        "A prosthesis fixed on dental implants, offering optimal stability",
+        "A gum-supported removable prosthesis",
+        "A crown on a natural tooth",
+        "A conventional bridge"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Implant-supported prostheses offer unmatched stability and comfort.' 🐆 Mina: 'Sami, you're really up to date!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q20",
+      "type": "single-choice",
+      "question": "🐆 Mina, examining a resin prosthesis, says: 'It's light and inexpensive.' 🦅 Sami replies: 'It's fragile!' What are the advantages of resin?",
+      "media": [],
+      "options": [
+        "Lightness, low cost, ease of repair",
+        "Strength and durability",
+        "Perfect aesthetics only",
+        "Absolute biocompatibility"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Resin is ideal for temporary prostheses or those with a limited budget.' 🦅 Sami: 'I prefer ceramic, but I understand the interest of resin.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q21",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a bonded bridge, says: 'It doesn't last!' 🐆 Mina replies: 'With good technique, it does!' What is the key to success for a bonded bridge?",
+      "media": [],
+      "options": [
+        "Good adhesion and adapted occlusion",
+        "Only the strength of the adhesive",
+        "Only the choice of material",
+        "Only the aesthetics"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The success of the bonded bridge relies on adhesion and occlusion.' 🐆 Mina: 'Sami, you're an expert in bonded bridges!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q22",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a temporary crown, says: 'It must be kept for 15 days.' 🦅 Sami replies: 'We can put the definitive one right away!' Why is the temporary necessary?",
+      "media": [],
+      "options": [
+        "To allow tissues to heal and evaluate function and aesthetics",
+        "To charge more",
+        "Because the definitive crown is not ready",
+        "To get the patient used to it"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'The temporary is an essential phase to validate the prosthetic project.' 🦅 Sami: 'Fine, we'll make a quality temporary then!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q23",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a removable prosthesis with a palatal plate, says: 'It's uncomfortable!' 🐆 Mina replies: 'It's necessary!' What is the role of the palatal plate?",
+      "media": [],
+      "options": [
+        "Ensure retention and stability of the maxillary prosthesis",
+        "Only aesthetics",
+        "Only phonetics",
+        "Protect the gum"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The palatal plate is essential for the stability of the maxillary prosthesis.' 🐆 Mina: 'Sami, you know removable prostheses well!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q24",
+      "type": "single-choice",
+      "question": "🐆 Mina, examining an inlay, says: 'It's an indirect restoration.' 🦅 Sami replies: 'I prefer direct composite.' What is an inlay?",
+      "media": [],
+      "options": [
+        "A laboratory-made restoration, cemented into the tooth",
+        "A direct composite restoration",
+        "A full crown",
+        "An implant"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'The inlay is an indirect ceramic or composite restoration, more resistant.' 🦅 Sami: 'I prefer direct for speed, but the inlay is more durable.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a patient with a prosthesis that moves, says: 'It's the lab's fault!' 🐆 Mina replies: 'It might be the occlusion!' What is the most frequent cause of prosthetic instability?",
+      "media": [],
+      "options": [
+        "An occlusion, retention, or adaptation defect",
+        "Only the laboratory's fault",
+        "Only the patient's fault",
+        "Only the material"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Instability is often multifactorial: occlusion, retention, adaptation.' 🐆 Mina: 'Sami, you're really a pro!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q26",
+      "type": "single-choice",
+      "question": "🦅 Sami and 🐆 Mina discuss the future of prosthetics. Sami says: '3D printers will change everything!' Mina replies: 'Clinical expertise remains key.' What is the future of prosthetics?",
+      "media": [],
+      "options": [
+        "Technology helps but does not replace the clinician and the laboratory",
+        "3D printing will replace everything",
+        "Traditional prostheses will disappear",
+        "The laboratory will disappear"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Technology is a valuable tool, but clinical expertise is irreplaceable.' 🦅 Sami: 'I agree, we keep our jobs!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

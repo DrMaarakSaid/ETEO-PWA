@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "parodontologie_debutant1_001",
+    "title": "Periodontology - Beginner 1",
+    "specialty": "PARO",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "PARO_D1_Q01",
+      "type": "single-choice",
+      "question": "🦅 Sami examines a patient with red and swollen gums. He says: 'It's gingivitis, let's prescribe antibiotics!' 🐆 Mina replies: 'Not so fast!' What is the main cause of gingivitis?",
+      "media": [],
+      "options": [
+        "Dental plaque (bacterial biofilm)",
+        "A vitamin deficiency",
+        "A viral infection",
+        "Psychological stress"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Dental plaque is the main etiological factor of gingivitis. Antibiotics are not indicated as first-line treatment.' 🐆 Mina, surprised: 'Sami, you know your subject!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q02",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing gingival recession in a patient, says: 'We need to graft!' 🦅 Sami replies: 'No, we can wait!' What is a gingival recession?",
+      "media": [],
+      "options": [
+        "The apical displacement of the gingival margin exposing the root",
+        "An inflammation of the gum",
+        "An infection of the gum",
+        "A tumor of the gum"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Recession exposes the root and can cause hypersensitivity.' 🦅 Sami: 'I prefer to wait, but I admit you're right about the principle.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q03",
+      "type": "single-choice",
+      "question": "🦅 Sami, probing a patient, says: 'Probing depth at 5 mm, it's periodontitis!' 🐆 Mina asks him: 'And the other signs?' What is a periodontal pocket?",
+      "media": [],
+      "options": [
+        "A pathological deepening of the sulcus > 3 mm",
+        "A normal space between the tooth and the gum",
+        "A cavity in the tooth",
+        "A gingival abscess"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'A periodontal pocket is defined by a probing depth > 3 mm.' 🐆 Mina: 'Bravo Sami, you're making progress!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q04",
+      "type": "single-choice",
+      "question": "🐆 Mina, analyzing X-rays, says: 'There is vertical bone loss.' 🦅 Sami replies: 'It's not serious, we'll deal with it later.' Why is bone loss concerning?",
+      "media": [],
+      "options": [
+        "It is irreversible and compromises the prognosis of the teeth",
+        "It is always reversible",
+        "It does not pose a problem",
+        "It only concerns anterior teeth"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Bone loss is irreversible and can lead to tooth loss.' 🦅 Sami: 'Fine, we'll treat it, but it's long!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q05",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing calculus in a patient, says: 'Calculus is the cause of periodontitis!' 🐆 Mina corrects him: 'Not exactly!' What is the role of calculus?",
+      "media": [],
+      "options": [
+        "It serves as a support and reservoir for bacterial plaque",
+        "It is directly pathogenic",
+        "It has no role in periodontitis",
+        "It protects the teeth"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Calculus is not directly pathogenic, but its rough surface retains plaque.' 🐆 Mina: 'Sami, you're becoming a real specialist!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q06",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a 7 mm pocket, proposes: 'A periodontal flap.' 🦅 Sami replies: 'No, scaling only!' What does the literature say?",
+      "media": [],
+      "options": [
+        "Pockets > 5 mm often require a surgical approach",
+        "Scaling is always sufficient",
+        "Surgery is never indicated",
+        "Only antibiotics are effective"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Deep pockets (> 5 mm) with bone loss often require surgical treatment.' 🦅 Sami: 'I prefer scaling, but you're right...'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q07",
+      "type": "single-choice",
+      "question": "🦅 Sami, examining a smoker, says: 'Tobacco has no impact on the periodontium.' 🐆 Mina replies: 'That's false!' What is the effect of tobacco on the periodontium?",
+      "media": [],
+      "options": [
+        "It increases the risk of periodontitis and masks inflammatory signs",
+        "It protects the periodontium",
+        "It has no effect",
+        "It reduces dental plaque"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Tobacco is a major risk factor. It reduces vascularization and masks signs of inflammation.' 🐆 Mina: 'Sami, you're on fire today!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q08",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a diabetic patient, says: 'We need to control his diabetes before periodontal treatment.' 🦅 Sami replies: 'We can still treat!' Who is right?",
+      "media": [],
+      "options": [
+        "Mina, uncontrolled diabetes worsens periodontitis",
+        "Sami, treatment can start immediately",
+        "Both approaches are valid",
+        "Neither, we should wait"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Diabetes and periodontitis have a bidirectional relationship. Controlled diabetes is essential.' 🦅 Sami: 'Fine, we'll coordinate with his doctor...'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q09",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing Grade 2 tooth mobility, says: 'We need to extract the tooth!' 🐆 Mina replies: 'Not so fast!' What does Grade 2 mobility mean?",
+      "media": [],
+      "options": [
+        "Horizontal mobility of 1 to 2 mm",
+        "Vertical mobility",
+        "Horizontal mobility of less than 1 mm",
+        "Mobility in all planes"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Grade 2 mobility corresponds to horizontal displacement of 1 to 2 mm.' 🐆 Mina: 'Sami, you know your classification!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q10",
+      "type": "single-choice",
+      "question": "🐆 Mina, analyzing an X-ray, says: 'There is a Grade 2 furcation lesion.' 🦅 Sami asks: 'What's that?' A furcation lesion is:",
+      "media": [],
+      "options": [
+        "An involvement of the space between the roots of multi-rooted teeth",
+        "A cavity between two teeth",
+        "An inflammation of the gum",
+        "A root fracture"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Furcations are the areas of root separation. Their involvement complicates treatment.' 🦅 Sami: 'I'll remember that, so I can diagnose!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q11",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a 4 mm pocket with bleeding, says: 'It's not serious.' 🐆 Mina replies: 'Yes, it is significant!' What does bleeding on probing mean?",
+      "media": [],
+      "options": [
+        "A sign of active gingival inflammation",
+        "A sign of cancer",
+        "A sign of vitamin deficiency",
+        "A sign of poor hygiene only"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Bleeding on probing (BOP) is an indicator of active inflammation.' 🐆 Mina: 'Sami, you're making progress!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q12",
+      "type": "single-choice",
+      "question": "🐆 Mina proposes non-surgical periodontal treatment for a patient. 🦅 Sami says: 'No, let's operate directly!' What does non-surgical treatment include?",
+      "media": [],
+      "options": [
+        "Scaling, root planing, and plaque control",
+        "Flap surgery",
+        "Extractions",
+        "Implants"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Non-surgical treatment is the first step to eliminate the biofilm.' 🦅 Sami: 'Fine, we'll try, but it's long!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q13",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a patient with gingival enlargement, says: 'It's genetic!' 🐆 Mina replies: 'Not only that!' What are the causes of gingival enlargement?",
+      "media": [],
+      "options": [
+        "Medications (anti-epileptics, immunosuppressants), inflammation, genetics",
+        "Only genetic",
+        "Only inflammatory",
+        "Only medication-related"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The causes are multiple: medications, inflammation, or genetic factors.' 🐆 Mina: 'Sami, you're really up to date!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q14",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a patient with aggressive periodontitis, says: 'We need antibiotics.' 🦅 Sami replies: 'No, just scaling!' Which antibiotics are used?",
+      "media": [],
+      "options": [
+        "Amoxicillin + metronidazole in combination",
+        "Penicillin alone",
+        "Cephalosporins",
+        "Macrolides"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'The amoxicillin-metronidazole combination is the gold standard.' 🦅 Sami: 'I prefer to avoid antibiotics, but I acknowledge your expertise.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q15",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a Miller Class III recession, says: 'We can graft successfully.' 🐆 Mina replies: 'The prognosis is guarded.' What is the Miller classification?",
+      "media": [],
+      "options": [
+        "A classification of gingival recessions to evaluate prognosis",
+        "A classification of periodontitis",
+        "A classification of periodontal pockets",
+        "A classification of mobilities"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The Miller classification evaluates the coverage potential of recessions.' 🐆 Mina: 'Sami, you know your classification!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q16",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a patient with a 6 mm pocket, proposes: 'Flap surgery.' 🦅 Sami replies: 'No, laser!' Which approach is validated?",
+      "media": [],
+      "options": [
+        "Flap surgery is the gold standard",
+        "The laser is more effective",
+        "Both are equivalent",
+        "Neither, extraction is needed"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Flap surgery allows access and debridement of deep pockets.' 🦅 Sami: 'I prefer the laser, but I admit you're right.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q17",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a patient with a periodontal abscess, says: 'We need to extract!' 🐆 Mina replies: 'Not so fast!' What is a periodontal abscess?",
+      "media": [],
+      "options": [
+        "A localized collection of pus in the deep periodontium",
+        "An infected cavity",
+        "A pulpal infection",
+        "An allergic reaction"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The abscess is a localized infection. Drainage and antibiotics are the treatment.' 🐆 Mina: 'Sami, you're right this time!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q18",
+      "type": "single-choice",
+      "question": "🐆 Mina, analyzing a patient with periodontitis, says: 'We need a complete assessment.' 🦅 Sami replies: 'Useless, the diagnosis is already made.' What does the periodontal assessment include?",
+      "media": [],
+      "options": [
+        "Complete probing, X-rays, plaque and bleeding indices",
+        "Only probing",
+        "Only X-rays",
+        "Only visual examination"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'The complete assessment is essential to evaluate severity and extent.' 🦅 Sami: 'Fine, OK, but it's long!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q19",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing horizontal bone loss, says: 'It's periodontitis!' 🐆 Mina asks: 'And vertical?' What is the difference?",
+      "media": [],
+      "options": [
+        "Horizontal loss is uniform, vertical loss is in niches",
+        "It's the same thing",
+        "Vertical is more benign",
+        "Horizontal is more severe"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Horizontal loss is diffuse, vertical loss is localized and can be regenerated.' 🐆 Mina: 'Sami, you're becoming an expert!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q20",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a patient with severe periodontitis, says: 'We need extractions.' 🦅 Sami replies: 'No, we can save everything!' Who is right?",
+      "media": [],
+      "options": [
+        "Mina, some teeth with a guarded prognosis must be extracted",
+        "Sami, we can always save teeth",
+        "Both approaches are possible",
+        "Neither, we should wait"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'The dental prognosis guides the decision. Some teeth have too guarded a prognosis.' 🦅 Sami: 'I wanted to save everything, but you're right.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q21",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a patient with gingivitis, says: 'Vigorous brushing is enough.' 🐆 Mina replies: 'No, an adapted technique is needed!' Which technique is recommended?",
+      "media": [],
+      "options": [
+        "The modified Bass technique (brushing at 45°)",
+        "Vigorous horizontal brushing",
+        "Vertical brushing",
+        "A simple mouthwash"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'The modified Bass technique is the most effective for removing subgingival plaque.' 🐆 Mina: 'Sami, you do your research!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q22",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing an 8 mm pocket, proposes: 'Guided tissue regeneration.' 🦅 Sami replies: 'No, simple flap.' What is GTR?",
+      "media": [],
+      "options": [
+        "A technique using membranes to regenerate bone",
+        "An extraction technique",
+        "A scaling technique",
+        "An implantology technique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Guided tissue regeneration allows regeneration of lost bone.' 🦅 Sami: 'I prefer the simple flap, but GTR is more effective.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q23",
+      "type": "single-choice",
+      "question": "🦅 Sami, seeing a patient with periodontitis, says: 'Treatment is finished after scaling.' 🐆 Mina replies: 'No, follow-up is needed!' Why is maintenance crucial?",
+      "media": [],
+      "options": [
+        "To prevent relapses and maintain periodontal stability",
+        "To charge more",
+        "To use more equipment",
+        "To fill out papers"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explains: 'Periodontal maintenance is the key to long-term stability.' 🐆 Mina: 'Sami, you've finally understood!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q24",
+      "type": "single-choice",
+      "question": "🐆 Mina, seeing a patient with periodontitis, says: 'Risk factors must be controlled.' 🦅 Sami asks: 'Which ones?' What are the major risk factors?",
+      "media": [],
+      "options": [
+        "Tobacco, diabetes, genetics, stress, obesity",
+        "Only tobacco",
+        "Only diabetes",
+        "Only genetics"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'Risk factors are multiple and must be taken into account.' 🦅 Sami: 'Fine, I will look for them systematically.'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D1_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami and 🐆 Mina discuss the future of periodontology. Sami says: 'AI will replace clinical diagnosis!' Mina replies: 'Not so fast!' What is the role of AI?",
+      "media": [],
+      "options": [
+        "AI is a diagnostic aid tool, not a replacement",
+        "AI will replace all periodontologists",
+        "AI is useless in periodontology",
+        "AI is only useful for quotes"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explains: 'AI can help analyze X-rays and probing, but the clinician remains essential.' 🦅 Sami: 'I'm reassured, we keep our jobs!'",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

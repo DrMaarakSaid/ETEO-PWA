@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "informatique_logiciels_dentaires_debutant2_001",
+    "title": "Dental IT & Software - Beginner 2",
+    "specialty": "INFO",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "INFO_D2_Q01",
+      "type": "single-choice",
+      "question": "Dr. Fadili keeps all his patient files in paper format in his cabinet. Dr. Idrissi has digitized his files and hosts them on a secure server. In the event of a fire at the practice, what is the main risk for Dr. Fadili?",
+      "media": [],
+      "options": [
+        "No risk, paper files are protected by law",
+        "The definitive loss of all medical and accounting data of the practice",
+        "He can recover his data via the CNSS",
+        "Patients are required to provide a copy of their files"
+      ],
+      "correct": 1,
+      "explanation": "Exclusively paper-based storage exposes to total loss in the event of a disaster (fire, flood, theft). Digitization with external backup protects against these risks by ensuring business continuity.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q02",
+      "type": "single-choice",
+      "question": "Dr. Idrissi has digitized his files and performs daily backups on an external server. Dr. Fadili keeps his archives in filing cabinets at the practice. Which of the two is better protected in the event of a disaster?",
+      "media": [],
+      "options": [
+        "Dr. Fadili, because filing cabinets are fireproof",
+        "Dr. Idrissi, thanks to redundancy and data externalization",
+        "Both are equally protected by law",
+        "Dr. Fadili, because paper is more resistant than digital data"
+      ],
+      "correct": 1,
+      "explanation": "Redundancy of backups and externalization offer protection against local risks (fire, flood, theft) and guarantee business continuity.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q03",
+      "type": "single-choice",
+      "question": "According to Article 211 of the GTC, Dr. Fadili and Dr. Idrissi must keep their accounting documents for how many years?",
+      "media": [],
+      "options": [
+        "5 years",
+        "10 years",
+        "15 years",
+        "20 years"
+      ],
+      "correct": 1,
+      "explanation": "Article 211 of the General Tax Code requires a 10-year retention period for accounting documents and supporting documents, regardless of the medium.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q04",
+      "type": "single-choice",
+      "question": "Dr. Fadili lost his patient files in a fire. According to Moroccan law, must he inform the tax administration of this loss?",
+      "media": [],
+      "options": [
+        "No, the loss of medical files does not concern the tax administration",
+        "Yes, within 15 days of the loss being noted",
+        "Yes, but only if the loss concerns accounting documents",
+        "No, the declaration of loss is optional"
+      ],
+      "correct": 1,
+      "explanation": "Taxpayers must inform the tax inspector by registered letter within 15 days of the loss being noted, specifying the circumstances and the documents lost.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q05",
+      "type": "single-choice",
+      "question": "In the event of loss of accounting documents, what is the penalty provided for in Article 191 of the GTC if Dr. Fadili does not declare this loss?",
+      "media": [],
+      "options": [
+        "A simple injunction",
+        "A flat-rate fine of 50,000 DH per financial year",
+        "A prison sentence of 6 months",
+        "A ban on practicing the profession"
+      ],
+      "correct": 1,
+      "explanation": "The draft Finance Law 2017 introduces a penalty of 50,000 dirhams per financial year for non-compliance with the obligations to keep accounting documents.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q06",
+      "type": "single-choice",
+      "question": "Dr. Idrissi has made a CNDP declaration for his practice management software. Dr. Fadili has never made a declaration for his paper files. According to Article 52 of Law 09-08, what is Dr. Fadili exposed to?",
+      "media": [],
+      "options": [
+        "No sanction, because paper files are excluded from the scope of Law 09-08",
+        "A fine of 10,000 to 100,000 DH for failure to make a prior declaration",
+        "A prison sentence of 3 months to 1 year",
+        "A fine of 1,000 to 5,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Article 52 of Law 09-08 provides for a fine of 10,000 to 100,000 DH for failure to make a prior declaration, regardless of the medium used.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q07",
+      "type": "single-choice",
+      "question": "Dr. Fadili had his paper files stolen during a break-in. What is his responsibility towards his patients?",
+      "media": [],
+      "options": [
+        "None, theft is a case of force majeure",
+        "He must inform the patients concerned and the CNDP of the theft",
+        "He does not need to inform the patients because they are not concerned",
+        "He must make a declaration to the CNSS only"
+      ],
+      "correct": 1,
+      "explanation": "In the event of a data breach (loss, theft, destruction), the data controller must inform the persons concerned and the CNDP when the breach is likely to create a high risk for their rights and freedoms.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q08",
+      "type": "single-choice",
+      "question": "Dr. Idrissi has installed an automated data backup system. What is the main advantage of this system compared to Dr. Fadili's paper method?",
+      "media": [],
+      "options": [
+        "Digital backup is less expensive",
+        "Automated backup ensures business continuity in the event of a disaster and traceability of access",
+        "Digital backup is slower to restore",
+        "Automated backup is less reliable than a paper copy"
+      ],
+      "correct": 1,
+      "explanation": "Automated backups with external copies (cloud) guarantee data recovery in the event of a disaster and ensure traceability of access, unlike paper archives.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q09",
+      "type": "single-choice",
+      "question": "Dr. Idrissi uses practice management software that generates an audit log. Dr. Fadili notes his operations in a notebook. What advantage does the audit log offer Dr. Idrissi?",
+      "media": [],
+      "options": [
+        "It allows keeping documents indefinitely",
+        "It allows tracing all actions performed on the data (who, what, when)",
+        "It exempts from CNDP declaration",
+        "It allows deleting data without a trace"
+      ],
+      "correct": 1,
+      "explanation": "The audit log offers complete traceability: it records who accessed the data, when, and why. This allows proving the integrity of the data and meeting the requirements of Law 09-08.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q10",
+      "type": "single-choice",
+      "question": "Dr. Fadili keeps X-rays in paper format. Dr. Idrissi stores them in secure digital format. What is the advantage of the digital version for traceability?",
+      "media": [],
+      "options": [
+        "No advantage, the two formats are equivalent",
+        "The digital version allows tracing access and modifications",
+        "The paper version is easier to verify",
+        "The digital version cannot be traced"
+      ],
+      "correct": 1,
+      "explanation": "Digital archiving with an audit log allows tracing who consulted or modified an X-ray, when, and why, which is impossible with paper formats.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q11",
+      "type": "single-choice",
+      "question": "According to Law 09-08, health data is considered sensitive data. Dr. Fadili keeps his paper files, Dr. Idrissi digitizes them. Do both need to obtain prior authorization from the CNDP?",
+      "media": [],
+      "options": [
+        "No, only digital processing is subject to authorization",
+        "Yes, the processing of health data requires authorization, regardless of the medium",
+        "No, paper data is exempt from authorization",
+        "Only Dr. Idrissi must request authorization"
+      ],
+      "correct": 1,
+      "explanation": "Article 21 of Law 09-08 considers health data as sensitive data, regardless of the medium. Their processing is subject to the prior authorization regime.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q12",
+      "type": "single-choice",
+      "question": "Dr. Fadili has entire filing cabinets of documents. Dr. Idrissi uses an electronic document management system (EDMS) with indexing. What advantage does EDMS offer compared to filing cabinets?",
+      "media": [],
+      "options": [
+        "EDMS is heavier to manage than filing cabinets",
+        "EDMS allows quick document search and easy access",
+        "EDMS does not allow finding old documents",
+        "EDMS is less secure than paper storage"
+      ],
+      "correct": 1,
+      "explanation": "EDMS with indexing allows quick search and easy access to documents, with reinforced security requirements to guarantee the integrity and authenticity of the data.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q13",
+      "type": "single-choice",
+      "question": "Dr. Fadili had his patient files stolen. What is the immediate consequence for Dr. Fadili?",
+      "media": [],
+      "options": [
+        "He can continue to practice as if nothing had happened",
+        "He must interrupt his activity and inform his patients",
+        "He can reconstruct the files from memory",
+        "He must wait for reimbursement from his insurance"
+      ],
+      "correct": 1,
+      "explanation": "The loss of paper files exposes to a break in continuity of care and obligations to inform patients, in accordance with the requirements of Law 09-08 on data protection.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q14",
+      "type": "single-choice",
+      "question": "Dr. Idrissi chose a Moroccan cloud host for his data. Dr. Fadili keeps everything at the practice. According to Law 09-08 and CNDP requirements, why is Dr. Idrissi's choice safer?",
+      "media": [],
+      "options": [
+        "Local hosting facilitates data transfer abroad",
+        "Local hosting respects data sovereignty requirements",
+        "Local hosting is more expensive but less secure",
+        "Local hosting exempts from CNDP declaration"
+      ],
+      "correct": 1,
+      "explanation": "The CNDP prohibits the transfer of personal data outside Morocco without explicit authorization. Choosing a Moroccan host facilitates compliance and avoids international transfer procedures.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q15",
+      "type": "single-choice",
+      "question": "Dr. Fadili wants to install a video surveillance camera in his practice. According to CNDP deliberation No. 350-2013, what formality must he complete?",
+      "media": [],
+      "options": [
+        "None, video surveillance is free",
+        "A simplified declaration to the CNDP",
+        "A mandatory prior authorization",
+        "A simple poster in the practice"
+      ],
+      "correct": 1,
+      "explanation": "Video surveillance falls under the simplified declaration regime (form F214) in accordance with deliberation No. 350-2013, with an obligation to inform the persons concerned via a pictogram.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q16",
+      "type": "single-choice",
+      "question": "According to the CNDP deliberation, where can Dr. Fadili install his video surveillance cameras?",
+      "media": [],
+      "options": [
+        "In all premises of the practice, including toilets",
+        "At entrances, exits, parking lots, and circulation areas",
+        "Only in the waiting room",
+        "Everywhere, without restriction"
+      ],
+      "correct": 1,
+      "explanation": "Cameras must be installed at entrances/exits, circulation paths, parking lots, never filming rest areas, changing rooms, or toilets to respect privacy.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q17",
+      "type": "single-choice",
+      "question": "Dr. Fadili installed a camera without CNDP declaration. According to Article 54 of Law 09-08, what sanction is he exposed to?",
+      "media": [],
+      "options": [
+        "None, video surveillance is free",
+        "A fine of 20,000 to 200,000 DH and/or 3 months to 1 year in prison",
+        "A simple injunction",
+        "A fine of 1,000 to 5,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Article 54 of Law 09-08 provides for a fine of 20,000 to 200,000 DH and/or a prison sentence of 3 months to 1 year for lack of authorization or misuse of purpose.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q18",
+      "type": "single-choice",
+      "question": "Dr. Idrissi keeps his video recordings for 6 months. According to CNDP deliberation, what is the maximum retention period?",
+      "media": [],
+      "options": [
+        "1 month",
+        "3 months",
+        "6 months",
+        "12 months"
+      ],
+      "correct": 1,
+      "explanation": "The retention period for video recordings must not exceed three months, except in the event of legal proceedings.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q19",
+      "type": "single-choice",
+      "question": "Dr. Idrissi has opted for digital archiving with probative value for his documents. Dr. Fadili keeps his original paper documents. What is the advantage of archiving with probative value?",
+      "media": [],
+      "options": [
+        "It allows reducing storage costs",
+        "It guarantees the authenticity, integrity, and traceability of documents over time",
+        "It exempts from keeping the original paper documents",
+        "It allows deleting documents after 5 years"
+      ],
+      "correct": 1,
+      "explanation": "Archiving with probative value guarantees the authenticity (identity of the author), integrity (absence of modification), and traceability (audit log) of documents, giving them probative force that can be used in court.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q20",
+      "type": "single-choice",
+      "question": "Dr. Idrissi wishes to do away with paper documents in his practice. According to archiving standards, what must he guarantee for his digital documents to have the same value as paper ones?",
+      "media": [],
+      "options": [
+        "Simple storage on a cloud",
+        "The integrity, authenticity, and accessibility of documents",
+        "A backup on an external hard drive",
+        "The ability to print documents at any time"
+      ],
+      "correct": 1,
+      "explanation": "For digital documents to have the same probative force as paper, they must be kept under conditions guaranteeing their integrity (cryptographic fingerprint), authenticity (electronic signature), and accessibility (sustainable formats).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q21",
+      "type": "single-choice",
+      "question": "Dr. Fadili had his paper files destroyed by water following a leak. What must he do according to Law 09-08?",
+      "media": [],
+      "options": [
+        "Nothing, it's a case of force majeure",
+        "Inform the CNDP and the patients concerned",
+        "Reconstruct the files with the patients' memories",
+        "Wait for patients to come forward"
+      ],
+      "correct": 1,
+      "explanation": "In the event of a data breach (loss, destruction), the data controller must inform the CNDP and the persons concerned when the breach is likely to create a high risk for their rights and freedoms.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q22",
+      "type": "single-choice",
+      "question": "Dr. Idrissi uses an electronic signature for his prescriptions. Dr. Fadili still uses a handwritten signature. What advantage does the electronic signature offer Dr. Idrissi?",
+      "media": [],
+      "options": [
+        "No advantage, the two signatures have the same value",
+        "The electronic signature guarantees the integrity and authenticity of the prescription",
+        "The electronic signature is less secure",
+        "The electronic signature exempts from keeping the prescription"
+      ],
+      "correct": 1,
+      "explanation": "The electronic signature, associated with a timestamp and a digital fingerprint, guarantees the integrity (the document has not been modified) and authenticity (identification of the signatory) of the document.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q23",
+      "type": "single-choice",
+      "question": "Dr. Idrissi has implemented access controls for his management software. Dr. Fadili has his filing cabinets accessible to everyone. What is the advantage of access controls for Dr. Idrissi?",
+      "media": [],
+      "options": [
+        "No advantage, the two systems are equivalent",
+        "They allow limiting access to data to authorized persons only and tracing consultations",
+        "They complicate access to documents",
+        "They are more expensive but less effective"
+      ],
+      "correct": 1,
+      "explanation": "Access controls by roles and rights allow limiting access to data to authorized persons only and tracing consultations, in accordance with the requirements of Law 09-08.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q24",
+      "type": "single-choice",
+      "question": "Dr. Fadili keeps his customer invoices in paper format. Dr. Idrissi keeps them in electronic format. What is the legal retention period for both?",
+      "media": [],
+      "options": [
+        "5 years for paper, 10 years for electronic",
+        "10 years for both, regardless of the medium",
+        "3 years for paper, 10 years for electronic",
+        "6 years for both"
+      ],
+      "correct": 1,
+      "explanation": "The legal retention period for customer invoices is 10 years, regardless of the medium (paper or electronic), in accordance with Article 211 of the GTC.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D2_Q25",
+      "type": "single-choice",
+      "question": "Dr. Idrissi suffered a server failure. Thanks to his external backups, he recovers his data. What is the main protection this system offers Dr. Idrissi?",
+      "media": [],
+      "options": [
+        "Rapid data recovery in the event of a disaster",
+        "Reduced storage costs",
+        "Simplification of tax declarations",
+        "Exemption from CNDP declaration"
+      ],
+      "correct": 0,
+      "explanation": "External backups allow rapid data recovery in the event of a disaster (failure, fire, flood), thus guaranteeing business continuity.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

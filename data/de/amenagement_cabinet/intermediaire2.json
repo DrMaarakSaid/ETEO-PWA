@@ -1,0 +1,541 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_intermediaire2_001",
+    "title": "Office Layout - Intermediate 2",
+    "specialty": "AMEN",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1750,
+    "chapter": "Negotiation and Conflicts"
+  },
+  "questions": [
+    {
+      "id": "AMEN_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Ramdan receives a rent revision notice of 30% without valid reason. According to Article 5, how should he react?",
+      "media": [],
+      "options": [
+        "Accept the revision to avoid a conflict",
+        "Challenge it by invoking Law No. 07-03 on rent revision",
+        "Pay under protest while waiting for the court",
+        "Immediately vacate the premises"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, para. 3: the revision of the rent is subject to the provisions of Law No. 07-03. An abusive revision must be challenged.",
+      "difficulty": "medium",
+      "category": "Rent Revision",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["revision", "challenge", "law"],
+      "references": ["Law 49-16 Art.5", "Law 07-03"]
+    },
+    {
+      "id": "AMEN_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Kamali installed a luminous sign without the landlord's permission. According to Article 8, can this behavior cause him to lose his right to eviction compensation?",
+      "media": [],
+      "options": [
+        "Yes, because it constitutes a transformation of the premises",
+        "No, the sign is considered necessary equipment",
+        "Yes, but only if it exceeds 5 m²",
+        "No, the landlord must first authorize it"
+      ],
+      "correct": 0,
+      "explanation": "Art. 8, 2°: the landlord is exempt from compensation if the tenant transforms the premises, unless he restores the premises within a period not exceeding 3 months.",
+      "difficulty": "medium",
+      "category": "Unauthorized Works",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["sign", "transformation", "eviction"],
+      "references": ["Law 49-16 Art.8"]
+    },
+    {
+      "id": "AMEN_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord wishes to sell the building during the lease. According to Law 49-16, what are the seller's obligations?",
+      "media": [],
+      "options": [
+        "Terminate the lease before the sale",
+        "Inform the tenant and respect his right of pre-emption",
+        "Increase the rent to make the sale more attractive",
+        "Nothing, the lease is not enforceable against the new owner"
+      ],
+      "correct": 1,
+      "explanation": "The tenant benefits from a right of pre-emption. The seller must inform him and respect this right.",
+      "difficulty": "medium",
+      "category": "Building Sale",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["sale", "pre-emption", "information"],
+      "references": ["Law 49-16 Art.26 bis"]
+    },
+    {
+      "id": "AMEN_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Kamali had his practice appraised and estimates the value of his business at 1,200,000 DH. According to Article 7, on what basis will the eviction compensation be calculated?",
+      "media": [],
+      "options": [
+        "On the value estimated by the expert",
+        "On the tax declarations of the last 4 financial years",
+        "On the sale price of dental equipment",
+        "On the annual turnover"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, para. 3: the compensation is calculated on the basis of the tax declarations for the last four financial years.",
+      "difficulty": "medium",
+      "category": "Business Valuation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["expertise", "business", "declaration"],
+      "references": ["Law 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord attempts to evict him for personal recovery. According to Article 26, what is the applicable deadline?",
+      "media": [],
+      "options": [
+        "15 days",
+        "1 month",
+        "3 months",
+        "6 months"
+      ],
+      "correct": 2,
+      "explanation": "Art. 26, para. 2: the period is set at 3 months when the request is based on a desire to repossess the premises for personal use.",
+      "difficulty": "medium",
+      "category": "Personal Recovery",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["repossession", "deadline", "use"],
+      "references": ["Law 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Kamali wishes to challenge a clause in his lease that he considers abusive. According to Article 6, what is the scope of such a clause?",
+      "media": [],
+      "options": [
+        "It is valid because the parties are free to contract",
+        "It is null if it contravenes the provisions of the law",
+        "It is valid for the first 5 years",
+        "It is subject to the approval of the commercial court"
+      ],
+      "correct": 1,
+      "explanation": "Art. 6: any stipulation contrary to the provisions of the law is null. The law is a matter of public policy.",
+      "difficulty": "medium",
+      "category": "Abusive Clauses",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["abusive clause", "nullity", "public policy"],
+      "references": ["Law 49-16 Art.6"]
+    },
+    {
+      "id": "AMEN_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord complains about noise nuisances coming from his practice. According to Article 26, how should this type of dispute be qualified?",
+      "media": [],
+      "options": [
+        "A serious reason relating to non-compliance with the lease clauses",
+        "A simple nuisance without legal consequence",
+        "A case of force majeure",
+        "A reason for early termination of the lease"
+      ],
+      "correct": 0,
+      "explanation": "Art. 26, para. 2: noise nuisances constitute a serious reason relating to non-compliance with the lease clauses (deadline of 3 months).",
+      "difficulty": "medium",
+      "category": "Serious Reasons",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["nuisance", "serious reason", "clauses"],
+      "references": ["Law 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Kamali took possession of the premises without a joint inventory. According to Article 3, what are the consequences?",
+      "media": [],
+      "options": [
+        "None, the inventory is not mandatory",
+        "It will be impossible to prove the initial condition of the premises",
+        "The lease is automatically null",
+        "The landlord may increase the rent by 20%"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3, para. 2: when handing over the premises, a descriptive inventory must be drawn up to serve as evidence between the parties.",
+      "difficulty": "medium",
+      "category": "Inventory",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["inventory", "proof", "obligation"],
+      "references": ["Law 49-16 Art.3"]
+    },
+    {
+      "id": "AMEN_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Ramdan wishes to challenge an increase in rental charges. According to Article 5, what must he prove?",
+      "media": [],
+      "options": [
+        "That the charges are not provided for in the lease",
+        "That the charges are excessive compared to the market",
+        "That the landlord does not provide supporting documents",
+        "All of the above answers are correct"
+      ],
+      "correct": 3,
+      "explanation": "Art. 5: the tenant may challenge charges if they are not provided for, if they are excessive, or if the landlord does not provide supporting documents.",
+      "difficulty": "medium",
+      "category": "Rental Charges",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["charges", "challenge", "supporting documents"],
+      "references": ["Law 49-16 Art.5"]
+    },
+    {
+      "id": "AMEN_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Kamali receives a formal notice to pay unpaid rent for 4 months. According to Article 33, what does he risk?",
+      "media": [],
+      "options": [
+        "Termination of the lease after unsuccessful formal notice",
+        "An automatic rent increase",
+        "A flat-rate fine of 10,000 DH",
+        "A prohibition from practicing in the premises"
+      ],
+      "correct": 0,
+      "explanation": "Art. 33: the lessor may take action in default of payment of rent for a period of three months, after formal notice remaining unsuccessful for 15 days.",
+      "difficulty": "medium",
+      "category": "Non-Payment of Rent",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["non-payment", "termination", "formal notice"],
+      "references": ["Law 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord must carry out repair works. According to Law 49-16, who bears the cost of these works?",
+      "media": [],
+      "options": [
+        "The tenant alone",
+        "The landlord alone",
+        "The tenant and the landlord equally",
+        "The landlord, unless the lease provides otherwise"
+      ],
+      "correct": 3,
+      "explanation": "Repair works generally fall to the landlord. However, the lease may provide for different provisions.",
+      "difficulty": "medium",
+      "category": "Repair Works",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["works", "repair", "landlord"],
+      "references": ["Law 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Kamali wishes to give notice to his landlord before the end of the lease. According to Article 26, what are his obligations?",
+      "media": [],
+      "options": [
+        "Respect a 3-month notice period",
+        "Respect a 6-month notice period",
+        "Respect the contractual provisions of the lease",
+        "The law does not provide for a notice period for the tenant"
+      ],
+      "correct": 2,
+      "explanation": "The conditions for the tenant's notice are generally provided for in the lease contract. The law does not impose a specific notice period.",
+      "difficulty": "medium",
+      "category": "Tenant's Notice",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["notice", "tenant", "notice period"],
+      "references": ["Law 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Ramdan discovers that his premises have asbestos problems. According to Law 49-16, what is the landlord's responsibility?",
+      "media": [],
+      "options": [
+        "None, asbestos is not regulated in commercial leases",
+        "The landlord must carry out asbestos removal works",
+        "The tenant must bear these works alone",
+        "The works are shared between the parties"
+      ],
+      "correct": 1,
+      "explanation": "The landlord is required to deliver premises that comply with safety standards. Asbestos removal falls under his responsibility.",
+      "difficulty": "medium",
+      "category": "Health Risks",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["asbestos", "safety", "landlord"],
+      "references": ["Law 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Kamali sublet part of his practice without the landlord's consent. According to Article 24, what are the consequences?",
+      "media": [],
+      "options": [
+        "The sublease is valid because it is authorized by default",
+        "The landlord may request termination of the lease",
+        "The sublease is null and the subtenant must leave",
+        "The landlord can only increase the rent"
+      ],
+      "correct": 1,
+      "explanation": "Art. 24, para. 1: subletting is authorized unless otherwise stipulated. In the absence of agreement, if the lease prohibits subletting, the landlord may take action.",
+      "difficulty": "medium",
+      "category": "Subletting",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["subletting", "absence of agreement", "termination"],
+      "references": ["Law 49-16 Art.24"]
+    },
+    {
+      "id": "AMEN_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord wishes to increase the rent under an indexation clause. According to Article 5, what is the legal limit of this increase?",
+      "media": [],
+      "options": [
+        "No limit, the parties are free",
+        "The increase is capped by Law No. 07-03",
+        "The increase is limited to 5% per year",
+        "The increase is limited to the construction cost index"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, para. 3: the revision of the rent is subject to the provisions of Law No. 07-03, which sets the rules for indexation and capping.",
+      "difficulty": "medium",
+      "category": "Rent Revision",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indexation", "capping", "law"],
+      "references": ["Law 49-16 Art.5", "Law 07-03"]
+    },
+    {
+      "id": "AMEN_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr Kamali received a court summons for eviction. According to Article 28, what is the deadline to deposit the eviction compensation?",
+      "media": [],
+      "options": [
+        "1 month after the judgment",
+        "2 months after the judgment",
+        "3 months after the judgment becomes enforceable",
+        "6 months after the judgment"
+      ],
+      "correct": 2,
+      "explanation": "Art. 28: the lessor is required to deposit the amount of compensation within a period of three months from the date on which the judgment becomes enforceable.",
+      "difficulty": "medium",
+      "category": "Eviction Procedure",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["summons", "deadline", "execution"],
+      "references": ["Law 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord asks him to carry out routine maintenance works. According to Law 49-16, who should carry them out?",
+      "media": [],
+      "options": [
+        "The landlord alone",
+        "The tenant alone",
+        "Both equally",
+        "The tenant, unless the works are structural"
+      ],
+      "correct": 3,
+      "explanation": "Routine maintenance works generally fall to the tenant, while structural works fall to the landlord.",
+      "difficulty": "medium",
+      "category": "Maintenance Works",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["maintenance", "landlord", "tenant"],
+      "references": ["Law 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr Kamali wishes to challenge a clause in his lease that prohibits him from carrying out another activity in the premises. According to Law 49-16, is this clause valid?",
+      "media": [],
+      "options": [
+        "Yes, the parties may restrict the activity",
+        "No, it is contrary to freedom of enterprise",
+        "Yes, if it is limited in time",
+        "No, if it is not justified by the purpose of the lease"
+      ],
+      "correct": 0,
+      "explanation": "The lease may legitimately restrict the activity carried out in the premises to preserve the intended use of the premises.",
+      "difficulty": "medium",
+      "category": "Activity Restrictions",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["activity", "restriction", "clause"],
+      "references": ["Law 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr Ramdan's landlord wishes to change the building's opening hours. According to Law 49-16, must the tenant accept?",
+      "media": [],
+      "options": [
+        "Yes, the landlord has a police power",
+        "No, if it changes the practice's operating conditions",
+        "Yes, if the change is justified by security reasons",
+        "No, the landlord cannot impose hours"
+      ],
+      "correct": 1,
+      "explanation": "Any change that substantially affects the operation of the practice requires the tenant's consent.",
+      "difficulty": "medium",
+      "category": "Operating Conditions",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["hours", "operation", "change"],
+      "references": ["Law 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr Kamali has changed his specialty and wishes to modify the activity of his practice. According to Law 49-16, what is the procedure?",
+      "media": [],
+      "options": [
+        "He can do it without authorization",
+        "He must obtain the landlord's authorization",
+        "He must simply inform the landlord",
+        "He must wait for the renewal of the lease"
+      ],
+      "correct": 1,
+      "explanation": "Any change in the intended use of the premises requires the landlord's consent, unless the lease allows it.",
+      "difficulty": "medium",
+      "category": "Change of Activity",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["activity", "authorization", "intended use"],
+      "references": ["Law 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr Ramdan is having difficulty paying his rent due to the crisis. According to Article 33, what deadline does he have to regularize?",
+      "media": [],
+      "options": [
+        "15 days after formal notice",
+        "30 days after formal notice",
+        "45 days after formal notice",
+        "2 months after formal notice"
+      ],
+      "correct": 0,
+      "explanation": "Art. 33: the tenant has 15 days after formal notice to regularize his situation.",
+      "difficulty": "medium",
+      "category": "Regularization",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["regularization", "deadline", "crisis"],
+      "references": ["Law 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr Kamali's landlord refuses renewal without reason. According to Article 6, what is the position of the law?",
+      "media": [],
+      "options": [
+        "The refusal is valid if the landlord wishes",
+        "The refusal is abusive because the right to renewal is protected",
+        "The refusal is valid after 9 years of lease",
+        "The refusal is subject to the court's assessment"
+      ],
+      "correct": 1,
+      "explanation": "Art. 6: any stipulation contrary to the right to renewal is null. Refusal without reason is abusive.",
+      "difficulty": "medium",
+      "category": "Renewal",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["refusal", "renewal", "abusive"],
+      "references": ["Law 49-16 Art.6"]
+    },
+    {
+      "id": "AMEN_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr Ramdan wishes to carry out extension works. According to Article 8, what procedure must be followed?",
+      "media": [],
+      "options": [
+        "The works are free as long as they do not affect the structure",
+        "He must obtain the written consent of the landlord",
+        "He can carry out the works and inform afterwards",
+        "The works are prohibited"
+      ],
+      "correct": 1,
+      "explanation": "Art. 8: any transformation of the premises requires the landlord's consent, under penalty of losing the right to compensation.",
+      "difficulty": "medium",
+      "category": "Works",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["extension", "authorization", "works"],
+      "references": ["Law 49-16 Art.8"]
+    },
+    {
+      "id": "AMEN_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr Kamali signed a 3-year renewable lease. According to Article 4, under what condition is renewal acquired?",
+      "media": [],
+      "options": [
+        "It is automatic after 3 years",
+        "It is acquired after 2 years of occupation",
+        "It is subject to the landlord's consent",
+        "It is impossible for 3-year leases"
+      ],
+      "correct": 1,
+      "explanation": "Art. 4: the tenant benefits from renewal after 2 years of consecutive occupation.",
+      "difficulty": "medium",
+      "category": "Renewal",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["renewal", "occupation", "deadline"],
+      "references": ["Law 49-16 Art.4"]
+    },
+    {
+      "id": "AMEN_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr Ramdan finally reached an agreement with his landlord. According to Law 49-16, how should this agreement be formalized?",
+      "media": [],
+      "options": [
+        "By a simple handshake",
+        "By a written amendment to the lease contract",
+        "By an exchange of registered letters",
+        "By a declaration to the prefecture"
+      ],
+      "correct": 1,
+      "explanation": "Any amending agreement to the lease must be formalized by a written amendment to be valid and enforceable.",
+      "difficulty": "medium",
+      "category": "Amicable Agreement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["agreement", "amendment", "formalization"],
+      "references": ["Law 49-16"]
+    }
+  ]
+}

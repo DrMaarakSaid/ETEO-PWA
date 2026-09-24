@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "chirurgie_expert1_001",
+    "title": "Chirurgie - Expert 1",
+    "specialty": "CHIR",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "CHIR_E1_Q01",
+      "type": "single-choice",
+      "question": "Dr Sami doit former les jeunes dentistes à la chirurgie. Quel est le premier conseil qu'il doit leur donner ?",
+      "media": [],
+      "options": [
+        "La chirurgie est un acte technique simple",
+        "La chirurgie nécessite une bonne connaissance de l'anatomie et des gestes précis",
+        "La chirurgie est secondaire aux soins",
+        "La chirurgie est réservée aux spécialistes"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'La chirurgie nécessite une bonne connaissance de l'anatomie et des gestes précis.' Dr Mina ajoute : 'Et beaucoup de pratique !'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q02",
+      "type": "single-choice",
+      "question": "Dr Mina doit créer un centre de formation en chirurgie. Quel est l'objectif principal ?",
+      "media": [],
+      "options": [
+        "Former des techniciens",
+        "Former des chirurgiens compétents et conscients des risques",
+        "Former des assistants",
+        "Former des gestionnaires"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'L'objectif principal est de former des chirurgiens compétents et conscients des risques.' Dr Sami : 'Je vais participer à la formation.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q03",
+      "type": "single-choice",
+      "question": "Dr Sami doit évaluer la performance d'un jeune chirurgien. Quelle mesure est la plus importante ?",
+      "media": [],
+      "options": [
+        "Le temps opératoire",
+        "La qualité des gestes et la sécurité du patient",
+        "Le nombre d'interventions",
+        "La satisfaction du patient"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'La qualité des gestes et la sécurité du patient sont les mesures les plus importantes.' Dr Mina : 'Je suis d'accord avec toi.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q04",
+      "type": "single-choice",
+      "question": "Dr Mina doit gérer une crise : un patient a présenté une complication post-opératoire. Quelle est la priorité ?",
+      "media": [],
+      "options": [
+        "Identifier la cause de la complication",
+        "Protéger le patient et stabiliser son état",
+        "Appeler les secours",
+        "Documenter l'incident"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'La priorité est de protéger le patient et de stabiliser son état.' Dr Sami : 'Je vais t'aider.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q05",
+      "type": "single-choice",
+      "question": "Dr Sami doit former les internes à la gestion des risques en chirurgie. Quel est le principe fondamental ?",
+      "media": [],
+      "options": [
+        "La gestion des risques est une obligation légale",
+        "La gestion des risques est une responsabilité éthique envers les patients",
+        "La gestion des risques est une option",
+        "La gestion des risques est secondaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'La gestion des risques est une responsabilité éthique fondamentale envers les patients.' Dr Mina : 'Je suis entièrement d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q06",
+      "type": "single-choice",
+      "question": "Dr Mina doit créer un guide de bonnes pratiques en chirurgie. Quelle est la référence principale ?",
+      "media": [],
+      "options": [
+        "Les recommandations nationales",
+        "Les données de la science",
+        "Les habitudes du cabinet",
+        "Les préférences personnelles"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'Les bonnes pratiques doivent être basées sur les données scientifiques actualisées.' Dr Sami : 'Je vais contribuer à ce guide.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q07",
+      "type": "single-choice",
+      "question": "Dr Sami doit former les jeunes chirurgiens à la communication avec les patients. Quel est le message clé ?",
+      "media": [],
+      "options": [
+        "La chirurgie est un acte sans risque",
+        "La chirurgie est un acte sécurisé, mais des risques existent",
+        "La chirurgie est douloureuse",
+        "La chirurgie est inutile"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'Il faut informer le patient des risques tout en le rassurant.' Dr Mina : 'La transparence est essentielle.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q08",
+      "type": "single-choice",
+      "question": "Dr Mina doit créer un programme de recherche en chirurgie. Quel est l'objectif principal ?",
+      "media": [],
+      "options": [
+        "Publier des articles",
+        "Améliorer les pratiques cliniques",
+        "Gagner de l'argent",
+        "Concurrencer d'autres programmes"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'La recherche en chirurgie vise à améliorer les pratiques cliniques et la sécurité des patients.' Dr Sami : 'Je vais participer à la recherche.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q09",
+      "type": "single-choice",
+      "question": "Dr Sami doit gérer un cabinet de référence en chirurgie. Quel est le pilier de l'excellence ?",
+      "media": [],
+      "options": [
+        "La qualité des équipements",
+        "La formation continue et la sécurité",
+        "Le nombre de patients",
+        "Le chiffre d'affaires"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'L'excellence repose sur la formation continue et la sécurité des patients.' Dr Mina : 'Je suis d'accord avec toi.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q10",
+      "type": "single-choice",
+      "question": "Dr Mina doit évaluer l'impact de la chirurgie sur la santé publique. Quel est le rôle de la chirurgie ?",
+      "media": [],
+      "options": [
+        "Elle est un outil de confort",
+        "Elle est un outil essentiel pour les soins bucco-dentaires",
+        "Elle est secondaire",
+        "Elle est facultative"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'La chirurgie est un outil essentiel pour les soins bucco-dentaires.' Dr Sami : 'Je suis entièrement d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q11",
+      "type": "single-choice",
+      "question": "Dr Sami doit former les internes à l'innovation en chirurgie. Quelle tendance actuelle est importante ?",
+      "media": [],
+      "options": [
+        "Les nouvelles techniques chirurgicales",
+        "La chirurgie guidée par ordinateur",
+        "Les nouveaux matériaux",
+        "Toutes les réponses sont correctes"
+      ],
+      "correct": 3,
+      "explanation": "Dr Sami explique : 'L'innovation en chirurgie concerne les techniques, la guidage numérique et les matériaux.' Dr Mina : 'Je suis d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q12",
+      "type": "single-choice",
+      "question": "Dr Mina doit créer un système d'évaluation des compétences en chirurgie. Quel est l'objectif ?",
+      "media": [],
+      "options": [
+        "Sanctionner les praticiens",
+        "Améliorer la qualité des soins",
+        "Réduire les coûts",
+        "Augmenter la productivité"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'L'évaluation des compétences vise à améliorer la qualité des soins.' Dr Sami : 'Je vais participer à l'évaluation.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q13",
+      "type": "single-choice",
+      "question": "Dr Sami doit gérer un conflit éthique en chirurgie. Quelle est la bonne attitude ?",
+      "media": [],
+      "options": [
+        "Ignorer le conflit",
+        "Agir conformément à la déontologie",
+        "Cacher le conflit",
+        "Changer de pratique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'La déontologie est le guide incontournable pour résoudre les conflits éthiques.' Dr Mina : 'Je suis d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q14",
+      "type": "single-choice",
+      "question": "Dr Mina doit écrire un article sur l'avenir de la chirurgie dentaire. Quelle tendance faut-il souligner ?",
+      "media": [],
+      "options": [
+        "Le déclin de la chirurgie",
+        "L'innovation technologique au service du patient",
+        "La baisse des besoins en chirurgie",
+        "La disparition de la chirurgie"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'L'avenir de la chirurgie repose sur l'innovation technologique au service du patient.' Dr Sami : 'Je suis entièrement d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q15",
+      "type": "single-choice",
+      "question": "Dr Sami doit créer un label de qualité pour les cabinets en chirurgie. Quels sont les critères principaux ?",
+      "media": [],
+      "options": [
+        "L'équipement et la taille du cabinet",
+        "La sécurité, la formation et la qualité des soins",
+        "Le chiffre d'affaires",
+        "Le nombre de patients"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'La sécurité, la formation et la qualité des soins sont les critères fondamentaux d'un label de qualité.' Dr Mina : 'Je suis d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q16",
+      "type": "single-choice",
+      "question": "Dr Mina doit prononcer un discours d'adieu à la profession. Quel message doit-elle laisser ?",
+      "media": [],
+      "options": [
+        "La profession n'a pas d'avenir",
+        "La profession a besoin de passionnés et de visionnaires",
+        "La profession est facile",
+        "La profession est sans intérêt"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'La profession a besoin de passionnés pour continuer à évoluer.' Dr Sami : 'Je suis entièrement d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q17",
+      "type": "single-choice",
+      "question": "Dr Sami doit créer une bourse pour les étudiants en chirurgie. Quel est l'objectif ?",
+      "media": [],
+      "options": [
+        "Créer un réseau d'influence",
+        "Encourager l'excellence en chirurgie",
+        "Faire des bénéfices",
+        "Concurrencer d'autres bourses"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'Encourager l'excellence en chirurgie est un investissement pour l'avenir.' Dr Mina : 'Je vais soutenir cette initiative.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q18",
+      "type": "single-choice",
+      "question": "Dr Mina doit transmettre son savoir en chirurgie. Quelle est la méthode la plus efficace ?",
+      "media": [],
+      "options": [
+        "Des cours magistraux",
+        "Un mentorat personnalisé et des cas pratiques",
+        "Des vidéos en ligne",
+        "Des livres"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'Le mentorat personnalisé et les cas pratiques sont les méthodes les plus efficaces pour transmettre un savoir.' Dr Sami : 'Je vais m'investir dans le mentorat.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q19",
+      "type": "single-choice",
+      "question": "Dr Sami doit créer un réseau de pairs pour les jeunes chirurgiens. Quel est l'objectif ?",
+      "media": [],
+      "options": [
+        "Créer un réseau d'influence",
+        "Favoriser l'entraide et le partage d'expériences",
+        "Faire des bénéfices",
+        "Concurrencer d'autres réseaux"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'L'entraide et le partage sont essentiels pour les jeunes chirurgiens.' Dr Mina : 'Je vais soutenir ce réseau.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q20",
+      "type": "single-choice",
+      "question": "Dr Mina doit écrire une conclusion à son ouvrage sur la chirurgie. Quelle est la phrase finale ?",
+      "media": [],
+      "options": [
+        "La chirurgie est une discipline technique",
+        "La chirurgie est un art au service du patient",
+        "La chirurgie est secondaire",
+        "La chirurgie est inutile"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'La chirurgie est un art au service du patient.' Dr Sami : 'Je suis entièrement d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q21",
+      "type": "single-choice",
+      "question": "Dr Sami doit laisser un héritage à la profession. Quel est le plus beau legs ?",
+      "media": [],
+      "options": [
+        "Une fortune",
+        "Des valeurs et un exemple à suivre",
+        "Un réseau d'influence",
+        "Des bâtiments"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'Les valeurs et l'exemple sont le plus beau legs qu'on puisse laisser.' Dr Mina : 'Je suis entièrement d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q22",
+      "type": "single-choice",
+      "question": "Dr Mina doit former les futurs mentors en chirurgie. Quel est le premier message à transmettre ?",
+      "media": [],
+      "options": [
+        "Le mentorat est une obligation",
+        "Le mentorat est une mission d'accompagnement et de transmission",
+        "Le mentorat est une source de revenus",
+        "Le mentorat est une compétition"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'Le mentorat est une mission d'accompagnement et de transmission.' Dr Sami : 'Je vais transmettre ce message.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q23",
+      "type": "single-choice",
+      "question": "Dr Sami doit écrire une lettre aux futurs chirurgiens. Quel message doit-il faire passer ?",
+      "media": [],
+      "options": [
+        "La chirurgie est difficile",
+        "La chirurgie est une discipline qui mérite d'être pratiquée",
+        "La chirurgie est sans intérêt",
+        "La chirurgie est secondaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami explique : 'La chirurgie est une discipline qui mérite d'être pratiquée avec passion et rigueur.' Dr Mina : 'Je suis d'accord.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q24",
+      "type": "single-choice",
+      "question": "Dr Mina doit créer un prix pour les jeunes chirurgiens innovants. Quel est le but ?",
+      "media": [],
+      "options": [
+        "Encourager la compétition",
+        "Stimuler l'innovation et la créativité",
+        "Faire des bénéfices",
+        "Concurrencer d'autres prix"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mina explique : 'L'innovation et la créativité sont les moteurs de l'évolution en chirurgie.' Dr Sami : 'Je vais soutenir ce prix.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CHIR_E1_Q25",
+      "type": "single-choice",
+      "question": "Dr Sami, après une vie dédiée à la chirurgie, reçoit un hommage national. Dr Mina est à ses côtés. Quel est le message de Dr Sami aux jeunes chirurgiens ?",
+      "media": [],
+      "options": [
+        "La chirurgie est finie",
+        "La chirurgie a besoin de passion et de dévouement",
+        "La chirurgie n'a pas d'avenir",
+        "La chirurgie est sans intérêt"
+      ],
+      "correct": 1,
+      "explanation": "Dr Sami conclut : 'La chirurgie a besoin de passion et de dévouement pour continuer à évoluer.' Dr Mina : 'Je suis fière de toi.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

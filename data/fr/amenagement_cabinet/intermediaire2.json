@@ -1,0 +1,541 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_intermediaire2_001",
+    "title": "Amenagement_cabinet - Intermédiaire 2",
+    "specialty": "AMEN",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1750,
+    "chapter": "La Négociation et les Conflits"
+  },
+  "questions": [
+    {
+      "id": "AMEN_I2_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan reçoit un avis de révision du loyer de 30% sans motif valable. Selon l'article 5, comment doit-il réagir ?",
+      "media": [],
+      "options": [
+        "Accepter la révision pour éviter un conflit",
+        "Contester en invoquant la loi n° 07-03 sur la révision des loyers",
+        "Payer sous réserve en attendant le tribunal",
+        "Quitter immédiatement les lieux"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, al. 3 : la révision du loyer est soumise aux dispositions de la loi n° 07-03. Il faut contester une révision abusive.",
+      "difficulty": "moyen",
+      "category": "Révision du loyer",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["revision", "contestation", "loi"],
+      "references": ["Loi 49-16 Art.5", "Loi 07-03"]
+    },
+    {
+      "id": "AMEN_I2_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a installé une enseigne lumineuse sans autorisation du propriétaire. Selon l'article 8, ce comportement peut-il lui faire perdre son droit à l'indemnité d'éviction ?",
+      "media": [],
+      "options": [
+        "Oui, car il s'agit d'une transformation du local",
+        "Non, l'enseigne est considérée comme un équipement nécessaire",
+        "Oui, mais seulement si elle dépasse 5 m²",
+        "Non, le propriétaire doit d'abord l'autoriser"
+      ],
+      "correct": 0,
+      "explanation": "Art. 8, 2° : le bailleur est exonéré de l'indemnité si le locataire transforme le local, à moins qu'il ne remette les lieux en état dans un délai n'excédant pas 3 mois.",
+      "difficulty": "moyen",
+      "category": "Travaux non autorisés",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["enseigne", "transformation", "eviction"],
+      "references": ["Loi 49-16 Art.8"]
+    },
+    {
+      "id": "AMEN_I2_Q03",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan souhaite vendre l'immeuble en cours de bail. Selon la loi 49-16, quelles sont les obligations du vendeur ?",
+      "media": [],
+      "options": [
+        "Résilier le bail avant la vente",
+        "Informer le locataire et respecter son droit de préemption",
+        "Augmenter le loyer pour rendre la vente plus attractive",
+        "Rien, le bail n'est pas opposable au nouveau propriétaire"
+      ],
+      "correct": 1,
+      "explanation": "Le locataire bénéficie d'un droit de préemption. Le vendeur doit l'informer et respecter ce droit.",
+      "difficulty": "moyen",
+      "category": "Vente de l'immeuble",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["vente", "preemption", "information"],
+      "references": ["Loi 49-16 Art.26 bis"]
+    },
+    {
+      "id": "AMEN_I2_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a fait expertiser son cabinet et estime la valeur de son fonds à 1.200.000 DH. Selon l'article 7, sur quelle base l'indemnité d'éviction sera-t-elle calculée ?",
+      "media": [],
+      "options": [
+        "Sur la valeur estimée par l'expert",
+        "Sur les déclarations fiscales des 4 derniers exercices",
+        "Sur le prix de vente des équipements dentaires",
+        "Sur le chiffre d'affaires annuel"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, al. 3 : l'indemnité est calculée sur la base des déclarations fiscales au titre des quatre derniers exercices.",
+      "difficulty": "moyen",
+      "category": "Évaluation du fonds",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["expertise", "fonds", "declaration"],
+      "references": ["Loi 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_I2_Q05",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan tente de l'évincer pour motif de reprise personnelle. Selon l'article 26, quel est le délai applicable ?",
+      "media": [],
+      "options": [
+        "15 jours",
+        "1 mois",
+        "3 mois",
+        "6 mois"
+      ],
+      "correct": 2,
+      "explanation": "Art. 26, al. 2 : le délai est fixé à 3 mois lorsque la requête est basée sur une volonté de reprendre le local pour usage personnel.",
+      "difficulty": "moyen",
+      "category": "Reprise personnelle",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["reprise", "delai", "usage"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I2_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Kamali souhaite contester une clause de son bail qu'il estime abusive. Selon l'article 6, quelle est la portée d'une telle clause ?",
+      "media": [],
+      "options": [
+        "Elle est valable car les parties sont libres de contracter",
+        "Elle est nulle si elle contrevient aux dispositions de la loi",
+        "Elle est valable pendant les 5 premières années",
+        "Elle est soumise à l'approbation du tribunal de commerce"
+      ],
+      "correct": 1,
+      "explanation": "Art. 6 : toute stipulation contraire aux dispositions de la loi est nulle. La loi est d'ordre public.",
+      "difficulty": "moyen",
+      "category": "Clauses abusives",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["clause abusive", "nullite", "ordre public"],
+      "references": ["Loi 49-16 Art.6"]
+    },
+    {
+      "id": "AMEN_I2_Q07",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan lui reproche des nuisances sonores provenant de son cabinet. Selon l'article 26, comment qualifier ce type de litige ?",
+      "media": [],
+      "options": [
+        "Un motif sérieux relevant de l'inobservation des clauses du bail",
+        "Une simple nuisance sans conséquence juridique",
+        "Un cas de force majeure",
+        "Un motif de rupture anticipée du bail"
+      ],
+      "correct": 0,
+      "explanation": "Art. 26, al. 2 : les nuisances sonores constituent un motif sérieux relatif à l'inobservation des clauses du bail (délai de 3 mois).",
+      "difficulty": "moyen",
+      "category": "Motifs sérieux",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["nuisance", "motif serieux", "clauses"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I2_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a pris possession du local sans état des lieux contradictoire. Selon l'article 3, quelles en sont les conséquences ?",
+      "media": [],
+      "options": [
+        "Aucune, l'état des lieux n'est pas obligatoire",
+        "Il sera impossible de prouver l'état initial des lieux",
+        "Le bail est automatiquement nul",
+        "Le propriétaire peut augmenter le loyer de 20%"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3, al. 2 : lors de la remise du local, un état descriptif des lieux doit être établi pour servir de preuve entre les parties.",
+      "difficulty": "moyen",
+      "category": "État des lieux",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["etat des lieux", "preuve", "obligation"],
+      "references": ["Loi 49-16 Art.3"]
+    },
+    {
+      "id": "AMEN_I2_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan souhaite contester une augmentation de charges locatives. Selon l'article 5, que doit-il prouver ?",
+      "media": [],
+      "options": [
+        "Que les charges ne sont pas prévues au bail",
+        "Que les charges sont excessives par rapport au marché",
+        "Que le propriétaire ne fournit pas les justificatifs",
+        "Toutes les réponses ci-dessus sont correctes"
+      ],
+      "correct": 3,
+      "explanation": "Art. 5 : le locataire peut contester les charges si elles ne sont pas prévues, si elles sont excessives, ou si le propriétaire ne fournit pas les justificatifs.",
+      "difficulty": "moyen",
+      "category": "Charges locatives",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["charges", "contestation", "justificatifs"],
+      "references": ["Loi 49-16 Art.5"]
+    },
+    {
+      "id": "AMEN_I2_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Kamali reçoit une mise en demeure de payer des loyers impayés sur 4 mois. Selon l'article 33, que risque-t-il ?",
+      "media": [],
+      "options": [
+        "Une résiliation du bail après mise en demeure infructueuse",
+        "Une augmentation automatique du loyer",
+        "Une amende forfaitaire de 10.000 DH",
+        "Une interdiction d'exercer dans le local"
+      ],
+      "correct": 0,
+      "explanation": "Art. 33 : le bailleur peut agir à défaut de paiement des loyers pour une période de trois mois, après mise en demeure restée infructueuse de 15 jours.",
+      "difficulty": "moyen",
+      "category": "Impaiement des loyers",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["impaiement", "resiliation", "mise en demeure"],
+      "references": ["Loi 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_I2_Q11",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan doit effectuer des travaux de réparation. Selon la loi 49-16, qui supporte le coût de ces travaux ?",
+      "media": [],
+      "options": [
+        "Le locataire seul",
+        "Le propriétaire seul",
+        "Le locataire et le propriétaire à parts égales",
+        "Le propriétaire, sauf si le bail en dispose autrement"
+      ],
+      "correct": 3,
+      "explanation": "Les travaux de réparation incombent généralement au propriétaire. Cependant, le bail peut prévoir des dispositions différentes.",
+      "difficulty": "moyen",
+      "category": "Travaux de réparation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["travaux", "reparation", "proprietaire"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Kamali souhaite donner congé à son propriétaire avant la fin du bail. Selon l'article 26, quelles sont ses obligations ?",
+      "media": [],
+      "options": [
+        "Respecter un préavis de 3 mois",
+        "Respecter un préavis de 6 mois",
+        "Respecter les dispositions contractuelles du bail",
+        "La loi ne prévoit pas de préavis pour le locataire"
+      ],
+      "correct": 2,
+      "explanation": "Les conditions de congé du locataire sont généralement prévues par le contrat de bail. La loi n'impose pas de préavis spécifique.",
+      "difficulty": "moyen",
+      "category": "Congé du locataire",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["congé", "locataire", "preavis"],
+      "references": ["Loi 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_I2_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan découvre que son local a des problèmes d'amiante. Selon la loi 49-16, quelle est la responsabilité du propriétaire ?",
+      "media": [],
+      "options": [
+        "Aucune, l'amiante n'est pas réglementé dans les baux commerciaux",
+        "Le propriétaire doit réaliser les travaux de désamiantage",
+        "Le locataire doit supporter seul ces travaux",
+        "Les travaux sont partagés entre les parties"
+      ],
+      "correct": 1,
+      "explanation": "Le propriétaire est tenu de délivrer un local conforme aux normes de sécurité. Le désamiantage relève de sa responsabilité.",
+      "difficulty": "moyen",
+      "category": "Risques sanitaires",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["amiante", "securite", "proprietaire"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a sous-loué une partie de son cabinet sans l'accord du propriétaire. Selon l'article 24, quelles en sont les conséquences ?",
+      "media": [],
+      "options": [
+        "La sous-location est valable car autorisée par défaut",
+        "Le propriétaire peut demander la résiliation du bail",
+        "La sous-location est nulle et le sous-locataire doit partir",
+        "Le propriétaire peut seulement augmenter le loyer"
+      ],
+      "correct": 1,
+      "explanation": "Art. 24, al. 1er : la sous-location est autorisée sauf stipulation contraire. En cas d'absence d'accord, si le bail interdit la sous-location, le propriétaire peut agir.",
+      "difficulty": "moyen",
+      "category": "Sous-location",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["sous-location", "absence d'accord", "resiliation"],
+      "references": ["Loi 49-16 Art.24"]
+    },
+    {
+      "id": "AMEN_I2_Q15",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan souhaite augmenter le loyer à la faveur d'une clause d'indexation. Selon l'article 5, quelle est la limite légale de cette augmentation ?",
+      "media": [],
+      "options": [
+        "Aucune limite, les parties sont libres",
+        "L'augmentation est plafonnée par la loi n° 07-03",
+        "L'augmentation est limitée à 5% par an",
+        "L'augmentation est limitée à l'indice du coût de la construction"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, al. 3 : la révision du loyer est soumise aux dispositions de la loi n° 07-03, qui fixe les règles d'indexation et de plafonnement.",
+      "difficulty": "moyen",
+      "category": "Révision du loyer",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indexation", "plafonnement", "loi"],
+      "references": ["Loi 49-16 Art.5", "Loi 07-03"]
+    },
+    {
+      "id": "AMEN_I2_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a reçu une assignation en justice pour expulsion. Selon l'article 28, quel est le délai pour déposer l'indemnité d'éviction ?",
+      "media": [],
+      "options": [
+        "1 mois après le jugement",
+        "2 mois après le jugement",
+        "3 mois après que le jugement devient exécutable",
+        "6 mois après le jugement"
+      ],
+      "correct": 2,
+      "explanation": "Art. 28 : le bailleur est tenu de déposer le montant d'indemnité dans un délai de trois mois à partir de la date à laquelle le jugement devient exécutable.",
+      "difficulty": "moyen",
+      "category": "Procédure d'éviction",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["assignation", "delai", "execution"],
+      "references": ["Loi 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_I2_Q17",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan lui demande de réaliser des travaux d'entretien courant. Selon la loi 49-16, qui doit les réaliser ?",
+      "media": [],
+      "options": [
+        "Le propriétaire seul",
+        "Le locataire seul",
+        "Les deux à parts égales",
+        "Le locataire, sauf si les travaux sont structuraux"
+      ],
+      "correct": 3,
+      "explanation": "Les travaux d'entretien courant incombent généralement au locataire, tandis que les travaux structuraux incombent au propriétaire.",
+      "difficulty": "moyen",
+      "category": "Travaux d'entretien",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["entretien", "proprietaire", "locataire"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Kamali souhaite contester une clause de son bail qui lui interdit d'exercer une autre activité dans le local. Selon la loi 49-16, cette clause est-elle valable ?",
+      "media": [],
+      "options": [
+        "Oui, les parties peuvent restreindre l'activité",
+        "Non, elle est contraire à la liberté d'entreprendre",
+        "Oui, si elle est limitée dans le temps",
+        "Non, si elle n'est pas justifiée par l'objet du bail"
+      ],
+      "correct": 0,
+      "explanation": "Le bail peut légitimement restreindre l'activité exercée dans le local pour préserver la destination des lieux.",
+      "difficulty": "moyen",
+      "category": "Restrictions d'activité",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["activite", "restriction", "clause"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q19",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Ramdan souhaite modifier les horaires d'ouverture de l'immeuble. Selon la loi 49-16, le locataire doit-il accepter ?",
+      "media": [],
+      "options": [
+        "Oui, le propriétaire dispose d'un droit de police",
+        "Non, si cela modifie les conditions d'exploitation du cabinet",
+        "Oui, si la modification est justifiée par des raisons de sécurité",
+        "Non, le propriétaire ne peut pas imposer d'horaires"
+      ],
+      "correct": 1,
+      "explanation": "Toute modification qui affecte substantiellement l'exploitation du cabinet requiert l'accord du locataire.",
+      "difficulty": "moyen",
+      "category": "Conditions d'exploitation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["horaires", "exploitation", "modification"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a changé de spécialité et souhaite modifier l'activité de son cabinet. Selon la loi 49-16, quelle est la marche à suivre ?",
+      "media": [],
+      "options": [
+        "Il peut le faire sans autorisation",
+        "Il doit obtenir l'autorisation du propriétaire",
+        "Il doit en informer simplement le propriétaire",
+        "Il doit attendre le renouvellement du bail"
+      ],
+      "correct": 1,
+      "explanation": "Toute modification de la destination des lieux nécessite l'accord du propriétaire, sauf si le bail l'autorise.",
+      "difficulty": "moyen",
+      "category": "Changement d'activité",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["activite", "autorisation", "destination"],
+      "references": ["Loi 49-16"]
+    },
+    {
+      "id": "AMEN_I2_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a des difficultés à payer son loyer à cause de la crise. Selon l'article 33, quel délai a-t-il pour régulariser ?",
+      "media": [],
+      "options": [
+        "15 jours après mise en demeure",
+        "30 jours après mise en demeure",
+        "45 jours après mise en demeure",
+        "2 mois après mise en demeure"
+      ],
+      "correct": 0,
+      "explanation": "Art. 33 : le locataire dispose de 15 jours après mise en demeure pour régulariser sa situation.",
+      "difficulty": "moyen",
+      "category": "Régularisation",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["reguularisation", "delai", "crise"],
+      "references": ["Loi 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_I2_Q22",
+      "type": "single-choice",
+      "question": "Le propriétaire du Dr Kamali lui refuse le renouvellement sans motif. Selon l'article 6, quelle est la position de la loi ?",
+      "media": [],
+      "options": [
+        "Le refus est valable si le propriétaire le souhaite",
+        "Le refus est abusif car le droit au renouvellement est protégé",
+        "Le refus est valable après 9 ans de bail",
+        "Le refus est soumis à l'appréciation du tribunal"
+      ],
+      "correct": 1,
+      "explanation": "Art. 6 : toute stipulation contraire au droit au renouvellement est nulle. Le refus sans motif est abusif.",
+      "difficulty": "moyen",
+      "category": "Renouvellement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["refus", "renouvellement", "abusif"],
+      "references": ["Loi 49-16 Art.6"]
+    },
+    {
+      "id": "AMEN_I2_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan souhaite faire réaliser des travaux d'agrandissement. Selon l'article 8, quelle est la procédure à suivre ?",
+      "media": [],
+      "options": [
+        "Les travaux sont libres tant qu'ils n'affectent pas la structure",
+        "Il doit obtenir l'accord écrit du propriétaire",
+        "Il peut faire les travaux et informer après",
+        "Les travaux sont interdits"
+      ],
+      "correct": 1,
+      "explanation": "Art. 8 : toute transformation du local nécessite l'accord du propriétaire, sous peine de perdre le droit à l'indemnité.",
+      "difficulty": "moyen",
+      "category": "Travaux",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["agrandissement", "autorisation", "travaux"],
+      "references": ["Loi 49-16 Art.8"]
+    },
+    {
+      "id": "AMEN_I2_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Kamali a signé un bail de 3 ans renouvelable. Selon l'article 4, à quelle condition le renouvellement est-il acquis ?",
+      "media": [],
+      "options": [
+        "Il est automatique après 3 ans",
+        "Il est acquis après 2 ans d'occupation",
+        "Il est soumis à l'accord du propriétaire",
+        "Il est impossible pour les baux de 3 ans"
+      ],
+      "correct": 1,
+      "explanation": "Art. 4 : le locataire bénéficie du renouvellement après 2 ans d'occupation consécutive.",
+      "difficulty": "moyen",
+      "category": "Renouvellement",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["renouvellement", "occupation", "delai"],
+      "references": ["Loi 49-16 Art.4"]
+    },
+    {
+      "id": "AMEN_I2_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan a finalement trouvé un accord avec son propriétaire. Selon la loi 49-16, comment officialiser cet accord ?",
+      "media": [],
+      "options": [
+        "Par une simple poignée de main",
+        "Par un avenant écrit au contrat de bail",
+        "Par un échange de courriers recommandés",
+        "Par une déclaration à la préfecture"
+      ],
+      "correct": 1,
+      "explanation": "Tout accord modificatif du bail doit être formalisé par un avenant écrit pour être valable et opposable.",
+      "difficulty": "moyen",
+      "category": "Accord amiable",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["accord", "avenant", "formalisation"],
+      "references": ["Loi 49-16"]
+    }
+  ]
+}

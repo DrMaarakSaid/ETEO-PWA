@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "anesthesiologie_intermediaire1_001",
+    "title": "Anestesiología - Intermedio 1",
+    "specialty": "ANES",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ANES_I1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe elegir un anestésico para la extracción de un molar inferior. La Dra. Layla le recuerda los criterios de selección. ¿Qué criterio es prioritario para una anestesia mandibular profunda?",
+      "media": [],
+      "options": [
+        "El precio del cartucho",
+        "La capacidad de difusión ósea de la molécula",
+        "El color del envase",
+        "La fecha de caducidad"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'Para la mandíbula, la capa cortical es gruesa. Se necesita una molécula con buena difusión, como la articaína.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q02",
+      "type": "single-choice",
+      "question": "La Dra. Layla prepara una anestesia para una caries profunda. Dudá entre lidocaína al 2% y mepivacaína al 3%. ¿Cuál es la principal ventaja de la mepivacaína al 3%?",
+      "media": [],
+      "options": [
+        "Su acción vasoconstrictora intrínseca",
+        "Su duración de acción más prolongada",
+        "Su menor precio",
+        "La ausencia de alergia cruzada"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Samir explica: 'La mepivacaína al 3% tiene una vasodilatación muy débil, lo que permite su uso sin adrenalina.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe anestesiar a un paciente hipertenso. La Dra. Layla le aconseja evitar la epinefrina. ¿Qué molécula es la más adecuada?",
+      "media": [],
+      "options": [
+        "Lidocaína al 2% con adrenalina 1:100.000",
+        "Mepivacaína al 3% sin vasoconstrictor",
+        "Articaína al 4% con adrenalina 1:200.000",
+        "Prilocaína al 4% con felipresina"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'La mepivacaína pura al 3% es ideal para pacientes hipertensos. Permite evitar los riesgos cardiovasculares.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q04",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe inyectar articaína al 4% para una infiltración mandibular. ¿Cuál es la dosis máxima que no debe superarse?",
+      "media": [],
+      "options": [
+        "4,4 mg/kg",
+        "7 mg/kg",
+        "8 mg/kg",
+        "10 mg/kg"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La dosis máxima de articaína al 4% es de 7 mg/kg en adultos. Esto corresponde aproximadamente a 6-7 cartuchos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Samir inyectó 3 cartuchos de articaína al 4% a un paciente de 60 kg. ¿Se respetó la dosis máxima?",
+      "media": [],
+      "options": [
+        "Sí, ya que 3 cartuchos son 216 mg, o 3,6 mg/kg",
+        "No, ya que la dosis máxima es de 4,4 mg/kg",
+        "Sí, ya que la dosis máxima es de 8 mg/kg",
+        "No, ya que 3 cartuchos superan la dosis para un paciente de 60 kg"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Layla calcula: '1 cartucho de 1,8 ml al 4% contiene 72 mg. 3 cartuchos = 216 mg. Para 60 kg, esto es 3,6 mg/kg, muy por debajo de 7 mg/kg.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q06",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe anestesiar a una paciente embarazada. Según las recomendaciones, ¿qué anestésico es preferible?",
+      "media": [],
+      "options": [
+        "Lidocaína al 2% con adrenalina",
+        "Articaína al 4% con adrenalina",
+        "Mepivacaína pura al 3%",
+        "Prilocaína pura al 4%"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Samir explica: 'La lidocaína al 2% con adrenalina es la más estudiada y segura para mujeres embarazadas.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Samir inyectó 5 ml de lidocaína pura al 2% a un paciente de 70 kg. ¿Se respetó la dosis máxima?",
+      "media": [],
+      "options": [
+        "Sí, ya que 100 mg son menos de 4,4 mg/kg (308 mg)",
+        "No, ya que 5 ml superan el límite permitido",
+        "Sí, ya que 100 mg son menos de 7 mg/kg (490 mg)",
+        "No, ya que la lidocaína pura está contraindicada"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Layla calcula: '5 ml de lidocaína al 2% = 100 mg. La dosis máxima sin adrenalina es de 4,4 mg/kg. Para 70 kg, esto es 308 mg. 100 mg está muy por debajo.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q08",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe elegir un anestésico para un paciente de 50 kg. Quiere usar prilocaína al 4%. ¿Cuál es la dosis máxima?",
+      "media": [],
+      "options": [
+        "200 mg (4 mg/kg)",
+        "300 mg (6 mg/kg)",
+        "400 mg (8 mg/kg)",
+        "500 mg (10 mg/kg)"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Samir explica: 'La dosis máxima de prilocaína al 4% es de 8 mg/kg. Para 50 kg, esto es 400 mg.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Samir inyectó 2,5 cartuchos de articaína al 4% a un paciente de 50 kg. ¿Se respetó la dosis?",
+      "media": [],
+      "options": [
+        "Sí, ya que 180 mg = 3,6 mg/kg, por debajo de 7 mg/kg",
+        "No, ya que 180 mg superan 4,4 mg/kg",
+        "Sí, ya que 180 mg son permitidos para prilocaína",
+        "No, ya que 2,5 cartuchos son demasiado para un paciente de 50 kg"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Layla calcula: '2,5 cartuchos × 72 mg = 180 mg. Para 50 kg, esto es 3,6 mg/kg, muy por debajo de 7 mg/kg.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q10",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe realizar un bloqueo mandibular. Utiliza la técnica de Spix. ¿Cuál es el punto de referencia clave?",
+      "media": [],
+      "options": [
+        "El tubérculo maxilar",
+        "El agujero mentoniano",
+        "El pliegue pterigomandibular",
+        "El agujero incisivo"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Samir explica: 'El punto de referencia clave es el pliegue pterigomandibular, 1 cm por encima del plano oclusal.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Samir realizó un bloqueo de Spix y el paciente presentó una parálisis facial transitoria. ¿Cuál es la causa más probable?",
+      "media": [],
+      "options": [
+        "Inyección en la glándula parótida",
+        "Inyección en el nervio lingual",
+        "Inyección demasiado superficial",
+        "Inyección en el nervio facial"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Layla explica: 'Si la aguja está demasiado hacia atrás, penetra en la glándula parótida y bloquea el nervio facial, causando una parálisis temporal.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q12",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe anestesiar un molar superior. Utiliza infiltración. ¿Qué técnica se recomienda?",
+      "media": [],
+      "options": [
+        "Infiltración vestibular y palatina",
+        "Bloqueo troncular",
+        "Infiltración intraligamentosa",
+        "Bloqueo del nervio infraorbitario"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Samir explica: 'En el maxilar superior, el hueso es más permeable. La infiltración vestibular suele ser suficiente, pero a veces se requiere una palatina adicional.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Samir quiere utilizar la técnica de Gow-Gates. ¿Cuál es la particularidad de esta técnica?",
+      "media": [],
+      "options": [
+        "Se realiza con la boca cerrada",
+        "Se dirige al cuello del cóndilo",
+        "Utiliza agujas cortas",
+        "Está indicada para el maxilar superior"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'La técnica de Gow-Gates se dirige al cuello del cóndilo mandibular, proporcionando un bloqueo completo de los nervios NAI, lingual y bucal.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q14",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe anestesiar a un paciente con trismus grave. ¿Qué técnica está más adaptada?",
+      "media": [],
+      "options": [
+        "Bloqueo de Spix",
+        "Técnica de Gow-Gates",
+        "Técnica de Vazirani-Akinosi",
+        "Infiltración intraligamentosa"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Samir explica: 'La técnica de Akinosi se realiza con la boca cerrada, lo que es ideal en caso de trismus.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Samir debe anestesiar los incisivos superiores. ¿Qué nervio está bloqueando?",
+      "media": [],
+      "options": [
+        "Nervio palatino mayor",
+        "Nervio infraorbitario",
+        "Nervio nasopalatino",
+        "Nervio bucal largo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'El nervio infraorbitario inerva los incisivos, caninos y premolares superiores.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q16",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe anestesiar la mucosa palatina de los molares. ¿Qué nervio está bloqueando?",
+      "media": [],
+      "options": [
+        "Nervio nasopalatino",
+        "Nervio palatino mayor",
+        "Nervio palatino menor",
+        "Nervio bucal"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'El nervio palatino mayor inerva la mucosa palatina de los premolares y molares.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Samir realizó una prueba de aspiración y vio sangre en el cartucho. ¿Cuál es la táctica?",
+      "media": [],
+      "options": [
+        "Inyectar inmediatamente",
+        "Retirar la aguja, cambiar de posición y volver a aspirar",
+        "Cambiar el cartucho sin retirar la aguja",
+        "Cancelar la inyección"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'La aspiración positiva indica una penetración intravascular. Es necesario reposicionar la aguja y volver a aspirar.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q18",
+      "type": "single-choice",
+      "question": "La Dra. Layla inyectó un anestésico y el paciente presentó inmediatamente palpitaciones y ansiedad intensa. ¿Cuál es la causa más probable?",
+      "media": [],
+      "options": [
+        "Reacción alérgica",
+        "Inyección intravascular de epinefrina",
+        "Síncope vasovagal",
+        "Sobredosis de anestésico"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'Las palpitaciones y la ansiedad son signos típicos de la inyección intravascular de epinefrina.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Samir inyectó un cartucho completo sin prueba de aspiración. El paciente presentó sacudidas musculares. ¿Cuál es el diagnóstico?",
+      "media": [],
+      "options": [
+        "Reacción alérgica",
+        "Toxicidad sistémica (LAST)",
+        "Síncope vasovagal",
+        "Crisis de ansiedad"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'Las sacudidas musculares son un signo precoz de toxicidad sistémica de los anestésicos locales (LAST).'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q20",
+      "type": "single-choice",
+      "question": "La Dra. Layla inyectó un anestésico y el paciente presentó un sabor metálico en la boca. ¿Cuál es la causa?",
+      "media": [],
+      "options": [
+        "Reacción al conservante",
+        "Signo precoz de toxicidad sistémica",
+        "Alergia al anestésico",
+        "Perforación del cartucho"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'El sabor metálico es un signo precoz de toxicidad sistémica, junto con los acúfenos y la confusión.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Samir inyectó 6 cartuchos de prilocaína al 4% a un paciente de 70 kg. ¿Qué signos puede observar?",
+      "media": [],
+      "options": [
+        "Cianosis y metahemoglobinemia",
+        "Taquicardia grave",
+        "Alergia cutánea",
+        "Cefalea intensa"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Layla explica: 'La sobredosis de prilocaína puede causar metahemoglobinemia, que se manifiesta por cianosis.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q22",
+      "type": "single-choice",
+      "question": "La Dra. Layla debe anestesiar a una paciente en tratamiento anticoagulante. ¿Cuál es el mejor enfoque?",
+      "media": [],
+      "options": [
+        "Suspender los anticoagulantes 3 días antes",
+        "Realizar una infiltración local sin modificar el tratamiento",
+        "Utilizar un bloqueo troncular profundo",
+        "Cancelar el tratamiento"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'Las recomendaciones actuales permiten las infiltraciones locales sin suspender los anticoagulantes, asegurando la hemostasia local.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Samir realizó un bloqueo mandibular y el paciente presentó trismo postoperatorio. ¿Cuál es la causa más probable?",
+      "media": [],
+      "options": [
+        "Alergia al anestésico",
+        "Traumatismo del músculo pterigoideo medial",
+        "Fractura del cóndilo",
+        "Infección secundaria"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Layla explica: 'El trismo post-anestésico suele estar relacionado con un traumatismo o hematoma del músculo pterigoideo medial.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q24",
+      "type": "single-choice",
+      "question": "La Dra. Layla inyectó un anestésico y el paciente presentó una parestesia persistente del nervio lingual. ¿Cuál es el manejo inicial?",
+      "media": [],
+      "options": [
+        "Revisión quirúrgica inmediata",
+        "Observación clínica y posible terapia corticoesteroidea",
+        "Antibioterapia de amplio espectro",
+        "Inyecciones repetidas de lidocaína"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Samir explica: 'La mayoría de las parestesias se resuelven espontáneamente. El manejo se basa en la observación y el apoyo psicológico.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Samir, después de superar varias complicaciones, recibe consejos de la Dra. Layla: 'Empiezas a dominar la anestesia.' ¿Cuál es el siguiente paso para el Dr. Samir?",
+      "media": [],
+      "options": [
+        "Profundizar en técnicas avanzadas y manejo de urgencias",
+        "Descansar sobre los laureles",
+        "Cambiar de especialidad",
+        "Olvidar los fundamentos"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Layla explica: 'El dominio de la anestesia requiere conocimientos de técnicas avanzadas y manejo de urgencias.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

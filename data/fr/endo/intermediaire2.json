@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "endo_intermediaire2_001",
+    "title": "Endo - Intermédiaire 2",
+    "specialty": "ENDO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ENDO_I2_Q01",
+      "type": "single-choice",
+      "question": "Sami appelle Mina en urgence : 'Un patient a une douleur intense après un traitement canalaire !' Mina répond :",
+      "media": [],
+      "options": [
+        "C'est normal, ça va passer",
+        "Évaluer si c'est une douleur post-opératoire ou une infection",
+        "Donner des antibiotiques immédiatement",
+        "Extraire la dent"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Il faut distinguer une douleur post-opératoire banale d'une infection active.' 🦅 Sami : 'Je vais examiner le patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q02",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les signes d'une infection persistante après traitement canalaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Douleur, fistule, image apicale persistante",
+        "Uniquement la douleur",
+        "Uniquement la fistule",
+        "Uniquement l'image apicale"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les signes sont multiples et doivent être corrélés.' 🦅 Sami : 'Je vais rechercher tous ces signes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q03",
+      "type": "single-choice",
+      "question": "Sami demande : 'Que faire en cas de persistance d'une image apicale après traitement ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Refaire le traitement ou envisager une chirurgie apicale",
+        "Ignorer l'image",
+        "Extraire la dent",
+        "Donner des antibiotiques"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Une image persistante peut nécessiter une reprise ou une résection apicale.' 🦅 Sami : 'Je vais discuter des options avec le patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q04",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce qu'un apex ouvert en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un apex immature ou large, souvent chez les jeunes patients",
+        "Un apex fracturé",
+        "Un apex calcifié",
+        "Un apex avec une lésion"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'apex ouvert est fréquent chez les dents immatures.' 🦅 Sami : 'Je vais utiliser du MTA pour créer une barrière.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q05",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que le MTA en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un ciment biocéramique pour la réparation apicale",
+        "Un simple ciment dentaire",
+        "Un agent de blanchiment",
+        "Un matériau d'empreinte"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le MTA est un matériau biocéramique pour les apex ouverts et les perforations.' 🦅 Sami : 'Je vais me former à l'utilisation du MTA.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q06",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer un canal avec une courbure apicale sévère ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Avec des limes NiTi flexibles et une technique adaptée",
+        "Avec des limes en acier rigides",
+        "En abandonnant le canal",
+        "Avec des fraises"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les limes NiTi flexibles sont essentielles pour les courbures sévères.' 🦅 Sami : 'Je vais utiliser des limes NiTi.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q07",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quand faut-il prescrire des antibiotiques en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "En cas d'infection systémique (fièvre, cellulite, trismus)",
+        "Systématiquement après chaque traitement",
+        "Jamais",
+        "Seulement si le patient le demande"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les antibiotiques sont réservés aux infections sévères.' 🦅 Sami : 'Je vais prescrire avec discernement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q08",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce qu'un pansement intracanalaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un produit désinfectant placé dans le canal entre les séances",
+        "Une obturation définitive",
+        "Un ciment scellant",
+        "Une solution d'irrigation"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le pansement poursuit la désinfection entre les séances.' 🦅 Sami : 'Je vais utiliser de l'hydroxyde de calcium.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q09",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quel est le matériau de choix pour un pansement intracanalaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "L'hydroxyde de calcium",
+        "La gutta-percha",
+        "Le ciment dentaire",
+        "L'hypochlorite de sodium"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'hydroxyde de calcium est un excellent antiseptique.' 🦅 Sami : 'Je vais utiliser l'hydroxyde de calcium.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q10",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer une dent avec une fracture radiculaire verticale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Le pronostic est réservé, souvent extraction",
+        "Un traitement canalaire peut la sauver",
+        "Une couronne suffit",
+        "Une greffe osseuse"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les fractures verticales ont un mauvais pronostic.' 🦅 Sami : 'Je vais informer le patient du pronostic.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q11",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la revascularisation pulpaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une technique pour favoriser la régénération pulpaire chez les dents immatures",
+        "Un traitement canalaire classique",
+        "Une extraction",
+        "Une couronne"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La revascularisation est une technique innovante pour les dents immatures.' 🦅 Sami : 'Je vais me former à cette technique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q12",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les signes d'une pulpite irréversible ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Douleur spontanée, nocturne, provoquée par le chaud",
+        "Douleur légère et intermittente",
+        "Absence de douleur",
+        "Douleur uniquement au froid"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La pulpite irréversible se manifeste par une douleur spontanée et nocturne.' 🦅 Sami : 'Je vais reconnaître ces signes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q13",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quelle est la différence entre pulpite réversible et irréversible ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La pulpite réversible répond au froid, l'irréversible est spontanée",
+        "C'est la même chose",
+        "La pulpite réversible est plus douloureuse",
+        "L'irréversible est moins douloureuse"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La pulpite réversible disparaît avec le traitement de la carie, l'irréversible nécessite un traitement canalaire.' 🦅 Sami : 'Je vais bien différencier les deux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q14",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer un patient avec un abcès aigu ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Drainage, traitement canalaire ou extraction, antibiotiques si nécessaire",
+        "Antibiotiques uniquement",
+        "Extraction uniquement",
+        "Traitement canalaire uniquement"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'abcès aigu nécessite un drainage et un traitement de la cause.' 🦅 Sami : 'Je vais drainer et traiter.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q15",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les critères de succès d'un traitement canalaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Absence de douleur, guérison radiographique, fonction normale",
+        "Uniquement l'absence de douleur",
+        "Uniquement la guérison radiographique",
+        "Uniquement la fonction normale"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les critères de succès sont cliniques et radiographiques.' 🦅 Sami : 'Je vais évaluer tous ces critères.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q16",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce que la régénération endodontique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une technique pour régénérer la pulpe et les tissus péri-apicaux",
+        "Un traitement canalaire classique",
+        "Une extraction",
+        "Une couronne"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La régénération est une technique prometteuse pour les dents immatures.' 🦅 Sami : 'Je vais suivre l'évolution de cette technique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q17",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quand faut-il envisager une résection apicale ?' Mina répond :",
+      "media": [],
+      "options": [
+        "En cas d'échec du traitement canalaire et d'impossibilité de reprise",
+        "Toujours en première intention",
+        "Jamais",
+        "Seulement pour les molaires"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La résection apicale est une option en cas d'échec canalaire.' 🦅 Sami : 'Je vais orienter vers un chirurgien.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q18",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les avantages de l'endodontie sous microscope ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Visualisation des canaux supplémentaires et des calcifications",
+        "Uniquement pour les cas simples",
+        "Uniquement pour les molaires",
+        "Aucun avantage"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le microscope améliore la visualisation et le traitement.' 🦅 Sami : 'Je vais utiliser le microscope.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q19",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer une dent avec une résorption interne ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Traitement canalaire avec MTA si possible",
+        "Extraction immédiate",
+        "Surveillance",
+        "Couronne uniquement"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La résorption interne peut être traitée avec des matériaux biocéramiques.' 🦅 Sami : 'Je vais traiter avec du MTA.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q20",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce que la douleur post-opératoire en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une douleur inflammatoire fréquente après traitement",
+        "Un signe d'échec",
+        "Une infection",
+        "Un signe de fracture"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La douleur post-opératoire est fréquente et généralement bénigne.' 🦅 Sami : 'Je vais rassurer les patients.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q21",
+      "type": "single-choice",
+      "question": "Sami demande : 'Comment gérer la douleur post-opératoire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Antalgiques, anti-inflammatoires, glace",
+        "Antibiotiques",
+        "Reprise du traitement",
+        "Extraction"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La douleur post-opératoire se gère avec des antalgiques et des anti-inflammatoires.' 🦅 Sami : 'Je vais prescrire des antalgiques.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q22",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les facteurs de risque d'échec endodontique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Infection persistante, fracture, mauvaise obturation",
+        "Uniquement l'infection",
+        "Uniquement la fracture",
+        "Uniquement la mauvaise obturation"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les échecs sont multifactoriels.' 🦅 Sami : 'Je vais minimiser ces risques.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q23",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quelle est l'importance de la restauration coronaire en endodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Essentielle pour protéger la dent de la fracture",
+        "Peu importante",
+        "Uniquement pour l'esthétique",
+        "Uniquement pour la fonction"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La restauration coronaire est cruciale pour la survie de la dent.' 🦅 Sami : 'Je vais toujours prévoir une couronne.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q24",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les signes d'une fracture radiculaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Douleur à la percussion, mobilité, image radiographique",
+        "Uniquement la douleur",
+        "Uniquement la mobilité",
+        "Uniquement l'image radiographique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les fractures radiculaires présentent plusieurs signes.' 🦅 Sami : 'Je vais rechercher ces signes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_I2_Q25",
+      "type": "single-choice",
+      "question": "Sami, après avoir affronté des complications avec Mina, dit : 'Je suis fier de nos réussites !' Mina conclut : 'Les complications en endodontie sont...'",
+      "media": [],
+      "options": [
+        "Une option pour les experts",
+        "La clé pour sauver les dents",
+        "Une perte de temps",
+        "Secondaire"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Les complications en endodontie sont la clé pour sauver les dents.' 🦅 Sami : 'Je vais continuer à me perfectionner.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

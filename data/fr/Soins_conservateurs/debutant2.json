@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "Soins_conservateurs_debutant2_001",
+    "title": "Soins_conservateurs - Débutant 2",
+    "specialty": "SOIN",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "SOIN_D2_Q01",
+      "type": "single-choice",
+      "question": "📞 Sami appelle Mina : 'J'ai un patient avec une carie profonde sous une couronne ! Je dois refaire la couronne ou réparer ?' Mina répond : 'Commence par évaluer l'étendue.' Quand peut-on réparer sous couronne ?",
+      "media": [],
+      "options": [
+        "Si la carie est périphérique et accessible sans déposer la couronne",
+        "Jamais, il faut toujours déposer la couronne",
+        "Toujours, on peut réparer sans déposer",
+        "Uniquement si la couronne est en céramique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les caries périphériques accessibles peuvent être réparées sans déposer la couronne.' 🦅 Sami : 'Je vais évaluer l'étendue de la carie.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q02",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un patient avec une fracture de cuspide. Sami dit : 'Couronne !' Mina répond : 'Et l'onlay ?' Quelle est la différence entre onlay et couronne ?",
+      "media": [],
+      "options": [
+        "L'onlay est plus conservateur et ne recouvre qu'une partie de la dent",
+        "La couronne est plus conservatrice",
+        "C'est la même chose",
+        "L'onlay est moins esthétique"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'onlay préserve plus de structure dentaire qu'une couronne.' 🐆 Mina : 'Sami, tu es devenu conservateur !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q03",
+      "type": "single-choice",
+      "question": "🗣️ Sami, discutant avec un patient, dit : 'Votre composite va durer 10 ans.' Mina intervient : 'Si l'hygiène est bonne !' Quel est le facteur clé de la longévité d'un composite ?",
+      "media": [],
+      "options": [
+        "Une bonne hygiène et un contrôle régulier",
+        "Uniquement le matériau",
+        "Uniquement la technique",
+        "Uniquement l'esthétique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La longévité des composites dépend de l'hygiène et du suivi.' 🦅 Sami : 'Je vais insister sur l'hygiène.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q04",
+      "type": "single-choice",
+      "question": "📞 Mina appelle Sami : 'J'ai un patient avec une sensibilité post-opératoire après un composite !' Sami répond : 'C'est normal !' Mina dit : 'Pas forcément !' Quelle est la cause la plus fréquente ?",
+      "media": [],
+      "options": [
+        "Une contraction de polymérisation ou une adhésion insuffisante",
+        "Uniquement la profondeur de la carie",
+        "Uniquement le type de composite",
+        "Uniquement l'alimentation"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les sensibilités sont souvent liées à des défauts techniques.' 🦅 Sami : 'Je vais vérifier mon adhésion.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q05",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un patient avec une carie récurrente. Sami dit : 'Il faut refaire toute la restauration !' Mina répond : 'Et si on réparait ?' Quand peut-on réparer une carie récurrente ?",
+      "media": [],
+      "options": [
+        "Si la carie est petite et localisée, une réparation est possible",
+        "Jamais, il faut refaire",
+        "Toujours, on peut réparer",
+        "Uniquement si la restauration est en composite"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les petites caries récurrentes peuvent être réparées.' 🐆 Mina : 'Sami, tu es pragmatique !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q06",
+      "type": "single-choice",
+      "question": "🗣️ Sami, parlant à un patient, dit : 'L'inlay en céramique est le meilleur choix.' Mina intervient : 'Il est plus fragile en fonction des forces occlusales.' Où placer un inlay céramique ?",
+      "media": [],
+      "options": [
+        "Sur les prémolaires ou molaires avec occlusion contrôlée",
+        "Uniquement sur les molaires",
+        "Uniquement sur les incisives",
+        "Sur toutes les dents sans restriction"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La céramique est indiquée pour l'esthétique mais est plus fragile sur les zones de forte charge.' 🦅 Sami : 'Je vais évaluer l'occlusion.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q07",
+      "type": "single-choice",
+      "question": "📞 Sami appelle Mina : 'J'ai un patient avec une carie sous une facette !' Mina répond : 'Peut-on la réparer ?' Quand une facette peut-elle être réparée ?",
+      "media": [],
+      "options": [
+        "Si la carie est petite et n'affecte pas l'esthétique",
+        "Jamais, il faut refaire la facette",
+        "Toujours, on peut réparer",
+        "Uniquement si la facette est en composite"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les petites caries sous facette peuvent être réparées.' 🦅 Sami : 'Je vais évaluer la possibilité de réparation.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q08",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un patient avec un composite qui s'est détaché. Sami dit : 'C'est la faute du patient !' Mina répond : 'C'est peut-être un défaut d'adhésion.' Quelle est la cause la plus fréquente ?",
+      "media": [],
+      "options": [
+        "Une contamination de l'adhésif ou une mauvaise isolation",
+        "Uniquement le type de composite",
+        "Uniquement l'alimentation du patient",
+        "Uniquement le brossage"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les détachements sont souvent liés à des défauts d'adhésion.' 🐆 Mina : 'Sami, tu es honnête !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q09",
+      "type": "single-choice",
+      "question": "🗣️ Sami, en consultation, dit : 'Pour votre dent dévitalisée, il faut un inlay-core.' Mina demande : 'Et si on faisait juste un composite ?' Qu'est-ce qu'un inlay-core ?",
+      "media": [],
+      "options": [
+        "Un noyau de reconstruction radiculaire pour ancrer une couronne",
+        "Un simple composite",
+        "Une couronne provisoire",
+        "Un implant"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'inlay-core renforce la dent dévitalisée pour recevoir une couronne.' 🐆 Mina : 'Sami, tu as raison, c'est la solution la plus durable.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q10",
+      "type": "single-choice",
+      "question": "📞 Mina appelle Sami : 'J'ai un patient avec une carie radiculaire profonde !' Sami répond : 'Verre ionomère !' Mina dit : 'Pourquoi pas composite ?' Quel matériau est le plus indiqué ?",
+      "media": [],
+      "options": [
+        "Le verre ionomère pour son adhésion chimique et sa libération de fluor",
+        "Le composite uniquement",
+        "L'amalgame uniquement",
+        "La céramique uniquement"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le verre ionomère est idéal pour les caries radiculaires.' 🦅 Sami : 'Je vais utiliser du verre ionomère.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q11",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un patient avec une carie sous un bridge. Sami dit : 'Il faut refaire le bridge.' Mina répond : 'Et si on le réparait ?' Quand peut-on réparer sous un bridge ?",
+      "media": [],
+      "options": [
+        "Si la carie est accessible et n'affecte pas les piliers",
+        "Jamais, il faut refaire le bridge",
+        "Toujours, on peut réparer",
+        "Uniquement si le bridge est en céramique"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les caries accessibles sous bridge peuvent être réparées.' 🐆 Mina : 'Sami, tu es ouvert d'esprit !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q12",
+      "type": "single-choice",
+      "question": "🗣️ Sami, discutant avec un patient, dit : 'Le composite nanohybride est le meilleur.' Mina intervient : 'Il est plus cher et nécessite une technique précise.' Quels sont les avantages du nanohybride ?",
+      "media": [],
+      "options": [
+        "Meilleure polissabilité, résistance accrue et esthétique supérieure",
+        "Moins cher",
+        "Plus rapide à poser",
+        "Plus facile à utiliser"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les nanohybrides offrent d'excellentes performances esthétiques.' 🦅 Sami : 'Je vais utiliser du nanohybride pour ce patient.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q13",
+      "type": "single-choice",
+      "question": "📞 Sami appelle Mina : 'J'ai un patient avec une carie sous une couronne provisoire !' Mina répond : 'Vérifie l'étanchéité.' Pourquoi l'étanchéité est-elle cruciale ?",
+      "media": [],
+      "options": [
+        "Pour éviter les infiltrations bactériennes et les caries récurrentes",
+        "Pour améliorer l'esthétique",
+        "Pour renforcer le composite",
+        "Pour accélérer le traitement"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'étanchéité est la clé de la pérennité des restaurations.' 🦅 Sami : 'Je vais vérifier l'étanchéité de mes couronnes.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q14",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un patient avec une dent fracturée. Sami dit : 'Il faut une couronne.' Mina répond : 'Et l'onlay ?' Quand un onlay est-il indiqué ?",
+      "media": [],
+      "options": [
+        "Lorsque la fracture concerne une ou deux cuspides sans atteinte pulpaire",
+        "Toujours",
+        "Jamais",
+        "Uniquement si la dent est dévitalisée"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'onlay est indiqué pour les fractures cuspidiennes conservables.' 🐆 Mina : 'Sami, tu es un expert !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q15",
+      "type": "single-choice",
+      "question": "🗣️ Sami, parlant à un patient, dit : 'Le composite peut tout réparer.' Mina intervient : 'Il a des limites.' Quelles sont les limites du composite ?",
+      "media": [],
+      "options": [
+        "Usure, sensibilité technique, retrait de polymérisation",
+        "Aucune limite",
+        "Uniquement l'esthétique",
+        "Uniquement le prix"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le composite a des limites qu'il faut connaître.' 🦅 Sami : 'Je vais être plus prudent dans mes indications.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q16",
+      "type": "single-choice",
+      "question": "📞 Mina appelle Sami : 'J'ai un patient avec une carie sous une prothèse amovible !' Sami répond : 'Il faut refaire la prothèse !' Mina dit : 'Et si on la réparait ?' Quand peut-on réparer sous prothèse ?",
+      "media": [],
+      "options": [
+        "Si la carie est accessible sans déposer la prothèse",
+        "Jamais, il faut refaire la prothèse",
+        "Toujours, on peut réparer",
+        "Uniquement si la prothèse est en résine"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les caries accessibles sous prothèse peuvent être réparées.' 🦅 Sami : 'Je vais évaluer l'accessibilité.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q17",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un patient avec un composite qui s'est fracturé. Sami dit : 'C'est la faute du patient !' Mina répond : 'C'est peut-être une mauvaise conception.' Quelle est la cause la plus fréquente ?",
+      "media": [],
+      "options": [
+        "Une mauvaise préparation cavitaire ou une épaisseur insuffisante",
+        "Uniquement l'alimentation",
+        "Uniquement le brossage",
+        "Uniquement le type de composite"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les fractures sont souvent liées à des défauts de conception.' 🐆 Mina : 'Sami, tu es vraiment critique !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q18",
+      "type": "single-choice",
+      "question": "🗣️ Sami, en consultation, dit : 'Votre carie est profonde, il faut un inlay.' Mina demande : 'Pourquoi pas un composite direct ?' Qu'est-ce qui différencie un inlay d'un composite direct ?",
+      "media": [],
+      "options": [
+        "L'inlay est réalisé en laboratoire et offre une meilleure résistance",
+        "C'est la même chose",
+        "Le composite direct est plus résistant",
+        "L'inlay est moins esthétique"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'inlay est plus résistant pour les cavités étendues.' 🐆 Mina : 'Sami, tu as raison.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q19",
+      "type": "single-choice",
+      "question": "📞 Sami appelle Mina : 'J'ai un patient avec une carie sous une facette en composite !' Mina répond : 'Peut-on la réparer ?' Quand une facette composite peut-elle être réparée ?",
+      "media": [],
+      "options": [
+        "Si la carie est petite et que la facette est fonctionnelle",
+        "Jamais, il faut refaire la facette",
+        "Toujours, on peut réparer",
+        "Uniquement si la facette est en céramique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les petites caries sous facette composite peuvent être réparées.' 🦅 Sami : 'Je vais réparer cette facette.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q20",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un patient avec une carie récurrente sur une dent dévitalisée. Sami dit : 'Il faut une couronne !' Mina répond : 'Et l'inlay-core ?' Quand un inlay-core est-il indiqué ?",
+      "media": [],
+      "options": [
+        "Lorsqu'il reste assez de structure coronaire pour une couronne",
+        "Toujours sur les dents dévitalisées",
+        "Jamais sur les dents dévitalisées",
+        "Uniquement sur les molaires"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'inlay-core est indiqué quand la dent peut encore recevoir une couronne.' 🐆 Mina : 'Sami, tu es un vrai pro !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q21",
+      "type": "single-choice",
+      "question": "🗣️ Sami, discutant avec un patient, dit : 'Le verre ionomère est pour les patients pauvres.' Mina intervient : 'C'est un excellent matériau !' Quels sont les avantages du verre ionomère ?",
+      "media": [],
+      "options": [
+        "Adhésion chimique, libération de fluor, biocompatibilité",
+        "Moins cher uniquement",
+        "Plus esthétique",
+        "Plus résistant"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le verre ionomère a des propriétés uniques intéressantes.' 🦅 Sami : 'Je vais réévaluer ce matériau.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q22",
+      "type": "single-choice",
+      "question": "📞 Mina appelle Sami : 'J'ai un patient avec une carie sous un onlay !' Sami répond : 'Il faut refaire l'onlay !' Mina dit : 'Et si on le réparait ?' Quand peut-on réparer sous un onlay ?",
+      "media": [],
+      "options": [
+        "Si la carie est périphérique et accessible",
+        "Jamais, il faut refaire l'onlay",
+        "Toujours, on peut réparer",
+        "Uniquement si l'onlay est en composite"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les caries périphériques sous onlay peuvent être réparées.' 🦅 Sami : 'Je vais évaluer la possibilité de réparation.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q23",
+      "type": "single-choice",
+      "question": "🏥 Sami et Mina reçoivent un patient avec une dent fracturée verticalement. Sami dit : 'Il faut une couronne.' Mina répond : 'Et l'extraction ?' Quand une dent fracturée verticalement est-elle non conservable ?",
+      "media": [],
+      "options": [
+        "Si la fracture atteint la furcation ou est sous-gingivale profonde",
+        "Toujours",
+        "Jamais",
+        "Uniquement si la dent est dévitalisée"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les fractures verticales profondes ont un mauvais pronostic.' 🐆 Mina : 'Sami, tu es vraiment expert !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q24",
+      "type": "single-choice",
+      "question": "🗣️ Sami, parlant à un patient, dit : 'Le composite est le meilleur matériau.' Mina intervient : 'L'amalgame a encore des indications.' Quand l'amalgame est-il encore indiqué ?",
+      "media": [],
+      "options": [
+        "Pour les cavités de Classe I et II sur les dents postérieures",
+        "Jamais, l'amalgame est obsolète",
+        "Toujours, l'amalgame est le meilleur",
+        "Uniquement sur les dents de lait"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'amalgame a encore des indications dans certaines situations.' 🦅 Sami : 'Je vais réfléchir avant de choisir le matériau.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q25",
+      "type": "single-choice",
+      "question": "📞 Sami appelle Mina : 'J'ai un patient avec une carie sous un bridge collé !' Mina répond : 'Peut-on la réparer ?' Quand une carie sous bridge collé peut-elle être réparée ?",
+      "media": [],
+      "options": [
+        "Si la carie est accessible sans déposer le bridge",
+        "Jamais, il faut refaire le bridge",
+        "Toujours, on peut réparer",
+        "Uniquement si le bridge est en céramique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les caries accessibles sous bridge collé peuvent être réparées.' 🦅 Sami : 'Je vais évaluer l'accessibilité.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SOIN_D2_Q26",
+      "type": "single-choice",
+      "question": "🦅 Sami et 🐆 Mina discutent de l'avenir des soins conservateurs. Sami dit : 'La CFAO va remplacer les composites !' Mina répond : 'Elle va les compléter.' Quel est l'avenir des soins conservateurs ?",
+      "media": [],
+      "options": [
+        "La CFAO complète les soins conservateurs, mais ne les remplace pas",
+        "La CFAO remplacera tout",
+        "Les composites vont disparaître",
+        "Les soins conservateurs sont obsolètes"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La CFAO est un outil complémentaire aux soins conservateurs.' 🦅 Sami : 'Je suis d'accord, on garde notre savoir-faire !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_expert1_001",
+    "title": "Acondicionamiento del Consultorio - Experto 1",
+    "specialty": "AMEN",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1800,
+    "chapter": "Estrategia judicial"
+  },
+  "questions": [
+    {
+      "id": "AMEN_X1_Q01",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan lo demanda por impago del alquiler. Según el artículo 26, ¿cuál es el plazo para resolver la situación antes del desalojo?",
+      "media": [],
+      "options": [
+        "3 días",
+        "15 días",
+        "30 días",
+        "3 meses"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 26, párr. 2: el plazo se fija en 15 días cuando la demanda se basa en el impago del alquiler.",
+      "difficulty": "difícil",
+      "category": "Procedimiento de desalojo",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["demanda", "pago", "plazo"],
+      "references": ["Ley 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X1_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha recibido una notificación de recuperación personal, pero la impugna por el motivo. Según la jurisprudencia, ¿a quién corresponde la carga de la prueba?",
+      "media": [],
+      "options": [
+        "El propietario debe probar su buena fe",
+        "El arrendatario debe probar la mala fe del propietario",
+        "El tribunal debe verificar la buena fe de oficio",
+        "La carga de la prueba corresponde al tribunal"
+      ],
+      "correct": 0,
+      "explanation": "La jurisprudencia exige al propietario probar su buena fe y la realidad de su intención de recuperar el local.",
+      "difficulty": "difícil",
+      "category": "Litigios",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["recuperación", "buena fe", "prueba"],
+      "references": ["Jurisprudencia", "Ley 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan quiere impugnar el importe de la indemnización por desalojo propuesta por el propietario. Según el artículo 7, ¿cuál es la vía de impugnación posible?",
+      "media": [],
+      "options": [
+        "Acudir al tribunal de primera instancia",
+        "Acudir al tribunal de comercio",
+        "Recurrir a un perito judicial",
+        "Ambas primeras vías son posibles"
+      ],
+      "correct": 3,
+      "explanation": "El arrendatario puede acudir al tribunal para impugnar la indemnización y, si es necesario, solicitar una pericia.",
+      "difficulty": "difícil",
+      "category": "Litigios sobre indemnización",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indemnización", "impugnación", "pericia"],
+      "references": ["Ley 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X1_Q04",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Kamali se niega a pagarle la indemnización por desalojo. Según el artículo 28, ¿qué puede hacer el arrendatario?",
+      "media": [],
+      "options": [
+        "Acudir al tribunal para la ejecución de la sentencia",
+        "Permanecer en el local hasta el pago",
+        "Solicitar el embargo de los bienes del propietario",
+        "Todas las respuestas anteriores son correctas"
+      ],
+      "correct": 3,
+      "explanation": "Artículo 28: el arrendatario puede acudir al tribunal para la ejecución de la sentencia y utilizar las vías de ejecución forzosa.",
+      "difficulty": "difícil",
+      "category": "Ejecución de la sentencia",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["ejecución", "indemnización", "vías de ejecución"],
+      "references": ["Ley 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha realizado obras de acondicionamiento por valor de 300.000 dirhams. Según el artículo 7, ¿se incluyen estas obras en la indemnización por desalojo?",
+      "media": [],
+      "options": [
+        "Sí, siempre que se justifiquen con pruebas",
+        "No, las obras no se indemnizan",
+        "Sí, solo si se amortizan en 5 años",
+        "No, solo se tiene en cuenta el valor del fondo"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 7, párr. 3: la indemnización incluye los gastos de obras siempre que estén justificados.",
+      "difficulty": "difícil",
+      "category": "Valoración de la indemnización",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["obras", "indemnización", "prueba"],
+      "references": ["Ley 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha cedido su arrendamiento sin cumplir con las formalidades de notificación. Según el artículo 25, ¿qué riesgo corre?",
+      "media": [],
+      "options": [
+        "La cesión no es oponible al propietario",
+        "El propietario puede resolver el contrato de arrendamiento",
+        "El nuevo arrendatario puede ser desalojado",
+        "Todas las respuestas anteriores son correctas"
+      ],
+      "correct": 3,
+      "explanation": "Artículo 25, párr. 3: la cesión solo es oponible al arrendador desde la fecha de notificación. Sin ella, la cesión no es oponible.",
+      "difficulty": "difícil",
+      "category": "Cesión del arrendamiento",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["cesión", "notificación", "oponibilidad"],
+      "references": ["Ley 49-16 Art.25"]
+    },
+    {
+      "id": "AMEN_X1_Q07",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan ha incluido en el contrato de arrendamiento una condición resolutoria. Según el artículo 33, ¿cómo se aplica esta condición?",
+      "media": [],
+      "options": [
+        "Se aplica automáticamente en caso de impago",
+        "Requiere un requerimiento previo de 15 días",
+        "Es automáticamente nula",
+        "Debe ser homologada por el tribunal"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 33: la condición resolutoria requiere un requerimiento previo de 15 días sin efecto.",
+      "difficulty": "difícil",
+      "category": "Condición resolutoria",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["condición resolutoria", "requerimiento", "plazo"],
+      "references": ["Ley 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_X1_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Kamali quiere utilizar el procedimiento de urgencia para impugnar una notificación abusiva. Según la ley 49-16, ¿es esto posible?",
+      "media": [],
+      "options": [
+        "Sí, el juez de medidas provisionales puede decidir con urgencia",
+        "No, la impugnación de la notificación debe hacerse por la vía de fondo",
+        "Sí, pero solo para cuestiones de vecindad",
+        "No, no existen medidas provisionales en el arrendamiento comercial"
+      ],
+      "correct": 0,
+      "explanation": "El juez de medidas provisionales puede intervenir con urgencia para suspender los efectos de una notificación abusiva.",
+      "difficulty": "difícil",
+      "category": "Procedimiento de urgencia",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["medidas provisionales", "urgencia", "notificación"],
+      "references": ["Código de procedimiento civil", "Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha sido víctima de un desalojo sin indemnización, aunque tenía derecho a la prórroga. Según la jurisprudencia, ¿cómo puede ser indemnizado?",
+      "media": [],
+      "options": [
+        "Mediante la concesión de una indemnización por abuso de procedimiento",
+        "Mediante la declaración de nulidad de la notificación",
+        "Mediante el pago de una indemnización por desalojo con intereses",
+        "Todas las vías anteriores son posibles"
+      ],
+      "correct": 3,
+      "explanation": "La jurisprudencia ofrece varias vías de impugnación: nulidad de la notificación, indemnización por desalojo, reparación de perjuicios.",
+      "difficulty": "difícil",
+      "category": "Litigios",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["desalojo", "indemnización", "impugnación"],
+      "references": ["Jurisprudencia"]
+    },
+    {
+      "id": "AMEN_X1_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Kamali se enfrenta a un propietario de mala fe que simula una recuperación personal. Según el artículo 26, ¿qué sanciones son posibles?",
+      "media": [],
+      "options": [
+        "La nulidad de la notificación",
+        "El pago de una indemnización por desalojo",
+        "La reparación de perjuicios por abuso de procedimiento",
+        "Todas las sanciones anteriores son posibles"
+      ],
+      "correct": 3,
+      "explanation": "La mala fe del propietario conlleva la nulidad de la notificación, el pago de indemnización y la reparación de perjuicios.",
+      "difficulty": "difícil",
+      "category": "Mala fe",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["mala fe", "sanciones", "recuperación"],
+      "references": ["Ley 49-16 Art.26"]
+    },
+    {
+      "id": "AMEN_X1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan quiere recurrir la sentencia del tribunal de primera instancia. Según el derecho procesal civil, ¿cuál es el plazo para recurrir?",
+      "media": [],
+      "options": [
+        "15 días",
+        "1 mes",
+        "2 meses",
+        "3 meses"
+      ],
+      "correct": 0,
+      "explanation": "El plazo para recurrir en los litigios de arrendamiento comercial suele ser de 15 días.",
+      "difficulty": "difícil",
+      "category": "Vías de recurso",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["recurso", "plazo", "vías de recurso"],
+      "references": ["Código de procedimiento civil"]
+    },
+    {
+      "id": "AMEN_X1_Q12",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Kamali ha obtenido una sentencia de desalojo, pero no paga la indemnización. Según el artículo 28, ¿qué puede hacer el arrendatario?",
+      "media": [],
+      "options": [
+        "Solicitar la ejecución forzosa de la sentencia",
+        "Permanecer en el local hasta el pago",
+        "Solicitar el embargo de los alquileres que perciba el propietario",
+        "Todas estas acciones son posibles"
+      ],
+      "correct": 3,
+      "explanation": "Artículo 28: el arrendatario puede solicitar la ejecución forzosa, permanecer en el local o embargar los alquileres.",
+      "difficulty": "difícil",
+      "category": "Ejecución forzosa",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["ejecución", "embargo", "vías de ejecución"],
+      "references": ["Ley 49-16 Art.28"]
+    },
+    {
+      "id": "AMEN_X1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha recibido una notificación de demolición-reconstrucción, pero el permiso de construcción aún no ha sido concedido. Según el artículo 18, ¿qué debe hacer el propietario?",
+      "media": [],
+      "options": [
+        "Esperar a obtener el permiso antes de enviar la notificación",
+        "Enviar la notificación y presentar el permiso más tarde",
+        "Enviar la notificación sin permiso, no es obligatorio",
+        "Solicitar una exención al tribunal"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 18: el propietario debe presentar un permiso de construcción válido. La notificación es nula si el permiso no ha sido concedido.",
+      "difficulty": "difícil",
+      "category": "Demolición-reconstrucción",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["permiso de construcción", "notificación", "validez"],
+      "references": ["Ley 49-16 Art.18"]
+    },
+    {
+      "id": "AMEN_X1_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Kamali impugna la valoración de su fondo de comercio. Según el artículo 7, ¿qué medio de prueba es el más adecuado?",
+      "media": [],
+      "options": [
+        "La pericia contable",
+        "La tasación de un agente inmobiliario",
+        "La declaración fiscal de los últimos 4 ejercicios",
+        "La valoración del propietario"
+      ],
+      "correct": 2,
+      "explanation": "Artículo 7, párr. 3: la indemnización se calcula sobre la base de las declaraciones fiscales de los últimos cuatro ejercicios, que tienen fuerza probatoria.",
+      "difficulty": "difícil",
+      "category": "Valoración del fondo",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["prueba", "fiscal", "declaración"],
+      "references": ["Ley 49-16 Art.7"]
+    },
+    {
+      "id": "AMEN_X1_Q15",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Ramdan ha vendido el edificio durante el procedimiento de desalojo. Según el artículo 26 bis, ¿cuáles son las consecuencias para el procedimiento?",
+      "media": [],
+      "options": [
+        "El procedimiento se extingue automáticamente",
+        "El procedimiento continúa contra el nuevo propietario",
+        "El procedimiento debe reiniciarse",
+        "El arrendatario debe demandar al nuevo propietario"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 26 bis: el nuevo propietario está obligado a respetar los contratos de arrendamiento en curso. El procedimiento continúa contra él.",
+      "difficulty": "difícil",
+      "category": "Venta del edificio",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["venta", "procedimiento", "continuación"],
+      "references": ["Ley 49-16 Art.26 bis"]
+    },
+    {
+      "id": "AMEN_X1_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha sido desalojado ilegalmente por el propietario. Según la jurisprudencia, ¿puede el arrendatario reclamar una indemnización específica?",
+      "media": [],
+      "options": [
+        "Sí, por violación del derecho de uso",
+        "Sí, por perjuicio comercial",
+        "Sí, por gastos de reinstalación",
+        "Sí, todas estas indemnizaciones son posibles"
+      ],
+      "correct": 3,
+      "explanation": "En caso de desalojo ilegal, el arrendatario puede obtener varias indemnizaciones: por violación del uso, perjuicio comercial, gastos de reinstalación.",
+      "difficulty": "difícil",
+      "category": "Desalojo ilegal",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["desalojo ilegal", "indemnizaciones", "perjuicio"],
+      "references": ["Jurisprudencia"]
+    },
+    {
+      "id": "AMEN_X1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan quiere que se declare la nulidad de una de las cláusulas de su contrato de arrendamiento. Según el código de procedimiento civil, ¿qué demanda debe interponer?",
+      "media": [],
+      "options": [
+        "Demanda de nulidad",
+        "Medidas provisionales",
+        "Demanda de reconocimiento",
+        "Demanda ordinaria"
+      ],
+      "correct": 0,
+      "explanation": "La demanda de nulidad es la vía adecuada para que se declare la nulidad de una cláusula.",
+      "difficulty": "difícil",
+      "category": "Nulidad de cláusulas",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["nulidad", "demanda", "cláusula"],
+      "references": ["Código de procedimiento civil", "Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X1_Q18",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Kamali ha interpuesto una demanda de confirmación de la notificación. Según el artículo 27, ¿puede el arrendatario reclamar una indemnización antes de la sentencia?",
+      "media": [],
+      "options": [
+        "Sí, durante el juicio de confirmación",
+        "No, debe esperar la sentencia definitiva",
+        "Sí, solo después del desalojo",
+        "No, la indemnización debe solicitarse en apelación"
+      ],
+      "correct": 0,
+      "explanation": "Artículo 27, párr. 2: el arrendatario puede presentar una solicitud de indemnización durante el juicio de confirmación de la notificación.",
+      "difficulty": "difícil",
+      "category": "Demanda de confirmación",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["confirmación de notificación", "indemnización", "procedimiento"],
+      "references": ["Ley 49-16 Art.27"]
+    },
+    {
+      "id": "AMEN_X1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan y el propietario han llegado a un acuerdo transaccional. Según la ley 49-16, ¿es válido este acuerdo?",
+      "media": [],
+      "options": [
+        "Sí, siempre que respete las normas de orden público",
+        "No, solo el tribunal puede homologar el acuerdo",
+        "Sí, solo con la participación de un abogado",
+        "No, los acuerdos transaccionales están prohibidos en materia de arrendamiento"
+      ],
+      "correct": 0,
+      "explanation": "Los acuerdos transaccionales son válidos siempre que respeten las normas de orden público de la ley 49-16.",
+      "difficulty": "difícil",
+      "category": "Acuerdo transaccional",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["acuerdo transaccional", "transacción", "orden público"],
+      "references": ["Ley 49-16"]
+    },
+    {
+      "id": "AMEN_X1_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha ganado su caso en apelación. Según el código de procedimiento civil, ¿es posible el recurso de casación en materia de arrendamiento comercial?",
+      "media": [],
+      "options": [
+        "Sí, pero solo por motivos de derecho",
+        "No, la apelación es la última instancia",
+        "Sí, la casación siempre es posible",
+        "No, la sentencia de apelación es firme"
+      ],
+      "correct": 0,
+      "explanation": "El recurso de casación es posible por motivos de derecho, incluso en materia de arrendamiento comercial.",
+      "difficulty": "difícil",
+      "category": "Vías de recurso",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["casación", "recurso", "derecho"],
+      "references": ["Código de procedimiento civil"]
+    },
+    {
+      "id": "AMEN_X1_Q21",
+      "type": "single-choice",
+      "question": "Al Dr. Ramdan se le ha notificado una citación. Según el código de procedimiento civil, ¿cuál es el plazo para comparecer en los litigios de arrendamiento comercial?",
+      "media": [],
+      "options": [
+        "8 días",
+        "15 días",
+        "1 mes",
+        "2 meses"
+      ],
+      "correct": 1,
+      "explanation": "El plazo para comparecer en los litigios de arrendamiento comercial suele ser de 15 días.",
+      "difficulty": "difícil",
+      "category": "Procedimiento",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["comparecencia", "plazo", "procedimiento"],
+      "references": ["Código de procedimiento civil"]
+    },
+    {
+      "id": "AMEN_X1_Q22",
+      "type": "single-choice",
+      "question": "El propietario del Dr. Kamali ha enviado un requerimiento de pago. Según el artículo 33, ¿qué es un requerimiento de pago?",
+      "media": [],
+      "options": [
+        "Una simple solicitud informal",
+        "Un acto judicial de alguacil que intima al pago",
+        "Un procedimiento judicial",
+        "Una simple carta certificada"
+      ],
+      "correct": 1,
+      "explanation": "Artículo 33: el requerimiento de pago es un acto judicial de alguacil que intima al pago.",
+      "difficulty": "difícil",
+      "category": "Procedimiento",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["requerimiento", "pago", "alguacil"],
+      "references": ["Ley 49-16 Art.33"]
+    },
+    {
+      "id": "AMEN_X1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan quiere impugnar un requerimiento de pago. Según el código de procedimiento civil, ¿cuál es la vía de impugnación posible?",
+      "media": [],
+      "options": [
+        "Acudir al tribunal para impugnar la validez del requerimiento",
+        "Ignorar el requerimiento",
+        "Pagar para evitar el conflicto",
+        "Solicitar un aplazamiento de pago"
+      ],
+      "correct": 0,
+      "explanation": "El arrendatario puede acudir al tribunal para impugnar la validez del requerimiento de pago.",
+      "difficulty": "difícil",
+      "category": "Impugnación",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["requerimiento", "impugnación", "validez"],
+      "references": ["Código de procedimiento civil"]
+    },
+    {
+      "id": "AMEN_X1_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Kamali ha obtenido una pericia judicial. Según el código de procedimiento civil, ¿cuál es la utilidad de la pericia?",
+      "media": [],
+      "options": [
+        "Aclarar al tribunal las cuestiones técnicas",
+        "Acelerar el procedimiento",
+        "Permitir llegar a un acuerdo transaccional",
+        "Todas estas respuestas son correctas"
+      ],
+      "correct": 3,
+      "explanation": "La pericia aclara al tribunal las cuestiones técnicas y puede facilitar un acuerdo transaccional.",
+      "difficulty": "difícil",
+      "category": "Pericia",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["pericia", "procedimiento", "técnico"],
+      "references": ["Código de procedimiento civil"]
+    },
+    {
+      "id": "AMEN_X1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Ramdan ha obtenido finalmente justicia ante los tribunales. Según el artículo 28, ¿a qué indemnización puede aspirar?",
+      "media": [],
+      "options": [
+        "El importe íntegro de la indemnización por desalojo",
+        "La reparación de perjuicios por el daño sufrido",
+        "El reembolso de las costas judiciales",
+        "Todas estas indemnizaciones son posibles"
+      ],
+      "correct": 3,
+      "explanation": "Artículo 28: el arrendatario puede obtener la indemnización por desalojo, la reparación de perjuicios y el reembolso de las costas judiciales.",
+      "difficulty": "difícil",
+      "category": "Indemnización",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": ["indemnización", "perjuicios", "costas"],
+      "references": ["Ley 49-16 Art.28"]
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "mutuelles_prises_en_charge_intermediaire1_001",
+    "title": "Mutuelles_prises_en_charge - Intermédiaire 1",
+    "specialty": "MUTU",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "MUTU_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Mabrouki reçoit un patient atteint d'une ALD. Dr Alami lui rappelle les droits du patient. Selon l'article 9 de la loi 65-00, quelle est la règle concernant le ticket modérateur pour les ALD ?",
+      "media": [],
+      "options": [
+        "Le ticket modérateur est maintenu à 20%",
+        "Le ticket modérateur est exonéré totalement ou partiellement",
+        "Le ticket modérateur est doublé",
+        "Le patient doit payer 50% des soins"
+      ],
+      "correct": 1,
+      "explanation": "Dr Alami explique : 'En cas de maladie grave ou invalidante nécessitant des soins de longue durée, la part restante est exonérée totalement ou partiellement.' Dr Mabrouki : 'Je vais informer mon patient de cette exonération.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Alami a un patient qui souhaite ajouter ses parents à sa couverture AMO. Dr Mabrouki lui rappelle les conditions. Selon l'article 5 de la loi 65-00, à quelle condition l'assuré peut-il demander l'extension à ses parents ?",
+      "media": [],
+      "options": [
+        "Automatiquement sans cotisation supplémentaire",
+        "À condition de prendre en charge leur cotisation",
+        "Uniquement si les parents sont âgés de plus de 70 ans",
+        "L'extension aux parents n'est jamais possible"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'L'article 5 permet l'extension à condition que l'assuré prenne en charge la cotisation de ses parents.' Dr Alami : 'Je vais l'informer de cette condition.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Mabrouki soigne un patient dont le conjoint est décédé récemment. Dr Alami lui rappelle les droits des ayants droit. Selon l'article 35 de la loi 65-00, pendant combien de temps les ayants droit continuent-ils à bénéficier des prestations ?",
+      "media": [],
+      "options": [
+        "Pendant une période de six mois",
+        "Pendant une période de deux années",
+        "Pendant une période de cinq années",
+        "Jusqu'à la fin de vie des ayants droit"
+      ],
+      "correct": 1,
+      "explanation": "Dr Alami explique : 'L'article 35 prévoit un maintien des droits de deux ans pour les ayants droit de l'assuré décédé.' Dr Mabrouki : 'Je vais informer ma patiente de ses droits.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Alami a un patient de 24 ans étudiant à l'université. Dr Mabrouki lui demande de vérifier son statut d'ayant droit. Selon la loi 54.23, jusqu'à quel âge un enfant non marié poursuivant des études supérieures est-il couvert ?",
+      "media": [],
+      "options": [
+        "Jusqu'à 21 ans sans condition",
+        "Jusqu'à 26 ans",
+        "Jusqu'à 30 ans",
+        "Jusqu'à l'obtention du diplôme sans limite"
+      ],
+      "correct": 2,
+      "explanation": "Dr Mabrouki explique : 'La loi 54.23 étend l'âge de couverture pour les étudiants célibataires poursuivant leurs études jusqu'à 30 ans.' Dr Alami : 'Je vais lui demander son certificat de scolarité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui bénéficie d'une mutuelle complémentaire. Dr Alami lui demande comment se fait la coordination. Selon les règles générales, quel est le rôle de la mutuelle complémentaire ?",
+      "media": [],
+      "options": [
+        "Elle remplace l'AMO",
+        "Elle augmente les taux de remboursement de l'AMO",
+        "Elle gère l'AMO pour le secteur public",
+        "Elle est réservée aux actes esthétiques"
+      ],
+      "correct": 1,
+      "explanation": "Dr Alami explique : 'Les mutuelles complémentaires augmentent les taux de remboursement de l'AMO (ex: 80% + 16 à 20% supplémentaire).' Dr Mabrouki : 'Je vais informer mon patient de cette complémentarité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Alami doit réaliser une prothèse dentaire sur un patient. Dr Mabrouki lui rappelle la procédure. Selon les règles des mutuelles, quelle démarche administrative est souvent nécessaire ?",
+      "media": [],
+      "options": [
+        "Aucune, le traitement est automatiquement pris en charge",
+        "Une entente préalable avec envoi d'un devis détaillé",
+        "Une simple facture à envoyer après le traitement",
+        "Un accord oral avec le patient"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'Les prothèses dentaires nécessitent une entente préalable, avec envoi d'un devis détaillé avant de commencer le traitement.' Dr Alami : 'Je vais préparer le devis et l'envoyer à la mutuelle.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui a perdu son droit à l'AMO après avoir cessé son activité. Dr Alami lui demande de vérifier les délais de maintien des droits. Selon l'article 34 de la loi 65-00, combien de temps une personne conserve-t-elle ses droits après avoir cessé de remplir les conditions ?",
+      "media": [],
+      "options": [
+        "Une période maximum de six mois",
+        "Une période de deux années complètes",
+        "Une période d'un mois seulement",
+        "Aucune période de maintien des droits"
+      ],
+      "correct": 0,
+      "explanation": "Dr Alami explique : 'L'article 34 prévoit un maintien des droits pendant une période maximum de six mois après la cessation des conditions.' Dr Mabrouki : 'Je vais informer mon patient de ce délai.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Alami a un patient qui souhaite poser un implant dentaire. Dr Mabrouki l'informe sur la couverture. Selon les règles générales de l'AMO et des mutuelles, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "L'AMO rembourse l'implant à 80%",
+        "L'implant n'est pas couvert par l'AMO, mais peut l'être par certaines mutuelles",
+        "Toutes les mutuelles remboursent les implants sans condition",
+        "L'État prend en charge la totalité des implants"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'L'AMO ne couvre pas les implants dentaires, mais certaines mutuelles complémentaires peuvent proposer une prise en charge.' Dr Alami : 'Je vais orienter mon patient vers sa mutuelle.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui a bénéficié de soins à l'étranger. Dr Alami lui demande de vérifier les conditions de remboursement. Selon l'article 13 de la loi 65-00, quelles prestations à l'étranger sont remboursables ?",
+      "media": [],
+      "options": [
+        "Toutes les prestations sans condition",
+        "En cas de maladie inopinée ou d'absence de soins appropriés au Maroc",
+        "Seulement pour les patients en voyage d'affaires",
+        "Aucune prestation à l'étranger n'est remboursable"
+      ],
+      "correct": 1,
+      "explanation": "Dr Alami explique : 'L'article 13 admet le remboursement en cas de maladie inopinée lors d'un séjour, ou lorsque les soins ne peuvent être dispensés au Maroc.' Dr Mabrouki : 'Je vais vérifier l'accord préalable.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Alami a un patient fonctionnaire affilié à la CNOPS. Dr Mabrouki l'informe sur les évolutions. Selon la loi 54.23, quel changement majeur interviendra dans la gestion de l'AMO pour ce patient ?",
+      "media": [],
+      "options": [
+        "La CNOPS reste l'unique gestionnaire",
+        "La gestion de l'AMO du secteur public sera transférée à la CNSS",
+        "Les patients devront souscrire une assurance privée",
+        "Le régime AMO pour les fonctionnaires sera supprimé"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'La loi 54.23 prévoit de confier la gestion du régime de l'AMO de base à un seul organisme, la CNSS.' Dr Alami : 'Je vais informer mon patient de cette évolution.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui n'a pas de couverture AMO et ne peut pas payer ses cotisations. Dr Alami lui conseille sur les options. Selon la loi 65-00, quel régime peut-il intégrer ?",
+      "media": [],
+      "options": [
+        "Le régime AMO de base",
+        "Le régime AMO-TADAMON",
+        "Une assurance privée obligatoire",
+        "Aucun régime, il doit payer ses soins"
+      ],
+      "correct": 1,
+      "explanation": "Dr Alami explique : 'Le régime AMO-TADAMON est prévu pour les personnes incapables de payer leurs cotisations, avec prise en charge par l'État.' Dr Mabrouki : 'Je vais orienter mon patient vers ce régime.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr Alami doit réaliser un traitement orthodontique sur un jeune patient. Dr Mabrouki lui rappelle la procédure. Selon les règles des mutuelles, quelle est la démarche recommandée ?",
+      "media": [],
+      "options": [
+        "Commencer le traitement immédiatement",
+        "Obtenir une entente préalable avec envoi d'un devis et d'une radiographie",
+        "Attendre la fin du traitement pour demander un remboursement",
+        "Se contenter d'un accord verbal avec la mutuelle"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'L'orthodontie nécessite une entente préalable avec envoi d'un devis détaillé accompagné d'une radiographie.' Dr Alami : 'Je vais préparer le dossier pour la mutuelle.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui a changé d'employeur (du public au privé). Dr Alami lui demande comment s'effectue le changement de gestionnaire. Selon les règles de l'AMO, quelle est la situation ?",
+      "media": [],
+      "options": [
+        "Le patient doit s'affilier manuellement à la CNSS",
+        "Le transfert est automatique avec coordination entre les organismes",
+        "Le patient perd sa couverture pendant 6 mois",
+        "Le patient doit souscrire une assurance privée"
+      ],
+      "correct": 1,
+      "explanation": "Dr Alami explique : 'Des règles de coordination entre les organismes gestionnaires sont prévues en cas de mobilité entre les secteurs.' Dr Mabrouki : 'Je vais rassurer mon patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Alami a un patient affilié à la MGPAP. Dr Mabrouki lui demande les particularités de cette mutuelle. Selon les informations disponibles, à qui s'adresse la MGPAP ?",
+      "media": [],
+      "options": [
+        "Aux salariés du secteur privé",
+        "Au personnel des administrations publiques",
+        "À tous les citoyens sans condition",
+        "Aux professions libérales"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'La MGPAP est spécifique au personnel des administrations publiques.' Dr Alami : 'Je vais vérifier l'affiliation de mon patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui a subi un accident de la circulation. Dr Alami lui demande de vérifier la prise en charge. Selon la loi 65-00, comment se gère le risque en cas d'accident tiers ?",
+      "media": [],
+      "options": [
+        "Le patient doit assumer la totalité des coûts",
+        "L'organisme gestionnaire exerce un recours légal contre le tiers",
+        "Le dentiste supporte la perte financière totale",
+        "La loi interdit toute demande de remboursement"
+      ],
+      "correct": 1,
+      "explanation": "Dr Alami explique : 'La loi permet le recours contre le tiers responsable pour récupérer les frais engagés.' Dr Mabrouki : 'Je vais orienter mon patient vers la CNSS.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Alami constate qu'un patient a bénéficié d'un remboursement indu. Dr Mabrouki lui conseille de signaler l'erreur. Selon l'article 135 de la loi 65-00, que risque une personne qui obtient des prestations indûment ?",
+      "media": [],
+      "options": [
+        "Une amende de 1.000 à 5.000 dirhams",
+        "Une peine de prison de 6 mois",
+        "La suspension de ses droits",
+        "Un simple avertissement"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mabrouki explique : 'L'article 135 punit la fraude ou fausse déclaration pour obtenir des prestations non dues d'une amende de 1.000 à 5.000 dirhams.' Dr Alami : 'Je vais signaler l'erreur.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui souhaite des facettes esthétiques. Dr Alami lui rappelle les règles. Selon la loi 65-00, comment ces soins sont-ils pris en charge ?",
+      "media": [],
+      "options": [
+        "À 80% comme les soins courants",
+        "Ils sont exclus du champ de l'AMO comme actes esthétiques",
+        "À 100% si le dentiste le prescrit",
+        "Partiellement selon la mutuelle"
+      ],
+      "correct": 1,
+      "explanation": "Dr Alami explique : 'Les interventions de chirurgie esthétique, incluant les facettes esthétiques, sont exclues du champ de l'AMO.' Dr Mabrouki : 'Je vais informer mon patient de cette exclusion.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Alami a un patient qui a perdu sa carte d'assuré. Dr Mabrouki lui conseille de vérifier son numéro d'immatriculation. Selon la loi 65-00, l'immatriculation à l'AMO est-elle obligatoire ?",
+      "media": [],
+      "options": [
+        "Non, elle reste facultative selon le contrat",
+        "Oui, pour toute personne exerçant une activité",
+        "Oui, uniquement pour le secteur public",
+        "Non, sauf en cas de maladie grave constatée"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'L'obligation d'immatriculation est le socle de l'AMO pour toute personne exerçant une activité.' Dr Alami : 'Je vais orienter mon patient vers la CNSS.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui bénéficie du RAMED. Dr Alami lui demande de vérifier les conditions. Selon l'article 3 de la loi 65-00, à qui s'adresse le RAMED ?",
+      "media": [],
+      "options": [
+        "Aux personnes économiquement faibles non assujetties à l'AMO",
+        "Aux fonctionnaires et agents de l'Etat",
+        "Aux travailleurs indépendants libéraux",
+        "Aux étudiants de l'enseignement supérieur"
+      ],
+      "correct": 0,
+      "explanation": "Dr Alami explique : 'Le RAMED est destiné aux personnes économiquement faibles qui ne bénéficient d'aucun régime d'AMO.' Dr Mabrouki : 'Je vais vérifier si mon patient remplit les conditions.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Alami a un patient qui souhaite un traitement long. Dr Mabrouki lui conseille de vérifier le plafond de remboursement. Selon la loi 65-00, comment sont fixées les limites de prise en charge en soins ?",
+      "media": [],
+      "options": [
+        "Elles sont fixées par le libre choix du praticien",
+        "Elles sont définies par des nomenclatures des actes",
+        "Elles dépendent du montant annuel total cotisé",
+        "Elles sont décrétées par les associations médicales"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'La nomenclature fixe les tarifs de référence des actes et leurs limites de prise en charge.' Dr Alami : 'Je vais consulter la nomenclature avant le traitement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui a subi une hospitalisation. Dr Alami lui demande de vérifier la prise en charge. Selon l'article 7 de la loi 65-00, quels types de soins sont garantis par l'AMO ?",
+      "media": [],
+      "options": [
+        "Uniquement les soins curatifs et l'hospitalisation",
+        "Soins curatifs, préventifs, réhabilitation, maternité et bucco-dentaires",
+        "Les soins esthétiques uniquement",
+        "Exclusivement les médicaments"
+      ],
+      "correct": 1,
+      "explanation": "Dr Alami explique : 'L'article 7 énumère les soins préventifs, curatifs, de réhabilitation, de maternité, bucco-dentaires, etc.' Dr Mabrouki : 'Je vais vérifier la couverture complète.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Alami a un patient qui a souscrit une assurance complémentaire. Dr Mabrouki lui demande de coordonner les remboursements. Selon l'article 9 de la loi 65-00, quelle est la règle concernant l'assurance complémentaire ?",
+      "media": [],
+      "options": [
+        "L'assuré ne peut pas souscrire d'assurance complémentaire",
+        "L'assuré conserve la liberté de souscrire une assurance complémentaire",
+        "L'assurance complémentaire est obligatoire",
+        "L'assurance complémentaire est interdite"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'L'article 9 précise que l'assuré conserve la liberté de souscrire une assurance complémentaire.' Dr Alami : 'Je vais coordonner les deux prises en charge.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Mabrouki a un patient qui a consulté sans être immatriculé. Dr Alami lui conseille de vérifier son statut. Selon l'article 2 de la loi 65-00, à quelles catégories de personnes s'applique l'AMO ?",
+      "media": [],
+      "options": [
+        "Aux fonctionnaires, salariés, pensionnés, travailleurs indépendants et étudiants",
+        "Uniquement aux salariés du secteur privé",
+        "Exclusivement aux fonctionnaires de l'Etat",
+        "Aux seuls titulaires de pension"
+      ],
+      "correct": 0,
+      "explanation": "Dr Alami explique : 'L'AMO s'applique à toutes ces catégories : fonctionnaires, salariés, pensionnés, indépendants, libéraux, étudiants.' Dr Mabrouki : 'Je vais vérifier la situation de mon patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Alami doit facturer des soins à un patient ayant une mutuelle et l'AMO. Dr Mabrouki lui conseille de respecter les tarifs conventionnés. Selon la loi 65-00, quel est le tarif de base pour le remboursement ?",
+      "media": [],
+      "options": [
+        "Le tarif libre choisi par le praticien",
+        "Le tarif de base pour le remboursement",
+        "Le tarif maximal autorisé en urgence",
+        "Le tarif réduit pour les bas revenus"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mabrouki explique : 'La tarification nationale sert de référence AMO pour le remboursement des soins.' Dr Alami : 'Je vais appliquer le tarif national.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "MUTU_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Mabrouki, après avoir géré plusieurs dossiers complexes de prise en charge avec Dr Alami, reçoit ses félicitations. Quelle est la prochaine étape pour Dr Mabrouki ?",
+      "media": [],
+      "options": [
+        "Devenir un expert en prise en charge et mutuelles dentaires",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bonnes pratiques"
+      ],
+      "correct": 0,
+      "explanation": "Dr Alami explique : 'La maîtrise des prises en charge est une compétence précieuse. Devenir un expert est la prochaine étape.' Dr Mabrouki : 'Je vais me former à la gestion des remboursements.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

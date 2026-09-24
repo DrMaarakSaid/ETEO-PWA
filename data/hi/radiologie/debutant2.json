@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "radiologie_debutant2_001",
+    "title": "Radiology - Beginner 2",
+    "specialty": "RADI",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "RADI_D2_Q01",
+      "type": "single-choice",
+      "question": "Spatial resolution in radiography refers to:",
+      "media": [],
+      "options": [
+        "The color saturation of the image",
+        "The ability of the system to distinguish two nearby anatomical details",
+        "The total light intensity of the image after development",
+        "The actual physical dimension of the imaged object"
+      ],
+      "correct": 1,
+      "explanation": "High resolution allows better precision and fineness of anatomical details.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q02",
+      "type": "single-choice",
+      "question": "The optical density of a radiograph mainly depends on:",
+      "media": [],
+      "options": [
+        "The amount of radiation absorbed by the receptor",
+        "The rotation speed of the anode at startup",
+        "The sharpness of image contours",
+        "The physical size of the sensor used"
+      ],
+      "correct": 0,
+      "explanation": "It represents the degree of blackening of the image after exposure and processing.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q03",
+      "type": "single-choice",
+      "question": "Increasing the kilovoltage (kV) results in:",
+      "media": [],
+      "options": [
+        "An increase in overall contrast",
+        "A drastic reduction in the emitted dose",
+        "A longer required exposure time",
+        "A decrease in contrast"
+      ],
+      "correct": 3,
+      "explanation": "A high kV increases photon energy, promoting beam penetration, which decreases contrast (grayer image).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q04",
+      "type": "single-choice",
+      "question": "What role does milliamperage (mA) play during acquisition?",
+      "media": [],
+      "options": [
+        "It controls the beam intensity and the number of photons (dose)",
+        "It determines the quality of tissue penetration",
+        "It adjusts the focal-object distance",
+        "It manages the speed of digital data storage"
+      ],
+      "correct": 0,
+      "explanation": "mA regulates the number of electrons striking the anode, thus the beam intensity and overall darkening.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q05",
+      "type": "single-choice",
+      "question": "Why strictly limit exposure time?",
+      "media": [],
+      "options": [
+        "To increase the optical density of the image",
+        "To reduce the risk of kinetic blur related to patient movement",
+        "To artificially improve spatial resolution",
+        "To reduce the kV power required"
+      ],
+      "correct": 1,
+      "explanation": "The longer the time, the higher the probability of patient movement, degrading image sharpness.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q06",
+      "type": "single-choice",
+      "question": "The standard focal-film distance is chosen to:",
+      "media": [],
+      "options": [
+        "Avoid Compton scattering phenomena",
+        "Increase the parasitic anode effect",
+        "Reduce geometric magnification and improve accuracy",
+        "Decrease the total dose received by the patient"
+      ],
+      "correct": 2,
+      "explanation": "A longer distance allows a more faithful projection of the anatomy by limiting magnification.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q07",
+      "type": "single-choice",
+      "question": "The anode effect (Heel effect) corresponds to:",
+      "media": [],
+      "options": [
+        "A loss of sharpness on the edges of the image",
+        "A parasitic reflection of the beam on the film",
+        "An absorption by the lead collimator",
+        "A variation in beam intensity between the anode and cathode side"
+      ],
+      "correct": 3,
+      "explanation": "Radiation intensity is lower on the anode side than on the cathode side due to self-absorption by the target.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q08",
+      "type": "single-choice",
+      "question": "The Heel effect is particularly pronounced when:",
+      "media": [],
+      "options": [
+        "The focal-film distance is short",
+        "The kilovoltage is very low",
+        "The milliamperage is high",
+        "The exposure time is very long"
+      ],
+      "correct": 0,
+      "explanation": "It is accentuated by reduced distances or small anode angles.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q09",
+      "type": "single-choice",
+      "question": "What is an extraoral radiograph?",
+      "media": [],
+      "options": [
+        "An examination performed without any ionizing radiation",
+        "An image where the sensor is positioned outside the oral cavity",
+        "A technique reserved exclusively for endodontics",
+        "A microscopic analysis of soft tissues"
+      ],
+      "correct": 1,
+      "explanation": "Panoramic or teleradiography are typical examples of extraoral imaging.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q10",
+      "type": "single-choice",
+      "question": "The principle of stereoscopic radiography relies on:",
+      "media": [],
+      "options": [
+        "The use of two offset images to create a perception of depth",
+        "The digital fusion of two images taken at different energies",
+        "The systematic use of intravenous contrast",
+        "A classical linear tomography technique"
+      ],
+      "correct": 0,
+      "explanation": "The offset allows obtaining a perception of depth (3D vision) by exploiting parallax.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q11",
+      "type": "single-choice",
+      "question": "The postero-anterior (PA) view is useful for:",
+      "media": [],
+      "options": [
+        "Screening for proximal caries",
+        "Analyzing dynamic dental occlusion",
+        "Studying facial symmetry and frontal sinuses",
+        "Visualizing the TMJ in thin slices"
+      ],
+      "correct": 2,
+      "explanation": "It provides an overview of the facial mass and a right/left comparison.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q12",
+      "type": "single-choice",
+      "question": "The Blondeau view is primarily dedicated to the exploration of:",
+      "media": [],
+      "options": [
+        "Maxillary sinuses",
+        "Mandibular condyles",
+        "Parotid glands",
+        "Mandibular canals"
+      ],
+      "correct": 0,
+      "explanation": "It clears the maxillary sinuses by projecting the petrous ridges below the sinus floor.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q13",
+      "type": "single-choice",
+      "question": "The Hirtz view offers a:",
+      "media": [],
+      "options": [
+        "Strict profile view of the facial mass",
+        "Oblique view of the ascending rami",
+        "Frontal view of the orbits",
+        "Axial (basal) view of the skull base"
+      ],
+      "correct": 3,
+      "explanation": "It allows study of the skull base, zygomatic arches, and sphenoid sinuses.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q14",
+      "type": "single-choice",
+      "question": "The Schüller view is classic for visualizing:",
+      "media": [],
+      "options": [
+        "The temporomandibular joint (TMJ)",
+        "The apices of maxillary molars",
+        "The maxillary sinus as a whole",
+        "The nasal fossae"
+      ],
+      "correct": 0,
+      "explanation": "It is historically used for radiological assessment of the TMJ.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q15",
+      "type": "single-choice",
+      "question": "TMJ arthrography consists of:",
+      "media": [],
+      "options": [
+        "Performing a simple profile view without any artifice",
+        "Injecting a radiopaque contrast agent into the joint space",
+        "Using a high-resolution CT without injection",
+        "Performing a dynamic functional ultrasound"
+      ],
+      "correct": 1,
+      "explanation": "This allows visualization of the shape, position, and perforations of the articular disc.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q16",
+      "type": "single-choice",
+      "question": "Sialography allows visualization of:",
+      "media": [],
+      "options": [
+        "The overall morphology of temporary teeth",
+        "The drainage of frontal sinuses",
+        "The arterial vascularization of the skull",
+        "The ductal network of salivary glands"
+      ],
+      "correct": 3,
+      "explanation": "A radiopaque agent is injected into the excretory duct to opacify the ductal system.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q17",
+      "type": "single-choice",
+      "question": "Fistulography is indicated for:",
+      "media": [],
+      "options": [
+        "Exploring the course of a fistula by injecting contrast agent",
+        "Measuring the length of dental roots",
+        "Screening for asymptomatic deep cavities",
+        "Checking osseointegration of an implant"
+      ],
+      "correct": 0,
+      "explanation": "It allows locating the deep origin of a fistulized infectious process.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q18",
+      "type": "single-choice",
+      "question": "Cephalometry is a standardized technique used for:",
+      "media": [],
+      "options": [
+        "The diagnosis of occlusal caries",
+        "The detailed study of pulpal structure",
+        "The analysis of craniofacial relationships",
+        "The measurement of periodontal tooth mobility"
+      ],
+      "correct": 2,
+      "explanation": "Essential for orthodontics and orthognathic surgery planning.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q19",
+      "type": "single-choice",
+      "question": "Cephalometric tracing consists of:",
+      "media": [],
+      "options": [
+        "Artistic detailed drawing of the profile",
+        "Measurement of angles and distances between precise anatomical points",
+        "A 3D volumetric radiograph",
+        "A rapid CT examination"
+      ],
+      "correct": 1,
+      "explanation": "It allows objective quantification of skeletal and dental discrepancies.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q20",
+      "type": "single-choice",
+      "question": "The Sella point (S) is located at the center of:",
+      "media": [],
+      "options": [
+        "The sella turcica",
+        "The root of the nose",
+        "The anterior nasal spine",
+        "The mandibular angle"
+      ],
+      "correct": 0,
+      "explanation": "It is a fundamental cranial reference point in cephalometry.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q21",
+      "type": "single-choice",
+      "question": "The Nasion point (N) corresponds to:",
+      "media": [],
+      "options": [
+        "The upper edge of the orbit",
+        "The bottom of the chin",
+        "The frontonasal suture",
+        "The tip of the nasal spine"
+      ],
+      "correct": 2,
+      "explanation": "The most anterior point of the frontonasal suture on the midline.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q22",
+      "type": "single-choice",
+      "question": "Point A (subspinale) designates:",
+      "media": [],
+      "options": [
+        "The deepest point of the maxilla on the midline",
+        "The summit of the mandibular symphysis",
+        "The posterior nasal spine",
+        "The middle of the incisor crown"
+      ],
+      "correct": 0,
+      "explanation": "It is the reference point for the sagittal position of the maxilla.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q23",
+      "type": "single-choice",
+      "question": "Point B (supramentale) designates:",
+      "media": [],
+      "options": [
+        "The bony point of the chin",
+        "The angle of the jaw",
+        "The deepest point of the mandibular concavity",
+        "The upper alveolar border"
+      ],
+      "correct": 2,
+      "explanation": "It is the reference point for the sagittal position of the mandible.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q24",
+      "type": "single-choice",
+      "question": "The Gonion point (Go) is located at the level of:",
+      "media": [],
+      "options": [
+        "The head of the condyle",
+        "The angle of the mandible",
+        "The middle of the chin",
+        "The apex of the lower incisor"
+      ],
+      "correct": 1,
+      "explanation": "It defines the junction between the lower border and the posterior border of the mandible.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D2_Q25",
+      "type": "single-choice",
+      "question": "The Frankfort plane connects:",
+      "media": [],
+      "options": [
+        "The sella turcica and the nasion",
+        "The gonion and the menton",
+        "Point A and point B",
+        "The porion and the orbitale"
+      ],
+      "correct": 3,
+      "explanation": "It is a theoretical horizontal reference used for cranial orientation during tracing.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

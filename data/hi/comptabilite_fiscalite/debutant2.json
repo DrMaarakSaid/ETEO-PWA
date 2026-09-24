@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "comptabilite_fiscalite_debutant2_001",
+    "title": "Comptabilite_fiscalite - Beginner 2",
+    "specialty": "COMP",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "COMP_D2_Q01",
+      "type": "single-choice",
+      "question": "Dr. Afif, a dental surgeon, practices as a professional civil society (SCP). According to Article 1 of Law 9-88, is his structure subject to the accounting obligation?",
+      "media": [],
+      "options": [
+        "No, SCPs are exempt from accounting",
+        "Yes, because any legal entity with merchant status is subject to it",
+        "Only if its turnover exceeds 5 million DH",
+        "No, only public limited companies are subject to this obligation"
+      ],
+      "correct": 1,
+      "explanation": "Art. 1: any natural or legal person with merchant status must keep accounts. An SCP carrying on a for-profit activity falls within this scope.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q02",
+      "type": "single-choice",
+      "question": "Dr. Touzani, practicing as a sole proprietor, generates a turnover of 2.3 million DH. Can he benefit from the simplifications provided for in Article 1?",
+      "media": [],
+      "options": [
+        "Yes, because the threshold is 3 million DH for liberal professions",
+        "No, because his turnover exceeds the 2 million DH threshold",
+        "Yes, provided he keeps a detailed general ledger",
+        "No, dentists are excluded from the benefit of the simplifications"
+      ],
+      "correct": 1,
+      "explanation": "Art. 1, para. 5: the 2,000,000 DH threshold applies to natural persons. Above that, simplifications are no longer accessible.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q03",
+      "type": "single-choice",
+      "question": "Dr. Afif, whose turnover is 1.2 million DH, may he record his expenses on the basis of internal supporting documents?",
+      "media": [],
+      "options": [
+        "No, all expenses must be supported by supplier invoices",
+        "Yes, provided they are signed by himself",
+        "No, only equipment purchases can be supported by internal documents",
+        "Yes, but only for expenses under 500 DH"
+      ],
+      "correct": 1,
+      "explanation": "Art. 1, last bullet: small traders may record petty expenses on the basis of internal supporting documents signed by the trader.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q04",
+      "type": "single-choice",
+      "question": "According to Article 2, what types of accounts must the dental practice's chart of accounts include?",
+      "media": [],
+      "options": [
+        "Only balance sheet accounts",
+        "Statement of position accounts, management accounts, and special accounts",
+        "Only customer and supplier accounts",
+        "Only cash and fixed asset accounts"
+      ],
+      "correct": 1,
+      "explanation": "Art. 2, para. 3: the chart of accounts must include statement of position account classes, management account classes, and special account classes.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q05",
+      "type": "single-choice",
+      "question": "Is Dr. Touzani, whose turnover is 1.5 million DH, exempt from the general ledger according to Article 2?",
+      "media": [],
+      "options": [
+        "Yes, because all companies are exempt from it",
+        "Yes, if the summary trial balance can be established directly from the journal",
+        "No, the general ledger is mandatory for medical professions",
+        "No, only companies can benefit from this exemption"
+      ],
+      "correct": 1,
+      "explanation": "Art. 2, last para.: natural persons referred to in Article 1, para. 5 are exempt from the general ledger if the trial balance can be established directly from the journal.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q06",
+      "type": "single-choice",
+      "question": "Dr. Afif uses subsidiary journals for his purchase and sales transactions. According to Article 3, how often must he centralize these entries?",
+      "media": [],
+      "options": [
+        "Once a week for purchase transactions",
+        "Once a month, in accordance with the law",
+        "Once a quarter with court clerk authorization",
+        "Once a year at the close of the financial year"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3, para. 2: entries recorded in subsidiary journals are centralized once a month in the journal and general ledger.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q07",
+      "type": "single-choice",
+      "question": "Can Dr. Touzani (turnover ≤ 2M DH) centralize his subsidiary journals at a different frequency than that provided for in Article 3?",
+      "media": [],
+      "options": [
+        "No, monthly centralization is mandatory for everyone",
+        "Yes, he may centralize once per financial year at closing",
+        "Yes, provided he obtains approval from the administration",
+        "No, liberal professions have stricter specific rules"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3, last para.: small traders are authorized to centralize entries once per financial year at its close.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q08",
+      "type": "single-choice",
+      "question": "Dr. Afif's practice, constituted as a company, generates a turnover of 8 million DH. What obligation does Article 4 impose on him?",
+      "media": [],
+      "options": [
+        "The appointment of a statutory auditor",
+        "None, the 10 million DH threshold has not been reached",
+        "The establishment of an accounting organization manual",
+        "The annual publication of accounts in a newspaper"
+      ],
+      "correct": 1,
+      "explanation": "Art. 4: the obligation of an accounting organization manual only applies to enterprises whose turnover exceeds 10,000,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q09",
+      "type": "single-choice",
+      "question": "According to Article 5, when must Dr. Touzani carry out the inventory of his assets and liabilities?",
+      "media": [],
+      "options": [
+        "At the end of each semester",
+        "At least once per financial year, at its end",
+        "Only upon the transfer of his practice",
+        "Only at the request of the tax authorities"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5: inventory must be carried out at least once per financial year, at its end.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q10",
+      "type": "single-choice",
+      "question": "Dr. Afif purchases a CBCT scanner for his practice. According to Article 14, at what value should he record it?",
+      "media": [],
+      "options": [
+        "At its estimated replacement value",
+        "At its acquisition cost, including incidental expenses",
+        "At its resale value on the second-hand market",
+        "At the supplier's tax-exclusive list price"
+      ],
+      "correct": 1,
+      "explanation": "Art. 14, para. 1: assets acquired for consideration are recorded at their acquisition cost (purchase price + incidental expenses).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q11",
+      "type": "single-choice",
+      "question": "Dr. Touzani wishes to value his dental consumables inventory. According to Article 14, what methods may he use?",
+      "media": [],
+      "options": [
+        "Only the selling price method",
+        "The weighted average cost or FIFO method",
+        "The LIFO method only",
+        "The last known purchase price method"
+      ],
+      "correct": 1,
+      "explanation": "Art. 14, para. 9: fungible assets are valued either at their weighted average acquisition cost, or according to the FIFO principle.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q12",
+      "type": "single-choice",
+      "question": "Can Dr. Afif (turnover ≤ 2M DH) benefit from a simplified method for valuing his inventory?",
+      "media": [],
+      "options": [
+        "Yes, by estimating the purchase cost or based on the selling price with a reduction",
+        "No, simplified valuation is not authorized by law",
+        "Yes, but only for prosthetic inventory",
+        "No, only companies may use simplified methods"
+      ],
+      "correct": 0,
+      "explanation": "Art. 14, last para., 1st bullet: small traders may carry out a simplified inventory valuation by estimating the purchase cost or based on the selling price with a reduction.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q13",
+      "type": "single-choice",
+      "question": "Dr. Touzani carries out a revaluation of his fixed assets. According to Article 14, how should he treat the revaluation surplus?",
+      "media": [],
+      "options": [
+        "He may use it to offset the year's losses",
+        "He must record it separately as a liability in the balance sheet",
+        "He must record it as extraordinary income",
+        "He must submit it to the approval of the Order of Dental Surgeons"
+      ],
+      "correct": 1,
+      "explanation": "Art. 14, para. 8: the revaluation surplus cannot be used to offset losses; it is recorded separately as a liability in the balance sheet.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q14",
+      "type": "single-choice",
+      "question": "According to Article 9, when must a dental practice constituted as a company prepare its financial statements?",
+      "media": [],
+      "options": [
+        "At the request of the tax authorities",
+        "At the close of each financial year, based on accounting records and inventory",
+        "Every two years for liberal professions",
+        "Only when the articles of association are amended"
+      ],
+      "correct": 1,
+      "explanation": "Art. 9: financial statements are prepared at the close of the financial year on the basis of accounting records and inventory.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q15",
+      "type": "single-choice",
+      "question": "Dr. Afif finds that the application of accounting rules does not give a true and fair view of his situation. What does Article 19 provide?",
+      "media": [],
+      "options": [
+        "He may depart from the rules by justifying it in the supplementary information statement",
+        "He must follow the rules without any possible exception",
+        "He must refer the matter to the court of first instance",
+        "He may change his presentation without justification"
+      ],
+      "correct": 0,
+      "explanation": "Art. 19: in specific situations, it may be possible to depart from the requirements if they do not give a true and fair view, provided that the departure is mentioned and justified in the supplementary information statement.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q16",
+      "type": "single-choice",
+      "question": "Dr. Touzani wishes to change the closing date of his financial year. What does Article 19 require of him?",
+      "media": [],
+      "options": [
+        "Prior authorization from the court clerk",
+        "Simple notification to his chartered accountant",
+        "Justification in the supplementary information statement",
+        "Approval from the National Order of Dental Surgeons"
+      ],
+      "correct": 2,
+      "explanation": "Art. 19, last para.: any change in the closing date must be duly justified in the supplementary information statement.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q17",
+      "type": "single-choice",
+      "question": "Dr. Afif's practice (turnover 9 million DH) is exempt from which financial statements according to Article 21?",
+      "media": [],
+      "options": [
+        "The balance sheet and income statement",
+        "The management balance sheet, financing statement, and supplementary information statement",
+        "Only the financing statement",
+        "Only the supplementary information statement"
+      ],
+      "correct": 1,
+      "explanation": "Art. 21: enterprises whose turnover is less than or equal to 10,000,000 DH are exempt from the management balance sheet, financing statement, and supplementary information statement.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q18",
+      "type": "single-choice",
+      "question": "Can Dr. Touzani (turnover 1.8 million DH) use the simplified balance sheet and income statement model according to Article 21?",
+      "media": [],
+      "options": [
+        "No, the simplified model is not provided for by law",
+        "Yes, because his turnover is less than 10 million DH",
+        "Yes, but only for the balance sheet, not the income statement",
+        "No, because dentists are excluded from the benefit of the simplified model"
+      ],
+      "correct": 1,
+      "explanation": "Art. 21, para. 2: persons referred to in the preceding paragraph are authorized to adopt the accounting framework according to the simplified model annexed to the law.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q19",
+      "type": "single-choice",
+      "question": "Must Dr. Afif keep his supporting documents in national currency according to Article 22?",
+      "media": [],
+      "options": [
+        "No, he may keep them in euros",
+        "Yes, all accounting documents are prepared in national currency",
+        "Yes, but only for invoices over 1,000 DH",
+        "No, the law does not specify the currency of documents"
+      ],
+      "correct": 1,
+      "explanation": "Art. 22, para. 1: accounting documents are prepared in national currency.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q20",
+      "type": "single-choice",
+      "question": "According to Article 22, for how long must Dr. Touzani keep his dental equipment purchase invoices?",
+      "media": [],
+      "options": [
+        "5 years",
+        "10 years",
+        "15 years",
+        "Until cessation of activity"
+      ],
+      "correct": 1,
+      "explanation": "Art. 22, para. 2: accounting documents and supporting documents must be kept for ten years.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q21",
+      "type": "single-choice",
+      "question": "If the tax authorities consider that Dr. Afif's accounting is not regular, what may they do according to Article 23?",
+      "media": [],
+      "options": [
+        "They may reject the accounting and proceed with an adjustment",
+        "They must accept it if taxes have been paid",
+        "They may order a suspension of activity",
+        "They must refer the matter to the National Order of Dental Surgeons"
+      ],
+      "correct": 0,
+      "explanation": "Art. 23: the tax authorities may reject accounting records that are not kept in the forms prescribed by law.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q22",
+      "type": "single-choice",
+      "question": "Dr. Touzani entrusts his accounting to a chartered accountant. According to Article 24, what does the law require of him?",
+      "media": [],
+      "options": [
+        "He must comply with a specific set of rules for dentists",
+        "He is required to comply with the provisions of Law 9-88",
+        "He must obtain special approval from the Ministry of Health",
+        "He may apply international IFRS standards"
+      ],
+      "correct": 1,
+      "explanation": "Art. 24: chartered accountants and approved accountants are required to comply with the provisions of Law 9-88 for the accounting of the enterprises they handle.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q23",
+      "type": "single-choice",
+      "question": "According to Article 10, what does the management balance sheet that a dental practice must prepare describe?",
+      "media": [],
+      "options": [
+        "The formation of the net result and self-financing",
+        "The cash available at year-end",
+        "The number of patients treated per month",
+        "The amount of prosthetic fees invoiced"
+      ],
+      "correct": 0,
+      "explanation": "Art. 10, para. 3: the management balance sheet describes the formation of the net result and self-financing.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q24",
+      "type": "single-choice",
+      "question": "Dr. Afif (SCP, turnover 12 million DH) must prepare an accounting organization manual. According to Article 4, what is the purpose of this manual?",
+      "media": [],
+      "options": [
+        "To describe the company's accounting organization",
+        "To list the practice's approved suppliers",
+        "To detail the medical procedures performed",
+        "To present the practice's fee schedule"
+      ],
+      "correct": 0,
+      "explanation": "Art. 4: the manual is intended to describe the company's accounting organization.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q25",
+      "type": "single-choice",
+      "question": "Dr. Touzani finds that several of his patients have not paid their fees. According to Article 16, how should he treat these doubtful receivables?",
+      "media": [],
+      "options": [
+        "He must keep them at their nominal value without provision",
+        "He must take account of risks and make provisions if necessary",
+        "He may cancel them outright",
+        "He must declare them to the Order of Dental Surgeons"
+      ],
+      "correct": 1,
+      "explanation": "Art. 16: account must be taken of risks and charges arising during the financial year. Doubtful receivables must be subject to impairment provisions.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

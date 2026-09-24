@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "fiscalite_dentiste_debutant1_001",
+    "title": "Fiscalidad del Dentista – Principiante 1",
+    "specialty": "FISC",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "FISC_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Sulami ejerce como persona física. Según el Código General de Impuestos, ¿a qué categoría del impuesto sobre la renta pertenecen sus ingresos profesionales?",
+      "media": [],
+      "options": [
+        "Beneficios industriales y comerciales (BIC)",
+        "Beneficios no comerciales (BNC)",
+        "Salarios y remuneraciones",
+        "Rentas inmobiliarias"
+      ],
+      "correct": 1,
+      "explanation": "Las profesiones liberales, incluidos los dentistas, generan Beneficios no comerciales (BNC) según el Código General de Impuestos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q02",
+      "type": "single-choice",
+      "question": "En 2026, ¿cuál es el tipo marginal máximo del impuesto sobre la renta (IR) en Marruecos para un dentista que ejerce como persona física?",
+      "media": [],
+      "options": [
+        "34 %",
+        "37 %",
+        "38 %",
+        "40 %"
+      ],
+      "correct": 1,
+      "explanation": "La escala progresiva del IR se aplica con un tipo marginal del 37 % para la parte de la renta neta imponible que supera los 180 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q03",
+      "type": "single-choice",
+      "question": "El volumen de negocios anual del Dr. Marwani es de 600 000 DH. ¿A qué régimen fiscal está sujeto por derecho?",
+      "media": [],
+      "options": [
+        "Régimen del resultado neto simplificado (RNS)",
+        "Régimen del resultado neto real (RNR)",
+        "Cotización profesional única (CPU)",
+        "Régimen fijo"
+      ],
+      "correct": 1,
+      "explanation": "El RNR es el régimen de derecho común para las profesiones liberales con un volumen de negocios anual superior a 500 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q04",
+      "type": "single-choice",
+      "question": "¿Cuál es el umbral de volumen de negocios que no se debe superar para que un dentista pueda optar al régimen del resultado neto simplificado (RNS)?",
+      "media": [],
+      "options": [
+        "250 000 DH",
+        "500 000 DH",
+        "1 000 000 DH",
+        "2 000 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El RNS es un régimen intermedio para las profesiones liberales con un volumen de negocios anual que no supere los 500 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Sulami inicia su actividad en 2026. ¿Durante cuántos meses está exento de la contribución mínima (CM)?",
+      "media": [],
+      "options": [
+        "12 meses",
+        "24 meses",
+        "36 meses",
+        "60 meses"
+      ],
+      "correct": 2,
+      "explanation": "Los nuevos contribuyentes que ejercen como personas físicas se benefician de una exención de la contribución mínima durante los primeros 36 meses de actividad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Marwani, persona física, tiene un volumen de negocios de 800 000 DH. ¿Cuál es el importe mínimo de su contribución mínima (CM)?",
+      "media": [],
+      "options": [
+        "1 500 DH",
+        "2 000 DH",
+        "3 000 DH",
+        "4 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Para las personas físicas sujetas al IR, la contribución mínima no puede ser inferior a 1 500 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Sulami tiene un volumen de negocios de 800 000 DH y un resultado fiscal de 100 000 DH. ¿Qué impuesto pagará si la CM supera el IR calculado?",
+      "media": [],
+      "options": [
+        "El impuesto sobre la renta calculado sobre 100 000 DH",
+        "La contribución mínima de 48 000 DH",
+        "La mayor cantidad entre el IR y la CM",
+        "Ningún impuesto, ya que el beneficio es pequeño"
+      ],
+      "correct": 2,
+      "explanation": "El contribuyente paga la mayor cantidad entre el IR calculado y la CM. La CM para una persona física es del 6 % del volumen de negocios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Marwani, persona física, tiene un volumen de negocios de 800 000 DH. ¿Cuál es el tipo de la contribución mínima (CM)?",
+      "media": [],
+      "options": [
+        "0,25 %",
+        "0,50 %",
+        "4 %",
+        "6 %"
+      ],
+      "correct": 3,
+      "explanation": "El tipo de la CM para las profesiones liberales que ejercen como personas físicas es del 6 % del volumen de negocios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q09",
+      "type": "single-choice",
+      "question": "Según la Ley de Finanzas 2026, ¿cuál es el umbral de exención del IR para un dentista soltero sin hijos a cargo?",
+      "media": [],
+      "options": [
+        "30 000 DH",
+        "35 000 DH",
+        "40 000 DH",
+        "45 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "La Ley de Finanzas 2026 mantiene el umbral de renta neta imponible exenta de IR en 40 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q10",
+      "type": "single-choice",
+      "question": "El Dr. Sulami quiere optar por el RNR aunque su volumen de negocios es de 300 000 DH. ¿Es posible?",
+      "media": [],
+      "options": [
+        "Sí, la opción por el RNR es voluntaria incluso por debajo de los umbrales",
+        "No, el RNR es obligatorio cuando se superan los 500 000 DH",
+        "Sí, pero solo con el acuerdo de la administración fiscal",
+        "No, el RNS es obligatorio por debajo de 500 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Cualquier contribuyente puede optar voluntariamente por el RNR, incluso si su volumen de negocios es inferior a los umbrales establecidos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene una pérdida fiscal de 50 000 DH de su actividad. Según el régimen RNR, ¿durante cuántos años puede compensar esta pérdida?",
+      "media": [],
+      "options": [
+        "2 años",
+        "3 años",
+        "4 años",
+        "5 años"
+      ],
+      "correct": 2,
+      "explanation": "En el marco del RNR, la pérdida se compensa con los beneficios de los cuatro años siguientes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q12",
+      "type": "single-choice",
+      "question": "¿Cuál es la particularidad de la Cotización profesional única (CPU) en comparación con el RNR y el RNS?",
+      "media": [],
+      "options": [
+        "Permite deducir todos los gastos reales",
+        "Ofrece un impuesto liberatorio del 10 % sobre el beneficio fijo",
+        "Exige una contabilidad completa",
+        "Está destinada exclusivamente a las profesiones liberales"
+      ],
+      "correct": 1,
+      "explanation": "La CPU ofrece un impuesto liberatorio del 10 % aplicado al beneficio fijo calculado sobre el volumen de negocios, sin deducción de gastos reales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q13",
+      "type": "single-choice",
+      "question": "Según la escala progresiva, ¿cuál es el tipo del IR para la parte de la renta de 60 001 a 180 000 DH?",
+      "media": [],
+      "options": [
+        "10 %",
+        "20 %",
+        "30 %",
+        "34 %"
+      ],
+      "correct": 3,
+      "explanation": "La escala progresiva del IR prevé un tipo del 34 % para la parte de la renta neta imponible de 60 001 a 180 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Sulami planea crear una SARL para su actividad. ¿A qué impuesto estará sujeta la sociedad?",
+      "media": [],
+      "options": [
+        "Al impuesto sobre la renta (IR)",
+        "Al impuesto sobre sociedades (IS)",
+        "A la Cotización profesional única (CPU)",
+        "Solo al impuesto profesional"
+      ],
+      "correct": 1,
+      "explanation": "La sociedad (SARL, SARLAU, SAS) está sujeta al impuesto sobre sociedades (IS).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q15",
+      "type": "single-choice",
+      "question": "En 2026, ¿cuál es el tipo del IS para la parte del beneficio de 0 a 300 000 DH para una SARL?",
+      "media": [],
+      "options": [
+        "10 %",
+        "15 %",
+        "20 %",
+        "35 %"
+      ],
+      "correct": 0,
+      "explanation": "La escala progresiva del IS prevé un tipo del 10 % para la parte del beneficio neto fiscal de 0 a 300 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene una SARL con un beneficio de 500 000 DH. ¿Cuál es el tipo del IS para la parte del beneficio de 300 001 a 1 000 000 DH?",
+      "media": [],
+      "options": [
+        "10 %",
+        "20 %",
+        "25 %",
+        "35 %"
+      ],
+      "correct": 1,
+      "explanation": "La escala progresiva del IS prevé un tipo del 20 % para la parte del beneficio neto fiscal de 300 001 a 1 000 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Sulami tiene una SARL con un beneficio neto después de IS de 400 000 DH, que distribuye en forma de dividendos. ¿Cuál es el tipo de retención en la fuente sobre estos dividendos?",
+      "media": [],
+      "options": [
+        "5 %",
+        "10 %",
+        "15 %",
+        "20 %"
+      ],
+      "correct": 1,
+      "explanation": "La distribución de dividendos está sujeta a una retención en la fuente (RAS) del 10 %.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q18",
+      "type": "single-choice",
+      "question": "A partir de qué nivel de beneficio el IS se vuelve globalmente más ventajoso que el IR desde un punto de vista puramente fiscal?",
+      "media": [],
+      "options": [
+        "100 000 DH",
+        "200 000–250 000 DH",
+        "500 000 DH",
+        "1 000 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El punto de inflexión se sitúa en torno a 200 000–250 000 DH de beneficio neto, donde el IS empieza a ser más ventajoso que el IR.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene una SARL. ¿Cuál es el importe mínimo de la contribución mínima (CM) que debe pagar su sociedad?",
+      "media": [],
+      "options": [
+        "1 500 DH",
+        "2 000 DH",
+        "3 000 DH",
+        "5 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "Para las sociedades sujetas al IS, la contribución mínima no puede ser inferior a 3 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Sulami creó una SARL en 2026. ¿Durante cuántos meses está exenta de la contribución mínima (CM)?",
+      "media": [],
+      "options": [
+        "12 meses",
+        "24 meses",
+        "36 meses",
+        "60 meses"
+      ],
+      "correct": 2,
+      "explanation": "Las sociedades de nueva creación se benefician de una exención de la CM durante los primeros 36 meses de actividad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene una SARL con un volumen de negocios de 1 000 000 DH. ¿Cuál es el importe de su contribución mínima (CM) al tipo ordinario?",
+      "media": [],
+      "options": [
+        "2 500 DH",
+        "3 000 DH",
+        "4 000 DH",
+        "5 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "El tipo ordinario de la CM es del 0,25 % del volumen de negocios, es decir, 2 500 DH. Dado que el umbral mínimo es de 3 000 DH, se paga esta cantidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q22",
+      "type": "single-choice",
+      "question": "Según el Código General de Impuestos, los servicios dentales están generalmente:",
+      "media": [],
+      "options": [
+        "Sujetos al IVA al tipo del 7 %",
+        "Sujetos al IVA al tipo del 14 %",
+        "Sujetos al IVA al tipo del 20 %",
+        "Exentos de IVA"
+      ],
+      "correct": 3,
+      "explanation": "Los servicios dentales están generalmente exentos de IVA, aunque los servicios de carácter estético pueden estar sujetos a IVA.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Sulami ejerce como persona física. Puede deducir de sus ingresos los siguientes gastos, excepto:",
+      "media": [],
+      "options": [
+        "El alquiler del consultorio",
+        "El salario de la asistente",
+        "Los gastos de compra de un vehículo personal para uso privado",
+        "Las cotizaciones a la CNSS"
+      ],
+      "correct": 2,
+      "explanation": "Solo se deducen los gastos incurridos para las necesidades de la actividad profesional. Los gastos de vehículo para uso privado no son deducibles.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Marwani tiene una SARL con un beneficio de 2 000 000 DH. ¿Cuál es el tipo del IS para la parte del beneficio que supera 1 000 000 DH?",
+      "media": [],
+      "options": [
+        "20 %",
+        "31 %",
+        "35 %",
+        "37 %"
+      ],
+      "correct": 2,
+      "explanation": "La escala progresiva del IS prevé un tipo del 35 % para la parte del beneficio neto fiscal que supera 1 000 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q25",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal diferencia entre el RNR y el RNS en materia de contabilidad?",
+      "media": [],
+      "options": [
+        "El RNR exige una contabilidad completa, el RNS una contabilidad simplificada",
+        "El RNR no exige contabilidad, el RNS exige una contabilidad completa",
+        "Ambos regímenes exigen una contabilidad completa",
+        "El RNR exige una contabilidad simplificada, el RNS ninguna"
+      ],
+      "correct": 0,
+      "explanation": "El RNR exige una contabilidad completa según el CGNC, mientras que el RNS se limita a una contabilidad simplificada.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

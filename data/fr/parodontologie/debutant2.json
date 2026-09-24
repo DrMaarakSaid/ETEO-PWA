@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "parodontologie_debutant2_001",
+    "title": "Parodontologie - Débutant 2",
+    "specialty": "PARO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "PARO_D2_Q01",
+      "type": "single-choice",
+      "question": "🦅 Sami examine un patient avec une poche à 6 mm. Il dit : 'Surfaçage radiculaire et c'est fini !' 🐆 Mina répond : 'Et la réévaluation ?' Pourquoi la réévaluation est-elle cruciale ?",
+      "media": [],
+      "options": [
+        "Elle permet d'évaluer la réponse au traitement et d'ajuster le plan de soins",
+        "Elle est inutile car le traitement est toujours efficace",
+        "Elle permet juste de faire payer plus cher",
+        "Elle est réservée aux cas complexes uniquement"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La réévaluation à 4-6 semaines est indispensable pour mesurer la réduction des poches et décider de la suite.' 🦅 Sami : 'Bon, OK, mais c'est long...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q02",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une poche à 8 mm avec perte osseuse, propose : 'Lambeau parodontal.' 🦅 Sami répond : 'Non, laser !' Quelle est l'indication du lambeau ?",
+      "media": [],
+      "options": [
+        "Les poches profondes > 5 mm avec perte osseuse accessible",
+        "Toutes les poches parodontales",
+        "Seulement les poches antérieures",
+        "Aucune poche ne nécessite de lambeau"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le lambeau est indiqué pour l'accès et la débridement des poches profondes avec perte osseuse.' 🐆 Mina : 'Sami, tu connais tes indications !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q03",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une parodontite agressive chez un patient de 25 ans, dit : 'C'est génétique, on ne peut rien faire.' 🐆 Mina répond : 'Si, on peut traiter !' Qu'est-ce qu'une parodontite agressive ?",
+      "media": [],
+      "options": [
+        "Une forme rapide de parodontite chez des patients jeunes et en bonne santé",
+        "Une parodontite chez les patients âgés",
+        "Une infection virale sévère",
+        "Une réaction allergique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La parodontite agressive survient chez des patients jeunes sans facteurs de risque locaux.' 🦅 Sami : 'Je ne savais pas qu'on pouvait traiter efficacement.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q04",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant un patient avec une parodontite agressive, dit : 'Il faut une antibiothérapie associée.' 🦅 Sami répond : 'Non, le détartrage suffit.' Quelle est la stratégie validée ?",
+      "media": [],
+      "options": [
+        "Amoxicilline + métronidazole en association avec le détartrage",
+        "Détartrage seul",
+        "Antibiotiques seuls",
+        "Chirurgie immédiate"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'association amoxicilline-métronidazole est recommandée dans les parodontites agressives.' 🦅 Sami : 'Je préfère éviter les antibiotiques, mais tu as raison.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q05",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une récession de classe II de Miller, dit : 'On peut la couvrir à 100%.' 🐆 Mina répond : 'Le pronostic est réservé.' Quelle est la classification de Miller ?",
+      "media": [],
+      "options": [
+        "Classe I et II : recouvrement complet possible, Classe III : partiel, Classe IV : impossible",
+        "Toutes les classes sont traitables",
+        "Seules les classes I et II existent",
+        "La classification de Miller ne sert à rien"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Miller classe les récessions selon le pronostic de recouvrement.' 🐆 Mina : 'Sami, tu es incollable aujourd'hui !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q06",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une furcation de grade 3, dit : 'Le pronostic est réservé.' 🦅 Sami répond : 'On peut toujours la traiter !' Qu'est-ce qu'une furcation de grade 3 ?",
+      "media": [],
+      "options": [
+        "Une atteinte traversante de la furcation avec communication entre les racines",
+        "Une atteinte superficielle de la furcation",
+        "Une atteinte de moins de 2 mm",
+        "Une furcation saine"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Une furcation de grade 3 est traversante, compliquant l'hygiène et le traitement.' 🦅 Sami : 'Je vais essayer de la traiter quand même...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q07",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une poche à 5 mm après traitement, dit : 'Le traitement a échoué.' 🐆 Mina répond : 'Pas nécessairement !' Que dit la littérature ?",
+      "media": [],
+      "options": [
+        "Une poche résiduelle à 5 mm peut être stable avec un bon contrôle de plaque",
+        "Toute poche > 4 mm est un échec",
+        "Il faut toujours réopérer",
+        "Il faut toujours extraire"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Une poche résiduelle peut être maintenue stable avec un bon contrôle de plaque.' 🐆 Mina : 'Sami, tu as raison cette fois !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q08",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant un patient avec une parodontite sévère, dit : 'Il faut faire un bilan complet.' 🦅 Sami répond : 'Inutile, le diagnostic est évident.' Que comprend le bilan complet ?",
+      "media": [],
+      "options": [
+        "Sondage complet, radiographies, indices de plaque, de saignement et mobilité",
+        "Uniquement le sondage",
+        "Uniquement les radiographies",
+        "Uniquement l'examen visuel"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le bilan complet évalue la sévérité, l'extension et le pronostic.' 🦅 Sami : 'Bon, on va tout faire... mais c'est long !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q09",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une perte osseuse verticale, dit : 'C'est perdu, il faut extraire.' 🐆 Mina répond : 'On peut régénérer !' Qu'est-ce que la régénération tissulaire guidée ?",
+      "media": [],
+      "options": [
+        "Une technique utilisant des membranes et des biomatériaux pour régénérer l'os",
+        "Une technique d'extraction",
+        "Une technique de détartrage",
+        "Une technique prothétique"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La RTG permet de régénérer l'os perdu autour des dents.' 🐆 Mina : 'Sami, tu es vraiment à jour !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q10",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une mobilité de grade 3, dit : 'Le pronostic est très réservé.' 🦅 Sami répond : 'On peut encore traiter !' Que signifie une mobilité de grade 3 ?",
+      "media": [],
+      "options": [
+        "Une mobilité horizontale > 2 mm ou verticale",
+        "Une mobilité horizontale de 1 à 2 mm",
+        "Une mobilité horizontale de moins de 1 mm",
+        "Aucune mobilité"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La mobilité de grade 3 est sévère, avec un pronostic très réservé.' 🦅 Sami : 'Je vais essayer de la sauver quand même...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q11",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une poche à 7 mm et saignement, dit : 'C'est une parodontite active.' 🐆 Mina demande : 'Comment le confirmer ?' Qu'est-ce que le saignement au sondage ?",
+      "media": [],
+      "options": [
+        "Un signe d'inflammation active et de progression de la maladie",
+        "Un signe de cancer",
+        "Un signe de carence en vitamines",
+        "Un signe de mauvaise hygiène uniquement"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le BOP est un indicateur d'activité inflammatoire.' 🐆 Mina : 'Sami, tu progresses !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q12",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un patient avec une parodontite et un diabète non contrôlé, dit : 'Il faut d'abord contrôler le diabète.' 🦅 Sami répond : 'Non, on traite la parodontite d'abord.' Qui a raison ?",
+      "media": [],
+      "options": [
+        "Mina, le contrôle du diabète améliore la réponse au traitement parodontal",
+        "Sami, le traitement parodontal doit précéder",
+        "Les deux sont équivalents",
+        "Aucun, il faut attendre"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La relation est bidirectionnelle, mais un diabète contrôlé optimise les résultats.' 🦅 Sami : 'Bon, on va coordonner avec son médecin...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q13",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une parodontite et un tabagisme actif, dit : 'Le tabac n'a pas d'impact sur le traitement.' 🐆 Mina répond : 'Si, totalement !' Quel est l'impact du tabac ?",
+      "media": [],
+      "options": [
+        "Il réduit la vascularisation et la réponse au traitement parodontal",
+        "Il n'a aucun impact",
+        "Il améliore la réponse au traitement",
+        "Il réduit la plaque dentaire"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le tabac compromet la vascularisation et la cicatrisation.' 🐆 Mina : 'Sami, tu es en forme aujourd'hui !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q14",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un patient avec une parodontite, dit : 'Il faut des radiographies.' 🦅 Sami répond : 'Inutile, je vois les poches.' Quel type de radiographie est indiqué ?",
+      "media": [],
+      "options": [
+        "Des radiographies rétro-alvéolaires pour évaluer la perte osseuse",
+        "Une panoramique uniquement",
+        "Une téléradiographie",
+        "Aucune radiographie n'est nécessaire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les rétro-alvéolaires montrent précisément la perte osseuse.' 🦅 Sami : 'Bon, on va les faire...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q15",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une lésion de furcation de grade 2, dit : 'On peut la traiter par comblement.' 🐆 Mina répond : 'Le pronostic est réservé.' Qu'est-ce qu'une furcation de grade 2 ?",
+      "media": [],
+      "options": [
+        "Une atteinte partielle de la furcation, visible mais non traversante",
+        "Une atteinte traversante",
+        "Une atteinte superficielle",
+        "Une furcation saine"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La furcation de grade 2 est partielle, accessible mais difficile à traiter.' 🐆 Mina : 'Sami, tu connais ta classification !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q16",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un patient avec un abcès parodontal, dit : 'Il faut drainer immédiatement.' 🦅 Sami répond : 'Non, des antibiotiques suffisent.' Qui a raison ?",
+      "media": [],
+      "options": [
+        "Mina, le drainage est urgent pour évacuer le pus",
+        "Sami, les antibiotiques suffisent",
+        "Les deux sont possibles",
+        "Aucun, il faut extraire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le drainage est la première urgence, puis les antibiotiques.' 🦅 Sami : 'OK, je vais drainer... mais vite !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q17",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une poche à 6 mm après chirurgie, dit : 'La chirurgie a échoué.' 🐆 Mina répond : 'Pas forcément !' Que dit la littérature ?",
+      "media": [],
+      "options": [
+        "Une poche à 5-6 mm stable peut être acceptable si non inflammatoire",
+        "Toute poche > 4 mm est un échec",
+        "Il faut toujours réopérer",
+        "Il faut toujours extraire"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Une poche résiduelle stable peut être maintenue avec un bon contrôle.' 🐆 Mina : 'Sami, tu es raisonnable !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q18",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une parodontite généralisée sévère, dit : 'Il faut un traitement global.' 🦅 Sami répond : 'Non, par quadrant.' Quelle approche est recommandée ?",
+      "media": [],
+      "options": [
+        "Le traitement par quadrant en plusieurs séances est validé",
+        "Le traitement global en une seule séance",
+        "Seul le traitement par quadrant est efficace",
+        "Aucun, il faut extraire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement par quadrant est la stratégie standard pour minimiser l'inconfort.' 🦅 Sami : 'Je préfère tout faire d'un coup, mais tu as raison.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q19",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une récession de classe III de Miller, dit : 'On peut greffer avec succès.' 🐆 Mina répond : 'Le recouvrement sera incomplet.' Quel est le pronostic ?",
+      "media": [],
+      "options": [
+        "Classe III : recouvrement partiel possible",
+        "Recouvrement total possible",
+        "Aucun recouvrement possible",
+        "La greffe est contre-indiquée"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Miller III a un recouvrement partiel, mais une amélioration est possible.' 🐆 Mina : 'Sami, tu es vraiment expert !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q20",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un patient avec une parodontite sévère et des antécédents familiaux, dit : 'Il y a une composante génétique.' 🦅 Sami répond : 'Le génétique n'a pas d'importance.' Quel est le rôle de la génétique ?",
+      "media": [],
+      "options": [
+        "La génétique influence la susceptibilité et la réponse immunitaire",
+        "La génétique n'a aucun rôle",
+        "La génétique est le seul facteur",
+        "La génétique est négligeable"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Certaines variantes génétiques augmentent la susceptibilité à la parodontite.' 🦅 Sami : 'Je ne savais pas, merci Mina !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q21",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une poche à 4 mm après maintenance, dit : 'C'est une récidive.' 🐆 Mina répond : 'Pas nécessairement !' Que signifie une poche à 4 mm ?",
+      "media": [],
+      "options": [
+        "Une poche à 4 mm peut être stable si non inflammatoire",
+        "Toute poche à 4 mm est une récidive",
+        "Il faut toujours traiter",
+        "Il faut toujours extraire"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Une poche à 4 mm stable avec BOP négatif est acceptable.' 🐆 Mina : 'Sami, tu deviens prudent !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q22",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une perte osseuse générale, dit : 'Il faut une évaluation prothétique.' 🦅 Sami répond : 'Non, on traite la parodontite d'abord.' Quelle est la séquence ?",
+      "media": [],
+      "options": [
+        "Le traitement parodontal précède l'évaluation prothétique",
+        "L'évaluation prothétique précède le traitement parodontal",
+        "Les deux sont simultanés",
+        "La séquence n'a pas d'importance"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement parodontal doit stabiliser le parodonte avant la prothèse.' 🦅 Sami : 'Je suis d'accord avec toi !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q23",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une parodontite, dit : 'Le traitement est terminé.' 🐆 Mina répond : 'Non, la maintenance commence.' Pourquoi la maintenance est-elle cruciale ?",
+      "media": [],
+      "options": [
+        "Pour prévenir les récidives à long terme",
+        "Pour faire payer plus cher",
+        "Pour utiliser plus de matériel",
+        "Pour remplir des papiers"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La maintenance parodontale est essentielle pour la stabilité à long terme.' 🐆 Mina : 'Sami, tu as enfin compris !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q24",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un patient avec une parodontite et un stress important, dit : 'Le stress peut aggraver la maladie.' 🦅 Sami répond : 'Non, c'est un mythe.' Quel est l'impact du stress ?",
+      "media": [],
+      "options": [
+        "Le stress augmente l'inflammation et réduit la réponse immunitaire",
+        "Le stress n'a aucun impact",
+        "Le stress améliore la parodontite",
+        "Le stress est bénéfique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le stress chronique modifie la réponse inflammatoire.' 🦅 Sami : 'Je vais en tenir compte dans mes traitements.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PARO_D2_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami et 🐆 Mina discutent de l'avenir de la parodontologie. Sami dit : 'Les biomatériaux vont révolutionner la régénération !' Mina répond : 'Le facteur humain reste clé.' Quel est l'avenir de la régénération ?",
+      "media": [],
+      "options": [
+        "Les biomatériaux et les facteurs de croissance améliorent la régénération, mais le clinicien reste essentiel",
+        "Les biomatériaux remplaceront tout",
+        "La régénération est impossible",
+        "Seuls les facteurs de croissance suffisent"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les avancées en biomatériaux sont prometteuses, mais le savoir-faire clinique est irremplaçable.' 🦅 Sami : 'On garde nos emplois !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "conventionnement_amo_debutant2_001",
+    "title": "Convencionamiento y AMO - Principiante 2",
+    "specialty": "CONV",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CONV_D2_Q01",
+      "type": "single-choice",
+      "question": "Según el artículo 1 de la ley 65-00, ¿sobre qué principio fundamental se basa el seguro de enfermedad obligatorio?",
+      "media": [],
+      "options": [
+        "El principio de cotización y de reparto de riesgos",
+        "El principio de asistencia social y solidaridad nacional",
+        "El principio de gratuidad total de los cuidados para todos",
+        "El principio de selección médica y prevención"
+      ],
+      "correct": 0,
+      "explanation": "AMO se basa en el principio de cotización y en el principio de reparto de riesgos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q02",
+      "type": "single-choice",
+      "question": "Según el artículo 2, ¿a qué categorías de personas se aplica el seguro de enfermedad obligatorio de base?",
+      "media": [],
+      "options": [
+        "A los funcionarios, asalariados, pensionistas, trabajadores autónomos y estudiantes",
+        "Solo a los asalariados del sector privado y sus beneficiarios",
+        "Exclusivamente a los funcionarios y agentes de los colectivos locales",
+        "Solo a los perceptores de pensiones del sector público y privado"
+      ],
+      "correct": 0,
+      "explanation": "AMO se aplica a todas estas categorías: funcionarios, asalariados, pensionistas, trabajadores autónomos, profesionales liberales, estudiantes y excombatientes de la resistencia.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q03",
+      "type": "single-choice",
+      "question": "Según el artículo 3, ¿para quién está destinado el régimen de asistencia médica (RAMED)?",
+      "media": [],
+      "options": [
+        "Para las personas económicamente débiles no sujetas a AMO",
+        "Para los funcionarios y agentes en activo",
+        "Para los trabajadores autónomos que ejercen profesiones liberales",
+        "Para los estudiantes de la enseñanza superior pública"
+      ],
+      "correct": 0,
+      "explanation": "RAMED está destinado a las personas económicamente débiles que no gozan de ningún régimen de AMO.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q04",
+      "type": "single-choice",
+      "question": "Conforme al artículo 5, ¿qué beneficiarios están cubiertos por el seguro de enfermedad obligatorio?",
+      "media": [],
+      "options": [
+        "El cónyuge, los hijos menores de 21 años y los hijos discapacitados",
+        "Solo el cónyuge y los padres en primer grado",
+        "Los hijos menores de 18 años y los nietos a cargo",
+        "Todos los ascendientes y descendientes sin límite de edad"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 5 define como beneficiarios: al cónyuge, a los hijos menores de 21 años (26 años para estudiantes) y a los hijos discapacitados sin límite de edad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q05",
+      "type": "single-choice",
+      "question": "Según el artículo 5, ¿hasta qué edad un hijo soltero que continúa estudios superiores está cubierto por el seguro?",
+      "media": [],
+      "options": [
+        "Hasta los 26 años con justificación de los estudios",
+        "Hasta los 21 años sin condiciones especiales",
+        "Hasta los 30 años para los estudios superiores",
+        "Hasta la obtención del título sin límite de edad"
+      ],
+      "correct": 0,
+      "explanation": "El límite de edad se prorroga hasta los 26 años para los hijos solteros que continúan estudios superiores, con justificación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q06",
+      "type": "single-choice",
+      "question": "Según el artículo 5, ¿puede el asegurado solicitar la extensión de AMO a sus padres?",
+      "media": [],
+      "options": [
+        "Sí, con la condición de pagar sus cotizaciones",
+        "No, los padres nunca están cubiertos por AMO",
+        "Sí, automáticamente sin cotizaciones adicionales",
+        "Sí, solo si los padres tienen más de 70 años"
+      ],
+      "correct": 0,
+      "explanation": "El asegurado puede solicitar la extensión al padre y a la madre con la condición de pagar sus cotizaciones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q07",
+      "type": "single-choice",
+      "question": "Según el artículo 7, ¿qué tipos de cuidados médicos garantiza el seguro de enfermedad obligatorio?",
+      "media": [],
+      "options": [
+        "Cuidados curativos, preventivos, de rehabilitación, de maternidad y odontológicos",
+        "Solo los cuidados curativos y la hospitalización",
+        "Los procedimientos estéticos y la balneoterapia",
+        "Exclusivamente los medicamentos y los análisis de laboratorio"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 7 enumera: cuidados preventivos, curativos, de rehabilitación, maternidad, odontología, ortodoncia para niños, etc.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q08",
+      "type": "single-choice",
+      "question": "Según el artículo 8, ¿qué servicios están excluidos del ámbito del seguro de enfermedad obligatorio?",
+      "media": [],
+      "options": [
+        "La cirugía estética y la medicina no convencional",
+        "La cirugía reparadora y la implantología",
+        "Los cuidados odontológicos y la ortodoncia",
+        "Los análisis de laboratorio y la radiología"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 8 excluye: la cirugía estética, la balneoterapia, la acupuntura, la mesoterapia, la talasoterapia, la homeopatía y la medicina no convencional.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q09",
+      "type": "single-choice",
+      "question": "Según el artículo 9, ¿cuál es la norma sobre la parte que queda a cargo del asegurado?",
+      "media": [],
+      "options": [
+        "El asegurado conserva la libertad de suscribir un seguro complementario",
+        "El asegurado no puede suscribir un seguro complementario",
+        "La parte restante siempre está cubierta por el Estado",
+        "El ticket moderador está prohibido por la ley"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 9 precisa que el asegurado conserva la libertad de suscribir un seguro complementario.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q10",
+      "type": "single-choice",
+      "question": "Según el artículo 9, ¿qué prevé la ley en caso de enfermedad grave o invalidante?",
+      "media": [],
+      "options": [
+        "La exención total o parcial del ticket moderador",
+        "El aumento de la tasa de cotización del asegurado",
+        "La exclusión automática del régimen de seguro",
+        "Un reembolso fijo sin condiciones"
+      ],
+      "correct": 0,
+      "explanation": "En caso de enfermedad grave o invalidante que requiera un tratamiento de larga duración, la parte restante se exime total o parcialmente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q11",
+      "type": "single-choice",
+      "question": "Conforme al artículo 10, ¿en qué forma pueden reembolsarse algunos dispositivos, como los aparatos ortopédicos?",
+      "media": [],
+      "options": [
+        "En forma de suma fija fijada por los textos reglamentarios",
+        "En forma de reembolso íntegro sin límites",
+        "Solo en forma de reembolso por acto",
+        "En forma de reembolso variable según el paciente"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 10 precisa que algunos dispositivos, en particular los aparatos ortopédicos y los dispositivos médicos, son objeto de un reembolso en forma de suma fija.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q12",
+      "type": "single-choice",
+      "question": "Según el artículo 11, ¿qué formas de reembolso prevé la ley?",
+      "media": [],
+      "options": [
+        "Por acto, por patología, financiación global o financiación capitacional",
+        "Solo por acto mediante presentación de facturas",
+        "Exclusivamente en forma de suma fija por grupos homogéneos de enfermedades",
+        "Solo financiación capitacional con médico de referencia"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 11 prevé: reembolso por acto, suma fija por patología, financiación global, pago anticipado o financiación capitacional.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q13",
+      "type": "single-choice",
+      "question": "Según el artículo 13, ¿pueden reembolsarse los servicios prestados en el extranjero?",
+      "media": [],
+      "options": [
+        "Sí, en caso de enfermedad repentina o de ausencia de tratamiento adecuado en Marruecos",
+        "No, solo los servicios en el territorio nacional son reembolsables",
+        "Sí, automáticamente sin ninguna condición previa",
+        "Sí, solo si el paciente está en misión"
+      ],
+      "correct": 0,
+      "explanation": "Los servicios en el extranjero se admiten en caso de enfermedad repentina durante una estancia o cuando el tratamiento no puede realizarse en Marruecos, con autorización previa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q14",
+      "type": "single-choice",
+      "question": "Según el artículo 14, ¿qué derecho fundamental conserva el beneficiario de AMO?",
+      "media": [],
+      "options": [
+        "La libre elección del médico y del establecimiento de salud",
+        "La obligación de consultar con un médico de referencia designado",
+        "El derecho de elección solo en el sector público",
+        "La prohibición de cambiar de médico tratante"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 14 garantiza al beneficiario la libre elección del médico, del establecimiento de salud, del farmacéutico y del personal paramédico.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q15",
+      "type": "single-choice",
+      "question": "Según el artículo 18, ¿quién negocia los convenios nacionales?",
+      "media": [],
+      "options": [
+        "La Agencia Nacional del Seguro de Enfermedad (ANAM)",
+        "El Ministerio de Sanidad directamente",
+        "Solo los organismos gestores",
+        "El Consejo de la Competencia"
+      ],
+      "correct": 0,
+      "explanation": "Los convenios se celebran por iniciativa y bajo la dirección de ANAM.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q16",
+      "type": "single-choice",
+      "question": "Según el artículo 19, ¿con quién se celebran los convenios nacionales para el sector privado?",
+      "media": [],
+      "options": [
+        "Con los consejos nacionales de los colegios profesionales",
+        "Con los sindicatos de pacientes",
+        "Con las compañías de seguros privadas",
+        "Con el Banco Central de Marruecos"
+      ],
+      "correct": 0,
+      "explanation": "Los convenios se celebran entre los organismos gestores y los consejos nacionales de los colegios profesionales correspondientes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q17",
+      "type": "single-choice",
+      "question": "Según el artículo 24, ¿qué sanciones pueden aplicarse a un prestador por incumplimiento del convenio?",
+      "media": [],
+      "options": [
+        "La exclusión del convenio por un período determinado",
+        "Una multa fija de 10.000 dirhams",
+        "La suspensión definitiva de la actividad profesional",
+        "Una simple advertencia sin consecuencias"
+      ],
+      "correct": 0,
+      "explanation": "ANAM puede decidir la exclusión del prestador del convenio por incumplimiento de sus condiciones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q18",
+      "type": "single-choice",
+      "question": "Según el artículo 26, ¿cuál es el objeto del control médico ejercido por los organismos gestores?",
+      "media": [],
+      "options": [
+        "Verificar la conformidad de las prescripciones y detectar los abusos",
+        "Controlar la calidad del equipamiento del consultorio",
+        "Verificar el número de pacientes atendidos al día",
+        "Controlar las cuentas bancarias de los prestadores"
+      ],
+      "correct": 0,
+      "explanation": "El control tiene por objeto verificar la conformidad de las prescripciones, la justificación de los servicios y detectar los abusos y fraudes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q19",
+      "type": "single-choice",
+      "question": "Según el artículo 32, ¿a qué condición está supeditado el derecho a las prestaciones?",
+      "media": [],
+      "options": [
+        "Al pago previo de las cotizaciones debidas",
+        "A la aprobación de un médico consultor",
+        "Al consentimiento previo del Ministerio de Sanidad",
+        "A un período de carencia automático de seis meses"
+      ],
+      "correct": 0,
+      "explanation": "El derecho a las prestaciones está supeditado al pago previo de las cotizaciones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q20",
+      "type": "single-choice",
+      "question": "Según el artículo 34, ¿durante cuánto tiempo una persona conserva sus derechos después de dejar de cumplir las condiciones?",
+      "media": [],
+      "options": [
+        "Un período máximo de seis meses",
+        "Un período de dos años completos",
+        "Un período de solo un mes",
+        "Ningún período de conservación de derechos"
+      ],
+      "correct": 0,
+      "explanation": "Las personas que dejan de cumplir las condiciones conservan sus derechos durante un período máximo de seis meses.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q21",
+      "type": "single-choice",
+      "question": "Según el artículo 35, ¿durante cuánto tiempo los beneficiarios de un asegurado fallecido continúan beneficiándose de las prestaciones?",
+      "media": [],
+      "options": [
+        "Durante dos años",
+        "Durante seis meses",
+        "Durante cinco años",
+        "Hasta el fin de la vida de los beneficiarios"
+      ],
+      "correct": 0,
+      "explanation": "Los beneficiarios de un asegurado fallecido continúan beneficiándose de las prestaciones durante dos años.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q22",
+      "type": "single-choice",
+      "question": "Según el artículo 44, ¿qué está prohibido a los organismos gestores de AMO?",
+      "media": [],
+      "options": [
+        "Acumular la gestión del seguro con la gestión de establecimientos de cuidados",
+        "Ejercer el control médico sobre los prestadores",
+        "Celebrar convenios con los profesionales de la salud",
+        "Recibir cotizaciones de los empleadores"
+      ],
+      "correct": 0,
+      "explanation": "Los organismos gestores no pueden acumular la gestión de AMO con la gestión de establecimientos de cuidados o el suministro de equipos médicos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q23",
+      "type": "single-choice",
+      "question": "Según el artículo 130, ¿qué multa se impone al empleador que no realiza su afiliación?",
+      "media": [],
+      "options": [
+        "Multa de 5.000 a 50.000 dirhams",
+        "Multa de 1.000 a 5.000 dirhams",
+        "Multa de 50.000 a 100.000 dirhams",
+        "Pena de prisión de 6 meses a 2 años"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 130 prevé una multa de 5.000 a 50.000 dirhams para el empleador que no realiza su afiliación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q24",
+      "type": "single-choice",
+      "question": "Según el artículo 131, ¿cuál es la sanción por la omisión de afiliación de un trabajador?",
+      "media": [],
+      "options": [
+        "Multa de 1.000 dirhams por cada trabajador afectado",
+        "Multa fija de 5.000 dirhams",
+        "Suspensión del derecho de contratación",
+        "Pena de prisión de 3 meses a 1 año"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 131 prevé una multa de 1.000 dirhams por cada trabajador no afiliado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_D2_Q25",
+      "type": "single-choice",
+      "question": "Según el artículo 135, ¿qué se sanciona con multa de 1.000 a 5.000 dirhams?",
+      "media": [],
+      "options": [
+        "El fraude o la declaración falsa para obtener prestaciones indebidas",
+        "La negativa al control médico por parte del prestador",
+        "El impago de cotizaciones por parte del empleador",
+        "La selección de riesgos por parte del organismo gestor"
+      ],
+      "correct": 0,
+      "explanation": "El artículo 135 sanciona el fraude o la declaración falsa para obtener prestaciones indebidas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

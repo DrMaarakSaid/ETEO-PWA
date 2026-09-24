@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "informatique_logiciels_dentaires_intermediaire1_001",
+    "title": "Dental IT & Software - Intermediate 1",
+    "specialty": "INFO",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "INFO_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized all his patient files. Dr. Tazi keeps his files in paper format. According to Article 12 of Law 09-08, what is their respective obligation towards the CNDP?",
+      "media": [],
+      "options": [
+        "Only Dr. Chamssi must declare personal data processing",
+        "Neither has any obligation because health data is excluded",
+        "Both must declare their processing, regardless of the medium",
+        "Only Dr. Tazi must declare because paper is more risky"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Tazi explains: 'Law 09-08 applies to any processing of personal data, regardless of the medium. We both must declare.' Dr. Chamssi: 'I will help you with your declaration.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr. Tazi never made a CNDP declaration for his paper files. Dr. Chamssi informs him of the risks. According to Article 52 of Law 09-08, what fine is he exposed to?",
+      "media": [],
+      "options": [
+        "No fine, paper files are excluded",
+        "A fine of 1,000 to 5,000 DH",
+        "A fine of 10,000 to 100,000 DH",
+        "A fine of 100,000 to 500,000 DH"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Chamssi explains: 'Article 52 provides for a fine of 10,000 to 100,000 DH for failure to make a prior declaration.' Dr. Tazi: 'I will regularize my situation immediately.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has integrated the CNDP receipt number into his forms. Dr. Tazi simply displays a notice in the waiting room. Dr. Chamssi explains his mistake. What is Dr. Tazi's legal situation?",
+      "media": [],
+      "options": [
+        "He is compliant, display in the waiting room is sufficient",
+        "He is in violation, the receipt number must appear in all notices",
+        "He is compliant, paper files do not require a number",
+        "He is in violation, because he cannot use paper"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Chamssi explains: 'The CNDP receipt number must be integrated into all information notices and forms.' Dr. Tazi: 'I will correct my notices.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr. Chamssi uses cloud-based management software hosted abroad. Dr. Tazi keeps his files at the practice. According to Articles 43 and 44 of Law 09-08, what additional step must Dr. Chamssi take?",
+      "media": [],
+      "options": [
+        "None, the cloud is considered local storage",
+        "A request for data transfer abroad to the CNDP",
+        "Only a simplified declaration",
+        "A notification to the Ministry of Health"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Cloud hosting abroad involves a transfer of data outside Morocco. You must make a transfer request to the CNDP.' Dr. Chamssi: 'I will make this request.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a CNDP declaration for his software. Dr. Tazi has made a declaration for his paper files. According to Article 19, what is the deadline for issuing the receipt?",
+      "media": [],
+      "options": [
+        "24 hours for digital, 8 days for paper",
+        "8 days for digital, 24 hours for paper",
+        "24 hours for both",
+        "8 days for both"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Tazi explains: 'Article 19 provides that the CNDP issues the receipt within 24 hours, regardless of the medium.' Dr. Chamssi: 'We are therefore treated the same way.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has installed a digital video surveillance camera. Dr. Tazi simply has a mirror without a camera. According to CNDP deliberation No. 350-2013, what regime applies to Dr. Chamssi?",
+      "media": [],
+      "options": [
+        "A mandatory prior authorization",
+        "A simplified declaration in accordance with the deliberation",
+        "No declaration, video surveillance is free",
+        "A normal declaration with an 8-day deadline"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Video surveillance falls under the simplified declaration regime (form F214) in accordance with deliberation No. 350-2013.' Dr. Chamssi: 'I will make the simplified declaration.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr. Chamssi uses a digital scanner to archive his documents. Dr. Tazi still uses paper. Regarding probative value, what is Dr. Chamssi's situation?",
+      "media": [],
+      "options": [
+        "His documents have no legal value",
+        "His documents have the same probative force as paper if kept with integrity",
+        "His documents have higher value than paper",
+        "He must keep both versions"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The electronic document has the same probative force as paper, provided its integrity is guaranteed.' Dr. Chamssi: 'I will guarantee the integrity of my archives.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized all his invoices. Dr. Tazi still keeps his paper invoices. What is the legal retention period for both?",
+      "media": [],
+      "options": [
+        "5 years for digital, 10 years for paper",
+        "10 years for both, regardless of the medium",
+        "6 years for both",
+        "3 years for digital, 6 years for paper"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The retention period for accounting documents is 10 years, regardless of the medium.' Dr. Chamssi: 'I will keep my digital invoices for 10 years.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has installed CRM software. Dr. Tazi uses a paper appointment book. According to Law 09-08, what is the common obligation for both?",
+      "media": [],
+      "options": [
+        "Keep a register of processing, regardless of the medium",
+        "Only Dr. Chamssi must keep a register",
+        "Only Dr. Tazi must keep a register",
+        "Neither has any obligation"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Chamssi explains: 'Law 09-08 requires keeping a register of processing, regardless of the medium.' Dr. Tazi: 'I will create a register for my paper files.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a request for prior authorization for his health data. Dr. Tazi believes that his paper files are exempt. According to Article 21, who is right?",
+      "media": [],
+      "options": [
+        "Dr. Tazi is right: paper health data is exempt",
+        "Dr. Chamssi is right: health data requires authorization, regardless of the medium",
+        "Dr. Chamssi is wrong: digital health data falls under a simple declaration",
+        "Dr. Tazi is right: only digital storage is regulated"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Chamssi explains: 'Article 21 considers health data as sensitive, regardless of the medium. Prior authorization is mandatory.' Dr. Tazi: 'I will make my authorization request.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr. Chamssi suffered data loss due to a failure. Dr. Tazi saw his paper files destroyed by a fire. What is the common point between their situations?",
+      "media": [],
+      "options": [
+        "The obligation to notify the loss to the CNDP",
+        "The obligation to notify the breach to the CNSS",
+        "The obligation to inform the patients concerned in the event of a breach",
+        "The obligation to make a declaration to the Order"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Chamssi explains: 'In the event of a data breach, we must inform the persons concerned, regardless of the medium.' Dr. Tazi: 'I will inform my patients of the loss of their files.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a CNDP declaration for his SaaS software. Dr. Tazi has made a declaration for his paper files. What is the fundamental difference in Dr. Chamssi's responsibility?",
+      "media": [],
+      "options": [
+        "Dr. Chamssi is not responsible, the host is",
+        "Dr. Chamssi has an obligation to subcontract with security clauses",
+        "Dr. Tazi has more responsibilities",
+        "There is no difference in responsibility"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'By using a subcontractor, you must conclude a contract with clauses guaranteeing data security.' Dr. Chamssi: 'I will check my contract with the host.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized his files and makes them remotely accessible via a portal. Dr. Tazi keeps the traditional system. According to Article 5, must the information notices be different?",
+      "media": [],
+      "options": [
+        "Yes, Dr. Chamssi must provide more detailed notices for the portal",
+        "No, the notices must be the same regardless of the medium",
+        "Yes, only Dr. Tazi must inform his patients",
+        "No, the law does not provide for an information obligation"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Tazi explains: 'The portal collects additional data, you must inform your patients of these new processing operations.' Dr. Chamssi: 'I will adapt my information notices.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr. Chamssi uses electronic signatures for his prescriptions. Dr. Tazi uses handwritten signatures. According to archiving standards, what advantage does the electronic signature offer?",
+      "media": [],
+      "options": [
+        "No advantage, the two signatures have the same value",
+        "The electronic signature guarantees integrity and authenticity",
+        "The electronic signature exempts from keeping documents",
+        "The electronic signature is less reliable"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Chamssi explains: 'The electronic signature guarantees the integrity and authenticity of the document, with a timestamp and digital fingerprint.' Dr. Tazi: 'I will consider electronic signatures.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has opted for an EDMS for his archives. Dr. Tazi keeps his archives in cabinets. What is the advantage of Dr. Chamssi's system?",
+      "media": [],
+      "options": [
+        "Storage is less expensive but searching is longer",
+        "Search is faster and access is easier, but security requirements are reinforced",
+        "There is no advantage",
+        "The paper system is more reliable"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'EDMS allows quick search but imposes reinforced security requirements.' Dr. Chamssi: 'I will reinforce the security of my EDMS.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a CNDP declaration. Dr. Tazi has made a declaration for his paper files. What must imperatively appear in the information notices of both?",
+      "media": [],
+      "options": [
+        "The telephone number of the President of the Order",
+        "The CNDP receipt number and the rights of access, rectification, and objection",
+        "The color of the folders used",
+        "The exact model of the software used"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Chamssi explains: 'The notices must include the CNDP receipt number, the purposes, and the rights of access, rectification, and objection.' Dr. Tazi: 'I will add these notices to my documents.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has hosted his data with a certified HDS provider. Dr. Tazi does not need a provider. What does HDS certification bring to Dr. Chamssi?",
+      "media": [],
+      "options": [
+        "A tax reduction",
+        "A guarantee of security and compliance with health data requirements",
+        "An exemption from CNDP declaration",
+        "A dispensation from subcontracting"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'HDS certification guarantees that the provider respects security requirements specific to health data.' Dr. Chamssi: 'That's reassuring for my patients.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has integrated his software with an online appointment booking platform. Dr. Tazi uses the telephone. According to the CNDP deliberation on cookies, what additional obligation does Dr. Chamssi have?",
+      "media": [],
+      "options": [
+        "None",
+        "Collect the prior consent of visitors for the cookies on his site",
+        "Declare the tool to the Order of Dentists",
+        "Install an antivirus on his site"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'Using cookies on your online appointment site requires collecting prior consent from visitors.' Dr. Chamssi: 'I will set up a consent banner.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has set up an automatic backup system. Dr. Tazi has a copy of his files at a colleague's. Are the two approaches equivalent?",
+      "media": [],
+      "options": [
+        "Yes, both approaches are valid",
+        "No, Dr. Chamssi's backup must comply with security standards",
+        "Yes, because both are backups",
+        "No, the paper copy at a colleague's is prohibited"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Chamssi explains: 'Backups are subject to the same security requirements as the main processing.' Dr. Tazi: 'I will secure my backup at my colleague's.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized files for an indefinite period. Dr. Tazi keeps them without limit. According to Article 6, what is their obligation?",
+      "media": [],
+      "options": [
+        "Keep the data indefinitely",
+        "Set a limited and proportionate retention period",
+        "No retention period",
+        "Destroy the files after 3 years"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The principle of proportionality requires not keeping data beyond the necessary time.' Dr. Chamssi: 'I will set a retention period.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a CNDP declaration. Dr. Tazi has made a request for prior authorization. What is the difference between the two procedures?",
+      "media": [],
+      "options": [
+        "No difference",
+        "The declaration is for non-sensitive data, the authorization for sensitive data",
+        "The declaration only concerns digital data",
+        "Authorization is faster"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Chamssi explains: 'The declaration is the default regime. Authorization is required for sensitive data like health data.' Dr. Tazi: 'I understand better now.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a CNDP declaration. Dr. Tazi must obtain prior authorization. What is the risk for Dr. Tazi if he implements his processing without authorization?",
+      "media": [],
+      "options": [
+        "No risk",
+        "A fine of 10,000 to 100,000 DH and/or prison sentences",
+        "A simple injunction",
+        "A ban on practicing"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Chamssi explains: 'Implementing processing subject to authorization without having obtained it exposes you to the fine provided for in Article 52.' Dr. Tazi: 'I will make my authorization request before starting.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has installed management software. Dr. Tazi still uses filing cabinets. According to Law 09-08, can Dr. Chamssi use the data for anonymized statistical studies?",
+      "media": [],
+      "options": [
+        "Yes, because the data is anonymized",
+        "Yes, if he declares it to the CNDP",
+        "No, medical data cannot be used",
+        "No, the statistical study requires authorization"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Tazi explains: 'Law 09-08 does not apply to anonymized data, because it no longer allows identification of individuals.' Dr. Chamssi: 'I will anonymize the data for my statistics.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr. Chamssi wishes to use facial recognition for access to his practice. Dr. Tazi uses physical keys. According to CNDP deliberation D-108-EUS/2020, must Dr. Chamssi obtain prior authorization?",
+      "media": [],
+      "options": [
+        "No, facial recognition is free",
+        "Yes, specific prior authorization is required",
+        "Yes, but only for research",
+        "No, he can install this system freely"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Tazi explains: 'The use of facial recognition is considered sensitive processing and requires prior authorization from the CNDP.' Dr. Chamssi: 'I will make the authorization request.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr. Chamssi, after bringing his practice into compliance with Dr. Tazi, receives his congratulations. What is the next step for Dr. Chamssi?",
+      "media": [],
+      "options": [
+        "Become an expert in dental data protection",
+        "Retire",
+        "Change specialty",
+        "Forget good practices"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Tazi explains: 'Mastery of data protection is a valuable skill. Becoming an expert is the next step.' Dr. Chamssi: 'I will train in data protection.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

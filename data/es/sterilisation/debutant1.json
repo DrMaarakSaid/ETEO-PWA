@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_debutant1_001",
+    "title": "Esterilización - Principiante 1",
+    "specialty": "STER",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_D1_Q01",
+      "type": "single-choice",
+      "question": "¿Cómo se define exactamente el proceso de esterilización en la práctica odontológica?",
+      "media": [],
+      "options": [
+        "Protocolo de limpieza superficial de superficies",
+        "Aplicación de agentes químicos que neutralizan virus",
+        "Operación destinada a destruir todos los microorganismos vivos y esporas",
+        "Limpieza mecánica que reduce la flora transitoria"
+      ],
+      "correct": 2,
+      "explanation": "La esterilización se distingue por su carácter absoluto, garantizando la ausencia total de todos los microorganismos viables, incluidas las endosporas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q02",
+      "type": "single-choice",
+      "question": "¿Qué diferencia fundamental distingue la esterilización de la desinfección clásica?",
+      "media": [],
+      "options": [
+        "La desinfección reduce la carga microbiana, pero no necesariamente destruye las endosporas",
+        "La esterilización se aplica solo a tejidos vivos",
+        "La desinfección utiliza solo agentes físicos térmicos",
+        "La esterilización proporciona un nivel de seguridad inferior a la descontaminación"
+      ],
+      "correct": 0,
+      "explanation": "La desinfección es temporal; su espectro de acción no siempre incluye formas esporuladas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q03",
+      "type": "single-choice",
+      "question": "¿Qué es una espora bacteriana (endospora)?",
+      "media": [],
+      "options": [
+        "Estructura de replicación intracelular de virus",
+        "Forma de supervivencia altamente resistente a condiciones adversas",
+        "Toxina termolábil secretada por bacterias",
+        "Receptor de membrana que participa en la adhesión"
+      ],
+      "correct": 1,
+      "explanation": "Las endosporas poseen cubiertas gruesas que les confieren una resistencia extrema al calor y a los desinfectantes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q04",
+      "type": "single-choice",
+      "question": "¿Qué método se recomienda normativamente para los instrumentos en la práctica general?",
+      "media": [],
+      "options": [
+        "Exposición prolongada a aire caliente (estufa de calor seco)",
+        "Irradiación gamma continua con fuentes radiactivas",
+        "Esterilización por calor húmedo (vapor de agua) en autoclave clase B",
+        "Inmersión prolongada en alcohol etílico"
+      ],
+      "correct": 2,
+      "explanation": "El autoclave clase B es la referencia gracias a su capacidad para procesar cuerpos huecos y cargas porosas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q05",
+      "type": "single-choice",
+      "question": "¿Qué parámetros definen el ciclo estándar a 121°C?",
+      "media": [],
+      "options": [
+        "121°C, 1 bar, 15–20 minutos",
+        "100°C, presión normal, 30 minutos",
+        "150°C, 2 bares, 10 minutos",
+        "134°C, 2 bares, 5 minutos"
+      ],
+      "correct": 0,
+      "explanation": "La meseta a 121°C requiere aproximadamente 1 bar durante 15-20 minutos para garantizar la destrucción de formas resistentes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q06",
+      "type": "single-choice",
+      "question": "¿En qué consiste el proceso de calor seco?",
+      "media": [],
+      "options": [
+        "Exposición a radiación infrarroja",
+        "Tratamiento en cámara saturada de vapor",
+        "Exposición en estufa termorregulada a 160–180°C",
+        "Bombardeo molecular con ondas de alta frecuencia"
+      ],
+      "correct": 2,
+      "explanation": "El calor seco requiere altas temperaturas y tiempos de contacto muy prolongados.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q07",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal desventaja del calor seco (estufa de calor seco)?",
+      "media": [],
+      "options": [
+        "Ciclo excesivamente largo y riesgo de daño térmico en los bordes cortantes",
+        "Acumulación de humedad que provoca oxidación",
+        "Costo prohibitivo de los gases raros utilizados",
+        "Inestabilidad estructural de las moléculas de carbono"
+      ],
+      "correct": 0,
+      "explanation": "El calor seco templa el acero y es menos eficaz que el vapor de agua.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q08",
+      "type": "single-choice",
+      "question": "¿Cuál es la aplicación de las radiaciones ionizantes (gamma)?",
+      "media": [],
+      "options": [
+        "Desinfección final de superficies de trabajo",
+        "Tratamiento industrial de materiales de un solo uso",
+        "Descontaminación de piezas de mano en el sillón",
+        "Preparación de bandejas metálicas de examen"
+      ],
+      "correct": 1,
+      "explanation": "La esterilización por radiación es exclusivamente industrial.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q09",
+      "type": "single-choice",
+      "question": "¿Cómo funciona el proceso de esterilización por plasma de peróxido de hidrógeno?",
+      "media": [],
+      "options": [
+        "Evaporación térmica de aminoácidos saturados",
+        "Pulverización hidroneumática de líquido criogénico",
+        "Excitación de vapores de peróxido por campo electromagnético (gas ionizado)",
+        "Inmersión en glutaraldehído activado por ultrasonidos"
+      ],
+      "correct": 2,
+      "explanation": "El plasma genera radicales libres altamente biocidas en vacío.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q10",
+      "type": "single-choice",
+      "question": "¿Para qué equipos está indicado el plasma de gas?",
+      "media": [],
+      "options": [
+        "Dispositivos médicos termosensibles",
+        "Instrumental quirúrgico macizo de acero",
+        "Campos operatorios de algodón",
+        "Implantes de titanio arenados"
+      ],
+      "correct": 0,
+      "explanation": "Funciona a baja temperatura, ideal para plásticos sensibles o fibras ópticas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q11",
+      "type": "single-choice",
+      "question": "¿Cuál es la naturaleza de la esterilización por óxido de etileno (OE)?",
+      "media": [],
+      "options": [
+        "Tratamiento térmico sobre ácido acético",
+        "Esterilización química a baja temperatura utilizando gas alquilante",
+        "Exposición a ultravioleta C y láser",
+        "Inmersión en formaldehído hirviendo"
+      ],
+      "correct": 1,
+      "explanation": "El OE alquila proteínas y ácidos nucleicos, dejando el material estéril.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q12",
+      "type": "single-choice",
+      "question": "¿Por qué está limitado el uso del óxido de etileno?",
+      "media": [],
+      "options": [
+        "Ineficacia contra micobacterias",
+        "Inestabilidad fisicoquímica sobre el acero",
+        "Fuerte toxicidad, inflamabilidad y necesidad de desorción",
+        "Costo prohibitivo de las bombas de vacío"
+      ],
+      "correct": 2,
+      "explanation": "Es un gas tóxico, mutagénico y cancerígeno que requiere una aireación prolongada.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q13",
+      "type": "single-choice",
+      "question": "¿Cuál es la función del test de Bowie-Dick?",
+      "media": [],
+      "options": [
+        "Control de calidad del vacío y de la penetración del vapor",
+        "Medición de la concentración de iones en el agua",
+        "Confirmación de la destrucción de esporas en una carga específica",
+        "Detección de fugas de aire en las juntas de la puerta"
+      ],
+      "correct": 0,
+      "explanation": "Verifica la eliminación del aire y la uniformidad del vapor.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q14",
+      "type": "single-choice",
+      "question": "¿Cuál es la frecuencia requerida para realizar el test de Bowie-Dick?",
+      "media": [],
+      "options": [
+        "Una vez al año",
+        "Una vez al mes",
+        "Una vez a la semana",
+        "Una vez al día, antes del primer ciclo"
+      ],
+      "correct": 3,
+      "explanation": "Es obligatorio a diario, en cámara caliente, para la seguridad de los ciclos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q15",
+      "type": "single-choice",
+      "question": "¿En qué consiste el test biológico?",
+      "media": [],
+      "options": [
+        "Inserción de una tira reactiva que cambia de color",
+        "Exposición de esporas bacterianas vivas seguida de la verificación de su ausencia de crecimiento",
+        "Programación de un ciclo vacío para verificar la presión",
+        "Análisis de residuos de aminoácidos"
+      ],
+      "correct": 1,
+      "explanation": "Es la única prueba directa de inactivación biológica.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q16",
+      "type": "single-choice",
+      "question": "¿Qué microorganismo se utiliza como indicador para autoclaves?",
+      "media": [],
+      "options": [
+        "Geobacillus stearothermophilus",
+        "Escherichia coli",
+        "Staphylococcus aureus",
+        "Candida albicans"
+      ],
+      "correct": 0,
+      "explanation": "Es la cepa de referencia internacional para calor húmedo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q17",
+      "type": "single-choice",
+      "question": "¿Qué es un indicador químico?",
+      "media": [],
+      "options": [
+        "Dispositivo reactivo que cambia de color bajo parámetros críticos",
+        "Suspensión de enzimas purificadas",
+        "Sensor electrónico autónomo",
+        "Frasco con reactivo líquido"
+      ],
+      "correct": 0,
+      "explanation": "Confirma visualmente la exposición a un conjunto de parámetros del ciclo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q18",
+      "type": "single-choice",
+      "question": "¿Cuál es la especificidad del integrador clase 5?",
+      "media": [],
+      "options": [
+        "Control solo de temperatura",
+        "Reacción a todas las variables críticas, correlacionada con las pruebas biológicas",
+        "Confirmación de la eliminación inicial de aire",
+        "Datación precisa de los datos de presión"
+      ],
+      "correct": 1,
+      "explanation": "La clase 5 es muy precisa y se corresponde con los indicadores biológicos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q19",
+      "type": "single-choice",
+      "question": "¿Cuál es la función principal del embalaje?",
+      "media": [],
+      "options": [
+        "Garantizar la penetración del agente y preservar la esterilidad después",
+        "Aislamiento térmico para prevenir quemaduras",
+        "Aumentar la resistencia mecánica a las vibraciones",
+        "Ocultar defectos visuales"
+      ],
+      "correct": 0,
+      "explanation": "Debe ser permeable al vapor pero impermeable a los microorganismos después del ciclo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q20",
+      "type": "single-choice",
+      "question": "¿De qué factores depende la duración del almacenamiento de la esterilidad?",
+      "media": [],
+      "options": [
+        "Del tipo de embalaje y de las condiciones de almacenamiento",
+        "De la cantidad de microorganismos destruidos inicialmente",
+        "De la marca del autoclave",
+        "De la naturaleza de la aleación metálica"
+      ],
+      "correct": 0,
+      "explanation": "La esterilidad está ligada a la integridad de la barrera protectora y al entorno, no al tiempo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q21",
+      "type": "single-choice",
+      "question": "¿Cómo gestionar la ergonomía junto al sillón para limitar la contaminación?",
+      "media": [],
+      "options": [
+        "Aplicar cera protectora en los instrumentos",
+        "Delimitar zonas estrictas (limpia vs contaminada)",
+        "Mantener los instrumentos al aire libre",
+        "Aumentar la velocidad de ventilación"
+      ],
+      "correct": 1,
+      "explanation": "La sectorización previene la contaminación cruzada entre zonas sucias y limpias.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q22",
+      "type": "single-choice",
+      "question": "¿Cuál es el principio logístico del procesamiento?",
+      "media": [],
+      "options": [
+        "Movimiento hacia adelante (prohibición de cruce)",
+        "Circulación continua",
+        "Almacenamiento en zona limpia antes de la limpieza",
+        "Retorno sistemático a la zona de cuidado"
+      ],
+      "correct": 0,
+      "explanation": "El camino unidireccional (sucia → limpia → estéril) es la regla de oro.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q23",
+      "type": "single-choice",
+      "question": "¿Cuál es la función de la zona de clasificación?",
+      "media": [],
+      "options": [
+        "Recepción, verificación y desmontaje del material antes de la limpieza",
+        "Realización del termosellado de bolsas",
+        "Almacenamiento de contenedores estériles",
+        "Incubación de indicadores biológicos"
+      ],
+      "correct": 0,
+      "explanation": "Es la etapa de recepción y preparación antes del lavado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q24",
+      "type": "single-choice",
+      "question": "¿Qué producto se requiere para la limpieza inicial?",
+      "media": [],
+      "options": [
+        "Hipoclorito de sodio concentrado",
+        "Disolvente a base de acetona",
+        "Detergente enzimático (proteasas/lipasas)",
+        "Fijador aldehídico"
+      ],
+      "correct": 2,
+      "explanation": "Los detergentes con tres enzimas descomponen los residuos orgánicos sin fijarlos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q25",
+      "type": "single-choice",
+      "question": "¿Qué operación es obligatoria antes del embalaje?",
+      "media": [],
+      "options": [
+        "Limpieza minuciosa seguida de un secado perfecto",
+        "Inmersión en aceite de silicona",
+        "Aplicación de barniz protector",
+        "Paso por aire comprimido sin filtrar"
+      ],
+      "correct": 0,
+      "explanation": "La humedad residual bajo el embalaje impide la esterilización y favorece la corrosión.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

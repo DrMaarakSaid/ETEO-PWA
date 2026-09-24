@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_intermediaire1_001",
+    "title": "Sterilization - Intermediate 1",
+    "specialty": "STER",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Yassine, now independent, prepares his first surgical tray. Dr. Fatima explained to him that the forward flow is essential. What is the fundamental rule of the forward flow?",
+      "media": [],
+      "options": [
+        "Instruments must circulate in both directions",
+        "The circuit always goes from the dirty area to the clean area",
+        "You can go back if you forget an instrument",
+        "The direction of flow doesn't matter"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'The forward flow is a golden rule. You never go back.' Dr. Yassine carefully notes this rule.",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr. Yassine receives an emergency patient. He needs to sterilize an instrument quickly. Dr. Fatima reminds him: 'The Flash cycle is an option, but...' What is the main limitation of the Flash cycle?",
+      "media": [],
+      "options": [
+        "It is too long",
+        "It does not allow storage of instruments",
+        "It is too expensive",
+        "It is not effective"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima clarifies: 'Flash is practical for emergencies, but instruments cannot be stored afterward.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr. Yassine wonders about the frequency of tests. Dr. Fatima tells him: 'There are daily, weekly, and monthly tests.' What does the Bowie-Dick test check?",
+      "media": [],
+      "options": [
+        "The temperature of the autoclave",
+        "Steam penetration into the load",
+        "Water quality",
+        "Air pressure"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'The Bowie-Dick is daily. It checks that steam penetrates everywhere.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr. Yassine prepares his first batch of instruments for the autoclave. He remembers Dr. Fatima talking about the load. What is the rule for loading the autoclave?",
+      "media": [],
+      "options": [
+        "You can load as much as you want",
+        "Instruments must be spaced so steam can circulate",
+        "They must be stacked to save space",
+        "Loading order doesn't matter"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Steam must circulate freely. An overloaded autoclave is a failure.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr. Yassine notices white stains on his instruments after sterilization. Dr. Fatima tells him: 'It's a water quality problem.' What is the solution?",
+      "media": [],
+      "options": [
+        "Use tap water",
+        "Use osmosis or demineralized water",
+        "Wipe instruments before sterilization",
+        "Increase temperature"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Deposits are due to minerals. Osmosis water is the solution.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr. Yassine must sterilize canal instruments (hollow). He remembers Dr. Fatima talking about autoclave classes. What type of autoclave is mandatory for hollow instruments?",
+      "media": [],
+      "options": [
+        "Class B",
+        "Class S",
+        "Class N",
+        "Class A"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'Only class B autoclaves can treat hollow instruments.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr. Yassine is worried about the risks of cross-contamination. Dr. Fatima reminds him of a fundamental rule. How should the office zones be organized to avoid contamination?",
+      "media": [],
+      "options": [
+        "One single zone for everything",
+        "Three zones: dirty, clean, sterile",
+        "Two zones: dirty and clean",
+        "Zones don't matter"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Zoning is essential: dirty area (reception), clean area (cleaning), sterile area (storage).'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr. Yassine must choose packaging for his instruments. Dr. Fatima reminds him of the selection criteria. What is the first criterion for packaging?",
+      "media": [],
+      "options": [
+        "Aesthetics",
+        "Price",
+        "Steam permeability and impermeability to microorganisms",
+        "Color"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Fatima explains: 'Packaging must let steam pass but block microorganisms.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr. Yassine wonders about the biological test. Dr. Fatima tells him: 'It's the only test that gives direct proof.' What does a biological test check?",
+      "media": [],
+      "options": [
+        "Temperature",
+        "Destruction of spores",
+        "Pressure",
+        "Humidity"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'The biological test exposes spores and checks that they are indeed destroyed. It is the ultimate proof.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr. Yassine must lubricate his instruments. Dr. Fatima tells him: 'Lubrication is essential, but there is a rule.' When should instruments be lubricated?",
+      "media": [],
+      "options": [
+        "Before cleaning",
+        "After cleaning, before sterilization",
+        "After sterilization",
+        "Once a month"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Lubrication is done after cleaning, before sterilization. Once in the autoclave, the lubrication is permanent.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr. Yassine receives a laboratory sterilization kit. Dr. Fatima explains the difference between sterilization and disinfection. What is the fundamental difference?",
+      "media": [],
+      "options": [
+        "Sterilization is faster",
+        "Sterilization is more expensive",
+        "Sterilization destroys everything, including spores",
+        "Sterilization uses chemicals"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Fatima explains: 'Sterilization eliminates all microbial life, including spores. Disinfection only reduces the microbial load.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr. Yassine must organize the sorting area. Dr. Fatima explains the role of this area. What is the main function of the sorting area?",
+      "media": [],
+      "options": [
+        "Store sterile instruments",
+        "Receive, check, and disassemble material",
+        "Sterilize instruments",
+        "Package instruments"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'The sorting area is the first step. You receive, check, and prepare material before cleaning.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr. Yassine discovers that one of his sterile packages is wet. Dr. Fatima tells him: 'You must not use it.' Why?",
+      "media": [],
+      "options": [
+        "It is unsightly",
+        "Moisture indicates a breach of the sterile barrier",
+        "It is too soft",
+        "It is difficult to open"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Moisture on sterile packaging is a warning sign. The sterile barrier is compromised.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr. Yassine wonders about autoclave maintenance. Dr. Fatima tells him: 'It is mandatory.' What is the recommended frequency for maintenance?",
+      "media": [],
+      "options": [
+        "Once a year",
+        "Once a month",
+        "Once a quarter",
+        "Once a week"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'Annual maintenance is mandatory to ensure safety and compliance.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train a new team member in sterilization. Dr. Fatima gives him advice. What is the first message to convey?",
+      "media": [],
+      "options": [
+        "Sterilization is quick",
+        "Sterilization is a chain where every link is essential",
+        "Sterilization is easy",
+        "Sterilization is secondary"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'The first message is that sterilization is a chain. One weak link, and the whole system collapses.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr. Yassine discovers that the leak test has failed. Dr. Fatima tells him: 'You must act immediately.' What should he do?",
+      "media": [],
+      "options": [
+        "Ignore the problem",
+        "Call technical service",
+        "Use the autoclave normally",
+        "Increase temperature"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'A failed leak test means the autoclave is not airtight. It must not be used.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr. Yassine prepares a load of instruments for the autoclave. Dr. Fatima reminds him that overloading is dangerous. Why?",
+      "media": [],
+      "options": [
+        "The autoclave might explode",
+        "Steam cannot circulate and sterilization fails",
+        "Instruments may deteriorate",
+        "The cycle is too long"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'A too dense load blocks steam circulation and compromises sterilization.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr. Yassine must choose a surface disinfectant. Dr. Fatima reminds him of precautions. What is the main precaution with aldehydes?",
+      "media": [],
+      "options": [
+        "Their high cost",
+        "Their toxicity and irritability",
+        "Their ineffectiveness",
+        "Their smell"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Aldehydes are effective but toxic. They must be handled with care.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr. Yassine wonders about the storage of sterile instruments. Dr. Fatima gives him precise instructions. Where should sterile instruments be stored?",
+      "media": [],
+      "options": [
+        "In a humid place",
+        "In a dry, clean, dust-free place",
+        "In a place exposed to sunlight",
+        "In a cold place"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Sterile instruments must be stored in a dry and clean place to preserve the sterile barrier.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr. Yassine must explain the importance of sterilization to a worried patient. Dr. Fatima advises him to emphasize safety. What is the key message?",
+      "media": [],
+      "options": [
+        "Sterilization guarantees patient safety",
+        "Sterilization is a routine",
+        "Sterilization is required by law",
+        "Sterilization is a common practice"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'The patient must understand that sterilization is primarily for their safety.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr. Yassine discovers that the autoclave's chemical indicator did not change to the correct stage. Dr. Fatima tells him: 'This is a warning signal.' What does this mean?",
+      "media": [],
+      "options": [
+        "The autoclave did not reach sterilization parameters",
+        "The indicator is defective",
+        "The cycle is complete",
+        "The load is correct"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'A chemical indicator that does not change means that sterilization conditions were not met.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr. Yassine must handle a peak activity with many patients. Dr. Fatima reminds him of the importance of not compromising sterilization. What is the rule?",
+      "media": [],
+      "options": [
+        "You can speed up cycles in an emergency",
+        "You must never compromise sterilization, even in an emergency",
+        "You can skip tests during a rush period",
+        "You can sterilize for less time"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Sterilization must never be compromised. Patient safety comes first.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr. Yassine must replace a damaged instrument. Dr. Fatima explains the importance of instrument condition. Why is a damaged instrument dangerous?",
+      "media": [],
+      "options": [
+        "It is unsightly",
+        "It can hide microorganisms in cracks",
+        "It is more difficult to use",
+        "It is more expensive to replace"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Fatima explains: 'Cracks and scratches can harbor microorganisms. A damaged instrument is a risk.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr. Yassine must organize the team's continuing education on sterilization. Dr. Fatima advises him to plan sessions. What is the recommended frequency?",
+      "media": [],
+      "options": [
+        "Once a year",
+        "Once a semester",
+        "Once a quarter",
+        "Once a month"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Fatima explains: 'Quarterly training helps maintain skills and remind of good practices.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr. Yassine, proud of his progress, receives a compliment from Dr. Fatima: 'You are beginning to master the sterilization chain.' What is the next step for Dr. Yassine?",
+      "media": [],
+      "options": [
+        "Train the other team members",
+        "Rest",
+        "Change specialty",
+        "Forget the basics"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'The next step is to pass on your knowledge. Training is the key to a high-performing team.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sante_publique_debutant2_001",
+    "title": "Salud Pública - Principiante 2",
+    "specialty": "SANT",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "SANT_D2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. HAFSI es miembro del ONMD. Según la ley 07-05, ¿cuál es el estatus del Orden Nacional de Odontólogos?",
+      "media": [],
+      "options": [
+        "Un organismo estatal dependiente del Ministerio de Sanidad",
+        "Una organización de derecho privado que ejerce una misión de servicio público",
+        "Una asociación profesional sin ánimo de lucro",
+        "Un sindicato que defiende los intereses de los odontólogos privados"
+      ],
+      "correct": 1,
+      "explanation": "El ONMD es una organización de derecho privado que ejerce una misión de servicio público, con personalidad jurídica y regulada por la ley 07-05, promulgada por dahir del 17 de abril de 2007.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q02",
+      "type": "single-choice",
+      "question": "Según la ley 07-05, ¿todos los odontólogos que ejercen en Marruecos están obligados a ser miembros del ONMD?",
+      "media": [],
+      "options": [
+        "No, la membresía en el Orden es voluntaria",
+        "Sí, el Orden agrupa a todos los odontólogos que ejercen en el sector privado",
+        "Sí, pero solo los odontólogos que trabajan en el sector público",
+        "No, solo los odontólogos de nacionalidad marroquí"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 1 de la ley 07-05 establece que el ONMD agrupa a todos los odontólogos que ejercen su profesión en el sector privado en Marruecos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. FADLI está inscrito en el registro del ONMD. Según un estudio de percepción de los odontólogos, ¿qué aspecto de la gestión del registro del Orden obtuvo la mayor satisfacción?",
+      "media": [],
+      "options": [
+        "El control de la redacción de los letreros profesionales",
+        "La verificación de los contratos de colaboración",
+        "La facilitación de la inscripción en el registro del Orden",
+        "La organización de la guardia de 24 horas"
+      ],
+      "correct": 2,
+      "explanation": "Un estudio realizado en 2016-2017 mostró que el 67,5% de los odontólogos estaban satisfechos con la facilitación de la inscripción en el registro del Orden, frente a solo el 21,9% para el control de los letreros.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q04",
+      "type": "single-choice",
+      "question": "Según el mismo estudio, ¿qué aspecto de la regulación ejercida por el ONMD es considerado insuficiente por la mayoría de los odontólogos?",
+      "media": [],
+      "options": [
+        "La emisión de autorizaciones de sustitución",
+        "El control de la redacción de los letreros profesionales",
+        "La verificación de los títulos nacionales",
+        "La organización de la guardia de 24 horas"
+      ],
+      "correct": 1,
+      "explanation": "El 48,2% de los odontólogos encuestados manifestaron su insatisfacción con el control de la redacción de los letreros profesionales, lo que convierte este punto en el más criticado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q05",
+      "type": "single-choice",
+      "question": "El Dr. HAFSI está preocupado por el ejercicio ilegal de la profesión. Según el ONMD, ¿cuántos falsos odontólogos ejercen ilegalmente en Marruecos?",
+      "media": [],
+      "options": [
+        "Alrededor de 500",
+        "Alrededor de 1000",
+        "Más de 3300",
+        "Más de 10 000"
+      ],
+      "correct": 2,
+      "explanation": "Según el ONMD, más de 3300 falsos odontólogos ejercen ilegalmente en Marruecos, poniendo en peligro la vida de los ciudadanos a diario.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q06",
+      "type": "single-choice",
+      "question": "El Dr. FADLI está preocupado por la práctica de algunos \"fabricantes de prótesis dentales\". Según el ONMD, ¿cuál es el problema principal?",
+      "media": [],
+      "options": [
+        "Fabrican prótesis de baja calidad",
+        "Reciben a pacientes para procedimientos pseudomédicos fuera del ámbito de su autorización",
+        "Venden prótesis a precios excesivos",
+        "No declaran sus ingresos"
+      ],
+      "correct": 1,
+      "explanation": "El ONMD advierte sobre los \"fabricantes de prótesis dentales\" que reciben a pacientes para procedimientos pseudomédicos realizados en condiciones de flagrante ilegalidad, fuera del ámbito de su autorización, que se limita a la fabricación bajo receta.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q07",
+      "type": "single-choice",
+      "question": "Según el ONMD, ¿cuáles son las consecuencias del ejercicio ilegal en odontología?",
+      "media": [],
+      "options": [
+        "Solo tratamientos de mala calidad",
+        "Casos mortales, discapacidades permanentes y enfermedades infecciosas",
+        "Mayores costes para los pacientes",
+        "Una simple competencia desleal para los odontólogos legales"
+      ],
+      "correct": 1,
+      "explanation": "El ONMD denuncia incidentes dramáticos: casos mortales por el uso de anestésicos falsificados o caducados, sobredosis accidentales, discapacidades permanentes o enfermedades infecciosas contraídas en condiciones antisépticas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q08",
+      "type": "single-choice",
+      "question": "El Dr. HAFSI está interesado en el proyecto de ley 25-14. Según el ONMD, ¿cuál es el objetivo principal de este texto?",
+      "media": [],
+      "options": [
+        "Aumentar las tarifas de los servicios odontológicos",
+        "Proteger la práctica legal y regulada y luchar contra los usurpadores",
+        "Crear nuevas facultades de odontología",
+        "Modificar las condiciones de inscripción en el Orden"
+      ],
+      "correct": 1,
+      "explanation": "El proyecto de ley N° 25-14 tiene como objetivo proteger la práctica legal y regulada de las profesiones de preparadores y manipuladores de productos sanitarios, incluidos los técnicos dentales, para eliminar a los usurpadores.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q09",
+      "type": "single-choice",
+      "question": "Según el ONMD, ¿por qué los charlatanes en odontología hacen campaña contra el proyecto de ley 25-14?",
+      "media": [],
+      "options": [
+        "Para obtener una mejor remuneración",
+        "Para crear confusión y tratar de modificar el texto",
+        "Para protestar contra las condiciones laborales",
+        "Para exigir una formación académica"
+      ],
+      "correct": 1,
+      "explanation": "El ONMD denuncia la campaña de desinformación de los charlatanes, destinada a crear confusión entre los ciudadanos y los parlamentarios con el fin de modificar el proyecto de ley.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q10",
+      "type": "single-choice",
+      "question": "El Dr. FADLI ha sabido que varias regiones de Marruecos sufren escasez de odontólogos. ¿Qué solución se ha adoptado para abordar este problema?",
+      "media": [],
+      "options": [
+        "La contratación exclusiva de odontólogos extranjeros",
+        "La contratación de odontólogos del sector privado por convenio a través del Decreto 2.12.507",
+        "El cierre de consultorios en zonas rurales",
+        "El aumento del precio de las consultas"
+      ],
+      "correct": 1,
+      "explanation": "El Decreto N° 2.12.507 permite al Ministerio de Sanidad contratar a odontólogos del sector privado para trabajar a tiempo parcial en hospitales públicos, en particular para garantizar la atención de urgencia.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q11",
+      "type": "single-choice",
+      "question": "Según el Decreto 2.12.507, ¿cuál es el importe máximo de la remuneración mensual para un odontólogo por convenio?",
+      "media": [],
+      "options": [
+        "5000 dírhams",
+        "7143 dírhams",
+        "10000 dírhams",
+        "15000 dírhams"
+      ],
+      "correct": 1,
+      "explanation": "El Decreto 2.12.507 establece la remuneración mensual bruta máxima en 7143 dírhams, pagadera al vencimiento del plazo dentro de los 11 meses del año.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. HAFSI quiere firmar un convenio. Según el artículo 6 del Decreto 2.12.507, ¿cuáles son las condiciones de elegibilidad?",
+      "media": [],
+      "options": [
+        "Ser menor de 30 años",
+        "Estar inscrito en el Orden y no tener sanciones disciplinarias",
+        "Trabajar exclusivamente en zonas rurales",
+        "Tener más de 10 años de experiencia"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 6 del Decreto 2.12.507 establece que los candidatos deben estar inscritos en el colegio profesional, no tener sanciones disciplinarias y no haber sido condenados por delitos contra las personas o atentados contra la moral pública.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q13",
+      "type": "single-choice",
+      "question": "Según el Decreto 2.12.507, ¿cuál es la duración máxima del convenio tipo?",
+      "media": [],
+      "options": [
+        "6 meses",
+        "11 meses, renovable automáticamente 3 veces",
+        "2 años",
+        "5 años"
+      ],
+      "correct": 1,
+      "explanation": "Según el artículo 5 del Decreto 2.12.507, el convenio se celebra por un período máximo de once meses, renovable automáticamente no más de tres veces.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q14",
+      "type": "single-choice",
+      "question": "El Dr. FADLI trabaja por convenio en un hospital. Según el Decreto 2.12.507, ¿a qué autoridad está sujeto?",
+      "media": [],
+      "options": [
+        "Solo al Orden Nacional de Odontólogos",
+        "Al director del establecimiento público de salud",
+        "A ninguna autoridad, es independiente",
+        "Al Ministerio de Comercio"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 9 del Decreto 2.12.507 especifica que el odontólogo por convenio está sujeto al director del establecimiento de salud.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q15",
+      "type": "single-choice",
+      "question": "Según el Decreto 2.12.507, ¿cuáles son las obligaciones del odontólogo por convenio en materia de responsabilidad?",
+      "media": [],
+      "options": [
+        "No es responsable de sus actos",
+        "Dirige y controla el trabajo de los internos que están bajo su dirección",
+        "La responsabilidad recae solo en el hospital",
+        "Está exento de toda responsabilidad"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 9 del Decreto 2.12.507 establece que los odontólogos por convenio dirigen y controlan el trabajo de los internos y del personal que está directamente bajo su dirección.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q16",
+      "type": "single-choice",
+      "question": "Según el ONMD, ¿cuál es el impacto del ejercicio ilegal en la reputación de Marruecos en el ámbito internacional?",
+      "media": [],
+      "options": [
+        "Ningún impacto, el fenómeno es marginal",
+        "Algunas embajadas extranjeras han emitido advertencias para sus ciudadanos",
+        "Marruecos es elogiado por su lucha contra este fenómeno",
+        "Los turistas se sienten atraídos por los precios bajos"
+      ],
+      "correct": 1,
+      "explanation": "Algunas embajadas extranjeras han emitido advertencias oficiales para sus ciudadanos, advirtiéndoles de los riesgos asociados con el tratamiento en establecimientos no acreditados en Marruecos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q17",
+      "type": "single-choice",
+      "question": "El Dr. HAFSI está interesado en la lucha contra el ejercicio ilegal. ¿Qué establecimientos son especialmente perseguidos por el ONMD?",
+      "media": [],
+      "options": [
+        "Los consultorios dentales en zonas rurales",
+        "Los establecimientos conocidos como \"fabricantes de prótesis dentales\"",
+        "Las clínicas dentales privadas por convenio",
+        "Los servicios de odontología de los hospitales públicos"
+      ],
+      "correct": 1,
+      "explanation": "El ONMD advierte sobre los establecimientos conocidos como \"fabricantes de prótesis dentales\", donde los ciudadanos son recibidos para procedimientos pseudomédicos realizados en condiciones de flagrante ilegalidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q18",
+      "type": "single-choice",
+      "question": "Según los datos demográficos, ¿cuál es la desigualdad en la distribución de los odontólogos en el sector público de Marruecos?",
+      "media": [],
+      "options": [
+        "Está perfectamente equilibrada",
+        "Varía de 1 odontólogo por cada 12.631 a 1 por cada 728.634 habitantes según las regiones",
+        "La proporción es la misma en todas las regiones",
+        "Las zonas rurales están mejor atendidas que las urbanas"
+      ],
+      "correct": 1,
+      "explanation": "La proporción de odontólogos públicos varía considerablemente: de 1 odontólogo por cada 12.631 habitantes en algunas regiones a 1 odontólogo por cada 728.634 habitantes en otras.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q19",
+      "type": "single-choice",
+      "question": "Según el ONMD, ¿cuál es el impacto de las prácticas ilegales en la salud pública?",
+      "media": [],
+      "options": [
+        "Un riesgo mínimo para los pacientes",
+        "Una amenaza directa para la salud de los ciudadanos y la seguridad del sistema nacional de salud",
+        "Un simple problema de competencia económica",
+        "Una cuestión exclusivamente deontológica"
+      ],
+      "correct": 1,
+      "explanation": "El ONMD considera estas prácticas como \"una amenaza directa para la salud de los ciudadanos y la seguridad del sistema nacional de salud\", pidiendo una acción urgente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q20",
+      "type": "single-choice",
+      "question": "Según el ONMD, ¿cuál es el papel de los técnicos dentales en el marco legal?",
+      "media": [],
+      "options": [
+        "Pueden recibir a pacientes para consultas",
+        "Su autorización se limita a la fabricación de prótesis bajo receta del odontólogo",
+        "Pueden realizar procedimientos médicos en su laboratorio",
+        "Tienen derecho a colocar implantes dentales"
+      ],
+      "correct": 1,
+      "explanation": "El ONMD recuerda que la autorización de los técnicos dentales se limita a la fabricación de prótesis bajo receta del odontólogo, sin recibir a pacientes ni realizar procedimientos médicos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. FADLI quiere conocer la opinión de la Federación Dental Internacional (FDI) sobre el ejercicio ilegal en Marruecos. ¿Cuál es su posición?",
+      "media": [],
+      "options": [
+        "Apoya a los charlatanes",
+        "Expresó su indignación y apoya las acciones del ONMD",
+        "Es neutral en este asunto",
+        "No se ha pronunciado"
+      ],
+      "correct": 1,
+      "explanation": "La FDI, que agrupa a 900.000 odontólogos en 137 países, expresó su \"indignación\" en una carta al presidente del ONMD, apoyando la lucha contra el ejercicio ilegal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q22",
+      "type": "single-choice",
+      "question": "Según el estudio de percepción de los odontólogos, ¿qué porcentaje considera necesaria la creación de comisiones de control permanentes?",
+      "media": [],
+      "options": [
+        "50 %",
+        "76,3 %",
+        "21,9 %",
+        "67,5 %"
+      ],
+      "correct": 1,
+      "explanation": "El estudio mostró que el 76,3% de los odontólogos encuestados considera necesaria la creación de comisiones de control permanentes para luchar contra las prácticas ilegales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q23",
+      "type": "single-choice",
+      "question": "Según la ley 07-05, ¿cuáles son las misiones principales del ONMD?",
+      "media": [],
+      "options": [
+        "Solo la gestión del registro del Orden",
+        "La regulación, la gestión de quejas, la lucha contra el ejercicio ilegal, la formación continua y la colaboración público-privada",
+        "El establecimiento de tarifas para los servicios odontológicos",
+        "La gestión de las mutualidades dentales"
+      ],
+      "correct": 1,
+      "explanation": "Las misiones del ONMD, descritas en el artículo 13 de la ley 07-05, abarcan la gestión del registro, la regulación, las quejas, la lucha contra el ejercicio ilegal, la formación continua, la colaboración público-privada y la seguridad social.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q24",
+      "type": "single-choice",
+      "question": "El Dr. HAFSI está interesado en el papel de Marruecos en la salud dental en África. Según el ONMD, ¿cuál es la ambición del Reino?",
+      "media": [],
+      "options": [
+        "Convertirse en un centro médico de clase mundial en África",
+        "Limitarse a la formación de odontólogos para el mercado local",
+        "Reducir el número de facultades de odontología",
+        "Limitar el acceso a la atención dental"
+      ],
+      "correct": 0,
+      "explanation": "El ONMD subraya que Marruecos aspira a convertirse en un centro médico de clase mundial en África, lo que requiere luchar contra las prácticas ilegales que dañan esta imagen.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q25",
+      "type": "single-choice",
+      "question": "Según el Decreto 2.12.507, ¿qué puede dar lugar a la rescisión del convenio de un odontólogo por convenio?",
+      "media": [],
+      "options": [
+        "Una simple solicitud del odontólogo sin previo aviso",
+        "La ausencia durante tres turnos de trabajo sin motivo justificado",
+        "El desacuerdo con el horario de trabajo",
+        "La solicitud del ministerio en cualquier momento"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 10 del Decreto 2.12.507 establece que cualquier ausencia durante tres turnos de trabajo sin aviso previo y sin motivo justificado es motivo de rescisión del convenio por la administración sin previo aviso.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D2_Q26",
+      "type": "single-choice",
+      "question": "Según el ONMD, ¿cuál es la relación entre los grandes eventos internacionales y la lucha contra el ejercicio ilegal?",
+      "media": [],
+      "options": [
+        "Ninguna relación, los eventos no son relevantes",
+        "Marruecos se prepara para recibir turistas, lo que requiere una vigilancia sanitaria reforzada",
+        "Los eventos atraen solo a odontólogos legales",
+        "El ejercicio ilegal es solo un problema local"
+      ],
+      "correct": 1,
+      "explanation": "El ONMD subraya que Marruecos se prepara para recibir grandes eventos turísticos y deportivos internacionales, lo que hace necesaria una vigilancia reforzada para garantizar las normas de seguridad sanitaria.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

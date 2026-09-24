@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "prothese_intermediaire2_001",
+    "title": "Prótesis Dental - Intermedio 2",
+    "specialty": "PROT",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PROT_I2_Q01",
+      "type": "single-choice",
+      "question": "Sami llama a Mina: «¡Tengo un paciente con un puente de 4 elementos que está móvil! ¿Qué hago?» Mina responde:",
+      "media": [],
+      "options": [
+        "Rehacerlo inmediatamente",
+        "Verificar los pilares, el cemento y la oclusión",
+        "Ignorarlo",
+        "Reemplazarlo por implantes"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Un puente largo que está móvil puede ocultar un problema en los pilares, el cemento o la oclusión.» 🦅 Sami: «Haré una exploración completa.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q02",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar a un paciente con una prótesis maxilar que ya no sujeta?» Mina le aconseja:",
+      "media": [],
+      "options": [
+        "Rehacerla completamente",
+        "Verificar la adaptación, la retención y la oclusión",
+        "Añadir implantes",
+        "Cambiar el material"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La pérdida de retención puede deberse al desgaste, la reabsorción o un defecto de oclusión.» 🦅 Sami: «Primero haré un rebase, antes de pensar en implantes.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q03",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuándo usar un puente convencional en lugar de un implante?» Mina responde:",
+      "media": [],
+      "options": [
+        "Siempre",
+        "Nunca",
+        "Cuando los pilares están sanos y el paciente no quiere cirugía",
+        "Solo para dientes anteriores"
+      ],
+      "correct": 2,
+      "explanation": "🐆 Mina explica: «El puente convencional es una opción cuando los pilares están sanos y el paciente rechaza la implantología.» 🦅 Sami: «Presentaré ambas opciones al paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q04",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar la fractura de una prótesis removible?» Mina responde:",
+      "media": [],
+      "options": [
+        "Siempre rehacerla",
+        "Evaluar la fractura: reparable o no",
+        "Ignorarla",
+        "Cambiar el material"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Algunas fracturas son reparables, otras requieren rehacer la prótesis.» 🦅 Sami: «Evaluaré el grado de fractura.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q05",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son las ventajas de una prótesis sobre implantes?» Mina responde:",
+      "media": [],
+      "options": [
+        "Estabilidad, comodidad y preservación del hueso",
+        "Solo estabilidad",
+        "Solo comodidad",
+        "Solo estética"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las prótesis sobre implantes proporcionan estabilidad, comodidad y preservación del hueso.» 🦅 Sami: «Ofreceré una prótesis sobre implantes a este paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q06",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una corona cuyo color difiere de los dientes vecinos?» Mina responde:",
+      "media": [],
+      "options": [
+        "Rehacerla inmediatamente",
+        "Evaluar la posibilidad de corrección del color",
+        "Ignorarlo",
+        "Cambiar de paciente"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La corrección del color en el laboratorio a veces puede ser suficiente.» 🦅 Sami: «Enviaré la corona de vuelta al laboratorio.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q07",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es un rebase de una prótesis removible?» Mina le responde:",
+      "media": [],
+      "options": [
+        "La reconstrucción completa de la prótesis",
+        "La actualización de la base de la prótesis para mejorar la adaptación",
+        "El reemplazo de los ganchos",
+        "El pulido de la prótesis"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «El rebase corrige los defectos de adaptación debidos a la reabsorción ósea.» 🦅 Sami: «Haré un rebase a este paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q08",
+      "type": "single-choice",
+      "question": "Sami y Mina discuten sobre los puentes adheridos. Mina dice: «Son conservadores.» Sami pregunta: «¿Cuál es su inconveniente?»",
+      "media": [],
+      "options": [
+        "Son menos estéticos",
+        "Tienen menor durabilidad que los puentes convencionales",
+        "Son más caros",
+        "Son más difíciles de colocar"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Los puentes adheridos tienen menor durabilidad que los convencionales.» 🦅 Sami: «Ofreceré un puente convencional a este paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q09",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una dentadura inferior que flota?» Mina responde:",
+      "media": [],
+      "options": [
+        "Añadir implantes",
+        "Verificar la oclusión y la adaptación",
+        "Rehacer la prótesis",
+        "Cambiar el material"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La inestabilidad de la dentadura inferior suele deberse a un defecto de oclusión o adaptación.» 🦅 Sami: «Primero corregiré la oclusión.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q10",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es el CAD/CAM en prótesis?» Mina le responde:",
+      "media": [],
+      "options": [
+        "Un software de gestión de consulta",
+        "El diseño y fabricación asistidos por ordenador de prótesis",
+        "Una técnica de impresión",
+        "Un nuevo material"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «El CAD/CAM permite diseñar y fabricar prótesis de forma digital.» 🦅 Sami: «Me formaré en CAD/CAM.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q11",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar a un paciente que ha perdido su prótesis removible?» Mina responde:",
+      "media": [],
+      "options": [
+        "Rehacerla inmediatamente",
+        "Ofrecer un reemplazo de la prótesis",
+        "Ignorarlo",
+        "Ofrecer implantes"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La pérdida de la prótesis requiere la fabricación de una nueva.» 🦅 Sami: «Haré nuevas impresiones.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q12",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son las ventajas del circonio sobre la metal-cerámica?» Mina responde:",
+      "media": [],
+      "options": [
+        "Mejor estética y ausencia de metal",
+        "Solo estética",
+        "Solo ausencia de metal",
+        "Más barato"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El circonio proporciona una estética superior sin metal, pero a un precio más elevado.» 🦅 Sami: «Ofreceré circonio para los dientes anteriores.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q13",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar un puente fracturado?» Mina responde:",
+      "media": [],
+      "options": [
+        "Rehacerlo inmediatamente",
+        "Evaluar la posibilidad de reparación",
+        "Ignorarlo",
+        "Reemplazarlo por un implante"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Las fracturas de puente a veces se pueden reparar.» 🦅 Sami: «Evaluaré la fractura.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q14",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es una prótesis híbrida?» Mina le responde:",
+      "media": [],
+      "options": [
+        "Una prótesis fija sobre implantes con base de resina y dientes de cerámica",
+        "Una prótesis removible convencional",
+        "Un puente convencional",
+        "Una corona de circonio"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La prótesis híbrida combina la estabilidad de los implantes con la estética de la cerámica.» 🦅 Sami: «Ofreceré una prótesis híbrida a este paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q15",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una corona temporal fracturada?» Mina responde:",
+      "media": [],
+      "options": [
+        "Colocar la definitiva de inmediato",
+        "Hacer una nueva temporal hasta la colocación de la definitiva",
+        "Ignorar la fractura",
+        "Cambiar de paciente"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La prótesis temporal debe rehacerse para proteger el diente hasta la colocación de la definitiva.» 🦅 Sami: «Haré una nueva corona temporal.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q16",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los signos de desgaste anormal de una prótesis?» Mina responde:",
+      "media": [],
+      "options": [
+        "Superficie lisa y brillante",
+        "Pérdida de material, grietas o fracturas",
+        "Color uniforme",
+        "Sin signos"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «El desgaste anormal se manifiesta por pérdida de material o fracturas.» 🦅 Sami: «Vigilaré el desgaste de mis prótesis.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q17",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar a un paciente que quiere carillas pero tiene los dientes muy oscuros?» Mina responde:",
+      "media": [],
+      "options": [
+        "Ofrecer un blanqueamiento antes de las carillas",
+        "Ofrecer carillas de cerámica opaca",
+        "Ofrecer coronas",
+        "Ofrecer composite directo"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El blanqueamiento previo puede mejorar el resultado de las carillas.» 🦅 Sami: «Primero ofreceré un blanqueamiento.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q18",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es una prótesis sobre 4 implantes (All-on-4)?» Mina le responde:",
+      "media": [],
+      "options": [
+        "Una prótesis fija sobre 4 implantes, dos rectos y dos inclinados",
+        "Una prótesis removible sobre 4 implantes",
+        "Un puente sobre 4 implantes",
+        "Una corona sobre 4 implantes"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La técnica All-on-4 utiliza 4 implantes para soportar una prótesis fija.» 🦅 Sami: «Me formaré en la técnica All-on-4.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q19",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una prótesis removible deformada?» Mina responde:",
+      "media": [],
+      "options": [
+        "Rehacerla",
+        "Intentar enderezarla (si es posible)",
+        "Ignorarla",
+        "Cambiar el material"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La deformación a veces se puede corregir, pero a menudo requiere rehacer la prótesis.» 🦅 Sami: «Evaluaré la posibilidad de corrección.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q20",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los riesgos de una oclusión incorrecta en prótesis?» Mina responde:",
+      "media": [],
+      "options": [
+        "Dolores articulares y musculares",
+        "Descementado de prótesis",
+        "Fracturas de prótesis",
+        "Todas las respuestas son correctas"
+      ],
+      "correct": 3,
+      "explanation": "🐆 Mina explica: «Una oclusión incorrecta puede causar múltiples problemas.» 🦅 Sami: «Siempre equilibraré la oclusión.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q21",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una prótesis fija que molesta al paciente?» Mina responde:",
+      "media": [],
+      "options": [
+        "Rehacerla",
+        "Verificar la oclusión y la adaptación",
+        "Ignorarlo",
+        "Cambiar el material"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Las molestias suelen deberse a un defecto de oclusión o adaptación.» 🦅 Sami: «Verificaré la oclusión.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q22",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la articulación?» Mina le responde:",
+      "media": [],
+      "options": [
+        "El color de los dientes",
+        "Los movimientos de la mandíbula y su relación con los dientes",
+        "La forma de los dientes",
+        "La posición de los implantes"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La articulación es importante en prótesis para respetar la dinámica masticatoria.» 🦅 Sami: «Estudiaré la articulación de mis pacientes.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q23",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar a un paciente con alergia al metal?» Mina responde:",
+      "media": [],
+      "options": [
+        "Usar materiales sin metal (cerámica, circonio)",
+        "Usar oro",
+        "Usar amalgama",
+        "Ignorar la alergia"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los pacientes con alergia al metal necesitan prótesis sin metal.» 🦅 Sami: «Ofreceré circonio a este paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q24",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué seguimiento se recomienda para una prótesis?» Mina responde:",
+      "media": [],
+      "options": [
+        "Revisión cada 5 años",
+        "Revisión anual",
+        "Sin revisión",
+        "Revisión cada 2 años"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La revisión anual permite detectar problemas en una fase temprana.» 🦅 Sami: «Planificaré revisiones anuales.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_I2_Q25",
+      "type": "single-choice",
+      "question": "Sami, tras superar casos complejos de prótesis con Mina, dice: «¡Estoy orgulloso de nuestros éxitos!» Mina concluye: «Las técnicas avanzadas son...»",
+      "media": [],
+      "options": [
+        "Una opción para expertos",
+        "La clave para devolver la sonrisa y la función",
+        "Una pérdida de tiempo",
+        "Secundarias"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Las técnicas avanzadas son la clave para devolver la sonrisa y la función.» 🦅 Sami: «Seguiré mejorando.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

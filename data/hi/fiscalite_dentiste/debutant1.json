@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "fiscalite_dentiste_debutant1_001",
+    "title": "Dentist Taxation - Beginner 1",
+    "specialty": "FISC",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "FISC_D1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Soulami practices as a natural person. According to the General Tax Code, his professional income falls under which category of personal income tax?",
+      "media": [],
+      "options": [
+        "Industrial and Commercial Profits (BIC)",
+        "Non-Commercial Profits (BNC)",
+        "Salaries and Wages",
+        "Rental Income"
+      ],
+      "correct": 1,
+      "explanation": "Liberal professions, including dentists, generate Non-Commercial Profits (BNC) under the General Tax Code.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q02",
+      "type": "single-choice",
+      "question": "In 2026, what is the maximum marginal rate of Personal Income Tax (PIT) in Morocco for a dentist practicing as a natural person?",
+      "media": [],
+      "options": [
+        "34%",
+        "37%",
+        "38%",
+        "40%"
+      ],
+      "correct": 1,
+      "explanation": "The progressive PIT scale applies with a marginal rate of 37% for the taxable net income bracket exceeding 180,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q03",
+      "type": "single-choice",
+      "question": "Dr. Marwani has an annual turnover of 600,000 DH. Which tax regime is he automatically subject to?",
+      "media": [],
+      "options": [
+        "The Simplified Net Income regime (RNS)",
+        "The Actual Net Income regime (RNR)",
+        "The Single Professional Contribution (CPU)",
+        "The flat-rate regime"
+      ],
+      "correct": 1,
+      "explanation": "RNR is the default regime for liberal professions whose annual turnover exceeds 500,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q04",
+      "type": "single-choice",
+      "question": "What is the turnover threshold not to exceed for a dentist to opt for the Simplified Net Income regime (RNS)?",
+      "media": [],
+      "options": [
+        "250,000 DH",
+        "500,000 DH",
+        "1,000,000 DH",
+        "2,000,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "RNS is an intermediate regime for liberal professions whose annual turnover does not exceed 500,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q05",
+      "type": "single-choice",
+      "question": "Dr. Soulami starts his activity in 2026. For how many months is he exempt from the Minimum Contribution (CM)?",
+      "media": [],
+      "options": [
+        "12 months",
+        "24 months",
+        "36 months",
+        "60 months"
+      ],
+      "correct": 2,
+      "explanation": "New taxpayers operating as individuals benefit from an exemption from the minimum contribution for the first 36 months of activity.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q06",
+      "type": "single-choice",
+      "question": "Dr. Marwani, a natural person, has a turnover of 800,000 DH. What is the minimum amount of his Minimum Contribution (CM)?",
+      "media": [],
+      "options": [
+        "1,500 DH",
+        "2,000 DH",
+        "3,000 DH",
+        "4,000 DH"
+      ],
+      "correct": 0,
+      "explanation": "For natural persons subject to PIT, the minimum contribution cannot be less than 1,500 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q07",
+      "type": "single-choice",
+      "question": "Dr. Soulami has a turnover of 800,000 DH and a taxable income of 100,000 DH. Which tax will he pay if the CM is higher than the calculated PIT?",
+      "media": [],
+      "options": [
+        "The income tax calculated on 100,000 DH",
+        "The Minimum Contribution of 48,000 DH",
+        "The higher amount between PIT and CM",
+        "No tax because the profit is low"
+      ],
+      "correct": 2,
+      "explanation": "The taxpayer pays the higher amount between the calculated PIT and the CM. The CM for a natural person is 6% of turnover.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q08",
+      "type": "single-choice",
+      "question": "Dr. Marwani, a natural person, has a turnover of 800,000 DH. What is the applicable Minimum Contribution (CM) rate?",
+      "media": [],
+      "options": [
+        "0.25%",
+        "0.50%",
+        "4%",
+        "6%"
+      ],
+      "correct": 3,
+      "explanation": "The CM rate for liberal professions operating as individuals is 6% of turnover.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q09",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the PIT exemption threshold for a single dentist with no dependents?",
+      "media": [],
+      "options": [
+        "30,000 DH",
+        "35,000 DH",
+        "40,000 DH",
+        "45,000 DH"
+      ],
+      "correct": 2,
+      "explanation": "The 2026 Finance Law maintains the taxable net income exemption threshold at 40,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q10",
+      "type": "single-choice",
+      "question": "Dr. Soulami wishes to opt for RNR even though his turnover is 300,000 DH. Is this possible?",
+      "media": [],
+      "options": [
+        "Yes, opting for RNR is voluntary even below the thresholds",
+        "No, RNR is mandatory above 500,000 DH",
+        "Yes, but only with tax authority approval",
+        "No, RNS is imposed below 500,000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Any taxpayer may voluntarily opt for RNR, even if their turnover is below the regulatory thresholds.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q11",
+      "type": "single-choice",
+      "question": "Dr. Marwani has a tax deficit of 50,000 DH from his activity. Under the RNR regime, over how many years can he carry forward this deficit?",
+      "media": [],
+      "options": [
+        "2 years",
+        "3 years",
+        "4 years",
+        "5 years"
+      ],
+      "correct": 2,
+      "explanation": "Under RNR, the deficit can be carried forward against profits of the following four years.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q12",
+      "type": "single-choice",
+      "question": "What is the particularity of the Single Professional Contribution (CPU) compared to RNR and RNS?",
+      "media": [],
+      "options": [
+        "It allows deduction of all actual expenses",
+        "It offers a flat-rate tax of 10% on a flat-rate profit",
+        "It requires full accounting",
+        "It is exclusive to liberal professions"
+      ],
+      "correct": 1,
+      "explanation": "CPU offers a flat-rate tax at 10% applied to a flat-rate profit calculated on turnover, without deduction of actual expenses.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q13",
+      "type": "single-choice",
+      "question": "According to the progressive scale, what is the PIT rate applicable to the income bracket between 60,001 and 180,000 DH?",
+      "media": [],
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "34%"
+      ],
+      "correct": 3,
+      "explanation": "The progressive PIT scale provides a rate of 34% for the taxable net income bracket between 60,001 and 180,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q14",
+      "type": "single-choice",
+      "question": "Dr. Soulami is considering creating an LLC for his practice. Which tax will the company be subject to?",
+      "media": [],
+      "options": [
+        "Personal Income Tax (PIT)",
+        "Corporate Income Tax (CIT)",
+        "Single Professional Contribution (CPU)",
+        "Professional Tax only"
+      ],
+      "correct": 1,
+      "explanation": "A company (LLC, SARLAU, SAS) is subject to Corporate Income Tax (CIT).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q15",
+      "type": "single-choice",
+      "question": "In 2026, what is the CIT rate applicable to the profit bracket of 0 to 300,000 DH for an LLC?",
+      "media": [],
+      "options": [
+        "10%",
+        "15%",
+        "20%",
+        "35%"
+      ],
+      "correct": 0,
+      "explanation": "The progressive CIT scale provides a rate of 10% for the net taxable profit bracket between 0 and 300,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q16",
+      "type": "single-choice",
+      "question": "Dr. Marwani has an LLC with a profit of 500,000 DH. What is the CIT rate applicable to the profit bracket between 300,001 and 1,000,000 DH?",
+      "media": [],
+      "options": [
+        "10%",
+        "20%",
+        "25%",
+        "35%"
+      ],
+      "correct": 1,
+      "explanation": "The progressive CIT scale provides a rate of 20% for the net taxable profit bracket between 300,001 and 1,000,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q17",
+      "type": "single-choice",
+      "question": "Dr. Soulami has an LLC with a net profit after CIT of 400,000 DH which he distributes as dividends. What is the withholding tax rate on these dividends?",
+      "media": [],
+      "options": [
+        "5%",
+        "10%",
+        "15%",
+        "20%"
+      ],
+      "correct": 1,
+      "explanation": "Dividend distribution is subject to a 10% withholding tax (WHT).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q18",
+      "type": "single-choice",
+      "question": "From what profit level does CIT generally become more advantageous than PIT from a strictly tax perspective?",
+      "media": [],
+      "options": [
+        "100,000 DH",
+        "200,000 to 250,000 DH",
+        "500,000 DH",
+        "1,000,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "The tipping point is around 200,000 to 250,000 DH of net profit, where CIT begins to be more advantageous than PIT.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q19",
+      "type": "single-choice",
+      "question": "Dr. Marwani has an LLC. What is the minimum Minimum Contribution (CM) due by his company?",
+      "media": [],
+      "options": [
+        "1,500 DH",
+        "2,000 DH",
+        "3,000 DH",
+        "5,000 DH"
+      ],
+      "correct": 2,
+      "explanation": "For companies subject to CIT, the minimum contribution cannot be less than 3,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q20",
+      "type": "single-choice",
+      "question": "Dr. Soulami has an LLC created in 2026. For how many months is it exempt from the Minimum Contribution (CM)?",
+      "media": [],
+      "options": [
+        "12 months",
+        "24 months",
+        "36 months",
+        "60 months"
+      ],
+      "correct": 2,
+      "explanation": "Newly created companies benefit from an exemption from the CM for their first 36 months of activity.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q21",
+      "type": "single-choice",
+      "question": "Dr. Marwani has an LLC with a turnover of 1,000,000 DH. What is the amount of his Minimum Contribution (CM) at the standard rate?",
+      "media": [],
+      "options": [
+        "2,500 DH",
+        "3,000 DH",
+        "4,000 DH",
+        "5,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "The standard CM rate is 0.25% of turnover, i.e. 2,500 DH. Since the floor is 3,000 DH, this amount is due.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q22",
+      "type": "single-choice",
+      "question": "According to the GTC, dental care procedures are generally:",
+      "media": [],
+      "options": [
+        "Subject to VAT at 7%",
+        "Subject to VAT at 14%",
+        "Subject to VAT at 20%",
+        "Exempt from VAT"
+      ],
+      "correct": 3,
+      "explanation": "Dental care procedures are generally exempt from VAT, although aesthetic procedures may be subject to VAT.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q23",
+      "type": "single-choice",
+      "question": "Dr. Soulami practices as a natural person. He may deduct the following expenses from his income, except:",
+      "media": [],
+      "options": [
+        "His practice rent",
+        "His assistant's salaries",
+        "The purchase costs of his personal vehicle for private use",
+        "CNSS contributions"
+      ],
+      "correct": 2,
+      "explanation": "Only expenses incurred for professional activity are deductible. Expenses for a vehicle for private use are not deductible.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q24",
+      "type": "single-choice",
+      "question": "Dr. Marwani has an LLC with a profit of 2,000,000 DH. What is the CIT rate applicable to the profit bracket exceeding 1,000,000 DH?",
+      "media": [],
+      "options": [
+        "20%",
+        "31%",
+        "35%",
+        "37%"
+      ],
+      "correct": 2,
+      "explanation": "The progressive CIT scale provides a rate of 35% for the net taxable profit bracket exceeding 1,000,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D1_Q25",
+      "type": "single-choice",
+      "question": "What is the main difference between RNR and RNS in terms of accounting?",
+      "media": [],
+      "options": [
+        "RNR requires full accounting, RNS requires simplified accounting",
+        "RNR does not require accounting, RNS requires full accounting",
+        "Both regimes require full accounting",
+        "RNR requires simplified accounting, RNS requires no accounting"
+      ],
+      "correct": 0,
+      "explanation": "RNR requires full accounting compliant with CGNC, while RNS uses simplified accounting.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

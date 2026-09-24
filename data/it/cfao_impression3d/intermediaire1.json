@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_intermediaire1_001",
+    "title": "CAD/CAM & 3D Printing - Intermediate 1",
+    "specialty": "CFAO",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Rachid has successfully digitized his first optical impression. Dr Samia explains to him that the generated STL file is a mesh of triangles. What is the main characteristic of this format?",
+      "media": [],
+      "options": [
+        "It contains color and texture information",
+        "It represents the surface of the object by triangular facets",
+        "It is compressed to reduce the file size",
+        "It contains the exact coordinates of the insertion axes"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'The STL format is a mesh of triangles that describes the surface of the object. It is the standard format for 3D printing and machining.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Samia must choose an intraoral scanner for her practice. She hesitates between several brands. According to the selection criteria, which element is the most important?",
+      "media": [],
+      "options": [
+        "The color of the device",
+        "Scanning accuracy and software fluidity",
+        "The purchase price only",
+        "The brand of the device"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Accuracy and software fluidity are essential for an efficient workflow and reliable results.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Rachid performed an intraoral scan but the STL file shows artifacts. Dr Samia advises him on a solution. What is the most likely cause of the artifacts?",
+      "media": [],
+      "options": [
+        "An internet connection problem",
+        "Patient movement or poor saliva management",
+        "A defect in the ink cartridge",
+        "A software compatibility issue"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Artifacts are often due to patient movements or the presence of saliva or blood on the dental structures.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Samia must design a crown on the CAD software. Dr Rachid reminds her of the importance of margins. What is the function of cervical margins?",
+      "media": [],
+      "options": [
+        "They define the color of the crown",
+        "They ensure the adaptation of the crown to the dental preparation",
+        "They determine the height of the crown",
+        "They are aesthetic"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Cervical margins are essential for the adaptation of the crown to the preparation. Poor adaptation can lead to secondary caries.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Rachid must choose between a 'chairside' workflow and a 'laboratory' workflow. According to the constraints of the practice, what is the main advantage of the 'chairside' workflow?",
+      "media": [],
+      "options": [
+        "It is cheaper to purchase",
+        "It allows the restoration to be finalized in a single session",
+        "It is more precise than the laboratory",
+        "It requires less training"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'The chairside workflow allows the impression, design and manufacture of the restoration in a single session, eliminating temporization.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Samia must train an assistant in the use of the intraoral scanner. What is the first rule to teach her?",
+      "media": [],
+      "options": [
+        "Color management",
+        "Managing patient movements and saliva aspiration",
+        "Programming scan sequences",
+        "Choosing lighting filters"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'The first rule is to master the management of movements and aspiration to obtain a quality scan.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Rachid has designed a crown on the CAD software. Dr Samia asks him to check the proximal contacts. Why is this check important?",
+      "media": [],
+      "options": [
+        "For the aesthetics of the crown",
+        "To avoid food impaction between teeth and ensure stability",
+        "For the color of the crown",
+        "For the height of the crown"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Correct proximal contacts prevent food impaction between teeth and ensure the stability of the restoration.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Samia must choose the export format of her file for machining. Which format is most commonly used for CAM?",
+      "media": [],
+      "options": [
+        "JPEG format",
+        "STL format",
+        "PDF format",
+        "DOCX format"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'The STL format is the most commonly used for export to CAM machines.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Rachid has received an STL file from a laboratory. He must check the quality of the scan. Which element is the most critical to control?",
+      "media": [],
+      "options": [
+        "The color of the scan",
+        "The presence of missing areas or artifacts",
+        "The resolution of the image",
+        "The size of the file"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'The presence of missing areas or artifacts can compromise the design and manufacture of the restoration.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Samia must optimize the digital workflow. Which step is the most sensitive to errors?",
+      "media": [],
+      "options": [
+        "CAD design",
+        "Optical acquisition (impression)",
+        "Machining",
+        "Cementation of the restoration"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Optical acquisition is the most sensitive step. A poor-quality digital impression compromises all subsequent steps.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Rachid must calibrate his machining machine. What is the recommended frequency for calibration?",
+      "media": [],
+      "options": [
+        "Once a year",
+        "Regularly, according to the manufacturer's recommendations",
+        "Only once at purchase",
+        "Never"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Regular calibration is essential to maintain machining precision.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr Samia has machined a lithium disilicate crown. Dr Rachid asks her to check the fit. What is the most precise control tool?",
+      "media": [],
+      "options": [
+        "The naked eye",
+        "The scaler",
+        "The control thread or verification dye",
+        "The binocular loupe"
+      ],
+      "correct": 2,
+      "explanation": "Dr Rachid explains: 'The control thread or verification dye allows precise evaluation of the marginal fit of the crown.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Rachid must choose between a monolithic zirconia crown or lithium disilicate. What is the main advantage of monolithic zirconia?",
+      "media": [],
+      "options": [
+        "Its superior translucency",
+        "Its high mechanical resistance",
+        "Its ability to be repaired at the chairside",
+        "Its lower price"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Monolithic zirconia offers very high mechanical resistance, ideal for posterior sectors and bridges.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Samia must decide on the type of crown for a patient with severe bruxism. Which material is the most suitable?",
+      "media": [],
+      "options": [
+        "Lithium disilicate",
+        "Monolithic zirconia",
+        "Machinable composite",
+        "Feldspathic ceramic"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Monolithic zirconia is the material of choice for bruxer patients due to its high resistance.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Rachid has machined a monolithic zirconia crown. Dr Samia reminds him of the importance of glazing. What is the function of glazing?",
+      "media": [],
+      "options": [
+        "Increase the resistance of the crown",
+        "Give an aesthetic and smooth appearance to the surface",
+        "Change the color of the crown",
+        "Reduce the thickness of the crown"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Glazing gives an aesthetic and smooth appearance to the zirconia surface, improving its integration into the patient's smile.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Samia must handle a complex case requiring a 4-unit bridge. Which material is the most suitable for this type of restoration?",
+      "media": [],
+      "options": [
+        "Lithium disilicate",
+        "Zirconia",
+        "Machinable composite",
+        "PMMA"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Zirconia is the material of choice for large-span bridges due to its resistance and dimensional stability.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Rachid must choose a bur for machining a glassy ceramic. What characteristic should he look for?",
+      "media": [],
+      "options": [
+        "A tungsten carbide bur",
+        "A diamond bur",
+        "A high-speed steel bur",
+        "A ceramic bur"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Diamond burs are recommended for machining glassy ceramics due to their hardness and wear resistance.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Samia has machined a machinable composite crown. Dr Rachid asks her to check the finishing. What is the recommended finishing step?",
+      "media": [],
+      "options": [
+        "Glazing",
+        "Polishing with polishing discs",
+        "Application of a varnish",
+        "Sandblasting"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Polishing with polishing discs allows obtaining a smooth and aesthetic surface on machinable composites.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Rachid has received a 3D printed surgical guide. Dr Samia asks him to check the fit. What is the most reliable verification method?",
+      "media": [],
+      "options": [
+        "Fitting on the printed model",
+        "Direct clinical fitting on the patient",
+        "Radiographic verification",
+        "Visual verification"
+      ],
+      "correct": 2,
+      "explanation": "Dr Samia explains: 'Radiographic verification is the most reliable method to check the fit of the surgical guide.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Samia must train her assistant in digital file management. What is the basic rule for archiving?",
+      "media": [],
+      "options": [
+        "Delete files after use",
+        "Archive on multiple media (cloud and local)",
+        "Use only one file format",
+        "Do not archive files"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'Archiving on multiple media guarantees the security and longevity of digital data.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Rachid has designed a crown on the CAD software. Dr Samia asks him to check the occlusion. Why is this check essential?",
+      "media": [],
+      "options": [
+        "For the aesthetics of the crown",
+        "To avoid occlusal interferences and pain",
+        "For the color of the crown",
+        "For the height of the crown"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Poorly adjusted occlusion can lead to pain, premature wear and failure of the restoration.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Samia must manage a case of poorly sintered zirconia. Dr Rachid explains the possible causes. What is the most frequent cause?",
+      "media": [],
+      "options": [
+        "A sintering temperature too low",
+        "A sintering time too long",
+        "A quality problem with the block",
+        "Excessive ambient humidity"
+      ],
+      "correct": 0,
+      "explanation": "Dr Rachid explains: 'A sintering temperature too low is the most frequent cause of poorly sintered zirconia, which can compromise the resistance of the restoration.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Rachid must choose between dry machining and wet milling. What is the advantage of wet milling?",
+      "media": [],
+      "options": [
+        "It is faster",
+        "It reduces bur wear and avoids overheating",
+        "It is cheaper",
+        "It is more precise"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samia explains: 'Wet milling reduces bur wear, avoids overheating and improves the quality of the machined surface.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Samia has machined a lithium disilicate crown. Dr Rachid asks her to check the translucency. What is the importance of translucency?",
+      "media": [],
+      "options": [
+        "It is purely aesthetic",
+        "It influences the integration of the crown into the smile",
+        "It increases the resistance of the crown",
+        "It is a regulatory obligation"
+      ],
+      "correct": 1,
+      "explanation": "Dr Rachid explains: 'The translucency of lithium disilicate allows the crown to integrate harmoniously into the patient's smile, imitating the optical properties of natural teeth.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Rachid, after mastering the digital workflow, receives congratulations from Dr Samia: 'You are ready to train other practitioners.' What is the next step for Dr Rachid?",
+      "media": [],
+      "options": [
+        "Create a CAD/CAM training program",
+        "Retire",
+        "Change specialty",
+        "Forget the basics"
+      ],
+      "correct": 0,
+      "explanation": "Dr Samia explains: 'Training other practitioners is the best way to share expertise and advance the profession.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

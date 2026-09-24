@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "fiscalite_dentiste_intermediaire2_001",
+    "title": "Fiscalite_dentiste - Intermédiaire 2",
+    "specialty": "FISC",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "FISC_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Marwani souhaite acheter un local professionnel pour son cabinet. Dr Soulami lui conseille d'étudier les implications fiscales. Selon le CGI, l'achat d'un local professionnel est-il déductible du résultat fiscal ?",
+      "media": [],
+      "options": [
+        "Oui, totalement déductible l'année de l'achat",
+        "Non, mais l'amortissement du bâtiment est déductible",
+        "Oui, mais uniquement pour les SARL",
+        "Non, l'achat immobilier n'est jamais déductible"
+      ],
+      "correct": 1,
+      "explanation": "Dr Soulami explique : 'L'achat d'un local professionnel n'est pas déductible, mais l'amortissement du bâtiment et les intérêts d'emprunt le sont.' Dr Marwani : 'Je vais optimiser l'amortissement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Soulami a une SARL avec un bénéfice de 1 500 000 DH. Dr Marwani l'aide à calculer l'IS. Selon le barème 2026, quel est le montant de l'IS dû ?",
+      "media": [],
+      "options": [
+        "300 000 DH",
+        "420 000 DH",
+        "525 000 DH",
+        "600 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr Marwani explique : 'L'IS se calcule par tranches : 300 000 × 10 % = 30 000 DH, 700 000 × 20 % = 140 000 DH, 500 000 × 35 % = 175 000 DH. Total = 345 000 DH.' Dr Soulami : 'Je vais prévoir ce montant.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Marwani, personne physique, a un CA de 1 000 000 DH et un bénéfice de 200 000 DH. Dr Soulami l'aide à calculer son IR. Quel est l'impôt dû si la CM est de 60 000 DH ?",
+      "media": [],
+      "options": [
+        "L'IR calculé sur 200 000 DH",
+        "La CM de 60 000 DH",
+        "Le montant le plus élevé entre l'IR et la CM",
+        "Aucun impôt"
+      ],
+      "correct": 2,
+      "explanation": "Dr Soulami explique : 'Le contribuable paie le montant le plus élevé entre l'IR et la CM. Si la CM est supérieure à l'IR, il paiera la CM.' Dr Marwani : 'Je dois optimiser mon bénéfice.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Soulami a une SARL avec un bénéfice de 400 000 DH. Dr Marwani lui conseille de distribuer des dividendes. Selon la Loi de Finances 2026, quel est le taux de retenue à la source sur les dividendes ?",
+      "media": [],
+      "options": [
+        "5 %",
+        "10 %",
+        "11,25 %",
+        "15 %"
+      ],
+      "correct": 2,
+      "explanation": "Dr Marwani explique : 'La retenue à la source sur les dividendes en 2026 est de 11,25 %, en diminution progressive vers 10 % en 2027.' Dr Soulami : 'Je vais anticiper cette distribution.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Marwani souhaite acheter un véhicule pour son cabinet. Dr Soulami lui rappelle les règles de déductibilité. Selon le CGI, un véhicule utilitaire est-il déductible à 100 % ?",
+      "media": [],
+      "options": [
+        "Non, la déduction est limitée pour tous les véhicules",
+        "Oui, les véhicules utilitaires sont déductibles à 100 %",
+        "Oui, mais uniquement pour les SARL",
+        "Non, les véhicules personnels ne sont pas déductibles"
+      ],
+      "correct": 1,
+      "explanation": "Dr Soulami explique : 'Les véhicules utilitaires sont déductibles à 100 %. Les véhicules de tourisme ont une déduction limitée.' Dr Marwani : 'Je vais choisir un utilitaire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Soulami, personne physique, a un bénéfice imposable de 180 000 DH. Dr Marwani lui rappelle les déductions pour charges de famille. Il a 2 enfants à charge. Quel est le montant de la réduction pour charges de famille ?",
+      "media": [],
+      "options": [
+        "600 DH",
+        "1 200 DH",
+        "1 800 DH",
+        "3 600 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr Marwani explique : 'La réduction annuelle est de 600 DH par personne à charge, soit 1 200 DH pour 2 enfants.' Dr Soulami : 'Je vais appliquer cette réduction.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Marwani a une SARL avec un CA de 3 000 000 DH. Dr Soulami l'aide à calculer la CM. Selon la Loi de Finances 2026, quel est le montant de la CM due ?",
+      "media": [],
+      "options": [
+        "3 000 DH",
+        "7 500 DH",
+        "12 000 DH",
+        "15 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr Soulami explique : 'La CM est de 0,25 % du CA, soit 7 500 DH pour 3 000 000 DH de CA.' Dr Marwani : 'C'est un montant raisonnable.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Soulami, personne physique, a un CA de 450 000 DH. Dr Marwani lui demande de choisir entre RNS et RNR. Selon le CGI, quel est le principal avantage du RNS ?",
+      "media": [],
+      "options": [
+        "Déduction de toutes les charges réelles",
+        "Comptabilité simplifiée",
+        "Taux d'imposition plus faible",
+        "Exonération de CM"
+      ],
+      "correct": 1,
+      "explanation": "Dr Marwani explique : 'Le RNS offre une comptabilité simplifiée, mais les charges sont forfaitaires.' Dr Soulami : 'Je vais comparer les deux régimes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Marwani a une SARL avec un bénéfice de 150 000 DH. Dr Soulami l'aide à calculer l'IS. Selon le barème 2026, quel est le montant de l'IS dû ?",
+      "media": [],
+      "options": [
+        "15 000 DH",
+        "20 000 DH",
+        "30 000 DH",
+        "45 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Dr Soulami explique : 'Pour la tranche 0-300 000 DH, le taux est de 10 %. L'IS dû est de 150 000 × 10 % = 15 000 DH.' Dr Marwani : 'C'est très intéressant.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Soulami, personne physique, a un déficit fiscal de 30 000 DH. Dr Marwani lui rappelle les règles de report. Dans le cadre du RNS, le déficit est-il reportable ?",
+      "media": [],
+      "options": [
+        "Oui, sur les bénéfices des 4 années suivantes",
+        "Non, le RNS ne permet pas le report de déficit",
+        "Oui, sur les bénéfices des 2 années suivantes",
+        "Oui, uniquement sur l'année suivante"
+      ],
+      "correct": 0,
+      "explanation": "Dr Marwani explique : 'Dans le cadre du RNS, le déficit est reportable sur les bénéfices des 4 années suivantes.' Dr Soulami : 'Je vais suivre ce report.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Marwani souhaite embaucher une assistante. Dr Soulami lui rappelle les charges sociales. Selon la législation marocaine, quelles sont les cotisations sociales obligatoires pour l'employeur ?",
+      "media": [],
+      "options": [
+        "CNSS uniquement",
+        "CNSS et AMO",
+        "CNSS, AMO et CNOPS",
+        "CNSS, AMO et taxe professionnelle"
+      ],
+      "correct": 1,
+      "explanation": "Dr Soulami explique : 'L'employeur doit cotiser à la CNSS (assurance sociale) et à l'AMO (assurance maladie obligatoire).' Dr Marwani : 'Je vais prévoir ces charges.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Soulami a une SARL avec un bénéfice de 750 000 DH. Dr Marwani l'aide à calculer l'IS. Selon le barème 2026, quel est le montant de l'IS dû ?",
+      "media": [],
+      "options": [
+        "75 000 DH",
+        "120 000 DH",
+        "150 000 DH",
+        "262 500 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr Marwani explique : 'L'IS se calcule par tranches : 300 000 × 10 % = 30 000 DH, 450 000 × 20 % = 90 000 DH. Total = 120 000 DH.' Dr Soulami : 'Merci pour ce calcul.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Marwani, personne physique, a un CA de 2 000 000 DH. Dr Soulami lui conseille de créer une SARL. Quel est l'avantage fiscal principal de la SARL ?",
+      "media": [],
+      "options": [
+        "Exonération totale d'impôt",
+        "Taux d'IS de 10 % à 20 % contre IR progressif jusqu'à 37 %",
+        "Exonération de CM",
+        "Déduction de toutes les dépenses personnelles"
+      ],
+      "correct": 1,
+      "explanation": "Dr Soulami explique : 'La SARL permet un taux d'IS de 10 % à 20 % contre un IR progressif jusqu'à 37 %, soit une économie significative.' Dr Marwani : 'Je vais créer ma SARL.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Soulami a une SARL avec un CA de 500 000 DH. Dr Marwani l'aide à calculer la CM. Selon la Loi de Finances 2026, quel est le montant de la CM due ?",
+      "media": [],
+      "options": [
+        "1 250 DH",
+        "3 000 DH",
+        "5 000 DH",
+        "7 500 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr Marwani explique : 'La CM est de 0,25 % du CA, soit 1 250 DH. Le plancher étant de 3 000 DH, c'est ce montant qui est dû.' Dr Soulami : 'Je vais prévoir 3 000 DH.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr Marwani souhaite investir dans un logiciel de gestion. Dr Soulami lui rappelle les règles d'amortissement. Selon le CGI, un logiciel est-il amortissable ?",
+      "media": [],
+      "options": [
+        "Non, c'est une charge immédiate",
+        "Oui, sur une durée de 3 à 5 ans",
+        "Oui, sur une durée de 10 ans",
+        "Non, les logiciels sont des immobilisations incorporelles non amortissables"
+      ],
+      "correct": 1,
+      "explanation": "Dr Soulami explique : 'Les logiciels sont des immobilisations incorporelles amortissables sur 3 à 5 ans selon leur durée d'utilisation.' Dr Marwani : 'Je vais amortir ce logiciel.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr Soulami, personne physique, a un revenu net imposable de 200 000 DH. Dr Marwani l'aide à calculer son IR. Selon le barème 2026, quel est le montant de l'IR dû ?",
+      "media": [],
+      "options": [
+        "20 000 DH",
+        "34 000 DH",
+        "44 000 DH",
+        "74 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "Dr Marwani explique : 'Le barème progressif s'applique : 0-30 000 DH = 0 %, 30 001-50 000 DH = 10 % (2 000 DH), 50 001-60 000 DH = 20 % (2 000 DH), 60 001-180 000 DH = 34 % (40 800 DH), 180 001-200 000 DH = 37 % (7 400 DH). Total = 52 200 DH.' Dr Soulami : 'C'est un montant significatif.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr Marwani a une SARL avec un bénéfice de 300 000 DH. Dr Soulami l'aide à calculer l'IS. Selon le barème 2026, quel est le montant de l'IS dû ?",
+      "media": [],
+      "options": [
+        "30 000 DH",
+        "60 000 DH",
+        "90 000 DH",
+        "105 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Dr Soulami explique : 'Pour la tranche 0-300 000 DH, le taux est de 10 %. L'IS dû est de 300 000 × 10 % = 30 000 DH.' Dr Marwani : 'C'est très avantageux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr Soulami, personne physique, a un CA de 700 000 DH. Dr Marwani lui demande de vérifier son régime d'imposition. À quel régime est-il soumis de plein droit ?",
+      "media": [],
+      "options": [
+        "Au RNS",
+        "Au RNR",
+        "À la CPU",
+        "Au régime forfaitaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Marwani explique : 'Le RNR est le régime de droit commun pour les professions libérales dont le CA annuel dépasse 500 000 DH.' Dr Soulami : 'Je suis bien au RNR.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr Marwani souhaite acheter des consommables dentaires. Dr Soulami lui rappelle les règles de déductibilité. Selon le CGI, les consommables sont-ils déductibles ?",
+      "media": [],
+      "options": [
+        "Oui, totalement déductibles l'année de l'achat",
+        "Oui, mais amortis sur 3 ans",
+        "Oui, mais amortis sur 5 ans",
+        "Non, les consommables sont des charges non déductibles"
+      ],
+      "correct": 0,
+      "explanation": "Dr Soulami explique : 'Les consommables dentaires sont des charges déductibles l'année de l'achat.' Dr Marwani : 'Je vais bien les comptabiliser.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr Soulami a une SARL avec un CA de 1 000 000 DH et un résultat fiscal de 0 DH. Dr Marwani l'aide à calculer la CM. Quel est le montant de la CM due ?",
+      "media": [],
+      "options": [
+        "0 DH",
+        "2 500 DH",
+        "3 000 DH",
+        "5 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "Dr Marwani explique : 'La CM est de 0,25 % du CA, soit 2 500 DH. Le plancher étant de 3 000 DH, c'est ce montant qui est dû, même en cas de résultat nul.' Dr Soulami : 'Je dois quand même payer 3 000 DH.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr Marwani, personne physique, a un CA de 800 000 DH et un bénéfice de 400 000 DH. Dr Soulami l'aide à calculer la CM. Quel est le montant de la CM due ?",
+      "media": [],
+      "options": [
+        "4 800 DH",
+        "6 000 DH",
+        "12 000 DH",
+        "48 000 DH"
+      ],
+      "correct": 3,
+      "explanation": "Dr Soulami explique : 'La CM pour les personnes physiques est de 6 % du CA, soit 800 000 × 6 % = 48 000 DH.' Dr Marwani : 'C'est un montant significatif.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr Soulami a une SARL avec un bénéfice de 1 000 000 DH. Dr Marwani l'aide à calculer l'IS. Selon le barème 2026, quel est le montant de l'IS dû ?",
+      "media": [],
+      "options": [
+        "100 000 DH",
+        "200 000 DH",
+        "300 000 DH",
+        "350 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr Marwani explique : 'L'IS se calcule par tranches : 300 000 × 10 % = 30 000 DH, 700 000 × 20 % = 140 000 DH. Total = 170 000 DH.' Dr Soulami : 'Je vais prévoir ce montant.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr Marwani souhaite s'associer avec un confrère. Dr Soulami lui conseille de choisir la forme juridique. Selon le CGI, quelle est la forme juridique la plus adaptée pour une association de dentistes ?",
+      "media": [],
+      "options": [
+        "SARL",
+        "SARLAU",
+        "SELARL",
+        "SCI"
+      ],
+      "correct": 2,
+      "explanation": "Dr Soulami explique : 'La SELARL (Société d'Exercice Libéral à Responsabilité Limitée) est spécialement conçue pour les professions libérales.' Dr Marwani : 'Je vais créer une SELARL.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr Soulami, personne physique, a un CA de 1 500 000 DH. Dr Marwani lui conseille d'optimiser sa structure. Quel est le principal inconvénient de la personne physique pour un CA élevé ?",
+      "media": [],
+      "options": [
+        "Aucun inconvénient",
+        "Le taux d'IR peut atteindre 37 %",
+        "L'impossibilité d'embaucher",
+        "L'obligation de facturer la TVA"
+      ],
+      "correct": 1,
+      "explanation": "Dr Marwani explique : 'Le principal inconvénient de la personne physique est le taux d'IR progressif qui peut atteindre 37 %, contre 10 % à 20 % pour l'IS.' Dr Soulami : 'Je vais créer une société.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr Marwani, après avoir optimisé sa gestion fiscale avec Dr Soulami, reçoit ses félicitations. Quelle est la prochaine étape pour Dr Marwani ?",
+      "media": [],
+      "options": [
+        "Devenir un expert en gestion fiscale des cabinets dentaires",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bonnes pratiques"
+      ],
+      "correct": 0,
+      "explanation": "Dr Soulami explique : 'La maîtrise de la gestion fiscale est une compétence précieuse. Devenir un expert est la prochaine étape.' Dr Marwani : 'Je vais me former à la fiscalité avancée.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_expert1_001",
+    "title": "Sterilization - Expert 1",
+    "specialty": "STER",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_E1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Yassine, now a trainer, must teach the principles of sterilization to residents. What is the first rule he must teach them?",
+      "media": [],
+      "options": [
+        "Sterilization is a chain where every link is essential",
+        "Sterilization is a simple process",
+        "Sterilization is quick",
+        "Sterilization is secondary"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Yassine explains: 'Sterilization is a chain. One weak link and the whole system collapses.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q02",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents on control tests. He shows them the Bowie-Dick test. What is the particularity of this test?",
+      "media": [],
+      "options": [
+        "It is performed once a month",
+        "It checks steam penetration into a load",
+        "It is biological",
+        "It is optional"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'The Bowie-Dick test checks steam penetration. It is performed daily.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q03",
+      "type": "single-choice",
+      "question": "Dr. Yassine must explain the importance of osmosis water. He reminds that water is a key element of sterilization. What is the role of osmosis water?",
+      "media": [],
+      "options": [
+        "Lubricate instruments",
+        "Avoid deposits and corrosion",
+        "Disinfect instruments",
+        "Cool instruments"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'Osmosis water avoids limescale deposits and instrument corrosion.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q04",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in emergency sterilization management. He reminds them of the limits of the Flash cycle. What is the main limitation?",
+      "media": [],
+      "options": [
+        "It is too long",
+        "It does not allow instrument storage",
+        "It is too expensive",
+        "It is ineffective"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'The Flash cycle allows rapid sterilization, but instruments cannot be stored.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q05",
+      "type": "single-choice",
+      "question": "Dr. Yassine must explain the difference between sterilization and disinfection. He uses a simple analogy. Sterilization is to disinfection what:",
+      "media": [],
+      "options": [
+        "Total destruction is to partial reduction",
+        "Partial reduction is to total destruction",
+        "Disinfection is stronger",
+        "Sterilization is less effective"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Yassine explains: 'Sterilization destroys everything (including spores), disinfection only reduces the microbial load.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q06",
+      "type": "single-choice",
+      "question": "Dr. Yassine must evaluate the performance of an autoclave. He performs a series of tests. Which test is the most reliable for evaluating sterilization effectiveness?",
+      "media": [],
+      "options": [
+        "The leak test",
+        "The Bowie-Dick test",
+        "The biological test",
+        "The chemical test"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Yassine explains: 'The biological test is the most reliable because it directly checks the destruction of microorganisms.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q07",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in managing damaged instruments. He reminds them that a damaged instrument is a risk. Why?",
+      "media": [],
+      "options": [
+        "It is unsightly",
+        "It can hide microorganisms in cracks",
+        "It is more difficult to use",
+        "It is more expensive to replace"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'Cracks and scratches can harbor microorganisms. A damaged instrument is a risk for the patient.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q08",
+      "type": "single-choice",
+      "question": "Dr. Yassine must explain the importance of forward flow. He reminds that it is a fundamental rule. What is the justification for this rule?",
+      "media": [],
+      "options": [
+        "It saves time",
+        "It avoids cross-contamination",
+        "It allows emergency management",
+        "It is aesthetic"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'Forward flow avoids cross-contamination between the dirty and clean areas.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q09",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in traceability. He explains that it is essential. Why is traceability mandatory?",
+      "media": [],
+      "options": [
+        "For administrative reasons",
+        "To be able to trace batches in case of a problem",
+        "To make statistics",
+        "To save time"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'Traceability allows tracing a batch in case of an incident. It is a legal obligation and a safety guarantee.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q10",
+      "type": "single-choice",
+      "question": "Dr. Yassine must manage a contamination incident. He applies the emergency protocol. What is the first step of the protocol?",
+      "media": [],
+      "options": [
+        "Close the office",
+        "Isolate the contaminated area",
+        "Disinfect all surfaces",
+        "Call the authorities"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'The contaminated area must first be isolated to prevent spread.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q11",
+      "type": "single-choice",
+      "question": "Dr. Yassine must explain the use of biological indicators. He reminds that they are essential tests. What is the particularity of biological indicators?",
+      "media": [],
+      "options": [
+        "They are easy to use",
+        "They are inexpensive",
+        "They directly check the destruction of microorganisms",
+        "They are quick"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Yassine explains: 'Biological indicators are the only test that provides direct proof of sterilization effectiveness.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q12",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in autoclave maintenance. He reminds them that it is a legal obligation. What is the frequency of maintenance?",
+      "media": [],
+      "options": [
+        "Once a year",
+        "Once a month",
+        "Once a quarter",
+        "Once a week"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Yassine explains: 'Annual maintenance is mandatory to guarantee safety and compliance.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q13",
+      "type": "single-choice",
+      "question": "Dr. Yassine must teach the management of heat-sensitive instruments. He explains that these instruments require special precautions. Which sterilization method is suitable?",
+      "media": [],
+      "options": [
+        "Dry heat",
+        "Ethylene oxide",
+        "121°C autoclave",
+        "Steam"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'Ethylene oxide is suitable for heat-sensitive instruments because it operates at low temperature.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q14",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in communication with patients about sterilization. He gives them advice. What is the key message?",
+      "media": [],
+      "options": [
+        "Sterilization is complex",
+        "Sterilization guarantees patient safety",
+        "Sterilization is a routine",
+        "Sterilization is secondary"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'The patient must understand that sterilization is primarily for their safety.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q15",
+      "type": "single-choice",
+      "question": "Dr. Yassine must create a new sterilization protocol for his office. He draws inspiration from good practices. What is the basis of his protocol?",
+      "media": [],
+      "options": [
+        "His personal experience",
+        "ISO standard recommendations",
+        "Advice from colleagues",
+        "Office habits"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'A protocol must be based on ISO standards to guarantee safety and compliance.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q16",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in managing contaminated waste. He reminds them of the rules. What is the main rule for waste?",
+      "media": [],
+      "options": [
+        "Throw them with household waste",
+        "Sort and dispose of them through appropriate channels",
+        "Reuse them",
+        "Store them in the office"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'Contaminated waste must be sorted and disposed of through appropriate channels to avoid risks.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q17",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in infection prevention. He reminds them that sterilization is a pillar of prevention. What is the chain of infection prevention?",
+      "media": [],
+      "options": [
+        "Cleaning → Disinfection → Sterilization",
+        "Sterilization → Cleaning → Disinfection",
+        "Disinfection → Cleaning → Sterilization",
+        "Cleaning → Sterilization → Disinfection"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Yassine explains: 'The prevention chain is: cleaning, disinfection, then sterilization.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q18",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in the use of class B autoclaves. He explains their specificity. What is the particularity of class B autoclaves?",
+      "media": [],
+      "options": [
+        "They are cheaper",
+        "They are faster",
+        "They can treat hollow instruments",
+        "They use chemicals"
+      ],
+      "correct": 2,
+      "explanation": "Dr. Yassine explains: 'Class B autoclaves are the only ones that can treat hollow instruments, thanks to their vacuum system.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q19",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in risk management. He reminds them that sterilization is a risk management tool. What is the main risk of incorrect sterilization?",
+      "media": [],
+      "options": [
+        "A waste of time",
+        "A nosocomial infection",
+        "A loss of money",
+        "Patient dissatisfaction"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'The main risk of incorrect sterilization is a nosocomial infection.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q20",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in innovation in sterilization. He talks about new technologies. What is the current trend in sterilization?",
+      "media": [],
+      "options": [
+        "UV sterilization",
+        "Plasma sterilization",
+        "Ultrasonic sterilization",
+        "Laser sterilization"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'Plasma sterilization is an innovative technology for heat-sensitive instruments.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q21",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in documentation. He reminds them that everything must be documented. What is the most important element to document?",
+      "media": [],
+      "options": [
+        "Cycle times",
+        "Test results",
+        "Temperatures",
+        "Pressures"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'Test results are the most important element to document to prove sterilization effectiveness.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q22",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in supplier management. He reminds them that suppliers must be qualified. What is the first step in qualification?",
+      "media": [],
+      "options": [
+        "Price",
+        "ISO certification",
+        "Brand",
+        "Delivery time"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'ISO certification is the first step to qualify a supplier.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q23",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in managing non-conformities. He explains the procedure to follow. What is the first action in case of non-conformity?",
+      "media": [],
+      "options": [
+        "Ignore the problem",
+        "Identify the cause",
+        "Call the supervisor",
+        "Restart the cycle"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'The cause must first be identified in order to take corrective measures.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q24",
+      "type": "single-choice",
+      "question": "Dr. Yassine must train residents in team communication. He reminds them that communication is essential. What is the priority message to convey?",
+      "media": [],
+      "options": [
+        "Sterilization is easy",
+        "Patient safety is paramount",
+        "Sterilization is a routine",
+        "Sterilization is secondary"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Yassine explains: 'The priority message to convey is that patient safety is paramount.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_E1_Q25",
+      "type": "single-choice",
+      "question": "Dr. Yassine, now a recognized expert, receives a request to train residents across the country. Dr. Fatima is proud of him. What is the next step?",
+      "media": [],
+      "options": [
+        "Create a national training program on sterilization",
+        "Retire",
+        "Change specialty",
+        "Forget the basics"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Fatima explains: 'You are now a reference. The next step is to share your knowledge on a large scale.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

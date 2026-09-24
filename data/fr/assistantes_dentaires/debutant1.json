@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "assistantes_dentaires_debutant1_001",
+    "title": "Assistantes_dentaires - Débutant 1",
+    "specialty": "ASSI",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ASSI_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a recruté une assistante sans diplôme, formée 'sur le tas'. Le Dr Zaki a recruté une assistante titulaire d'un DUT Assistante Dentaire. Selon les recommandations professionnelles, quelle est la situation la plus risquée ?",
+      "media": [],
+      "options": [
+        "Les deux situations sont équivalentes en matière de risque",
+        "La situation du Dr Chiba est plus risquée car l'assistante n'a pas de formation reconnue",
+        "La situation du Dr Zaki est plus risquée car le diplôme n'est pas une garantie",
+        "Aucune des deux situations ne présente de risque particulier"
+      ],
+      "correct": 1,
+      "explanation": "Le DUT Assistante Dentaire est la formation de référence au Maroc. Recruter une assistante sans cette formation expose le cabinet à des risques en matière d'hygiène, de stérilisation et de gestion du cabinet.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a formé son assistante 'sur le tas' en quelques jours. Le Dr Zaki a recruté une assistante diplômée. Selon les normes de formation, quelle est la durée du DUT Assistante Dentaire ?",
+      "media": [],
+      "options": [
+        "6 mois",
+        "1 an",
+        "2 ans",
+        "3 ans"
+      ],
+      "correct": 2,
+      "explanation": "Le DUT Assistante Dentaire est une formation de deux ans qui comprend des modules en management odontologique, hygiène, ergonomie, assistance clinique, communication et éthique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q03",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba a été formée sur le tas et ne maîtrise pas les techniques de stérilisation. L'assistante du Dr Zaki a appris ces techniques en formation. Selon les bonnes pratiques, quelle est la conséquence la plus probable ?",
+      "media": [],
+      "options": [
+        "Aucune conséquence, la stérilisation est simple à apprendre",
+        "Un risque accru d'infections nosocomiales dans le cabinet du Dr Chiba",
+        "Le cabinet du Dr Zaki aura plus de mal à stériliser",
+        "Les deux cabinets sont exposés au même risque"
+      ],
+      "correct": 1,
+      "explanation": "La stérilisation des instruments est un acte technique sensible qui nécessite une formation spécifique. Une mauvaise stérilisation expose les patients à des risques infectieux graves.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Chiba est satisfait de son assistante non diplômée qu'il a formée lui-même. Le Dr Zaki a une assistante diplômée. Selon une étude sur les assistantes dentaires, quel est le principal avantage d'une assistante diplômée ?",
+      "media": [],
+      "options": [
+        "Un coût salarial moins élevé",
+        "Une meilleure maîtrise des techniques d'hygiène et de stérilisation",
+        "Une plus grande disponibilité",
+        "Une meilleure présentation physique"
+      ],
+      "correct": 1,
+      "explanation": "Les assistantes diplômées DUT ont reçu une formation spécifique en hygiène, asepsie et stérilisation, ce qui garantit une meilleure qualité des soins et une réduction des risques infectieux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q05",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba ne maîtrise pas la gestion des stocks de consommables. L'assistante du Dr Zaki a appris cette compétence en formation. Selon le programme du DUT, quels sont les modules de formation ?",
+      "media": [],
+      "options": [
+        "Uniquement des modules de soins dentaires",
+        "Des modules en management odontologique, hygiène, assistance clinique et communication",
+        "Uniquement des modules de secrétariat",
+        "Uniquement des modules de comptabilité"
+      ],
+      "correct": 1,
+      "explanation": "Le DUT Assistante Dentaire comprend des modules en management odontologique (gestion du cabinet, accueil, stocks), mesures d'hygiène et ergonomie, assistance clinique, et communication.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a recruté son assistante sans diplôme. Le Dr Zaki exige un DUT. Selon la réglementation marocaine, quel diplôme est reconnu pour la profession d'assistante dentaire ?",
+      "media": [],
+      "options": [
+        "Aucun diplôme n'est exigé pour cette profession",
+        "Le DUT Santé, option Assistante dentaire",
+        "Un certificat de secrétariat médical",
+        "Un diplôme d'infirmière"
+      ],
+      "correct": 1,
+      "explanation": "Le DUT Santé, option Assistante dentaire, est le diplôme de référence reconnu au Maroc pour la profession d'assistante dentaire, accessible après le baccalauréat scientifique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q07",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba ne connaît pas les règles de confidentialité médicale. L'assistante du Dr Zaki a étudié ces règles en formation. Selon la déontologie, quelle est la situation du Dr Chiba ?",
+      "media": [],
+      "options": [
+        "Il n'est pas responsable des actes de son assistante",
+        "Il est responsable des actes de son assistante, y compris en matière de confidentialité",
+        "Seule l'assistante est responsable de ses actes",
+        "Il peut déléguer sa responsabilité à son assistante"
+      ],
+      "correct": 1,
+      "explanation": "Le dentiste est responsable des actes de ses collaborateurs, y compris son assistante. Une assistante non formée aux règles de déontologie expose le cabinet à des risques juridiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q08",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba ne maîtrise pas le circuit de stérilisation (sale/propre). L'assistante du Dr Zaki applique rigoureusement le protocole. Selon les bonnes pratiques, quelle est la conséquence ?",
+      "media": [],
+      "options": [
+        "Aucune conséquence, le circuit n'est pas important",
+        "Un risque de contamination croisée au cabinet du Dr Chiba",
+        "Le cabinet du Dr Zaki sera moins efficace",
+        "Le circuit de stérilisation est le même pour les deux"
+      ],
+      "correct": 1,
+      "explanation": "Le circuit sale/propre est fondamental pour la prévention des infections croisées. Une mauvaise maîtrise de ce circuit expose les patients à des risques de contamination.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a formé son assistante en quelques jours. Le Dr Zaki a recruté une assistante diplômée. Quelle est la différence principale en termes de qualité de la formation ?",
+      "media": [],
+      "options": [
+        "Aucune différence, la formation sur le tas est aussi efficace",
+        "La formation sur le tas est souvent incomplète et non structurée, contrairement au DUT qui est un programme complet",
+        "La formation DUT est trop théorique et peu pratique",
+        "La formation sur le tas est plus complète que le DUT"
+      ],
+      "correct": 1,
+      "explanation": "La formation sur le tas est souvent incomplète et dépend des compétences du formateur, alors que le DUT est un programme structuré couvrant tous les aspects du métier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q10",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba ne sait pas gérer les urgences au cabinet. L'assistante du Dr Zaki a appris les gestes de premiers secours. Selon les compétences requises, quelle est la meilleure situation ?",
+      "media": [],
+      "options": [
+        "Les deux situations sont équivalentes",
+        "La situation du Dr Zaki est meilleure car une assistante diplômée maîtrise les gestes d'urgence",
+        "La situation du Dr Chiba est meilleure car il gère lui-même les urgences",
+        "Les gestes d'urgence ne font pas partie du métier d'assistante"
+      ],
+      "correct": 1,
+      "explanation": "Les assistantes diplômées reçoivent une formation aux gestes de premiers secours et à la gestion des urgences, ce qui renforce la sécurité des patients.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a recruté une assistante non diplômée pour réduire ses coûts. Le Dr Zaki a investi dans une assistante diplômée. Selon les normes professionnelles, quel est le choix le plus judicieux à long terme ?",
+      "media": [],
+      "options": [
+        "Le choix du Dr Chiba est plus judicieux car il économise de l'argent",
+        "Le choix du Dr Zaki est plus judicieux car la formation garantit la qualité des soins et la sécurité",
+        "Les deux choix sont équivalents à long terme",
+        "Le choix dépend uniquement de la taille du cabinet"
+      ],
+      "correct": 1,
+      "explanation": "Investir dans une assistante diplômée, c'est investir dans la qualité des soins, la sécurité des patients et la réduction des risques juridiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q12",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba ne connaît pas la gestion des dossiers patients informatisés. L'assistante du Dr Zaki a été formée à ces outils. Selon les évolutions du métier, quelles sont les compétences attendues d'une assistante dentaire ?",
+      "media": [],
+      "options": [
+        "Uniquement des compétences cliniques",
+        "Des compétences en gestion, informatique et relation patient",
+        "Uniquement des compétences administratives",
+        "Uniquement des compétences en stérilisation"
+      ],
+      "correct": 1,
+      "explanation": "L'assistante dentaire moderne doit maîtriser les outils informatiques (gestion des dossiers, logiciels de cabinet), la gestion administrative et la relation patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a une assistante non diplômée qui ne maîtrise pas l'anglais. Le Dr Zaki a une assistante diplômée qui maîtrise l'anglais. Selon les évolutions du métier, quel est l'avantage de l'assistante du Dr Zaki ?",
+      "media": [],
+      "options": [
+        "Aucun avantage, l'anglais n'est pas utile au cabinet",
+        "Elle peut mieux accueillir les patients étrangers et lire la documentation scientifique",
+        "Elle peut remplacer le dentiste en son absence",
+        "Elle peut facturer les patients en devises étrangères"
+      ],
+      "correct": 1,
+      "explanation": "La maîtrise de l'anglais est un atout pour accueillir une patientèle internationale, lire les notices des équipements et se former en continu.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q14",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba ne connaît pas les règles de radioprotection. L'assistante du Dr Zaki a été formée à ces règles. Selon la réglementation, quelle est la situation la plus conforme ?",
+      "media": [],
+      "options": [
+        "Les deux situations sont conformes",
+        "La situation du Dr Zaki est plus conforme car une assistante diplômée connaît les règles de radioprotection",
+        "La situation du Dr Chiba est plus conforme car il gère lui-même la radiologie",
+        "La radioprotection ne concerne que les dentistes"
+      ],
+      "correct": 1,
+      "explanation": "Les assistantes diplômées reçoivent une formation en radioprotection, ce qui est essentiel pour manipuler les appareils de radiologie en toute sécurité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q15",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a recruté une assistante non diplômée qui n'a pas de contrat de travail. Le Dr Zaki a un contrat de travail avec son assistante diplômée. Selon le Code du Travail, quelle est la situation du Dr Chiba ?",
+      "media": [],
+      "options": [
+        "Il n'a pas besoin de contrat pour une assistante non diplômée",
+        "Il est en infraction, car tout salarié doit avoir un contrat de travail",
+        "Seules les assistantes diplômées ont droit à un contrat",
+        "Il peut régulariser la situation plus tard"
+      ],
+      "correct": 1,
+      "explanation": "Le Code du Travail marocain impose à tout employeur de conclure un contrat de travail avec ses salariés, quel que soit leur diplôme.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q16",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba ne connaît pas les droits des patients. L'assistante du Dr Zaki a appris ces droits en formation. Selon la déontologie, quelles sont les connaissances requises pour une assistante ?",
+      "media": [],
+      "options": [
+        "Seules les connaissances cliniques sont requises",
+        "Les connaissances en éthique, déontologie et droits des patients font partie de la formation",
+        "Les droits des patients ne concernent que le dentiste",
+        "L'assistante n'a pas besoin de connaître les droits des patients"
+      ],
+      "correct": 1,
+      "explanation": "La formation DUT inclut des modules de communication, éthique et déontologie, qui couvrent les droits des patients et la confidentialité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a recruté une assistante non diplômée qui n'a pas de formation en ergonomie. Le Dr Zaki a une assistante diplômée formée en ergonomie. Selon les bonnes pratiques, quel est l'avantage pour le Dr Zaki ?",
+      "media": [],
+      "options": [
+        "Aucun avantage, l'ergonomie n'est pas importante",
+        "Réduction des risques de troubles musculo-squelettiques pour le dentiste et l'assistante",
+        "L'ergonomie est uniquement utile pour l'assistante",
+        "L'ergonomie ne concerne que le fauteuil dentaire"
+      ],
+      "correct": 1,
+      "explanation": "Une bonne ergonomie au cabinet permet de réduire la fatigue et les risques de troubles musculo-squelettiques, tant pour le dentiste que pour l'assistante.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q18",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba a été formée à la va-vite sur la gestion des urgences. L'assistante du Dr Zaki a reçu une formation complète en premiers secours. Selon les compétences requises, quelle est la meilleure situation ?",
+      "media": [],
+      "options": [
+        "Aucune différence, les deux assistantes peuvent gérer les urgences",
+        "La situation du Dr Zaki est meilleure car une formation complète garantit une meilleure gestion des urgences",
+        "La situation du Dr Chiba est meilleure car la formation rapide est plus efficace",
+        "Les urgences sont toujours gérées par le dentiste"
+      ],
+      "correct": 1,
+      "explanation": "Une formation complète en premiers secours permet à l'assistante de réagir efficacement en cas d'urgence, ce qui peut sauver des vies.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a recruté une assistante non diplômée et ne lui a pas fourni de carte de travail. Le Dr Zaki a délivré une carte de travail à son assistante diplômée. Selon le Code du Travail, quelle est la situation du Dr Chiba ?",
+      "media": [],
+      "options": [
+        "Il n'est pas obligé de fournir une carte de travail",
+        "Il est en infraction car la carte de travail est obligatoire pour tout salarié",
+        "Seules les assistantes diplômées ont droit à une carte de travail",
+        "Il peut délivrer la carte de travail plus tard"
+      ],
+      "correct": 1,
+      "explanation": "Le Code du Travail impose à tout employeur de délivrer une carte de travail à ses salariés, quel que soit leur diplôme.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q20",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba ne connaît pas les protocoles de désinfection des surfaces. L'assistante du Dr Zaki applique rigoureusement les protocoles. Selon les bonnes pratiques, quel est le risque pour le cabinet du Dr Chiba ?",
+      "media": [],
+      "options": [
+        "Aucun risque, la désinfection n'est pas importante",
+        "Un risque de transmission d'infections nosocomiales",
+        "Un risque de détérioration du matériel",
+        "Un risque de surcoût en produits de nettoyage"
+      ],
+      "correct": 1,
+      "explanation": "Une mauvaise désinfection des surfaces expose les patients à des risques d'infections nosocomiales, ce qui peut avoir des conséquences graves.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a recruté une assistante non diplômée car elle accepte un salaire plus bas. Le Dr Zaki paie son assistante diplômée selon les grilles salariales. Selon les normes professionnelles, quelle est la situation la plus juste ?",
+      "media": [],
+      "options": [
+        "La situation du Dr Chiba est plus juste car elle permet de réduire les coûts",
+        "La situation du Dr Zaki est plus juste car elle rémunère les compétences et la qualification",
+        "Les deux situations sont également justes",
+        "La justice salariale ne concerne pas les assistantes"
+      ],
+      "correct": 1,
+      "explanation": "Rémunérer une assistante selon sa qualification est un signe de reconnaissance de ses compétences et contribue à sa motivation et à sa fidélisation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q22",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba ne maîtrise pas le secrétariat médical. L'assistante du Dr Zaki a appris les techniques de secrétariat en formation. Selon les compétences requises, quel est l'avantage pour le cabinet du Dr Zaki ?",
+      "media": [],
+      "options": [
+        "Aucun avantage, le secrétariat n'est pas important",
+        "Une meilleure gestion des rendez-vous et des dossiers patients",
+        "Une réduction des coûts de fonctionnement",
+        "Une augmentation du nombre de patients"
+      ],
+      "correct": 1,
+      "explanation": "Une assistante formée au secrétariat médical assure une meilleure gestion des rendez-vous, des dossiers et des relations avec les patients.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a une assistante non diplômée qui a des difficultés avec les logiciels de gestion. Le Dr Zaki a une assistante diplômée qui maîtrise les logiciels. Selon les évolutions du métier, quelle est la situation la plus adaptée ?",
+      "media": [],
+      "options": [
+        "La situation du Dr Chiba est adaptée car l'informatique n'est pas indispensable",
+        "La situation du Dr Zaki est plus adaptée car la maîtrise des logiciels est devenue essentielle",
+        "Les deux situations sont également adaptées",
+        "Seul le dentiste doit maîtriser les logiciels"
+      ],
+      "correct": 1,
+      "explanation": "La maîtrise des logiciels de gestion de cabinet, des outils de facturation et des plateformes de télétransmission est devenue indispensable pour une assistante dentaire moderne.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q24",
+      "type": "single-choice",
+      "question": "L'assistante du Dr Chiba a été formée sur le tas par le Dr Chiba lui-même. Selon les risques juridiques, quelle est la situation du Dr Chiba en cas d'erreur ?",
+      "media": [],
+      "options": [
+        "Il n'est pas responsable, car c'est son assistante qui a commis l'erreur",
+        "Il est responsable des erreurs de son assistante, car il l'a formée lui-même",
+        "Seule l'assistante est responsable pénalement",
+        "Il peut se dédouaner en invoquant la formation sur le tas"
+      ],
+      "correct": 1,
+      "explanation": "Le dentiste est responsable des actes de ses collaborateurs. En formant lui-même son assistante, il engage sa responsabilité sur la qualité de la formation dispensée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Zaki a recruté une assistante diplômée DUT. Selon le programme de formation, quels sont les principaux domaines de compétence acquis ?",
+      "media": [],
+      "options": [
+        "Uniquement les soins dentaires",
+        "Le management odontologique, l'hygiène, l'assistance clinique, la communication et l'éthique",
+        "Uniquement la stérilisation",
+        "Uniquement la gestion administrative"
+      ],
+      "correct": 1,
+      "explanation": "Le DUT Assistante Dentaire couvre cinq domaines : management odontologique, mesures d'hygiène et ergonomie, assistance clinique, communication et éthique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D1_Q26",
+      "type": "single-choice",
+      "question": "Le Dr Chiba a une assistante non diplômée qui ne connaît pas les techniques d'empreinte. Le Dr Zaki a une assistante diplômée formée aux techniques d'empreinte. Selon les compétences requises, quelle est la meilleure situation pour le cabinet ?",
+      "media": [],
+      "options": [
+        "La situation du Dr Chiba, car il préfère faire lui-même les empreintes",
+        "La situation du Dr Zaki, car une assistante diplômée peut assister le dentiste pour les empreintes",
+        "Les deux situations sont équivalentes",
+        "Les empreintes ne font pas partie du travail de l'assistante"
+      ],
+      "correct": 1,
+      "explanation": "Une assistante diplômée peut assister le dentiste lors des prises d'empreintes, ce qui permet de gagner du temps et d'assurer une meilleure qualité du travail.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

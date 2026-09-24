@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "orthodontie_debutant1_001",
+    "title": "Orthodontie - Débutant 1",
+    "specialty": "ORTH",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ORTH_D1_Q01",
+      "type": "single-choice",
+      "question": "🦅 Sami reçoit un patient avec une malocclusion. Il dit : 'C'est une Classe II d'Angle, il faut agir vite !' 🐆 Mina lui demande : 'Tu es sûr de ta classification ?' Quelle est la classification d'Angle ?",
+      "media": [],
+      "options": [
+        "Une classification basée sur la relation des premières molaires permanentes",
+        "Une classification basée sur l'âge du patient",
+        "Une classification basée sur la forme de l'arcade dentaire",
+        "Une classification basée sur la couleur des dents"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique fièrement : 'La classification d'Angle se base sur la relation mésio-distale des premières molaires permanentes. Classe I = normale, Classe II = distocclusion, Classe III = mésiocclusion.' 🐆 Mina, un peu vexée : 'Bon, pour une fois que tu as raison sur la théorie...'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q02",
+      "type": "single-choice",
+      "question": "🐆 Mina examine un enfant de 8 ans avec une rétrognathie mandibulaire. 🦅 Sami lui dit : 'On attend la fin de la croissance, c'est plus simple !' Mina répond : 'Pas du tout !' Pourquoi faut-il traiter tôt ?",
+      "media": [],
+      "options": [
+        "Pour profiter du pic de croissance et stimuler la mandibule",
+        "Pour éviter que l'enfant ne grandisse trop",
+        "Pour que le traitement soit moins cher",
+        "Pour éviter les radiographies"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le traitement précoce des Classe II avec un activateur ou un bionator profite du pic de croissance pour stimuler la mandibule.' 🦅 Sami admet : 'Bon, d'accord, t'as raison. Mais moi je suis plus rapide !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q03",
+      "type": "single-choice",
+      "question": "🦅 Sami, en voyant une radiographie panoramique, dit : 'Pas besoin de céphalométrie, je vois tout ici !' 🐆 Mina lui répond : 'Tu ne vois pas les relations squelettiques !' Que mesure la céphalométrie ?",
+      "media": [],
+      "options": [
+        "Les relations squelettiques et dentaires en 2 dimensions",
+        "Uniquement la position des molaires",
+        "La couleur des dents",
+        "La taille des sinus"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La céphalométrie analyse les relations squelettiques (SNA, SNB, ANB) et les inclinaisons dentaires.' 🐆 Mina, étonnée : 'Eh bien, pour une fois que tu connais ta céphalométrie ! Je suis impressionnée !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q04",
+      "type": "single-choice",
+      "question": "🐆 Mina examine un patient avec un encombrement sévère. 🦅 Sami propose : 'Extrayons 4 prémolaires, c'est réglé en 2 mois !' Mina lui répond : 'Pas si vite !' Que faut-il analyser avant ?",
+      "media": [],
+      "options": [
+        "L'encombrement avec la méthode de Bolton et la courbe de Spee",
+        "La couleur des dents",
+        "L'âge du patient uniquement",
+        "Le nombre de caries"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'analyse de Bolton calcule l'encombrement et oriente vers extraction, expansion ou stripping.' 🦅 Sami râle : 'Oui mais toi tu passes 3 heures à calculer !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q05",
+      "type": "single-choice",
+      "question": "🦅 Sami veut poser des bagues sans radio panoramique. 🐆 Mina s'y oppose : 'C'est dangereux !' Pourquoi la panoramique est-elle obligatoire ?",
+      "media": [],
+      "options": [
+        "Pour détecter les agénésies, inclusions, kystes et tumeurs",
+        "Pour faire plaisir au radiologue",
+        "Pour augmenter le devis",
+        "Pour vérifier les obturations"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La panoramique est le bilan radiologique minimal pour évaluer les germes dentaires, les pathologies et les inclusions.' 🐆 Mina, surprise : 'Tu as raison Sami, c'est la première fois que je te vois aussi précautionneux !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q06",
+      "type": "single-choice",
+      "question": "🐆 Mina, en analysant une téléradiographie, dit : 'L'angle ANB est à 5°.' 🦅 Sami demande : 'C'est quoi la normale ?'",
+      "media": [],
+      "options": [
+        "La normale est de 2 à 4°",
+        "La normale est de 0 à 1°",
+        "La normale est de 8 à 10°",
+        "La normale est de -2 à 0°"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'angle ANB normal est entre 2 et 4°. Au-dessus = Classe II, en-dessous = Classe III.' 🦅 Sami : 'Je retiens, comme ça je pourrai briller en consultation !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q07",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une courbe de Spee profonde, dit : 'Ce n'est pas grave, on verra plus tard.' 🐆 Mina le reprend : 'Si, c'est important !' Pourquoi ?",
+      "media": [],
+      "options": [
+        "Une courbe de Spee profonde indique une Classe II et nécessite un nivellement",
+        "C'est juste une question esthétique",
+        "Ça ne change rien au traitement",
+        "C'est un signe de vieillesse"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La courbe de Spee est un paramètre essentiel. Une courbe profonde > 2 mm est souvent associée à une Classe II.' 🐆 Mina, admirative : 'Bravo Sami, tu progresses !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q08",
+      "type": "single-choice",
+      "question": "🐆 Mina examine un enfant de 7 ans avec une béance antérieure et une succion du pouce. 🦅 Sami dit : 'On attend qu'il grandisse !' Mina répond : 'Non, il faut agir !' Pourquoi ?",
+      "media": [],
+      "options": [
+        "Pour éviter une béance squelettique définitive",
+        "Pour que l'enfant arrête de sucer son pouce à 18 ans",
+        "Parce que c'est plus cher après",
+        "Pour éviter les caries"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'interception précoce des parafonctions avant 8-9 ans prévient les béances squelettiques.' 🦅 Sami : 'Bon, je vais lui prescrire un dispositif de succion... mais vite fait !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q09",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une canine incluse, propose : 'Extrayons-la tout de suite !' 🐆 Mina lui dit : 'Doucement !' Que faut-il évaluer d'abord ?",
+      "media": [],
+      "options": [
+        "L'espace Nolla pour connaître le stade de développement",
+        "La couleur de la canine",
+        "La taille de la canine",
+        "Le nombre de racines"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'espace Nolla évalue le stade de développement de la canine. Une approche conservatrice (création d'espace, traction) est préférable.' 🐆 Mina, impressionnée : 'Sami, tu deviens raisonnable !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q10",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant un articulé croisé antérieur, propose : 'Une expansion maxillaire.' 🦅 Sami répond : 'Non, extractions !' Qui a raison ?",
+      "media": [],
+      "options": [
+        "Mina, l'expansion maxillaire est le traitement de première intention",
+        "Sami, l'extraction est plus rapide",
+        "Les deux sont équivalents",
+        "Ni l'un ni l'autre, il faut une chirurgie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'articulé croisé antérieur se traite par expansion maxillaire (quad-hélix) ou repositionnement des incisives.' 🦅 Sami : 'Bon, OK, mais toi tu passes 6 mois à faire l'expansion !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q11",
+      "type": "single-choice",
+      "question": "🦅 Sami veut utiliser des minivis pour un ancrage absolu. 🐆 Mina lui demande : 'Tu as analysé le site de pose ?' Pourquoi est-ce important ?",
+      "media": [],
+      "options": [
+        "Pour évaluer la densité osseuse et la proximité radiculaire",
+        "Parce que les minivis sont toutes identiques",
+        "Parce que ça prend moins de temps",
+        "Parce que c'est moins cher"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les minivis nécessitent une analyse précise du site de pose pour éviter les risques.' 🐆 Mina, étonnée : 'Sami, tu es devenu un expert en minivis ? Je suis bluffée !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q12",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant une Classe III sévère, dit : 'Il faut un bilan céphalométrique.' 🦅 Sami répond : 'Inutile, je vois le profil !' Qui a raison ?",
+      "media": [],
+      "options": [
+        "Mina, le bilan céphalométrique est indispensable pour quantifier le décalage",
+        "Sami, le profil clinique suffit",
+        "Les deux sont équivalents",
+        "Aucun, il faut une chirurgie d'emblée"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La céphalométrie quantifie les décalages squelettiques et guide la décision entre traitement orthodontique et chirurgie.' 🦅 Sami : 'Bon, je vais le faire... mais c'est long !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q13",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une déglutition atypique, dit : 'Ce n'est pas un problème orthodontique.' 🐆 Mina le reprend : 'Si, totalement !' Pourquoi ?",
+      "media": [],
+      "options": [
+        "La déglutition atypique est un facteur étiologique majeur en orthodontie",
+        "Ça n'a aucun impact sur l'occlusion",
+        "C'est juste une habitude sans importance",
+        "Ça ne concerne que les enfants"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les troubles myofonctionnels influencent l'occlusion et la stabilité du traitement.' 🐆 Mina, surprise : 'Sami, tu m'impressionnes, tu connais ton sujet !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q14",
+      "type": "single-choice",
+      "question": "🐆 Mina explique à un patient de 50 ans qu'un traitement orthodontique est possible. 🦅 Sami dit : 'À 50 ans, c'est trop tard !' Qui a raison ?",
+      "media": [],
+      "options": [
+        "Mina, l'orthodontie adulte est parfaitement envisageable",
+        "Sami, c'est trop tard pour bouger les dents",
+        "Les deux sont possibles",
+        "Aucun, il faut une chirurgie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'orthodontie adulte est possible avec des forces adaptées et des aligneurs.' 🦅 Sami : 'Bon, d'accord, mais moi j'aurais fait une chirurgie !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q15",
+      "type": "single-choice",
+      "question": "🦅 Sami veut poser des bagues sans vérifier l'hygiène du patient. 🐆 Mina s'y oppose : 'C'est une erreur !' Pourquoi ?",
+      "media": [],
+      "options": [
+        "Une mauvaise hygiène avec bagues peut causer des décalcifications et des caries",
+        "L'hygiène n'est pas importante en orthodontie",
+        "Les bagues protègent les dents",
+        "Les patients se brossent toujours bien"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'évaluation et la motivation en hygiène sont primordiales avant tout traitement orthodontique.' 🐆 Mina, admirative : 'Sami, tu commences à penser comme moi !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q16",
+      "type": "single-choice",
+      "question": "🐆 Mina, en analysant une fin de croissance, dit : 'La plaque sphéno-occipitale est fermée.' 🦅 Sami demande : 'Pourquoi c'est important ?'",
+      "media": [],
+      "options": [
+        "Cela indique la fin de la croissance et l'arrêt des traitements orthopédiques",
+        "Cela indique le début du traitement",
+        "Ça n'a aucune importance",
+        "Cela indique qu'il faut extraire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La fermeture de la plaque sphéno-occipitale marque la fin de la croissance. Les traitements orthopédiques doivent être arrêtés.' 🦅 Sami : 'Bon, je vais regarder... mais vite !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q17",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec un espace Nolla de stade 5, dit : 'On peut extraire la canine !' 🐆 Mina répond : 'Pas si vite !' Que signifie ce stade ?",
+      "media": [],
+      "options": [
+        "La canine est en cours d'éruption, il faut créer de l'espace",
+        "La canine est incluse et doit être extraite",
+        "La canine est absente",
+        "La canine est en bonne position"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le stade 5 de Nolla signifie que la canine est en cours d'éruption. Une traction ou une création d'espace est indiquée.' 🐆 Mina, étonnée : 'Sami, tu deviens un vrai spécialiste !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q18",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant un patient avec un encombrement de 8 mm, propose : 'Expansion + stripping.' 🦅 Sami répond : 'Non, extractions !' Que dit la méthode de Bolton ?",
+      "media": [],
+      "options": [
+        "La méthode de Bolton calcule l'encombrement pour orienter la décision",
+        "La méthode de Bolton ne sert à rien",
+        "La méthode de Bolton est obsolète",
+        "La méthode de Bolton n'existe pas"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La méthode de Bolton quantifie l'encombrement. Un encombrement > 6 mm peut justifier des extractions.' 🦅 Sami : 'Bon, OK, je vais calculer... mais vite !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q19",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une courbe de Spee à 3 mm, dit : 'Ce n'est pas grave.' 🐆 Mina répond : 'Si, c'est significatif !' Que faut-il faire ?",
+      "media": [],
+      "options": [
+        "Un nivellement du plan occlusal avec des arcs continus",
+        "Rien, ça se corrige tout seul",
+        "Des extractions",
+        "Une chirurgie"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Une courbe de Spee > 2 mm nécessite un nivellement pour obtenir un plan occlusal horizontal.' 🐆 Mina, impressionnée : 'Sami, tu es en forme aujourd'hui !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q20",
+      "type": "single-choice",
+      "question": "🐆 Mina, en voyant une Classe II division 1, dit : 'Il faut un activateur.' 🦅 Sami répond : 'Non, des bagues !' Qui a raison chez un enfant de 10 ans ?",
+      "media": [],
+      "options": [
+        "Mina, les appareils fonctionnels sont indiqués chez l'enfant en croissance",
+        "Sami, les bagues sont plus efficaces",
+        "Les deux sont équivalents",
+        "Ni l'un ni l'autre, il faut attendre"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les appareils fonctionnels (activateur, bionator) exploitent la croissance chez l'enfant.' 🦅 Sami : 'Bon, OK, mais moi je vais plus vite avec les bagues !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q21",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec un overjet de 8 mm, dit : 'Extrayons les prémolaires supérieures !' 🐆 Mina répond : 'Pas si vite !' Que faut-il évaluer ?",
+      "media": [],
+      "options": [
+        "La composante squelettique et la croissance résiduelle",
+        "Uniquement l'overjet",
+        "Uniquement l'âge",
+        "Uniquement la couleur des dents"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'overjet important peut être d'origine squelettique ou dentaire. Le bilan céphalométrique est indispensable.' 🐆 Mina, admirative : 'Sami, tu es un vrai professionnel !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q22",
+      "type": "single-choice",
+      "question": "🐆 Mina, en analysant un patient avec une asymétrie faciale, propose : 'Un bilan complet.' 🦅 Sami répond : 'Inutile, je vois bien l'asymétrie !' Pourquoi le bilan est-il important ?",
+      "media": [],
+      "options": [
+        "Pour quantifier l'asymétrie et planifier le traitement orthodontique ou chirurgical",
+        "L'asymétrie se voit cliniquement, c'est suffisant",
+        "Le bilan ne change rien",
+        "L'asymétrie ne se traite pas"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'asymétrie faciale nécessite une analyse céphalométrique et une évaluation fonctionnelle.' 🦅 Sami : 'Bon, je vais le faire... mais c'est long !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q23",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une béance antérieure chez un adulte, dit : 'C'est trop tard pour traiter.' 🐆 Mina répond : 'Pas du tout !' Que propose-t-elle ?",
+      "media": [],
+      "options": [
+        "Une approche orthodontique avec mini-vis ou une chirurgie orthognathique",
+        "Rien, c'est trop tard",
+        "Des extractions",
+        "Des prothèses"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La béance antérieure chez l'adulte peut être traitée par orthodontie (avec mini-vis) ou par chirurgie orthognathique.' 🐆 Mina, surprise : 'Sami, tu es vraiment surprenant aujourd'hui !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q24",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une récession gingivale chez un patient orthodontique, dit : 'Il faut arrêter les forces.' 🦅 Sami répond : 'Non, on continue !' Qui a raison ?",
+      "media": [],
+      "options": [
+        "Mina, les forces excessives peuvent aggraver les récessions",
+        "Sami, il faut continuer le traitement",
+        "Les deux sont équivalents",
+        "Aucun, il faut extraire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les forces orthodontiques doivent être adaptées pour éviter les récessions gingivales.' 🦅 Sami : 'Bon, je vais réduire les forces... mais c'est plus long !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_D1_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami et 🐆 Mina discutent de la rétention après traitement. Sami dit : 'On retire les bagues et c'est fini !' Mina répond : 'Pas du tout !' Pourquoi la rétention est-elle cruciale ?",
+      "media": [],
+      "options": [
+        "Pour éviter les récidives post-orthodontiques (rotation, encombrement)",
+        "Pour faire payer plus cher",
+        "Pour faire plaisir au patient",
+        "Pour utiliser plus de matériel"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La rétention est la clé de la stabilité en orthodontie. Les risques de récidive sont élevés sans contention.' 🐆 Mina, étonnée : 'Sami, quand tu veux, tu es un vrai expert !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

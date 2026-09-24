@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "aides_installation_debutant2_001",
+    "title": "Installation Support - Beginner 2",
+    "specialty": "AIDE",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "AIDE_D2_Q01",
+      "type": "single-choice",
+      "question": "Dr. Chakir wishes to transfer his lease rights to a colleague, without transferring his business assets. According to Article 25 of Law 49-16 and legal doctrine, what is the legal regime of this operation?",
+      "media": [],
+      "options": [
+        "The transfer is prohibited and automatically void.",
+        "It is possible, but the assignee cannot benefit from the accumulation of operating periods for renewal.",
+        "It is authorized, and the new tenant can add his operating time to that of Dr. Chakir.",
+        "The landlord must necessarily give prior consent to this transfer."
+      ],
+      "correct": 1,
+      "explanation": "If the lease is transferred without the business assets, the assignee cannot accumulate his operating period with that of the assignor. He must justify two years of personal operation to claim renewal, making the operation risky.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q02",
+      "type": "single-choice",
+      "question": "Dr. Marouani signed a commercial lease containing a clause prohibiting him from transferring his contract. According to Article 25 of Law 49-16 and jurisprudence, is this clause valid?",
+      "media": [],
+      "options": [
+        "Yes, the principle of contractual freedom prevails over the law.",
+        "No, this clause is deemed unwritten because lease transfer is a matter of public policy.",
+        "Yes, but only if the landlord justified it by a legitimate interest.",
+        "No, the law imposes automatic authorization within 15 days."
+      ],
+      "correct": 1,
+      "explanation": "Article 25 of Law 49-16 is a matter of public policy. Any clause that would prohibit the transfer of the lease is deemed unwritten, as the legislator intended to promote the free circulation of business assets.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q03",
+      "type": "single-choice",
+      "question": "Dr. Chakir notified the transfer of his lease to his landlord by simple registered letter. According to jurisprudential evolution, is this notification valid?",
+      "media": [],
+      "options": [
+        "No, only bailiff service is valid.",
+        "Yes, notification can be done by any means, but it must have a certain date.",
+        "No, the law requires a notarized authentic act.",
+        "Yes, the landlord's tacit acceptance by accepting the rent constitutes notification."
+      ],
+      "correct": 1,
+      "explanation": "Law 49-16 does not impose any particular form for notification of transfer. Jurisprudence admits notification by registered letter, the important thing being to provide proof of the date and receipt by the landlord.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q04",
+      "type": "single-choice",
+      "question": "Dr. Marouani's landlord wishes to recover the premises to house his adult daughter. According to Article 19 of Law 49-16, is this repossession admissible?",
+      "media": [],
+      "options": [
+        "Yes, the law authorizes repossession for direct descendants in the first degree.",
+        "No, repossession is limited to the spouse, ascendants and direct descendants in the first degree (children).",
+        "Yes, provided the daughter is from a first marriage.",
+        "No, the law excludes any repossession for personal habitation."
+      ],
+      "correct": 1,
+      "explanation": "Article 19 of Law 49-16 authorizes repossession for habitation by the landlord himself, his spouse, his ascendants or his direct descendants in the first degree. An adult daughter is a direct descendant in the first degree.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q05",
+      "type": "single-choice",
+      "question": "Dr. Chakir contests the repossession of his premises by the landlord for personal habitation. According to the law, the landlord must prove an essential element to benefit from the exemption of compensation:",
+      "media": [],
+      "options": [
+        "That he has carried out the necessary renovation work.",
+        "That the beneficiary of the repossession does not have other housing adapted to his needs.",
+        "That Dr. Chakir has another premises at his disposal.",
+        "That he informed Dr. Chakir more than 6 months in advance."
+      ],
+      "correct": 1,
+      "explanation": "Repossession for personal habitation is exempt from compensation only if the landlord or beneficiary is 'without housing' (does not possess housing adapted to their normal needs).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q06",
+      "type": "single-choice",
+      "question": "Dr. Marouani received a notice for demolition with intention to rebuild. According to Article 9, what must the landlord imperatively provide to justify his project?",
+      "media": [],
+      "options": [
+        "A certificate from the municipality.",
+        "A valid building permit.",
+        "Plans signed by an architect.",
+        "Proof of bank financing."
+      ],
+      "correct": 1,
+      "explanation": "Article 18 of Law 49-16 requires the landlord to provide a valid building permit issued by the competent authority to justify a request for eviction for demolition.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q07",
+      "type": "single-choice",
+      "question": "After receiving a notice for demolition, Dr. Chakir observes that the landlord has not started the work within 2 months. According to Article 10, what can he do?",
+      "media": [],
+      "options": [
+        "He can do nothing, the deadline is 6 months.",
+        "He can demand payment of compensation for loss of business assets.",
+        "He can request the cancellation of the notice.",
+        "He can seize the court to have an architect appointed."
+      ],
+      "correct": 1,
+      "explanation": "According to Article 10, if the landlord does not start the work within 2 months, the tenant is entitled to the full compensation provided for in Article 7.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q08",
+      "type": "single-choice",
+      "question": "Dr. Marouani was temporarily evicted for elevation works. According to Article 16, what is the maximum duration of this temporary eviction?",
+      "media": [],
+      "options": [
+        "6 months.",
+        "1 year.",
+        "2 years.",
+        "3 years."
+      ],
+      "correct": 1,
+      "explanation": "Article 16 of Law 49-16 limits temporary eviction for elevation or raising to a maximum duration of one year.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q09",
+      "type": "single-choice",
+      "question": "Dr. Chakir wishes to sublet part of his practice to a colleague. According to Article 24 of Law 49-16, what must he do?",
+      "media": [],
+      "options": [
+        "Obtain written authorization from his landlord.",
+        "Notify the sublease to the landlord.",
+        "Sign a lease with his colleague before a notary.",
+        "Nothing, subletting is free."
+      ],
+      "correct": 1,
+      "explanation": "Article 24 authorizes subletting unless there is a contrary clause in the lease, but it only takes effect vis-à-vis the landlord from the date of notification.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q10",
+      "type": "single-choice",
+      "question": "In the context of subletting his practice, Dr. Marouani receives a sublease rent higher than his main rent. According to Article 24, what is the consequence?",
+      "media": [],
+      "options": [
+        "None, the sublease rent is free.",
+        "The landlord can request a revision of the main rent.",
+        "The landlord can oppose the sublease.",
+        "Dr. Marouani must reimburse the difference to the landlord."
+      ],
+      "correct": 1,
+      "explanation": "Article 24 provides that if the value of the sublease exceeds that of the main lease, the landlord is entitled to a revision of the rent amicably or by judicial means.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q11",
+      "type": "single-choice",
+      "question": "Dr. Chakir is in dispute with his landlord regarding rental charges. According to Article 5, if the lease does not specify who bears the charges, who is responsible?",
+      "media": [],
+      "options": [
+        "The tenant, because he uses the premises.",
+        "The landlord, because they are considered included in the rent.",
+        "The charges are shared 50/50.",
+        "The condominium syndicate."
+      ],
+      "correct": 1,
+      "explanation": "According to Article 5, paragraph 2, if no stipulation is made on the charge of repairs and obligations, they are deemed to be included in the rent.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q12",
+      "type": "single-choice",
+      "question": "Dr. Marouani received a payment order for rent arrears and a notice. According to Article 26, what is the eviction deadline in case of non-payment?",
+      "media": [],
+      "options": [
+        "15 days after an unsuccessful payment order.",
+        "1 month after payment order.",
+        "3 months after payment order.",
+        "6 months after payment order."
+      ],
+      "correct": 0,
+      "explanation": "Article 26 sets the eviction deadline at 15 days when the request is based on non-payment of rent, and this deadline runs after an unsuccessful payment order.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q13",
+      "type": "single-choice",
+      "question": "Dr. Chakir's landlord filed a request for validation of notice, but did not do so within 6 months following the eviction deadline. According to Article 26, what does he risk?",
+      "media": [],
+      "options": [
+        "He loses his right to request validation of the notice.",
+        "He can request validation but with a fine.",
+        "He can renew his notice.",
+        "He must pay compensation to the tenant."
+      ],
+      "correct": 0,
+      "explanation": "Article 26 specifies that the landlord is barred from requesting validation of the notice after six months from the expiration of the period granted to the tenant.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q14",
+      "type": "single-choice",
+      "question": "Dr. Marouani received a notice for personal repossession, but he filed a claim for compensation. According to Article 27, can he do so?",
+      "media": [],
+      "options": [
+        "No, he must wait for the final eviction judgment.",
+        "Yes, he can file his claim during the action for validation of the notice.",
+        "Yes, but only after leaving the premises.",
+        "No, personal repossession is exempt."
+      ],
+      "correct": 1,
+      "explanation": "Article 27 authorizes the tenant to file a claim for compensation during the action for validation of the notice.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q15",
+      "type": "single-choice",
+      "question": "Dr. Chakir obtained an eviction judgment with compensation. According to Article 28, within what deadline must the landlord deposit the compensation?",
+      "media": [],
+      "options": [
+        "1 month.",
+        "2 months.",
+        "3 months.",
+        "6 months."
+      ],
+      "correct": 2,
+      "explanation": "Article 28 requires the landlord to deposit the amount of compensation within three months from the date the judgment becomes enforceable.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q16",
+      "type": "single-choice",
+      "question": "Dr. Marouani has been operating his practice for 18 months. His landlord serves him a notice for personal repossession. What is the applicable eviction deadline according to Article 26?",
+      "media": [],
+      "options": [
+        "15 days.",
+        "1 month.",
+        "3 months.",
+        "6 months."
+      ],
+      "correct": 2,
+      "explanation": "According to Article 26, the eviction deadline is 3 months when the request is based on repossession of the premises for personal habitation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q17",
+      "type": "single-choice",
+      "question": "Dr. Chakir purchased a commercial premises to install his practice. The seller had leased it to a third party. According to Article 25, does Dr. Chakir have a right of preemption on the lease?",
+      "media": [],
+      "options": [
+        "Yes, within 30 days following notification of the transfer.",
+        "No, the right of preemption has been abolished.",
+        "Yes, but only if the assignee is a colleague.",
+        "No, the right of preemption does not apply in case of sale of business assets."
+      ],
+      "correct": 0,
+      "explanation": "Article 25 of Law 49-16 grants the landlord a right of preemption. He can recover the premises within 30 days from notification of the transfer.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q18",
+      "type": "single-choice",
+      "question": "Dr. Marouani signed a lease with his landlord for a duration of 9 years, without a non-transfer clause. He wishes to transfer his business assets to a colleague. According to Law 49-16, does he need the landlord's consent?",
+      "media": [],
+      "options": [
+        "Yes, the landlord's consent is essential for any transfer.",
+        "No, the transfer is free without consent, but the assignee must notify the landlord.",
+        "Yes, but only if the assignee is not a dentist.",
+        "No, notification to the landlord is not even necessary."
+      ],
+      "correct": 1,
+      "explanation": "Article 25 authorizes the transfer of the lease without the landlord's consent, but the transfer is only opposable to the landlord from the date of notification.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q19",
+      "type": "single-choice",
+      "question": "Dr. Chakir wishes to purchase a colleague's business assets and take over his lease. According to Article 4, will he be able to benefit from renewal immediately?",
+      "media": [],
+      "options": [
+        "Yes, because the assignee of business assets can accumulate his operating period with that of the assignor.",
+        "No, he must wait for two years of personal operation.",
+        "Yes, because the assignee of business assets is exempt from the duration condition.",
+        "No, he must obtain a new lease."
+      ],
+      "correct": 0,
+      "explanation": "The assignee of business assets benefits from the accumulation of operating periods. He does not have to justify two years of personal operation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q20",
+      "type": "single-choice",
+      "question": "Dr. Marouani signed a lease with a resolutory clause. He has accumulated 4 months of rent arrears. According to Article 33, what must the landlord do?",
+      "media": [],
+      "options": [
+        "Pronounce the resolution by operation of law.",
+        "Have a payment order served on the tenant, then seize the summary judge.",
+        "Wait until the end of the lease to act.",
+        "Automatically apply late payment interest."
+      ],
+      "correct": 1,
+      "explanation": "Article 33 requires the landlord to have a payment order served on the tenant. If it remains unsuccessful after 15 days, he can seize the summary judge to have the realization of the resolutory condition declared.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q21",
+      "type": "single-choice",
+      "question": "Dr. Chakir left his practice without paying his rent for 6 months. The landlord wishes to recover the abandoned premises. According to Article 32, what is the procedure?",
+      "media": [],
+      "options": [
+        "He can do it on his own initiative.",
+        "He must seize the president of the court sitting in summary proceedings.",
+        "He must wait for a judgment from the commercial court.",
+        "He must contact the condominium syndicate."
+      ],
+      "correct": 1,
+      "explanation": "Article 32 provides that the landlord must seize the president of the court, sitting in summary proceedings, to order the opening of the premises and authorize the repossession.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q22",
+      "type": "single-choice",
+      "question": "Dr. Marouani installed a dental radiology device. According to radiation protection regulations, what is the classification of dental assistants who do not leave the room during X-rays?",
+      "media": [],
+      "options": [
+        "They are classified in category A.",
+        "They are classified in category B.",
+        "They are not classified.",
+        "They must be classified according to their seniority."
+      ],
+      "correct": 1,
+      "explanation": "Dental assistants present during X-ray emission are classified in category B. If they systematically leave the room, they are not classified.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q23",
+      "type": "single-choice",
+      "question": "Dr. Chakir must ensure radiation protection in his practice. According to regulations, he must designate a Person Competent in Radiation Protection (PCR). What is his main role?",
+      "media": [],
+      "options": [
+        "Perform equipment maintenance.",
+        "Assess risks and train exposed personnel.",
+        "Make tax declarations.",
+        "Sign contracts with suppliers."
+      ],
+      "correct": 1,
+      "explanation": "The PCR participates in risk assessment, carries out zoning of the premises and trains personnel exposed to ionizing radiation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q24",
+      "type": "single-choice",
+      "question": "Dr. Marouani owns a dental radiology device presenting a risk of exposure. What is the regulatory annual exposure limit for workers, beyond which they should no longer be exposed?",
+      "media": [],
+      "options": [
+        "6 mSv/year.",
+        "10 mSv/year.",
+        "20 mSv/year.",
+        "50 mSv/year."
+      ],
+      "correct": 2,
+      "explanation": "The regulatory exposure limit is set at 20 mSv/year. Beyond this, the employee must no longer be exposed to ionizing radiation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AIDE_D2_Q25",
+      "type": "single-choice",
+      "question": "Dr. Chakir owns a commercial premises leased for his practice. He learns that the landlord wishes to recover it to house his disabled son. According to the law, is eviction possible without compensation?",
+      "media": [],
+      "options": [
+        "Yes, if the landlord proves that his son does not have adapted housing.",
+        "No, eviction is only possible for the landlord himself.",
+        "Yes, eviction is possible but with compensation.",
+        "No, the law prohibits any repossession for personal habitation."
+      ],
+      "correct": 0,
+      "explanation": "Repossession for habitation is possible for direct descendants in the first degree, but the landlord must prove that the beneficiary does not have housing adapted to his needs. The eviction is then exempt from compensation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

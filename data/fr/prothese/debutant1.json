@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "prothese_debutant1_001",
+    "title": "Prothese - Débutant 1",
+    "specialty": "PROT",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "PROT_D1_Q01",
+      "type": "single-choice",
+      "question": "🦅 Sami reçoit un patient avec une dent fracturée. Il dit : 'Couronne céramique, c'est la meilleure !' 🐆 Mina lui demande : 'Et le matériau ?' Qu'est-ce qu'une couronne céramique ?",
+      "media": [],
+      "options": [
+        "Une prothèse fixe en céramique pure, sans métal, très esthétique",
+        "Une couronne en métal recouverte de résine",
+        "Une prothèse amovible en plastique",
+        "Un simple composite collé sur la dent"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La céramique pure offre une esthétique exceptionnelle et une biocompatibilité parfaite.' 🐆 Mina : 'Sami, tu connais bien les matériaux esthétiques !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q02",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinant un bridge, dit : 'Les piliers sont sains.' 🦅 Sami répond : 'On peut le faire sur 2 dents seulement.' Qu'est-ce qu'un bridge ?",
+      "media": [],
+      "options": [
+        "Une prothèse fixe remplaçant une ou plusieurs dents manquantes, soutenue par des piliers",
+        "Une prothèse amovible en résine",
+        "Un implant dentaire",
+        "Une couronne sur une seule dent"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Un bridge est une prothèse fixe qui remplace une ou plusieurs dents.' 🦅 Sami : 'Je préfère les bridges courts, plus rapides à faire !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q03",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une prothèse amovible, dit : 'C'est pour les vieux !' 🐆 Mina répond : 'Pas du tout !' Qu'est-ce qu'une prothèse amovible partielle ?",
+      "media": [],
+      "options": [
+        "Une prothèse que le patient peut enlever et remettre, remplaçant quelques dents manquantes",
+        "Une prothèse fixe sur implants",
+        "Une couronne sur dent naturelle",
+        "Un bridge collé"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les prothèses amovibles partielles sont indiquées pour remplacer plusieurs dents avec un budget limité.' 🐆 Mina : 'Sami, tu es plus ouvert d'esprit que je ne le pensais !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q04",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une empreinte numérique, dit : 'C'est précis et rapide.' 🦅 Sami répond : 'L'empreinte conventionnelle est plus fiable !' Qu'est-ce qu'une empreinte numérique ?",
+      "media": [],
+      "options": [
+        "Une empreinte réalisée avec un scanner intra-oral, sans matériau traditionnel",
+        "Une empreinte en alginate classique",
+        "Une photo de la dent",
+        "Un moulage en plâtre"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'empreinte numérique est précise, confortable et rapide.' 🦅 Sami : 'Je préfère l'alginate, mais je reconnais que le scanner est plus confortable pour le patient.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q05",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une couronne métallo-céramique, dit : 'C'est du passé !' 🐆 Mina répond : 'Pas si vite !' Quels sont les avantages de la métallo-céramique ?",
+      "media": [],
+      "options": [
+        "Solidité, bonne tenue dans le temps, esthétique correcte et prix abordable",
+        "Esthétique parfaite uniquement",
+        "Résistance à la corrosion uniquement",
+        "Légèreté et transparence"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La métallo-céramique reste un standard pour sa solidité et sa durabilité.' 🐆 Mina : 'Sami, tu es raisonnable aujourd'hui !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q06",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinant une prothèse complète, dit : 'L'occlusion est primordiale.' 🦅 Sami répond : 'L'esthétique d'abord !' Qu'est-ce qu'une prothèse complète ?",
+      "media": [],
+      "options": [
+        "Une prothèse amovible remplaçant toutes les dents d'une arcade",
+        "Une prothèse fixe sur implants",
+        "Un bridge étendu",
+        "Une couronne sur chaque dent"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La prothèse complète remplace toutes les dents et l'occlusion est essentielle pour la stabilité.' 🦅 Sami : 'Bon, on va travailler l'occlusion, mais on fera aussi une belle esthétique !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q07",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un inlay-core, dit : 'C'est inutile !' 🐆 Mina répond : 'C'est essentiel !' Qu'est-ce qu'un inlay-core ?",
+      "media": [],
+      "options": [
+        "Un noyau de reconstruction radiculaire pour ancrer une couronne sur une dent dévitalisée",
+        "Un simple composite",
+        "Une couronne provisoire",
+        "Un implant dentaire"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'inlay-core renforce la dent dévitalisée avant la pose de la couronne.' 🐆 Mina : 'Sami, tu progresses !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q08",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un facette en céramique, dit : 'C'est très esthétique.' 🦅 Sami répond : 'C'est fragile !' Qu'est-ce qu'une facette dentaire ?",
+      "media": [],
+      "options": [
+        "Une fine coque en céramique collée sur la face externe de la dent pour l'esthétique",
+        "Une couronne complète",
+        "Un composite direct",
+        "Un blanchiment dentaire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les facettes offrent une esthétique remarquable avec une préparation minimale.' 🦅 Sami : 'Je préfère les couronnes, plus solides, mais je reconnais que les facettes sont plus esthétiques.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q09",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un bridge collé, dit : 'C'est de la prothèse de pauvre !' 🐆 Mina répond : 'C'est une technique validée !' Qu'est-ce qu'un bridge collé (Maryland) ?",
+      "media": [],
+      "options": [
+        "Un bridge fixé par des ailettes métalliques ou en céramique sur les dents adjacentes",
+        "Un bridge conventionnel avec des couronnes sur piliers",
+        "Une prothèse amovible",
+        "Un implant"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le bridge collé est une option conservatrice pour remplacer une dent sans préparer les piliers.' 🐆 Mina : 'Sami, tu es vraiment ouvert d'esprit !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q10",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinant une prothèse sur implants, dit : 'L'ostéointégration est cruciale.' 🦅 Sami répond : 'La prothèse d'abord !' Qu'est-ce que l'ostéointégration ?",
+      "media": [],
+      "options": [
+        "La liaison directe entre l'implant en titane et l'os alvéolaire",
+        "La fixation de la couronne sur l'implant",
+        "La cicatrisation de la gencive",
+        "La pose de l'implant"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'ostéointégration est la clé du succès des implants.' 🦅 Sami : 'Je dois avouer que Mina a raison sur ce point.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q11",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une couronne provisoire, dit : 'Ça sert à rien !' 🐆 Mina répond : 'C'est indispensable !' Quel est le rôle d'une couronne provisoire ?",
+      "media": [],
+      "options": [
+        "Protéger la dent, maintenir l'espace et l'esthétique en attendant la prothèse définitive",
+        "Servir de prothèse définitive",
+        "Protéger uniquement la gencive",
+        "Remplacer une dent manquante"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La couronne provisoire est essentielle pour la protection et la fonction.' 🐆 Mina : 'Sami, tu as enfin compris l'importance du provisoire !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q12",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une résine composite, dit : 'C'est parfait pour les petites restaurations.' 🦅 Sami répond : 'La céramique est toujours mieux !' Qu'est-ce qu'une résine composite ?",
+      "media": [],
+      "options": [
+        "Un matériau de restauration esthétique, collé directement sur la dent",
+        "Un matériau de laboratoire uniquement",
+        "Un ciment provisoire",
+        "Un matériau pour prothèse amovible"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le composite est polyvalent et permet des restaurations esthétiques directes.' 🦅 Sami : 'Je préfère la céramique, mais le composite a ses avantages.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q13",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un bridge de 3 éléments, dit : 'C'est trop long à faire.' 🐆 Mina répond : 'Il faut prendre son temps !' Combien de dents un bridge peut-il remplacer ?",
+      "media": [],
+      "options": [
+        "Un bridge peut remplacer 1 à 3 dents selon la situation clinique",
+        "Uniquement 1 dent",
+        "Jusqu'à 10 dents",
+        "Toutes les dents d'une arcade"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La longueur du bridge dépend de la qualité des piliers et de l'occlusion.' 🐆 Mina : 'Sami, tu connais les limites du bridge !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q14",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinant un patient avec une prothèse amovible, dit : 'Les crochets doivent être discrets.' 🦅 Sami répond : 'L'essentiel est qu'elle tienne !' Qu'est-ce qu'un crochet de prothèse ?",
+      "media": [],
+      "options": [
+        "Un élément métallique ou flexible qui maintient la prothèse amovible sur les dents",
+        "Un implant",
+        "Un bridge",
+        "Une couronne"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les crochets assurent la rétention de la prothèse amovible.' 🦅 Sami : 'Je préfère les crochets rigides, mais j'admets que les flexibles sont plus esthétiques.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q15",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une empreinte en alginate, dit : 'C'est dépassé !' 🐆 Mina répond : 'C'est encore utilisé !' Qu'est-ce que l'alginate ?",
+      "media": [],
+      "options": [
+        "Un matériau d'empreinte hydrocolloïde, utilisé pour les modèles d'étude",
+        "Un matériau définitif pour prothèse",
+        "Un ciment scellant",
+        "Un composite"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'alginate est rapide et économique pour les empreintes préliminaires.' 🐆 Mina : 'Sami, tu es pragmatique !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q16",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant un patient édenté total, dit : 'Prothèse complète conventionnelle.' 🦅 Sami répond : 'Non, implants !' Qu'est-ce qui guide le choix ?",
+      "media": [],
+      "options": [
+        "L'état osseux, le budget et les attentes du patient",
+        "Uniquement le budget",
+        "Uniquement l'âge",
+        "Uniquement les préférences du dentiste"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le choix dépend de multiples facteurs cliniques et financiers.' 🦅 Sami : 'Bon, on va faire une prothèse complète classique pour ce patient.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q17",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un laboratoire de prothèse, dit : 'Ils font tout le travail !' 🐆 Mina répond : 'Le clinicien est essentiel !' Quel est le rôle du clinicien en prothèse ?",
+      "media": [],
+      "options": [
+        "La préparation, l'empreinte, le choix des couleurs et l'essayage",
+        "Uniquement la préparation",
+        "Uniquement l'empreinte",
+        "Aucun rôle, le laboratoire fait tout"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Le clinicien est responsable de l'ensemble du processus prothétique.' 🐆 Mina : 'Sami, tu as raison !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q18",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une couronne en zircone, dit : 'C'est très esthétique et solide.' 🦅 Sami répond : 'C'est trop cher !' Qu'est-ce que la zircone ?",
+      "media": [],
+      "options": [
+        "Un matériau céramique haute résistance, sans métal, très esthétique",
+        "Un métal précieux",
+        "Un composite renforcé",
+        "Une résine acrylique"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La zircone allie solidité et esthétique, sans risque d'allergie au métal.' 🦅 Sami : 'Je préfère la métallo-céramique pour le rapport qualité-prix, mais j'admets que la zircone est supérieure esthétiquement.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q19",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une prothèse sur 4 implants, dit : 'C'est trop compliqué !' 🐆 Mina répond : 'C'est une technique validée !' Qu'est-ce qu'une prothèse implanto-portée ?",
+      "media": [],
+      "options": [
+        "Une prothèse fixée sur des implants dentaires, offrant une stabilité optimale",
+        "Une prothèse amovible sur gencive",
+        "Une couronne sur dent naturelle",
+        "Un bridge conventionnel"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'Les prothèses sur implants offrent une stabilité et un confort inégalés.' 🐆 Mina : 'Sami, tu es vraiment à jour !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q20",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinant une prothèse en résine, dit : 'C'est léger et peu cher.' 🦅 Sami répond : 'C'est fragile !' Quels sont les avantages de la résine ?",
+      "media": [],
+      "options": [
+        "Légèreté, faible coût, facilité de réparation",
+        "Solidité et durabilité",
+        "Esthétique parfaite uniquement",
+        "Biocompatibilité absolue"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La résine est idéale pour les prothèses provisoires ou à budget limité.' 🦅 Sami : 'Je préfère la céramique, mais je comprends l'intérêt de la résine.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q21",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un bridge collé, dit : 'Ça ne dure pas !' 🐆 Mina répond : 'Avec une bonne technique, si !' Quelle est la clé du succès d'un bridge collé ?",
+      "media": [],
+      "options": [
+        "Une bonne adhésion et une occlusion adaptée",
+        "Uniquement la force de l'adhésif",
+        "Uniquement le choix du matériau",
+        "Uniquement l'esthétique"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La réussite du bridge collé repose sur l'adhésion et l'occlusion.' 🐆 Mina : 'Sami, tu es un expert en bridges collés !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q22",
+      "type": "single-choice",
+      "question": "🐆 Mina, voyant une couronne temporaire, dit : 'Il faut la garder 15 jours.' 🦅 Sami répond : 'On peut mettre la définitive tout de suite !' Pourquoi le provisoire est-il nécessaire ?",
+      "media": [],
+      "options": [
+        "Pour laisser les tissus cicatriser et évaluer la fonction et l'esthétique",
+        "Pour faire payer plus cher",
+        "Parce que la couronne définitive n'est pas prête",
+        "Pour habituer le patient"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Le provisoire est une phase essentielle pour valider le projet prothétique.' 🦅 Sami : 'Bon, on va faire un provisoire de qualité alors !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q23",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant une prothèse amovible avec plaque palatine, dit : 'C'est inconfortable !' 🐆 Mina répond : 'C'est nécessaire !' Quel est le rôle de la plaque palatine ?",
+      "media": [],
+      "options": [
+        "Assurer la rétention et la stabilité de la prothèse maxillaire",
+        "Uniquement l'esthétique",
+        "Uniquement la phonétique",
+        "Protéger la gencive"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'La plaque palatine est essentielle pour la stabilité de la prothèse maxillaire.' 🐆 Mina : 'Sami, tu connais bien les prothèses amovibles !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q24",
+      "type": "single-choice",
+      "question": "🐆 Mina, examinant un inlay, dit : 'C'est une restauration indirecte.' 🦅 Sami répond : 'Je préfère le composite direct.' Qu'est-ce qu'un inlay ?",
+      "media": [],
+      "options": [
+        "Une restauration réalisée en laboratoire, scellée dans la dent",
+        "Une restauration directe en composite",
+        "Une couronne complète",
+        "Un implant"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'inlay est une restauration indirecte en céramique ou composite, plus résistante.' 🦅 Sami : 'Je préfère le direct pour la rapidité, mais l'inlay est plus durable.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q25",
+      "type": "single-choice",
+      "question": "🦅 Sami, voyant un patient avec une prothèse qui bouge, dit : 'C'est la faute du labo !' 🐆 Mina répond : 'C'est peut-être l'occlusion !' Quelle est la cause la plus fréquente d'instabilité prothétique ?",
+      "media": [],
+      "options": [
+        "Un défaut d'occlusion, de rétention ou d'adaptation",
+        "Uniquement la faute du laboratoire",
+        "Uniquement la faute du patient",
+        "Uniquement le matériau"
+      ],
+      "correct": 0,
+      "explanation": "🦅 Sami explique : 'L'instabilité est souvent multifactorielle : occlusion, rétention, adaptation.' 🐆 Mina : 'Sami, tu es vraiment un pro !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "PROT_D1_Q26",
+      "type": "single-choice",
+      "question": "🦅 Sami et 🐆 Mina discutent de l'avenir de la prothèse. Sami dit : 'Les imprimantes 3D vont tout changer !' Mina répond : 'Le savoir-faire clinique reste clé.' Quel est l'avenir de la prothèse ?",
+      "media": [],
+      "options": [
+        "La technologie aide mais ne remplace pas le clinicien et le laboratoire",
+        "L'impression 3D remplacera tout",
+        "Les prothèses traditionnelles vont disparaître",
+        "Le laboratoire va disparaître"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La technologie est un outil précieux, mais l'expertise clinique est irremplaçable.' 🦅 Sami : 'Je suis d'accord, on garde nos emplois !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

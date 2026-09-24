@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "anesthesiologie_intermediaire1_001",
+    "title": "Anesthesiology - Intermediate 1",
+    "specialty": "ANES",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ANES_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Samir must choose an anesthetic for a lower molar extraction. Dr Leila reminds him of the selection criteria. Which criterion is a priority for deep mandibular anesthesia?",
+      "media": [],
+      "options": [
+        "The price of the cartridge",
+        "The bone diffusion capacity of the molecule",
+        "The color of the packaging",
+        "The expiration date"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explains: 'For the mandible, the cortical bone is thick. You need a molecule that diffuses well, like articaine.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Leila is preparing anesthesia for a deep cavity. She hesitates between lidocaine 2% and mepivacaine 3%. What is the main advantage of mepivacaine 3%?",
+      "media": [],
+      "options": [
+        "Its intrinsic vasoconstrictor effect",
+        "Its longer duration of action",
+        "Its lower price",
+        "Its absence of cross-allergy"
+      ],
+      "correct": 0,
+      "explanation": "Dr Samir explains: 'Mepivacaine 3% has very weak vasodilation, which allows it to be used without adrenaline.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Samir needs to anesthetize a hypertensive patient. Dr Leila advises him to avoid epinephrine. Which molecule is the most suitable?",
+      "media": [],
+      "options": [
+        "Lidocaine 2% with adrenaline 1:100,000",
+        "Mepivacaine 3% without vasoconstrictor",
+        "Articaine 4% with adrenaline 1:200,000",
+        "Prilocaine 4% with felypressin"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explains: 'Plain mepivacaine 3% is ideal for hypertensive patients. It avoids cardiovascular risks.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Leila needs to inject 4% articaine for a mandibular infiltration. What is the maximum dose not to exceed?",
+      "media": [],
+      "options": [
+        "4.4 mg/kg",
+        "7 mg/kg",
+        "8 mg/kg",
+        "10 mg/kg"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explains: 'The maximum dose of 4% articaine is 7 mg/kg in adults. This corresponds to about 6 to 7 cartridges.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Samir administered 3 cartridges of 4% articaine to a 60 kg patient. Did he respect the maximum dose?",
+      "media": [],
+      "options": [
+        "Yes, because 3 cartridges represent 216 mg, or 3.6 mg/kg",
+        "No, because the maximum dose is 4.4 mg/kg",
+        "Yes, because the maximum dose is 8 mg/kg",
+        "No, because 3 cartridges exceed the dose for a 60 kg patient"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila calculates: 'One cartridge of 1.8 ml at 4% contains 72 mg. 3 cartridges = 216 mg. For 60 kg, that is 3.6 mg/kg, well below 7 mg/kg.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Leila needs to anesthetize a pregnant patient. According to recommendations, which anesthetic is preferable?",
+      "media": [],
+      "options": [
+        "Lidocaine 2% with adrenaline",
+        "Articaine 4% with adrenaline",
+        "Plain mepivacaine 3%",
+        "Plain prilocaine 4%"
+      ],
+      "correct": 0,
+      "explanation": "Dr Samir explains: 'Lidocaine 2% with adrenaline is the most studied and safest in pregnant women.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Samir injected 5 ml of plain lidocaine 2% to a 70 kg patient. Did he respect the maximum dose?",
+      "media": [],
+      "options": [
+        "Yes, because 100 mg is less than 4.4 mg/kg (308 mg)",
+        "No, because 5 ml exceeds the authorized limit",
+        "Yes, because 100 mg is less than 7 mg/kg (490 mg)",
+        "No, because plain lidocaine is contraindicated"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila calculates: '5 ml of lidocaine 2% = 100 mg. The max dose without adrenaline is 4.4 mg/kg. For 70 kg, that gives 308 mg. 100 mg is well below.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Leila must choose an anesthetic for a 50 kg patient. She wants to use prilocaine 4%. What is the maximum dose?",
+      "media": [],
+      "options": [
+        "200 mg (4 mg/kg)",
+        "300 mg (6 mg/kg)",
+        "400 mg (8 mg/kg)",
+        "500 mg (10 mg/kg)"
+      ],
+      "correct": 2,
+      "explanation": "Dr Samir explains: 'The maximum dose of prilocaine 4% is 8 mg/kg. For 50 kg, that gives 400 mg.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Samir injected 2.5 cartridges of articaine 4% to a 50 kg patient. Did he respect the dose?",
+      "media": [],
+      "options": [
+        "Yes, because 180 mg = 3.6 mg/kg, below 7 mg/kg",
+        "No, because 180 mg exceeds 4.4 mg/kg",
+        "Yes, because 180 mg is acceptable for prilocaine",
+        "No, because 2.5 cartridges is too much for a 50 kg patient"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila calculates: '2.5 cartridges × 72 mg = 180 mg. For 50 kg, that is 3.6 mg/kg, well below 7 mg/kg.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Leila needs to perform a mandibular block. She uses the Spix technique. What is the key landmark?",
+      "media": [],
+      "options": [
+        "The maxillary tuberosity",
+        "The mental foramen",
+        "The pterygo-mandibular fold",
+        "The incisive foramen"
+      ],
+      "correct": 2,
+      "explanation": "Dr Samir explains: 'The key landmark is the pterygo-mandibular fold, 1 cm above the occlusal plane.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Samir performed a Spix block and the patient presents transient facial paralysis. What is the most likely cause?",
+      "media": [],
+      "options": [
+        "Injection into the parotid gland",
+        "Injection into the lingual nerve",
+        "Too superficial injection",
+        "Injection into the facial nerve"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila explains: 'If the needle is too far back, it enters the parotid gland and blocks the facial nerve, causing temporary paralysis.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr Leila needs to anesthetize a maxillary molar. She uses infiltration. What is the recommended technique?",
+      "media": [],
+      "options": [
+        "Vestibular and palatal infiltration",
+        "Nerve block",
+        "Intraligamentary infiltration",
+        "Infra-orbital nerve block"
+      ],
+      "correct": 0,
+      "explanation": "Dr Samir explains: 'In the maxilla, the bone is more permeable. Vestibular infiltration is often sufficient, but the addition of a palatal injection is sometimes necessary.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Samir wants to use the Gow-Gates technique. What is the particularity of this technique?",
+      "media": [],
+      "options": [
+        "It is performed with the mouth closed",
+        "It targets the condyle neck",
+        "It uses short needles",
+        "It is indicated for the maxilla"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explains: 'The Gow-Gates technique targets the mandibular condyle neck, allowing a complete block of the IAN, lingual and buccal nerves.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Leila must anesthetize a patient with severe trismus. Which technique is the most suitable?",
+      "media": [],
+      "options": [
+        "Spix block",
+        "Gow-Gates technique",
+        "Vazirani-Akinosi technique",
+        "Intraligamentary infiltration"
+      ],
+      "correct": 2,
+      "explanation": "Dr Samir explains: 'The Akinosi technique is performed with the mouth closed, which is ideal in cases of trismus.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Samir must anesthetize the maxillary incisors. Which nerve does he target?",
+      "media": [],
+      "options": [
+        "The greater palatine nerve",
+        "The infra-orbital nerve",
+        "The nasopalatine nerve",
+        "The long buccal nerve"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explains: 'The infra-orbital nerve innervates the maxillary incisors, canines and premolars.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Leila must anesthetize the palatal mucosa of the molars. Which nerve does she target?",
+      "media": [],
+      "options": [
+        "The nasopalatine nerve",
+        "The greater palatine nerve",
+        "The lesser palatine nerve",
+        "The buccal nerve"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explains: 'The greater palatine nerve innervates the palatal mucosa of the premolars and molars.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Samir performed an aspiration test and saw blood in the cartridge. What is the procedure?",
+      "media": [],
+      "options": [
+        "Inject immediately",
+        "Withdraw the needle, change position and re-aspirate",
+        "Change the cartridge without withdrawing the needle",
+        "Abandon the injection"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explains: 'Positive aspiration indicates intravascular penetration. The needle must be repositioned and re-aspirated.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Leila injected an anesthetic and the patient immediately presents palpitations and intense anxiety. What is the most likely cause?",
+      "media": [],
+      "options": [
+        "Allergic reaction",
+        "Intravascular injection of epinephrine",
+        "Vagal syncope",
+        "Anesthetic overdose"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explains: 'Palpitations and anxiety are typical signs of an intravascular injection of epinephrine.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Samir injected an entire cartridge without performing an aspiration test. The patient presents muscle twitching. What is the diagnosis?",
+      "media": [],
+      "options": [
+        "Allergic reaction",
+        "Systemic toxicity (LAST)",
+        "Vasovagal syncope",
+        "Anxiety attack"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explains: 'Muscle twitching is an early sign of systemic toxicity of local anesthetics (LAST).'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Leila injected an anesthetic and the patient presents a metallic taste in the mouth. What is the cause?",
+      "media": [],
+      "options": [
+        "Reaction to the preservative",
+        "Early sign of systemic toxicity",
+        "Allergy to the anesthetic",
+        "Cartridge perforation"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explains: 'Metallic taste is an early sign of systemic toxicity, along with tinnitus and confusion.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Samir injected 6 cartridges of 4% prilocaine to a 70 kg patient. What signs might he observe?",
+      "media": [],
+      "options": [
+        "Cyanosis and methemoglobinemia",
+        "Severe tachycardia",
+        "Skin allergy",
+        "Intense headaches"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila explains: 'Prilocaine overdose can cause methemoglobinemia, manifested by cyanosis.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Leila must anesthetize a patient on anticoagulants. What is the best approach?",
+      "media": [],
+      "options": [
+        "Stop anticoagulants 3 days before",
+        "Perform a local infiltration without modifying the treatment",
+        "Use a deep nerve block",
+        "Refuse the treatment"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explains: 'Current recommendations allow local infiltrations without stopping anticoagulants, ensuring local hemostasis.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Samir performed a mandibular block and the patient presents postoperative trismus. What is the most likely cause?",
+      "media": [],
+      "options": [
+        "Allergy to the anesthetic",
+        "Trauma to the medial pterygoid muscle",
+        "Condyle fracture",
+        "Secondary infection"
+      ],
+      "correct": 1,
+      "explanation": "Dr Leila explains: 'Post-anesthetic trismus is often due to trauma or hematoma of the medial pterygoid muscle.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Leila injected an anesthetic and the patient presents persistent paresthesia of the lingual nerve. What is the initial management?",
+      "media": [],
+      "options": [
+        "Immediate surgical re-exploration",
+        "Clinical monitoring and possible corticosteroid therapy",
+        "Broad-spectrum antibiotic therapy",
+        "Repeated lidocaine injections"
+      ],
+      "correct": 1,
+      "explanation": "Dr Samir explains: 'The majority of paresthesias resolve spontaneously. Management relies on monitoring and psychological support.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Samir, after overcoming several complications, receives advice from Dr Leila: 'You're starting to master anesthesia.' What is the next step for Dr Samir?",
+      "media": [],
+      "options": [
+        "Deepen advanced techniques and emergency management",
+        "Rest on his knowledge",
+        "Change specialty",
+        "Forget the basics"
+      ],
+      "correct": 0,
+      "explanation": "Dr Leila explains: 'Mastering anesthesia requires knowledge of advanced techniques and emergency management.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_intermediaire1_001",
+    "title": "Sterilisation - Intermédiaire 1",
+    "specialty": "STER",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Yassine, maintenant autonome, prépare son premier plateau chirurgical. Dr Fatima lui a expliqué que la marche en avant est essentielle. Quelle est la règle fondamentale de la marche en avant ?",
+      "media": [],
+      "options": [
+        "Les instruments doivent circuler dans les deux sens",
+        "Le circuit va toujours de la zone sale vers la zone propre",
+        "On peut revenir en arrière si on oublie un instrument",
+        "Le sens de circulation n'a pas d'importance"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La marche en avant est une règle d'or. On ne revient jamais en arrière.' Dr Yassine note précieusement cette règle.",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Yassine reçoit un patient urgent. Il doit stériliser rapidement un instrument. Dr Fatima lui rappelle : 'Le cycle Flash est une option, mais...' Quelle est la limite principale du cycle Flash ?",
+      "media": [],
+      "options": [
+        "Il est trop long",
+        "Il ne permet pas le stockage des instruments",
+        "Il est trop coûteux",
+        "Il n'est pas efficace"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima précise : 'Le Flash est pratique pour l'urgence, mais les instruments ne peuvent pas être stockés après.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Yassine s'interroge sur la fréquence des tests. Dr Fatima lui dit : 'Il y a des tests quotidiens, hebdomadaires et mensuels.' Que vérifie le test de Bowie-Dick ?",
+      "media": [],
+      "options": [
+        "La température de l'autoclave",
+        "La pénétration de la vapeur dans la charge",
+        "La qualité de l'eau",
+        "La pression de l'air"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Le Bowie-Dick est quotidien. Il vérifie que la vapeur pénètre bien partout.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Yassine prépare son premier lot d'instruments pour l'autoclave. Il se souvient que Dr Fatima lui a parlé de la charge. Quelle est la règle pour le chargement de l'autoclave ?",
+      "media": [],
+      "options": [
+        "On peut charger autant qu'on veut",
+        "Les instruments doivent être espacés pour que la vapeur circule",
+        "Il faut les empiler pour gagner de la place",
+        "L'ordre de chargement n'a pas d'importance"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La vapeur doit circuler librement. Un autoclave surchargé est un échec.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Yassine remarque des traces blanches sur ses instruments après stérilisation. Dr Fatima lui dit : 'C'est un problème de qualité d'eau.' Quelle est la solution ?",
+      "media": [],
+      "options": [
+        "Utiliser de l'eau du robinet",
+        "Utiliser de l'eau osmosée ou déminéralisée",
+        "Essuyer les instruments avant stérilisation",
+        "Augmenter la température"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Les dépôts sont dus aux minéraux. L'eau osmosée est la solution.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Yassine doit stériliser des instruments à canaux (creux). Il se souvient que Dr Fatima lui a parlé des classes d'autoclaves. Quel type d'autoclave est obligatoire pour les instruments creux ?",
+      "media": [],
+      "options": [
+        "Classe B",
+        "Classe S",
+        "Classe N",
+        "Classe A"
+      ],
+      "correct": 0,
+      "explanation": "Dr Fatima explique : 'Seul l'autoclave de classe B peut traiter les instruments creux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Yassine s'inquiète des risques de contamination croisée. Dr Fatima lui rappelle une règle fondamentale. Comment organiser les zones du cabinet pour éviter la contamination ?",
+      "media": [],
+      "options": [
+        "Une seule zone pour tout",
+        "Trois zones : sale, propre, stérile",
+        "Deux zones : sale et propre",
+        "Les zones n'ont pas d'importance"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La sectorisation est essentielle : zone sale (réception), zone propre (nettoyage), zone stérile (stockage).'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Yassine doit choisir des emballages pour ses instruments. Dr Fatima lui rappelle les critères de choix. Quel est le premier critère pour un emballage ?",
+      "media": [],
+      "options": [
+        "L'esthétique",
+        "Le prix",
+        "La perméabilité à la vapeur et l'étanchéité aux micro-organismes",
+        "La couleur"
+      ],
+      "correct": 2,
+      "explanation": "Dr Fatima explique : 'L'emballage doit laisser passer la vapeur, mais bloquer les micro-organismes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Yassine s'interroge sur le test biologique. Dr Fatima lui dit : 'C'est le seul test qui donne une preuve directe.' Que vérifie un test biologique ?",
+      "media": [],
+      "options": [
+        "La température",
+        "La destruction des spores",
+        "La pression",
+        "L'humidité"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Le test biologique expose des spores et vérifie qu'elles sont bien détruites. C'est la preuve ultime.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Yassine doit lubrifier ses instruments. Dr Fatima lui dit : 'La lubrification est essentielle, mais il y a une règle.' Quand faut-il lubrifier les instruments ?",
+      "media": [],
+      "options": [
+        "Avant le nettoyage",
+        "Après nettoyage, avant stérilisation",
+        "Après stérilisation",
+        "Une fois par mois"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La lubrification se fait après le nettoyage, avant la stérilisation. Une fois en autoclave, la lubrification est définitive.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Yassine reçoit un kit de stérilisation de laboratoire. Dr Fatima lui explique la différence entre stérilisation et désinfection. Quelle est la différence fondamentale ?",
+      "media": [],
+      "options": [
+        "La stérilisation est plus rapide",
+        "La stérilisation est plus chère",
+        "La stérilisation détruit tout, y compris les spores",
+        "La stérilisation utilise des produits chimiques"
+      ],
+      "correct": 2,
+      "explanation": "Dr Fatima explique : 'La stérilisation élimine toute vie microbienne, y compris les spores. La désinfection réduit seulement la charge microbienne.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr Yassine doit organiser la zone de tri. Dr Fatima lui explique le rôle de cette zone. Quelle est la fonction principale de la zone de tri ?",
+      "media": [],
+      "options": [
+        "Stocker les instruments stériles",
+        "Réceptionner, vérifier et dissocier le matériel",
+        "Stériliser les instruments",
+        "Emballer les instruments"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La zone de tri est la première étape. On y réceptionne, on vérifie et on prépare le matériel avant nettoyage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Yassine découvre qu'un de ses emballages stériles est humide. Dr Fatima lui dit : 'Il ne faut pas l'utiliser.' Pourquoi ?",
+      "media": [],
+      "options": [
+        "Il est inesthétique",
+        "L'humidité indique une rupture de la barrière stérile",
+        "Il est trop mou",
+        "Il est difficile à ouvrir"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'L'humidité sur un emballage stérile est un signe d'alerte. La barrière stérile est compromise.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Yassine s'interroge sur la maintenance des autoclaves. Dr Fatima lui dit : 'C'est obligatoire.' Quelle est la fréquence recommandée pour la maintenance ?",
+      "media": [],
+      "options": [
+        "Une fois par an",
+        "Une fois par mois",
+        "Une fois par trimestre",
+        "Une fois par semaine"
+      ],
+      "correct": 0,
+      "explanation": "Dr Fatima explique : 'La maintenance annuelle est obligatoire pour garantir la sécurité et la conformité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Yassine doit former un nouveau membre de l'équipe à la stérilisation. Dr Fatima lui donne un conseil. Quel est le premier message à transmettre ?",
+      "media": [],
+      "options": [
+        "La stérilisation est rapide",
+        "La stérilisation est une chaîne où chaque maillon est essentiel",
+        "La stérilisation est facile",
+        "La stérilisation est secondaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Le premier message est que la stérilisation est une chaîne. Un seul maillon faible, et tout le système s'effondre.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Yassine découvre que le test de fuite a échoué. Dr Fatima lui dit : 'Il faut agir immédiatement.' Que doit-il faire ?",
+      "media": [],
+      "options": [
+        "Ignorer le problème",
+        "Appeler le service technique",
+        "Utiliser l'autoclave normalement",
+        "Augmenter la température"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Un test de fuite qui échoue signifie que l'autoclave n'est pas étanche. Il ne faut pas l'utiliser.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Yassine prépare une charge d'instruments pour l'autoclave. Dr Fatima lui rappelle que la surcharge est dangereuse. Pourquoi ?",
+      "media": [],
+      "options": [
+        "L'autoclave peut exploser",
+        "La vapeur ne circule pas et la stérilisation échoue",
+        "Les instruments peuvent se détériorer",
+        "Le cycle est trop long"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Une charge trop dense bloque la circulation de la vapeur et compromet la stérilisation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Yassine doit choisir un désinfectant pour les surfaces. Dr Fatima lui rappelle les précautions. Quelle est la principale précaution avec les aldéhydes ?",
+      "media": [],
+      "options": [
+        "Leur prix est élevé",
+        "Leur toxicité et leur irritabilité",
+        "Leur inefficacité",
+        "Leur odeur"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Les aldéhydes sont efficaces mais toxiques. Il faut les manipuler avec précaution.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Yassine s'interroge sur le stockage des instruments stériles. Dr Fatima lui donne des consignes précises. Où doit-on stocker les instruments stériles ?",
+      "media": [],
+      "options": [
+        "Dans un endroit humide",
+        "Dans un endroit sec, propre et à l'abri de la poussière",
+        "Dans un endroit exposé au soleil",
+        "Dans un endroit froid"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Les instruments stériles doivent être stockés dans un endroit sec et propre pour préserver la barrière stérile.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Yassine doit expliquer l'importance de la stérilisation à un patient inquiet. Dr Fatima lui conseille de mettre l'accent sur la sécurité. Quel est le message clé ?",
+      "media": [],
+      "options": [
+        "La stérilisation garantit la sécurité des patients",
+        "La stérilisation est une routine",
+        "La stérilisation est obligatoire par la loi",
+        "La stérilisation est une pratique commune"
+      ],
+      "correct": 0,
+      "explanation": "Dr Fatima explique : 'Le patient doit comprendre que la stérilisation est avant tout pour sa sécurité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Yassine découvre que l'indicateur chimique de l'autoclave n'a pas viré au bon stade. Dr Fatima lui dit : 'C'est un signal d'alerte.' Qu'est-ce que cela signifie ?",
+      "media": [],
+      "options": [
+        "L'autoclave n'a pas atteint les paramètres de stérilisation",
+        "L'indicateur est défectueux",
+        "Le cycle est terminé",
+        "La charge est correcte"
+      ],
+      "correct": 0,
+      "explanation": "Dr Fatima explique : 'Un indicateur chimique qui ne vire pas signifie que les conditions de stérilisation n'ont pas été réunies.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Yassine doit gérer un pic d'activité avec de nombreux patients. Dr Fatima lui rappelle l'importance de ne pas sacrifier la stérilisation. Quelle est la règle ?",
+      "media": [],
+      "options": [
+        "On peut accélérer les cycles en urgence",
+        "On ne doit jamais compromettre la stérilisation, même en cas d'urgence",
+        "On peut sauter des tests en période de rush",
+        "On peut stériliser moins longtemps"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'La stérilisation ne doit jamais être compromise. La sécurité des patients passe avant tout.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Yassine doit remplacer un instrument endommagé. Dr Fatima lui explique l'importance de l'état des instruments. Pourquoi un instrument endommagé est-il dangereux ?",
+      "media": [],
+      "options": [
+        "Il est inesthétique",
+        "Il peut cacher des micro-organismes dans les fissures",
+        "Il est plus difficile à utiliser",
+        "Il est plus cher à remplacer"
+      ],
+      "correct": 1,
+      "explanation": "Dr Fatima explique : 'Les fissures et les rayures peuvent abriter des micro-organismes. Un instrument endommagé est un risque.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Yassine doit organiser la formation continue de l'équipe sur la stérilisation. Dr Fatima lui conseille de planifier des sessions. Quelle est la fréquence recommandée ?",
+      "media": [],
+      "options": [
+        "Une fois par an",
+        "Une fois par semestre",
+        "Une fois par trimestre",
+        "Une fois par mois"
+      ],
+      "correct": 2,
+      "explanation": "Dr Fatima explique : 'Une formation trimestrielle permet de maintenir les compétences et de rappeler les bonnes pratiques.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Yassine, fier de ses progrès, reçoit un compliment de Dr Fatima : 'Tu commences à maîtriser la chaîne de stérilisation.' Quelle est la prochaine étape pour Dr Yassine ?",
+      "media": [],
+      "options": [
+        "Former les autres membres de l'équipe",
+        "Se reposer",
+        "Changer de spécialité",
+        "Oublier les bases"
+      ],
+      "correct": 0,
+      "explanation": "Dr Fatima explique : 'La prochaine étape est de transmettre ton savoir. La formation est la clé pour une équipe performante.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

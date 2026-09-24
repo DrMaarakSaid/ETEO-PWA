@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "endo_debutant1_001",
+    "title": "Endodoncia - Principiante 1",
+    "specialty": "ENDO",
+    "language": "ru",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ENDO_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Sami atiende a un paciente con pulpitis irreversible. Le dice a Mina: 'Voy a hacer un tratamiento de conducto, es sencillo.' Mina le pregunta: '¿Estás seguro?' ¿Cuál es la definición del tratamiento de conducto?",
+      "media": [],
+      "options": [
+        "Extracción de la pulpa y obturación del conducto radicular",
+        "Colocación de una corona sobre un diente desvitalizado",
+        "Tratamiento simple de una caries profunda",
+        "Extracción del diente para prevenir la infección"
+      ],
+      "correct": 0,
+      "explanation": "Sami explica: 'El tratamiento de conducto consiste en eliminar la pulpa infectada, limpiar y desinfectar los conductos, y luego obturados.' Mina añade: 'Espero que no te olvides de ningún conducto.'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q02",
+      "type": "single-choice",
+      "question": "Mina examina a un paciente y encuentra una caries profunda con exposición pulpar. Decide hacer una pulpectomía. Sami, curioso, le pregunta: '¿Qué es exactamente una pulpectomía?' Mina responde:",
+      "media": [],
+      "options": [
+        "Extracción de la pulpa coronaria y radicular",
+        "Extracción solo de la pulpa coronaria",
+        "Desinfección del conducto sin extracción",
+        "Cierre de la cámara pulpar"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La pulpectomía es la extracción completa de la pulpa, incluidos los conductos radiculares.' Sami replica: 'Eso ya lo sabía, solo quería comprobarlo.'",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q03",
+      "type": "single-choice",
+      "question": "Sami, con prisas, olvida colocar el dique de goma en el paciente. Mina lo detiene: '¡Sami, el dique de goma es obligatorio!' Sami pregunta: '¿Por qué?' Mina le explica:",
+      "media": [],
+      "options": [
+        "Para aislar el diente, evitar la contaminación y proteger las vías respiratorias",
+        "Para proteger la lengua del paciente",
+        "Para alargar la duración de la consulta",
+        "Para impresionar al paciente"
+      ],
+      "correct": 0,
+      "explanation": "Mina es categórica: 'El dique de goma aísla el diente, previene la contaminación salival y protege al paciente de la inhalación de instrumentos pequeños.' Sami, algo ofendido, lo coloca.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q04",
+      "type": "single-choice",
+      "question": "Mina comienza la instrumentación del conducto. Sami, observándola, pregunta: '¿Por qué usas una lima manual y no una motorizada?' Mina responde:",
+      "media": [],
+      "options": [
+        "Para sentir la morfología del conducto y evitar errores",
+        "Porque la motorizada es más lenta",
+        "Porque no confío en la motorizada",
+        "Para ahorrar fresas"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La lima manual permite sentir las curvaturas, las calcificaciones y la longitud del conducto. Es más segura para evitar falsas vías.' Sami, impresionado, toma notas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q05",
+      "type": "single-choice",
+      "question": "Sami usa una lima rotatoria. Mina le pregunta: '¿Estás seguro de que has calibrado bien tu lima?' Sami responde: '¡Claro!' Mina objeta: '¿Por qué es importante?'",
+      "media": [],
+      "options": [
+        "Para evitar la fractura de la lima o la sobreinstrumentación",
+        "Para que la lima sea más rápida",
+        "Para ganar más puntos de fidelidad",
+        "Para impresionar a la asistente"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'Una calibración incorrecta puede fracturar la lima en el conducto o crear una sobreinstrumentación apical.' Sami, algo preocupado, revisa su calibración.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q06",
+      "type": "single-choice",
+      "question": "Sami, seguro de sí mismo, anuncia a Mina que ha terminado el tratamiento de conducto. Mina le pregunta: '¿Y la longitud de trabajo, cómo la comprobaste?' Sami responde:",
+      "media": [],
+      "options": [
+        "Con un localizador apical y una radiografía",
+        "A ojo, como siempre",
+        "Con una regla en la radiografía",
+        "Midiendo la corona"
+      ],
+      "correct": 0,
+      "explanation": "Mina confirma: 'El localizador apical es imprescindible, pero siempre hay que confirmarlo con una radiografía.' Sami, algo avergonzado, admite que se olvidó de la radiografía.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q07",
+      "type": "single-choice",
+      "question": "Mina prepara la solución de irrigación. Sami le pregunta: '¿Qué solución se usa con más frecuencia?' Mina responde:",
+      "media": [],
+      "options": [
+        "Hipoclorito de sodio (lejía diluida)",
+        "Agua destilada estéril",
+        "Suero fisiológico",
+        "Alcohol 70°"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'El hipoclorito de sodio es la solución de referencia para la desinfección de conductos. Pero hay que usarlo con precaución.' Sami, impresionado, anota la información.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q08",
+      "type": "single-choice",
+      "question": "Sami, con prisas, quiere usar una concentración alta de hipoclorito de sodio. Mina lo detiene: '¡Cuidado, una concentración demasiado alta puede:'",
+      "media": [],
+      "options": [
+        "Causar necrosis tisular en caso de extrusión",
+        "Acelerar el tratamiento",
+        "Hacer los conductos más blancos",
+        "Evitar el dolor postoperatorio"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'Una concentración demasiado alta puede ser tóxica en caso de extrusión más allá del ápice.' Sami, precavido, elige una concentración adecuada.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q09",
+      "type": "single-choice",
+      "question": "Mina realiza la obturación del conducto. Sami le pregunta: '¿Por qué usas gutapercha y no otro material?' Mina responde:",
+      "media": [],
+      "options": [
+        "Es el material de referencia, fácil de usar y biocompatible",
+        "Porque es el único disponible",
+        "Porque es el más barato",
+        "Porque no tengo otra opción"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La gutapercha es el material estándar en endodoncia. Es biocompatible, se ablanda con el calor y proporciona un buen sellado.' Sami, convencido, la sigue.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q10",
+      "type": "single-choice",
+      "question": "Sami obtura el conducto sin usar cemento sellador. Mina, horrorizada, le dice: '¡Olvidaste el sellador!' Sami pregunta: '¿Por qué es tan importante?'",
+      "media": [],
+      "options": [
+        "El sellador asegura la hermeticidad entre la gutapercha y la pared del conducto",
+        "El sellador sirve para fijar la corona",
+        "El sellador es solo un aditivo opcional",
+        "El sellador tiñe el diente"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'El sellador rellena los espacios entre la gutapercha y la dentina, asegurando una hermeticidad ideal.' Sami, retomando el trabajo, le agradece.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q11",
+      "type": "single-choice",
+      "question": "El paciente regresa con dolor después del tratamiento de conducto realizado por Sami. Mina lo examina y dice: 'Tienes una lesión periapical.' Sami pregunta: '¿Qué es eso?'",
+      "media": [],
+      "options": [
+        "Inflamación del hueso alrededor del ápice",
+        "Infección de la pulpa",
+        "Fractura de la corona",
+        "Alergia al sellador"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La lesión periapical es una reacción inflamatoria del hueso alrededor del ápice, a menudo causada por una infección persistente.' Sami, algo avergonzado, promete ser más meticuloso.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q12",
+      "type": "single-choice",
+      "question": "Sami debe realizar la anestesia para el tratamiento de conducto. Mina le pregunta: '¿Qué tipo de anestesia usas?' Sami responde:",
+      "media": [],
+      "options": [
+        "Anestesia locorregional (troncular)",
+        "Solo anestesia tópica",
+        "Sedación intravenosa",
+        "Ninguna anestesia, la pulpa está muerta"
+      ],
+      "correct": 0,
+      "explanation": "Mina confirma: 'La anestesia troncular es necesaria para bloquear el nervio alveolar inferior. La pulpa puede estar parcialmente viva.' Sami, convencido, realiza la anestesia correctamente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q13",
+      "type": "single-choice",
+      "question": "Mina se enfrenta a un conducto calcificado. Sami le pregunta: '¿Cómo vas a hacerlo?' Mina responde:",
+      "media": [],
+      "options": [
+        "Con limas de punta activa y mucha paciencia",
+        "Con una fresa de acero inoxidable",
+        "Abandonando el tratamiento",
+        "Usando solo ultrasonidos"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'Los conductos calcificados requieren limas especiales y paciencia. Hay que avanzar lentamente para evitar falsas vías.' Sami, admirado, observa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q14",
+      "type": "single-choice",
+      "question": "Sami, tratando un molar, confunde los conductos. Mina le dice: 'Sami, ¡olvidaste el conducto mesiovestibular!' Sami pregunta: '¿Cómo sabes que existe?'",
+      "media": [],
+      "options": [
+        "Los molares superiores suelen tener un 4º conducto (mesiovestibular)",
+        "Todos los molares tienen solo 3 conductos",
+        "Es el conducto vestibular",
+        "Es un conducto accesorio"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'Los molares superiores suelen tener un 4º conducto: el mesiovestibular. Suele ser fino y fácil de pasar por alto.' Sami, agradecido, encuentra el conducto.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q15",
+      "type": "single-choice",
+      "question": "Sami y Mina discuten sobre la duración ideal del tratamiento de conducto. Sami dice: '¡Yo lo hago en 30 minutos!' Mina responde: 'Yo en 1,5 horas, pero lo hago con calidad.' ¿Qué es más importante?",
+      "media": [],
+      "options": [
+        "La calidad de la desinfección y la obturación",
+        "La rapidez del tratamiento",
+        "El precio cobrado al paciente",
+        "La disponibilidad del paciente"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La calidad es más importante que la velocidad. Un tratamiento de conducto bien realizado previene las recidivas.' Sami, ofendido, admite que ella tiene razón.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q16",
+      "type": "single-choice",
+      "question": "Mina observa una radiografía y dice: 'Aquí hay una radiolucidez alrededor del ápice.' Sami pregunta: '¿Qué significa?'",
+      "media": [],
+      "options": [
+        "Radiolucidez alrededor del ápice, a menudo un granuloma o quiste",
+        "Radiodensidad alrededor del ápice",
+        "Fractura radicular",
+        "Muela del juicio retenida"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La radiolucidez alrededor del ápice indica una pérdida de hueso alrededor del ápice, a menudo causada por una infección crónica.' Sami, algo preocupado, examina la radiografía.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q17",
+      "type": "single-choice",
+      "question": "Sami, al instrumentar el conducto, ve sangre salir del ápice. Mina le dice: '¡Detente, has sobrepasado el ápice!' Sami pregunta: '¿Por qué es grave?'",
+      "media": [],
+      "options": [
+        "Puede causar dolor postoperatorio e infección",
+        "Es normal, ocurre todo el tiempo",
+        "Acelera la cicatrización",
+        "Es señal de éxito"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'Sobrepasar el ápice con la lima puede empujar bacterias y restos hacia los tejidos periapicales.' Sami, precavido, corrige su longitud de trabajo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q18",
+      "type": "single-choice",
+      "question": "Mina elige la longitud de trabajo. Sami le pregunta: '¿Cómo la determinas?' Mina responde:",
+      "media": [],
+      "options": [
+        "Con un localizador apical y confirmación radiográfica",
+        "Midiendo la corona",
+        "Al azar",
+        "Con un detector de caries"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La combinación de localizador apical y radiografía es el método más fiable.' Sami, atento, toma notas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q19",
+      "type": "single-choice",
+      "question": "Sami, con prisas, quiere saltarse la radiografía de control. Mina lo detiene: 'Sami, ¡siempre hay que controlar!' ¿Por qué?",
+      "media": [],
+      "options": [
+        "Para verificar la longitud de trabajo y la calidad de la obturación",
+        "Para complacer al paciente",
+        "Para impresionar a la asistente",
+        "Para alargar la duración de la consulta"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La radiografía de control permite verificar la longitud de trabajo antes de la obturación y la calidad de la obturación final.' Sami, algo avergonzado, hace la radiografía.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q20",
+      "type": "single-choice",
+      "question": "Mina, al final del tratamiento, explica al paciente las normas postoperatorias. Sami pregunta: '¿Qué le dices?' Mina responde:",
+      "media": [],
+      "options": [
+        "Evitar masticar con ese diente hasta la colocación de la corona",
+        "Comer con normalidad",
+        "Cepillarse enérgicamente",
+        "Usar palillos para limpiar la corona"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'El diente tratado es frágil y debe protegerse hasta la restauración final.' Sami, asintiendo, añade algunos consejos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q21",
+      "type": "single-choice",
+      "question": "Sami, al terminar, pregunta a Mina: '¿Cuándo hay que colocar la corona?' Mina responde:",
+      "media": [],
+      "options": [
+        "Cuando el diente esté asintomático, preferiblemente en las semanas siguientes al tratamiento",
+        "Inmediatamente, el mismo día",
+        "Al cabo de un año",
+        "Nunca, el diente se queda sin corona"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'Hay que esperar a que el diente deje de ser sintomático; luego la corona es necesaria para prevenir la fractura.' Sami, de acuerdo, anota la recomendación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q22",
+      "type": "single-choice",
+      "question": "Sami, demasiado confiado, le dice al paciente: 'Su tratamiento de conducto está garantizado de por vida.' Mina interviene: 'Sami, ¡hay que ser prudente!' ¿Por qué?",
+      "media": [],
+      "options": [
+        "Ningún tratamiento está garantizado de por vida, pueden surgir fracasos",
+        "Porque el paciente puede olvidarlo",
+        "Porque la garantía es costosa",
+        "Porque es una obligación legal"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'Los tratamientos de conducto pueden fracasar, incluso con una técnica ideal. Siempre hay que informar al paciente de los riesgos.' Sami, algo avergonzado, corrige sus palabras.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q23",
+      "type": "single-choice",
+      "question": "Mina, al limpiar los conductos, detecta un olor desagradable. Sami le pregunta: '¿Qué significa?' Mina responde:",
+      "media": [],
+      "options": [
+        "Es un signo de infección bacteriana importante",
+        "Es normal, es el olor de la dentina",
+        "Es el olor del hipoclorito",
+        "Es un signo de éxito"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'El olor desagradable indica la presencia de bacterias anaerobias, a menudo responsables de las infecciones de los conductos.' Sami, con repugnancia, continúa la limpieza.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q24",
+      "type": "single-choice",
+      "question": "Sami, al final del tratamiento, pregunta a Mina: '¿Cuál es el porcentaje de éxito de un tratamiento de conducto bien realizado?' Mina responde:",
+      "media": [],
+      "options": [
+        "Alrededor del 85-95%",
+        "100%",
+        "50%",
+        "30%"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'Con una buena técnica, las tasas de éxito son altas, pero siempre hay que informar al paciente de los riesgos de fracaso.' Sami, impresionado, se vuelve más prudente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q25",
+      "type": "single-choice",
+      "question": "Sami, al hablar con el paciente, confunde pulpectomía y pulpotomía. Mina lo corrige. ¿Cuál de las afirmaciones es correcta?",
+      "media": [],
+      "options": [
+        "La pulpectomía es la extracción completa de la pulpa; la pulpotomía, la extracción parcial",
+        "La pulpotomía es más completa que la pulpectomía",
+        "Son idénticas",
+        "La pulpectomía está indicada para dientes temporales"
+      ],
+      "correct": 0,
+      "explanation": "Mina explica: 'La pulpectomía extrae toda la pulpa; la pulpotomía extrae solo la pulpa coronaria.' Sami, agradecido, da las gracias a Mina por la aclaración.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

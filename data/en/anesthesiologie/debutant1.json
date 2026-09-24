@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "anesthesiologie_debutant1_001",
+    "title": "Anesthesiology - Beginner 1",
+    "specialty": "ANES",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ANES_D1_Q01",
+      "type": "single-choice",
+      "question": "How is local anesthesia precisely defined in contemporary dental practice?",
+      "media": [],
+      "options": [
+        "The complete and induced loss of protective reflexes and consciousness associated with pharmacological hypnosis",
+        "The modification of cortical perception thresholds through psychological dissociation and relaxation techniques",
+        "The temporary and reversible suppression of pain and thermal sensitivity in a restricted anatomical region without altering consciousness",
+        "The elective reduction of situational anxiety through the administration of low-dose central depressants"
+      ],
+      "correct": 2,
+      "explanation": "Local anesthesia reversibly blocks nerve conduction along axons in a targeted area, without altering the patient's alertness.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q02",
+      "type": "single-choice",
+      "question": "Which pharmacological molecule historically represents the gold standard and reference molecule of the amide group?",
+      "media": [],
+      "options": [
+        "Lidocaine hydrochloride 2%",
+        "Articaine hydrochloride 4%",
+        "Mepivacaine hydrochloride 3%",
+        "Prilocaine hydrochloride 4%"
+      ],
+      "correct": 0,
+      "explanation": "Lidocaine 2% remains the international reference molecule against which all other amides are compared, although articaine is clinically very predominant.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q03",
+      "type": "single-choice",
+      "question": "Which vasoconstrictor agent is most frequently associated with commercial formulations of lidocaine and articaine?",
+      "media": [],
+      "options": [
+        "Norepinephrine (noradrenaline) at a fixed concentration of 1:50,000",
+        "Phenylephrine hydrochloride, a selective alpha-1 adrenergic agonist",
+        "Vasopressin, a peptide hormone with direct vasoconstrictor activity",
+        "Epinephrine (adrenaline) formulated at standard concentrations of 1:100,000 or 1:200,000"
+      ],
+      "correct": 3,
+      "explanation": "Epinephrine is the vasoconstrictor of choice, acting on alpha-1 receptors for local vasoconstriction and beta receptors for relative systemic safety.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q04",
+      "type": "single-choice",
+      "question": "What is the main clinical justification for adding a vasoconstrictor to a local anesthetic solution?",
+      "media": [],
+      "options": [
+        "Prolong the duration of pulpal anesthesia, reduce the risk of systemic toxicity by slowing absorption, and improve hemostasis",
+        "Accelerate the initial onset time by increasing the base rate of non-ionized molecules",
+        "Modify the chemical pH of the solution to reduce the pain felt during tissue injection",
+        "Decrease the viscosity of the solution to facilitate passage through very small diameter needles"
+      ],
+      "correct": 0,
+      "explanation": "By constricting local vessels, the vasoconstrictor keeps the molecule in contact with the nerve longer and reduces the peak plasma concentration in the blood.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q05",
+      "type": "single-choice",
+      "question": "What is the recognized maximum safe dose for lidocaine with epinephrine in a healthy adult patient?",
+      "media": [],
+      "options": [
+        "4.4 mg/kg body weight, never exceeding an absolute threshold of 200 mg",
+        "7 mg/kg body weight, up to an absolute limit not exceeding 500 mg",
+        "10 mg/kg body weight, a high threshold tolerated only in major surgical procedures",
+        "2 mg/kg body weight, a restrictive limit reserved for polymedicated patients"
+      ],
+      "correct": 1,
+      "explanation": "For a healthy adult, the limit is 7 mg/kg (maximum 500 mg), which is equivalent to approximately 13 cartridges of 1.8 mL at 2% for a 70 kg individual.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q06",
+      "type": "single-choice",
+      "question": "What are the maximum dosage criteria for a healthy adult receiving 4% articaine with epinephrine?",
+      "media": [],
+      "options": [
+        "7 mg/kg body weight, with an absolute ceiling of 500 mg due to rapid plasma metabolism",
+        "4.4 mg/kg body weight, representing a restrictive universal ceiling to avoid cardiotoxicity",
+        "12 mg/kg body weight, justified by the total absence of protein binding of articaine",
+        "3 mg/kg body weight, a mandatory regulatory limit for any maxillary infiltration"
+      ],
+      "correct": 0,
+      "explanation": "Thanks to its additional ester group, articaine is rapidly hydrolyzed by plasma cholinesterases, giving it a short half-life (about 20 min) and a high safety profile at 7 mg/kg.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q07",
+      "type": "single-choice",
+      "question": "What is the maximum safe dose of lidocaine when administered plain (without vasoconstrictor)?",
+      "media": [],
+      "options": [
+        "7 mg/kg body weight, because the absence of a vasoconstrictor does not modify the pharmacokinetics of the molecule",
+        "10 mg/kg body weight, due to the sedative power of the free form",
+        "4.4 mg/kg body weight, up to an absolute systemic ceiling not exceeding 300 mg",
+        "1.5 mg/kg body weight, to prevent the risk of reflex pulmonary hypertension"
+      ],
+      "correct": 2,
+      "explanation": "Without epinephrine, lidocaine causes local vasodilation. It is absorbed much faster into the general circulation, lowering its maximum safe dose to 4.4 mg/kg.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q08",
+      "type": "single-choice",
+      "question": "What is the typical clinical onset time (latency) to achieve effective anesthesia with 2% lidocaine during infiltration?",
+      "media": [],
+      "options": [
+        "Immediate (less than 10 seconds), by instant ionic diffusion",
+        "2 to 3 minutes after successful deposition of the solution in the target anatomical space",
+        "7 to 10 minutes, due to the slow dissociation of amide bonds",
+        "15 minutes minimum, requiring thermal activation by tissues"
+      ],
+      "correct": 1,
+      "explanation": "Lidocaine has a pKa of 7.9, which allows it to have a sufficient non-ionized free fraction at physiological pH to penetrate the axon in 2 to 3 minutes.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q09",
+      "type": "single-choice",
+      "question": "What is the average expected duration of effective pulpal (hard tissue) anesthesia with 2% lidocaine with epinephrine?",
+      "media": [],
+      "options": [
+        "15 to 20 minutes, limiting its use to superficial emergency procedures",
+        "30 to 45 minutes maximum, insufficient for multi-rooted teeth",
+        "60 to 90 minutes of deep endodontic and operative analgesia",
+        "180 to 240 minutes of continuous pulpal insensitivity"
+      ],
+      "correct": 2,
+      "explanation": "Soft tissue anesthesia persists for 3 to 5 hours, but useful pulpal anesthesia (during which the tooth is completely insensitive) lasts on average 60 to 90 minutes.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q10",
+      "type": "single-choice",
+      "question": "How are local anesthesia modalities classified in dental practice?",
+      "media": [],
+      "options": [
+        "Topical, infiltrative (para-periosteal), regional (truncal), intraligamentary and intra-osseous techniques",
+        "Inhalation, intravenous, intramuscular and exclusive conscious sedation protocols",
+        "Hypnotic, cognitive, dissociative and deep ganglion block therapies",
+        "Trans-mucosal, trans-dermal, intra-thecal and non-pressurized peri-apical routes"
+      ],
+      "correct": 0,
+      "explanation": "This classification is based on the site of deposition of the solution relative to the nerve structures (fine terminals, main trunks or desmodontium).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q11",
+      "type": "single-choice",
+      "question": "How is an infiltrative or para-periosteal anesthesia technique precisely characterized?",
+      "media": [],
+      "options": [
+        "Deposition of the solution near a main nerve trunk to block a large quadrant",
+        "Deposition of the anesthetic solution in the muco-buccal fold above the periosteum, near the terminal nerve branches",
+        "Forced introduction of a hyperbaric fluid within the masseter muscle mass",
+        "Direct administration into the bloodstream of a surface bone capillary"
+      ],
+      "correct": 1,
+      "explanation": "Para-periosteal infiltration relies on the porosity of bone to reach the apices. It is highly effective in the maxilla, but limited in the mandible in adults due to the thick cortical bone.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q12",
+      "type": "single-choice",
+      "question": "How is regional or truncal anesthesia (nerve block) characterized?",
+      "media": [],
+      "options": [
+        "Passive application of a highly concentrated liquid agent on intact mucosa",
+        "Mechanical perforation of the bone cortex to infiltrate the cancellous bone marrow",
+        "Deposition of the solution around a major peripheral nerve trunk, away from the immediate surgical site",
+        "High-pressure injection into the narrow space between the cementum and alveolar bone"
+      ],
+      "correct": 2,
+      "explanation": "The nerve block interrupts nerve conduction upstream, making it possible to desensitize a large territory with a single injection point.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q13",
+      "type": "single-choice",
+      "question": "Which main nerve structure is targeted during a classic mandibular regional anesthesia (Spix)?",
+      "media": [],
+      "options": [
+        "The long buccal nerve as it crosses the external oblique line",
+        "The mental nerve at its emergence from the homonymous foramen between the premolars",
+        "The lingual nerve located under the mucosa of the posterior floor of the mouth",
+        "The inferior alveolar nerve (IAN) before it enters the mandibular foramen within the pterygo-mandibular space"
+      ],
+      "correct": 3,
+      "explanation": "Anesthesia at the level of the Spix spine targets the inferior alveolar nerve before it is protected by the bony structure of the mandible.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q14",
+      "type": "single-choice",
+      "question": "How is the intraligamentary anesthesia technique defined?",
+      "media": [],
+      "options": [
+        "Injection of the solution under high mechanical pressure directly into the periodontal ligament (desmodontium)",
+        "Loose deposition of a fluid under the attached mucosa at the muco-gingival junction line",
+        "Administration of active principles within the intercellular spaces of the free interdental papilla",
+        "Diffusion obtained by placing an impregnated wick at the bottom of the gingivo-dental sulcus"
+      ],
+      "correct": 0,
+      "explanation": "This technique uses a specific syringe to overcome ligament resistance. The solution actually diffuses into the adjacent cancellous bone through perforations in the lamina dura.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q15",
+      "type": "single-choice",
+      "question": "Which needle configurations are most frequently chosen for routine local injections in general practice?",
+      "media": [],
+      "options": [
+        "Rigid needles with a diameter greater than 21 Gauge to force trans-periosteal passage",
+        "Disposable ultra-fine needles, short or long, generally ranging from 27 to 30 Gauge",
+        "Reverse-bevel needles calibrated for retrograde intra-arterial injections",
+        "Blunt-tipped micro-cannulas used for rinsing periodontal pockets"
+      ],
+      "correct": 1,
+      "explanation": "27G needles (often long for blocks) and 30G (short or ultra-short for infiltrations) offer the best compromise between flexibility, guidance and reduction of pain on penetration.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q16",
+      "type": "single-choice",
+      "question": "What is the main reason for the standardization of anesthetic cartridges (carpules) to a volume of 1.8 mL (or 1.7 mL)?",
+      "media": [],
+      "options": [
+        "It represents the universal volumetric capacity designed to fit precisely into general practice syringes",
+        "It corresponds to the minimum toxic dose of adrenaline tolerated by the cardiovascular system",
+        "It constitutes the exact volume of fluid beyond which mucosal ischemia becomes systematic",
+        "It is calculated to exactly saturate the nerve receptors of a single upper molar"
+      ],
+      "correct": 0,
+      "explanation": "This is an international industrial standard allowing perfect compatibility between metal or plastic syringes, glass cartridges and screw-on needles.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q17",
+      "type": "single-choice",
+      "question": "What is the clinical objective of applying a topical anesthetic agent before injection?",
+      "media": [],
+      "options": [
+        "Obtain transient pulpal analgesia allowing Class I cavity preparation",
+        "Neutralize surface flora pathogens to avoid transient bacteremia",
+        "Desensitize superficial mucosal nerve receptors to minimize the discomfort of the needle prick",
+        "Cause surface vasoconstriction to eliminate bleeding during insertion"
+      ],
+      "correct": 2,
+      "explanation": "Topical anesthesia (20% benzocaine gel or lidocaine) abolishes the sensitivity of the superficial mucosa if applied to previously dried tissue for at least 1 to 2 minutes.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q18",
+      "type": "single-choice",
+      "question": "What is the immediate physiological risk associated with accidental intravascular injection of the anesthetic solution?",
+      "media": [],
+      "options": [
+        "A sudden decrease in the effectiveness of the molecule due to its instant dilution in the blood mass",
+        "An immediate type I hypersensitivity reaction inducing angioedema",
+        "The formation of a massive gas embolism caused by the release of preservatives",
+        "The immediate appearance of a high plasma concentration peak, risking triggering systemic toxicity"
+      ],
+      "correct": 3,
+      "explanation": "Direct injection into a vessel sends the entire anesthetic and vasoconstrictor to the target organs (CNS and heart), simulating a massive overdose even with a small volume.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q19",
+      "type": "single-choice",
+      "question": "What are the first clinical warning signs of systemic toxicity (LAST) related to local anesthetic overdose?",
+      "media": [],
+      "options": [
+        "Peri-oral numbness, metallic taste, tinnitus, followed by an excitatory phase (muscle twitching, seizures)",
+        "An immediate drop in body temperature associated with a pruritic skin rash",
+        "Instant drowsiness leading to a calm coma without prior neurological signs of excitation",
+        "Acute bilateral joint pain localized in the lower limbs"
+      ],
+      "correct": 0,
+      "explanation": "Amides cross the blood-brain barrier. At toxic doses, they first block cortical inhibitory pathways, releasing excitatory pathways (metallic taste, dizziness, twitching then seizures) before global CNS depression.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q20",
+      "type": "single-choice",
+      "question": "What is the protocol for immediate chairside management in the face of initial signs of moderate systemic toxicity?",
+      "media": [],
+      "options": [
+        "Increase the injection rate to quickly saturate receptors and stop the crisis",
+        "Immediately stop the injection, secure the patient in a supine position, administer oxygen and monitor",
+        "Inject a second cartridge of a different molecule to create competitive competition",
+        "Immediately administer a powerful cardiac stimulant intramuscularly"
+      ],
+      "correct": 1,
+      "explanation": "Stopping the pharmacological supply is the first emergency measure. Oxygenation prevents hypoxia and acidosis, which aggravate the cardiac toxicity of local anesthetics.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q21",
+      "type": "single-choice",
+      "question": "How is a genuine hypersensitivity allergic reaction to modern amide-type local anesthetics characterized?",
+      "media": [],
+      "options": [
+        "Common, representing nearly 30% of syncopes observed during a clinical career",
+        "Inevitable in case of repeated injections over a period of less than fifteen days",
+        "Specific to patients with major cutaneous autoimmune pathologies",
+        "Extremely rare, with reported incidents most often being psychogenic reactions or reactions to preservatives"
+      ],
+      "correct": 3,
+      "explanation": "The chemical structure of amides is very weakly allergenic. True immune-mediated reactions are extremely rare and often attributable to sodium metabisulfite (vasoconstrictor antioxidant) or latex from the caps.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q22",
+      "type": "single-choice",
+      "question": "What clinical option is indicated for a patient with a true and documented allergy to an amide-type molecule?",
+      "media": [],
+      "options": [
+        "Use another molecule of the same amide family at half the concentration",
+        "Perform the procedure under conscious sedation with nitrous oxide without any local anesthetic",
+        "Use a local anesthetic from the ester family (such as procaine) after testing, or schedule the procedure under general anesthesia",
+        "Practice heavy sedative premedication 48 hours before the session to inhibit the immune response"
+      ],
+      "correct": 2,
+      "explanation": "Cross-allergy within the amide group being frequent, confirmation of an allergy requires a change of chemical family (esters, without preservatives) or management in a secure hospital setting.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q23",
+      "type": "single-choice",
+      "question": "Which systemic conditions constitute absolute contraindications to the clinical use of epinephrine in general practice?",
+      "media": [],
+      "options": [
+        "Unoperated pheochromocytoma, severe uncontrolled hyperthyroidism and myocardial infarction dating back less than 3 to 6 months",
+        "Stabilized essential hypertension managed with long-term diuretic therapy",
+        "Type II diabetes controlled with oral antidiabetics without major hypoglycemia",
+        "A history of stroke dating back more than five years without neurological sequelae"
+      ],
+      "correct": 0,
+      "explanation": "In these unstable cardiovascular and endocrine pathologies, even low-dose sympathomimetic amine injection can trigger a lethal hypertensive crisis, stroke or malignant ventricular arrhythmia.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q24",
+      "type": "single-choice",
+      "question": "What is the major cardiovascular risk when administering an epinephrine solution to a patient treated with non-selective beta-blockers (e.g., Propranolol)?",
+      "media": [],
+      "options": [
+        "A sudden drop in blood pressure due to generalized peripheral vasodilation",
+        "A severe acute hypertensive crisis associated with reflex bradycardia",
+        "An immediate acceleration of hepatic metabolism canceling the analgesic effect",
+        "A complete inhibition of cardiac pump function by blocking calcium channels"
+      ],
+      "correct": 1,
+      "explanation": "Non-selective beta-blockers block beta-2 receptors (which normally induce compensatory vasodilation). The injected adrenaline then acts exclusively on alpha-1 receptors, causing massive systemic vasoconstriction with hypertensive surge and reflex bradycardia.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q25",
+      "type": "single-choice",
+      "question": "What is the fundamental technical objective of performing an aspiration test (reflux test) before any local anesthetic injection?",
+      "media": [],
+      "options": [
+        "Verify that the active end of the needle is not located inside the lumen of a blood vessel",
+        "Indirectly measure the hydrostatic pressure prevailing within the interstitial tissue",
+        "Ensure that the rubber piston of the carpule slides freely without mechanical resistance",
+        "Create a controlled micro-tear of the periosteum to accelerate the penetration of the solution"
+      ],
+      "correct": 0,
+      "explanation": "The aspiration test involves creating negative pressure. If blood appears in the cartridge, the needle is intravascular; it must be withdrawn or repositioned to avoid direct systemic injection.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

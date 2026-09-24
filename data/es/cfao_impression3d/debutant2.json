@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_debutant2_001",
+    "title": "CFAO e Impresión 3D - Principiante 2",
+    "specialty": "CFAO",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_D2_Q01",
+      "type": "single-choice",
+      "question": "¿Cuál es el principio del mecanizado de bloques cerámicos en CFAO?",
+      "media": [],
+      "options": [
+        "Impresión 3D mediante fusión selectiva por láser de polvos",
+        "Moldeo por inyección a presión atmosférica",
+        "Fresado de un bloque presinterizado o macizo con herramientas rotativas calibradas",
+        "Prensado en caliente a alta temperatura en camisa"
+      ],
+      "correct": 2,
+      "explanation": "La CFAO sustractiva utiliza herramientas rotativas de diamante o carburo de tungsteno para tallar la restauración directamente de un bloque industrial homogéneo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q02",
+      "type": "single-choice",
+      "question": "¿Por qué se mecaniza preferentemente el dióxido de circonio en estado de 'blanco' (presinterizado)?",
+      "media": [],
+      "options": [
+        "Para compensar la contracción volumétrica durante la cocción de sinterización (20-25%)",
+        "Para evitar el futuro oscurecimiento por los fluidos bucales",
+        "Para aumentar la dureza superficial del material antes del fresado",
+        "Para facilitar la fijación adhesiva sin tratamiento superficial"
+      ],
+      "correct": 0,
+      "explanation": "En estado presinterizado, el dióxido de circonio tiene una consistencia de tiza, lo que limita el desgaste de las fresas. El software CAD aplica un factor de escala para tener en cuenta la contracción durante la sinterización.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q03",
+      "type": "single-choice",
+      "question": "¿Qué es una corona monolítica de circonio?",
+      "media": [],
+      "options": [
+        "Una corona coloreada en masa y totalmente mecanizada a partir de un solo bloque, sin recubrimiento de cerámica feldespática",
+        "Una corona de circonio opaca altamente sinterizada que debe ser facetada obligatoriamente por vestibular",
+        "Una infraestructura con armazón metálico invisible recubierto de óxido de circonio termoprensado",
+        "Una corona multicapa que no requiere tratamiento térmico de compactación tras el mecanizado"
+      ],
+      "correct": 0,
+      "explanation": "El circonio monolítico es anatómico y se mecaniza a partir de un solo bloque, eliminando definitivamente el riesgo de desprendimiento o fractura de la cerámica de recubrimiento.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q04",
+      "type": "single-choice",
+      "question": "¿Cuál es la particularidad cinética y térmica del disilicato de litio mecanizado?",
+      "media": [],
+      "options": [
+        "Se somete a mecanizado tras una sinterización completa a más de 1500°C",
+        "Se mecaniza en estado intermedio 'azul' (vítreo), luego se somete a un ciclo térmico de cristalización",
+        "Se somete a impresión 3D directa a partir de polvo cristalino de sílice",
+        "Requiere una cocción de maduración a 1500°C durante un ciclo continuo de 24 horas"
+      ],
+      "correct": 1,
+      "explanation": "El disilicato de litio se mecaniza en estado de metasilicato de litio (tonalidad azul, fácilmente fresable), luego se cuece en un horno especial para obtener la fase cristalina final estable y estética.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q05",
+      "type": "single-choice",
+      "question": "Los bloques de composite mecanizable se distinguen de los bloques cerámicos por:",
+      "media": [],
+      "options": [
+        "Su resistencia a la flexión, muy superior a la del circonio puro",
+        "Su necesidad obligatoria de cocción de recristalización a 1200°C",
+        "Su porosidad interna, que excluye cualquier protocolo de pulido mecánico en el sillón",
+        "Su capacidad de restauración intraoral clínica con resinas compuestas fotopolimerizables"
+      ],
+      "correct": 3,
+      "explanation": "A diferencia de las cerámicas vítreas o policristalinas, los composites infiltrados o nanohíbridos pueden ser retocados y restaurados directamente en la cavidad bucal mediante protocolos adhesivos convencionales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q06",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal aplicación clínica de los bloques de PMMA en CFAO odontológica?",
+      "media": [],
+      "options": [
+        "Fabricación de restauraciones provisionales y prótesis temporales de larga duración",
+        "Fabricación de incrustaciones y onlays finales en zonas de cúspides destruidas",
+        "Fabricación de armazones de puentes fijos definitivos sobre implantes en zona estética",
+        "Producción de infraestructuras metálicas coladas al vacío tras mecanizado directo"
+      ],
+      "correct": 0,
+      "explanation": "El polimetilmetacrilato (PMMA) mecanizable posee una excelente estabilidad cromática y mecánica, ideal para la verificación oclusal y fonética en etapas provisionales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q07",
+      "type": "single-choice",
+      "question": "¿Qué es un material cerámico híbrido o interpenetrado (ej. Vita Enamic)?",
+      "media": [],
+      "options": [
+        "Una matriz polimérica tridimensional interpenetrada infiltrada en una estructura cerámica porosa",
+        "Una estructura cerámica cristalina pura de alta densidad, desprovista de fase vítrea",
+        "Un bloque composite con alto contenido de partículas metálicas nobles para la absorción de cargas",
+        "Un circonio de última generación con gradiente óptico puro de traslucidez"
+      ],
+      "correct": 0,
+      "explanation": "Estas estructuras combinan las propiedades de dos mundos: la rigidez y estabilidad óptica de la cerámica con la elasticidad y resistencia del polímero (efecto amortiguador).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q08",
+      "type": "single-choice",
+      "question": "¿Cuál es la resistencia media a la flexión del disilicato de litio tras el ciclo de cristalización?",
+      "media": [],
+      "options": [
+        "Aproximadamente 360-450 MPa",
+        "Aproximadamente 100-180 MPa",
+        "Aproximadamente 900-1100 MPa",
+        "Más de 1500 MPa"
+      ],
+      "correct": 0,
+      "explanation": "El disilicato de litio alcanza unos 400 MPa tras la cristalización, ofreciendo un excelente compromiso entre propiedades mecánicas resistentes y comportamiento óptico biomimético.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q09",
+      "type": "single-choice",
+      "question": "¿Por qué es clínicamente importante realizar un glaseado o un pulido minucioso tras el mecanizado?",
+      "media": [],
+      "options": [
+        "Para modificar radicalmente la morfología anatómica general de la restauración",
+        "Para aumentar la porosidad superficial para facilitar la penetración de colorantes",
+        "Para reducir drásticamente el desgaste mecánico del diente antagonista natural",
+        "Para acelerar la cinética de aumento de temperatura durante la cocción cerámica"
+      ],
+      "correct": 2,
+      "explanation": "Una superficie cerámica rugosa o no tratada actúa como papel de lija abrasivo sobre las estructuras del esmalte antagonista. El pulido especular o el glaseado son obligatorios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q10",
+      "type": "single-choice",
+      "question": "La personalización del color (tono) de las restauraciones CFAO se logra principalmente mediante:",
+      "media": [],
+      "options": [
+        "Un chorreado abrasivo intenso con óxido de aluminio fino tras la sinterización completa",
+        "La aplicación de colorantes superficiales antes de la sinterización o durante el ciclo de glaseado",
+        "La inmersión en ácido sulfúrico concentrado inmediatamente después de salir del bloque de fresado",
+        "El uso exclusivo de resinas compuestas fotopolimerizables superficiales sin cocción térmica"
+      ],
+      "correct": 1,
+      "explanation": "Se pueden utilizar bloques multicapa (gradientes) o impregnar el circonio poroso con óxidos metálicos colorantes antes de la sinterización, o aplicar colorantes durante el glaseado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q11",
+      "type": "single-choice",
+      "question": "¿Cuál es la función termodinámica y estructural de la sinterización del dióxido de circonio?",
+      "media": [],
+      "options": [
+        "Eliminar los errores geométricos y los defectos de inclinación causados por el eje de la fresa",
+        "Asegurar la compactación térmica (alrededor de 1450°C-1500°C) eliminando la porosidad intergranular",
+        "Pulir automáticamente las superficies externas por efecto térmico",
+        "Modificar la composición química inicial transformando el circonio en titanio"
+      ],
+      "correct": 1,
+      "explanation": "La sinterización aproxima las partículas de óxido de circonio, soldando los granos entre sí para transformar el bloque frágil en una estructura policristalina de alta resistencia.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q12",
+      "type": "single-choice",
+      "question": "¿Cómo procesa matemáticamente el sistema CFAO la contracción volumétrica del dióxido de circonio?",
+      "media": [],
+      "options": [
+        "Aplicando un factor de escala de expansión digital en el cálculo CAM",
+        "Mediante el ajuste manual de los márgenes cervicales realizado por el clínico con la punta del instrumento",
+        "Reduciendo drásticamente la temperatura final del horno de sinterización en el laboratorio",
+        "Utilizando bloques estandarizados de tamaño aumentado con dimensiones fijas"
+      ],
+      "correct": 0,
+      "explanation": "Cada lote de bloques tiene un código de barras o un factor preciso. El software CAM calcula el mecanizado con una ampliación de aproximadamente el 20-25% para que la pieza alcance las dimensiones correctas tras la sinterización.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q13",
+      "type": "single-choice",
+      "question": "El módulo de producción (fresadora) de 4 ejes permite:",
+      "media": [],
+      "options": [
+        "Un movimiento tridimensional estándar complementado con la rotación del bloque alrededor de un eje horizontal",
+        "El mecanizado exclusivo de formas planas e incrustaciones simples sin ningún margen de inclinación",
+        "El movimiento simultáneo en 6 direcciones ortogonales independientes",
+        "La transición automática a la impresión 3D líquida mediante simple inversión de software"
+      ],
+      "correct": 0,
+      "explanation": "Las fresadoras de 4 ejes disponen de los ejes X, Y, Z y un eje rotatorio (A) para girar el bloque. Esto es suficiente para la mayoría de coronas unitarias y puentes pequeños.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q14",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal ventaja de una fresadora con 5 ejes cinemáticos simultáneos?",
+      "media": [],
+      "options": [
+        "La duplicación sistemática de la velocidad de rotación del husillo en comparación con el 4 ejes",
+        "La posibilidad de mecanizar socavados, geometrías complejas y ejes de inserción divergentes",
+        "Garantizar un importante ahorro energético al prescindir del aire comprimido",
+        "Permitir la impresión directa de estructuras en metales preciosos sin mecanizado sustractivo"
+      ],
+      "correct": 1,
+      "explanation": "La adición de un quinto eje (inclinación de la cabeza de mecanizado o del soporte) permite inclinar la herramienta para mecanizar estructuras implantológicas complejas, puentes de gran extensión y zonas anatómicas con socavados.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q15",
+      "type": "single-choice",
+      "question": "¿Por qué algunas categorías de bloques requieren el uso de refrigeración (fresado húmedo)?",
+      "media": [],
+      "options": [
+        "Para diluir y reducir a la mitad la velocidad de rotación de los husillos de corte",
+        "Para eliminar totalmente las etapas de pulido y acabado superficial",
+        "Para lubricar el corte, enfriar la interfaz y prevenir la propagación de microfisuras críticas",
+        "Para aumentar la dureza interna del bloque mineral a mecanizar"
+      ],
+      "correct": 2,
+      "explanation": "El mecanizado con flujo de líquido (agua + aditivo) es esencial para las cerámicas vítreas y los composites, para evitar el calentamiento crítico que destruiría el material o saturaría los diamantes de la fresa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q16",
+      "type": "single-choice",
+      "question": "La CFAO directa, llamada 'chairside' (en el sillón), se define como:",
+      "media": [],
+      "options": [
+        "La integración completa del flujo digital (impresión, CAD, CAM) en el consultorio clínico en una sola sesión",
+        "La transmisión de archivos de impresión óptica a un laboratorio remoto a través de servidores seguros",
+        "El envío de archivos de impresión por correo tras la digitalización de un modelo de yeso físico",
+        "El mecanizado diferido de prótesis en un plazo incompresible de 48 horas en el sillón"
+      ],
+      "correct": 0,
+      "explanation": "El flujo directo permite al clínico escanear la preparación, diseñar la restauración, mecanizarla y cementarla durante la misma sesión clínica.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q17",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal ventaja clínica de la CFAO 'chairside' para el paciente?",
+      "media": [],
+      "options": [
+        "La reducción drástica del coste biológico al prescindir de anestesias locales",
+        "La obtención sistemática de una estética superior a la de los laboratorios de prótesis",
+        "La eliminación de la etapa de prótesis provisional y el ahorro de tiempo gracias al tratamiento en una sola sesión",
+        "La duplicación de la resistencia estructural de los puentes de gran extensión"
+      ],
+      "correct": 2,
+      "explanation": "Al completar la restauración en una sola sesión, se evita la colocación de una prótesis provisional, reduciendo los riesgos de sensibilidad dentinaria y mejorando el confort del paciente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q18",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal desventaja o limitación importante de la implantación de la CFAO 'chairside'?",
+      "media": [],
+      "options": [
+        "La necesidad de tomar dos impresiones físicas de alginato para calibrar los sensores",
+        "El elevado coste de la inversión inicial en equipamiento y la necesaria curva de aprendizaje técnico",
+        "La escasez de materiales disponibles, que resultan demasiado duros para el esmalte",
+        "La excesiva complejidad del escaneo óptico en comparación con la impresión físico-química clásica"
+      ],
+      "correct": 1,
+      "explanation": "La adquisición de la cadena completa (cámara intraoral, software CAD especializado, fresadora de consultorio, horno de sinterización rápido) requiere una importante inversión financiera y un compromiso con la formación continua.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q19",
+      "type": "single-choice",
+      "question": "¿Cuál es el papel preferente de la CFAO indirecta en el laboratorio externo?",
+      "media": [],
+      "options": [
+        "Realizar reconstrucciones complejas extensas y utilizar la diversidad industrial de materiales",
+        "Realizar coronas unitarias simples en menos de cuarenta y cinco minutos en el sillón",
+        "Eliminar totalmente la etapa virtual CAD en favor de un mecanizado puramente analógico",
+        "Sustituir el uso de escáneres intraorales por técnicas de duplicación manual"
+      ],
+      "correct": 0,
+      "explanation": "El laboratorio dispone de fresadoras industriales (a menudo pesadas de 5 ejes), hornos de alto rendimiento y la experiencia técnica necesaria para procesar casos complejos (circonio atornillado, puentes de gran extensión, aleaciones de cromo-cobalto).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q20",
+      "type": "single-choice",
+      "question": "¿Cómo se caracteriza el flujo de trabajo denominado 'cadena digital completa' (Full Digital Workflow)?",
+      "media": [],
+      "options": [
+        "Una secuencia fluida: impresión óptica, CAD software y CAM industrial sin etapas físicas intermedias",
+        "Un procedimiento mixto, alternando obligatoriamente etapas digitales y vaciados de yeso sintético",
+        "Un mecanizado manual de bloques cerámicos bajo control visual de una pantalla de ordenador",
+        "Una impresión óptica cuyo modelo impreso en 3D se procesa posteriormente mediante métodos de fundición tradicionales"
+      ],
+      "correct": 0,
+      "explanation": "En el flujo 100% digital no se utilizan impresiones físico-químicas ni modelos de yeso, eliminando las variables de error asociadas a los cambios dimensionales de los materiales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q21",
+      "type": "single-choice",
+      "question": "La cementación clínica de las restauraciones cerámicas obtenidas por CFAO suele preferir:",
+      "media": [],
+      "options": [
+        "Cementos compuestos adhesivos (fijación química)",
+        "Cementos convencionales de óxido de zinc con eugenol de tipo transitorio",
+        "Cementos a base de cera de abejas purificada con alta viscosidad mecánica",
+        "La técnica de soldadura por fusión láser directa sobre estructuras de esmalte"
+      ],
+      "correct": 0,
+      "explanation": "La fijación adhesiva es obligatoria para las cerámicas vítreas, ya que proporciona una unión íntima del material con la estructura dental, aumentando la resistencia global del sistema.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q22",
+      "type": "single-choice",
+      "question": "¿Cuál es el protocolo estándar de tratamiento superficial para la fijación de cerámicas vítreas (ej. disilicato de litio)?",
+      "media": [],
+      "options": [
+        "Grabado con ácido fluorhídrico (HF) seguido de la aplicación de un agente de acoplamiento silano",
+        "Chorreado abrasivo intenso con óxido de aluminio a alta presión sin ningún tratamiento químico",
+        "Aplicación exclusiva de un imprimador que contiene monómero MDP puro sin grabado previo",
+        "Pulido diamantado profundo de la superficie interna de la prótesis hasta obtener una superficie reflectante"
+      ],
+      "correct": 0,
+      "explanation": "El ácido fluorhídrico disuelve selectivamente la fase vítrea de la cerámica, creando una micromorfología retentiva. El silano proporciona entonces un puente químico entre la cerámica y la resina de fijación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q23",
+      "type": "single-choice",
+      "question": "¿Qué protocolo se requiere para el tratamiento superficial de la cara interna de una estructura de circonio antes de la fijación?",
+      "media": [],
+      "options": [
+        "Grabado prolongado con ácido fluorhídrico en alta concentración",
+        "Chorreado de baja presión con óxido de aluminio seguido de la aplicación de un imprimador que contiene monómeros fosfatados (MDP)",
+        "Aplicación de silano puro sin ningún impacto mecánico superficial",
+        "No se requiere ningún tratamiento mecánico o químico para las estructuras policristalinas"
+      ],
+      "correct": 1,
+      "explanation": "El dióxido de circonio es una cerámica policristalina sin fase vítrea, por lo que es insensible al ácido fluorhídrico. El chorreado crea microrrugosidades mecánicas, y el grupo fosfato MDP se une químicamente a los óxidos metálicos del circonio.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q24",
+      "type": "single-choice",
+      "question": "¿Qué se entiende por degradación hidrotérmica (envejecimiento) del dióxido de circonio?",
+      "media": [],
+      "options": [
+        "La transformación de la fase cristalina (tetragonal a monoclínica) iniciada a baja temperatura en medio húmedo",
+        "La oxidación significativa del metal, que provoca el desprendimiento de partículas de hierro en la superficie protésica",
+        "El desgaste mecánico acelerado causado exclusivamente por la fricción repetida de los ácidos alimentarios",
+        "La pérdida total e irreversible del tono y la traslucidez por acción de los rayos ultravioleta"
+      ],
+      "correct": 0,
+      "explanation": "Este fenómeno (Low Temperature Degradation) es una transformación espontánea de la estructura cristalina bajo la acción de la humedad bucal, capaz de crear microfisuras y deteriorar las propiedades mecánicas a largo plazo si el circonio no está adecuadamente estabilizado (a menudo con itrio).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q25",
+      "type": "single-choice",
+      "question": "¿Qué operación de mantenimiento es necesaria para garantizar la precisión geométrica del módulo sustractivo CAM?",
+      "media": [],
+      "options": [
+        "El ajuste manual del tono de los bloques dentro de la cámara de mecanizado",
+        "La calibración regular de los ejes de la máquina y el estricto control del desgaste de las fresas",
+        "El reemplazo sistemático del vidrio óptico del escáner de sobremesa tras cada ciclo",
+        "El llenado manual del depósito con yeso líquido para estabilizar el bloque"
+      ],
+      "correct": 1,
+      "explanation": "Una máquina no calibrada se desvía en el espacio. Además, el uso de fresas desgastadas altera el diámetro real de la herramienta de corte, comprometiendo la adaptación marginal de la prótesis y creando microfisuras.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

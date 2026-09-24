@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "informatique_logiciels_dentaires_debutant1_001",
+    "title": "Dental IT & Software - Beginner 1",
+    "specialty": "INFO",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "INFO_D1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized all his patient files and stores them on his computer. Dr. Tazi keeps his files in paper format. According to Article 12 of Law 09-08, what is their respective obligation towards the CNDP?",
+      "media": [],
+      "options": [
+        "Only Dr. Chamssi must declare personal data processing, because he uses digital media",
+        "Neither has any obligation because health data is excluded from the law",
+        "Both must declare their data processing, because the law applies regardless of the medium",
+        "Only Dr. Tazi must declare because paper is more risky in case of theft"
+      ],
+      "correct": 2,
+      "explanation": "Law 09-08 applies to any processing of personal data, regardless of the medium (paper or digital). Both dentists process their patients' personal data, so they must declare their processing to the CNDP.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q02",
+      "type": "single-choice",
+      "question": "Dr. Chamssi made a CNDP declaration and received his receipt. Dr. Tazi never made a declaration for his paper files. According to Article 52 of Law 09-08, what fine is Dr. Tazi exposed to?",
+      "media": [],
+      "options": [
+        "No fine, because paper files are excluded from the scope of the law",
+        "A fine of 1,000 to 5,000 DH for failure to declare",
+        "A fine of 10,000 to 100,000 DH for failure to make a prior declaration",
+        "A fine of 100,000 to 500,000 DH for medical data"
+      ],
+      "correct": 2,
+      "explanation": "Article 52 of Law 09-08 provides for a fine of 10,000 to 100,000 DH for failure to make a prior declaration, regardless of the medium used.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q03",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has integrated the CNDP receipt number into his collection forms and information notices. Dr. Tazi simply displays a notice in the waiting room. What is Dr. Tazi's legal situation?",
+      "media": [],
+      "options": [
+        "He is compliant, because display in the waiting room is sufficient for paper files",
+        "He is in violation, because the receipt number must appear in all information notices",
+        "He is compliant, because paper files do not require a receipt number",
+        "He is in violation, because he cannot use paper according to Law 09-08"
+      ],
+      "correct": 1,
+      "explanation": "The CNDP receipt or authorization number must be integrated into all information notices, collection forms, and general terms and conditions, regardless of the medium.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q04",
+      "type": "single-choice",
+      "question": "Dr. Chamssi uses a cloud-based patient management software (hosted abroad). Dr. Tazi keeps his patient files in filing cabinets at his practice. According to Articles 43 and 44 of Law 09-08, what additional step must Dr. Chamssi take?",
+      "media": [],
+      "options": [
+        "None, the cloud is considered local storage under Moroccan law",
+        "A request for data transfer abroad to the CNDP",
+        "Only a simplified declaration",
+        "A notification to the Ministry of Health"
+      ],
+      "correct": 1,
+      "explanation": "Cloud hosting abroad involves a transfer of personal data outside Morocco. Dr. Chamssi must make a request for data transfer abroad to the CNDP, a step that Dr. Tazi does not have to take.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q05",
+      "type": "single-choice",
+      "question": "Dr. Chamssi made a CNDP declaration for his patient management software. Dr. Tazi made a declaration for his paper files. According to Article 19 of Law 09-08, what is the deadline for issuing the receipt?",
+      "media": [],
+      "options": [
+        "The 24-hour deadline only applies to digital processing",
+        "The 8-day deadline only applies to paper processing",
+        "The deadline is the same for both: the CNDP issues the receipt within 24 hours",
+        "Dr. Chamssi must wait 8 days because his processing is more complex"
+      ],
+      "correct": 2,
+      "explanation": "Article 19 of Law 09-08 provides that the CNDP issues the declaration receipt within 24 hours, regardless of the medium, provided the file is complete.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q06",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has installed a digital video surveillance camera in his waiting room. Dr. Tazi simply has a mirror without a camera. According to CNDP deliberation No. 350-2013, what notification regime applies to Dr. Chamssi?",
+      "media": [],
+      "options": [
+        "A mandatory prior authorization for digital video surveillance",
+        "A simplified declaration in accordance with CNDP deliberation",
+        "No declaration, because video surveillance is free in medical practices",
+        "A normal declaration with an 8-day deadline"
+      ],
+      "correct": 1,
+      "explanation": "Video surveillance falls under the simplified declaration regime (form F214) in accordance with deliberation No. 350-2013, with an obligation to inform the persons concerned via a pictogram.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q07",
+      "type": "single-choice",
+      "question": "Dr. Chamssi uses a digital scanner to archive his documents. Dr. Tazi still uses paper. Regarding the evidentiary value of the documents kept, what is Dr. Chamssi's legal situation?",
+      "media": [],
+      "options": [
+        "His digital documents have no legal value, only paper is valid",
+        "His digital documents have the same probative force as paper if they are kept under conditions guaranteeing their integrity",
+        "His digital documents have higher probative value than paper",
+        "He must keep both versions, paper and digital, for the archive to be valid"
+      ],
+      "correct": 1,
+      "explanation": "The principle of electronic archiving with probative value, in application of the Civil Code, provides that the electronic document has the same probative force as the document on paper, provided that its integrity is guaranteed.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q08",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized all his invoices. Dr. Tazi still keeps his paper invoices. What is the legal retention period for accounting documents for both dentists?",
+      "media": [],
+      "options": [
+        "5 years for digital, 10 years for paper",
+        "10 years for both, regardless of the medium",
+        "6 years for both, according to the General Tax Code",
+        "3 years for digital, 6 years for paper"
+      ],
+      "correct": 1,
+      "explanation": "The legal retention period for accounting documents is 10 years, regardless of the medium, in accordance with the Commercial Code. This obligation applies to both digital and paper.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q09",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has installed CRM software to manage his patient base. Dr. Tazi uses a simple paper appointment book. According to Law 09-08, what is the common obligation for both dentists?",
+      "media": [],
+      "options": [
+        "Keep a register of personal data processing, regardless of the medium",
+        "Only Dr. Chamssi must keep a register because his processing is digital",
+        "Only Dr. Tazi must keep a register because paper is less secure",
+        "Neither has any register obligation"
+      ],
+      "correct": 0,
+      "explanation": "Law 09-08 requires data controllers to keep a register of personal data processing, documenting purposes, data categories, recipients, and security measures. This obligation applies regardless of the medium.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q10",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a request for prior authorization for his health data. Dr. Tazi believes that his paper files are exempt from authorization. According to Article 21 of Law 09-08, who is right?",
+      "media": [],
+      "options": [
+        "Dr. Tazi is right: health data on paper is exempt from authorization",
+        "Dr. Chamssi is right: health data is sensitive data and requires authorization, regardless of the medium",
+        "Dr. Chamssi is wrong: digital health data falls under a simple declaration",
+        "Dr. Tazi is right: only digital storage of health data is regulated"
+      ],
+      "correct": 1,
+      "explanation": "Article 21 of Law 09-08 considers health data as sensitive data, regardless of the medium. Its processing is subject to the prior authorization regime, whether the data is on paper or digital.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q11",
+      "type": "single-choice",
+      "question": "Dr. Chamssi suffered data loss due to a computer failure. Dr. Tazi saw his paper files destroyed by a fire. What is the common point between their two situations?",
+      "media": [],
+      "options": [
+        "The obligation to notify the data loss to the CNDP",
+        "The obligation to notify the breach to the CNSS",
+        "The obligation to inform the patients concerned in the event of a breach",
+        "The obligation to make a declaration to the Order of Dentists"
+      ],
+      "correct": 2,
+      "explanation": "In the event of a data breach (loss, destruction, leakage), the data controller must, in accordance with recent legal developments, inform the persons concerned when the breach is likely to create a high risk for their rights and freedoms, regardless of the medium.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q12",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a CNDP declaration for his online management software (SaaS). Dr. Tazi has made a declaration for his paper files. What is the fundamental difference in Dr. Chamssi's responsibility compared to Dr. Tazi's?",
+      "media": [],
+      "options": [
+        "Dr. Chamssi is not responsible for the data, because the host is responsible",
+        "Dr. Chamssi has an obligation to subcontract with reinforced security clauses",
+        "Dr. Tazi has more responsibilities because his paper files are less secure",
+        "There is no difference in responsibility between the two"
+      ],
+      "correct": 1,
+      "explanation": "When using a subcontractor (cloud host, software publisher), Dr. Chamssi must conclude a subcontracting contract with clauses guaranteeing the security and confidentiality of the data. This is an obligation that Dr. Tazi does not have.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q13",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized his files and made them remotely accessible to patients via a portal. Dr. Tazi keeps the traditional system of consultation by appointment. According to Article 5 of Law 09-08, must the two dentists inform their patients differently?",
+      "media": [],
+      "options": [
+        "Yes, Dr. Chamssi must provide a more detailed information notice for the portal",
+        "No, the information notices must be the same for all processing, regardless of the medium",
+        "Yes, only Dr. Tazi must inform his patients because paper is less secure",
+        "No, the law does not provide for an information obligation for dental practices"
+      ],
+      "correct": 0,
+      "explanation": "By offering remote consultation, Dr. Chamssi collects additional data (connection identifiers, logs, IP addresses) and must therefore inform his patients of these new processing operations. The purpose, medium, and means of processing may require adapted information notices.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q14",
+      "type": "single-choice",
+      "question": "Dr. Chamssi uses electronic signatures for his prescriptions. Dr. Tazi still uses handwritten signatures. According to archiving standards, what advantage does the electronic signature offer Dr. Chamssi?",
+      "media": [],
+      "options": [
+        "No advantage, the two signatures have the same legal value",
+        "The electronic signature guarantees the integrity and authenticity of the document",
+        "The electronic signature exempts from keeping documents",
+        "The electronic signature is less reliable than the handwritten signature"
+      ],
+      "correct": 1,
+      "explanation": "The electronic signature, associated with a timestamp and a digital fingerprint, guarantees the integrity and authenticity of the document, in response to the criteria of a reliable audit trail. This is an advantage in the context of electronic archiving with probative value.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q15",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has opted for an electronic document management system (EDMS) for his archives. Dr. Tazi keeps his archives in physical cabinets. According to conservation standards, what is the advantage of Dr. Chamssi's system?",
+      "media": [],
+      "options": [
+        "Storage is less expensive, but searching is longer",
+        "Search is faster and access to documents is easier, but security requirements are reinforced",
+        "There is no advantage, the two systems are equivalent",
+        "The paper system is more reliable because there is no risk of failure"
+      ],
+      "correct": 1,
+      "explanation": "EDMS allows fast searching and easy access to documents. However, it imposes reinforced security requirements to guarantee the integrity and authenticity of digital data.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q16",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a CNDP declaration for his digital processing. Dr. Tazi has made a declaration for his paper files. What must imperatively appear in the information notices of both dentists?",
+      "media": [],
+      "options": [
+        "The telephone number of the President of the Order of Dentists",
+        "The CNDP receipt number and the rights of access, rectification, and objection",
+        "The color of the folders used for the files",
+        "The exact model of the software used"
+      ],
+      "correct": 1,
+      "explanation": "Information notices must include the identity of the data controller, the purposes, the recipients, the rights of access, rectification, and objection, as well as the CNDP receipt number once obtained.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q17",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has hosted his data with a certified HDS provider. Dr. Tazi does not need a provider. What does HDS certification bring to Dr. Chamssi?",
+      "media": [],
+      "options": [
+        "A tax reduction on digital investments",
+        "An additional guarantee of security and compliance with health data requirements",
+        "An exemption from CNDP declaration",
+        "A dispensation from subcontracting"
+      ],
+      "correct": 1,
+      "explanation": "HDS (Health Data Host) certification guarantees that the provider respects security and compliance requirements specific to health data, thus strengthening the protection of patients' data.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q18",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has integrated his management software with an online appointment booking platform. Dr. Tazi uses the telephone for his appointments. According to the CNDP deliberation on cookies, what additional obligation does Dr. Chamssi have?",
+      "media": [],
+      "options": [
+        "None, because online appointments are not regulated",
+        "Collect the prior consent of visitors for the cookies on his site",
+        "Declare the appointment booking tool to the Order of Dentists",
+        "Install an antivirus on his website"
+      ],
+      "correct": 1,
+      "explanation": "The use of cookies on a website for online appointment booking requires collecting the prior consent of visitors, in accordance with the CNDP deliberation on cookies and web trackers.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q19",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has set up an automatic data backup system. Dr. Tazi simply has a copy of his files at a colleague's practice. According to legal obligations, are the two approaches equivalent?",
+      "media": [],
+      "options": [
+        "Yes, both approaches are valid",
+        "No, Dr. Chamssi's automatic backup must comply with security and confidentiality standards",
+        "Yes, because both are backups",
+        "No, the paper copy at a colleague's is prohibited"
+      ],
+      "correct": 1,
+      "explanation": "The backup of personal data, including backups, is subject to the same security and confidentiality requirements as the main processing. Dr. Chamssi must ensure the security of his backups and their compliance with Law 09-08.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q20",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has digitized his patients' files for an indefinite period. Dr. Tazi keeps them on paper without a fixed limit. According to Article 6 of Law 09-08, what is the obligation of both dentists?",
+      "media": [],
+      "options": [
+        "Keep the data indefinitely for medical reasons",
+        "Set a limited retention period, proportionate to the purposes of the processing",
+        "There is no retention period for medical records",
+        "Destroy the files after 3 years"
+      ],
+      "correct": 1,
+      "explanation": "The principle of proportionality requires not keeping data beyond the time necessary to achieve the purpose of the processing, both for digital and paper.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q21",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a CNDP declaration for his data processing. Dr. Tazi has made a request for prior authorization. What is the main difference between the two procedures?",
+      "media": [],
+      "options": [
+        "There is no difference, the two procedures are equivalent",
+        "The declaration is for non-sensitive data, the authorization for sensitive data",
+        "The declaration only concerns digital data, the authorization concerns paper data",
+        "Authorization is faster than declaration"
+      ],
+      "correct": 1,
+      "explanation": "Prior declaration is the default regime for the majority of processing. Prior authorization is required for sensitive data (health, national ID, etc.) and processing presenting particular risks.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q22",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has made a CNDP declaration. Dr. Tazi must obtain prior authorization. What is the risk for Dr. Tazi if he implements his processing without having obtained authorization?",
+      "media": [],
+      "options": [
+        "No risk, authorization is just an administrative formality",
+        "A fine of 10,000 to 100,000 DH and/or prison sentences",
+        "A simple injunction from the CNDP",
+        "A ban on practicing the profession"
+      ],
+      "correct": 1,
+      "explanation": "Implementing processing subject to authorization without having obtained it exposes the controller to the fine provided for in Article 52 of Law 09-08, just like the failure to declare.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q23",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has installed practice management software. Dr. Tazi still uses filing cabinets. According to Law 09-08, can Dr. Chamssi use his patients' data for anonymized statistical studies?",
+      "media": [],
+      "options": [
+        "Yes, because the data is anonymized and no longer allows identification of individuals",
+        "Yes, if he declares it to the CNDP",
+        "No, because medical data cannot be used for statistics",
+        "No, the statistical study requires prior authorization"
+      ],
+      "correct": 0,
+      "explanation": "Law 09-08 does not apply to anonymized data, because it no longer allows identification of the persons concerned. Anonymization is an exception to the scope of the law.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q24",
+      "type": "single-choice",
+      "question": "Dr. Chamssi digitizes his data and wishes to use facial recognition technologies for access to his practice. Dr. Tazi uses physical keys. According to CNDP deliberation D-108-EUS/2020, must Dr. Chamssi obtain prior authorization?",
+      "media": [],
+      "options": [
+        "No, facial recognition is free in medical practices",
+        "Yes, specific prior authorization is required",
+        "Yes, but only if he uses the data for research purposes",
+        "No, he can install this system freely"
+      ],
+      "correct": 1,
+      "explanation": "The use of facial recognition is considered sensitive processing and generally requires prior authorization from the CNDP, as provided for in deliberation D-108-EUS/2020.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "INFO_D1_Q25",
+      "type": "single-choice",
+      "question": "Dr. Chamssi has a website presenting his practice. Dr. Tazi does not have a website. According to the CNDP deliberation on cookies, what must Dr. Chamssi do?",
+      "media": [],
+      "options": [
+        "Nothing, the deliberation does not concern dental practices",
+        "Obtain the prior consent of visitors for non-strictly necessary cookies",
+        "Make a special declaration to the CNSS",
+        "Display a simple information banner"
+      ],
+      "correct": 1,
+      "explanation": "The CNDP deliberation on cookies and web trackers requires obtaining the prior consent of visitors for cookies that are not strictly necessary for the functioning of the site.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

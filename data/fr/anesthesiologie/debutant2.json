@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "anesthesiologie_debutant2_001",
+    "title": "Anesthesiologie - Débutant 2",
+    "specialty": "ANES",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ANES_D2_Q01",
+      "type": "single-choice",
+      "question": "Quelle propriété pharmacocinétique et structurelle distingue l'articaïne des autres amides ?",
+      "media": [],
+      "options": [
+        "Une métabolisation strictement hépatique par les cytochromes P450",
+        "Une absence totale de liaison aux protéines plasmatiques",
+        "Une diffusion osseuse supérieure favorisée par la présence d'un anneau thiophène",
+        "Une solubilité aqueuse nulle nécessitant un solvant lipidique"
+      ],
+      "correct": 2,
+      "explanation": "L'anneau thiophène de l'articaïne augmente sa liposolubilité, ce qui lui permet de traverser plus facilement les tissus denses et la corticale osseuse que l'anneau benzénique des autres amides.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q02",
+      "type": "single-choice",
+      "question": "Quelle est la dose maximale recommandée d'articaïne à 4% chez un patient adulte sain ?",
+      "media": [],
+      "options": [
+        "7 mg/kg de poids corporel, sans dépasser un plafond absolu de 500 mg",
+        "4,4 mg/kg de poids corporel, calquée sur le profil de la mépivacaïne",
+        "10 mg/kg de poids corporel, en raison de sa faible toxicité cardiaque",
+        "2 mg/kg de poids corporel, pour limiter le risque de méthémoglobinémie"
+      ],
+      "correct": 0,
+      "explanation": "La dose maximale est fixée à 7 mg/kg chez l'adulte, ce qui représente un maximum d'environ 6 à 7 cartouches de 1,8 mL à 4% pour un individu standard de 70 kg.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q03",
+      "type": "single-choice",
+      "question": "Quelle est l'indication clinique privilégiée de l'articaïne 4% en raison de son fort pouvoir de diffusion ?",
+      "media": [],
+      "options": [
+        "L'anesthésie linguale isolée pour biopsie des papilles",
+        "L'anesthésie palatine transpapillaire bilatérale",
+        "Le bloc nerveux infra-orbitaire par voie intra-nasale",
+        "L'anesthésie par infiltration para-périostée pour les molaires mandibulaires chez l'adulte"
+      ],
+      "correct": 3,
+      "explanation": "Bien que le bloc du NAI soit la référence à la mandibule, la grande diffusibilité de l'articaïne permet souvent d'obtenir une anesthésie pulpaire suffisante sur les molaires ou prémolaires mandibulaires par simple infiltration vestibulaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q04",
+      "type": "single-choice",
+      "question": "La mépivacaïne à 3% se caractérise cliniquement par :",
+      "media": [],
+      "options": [
+        "Une action vasodilatatrice intrinsèque très faible permettant son utilisation sans vasoconstricteur",
+        "Un métabolisme exclusivement rénal court-circuitant le foie",
+        "Une toxicité systémique trois fois supérieure à celle de la lidocaïne",
+        "Une durée d'action pulpaire prolongée dépassant les trois heures"
+      ],
+      "correct": 0,
+      "explanation": "La mépivacaïne possède une propriété vasoconstrictrice intrinsèque légère (ou du moins une vasodilatation très faible), ce qui permet de maintenir une anesthésie efficace sans ajouter d'épinéphrine.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q05",
+      "type": "single-choice",
+      "question": "Quelle est l'indication type de la mépivacaïne 3% pure (sans vasoconstricteur) ?",
+      "media": [],
+      "options": [
+        "Les chirurgies d'implants multiples avec lambeaux étendus",
+        "Les actes de soins courts chez les patients présentant des contre-indications majeures aux amines sympathomimétiques",
+        "Les traitements endodontiques complexes sur molaires pulpités",
+        "Les avulsions programmées en pédodontie sur dents permanentes immatures"
+      ],
+      "correct": 1,
+      "explanation": "Elle est idéale pour les procédures de courte durée (environ 20 à 30 min d'anesthésie pulpaire) chez les patients hypertendus non contrôlés, coronariens instables ou sévèrement diabétiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q06",
+      "type": "single-choice",
+      "question": "Quel est le risque pharmacologique et hématologique majeur lié à un surdosage de prilocaïne ?",
+      "media": [],
+      "options": [
+        "Une méthémoglobinémie induite par son métabolite, l'o-toluidine",
+        "Une insuffisance rénale aiguë par précipitation tubulaire",
+        "Une nécrose myocardique directe par blocage des récepteurs bêta",
+        "Une réaction d'allergie croisée immédiate avec tous les esters"
+      ],
+      "correct": 0,
+      "explanation": "L'ortho-toluidine, un métabolite de la prilocaïne, oxyde le fer de l'hémoglobine, la transformant en méthémoglobine incapable de transporter l'oxygène. Cela peut provoquer une cyanose à forte dose.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q07",
+      "type": "single-choice",
+      "question": "Quelle est la dose maximale recommandée de prilocaïne à 4% chez l'adulte sain ?",
+      "media": [],
+      "options": [
+        "4 mg/kg de poids corporel, sans dépasser 300 mg",
+        "8 mg/kg de poids corporel, sans dépasser un plafond absolu de 600 mg",
+        "12 mg/kg de poids corporel, en raison d'une clairance ultra-rapide",
+        "1,5 mg/kg de poids corporel, pour éviter les risques de bradycardie"
+      ],
+      "correct": 1,
+      "explanation": "La limite de sécurité pour la prilocaïne est fixée à 8 mg/kg (max 600 mg) pour prévenir le risque de survenue d'une méthémoglobinémie clinique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q08",
+      "type": "single-choice",
+      "question": "Le bloc mandibulaire classique à l'épine de Spix vise principalement à interrompre la conduction de quel nerf ?",
+      "media": [],
+      "options": [
+        "Le nerf alvéolaire inférieur",
+        "Le nerf buccal long",
+        "Le nerf mylo-hyoïdien",
+        "Le nerf mentonnier à son origine"
+      ],
+      "correct": 0,
+      "explanation": "Il cible le tronc du nerf alvéolaire inférieur juste avant qu'il ne s'engage dans le foramen mandibulaire, désensibilisant ainsi toutes les dents du quadrant correspondant.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q09",
+      "type": "single-choice",
+      "question": "Quel est le repère anatomique clé pour positionner l'aiguille lors d'un bloc mandibulaire direct ?",
+      "media": [],
+      "options": [
+        "Le foramen infra-orbitaire et la canine supérieure",
+        "La tubérosité maxillaire en arrière du canal palatin",
+        "La hauteur de la dépression coronoidienne, le ligament ptérygo-mandibulaire et le plan occlusal des molaires",
+        "L'espace desmodontal de la première molaire inférieure"
+      ],
+      "correct": 2,
+      "explanation": "La piqûre se fait à l'intersection d'une ligne horizontale passant par le point le plus profond de l'encoche coronoïde (1 cm au-dessus du plan occlusal) et d'une ligne verticale passant juste en dehors du pli ptérygo-mandiculaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q10",
+      "type": "single-choice",
+      "question": "Quelle complication neurologique transitoire est spécifiquement liée à un défaut de repérage lors d'un bloc mandibulaire (Spix) ?",
+      "media": [],
+      "options": [
+        "Une paralysie faciale transitoire par dépôt de la solution dans la loge parotidienne",
+        "Une cécité unilatérale définitive par diffusion rétrograde",
+        "Une perte immédiate de l'audition par atteinte du nerf vestibulo-cochléaire",
+        "Une névralgie du trijumeau irréversible par section axonale"
+      ],
+      "correct": 0,
+      "explanation": "Si l'aiguille est orientée trop en arrière et ne prend pas contact avec l'os de la branche montante, elle pénètre dans la glande parotide et l'anesthésique bloque le nerf facial (VII), provoquant une parésie faciale temporaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q11",
+      "type": "single-choice",
+      "question": "La technique de bloc mandibulaire selon Gow-Gates se distingue principalement par :",
+      "media": [],
+      "options": [
+        "Une approche en bouche fermée visant la ligne oblique interne",
+        "L'injection de la solution au niveau du col du condyle mandibulaire",
+        "Une infiltration supra-périostée exclusive au niveau de la symphyse",
+        "L'utilisation d'aiguilles ultra-courtes de 30 Gauges sans contact osseux"
+      ],
+      "correct": 1,
+      "explanation": "La technique de Gow-Gates est un bloc nerveux vrai à haut col. Le dépôt se fait au niveau de la face antéro-médiale du col du condyle, ce qui permet de bloquer le NAI, le lingual, le buccal et le mylo-hyoïdien en une seule injection.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q12",
+      "type": "single-choice",
+      "question": "La technique de bloc mandibulaire de Vazirani-Akinosi est spécifiquement indiquée en cas de :",
+      "media": [],
+      "options": [
+        "Trismus sévère ou limitation majeure de l'ouverture buccale (technique en bouche fermée)",
+        "Besoin d'anesthésie simultanée du palais et du voile",
+        "Chirurgie endodontique exclusive sur les incisives maxillaires",
+        "Absence de repères molaires chez le patient totalement édenté"
+      ],
+      "correct": 0,
+      "explanation": "La technique d'Akinosi se réalise en bouche fermée. L'aiguille avance parallèlement au plan occlusal maxillaire à la hauteur de la jonction muco-gingivale supérieure, ce qui est salvateur en cas de trismus d'origine infectieuse ou traumatique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q13",
+      "type": "single-choice",
+      "question": "Le bloc du nerf infra-orbitaire permet d'obtenir une analgésie de quelles structures ?",
+      "media": [],
+      "options": [
+        "Les molaires maxillaires et le sinus maxillaire postérieur",
+        "Les incisives, les canines et les prémolaires maxillaires du côté injecté, ainsi que la lèvre supérieure et l'aile du nez",
+        "La muqueuse linguale et le plancher buccal antérieur",
+        "Le voile du palais et les piliers amygdaliens"
+      ],
+      "correct": 1,
+      "explanation": "En pénétrant dans le canal infra-orbitaire, la solution bloque les rameaux alvéolaires supérieurs antérieurs et moyens, assurant une anesthésie étendue du secteur antérieur maxillaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q14",
+      "type": "single-choice",
+      "question": "L'anesthésie du nerf nasopalatin au niveau du foramen incisif cible principalement :",
+      "media": [],
+      "options": [
+        "La gencive vestibulaire molaire inférieure",
+        "La muqueuse palatine antérieure, de canine à canine",
+        "Le tiers postérieur de la langue et l'isthme du gosier",
+        "La lèvre supérieure et la cloison nasale externe"
+      ],
+      "correct": 1,
+      "explanation": "Le nerf nasopalatin émerge de la papille incisive (foramen palatin antérieur) et innerve les tissus mous palatins du secteur prémaxillaire (de la face mésiale de la première prémolaire droite à la gauche).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q15",
+      "type": "single-choice",
+      "question": "L'anesthésie du nerf grand palatin au niveau du foramen palatin postérieur est requise pour insensibiliser :",
+      "media": [],
+      "options": [
+        "La muqueuse palatine de la région des prémolaires et molaires",
+        "Le plancher buccal et la face ventrale de la langue",
+        "L'émail des incisives centrales supérieures uniquement",
+        "La cloison médiane du sinus maxillaire"
+      ],
+      "correct": 0,
+      "explanation": "Le nerf grand palatin émerge du foramen palatin postérieur (souvent situé en regard de la deuxième ou troisième molaire supérieure) et assure l'innervation sensitive des tissus mous du palais postérieur.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q16",
+      "type": "single-choice",
+      "question": "Pourquoi l'aspiration (test de reflux) est-elle considérée comme une étape obligatoire avant toute injection ?",
+      "media": [],
+      "options": [
+        "Pour mesurer la résistance mécanique du tissu interstitiel",
+        "Pour éliminer l'excès de pression au sein de la seringue",
+        "Pour détecter une pénétration intravasculaire accidentelle de l'aiguille",
+        "Pour s'assurer que le biseau de l'aiguille est orienté vers l'os"
+      ],
+      "correct": 2,
+      "explanation": "L'aspiration positive (reflux de sang dans la cartouche) indique que l'extrémité de l'aiguille se trouve dans la lumière d'un vaisseau. Injecter à cet endroit provoquerait une toxicité systémique immédiate.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q17",
+      "type": "single-choice",
+      "question": "Quelle est la conduite à tenir clinique immédiate en cas d'aspiration positive mineure ?",
+      "media": [],
+      "options": [
+        "Retirer l'aiguille de 1 à 2 mm, modifier légèrement l'angulation, ré-aspirer et injecter si le test devient négatif",
+        "Poursuivre l'injection en accélérant le rythme pour vider la carpule",
+        "Sortir immédiatement l'aiguille et abandonner définitivement la séance de soins",
+        "Injecter une solution saline sous pression pour rincer le vaisseau concerné"
+      ],
+      "correct": 0,
+      "explanation": "Si l'aspiration montre un léger filet de sang, un recul ou un déplacement millimétrique permet souvent de sortir du vaisseau. Il est impératif de refaire une aspiration avant d'injecter. Si la carpule est massivement teintée de sang, il faut la changer.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q18",
+      "type": "single-choice",
+      "question": "L'apparition d'un hématome immédiat après une anesthésie tronculaire résulte de :",
+      "media": [],
+      "options": [
+        "Une réaction immuno-allergique locale à libération d'histamine",
+        "La lacération accidentelle d'un vaisseau sanguin (artère ou veine) entraînant l'épanchement de sang dans les tissus mous",
+        "Une toxicité chimique directe du sel anesthésique sur les cellules musculaires",
+        "Une infection bactérienne fulgurante introduite par l'aiguille"
+      ],
+      "correct": 1,
+      "explanation": "La blessure d'un vaisseau (comme l'artère alvéolaire inférieure ou le plexus ptérygoïdien) provoque un saignement intra-tissulaire immédiat, se manifestant par un gonflement et une ecchymose postopératoire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q19",
+      "type": "single-choice",
+      "question": "La paresthésie post-anesthésique se définit cliniquement par :",
+      "media": [],
+      "options": [
+        "Une perte totale de la motricité des muscles de la mimique faciale",
+        "Une douleur fulgurante et lancinante durant l'ouverture buccale",
+        "Une altération ou une persistance de la perte de sensibilité nerveuse au-delà de la durée d'action théorique du produit",
+        "Une éruption cutanée vésiculeuse localisée le long du trajet nerveux"
+      ],
+      "correct": 2,
+      "explanation": "La paresthésie se caractérise par des sensations anormales (engourdissement, picotements, dysesthésie) persistant des jours, des semaines ou des mois après l'injection, indiquant une atteinte nerveuse.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q20",
+      "type": "single-choice",
+      "question": "Quels sont les deux principaux facteurs étiologiques incriminés dans la survenue d'une paresthésie ?",
+      "media": [],
+      "options": [
+        "L'utilisation d'une aiguille trop fine (30G) ou un rythme d'injection trop lent",
+        "Un traumatisme mécanique direct (contact aiguille-nerf) ou une neurotoxicité chimique liée au produit (notamment les solutions à forte concentration comme à 4%)",
+        "Une infection parodontale préexistante ou un mordançage acide préalable",
+        "Un choc thermique tissulaire ou une mauvaise orientation du biseau vers la muqueuse"
+      ],
+      "correct": 1,
+      "explanation": "Le contact direct de l'aiguille avec le fascicule nerveux ou la neurotoxicité intrinsèque des molécules hautement concentrées (comme l'articaïne 4% ou la prilocaïne 4% rapportées dans la littérature lors de blocs) sont les causes majeures.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q21",
+      "type": "single-choice",
+      "question": "Quelle est la prise en charge initiale recommandée face à une paresthésie persistante du nerf lingual après une avulsion de troisième molaire ?",
+      "media": [],
+      "options": [
+        "Une réexploration chirurgicale immédiate avec micro-suture nerveuse",
+        "Une surveillance clinique rigoureuse, la rassurance du patient, la cartographie de la zone et éventuellement une corticothérapie initiale",
+        "La prescription immédiate d'une antibiothérapie à large spectre pendant un mois",
+        "Des injections locales de lidocaïne répétées pour stimuler la repousse axonale"
+      ],
+      "correct": 1,
+      "explanation": "La majorité des paresthésies iatrogènes se résolvent spontanément en moins de 8 à 12 semaines. La prise en charge repose sur le suivi, l'évaluation de la récupération sensorielle et le soutien psychologique du patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q22",
+      "type": "single-choice",
+      "question": "Le trismus post-anesthésique est principalement secondaire à :",
+      "media": [],
+      "options": [
+        "Un traumatisme direct ou un hématome au sein du muscle ptérygoïdien médial lors d'un bloc",
+        "Une réaction d'hypersensibilité immédiate de type IV affectant l'articulation",
+        "Une fracture microscopique non déplacée du col du condyle",
+        "L'inhibition prolongée des motoneurones centraux par le sel d'amide"
+      ],
+      "correct": 0,
+      "explanation": "Les injections répétées ou mal orientées lors d'un bloc de Spix peuvent traverser ou blesser le muscle ptérygoïdien médial. L'inflammation ou l'hématome intramusculaire qui en découle entraîne une contracture réflexe douloureuse limitant l'ouverture buccale.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q23",
+      "type": "single-choice",
+      "question": "Quelle précaution technique est impérative lors de la réalisation d'une anesthésie chez un patient hémophile sévère ?",
+      "media": [],
+      "options": [
+        "Utiliser systématiquement des blocs régionaux profonds (tronculaires)",
+        "Préférer les techniques d'infiltration locale, intraligamentaire ou intra-osseuse pour éviter le risque d'hématome des espaces profonds",
+        "Augmenter massivement les concentrations d'adrénaline jusqu'à 1:50 000",
+        "Exiger l'arrêt complet de ses perfusions de facteur de coagulation 48 heures avant"
+      ],
+      "correct": 1,
+      "explanation": "Les blocs tronculaires (comme le Spix) sont contre-indiqués chez les patients atteints de troubles sévères de l'hémostase sans substitution préalable, car ils risquent de provoquer un hématome pharyngé ou rétropharyngé suffocant. On privilégie les injections locales.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q24",
+      "type": "single-choice",
+      "question": "Quelle est l'attitude clinique contemporaine concernant l'anesthésie locale chez un patient sous traitement anticoagulant oral bien équilibré (ex: AVK avec INR stable entre 2 et 3, ou AOD) ?",
+      "media": [],
+      "options": [
+        "Contre-indiquer formellement toute intervention de chirurgie buccale sous anesthésie locale",
+        "Exiger l'arrêt systématique du traitement anticoagulant trois jours avant la séance",
+        "Réaliser des infiltrations locales ou des techniques intra-osseuses sans modifier le traitement anticoagulant, en assurant une hémostase locale soignée",
+        "Remplacer l'anticoagulant par une antibioprophylaxie lourde par voie intraveineuse"
+      ],
+      "correct": 2,
+      "explanation": "Les recommandations actuelles interdisent l'arrêt injustifié des anticoagulants pour des actes de routine en omnipratique en raison du risque thrombo-embolique majeur. Les techniques d'infiltration locale présentent un risque hémorragique très faible et parfaitement contrôlable localement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q25",
+      "type": "single-choice",
+      "question": "Quels symptômes signaux caractérisent le passage systémique rapide (injection intravasculaire accidentelle) de l'épinéphrine contenue dans la cartouche ?",
+      "media": [],
+      "options": [
+        "Une tachycardie immédiate, des palpitations, une poussée d'anxiété et des céphalées transitoires",
+        "Une bradycardie marquée associée à une léthargie musculaire profonde",
+        "Une chute tensionnelle catastrophique simulant un état de mort apparente",
+        "Un prurit généralisé avec éruptions cutanées maculo-papuleuses"
+      ],
+      "correct": 0,
+      "explanation": "L'épinéphrine injectée directement dans le réseau vasculaire provoque un effet systémique immédiat (effet bolus adrénergique) stimulant les récepteurs bêta-1 cardiaques, se traduisant par des palpitations intenses et une anxiété brutale mais brève (quelques minutes).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

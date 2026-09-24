@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "fiscalite_dentiste_debutant2_001",
+    "title": "Dentist Taxation - Beginner 2",
+    "specialty": "FISC",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "FISC_D2_Q01",
+      "type": "single-choice",
+      "question": "Dr. Chirif, a dentist practicing as a natural person, realizes a taxable profit of 250,000 DH. What would be the approximate tax advantage if he opted for an LLC subject to CIT?",
+      "media": [],
+      "options": [
+        "A tax saving of about 10,000 to 15,000 DH",
+        "A tax saving of about 25,000 to 30,000 DH",
+        "A tax increase of about 5,000 DH",
+        "No significant difference between the two regimes"
+      ],
+      "correct": 1,
+      "explanation": "From about 200,000 to 250,000 DH of profit, CIT (10% on the 0-300,000 DH bracket) becomes more advantageous than PIT (progressive scale up to 37%), generating a saving of about 25,000 to 30,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q02",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the CIT rate applicable to companies whose net profit is less than 100 million DH?",
+      "media": [],
+      "options": [
+        "10%",
+        "20%",
+        "25%",
+        "35%"
+      ],
+      "correct": 1,
+      "explanation": "The 2026 Finance Law completes the unification of CIT rates with a single rate of 20% for companies whose net profit is less than 100 million DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q03",
+      "type": "single-choice",
+      "question": "Dr. Falahi owns an LLC with a net profit of 250,000 DH. What will be the amount of CIT due according to the 2026 scale?",
+      "media": [],
+      "options": [
+        "25,000 DH",
+        "30,000 DH",
+        "37,500 DH",
+        "50,000 DH"
+      ],
+      "correct": 0,
+      "explanation": "For the 0 to 300,000 DH bracket, the CIT rate is 10%. The tax due is therefore 250,000 × 10% = 25,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q04",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the withholding tax rate applicable to dividends distributed by an LLC in 2026?",
+      "media": [],
+      "options": [
+        "10%",
+        "11.25%",
+        "12.5%",
+        "15%"
+      ],
+      "correct": 1,
+      "explanation": "The 2026 Finance Law continues the programmed reduction of the withholding tax rate on dividends, set at 11.25% for 2026, with a target of 10% in 2027.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q05",
+      "type": "single-choice",
+      "question": "Dr. Chirif owns an LLC with a net profit after tax of 300,000 DH, which he distributes as dividends. What will be the amount of withholding tax in 2026?",
+      "media": [],
+      "options": [
+        "30,000 DH",
+        "33,750 DH",
+        "37,500 DH",
+        "45,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "The withholding tax on dividends in 2026 is 11.25%. The amount is therefore 300,000 × 11.25% = 33,750 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q06",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the maximum marginal rate of PIT for a dentist practicing as a natural person?",
+      "media": [],
+      "options": [
+        "34%",
+        "37%",
+        "38%",
+        "40%"
+      ],
+      "correct": 1,
+      "explanation": "The 2026 Finance Law maintains the maximum marginal PIT rate at 37% for taxable net incomes exceeding 180,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q07",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the PIT exemption threshold for a single dentist with no dependents?",
+      "media": [],
+      "options": [
+        "30,000 DH",
+        "35,000 DH",
+        "40,000 DH",
+        "45,000 DH"
+      ],
+      "correct": 2,
+      "explanation": "The 2026 Finance Law maintains the PIT exemption threshold at 40,000 DH of taxable net income, exempting salaries below 6,000 DH per month.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q08",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the annual tax reduction amount for family dependents per dependent?",
+      "media": [],
+      "options": [
+        "360 DH",
+        "500 DH",
+        "600 DH",
+        "750 DH"
+      ],
+      "correct": 2,
+      "explanation": "The 2026 Finance Law increased the annual reduction for family dependents from 500 to 600 DH per dependent, with a cap of 3,600 DH for 6 dependents.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q09",
+      "type": "single-choice",
+      "question": "Dr. Falahi, a dentist practicing as a natural person, has 3 dependent children. What is the total amount of the tax reduction for family dependents he can deduct in 2026?",
+      "media": [],
+      "options": [
+        "1,080 DH",
+        "1,500 DH",
+        "1,800 DH",
+        "2,160 DH"
+      ],
+      "correct": 2,
+      "explanation": "The annual reduction is 600 DH per dependent × 3 children = 1,800 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q10",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the normal rate of the Minimum Contribution for companies subject to CIT?",
+      "media": [],
+      "options": [
+        "0.15%",
+        "0.25%",
+        "0.40%",
+        "0.50%"
+      ],
+      "correct": 1,
+      "explanation": "Since the reform introduced by the 2023 Finance Law, the normal Minimum Contribution rate is 0.25% of turnover.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q11",
+      "type": "single-choice",
+      "question": "Dr. Chirif owns an LLC with a turnover of 2,000,000 DH. What is the minimum amount of his Minimum Contribution?",
+      "media": [],
+      "options": [
+        "3,000 DH",
+        "5,000 DH",
+        "8,000 DH",
+        "10,000 DH"
+      ],
+      "correct": 0,
+      "explanation": "For companies subject to CIT, the Minimum Contribution cannot be less than 3,000 DH, even if 0.25% of turnover is below this amount.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q12",
+      "type": "single-choice",
+      "question": "Dr. Falahi owns an LLC with a turnover of 1,000,000 DH. What is the amount of his Minimum Contribution at the normal rate?",
+      "media": [],
+      "options": [
+        "2,000 DH",
+        "2,500 DH",
+        "3,000 DH",
+        "4,000 DH"
+      ],
+      "correct": 2,
+      "explanation": "The normal rate is 0.25% of turnover, i.e. 2,500 DH. Since the minimum is 3,000 DH, this amount is due.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q13",
+      "type": "single-choice",
+      "question": "Dr. Chirif created an LLC in January 2026. For how many months is it exempt from the Minimum Contribution?",
+      "media": [],
+      "options": [
+        "12 months",
+        "24 months",
+        "36 months",
+        "60 months"
+      ],
+      "correct": 2,
+      "explanation": "Newly created companies benefit from an exemption from the Minimum Contribution for their first 36 months of activity.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q14",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the reduced rate of the Minimum Contribution for certain essential products?",
+      "media": [],
+      "options": [
+        "0.10%",
+        "0.15%",
+        "0.20%",
+        "0.25%"
+      ],
+      "correct": 1,
+      "explanation": "A reduced rate of 0.15% applies to operations involving essential products (oil, gas, butter, oil, sugar, flour, water, electricity, medicines).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q15",
+      "type": "single-choice",
+      "question": "Dr. Falahi, a natural person, has a turnover of 800,000 DH. What is the applicable Minimum Contribution rate?",
+      "media": [],
+      "options": [
+        "0.25%",
+        "0.50%",
+        "4%",
+        "6%"
+      ],
+      "correct": 3,
+      "explanation": "For natural persons subject to PIT, the Minimum Contribution rate is 6% of turnover.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q16",
+      "type": "single-choice",
+      "question": "Dr. Chirif, a natural person, has a turnover of 800,000 DH and a taxable profit of 80,000 DH. Which tax will he pay if the Minimum Contribution exceeds the calculated PIT?",
+      "media": [],
+      "options": [
+        "The PIT calculated on 80,000 DH",
+        "The Minimum Contribution of 48,000 DH",
+        "The higher amount between PIT and Minimum Contribution",
+        "No tax because the profit is low"
+      ],
+      "correct": 2,
+      "explanation": "The taxpayer pays the higher amount between the calculated PIT and the Minimum Contribution. The Minimum Contribution for a natural person is 6% of turnover, i.e. 800,000 × 6% = 48,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q17",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the CIT rate applicable to companies whose net profit exceeds 100 million DH?",
+      "media": [],
+      "options": [
+        "20%",
+        "30%",
+        "35%",
+        "40%"
+      ],
+      "correct": 2,
+      "explanation": "The 2026 Finance Law completes the unification of CIT rates with a rate of 35% for companies whose net profit is equal to or exceeds 100 million DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q18",
+      "type": "single-choice",
+      "question": "Dr. Falahi owns an LLC with a net profit of 150,000 DH. What is the CIT rate applicable to this profit bracket?",
+      "media": [],
+      "options": [
+        "10%",
+        "20%",
+        "25%",
+        "35%"
+      ],
+      "correct": 0,
+      "explanation": "The CIT rate applicable to the taxable net profit bracket of 0 to 300,000 DH is 10%, regardless of the amount within this bracket.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q19",
+      "type": "single-choice",
+      "question": "Dr. Chirif owns an LLC with a net profit of 2,000,000 DH. What is the amount of CIT due in 2026?",
+      "media": [],
+      "options": [
+        "400,000 DH",
+        "520,000 DH",
+        "700,000 DH",
+        "800,000 DH"
+      ],
+      "correct": 1,
+      "explanation": "CIT is calculated by brackets: 300,000 × 10% = 30,000 DH, 700,000 × 20% = 140,000 DH, and 1,000,000 × 35% = 350,000 DH. Total = 520,000 DH.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q20",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the withholding tax rate on dividends in 2027 (target set by law)?",
+      "media": [],
+      "options": [
+        "5%",
+        "10%",
+        "11.25%",
+        "12.5%"
+      ],
+      "correct": 1,
+      "explanation": "The 2026 Finance Law continues the programmed reduction of the withholding tax rate on dividends to reach the target of 10% in 2027.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q21",
+      "type": "single-choice",
+      "question": "Dr. Falahi sells his business in 2026 at the age of 67. According to the 2026 Finance Law, what reduction does he benefit from on the capital gain?",
+      "media": [],
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "correct": 1,
+      "explanation": "Natural persons whose income is determined under the Single Professional Contribution regime benefit from a 50% reduction on the capital gain of intangible assets of the business, within the limit of 1,000,000 DH, provided they have reached at least 65 years of age.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q22",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, are retirement pensions exempt from PIT starting in 2026?",
+      "media": [],
+      "options": [
+        "No, only annuities are exempt",
+        "Yes, total exemption from PIT for retirement pensions and free life annuities",
+        "Yes, but only for pensions below 10,000 DH",
+        "No, pensions remain subject to the progressive scale"
+      ],
+      "correct": 1,
+      "explanation": "The 2026 Finance Law implements the total exemption from PIT for retirement pensions and free life annuities starting January 1, 2026.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q23",
+      "type": "single-choice",
+      "question": "Dr. Chirif opts for the Single Professional Contribution. What is the applicable flat-rate tax rate?",
+      "media": [],
+      "options": [
+        "4%",
+        "6%",
+        "10%",
+        "15%"
+      ],
+      "correct": 2,
+      "explanation": "The Single Professional Contribution offers a flat-rate tax at 10% applied to a flat-rate profit determined on turnover, without deduction of actual expenses.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q24",
+      "type": "single-choice",
+      "question": "According to the 2026 Finance Law, what is the net profit threshold from which companies are subject to the 35% CIT rate?",
+      "media": [],
+      "options": [
+        "300,000 DH",
+        "1,000,000 DH",
+        "50,000,000 DH",
+        "100,000,000 DH"
+      ],
+      "correct": 3,
+      "explanation": "The 2026 Finance Law completes the unification of CIT rates with a rate of 35% for companies whose net profit is equal to or exceeds 100 million DH. Below this threshold, the rate is 20%.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q25",
+      "type": "single-choice",
+      "question": "Dr. Falahi creates an LLC in 2026. What is the main tax advantage of the LLC compared to practicing as a natural person for a profit of 200,000 DH?",
+      "media": [],
+      "options": [
+        "No advantage, PIT is more favorable",
+        "A CIT rate of 10% on the first 300,000 DH bracket",
+        "Total tax exemption for 3 years",
+        "A CIT rate of 20% on the entire profit"
+      ],
+      "correct": 1,
+      "explanation": "For companies, CIT applies at 10% on the profit bracket of 0 to 300,000 DH, which is significantly more favorable than the progressive PIT scale which can reach 37% on the same income bracket.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

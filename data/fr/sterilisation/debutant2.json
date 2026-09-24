@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_debutant2_001",
+    "title": "Sterilisation - Débutant 2",
+    "specialty": "STER",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_D2_Q01",
+      "type": "single-choice",
+      "question": "Pourquoi le nettoyage manuel est-il fortement déconseillé ?",
+      "media": [],
+      "options": [
+        "Manque d'efficacité sur le calcaire",
+        "Risque élevé d'accidents percutants",
+        "Coût des brosses",
+        "Temps de séchage"
+      ],
+      "correct": 1,
+      "explanation": "Le risque de blessure par coupure est majeur.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q02",
+      "type": "single-choice",
+      "question": "Quel est le mécanisme principal du nettoyage aux ultrasons ?",
+      "media": [],
+      "options": [
+        "La cavitation",
+        "L'abrasion mécanique",
+        "La désinfection thermique",
+        "La dissolution"
+      ],
+      "correct": 0,
+      "explanation": "L'implosion de bulles (cavitation) décolle les salissures.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q03",
+      "type": "single-choice",
+      "question": "Quelle est la durée moyenne d'un cycle aux ultrasons ?",
+      "media": [],
+      "options": [
+        "1 min",
+        "30 min",
+        "5 à 10 min",
+        "1 heure"
+      ],
+      "correct": 2,
+      "explanation": "5-10 minutes suffisent pour une efficacité optimale.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q04",
+      "type": "single-choice",
+      "question": "Quel est l'avantage majeur du laveur-désinfecteur ?",
+      "media": [],
+      "options": [
+        "Remplace l'autoclave",
+        "Coût réduit",
+        "Standardisation et reproductibilité",
+        "Vapeur haute pression"
+      ],
+      "correct": 2,
+      "explanation": "Il automatise et garantit un niveau de propreté constant.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q05",
+      "type": "single-choice",
+      "question": "Quelles sont les étapes clés du cycle d'un laveur-désinfecteur ?",
+      "media": [],
+      "options": [
+        "Stérilisation, refroidissement",
+        "Lavage, stérilisation",
+        "Désinfection, rinçage",
+        "Prélavage, lavage, rinçage, séchage"
+      ],
+      "correct": 3,
+      "explanation": "Ce cycle complet permet de passer d'un état souillé à propre.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q06",
+      "type": "single-choice",
+      "question": "La désinfection thermique repose sur :",
+      "media": [],
+      "options": [
+        "Rayons UV",
+        "L'eau à 80-90°C",
+        "Choc de pression",
+        "Nébulisation"
+      ],
+      "correct": 1,
+      "explanation": "La chaleur humide détruit la majorité des pathogènes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q07",
+      "type": "single-choice",
+      "question": "Les désinfectants chimiques (aldéhydes, etc.) sont pour :",
+      "media": [],
+      "options": [
+        "Stérilisation instruments",
+        "Surfaces inanimées",
+        "Rinçage",
+        "Stockage"
+      ],
+      "correct": 1,
+      "explanation": "Ils sont efficaces sur les surfaces mais ne remplacent pas la stérilisation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q08",
+      "type": "single-choice",
+      "question": "Quel est le danger principal des aldéhydes ?",
+      "media": [],
+      "options": [
+        "Inefficacité",
+        "Prix élevé",
+        "Corrosion",
+        "Toxicité et irritation"
+      ],
+      "correct": 3,
+      "explanation": "Leur toxicité impose des précautions strictes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q09",
+      "type": "single-choice",
+      "question": "Pourquoi l'acide peracétique est-il utilisé ?",
+      "media": [],
+      "options": [
+        "Pouvoir sporicide élevé",
+        "Lubrification",
+        "Faible coût",
+        "Rinçage simple"
+      ],
+      "correct": 0,
+      "explanation": "C'est un désinfectant de haut niveau actif sur les spores.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q10",
+      "type": "single-choice",
+      "question": "Utilité de l'eau osmosée en fin de cycle :",
+      "media": [],
+      "options": [
+        "Fixer protéines",
+        "Refroidir",
+        "Éviter dépôts et corrosion",
+        "Désinfecter"
+      ],
+      "correct": 2,
+      "explanation": "Elle empêche le calcaire et protège l'acier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q11",
+      "type": "single-choice",
+      "question": "Cause principale de corrosion des instruments :",
+      "media": [],
+      "options": [
+        "Usage intensif",
+        "Humidité et produits inadaptés",
+        "Stockage sec",
+        "Changement de température"
+      ],
+      "correct": 1,
+      "explanation": "L'eau stagnante et les chlorures sont les ennemis de l'acier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q12",
+      "type": "single-choice",
+      "question": "Règle d'or pour prévenir la corrosion :",
+      "media": [],
+      "options": [
+        "Lubrification massive",
+        "Séchage immédiat et soigneux",
+        "Trempage prolongé",
+        "Brosses métalliques"
+      ],
+      "correct": 1,
+      "explanation": "Le séchage est l'étape la plus critique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q13",
+      "type": "single-choice",
+      "question": "Pourquoi lubrifier les instruments articulés ?",
+      "media": [],
+      "options": [
+        "Prévenir le grippage",
+        "Désinfecter",
+        "Remplacer le lavage",
+        "Accélérer le séchage"
+      ],
+      "correct": 0,
+      "explanation": "La lubrification est essentielle pour les charnières.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q14",
+      "type": "single-choice",
+      "question": "Quand lubrifier les instruments ?",
+      "media": [],
+      "options": [
+        "Chaque semaine",
+        "Après nettoyage, avant stérilisation",
+        "Avant la stérilisation annuelle",
+        "Si rigide"
+      ],
+      "correct": 1,
+      "explanation": "Une lubrification régulière maintient l'état optimal.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q15",
+      "type": "single-choice",
+      "question": "Le test de fuite (air leakage) vérifie :",
+      "media": [],
+      "options": [
+        "La qualité vapeur",
+        "Le temps",
+        "Présence spores",
+        "L'étanchéité de la chambre"
+      ],
+      "correct": 3,
+      "explanation": "Une fuite d'air compromet la stérilisation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q16",
+      "type": "single-choice",
+      "question": "Fréquence du test de fuite :",
+      "media": [],
+      "options": [
+        "Chaque cycle",
+        "Quotidienne",
+        "Mensuelle",
+        "Hebdomadaire"
+      ],
+      "correct": 1,
+      "explanation": "Indispensable au quotidien.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q17",
+      "type": "single-choice",
+      "question": "Que vérifie le test de Bowie-Dick ?",
+      "media": [],
+      "options": [
+        "Température",
+        "Salissure",
+        "Élimination air / pénétration vapeur",
+        "Qualité emballage"
+      ],
+      "correct": 2,
+      "explanation": "Confirme la pénétration de la vapeur.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q18",
+      "type": "single-choice",
+      "question": "Cycle de type 'Flash' :",
+      "media": [],
+      "options": [
+        "Pour objets fragiles",
+        "Standard emballé",
+        "Pour instruments nus",
+        "Désinfection chimique"
+      ],
+      "correct": 2,
+      "explanation": "Instruments nus pour utilisation immédiate.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q19",
+      "type": "single-choice",
+      "question": "Pourquoi limiter le cycle Flash ?",
+      "media": [],
+      "options": [
+        "Absence de maintien stérilité",
+        "Coût élevé",
+        "Inefficacité thermique",
+        "Fonte plastiques"
+      ],
+      "correct": 0,
+      "explanation": "Ne permet pas le stockage stérile.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q20",
+      "type": "single-choice",
+      "question": "Lieu de stockage des instruments :",
+      "media": [],
+      "options": [
+        "Humide",
+        "Exposé lumière",
+        "Propre, sec, à l'abri poussière",
+        "Température élevée"
+      ],
+      "correct": 2,
+      "explanation": "Préserve la barrière stérile.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q21",
+      "type": "single-choice",
+      "question": "Validité d'un emballage stérile :",
+      "media": [],
+      "options": [
+        "Limitée à 24h",
+        "Longue si intégrité conservée",
+        "Limitée à 1 mois",
+        "Variable"
+      ],
+      "correct": 1,
+      "explanation": "Tant que l'emballage est intègre et sec.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q22",
+      "type": "single-choice",
+      "question": "Si emballage trouvé humide :",
+      "media": [],
+      "options": [
+        "Utiliser après séchage",
+        "Utiliser si eau pure",
+        "Non, non stérile",
+        "Utiliser si récent"
+      ],
+      "correct": 2,
+      "explanation": "Indique une rupture de la barrière.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q23",
+      "type": "single-choice",
+      "question": "Pourquoi éviter de surcharger l'autoclave ?",
+      "media": [],
+      "options": [
+        "Usure joints",
+        "Surchauffe",
+        "Risque d'échec par blocage vapeur",
+        "Dommage porte"
+      ],
+      "correct": 2,
+      "explanation": "La vapeur doit circuler librement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q24",
+      "type": "single-choice",
+      "question": "Pourquoi un refroidissement lent ?",
+      "media": [],
+      "options": [
+        "Éviter condensation interne",
+        "Gagner du temps",
+        "Fixer couleurs",
+        "Protéger machine"
+      ],
+      "correct": 0,
+      "explanation": "Une chute rapide crée de l'humidité par condensation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q25",
+      "type": "single-choice",
+      "question": "Utilité maintenance périodique :",
+      "media": [],
+      "options": [
+        "Économie électricité",
+        "Garantir sécurité et conformité",
+        "Nettoyer extérieur",
+        "Nombre cycles"
+      ],
+      "correct": 1,
+      "explanation": "Obligation légale pour la fiabilité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

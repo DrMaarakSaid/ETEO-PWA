@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_debutant2_001",
+    "title": "CAD/CAM & 3D Printing - Beginner 2",
+    "specialty": "CFAO",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_D2_Q01",
+      "type": "single-choice",
+      "question": "What is the principle of CAD/CAM machining for ceramic blocks?",
+      "media": [],
+      "options": [
+        "3D printing by selective laser fusion of powders",
+        "Injection molding under atmospheric pressure",
+        "Milling of a pre-sintered or hard block by calibrated rotary tools",
+        "High-temperature thermal pressing within a coating"
+      ],
+      "correct": 2,
+      "explanation": "Subtractive CAD/CAM uses diamond or carbide rotary instruments to sculpt the restoration directly in a homogeneous industrial block.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q02",
+      "type": "single-choice",
+      "question": "Why is zirconia preferably machined in the 'white' (pre-sintered) state?",
+      "media": [],
+      "options": [
+        "To compensate for volumetric shrinkage during the sintering firing (20-25%)",
+        "To avoid any future discoloration under the action of oral fluids",
+        "To increase the surface hardness of the material before milling",
+        "To facilitate direct adhesive cementation without surface treatment"
+      ],
+      "correct": 0,
+      "explanation": "In the pre-sintered state, zirconia has the consistency of chalk, which limits bur wear. The CAD software applies a scale factor to anticipate shrinkage during sintering.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q03",
+      "type": "single-choice",
+      "question": "What is a monolithic zirconia crown?",
+      "media": [],
+      "options": [
+        "A crown stained in the mass and entirely machined in a single block, without feldspathic ceramic veneering",
+        "An opaque highly sintered zirconia crown that must necessarily be faceted on the vestibular side",
+        "An invisible metal framework infrastructure covered with a hot-pressed zirconium oxide",
+        "A multi-layer crown requiring no post-machining densification heat treatment"
+      ],
+      "correct": 0,
+      "explanation": "Monolithic zirconia is anatomical and machined in a single block, which definitively eliminates the risk of delamination or chipping of the surface ceramic.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q04",
+      "type": "single-choice",
+      "question": "What is the kinetic and thermal peculiarity of machined lithium disilicate?",
+      "media": [],
+      "options": [
+        "It undergoes machining after complete sintering at a temperature above 1500°C",
+        "It is machined in the intermediate 'blue' (glassy) state then subjected to a thermal crystallization cycle",
+        "It is the subject of direct 3D printing from crystallized silica powder",
+        "It requires a maturation firing at 1500°C for a continuous 24-hour cycle"
+      ],
+      "correct": 1,
+      "explanation": "Lithium disilicate is machined in the lithium metasilicate state (blue tint easy to mill), then baked in a dedicated oven to obtain its final stable and aesthetic crystalline phase.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q05",
+      "type": "single-choice",
+      "question": "Machinable composite blocks differ from ceramic blocks by:",
+      "media": [],
+      "options": [
+        "Their flexural strength largely superior to that of pure zirconia",
+        "Their imperative need for a densification annealing firing at 1200°C",
+        "Their internal porosity preventing any mechanical polishing protocol at the chairside",
+        "Their capacity for direct intraoral clinical repair with photopolymerizable resin composites"
+      ],
+      "correct": 3,
+      "explanation": "Unlike glassy or polycrystalline ceramics, infiltrated or nanohybrid composites can be retouched and repaired directly in the mouth with conventional adhesive protocols.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q06",
+      "type": "single-choice",
+      "question": "What is the main clinical use of PMMA blocks in dental CAD/CAM?",
+      "media": [],
+      "options": [
+        "The realization of transitional restorations and long-term provisional prostheses",
+        "The manufacture of definitive inlays and onlays on damaged cuspidian sectors",
+        "The making of definitive fixed bridge frameworks on implants in the aesthetic sector",
+        "The production of vacuum-cast metal infrastructures after direct machining"
+      ],
+      "correct": 0,
+      "explanation": "Machined polymethyl methacrylate (PMMA) offers excellent chromatic and mechanical stability, ideal for validating occlusion and phonetics during transitional phases.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q07",
+      "type": "single-choice",
+      "question": "What is a hybrid or interconnected network ceramic material (e.g., Vita Enamic)?",
+      "media": [],
+      "options": [
+        "A three-dimensional interconnected polymer matrix impregnated with a porous ceramic structure",
+        "A pure high-density crystalline ceramic structure free of any glassy phase",
+        "A composite block highly filled with noble metal particles for force absorption",
+        "A latest-generation zirconia presenting a purely optical gradient of translucency"
+      ],
+      "correct": 0,
+      "explanation": "These structures combine the properties of both worlds: the rigidity and optical stability of ceramic associated with the elasticity and resilience of polymer (shock absorber effect).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q08",
+      "type": "single-choice",
+      "question": "What is the average flexural strength of lithium disilicate after its crystallization cycle?",
+      "media": [],
+      "options": [
+        "Approximately 360 to 450 MPa",
+        "Approximately 100 to 180 MPa",
+        "Approximately 900 to 1100 MPa",
+        "Greater than 1500 MPa"
+      ],
+      "correct": 0,
+      "explanation": "Lithium disilicate is around 400 MPa after crystallization, offering an excellent compromise between robust mechanical properties and a biomimetic optical behavior.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q09",
+      "type": "single-choice",
+      "question": "Why is it clinically essential to perform glazing or rigorous polishing after machining?",
+      "media": [],
+      "options": [
+        "To radically modify the general anatomical morphology of the restoration",
+        "To increase surface porosity to facilitate the penetration of colorants",
+        "To drastically reduce the mechanical abrasion of the natural antagonist tooth",
+        "To accelerate the heating kinetics during the ceramic firing"
+      ],
+      "correct": 2,
+      "explanation": "A rough or machined ceramic surface acts like aggressive sandpaper on the enamel structures of the antagonist tooth. Mirror polishing or glazing is mandatory.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q10",
+      "type": "single-choice",
+      "question": "Chromatic customization (shade) of CAD/CAM restorations is mainly obtained by:",
+      "media": [],
+      "options": [
+        "Intense abrasive sandblasting with fine alumina grains after complete sintering",
+        "The application of surface stains before sintering or during the glazing cycle",
+        "A concentrated sulfuric acid bath immediately after leaving the milling unit",
+        "The exclusive use of photopolymerizable surface resins without thermal firing"
+      ],
+      "correct": 1,
+      "explanation": "One can use multi-layer blocks (gradient) or infiltrate coloring metal oxides on porous zirconia before sintering, or apply colorant fusions during glazing.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q11",
+      "type": "single-choice",
+      "question": "What is the thermodynamic and structural function of zirconia sintering?",
+      "media": [],
+      "options": [
+        "Eliminate geometric errors and draft defects generated by the bur axis",
+        "Ensure thermal densification (around 1450°C-1500°C) by eliminating intergranular porosities",
+        "Allow automatic polishing of external surfaces by the action of heat",
+        "Modify the initial chemical composition by transforming zirconium into titanium"
+      ],
+      "correct": 1,
+      "explanation": "Sintering brings zirconium oxide particles closer together, welding the grains together to transform a fragile blank into a highly resistant polycrystalline structure.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q12",
+      "type": "single-choice",
+      "question": "How does the CAD/CAM system mathematically handle the volumetric shrinkage of zirconia?",
+      "media": [],
+      "options": [
+        "By applying a digital expansion scale factor during the CAM calculation",
+        "By manual adjustment of the cervical limits performed by the practitioner using a handpiece",
+        "By drastically lowering the final temperature of the laboratory sintering furnace",
+        "By using standardized oversized blocks whose dimensions remain fixed"
+      ],
+      "correct": 0,
+      "explanation": "Each batch of blocks has a barcode or a precise coefficient. The CAM software calculates an enlarged machining of about 20 to 25% so that the piece reaches its correct dimension after sintering.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q13",
+      "type": "single-choice",
+      "question": "A production unit (milling machine) configured in 4 axes allows:",
+      "media": [],
+      "options": [
+        "Standard three-dimensional movement complemented by the rotation of the block around a horizontal axis",
+        "The exclusive machining of flat shapes and simple inlays without any marginal draft",
+        "A simultaneous movement performed in 6 independent orthogonal directions",
+        "An automatic transition to liquid 3D printing by simple software inversion"
+      ],
+      "correct": 0,
+      "explanation": "4-axis machines have the X, Y, Z axes and a rotary axis (A) to rotate the block. This is sufficient for the majority of single crowns and small bridges.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q14",
+      "type": "single-choice",
+      "question": "What is the major advantage of a machining machine equipped with 5 simultaneous kinematic axes?",
+      "media": [],
+      "options": [
+        "Systematically double the spindle rotation speed compared to a 4-axis machine",
+        "Allow access to undercuts, complex geometries and divergent insertion axes",
+        "Guarantee major energy savings by eliminating the use of compressed air",
+        "Ensure direct printing of precious metal structures without subtractive machining"
+      ],
+      "correct": 1,
+      "explanation": "The addition of a fifth axis (rotation of the machining head or support) allows the tool to be tilted to machine complex implant structures, large-span bridges and anatomical areas in undercut.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q15",
+      "type": "single-choice",
+      "question": "Why is the use of wet milling required for certain categories of blocks?",
+      "media": [],
+      "options": [
+        "To fluidize and halve the rotation speed of the cutting spindles",
+        "To completely eliminate the polishing and mechanical surface polishing steps",
+        "To lubricate the cut, cool the interface and avoid the propagation of critical micro-cracks",
+        "To increase the intrinsic hardness of the mineral block during mechanical processing"
+      ],
+      "correct": 2,
+      "explanation": "Wet milling (water + additive) is essential for glassy ceramics and composites to avoid critical thermal elevation that would break the material or saturate the bur diamonds.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q16",
+      "type": "single-choice",
+      "question": "Direct 'chairside' CAD/CAM is defined by:",
+      "media": [],
+      "options": [
+        "The complete integration of the digital workflow (impression, CAD, CAM) within the clinical practice in a single session",
+        "The outsourcing of optical impression files to a remote laboratory via secure servers",
+        "The postal sending of impression files after digitization of a physical plaster model",
+        "The delayed machining of prosthetic pieces within a non-compressible 48-hour period at the chairside"
+      ],
+      "correct": 0,
+      "explanation": "The direct workflow allows the practitioner to scan the preparation, design the restoration, mill it and cement it during the same clinical appointment.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q17",
+      "type": "single-choice",
+      "question": "What is the predominant clinical advantage of 'chairside' CAD/CAM for the patient?",
+      "media": [],
+      "options": [
+        "The drastic reduction of the biological cost related to the elimination of local anesthetics",
+        "The systematic obtaining of superior aesthetics to that of dental art laboratories",
+        "The elimination of the prosthetic temporary step and the time saving thanks to single-session treatment",
+        "The obtaining of doubled structural solidity on large-span bridges"
+      ],
+      "correct": 2,
+      "explanation": "By finalizing the restoration in a single session, the placement of a provisional prosthesis is avoided, thus reducing the risks of dentinal sensitivity and improving patient comfort.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q18",
+      "type": "single-choice",
+      "question": "What is the major disadvantage or constraint of implementing 'chairside' CAD/CAM?",
+      "media": [],
+      "options": [
+        "The obligation to perform two physical alginate impressions to calibrate the sensors",
+        "The high initial investment cost in equipment and the required technical learning curve",
+        "The scarcity of available materials which prove to be too high in hardness for enamel",
+        "The excessive complexity of the optical scan compared to a classic physicochemical impression"
+      ],
+      "correct": 1,
+      "explanation": "The acquisition of a complete chain (intraoral camera, dedicated CAD software, practice milling machine, rapid sintering furnace) requires a heavy financial investment and a commitment to continuing education.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q19",
+      "type": "single-choice",
+      "question": "What is the preferential role of indirect CAD/CAM in an external laboratory?",
+      "media": [],
+      "options": [
+        "To handle complex extensive rehabilitations and exploit an industrial diversity of materials",
+        "To allow the realization of simple single crowns in less than forty-five minutes at the chairside",
+        "To completely eliminate the virtual CAD step in favor of purely analog machining",
+        "To replace the use of intraoral scanners with manual duplication techniques"
+      ],
+      "correct": 0,
+      "explanation": "The laboratory has industrial machines (often heavy 5-axis), high-performance furnaces and the technical expertise necessary to handle complex cases (screw-retained zirconia, large-span bridges, chrome-cobalt alloys).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q20",
+      "type": "single-choice",
+      "question": "How is a workflow qualified as a 'Full Digital Workflow' characterized?",
+      "media": [],
+      "options": [
+        "A smooth sequence: optical impression, CAD software and industrial CAM without intermediate physical steps",
+        "A mixed procedure necessarily alternating digital steps and synthetic plaster castings",
+        "A manual machining of ceramic blocks guided visually by a computer control screen",
+        "An optical impression whose 3D printed model is then processed by traditional casting methods"
+      ],
+      "correct": 0,
+      "explanation": "In a 100% digital workflow, no physicochemical impression or plaster model is involved, eliminating error variables related to dimensional variations of materials.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q21",
+      "type": "single-choice",
+      "question": "The clinical assembly of ceramic restorations from CAD/CAM generally favors:",
+      "media": [],
+      "options": [
+        "Adhesive resin cements (chemical bonding assembly)",
+        "Conventional zinc oxide eugenol cements of transitional type",
+        "High mechanical viscosity purified beeswax-based cements",
+        "The laser fusion welding technique directly on enamel structures"
+      ],
+      "correct": 0,
+      "explanation": "Adhesive bonding is essential for glassy ceramics because it intimately joins the material to the tooth structure, increasing the overall resistance of the assembly.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q22",
+      "type": "single-choice",
+      "question": "What is the standard surface treatment protocol for bonding a glassy ceramic (e.g., lithium disilicate)?",
+      "media": [],
+      "options": [
+        "Hydrofluoric acid (HF) etching followed by the application of a silane coupling agent",
+        "Intensive alumina oxide sandblasting at high pressure without any chemical treatment",
+        "Exclusive application of a primer containing pure MDP monomer without prior etching",
+        "Advanced diamond polishing of the prosthetic intrados to obtain a reflective surface"
+      ],
+      "correct": 0,
+      "explanation": "Hydrofluoric acid selectively dissolves the glassy phase of the ceramic to create a retentive micromorphology. Silane then ensures the chemical bridge between the ceramic and the resin cement.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q23",
+      "type": "single-choice",
+      "question": "What is the required protocol for the intrados surface treatment of a zirconia structure before assembly?",
+      "media": [],
+      "options": [
+        "Prolonged etching with high-concentration hydrofluoric acid",
+        "Low-pressure alumina oxide sandblasting followed by a primer containing phosphate monomers (MDP)",
+        "Application of pure silane without any mechanical surface action",
+        "No mechanical or chemical treatment is required for polycrystalline structures"
+      ],
+      "correct": 1,
+      "explanation": "Zirconia is a polycrystalline ceramic without a glassy phase, therefore insensitive to hydrofluoric acid. Sandblasting creates micro-roughness, and the phosphate group of MDP chemically bonds to the metal oxides of zirconia.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q24",
+      "type": "single-choice",
+      "question": "What is meant by hydrothermal degradation (aging) of zirconia?",
+      "media": [],
+      "options": [
+        "A crystalline phase transformation (tetragonal to monoclinic) initiated at low temperature in a humid environment",
+        "A major metal oxidation leading to the detachment of iron particles on the prosthetic surface",
+        "Accelerated mechanical wear caused exclusively by the repeated friction of acidic foods",
+        "A total and irreversible loss of shade and translucency under the action of UV rays"
+      ],
+      "correct": 0,
+      "explanation": "This phenomenon (Low Temperature Degradation) is a spontaneous transformation of the crystalline structure under the effect of oral humidity, capable of creating micro-cracks and degrading mechanical properties in the long term if the zirconia is not properly stabilized (often by yttrium).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q25",
+      "type": "single-choice",
+      "question": "What maintenance operation is essential to guarantee the geometric precision of a subtractive CAM unit?",
+      "media": [],
+      "options": [
+        "Manual adjustment of the shade of the blocks inside the machining chamber",
+        "Regular calibration of the machine axes and rigorous monitoring of bur wear",
+        "Systematic replacement of the optical glass of the table scanner after each cycle",
+        "Manual filling of the reservoir with fluid plaster to stabilize the block"
+      ],
+      "correct": 1,
+      "explanation": "A non-calibrated machine deviates in space. Moreover, the use of worn burs modifies the real diameter of the cutting tool, which alters the marginal fit of the prosthesis and generates micro-cracks.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "assistantes_dentaires_intermediaire2_001",
+    "title": "Assistantes_dentaires - Intermédiaire 2",
+    "specialty": "ASSI",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ASSI_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation d'urgence : un patient a fait un malaise dans la salle d'attente. L'assistante est la première à intervenir. Quel est son rôle ?",
+      "media": [],
+      "options": [
+        "Attendre l'arrivée du dentiste",
+        "Appeler les secours et pratiquer les gestes de premiers secours si formée",
+        "Sortir le patient du cabinet",
+        "Ignorer la situation"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'Une assistante formée aux premiers secours peut sauver des vies en attendant l'arrivée des secours.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr Zaki doit gérer une situation de stress post-opératoire avec un patient anxieux. L'assistante peut jouer un rôle. Quel est son rôle ?",
+      "media": [],
+      "options": [
+        "Laisser le dentiste gérer seul",
+        "Rassurer le patient et expliquer les consignes post-opératoires",
+        "Ignorer l'anxiété du patient",
+        "Proposer des médicaments"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'L'assistante peut jouer un rôle clé dans le rassurement et l'information du patient anxieux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une rupture de stock de consommables critiques. L'assistante est responsable des stocks. Quelle est la meilleure pratique ?",
+      "media": [],
+      "options": [
+        "Attendre la rupture pour commander",
+        "Mettre en place un système de stock minimum avec commandes régulières",
+        "Commander en grande quantité une fois par an",
+        "Déléguer les achats au dentiste"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'Un système de stock minimum permet d'éviter les ruptures et de garantir la continuité des soins.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr Zaki doit gérer une plainte d'un patient concernant l'accueil. L'assistante est en première ligne. Quelle est la bonne attitude ?",
+      "media": [],
+      "options": [
+        "Ignorer la plainte",
+        "Écouter activement et proposer une solution",
+        "Rejeter la faute sur un autre membre de l'équipe",
+        "Augmenter les prix"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'L'écoute active et la proposition de solutions transforment une plainte en opportunité de fidélisation.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr Chiba doit organiser la gestion des dossiers patients informatisés. L'assistante a un rôle clé. Quelle est sa responsabilité ?",
+      "media": [],
+      "options": [
+        "Uniquement la saisie des données",
+        "La saisie, la mise à jour et la sécurisation des dossiers patients",
+        "La création des dossiers uniquement",
+        "La suppression des dossiers obsolètes"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'L'assistante est responsable de la saisie, de la mise à jour et de la sécurisation des dossiers patients.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr Zaki doit gérer un patient en situation de handicap. L'assistante peut faciliter l'accès. Quelle est la meilleure approche ?",
+      "media": [],
+      "options": [
+        "Traiter le patient comme les autres",
+        "Adapter l'accueil et l'accompagnement aux besoins spécifiques",
+        "Refuser le patient",
+        "Le faire attendre"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'L'adaptation de l'accueil et de l'accompagnement permet d'assurer une prise en charge de qualité pour tous les patients.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de conflit entre un patient et le dentiste. L'assistante peut jouer un rôle de médiation. Quelle est la bonne attitude ?",
+      "media": [],
+      "options": [
+        "Prendre parti pour le dentiste",
+        "Rester neutre et faciliter la communication",
+        "Prendre parti pour le patient",
+        "Ignorer la situation"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La neutralité et la facilitation de la communication permettent de désamorcer le conflit.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr Zaki doit organiser la formation de son assistante aux nouvelles technologies. Quelle est la meilleure méthode ?",
+      "media": [],
+      "options": [
+        "Lui donner un manuel d'utilisation",
+        "Organiser des sessions de formation pratique avec un formateur",
+        "Lui montrer une vidéo",
+        "La laisser apprendre seule"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Les sessions de formation pratique permettent une maîtrise rapide et efficace des nouvelles technologies.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de confidentialité : un patient demande des informations sur un autre patient. L'assistante doit :",
+      "media": [],
+      "options": [
+        "Donner les informations demandées",
+        "Refuser et rappeler les règles de confidentialité",
+        "Donner les informations si le patient insiste",
+        "Ignorer la demande"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'Le respect de la confidentialité est un principe fondamental. L'assistante doit refuser toute demande d'informations sur un autre patient.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr Zaki doit évaluer la qualité de l'accueil de son cabinet. L'assistante est en première ligne. Quel indicateur est le plus pertinent ?",
+      "media": [],
+      "options": [
+        "Le nombre de patients par jour",
+        "Le taux de satisfaction des patients",
+        "Le temps d'attente moyen",
+        "Le nombre de plaintes"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Le taux de satisfaction des patients est l'indicateur le plus pertinent de la qualité de l'accueil.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr Chiba doit organiser la gestion des rendez-vous. L'assistante est responsable. Quelle est la meilleure pratique pour optimiser les rendez-vous ?",
+      "media": [],
+      "options": [
+        "Prendre les rendez-vous au hasard",
+        "Utiliser un logiciel de planification avec rappels automatiques",
+        "Prendre les rendez-vous uniquement par téléphone",
+        "Laisser les patients choisir leurs horaires"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'Un logiciel de planification avec rappels automatiques permet d'optimiser les rendez-vous et de réduire les absences.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr Zaki doit gérer une situation de stress au travail. L'assistante est touchée. Quelle est la meilleure approche ?",
+      "media": [],
+      "options": [
+        "Ignorer le stress",
+        "Organiser des moments de détente et de cohésion d'équipe",
+        "Augmenter la charge de travail",
+        "Réduire les salaires"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Les moments de détente et de cohésion d'équipe renforcent la résilience face au stress.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr Chiba doit former son assistante à la gestion des appels téléphoniques. Quelle est la bonne pratique ?",
+      "media": [],
+      "options": [
+        "Répondre sans se présenter",
+        "Se présenter et proposer son aide",
+        "Laisser sonner sans répondre",
+        "Répondre uniquement en fin de journée"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'Un accueil téléphonique professionnel renforce l'image du cabinet et la satisfaction des patients.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr Zaki doit gérer une situation de télétravail pour son assistante. Quelle est la meilleure approche ?",
+      "media": [],
+      "options": [
+        "Refuser le télétravail",
+        "Mettre en place des outils de communication et de suivi",
+        "Autoriser le télétravail sans encadrement",
+        "Confier les tâches administratives en télétravail"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Le télétravail nécessite des outils de communication et de suivi pour garantir l'efficacité.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de harcèlement moral dans son équipe. L'assistante est concernée. Quelle est la priorité ?",
+      "media": [],
+      "options": [
+        "Protéger l'assistante victime",
+        "Protéger le harceleur",
+        "Ignorer la situation",
+        "Changer l'équipe"
+      ],
+      "correct": 0,
+      "explanation": "Dr Zaki explique : 'La protection de la victime est la priorité absolue en cas de harcèlement moral.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr Zaki doit évaluer les compétences numériques de son assistante. Quels outils doit-elle maîtriser ?",
+      "media": [],
+      "options": [
+        "Uniquement les logiciels de facturation",
+        "Les logiciels de gestion, les outils de communication et les plateformes de télétransmission",
+        "Uniquement les outils de messagerie",
+        "Aucun outil numérique"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'L'assistante moderne doit maîtriser les logiciels de gestion, les outils de communication et les plateformes de télétransmission.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de discrimination dans son équipe. L'assistante en est victime. Quelle est la bonne approche ?",
+      "media": [],
+      "options": [
+        "Ignorer la situation",
+        "Sanctionner le comportement discriminatoire et protéger la victime",
+        "Changer l'équipe",
+        "Démissionner"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La discrimination est une faute grave. Le comportement discriminatoire doit être sanctionné et la victime protégée.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr Zaki doit organiser la formation continue de son assistante. Quelle est la fréquence recommandée ?",
+      "media": [],
+      "options": [
+        "Une fois par an",
+        "Plusieurs fois par an, régulièrement",
+        "Jamais",
+        "Uniquement lors du recrutement"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'La formation continue régulière permet à l'assistante de rester à jour et de développer ses compétences.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une situation de crise (accident de travail). L'assistante est blessée. Quelle est la priorité ?",
+      "media": [],
+      "options": [
+        "Protéger le cabinet",
+        "Soigner l'assistante et déclarer l'accident",
+        "Cacher l'accident",
+        "Appeler les médias"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'La santé de l'assistante est la priorité. L'accident doit être déclaré selon la procédure.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr Zaki doit évaluer la qualité du travail de son assistante. Quels sont les critères à considérer ?",
+      "media": [],
+      "options": [
+        "La rapidité d'exécution",
+        "La qualité des soins assistés, la rigueur et la relation patient",
+        "La durée de présence",
+        "La tenue vestimentaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'La qualité des soins assistés, la rigueur et la relation patient sont les critères les plus importants.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une assistante qui a des problèmes d'absentéisme. Quelle est la bonne approche ?",
+      "media": [],
+      "options": [
+        "Ignorer le problème",
+        "Identifier les causes et proposer un accompagnement",
+        "La licencier",
+        "Réduire son temps de travail"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'L'identification des causes et l'accompagnement permettent de résoudre les problèmes d'absentéisme.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr Zaki doit organiser la gestion des fournitures de bureau. L'assistante est responsable. Quelle est la bonne pratique ?",
+      "media": [],
+      "options": [
+        "Commander sans planification",
+        "Établir une liste de fournitures et commander régulièrement",
+        "Déléguer les achats au dentiste",
+        "Utiliser les fournitures sans contrôle"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba explique : 'Une liste de fournitures et des commandes régulières permettent d'optimiser la gestion des stocks.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr Chiba doit gérer une assistante qui a des difficultés avec les nouvelles technologies. Quelle est la meilleure solution ?",
+      "media": [],
+      "options": [
+        "Lui confier des tâches sans technologies",
+        "Lui proposer une formation adaptée à son rythme",
+        "La remplacer",
+        "Ignorer ses difficultés"
+      ],
+      "correct": 1,
+      "explanation": "Dr Zaki explique : 'Une formation adaptée permet à l'assistante de progresser à son rythme et de gagner en confiance.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr Zaki, après avoir formé une équipe d'exception, reçoit les félicitations de Dr Chiba. Quelle est la prochaine étape pour Dr Zaki ?",
+      "media": [],
+      "options": [
+        "Créer un programme de mentorat pour les nouvelles assistantes",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bases"
+      ],
+      "correct": 0,
+      "explanation": "Dr Chiba explique : 'La création d'un programme de mentorat permet de transmettre son savoir et de former la nouvelle génération.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr Chiba et Dr Zaki, après des années de collaboration, ont formé une équipe d'exception. Quel est le message qu'ils souhaitent transmettre aux jeunes praticiens ?",
+      "media": [],
+      "options": [
+        "L'assistante est secondaire",
+        "L'assistante est un pilier indispensable du cabinet",
+        "L'assistante est une secrétaire",
+        "L'assistante n'est pas importante"
+      ],
+      "correct": 1,
+      "explanation": "Dr Chiba et Dr Zaki concluent : 'L'assistante est un pilier indispensable du cabinet, au même titre que le dentiste.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

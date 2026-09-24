@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_debutant1_001",
+    "title": "Sterilisation - Débutant 1",
+    "specialty": "STER",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_D1_Q01",
+      "type": "single-choice",
+      "question": "Comment définit-on précisément le processus de stérilisation en milieu odonto-stomatologique ?",
+      "media": [],
+      "options": [
+        "Un protocole de nettoyage superficiel des surfaces",
+        "Une application d'agents chimiques neutralisant les virus",
+        "Une opération visant à détruire la totalité des micro-organismes vivants et des spores",
+        "Un brossage mécanique réduisant la flore transitoire"
+      ],
+      "correct": 2,
+      "explanation": "La stérilisation se distingue par son caractère absolu, garantissant l'absence totale de tout micro-organisme viable, y compris les endospores.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q02",
+      "type": "single-choice",
+      "question": "Quelle différence fondamentale sépare la stérilisation d'un procédé de désinfection classique ?",
+      "media": [],
+      "options": [
+        "La désinfection réduit la charge microbienne mais ne détruit pas nécessairement les endospores",
+        "La stérilisation s'applique aux tissus vivants uniquement",
+        "La désinfection utilise uniquement des agents physiques thermiques",
+        "La stérilisation offre un niveau d'innocuité inférieur à la décontamination"
+      ],
+      "correct": 0,
+      "explanation": "La désinfection est momentanée ; son spectre d'action n'inclut pas systématiquement les formes sporulées.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q03",
+      "type": "single-choice",
+      "question": "Qu'est-ce qu'une spore bactérienne (ou endospore) ?",
+      "media": [],
+      "options": [
+        "Une structure de réplication virale intracellulaire",
+        "Une forme de survie hautement résistante face à des conditions hostiles",
+        "Une toxine thermolabile sécrétée par les bactéries",
+        "Un récepteur membranaire impliqué dans l'adhérence"
+      ],
+      "correct": 1,
+      "explanation": "Les endospores possèdent des enveloppes épaisses leur conférant une résistance extrême à la chaleur et aux désinfectants.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q04",
+      "type": "single-choice",
+      "question": "Quelle méthode est réglementairement préconisée pour l'instrumentation en omnipratique ?",
+      "media": [],
+      "options": [
+        "L'exposition prolongée à l'air chaud (Poupinel)",
+        "L'irradiation gamma continue par des sources radioactives",
+        "La stérilisation par chaleur humide (vapeur d'eau) en autoclave de classe B",
+        "L'immersion prolongée dans l'alcool éthylique"
+      ],
+      "correct": 2,
+      "explanation": "L'autoclave de classe B est la référence pour sa capacité à traiter corps creux et charges poreuses.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q05",
+      "type": "single-choice",
+      "question": "Quels paramètres définissent un cycle standard à 121°C ?",
+      "media": [],
+      "options": [
+        "121°C, 1 bar, 15 à 20 minutes",
+        "100°C, pression normale, 30 minutes",
+        "150°C, 2 bars, 10 minutes",
+        "134°C, 2 bars, 5 minutes"
+      ],
+      "correct": 0,
+      "explanation": "Le plateau à 121°C requiert environ 1 bar pendant 15-20 min pour assurer la destruction des formes résistantes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q06",
+      "type": "single-choice",
+      "question": "En quoi consiste le procédé par chaleur sèche ?",
+      "media": [],
+      "options": [
+        "La projection de rayonnements infrarouges",
+        "Le traitement dans une enceinte saturée de vapeur",
+        "L'exposition dans une étuve thermorégulée entre 160°C et 180°C",
+        "Le bombardement moléculaire par ondes hautes fréquences"
+      ],
+      "correct": 2,
+      "explanation": "La chaleur sèche nécessite des températures élevées et des temps de contact très longs.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q07",
+      "type": "single-choice",
+      "question": "Quel est l'inconvénient majeur de la chaleur sèche (Poupinel) ?",
+      "media": [],
+      "options": [
+        "Temps de cycle excessivement long et risque de détérioration thermique des tranchants",
+        "Accumulation d'humidité provoquant l'oxydation",
+        "Coût prohibitif des gaz rares utilisés",
+        "Instabilité structurelle des molécules de carbone"
+      ],
+      "correct": 0,
+      "explanation": "La chaleur sèche détrempe les aciers et est moins efficace que la vapeur d'eau.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q08",
+      "type": "single-choice",
+      "question": "Quelle est l'application des rayonnements ionisants (gamma) ?",
+      "media": [],
+      "options": [
+        "Désinfection terminale des surfaces de travail",
+        "Traitement industriel de masse du matériel à usage unique",
+        "Décontamination des pièces à main au fauteuil",
+        "Préparation des plateaux d'examen métalliques"
+      ],
+      "correct": 1,
+      "explanation": "La radiostérilisation est exclusivement industrielle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q09",
+      "type": "single-choice",
+      "question": "Comment fonctionne le procédé par plasma de peroxyde d'hydrogène ?",
+      "media": [],
+      "options": [
+        "Vaporisation thermique d'acides aminés saturés",
+        "Projection hydro-pneumatique d'un fluide cryogénique",
+        "Excitation de vapeurs de peroxyde par un champ électromagnétique (gaz ionisé)",
+        "Immersion dans du glutaraldéhyde activé par ultrasons"
+      ],
+      "correct": 2,
+      "explanation": "Le plasma génère des radicaux libres hautement biocides sous vide.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q10",
+      "type": "single-choice",
+      "question": "Pour quel matériel le plasma de gaz est-il indiqué ?",
+      "media": [],
+      "options": [
+        "Dispositifs médicaux thermosensibles",
+        "Instrumentation chirurgicale massive en acier",
+        "Champs opératoires en textile de coton",
+        "Implants en titane sablé"
+      ],
+      "correct": 0,
+      "explanation": "Il fonctionne à basse température, idéal pour les plastiques sensibles ou fibres optiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q11",
+      "type": "single-choice",
+      "question": "Quelle est la nature de la stérilisation à l'oxyde d'éthylène (ETO) ?",
+      "media": [],
+      "options": [
+        "Traitement thermique par acide peracétique",
+        "Stérilisation chimique à basse température utilisant un gaz alkylant",
+        "Exposition à des ultraviolets C et laser",
+        "Immersion dans du formaldéhyde bouillant"
+      ],
+      "correct": 1,
+      "explanation": "L'ETO alkyl les protéines et acides nucléiques, rendant le matériel stérile.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q12",
+      "type": "single-choice",
+      "question": "Pourquoi l'oxyde d'éthylène est-il restreint ?",
+      "media": [],
+      "options": [
+        "Inefficacité contre les mycobactéries",
+        "Instabilité physico-chimique sur l'acier",
+        "Toxicité sévère, inflammabilité et nécessité de désorption",
+        "Coût prohibitif des pompes à vide"
+      ],
+      "correct": 2,
+      "explanation": "C'est un gaz toxique, mutagène et cancérigène exigeant une aération prolongée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q13",
+      "type": "single-choice",
+      "question": "Quelle est la fonction du test de Bowie-Dick ?",
+      "media": [],
+      "options": [
+        "Contrôler la qualité du vide et la pénétration de la vapeur",
+        "Mesurer la concentration d'ions dans l'eau",
+        "Valider la destruction des spores dans une charge spécifique",
+        "Détecter les fuites d'air aux joints de la porte"
+      ],
+      "correct": 0,
+      "explanation": "Il vérifie l'évacuation de l'air et l'homogénéité de la vapeur.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q14",
+      "type": "single-choice",
+      "question": "Fréquence requise pour le test de Bowie-Dick ?",
+      "media": [],
+      "options": [
+        "Une fois par an",
+        "Une fois par mois",
+        "Une fois par semaine",
+        "Une fois par jour, avant le premier cycle"
+      ],
+      "correct": 3,
+      "explanation": "Il est obligatoire quotidiennement, à cuve chaude, pour la sécurité des cycles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q15",
+      "type": "single-choice",
+      "question": "En quoi consiste un test biologique ?",
+      "media": [],
+      "options": [
+        "Insertion d'une feuille réactive changeant de couleur",
+        "Exposition de spores bactériennes vivantes puis vérification de leur non-croissance",
+        "Programmation d'un cycle à vide pour vérifier la pression",
+        "Analyse des résidus d'acides aminés"
+      ],
+      "correct": 1,
+      "explanation": "C'est la seule preuve directe de l'inactivation biologique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q16",
+      "type": "single-choice",
+      "question": "Quel micro-organisme est témoin pour les autoclaves ?",
+      "media": [],
+      "options": [
+        "Geobacillus stearothermophilus",
+        "Escherichia coli",
+        "Staphylococcus aureus",
+        "Candida albicans"
+      ],
+      "correct": 0,
+      "explanation": "C'est la souche internationale de référence pour la chaleur humide.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q17",
+      "type": "single-choice",
+      "question": "Qu'est-ce qu'un indicateur chimique ?",
+      "media": [],
+      "options": [
+        "Un dispositif réactif virant de couleur aux variables critiques",
+        "Une suspension d'enzymes purifiées",
+        "Une sonde électronique autonome",
+        "Un flacon de réactif liquide"
+      ],
+      "correct": 0,
+      "explanation": "Il confirme visuellement l'exposition du sachet aux paramètres du cycle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q18",
+      "type": "single-choice",
+      "question": "Spécificité d'un intégrateur de Classe 5 ?",
+      "media": [],
+      "options": [
+        "Contrôle de la température uniquement",
+        "Réaction à toutes les variables critiques, corrélée aux tests biologiques",
+        "Validation de l'évacuation d'air initiale",
+        "Dating précis des données de pression"
+      ],
+      "correct": 1,
+      "explanation": "La classe 5 est très précise et suit des performances proches des indicateurs biologiques.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q19",
+      "type": "single-choice",
+      "question": "Fonction première du conditionnement (emballage) ?",
+      "media": [],
+      "options": [
+        "Permettre la pénétration de l'agent et maintenir la stérilité après",
+        "Isolation thermique pour éviter les brûlures",
+        "Augmenter la résistance mécanique aux vibrations",
+        "Masquer les imperfections visuelles"
+      ],
+      "correct": 0,
+      "explanation": "Il doit être perméable à la vapeur, mais étanche aux micro-organismes après le cycle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q20",
+      "type": "single-choice",
+      "question": "De quels facteurs dépend la durée de conservation de la stérilité ?",
+      "media": [],
+      "options": [
+        "Du type d'emballage et des conditions de stockage",
+        "Du nombre de micro-organismes initialement détruits",
+        "De la marque de l'autoclave",
+        "De la nature de l'alliage métallique"
+      ],
+      "correct": 0,
+      "explanation": "La stérilité est liée à l'intégrité de la barrière protectrice et à l'environnement, pas au temps lui-même.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q21",
+      "type": "single-choice",
+      "question": "Comment gérer l'ergonomie au fauteuil pour limiter la contamination ?",
+      "media": [],
+      "options": [
+        "Appliquer une cire protectrice sur les instruments",
+        "Délimiter des zones strictes (propre vs contaminé)",
+        "Maintenir les instruments à l'air libre",
+        "Augmenter le débit de ventilation"
+      ],
+      "correct": 1,
+      "explanation": "La sectorisation prévient la contamination croisée entre zone sale et propre.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q22",
+      "type": "single-choice",
+      "question": "Principe logistique de traitement ?",
+      "media": [],
+      "options": [
+        "La marche en avant (interdiction de croisement)",
+        "La rotation circulaire continue",
+        "Le stockage en zone propre avant nettoyage",
+        "Le retour systématique vers l'enceinte de soins"
+      ],
+      "correct": 0,
+      "explanation": "Le circuit à sens unique (sale vers propre vers stérile) est une règle d'or.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q23",
+      "type": "single-choice",
+      "question": "Attribution de la zone de tri ?",
+      "media": [],
+      "options": [
+        "Réceptionner, vérifier et dissocier le matériel avant nettoyage",
+        "Réaliser le thermoscellage des sachets",
+        "Stocker les containers stériles",
+        "Incuber les indicateurs biologiques"
+      ],
+      "correct": 0,
+      "explanation": "C'est l'étape de réception et de préparation avant le lavage.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q24",
+      "type": "single-choice",
+      "question": "Produit requis pour le nettoyage initial ?",
+      "media": [],
+      "options": [
+        "Hypochlorite de sodium concentré",
+        "Solvant à base d'acétone",
+        "Détergent enzymatique (protéases/lipases)",
+        "Fixateur aldéhydique"
+      ],
+      "correct": 2,
+      "explanation": "Les détergents tri-enzymatiques dégradent les résidus organiques sans les fixer.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D1_Q25",
+      "type": "single-choice",
+      "question": "Opération obligatoire avant emballage ?",
+      "media": [],
+      "options": [
+        "Nettoyage rigoureux suivi d'un séchage parfait",
+        "Immersion dans l'huile silicone",
+        "Application d'un vernis protecteur",
+        "Passage sous air comprimé non filtré"
+      ],
+      "correct": 0,
+      "explanation": "L'humidité résiduelle sous emballage empêche la stérilisation et favorise la corrosion.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

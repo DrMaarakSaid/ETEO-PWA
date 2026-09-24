@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "orthodontie_intermediaire1_001",
+    "title": "Ortodoncia - Intermedio 1",
+    "specialty": "ORTH",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ORTH_I1_Q01",
+      "type": "single-choice",
+      "question": "Sami pregunta a Mina: «¿Cuál es la clave de un buen diagnóstico ortodóncico?» Mina responde:",
+      "media": [],
+      "options": [
+        "Solo el examen clínico",
+        "Un examen completo: clínico, cefalométrico y radiológico",
+        "Solo la cefalometría",
+        "Solo las radiografías"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «El diagnóstico ortodóncico se basa en un examen clínico, cefalométrico y radiológico completo.» 🦅 Sami: «Vale, haré un examen completo… ¡pero es largo!»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q02",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo evaluar el crecimiento de un niño?» Mina le responde:",
+      "media": [],
+      "options": [
+        "Midiendo su altura",
+        "Mediante el análisis de la madurez vertebral (CVM)",
+        "Pesando al niño",
+        "Contando sus dientes"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La madurez vertebral (CVM) es el mejor indicador del crecimiento residual.» 🦅 Sami: «Aprenderé a leer el CVM.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q03",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es el método de Bolton?» Mina le responde:",
+      "media": [],
+      "options": [
+        "Una técnica de extracción",
+        "Un análisis del apiñamiento dental",
+        "Un método de colocación de brackets",
+        "Una técnica radiográfica"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «El método de Bolton calcula el apiñamiento y determina la elección entre extracción y expansión.» 🦅 Sami: «Siempre calcularé el Bolton.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q04",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la curva de Spee?» Mina le responde:",
+      "media": [],
+      "options": [
+        "Una curva estética",
+        "Una curva oclusal sagital de los dientes",
+        "Una curva de crecimiento",
+        "Una curva de temperatura"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La curva de Spee es un parámetro oclusal importante. Una curva profunda > 2 mm suele asociarse a la clase II.» 🦅 Sami: «Mediré sistemáticamente la curva de Spee.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q05",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los parámetros cefalométricos clave?» Mina responde:",
+      "media": [],
+      "options": [
+        "SNA, SNB, ANB, FMA, IMPA",
+        "Solo SNA y SNB",
+        "Solo ANB",
+        "Solo FMA"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los parámetros clave incluyen SNA, SNB, ANB, FMA e IMPA para evaluar las relaciones esqueléticas.» 🦅 Sami: «Aprenderé todos estos parámetros.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q06",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es el resalte?» Mina responde:",
+      "media": [],
+      "options": [
+        "El solapamiento vertical de los incisivos",
+        "La distancia horizontal entre los incisivos",
+        "El color de los dientes",
+        "El tamaño de los dientes"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «El resalte es la distancia horizontal entre los incisivos superiores e inferiores.» 🦅 Sami: «Mediré el resalte en mis pacientes.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q07",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la sobremordida?» Mina le responde:",
+      "media": [],
+      "options": [
+        "La distancia horizontal entre los incisivos",
+        "El solapamiento vertical de los incisivos superiores sobre los inferiores",
+        "El color de los dientes",
+        "El tamaño de los dientes"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La sobremordida es el solapamiento vertical de los incisivos superiores sobre los inferiores.» 🦅 Sami: «Mediré sistemáticamente la sobremordida.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q08",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuándo hay que hacer una radiografía panorámica en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Nunca, es inútil",
+        "Sistemáticamente para el examen inicial",
+        "Solo si se sospecha retención",
+        "Solo para adultos"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La panorámica es necesaria para evaluar gérmenes, retenciones y patologías.» 🦅 Sami: «Siempre prescribiré una panorámica.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q09",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es una telerradiografía?» Mina responde:",
+      "media": [],
+      "options": [
+        "Una radiografía estandarizada de perfil para el análisis cefalométrico",
+        "Una radiografía frontal",
+        "Una radiografía panorámica",
+        "Una radiografía de senos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La telerradiografía es una radiografía estandarizada de perfil para analizar las relaciones esqueléticas.» 🦅 Sami: «Siempre haré una telerradiografía.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q10",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo evaluar la madurez esquelética?» Mina responde:",
+      "media": [],
+      "options": [
+        "Por la edad cronológica",
+        "Mediante el análisis de la madurez vertebral (CVM)",
+        "Por la altura del niño",
+        "Por el peso del niño"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La madurez vertebral es el mejor indicador de la madurez esquelética.» 🦅 Sami: «Aprenderé a leer el CVM.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q11",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los signos de la clase II esquelética?» Mina responde:",
+      "media": [],
+      "options": [
+        "ANB > 4° y SNB bajo",
+        "ANB < 0°",
+        "FMA > 30°",
+        "IMPA > 90°"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La clase II esquelética se caracteriza por ANB > 4° y SNB bajo.» 🦅 Sami: «Calcularé sistemáticamente el ANB.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q12",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los signos de la clase III esquelética?» Mina responde:",
+      "media": [],
+      "options": [
+        "ANB < 0° y SNB alto",
+        "ANB > 4°",
+        "FMA > 30°",
+        "IMPA > 90°"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La clase III esquelética se caracteriza por ANB < 0° y SNB alto.» 🦅 Sami: «Siempre comprobaré el ANB.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q13",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es el estadio de Nolla?» Mina responde:",
+      "media": [],
+      "options": [
+        "Un índice de desarrollo dental",
+        "Una técnica de extracción",
+        "Un método de colocación de brackets",
+        "Una técnica radiográfica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El estadio de Nolla evalúa la fase de desarrollo dental, especialmente de los caninos.» 🦅 Sami: «Usaré el estadio de Nolla para caninos retenidos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q14",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuándo hay que extraer un diente en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Solo para apiñamiento severo > 6–8 mm",
+        "Siempre para la clase II",
+        "Nunca, siempre hay que expandir",
+        "Solo para la clase III"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La extracción está indicada para apiñamiento severo > 6–8 mm.» 🦅 Sami: «Calcularé el apiñamiento antes de extraer.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q15",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la retención en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Una fase descuidada del tratamiento",
+        "La fase postratamiento para estabilizar los resultados",
+        "Una técnica de extracción",
+        "Un método de colocación de brackets"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «La retención es la fase postratamiento necesaria para estabilizar los resultados.» 🦅 Sami: «Siempre planificaré la retención.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q16",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son las ventajas de los alineadores?» Mina responde:",
+      "media": [],
+      "options": [
+        "Estéticos, cómodos, higiénicos",
+        "Más rápidos que los brackets",
+        "Más baratos",
+        "Más eficaces para todos los casos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los alineadores ofrecen una estética, comodidad e higiene excelentes.» 🦅 Sami: «Ofreceré alineadores a mis pacientes.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q17",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son las limitaciones de los alineadores?» Mina responde:",
+      "media": [],
+      "options": [
+        "Limitados para movimientos complejos y rotaciones severas",
+        "Solo funcionan para casos simples",
+        "No son eficaces",
+        "Solo funcionan en adultos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los alineadores tienen limitaciones para movimientos complejos y rotaciones severas.» 🦅 Sami: «Usaré brackets para casos complejos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q18",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es un mini-tornillo en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Un implante temporal para anclaje ortodóncico",
+        "Un implante permanente",
+        "Un tornillo protésico",
+        "Un tornillo quirúrgico"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los mini-tornillos son implantes temporales para anclaje ortodóncico.» 🦅 Sami: «Usaré mini-tornillos para el anclaje.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q19",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la cirugía ortognática?» Mina responde:",
+      "media": [],
+      "options": [
+        "La cirugía para corregir maloclusiones esqueléticas severas",
+        "Una extracción",
+        "Una colocación de implante",
+        "Una técnica de limpieza dental"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La cirugía ortognática corrige maloclusiones esqueléticas severas.» 🦅 Sami: «Derivaré pacientes a cirujanos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q20",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los factores de riesgo de recidiva en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Falta de retención, crecimiento residual, parafunciones",
+        "Solo falta de retención",
+        "Solo crecimiento",
+        "Solo parafunciones"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La recidiva es multifactorial: retención insuficiente, crecimiento, parafunciones.» 🦅 Sami: «Preveniré la recidiva con buena retención.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q21",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es el método de Downs en cefalometría?» Mina responde:",
+      "media": [],
+      "options": [
+        "Un análisis cefalométrico de ángulos faciales",
+        "Una técnica de extracción",
+        "Un método de colocación de brackets",
+        "Una técnica radiográfica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El análisis de Downs evalúa los ángulos faciales y las inclinaciones dentales.» 🦅 Sami: «Usaré el análisis de Downs.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q22",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar la agenesia dental en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Cierre de espacios o conservación para implante",
+        "Siempre cerrar los espacios",
+        "Siempre conservar los espacios",
+        "Siempre extraer"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La estrategia depende de la localización y la oclusión.» 🦅 Sami: «Planificaré el manejo de las agenesias.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q23",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la expansión del maxilar superior?» Mina responde:",
+      "media": [],
+      "options": [
+        "Una técnica de expansión del maxilar superior (quad-helix, disyuntor)",
+        "Una extracción",
+        "Una cirugía",
+        "Una técnica de limpieza dental"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La expansión del maxilar superior está indicada para mordidas cruzadas y apiñamiento.» 🦅 Sami: «Ofreceré expansión.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q24",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los riesgos de las fuerzas ortodóncicas excesivas?» Mina responde:",
+      "media": [],
+      "options": [
+        "Fracturas radiculares, recesiones, reabsorciones",
+        "Solo fracturas",
+        "Solo recesiones",
+        "Solo reabsorciones"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las fuerzas excesivas pueden causar fracturas, recesiones y reabsorciones.» 🦅 Sami: «Usaré fuerzas adaptadas.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q25",
+      "type": "single-choice",
+      "question": "Sami, tras dominar el diagnóstico ortodóncico con Mina, dice: «¡Estoy listo para cualquier desafío!» Mina concluye: «Dominar el diagnóstico ortodóncico es...»",
+      "media": [],
+      "options": [
+        "Una opción",
+        "La base del éxito en ortodoncia",
+        "Una pérdida de tiempo",
+        "Secundario"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Dominar el diagnóstico ortodóncico es la base del éxito en ortodoncia.» 🦅 Sami: «Seguiré aprendiendo.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

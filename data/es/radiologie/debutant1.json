@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "radiologie_debutant1_001",
+    "title": "Radiología - Principiante 1",
+    "specialty": "RADI",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "RADI_D1_Q01",
+      "type": "single-choice",
+      "question": "¿Cómo se define exactamente la radiología dental en la práctica odontológica moderna?",
+      "media": [],
+      "options": [
+        "Un tratamiento quirúrgico dirigido a eliminar tejidos cariados mediante radiación ionizante",
+        "Un método mínimamente invasivo de exéresis que permite extraer dientes retenidos sin instrumentos",
+        "Una especialidad de imagen médica dedicada al estudio diagnóstico de los tejidos mineralizados y la región maxilofacial",
+        "Un protocolo de rehabilitación protésica que utiliza polímeros fotopolimerizables"
+      ],
+      "correct": 2,
+      "explanation": "La radiología dental es una herramienta diagnóstica indispensable que permite visualizar estructuras invisibles en el examen clínico directo.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q02",
+      "type": "single-choice",
+      "question": "¿Qué examen radiológico intraoral es la base fundamental de la evaluación dirigida en la práctica general?",
+      "media": [],
+      "options": [
+        "La ortopantomografía para un análisis global",
+        "La radiografía periapical, que proporciona una alta resolución espacial del diente y su entorno periodontal",
+        "La tomografía computarizada de haz cónico (CBCT), destinada a volúmenes implantológicos",
+        "La tomografía computarizada helicoidal médica, necesaria para dismorfosis complejas"
+      ],
+      "correct": 1,
+      "explanation": "La radiografía periapical sigue siendo el examen de primera línea para el estudio detallado de una zona localizada de dos o tres dientes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q03",
+      "type": "single-choice",
+      "question": "¿Cuál es la función principal de la radiografía panorámica (ortopantomografía)?",
+      "media": [],
+      "options": [
+        "Permitir una evaluación micrométrica precisa de la pérdida ósea en las bifurcaciones",
+        "Visualizar los detalles morfológicos microscópicos del conducto radicular",
+        "Analizar el grosor exacto de las corticales antes de la colocación de un implante",
+        "Proporcionar una visión bidimensional general de las arcadas dentales, los maxilares y las estructuras adyacentes"
+      ],
+      "correct": 3,
+      "explanation": "La ortopantomografía es un examen panorámico y de síntesis, ideal para la exploración general odontológica, pero está sujeta a distorsiones geométricas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q04",
+      "type": "single-choice",
+      "question": "¿Qué es la tecnología CBCT (tomografía computarizada de haz cónico) en imagen maxilofacial?",
+      "media": [],
+      "options": [
+        "Un sistema de tomografía volumétrica de haz cónico que genera reconstrucciones 3D de alta precisión",
+        "Un escáner médico helicoidal convencional con alta dosis",
+        "Un protocolo 2D estandarizado que utiliza fotografía de película",
+        "Una resonancia magnética que utiliza propiedades de espín"
+      ],
+      "correct": 0,
+      "explanation": "La CBCT es el examen 3D de referencia en odontología, que proporciona una resolución isotrópica superior al escáner médico para tejidos duros, con una dosis menor.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q05",
+      "type": "single-choice",
+      "question": "¿Cuál es el orden de magnitud de la dosis efectiva en una radiografía periapical digital?",
+      "media": [],
+      "options": [
+        "Dosis moderada de 50 µSv",
+        "Dosis extremadamente baja de 1 a 5 µSv",
+        "Nivel de exposición de 100 µSv",
+        "Alta carga de radiación de 500 µSv"
+      ],
+      "correct": 1,
+      "explanation": "Gracias a los sensores digitales modernos, la dosis emitida por una radiografía intraoral es extremadamente baja.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q06",
+      "type": "single-choice",
+      "question": "¿Cuál es la dosis media de radiación al realizar una ortopantomografía?",
+      "media": [],
+      "options": [
+        "Umbral de 50 µSv",
+        "Valor crítico de 500 µSv",
+        "Valor de 5 a 15 µSv",
+        "Dosis acumulativa de 100 µSv"
+      ],
+      "correct": 2,
+      "explanation": "La radiografía panorámica expone al paciente a una dosis equivalente a solo unos días de radiación de fondo natural.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q07",
+      "type": "single-choice",
+      "question": "¿En qué rango se encuentra generalmente la dosis efectiva en CBCT (campo medio)?",
+      "media": [],
+      "options": [
+        "Intervalo de 20 a 100 µSv",
+        "Nivel fijo de 200 µSv",
+        "Valor estandarizado de 500 µSv",
+        "Nivel de exposición de 1000 µSv"
+      ],
+      "correct": 0,
+      "explanation": "La exposición en CBCT depende en gran medida del volumen de interés (FOV). Sigue siendo significativamente inferior a la de un escáner CT médico equivalente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q08",
+      "type": "single-choice",
+      "question": "¿Cómo se define el principio fundamental de protección radiológica conocido por el acrónimo ALARA?",
+      "media": [],
+      "options": [
+        "El uso exclusivo de dispositivos termográficos",
+        "La aplicación sistemática de la dosis máxima tolerable",
+        "El cálculo de la dosis media en función de la edad",
+        "Mantener la exposición en el nivel más bajo razonablemente alcanzable"
+      ],
+      "correct": 3,
+      "explanation": "ALARA (As Low As Reasonably Achievable) exige justificar cada radiografía y optimizar los parámetros para reducir la dosis sin perder información diagnóstica.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q09",
+      "type": "single-choice",
+      "question": "¿En qué consiste la regla de ortogonalidad o de 90° en la orientación del haz en radiografía periapical?",
+      "media": [],
+      "options": [
+        "Colocar la cabeza con el plano de Frankfurt en ángulo recto",
+        "Orientar el haz central perpendicular al eje del diente y al receptor",
+        "Inclinación horizontal del tubo para separar las raíces",
+        "Ajuste de la distancia fuente-película con contacto óseo"
+      ],
+      "correct": 1,
+      "explanation": "La ortogonalidad del haz con respecto al complejo diente-receptor garantiza una reproducción precisa sin distorsiones significativas de la morfología.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q10",
+      "type": "single-choice",
+      "question": "¿Cuál es el principio rector de la técnica de paralelismo en radiografía intraoral?",
+      "media": [],
+      "options": [
+        "Colocar el receptor paralelo al eje longitudinal del diente, con el haz central perpendicular",
+        "Mantener la película en contacto con la lengua a 45 grados",
+        "Alinear horizontalmente el tubo con el plano oclusal",
+        "Posicionar oblicuamente el receptor para proyectar los senos"
+      ],
+      "correct": 0,
+      "explanation": "La técnica de paralelismo con posicionadores es el método más preciso para evitar el alargamiento o acortamiento de las imágenes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q11",
+      "type": "single-choice",
+      "question": "¿Qué enfoque técnico se opone históricamente al método de paralelismo en la imagen periapical?",
+      "media": [],
+      "options": [
+        "La técnica de la bisectriz",
+        "El método de tomografía lineal",
+        "La técnica de obtención tangencial",
+        "La proyección axial oclusal"
+      ],
+      "correct": 0,
+      "explanation": "La técnica de la bisectriz (regla de Cieszynski) se utiliza cuando la anatomía impide el paralelismo, pero crea más distorsiones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q12",
+      "type": "single-choice",
+      "question": "¿Qué estructuras anatómicas específicas deben estar presentes en una radiografía periapical correcta?",
+      "media": [],
+      "options": [
+        "La textura superficial de la mucosa gingival",
+        "Solo la morfología de la corona clínica",
+        "Los límites del seno maxilar y el trayecto del conducto mandibular",
+        "Toda la arquitectura radicular, la zona apical y 2 mm de hueso periapical"
+      ],
+      "correct": 3,
+      "explanation": "La radiografía periapical debe mostrar todo el diente desde la corona hasta el ápice para diagnosticar lesiones endodónticas o periodontales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q13",
+      "type": "single-choice",
+      "question": "¿Cuál es la especificidad diagnóstica de la radiografía interproximal (de mordida)?",
+      "media": [],
+      "options": [
+        "La detección precoz de caries proximales y la evaluación de las crestas alveolares",
+        "El análisis en profundidad de las patologías quísticas periapicales",
+        "La búsqueda de fracturas radiculares en el tercio apical",
+        "La detección de reabsorciones internas"
+      ],
+      "correct": 0,
+      "explanation": "La radiografía de mordida es el examen rey para detectar caries interproximales y controlar el nivel óseo marginal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q14",
+      "type": "single-choice",
+      "question": "¿Qué inclinación vertical se recomienda generalmente para una radiografía de mordida?",
+      "media": [],
+      "options": [
+        "Inclinación estrictamente neutra de 0 grados",
+        "Inclinación positiva de +5 a +10 grados",
+        "Inclinación muy positiva de +20 grados",
+        "Inclinación negativa de -10 grados"
+      ],
+      "correct": 1,
+      "explanation": "Una ligera inclinación vertical positiva (+5° a +10°) permite proyectar claramente el espacio interproximal sin superposición de cúspides.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q15",
+      "type": "single-choice",
+      "question": "¿Cuál es la indicación clínica principal de la proyección radiográfica oclusal?",
+      "media": [],
+      "options": [
+        "La localización de cuerpos extraños, dientes retenidos o cálculos salivales",
+        "El seguimiento de la cicatrización tras la colocación de un implante",
+        "La evaluación precisa de la obliteración del conducto radicular",
+        "La medición de la pérdida de inserción conjuntiva"
+      ],
+      "correct": 0,
+      "explanation": "Las radiografías oclusales proporcionan una vista en planta (axial), ideal para localizar una estructura en relación con las corticales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q16",
+      "type": "single-choice",
+      "question": "¿En qué consiste el examen radiológico llamado cefalograma?",
+      "media": [],
+      "options": [
+        "Una reconstrucción 3D dinámica de los cóndilos",
+        "Una imagen centrada en el análisis de los senos",
+        "Una radiografía estandarizada del cráneo de perfil o frente desde una gran distancia",
+        "Una exposición sectorial de los procesos alveolares"
+      ],
+      "correct": 2,
+      "explanation": "El cefalograma es una herramienta indispensable en ortodoncia para realizar análisis cefalométricos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q17",
+      "type": "single-choice",
+      "question": "¿Cuál es la característica técnica de la telerradiografía?",
+      "media": [],
+      "options": [
+        "El uso de una gran distancia fuente-paciente para limitar el aumento",
+        "La aplicación de un haz ultradivergente",
+        "El uso de un medio de contraste yodado",
+        "El registro en un soporte de película intraoral"
+      ],
+      "correct": 0,
+      "explanation": "La gran distancia fuente-objeto reduce el efecto de proyección geométrica (aumento), permitiendo mediciones fiables a escala 1:1.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q18",
+      "type": "single-choice",
+      "question": "¿Cómo se define la radiografía digital directa (CCD o CMOS)?",
+      "media": [],
+      "options": [
+        "La digitalización secundaria de una radiografía en papel",
+        "La conversión instantánea de fotones de rayos X en señales eléctricas transmitidas al ordenador",
+        "El uso de radiografías de película convencional",
+        "El registro en placas de fósforo fotoestimulables"
+      ],
+      "correct": 1,
+      "explanation": "Los sensores rígidos transmiten la imagen en tiempo real, eliminando la demora del revelado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q19",
+      "type": "single-choice",
+      "question": "¿Qué es la radiografía digital indirecta mediante placas fotoestimulables (PSP)?",
+      "media": [],
+      "options": [
+        "Un sistema que utiliza placas de fósforo leídas por un escáner láser",
+        "Un dispositivo rígido conectado por cable USB",
+        "Un método de imagen térmica por infrarrojos",
+        "Una técnica de duplicación óptica"
+      ],
+      "correct": 0,
+      "explanation": "Las placas PSP ofrecen la flexibilidad de las radiografías de película al tiempo que se integran en el entorno digital.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q20",
+      "type": "single-choice",
+      "question": "¿Cómo se define el contraste en una imagen radiológica dental?",
+      "media": [],
+      "options": [
+        "La intensidad general del flujo luminoso en la pantalla",
+        "La nitidez interna de las líneas de demarcación",
+        "La deformación geométrica causada por el tubo",
+        "La variación de la densidad óptica o de los niveles de gris entre las estructuras anatómicas"
+      ],
+      "correct": 3,
+      "explanation": "El contraste permite diferenciar el esmalte, la dentina, el hueso y el ligamento. Está determinado principalmente por el voltaje del tubo (kV).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q21",
+      "type": "single-choice",
+      "question": "¿Qué es la nitidez (resolución espacial) de la imagen?",
+      "media": [],
+      "options": [
+        "La precisión en la reproducción de los contornos y detalles de los tejidos",
+        "La cantidad total de energía absorbida por los tejidos",
+        "La diferencia de transparencia entre las zonas claras y oscuras",
+        "La aparición de estructuras anatómicas fantasma"
+      ],
+      "correct": 0,
+      "explanation": "La nitidez depende de factores geométricos (foco, distancias) y de la resolución interna del receptor.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q22",
+      "type": "single-choice",
+      "question": "¿Cuál es la causa directa del desenfoque cinético?",
+      "media": [],
+      "options": [
+        "La elección incorrecta del voltaje del tubo",
+        "La dispersión secundaria de los rayos X",
+        "El desplazamiento físico del paciente o del tubo durante la exposición",
+        "El desgaste del blanco de tungsteno"
+      ],
+      "correct": 2,
+      "explanation": "El desenfoque cinético reduce el valor diagnóstico; se previene exigiendo una estricta inmovilidad.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q23",
+      "type": "single-choice",
+      "question": "¿Cómo se define un artefacto en radiología?",
+      "media": [],
+      "options": [
+        "Una anomalía o imagen falsa creada por la técnica o por elementos externos",
+        "Una variante anatómica normal rara",
+        "Un filtro metálico que elimina los fotones de baja energía",
+        "La activación de los cristales por la luz"
+      ],
+      "correct": 0,
+      "explanation": "Las joyas o prótesis crean artefactos (líneas blancas, sombras) que pueden enmascarar lesiones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q24",
+      "type": "single-choice",
+      "question": "¿Qué mecanismo físico subyace al aumento de la imagen?",
+      "media": [],
+      "options": [
+        "La difracción de las ondas electromagnéticas",
+        "La amplificación electrónica de la señal",
+        "La divergencia interna de los rayos X que se desvían de una fuente puntual",
+        "La compresión física de los polímeros del sensor"
+      ],
+      "correct": 2,
+      "explanation": "El aumento geométrico es inevitable, pero se minimiza aumentando la distancia fuente-objeto.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_D1_Q25",
+      "type": "single-choice",
+      "question": "¿Cuál es la causa principal de la distorsión en una imagen periapical?",
+      "media": [],
+      "options": [
+        "La filtración insuficiente del haz",
+        "La alineación incorrecta que provoca la falta de perpendicularidad haz-objeto-receptor",
+        "La fluctuación de la corriente de alimentación del ánodo",
+        "El uso de un tiempo de pausa excesivamente corto"
+      ],
+      "correct": 1,
+      "explanation": "La distorsión altera las relaciones proporcionales (alargamiento o acortamiento), falseando las mediciones clínicas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

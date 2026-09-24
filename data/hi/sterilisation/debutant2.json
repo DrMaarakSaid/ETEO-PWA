@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sterilisation_debutant2_001",
+    "title": "Sterilization - Beginner 2",
+    "specialty": "STER",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "STER_D2_Q01",
+      "type": "single-choice",
+      "question": "Why is manual cleaning strongly discouraged?",
+      "media": [],
+      "options": [
+        "Lack of effectiveness against limescale",
+        "High risk of puncture accidents",
+        "Cost of brushes",
+        "Drying time"
+      ],
+      "correct": 1,
+      "explanation": "The risk of cutting injury is major.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q02",
+      "type": "single-choice",
+      "question": "What is the main mechanism of ultrasonic cleaning?",
+      "media": [],
+      "options": [
+        "Cavitation",
+        "Mechanical abrasion",
+        "Thermal disinfection",
+        "Dissolution"
+      ],
+      "correct": 0,
+      "explanation": "The implosion of bubbles (cavitation) dislodges dirt.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q03",
+      "type": "single-choice",
+      "question": "What is the average duration of an ultrasonic cycle?",
+      "media": [],
+      "options": [
+        "1 min",
+        "30 min",
+        "5 to 10 min",
+        "1 hour"
+      ],
+      "correct": 2,
+      "explanation": "5-10 minutes are sufficient for optimal effectiveness.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q04",
+      "type": "single-choice",
+      "question": "What is the major advantage of the washer-disinfector?",
+      "media": [],
+      "options": [
+        "Replaces the autoclave",
+        "Reduced cost",
+        "Standardization and reproducibility",
+        "High-pressure steam"
+      ],
+      "correct": 2,
+      "explanation": "It automates and guarantees a constant level of cleanliness.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q05",
+      "type": "single-choice",
+      "question": "What are the key steps of a washer-disinfector cycle?",
+      "media": [],
+      "options": [
+        "Sterilization, cooling",
+        "Washing, sterilization",
+        "Disinfection, rinsing",
+        "Pre-wash, wash, rinse, drying"
+      ],
+      "correct": 3,
+      "explanation": "This complete cycle takes the material from a soiled to a clean state.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q06",
+      "type": "single-choice",
+      "question": "Thermal disinfection relies on:",
+      "media": [],
+      "options": [
+        "UV rays",
+        "Water at 80-90°C",
+        "Pressure shock",
+        "Nebulization"
+      ],
+      "correct": 1,
+      "explanation": "Moist heat destroys the majority of pathogens.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q07",
+      "type": "single-choice",
+      "question": "Chemical disinfectants (aldehydes, etc.) are for:",
+      "media": [],
+      "options": [
+        "Instrument sterilization",
+        "Inanimate surfaces",
+        "Rinsing",
+        "Storage"
+      ],
+      "correct": 1,
+      "explanation": "They are effective on surfaces but do not replace sterilization.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q08",
+      "type": "single-choice",
+      "question": "What is the main danger of aldehydes?",
+      "media": [],
+      "options": [
+        "Ineffectiveness",
+        "High price",
+        "Corrosion",
+        "Toxicity and irritation"
+      ],
+      "correct": 3,
+      "explanation": "Their toxicity imposes strict precautions.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q09",
+      "type": "single-choice",
+      "question": "Why is peracetic acid used?",
+      "media": [],
+      "options": [
+        "High sporicidal power",
+        "Lubrication",
+        "Low cost",
+        "Simple rinsing"
+      ],
+      "correct": 0,
+      "explanation": "It is a high-level disinfectant active on spores.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q10",
+      "type": "single-choice",
+      "question": "Use of osmosis water at the end of the cycle:",
+      "media": [],
+      "options": [
+        "Fix proteins",
+        "Cool down",
+        "Avoid deposits and corrosion",
+        "Disinfect"
+      ],
+      "correct": 2,
+      "explanation": "It prevents limescale and protects steel.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q11",
+      "type": "single-choice",
+      "question": "Main cause of instrument corrosion:",
+      "media": [],
+      "options": [
+        "Intensive use",
+        "Moisture and unsuitable products",
+        "Dry storage",
+        "Temperature change"
+      ],
+      "correct": 1,
+      "explanation": "Stagnant water and chlorides are the enemies of steel.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q12",
+      "type": "single-choice",
+      "question": "Golden rule to prevent corrosion:",
+      "media": [],
+      "options": [
+        "Massive lubrication",
+        "Immediate and careful drying",
+        "Prolonged soaking",
+        "Metal brushes"
+      ],
+      "correct": 1,
+      "explanation": "Drying is the most critical step.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q13",
+      "type": "single-choice",
+      "question": "Why lubricate hinged instruments?",
+      "media": [],
+      "options": [
+        "Prevent seizing",
+        "Disinfect",
+        "Replace washing",
+        "Speed up drying"
+      ],
+      "correct": 0,
+      "explanation": "Lubrication is essential for hinges.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q14",
+      "type": "single-choice",
+      "question": "When to lubricate instruments?",
+      "media": [],
+      "options": [
+        "Every week",
+        "After cleaning, before sterilization",
+        "Before annual sterilization",
+        "If rigid"
+      ],
+      "correct": 1,
+      "explanation": "Regular lubrication maintains optimal condition.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q15",
+      "type": "single-choice",
+      "question": "The leak test (air leakage) checks:",
+      "media": [],
+      "options": [
+        "Steam quality",
+        "Time",
+        "Presence of spores",
+        "Tightness of the chamber"
+      ],
+      "correct": 3,
+      "explanation": "An air leak compromises sterilization.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q16",
+      "type": "single-choice",
+      "question": "Frequency of the leak test:",
+      "media": [],
+      "options": [
+        "Every cycle",
+        "Daily",
+        "Monthly",
+        "Weekly"
+      ],
+      "correct": 1,
+      "explanation": "Essential daily.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q17",
+      "type": "single-choice",
+      "question": "What does the Bowie-Dick test check?",
+      "media": [],
+      "options": [
+        "Temperature",
+        "Soiling",
+        "Air removal / steam penetration",
+        "Packaging quality"
+      ],
+      "correct": 2,
+      "explanation": "Confirms steam penetration.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q18",
+      "type": "single-choice",
+      "question": "'Flash' cycle:",
+      "media": [],
+      "options": [
+        "For fragile items",
+        "Standard packaged",
+        "For unwrapped instruments",
+        "Chemical disinfection"
+      ],
+      "correct": 2,
+      "explanation": "Unwrapped instruments for immediate use.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q19",
+      "type": "single-choice",
+      "question": "Why limit the Flash cycle?",
+      "media": [],
+      "options": [
+        "No sterile storage",
+        "High cost",
+        "Thermal ineffectiveness",
+        "Melting plastics"
+      ],
+      "correct": 0,
+      "explanation": "Does not allow sterile storage.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q20",
+      "type": "single-choice",
+      "question": "Storage location for instruments:",
+      "media": [],
+      "options": [
+        "Humid",
+        "Exposed to light",
+        "Clean, dry, dust-free",
+        "High temperature"
+      ],
+      "correct": 2,
+      "explanation": "Preserves the sterile barrier.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q21",
+      "type": "single-choice",
+      "question": "Validity of sterile packaging:",
+      "media": [],
+      "options": [
+        "Limited to 24 hours",
+        "Long if integrity is preserved",
+        "Limited to 1 month",
+        "Variable"
+      ],
+      "correct": 1,
+      "explanation": "As long as the packaging is intact and dry.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q22",
+      "type": "single-choice",
+      "question": "If packaging is found wet:",
+      "media": [],
+      "options": [
+        "Use after drying",
+        "Use if pure water",
+        "No, not sterile",
+        "Use if recent"
+      ],
+      "correct": 2,
+      "explanation": "Indicates a breach of the barrier.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q23",
+      "type": "single-choice",
+      "question": "Why avoid overloading the autoclave?",
+      "media": [],
+      "options": [
+        "Wear on seals",
+        "Overheating",
+        "Risk of failure due to steam blockage",
+        "Damage to door"
+      ],
+      "correct": 2,
+      "explanation": "Steam must circulate freely.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q24",
+      "type": "single-choice",
+      "question": "Why slow cooling?",
+      "media": [],
+      "options": [
+        "Avoid internal condensation",
+        "Save time",
+        "Fix colors",
+        "Protect machine"
+      ],
+      "correct": 0,
+      "explanation": "A rapid drop creates moisture by condensation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "STER_D2_Q25",
+      "type": "single-choice",
+      "question": "Use of periodic maintenance:",
+      "media": [],
+      "options": [
+        "Electricity savings",
+        "Guarantee safety and compliance",
+        "Clean exterior",
+        "Number of cycles"
+      ],
+      "correct": 1,
+      "explanation": "Legal obligation for reliability.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "formes_juridiques_debutant2_001",
+    "title": "Formes_juridiques - Débutant 2",
+    "specialty": "FORM",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "FORM_D2_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi, associé unique d'une SARL-AU, décède subitement. Selon les amendements de 2024 à la loi 5-96, que doivent faire ses héritiers ?",
+      "media": [],
+      "options": [
+        "Dissoudre automatiquement la société dans les 30 jours",
+        "Demander au tribunal la désignation d'un mandataire dans les 60 jours",
+        "Transmettre les parts sociales sans aucune formalité",
+        "Vendre le cabinet à un confrère dans les 15 jours"
+      ],
+      "correct": 1,
+      "explanation": "Les amendements de 2024 (lois 44.24 et 45.24) précisent qu'en cas de décès de l'associé unique, un héritier peut demander au président du tribunal de désigner un mandataire pour convoquer une AG dans un délai de 60 jours.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri est gérant d'une SARL classique. Il souhaite contracter un emprunt auprès de sa propre société. Selon l'article 66 de la loi 5-96, est-ce autorisé ?",
+      "media": [],
+      "options": [
+        "Oui, si l'assemblée des associés l'autorise",
+        "Non, l'interdiction est absolue et s'étend aux proches",
+        "Oui, s'il s'agit d'un prêt de 50 000 DH maximum",
+        "Non, mais son conjoint peut le faire à sa place"
+      ],
+      "correct": 1,
+      "explanation": "L'article 66 interdit aux gérants et associés personnes physiques de contracter des emprunts auprès de la société, sous quelque forme que ce soit. Cette interdiction s'applique également aux conjoints, parents et alliés jusqu'au deuxième degré.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi est gérant d'une SARL. Il souhaite engager la société sur un contrat de location de 5 ans. Une clause statutaire l'oblige à obtenir l'accord des associés pour tout contrat supérieur à 2 ans. Que se passe-t-il s'il signe quand même ?",
+      "media": [],
+      "options": [
+        "Le contrat est nul de plein droit",
+        "Le gérant engage sa responsabilité civile envers les associés",
+        "La société est automatiquement dissoute",
+        "Le contrat devient un contrat personnel du gérant"
+      ],
+      "correct": 1,
+      "explanation": "Selon l'article 8 de la loi 5-96, en cas de violation d'une limitation statutaire, le gérant engage sa responsabilité civile à l'égard des associés. Les clauses statutaires limitant les pouvoirs des gérants sont inopposables aux tiers.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri est associé unique d'une SARL-AU. En cas de décès, un héritier demande la désignation d'un mandataire. Quel est le délai imparti pour cette procédure ?",
+      "media": [],
+      "options": [
+        "30 jours à compter du décès",
+        "60 jours à compter du décès",
+        "90 jours à compter du décès",
+        "6 mois à compter du décès"
+      ],
+      "correct": 1,
+      "explanation": "L'amendement de 2024 à l'article 85 de la loi 5-96 prévoit un délai de 60 jours à compter de la date du décès pour demander la désignation d'un mandataire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi, en personne physique, souhaite ouvrir un compte bancaire pour son cabinet. Selon l'article 18 du Code de Commerce, que doit-il faire ?",
+      "media": [],
+      "options": [
+        "Utiliser son compte personnel pour simplifier la gestion",
+        "Ouvrir un compte professionnel distinct",
+        "Ouvrir un compte joint avec son conjoint",
+        "Aucune obligation, il peut fonctionner en espèces"
+      ],
+      "correct": 1,
+      "explanation": "L'article 18 du Code de Commerce impose à tout commerçant l'obligation d'ouvrir un compte bancaire professionnel pour les besoins de son commerce.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri a une SARL. Selon l'article 63 de la loi 5-96, quels sont les pouvoirs du gérant vis-à-vis des tiers ?",
+      "media": [],
+      "options": [
+        "Il ne peut engager la société que pour les actes expressément autorisés par les statuts",
+        "Il engage la société par les actes entrant dans l'objet social",
+        "Il doit obtenir l'accord de tous les associés pour chaque acte",
+        "Il ne peut engager la société que pour des actes inférieurs à 100 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Selon l'article 63, le gérant engage la société par les actes entrant dans l'objet social. Les clauses statutaires limitant ses pouvoirs sont inopposables aux tiers.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q07",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi est gérant d'une SARL avec son confrère. L'un d'eux s'oppose à un contrat avant qu'il ne soit conclu. Selon la loi 5-96, cette opposition est-elle opposable au tiers ?",
+      "media": [],
+      "options": [
+        "Oui, si l'opposition est notifiée par écrit",
+        "Non, l'opposition est sans effet à l'égard des tiers",
+        "Oui, si le tiers en a eu connaissance",
+        "Non, sauf si le gérant est l'associé majoritaire"
+      ],
+      "correct": 1,
+      "explanation": "En cas de pluralité de gérants, l'opposition formée par un gérant aux actes d'un autre est sans effet à l'égard des tiers, à moins qu'il ne soit établi qu'ils en ont eu connaissance.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q08",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri, personne physique, est soumis au Code de Commerce. En cas de difficultés financières, quel est le risque principal ?",
+      "media": [],
+      "options": [
+        "La dissolution automatique de son cabinet",
+        "La saisie de ses biens personnels par les créanciers",
+        "La radiation du tableau de l'Ordre",
+        "L'interdiction d'exercer pendant 5 ans"
+      ],
+      "correct": 1,
+      "explanation": "En personne physique, il n'y a pas de distinction entre le patrimoine professionnel et personnel. Les créanciers peuvent saisir l'ensemble des biens du dentiste, y compris ses biens personnels.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi, associé unique d'une SARL-AU, décède. Ses héritiers ne font rien pendant 60 jours. Quelle est la conséquence prévue par la loi ?",
+      "media": [],
+      "options": [
+        "La société est automatiquement dissoute",
+        "La société continue sans changement",
+        "La dissolution de la société est la sanction possible de l'inaction",
+        "Les parts sociales sont attribuées au conjoint survivant"
+      ],
+      "correct": 2,
+      "explanation": "La proposition de modification ne prévoit pas expressément la sanction de l'inaction des héritiers dans le délai de 60 jours, mais la dissolution de la société est la conséquence possible.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q10",
+      "type": "single-choice",
+      "question": "Selon l'article 6 du Code de Commerce, un chirurgien-dentiste est-il un commerçant au sens commercial du terme ?",
+      "media": [],
+      "options": [
+        "Oui, car il exerce une activité lucrative",
+        "Non, car les dentistes ne sont pas visés par l'article 6",
+        "Oui, car il est soumis à la taxe professionnelle",
+        "Non, car il n'achète pas pour revendre en l'état"
+      ],
+      "correct": 1,
+      "explanation": "L'article 6 du Code de Commerce définit les actes de commerce par nature. L'activité de dentiste, en tant que profession libérale de soins, n'y est pas visée. Le dentiste n'est pas un commerçant au sens commercial, mais il est soumis au Code de Commerce pour ses obligations formelles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri a une SARL classique avec 3 associés. Un associé souhaite céder ses parts à un confrère. Selon la loi 5-96, quelle est la règle applicable ?",
+      "media": [],
+      "options": [
+        "La cession est libre sans aucune condition",
+        "La cession est soumise à l'agrément des associés si les statuts le prévoient",
+        "La cession est interdite pendant les 5 premières années",
+        "La cession est automatique sans formalité"
+      ],
+      "correct": 1,
+      "explanation": "La loi 5-96 permet aux associés d'insérer dans les statuts des clauses d'agrément pour la cession des parts sociales. La liberté de cession n'est pas absolue en SARL.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi, personne physique, a un chiffre d'affaires de 250 000 DH. Selon le CGI, quel régime d'imposition lui est applicable ?",
+      "media": [],
+      "options": [
+        "Le régime du Résultat Net Réel (RNR)",
+        "Le régime du Résultat Net Simplifié (RNS)",
+        "Le régime de la Contribution Professionnelle Unique (CPU)",
+        "Le régime forfaitaire"
+      ],
+      "correct": 1,
+      "explanation": "Pour les professions libérales, le RNS s'applique aux personnes physiques dont le CA est compris entre 250 000 et 500 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri, associé unique d'une SARL-AU, souhaite embaucher son fils. Selon les règles de bonne gouvernance, que doit-il vérifier ?",
+      "media": [],
+      "options": [
+        "Rien, la SARL-AU offre une liberté totale d'embauche",
+        "Le respect du Code du travail et des règles de conflit d'intérêts",
+        "L'obligation de déclarer l'embauche à l'Ordre des dentistes",
+        "L'autorisation préalable du tribunal de commerce"
+      ],
+      "correct": 1,
+      "explanation": "Même en SARL-AU, l'embauche d'un proche doit respecter le Code du travail et éviter tout conflit d'intérêts, notamment pour la fixation du salaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q14",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi, gérant d'une SARL, souhaite créer une succursale. Selon la loi 5-96, quelle est la règle ?",
+      "media": [],
+      "options": [
+        "Il peut le faire librement sans autorisation",
+        "Il doit obtenir une décision collective des associés",
+        "Il doit demander l'autorisation du tribunal",
+        "La création de succursale est interdite en SARL"
+      ],
+      "correct": 0,
+      "explanation": "Le gérant de SARL dispose des pouvoirs les plus étendus pour agir au nom de la société. La création d'une succursale est un acte de gestion ordinaire qui entre dans ses pouvoirs.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q15",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri, en personne physique, est imposé selon le régime des BNC. Peut-il déduire les charges liées à sa voiture personnelle ?",
+      "media": [],
+      "options": [
+        "Oui, intégralement si elle est utilisée pour le cabinet",
+        "Seulement la part professionnelle dûment justifiée",
+        "Non, les frais de voiture ne sont jamais déductibles",
+        "Oui, si le véhicule est à son nom"
+      ],
+      "correct": 1,
+      "explanation": "En BNC, seules les charges engagées pour les besoins de l'activité professionnelle sont déductibles. La part personnelle doit être distinguée de la part professionnelle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi, associé d'une SARL, souhaite se faire payer une rémunération. Selon la loi 5-96, comment est-elle fixée ?",
+      "media": [],
+      "options": [
+        "Elle est fixée librement par le gérant",
+        "Elle est fixée par une décision collective ordinaire des associés",
+        "Elle est fixée par un arrêté ministériel",
+        "Elle est fixée par les statuts de manière définitive"
+      ],
+      "correct": 1,
+      "explanation": "Les gérants peuvent recevoir une rémunération dont les modalités sont arrêtées par décision collective ordinaire des associés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q17",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri, personne physique, est-il soumis à l'impôt sur les sociétés (IS) ?",
+      "media": [],
+      "options": [
+        "Oui, comme tout professionnel libéral",
+        "Non, il est soumis à l'impôt sur le revenu (IR)",
+        "Oui, s'il réalise un bénéfice supérieur à 200 000 DH",
+        "Non, les dentistes sont exonérés d'impôt"
+      ],
+      "correct": 1,
+      "explanation": "Les personnes physiques exerçant en nom propre sont soumises à l'impôt sur le revenu (IR), catégorie des BNC. L'IS ne concerne que les personnes morales.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi, associé unique d'une SARL-AU, décède. Ses héritiers souhaitent continuer l'activité. Selon la loi 5-96 modifiée, que doivent-ils faire ?",
+      "media": [],
+      "options": [
+        "Rien, ils reprennent automatiquement la gérance",
+        "Demander au tribunal la désignation d'un mandataire pour convoquer une AG",
+        "Créer une nouvelle société dans les 30 jours",
+        "Vendre les parts sociales à un confrère dans les 15 jours"
+      ],
+      "correct": 1,
+      "explanation": "Les amendements de 2024 à l'article 85 permettent aux héritiers ou ayants droit de demander au président du tribunal compétent de désigner un mandataire pour tenir une AG et mettre à jour les statuts.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri, gérant d'une SARL, veut acheter un immeuble. Selon la loi 5-96, ce type d'opération nécessite-t-il l'approbation des associés ?",
+      "media": [],
+      "options": [
+        "Oui, si les statuts le prévoient",
+        "Non, le gérant a tous les pouvoirs",
+        "Oui, c'est une décision extraordinaire obligatoire",
+        "Non, l'achat d'immeuble est interdit en SARL"
+      ],
+      "correct": 0,
+      "explanation": "Le gérant dispose des pouvoirs les plus étendus pour agir en toute circonstance au nom de la société. Cependant, les statuts peuvent limiter ces pouvoirs en imposant l'accord préalable des associés pour certaines opérations.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q20",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi, en personne physique, a un CA de 800 000 DH. Quel est le taux de sa Cotisation Minimale ?",
+      "media": [],
+      "options": [
+        "0,25 %",
+        "0,50 %",
+        "4 %",
+        "6 %"
+      ],
+      "correct": 3,
+      "explanation": "Pour les personnes physiques soumises à l'IR, la CM est calculée au taux de 6 % du chiffre d'affaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q21",
+      "type": "single-choice",
+      "question": "Selon le Code de déontologie, le Dr Zemmouri peut-il faire de la publicité pour son cabinet en utilisant des réductions commerciales ?",
+      "media": [],
+      "options": [
+        "Oui, pour attirer de nouveaux patients",
+        "Non, la publicité commerciale est interdite",
+        "Oui, si elle est approuvée par l'Ordre",
+        "Non, mais il peut diffuser des offres sur les réseaux sociaux"
+      ],
+      "correct": 1,
+      "explanation": "Le Code de déontologie interdit toute publicité commerciale. Le dentiste ne peut pas se livrer à des pratiques mercantiles comme les réductions pour fidélisation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q22",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi est gérant d'une SARL. Selon l'article 66 de la loi 5-96, peut-il se faire cautionner par la société pour un prêt personnel ?",
+      "media": [],
+      "options": [
+        "Oui, si les associés sont d'accord",
+        "Non, cette interdiction est absolue",
+        "Oui, pour un montant inférieur à 50 000 DH",
+        "Oui, si le prêt est destiné au cabinet"
+      ],
+      "correct": 1,
+      "explanation": "L'article 66 interdit aux gérants de se faire cautionner ou avaliser par la société leurs engagements envers les tiers, quelle que soit la somme.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q23",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri, personne physique, a un déficit fiscal de 50 000 DH. Selon le régime RNR, sur combien d'années peut-il le reporter ?",
+      "media": [],
+      "options": [
+        "2 ans",
+        "3 ans",
+        "4 ans",
+        "5 ans"
+      ],
+      "correct": 2,
+      "explanation": "Dans le cadre du RNR, le déficit est reportable sur les bénéfices des quatre années suivantes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Meknassi, associé unique d'une SARL-AU, souhaite dissoudre sa société. Selon la loi 5-96, quelle est la procédure ?",
+      "media": [],
+      "options": [
+        "Il peut le faire par une simple décision personnelle",
+        "Il doit convoquer une assemblée générale extraordinaire",
+        "Il doit obtenir l'accord du tribunal de commerce",
+        "Il doit attendre la fin de l'exercice en cours"
+      ],
+      "correct": 0,
+      "explanation": "L'associé unique exerce les pouvoirs dévolus à l'ensemble des associés. Il peut donc décider seul de la dissolution de la société, sans avoir à convoquer d'assemblée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Zemmouri, personne physique, souhaite créer une SARL avec 3 confrères. Quelle est la condition de capital minimum actuelle ?",
+      "media": [],
+      "options": [
+        "100 000 DH",
+        "50 000 DH",
+        "10 000 DH",
+        "1 Dirham"
+      ],
+      "correct": 3,
+      "explanation": "Depuis la loi 24-10, le capital social est librement fixé par les associés. Un capital symbolique de 1 Dirham est possible.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

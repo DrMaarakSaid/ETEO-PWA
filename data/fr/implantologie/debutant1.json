@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "implantologie_debutant1_001",
+    "title": "Implantologie - Débutant 1",
+    "specialty": "IMPL",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "IMPL_D1_Q01",
+      "type": "single-choice",
+      "question": "Sami et Mina reçoivent un patient édenté partiel. Sami dit : 'Un implant, c'est simple !' Mina lui demande : 'Tu es sûr de savoir ce qu'est un implant dentaire ?' Qu'est-ce qu'un implant dentaire ?",
+      "media": [],
+      "options": [
+        "Une racine artificielle en titane placée dans l'os pour remplacer une dent manquante",
+        "Une couronne posée sur une dent naturelle dévitalisée",
+        "Un bridge collé sur les dents adjacentes",
+        "Une prothèse amovible en résine"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'L'implant est une racine artificielle en titane qui s'intègre à l'os (ostéointégration) pour supporter une prothèse.' Sami, un peu vexé, répond : 'Je le savais, je voulais juste tester !'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q02",
+      "type": "single-choice",
+      "question": "Sami, pressé, veut poser un implant sans faire de planification préalable. Mina l'arrête : 'Sami, il faut toujours planifier !' Pourquoi la planification est-elle cruciale en implantologie ?",
+      "media": [],
+      "options": [
+        "Pour déterminer la position, l'angle et la profondeur idéaux de l'implant",
+        "Pour gagner du temps pendant la chirurgie",
+        "Pour impressionner le patient avec un scanner",
+        "Pour augmenter le coût du traitement"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Une planification rigoureuse avec scanner et guides chirurgicaux permet de placer l'implant dans la position idéale.' Sami, un peu gêné, admet qu'elle a raison.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q03",
+      "type": "single-choice",
+      "question": "Mina montre à Sami un scanner et lui explique le concept d'ostéointégration. Sami demande : 'C'est quoi exactement ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La liaison directe et structurale entre l'os vivant et la surface de l'implant",
+        "La cicatrisation de la gencive autour de l'implant",
+        "La formation de nouveaux vaisseaux sanguins",
+        "La croissance de l'os autour de la couronne"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'L'ostéointégration est la clé du succès en implantologie, c'est l'union fonctionnelle entre l'os et le titane.' Sami, fasciné, promet d'en apprendre plus.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q04",
+      "type": "single-choice",
+      "question": "Sami, confiant, dit à Mina qu'il va poser un implant en 20 minutes. Mina lui demande : 'Mais comment tu choisis la longueur de l'implant ?' Sami répond :",
+      "media": [],
+      "options": [
+        "En fonction de la hauteur osseuse disponible mesurée sur le scanner",
+        "En fonction de la dent à remplacer uniquement",
+        "En prenant la plus longue possible pour être sûr",
+        "En fonction de la couleur de la gencive"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La hauteur osseuse disponible est déterminante, elle doit être mesurée avec précision sur le scanner.' Sami, un peu déstabilisé, promet de vérifier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q05",
+      "type": "single-choice",
+      "question": "Mina, en analysant une radio, dit : 'Sami, il y a une densité osseuse insuffisante.' Sami demande : 'Qu'est-ce que ça veut dire ?'",
+      "media": [],
+      "options": [
+        "L'os n'a pas la qualité suffisante pour supporter un implant",
+        "L'os est trop dur pour percer",
+        "L'os est trop proche du nerf",
+        "L'os est infecté"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La densité osseuse est un facteur clé, elle influence la stabilité primaire de l'implant.' Sami, prenant note, demande comment améliorer cette densité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q06",
+      "type": "single-choice",
+      "question": "Sami demande à Mina comment améliorer une densité osseuse insuffisante. Mina répond :",
+      "media": [],
+      "options": [
+        "Par une greffe osseuse ou l'utilisation d'implants plus larges",
+        "En augmentant la vitesse de forage",
+        "En utilisant un implant plus court",
+        "En posant une couronne plus légère"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les greffes osseuses permettent de reconstituer le volume osseux, et des implants de plus grand diamètre peuvent améliorer la stabilité.' Sami, attentif, suit ses conseils.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q07",
+      "type": "single-choice",
+      "question": "Sami, en préparant un patient, demande à Mina : 'Qu'est-ce que la stabilité primaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La fixation mécanique immédiate de l'implant dans l'os après la pose",
+        "La cicatrisation de la gencive autour de l'implant",
+        "La solidité de la couronne après 6 mois",
+        "La formation de l'os autour de l'implant"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La stabilité primaire est essentielle, elle permet une bonne ostéointégration.' Sami, concentré, recherche la meilleure stabilité possible.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q08",
+      "type": "single-choice",
+      "question": "Mina, en instrumentant, dit à Sami : 'Attention à ne pas chauffer l'os pendant le forage !' Sami demande : 'Pourquoi ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La chaleur peut provoquer une nécrose osseuse et compromettre l'ostéointégration",
+        "La chaleur fait fondre l'implant",
+        "La chaleur rend l'os plus dur",
+        "La chaleur augmente le saignement"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Une irrigation abondante est nécessaire pour éviter la nécrose thermique de l'os.' Sami, prudent, vérifie bien l'irrigation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q09",
+      "type": "single-choice",
+      "question": "Sami a posé un implant et demande à Mina : 'Combien de temps faut-il attendre avant de poser la couronne ?' Mina répond :",
+      "media": [],
+      "options": [
+        "En général 3 à 6 mois, le temps de l'ostéointégration",
+        "Immédiatement après la pose",
+        "1 semaine après la pose",
+        "2 ans après la pose"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le délai varie selon les cas, mais en règle générale, il faut laisser le temps à l'os de s'intégrer à l'implant.' Sami, prenant note, est plus patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q10",
+      "type": "single-choice",
+      "question": "Mina explique à Sami le concept de mise en charge immédiate. Sami demande : 'C'est quoi ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La pose d'une couronne provisoire dans les 48h suivant la pose de l'implant",
+        "La pose de l'implant sans chirurgie",
+        "La pose d'une couronne définitive le jour même",
+        "L'absence de couronne sur l'implant"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La mise en charge immédiate est possible dans des cas sélectionnés, avec une excellente stabilité primaire.' Sami, étonné, promet de se renseigner.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q11",
+      "type": "single-choice",
+      "question": "Sami, en voyant un implant avec un angle incorrect, demande à Mina : 'Est-ce qu'il faut le retirer ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Pas forcément, on peut parfois utiliser un pilier angulé",
+        "Oui, toujours",
+        "Non, ça n'a pas d'importance",
+        "Oui, pour recommencer à zéro"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les piliers angulés permettent de corriger les défauts d'axe.' Sami, soulagé, apprend cette astuce.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q12",
+      "type": "single-choice",
+      "question": "Mina pose un implant dans une zone esthétique. Sami lui demande : 'Pourquoi tu fais attention à la position ?' Mina répond :",
+      "media": [],
+      "options": [
+        "La position de l'implant détermine l'esthétique de la couronne finale",
+        "La position n'a pas d'importance pour l'esthétique",
+        "La position ne compte que pour la mastication",
+        "La position est secondaire"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La position tridimensionnelle de l'implant est cruciale pour un résultat esthétique optimal.' Sami, observant, admire son travail.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q13",
+      "type": "single-choice",
+      "question": "Sami, après avoir posé un implant, demande à Mina : 'Quels sont les signes de succès d'un implant ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Absence de douleur, mobilité nulle, radiographie normale",
+        "Douleur légère et mobilité de l'implant",
+        "Saignement et douleur intense",
+        "Mobilité de la couronne"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les critères de succès incluent l'absence de douleur, de mobilité, et une radiographie sans perte osseuse.' Sami, rassuré, valide son travail.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q14",
+      "type": "single-choice",
+      "question": "Mina, en examinant un patient, dit à Sami : 'Il y a une perte osseuse autour de l'implant.' Sami demande : 'Qu'est-ce que ça pourrait être ?'",
+      "media": [],
+      "options": [
+        "Une péri-implantite, une infection autour de l'implant",
+        "Une fracture de l'implant",
+        "Une usure de la couronne",
+        "Un problème de mastication"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La péri-implantite est une complication sérieuse, elle nécessite une prise en charge rapide.' Sami, inquiet, demande comment la traiter.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q15",
+      "type": "single-choice",
+      "question": "Sami demande à Mina comment traiter une péri-implantite. Mina répond :",
+      "media": [],
+      "options": [
+        "Débridement mécanique, désinfection, parfois chirurgie",
+        "Antibiotiques seuls",
+        "Extraction de l'implant systématique",
+        "Surveillance simple"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le traitement est complexe et nécessite souvent une approche chirurgicale.' Sami, attentif, promet de se former.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q16",
+      "type": "single-choice",
+      "question": "Mina, en planifiant un cas, utilise un guide chirurgical. Sami demande : 'À quoi ça sert ?' Mina répond :",
+      "media": [],
+      "options": [
+        "À guider le forage pour placer l'implant à la position idéale",
+        "À réduire le temps de chirurgie",
+        "À augmenter le coût du traitement",
+        "À faire de belles photos"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le guide chirurgical permet une précision millimétrique.' Sami, admiratif, s'intéresse à cette technologie.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q17",
+      "type": "single-choice",
+      "question": "Sami, en regardant une radio, demande à Mina : 'Comment savoir si l'os est suffisant pour un implant ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Avec un scanner CBCT qui donne une vue en 3D de l'os",
+        "Avec une simple radiographie panoramique",
+        "À l'œil nu",
+        "Avec une photo du patient"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le CBCT est l'outil de référence pour l'évaluation osseuse en 3D.' Sami, prenant note, comprend l'importance de cette imagerie.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q18",
+      "type": "single-choice",
+      "question": "Mina, en préparant un cas, dit à Sami : 'Il faut protéger le nerf alvéolaire inférieur.' Sami demande : 'Pourquoi ?'",
+      "media": [],
+      "options": [
+        "Pour éviter des lésions nerveuses avec des séquelles neurologiques",
+        "Pour arrêter le saignement",
+        "Pour que l'implant tienne mieux",
+        "Pour réduire la douleur"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le nerf alvéolaire inférieur est à risque, il faut respecter une distance de sécurité.' Sami, très attentif, est plus prudent.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q19",
+      "type": "single-choice",
+      "question": "Sami, en regardant une radio, demande à Mina : 'Que signifie une distance de sécurité de 2mm par rapport au nerf ?' Mina répond :",
+      "media": [],
+      "options": [
+        "C'est la distance minimale recommandée pour éviter de léser le nerf",
+        "C'est la distance maximale autorisée",
+        "C'est la distance qui permet un meilleur ancrage",
+        "C'est la distance qui accélère la cicatrisation"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Une distance de sécurité permet d'éviter des complications.' Sami, prudent, vérifie toujours cette distance.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q20",
+      "type": "single-choice",
+      "question": "Mina, en posant un implant, fait attention à l'angle de forage. Sami lui demande : 'Pourquoi l'angle est si important ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Pour suivre l'axe prothétique et éviter des complications",
+        "Pour être plus rapide",
+        "Pour impressionner le patient",
+        "Pour que l'implant soit plus esthétique"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Un mauvais axe peut compromettre toute la restauration prothétique.' Sami, attentif, suit son exemple.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q21",
+      "type": "single-choice",
+      "question": "Sami, après une implantation, demande à Mina : 'Quels sont les soins post-opératoires recommandés ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Antibioprophylaxie, antalgiques, glace, alimentation molle",
+        "Rien, c'est une chirurgie bénigne",
+        "Seulement des antalgiques",
+        "Un bain de bouche à l'eau salée"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Un protocole post-opératoire bien suivi est essentiel pour éviter les complications.' Sami, consciencieux, explique tout au patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q22",
+      "type": "single-choice",
+      "question": "Mina, en réévaluant un patient, dit à Sami : 'L'implant est bien ostéointégré.' Sami demande : 'Comment le sais-tu ?'",
+      "media": [],
+      "options": [
+        "Absence de mobilité, radiographie normale, patient asymptomatique",
+        "Radiographie avec perte osseuse",
+        "Douleur intense à la percussion",
+        "Mobilité de l'implant"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'L'ostéointégration est confirmée par l'absence de mobilité et une radiographie normale.' Sami, satisfait, valide le résultat.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q23",
+      "type": "single-choice",
+      "question": "Sami demande à Mina : 'Quels sont les matériaux des implants les plus courants ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Le titane pur et les alliages de titane",
+        "L'acier inoxydable",
+        "Le zirconium",
+        "L'or"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le titane est le matériau de référence grâce à sa biocompatibilité.' Sami, prenant note, enrichit ses connaissances.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q24",
+      "type": "single-choice",
+      "question": "Mina, en expliquant un cas, dit à Sami : 'Il y a des contre-indications à l'implantologie.' Sami demande : 'Lesquelles ?'",
+      "media": [],
+      "options": [
+        "Diabète non équilibré, radiothérapie, bisphosphonates",
+        "L'hypertension légère",
+        "La prise de paracétamol",
+        "Le tabagisme modéré"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Certaines conditions médicales peuvent compromettre le succès des implants.' Sami, attentif, évalue chaque patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q25",
+      "type": "single-choice",
+      "question": "Mina termine une chirurgie et dit à Sami : 'Il faut maintenant s'occuper de la prothèse.' Sami demande : 'Quelle est la solution prothétique la plus simple ?'",
+      "media": [],
+      "options": [
+        "La couronne unitaire sur implant",
+        "Le bridge de plusieurs implants",
+        "La prothèse amovible sur implants",
+        "La barre de stabilisation"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La couronne unitaire est la solution la plus simple et la plus courante.' Sami, d'accord, prépare la prise d'empreinte.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "IMPL_D1_Q26",
+      "type": "single-choice",
+      "question": "Sami, en voyant le résultat final, dit à Mina : 'C'est magnifique !' Mina répond : 'C'est le fruit d'une bonne planification et d'une exécution rigoureuse.' Sami, impressionné, promet d'être plus méticuleux à l'avenir.",
+      "media": [],
+      "options": [
+        "Le résultat esthétique dépend de la planification initiale",
+        "Le résultat esthétique est secondaire",
+        "Le résultat esthétique ne dépend pas du chirurgien",
+        "Le résultat esthétique est aléatoire"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La planification initiale détermine le résultat esthétique final.' Sami, convaincu, adopte cette philosophie.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

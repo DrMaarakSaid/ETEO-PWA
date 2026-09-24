@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "radiologie_expert1_001",
+    "title": "Radiology - Expert 1",
+    "specialty": "RADI",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "RADI_E1_Q01",
+      "type": "single-choice",
+      "question": "Dr. Nadia must train young dentists in radiology. What is the first piece of advice she should give them?",
+      "media": [],
+      "options": [
+        "Radiology is an essential diagnostic tool, but it must be justified",
+        "Radiology is an administrative constraint",
+        "Radiology is optional",
+        "Radiology is reserved for specialists"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Radiology is essential, but each examination must be justified according to the ALARA principle.' Dr. Ayoub: 'I completely agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q02",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must create a training center in dental radiology. What is the main objective?",
+      "media": [],
+      "options": [
+        "Train radiologic technologists",
+        "Train dentists in diagnostic imaging",
+        "Train radiologists",
+        "Train dental assistants"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'The main objective is to train dentists in diagnostic imaging.' Dr. Nadia: 'I will participate in this training.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q03",
+      "type": "single-choice",
+      "question": "Dr. Nadia must evaluate the performance of a young dentist in radiology. Which measurement is the most important?",
+      "media": [],
+      "options": [
+        "The number of X-rays taken",
+        "The quality of images and diagnostic interpretation",
+        "The practice's turnover",
+        "The number of patients X-rayed"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'The quality of images and interpretation are the most important measures.' Dr. Ayoub: 'I agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q04",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must handle a crisis: a patient refuses the X-ray. What is the priority?",
+      "media": [],
+      "options": [
+        "Ignore the patient",
+        "Explain the diagnostic importance and obtain informed consent",
+        "Hide the incident",
+        "Blame the patient"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'The priority is to explain the diagnostic importance and obtain informed consent.' Dr. Nadia: 'I will help you manage this situation.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q05",
+      "type": "single-choice",
+      "question": "Dr. Nadia must train interns in risk management in radiology. What is the fundamental principle?",
+      "media": [],
+      "options": [
+        "Risk management is an option",
+        "Radiological risk management is a responsibility",
+        "Risk management is secondary",
+        "Risk management is a constraint"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'Radiological risk management is a fundamental professional responsibility.' Dr. Ayoub: 'I completely agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q06",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must create a guide to good practices in dental radiology. What is the main reference?",
+      "media": [],
+      "options": [
+        "Experts' recommendations",
+        "ALARA standards and scientific publications",
+        "Office habits",
+        "Personal preferences"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'Good practices should be based on ALARA standards and scientific publications.' Dr. Nadia: 'I will contribute to this guide.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q07",
+      "type": "single-choice",
+      "question": "Dr. Nadia must train young dentists in optimizing X-rays. What is the key message?",
+      "media": [],
+      "options": [
+        "Optimization is optional",
+        "Optimization is a service to the patient and diagnostic quality",
+        "Optimization is a constraint",
+        "Optimization is secondary"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'Optimizing X-rays is a service to the patient and diagnostic quality.' Dr. Ayoub: 'I agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q08",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must create a research program in dental radiology. What is the main objective?",
+      "media": [],
+      "options": [
+        "Publish articles",
+        "Improve clinical radiological practices",
+        "Make money",
+        "Compete with other programs"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'Research aims to improve clinical radiological practices.' Dr. Nadia: 'I will participate in the research.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q09",
+      "type": "single-choice",
+      "question": "Dr. Nadia must create a reference practice in radiology. What is the pillar of excellence?",
+      "media": [],
+      "options": [
+        "Quality of equipment",
+        "Quality of images and diagnostic interpretation",
+        "Number of patients",
+        "Turnover"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'Excellence is based on the quality of images and diagnostic interpretation.' Dr. Ayoub: 'I agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q10",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must evaluate the impact of radiology on patient satisfaction. What is the role of radiology?",
+      "media": [],
+      "options": [
+        "It is secondary",
+        "It is essential for diagnosis and patient trust",
+        "It is optional",
+        "It is a constraint"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'Radiology is essential for diagnosis and patient trust.' Dr. Nadia: 'I completely agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q11",
+      "type": "single-choice",
+      "question": "Dr. Nadia must train interns in innovation in radiology. What current trend is important?",
+      "media": [],
+      "options": [
+        "Artificial intelligence in radiology",
+        "Augmented reality",
+        "Dose reduction",
+        "All answers are correct"
+      ],
+      "correct": 3,
+      "explanation": "Dr. Nadia explains: 'Innovation concerns AI, augmented reality, and dose reduction.' Dr. Ayoub: 'I agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q12",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must create a radiological competency evaluation system. What is the objective?",
+      "media": [],
+      "options": [
+        "Sanction practitioners",
+        "Improve radiological practices",
+        "Reduce costs",
+        "Increase productivity"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'Evaluation aims to improve radiological practices.' Dr. Nadia: 'I will participate in the evaluation.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q13",
+      "type": "single-choice",
+      "question": "Dr. Nadia must manage an ethical conflict regarding radiation protection. What is the right attitude?",
+      "media": [],
+      "options": [
+        "Ignore the conflict",
+        "Respect ALARA standards and radiation protection rules",
+        "Hide the conflict",
+        "Change practice"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'ALARA standards should guide radiological practice.' Dr. Ayoub: 'I agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q14",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must write an article on the future of dental radiology. Which trend should be emphasized?",
+      "media": [],
+      "options": [
+        "The decline of dental radiology",
+        "The integration of AI and digital technologies",
+        "The decrease in imaging needs",
+        "The disappearance of radiology"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'The future lies in the integration of AI and digital technologies.' Dr. Nadia: 'I completely agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q15",
+      "type": "single-choice",
+      "question": "Dr. Nadia must create a radiological quality label for practices. What are the main criteria?",
+      "media": [],
+      "options": [
+        "Equipment and practice size",
+        "Image quality and compliance with radiation protection standards",
+        "Turnover",
+        "Number of patients"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'Image quality and compliance with radiation protection standards are the fundamental criteria.' Dr. Ayoub: 'I agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q16",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must give a speech on the importance of radiology. What message should he convey?",
+      "media": [],
+      "options": [
+        "Radiology is a constraint",
+        "Radiology is a pillar of diagnosis and planning",
+        "Radiology is secondary",
+        "Radiology is of no interest"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'Radiology is a pillar of diagnosis and planning.' Dr. Nadia: 'I completely agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q17",
+      "type": "single-choice",
+      "question": "Dr. Nadia must create a scholarship for students in dental radiology. What is the objective?",
+      "media": [],
+      "options": [
+        "Create an influence network",
+        "Encourage excellence in radiology",
+        "Make a profit",
+        "Compete with other scholarships"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'Encouraging excellence in radiology is an investment for the future.' Dr. Ayoub: 'I will support this initiative.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q18",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must pass on his knowledge of radiology. What is the most effective method?",
+      "media": [],
+      "options": [
+        "Lectures",
+        "Personalized mentoring and practical workshops",
+        "Online videos",
+        "Books"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'Personalized mentoring and practical workshops are the most effective methods.' Dr. Nadia: 'I will invest in mentoring.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q19",
+      "type": "single-choice",
+      "question": "Dr. Nadia must create a peer network for young dentists in radiology. What is the objective?",
+      "media": [],
+      "options": [
+        "Create an influence network",
+        "Promote mutual aid and experience sharing",
+        "Make a profit",
+        "Compete with other networks"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'Mutual aid and sharing are essential for young dentists.' Dr. Ayoub: 'I will support this network.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q20",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must write a conclusion to his work on radiology. What is the final sentence?",
+      "media": [],
+      "options": [
+        "Radiology is a constraint",
+        "Radiology is the reflection of our diagnostic art",
+        "Radiology is secondary",
+        "Radiology is useless"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'Radiology is the reflection of our diagnostic art.' Dr. Nadia: 'I completely agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q21",
+      "type": "single-choice",
+      "question": "Dr. Nadia must leave a legacy to the profession. What is the most beautiful legacy?",
+      "media": [],
+      "options": [
+        "A fortune",
+        "Radiology skills and an example to follow",
+        "An influence network",
+        "Buildings"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'Radiology skills and example are the most beautiful legacy.' Dr. Ayoub: 'I completely agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q22",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must train future mentors in radiology. What is the first message to convey?",
+      "media": [],
+      "options": [
+        "Mentoring is an obligation",
+        "Mentoring is a mission of support and transmission",
+        "Mentoring is a source of income",
+        "Mentoring is a competition"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'Mentoring is a mission of support and transmission.' Dr. Nadia: 'I will convey this message.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q23",
+      "type": "single-choice",
+      "question": "Dr. Nadia must write a letter to future dentists about radiology. What message should she convey?",
+      "media": [],
+      "options": [
+        "Radiology is difficult",
+        "Radiology is an indispensable tool for diagnosis",
+        "Radiology is of no interest",
+        "Radiology is secondary"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia explains: 'Radiology is an indispensable tool for diagnosis.' Dr. Ayoub: 'I agree.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q24",
+      "type": "single-choice",
+      "question": "Dr. Ayoub must create an award for young dentists in radiology. What is the purpose?",
+      "media": [],
+      "options": [
+        "Encourage competition",
+        "Stimulate excellence in radiology",
+        "Make a profit",
+        "Compete with other awards"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Ayoub explains: 'Stimulating excellence in radiology is essential for the evolution of the profession.' Dr. Nadia: 'I will support this award.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_E1_Q25",
+      "type": "single-choice",
+      "question": "Dr. Nadia, after a career dedicated to radiology, receives a national tribute. Dr. Ayoub is by her side. What is Dr. Nadia's message to young dentists?",
+      "media": [],
+      "options": [
+        "Radiology is over",
+        "Radiology is the eye of diagnosis",
+        "Radiology has no future",
+        "Radiology is of no interest"
+      ],
+      "correct": 1,
+      "explanation": "Dr. Nadia concludes: 'Radiology is the eye of diagnosis. It gives meaning to our practice.' Dr. Ayoub: 'I am proud of you.'",
+      "difficulty": "expert",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

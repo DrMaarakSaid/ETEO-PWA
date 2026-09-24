@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "anesthesiologie_debutant1_001",
+    "title": "Anestesiología - Principiante 1",
+    "specialty": "ANES",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ANES_D1_Q01",
+      "type": "single-choice",
+      "question": "¿Cómo se define exactamente la anestesia local en la práctica odontológica moderna?",
+      "media": [],
+      "options": [
+        "Pérdida total e inducida de los reflejos protectores y la conciencia, asociada a la hipnosis farmacológica",
+        "Modificación de los umbrales de percepción cortical mediante métodos de disociación psicológica y relajación",
+        "Supresión temporal y reversible de la sensibilidad al dolor y a la temperatura en un área anatómica limitada sin alteración de la conciencia",
+        "Reducción electiva de la ansiedad situacional mediante la administración de dosis bajas de depresores centrales"
+      ],
+      "correct": 2,
+      "explanation": "La anestesia local bloquea de forma reversible la conducción del impulso nervioso a lo largo de los axones en la zona diana, sin modificar el nivel de conciencia del paciente.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q02",
+      "type": "single-choice",
+      "question": "¿Qué molécula farmacológica es históricamente el estándar de oro y la molécula de referencia del grupo de las amidas?",
+      "media": [],
+      "options": [
+        "Clorhidrato de lidocaína al 2%",
+        "Clorhidrato de articaína al 4%",
+        "Clorhidrato de mepivacaína al 3%",
+        "Clorhidrato de prilocaína al 4%"
+      ],
+      "correct": 0,
+      "explanation": "La lidocaína al 2% sigue siendo la referencia internacional con la que se comparan todas las demás amidas, aunque clínicamente la articaína es muy predominante.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q03",
+      "type": "single-choice",
+      "question": "¿Qué agente vasoconstrictor se asocia más comúnmente con los preparados comerciales de lidocaína y articaína?",
+      "media": [],
+      "options": [
+        "Norepinefrina (noradrenalina) en concentración fija de 1:50.000",
+        "Clorhidrato de fenilefrina, agonista adrenérgico alfa-1 selectivo",
+        "Vasopresina, hormona peptídica con acción vasoconstrictora directa",
+        "Epinefrina (adrenalina) en concentraciones estándar de 1:100.000 o 1:200.000"
+      ],
+      "correct": 3,
+      "explanation": "La epinefrina es el vasoconstrictor de elección, actuando sobre los receptores alfa-1 para la vasoconstricción local y sobre los receptores beta para la seguridad sistémica relativa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q04",
+      "type": "single-choice",
+      "question": "¿Cuál es la justificación clínica principal para añadir un vasoconstrictor a la solución de anestésico local?",
+      "media": [],
+      "options": [
+        "Prolongar la duración de la anestesia pulpar, reducir el riesgo de toxicidad sistémica al retrasar la absorción y mejorar la hemostasia",
+        "Acelerar el tiempo de inicio de acción aumentando la proporción de moléculas no ionizadas",
+        "Modificar el pH químico de la solución para reducir el dolor durante la inyección",
+        "Reducir la viscosidad de la solución para facilitar su paso a través de agujas de muy pequeño calibre"
+      ],
+      "correct": 0,
+      "explanation": "Al contraer los vasos locales, el vasoconstrictor mantiene la molécula durante más tiempo en contacto con el nervio y reduce el pico de concentración plasmática en sangre.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q05",
+      "type": "single-choice",
+      "question": "¿Cuál es la dosis máxima segura reconocida de lidocaína con epinefrina en un paciente adulto sano?",
+      "media": [],
+      "options": [
+        "4,4 mg/kg de peso corporal, sin superar el umbral absoluto de 200 mg",
+        "7 mg/kg de peso corporal, hasta un umbral límite absoluto que no supere los 500 mg",
+        "10 mg/kg de peso corporal, umbral alto permitido solo en intervenciones quirúrgicas mayores",
+        "2 mg/kg de peso corporal, dosis restrictiva reservada para pacientes con polimedicación"
+      ],
+      "correct": 1,
+      "explanation": "Para un adulto sano, el límite es de 7 mg/kg (máximo 500 mg), lo que equivale a unas 13 carpetas de 1,8 ml de solución al 2% para una persona de 70 kg.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q06",
+      "type": "single-choice",
+      "question": "¿Cuáles son los criterios de dosificación máxima para un adulto sano que recibe articaína al 4% con epinefrina?",
+      "media": [],
+      "options": [
+        "7 mg/kg de peso corporal, con un techo absoluto de 500 mg debido al rápido metabolismo plasmático",
+        "4,4 mg/kg de peso corporal, que representa un techo restrictivo universal para evitar la cardiotoxicidad",
+        "12 mg/kg de peso corporal, justificado por la ausencia total de fijación de la articaína a las proteínas",
+        "3 mg/kg de peso corporal, límite normativo obligatorio para cualquier infiltración maxilar"
+      ],
+      "correct": 0,
+      "explanation": "Gracias a su grupo éster adicional, la articaína se hidroliza rápidamente por las colinesterasas plasmáticas, lo que le confiere una corta vida media (unos 20 min) y un alto perfil de seguridad: 7 mg/kg.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q07",
+      "type": "single-choice",
+      "question": "¿Cuál es la dosis máxima segura de lidocaína administrada en forma pura (sin vasoconstrictor)?",
+      "media": [],
+      "options": [
+        "7 mg/kg de peso corporal, ya que la ausencia de vasoconstrictor no modifica la farmacocinética de la molécula",
+        "10 mg/kg de peso corporal, debido al efecto sedante de la forma libre",
+        "4,4 mg/kg de peso corporal, hasta un techo sistémico absoluto que no supere los 300 mg",
+        "1,5 mg/kg de peso corporal, para prevenir el riesgo de hipertensión pulmonar refleja"
+      ],
+      "correct": 2,
+      "explanation": "Sin epinefrina, la lidocaína produce vasodilatación local. Se absorbe en el torrente sanguíneo mucho más rápidamente, lo que reduce su dosis máxima segura a 4,4 mg/kg.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q08",
+      "type": "single-choice",
+      "question": "¿Cuál es el tiempo de acción clínico típico (período de latencia) para lograr una anestesia eficaz con lidocaína al 2% por infiltración?",
+      "media": [],
+      "options": [
+        "Inmediato (menos de 10 segundos), gracias a la difusión iónica instantánea",
+        "De 2 a 3 minutos después del depósito exitoso de la solución en el espacio anatómico diana",
+        "De 7 a 10 minutos debido a la lenta disociación de los enlaces amida",
+        "Un mínimo de 15 minutos, que requieren activación térmica por los tejidos"
+      ],
+      "correct": 1,
+      "explanation": "La lidocaína tiene un pKa de 7,9, lo que proporciona una proporción suficiente de moléculas libres no ionizadas a pH fisiológico para penetrar en el axón en un plazo de 2 a 3 minutos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q09",
+      "type": "single-choice",
+      "question": "¿Cuál es la duración media esperada de la anestesia pulpar eficaz (tejidos duros) con lidocaína al 2% con adrenalina?",
+      "media": [],
+      "options": [
+        "15-20 minutos, lo que limita su uso a urgencias superficiales",
+        "Máximo 30-45 minutos, insuficiente para dientes multirradiculares",
+        "60-90 minutos de analgesia endodóntica y operatoria profunda",
+        "180-240 minutos de insensibilidad pulpar continua"
+      ],
+      "correct": 2,
+      "explanation": "La anestesia de tejidos blandos dura de 3 a 5 horas, pero la anestesia pulpar útil (durante la cual el diente está completamente insensible) dura una media de 60 a 90 minutos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q10",
+      "type": "single-choice",
+      "question": "¿Cómo se clasifican las técnicas de anestesia local en la práctica odontológica?",
+      "media": [],
+      "options": [
+        "Técnicas: superficial, infiltrativa (para-perióstica), regional (troncular), intraligamentosa e intraósea",
+        "Protocolos: inhalatoria, intravenosa, intramuscular y sedación consciente exclusiva",
+        "Terapias: hipnóticas, cognitivas, disociativas y bloqueos ganglionares profundos",
+        "Vías: transmucosa, transcutánea, intratecal y periapical no hermética"
+      ],
+      "correct": 0,
+      "explanation": "Esta clasificación se basa en el lugar de depósito de la solución en relación con las estructuras nerviosas (terminaciones finas, troncos principales o desmodonto).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q11",
+      "type": "single-choice",
+      "question": "¿Cómo se caracteriza exactamente la técnica de anestesia infiltrativa o para-perióstica?",
+      "media": [],
+      "options": [
+        "Depósito de la solución cerca del tronco nervioso principal para bloquear un cuadrante extenso",
+        "Depósito del anestésico en el fondo de saco mucobucal sobre el periostio, cerca de las ramas terminales de los nervios",
+        "Inyección forzada de líquido hiperbárico en el espesor del músculo masetero",
+        "Inyección directa en el torrente sanguíneo del capilar óseo superficial"
+      ],
+      "correct": 1,
+      "explanation": "La infiltración para-perióstica utiliza la porosidad del hueso para alcanzar los ápices radiculares. Es muy eficaz en el maxilar superior, pero limitada en el maxilar inferior en adultos debido a la gruesa lámina cortical.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q12",
+      "type": "single-choice",
+      "question": "¿Cómo se caracteriza la anestesia regional o troncular (bloqueo nervioso)?",
+      "media": [],
+      "options": [
+        "Aplicación pasiva de un agente líquido altamente concentrado sobre la mucosa intacta",
+        "Perforación mecánica del hueso cortical para infiltrar la médula ósea esponjosa",
+        "Depósito de la solución alrededor del tronco nervioso periférico principal, a distancia del campo operatorio inmediato",
+        "Inyección a alta presión en el espacio estrecho entre el cemento y el hueso alveolar"
+      ],
+      "correct": 2,
+      "explanation": "El bloqueo troncular interrumpe la conducción del impulso nervioso aguas arriba, lo que permite anestesiar un territorio extenso con un solo punto de inyección.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q13",
+      "type": "single-choice",
+      "question": "¿Qué estructura nerviosa principal es el objetivo de la anestesia regional mandibular clásica (pico de Spix)?",
+      "media": [],
+      "options": [
+        "El nervio bucal largo en su cruce con la línea oblicua externa",
+        "El nervio mentoniano a su salida del agujero homónimo entre los premolares",
+        "El nervio lingual, situado bajo la mucosa del tercio posterior del suelo de la boca",
+        "El nervio alveolar inferior (NAI) antes de su entrada en el agujero mandibular en el espacio pterigomandibular"
+      ],
+      "correct": 3,
+      "explanation": "La anestesia a nivel de la espina de Spix tiene como objetivo el nervio alveolar inferior antes de que quede protegido por la estructura ósea de la mandíbula.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q14",
+      "type": "single-choice",
+      "question": "¿Cómo se define la técnica de anestesia intraligamentosa?",
+      "media": [],
+      "options": [
+        "Inyección de la solución a alta presión mecánica directamente en el ligamento periodontal (desmodonto)",
+        "Depósito libre de líquido bajo la mucosa insertada a nivel de la línea mucogingival",
+        "Inyección de principios activos en los espacios intercelulares de la papila interdental libre",
+        "Difusión obtenida colocando una torunda impregnada en el fondo del surco gingivodental"
+      ],
+      "correct": 0,
+      "explanation": "Esta técnica utiliza una jeringa especial para superar la resistencia del ligamento. La solución difunde realmente al hueso esponjoso vecino a través de las perforaciones de la lámina dura.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q15",
+      "type": "single-choice",
+      "question": "¿Qué configuraciones de agujas se eligen con mayor frecuencia para las inyecciones locales rutinarias en la práctica general?",
+      "media": [],
+      "options": [
+        "Agujas rígidas de más de 21 gauge para el paso transperióstico forzado",
+        "Agujas desechables ultrafinas, cortas o largas, generalmente de 27 a 30 gauge",
+        "Agujas con bisel invertido, calibradas para inyecciones intraarteriales retrógradas",
+        "Microcánulas de punta roma para el lavado de bolsas periodontales"
+      ],
+      "correct": 1,
+      "explanation": "Las agujas de 27G (a menudo largas para bloqueos) y 30G (cortas o ultracortas para infiltraciones) ofrecen el mejor compromiso entre flexibilidad, maniobrabilidad y reducción del dolor en la penetración.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q16",
+      "type": "single-choice",
+      "question": "¿Cuál es la razón principal de la estandarización de los cartuchos de anestésico de 1,8 ml (o 1,7 ml)?",
+      "media": [],
+      "options": [
+        "Es la capacidad volumétrica universal diseñada para un ajuste preciso en las jeringas de práctica general",
+        "Corresponde a la dosis tóxica mínima de adrenalina que puede tolerar el sistema cardiovascular",
+        "Es el volumen exacto de líquido tras el cual la isquemia mucosa se vuelve sistemática",
+        "Está calculado para la saturación precisa de los receptores nerviosos de un molar superior"
+      ],
+      "correct": 0,
+      "explanation": "Es un estándar industrial internacional que garantiza la plena compatibilidad entre las jeringas metálicas o plásticas, los cartuchos de vidrio y las agujas de rosca.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q17",
+      "type": "single-choice",
+      "question": "¿Cuál es el objetivo clínico de la aplicación de un anestésico tópico antes de la inyección?",
+      "media": [],
+      "options": [
+        "Obtener una analgesia pulpar transitoria que permita preparar cavidades cariosas superficiales de clase I",
+        "Neutralizar los patógenos de la flora superficial para evitar la bacteriemia transitoria",
+        "Desensibilizar los receptores nerviosos mucosos superficiales para minimizar las molestias de la punción",
+        "Provocar una vasoconstricción superficial para eliminar el sangrado durante la inserción"
+      ],
+      "correct": 2,
+      "explanation": "La anestesia tópica (gel de benzocaína al 20% o lidocaína) elimina la sensibilidad de la mucosa superficial si se aplica sobre el tejido previamente secado durante al menos 1-2 minutos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q18",
+      "type": "single-choice",
+      "question": "¿Cuál es el riesgo fisiológico inmediato asociado a la inyección intravascular accidental de anestésico?",
+      "media": [],
+      "options": [
+        "Una fuerte reducción de la eficacia de la molécula debido a su dilución instantánea en la sangre",
+        "Una reacción de hipersensibilidad inmediata de tipo I que causa edema de Quincke",
+        "La formación de una embolia gaseosa masiva provocada por la liberación de conservantes",
+        "La aparición inmediata de un pico plasmático elevado capaz de causar toxicidad sistémica"
+      ],
+      "correct": 3,
+      "explanation": "La inyección directa en un vaso envía todo el anestésico y el vasoconstrictor a los órganos diana (SNC y corazón), simulando una sobredosis masiva incluso con un volumen pequeño.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q19",
+      "type": "single-choice",
+      "question": "¿Cuáles son los primeros signos clínicos de toxicidad sistémica (LAST) asociada a una sobredosis de anestésico local?",
+      "media": [],
+      "options": [
+        "Entumecimiento alrededor de la boca, sabor metálico, acúfenos, seguidos de una fase de excitación (sacudidas musculares, convulsiones)",
+        "Descenso inmediato de la temperatura corporal, acompañado de erupción cutánea pruriginosa",
+        "Somnolencia inmediata que conduce a un coma tranquilo sin signos neurológicos previos de excitación",
+        "Dolores articulares agudos bilaterales localizados en los miembros inferiores"
+      ],
+      "correct": 0,
+      "explanation": "Las amidas atraviesan la barrera hematoencefálica. En dosis tóxicas, bloquean primero las vías inhibitorias corticales, lo que libera las vías excitatorias (sabor metálico, mareos, sacudidas, luego convulsiones) antes de la depresión general del SNC.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q20",
+      "type": "single-choice",
+      "question": "¿Cuál es el protocolo de emergencia en el sillón ante los primeros signos de toxicidad sistémica moderada?",
+      "media": [],
+      "options": [
+        "Aumentar la velocidad de inyección para saturar rápidamente los receptores y detener la crisis",
+        "Detener inmediatamente la inyección, asegurar al paciente en decúbito supino, administrar oxígeno y monitorizar",
+        "Inyectar un segundo cartucho de otra molécula para crear una competencia competitiva",
+        "Administrar inmediatamente un potente estimulante cardíaco por vía intramuscular"
+      ],
+      "correct": 1,
+      "explanation": "La interrupción de la administración farmacológica es la primera medida de urgencia. La oxigenación previene la hipoxia y la acidosis, que agravan la cardiotoxicidad de los anestésicos locales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q21",
+      "type": "single-choice",
+      "question": "¿Cómo se califica la verdadera reacción alérgica de hipersensibilidad a los anestésicos locales modernos del tipo amida?",
+      "media": [],
+      "options": [
+        "Frecuente, representando alrededor del 30% de los síncopes observados a lo largo de una carrera clínica",
+        "Inevitable tras inyecciones repetidas en un período inferior a quince días",
+        "Específica de pacientes con enfermedades cutáneas autoinmunes graves",
+        "Extremadamente rara, los incidentes registrados son en su mayoría síncopes psicógenos o reacciones a los conservantes"
+      ],
+      "correct": 3,
+      "explanation": "La estructura química de las amidas es muy poco alergénica. Las verdaderas reacciones inmunomediadas son extremadamente raras y suelen estar relacionadas con el metabisulfito de sodio (antioxidante del vasoconstrictor) o el látex de los tapones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q22",
+      "type": "single-choice",
+      "question": "¿Qué opción clínica está indicada para un paciente con alergia confirmada y documentada a una molécula del tipo amida?",
+      "media": [],
+      "options": [
+        "Utilizar otra molécula de la misma familia de amidas a la mitad de concentración",
+        "Realizar la intervención bajo sedación consciente con óxido nitroso sin utilizar anestésico local",
+        "Aplicar un anestésico local de la familia de los ésteres (por ejemplo, procaína) tras pruebas o planificar la intervención bajo anestesia general",
+        "Realizar una premedicación sedante intensa 48 horas antes de la sesión para suprimir la respuesta inmunitaria"
+      ],
+      "correct": 2,
+      "explanation": "La alergia cruzada dentro del grupo de las amidas es frecuente, por lo que la confirmación de la alergia requiere un cambio de familia química (ésteres, sin conservantes) o la realización de la intervención en condiciones seguras de hospitalización.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q23",
+      "type": "single-choice",
+      "question": "¿Qué afecciones sistémicas son contraindicaciones absolutas para el uso clínico de epinefrina en la práctica general?",
+      "media": [],
+      "options": [
+        "Feocromocitoma no operado, hipertiroidismo grave no controlado e infarto de miocardio en los últimos 3-6 meses",
+        "Hipertensión arterial esencial estabilizada con tratamiento diurético prolongado",
+        "Diabetes mellitus tipo II controlada con hipoglucemiantes orales sin hipoglucemia grave",
+        "Accidente cerebrovascular antiguo de más de cinco años sin secuelas neurológicas"
+      ],
+      "correct": 0,
+      "explanation": "En estas patologías cardiovasculares y endocrinas inestables, la inyección de aminas simpaticomiméticas incluso a dosis bajas puede provocar una crisis hipertensiva mortal, un accidente cerebrovascular o una arritmia ventricular maligna.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q24",
+      "type": "single-choice",
+      "question": "¿Cuál es el principal riesgo cardiovascular al administrar una solución de epinefrina a un paciente que toma betabloqueantes no selectivos (por ejemplo, propranolol)?",
+      "media": [],
+      "options": [
+        "Caída brusca de la presión arterial debido a una vasodilatación periférica generalizada",
+        "Crisis hipertensiva aguda grave acompañada de bradicardia refleja",
+        "Aceleración inmediata del metabolismo hepático que anula el efecto analgésico",
+        "Inhibición total de la función de bomba cardíaca por bloqueo de los canales de calcio"
+      ],
+      "correct": 1,
+      "explanation": "Los betabloqueantes no selectivos bloquean los receptores beta-2 (que normalmente causan vasodilatación compensadora). La adrenalina inyectada actúa entonces exclusivamente sobre los receptores alfa-1, provocando una vasoconstricción sistémica masiva con reacción hipertensiva y enlentecimiento reflejo de la frecuencia cardíaca.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D1_Q25",
+      "type": "single-choice",
+      "question": "¿Cuál es el objetivo técnico fundamental de la prueba de aspiración (prueba de reflujo) antes de cualquier inyección de anestésico local?",
+      "media": [],
+      "options": [
+        "Comprobar que la punta activa de la aguja no se encuentra dentro de la luz de un vaso sanguíneo",
+        "Medir indirectamente la presión hidrostática en el tejido intersticial",
+        "Asegurarse de que el émbolo de goma del cartucho se desliza libremente sin resistencia mecánica",
+        "Crear una micro-rotura controlada del periostio para acelerar la penetración de la solución"
+      ],
+      "correct": 0,
+      "explanation": "La prueba de aspiración consiste en crear una presión negativa. Si aparece sangre en el cartucho, la aguja está intravascular; debe retirarse o reposicionarse para evitar la inyección sistémica directa.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

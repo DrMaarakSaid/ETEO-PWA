@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "amenagement_cabinet_debutant1_001",
+    "title": "Amenagement_cabinet - Débutant 1",
+    "specialty": "AMEN",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "AMEN_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Ramdan souhaite louer un local pour son cabinet dentaire. Selon l'article 1er de la loi 49-16, cette loi s'applique-t-elle à son bail ?",
+      "media": [],
+      "options": [
+        "Non, les cabinets dentaires sont exclus du champ d'application",
+        "Oui, car les cliniques et établissements similaires sont expressément visés",
+        "Non, seuls les commerces de détail sont concernés",
+        "Oui, mais uniquement si le cabinet emploie plus de 5 personnes"
+      ],
+      "correct": 1,
+      "explanation": "Art. 1er, II-3 : les dispositions de la loi s'appliquent aux immeubles ou locaux dans lesquels les cliniques et établissements similaires exercent leur activité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q02",
+      "type": "single-choice",
+      "question": "Selon l'article 1er, à quels types de baux la loi 49-16 s'applique-t-elle principalement ?",
+      "media": [],
+      "options": [
+        "Aux seuls baux d'habitation",
+        "Aux baux d'immeubles ou locaux à usage commercial, industriel ou artisanal",
+        "Aux baux agricoles uniquement",
+        "Aux baux de locaux administratifs"
+      ],
+      "correct": 1,
+      "explanation": "Art. 1er, I : la loi s'applique aux baux d'immeubles ou locaux à usage commercial, industriel ou artisanal.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Kamali s'installe dans un local commercial. Selon l'article 3, quelle est la condition de forme impérative pour son bail ?",
+      "media": [],
+      "options": [
+        "Un contrat verbal suffit entre professionnels",
+        "Un acte écrit à date certaine est obligatoire",
+        "Un simple accord de principe est suffisant",
+        "Une déclaration à la mairie remplace le contrat"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3 : les baux à usage commercial doivent être conclus par acte écrit à date certaine.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q04",
+      "type": "single-choice",
+      "question": "Selon l'article 3, quel document doit être établi lors de la remise du local au Dr Ramdan ?",
+      "media": [],
+      "options": [
+        "Un simple reçu de remise des clés",
+        "Un état descriptif des lieux pour servir de preuve entre les parties",
+        "Une attestation de bonne moralité",
+        "Un certificat de conformité électrique"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3, al. 2 : lors de la remise du local, un état descriptif des lieux doit être établi pour servir de preuve entre les parties.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Kamali occupe son cabinet depuis 18 mois. Selon l'article 4, bénéficie-t-il du droit au renouvellement du bail ?",
+      "media": [],
+      "options": [
+        "Oui, car il a occupé le local pendant plus d'un an",
+        "Non, car il doit justifier d'une jouissance d'au moins deux années",
+        "Oui, car les dentistes bénéficient d'un régime dérogatoire",
+        "Non, car il n'a pas payé de pas de porte"
+      ],
+      "correct": 1,
+      "explanation": "Art. 4, al. 1er : le locataire bénéficie du renouvellement du bail lorsqu'il justifie d'une jouissance consécutive du local d'au moins deux années.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q06",
+      "type": "single-choice",
+      "question": "Selon l'article 4, à quelle condition le Dr Ramdan est-il dispensé de la condition de durée de deux ans pour le renouvellement ?",
+      "media": [],
+      "options": [
+        "S'il est dentiste depuis plus de 10 ans",
+        "S'il a payé une somme d'argent en contrepartie du droit au bail",
+        "S'il a réalisé des travaux dans le local",
+        "S'il a signé un bail de 5 ans"
+      ],
+      "correct": 1,
+      "explanation": "Art. 4, al. 2 : le locataire est dispensé de la condition de durée s'il a payé une somme d'argent en contrepartie du droit au bail.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q07",
+      "type": "single-choice",
+      "question": "Selon l'article 5, comment sont fixés le loyer et les charges du local du Dr Kamali ?",
+      "media": [],
+      "options": [
+        "Le loyer est fixé par un arrêté préfectoral",
+        "Le loyer et les charges sont fixés par entente des parties",
+        "Le loyer est fixé par le greffier du tribunal",
+        "Le loyer est indexé automatiquement sur l'inflation"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, al. 1er : le loyer ainsi que toutes les charges sont fixés par entente des parties.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q08",
+      "type": "single-choice",
+      "question": "Selon l'article 5, si les parties n'ont pas stipulé à qui incombent les charges locatives, que se passe-t-il ?",
+      "media": [],
+      "options": [
+        "Elles sont partagées à parts égales",
+        "Elles sont considérées comme incluses dans le loyer",
+        "Elles sont à la charge exclusive du propriétaire",
+        "Elles sont à la charge exclusive du locataire"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, al. 2 : en cas de non-stipulation de la partie à laquelle incombent les charges, elles sont considérées comme incluses au loyer.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q09",
+      "type": "single-choice",
+      "question": "La révision du loyer du cabinet du Dr Ramdan est soumise à quelle loi selon l'article 5 ?",
+      "media": [],
+      "options": [
+        "À la loi n° 9-88 sur les obligations comptables",
+        "À la loi n° 07-03 relative à la révision du montant du loyer",
+        "À la loi n° 65-00 sur la couverture médicale",
+        "À la loi n° 49-16 elle-même uniquement"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5, al. 3 : la révision du loyer est soumise aux dispositions de la loi n° 07-03.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q10",
+      "type": "single-choice",
+      "question": "Selon l'article 6, que se passe-t-il si le propriétaire du Dr Kamali inclut une clause contraire au droit au renouvellement ?",
+      "media": [],
+      "options": [
+        "La clause est valable si elle est signée par les deux parties",
+        "La clause est nulle car toute stipulation contraire est nulle",
+        "La clause est valable pour les 3 premières années",
+        "La clause est soumise à l'approbation du tribunal"
+      ],
+      "correct": 1,
+      "explanation": "Art. 6 : les baux régis par la loi ne cessent qu'en application de l'article 26. Toute stipulation contraire est nulle.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q11",
+      "type": "single-choice",
+      "question": "Selon l'article 7, à quoi correspond l'indemnité de résiliation due au Dr Ramdan en cas d'éviction ?",
+      "media": [],
+      "options": [
+        "Au seul montant du dernier loyer annuel",
+        "Au préjudice subi par le locataire du fait de l'éviction",
+        "À une indemnité forfaitaire de 50.000 DH",
+        "Au remboursement des seuls frais de déménagement"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, al. 2 : l'indemnité correspond au préjudice subi par le locataire du fait de l'éviction.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q12",
+      "type": "single-choice",
+      "question": "Selon l'article 7, sur quels éléments est calculée l'indemnité d'éviction du Dr Kamali ?",
+      "media": [],
+      "options": [
+        "Uniquement sur la valeur du matériel dentaire",
+        "Sur la valeur du fonds de commerce, les travaux et les frais de déménagement",
+        "Uniquement sur le nombre d'années d'occupation",
+        "Sur le chiffre d'affaires du dernier mois uniquement"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, al. 3 : l'indemnité comprend la valeur du fonds de commerce, les dépenses de travaux et les frais de déménagement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q13",
+      "type": "single-choice",
+      "question": "Selon l'article 7, que se passe-t-il si une clause du bail tente de faire échec au droit à l'indemnité d'éviction du Dr Ramdan ?",
+      "media": [],
+      "options": [
+        "La clause est valable si elle est acceptée par le locataire",
+        "La clause est réputée nulle",
+        "La clause est valable pour les 5 premières années",
+        "La clause est soumise à la validation du tribunal"
+      ],
+      "correct": 1,
+      "explanation": "Art. 7, al. 5 : est réputée nulle toute clause ou compromis susceptible de faire échec au droit du locataire à l'indemnité de résiliation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q14",
+      "type": "single-choice",
+      "question": "Selon l'article 8, le Dr Ramdan peut-il perdre son droit à l'indemnité d'éviction s'il ne paie pas son loyer ?",
+      "media": [],
+      "options": [
+        "Non, le droit à l'indemnité est toujours acquis",
+        "Oui, s'il n'a pas payé dans les 15 jours après mise en demeure et que le montant dû équivaut à au moins 3 mois de loyer",
+        "Oui, après un simple retard de paiement",
+        "Non, le propriétaire doit d'abord saisir le tribunal"
+      ],
+      "correct": 1,
+      "explanation": "Art. 8, 1° : le bailleur n'est pas tenu à l'indemnité lorsque le locataire n'a pas payé dans les 15 jours après mise en demeure, pour un montant équivalant à au moins 3 mois.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q15",
+      "type": "single-choice",
+      "question": "Selon l'article 8, le Dr Kamali peut-il perdre son droit à l'indemnité s'il transforme le local sans l'accord du propriétaire ?",
+      "media": [],
+      "options": [
+        "Non, s'il remet les lieux en état dans les 3 mois",
+        "Oui, définitivement sans aucune possibilité de régularisation",
+        "Non, le propriétaire doit accepter toutes les transformations",
+        "Oui, mais uniquement si les travaux dépassent 100.000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Art. 8, 2° : le bailleur est exonéré si le locataire transforme le local, à moins qu'il ne remette les lieux en état dans le délai imparti, dans tous les cas dans un délai n'excédant pas 3 mois.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q16",
+      "type": "single-choice",
+      "question": "Selon l'article 9, si le propriétaire du Dr Ramdan veut démolir et reconstruire le local, à quelle condition doit-il le faire ?",
+      "media": [],
+      "options": [
+        "Sans condition particulière",
+        "En justifiant de la propriété pendant un an à compter du congé",
+        "Avec l'accord du voisinage uniquement",
+        "En versant une caution de 500.000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Art. 9, al. 1er : le bailleur doit justifier de la propriété pendant une durée d'au moins une année, à compter de la date du congé.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q17",
+      "type": "single-choice",
+      "question": "Selon l'article 9, en cas de démolition-reconstruction, quelle indemnité provisoire le Dr Kamali doit-il percevoir ?",
+      "media": [],
+      "options": [
+        "Une indemnité équivalente au loyer d'un an",
+        "Une indemnité équivalente au loyer de trois années",
+        "Une indemnité équivalente au loyer de six mois",
+        "Une indemnité forfaitaire de 100.000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Art. 9, al. 1er : le bailleur doit verser une indemnité provisoire équivalente au loyer de trois années.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q18",
+      "type": "single-choice",
+      "question": "Selon l'article 10, dans quel délai le propriétaire doit-il entamer la reconstruction après l'éviction du Dr Kamali ?",
+      "media": [],
+      "options": [
+        "Dans un délai de 6 mois",
+        "Dans un délai de 2 mois",
+        "Dans un délai d'un an",
+        "Dans un délai de 3 mois"
+      ],
+      "correct": 1,
+      "explanation": "Art. 10 : le bailleur est tenu d'entamer la reconstruction dans un délai de deux mois à compter de la date d'éviction.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q19",
+      "type": "single-choice",
+      "question": "Selon l'article 11, dans quel délai maximum le nouveau local doit-il être remis au Dr Ramdan après l'éviction ?",
+      "media": [],
+      "options": [
+        "Dans un délai d'un an",
+        "Dans un délai de deux ans",
+        "Dans un délai de trois ans",
+        "Dans un délai de cinq ans"
+      ],
+      "correct": 2,
+      "explanation": "Art. 11, al. 1er : le local doit être remis dans un délai ne dépassant pas trois années à compter de la date d'éviction.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q20",
+      "type": "single-choice",
+      "question": "Selon l'article 16, en cas d'extension ou surélévation, quelle est la durée maximale d'éviction temporaire du Dr Kamali ?",
+      "media": [],
+      "options": [
+        "6 mois",
+        "1 an",
+        "2 ans",
+        "3 ans"
+      ],
+      "correct": 1,
+      "explanation": "Art. 16, al. 1er : la durée d'éviction temporaire ne peut pas dépasser une année à compter de la date d'éviction.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q21",
+      "type": "single-choice",
+      "question": "Selon l'article 18, quel document le propriétaire doit-il produire pour évacuer le Dr Ramdan pour démolition ?",
+      "media": [],
+      "options": [
+        "Un simple courrier recommandé",
+        "Un permis de construire valide et un plan approuvé",
+        "Une attestation de la mairie",
+        "Un accord des voisins"
+      ],
+      "correct": 1,
+      "explanation": "Art. 18, al. 1er : le propriétaire doit produire un permis de construire valide et un plan approuvé par l'autorité compétente.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q22",
+      "type": "single-choice",
+      "question": "Selon l'article 24, le Dr Kamali peut-il sous-louer son cabinet dentaire ?",
+      "media": [],
+      "options": [
+        "Non, la sous-location est toujours interdite",
+        "Oui, sauf stipulation contraire dans le contrat de bail",
+        "Oui, mais uniquement à un autre dentiste",
+        "Non, sans l'accord écrit du propriétaire"
+      ],
+      "correct": 1,
+      "explanation": "Art. 24, al. 1er : le locataire peut sous-louer tout ou partie du local, sauf stipulation contraire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q23",
+      "type": "single-choice",
+      "question": "Selon l'article 25, le Dr Ramdan peut-il céder son bail sans l'accord du propriétaire ?",
+      "media": [],
+      "options": [
+        "Non, l'accord du propriétaire est toujours obligatoire",
+        "Oui, sans accord du bailleur et nonobstant toute stipulation contraire",
+        "Oui, mais uniquement avec l'accord du tribunal",
+        "Non, la cession du bail est interdite"
+      ],
+      "correct": 1,
+      "explanation": "Art. 25, al. 1er : le locataire a droit à la cession du bail sans accord du bailleur et nonobstant toute stipulation contraire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q24",
+      "type": "single-choice",
+      "question": "Selon l'article 26, quel est le délai d'éviction pour défaut de paiement des loyers ?",
+      "media": [],
+      "options": [
+        "3 jours",
+        "15 jours",
+        "1 mois",
+        "3 mois"
+      ],
+      "correct": 1,
+      "explanation": "Art. 26, al. 2 : le délai est fixé à 15 jours lorsque la requête est basée sur le défaut de paiement des loyers.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "AMEN_D1_Q25",
+      "type": "single-choice",
+      "question": "Selon l'article 26, quel est le délai d'éviction pour reprise du local pour usage personnel ?",
+      "media": [],
+      "options": [
+        "15 jours",
+        "1 mois",
+        "3 mois",
+        "6 mois"
+      ],
+      "correct": 2,
+      "explanation": "Art. 26, al. 2 : le délai est fixé à 3 mois lorsque la requête est basée sur une volonté de reprendre le local pour usage personnel.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

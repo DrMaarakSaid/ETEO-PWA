@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "fiscalite_dentiste_debutant2_001",
+    "title": "Fiscalite_dentiste - Débutant 2",
+    "specialty": "FISC",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "FISC_D2_Q01",
+      "type": "single-choice",
+      "question": "Dr. Chirif, dentiste exerçant en personne physique, réalise un bénéfice imposable de 250 000 DH. Quelle serait l'avantage fiscal approximatif s'il optait pour une SARL soumise à l'IS ?",
+      "media": [],
+      "options": [
+        "Une économie d'impôt d'environ 10 000 à 15 000 DH",
+        "Une économie d'impôt d'environ 25 000 à 30 000 DH",
+        "Une augmentation d'impôt d'environ 5 000 DH",
+        "Pas de différence significative entre les deux régimes"
+      ],
+      "correct": 1,
+      "explanation": "À partir d'environ 200 000 à 250 000 DH de bénéfice, l'IS (10 % sur la tranche 0-300 000 DH) devient plus avantageux que l'IR (barème progressif jusqu'à 37 %), générant une économie d'environ 25 000 à 30 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q02",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le taux de l'IS applicable aux sociétés dont le bénéfice net est inférieur à 100 millions DH ?",
+      "media": [],
+      "options": [
+        "10 %",
+        "20 %",
+        "25 %",
+        "35 %"
+      ],
+      "correct": 1,
+      "explanation": "La Loi de Finances 2026 achève l'unification des taux de l'IS avec un taux unique de 20 % pour les sociétés dont le bénéfice net est inférieur à 100 millions DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q03",
+      "type": "single-choice",
+      "question": "Dr. Falahi possède une SARL avec un bénéfice net de 250 000 DH. Quel sera le montant de l'IS dû selon le barème 2026 ?",
+      "media": [],
+      "options": [
+        "25 000 DH",
+        "30 000 DH",
+        "37 500 DH",
+        "50 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Pour la tranche de 0 à 300 000 DH, le taux de l'IS est de 10 %. L'impôt dû est donc de 250 000 × 10 % = 25 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q04",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le taux de retenue à la source applicable aux dividendes distribués par une SARL en 2026 ?",
+      "media": [],
+      "options": [
+        "10 %",
+        "11,25 %",
+        "12,5 %",
+        "15 %"
+      ],
+      "correct": 1,
+      "explanation": "La Loi de Finances 2026 poursuit la réduction programmée du taux de retenue à la source sur les dividendes, fixé à 11,25 % pour 2026, avec un objectif de 10 % en 2027.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q05",
+      "type": "single-choice",
+      "question": "Dr. Chirif possède une SARL avec un bénéfice net après impôt de 300 000 DH, qu'il distribue en dividendes. Quel sera le montant de la retenue à la source en 2026 ?",
+      "media": [],
+      "options": [
+        "30 000 DH",
+        "33 750 DH",
+        "37 500 DH",
+        "45 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "La retenue à la source sur les dividendes en 2026 est de 11,25 %. Le montant est donc de 300 000 × 11,25 % = 33 750 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q06",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le taux marginal maximum de l'IR pour un dentiste exerçant en personne physique ?",
+      "media": [],
+      "options": [
+        "34 %",
+        "37 %",
+        "38 %",
+        "40 %"
+      ],
+      "correct": 1,
+      "explanation": "La Loi de Finances 2026 maintient le taux marginal maximum de l'IR à 37 % pour les revenus nets imposables dépassant 180 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q07",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le seuil d'exonération de l'IR pour un dentiste célibataire sans personne à charge ?",
+      "media": [],
+      "options": [
+        "30 000 DH",
+        "35 000 DH",
+        "40 000 DH",
+        "45 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "La Loi de Finances 2026 maintient le seuil d'exonération de l'IR à 40 000 DH de revenu net imposable, exonérant les salaires inférieurs à 6 000 DH par mois.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q08",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le montant annuel de la réduction d'impôt pour charges de famille par personne à charge ?",
+      "media": [],
+      "options": [
+        "360 DH",
+        "500 DH",
+        "600 DH",
+        "750 DH"
+      ],
+      "correct": 2,
+      "explanation": "La Loi de Finances 2026 a augmenté la réduction annuelle pour charges de famille de 500 à 600 DH par personne à charge, avec un plafond de 3 600 DH pour 6 personnes à charge.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q09",
+      "type": "single-choice",
+      "question": "Dr. Falahi, dentiste exerçant en personne physique, a 3 enfants à charge. Quel est le montant total de la réduction d'impôt pour charges de famille qu'il peut déduire en 2026 ?",
+      "media": [],
+      "options": [
+        "1 080 DH",
+        "1 500 DH",
+        "1 800 DH",
+        "2 160 DH"
+      ],
+      "correct": 2,
+      "explanation": "La réduction annuelle est de 600 DH par personne à charge × 3 enfants = 1 800 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q10",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le taux normal de la Contribution Minimale pour les sociétés soumises à l'IS ?",
+      "media": [],
+      "options": [
+        "0,15 %",
+        "0,25 %",
+        "0,40 %",
+        "0,50 %"
+      ],
+      "correct": 1,
+      "explanation": "Depuis la réforme introduite par la Loi de Finances 2023, le taux normal de la Contribution Minimale est de 0,25 % du chiffre d'affaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q11",
+      "type": "single-choice",
+      "question": "Dr. Chirif possède une SARL avec un chiffre d'affaires de 2 000 000 DH. Quel est le montant minimum de sa Contribution Minimale ?",
+      "media": [],
+      "options": [
+        "3 000 DH",
+        "5 000 DH",
+        "8 000 DH",
+        "10 000 DH"
+      ],
+      "correct": 0,
+      "explanation": "Pour les sociétés soumises à l'IS, la Contribution Minimale ne peut être inférieure à 3 000 DH, même si 0,25 % du chiffre d'affaires est inférieur à ce montant.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q12",
+      "type": "single-choice",
+      "question": "Dr. Falahi possède une SARL avec un chiffre d'affaires de 1 000 000 DH. Quel est le montant de sa Contribution Minimale au taux normal ?",
+      "media": [],
+      "options": [
+        "2 000 DH",
+        "2 500 DH",
+        "3 000 DH",
+        "4 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "Le taux normal est de 0,25 % du chiffre d'affaires, soit 2 500 DH. Comme le minimum est de 3 000 DH, c'est ce montant qui est dû.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q13",
+      "type": "single-choice",
+      "question": "Dr. Chirif a créé une SARL en janvier 2026. Pendant combien de mois est-elle exonérée de la Contribution Minimale ?",
+      "media": [],
+      "options": [
+        "12 mois",
+        "24 mois",
+        "36 mois",
+        "60 mois"
+      ],
+      "correct": 2,
+      "explanation": "Les entreprises nouvellement créées bénéficient d'une exonération de la Contribution Minimale pendant leurs 36 premiers mois d'activité.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q14",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le taux réduit de la Contribution Minimale pour certains produits de première nécessité ?",
+      "media": [],
+      "options": [
+        "0,10 %",
+        "0,15 %",
+        "0,20 %",
+        "0,25 %"
+      ],
+      "correct": 1,
+      "explanation": "Un taux réduit de 0,15 % s'applique aux opérations portant sur les produits de première nécessité (pétrole, gaz, beurre, huile, sucre, farine, eau, électricité, médicaments).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q15",
+      "type": "single-choice",
+      "question": "Dr. Falahi, personne physique, réalise un chiffre d'affaires de 800 000 DH. Quel est le taux de la Contribution Minimale applicable ?",
+      "media": [],
+      "options": [
+        "0,25 %",
+        "0,50 %",
+        "4 %",
+        "6 %"
+      ],
+      "correct": 3,
+      "explanation": "Pour les personnes physiques soumises à l'IR, le taux de la Contribution Minimale est de 6 % du chiffre d'affaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q16",
+      "type": "single-choice",
+      "question": "Dr. Chirif, personne physique, réalise un chiffre d'affaires de 800 000 DH et un bénéfice imposable de 80 000 DH. Quel impôt paiera-t-il si la Contribution Minimale dépasse l'IR calculé ?",
+      "media": [],
+      "options": [
+        "L'IR calculé sur 80 000 DH",
+        "La Contribution Minimale de 48 000 DH",
+        "Le montant le plus élevé entre l'IR et la Contribution Minimale",
+        "Aucun impôt car le bénéfice est faible"
+      ],
+      "correct": 2,
+      "explanation": "Le contribuable paie le montant le plus élevé entre l'IR calculé et la Contribution Minimale. La Contribution Minimale pour une personne physique est de 6 % du CA, soit 800 000 × 6 % = 48 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q17",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le taux de l'IS applicable aux sociétés dont le bénéfice net dépasse 100 millions DH ?",
+      "media": [],
+      "options": [
+        "20 %",
+        "30 %",
+        "35 %",
+        "40 %"
+      ],
+      "correct": 2,
+      "explanation": "La Loi de Finances 2026 achève l'unification des taux de l'IS avec un taux de 35 % pour les sociétés dont le bénéfice net est égal ou supérieur à 100 millions DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q18",
+      "type": "single-choice",
+      "question": "Dr. Falahi possède une SARL avec un bénéfice net de 150 000 DH. Quel est le taux de l'IS applicable à cette tranche de bénéfice ?",
+      "media": [],
+      "options": [
+        "10 %",
+        "20 %",
+        "25 %",
+        "35 %"
+      ],
+      "correct": 0,
+      "explanation": "Le taux de l'IS applicable à la tranche de bénéfice net imposable de 0 à 300 000 DH est de 10 %, quel que soit le montant dans cette tranche.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q19",
+      "type": "single-choice",
+      "question": "Dr. Chirif possède une SARL avec un bénéfice net de 2 000 000 DH. Quel est le montant de l'IS dû en 2026 ?",
+      "media": [],
+      "options": [
+        "400 000 DH",
+        "520 000 DH",
+        "700 000 DH",
+        "800 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "L'IS est calculé par tranches : 300 000 × 10 % = 30 000 DH, 700 000 × 20 % = 140 000 DH, et 1 000 000 × 35 % = 350 000 DH. Total = 520 000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q20",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le taux de retenue à la source sur les dividendes en 2027 (objectif fixé par la loi) ?",
+      "media": [],
+      "options": [
+        "5 %",
+        "10 %",
+        "11,25 %",
+        "12,5 %"
+      ],
+      "correct": 1,
+      "explanation": "La Loi de Finances 2026 poursuit la réduction programmée du taux de retenue à la source sur les dividendes pour atteindre l'objectif de 10 % en 2027.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q21",
+      "type": "single-choice",
+      "question": "Dr. Falahi cède son fonds de commerce en 2026 à l'âge de 67 ans. Selon la Loi de Finances 2026, de quelle réduction bénéficie-t-il sur la plus-value ?",
+      "media": [],
+      "options": [
+        "25 %",
+        "50 %",
+        "75 %",
+        "100 %"
+      ],
+      "correct": 1,
+      "explanation": "Les personnes physiques dont les revenus sont déterminés sous le régime de la Contribution Professionnelle Unique bénéficient d'une réduction de 50 % sur la plus-value des éléments incorporels du fonds de commerce, dans la limite de 1 000 000 DH, à condition d'avoir atteint au moins 65 ans.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q22",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, les pensions de retraite sont-elles exonérées de l'IR à compter de 2026 ?",
+      "media": [],
+      "options": [
+        "Non, seules les rentes sont exonérées",
+        "Oui, exonération totale de l'IR pour les pensions de retraite et les rentes viagères à titre gratuit",
+        "Oui, mais uniquement pour les pensions inférieures à 10 000 DH",
+        "Non, les pensions restent soumises au barème progressif"
+      ],
+      "correct": 1,
+      "explanation": "La Loi de Finances 2026 met en œuvre l'exonération totale de l'IR pour les pensions de retraite et les rentes viagères à titre gratuit à compter du 1er janvier 2026.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q23",
+      "type": "single-choice",
+      "question": "Dr. Chirif opte pour la Contribution Professionnelle Unique. Quel est le taux d'imposition forfaitaire applicable ?",
+      "media": [],
+      "options": [
+        "4 %",
+        "6 %",
+        "10 %",
+        "15 %"
+      ],
+      "correct": 2,
+      "explanation": "La Contribution Professionnelle Unique propose une imposition forfaitaire à 10 % appliquée à un bénéfice forfaitaire déterminé sur le chiffre d'affaires, sans déduction des charges réelles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q24",
+      "type": "single-choice",
+      "question": "Selon la Loi de Finances 2026, quel est le seuil de bénéfice net à partir duquel les sociétés sont soumises au taux d'IS de 35 % ?",
+      "media": [],
+      "options": [
+        "300 000 DH",
+        "1 000 000 DH",
+        "50 000 000 DH",
+        "100 000 000 DH"
+      ],
+      "correct": 3,
+      "explanation": "La Loi de Finances 2026 achève l'unification des taux de l'IS avec un taux de 35 % pour les sociétés dont le bénéfice net est égal ou supérieur à 100 millions DH. En dessous de ce seuil, le taux est de 20 %.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FISC_D2_Q25",
+      "type": "single-choice",
+      "question": "Dr. Falahi crée une SARL en 2026. Quel est le principal avantage fiscal de la SARL par rapport à l'exercice en personne physique pour un bénéfice de 200 000 DH ?",
+      "media": [],
+      "options": [
+        "Aucun avantage, l'IR est plus favorable",
+        "Un taux d'IS de 10 % sur la première tranche de 300 000 DH",
+        "Une exonération fiscale totale pendant 3 ans",
+        "Un taux d'IS de 20 % sur l'ensemble du bénéfice"
+      ],
+      "correct": 1,
+      "explanation": "Pour les sociétés, l'IS s'applique à 10 % sur la tranche de bénéfice de 0 à 300 000 DH, ce qui est nettement plus favorable que le barème progressif de l'IR qui peut atteindre 37 % sur la même tranche de revenus.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

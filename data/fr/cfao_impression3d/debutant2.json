@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_debutant2_001",
+    "title": "Cfao_impression3d - Débutant 2",
+    "specialty": "CFAO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_D2_Q01",
+      "type": "single-choice",
+      "question": "Quel est le principe de l'usinage CFAO pour les blocs céramiques ?",
+      "media": [],
+      "options": [
+        "Impression 3D par fusion laser sélective de poudres",
+        "Moulage par injection sous pression atmosphérique",
+        "Fraisage d'un bloc pré-fritté ou dur par des outils rotatifs calibrés",
+        "Pressage thermique haute température au sein d'un revêtement"
+      ],
+      "correct": 2,
+      "explanation": "La CFAO soustractive utilise des instruments rotatifs diamantés ou en carbure pour sculpter la restauration directement dans un bloc industriel homogène.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q02",
+      "type": "single-choice",
+      "question": "Pourquoi usine-t-on préférentiellement la zircone à l'état 'blanc' (pré-fritté) ?",
+      "media": [],
+      "options": [
+        "Pour compenser le retrait volumétrique lors de la cuisson de frittage (20-25%)",
+        "Pour éviter toute décoloration future sous l'action des fluides buccaux",
+        "Pour augmenter la dureté superficielle du matériau avant le fraisage",
+        "Pour faciliter le scellement adhésif direct sans traitement de surface"
+      ],
+      "correct": 0,
+      "explanation": "À l'état pré-fritté, la zircone a la consistance de la craie, ce qui limite l'usure des fraises. Le logiciel de CAO applique un facteur d'échelle pour anticiper le retrait au frittage.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q03",
+      "type": "single-choice",
+      "question": "Qu'est-ce qu'une couronne en zircone monolithique ?",
+      "media": [],
+      "options": [
+        "Une couronne teintée dans la masse et entièrement usinée dans un seul bloc, sans placage de céramique feldspathique",
+        "Une couronne en zircone opaque hautement frittée devant obligatoirement être facettée en vestibulaire",
+        "Une infrastructure à armature métallique invisible recouverte d'un oxyde de zirconium thermopressé",
+        "Une couronne multicouche ne nécessitant aucun traitement thermique de densification post-usinage"
+      ],
+      "correct": 0,
+      "explanation": "La zircone monolithique est anatomique et usinée en un seul bloc, ce qui élimine définitivement le risque de délamination ou d'éclatement (chipping) de la céramique de surfaçage.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q04",
+      "type": "single-choice",
+      "question": "Quelle est la particularité cinétique et thermique du disilicate de lithium usiné ?",
+      "media": [],
+      "options": [
+        "Il subit un usinage après frittage complet à une température supérieure à 1500°C",
+        "Il est usiné à l'état intermédiaire 'bleu' (vitreux) puis soumis à un cycle de cristallisation thermique",
+        "Il fait l'objet d'une impression 3D directe à partir de poudre de silice cristallisée",
+        "Il requiert une cuisson de maturation à 1500°C pendant un cycle continu de 24 heures"
+      ],
+      "correct": 1,
+      "explanation": "Le disilicate de lithium est usiné à l'état de métasilicate de lithium (teinte bleue facile à fraiser), puis cuit dans un four dédié pour obtenir sa phase cristalline finale stable et esthétique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q05",
+      "type": "single-choice",
+      "question": "Les blocs de composite usinables se distinguent des blocs céramiques par :",
+      "media": [],
+      "options": [
+        "Leur résistance à la flexion largement supérieure à celle de la zircone pure",
+        "Leur besoin impératif d'une cuisson de recuit de densification à 1200°C",
+        "Leur porosité interne interdisant tout protocole de polissage mécanique au fauteuil",
+        "Leur capacité de réparation clinique intra-orale directe par des résines composites photopolymérisables"
+      ],
+      "correct": 3,
+      "explanation": "Contrairement aux céramiques vitreuses ou polycristallines, les composites infiltrés ou nanohybrides peuvent être retouchés et réparés directement en bouche avec des protocoles adhésifs conventionnels.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q06",
+      "type": "single-choice",
+      "question": "Quel est l'usage clinique principal des blocs de PMMA en CFAO dentaire ?",
+      "media": [],
+      "options": [
+        "La réalisation de restaurations transitoires et de prothèses provisoires de longue durée",
+        "La fabrication d'inlays et d'onlays définitifs sur les secteurs cuspidiens délabrés",
+        "La confection d'armatures de bridges fixes définitifs sur implants en secteur esthétique",
+        "La production d'infrastructures métalliques coulées sous vide après usinage direct"
+      ],
+      "correct": 0,
+      "explanation": "Le polyméthacrylate de méthyle (PMMA) usiné offre une excellente stabilité chromatique et mécanique, idéale pour valider l'occlusion et la phonétique lors des phases transitoires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q07",
+      "type": "single-choice",
+      "question": "Qu'est-ce qu'un matériau céramique hybride ou réseau interconnecté (ex: Vita Enamic) ?",
+      "media": [],
+      "options": [
+        "Une matrice polymère tridimensionnelle interconnectée et imprégnée d'une structure céramique poreuse",
+        "Une structure cristalline de céramique pure à haute densité exempte de toute phase vitreuse",
+        "Un bloc composite hautement chargé de particules métalliques nobles pour l'absorption des forces",
+        "Une zircone de dernière génération présentant un gradient purement optique de translucidité"
+      ],
+      "correct": 0,
+      "explanation": "Ces structures combinent les propriétés des deux mondes : la rigidité et la stabilité optique de la céramique associées à l'élasticité et la résilience du polymère (effet amortisseur).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q08",
+      "type": "single-choice",
+      "question": "Quelle est la résistance moyenne à la flexion du disilicate de lithium après son cycle de cristallisation ?",
+      "media": [],
+      "options": [
+        "Environ 360 à 450 MPa",
+        "Environ 100 à 180 MPa",
+        "Environ 900 à 1100 MPa",
+        "Supérieure à 1500 MPa"
+      ],
+      "correct": 0,
+      "explanation": "Le disilicate de lithium tourne autour de 400 MPa après cristallisation, offrant un excellent compromis entre des propriétés mécaniques robustes et un comportement optique biomimétique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q09",
+      "type": "single-choice",
+      "question": "Pourquoi est-il cliniquement primordial de réaliser un glaçage ou un polissage rigoureux après l'usinage ?",
+      "media": [],
+      "options": [
+        "Pour modifier radicalement la morphologie anatomique générale de la restauration",
+        "Pour augmenter la porosité de surface afin de faciliter la pénétration des colorants",
+        "Pour réduire drastiquement l'abrasion mécanique de la dent naturelle antagoniste",
+        "Pour accélérer la cinétique de montée en température lors de la cuisson de la céramique"
+      ],
+      "correct": 2,
+      "explanation": "Une surface céramique rugueuse ou brute d'usinage agit comme un papier de verre agressif sur les structures amélaires de la dent antagoniste. Le poli miroir ou le glaçage est obligatoire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q10",
+      "type": "single-choice",
+      "question": "La personnalisation chromatique (teinte) des restaurations CFAO s'obtient principalement par :",
+      "media": [],
+      "options": [
+        "Le sablage abrasif intense aux grains d'alumine fine après le frittage complet",
+        "L'application de maquillages (colorants) de surface pré-frittage ou lors du cycle de glaçage",
+        "Un bain d'acide sulfurique concentré immédiatement après la sortie de l'unité de fraisage",
+        "L'utilisation exclusive de résines de surface photopolymérisables sans cuisson thermique"
+      ],
+      "correct": 1,
+      "explanation": "On peut utiliser des blocs multicouches (gradient) ou infiltrer des oxydes métalliques colorants sur la zircone poreuse avant frittage, ou appliquer des fusions de colorants lors du glaçage.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q11",
+      "type": "single-choice",
+      "question": "Quelle est la fonction thermodynamique et structurelle du frittage de la zircone ?",
+      "media": [],
+      "options": [
+        "Éliminer les erreurs géométriques et les défauts de dépouille générés par l'axe de la fraise",
+        "Assurer une densification thermique (vers 1450°C-1500°C) en éliminant les porosités intergranulaires",
+        "Permettre un polissage automatique des surfaces externes par l'action de la chaleur",
+        "Modifier la composition chimique initiale en transformant le zirconium en titane"
+      ],
+      "correct": 1,
+      "explanation": "Le frittage rapproche les particules d'oxyde de zirconium, soudant les grains entre eux pour transformer une ébauche fragile en une structure polycristalline hautement résistante.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q12",
+      "type": "single-choice",
+      "question": "Comment le système CFAO gère-t-il mathématiquement le retrait volumétrique de la zircone ?",
+      "media": [],
+      "options": [
+        "Par l'application d'un facteur d'échelle d'expansion numérique lors du calcul de la FAO",
+        "Par un ajustement manuel des limites cervicales réalisé par le praticien à l'aide d'une pièce à main",
+        "Par l'abaissement drastique de la température finale du four de frittage au laboratoire",
+        "Par l'utilisation de blocs surdimensionnés standardisés dont les dimensions restent fixes"
+      ],
+      "correct": 0,
+      "explanation": "Chaque lot de blocs possède un code-barres ou un coefficient précis. Le logiciel de FAO calcule un usinage agrandi d'environ 20 à 25% pour que la pièce atteigne sa juste dimension après frittage.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q13",
+      "type": "single-choice",
+      "question": "Une unité de production (fraiseuse) configurée en 4 axes permet :",
+      "media": [],
+      "options": [
+        "Le mouvement tridimensionnel standard complété par la rotation du bloc autour d'un axe horizontal",
+        "L'usinage exclusif de formes planes et d'inlays simples sans aucune dépouille marginale",
+        "Un mouvement simultané s'exécutant dans 6 directions orthogonales indépendantes",
+        "Une transition automatique vers l'impression 3D liquide par simple inversion logicielle"
+      ],
+      "correct": 0,
+      "explanation": "Les machines 4 axes possèdent les axes X, Y, Z et un axe rotatif (A) pour faire tourner le bloc. C'est suffisant pour la majorité des couronnes unitaires et des petits bridges.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q14",
+      "type": "single-choice",
+      "question": "Quel est l'avantage majeur d'une machine d'usinage dotée de 5 axes cinématiques simultanés ?",
+      "media": [],
+      "options": [
+        "Doubler systématiquement la vitesse de rotation de la broche par rapport à une 4 axes",
+        "Permettre l'accès aux contre-dépouilles, géométries complexes et axes d'insertion divergents",
+        "Garantir une économie d'énergie majeure en éliminant l'utilisation d'air comprimé",
+        "Assurer l'impression directe de structures en métaux précieux sans usinage soustractif"
+      ],
+      "correct": 1,
+      "explanation": "L'adjonction d'un cinquième axe (rotation de la tête d'usinage ou du support) permet d'incliner l'outil pour usiner des structures implantaires complexes, des bridges de grande étendue et des zones anatomiques en contre-dépouille.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q15",
+      "type": "single-choice",
+      "question": "Pourquoi l'utilisation de l'irrigation (wet milling) est-elle requise pour certaines catégories de blocs ?",
+      "media": [],
+      "options": [
+        "Pour fluidifier et réduire de moitié la vitesse de rotation des broches de découpe",
+        "Pour éliminer complètement les étapes de polissage et de polissage mécanique de surface",
+        "Pour lubrifier la coupe, refroidir l'interface et éviter la propagation de micro-fissures critiques",
+        "Pour augmenter la dureté intrinsèque du bloc minéral en cours de traitement mécanique"
+      ],
+      "correct": 2,
+      "explanation": "L'usinage sous flux liquide (eau + additif) est indispensable pour les céramiques vitreuses et les composites afin d'éviter l'élévation thermique critique qui briserait le matériau ou saturerait les diamants de la fraise.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q16",
+      "type": "single-choice",
+      "question": "La CFAO directe dite 'chairside' (au fauteuil) se définit par :",
+      "media": [],
+      "options": [
+        "L'intégration complète du flux numérique (empreinte, CAO, FAO) au sein du cabinet clinique en une seule séance",
+        "L'externalisation des fichiers d'empreinte optique vers un laboratoire distant via des serveurs sécurisés",
+        "L'envoi des fichiers d'empreinte par voie postale après numérisation d'un modèle en plâtre physique",
+        "L'usinage différé des pièces prothétiques dans un délai incompressible de 48 heures au fauteuil"
+      ],
+      "correct": 0,
+      "explanation": "Le flux direct permet au praticien de scanner la préparation, de concevoir la restauration, de l'usiner et de la coller lors du même rendez-vous clinique.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q17",
+      "type": "single-choice",
+      "question": "Quel est l'avantage clinique prépondérant de la CFAO 'chairside' pour le patient ?",
+      "media": [],
+      "options": [
+        "La réduction drastique du coût biologique lié à la suppression des anesthésies locales",
+        "L'obtention systématique d'une esthétique supérieure à celle des laboratoires d'art dentaire",
+        "L'élimination de l'étape de temporisation prothétique et le gain de temps grâce au traitement en une séance",
+        "L'obtention d'une solidité structurelle doublée sur les bridges de grande étendue"
+      ],
+      "correct": 2,
+      "explanation": "En finalisant la restauration en une seule séance, on évite la pose d'une prothèse provisoire, réduisant ainsi les risques de sensibilité dentinaire et améliorant le confort du patient.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q18",
+      "type": "single-choice",
+      "question": "Quel est l'inconvénient ou la contrainte majeure de la mise en place de la CFAO 'chairside' ?",
+      "media": [],
+      "options": [
+        "L'obligation de réaliser deux empreintes physiques à l'alginate pour étalonner les capteurs",
+        "Le coût d'investissement initial élevé en équipements et la courbe d'apprentissage technique requise",
+        "La rareté des matériaux disponibles qui s'avèrent de trop haute dureté pour l'émail",
+        "La complexité excessive du scan optique par rapport à une empreinte physico-chimique classique"
+      ],
+      "correct": 1,
+      "explanation": "L'acquisition d'une chaîne complète (caméra intra-orale, logiciel CAO dédié, usineuse de cabinet, four de frittage rapide) demande un investissement financier lourd et un engagement dans la formation continue.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q19",
+      "type": "single-choice",
+      "question": "Quel est le rôle préférentiel de la CFAO indirecte en laboratoire externe ?",
+      "media": [],
+      "options": [
+        "Prendre en charge des réhabilitations étendues complexes et exploiter une diversité industrielle de matériaux",
+        "Permettre la réalisation de couronnes unitaires simples en moins de quarante-cinq minutes au fauteuil",
+        "Éliminer totalement l'étape virtuelle de CAO au profit d'un usinage purement analogique",
+        "Remplacer l'usage des scanners intra-oraux par des techniques de duplication manuelles"
+      ],
+      "correct": 0,
+      "explanation": "Le laboratoire dispose de machines industrielles (souvent 5 axes lourdes), de fours haute performance et de l'expertise technique nécessaires pour traiter les cas complexes (zircone transvissée, bridges de grande étendue, alliages chrome-cobalt).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q20",
+      "type": "single-choice",
+      "question": "Comment se caractérise un flux de travail qualifié de 'chaîne numérique complète' (Full Digital Workflow) ?",
+      "media": [],
+      "options": [
+        "Un enchaînement fluide : empreinte optique, CAO logicielle et FAO industrielle sans recours aux étapes physiques intermédiaires",
+        "Une procédure mixte alternant obligatoirement des étapes numériques et des coulées de plâtre synthétique",
+        "Un usinage manuel des blocs de céramique guidé visuellement par un écran de contrôle informatique",
+        "Une empreinte optique dont le modèle imprimé en 3D est ensuite traité par des méthodes de coulée traditionnelles"
+      ],
+      "correct": 0,
+      "explanation": "Dans un flux 100% numérique, aucune empreinte physico-chimique ni modèle en plâtre n'interviennent, ce qui élimine les variables d'erreur liées aux variations dimensionnelles des matériaux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q21",
+      "type": "single-choice",
+      "question": "L'assemblage clinique des restaurations céramiques issues de la CFAO privilégie généralement :",
+      "media": [],
+      "options": [
+        "Les ciments résines adhésifs (assemblage par collage chimique)",
+        "Les ciments conventionnels à l'oxyde de zinc eugénol de type transitoire",
+        "Les ciments à base de cire d'abeille purifiée à haute viscosité mécanique",
+        "La technique de soudure par fusion laser directe sur les structures amélaires"
+      ],
+      "correct": 0,
+      "explanation": "Le collage adhésif est incontournable pour les céramiques vitreuses car il solidarise intimement le matériau à la structure dentaire, augmentant la résistance globale de l'ensemble.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q22",
+      "type": "single-choice",
+      "question": "Quel est le protocole standard de traitement de surface pour le collage d'une céramique vitreuse (ex: disilicate de lithium) ?",
+      "media": [],
+      "options": [
+        "Mordançage à l'acide fluorhydrique (HF) suivi de l'application d'un agent de couplage silane",
+        "Sablage intensif à l'oxyde d'aluminium à forte pression sans aucun traitement chimique",
+        "Application exclusive d'un primaire contenant du monomère MDP pur sans mordançage préalable",
+        "Polissage diamanté poussé de l'intrados prothétique jusqu'à l'obtention d'une surface réfléchissante"
+      ],
+      "correct": 0,
+      "explanation": "L'acide fluorhydrique dissout sélectivement la phase vitreuse de la céramique pour créer une micromorphologie rétentive. Le silane assure ensuite le pont chimique entre la céramique et la résine de collage.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q23",
+      "type": "single-choice",
+      "question": "Quel est le protocole requis pour le traitement de surface intrados d'une structure en zircone avant assemblage ?",
+      "media": [],
+      "options": [
+        "Mordançage prolongé à l'acide fluorhydrique à haute concentration",
+        "Sablage à basse pression à l'oxyde d'aluminium suivi d'un primaire contenant des monomères phosphatés (MDP)",
+        "Application de silane pur sans aucune action mécanique de surfaçage",
+        "Aucun traitement mécanique ou chimique n'est requis pour les structures polycristallines"
+      ],
+      "correct": 1,
+      "explanation": "La zircone est une céramique polycristalline sans phase vitreuse, donc insensible à l'acide fluorhydrique. Le sablage crée des micro-rugosités mécaniques, et le groupe phosphate du MDP se lie chimiquement aux oxydes métalliques de la zircone.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q24",
+      "type": "single-choice",
+      "question": "Qu'entend-on par dégradation hydrothermale (vieillissement) de la zircone ?",
+      "media": [],
+      "options": [
+        "Une transformation de phase cristalline (tétragonale vers monoclinique) initiée à basse température en milieu humide",
+        "Une oxydation métallique majeure entraînant le détachement de particules de fer en surface prothétique",
+        "Une usure mécanique accélérée causée exclusivement par le frottement répété des aliments acides",
+        "Une perte totale et irréversible de la teinte et de la translucidité sous l'action des rayons UV"
+      ],
+      "correct": 0,
+      "explanation": "Ce phénomène (Low Temperature Degradation) est une transformation spontanée de la structure cristalline sous l'effet de l'humidité buccale, susceptible de créer des microfissures et de dégrader les propriétés mécaniques à long terme si la zircone n'est pas correctement stabilisée (souvent par l'yttrium).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D2_Q25",
+      "type": "single-choice",
+      "question": "Quelle opération de maintenance est essentielle pour garantir la précision géométrique d'une unité de FAO soustractive ?",
+      "media": [],
+      "options": [
+        "Le réglage manuel de la teinte des blocs à l'intérieur de la chambre d'usinage",
+        "La calibration régulière des axes de la machine et le suivi rigoureux de l'usure des fraises",
+        "Le remplacement systématique de la vitre optique du scanner de table après chaque cycle",
+        "Le remplissage manuel du réservoir avec du plâtre fluide pour stabiliser le bloc"
+      ],
+      "correct": 1,
+      "explanation": "Une machine non calibrée dévie dans l'espace. De plus, l'utilisation de fraises usées modifie le diamètre réel de l'outil coupant, ce qui altère l'ajustage marginal de la prothèse et génère des micro-fissures.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

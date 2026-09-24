@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_intermediaire1_001",
+    "title": "CFAO e Impresión 3D - Intermedio 1",
+    "specialty": "CFAO",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_I1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Rachid digitalizó con éxito su primera impresión óptica. La Dra. Samia le explica que el archivo STL generado es una malla de triángulos. ¿Cuál es la principal característica de este formato?",
+      "media": [],
+      "options": [
+        "Contiene información de color y textura",
+        "Representa la superficie del objeto en forma de facetas triangulares",
+        "Está comprimido para reducir el tamaño del archivo",
+        "Contiene las coordenadas exactas de los ejes de inserción"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'El formato STL es una malla de triángulos que describe la superficie del objeto. Es el formato estándar para la impresión 3D y el mecanizado.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q02",
+      "type": "single-choice",
+      "question": "La Dra. Samia debe elegir un escáner intraoral para su consultorio. Duda entre varias marcas. Según los criterios de selección, ¿qué elemento es el más importante?",
+      "media": [],
+      "options": [
+        "El color del dispositivo",
+        "La precisión del escaneo y la fluidez del software",
+        "Solo el precio de compra",
+        "La marca del dispositivo"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'La precisión y la fluidez del software son esenciales para un flujo de trabajo eficaz y resultados fiables.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Rachid realizó un escaneo intraoral, pero el archivo STL contiene artefactos. La Dra. Samia le aconseja una solución. ¿Cuál es la causa más probable de los artefactos?",
+      "media": [],
+      "options": [
+        "Un problema de conexión a Internet",
+        "El movimiento del paciente o una mala gestión de la saliva",
+        "Un defecto del cartucho de tinta",
+        "Un problema de compatibilidad del software"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'Los artefactos suelen estar relacionados con el movimiento del paciente o la presencia de saliva o sangre en las estructuras dentales.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q04",
+      "type": "single-choice",
+      "question": "La Dra. Samia debe diseñar una corona en el software CAD. El Dr. Rachid le recuerda la importancia de los márgenes. ¿Cuál es la función de los márgenes cervicales?",
+      "media": [],
+      "options": [
+        "Determinan el color de la corona",
+        "Garantizan la adaptación de la corona a la preparación dental",
+        "Determinan la altura de la corona",
+        "Son estéticos"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'Los márgenes cervicales son esenciales para la adaptación de la corona a la preparación. Una mala adaptación puede provocar caries secundarias.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Rachid debe elegir entre el flujo de trabajo 'chairside' y el 'laboratorio'. Según las limitaciones del consultorio, ¿cuál es la principal ventaja del flujo 'chairside'?",
+      "media": [],
+      "options": [
+        "Es más barato de adquirir",
+        "Permite completar la restauración en una sola sesión",
+        "Es más preciso que el laboratorio",
+        "Requiere menos formación"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'El flujo chairside permite realizar la impresión, el diseño y la fabricación de la restauración en una sola sesión, eliminando la etapa de provisional.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q06",
+      "type": "single-choice",
+      "question": "La Dra. Samia debe formar a una asistente en el uso del escáner intraoral. ¿Cuál es la primera regla que debe enseñarle?",
+      "media": [],
+      "options": [
+        "La gestión de los colores",
+        "La gestión de los movimientos del paciente y la aspiración de saliva",
+        "La programación de las secuencias de escaneo",
+        "La selección de los filtros de luz"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'La primera regla es dominar la gestión de los movimientos y la aspiración para obtener un escaneo de calidad.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Rachid diseñó una corona en el software CAD. La Dra. Samia le pide que verifique los contactos proximales. ¿Por qué es importante esta verificación?",
+      "media": [],
+      "options": [
+        "Para la estética de la corona",
+        "Para evitar la retención de alimentos entre los dientes y garantizar la estabilidad",
+        "Para el color de la corona",
+        "Para la altura de la corona"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'Los contactos proximales correctos evitan la retención de alimentos entre los dientes y garantizan la estabilidad de la restauración.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q08",
+      "type": "single-choice",
+      "question": "La Dra. Samia debe elegir el formato de exportación de su archivo para el mecanizado. ¿Qué formato se utiliza con más frecuencia para CAM?",
+      "media": [],
+      "options": [
+        "Formato JPEG",
+        "Formato STL",
+        "Formato PDF",
+        "Formato DOCX"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'El formato STL es el más utilizado para la exportación a las máquinas CAM.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Rachid recibió un archivo STL del laboratorio. Debe verificar la calidad del escaneo. ¿Qué elemento es el más crítico para el control?",
+      "media": [],
+      "options": [
+        "El color del escaneo",
+        "La presencia de zonas faltantes o artefactos",
+        "La resolución de la imagen",
+        "El tamaño del archivo"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'La presencia de zonas faltantes o artefactos puede comprometer el diseño y la fabricación de la restauración.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q10",
+      "type": "single-choice",
+      "question": "La Dra. Samia debe optimizar el flujo de trabajo digital. ¿Qué etapa es la más sensible a los errores?",
+      "media": [],
+      "options": [
+        "El diseño CAD",
+        "El escaneo óptico (impresión)",
+        "El mecanizado",
+        "La cementación de la restauración"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'El escaneo óptico es la etapa más sensible. Una impresión digital de mala calidad compromete todas las etapas posteriores.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Rachid debe calibrar su fresadora. ¿Cuál es la frecuencia recomendada para la calibración?",
+      "media": [],
+      "options": [
+        "Una vez al año",
+        "Regularmente, según las recomendaciones del fabricante",
+        "Una vez en el momento de la compra",
+        "Nunca"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'La calibración regular es necesaria para mantener la precisión del mecanizado.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q12",
+      "type": "single-choice",
+      "question": "La Dra. Samia mecanizó una corona de disilicato de litio. El Dr. Rachid le pide que verifique el ajuste. ¿Qué herramienta de control es más precisa?",
+      "media": [],
+      "options": [
+        "El ojo desnudo",
+        "La sonda dental",
+        "El hilo de control o el revelador de colorante",
+        "La lupa binocular"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Rachid explica: 'El hilo de control o el revelador de colorante permiten evaluar con precisión el ajuste marginal de la corona.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Rachid debe elegir entre una corona monolítica de circonio y una corona de disilicato de litio. ¿Cuál es la principal ventaja del circonio monolítico?",
+      "media": [],
+      "options": [
+        "Su excelente traslucidez",
+        "Su alta resistencia mecánica",
+        "Su capacidad de reparación en el sillón",
+        "Su menor precio"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'El circonio monolítico tiene una resistencia mecánica muy alta, ideal para sectores posteriores y puentes.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q14",
+      "type": "single-choice",
+      "question": "La Dra. Samia debe decidir qué tipo de corona elegir para un paciente con bruxismo severo. ¿Qué material es el más indicado?",
+      "media": [],
+      "options": [
+        "Disilicato de litio",
+        "Circonio monolítico",
+        "Composite mecanizable",
+        "Cerámica feldespática"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'El circonio monolítico es el material de elección para pacientes bruxistas debido a su alta resistencia.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Rachid mecanizó una corona monolítica de circonio. La Dra. Samia le recuerda la importancia del glaseado. ¿Cuál es la función del glaseado?",
+      "media": [],
+      "options": [
+        "Aumentar la resistencia de la corona",
+        "Dar a la superficie un aspecto estético y liso",
+        "Cambiar el color de la corona",
+        "Reducir el grosor de la corona"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'El glaseado da a la superficie del circonio un aspecto estético y liso, mejorando su integración en la sonrisa del paciente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q16",
+      "type": "single-choice",
+      "question": "La Dra. Samia debe gestionar un caso complejo que requiere un puente de 4 elementos. ¿Qué material es el más adecuado para este tipo de restauración?",
+      "media": [],
+      "options": [
+        "Disilicato de litio",
+        "Dióxido de circonio",
+        "Composite mecanizable",
+        "PMMA"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'El dióxido de circonio es el material de elección para puentes de gran extensión debido a su resistencia y estabilidad dimensional.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Rachid debe elegir una fresa para mecanizar cerámica vítrea. ¿Qué característica debe buscar?",
+      "media": [],
+      "options": [
+        "Fresa de carburo de tungsteno",
+        "Fresa diamantada",
+        "Fresa de acero de alta velocidad",
+        "Fresa cerámica"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'Las fresas diamantadas son las recomendadas para el mecanizado de cerámicas vítreas debido a su dureza y resistencia al desgaste.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q18",
+      "type": "single-choice",
+      "question": "La Dra. Samia mecanizó una corona de composite mecanizable. El Dr. Rachid le pide que verifique el acabado. ¿Qué etapa de acabado se recomienda?",
+      "media": [],
+      "options": [
+        "El glaseado",
+        "El pulido con discos de pulido",
+        "La aplicación de barniz",
+        "El chorreado"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'El pulido con discos de pulido permite obtener una superficie lisa y estética en los composites mecanizables.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Rachid recibió una guía quirúrgica impresa en 3D. La Dra. Samia le pide que verifique la adaptación. ¿Qué método de verificación es el más fiable?",
+      "media": [],
+      "options": [
+        "La prueba en el modelo impreso",
+        "La prueba clínica directa en el paciente",
+        "La verificación radiológica",
+        "La inspección visual"
+      ],
+      "correct": 2,
+      "explanation": "La Dra. Samia explica: 'La verificación radiológica es el método más fiable para comprobar la adaptación de la guía quirúrgica.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q20",
+      "type": "single-choice",
+      "question": "La Dra. Samia debe formar a su asistente en la gestión de archivos digitales. ¿Cuál es la regla principal del archivo?",
+      "media": [],
+      "options": [
+        "Eliminar los archivos después de su uso",
+        "Archivar en varios soportes (nube y local)",
+        "Utilizar solo un formato de archivo",
+        "No archivar los archivos"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'El archivo en varios soportes garantiza la seguridad y la durabilidad de los datos digitales.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Rachid diseñó una corona en el software CAD. La Dra. Samia le pide que verifique la oclusión. ¿Por qué es necesaria esta verificación?",
+      "media": [],
+      "options": [
+        "Para la estética de la corona",
+        "Para evitar interferencias oclusales y dolores",
+        "Para el color de la corona",
+        "Para la altura de la corona"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'Una oclusión incorrecta puede causar dolores, desgaste prematuro y el fracaso de la restauración.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q22",
+      "type": "single-choice",
+      "question": "La Dra. Samia debe gestionar un caso de circonio mal sinterizado. El Dr. Rachid le explica las posibles causas. ¿Cuál es la causa más frecuente?",
+      "media": [],
+      "options": [
+        "Una temperatura de sinterización demasiado baja",
+        "Un tiempo de sinterización demasiado largo",
+        "Un problema de calidad del bloque",
+        "Una humedad ambiental excesiva"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Rachid explica: 'Una temperatura de sinterización demasiado baja es la causa más frecuente de un circonio mal sinterizado, lo que puede comprometer la resistencia de la restauración.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Rachid debe elegir entre el mecanizado en seco y el mecanizado con refrigeración. ¿Cuál es la ventaja del mecanizado con refrigeración?",
+      "media": [],
+      "options": [
+        "Es más rápido",
+        "Reduce el desgaste de las fresas y evita el sobrecalentamiento",
+        "Es más barato",
+        "Es más preciso"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Samia explica: 'El mecanizado con refrigeración reduce el desgaste de las fresas, evita el sobrecalentamiento y mejora la calidad de la superficie mecanizada.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q24",
+      "type": "single-choice",
+      "question": "La Dra. Samia mecanizó una corona de disilicato de litio. El Dr. Rachid le pide que verifique la traslucidez. ¿Cuál es la importancia de la traslucidez?",
+      "media": [],
+      "options": [
+        "Es puramente estética",
+        "Influye en la integración de la corona en la sonrisa",
+        "Aumenta la resistencia de la corona",
+        "Es un requisito normativo"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Rachid explica: 'La traslucidez del disilicato de litio permite que la corona se integre armoniosamente en la sonrisa del paciente, imitando las propiedades ópticas de los dientes naturales.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_I1_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Rachid, después de dominar el flujo digital, recibe felicitaciones de la Dra. Samia: 'Estás listo para formar a otros profesionales.' ¿Cuál es el siguiente paso para el Dr. Rachid?",
+      "media": [],
+      "options": [
+        "Crear un programa de formación en CFAO",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar los fundamentos"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Samia explica: 'Formar a otros profesionales es la mejor manera de compartir su experiencia y hacer avanzar la profesión.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

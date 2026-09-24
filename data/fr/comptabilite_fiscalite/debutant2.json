@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "comptabilite_fiscalite_debutant2_001",
+    "title": "Comptabilite_fiscalite - Débutant 2",
+    "specialty": "COMP",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "COMP_D2_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Afif, chirurgien-dentiste, exerce en société civile professionnelle (SCP). Selon l'article 1er de la loi 9-88, sa structure est-elle soumise à l'obligation comptable ?",
+      "media": [],
+      "options": [
+        "Non, les SCP sont exonérées de comptabilité",
+        "Oui, car toute personne morale ayant la qualité de commerçant est assujettie",
+        "Uniquement si son CA dépasse 5 millions de DH",
+        "Non, seules les SA sont concernées par cette obligation"
+      ],
+      "correct": 1,
+      "explanation": "Art. 1er : toute personne physique ou morale ayant la qualité de commerçant est tenue de tenir une comptabilité. Une SCP exerçant une activité lucrative entre dans ce champ.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Touzani, exerçant en nom propre, réalise un CA de 2,3 millions de DH. Peut-il bénéficier des simplifications prévues à l'article 1er ?",
+      "media": [],
+      "options": [
+        "Oui, car le seuil est de 3 millions de DH pour les professions libérales",
+        "Non, car son CA dépasse le seuil de 2 millions de DH",
+        "Oui, à condition de tenir un grand-livre détaillé",
+        "Non, les dentistes sont exclus du bénéfice des simplifications"
+      ],
+      "correct": 1,
+      "explanation": "Art. 1er, al. 5 : le seuil de 2.000.000 DH s'applique aux personnes physiques. Au-delà, les simplifications ne sont plus accessibles.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q03",
+      "type": "single-choice",
+      "question": "Le Dr Afif, dont le CA est de 1,2 million de DH, peut-il enregistrer ses charges sur la base de pièces justificatives internes ?",
+      "media": [],
+      "options": [
+        "Non, toutes les charges doivent être justifiées par des factures fournisseurs",
+        "Oui, à condition qu'elles soient signées par lui-même",
+        "Non, seuls les achats de matériel peuvent faire l'objet de pièces internes",
+        "Oui, mais uniquement pour les dépenses inférieures à 500 DH"
+      ],
+      "correct": 1,
+      "explanation": "Art. 1er, dernier tiret : les petits commerçants peuvent enregistrer les menues dépenses sur la base de pièces justificatives internes signées par le commerçant.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q04",
+      "type": "single-choice",
+      "question": "Selon l'article 2, quels types de comptes doit comprendre le plan de comptes du cabinet dentaire ?",
+      "media": [],
+      "options": [
+        "Des comptes de bilan uniquement",
+        "Des comptes de situation, de gestion et des comptes spéciaux",
+        "Des comptes clients et fournisseurs exclusivement",
+        "Des comptes de trésorerie et d'immobilisations"
+      ],
+      "correct": 1,
+      "explanation": "Art. 2, al. 3 : le plan de comptes doit comprendre des classes de comptes de situation, des classes de comptes de gestion et des classes de comptes spéciaux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q05",
+      "type": "single-choice",
+      "question": "Le Dr Touzani, dont le CA est de 1,5 million de DH, est-il dispensé du grand-livre selon l'article 2 ?",
+      "media": [],
+      "options": [
+        "Oui, car toutes les entreprises en sont dispensées",
+        "Oui, si la balance récapitulative peut être établie directement du livre-journal",
+        "Non, le grand-livre est obligatoire pour les professions médicales",
+        "Non, seules les sociétés peuvent bénéficier de cette dispense"
+      ],
+      "correct": 1,
+      "explanation": "Art. 2, dernier al. : les personnes physiques visées à l'article 1er al. 5 sont dispensées du grand-livre si la balance peut être établie directement du livre-journal.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q06",
+      "type": "single-choice",
+      "question": "Le Dr Afif utilise des journaux auxiliaires pour ses opérations d'achat et de vente. Selon l'article 3, à quelle fréquence doit-il centraliser ces écritures ?",
+      "media": [],
+      "options": [
+        "Une fois par semaine pour les opérations d'achat",
+        "Une fois par mois, conformément à la loi",
+        "Une fois par trimestre avec autorisation du greffier",
+        "Une fois par an à la clôture de l'exercice"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3, al. 2 : les écritures portées sur les journaux auxiliaires sont centralisées une fois par mois sur le livre-journal et le grand-livre.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q07",
+      "type": "single-choice",
+      "question": "Le Dr Touzani (CA ≤ 2M DH) peut-il centraliser ses journaux auxiliaires selon une fréquence différente de celle prévue à l'article 3 ?",
+      "media": [],
+      "options": [
+        "Non, la centralisation mensuelle est obligatoire pour tous",
+        "Oui, il peut centraliser une fois par exercice à la clôture",
+        "Oui, à condition d'obtenir un agrément de l'administration",
+        "Non, les professions libérales ont des règles spécifiques plus strictes"
+      ],
+      "correct": 1,
+      "explanation": "Art. 3, dernier al. : les petits commerçants sont autorisés à procéder à la centralisation des écritures une fois par exercice à la clôture de ce dernier.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q08",
+      "type": "single-choice",
+      "question": "Le cabinet du Dr Afif, constitué en société, réalise un CA de 8 millions de DH. Quelle obligation l'article 4 lui impose-t-il ?",
+      "media": [],
+      "options": [
+        "La nomination d'un commissaire aux comptes",
+        "Aucune, le seuil de 10 millions de DH n'est pas atteint",
+        "L'établissement d'un manuel d'organisation comptable",
+        "La publication annuelle des comptes dans un journal"
+      ],
+      "correct": 1,
+      "explanation": "Art. 4 : l'obligation du manuel d'organisation comptable ne s'applique qu'aux entreprises dont le CA est supérieur à 10.000.000 DH.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q09",
+      "type": "single-choice",
+      "question": "Selon l'article 5, quand le Dr Touzani doit-il procéder à l'inventaire de ses actifs et passifs ?",
+      "media": [],
+      "options": [
+        "À la fin de chaque semestre",
+        "Au moins une fois par exercice, à la fin de celui-ci",
+        "Uniquement lors de la cession de son cabinet",
+        "À la demande de l'administration fiscale uniquement"
+      ],
+      "correct": 1,
+      "explanation": "Art. 5 : l'inventaire doit être réalisé au moins une fois par exercice, à la fin de celui-ci.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Afif achète un scanner CBCT pour son cabinet. Selon l'article 14, à quelle valeur doit-il l'enregistrer ?",
+      "media": [],
+      "options": [
+        "À sa valeur de remplacement estimée",
+        "À son coût d'acquisition, frais accessoires compris",
+        "À sa valeur de revente sur le marché de l'occasion",
+        "Au prix catalogue hors taxes du fournisseur"
+      ],
+      "correct": 1,
+      "explanation": "Art. 14, al. 1er : les biens acquis à titre onéreux sont enregistrés à leur coût d'acquisition (prix d'achat + frais accessoires).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q11",
+      "type": "single-choice",
+      "question": "Le Dr Touzani souhaite évaluer ses stocks de consommables dentaires. Selon l'article 14, quelles méthodes peut-il utiliser ?",
+      "media": [],
+      "options": [
+        "Uniquement la méthode du prix de vente",
+        "Le coût moyen d'acquisition ou la méthode FIFO",
+        "La méthode LIFO uniquement",
+        "La méthode du dernier prix d'achat connu"
+      ],
+      "correct": 1,
+      "explanation": "Art. 14, al. 9 : les biens fongibles sont évalués soit à leur coût moyen d'acquisition, soit selon le principe FIFO (premier entré, premier sorti).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q12",
+      "type": "single-choice",
+      "question": "Le Dr Afif (CA ≤ 2M DH) peut-il bénéficier d'une méthode simplifiée pour évaluer ses stocks ?",
+      "media": [],
+      "options": [
+        "Oui, par estimation du coût d'achat ou sur la base du prix de vente avec abattement",
+        "Non, l'évaluation simplifiée n'est pas autorisée par la loi",
+        "Oui, mais uniquement pour les stocks de prothèses",
+        "Non, seules les sociétés peuvent utiliser des méthodes simplifiées"
+      ],
+      "correct": 0,
+      "explanation": "Art. 14, dernier al., 1er tiret : les petits commerçants peuvent procéder à une évaluation simplifiée des stocks par estimation du coût d'achat ou sur la base du prix de vente avec abattement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Touzani procède à une réévaluation de ses immobilisations. Selon l'article 14, comment doit-il traiter l'écart de réévaluation ?",
+      "media": [],
+      "options": [
+        "Il peut l'utiliser pour compenser les pertes de l'exercice",
+        "Il doit l'inscrire distinctement au passif du bilan",
+        "Il doit le porter en produits exceptionnels",
+        "Il doit le soumettre à l'approbation de l'Ordre des dentistes"
+      ],
+      "correct": 1,
+      "explanation": "Art. 14, al. 8 : l'écart de réévaluation ne peut être utilisé à compenser les pertes ; il est inscrit distinctement au passif du bilan.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q14",
+      "type": "single-choice",
+      "question": "Selon l'article 9, quand un cabinet dentaire constitué en société doit-il établir ses états de synthèse ?",
+      "media": [],
+      "options": [
+        "À la demande de l'administration fiscale",
+        "À la clôture de chaque exercice, sur la base des enregistrements comptables et de l'inventaire",
+        "Tous les deux ans pour les professions libérales",
+        "Uniquement lors de la modification des statuts"
+      ],
+      "correct": 1,
+      "explanation": "Art. 9 : les états de synthèse sont établis à la clôture de l'exercice sur le fondement des enregistrements comptables et de l'inventaire.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q15",
+      "type": "single-choice",
+      "question": "Le Dr Afif constate que l'application des règles comptables ne donne pas une image fidèle de sa situation. Que prévoit l'article 19 ?",
+      "media": [],
+      "options": [
+        "Il peut déroger aux règles en le justifiant dans l'état des informations complémentaires",
+        "Il doit obligatoirement suivre les règles sans exception possible",
+        "Il doit saisir le tribunal de première instance",
+        "Il peut modifier sa présentation sans justification"
+      ],
+      "correct": 0,
+      "explanation": "Art. 19 : en raison de situations spécifiques, il peut être dérogé aux prescriptions si cela ne permet pas une image fidèle, à condition de mentionner et motiver cette dérogation dans l'état des informations complémentaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q16",
+      "type": "single-choice",
+      "question": "Le Dr Touzani souhaite changer la date de clôture de son exercice. Que lui impose l'article 19 ?",
+      "media": [],
+      "options": [
+        "Une autorisation préalable du greffier du tribunal",
+        "Une simple notification à son expert-comptable",
+        "Une motivation dans l'état des informations complémentaires",
+        "L'approbation de l'Ordre National des Dentistes"
+      ],
+      "correct": 2,
+      "explanation": "Art. 19, dernier al. : le changement de la date de clôture doit être dûment motivé dans l'état des informations complémentaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q17",
+      "type": "single-choice",
+      "question": "Le cabinet du Dr Afif (CA 9 millions DH) est dispensé de quels états de synthèse selon l'article 21 ?",
+      "media": [],
+      "options": [
+        "Du bilan et du compte de produits et charges",
+        "De l'état des soldes de gestion, du tableau de financement et des informations complémentaires",
+        "Du seul tableau de financement",
+        "De l'état des informations complémentaires uniquement"
+      ],
+      "correct": 1,
+      "explanation": "Art. 21 : les entreprises dont le CA est inférieur ou égal à 10.000.000 DH sont dispensées de l'état des soldes de gestion, du tableau de financement et de l'état des informations complémentaires.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q18",
+      "type": "single-choice",
+      "question": "Le Dr Touzani (CA 1,8 million DH) peut-il utiliser le modèle simplifié de bilan et de CPC selon l'article 21 ?",
+      "media": [],
+      "options": [
+        "Non, le modèle simplifié n'est pas prévu par la loi",
+        "Oui, car son CA est inférieur à 10 millions de DH",
+        "Oui, mais uniquement pour le bilan, pas pour le CPC",
+        "Non, car les dentistes sont exclus du bénéfice du modèle simplifié"
+      ],
+      "correct": 1,
+      "explanation": "Art. 21, al. 2 : les personnes visées à l'alinéa précédent sont autorisées à adopter le cadre comptable selon le modèle simplifié annexé à la loi.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Afif doit-il conserver ses pièces justificatives en monnaie nationale selon l'article 22 ?",
+      "media": [],
+      "options": [
+        "Non, il peut les conserver en euros",
+        "Oui, tous les documents comptables sont établis en monnaie nationale",
+        "Oui, mais uniquement pour les factures de plus de 1.000 DH",
+        "Non, la loi ne précise pas la devise des documents"
+      ],
+      "correct": 1,
+      "explanation": "Art. 22, al. 1er : les documents comptables sont établis en monnaie nationale.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q20",
+      "type": "single-choice",
+      "question": "Selon l'article 22, combien de temps le Dr Touzani doit-il conserver ses factures d'achat de matériel dentaire ?",
+      "media": [],
+      "options": [
+        "5 ans",
+        "10 ans",
+        "15 ans",
+        "Jusqu'à la cessation d'activité"
+      ],
+      "correct": 1,
+      "explanation": "Art. 22, al. 2 : les documents comptables et les pièces justificatives sont conservés pendant dix ans.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q21",
+      "type": "single-choice",
+      "question": "Si l'administration fiscale estime que la comptabilité du Dr Afif n'est pas régulière, que peut-elle faire selon l'article 23 ?",
+      "media": [],
+      "options": [
+        "Elle peut rejeter la comptabilité et procéder à une rectification",
+        "Elle doit obligatoirement l'accepter si les impôts ont été payés",
+        "Elle peut prononcer une suspension d'activité",
+        "Elle doit saisir l'Ordre National des Dentistes"
+      ],
+      "correct": 0,
+      "explanation": "Art. 23 : l'administration fiscale peut rejeter les comptabilités qui ne sont pas tenues dans les formes prescrites par la loi.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q22",
+      "type": "single-choice",
+      "question": "Le Dr Touzani confie sa comptabilité à un expert-comptable. Selon l'article 24, que lui impose la loi ?",
+      "media": [],
+      "options": [
+        "Il doit respecter un cahier des charges spécifique aux dentistes",
+        "Il est tenu de se conformer aux dispositions de la loi 9-88",
+        "Il doit obtenir un agrément spécial du ministère de la santé",
+        "Il peut appliquer les normes internationales IFRS"
+      ],
+      "correct": 1,
+      "explanation": "Art. 24 : les experts-comptables et comptables agréés sont tenus de se conformer aux dispositions de la loi 9-88 pour la tenue de la comptabilité des entreprises dont ils sont chargés.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q23",
+      "type": "single-choice",
+      "question": "Selon l'article 10, que décrit l'état des soldes de gestion que doit établir un cabinet dentaire ?",
+      "media": [],
+      "options": [
+        "La formation du résultat net et celle de l'autofinancement",
+        "La trésorerie disponible en fin d'exercice",
+        "Le nombre de patients traités par mois",
+        "Le montant des honoraires prothétiques facturés"
+      ],
+      "correct": 0,
+      "explanation": "Art. 10, al. 3 : l'état des soldes de gestion décrit la formation du résultat net et celle de l'autofinancement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q24",
+      "type": "single-choice",
+      "question": "Le Dr Afif (SCP, CA 12 millions DH) doit établir un manuel d'organisation comptable. Selon l'article 4, quel est l'objet de ce manuel ?",
+      "media": [],
+      "options": [
+        "Décrire l'organisation comptable de l'entreprise",
+        "Lister les fournisseurs agréés du cabinet",
+        "Détailler les actes médicaux pratiqués",
+        "Présenter les tarifs pratiqués par le cabinet"
+      ],
+      "correct": 0,
+      "explanation": "Art. 4 : le manuel a pour objet de décrire l'organisation comptable de l'entreprise.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "COMP_D2_Q25",
+      "type": "single-choice",
+      "question": "Le Dr Touzani constate que plusieurs de ses patients n'ont pas payé leurs honoraires. Selon l'article 16, comment doit-il traiter ces créances douteuses ?",
+      "media": [],
+      "options": [
+        "Il doit les maintenir à leur valeur nominale sans provision",
+        "Il doit tenir compte des risques et constituer des provisions si nécessaire",
+        "Il peut les annuler purement et simplement",
+        "Il doit les déclarer à l'Ordre des dentistes"
+      ],
+      "correct": 1,
+      "explanation": "Art. 16 : il doit être tenu compte des risques et charges nés au cours de l'exercice. Les créances douteuses doivent faire l'objet de provisions pour dépréciation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

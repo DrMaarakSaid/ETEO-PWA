@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "anesthesiologie_debutant2_001",
+    "title": "Anesthesiology - Beginner 2",
+    "specialty": "ANES",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ANES_D2_Q01",
+      "type": "single-choice",
+      "question": "What pharmacokinetic and structural property distinguishes articaine from other amides?",
+      "media": [],
+      "options": [
+        "Strict hepatic metabolism by cytochrome P450",
+        "Total absence of binding to plasma proteins",
+        "Superior bone diffusion favored by the presence of a thiophene ring",
+        "Zero aqueous solubility requiring a lipid solvent"
+      ],
+      "correct": 2,
+      "explanation": "The thiophene ring of articaine increases its liposolubility, allowing it to cross dense tissues and cortical bone more easily than the benzene ring of other amides.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q02",
+      "type": "single-choice",
+      "question": "What is the recommended maximum dose of 4% articaine in a healthy adult patient?",
+      "media": [],
+      "options": [
+        "7 mg/kg body weight, not exceeding an absolute ceiling of 500 mg",
+        "4.4 mg/kg body weight, modeled on the profile of mepivacaine",
+        "10 mg/kg body weight, due to its low cardiac toxicity",
+        "2 mg/kg body weight, to limit the risk of methemoglobinemia"
+      ],
+      "correct": 0,
+      "explanation": "The maximum dose is set at 7 mg/kg in adults, representing a maximum of about 6 to 7 cartridges of 1.8 mL at 4% for a standard 70 kg individual.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q03",
+      "type": "single-choice",
+      "question": "What is the preferred clinical indication of 4% articaine due to its strong diffusion power?",
+      "media": [],
+      "options": [
+        "Isolated lingual anesthesia for papilla biopsy",
+        "Transpapillary bilateral palatal anesthesia",
+        "Infra-orbital nerve block via the intranasal route",
+        "Para-periosteal infiltration anesthesia for mandibular molars in adults"
+      ],
+      "correct": 3,
+      "explanation": "Although IAN block is the reference in the mandible, the high diffusibility of articaine often allows sufficient pulpal anesthesia on mandibular molars or premolars by simple vestibular infiltration.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q04",
+      "type": "single-choice",
+      "question": "3% mepivacaine is clinically characterized by:",
+      "media": [],
+      "options": [
+        "A very weak intrinsic vasodilator action allowing its use without vasoconstrictor",
+        "An exclusively renal metabolism bypassing the liver",
+        "A systemic toxicity three times higher than that of lidocaine",
+        "A prolonged pulpal duration of action exceeding three hours"
+      ],
+      "correct": 0,
+      "explanation": "Mepivacaine has a slight intrinsic vasoconstrictor property (or at least very weak vasodilation), which allows maintaining effective anesthesia without adding epinephrine.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q05",
+      "type": "single-choice",
+      "question": "What is the typical indication for plain 3% mepivacaine (without vasoconstrictor)?",
+      "media": [],
+      "options": [
+        "Multiple implant surgeries with extensive flaps",
+        "Short care procedures in patients with major contraindications to sympathomimetic amines",
+        "Complex endodontic treatments on inflamed molars",
+        "Scheduled extractions in pedodontics on immature permanent teeth"
+      ],
+      "correct": 1,
+      "explanation": "It is ideal for short procedures (about 20 to 30 min of pulpal anesthesia) in patients with uncontrolled hypertension, unstable coronary disease or severe diabetes.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q06",
+      "type": "single-choice",
+      "question": "What is the major pharmacological and hematological risk associated with prilocaine overdose?",
+      "media": [],
+      "options": [
+        "Methemoglobinemia induced by its metabolite, o-toluidine",
+        "Acute renal failure by tubular precipitation",
+        "Direct myocardial necrosis by beta receptor blockade",
+        "Immediate cross-allergy with all esters"
+      ],
+      "correct": 0,
+      "explanation": "Ortho-toluidine, a metabolite of prilocaine, oxidizes the iron of hemoglobin, transforming it into methemoglobin unable to transport oxygen. This can cause cyanosis at high doses.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q07",
+      "type": "single-choice",
+      "question": "What is the recommended maximum dose of 4% prilocaine in a healthy adult?",
+      "media": [],
+      "options": [
+        "4 mg/kg body weight, not exceeding 300 mg",
+        "8 mg/kg body weight, not exceeding an absolute ceiling of 600 mg",
+        "12 mg/kg body weight, due to ultra-rapid clearance",
+        "1.5 mg/kg body weight, to avoid the risk of bradycardia"
+      ],
+      "correct": 1,
+      "explanation": "The safety limit for prilocaine is set at 8 mg/kg (max 600 mg) to prevent the risk of clinical methemoglobinemia.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q08",
+      "type": "single-choice",
+      "question": "The classic mandibular block at the Spix spine mainly aims to interrupt the conduction of which nerve?",
+      "media": [],
+      "options": [
+        "The inferior alveolar nerve",
+        "The long buccal nerve",
+        "The mylohyoid nerve",
+        "The mental nerve at its origin"
+      ],
+      "correct": 0,
+      "explanation": "It targets the trunk of the inferior alveolar nerve just before it enters the mandibular foramen, desensitizing all the teeth of the corresponding quadrant.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q09",
+      "type": "single-choice",
+      "question": "What is the key anatomical landmark for positioning the needle during a direct mandibular block?",
+      "media": [],
+      "options": [
+        "The infra-orbital foramen and the upper canine",
+        "The maxillary tuberosity behind the palatine canal",
+        "The height of the coronoid depression, the pterygo-mandibular ligament and the occlusal plane of the molars",
+        "The desmodontal space of the lower first molar"
+      ],
+      "correct": 2,
+      "explanation": "The injection is made at the intersection of a horizontal line passing through the deepest point of the coronoid notch (1 cm above the occlusal plane) and a vertical line passing just outside the pterygo-mandibular fold.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q10",
+      "type": "single-choice",
+      "question": "What transient neurological complication is specifically related to a positioning error during a mandibular block (Spix)?",
+      "media": [],
+      "options": [
+        "Transient facial paralysis due to deposition of the solution in the parotid gland",
+        "Permanent unilateral blindness by retrograde diffusion",
+        "Immediate hearing loss due to involvement of the vestibulo-cochlear nerve",
+        "Irreversible trigeminal neuralgia by axonal section"
+      ],
+      "correct": 0,
+      "explanation": "If the needle is oriented too far backward and does not contact the bone of the ascending ramus, it enters the parotid gland and the anesthetic blocks the facial nerve (VII), causing temporary facial paresis.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q11",
+      "type": "single-choice",
+      "question": "The Gow-Gates mandibular block technique is mainly distinguished by:",
+      "media": [],
+      "options": [
+        "A closed-mouth approach targeting the internal oblique line",
+        "Injection of the solution at the level of the mandibular condyle neck",
+        "Exclusive supra-periosteal infiltration at the level of the symphysis",
+        "The use of ultra-short 30 Gauge needles without bone contact"
+      ],
+      "correct": 1,
+      "explanation": "The Gow-Gates technique is a true high-collar nerve block. The deposition is made at the level of the antero-medial face of the condylar neck, allowing the IAN, lingual, buccal and mylohyoid nerves to be blocked in a single injection.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q12",
+      "type": "single-choice",
+      "question": "The Vazirani-Akinosi mandibular block technique is specifically indicated in case of:",
+      "media": [],
+      "options": [
+        "Severe trismus or major limitation of mouth opening (closed-mouth technique)",
+        "Need for simultaneous anesthesia of the palate and velum",
+        "Exclusive endodontic surgery on maxillary incisors",
+        "Absence of molar landmarks in the completely edentulous patient"
+      ],
+      "correct": 0,
+      "explanation": "The Akinosi technique is performed with the mouth closed. The needle advances parallel to the maxillary occlusal plane at the level of the upper muco-gingival junction, which is lifesaving in cases of trismus of infectious or traumatic origin.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q13",
+      "type": "single-choice",
+      "question": "The infra-orbital nerve block provides analgesia of which structures?",
+      "media": [],
+      "options": [
+        "The maxillary molars and the posterior maxillary sinus",
+        "The incisors, canines and maxillary premolars on the injected side, as well as the upper lip and wing of the nose",
+        "The lingual mucosa and the anterior floor of the mouth",
+        "The palate and tonsillar pillars"
+      ],
+      "correct": 1,
+      "explanation": "By entering the infra-orbital canal, the solution blocks the anterior and middle superior alveolar branches, ensuring extensive anesthesia of the maxillary anterior sector.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q14",
+      "type": "single-choice",
+      "question": "Anesthesia of the nasopalatine nerve at the incisive foramen mainly targets:",
+      "media": [],
+      "options": [
+        "The lower molar vestibular gingiva",
+        "The anterior palatal mucosa, from canine to canine",
+        "The posterior third of the tongue and the isthmus of the throat",
+        "The upper lip and the external nasal septum"
+      ],
+      "correct": 1,
+      "explanation": "The nasopalatine nerve emerges from the incisive papilla (anterior palatine foramen) and innervates the palatal soft tissues of the premaxillary sector (from the mesial face of the right first premolar to the left).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q15",
+      "type": "single-choice",
+      "question": "Anesthesia of the greater palatine nerve at the posterior palatine foramen is required to desensitize:",
+      "media": [],
+      "options": [
+        "The palatal mucosa of the premolar and molar region",
+        "The floor of the mouth and the ventral surface of the tongue",
+        "The enamel of the upper central incisors only",
+        "The median septum of the maxillary sinus"
+      ],
+      "correct": 0,
+      "explanation": "The greater palatine nerve emerges from the posterior palatine foramen (often located opposite the second or third upper molar) and provides sensory innervation to the soft tissues of the posterior palate.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q16",
+      "type": "single-choice",
+      "question": "Why is aspiration (reflux test) considered a mandatory step before any injection?",
+      "media": [],
+      "options": [
+        "To measure the mechanical resistance of the interstitial tissue",
+        "To eliminate excess pressure within the syringe",
+        "To detect accidental intravascular penetration of the needle",
+        "To ensure that the bevel of the needle is oriented towards the bone"
+      ],
+      "correct": 2,
+      "explanation": "Positive aspiration (reflux of blood into the cartridge) indicates that the tip of the needle is within the lumen of a vessel. Injecting at this site would cause immediate systemic toxicity.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q17",
+      "type": "single-choice",
+      "question": "What is the immediate clinical management in case of minor positive aspiration?",
+      "media": [],
+      "options": [
+        "Withdraw the needle by 1 to 2 mm, slightly modify the angulation, re-aspirate and inject if the test becomes negative",
+        "Continue the injection at an accelerated pace to empty the cartridge",
+        "Immediately withdraw the needle and definitively abandon the care session",
+        "Inject saline solution under pressure to flush the vessel concerned"
+      ],
+      "correct": 0,
+      "explanation": "If aspiration shows a slight trickle of blood, a millimeter withdrawal or displacement often allows exiting the vessel. It is imperative to repeat aspiration before injecting. If the cartridge is massively stained with blood, it must be changed.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q18",
+      "type": "single-choice",
+      "question": "The appearance of an immediate hematoma after a nerve block results from:",
+      "media": [],
+      "options": [
+        "A local immuno-allergic reaction with histamine release",
+        "Accidental laceration of a blood vessel (artery or vein) causing blood extravasation into the soft tissues",
+        "Direct chemical toxicity of the anesthetic salt on muscle cells",
+        "A fulminant bacterial infection introduced by the needle"
+      ],
+      "correct": 1,
+      "explanation": "Injury to a vessel (such as the inferior alveolar artery or the pterygoid plexus) causes immediate intra-tissue bleeding, manifesting as postoperative swelling and ecchymosis.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q19",
+      "type": "single-choice",
+      "question": "Post-anesthetic paresthesia is clinically defined by:",
+      "media": [],
+      "options": [
+        "A total loss of motor function of the facial mimic muscles",
+        "A fulgurating and throbbing pain during mouth opening",
+        "An alteration or persistence of the loss of nerve sensitivity beyond the theoretical duration of action of the product",
+        "A vesicular skin rash localized along the nerve pathway"
+      ],
+      "correct": 2,
+      "explanation": "Paresthesia is characterized by abnormal sensations (numbness, tingling, dysesthesia) persisting for days, weeks or months after injection, indicating nerve damage.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q20",
+      "type": "single-choice",
+      "question": "What are the two main etiological factors implicated in the occurrence of paresthesia?",
+      "media": [],
+      "options": [
+        "The use of a needle that is too fine (30G) or an injection rate that is too slow",
+        "Direct mechanical trauma (needle-nerve contact) or chemical neurotoxicity related to the product (particularly solutions at high concentration such as 4%)",
+        "Pre-existing periodontal infection or prior acid etching",
+        "Tissue thermal shock or poor orientation of the bevel towards the mucosa"
+      ],
+      "correct": 1,
+      "explanation": "Direct contact of the needle with the nerve fascicle or the intrinsic neurotoxicity of highly concentrated molecules (such as articaine 4% or prilocaine 4% reported in the literature during blocks) are the major causes.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q21",
+      "type": "single-choice",
+      "question": "What is the recommended initial management for persistent paresthesia of the lingual nerve after third molar extraction?",
+      "media": [],
+      "options": [
+        "Immediate surgical exploration with nerve micro-suture",
+        "Rigorous clinical monitoring, patient reassurance, mapping of the area and possibly initial corticosteroid therapy",
+        "Immediate prescription of broad-spectrum antibiotic therapy for one month",
+        "Repeated local injections of lidocaine to stimulate axonal regrowth"
+      ],
+      "correct": 1,
+      "explanation": "The majority of iatrogenic paresthesias resolve spontaneously in less than 8 to 12 weeks. Management relies on monitoring, assessment of sensory recovery and psychological support for the patient.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q22",
+      "type": "single-choice",
+      "question": "Post-anesthetic trismus is mainly secondary to:",
+      "media": [],
+      "options": [
+        "Direct trauma or hematoma within the medial pterygoid muscle during a block",
+        "An immediate type IV hypersensitivity reaction affecting the joint",
+        "A microscopic non-displaced fracture of the condylar neck",
+        "Prolonged inhibition of central motor neurons by the amide salt"
+      ],
+      "correct": 0,
+      "explanation": "Repeated or poorly oriented injections during a Spix block can cross or injure the medial pterygoid muscle. The resulting inflammation or intramuscular hematoma causes a painful reflex contracture limiting mouth opening.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q23",
+      "type": "single-choice",
+      "question": "What technical precaution is imperative when performing anesthesia in a patient with severe hemophilia?",
+      "media": [],
+      "options": [
+        "Systematically use deep regional blocks (nerve blocks)",
+        "Prefer local infiltration, intraligamentary or intra-osseous techniques to avoid the risk of deep space hematoma",
+        "Massively increase adrenaline concentrations to 1:50,000",
+        "Require complete cessation of their clotting factor infusions 48 hours before"
+      ],
+      "correct": 1,
+      "explanation": "Nerve blocks (such as Spix) are contraindicated in patients with severe hemostasis disorders without prior substitution, as they risk causing a suffocating pharyngeal or retropharyngeal hematoma. Local injections are preferred.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q24",
+      "type": "single-choice",
+      "question": "What is the contemporary clinical attitude regarding local anesthesia in a patient on well-balanced oral anticoagulant therapy (e.g., VKA with stable INR between 2 and 3, or DOAC)?",
+      "media": [],
+      "options": [
+        "Formally contraindicate any oral surgery procedure under local anesthesia",
+        "Require systematic discontinuation of anticoagulant therapy three days before the session",
+        "Perform local infiltrations or intra-osseous techniques without modifying the anticoagulant treatment, ensuring careful local hemostasis",
+        "Replace the anticoagulant with heavy intravenous antibiotic prophylaxis"
+      ],
+      "correct": 2,
+      "explanation": "Current recommendations prohibit unjustified discontinuation of anticoagulants for routine procedures in general practice due to the major thromboembolic risk. Local infiltration techniques present a very low hemorrhagic risk that is perfectly controllable locally.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ANES_D2_Q25",
+      "type": "single-choice",
+      "question": "What warning symptoms characterize the rapid systemic passage (accidental intravascular injection) of the epinephrine contained in the cartridge?",
+      "media": [],
+      "options": [
+        "Immediate tachycardia, palpitations, a surge of anxiety and transient headaches",
+        "Marked bradycardia associated with profound muscle lethargy",
+        "A catastrophic drop in blood pressure simulating a state of apparent death",
+        "Generalized pruritus with maculopapular skin eruptions"
+      ],
+      "correct": 0,
+      "explanation": "Epinephrine injected directly into the vascular network causes an immediate systemic effect (adrenergic bolus effect) stimulating cardiac beta-1 receptors, resulting in intense palpitations and sudden but brief anxiety (a few minutes).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

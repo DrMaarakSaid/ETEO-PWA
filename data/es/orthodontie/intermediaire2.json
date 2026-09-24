@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "orthodontie_intermediaire2_001",
+    "title": "Ortodoncia - Intermedio 2",
+    "specialty": "ORTH",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ORTH_I2_Q01",
+      "type": "single-choice",
+      "question": "Sami llama a Mina: «¡Paciente de 12 años con clase II severa! ¿Qué hacemos?» Mina responde:",
+      "media": [],
+      "options": [
+        "Esperar el final del crecimiento",
+        "Tratamiento ortopédico (activador, bionator)",
+        "Extracción inmediata",
+        "Cirugía"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «A los 12 años, un aparato funcional puede estimular el crecimiento mandibular.» 🦅 Sami: «Recetaré un activador.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q02",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar un canino retenido en estadio 5?» Mina responde:",
+      "media": [],
+      "options": [
+        "Crear espacio, luego tracción ortodóncica",
+        "Extraer el canino",
+        "Ignorar la retención",
+        "Colocar un implante"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «En el estadio 5 de Nolla, el canino está erupcionando. Está indicada la tracción.» 🦅 Sami: «Crearé espacio y haré la tracción.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q03",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son las ventajas de los aparatos funcionales?» Mina responde:",
+      "media": [],
+      "options": [
+        "Utilizan el crecimiento para corregir maloclusiones",
+        "Son más rápidos que los brackets",
+        "Son más estéticos",
+        "Son más baratos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los aparatos funcionales utilizan el crecimiento para corregir maloclusiones.» 🦅 Sami: «Usaré activadores en niños.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q04",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una mordida abierta anterior en un adulto?» Mina responde:",
+      "media": [],
+      "options": [
+        "Mini-tornillos para intrusión de molares o cirugía ortognática",
+        "Extracción",
+        "Esperar",
+        "Prótesis"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La mordida abierta en adultos se puede tratar con mini-tornillos o cirugía.» 🦅 Sami: «Ofreceré mini-tornillos a este paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q05",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la distalización de molares?» Mina responde:",
+      "media": [],
+      "options": [
+        "El desplazamiento de los molares hacia atrás para corregir la clase II",
+        "La extracción de molares",
+        "El desplazamiento de los molares hacia adelante",
+        "Una técnica quirúrgica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La distalización de molares es una técnica para corregir la clase II.» 🦅 Sami: «Usaré mini-tornillos para distalizar.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q06",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuándo hay que considerar la cirugía ortognática?» Mina responde:",
+      "media": [],
+      "options": [
+        "Para maloclusiones esqueléticas severas > 10 mm",
+        "Para todas las maloclusiones",
+        "Nunca",
+        "Solo para la clase III"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La cirugía ortognática está indicada para maloclusiones esqueléticas severas.» 🦅 Sami: «Derivaré pacientes a cirujanos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q07",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la máscara facial en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Un aparato para tratar la clase III en niños",
+        "Una mascarilla protectora",
+        "Un aparato para la clase II",
+        "Un aparato para mordidas abiertas"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La máscara facial se usa para corregir la clase III en niños.» 🦅 Sami: «Ofreceré una máscara facial a este joven paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q08",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una recidiva postortodóncica?» Mina responde:",
+      "media": [],
+      "options": [
+        "Repetir el tratamiento con alineadores o brackets",
+        "Ignorar la recidiva",
+        "Extraer dientes",
+        "Colocar prótesis"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La recidiva se puede tratar con un nuevo tratamiento ortodóncico.» 🦅 Sami: «Ofreceré un nuevo tratamiento a este paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q09",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la osteogénesis por distracción?» Mina responde:",
+      "media": [],
+      "options": [
+        "Una técnica de alargamiento óseo gradual",
+        "Una extracción",
+        "Una técnica de limpieza dental",
+        "Una técnica de colocación de brackets"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La osteogénesis por distracción es una técnica para corregir asimetrías mandibulares.» 🦅 Sami: «Derivaré pacientes a cirujanos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q10",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una clase III en un niño de 8 años?» Mina responde:",
+      "media": [],
+      "options": [
+        "Máscara facial o protracción del maxilar superior",
+        "Esperar el final del crecimiento",
+        "Extracción",
+        "Cirugía"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La clase III en niños a menudo se trata con máscara facial.» 🦅 Sami: «Ofreceré una máscara facial.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q11",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es el método de Tweed en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Un análisis cefalométrico de inclinaciones dentales",
+        "Una técnica de extracción",
+        "Un método de colocación de brackets",
+        "Una técnica quirúrgica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El análisis de Tweed evalúa las inclinaciones dentales y los objetivos de tratamiento.» 🦅 Sami: «Usaré el análisis de Tweed.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q12",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una asimetría facial severa?» Mina responde:",
+      "media": [],
+      "options": [
+        "Planificación ortodóncica y quirúrgica",
+        "Esperar el crecimiento",
+        "Extracción",
+        "Prótesis"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las asimetrías severas requieren un enfoque combinado de ortodoncia y cirugía.» 🦅 Sami: «Planificaré un enfoque multidisciplinario.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q13",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es el método de Steiner en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Un análisis cefalométrico de relaciones esqueléticas y dentales",
+        "Una técnica de extracción",
+        "Un método de colocación de brackets",
+        "Una técnica radiográfica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El análisis de Steiner evalúa las relaciones esqueléticas y dentales.» 🦅 Sami: «Usaré el análisis de Steiner.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q14",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar un paciente con ATM y maloclusión?» Mina responde:",
+      "media": [],
+      "options": [
+        "Férula de reposicionamiento, luego tratamiento ortodóncico",
+        "Cirugía inmediata",
+        "Extracción",
+        "Ignorar la ATM"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La ATM a menudo requiere una férula antes del tratamiento ortodóncico.» 🦅 Sami: «Primero estabilizaré la ATM.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q15",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son las ventajas de los mini-tornillos en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Anclaje absoluto, sin necesidad de colaboración del paciente",
+        "Más baratos que los brackets",
+        "Más estéticos",
+        "Más rápidos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los mini-tornillos proporcionan un anclaje absoluto sin dependencia del paciente.» 🦅 Sami: «Usaré mini-tornillos para el anclaje.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q16",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar una rotación severa de canino?» Mina responde:",
+      "media": [],
+      "options": [
+        "Desrotación gradual con resortes",
+        "Extraer el canino",
+        "Ignorar la rotación",
+        "Colocar una corona"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Las rotaciones severas se pueden corregir con resortes.» 🦅 Sami: «Desrotaré este canino.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q17",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es la separación en ortodoncia?» Mina responde:",
+      "media": [],
+      "options": [
+        "Una técnica de reducción interproximal del esmalte",
+        "Una extracción",
+        "Una técnica de colocación de brackets",
+        "Una técnica quirúrgica"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La separación es una técnica para crear espacio mediante reducción del esmalte.» 🦅 Sami: «Usaré la separación para el apiñamiento.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q18",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar la agenesia de incisivos laterales?» Mina responde:",
+      "media": [],
+      "options": [
+        "Cierre de espacios o conservación para implante",
+        "Siempre cerrar los espacios",
+        "Siempre conservar los espacios",
+        "Siempre extraer"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La estrategia depende de la oclusión y la arcada.» 🦅 Sami: «Planificaré el manejo de la agenesia.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q19",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son los riesgos de los alineadores?» Mina responde:",
+      "media": [],
+      "options": [
+        "Mala higiene, desmineralización, recidiva",
+        "Solo desmineralización",
+        "Solo recidiva",
+        "No hay riesgos"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los alineadores pueden causar problemas de higiene y recidivas.» 🦅 Sami: «Controlaré la higiene de mis pacientes.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q20",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar la clase II división 2?» Mina responde:",
+      "media": [],
+      "options": [
+        "Desbloquear los incisivos superiores, luego tratar la clase II",
+        "Empezar directamente con la clase II",
+        "Extracción de premolares",
+        "Cirugía"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «Los incisivos retruidos deben desbloquearse primero.» 🦅 Sami: «Primero desbloquearé los incisivos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q21",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Qué es un disyuntor del maxilar superior?» Mina responde:",
+      "media": [],
+      "options": [
+        "Un aparato de expansión rápida para el maxilar superior",
+        "Un aparato de retención",
+        "Un aparato para clase II",
+        "Un aparato para clase III"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El disyuntor se usa para la expansión rápida del maxilar superior.» 🦅 Sami: «Usaré un disyuntor para este paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q22",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar un apiñamiento severo en un adulto?» Mina responde:",
+      "media": [],
+      "options": [
+        "Extracción o separación según el análisis de Bolton",
+        "Siempre extracción",
+        "Siempre separación",
+        "Siempre expansión"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La elección depende del análisis de Bolton.» 🦅 Sami: «Calcularé el Bolton antes de decidir.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q23",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cuáles son las ventajas de la cirugía ortognática?» Mina responde:",
+      "media": [],
+      "options": [
+        "Corrección de maloclusiones esqueléticas severas",
+        "Más barata que la ortodoncia",
+        "Más rápida",
+        "Menos invasiva"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «La cirugía ortognática corrige maloclusiones esqueléticas severas.» 🦅 Sami: «Derivaré pacientes a cirujanos.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q24",
+      "type": "single-choice",
+      "question": "Sami pregunta: «¿Cómo manejar la periodontitis en un paciente ortodóncico?» Mina responde:",
+      "media": [],
+      "options": [
+        "Fuerzas ligeras, control periodontal riguroso",
+        "Detener el tratamiento",
+        "Extracción",
+        "Cirugía"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explica: «El tratamiento ortodóncico es posible con fuerzas ligeras y control estricto.» 🦅 Sami: «Adaptaré las fuerzas para este paciente.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I2_Q25",
+      "type": "single-choice",
+      "question": "Sami, tras superar casos complejos de ortodoncia con Mina, dice: «¡Estoy orgulloso de nuestros éxitos!» Mina concluye: «Las terapias ortodóncicas son...»",
+      "media": [],
+      "options": [
+        "Una opción para expertos",
+        "La clave para restaurar el equilibrio facial",
+        "Una pérdida de tiempo",
+        "Secundarias"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explica: «Las terapias ortodóncicas son la clave para restaurar el equilibrio facial.» 🦅 Sami: «Seguiré mejorando.»",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

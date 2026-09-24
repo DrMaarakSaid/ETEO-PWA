@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "cfao_impression3d_debutant1_001",
+    "title": "CFAO e Impresión 3D - Principiante 1",
+    "specialty": "CFAO",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "CFAO_D1_Q01",
+      "type": "single-choice",
+      "question": "¿Cuál es el significado exacto y científico del acrónimo CFAO en el ámbito odontológico?",
+      "media": [],
+      "options": [
+        "Computer Aided Design, que describe exclusivamente la fase virtual de modelado geométrico 3D",
+        "Diseño y Fabricación Asistidos por Ordenador, que caracteriza la integración de todo el proceso digital",
+        "Computer Aided Manufacturing, que describe exclusivamente los procesos físicos de fabricación sustractiva",
+        "Fusión constructiva y ensamblaje optimizado, que define la conexión mecánica entre el soporte y la infraestructura"
+      ],
+      "correct": 1,
+      "explanation": "CFAO abarca todo el flujo digital —desde la obtención de datos clínicos (impresión óptica) hasta la producción física del dispositivo protésico.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q02",
+      "type": "single-choice",
+      "question": "¿Cuáles son los dos subsistemas de software fundamentales e interconectados que componen la cadena CFAO?",
+      "media": [],
+      "options": [
+        "La arquitectura CAD, dedicada al modelado virtual 3D, y el módulo CAM, que gestiona los algoritmos de fabricación",
+        "El sensor óptico de escaneo intraoral y la unidad de impresión aditiva por polimerización de monómeros",
+        "La unidad central de procesamiento de datos digitales y la infraestructura mecánica de la fresadora multieje",
+        "El sistema operativo de la estación de trabajo y los controladores de comunicación periférica de la red"
+      ],
+      "correct": 0,
+      "explanation": "CAD (Computer-Aided Design) genera el diseño de la prótesis, mientras que CAM (Computer-Aided Manufacturing) convierte ese diseño en trayectorias de herramientas y coordenadas de fabricación.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q03",
+      "type": "single-choice",
+      "question": "¿Cómo se define exactamente la fase CAD (Computer-Aided Design) en odontología?",
+      "media": [],
+      "options": [
+        "La materialización física del proyecto protésico mediante mecanizado o impresión aditiva",
+        "El registro óptico de las estructuras anatómicas intraorales mediante haz de luz coherente o estructurada",
+        "El modelado geométrico tridimensional virtual de la restauración a partir de los datos del escaneo",
+        "El postratamiento químico destinado a estabilizar la estructura cristalina del material cerámico"
+      ],
+      "correct": 2,
+      "explanation": "CAD reemplaza el modelado en cera tradicional (wax-up) por un procesamiento matemático de la malla poligonal tridimensional en pantalla.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q04",
+      "type": "single-choice",
+      "question": "¿Cómo se define exactamente la fase CAM (Computer-Aided Manufacturing) en odontología?",
+      "media": [],
+      "options": [
+        "La materialización física de la prótesis mediante mecanizado sustractivo o impresión 3D aditiva",
+        "El posicionamiento virtual de los límites cervicales y los ejes de inserción en el modelo digital de trabajo",
+        "La digitalización tridimensional de las arcadas dentales mediante un sistema de escaneo óptico por triangulación",
+        "La optimización matemática de las líneas de transición y los relieves oclusales mediante algoritmo biomimético"
+      ],
+      "correct": 0,
+      "explanation": "CAM es el puente software-mecánico que controla el módulo de producción (fresadora o impresora 3D) para dar forma al material seleccionado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q05",
+      "type": "single-choice",
+      "question": "¿Qué sistemas de escaneo óptico intraoral son los estándares de referencia de la industria odontológica?",
+      "media": [],
+      "options": [
+        "Cámaras réflex digitales de alta resolución con objetivos macro anulares",
+        "Cámaras industriales de fotogrametría arquitectónica basadas en tecnologías geodésicas de captura",
+        "Soluciones integradas avanzadas como las plataformas iTero, 3Shape Trios, Medit y Carestream Dental",
+        "Escáneres planos de alta resolución con sensores CCD lineales"
+      ],
+      "correct": 2,
+      "explanation": "Estos escáneres intraorales (IOS) miden en tiempo real la topografía de la cavidad bucal sin necesidad de material de impresión físico.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q06",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal ventaja clínica del escáner intraoral frente a las técnicas de impresión físico-químicas?",
+      "media": [],
+      "options": [
+        "Optimización del confort del paciente, reducción de las distorsiones dimensionales y durabilidad del archivo",
+        "Reducción inmediata y sistemática de los costes financieros de la adquisición inicial del equipo de escaneo",
+        "Eliminación total y absoluta de cualquier etapa de preparación marginal o retracción gingival en la clínica",
+        "Eliminación definitiva de la necesidad de habilidades técnicas del laboratorio de prótesis dental para casos complejos"
+      ],
+      "correct": 0,
+      "explanation": "La impresión óptica elimina el reflejo nauseoso asociado a los elastómeros, garantizando una transmisión instantánea de archivos sin deformación térmica o mecánica relacionada con el vaciado de yeso.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q07",
+      "type": "single-choice",
+      "question": "¿Cómo se organiza la secuencia lógica del flujo de trabajo digital directo (Chairside Workflow) en odontología restauradora?",
+      "media": [],
+      "options": [
+        "Toma de impresión analógica, vaciado en yeso, montaje en articulador y acabado manual",
+        "Escaneo óptico intraoral, modelado CAD, fabricación CAM e integración clínica",
+        "Ajuste oclusal directo seguido de estratificación de composite en laboratorio sin digitalización previa",
+        "Cementación provisional del modelo en cera seguida de control radiográfico y corrección en el sillón"
+      ],
+      "correct": 1,
+      "explanation": "El flujo digital directo racionaliza las etapas clínicas en el sillón, eliminando las fuentes intermedias de error propias del flujo analógico.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q08",
+      "type": "single-choice",
+      "question": "¿Qué representa el proceso de fabricación por mecanizado o fresado en el módulo de producción CFAO?",
+      "media": [],
+      "options": [
+        "Un método de conformado sustractivo, en el que herramientas rotativas eliminan material de un bloque industrial",
+        "Un proceso aditivo de construcción consistente en la deposición de gotas de resina líquida polimerizadas por radiación infrarroja",
+        "Un método de termoconformado al vacío que superpone una lámina polimérica ablandada sobre un modelo de yeso",
+        "Un sistema de fundición a la cera perdida con centrífuga de inducción en atmósfera de gas totalmente inerte"
+      ],
+      "correct": 0,
+      "explanation": "El mecanizado sustractivo utiliza fresas de diamante o carburo de tungsteno para tallar cerámicas, composites o metales a partir de bloques o discos homogéneos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q09",
+      "type": "single-choice",
+      "question": "¿Qué tipos de materiales biomédicos son actualmente procesables por mecanizado sustractivo en CFAO odontológica?",
+      "media": [],
+      "options": [
+        "Amalgamas de alto contenido en cobre con fase dispersa y cementos de fosfato de zinc para fijación",
+        "Cementos de ionómero de vidrio modificados con resina y pastas de hidróxido de calcio",
+        "Conos termoplásticos de gutapercha pura con cementos selladores de conductos",
+        "Cerámicas policristalinas o vítreas, resinas compuestas nanohíbridas y aleaciones metálicas especiales"
+      ],
+      "correct": 3,
+      "explanation": "El dióxido de circonio (policristalino) y el disilicato de litio (vítreo) son los materiales emblemáticos del mecanizado moderno para prótesis fijas monolíticas o estratificadas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q10",
+      "type": "single-choice",
+      "question": "¿Cuál es la naturaleza y función de la herramienta rotativa de mecanizado (fresa) insertada en la máquina CAM?",
+      "media": [],
+      "options": [
+        "Una herramienta de corte de carburo o diamante, calibrada para tallar el material según coordenadas geométricas",
+        "Un sensor láser de alta precisión que mide la rugosidad superficial del bloque a mecanizar",
+        "Un módulo de software de visualización que permite simular la aplicación de tonos en la restauración virtual",
+        "Un dispositivo de eyección térmica que pulveriza polímeros fundidos para construir las paredes externas del modelo"
+      ],
+      "correct": 0,
+      "explanation": "Las fresas CAM tienen una geometría específica (esférica, cónica, toroidal) y se desgastan durante los ciclos de mecanizado, lo que exige un riguroso control informático de su vida útil por parte de la máquina.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q11",
+      "type": "single-choice",
+      "question": "¿Cuál es la principal diferencia clínica y técnica entre el mecanizado en seco y el mecanizado con refrigeración?",
+      "media": [],
+      "options": [
+        "La refrigeración enfría la interfaz herramienta-material, lubrica el corte y previene microfisuras en las cerámicas vítreas",
+        "El mecanizado en seco acelera la cinemática de los ejes de la máquina, lo que conlleva menores costes operativos",
+        "La refrigeración está destinada exclusivamente al conformado de polímeros acrílicos blandos como el polimetilmetacrilato",
+        "El mecanizado en seco mejora la precisión geométrica de los márgenes al evitar fenómenos de refracción de la luz"
+      ],
+      "correct": 0,
+      "explanation": "El mecanizado con flujo de líquido es esencial para las cerámicas duras (disilicato de litio, composites) para evitar el calentamiento crítico de la herramienta y las roturas microestructurales del material. El dióxido de circonio presinterizado suele mecanizarse en seco.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q12",
+      "type": "single-choice",
+      "question": "¿Cómo se define fundamentalmente la tecnología de impresión 3D aplicada en odontología?",
+      "media": [],
+      "options": [
+        "Un método de tallado de estructuras minerales por chorro abrasivo de aire con partículas de óxido de aluminio",
+        "Un proceso de ingeniería aditiva consistente en la construcción de un objeto físico mediante la superposición sucesiva de capas",
+        "Una técnica de estampación en caliente de estructuras metálicas en una matriz de acero templado de alta resistencia",
+        "Una reacción de polimerización global iniciada por compresión hidrostática de un gel de monómero termoendurecible"
+      ],
+      "correct": 1,
+      "explanation": "A diferencia del mecanizado, que elimina material (proceso sustractivo), la impresión 3D (fabricación aditiva) construye el objeto capa por capa, optimizando el uso del material.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q13",
+      "type": "single-choice",
+      "question": "¿Cuáles son las principales tecnologías de impresión 3D comúnmente utilizadas en los laboratorios de prótesis dental o consultorios odontológicos?",
+      "media": [],
+      "options": [
+        "Estereolitografía láser (SLA), proyección digital (DLP), inyección de material (PolyJet) y extrusión de filamento (FDM)",
+        "Transferencia térmica directa, sublimación de cera, impresión piezoeléctrica por chorro y láser heliográfico",
+        "Fotograbado sobre plancha metálica, serigrafía rotativa, tampografía de silicona y enmascaramiento químico selectivo",
+        "Proyección por plasma de polvo metálico atomizado, sinterización láser de sílice pura y moldeo por inyección dinámica"
+      ],
+      "correct": 0,
+      "explanation": "SLA (láser punto a punto) y DLP (exposición global de la capa) son las reinas de la fabricación odontológica por su resolución micrométrica.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q14",
+      "type": "single-choice",
+      "question": "¿Qué es la resina fotopolimerizable utilizada en los sistemas de impresión aditiva tipo SLA o DLP?",
+      "media": [],
+      "options": [
+        "Un polvo cerámico fino aglutinado con un ligante líquido pulverizado por una boquilla termográfica móvil",
+        "Un filamento sólido de polímero termoplástico en bobina, fundido a través de una boquilla de extrusión calefactada",
+        "Una mezcla de monómeros líquidos cuya reacción de polimerización radicalaria se inicia por irradiación UV",
+        "Un gel coloidal a base de clorhidrato de aluminio que se polimeriza por acción de un catalizador químico"
+      ],
+      "correct": 2,
+      "explanation": "Bajo la acción de una longitud de onda luminosa precisa (generalmente 385 o 405 nm), los fotoiniciadores de la resina líquida desencadenan la polimerización reticulada de los monómeros para formar un sólido.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q15",
+      "type": "single-choice",
+      "question": "¿Cuáles son las principales indicaciones clínicas de la fabricación aditiva (impresión 3D) en odontología?",
+      "media": [],
+      "options": [
+        "Fabricación de modelos de diagnóstico, guías quirúrgicas precisas, prótesis provisionales y modelos para alineadores",
+        "Producción estandarizada de coronas monolíticas finales de feldespato con alta traslucidez",
+        "Construcción directa de implantes endoóseos roscados de titanio puro grado 4 para implantación inmediata",
+        "Fabricación de estructuras de puentes monolíticos de gran extensión, colados a presión en metales preciosos"
+      ],
+      "correct": 0,
+      "explanation": "La impresión 3D destaca en la producción rápida, personalizada y simultánea de elementos guía, modelos de trabajo precisos y restauraciones provisionales en resina biocompatible.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q16",
+      "type": "single-choice",
+      "question": "¿Qué es una guía quirúrgica implantológica diseñada y fabricada mediante la cadena digital?",
+      "media": [],
+      "options": [
+        "Un dispositivo removible que materializa los cilindros guía para la orientación de las fresas durante la colocación de implantes",
+        "Una férula de descarga oclusal para la reprogramación de la actividad neuromuscular de los músculos masticatorios",
+        "Una matriz térmica de transferencia para duplicar la posición de las ceras oclusales en la clínica",
+        "Un armazón metálico interno para estabilizar los bordes de la herida mucosa tras una injertación ósea"
+      ],
+      "correct": 0,
+      "explanation": "La guía quirúrgica materializa en la cavidad bucal la planificación implantológica virtual, obtenida mediante la superposición (matching) de archivos STL (impresión óptica) y DICOM (imagenología 3D/Cone Beam).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q17",
+      "type": "single-choice",
+      "question": "¿Qué ventaja fundamental se deriva del uso de una guía quirúrgica planificada por ordenador en implantología?",
+      "media": [],
+      "options": [
+        "La reducción drástica y lineal del tiempo de cicatrización biológica de las estructuras óseas alveolares",
+        "La supresión total del requisito clínico de seguimiento radiológico postoperatorio a corto y largo plazo",
+        "La posibilidad de prescindir de la anestesia local o regional en las fases de perforación ósea",
+        "La garantía de seguridad de los ejes de perforación, la precisión del posicionamiento tridimensional y la preservación de las estructuras anatómicas nobles"
+      ],
+      "correct": 3,
+      "explanation": "La guía quirúrgica garantiza una seguridad predecible, limitando los riesgos de error de eje y protegiendo las estructuras sensibles como el nervio alveolar inferior o el suelo del seno maxilar.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q18",
+      "type": "single-choice",
+      "question": "¿Cómo se fabrican los alineadores transparentes de ortodoncia mediante herramientas digitales?",
+      "media": [],
+      "options": [
+        "Mediante mecanizado sustractivo directo de un bloque de policarbonato médico en una fresadora refrigerada activamente",
+        "Mediante termoconformado de una lámina polimérica transparente sobre una serie de modelos dentales impresos en 3D",
+        "Mediante conformado manual de resina acrílica autopolimerizable directamente sobre la arcada dental del paciente en la clínica",
+        "Mediante inyección a alta presión de silicona líquida en un molde de yeso prec alibrado"
+      ],
+      "correct": 1,
+      "explanation": "Cada etapa de movimiento dental planificado secuencialmente (setup) genera la impresión de un modelo físico en resina, sobre el cual se termoconforma la férula de poliuretano o PETG.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q19",
+      "type": "single-choice",
+      "question": "¿Cuál es el principio de funcionamiento de la tecnología de impresión estereolitográfica (SLA)?",
+      "media": [],
+      "options": [
+        "Polimerización selectiva de resina líquida mediante un haz láser ultravioleta móvil que escanea la superficie",
+        "Proyección global de la imagen luminosa a través de una pantalla de cristal líquido que actúa como máscara dinámica",
+        "Extrusión mecánica a alta temperatura de filamento plástico depositado según coordenadas ortogonales",
+        "Sinterización térmica de una capa de polvo metálico mediante un potente haz de electrones"
+      ],
+      "correct": 0,
+      "explanation": "SLA utiliza un haz láser preciso, dirigido por espejos galvanométricos, que dibuja el objeto punto por punto, garantizando una calidad superficial y una precisión de ajuste óptimas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q20",
+      "type": "single-choice",
+      "question": "¿Cuál es el principio de funcionamiento de la tecnología de impresión DLP (Digital Light Processing)?",
+      "media": [],
+      "options": [
+        "Escaneo vectorial continuo de un punto láser de baja potencia enfocado en un espejo oscilante",
+        "Pulverización simultánea de millones de microgotas de cera fundida que se solidifican instantáneamente al contacto con el aire",
+        "Polimerización instantánea de una capa completa de resina mediante la luz de un videoproyector con microespejos (DMD)",
+        "Deposición de filamentos de polímeros de poliláctida entrecruzados sobre una plataforma móvil calefactada"
+      ],
+      "correct": 2,
+      "explanation": "La tecnología DLP proyecta una máscara luminosa correspondiente a toda la superficie de la capa en una sola exposición, lo que la hace generalmente más rápida que SLA para la producción en serie de elementos odontológicos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q21",
+      "type": "single-choice",
+      "question": "¿Cuál es el lugar del proceso de extrusión de filamento fundido (FDM) en el entorno odontológico profesional?",
+      "media": [],
+      "options": [
+        "Una tecnología económica de precisión moderada, limitada a la fabricación de modelos de diagnóstico o didácticos",
+        "Un sistema de elección necesario para la fabricación de guías quirúrgicas transparentes esterilizables en autoclave",
+        "Un método avanzado destinado a la impresión directa de elementos protésicos cerámicos monolíticos finales",
+        "Un protocolo de impresión de estructuras protésicas removibles en resina quimiopolimerizable"
+      ],
+      "correct": 0,
+      "explanation": "FDM (Fused Deposition Modeling) presenta un efecto de estratificación notable (líneas de capas) y tolerancias geométricas demasiado amplias para los requisitos de adaptación marginal de las prótesis fijas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q22",
+      "type": "single-choice",
+      "question": "¿Cuáles son los formatos abiertos estándar de exportación de archivos 3D en CFAO odontológica?",
+      "media": [],
+      "options": [
+        "Extensiones estandarizadas como STL (estereolitografía), OBJ (con datos de textura) y 3MF",
+        "Formatos de codificación de imágenes rasterizadas comprimidas como JPEG, PNG, TIFF o GIF gráficos",
+        "Formatos de documentos de texto portables como PDF y estructuras de archivo editables DOCX",
+        "Estructuras de hojas de cálculo vectoriales gestionadas por procesadores de tablas como XLS o CSV"
+      ],
+      "correct": 0,
+      "explanation": "Estos formatos de exportación abiertos garantizan la compatibilidad, permitiendo conectar el escáner, el software CAD y el módulo de producción de diferentes fabricantes (sistemas abiertos frente a cerrados).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q23",
+      "type": "single-choice",
+      "question": "¿Cuál es la naturaleza estructural matemática y geométrica del archivo en formato universal STL?",
+      "media": [],
+      "options": [
+        "Una matriz de píxeles en color que almacena información de profundidad y textura en forma bidimensional",
+        "Una secuencia de ecuaciones matemáticas que describen curvas de Bézier complejas y volúmenes sólidos completos",
+        "Una malla poligonal no paramétrica compuesta por triángulos interconectados que describen la superficie externa del objeto",
+        "Un registro de eventos binarios que compila la cronología de las órdenes digitales enviadas a los motores de la máquina"
+      ],
+      "correct": 2,
+      "explanation": "El archivo STL (Standard Tessellation Language) representa la superficie del objeto 3D en forma de facetas triangulares. Ignora texturas, colores o estructuras internas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q24",
+      "type": "single-choice",
+      "question": "¿Qué productos de software para diseño protésico dominan actualmente el mercado mundial de CAD odontológico?",
+      "media": [],
+      "options": [
+        "Paquetes de software especializados y expertos como las soluciones exocad, 3Shape Dental System o Dental Wings",
+        "Programas de modelado mecánico general y arquitectura industrial como AutoCAD o SolidWorks",
+        "Motores de animación y renderizado 3D cinemático de nivel de consumo como Blender o Maya",
+        "Entornos de desarrollo algorítmico y programación como MATLAB o Python-SciPy"
+      ],
+      "correct": 0,
+      "explanation": "exocad y 3Shape son las herramientas de referencia para laboratorios y clínicas (versiones Chairside). Integran bibliotecas de dientes anatómicos y asistentes automatizados dedicados a las restricciones biomecánicas de la cavidad bucal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CFAO_D1_Q25",
+      "type": "single-choice",
+      "question": "¿En qué consiste exactamente la operación de software CAD en el diseño virtual de una corona unitaria?",
+      "media": [],
+      "options": [
+        "El modelado digital de la morfología de la corona, las relaciones oclusales y las zonas de contacto interproximal",
+        "El ajuste de las velocidades de rotación de los husillos mecánicos y la selección del diámetro de las fresas de corte",
+        "La calibración de la intensidad de la radiación láser necesaria para el curado del baño de monómero acrílico",
+        "La digitalización física del modelo maestro de yeso mediante un sensor de escaneo óptico de sobremesa"
+      ],
+      "correct": 0,
+      "explanation": "En la etapa CAD, el diseñador adapta la anatomía virtual del futuro diente (selección de morfología, gestión de puntos de contacto, espesor mínimo de material) antes de compilar el archivo para la fase CAM.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

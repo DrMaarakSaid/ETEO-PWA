@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sante_publique_debutant1_001",
+    "title": "Salud Pública - Principiante 1",
+    "specialty": "SANT",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "SANT_D1_Q01",
+      "type": "single-choice",
+      "question": "El Dr. CHERKAOUI es odontólogo en el sector público. Según el Decreto N° 2.12.507, ¿cuál es uno de los principales problemas de salud pública en el ámbito de la atención odontológica en Marruecos?",
+      "media": [],
+      "options": [
+        "El número suficiente de odontólogos en todas las regiones",
+        "La escasez crónica de odontólogos en el sector público, especialmente en las zonas rurales",
+        "La distribución ideal de la atención sanitaria en el territorio",
+        "El exceso de odontólogos en los hospitales públicos"
+      ],
+      "correct": 1,
+      "explanation": "Marruecos sufre una escasez de odontólogos en el sector público con una distribución muy desigual en el territorio. Según el artículo 1 del Decreto N° 2.12.507, el ministerio puede recurrir a odontólogos del sector privado \"en caso de necesidad del servicio\" para las circunscripciones que sufren falta de odontólogos (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q02",
+      "type": "single-choice",
+      "question": "El Dr. BERRADA trabaja en el sector privado, pero quiere contribuir a la salud pública. Según el Decreto N° 2.12.507, ¿cómo puede firmar un convenio con el Ministerio de Sanidad?",
+      "media": [],
+      "options": [
+        "Firmando un acuerdo de trabajo a tiempo parcial en hospitales públicos",
+        "Abriendo un consultorio privado en una gran ciudad",
+        "Renunciando a cualquier asociación con el sector público",
+        "Trabajando exclusivamente en el sector privado"
+      ],
+      "correct": 0,
+      "explanation": "El Decreto N° 2.12.507 permite al Ministerio de Sanidad recurrir, mediante convenio, a odontólogos del sector privado para trabajar a tiempo parcial en establecimientos públicos de salud, en particular para garantizar la atención de urgencia (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q03",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿en qué circunstancias puede el Ministerio de Sanidad recurrir a odontólogos del sector privado?",
+      "media": [],
+      "options": [
+        "Solo en caso de epidemia",
+        "En caso de necesidad del servicio, especialmente en regiones con atención sanitaria insuficiente",
+        "Solo a petición del odontólogo",
+        "En todas las regiones de Marruecos sin condiciones"
+      ],
+      "correct": 1,
+      "explanation": "Según el artículo 1 del Decreto N° 2.12.507, el ministerio puede recurrir a odontólogos del sector privado \"en caso de necesidad del servicio\" y para las circunscripciones administrativas que sufren falta de odontólogos (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q04",
+      "type": "single-choice",
+      "question": "El Dr. BERRADA está interesado en firmar un convenio. Según el Decreto N° 2.12.507, ¿cuáles son las condiciones para la firma del convenio?",
+      "media": [],
+      "options": [
+        "No hay condiciones especiales",
+        "Estar inscrito en el Orden Nacional de Odontólogos y no tener sanciones disciplinarias",
+        "Ser menor de 30 años",
+        "Trabajar exclusivamente en zonas rurales"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 6 del Decreto N° 2.12.507 establece que los candidatos deben estar inscritos en el colegio profesional, no tener sanciones disciplinarias y no haber sido condenados por delitos contra las personas o atentados contra la moral pública (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q05",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿cuál es la duración del convenio tipo?",
+      "media": [],
+      "options": [
+        "1 mes",
+        "Máximo 11 meses, renovable automáticamente 3 veces",
+        "5 años",
+        "Hasta la jubilación del odontólogo"
+      ],
+      "correct": 1,
+      "explanation": "Según el artículo 5 del Decreto N° 2.12.507, el convenio se celebra por un período máximo de once meses, renovable automáticamente no más de tres veces, salvo rescisión por decisión de la administración o a solicitud del odontólogo (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q06",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿cuál es la remuneración del odontólogo por convenio por una guardia de 4 horas en un hospital?",
+      "media": [],
+      "options": [
+        "100 dírhams",
+        "286 dírhams",
+        "500 dírhams",
+        "1000 dírhams"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 11 del Decreto N° 2.12.507 establece la remuneración por una guardia de 4 horas en 286 dírhams brutos (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q07",
+      "type": "single-choice",
+      "question": "El Dr. CHERKAOUI, funcionario, trabaja en un hospital público. ¿Cuál es el salario mensual máximo que puede recibir un odontólogo por convenio según el Decreto N° 2.12.507?",
+      "media": [],
+      "options": [
+        "2000 dírhams",
+        "5000 dírhams",
+        "7143 dírhams",
+        "10000 dírhams"
+      ],
+      "correct": 2,
+      "explanation": "El artículo 11 del Decreto N° 2.12.507 establece la remuneración mensual bruta máxima en 7143 dírhams, pagadera al vencimiento del plazo dentro de los 11 meses del año (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q08",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿a qué autoridad está sujeto el odontólogo por convenio durante su trabajo en el sector público?",
+      "media": [],
+      "options": [
+        "Solo al Orden Nacional de Odontólogos",
+        "Al director del establecimiento público de salud",
+        "A ninguna autoridad, es independiente",
+        "Al Ministerio de Comercio"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 9 del Decreto N° 2.12.507 establece que el odontólogo por convenio está sujeto al director del establecimiento de salud, al delegado provincial y al director regional de salud, y debe firmar todos los documentos técnicos y administrativos (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q09",
+      "type": "single-choice",
+      "question": "El Dr. BERRADA firmó un convenio con el ministerio. Según el Decreto N° 2.12.507, ¿cuáles son sus obligaciones profesionales?",
+      "media": [],
+      "options": [
+        "No tiene obligaciones especiales",
+        "Está sujeto a las mismas obligaciones profesionales que sus colegas funcionarios",
+        "Está exento de todas las obligaciones administrativas",
+        "Puede elegir libremente su horario"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 9 del Decreto N° 2.12.507 establece que los odontólogos por convenio están sujetos a las mismas obligaciones profesionales que sus colegas funcionarios y deben respetar el reglamento interno de los establecimientos en los que trabajan (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q10",
+      "type": "single-choice",
+      "question": "El Dr. CHERKAOUI es funcionario y el Dr. BERRADA trabaja por convenio. ¿Quién de ellos puede ser asignado a guardias en el hospital según el Decreto N° 2.12.507?",
+      "media": [],
+      "options": [
+        "Solo el funcionario",
+        "Solo el que trabaja por convenio",
+        "Ambos, de acuerdo con las normas vigentes",
+        "Ninguno de ellos"
+      ],
+      "correct": 2,
+      "explanation": "El artículo 9 del Decreto N° 2.12.507 establece que si el convenio prevé guardias, estas deben ser realizadas por los médicos por convenio de acuerdo con las normas aplicables a sus colegas funcionarios (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q11",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿qué ocurre con el odontólogo por convenio que falta sin motivo justificado?",
+      "media": [],
+      "options": [
+        "Una simple advertencia",
+        "La rescisión del convenio sin previo aviso",
+        "Una multa de 5000 dírhams",
+        "La suspensión por 6 meses"
+      ],
+      "correct": 1,
+      "explanation": "Según el artículo 10 del Decreto N° 2.12.507, cualquier ausencia durante tres guardias de trabajo sin aviso previo a la administración y sin motivo justificado es motivo de rescisión del convenio por la administración sin previo aviso (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q12",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿cuál es el papel de los colegios profesionales en la firma de convenios?",
+      "media": [],
+      "options": [
+        "No juegan ningún papel",
+        "Los convenios deben ser visados por el presidente del consejo nacional del colegio profesional correspondiente",
+        "Deben aprobar cada convenio por unanimidad",
+        "Pueden rechazar cualquier convenio"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 3 del Decreto N° 2.12.507 establece que los convenios deben ser visados por el presidente del consejo nacional del colegio profesional correspondiente (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q13",
+      "type": "single-choice",
+      "question": "El Dr. BERRADA trabaja por convenio. Según el Decreto N° 2.12.507, ¿puede tener varios convenios en diferentes regiones?",
+      "media": [],
+      "options": [
+        "Sí, sin limitación",
+        "Sí, pero solo dentro del territorio de una misma dirección regional de salud",
+        "No, solo puede tener un convenio",
+        "Sí, si las regiones son remotas"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 3 del Decreto N° 2.12.507 especifica que la actividad de cada odontólogo por convenio y el(los) lugar(es) donde la ejercerá deben ser determinados en el convenio dentro del territorio de una misma dirección regional de salud (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q14",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿sigue vigente el antiguo decreto de 1972?",
+      "media": [],
+      "options": [
+        "Sí, sigue siendo aplicable",
+        "No, el Decreto N° 2.12.507 lo deroga",
+        "Todavía está vigente para algunas regiones",
+        "Fue reemplazado por una ley"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 15 del Decreto N° 2.12.507 deroga el decreto N° 2-71-641 del 24 de enero de 1972, que establecía el estatuto particular de los médicos, farmacéuticos y odontólogos que trabajan por convenio con el Ministerio de Salud Pública (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q15",
+      "type": "single-choice",
+      "question": "Según los datos demográficos, ¿cuántos odontólogos del sector público había en Marruecos aproximadamente en 2005?",
+      "media": [],
+      "options": [
+        "50",
+        "100",
+        "202",
+        "500"
+      ],
+      "correct": 2,
+      "explanation": "En 2005, había alrededor de 202 odontólogos en el sector público, lo que representa una proporción de 1 odontólogo por cada 148.000 habitantes, con disparidades regionales muy significativas, lo que motivó la reforma del Decreto N° 2.12.507.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q16",
+      "type": "single-choice",
+      "question": "Según la demografía profesional, en algunas regiones de Marruecos la densidad de odontólogos públicos puede ser tan baja como:",
+      "media": [],
+      "options": [
+        "1 odontólogo por cada 10.000 habitantes",
+        "1 odontólogo por cada 100.000 habitantes",
+        "1 odontólogo por cada 728.634 habitantes",
+        "1 odontólogo por cada 50.000 habitantes"
+      ],
+      "correct": 2,
+      "explanation": "La proporción varía desde 1 odontólogo por cada 12.631 habitantes hasta 1 odontólogo por cada 728.634 habitantes según las regiones, lo que ilustra las disparidades territoriales en el acceso a la atención sanitaria que justifican la contratación por convenio prevista en el Decreto N° 2.12.507.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q17",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿pueden los odontólogos por convenio recibir gastos de viaje?",
+      "media": [],
+      "options": [
+        "No, los gastos de viaje no se pagan",
+        "Sí, en las condiciones y con las tarifas establecidas por las normas",
+        "Solo si trabajan en zonas rurales",
+        "No, deben pagar sus propios gastos de transporte"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 11 del Decreto N° 2.12.507 establece que los odontólogos por convenio pueden recibir, en caso necesario, el reembolso de los gastos de viaje según las tarifas y condiciones establecidas por las normas vigentes (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q18",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿cuál es el papel del Ministerio de Sanidad en la firma de convenios?",
+      "media": [],
+      "options": [
+        "No juega ningún papel",
+        "Convoca concursos y determina las circunscripciones correspondientes",
+        "Permite a los odontólogos organizarse de forma autónoma",
+        "Impone convenios a todos los odontólogos"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 3 del Decreto N° 2.12.507 establece que la contratación de odontólogos del sector privado se realiza tras la convocatoria de un concurso por el Ministerio de Sanidad. Las circunscripciones correspondientes se determinan por orden del ministro (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q19",
+      "type": "single-choice",
+      "question": "El Dr. CHERKAOUI es funcionario. Según los textos, ¿están representados los odontólogos del sector público en el Orden Nacional de Odontólogos?",
+      "media": [],
+      "options": [
+        "No, solo están representados los odontólogos privados",
+        "Sí, seis odontólogos del sector público forman parte del consejo nacional",
+        "Solo si enseñan",
+        "Tienen un representante"
+      ],
+      "correct": 1,
+      "explanation": "Seis odontólogos que trabajan en el sector público son miembros del consejo nacional del Orden por derecho propio, incluidos dos de los servicios públicos, dos docentes y dos militares, de acuerdo con la ley N° 07-05.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q20",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, en caso de falta profesional grave, ¿qué procedimiento está previsto para el odontólogo por convenio?",
+      "media": [],
+      "options": [
+        "Una simple citación",
+        "La rescisión del convenio tras el dictamen del consejo nacional del colegio profesional correspondiente",
+        "Solo una multa",
+        "No se prevén sanciones"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 10 del Decreto N° 2.12.507 establece que en caso de falta profesional grave, la rescisión del convenio se realiza tras el dictamen del consejo nacional del colegio profesional correspondiente (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q21",
+      "type": "single-choice",
+      "question": "El Dr. BERRADA quiere firmar un convenio. Según el Decreto N° 2.12.507, ¿qué criterio es prioritario en caso de múltiples solicitudes?",
+      "media": [],
+      "options": [
+        "La edad del candidato",
+        "La dirección profesional más cercana al establecimiento de salud",
+        "La antigüedad en la profesión",
+        "El número de publicaciones científicas"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 3 del Decreto N° 2.12.507 establece que en caso de múltiples solicitudes, se dará preferencia al médico cuya dirección profesional esté más cerca del establecimiento de salud correspondiente (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q22",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿puede el odontólogo por convenio rescindir el convenio en cualquier momento?",
+      "media": [],
+      "options": [
+        "No, la rescisión es imposible",
+        "Sí, con aviso a la administración con un mes de antelación",
+        "Sí, sin previo aviso",
+        "Sí, pero solo en caso de enfermedad"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 5 del Decreto N° 2.12.507 establece que, salvo rescisión por decisión de la administración o a solicitud del odontólogo, es necesario notificar a la otra parte con al menos un mes de antelación a la fecha de rescisión (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q23",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿qué prevé el convenio para el odontólogo en materia de responsabilidad?",
+      "media": [],
+      "options": [
+        "No es responsable de sus actos",
+        "Es responsable de los internos que están bajo su dirección",
+        "Está exento de toda responsabilidad",
+        "La responsabilidad recae solo en el hospital"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 9 del Decreto N° 2.12.507 establece que los odontólogos por convenio dirigen y controlan el trabajo de los internos y del personal que está directamente bajo su dirección, y realizan ellos mismos las intervenciones de su competencia (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q24",
+      "type": "single-choice",
+      "question": "Según el Decreto N° 2.12.507, ¿está el odontólogo por convenio sujeto al reglamento interno del establecimiento en el que trabaja?",
+      "media": [],
+      "options": [
+        "No, está sujeto a sus propias reglas",
+        "Sí, está sujeto al reglamento interno del establecimiento de salud",
+        "Solo en materia de seguridad",
+        "No, es independiente"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 9 del Decreto N° 2.12.507 establece que los odontólogos por convenio están obligados a respetar el reglamento interno o las normas administrativas de los establecimientos en los que trabajan (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q25",
+      "type": "single-choice",
+      "question": "Según la información disponible, ¿cuál es el objetivo del Decreto N° 2.12.507 en comparación con el decreto de 1972?",
+      "media": [],
+      "options": [
+        "Reducir el número de odontólogos por convenio",
+        "Perpetuar la contratación por convenio y revisar las condiciones de remuneración",
+        "Poner fin a cualquier contratación del sector privado",
+        "Aumentar las tarifas de las consultas"
+      ],
+      "correct": 1,
+      "explanation": "El Decreto N° 2.12.507 tiene como objetivo perpetuar esta modalidad de contratación por convenio exclusivamente para satisfacer las necesidades de las circunscripciones que sufren escasez, revisando al mismo tiempo las condiciones de celebración de los convenios y la remuneración (Boletín Oficial N° 6342 del 5 de marzo de 2015).",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

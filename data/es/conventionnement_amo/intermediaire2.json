@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "conventionnement_amo_intermediaire2_001",
+    "title": "Convencionamiento y AMO - Intermedio 2",
+    "specialty": "CONV",
+    "language": "es",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "publicado",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "CONV_I2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Karim recibe una denegación de cobertura de la CNSS para un paciente con ALD. La Dra. Nadia le aconseja recurrir la decisión. Según el artículo 24 de la ley 65-00, ¿qué recurso es posible?",
+      "media": [],
+      "options": [
+        "Recurso administrativo ante la CNSS",
+        "Recurso judicial ante el tribunal",
+        "Queja ante el consejo del colegio",
+        "Solicitud de revisión a través del ministerio"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Nadia explica: 'El recurso administrativo ante la CNSS es el primer paso antes de cualquier recurso judicial.' El Dr. Karim: 'Prepararé el expediente para el recurso.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q02",
+      "type": "single-choice",
+      "question": "La Dra. Nadia descubre que su asistente ha estado recibiendo salario sin cotizaciones a AMO durante 6 meses. El Dr. Karim le recuerda las obligaciones del empleador. Según el artículo 130 de la ley 65-00, ¿qué multa se impone al empleador que no realiza su afiliación?",
+      "media": [],
+      "options": [
+        "Multa de 1.000 a 5.000 dirhams",
+        "Multa de 5.000 a 50.000 dirhams",
+        "Multa de 50.000 a 100.000 dirhams",
+        "Pena de prisión de 6 meses a 2 años"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Karim explica: 'El artículo 130 prevé una multa de 5.000 a 50.000 dirhams para el empleador que no realiza su afiliación.' La Dra. Nadia: 'Regularizaré la situación inmediatamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Karim tiene un paciente que ha presentado una queja por mala cobertura. La Dra. Nadia le aconseja verificar los documentos. Según el artículo 14 de la ley 65-00, ¿qué derecho fundamental conserva el beneficiario de AMO?",
+      "media": [],
+      "options": [
+        "El derecho de elección solo en el sector público",
+        "La libre elección del médico y del establecimiento de salud",
+        "La obligación de consultar con un médico de referencia designado",
+        "La prohibición de cambiar de médico tratante"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Nadia explica: 'El artículo 14 garantiza al beneficiario la libre elección del médico, del establecimiento de salud, del farmacéutico y del personal paramédico.' El Dr. Karim: 'Respetaré este derecho fundamental.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q04",
+      "type": "single-choice",
+      "question": "La Dra. Nadia tiene un paciente que ha cambiado de situación familiar. El Dr. Karim le aconseja actualizar el expediente. Según el artículo 5 de la ley 65-00, ¿qué beneficiarios están cubiertos por AMO?",
+      "media": [],
+      "options": [
+        "Solo el cónyuge",
+        "El cónyuge, los hijos menores de 21 años y los hijos discapacitados",
+        "Solo los hijos menores de 18 años",
+        "Todos los ascendientes sin límite de edad"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Karim explica: 'El artículo 5 define como beneficiarios: al cónyuge, a los hijos menores de 21 años (26 años para estudiantes), y a los hijos discapacitados sin límite de edad.' La Dra. Nadia: 'Actualizaré el expediente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Karim tiene un paciente al que se le ha realizado cirugía estética. La Dra. Nadia le pide que no facture a AMO. Según el artículo 8 de la ley 65-00, ¿por qué este acto no es reembolsable?",
+      "media": [],
+      "options": [
+        "Porque es un acto estético",
+        "Porque es un acto doloroso",
+        "Porque es un acto experimental",
+        "Porque es un acto no convencionado"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Nadia explica: 'El artículo 8 excluye claramente la cirugía estética del ámbito de AMO.' El Dr. Karim: 'Informaré al paciente de que debe pagar este acto.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q06",
+      "type": "single-choice",
+      "question": "La Dra. Nadia descubre que la CNSS ha denegado el reembolso a un paciente diabético. El Dr. Karim le aconseja verificar la lista de ALD. Según la ley 65-00, ¿es la diabetes una ALD que da derecho a exención?",
+      "media": [],
+      "options": [
+        "No, la diabetes no es una ALD",
+        "Sí, la diabetes es una ALD",
+        "Sí, pero solo para pacientes hospitalizados",
+        "No, solo las enfermedades odontológicas son ALD"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Karim explica: 'La diabetes es una ALD reconocida por la ley 65-00, que da derecho a la exención del ticket moderador.' La Dra. Nadia: 'Enviaré el certificado a la CNSS.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Karim debe transmitir documentos a la CNSS para un paciente. La Dra. Nadia le aconseja respetar los plazos. Según el artículo 20 de la ley 65-00, ¿cuál es el plazo de transmisión de las facturas?",
+      "media": [],
+      "options": [
+        "Lo fija la legislación vigente",
+        "Se elige libremente por cada odontólogo",
+        "Solo dos años después del acto",
+        "Lo fija el Ministerio de Sanidad"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Nadia explica: 'El plazo de prescripción para las facturas está estrictamente reglamentado.' El Dr. Karim: 'Respetaré los plazos para evitar la denegación.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q08",
+      "type": "single-choice",
+      "question": "La Dra. Nadia tiene un paciente que ha perdido su empleo. El Dr. Karim le aconseja verificar sus derechos. Según el artículo 34 de la ley 65-00, ¿durante cuánto tiempo una persona conserva sus derechos después de cesar su actividad?",
+      "media": [],
+      "options": [
+        "1 mes",
+        "3 meses",
+        "6 meses",
+        "12 meses"
+      ],
+      "correct": 2,
+      "explanation": "El Dr. Karim explica: 'El artículo 34 prevé el mantenimiento de los derechos durante un período máximo de seis meses después de cesar la actividad.' La Dra. Nadia: 'Informaré a mi paciente de sus derechos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Karim debe elaborar un presupuesto para un paciente que se beneficia de AMO. La Dra. Nadia le recuerda las normas de facturación. Según la ley 65-00, ¿debe el odontólogo informar al paciente de las tarifas convencionadas?",
+      "media": [],
+      "options": [
+        "No, el secreto lo guarda el médico",
+        "Sí, el paciente debe conocer las tarifas",
+        "Sí, solo por el organismo gestor de AMO",
+        "No, no está previsto por la ley"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Nadia explica: 'La transparencia de las tarifas es obligatoria para cualquier odontólogo convencionado.' El Dr. Karim: 'Proporcionaré un presupuesto detallado a mi paciente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q10",
+      "type": "single-choice",
+      "question": "La Dra. Nadia tiene un paciente que acude sin afiliación. El Dr. Karim le aconseja verificar su estatuto. Según el artículo 2 de la ley 65-00, ¿a qué categorías de personas se aplica AMO?",
+      "media": [],
+      "options": [
+        "A los funcionarios, asalariados, pensionistas, trabajadores autónomos y estudiantes",
+        "Solo a los asalariados del sector privado",
+        "Exclusivamente a los funcionarios",
+        "Solo a los perceptores de pensiones"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Karim explica: 'AMO se aplica a todas estas categorías: funcionarios, asalariados, pensionistas, trabajadores autónomos, profesionales liberales, estudiantes y excombatientes de la resistencia.' La Dra. Nadia: 'Verificaré la situación de mi paciente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Karim tiene un paciente que ha sido hospitalizado de urgencia en el extranjero. La Dra. Nadia le aconseja verificar las condiciones de reembolso. Según el artículo 13 de la ley 65-00, ¿bajo qué condición se reembolsan los servicios en el extranjero?",
+      "media": [],
+      "options": [
+        "Si el paciente está en misión",
+        "Si el tratamiento no puede realizarse en Marruecos con autorización previa",
+        "Si el paciente tiene nacionalidad marroquí",
+        "Si el paciente ha suscrito un seguro complementario"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Nadia explica: 'Los servicios en el extranjero se reembolsan en caso de enfermedad repentina o cuando el tratamiento no puede realizarse en Marruecos, con autorización previa.' El Dr. Karim: 'Verificaré que exista la autorización previa.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q12",
+      "type": "single-choice",
+      "question": "La Dra. Nadia recibe una notificación de control de ANAM sobre su actividad. El Dr. Karim le aconseja prepararse. Según el artículo 26 de la ley 65-00, ¿cuál es el objeto del control?",
+      "media": [],
+      "options": [
+        "Verificar el número de pacientes al día",
+        "Verificar la conformidad de las prescripciones",
+        "Controlar el volumen de negocios del consultorio",
+        "Verificar los títulos del odontólogo"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Karim explica: 'El control tiene por objeto verificar la conformidad de las prescripciones y la justificación de los servicios.' La Dra. Nadia: 'Prepararé todos mis expedientes.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Karim tiene un paciente que ha suscrito un seguro complementario. La Dra. Nadia le pide que coordine los reembolsos. Según el artículo 9 de la ley 65-00, ¿cuál es la norma sobre el seguro complementario?",
+      "media": [],
+      "options": [
+        "El asegurado no puede suscribir un seguro complementario",
+        "El asegurado conserva la libertad de suscribir un seguro complementario",
+        "El seguro complementario es obligatorio",
+        "El seguro complementario está prohibido"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Nadia explica: 'El artículo 9 precisa que el asegurado conserva la libertad de suscribir un seguro complementario.' El Dr. Karim: 'Coordinaré las dos coberturas.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q14",
+      "type": "single-choice",
+      "question": "La Dra. Nadia descubre que un empleado no ha sido declarado en la CNSS. El Dr. Karim le recuerda las sanciones. Según el artículo 131 de la ley 65-00, ¿cuál es la multa por cada trabajador no afiliado?",
+      "media": [],
+      "options": [
+        "500 dirhams",
+        "1.000 dirhams",
+        "5.000 dirhams",
+        "10.000 dirhams"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Karim explica: 'El artículo 131 prevé una multa de 1.000 dirhams por cada trabajador no afiliado.' La Dra. Nadia: 'Declararé a mi empleado inmediatamente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Karim tiene un paciente que ha recibido tratamiento sin respetar el circuito de cuidados. La Dra. Nadia le aconseja verificar la norma del médico de cabecera. Según la ley 65-00, ¿debe el paciente pasar obligatoriamente por el médico de cabecera?",
+      "media": [],
+      "options": [
+        "Sí, es obligatorio",
+        "No, el paciente puede acudir directamente al odontólogo",
+        "Sí, solo para los pacientes con ALD",
+        "No, solo para los pacientes hospitalizados"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Nadia explica: 'AMO permite al paciente acudir directamente al odontólogo sin pasar por el médico de cabecera.' El Dr. Karim: 'Informaré a mi paciente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q16",
+      "type": "single-choice",
+      "question": "La Dra. Nadia debe facturar un tratamiento a un paciente que tiene una mutualidad y AMO. El Dr. Karim le aconseja respetar las tarifas convencionadas. Según la ley 65-00, ¿cuál es la tarifa base para el reembolso?",
+      "media": [],
+      "options": [
+        "La tarifa libre elegida por el profesional",
+        "La tarifa base para el reembolso",
+        "La tarifa máxima permitida en urgencias",
+        "La tarifa reducida para personas de bajos recursos"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Karim explica: 'El precio de referencia nacional sirve como referencia para AMO en el reembolso de la asistencia sanitaria.' La Dra. Nadia: 'Aplicaré la tarifa nacional.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Karim tiene un paciente que se niega a pagar el ticket moderador. La Dra. Nadia le recuerda las normas de AMO. Según el artículo 9 de la ley 65-00, ¿es obligatorio el ticket moderador?",
+      "media": [],
+      "options": [
+        "Sí, salvo para ALD",
+        "No, todo se reembolsa",
+        "Sí, para todos los pacientes",
+        "No, es facultativo"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Nadia explica: 'El ticket moderador es obligatorio, salvo para las ALD que se benefician de la exención.' El Dr. Karim: 'Explicaré esto a mi paciente.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q18",
+      "type": "single-choice",
+      "question": "La Dra. Nadia descubre que un paciente ha recibido un reembolso indebido. El Dr. Karim le aconseja notificar el error. Según el artículo 135 de la ley 65-00, ¿qué riesgo corre la persona que obtiene indebidamente prestaciones?",
+      "media": [],
+      "options": [
+        "Multa de 1.000 a 5.000 dirhams",
+        "Pena de prisión de 6 meses",
+        "Suspensión de derechos",
+        "Una simple advertencia"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Karim explica: 'El artículo 135 sanciona el fraude o la declaración falsa para obtener prestaciones indebidas con una multa de 1.000 a 5.000 dirhams.' La Dra. Nadia: 'Notificaré el error.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Karim atiende a un paciente que ha recibido una hospitalización de larga duración. La Dra. Nadia le aconseja verificar la cobertura. Según la ley 65-00, ¿están cubiertos los servicios de rehabilitación?",
+      "media": [],
+      "options": [
+        "No, solo están cubiertos los servicios curativos",
+        "Sí, los servicios de rehabilitación están cubiertos",
+        "Sí, pero solo para pacientes mayores de 60 años",
+        "No, la rehabilitación corre a cargo del paciente"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Nadia explica: 'El artículo 7 cubre los servicios de rehabilitación, la maternidad y la odontología.' El Dr. Karim: 'Verificaré la cobertura.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q20",
+      "type": "single-choice",
+      "question": "La Dra. Nadia tiene un paciente que ha perdido su tarjeta de seguro. El Dr. Karim le aconseja verificar su número de afiliación. Según el artículo 2 de la ley 65-00, ¿quién está obligado a afiliarse a AMO?",
+      "media": [],
+      "options": [
+        "Cualquier persona que ejerza una actividad en Marruecos",
+        "Solo los asalariados del sector privado",
+        "Exclusivamente los funcionarios",
+        "Solo los trabajadores autónomos"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Karim explica: 'La afiliación es obligatoria para cualquier persona que ejerza una actividad en Marruecos.' La Dra. Nadia: 'Ayudaré a mi paciente a encontrar su número.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q21",
+      "type": "single-choice",
+      "question": "El Dr. Karim debe gestionar un expediente complejo de un paciente con ALD y exención. La Dra. Nadia le aconseja seguir el procedimiento. Según el artículo 9 de la ley 65-00, ¿cómo se realiza la exención en caso de enfermedad grave?",
+      "media": [],
+      "options": [
+        "Exención total o parcial del ticket moderador",
+        "Aumento de la cotización",
+        "Exclusión del régimen de seguro",
+        "Reembolso fijo sin condiciones"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Nadia explica: 'En caso de enfermedad grave o invalidante que requiera un tratamiento de larga duración, la parte restante se exime total o parcialmente.' El Dr. Karim: 'Seguiré el procedimiento.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q22",
+      "type": "single-choice",
+      "question": "La Dra. Nadia tiene un paciente que quiere acudir a otro odontólogo. El Dr. Karim le recuerda el principio de libre elección. Según el artículo 14 de la ley 65-00, ¿puede el paciente cambiar libremente de odontólogo?",
+      "media": [],
+      "options": [
+        "No, debe permanecer con el mismo odontólogo",
+        "Sí, el paciente puede cambiar libremente",
+        "Sí, pero con el consentimiento de la CNSS",
+        "No, el cambio está prohibido"
+      ],
+      "correct": 1,
+      "explanation": "El Dr. Karim explica: 'El artículo 14 garantiza al beneficiario la libre elección del profesional.' La Dra. Nadia: 'Respetaré este derecho fundamental.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Karim descubre que su consultorio ha sido controlado por la CNSS. La Dra. Nadia le pide que verifique los documentos. Según el artículo 26 de la ley 65-00, ¿qué puede revelar el control médico?",
+      "media": [],
+      "options": [
+        "La calidad de la asistencia médica",
+        "Abusos y fraudes",
+        "El número de pacientes",
+        "El tamaño del consultorio"
+      ],
+      "correct": 1,
+      "explanation": "La Dra. Nadia explica: 'El control médico puede revelar abusos y fraudes en las prescripciones.' El Dr. Karim: 'Verificaré que todo esté en orden.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q24",
+      "type": "single-choice",
+      "question": "La Dra. Nadia tiene un paciente que se beneficia de RAMED. El Dr. Karim le aconseja verificar las condiciones. Según el artículo 3 de la ley 65-00, ¿para quién está destinado RAMED?",
+      "media": [],
+      "options": [
+        "Para las personas económicamente débiles no sujetas a AMO",
+        "Para los funcionarios y agentes",
+        "Para los trabajadores autónomos de profesiones liberales",
+        "Para los estudiantes de la enseñanza superior"
+      ],
+      "correct": 0,
+      "explanation": "El Dr. Karim explica: 'RAMED está destinado a las personas económicamente débiles que no gozan de ningún régimen de AMO.' La Dra. Nadia: 'Verificaré si mi paciente cumple las condiciones.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "CONV_I2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Karim, después de gestionar varias disputas con la CNSS, recibe felicitaciones de la Dra. Nadia. ¿Cuál es el siguiente paso para el Dr. Karim?",
+      "media": [],
+      "options": [
+        "Convertirse en experto en disputas convencionales",
+        "Jubilarse",
+        "Cambiar de especialidad",
+        "Olvidar las buenas prácticas"
+      ],
+      "correct": 0,
+      "explanation": "La Dra. Nadia explica: 'Dominar las disputas es una habilidad valiosa. Convertirse en experto en disputas convencionales es el siguiente paso.' El Dr. Karim: 'Me formaré en la gestión de recursos.'",
+      "difficulty": "intermedio",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "endo_debutant1_001",
+    "title": "Endo - Débutant 1",
+    "specialty": "ENDO",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "ENDO_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Sami reçoit un patient avec une pulpite irréversible. Il dit à Mina : 'Je vais faire un traitement canalaire, c'est simple.' Mina lui demande : 'Tu es sûr de toi ?' Quelle est la définition du traitement canalaire ?",
+      "media": [],
+      "options": [
+        "L'ablation de la pulpe et l'obturation de l'espace canalaire",
+        "La pose d'une couronne sur une dent dévitalisée",
+        "Un simple soin de carie profonde",
+        "L'extraction de la dent pour éviter une infection"
+      ],
+      "correct": 0,
+      "explanation": "Sami explique : 'Le traitement canalaire consiste à retirer la pulpe infectée, nettoyer et désinfecter les canaux, puis les obturer.' Mina ajoute : 'En espérant que tu ne rates aucun canal.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q02",
+      "type": "single-choice",
+      "question": "Mina examine un patient et trouve une carie profonde avec exposition pulpaire. Elle décide de faire une pulpectomie. Sami, curieux, lui demande : 'C'est quoi exactement une pulpectomie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "L'ablation de la pulpe coronaire et radiculaire",
+        "L'ablation de la pulpe coronaire uniquement",
+        "La désinfection du canal sans ablation",
+        "La fermeture de la chambre pulpaire"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La pulpectomie est l'ablation complète de la pulpe, y compris dans les canaux radiculaires.' Sami rétorque : 'Je le savais, je voulais juste tester.'",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q03",
+      "type": "single-choice",
+      "question": "Sami, dans sa précipitation, oublie de poser une digue sur un patient. Mina l'arrête : 'Sami, la digue, c'est obligatoire !' Sami demande : 'Pourquoi ?' Mina lui explique :",
+      "media": [],
+      "options": [
+        "Pour isoler la dent, éviter la contamination et protéger les voies aériennes",
+        "Pour protéger la langue du patient",
+        "Pour faire plus de temps de consultation",
+        "Pour impressionner le patient"
+      ],
+      "correct": 0,
+      "explanation": "Mina est formelle : 'La digue isole la dent, empêche la contamination salivaire et protège le patient de l'inhalation de petits instruments.' Sami, un peu vexé, la met en place.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q04",
+      "type": "single-choice",
+      "question": "Mina commence une instrumentation canalaire. Sami, en l'observant, demande : 'Pourquoi tu utilises une lime manuelle et pas la machine ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Pour sentir la morphologie du canal et éviter les erreurs",
+        "Parce que la machine est plus lente",
+        "Parce que je n'ai pas confiance dans la machine",
+        "Pour économiser des fraises"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La lime manuelle permet de sentir les courbures, les calcifications et la longueur du canal. C'est plus sûr pour éviter les fausses routes.' Sami, impressionné, prend des notes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q05",
+      "type": "single-choice",
+      "question": "Sami utilise une lime rotative. Mina lui demande : 'Tu es sûr d'avoir bien calibré ta lime ?' Sami répond : 'Bien sûr !' Mina rétorque : 'Pourquoi est-ce important ?'",
+      "media": [],
+      "options": [
+        "Pour éviter la fracture de la lime ou un élargissement excessif",
+        "Pour que la lime soit plus rapide",
+        "Pour faire plus de points de fidélité",
+        "Pour impressionner l'assistante"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Un calibrage inadapté peut fracturer la lime dans le canal ou créer un élargissement excessif de l'apex.' Sami, un peu inquiet, vérifie son calibrage.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q06",
+      "type": "single-choice",
+      "question": "Sami, confiant, annonce à Mina qu'il a terminé son traitement canalaire. Mina lui demande : 'Et la longueur de travail, tu l'as vérifiée comment ?' Sami répond :",
+      "media": [],
+      "options": [
+        "Avec un localisateur d'apex et une radiographie",
+        "À l'œil nu, comme toujours",
+        "Avec une règle sur la radiographie",
+        "En mesurant la couronne"
+      ],
+      "correct": 0,
+      "explanation": "Mina confirme : 'Le localisateur d'apex est indispensable, mais il faut toujours confirmer avec une radiographie.' Sami, un peu honteux, admet qu'il a oublié la radio.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q07",
+      "type": "single-choice",
+      "question": "Mina prépare la solution d'irrigation. Sami lui demande : 'Quelle est la solution la plus utilisée ?' Mina répond :",
+      "media": [],
+      "options": [
+        "L'hypochlorite de sodium (eau de Javel diluée)",
+        "L'eau distillée stérile",
+        "Le sérum physiologique",
+        "L'alcool à 70°"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'L'hypochlorite de sodium est la solution de référence pour la désinfection canalaire. Mais attention, il faut l'utiliser avec précaution.' Sami, impressionné, note l'information.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q08",
+      "type": "single-choice",
+      "question": "Sami, pressé, veut utiliser une concentration élevée d'hypochlorite de sodium. Mina l'arrête : 'Attention, une concentration trop élevée peut :",
+      "media": [],
+      "options": [
+        "Provoquer une nécrose tissulaire en cas d'extrusion",
+        "Accélérer le traitement",
+        "Rendre les canaux plus blancs",
+        "Éviter les douleurs post-opératoires"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Une concentration trop élevée peut être toxique en cas d'extrusion au-delà de l'apex.' Sami, prudent, choisit une concentration adaptée.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q09",
+      "type": "single-choice",
+      "question": "Mina effectue l'obturation canalaire. Sami lui demande : 'Pourquoi tu utilises de la gutta-percha plutôt qu'un autre matériau ?' Mina répond :",
+      "media": [],
+      "options": [
+        "C'est le matériau de référence, facile à utiliser et biocompatible",
+        "Parce que c'est le seul disponible",
+        "Parce que c'est le moins cher",
+        "Parce que je n'ai pas d'autre choix"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La gutta-percha est le matériau standard en endodontie. Elle est biocompatible, se ramollit à la chaleur et assure une bonne étanchéité.' Sami, convaincu, la suit.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q10",
+      "type": "single-choice",
+      "question": "Sami obture un canal sans utiliser de ciment scellant. Mina, horrifiée, lui dit : 'Tu as oublié le ciment !' Sami demande : 'Pourquoi c'est si important ?'",
+      "media": [],
+      "options": [
+        "Le ciment assure l'étanchéité entre la gutta-percha et la paroi canalaire",
+        "Le ciment sert à fixer la couronne",
+        "Le ciment est juste un supplément facultatif",
+        "Le ciment colore la dent"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Le ciment scellant remplit les espaces entre la gutta-percha et la dentine, assurant une étanchéité parfaite.' Sami, reprenant son travail, la remercie.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q11",
+      "type": "single-choice",
+      "question": "Un patient revient avec une douleur après un traitement canalaire réalisé par Sami. Mina examine et dit : 'Tu as une lésion péri-apicale.' Sami demande : 'C'est quoi au juste ?'",
+      "media": [],
+      "options": [
+        "Une inflammation de l'os autour de l'apex",
+        "Une infection de la pulpe",
+        "Une fracture de la couronne",
+        "Une allergie au ciment"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La lésion péri-apicale est une réaction inflammatoire de l'os autour de l'apex, souvent due à une infection persistante.' Sami, un peu gêné, promet d'être plus rigoureux.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q12",
+      "type": "single-choice",
+      "question": "Sami doit réaliser une anesthésie pour un traitement canalaire. Mina lui demande : 'Quel type d'anesthésie utilises-tu ?' Sami répond :",
+      "media": [],
+      "options": [
+        "Une anesthésie loco-régionale (tronculaire)",
+        "Une anesthésie topique uniquement",
+        "Une sédation intraveineuse",
+        "Aucune anesthésie, la pulpe est morte"
+      ],
+      "correct": 0,
+      "explanation": "Mina confirme : 'Une anesthésie tronculaire est nécessaire pour bloquer le nerf alvéolaire inférieur. Une pulpe peut être partiellement vivante.' Sami, convaincu, anesthésie correctement.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q13",
+      "type": "single-choice",
+      "question": "Mina rencontre un canal calcifié. Sami lui demande : 'Comment tu vas faire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Avec des limes à extrémité active et beaucoup de patience",
+        "Avec une fraise en acier inoxydable",
+        "En abandonnant le traitement",
+        "En utilisant uniquement des ultrasons"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les canaux calcifiés nécessitent des limes spéciales et de la patience. Il faut progresser doucement pour éviter les fausses routes.' Sami, admiratif, observe.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q14",
+      "type": "single-choice",
+      "question": "Sami, en traitant une molaire, confond les canaux. Mina lui dit : 'Sami, tu as oublié le canal mésio-lingual !' Sami demande : 'Comment tu sais qu'il y en a un ?'",
+      "media": [],
+      "options": [
+        "Les molaires maxillaires ont souvent un 4ème canal (mésio-lingual)",
+        "Toutes les molaires n'ont que 3 canaux",
+        "C'est un canal vestibulaire",
+        "C'est un canal accessoire"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les molaires maxillaires ont fréquemment un 4ème canal, le mésio-lingual. Il est souvent fin et facile à négliger.' Sami, reconnaissant, localise le canal.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q15",
+      "type": "single-choice",
+      "question": "Sami et Mina débattent de la durée idéale d'un traitement canalaire. Sami dit : 'Je le fais en 30 minutes !' Mina répond : 'Moi en 1h30, mais je le fais bien.' Qu'est-ce qui compte le plus ?",
+      "media": [],
+      "options": [
+        "La qualité de la désinfection et de l'obturation",
+        "La rapidité du traitement",
+        "Le prix facturé au patient",
+        "La disponibilité du patient"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La qualité prime sur la rapidité. Un traitement canalaire bien réalisé prévient les récidives.' Sami, vexé, admet qu'elle a raison.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q16",
+      "type": "single-choice",
+      "question": "Mina examine une radiographie et dit : 'Il y a une image claire péri-apicale.' Sami demande : 'Qu'est-ce que ça veut dire ?'",
+      "media": [],
+      "options": [
+        "Une radioclarté autour de l'apex, souvent un granulome ou un kyste",
+        "Une opacité autour de l'apex",
+        "Une fracture de la racine",
+        "Une dent de sagesse incluse"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Une image claire péri-apicale indique une perte osseuse autour de l'apex, souvent due à une infection chronique.' Sami, un peu inquiet, examine la radio.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q17",
+      "type": "single-choice",
+      "question": "Sami, en instrumentant un canal, voit du sang sortir de l'apex. Mina lui dit : 'Arrête, tu es sorti de l'apex !' Sami demande : 'Pourquoi c'est grave ?'",
+      "media": [],
+      "options": [
+        "Cela peut provoquer une douleur post-opératoire et une infection",
+        "C'est normal, ça arrive tout le temps",
+        "Cela accélère la cicatrisation",
+        "C'est un signe de réussite"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Sortir de l'apex avec une lime peut propulser des bactéries et des débris dans les tissus péri-apicaux.' Sami, prudent, ajuste sa longueur de travail.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q18",
+      "type": "single-choice",
+      "question": "Mina choisit la longueur de travail. Sami lui demande : 'Comment tu la détermines ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Avec un localisateur d'apex et confirmée par radiographie",
+        "En mesurant la couronne",
+        "À l'aveugle",
+        "Avec un détecteur de caries"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La combinaison du localisateur d'apex et de la radiographie est la méthode la plus fiable.' Sami, attentif, prend des notes.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q19",
+      "type": "single-choice",
+      "question": "Sami, pressé, veut sauter l'étape de la radiographie de contrôle. Mina l'arrête : 'Sami, il faut toujours contrôler !' Pourquoi ?",
+      "media": [],
+      "options": [
+        "Pour vérifier la longueur de travail et la qualité de l'obturation",
+        "Pour faire plaisir au patient",
+        "Pour impressionner l'assistante",
+        "Pour augmenter le temps de consultation"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La radiographie de contrôle permet de vérifier la longueur de travail avant obturation, et la qualité de l'obturation finale.' Sami, un peu gêné, prend une radio.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q20",
+      "type": "single-choice",
+      "question": "Mina, en fin de traitement, explique au patient les règles post-opératoires. Sami demande : 'Qu'est-ce que tu lui dis ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Éviter de mâcher sur la dent jusqu'à la pose de la couronne",
+        "Manger normalement",
+        "Se brosser les dents vigoureusement",
+        "Utiliser un cure-dent pour nettoyer la couronne"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La dent traitée est fragile et doit être protégée jusqu'à la restauration définitive.' Sami, approuvant, ajoute quelques conseils.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q21",
+      "type": "single-choice",
+      "question": "Sami, après avoir terminé, demande à Mina : 'À quel moment doit-on poser la couronne ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Quand la dent est asymptomatique, idéalement dans les semaines suivant le traitement",
+        "Immédiatement, le même jour",
+        "Au bout d'un an",
+        "Jamais, la dent reste sans couronne"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Il faut attendre que la dent ne soit plus symptomatique, puis une couronne est nécessaire pour éviter la fracture.' Sami, d'accord, note la recommandation.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q22",
+      "type": "single-choice",
+      "question": "Sami, un peu trop confiant, dit à un patient : 'Votre traitement canalaire est garanti à vie !' Mina intervient : 'Sami, il faut être prudent !' Pourquoi ?",
+      "media": [],
+      "options": [
+        "Aucun traitement n'est garanti à vie, des échecs peuvent survenir",
+        "Parce que le patient peut oublier",
+        "Parce que la garantie coûte cher",
+        "Parce que c'est une obligation légale"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Les traitements canalaires peuvent échouer, même avec une technique parfaite. Il faut toujours informer le patient des risques.' Sami, un peu gêné, rectifie ses propos.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q23",
+      "type": "single-choice",
+      "question": "Mina, en nettoyant les canaux, trouve une odeur nauséabonde. Sami lui demande : 'Qu'est-ce que ça veut dire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "C'est un signe d'infection bactérienne importante",
+        "C'est normal, c'est l'odeur de la dentine",
+        "C'est l'odeur de l'hypochlorite",
+        "C'est un signe de réussite"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Une odeur nauséabonde indique la présence de bactéries anaérobies, souvent responsables des infections canalaires.' Sami, dégoûté, continue le nettoyage.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q24",
+      "type": "single-choice",
+      "question": "Sami, en fin de traitement, demande à Mina : 'Quel est le taux de succès d'un traitement canalaire bien réalisé ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Environ 85 à 95%",
+        "100%",
+        "50%",
+        "30%"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'Avec une bonne technique, les taux de succès sont élevés, mais il faut toujours informer le patient des risques d'échec.' Sami, impressionné, est plus prudent.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ENDO_D1_Q25",
+      "type": "single-choice",
+      "question": "Sami, en parlant à un patient, confond pulpectomie et pulpotomie. Mina le corrige. Laquelle de ces affirmations est correcte ?",
+      "media": [],
+      "options": [
+        "La pulpectomie est l'ablation complète de la pulpe, la pulpotomie est partielle",
+        "La pulpotomie est plus complète que la pulpectomie",
+        "Les deux sont identiques",
+        "La pulpectomie est réservée aux dents de lait"
+      ],
+      "correct": 0,
+      "explanation": "Mina explique : 'La pulpectomie enlève toute la pulpe, la pulpotomie enlève seulement la pulpe coronaire.' Sami, reconnaissant, remercie Mina pour la clarification.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

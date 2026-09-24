@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "sante_publique_debutant1_001",
+    "title": "Sante_publique - Débutant 1",
+    "specialty": "SANT",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "SANT_D1_Q01",
+      "type": "single-choice",
+      "question": "Le Dr Cherkaoui est chirurgien-dentiste dans le secteur public. Selon le Décret n°2.12.507, quel est l'un des principaux défis de la santé publique en matière de soins bucco-dentaires au Maroc ?",
+      "media": [],
+      "options": [
+        "Un nombre suffisant de dentistes dans toutes les régions",
+        "Une pénurie chronique de dentistes dans le secteur public, surtout en zones rurales",
+        "Une offre de soins parfaitement répartie sur le territoire",
+        "Une surpopulation de dentistes dans les hôpitaux publics"
+      ],
+      "correct": 1,
+      "explanation": "Le Maroc connaît une pénurie de chirurgiens-dentistes dans le secteur public, avec une répartition très inégale sur le territoire. Selon l'article 1er du Décret n°2.12.507, le ministère peut recourir à des dentistes privés 'en cas de nécessité de service' pour les circonscriptions souffrant d'insuffisance en médecins dentistes (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q02",
+      "type": "single-choice",
+      "question": "Le Dr Berrada exerce dans le secteur privé mais souhaite contribuer à la santé publique. Selon le Décret n°2.12.507, comment peut-il conventionner avec le ministère de la Santé ?",
+      "media": [],
+      "options": [
+        "En signant une convention pour exercer à temps partiel dans les hôpitaux publics",
+        "En ouvrant un cabinet privé dans une grande ville",
+        "En refusant tout partenariat avec le secteur public",
+        "En exerçant uniquement dans le secteur libéral"
+      ],
+      "correct": 0,
+      "explanation": "Le Décret n°2.12.507 permet au ministère de la Santé de recourir, par voie de convention, à des dentistes du secteur privé pour exercer à temps partiel dans des établissements publics de santé, notamment pour assurer la permanence des soins (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q03",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, dans quelles circonstances le ministère de la Santé peut-il faire appel à des dentistes du secteur privé ?",
+      "media": [],
+      "options": [
+        "Uniquement en cas d'épidémie",
+        "En cas de nécessité de service, notamment dans les zones où l'offre de soins est insuffisante",
+        "Seulement si le dentiste en fait la demande",
+        "Dans toutes les régions du Maroc sans condition"
+      ],
+      "correct": 1,
+      "explanation": "Selon l'article 1er du Décret n°2.12.507, le ministère peut recourir à des dentistes du secteur privé 'en cas de nécessité de service' et pour des circonscriptions administratives souffrant d'une insuffisance en médecins dentistes (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q04",
+      "type": "single-choice",
+      "question": "Le Dr Berrada est intéressé par le conventionnement. Selon le Décret n°2.12.507, quelles sont les conditions pour être conventionné ?",
+      "media": [],
+      "options": [
+        "Aucune condition particulière",
+        "Être inscrit à l'Ordre National des Médecins Dentistes et ne pas avoir fait l'objet d'une sanction disciplinaire",
+        "Avoir moins de 30 ans",
+        "Exercer exclusivement en zone rurale"
+      ],
+      "correct": 1,
+      "explanation": "L'article 6 du Décret n°2.12.507 stipule que les candidats doivent être inscrits à l'ordre professionnel, ne pas avoir fait l'objet d'une sanction disciplinaire ordinale, et ne pas avoir été condamnés pour crime contre les personnes ou atteinte à la moralité publique (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q05",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, combien de temps dure une convention type ?",
+      "media": [],
+      "options": [
+        "1 mois",
+        "11 mois maximum, reconductible tacitement 3 fois",
+        "5 ans",
+        "Jusqu'à la retraite du dentiste"
+      ],
+      "correct": 1,
+      "explanation": "Conformément à l'article 5 du Décret n°2.12.507, la convention est conclue pour une durée maximum de onze mois, reconductible tacitement trois fois au plus, sauf résiliation par décision de l'administration ou à la demande du dentiste (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q06",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, quelle est la rémunération d'un dentiste conventionné pour une séance de consultation de 4 heures à l'hôpital ?",
+      "media": [],
+      "options": [
+        "100 DH",
+        "286 DH",
+        "500 DH",
+        "1 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "L'article 11 du Décret n°2.12.507 fixe la rémunération pour une séance de travail de quatre heures à 286 DH brut (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q07",
+      "type": "single-choice",
+      "question": "Le Dr Cherkaoui, fonctionnaire, exerce à l'hôpital public. Quel est le salaire mensuel maximum qu'un dentiste conventionné peut percevoir selon le Décret n°2.12.507 ?",
+      "media": [],
+      "options": [
+        "2 000 DH",
+        "5 000 DH",
+        "7 143 DH",
+        "10 000 DH"
+      ],
+      "correct": 2,
+      "explanation": "L'article 11 du Décret n°2.12.507 fixe la rémunération mensuelle brute maximum à 7 143 DH, payable à terme échu dans la limite de 11 mois par an (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q08",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, à quelle autorité le dentiste conventionné est-il soumis durant son exercice dans le secteur public ?",
+      "media": [],
+      "options": [
+        "À l'Ordre National des Médecins Dentistes uniquement",
+        "À l'autorité du chef hiérarchique de l'établissement public de santé",
+        "À aucune autorité, il est indépendant",
+        "Au ministère du Commerce"
+      ],
+      "correct": 1,
+      "explanation": "L'article 9 du Décret n°2.12.507 précise que le dentiste conventionné est soumis à l'autorité du chef hiérarchique de l'établissement sanitaire, du délégué provincial et du directeur régional de la santé, et doit signer tous les documents techniques et administratifs (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q09",
+      "type": "single-choice",
+      "question": "Le Dr Berrada est en convention avec le ministère. Selon le Décret n°2.12.507, quelles sont ses obligations professionnelles ?",
+      "media": [],
+      "options": [
+        "Aucune obligation particulière",
+        "Il est astreint aux mêmes obligations professionnelles que ses homologues fonctionnaires",
+        "Il est exempté de toute obligation administrative",
+        "Il peut choisir ses horaires librement"
+      ],
+      "correct": 1,
+      "explanation": "L'article 9 du Décret n°2.12.507 dispose que les dentistes conventionnés sont astreints aux mêmes obligations professionnelles que leurs homologues fonctionnaires et au respect du règlement intérieur des établissements d'affectation (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q10",
+      "type": "single-choice",
+      "question": "Le Dr Cherkaoui est fonctionnaire et le Dr Berrada est conventionné. Lequel des deux peut être chargé de la garde à l'hôpital selon le Décret n°2.12.507 ?",
+      "media": [],
+      "options": [
+        "Seul le fonctionnaire",
+        "Seul le conventionné",
+        "Les deux, selon les modalités réglementaires en vigueur",
+        "Ni l'un ni l'autre"
+      ],
+      "correct": 2,
+      "explanation": "L'article 9 du Décret n°2.12.507 prévoit que lorsque la convention prévoit la garde, celle-ci doit être effectuée par les médecins conventionnés conformément aux modalités et procédures réglementaires en vigueur applicables à leurs homologues fonctionnaires (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q11",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, que risque un dentiste conventionné qui s'absente sans motif valable ?",
+      "media": [],
+      "options": [
+        "Un simple avertissement",
+        "La résiliation de sa convention sans préavis",
+        "Une amende de 5 000 DH",
+        "Une suspension de 6 mois"
+      ],
+      "correct": 1,
+      "explanation": "Conformément à l'article 10 du Décret n°2.12.507, toute absence pendant trois séances de travail, sans information préalable de l'administration et sans motif valable, est une cause de résiliation de la convention par l'administration sans préavis (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q12",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, quel est le rôle des ordres professionnels dans le conventionnement ?",
+      "media": [],
+      "options": [
+        "Ils n'ont aucun rôle",
+        "Les conventions doivent être assorties du visa du président du conseil national de l'ordre professionnel concerné",
+        "Ils doivent approuver chaque convention à l'unanimité",
+        "Ils peuvent refuser toute convention"
+      ],
+      "correct": 1,
+      "explanation": "L'article 3 du Décret n°2.12.507 prévoit que les conventions doivent être assorties du visa du président du conseil national de l'ordre professionnel concerné (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q13",
+      "type": "single-choice",
+      "question": "Le Dr Berrada est conventionné. Selon le Décret n°2.12.507, peut-il cumuler plusieurs conventions dans différentes régions ?",
+      "media": [],
+      "options": [
+        "Oui, sans limitation",
+        "Oui, mais uniquement dans le ressort territorial d'une même direction régionale de la santé",
+        "Non, il ne peut avoir qu'une seule convention",
+        "Oui, si les régions sont éloignées"
+      ],
+      "correct": 1,
+      "explanation": "L'article 3 du Décret n°2.12.507 précise que les activités de chaque dentiste conventionné et le(s) lieu(x) où il sera appelé à les exercer doivent être définis dans la convention, dans le ressort territorial d'une même direction régionale de la santé (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q14",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, l'ancien décret de 1972 est-il toujours en vigueur ?",
+      "media": [],
+      "options": [
+        "Oui, il reste applicable",
+        "Non, le Décret n°2.12.507 l'abroge",
+        "Il est toujours valable pour certaines régions",
+        "Il a été remplacé par une loi"
+      ],
+      "correct": 1,
+      "explanation": "L'article 15 du Décret n°2.12.507 abroge le décret n° 2-71-641 du 24 janvier 1972 fixant le statut particulier des médecins, pharmaciens et chirurgiens dentistes conventionnés du ministère de la santé publique (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q15",
+      "type": "single-choice",
+      "question": "Selon les données démographiques, combien de chirurgiens-dentistes du secteur public y avait-il au Maroc en 2005 environ ?",
+      "media": [],
+      "options": [
+        "50",
+        "100",
+        "202",
+        "500"
+      ],
+      "correct": 2,
+      "explanation": "En 2005, on comptait environ 202 chirurgiens-dentistes dans le secteur public, soit un ratio de 1 dentiste pour 148 000 habitants, avec des disparités régionales très importantes, ce qui a motivé la réforme du Décret n°2.12.507.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q16",
+      "type": "single-choice",
+      "question": "Selon la démographie professionnelle, dans certaines régions du Maroc, la densité de dentistes publics peut être aussi faible que :",
+      "media": [],
+      "options": [
+        "1 dentiste pour 10 000 habitants",
+        "1 dentiste pour 100 000 habitants",
+        "1 dentiste pour 728 634 habitants",
+        "1 dentiste pour 50 000 habitants"
+      ],
+      "correct": 2,
+      "explanation": "La proportion varie de 1 dentiste pour 12 631 habitants à 1 dentiste pour 728 634 habitants selon les régions, illustrant les disparités territoriales en matière d'accès aux soins qui justifient le recours au conventionnement prévu par le Décret n°2.12.507.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q17",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, les dentistes conventionnés peuvent-ils bénéficier d'indemnités de déplacement ?",
+      "media": [],
+      "options": [
+        "Non, les déplacements ne sont pas pris en charge",
+        "Oui, dans les conditions et taux fixés par la réglementation",
+        "Seulement s'ils exercent en zone rurale",
+        "Non, ils doivent payer leurs frais de déplacement"
+      ],
+      "correct": 1,
+      "explanation": "L'article 11 du Décret n°2.12.507 prévoit que les dentistes conventionnés peuvent bénéficier, le cas échéant, de l'indemnité pour frais de déplacement aux taux et dans les conditions fixés par les textes réglementaires en vigueur (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q18",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, quel est le rôle du ministère de la Santé dans le conventionnement ?",
+      "media": [],
+      "options": [
+        "Il n'a aucun rôle",
+        "Il lance des appels à candidatures et définit les circonscriptions concernées",
+        "Il laisse les dentistes s'organiser seuls",
+        "Il impose des conventions à tous les dentistes"
+      ],
+      "correct": 1,
+      "explanation": "L'article 3 du Décret n°2.12.507 prévoit que le recours aux dentistes du secteur privé a lieu suite à un appel à candidatures lancé par le ministère de la Santé. Les circonscriptions concernées sont définies par arrêté du ministre (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q19",
+      "type": "single-choice",
+      "question": "Le Dr Cherkaoui est fonctionnaire. Selon les textes, les dentistes du secteur public sont-ils représentés au sein de l'Ordre National des Médecins Dentistes ?",
+      "media": [],
+      "options": [
+        "Non, seuls les libéraux sont représentés",
+        "Oui, six dentistes du secteur public siègent au conseil national",
+        "Seulement s'ils sont enseignants",
+        "Ils ont un représentant unique"
+      ],
+      "correct": 1,
+      "explanation": "Six médecins dentistes exerçant dans le secteur public siègent en tant que membres de droit au conseil national de l'Ordre, dont deux des services de l'État, deux enseignants, et deux militaires, conformément à la loi n° 07-05.",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q20",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, en cas de faute professionnelle grave, quelle procédure est prévue pour le dentiste conventionné ?",
+      "media": [],
+      "options": [
+        "Une simple convocation",
+        "La résiliation de la convention après avis du conseil national de l'ordre professionnel concerné",
+        "Une amende uniquement",
+        "Aucune sanction n'est prévue"
+      ],
+      "correct": 1,
+      "explanation": "L'article 10 du Décret n°2.12.507 prévoit qu'en cas de faute grave à caractère professionnel, la résiliation de la convention est prise après avis du conseil national de l'ordre professionnel concerné (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q21",
+      "type": "single-choice",
+      "question": "Le Dr Berrada souhaite se faire conventionner. Selon le Décret n°2.12.507, quel critère est privilégié en cas de pluralité de candidatures ?",
+      "media": [],
+      "options": [
+        "L'âge du candidat",
+        "L'adresse professionnelle la plus proche de l'établissement de santé",
+        "L'ancienneté dans la profession",
+        "Le nombre de publications scientifiques"
+      ],
+      "correct": 1,
+      "explanation": "L'article 3 du Décret n°2.12.507 stipule qu'en cas de soumission de plusieurs candidatures, sera retenu le médecin dont l'adresse professionnelle est la plus proche de l'établissement de santé concerné (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q22",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, le dentiste conventionné peut-il résilier sa convention à tout moment ?",
+      "media": [],
+      "options": [
+        "Non, la résiliation est impossible",
+        "Oui, à condition d'aviser l'administration un mois à l'avance",
+        "Oui, sans préavis",
+        "Oui, mais uniquement en cas de maladie"
+      ],
+      "correct": 1,
+      "explanation": "L'article 5 du Décret n°2.12.507 prévoit que sauf résiliation par décision de l'administration ou à la demande du dentiste, il est obligatoire d'aviser l'autre partie un mois au moins avant la date de résiliation (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q23",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, que prévoit la convention pour le dentiste en matière de responsabilité ?",
+      "media": [],
+      "options": [
+        "Il n'est pas responsable de ses actes",
+        "Il est responsable des internes placés sous son autorité",
+        "Il est dispensé de toute responsabilité",
+        "La responsabilité incombe uniquement à l'hôpital"
+      ],
+      "correct": 1,
+      "explanation": "L'article 9 du Décret n°2.12.507 dispose que les dentistes conventionnés dirigent et surveillent le travail des internes et du personnel placés directement sous leur autorité, et procèdent eux-mêmes aux interventions relevant de leur compétence (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q24",
+      "type": "single-choice",
+      "question": "Selon le Décret n°2.12.507, le dentiste conventionné est-il soumis au règlement intérieur de l'établissement où il exerce ?",
+      "media": [],
+      "options": [
+        "Non, il est soumis à ses propres règles",
+        "Oui, il est soumis au règlement intérieur de la formation sanitaire",
+        "Seulement pour les questions de sécurité",
+        "Non, il est indépendant"
+      ],
+      "correct": 1,
+      "explanation": "L'article 9 du Décret n°2.12.507 prévoit que les dentistes conventionnés sont soumis au respect du règlement intérieur ou règles administratives d'usage dans les établissements d'affectation (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "SANT_D1_Q25",
+      "type": "single-choice",
+      "question": "Selon les informations disponibles, quel est l'objectif du Décret n°2.12.507 par rapport à l'ancien de 1972 ?",
+      "media": [],
+      "options": [
+        "Réduire le nombre de dentistes conventionnés",
+        "Pérenniser le recrutement par convention et réviser les conditions de rémunération",
+        "Supprimer tout recours au secteur privé",
+        "Augmenter les tarifs des consultations"
+      ],
+      "correct": 1,
+      "explanation": "Le Décret n°2.12.507 tend à pérenniser ce mode de recrutement par voie conventionnelle, exclusivement pour satisfaire les besoins des circonscriptions souffrant d'insuffisance, tout en révisant les conditions de conventionnement et de rétribution (B.O. n° 6342 du 5 mars 2015).",
+      "difficulty": "facile",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

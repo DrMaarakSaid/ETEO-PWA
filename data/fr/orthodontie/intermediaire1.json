@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "orthodontie_intermediaire1_001",
+    "title": "Orthodontie - Intermédiaire 1",
+    "specialty": "ORTH",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ORTH_I1_Q01",
+      "type": "single-choice",
+      "question": "Sami demande à Mina : 'Quelle est la clé d'un bon diagnostic orthodontique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un simple examen clinique",
+        "Un bilan complet : clinique, céphalométrique et radiologique",
+        "Uniquement la céphalométrie",
+        "Uniquement les radiographies"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'Le diagnostic orthodontique repose sur un bilan clinique, céphalométrique et radiologique complet.' 🦅 Sami : 'Bon, je vais faire tout le bilan... mais c'est long !'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q02",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment évaluer la croissance d'un enfant ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "En mesurant sa taille",
+        "Par l'analyse de la maturation vertébrale (CVM)",
+        "En pesant l'enfant",
+        "En comptant ses dents"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La maturation vertébrale (CVM) est le meilleur indicateur de la croissance résiduelle.' 🦅 Sami : 'Je vais apprendre à lire les CVM.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q03",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la méthode de Bolton ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Une technique d'extraction",
+        "Une analyse de l'encombrement dentaire",
+        "Une méthode de pose de bagues",
+        "Une technique de radiographie"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La méthode de Bolton calcule l'encombrement et guide la décision entre extraction et expansion.' 🦅 Sami : 'Je vais toujours calculer le Bolton.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q04",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce que la courbe de Spee ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "Une courbe esthétique",
+        "La courbe d'occlusion sagittale des dents",
+        "Une courbe de croissance",
+        "Une courbe de température"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La courbe de Spee est un paramètre occlusal important. Une courbe profonde > 2 mm est souvent associée à une Classe II.' 🦅 Sami : 'Je vais mesurer la courbe de Spee systématiquement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q05",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les paramètres céphalométriques clés ?' Mina répond :",
+      "media": [],
+      "options": [
+        "SNA, SNB, ANB, FMA, IMPA",
+        "Uniquement SNA et SNB",
+        "Uniquement ANB",
+        "Uniquement FMA"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les paramètres clés incluent SNA, SNB, ANB, FMA et IMPA pour évaluer les relations squelettiques.' 🦅 Sami : 'Je vais apprendre tous ces paramètres.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q06",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce que l'overjet ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Le recouvrement vertical des incisives",
+        "La distance horizontale entre les incisives",
+        "La couleur des dents",
+        "La taille des dents"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'L'overjet est la distance horizontale entre les incisives supérieures et inférieures.' 🦅 Sami : 'Je vais mesurer l'overjet de mes patients.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q07",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que l'overbite ?' Mina lui répond :",
+      "media": [],
+      "options": [
+        "La distance horizontale entre les incisives",
+        "Le recouvrement vertical des incisives supérieures sur les inférieures",
+        "La couleur des dents",
+        "La taille des dents"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'L'overbite est le recouvrement vertical des incisives supérieures sur les inférieures.' 🦅 Sami : 'Je vais mesurer l'overbite systématiquement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q08",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quand faut-il réaliser une radiographie panoramique en orthodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Jamais, elle est inutile",
+        "Systématiquement pour le bilan initial",
+        "Uniquement en cas de suspicion d'inclusion",
+        "Uniquement pour les adultes"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La panoramique est indispensable pour évaluer les germes, les inclusions et les pathologies.' 🦅 Sami : 'Je vais toujours prescrire une panoramique.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q09",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la télécéphalométrie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une radiographie de profil standardisée pour l'analyse céphalométrique",
+        "Une radiographie de face",
+        "Une radiographie panoramique",
+        "Une radiographie des sinus"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La télécéphalométrie est une radiographie de profil standardisée pour l'analyse des relations squelettiques.' 🦅 Sami : 'Je vais toujours faire une téléradiographie.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q10",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment évaluer la maturité squelettique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Par l'âge chronologique",
+        "Par l'analyse de la maturation vertébrale (CVM)",
+        "Par la taille de l'enfant",
+        "Par le poids de l'enfant"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La maturation vertébrale est le meilleur indicateur de la maturité squelettique.' 🦅 Sami : 'Je vais apprendre à lire les CVM.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q11",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quels sont les signes d'une Classe II squelettique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un ANB > 4° et un SNB bas",
+        "Un ANB < 0°",
+        "Un FMA > 30°",
+        "Un IMPA > 90°"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Une Classe II squelettique se caractérise par un ANB > 4° et un SNB bas.' 🦅 Sami : 'Je vais calculer l'ANB systématiquement.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q12",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les signes d'une Classe III squelettique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un ANB < 0° et un SNB élevé",
+        "Un ANB > 4°",
+        "Un FMA > 30°",
+        "Un IMPA > 90°"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Une Classe III squelettique se caractérise par un ANB < 0° et un SNB élevé.' 🦅 Sami : 'Je vais toujours vérifier l'ANB.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q13",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que l'espace Nolla ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un indice de développement dentaire",
+        "Une technique d'extraction",
+        "Une méthode de pose de bagues",
+        "Une technique de radiographie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'espace Nolla évalue le stade de développement des dents, notamment des canines.' 🦅 Sami : 'Je vais utiliser l'espace Nolla pour les canines incluses.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q14",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quand faut-il extraire une dent en orthodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Uniquement en cas d'encombrement sévère > 6-8 mm",
+        "Toujours pour les Classe II",
+        "Jamais, il faut toujours expansion",
+        "Uniquement pour les Classe III"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les extractions sont indiquées pour les encombrements sévères > 6-8 mm.' 🦅 Sami : 'Je vais calculer l'encombrement avant d'extraire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q15",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la rétention en orthodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une phase négligeable du traitement",
+        "La phase post-traitement pour stabiliser les résultats",
+        "Une technique d'extraction",
+        "Une méthode de pose de bagues"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La rétention est la phase post-traitement essentielle pour stabiliser les résultats.' 🦅 Sami : 'Je vais toujours prévoir une rétention.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q16",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les avantages des aligneurs ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Esthétiques, confortables, hygiéniques",
+        "Plus rapides que les bagues",
+        "Moins chers",
+        "Plus efficaces pour tous les cas"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les aligneurs offrent une esthétique, un confort et une hygiène supérieurs.' 🦅 Sami : 'Je vais proposer des aligneurs à mes patients.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q17",
+      "type": "single-choice",
+      "question": "Sami demande : 'Quelles sont les limites des aligneurs ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Limités pour les mouvements complexes et les rotations sévères",
+        "Ils ne fonctionnent que pour les cas simples",
+        "Ils sont inefficaces",
+        "Ils ne fonctionnent que chez les adultes"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les aligneurs ont des limites pour les mouvements complexes et les rotations sévères.' 🦅 Sami : 'Je vais utiliser les bagues pour les cas complexes.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q18",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Qu'est-ce qu'une mini-vis en orthodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Un implant temporaire pour l'ancrage orthodontique",
+        "Un implant définitif",
+        "Une vis pour la prothèse",
+        "Une vis pour la chirurgie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les mini-vis sont des implants temporaires pour l'ancrage orthodontique.' 🦅 Sami : 'Je vais utiliser des mini-vis pour l'ancrage.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q19",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la chirurgie orthognathique ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une chirurgie pour corriger les malocclusions squelettiques sévères",
+        "Une extraction",
+        "Une pose d'implant",
+        "Une technique de détartrage"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La chirurgie orthognathique corrige les malocclusions squelettiques sévères.' 🦅 Sami : 'Je vais orienter les patients vers les chirurgiens.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q20",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les facteurs de risque de récidive en orthodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Absence de rétention, croissance résiduelle, parafonctions",
+        "Uniquement l'absence de rétention",
+        "Uniquement la croissance",
+        "Uniquement les parafonctions"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La récidive est multifactorielle : rétention insuffisante, croissance, parafonctions.' 🦅 Sami : 'Je vais prévenir la récidive par une bonne rétention.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q21",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que la méthode de Downs en céphalométrie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une analyse céphalométrique des angles faciaux",
+        "Une technique d'extraction",
+        "Une méthode de pose de bagues",
+        "Une technique de radiographie"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'analyse de Downs évalue les angles faciaux et les inclinaisons dentaires.' 🦅 Sami : 'Je vais utiliser l'analyse de Downs.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q22",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Comment gérer une agénésie dentaire en orthodontie ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Fermeture des espaces ou conservation pour implant",
+        "Toujours fermer les espaces",
+        "Toujours garder les espaces",
+        "Toujours extraire"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'La stratégie dépend de la localisation et de l'occlusion.' 🦅 Sami : 'Je vais planifier la gestion des agénésies.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q23",
+      "type": "single-choice",
+      "question": "Sami demande : 'Qu'est-ce que l'expansion maxillaire ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Une technique pour élargir le maxillaire (quad-hélix, disjoncteur)",
+        "Une extraction",
+        "Une chirurgie",
+        "Une technique de détartrage"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'L'expansion maxillaire est indiquée pour les articulés croisés et les encombrements.' 🦅 Sami : 'Je vais proposer des expansions.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q24",
+      "type": "single-choice",
+      "question": "Sami s'interroge : 'Quels sont les risques des forces orthodontiques excessives ?' Mina répond :",
+      "media": [],
+      "options": [
+        "Fractures radiculaires, récessions, résorptions",
+        "Uniquement les fractures",
+        "Uniquement les récessions",
+        "Uniquement les résorptions"
+      ],
+      "correct": 0,
+      "explanation": "🐆 Mina explique : 'Les forces excessives peuvent causer des fractures, des récessions et des résorptions.' 🦅 Sami : 'Je vais utiliser des forces adaptées.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ORTH_I1_Q25",
+      "type": "single-choice",
+      "question": "Sami, après avoir maîtrisé le diagnostic orthodontique avec Mina, dit : 'Je suis prêt à relever tous les défis !' Mina conclut : 'La maîtrise du diagnostic orthodontique est...'",
+      "media": [],
+      "options": [
+        "Une option",
+        "La base de la réussite en orthodontie",
+        "Une perte de temps",
+        "Secondaire"
+      ],
+      "correct": 1,
+      "explanation": "🐆 Mina explique : 'La maîtrise du diagnostic orthodontique est la base de la réussite en orthodontie.' 🦅 Sami : 'Je vais continuer à me former.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

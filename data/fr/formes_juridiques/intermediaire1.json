@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "formes_juridiques_intermediaire1_001",
+    "title": "Formes_juridiques - Intermédiaire 1",
+    "specialty": "FORM",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "FORM_I1_Q01",
+      "type": "single-choice",
+      "question": "Dr Mamouni hésite entre personne physique et SARL. Son patrimoine personnel est important. Dr Ibrahimi lui conseille la SARL. Selon la loi 5-96, quel est l'avantage principal de la SARL pour la protection patrimoniale ?",
+      "media": [],
+      "options": [
+        "La responsabilité est limitée aux apports",
+        "La responsabilité est illimitée mais partagée",
+        "La responsabilité est inexistante",
+        "La responsabilité est limitée à 50 % des apports"
+      ],
+      "correct": 0,
+      "explanation": "Dr Ibrahimi explique : 'En SARL, votre responsabilité est limitée à vos apports. Votre patrimoine personnel est protégé.' Dr Mamouni : 'C'est rassurant, je vais créer une SARL.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q02",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi exerce en personne physique avec un CA de 900 000 DH. Dr Mamouni lui conseille de créer une SARL. Selon le CGI, quel est le principal avantage fiscal de la SARL sur cette tranche de bénéfice ?",
+      "media": [],
+      "options": [
+        "L'IS à 10 % sur la tranche 0-300 000 DH contre IR progressif",
+        "L'exonération totale d'impôt",
+        "La CM réduite à 0,25 %",
+        "La déduction de toutes les charges personnelles"
+      ],
+      "correct": 0,
+      "explanation": "Dr Mamouni explique : 'L'IS est plus avantageux que l'IR pour les bénéfices élevés. Sur 300 000 DH, l'IS est de 30 000 DH contre environ 65 000 DH d'IR.' Dr Ibrahimi : 'Je vais créer une SARL.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q03",
+      "type": "single-choice",
+      "question": "Dr Mamouni souhaite s'associer avec 3 confrères. Dr Ibrahimi lui conseille la SARL. Selon la loi 5-96, quel est le nombre maximum d'associés dans une SARL classique ?",
+      "media": [],
+      "options": [
+        "2",
+        "10",
+        "50",
+        "100"
+      ],
+      "correct": 2,
+      "explanation": "Dr Ibrahimi explique : 'La SARL classique peut accueillir de 2 à 50 associés. Vous êtes 4, c'est parfait.' Dr Mamouni : 'La SARL est la structure idéale pour nous.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q04",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi, associé unique d'une SARL-AU, souhaite connaître les formalités de création. Dr Mamouni lui rappelle les obligations. Selon la loi 5-96, la SARL-AU doit-elle avoir des statuts ?",
+      "media": [],
+      "options": [
+        "Non, l'associé unique peut décider seul",
+        "Oui, les statuts sont obligatoires",
+        "Oui, mais uniquement pour les SARL classiques",
+        "Non, un simple acte sous seing privé suffit"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'Les statuts sont obligatoires pour toute SARL, y compris la SARL-AU. Ils fixent les règles de fonctionnement.' Dr Ibrahimi : 'Je vais faire rédiger des statuts.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q05",
+      "type": "single-choice",
+      "question": "Dr Mamouni, personne physique, a un litige avec un fournisseur. Dr Ibrahimi l'avertit des risques. Selon le droit marocain, en personne physique, qui est responsable des dettes professionnelles ?",
+      "media": [],
+      "options": [
+        "Seul le patrimoine professionnel",
+        "L'ensemble du patrimoine personnel et professionnel",
+        "Les associés de la société",
+        "L'État garant"
+      ],
+      "correct": 1,
+      "explanation": "Dr Ibrahimi explique : 'En personne physique, il y a confusion des patrimoines. Vos biens personnels peuvent être saisis.' Dr Mamouni : 'Je vais créer une SARL pour me protéger.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q06",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi a une SARL avec un capital de 10 000 DH. Dr Mamouni lui demande si le capital peut être augmenté. Selon la loi 5-96, l'augmentation de capital est-elle possible ?",
+      "media": [],
+      "options": [
+        "Non, le capital est fixe",
+        "Oui, par décision des associés",
+        "Oui, mais uniquement dans les 3 premières années",
+        "Non, sauf en cas de dissolution"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'L'augmentation de capital est possible par décision collective des associés.' Dr Ibrahimi : 'Je pourrai augmenter le capital si nécessaire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q07",
+      "type": "single-choice",
+      "question": "Dr Mamouni, gérant d'une SARL, souhaite engager la société sur un contrat important. Dr Ibrahimi lui rappelle les règles. Selon l'article 63 de la loi 5-96, quels sont les pouvoirs du gérant ?",
+      "media": [],
+      "options": [
+        "Il ne peut engager la société que pour les actes autorisés par les statuts",
+        "Il engage la société par les actes entrant dans l'objet social",
+        "Il doit obtenir l'accord de tous les associés",
+        "Il ne peut engager la société que pour des actes inférieurs à 50 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr Ibrahimi explique : 'Le gérant engage la société par les actes entrant dans l'objet social. Les clauses statutaires limitant ses pouvoirs sont inopposables aux tiers.' Dr Mamouni : 'Je peux donc signer ce contrat.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q08",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi souhaite se retirer de la SARL. Dr Mamouni l'informe sur la cession de parts. Selon la loi 5-96, la cession de parts sociales est-elle libre ?",
+      "media": [],
+      "options": [
+        "Oui, totalement libre",
+        "Non, elle est soumise à agrément si les statuts le prévoient",
+        "Oui, mais uniquement entre associés",
+        "Non, elle est interdite"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'La cession de parts peut être soumise à agrément si les statuts le prévoient. Il faut vérifier les clauses statutaires.' Dr Ibrahimi : 'Je vais consulter les statuts.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q09",
+      "type": "single-choice",
+      "question": "Dr Mamouni, personne physique, a un CA de 400 000 DH. Dr Ibrahimi lui demande de vérifier son régime d'imposition. Selon le CGI, à quel régime est-il soumis ?",
+      "media": [],
+      "options": [
+        "Au RNR",
+        "Au RNS",
+        "À la CPU",
+        "Au régime forfaitaire"
+      ],
+      "correct": 1,
+      "explanation": "Dr Ibrahimi explique : 'Pour les professions libérales, le RNS s'applique aux personnes physiques dont le CA est compris entre 250 000 et 500 000 DH.' Dr Mamouni : 'Je suis donc au RNS.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q10",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi, gérant d'une SARL, veut contracter un emprunt auprès de sa société. Dr Mamouni l'avertit des interdictions. Selon l'article 66 de la loi 5-96, est-ce autorisé ?",
+      "media": [],
+      "options": [
+        "Oui, si les associés sont d'accord",
+        "Non, l'interdiction est absolue",
+        "Oui, pour un montant inférieur à 50 000 DH",
+        "Oui, si le prêt est destiné au cabinet"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'L'article 66 interdit aux gérants de contracter des emprunts auprès de la société, sous quelque forme que ce soit.' Dr Ibrahimi : 'Je ne ferai donc pas cet emprunt.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q11",
+      "type": "single-choice",
+      "question": "Dr Mamouni a une SARL avec 5 associés. Dr Ibrahimi lui demande comment se prennent les décisions. Selon la loi 5-96, quelles décisions nécessitent l'unanimité ?",
+      "media": [],
+      "options": [
+        "Toutes les décisions",
+        "La modification des statuts",
+        "Les décisions de gestion courante",
+        "Aucune, les décisions sont prises à la majorité"
+      ],
+      "correct": 3,
+      "explanation": "Dr Ibrahimi explique : 'En SARL, les décisions sont prises à la majorité des associés, sauf si les statuts prévoient une majorité renforcée.' Dr Mamouni : 'Je vais vérifier nos statuts.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q12",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi, personne physique, souhaite créer une SARL-AU. Dr Mamouni l'informe sur les formalités. Selon la loi 5-96, la SARL-AU est-elle soumise aux mêmes obligations qu'une SARL classique ?",
+      "media": [],
+      "options": [
+        "Non, elle est plus simple",
+        "Oui, elle est soumise aux mêmes obligations",
+        "Non, elle est exonérée de certaines formalités",
+        "Oui, mais avec des délais réduits"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'La SARL-AU est soumise aux mêmes obligations qu'une SARL classique, sauf pour les assemblées générales qui sont remplacées par des décisions de l'associé unique.' Dr Ibrahimi : 'C'est une bonne option.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q13",
+      "type": "single-choice",
+      "question": "Dr Mamouni, gérant d'une SARL, souhaite créer une succursale. Dr Ibrahimi lui demande si c'est possible. Selon la loi 5-96, le gérant peut-il créer une succursale sans autorisation des associés ?",
+      "media": [],
+      "options": [
+        "Non, il faut une décision collective",
+        "Oui, c'est un acte de gestion ordinaire",
+        "Oui, mais uniquement si les statuts l'autorisent",
+        "Non, la création de succursale est interdite"
+      ],
+      "correct": 1,
+      "explanation": "Dr Ibrahimi explique : 'La création d'une succursale est un acte de gestion ordinaire qui entre dans les pouvoirs du gérant.' Dr Mamouni : 'Je vais créer cette succursale.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q14",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi a une SARL avec un bénéfice de 400 000 DH. Dr Mamouni l'aide à calculer l'IS. Selon le barème 2026, quel est le montant de l'IS dû ?",
+      "media": [],
+      "options": [
+        "40 000 DH",
+        "50 000 DH",
+        "80 000 DH",
+        "100 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'L'IS se calcule par tranches : 300 000 × 10 % = 30 000 DH, 100 000 × 20 % = 20 000 DH. Total = 50 000 DH.' Dr Ibrahimi : 'Je vais prévoir ce montant.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q15",
+      "type": "single-choice",
+      "question": "Dr Mamouni, associé unique d'une SARL-AU, décède. Dr Ibrahimi l'informe sur les droits des héritiers. Selon les amendements de 2024, les héritiers disposent de combien de jours pour demander la désignation d'un mandataire ?",
+      "media": [],
+      "options": [
+        "30 jours",
+        "60 jours",
+        "90 jours",
+        "120 jours"
+      ],
+      "correct": 1,
+      "explanation": "Dr Ibrahimi explique : 'Les amendements de 2024 prévoient un délai de 60 jours pour demander la désignation d'un mandataire.' Dr Mamouni : 'Je vais informer mes héritiers de ce délai.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q16",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi, personne physique, a un déficit fiscal de 60 000 DH. Dr Mamouni lui rappelle les règles de report. Selon le RNR, sur combien d'années peut-il reporter ce déficit ?",
+      "media": [],
+      "options": [
+        "2 ans",
+        "3 ans",
+        "4 ans",
+        "5 ans"
+      ],
+      "correct": 2,
+      "explanation": "Dr Mamouni explique : 'Dans le cadre du RNR, le déficit est reportable sur les bénéfices des quatre années suivantes.' Dr Ibrahimi : 'Je vais suivre ce report.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q17",
+      "type": "single-choice",
+      "question": "Dr Mamouni, gérant d'une SARL, souhaite se rémunérer. Dr Ibrahimi lui demande comment est fixée sa rémunération. Selon la loi 5-96, la rémunération du gérant est fixée par :",
+      "media": [],
+      "options": [
+        "Les statuts de manière définitive",
+        "Une décision collective ordinaire des associés",
+        "Un arrêté ministériel",
+        "Le tribunal de commerce"
+      ],
+      "correct": 1,
+      "explanation": "Dr Ibrahimi explique : 'La rémunération des gérants est arrêtée par décision collective ordinaire des associés.' Dr Mamouni : 'Je vais proposer ma rémunération aux associés.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q18",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi, personne physique, a un CA de 1 200 000 DH. Dr Mamouni lui conseille de créer une SARL. Quel est le principal inconvénient de la personne physique pour un CA élevé ?",
+      "media": [],
+      "options": [
+        "Aucun inconvénient",
+        "Le taux d'IR peut atteindre 37 %",
+        "L'impossibilité d'embaucher",
+        "L'obligation de facturer la TVA"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'Le principal inconvénient de la personne physique est le taux d'IR progressif qui peut atteindre 37 %.' Dr Ibrahimi : 'Je vais créer une SARL pour optimiser.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q19",
+      "type": "single-choice",
+      "question": "Dr Mamouni, associé d'une SARL, souhaite vendre ses parts. Dr Ibrahimi lui rappelle les règles. Selon la loi 5-96, la cession de parts à un tiers est-elle soumise à agrément ?",
+      "media": [],
+      "options": [
+        "Non, elle est totalement libre",
+        "Oui, si les statuts prévoient une clause d'agrément",
+        "Oui, automatiquement pour toute cession",
+        "Non, sauf si la cession est inférieure à 50 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Dr Ibrahimi explique : 'La cession de parts peut être soumise à agrément si les statuts le prévoient. Il faut consulter les statuts.' Dr Mamouni : 'Je vais vérifier nos statuts.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q20",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi a une SARL avec un capital de 100 000 DH. Dr Mamouni lui demande si le capital peut être réduit. Selon la loi 5-96, la réduction de capital est-elle possible ?",
+      "media": [],
+      "options": [
+        "Non, le capital est fixe",
+        "Oui, par décision des associés",
+        "Oui, mais uniquement en cas de pertes",
+        "Non, sauf en cas de dissolution"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'La réduction de capital est possible par décision des associés, notamment en cas de pertes.' Dr Ibrahimi : 'Je pourrai réduire le capital si nécessaire.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q21",
+      "type": "single-choice",
+      "question": "Dr Mamouni, gérant d'une SARL, a un conflit avec un associé. Dr Ibrahimi lui conseille de consulter les statuts. Selon la loi 5-96, les statuts peuvent-ils prévoir des clauses de règlement des conflits ?",
+      "media": [],
+      "options": [
+        "Non, la loi ne le permet pas",
+        "Oui, les statuts peuvent prévoir des clauses de règlement",
+        "Oui, mais uniquement pour les SARL-AU",
+        "Non, seuls les tribunaux sont compétents"
+      ],
+      "correct": 1,
+      "explanation": "Dr Ibrahimi explique : 'Les statuts peuvent prévoir des clauses de règlement des conflits entre associés.' Dr Mamouni : 'Je vais consulter nos statuts.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q22",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi, personne physique, souhaite embaucher son premier salarié. Dr Mamouni lui rappelle les obligations. Selon le Code du travail, quelles sont les déclarations obligatoires ?",
+      "media": [],
+      "options": [
+        "Déclaration à la CNSS uniquement",
+        "Déclaration à la CNSS et à l'AMO",
+        "Déclaration à la CNSS, AMO et CNOPS",
+        "Déclaration au ministère du travail"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'L'employeur doit déclarer son salarié à la CNSS (assurance sociale) et à l'AMO (assurance maladie).' Dr Ibrahimi : 'Je vais faire les déclarations nécessaires.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q23",
+      "type": "single-choice",
+      "question": "Dr Mamouni, associé unique d'une SARL-AU, souhaite dissoudre sa société. Dr Ibrahimi l'informe sur la procédure. Selon la loi 5-96, l'associé unique peut-il dissoudre la société seul ?",
+      "media": [],
+      "options": [
+        "Non, il faut l'accord du tribunal",
+        "Oui, il peut décider seul de la dissolution",
+        "Oui, mais uniquement après 5 ans d'activité",
+        "Non, il faut une assemblée générale"
+      ],
+      "correct": 1,
+      "explanation": "Dr Ibrahimi explique : 'L'associé unique exerce les pouvoirs dévolus à l'ensemble des associés. Il peut donc décider seul de la dissolution.' Dr Mamouni : 'Je peux donc dissoudre quand je veux.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q24",
+      "type": "single-choice",
+      "question": "Dr Ibrahimi a une SARL avec 3 associés. Dr Mamouni lui demande comment se prennent les décisions extraordinaires. Selon la loi 5-96, quel quorum est requis pour les décisions extraordinaires ?",
+      "media": [],
+      "options": [
+        "La majorité simple",
+        "Les trois quarts des voix",
+        "La majorité absolue",
+        "L'unanimité"
+      ],
+      "correct": 1,
+      "explanation": "Dr Mamouni explique : 'Les décisions extraordinaires (modification des statuts, dissolution) nécessitent un quorum des trois quarts des voix.' Dr Ibrahimi : 'Je vais vérifier nos statuts.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_I1_Q25",
+      "type": "single-choice",
+      "question": "Dr Mamouni, après avoir choisi la SARL avec Dr Ibrahimi, reçoit ses félicitations. Quelle est la prochaine étape pour Dr Mamouni ?",
+      "media": [],
+      "options": [
+        "Devenir un expert en stratégie juridique dentaire",
+        "Prendre sa retraite",
+        "Changer de spécialité",
+        "Oublier les bonnes pratiques"
+      ],
+      "correct": 0,
+      "explanation": "Dr Ibrahimi explique : 'La maîtrise des formes juridiques est une compétence précieuse. Devenir un expert en stratégie juridique est la prochaine étape.' Dr Mamouni : 'Je vais me former au droit des sociétés.'",
+      "difficulty": "intermediaire",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

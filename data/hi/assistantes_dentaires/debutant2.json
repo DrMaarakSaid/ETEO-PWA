@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "assistantes_dentaires_debutant2_001",
+    "title": "Dental Assistants - Beginner 2",
+    "specialty": "ASSI",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "ASSI_D2_Q01",
+      "type": "single-choice",
+      "question": "Dr Tarik asked his assistant to prepare a tray for an extraction, but she forgot to include an essential instrument. During the procedure, Dr Tarik had to interrupt the treatment to search for the instrument. According to professional responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible for the error",
+        "Dr Tarik is responsible because he should have checked the tray before starting",
+        "Responsibility is shared between the dentist and the assistant",
+        "No fault is involved because the error is minor"
+      ],
+      "correct": 2,
+      "explanation": "Responsibility is shared: the assistant made a preparation error, but the dentist has a duty to verify that everything is ready before starting an invasive procedure.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q02",
+      "type": "single-choice",
+      "question": "Dr Sami entrusted his assistant with the task of sterilizing instruments, but she forgot to start the sterilization cycle. A patient was treated with non-sterilized instruments. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible because she forgot to start the cycle",
+        "Dr Sami is solely responsible because he delegated a critical task",
+        "Dr Sami is responsible because he has the obligation to control his assistant's work",
+        "No responsibility is engaged because the patient did not have an infection"
+      ],
+      "correct": 2,
+      "explanation": "The dentist is responsible for the quality of care provided in his practice, including sterilization. He has the obligation to control his assistant's work and ensure that protocols are respected.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q03",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant incorrectly recorded a patient's contact details, causing a delay in the transmission of test results. According to the assistant's obligations, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is not responsible because the error is administrative",
+        "The assistant is responsible for the quality of the information entered",
+        "Dr Tarik is solely responsible because he delegated this task",
+        "No fault is engaged because the results arrived"
+      ],
+      "correct": 1,
+      "explanation": "The dental assistant has a duty to correctly enter patient information, as any error can have consequences on patient care. Administrative rigor is a professional obligation.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q04",
+      "type": "single-choice",
+      "question": "Dr Sami asked his assistant to schedule an appointment for a patient, but she wrote down the wrong date, causing a delay in treatment. According to patient relationship management, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible for the scheduling error",
+        "Dr Sami is responsible because he should have checked the schedule",
+        "Responsibility is shared, but the dentist must handle the patient's complaint",
+        "No fault is engaged because the error is minor"
+      ],
+      "correct": 2,
+      "explanation": "The assistant made an error, but it is the dentist who, as the practice manager, must handle the relationship with the patient and ensure patient satisfaction.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q05",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant received a complaint from a patient regarding an unjustified fee overcharge. She received the patient in the waiting room without informing them of the bill. According to obligations regarding financial transparency, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is not responsible for financial matters",
+        "The assistant has a duty to inform the patient about fees before treatment",
+        "Dr Tarik is solely responsible because he sets the fees",
+        "The patient must inquire about fees themselves"
+      ],
+      "correct": 1,
+      "explanation": "The dental assistant has a duty of information towards patients, particularly regarding fees. She must ensure that the patient is informed of the cost of treatment before it is performed.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q06",
+      "type": "single-choice",
+      "question": "Dr Sami was sued by a patient who developed an infection after an extraction. The assistant signed the sterilization form without having checked the indicators. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible because she falsified the document",
+        "Dr Sami is responsible because he delegated sterilization control",
+        "Responsibility is shared, as the dentist has a duty to control the process",
+        "No responsibility is engaged"
+      ],
+      "correct": 2,
+      "explanation": "Responsibility is shared: the assistant signed without checking, but the dentist has the obligation to control the sterilization process and ensure that protocols are respected before any intervention.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q07",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant refused to perform a task she considered dangerous (preparing a chemical product without protective equipment). According to occupational safety, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is at fault because she must obey the dentist",
+        "The assistant has the right to refuse a dangerous task if safety conditions are not met",
+        "Dr Tarik can dismiss her for insubordination",
+        "The task is not dangerous"
+      ],
+      "correct": 1,
+      "explanation": "Any employee has the right to refuse a task they consider dangerous to their health or safety if protection conditions are not met. The employer has the obligation to provide necessary protective equipment.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q08",
+      "type": "single-choice",
+      "question": "Dr Sami gave an instruction to his assistant that goes against good hygiene practices (not changing gloves between two patients). According to deontology, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant must obey the dentist's instruction",
+        "The assistant must refuse to apply an instruction contrary to good practices",
+        "The assistant can apply the instruction but inform the Order",
+        "The instruction is valid"
+      ],
+      "correct": 1,
+      "explanation": "The dental assistant has a duty towards patient safety. She must refuse to apply any instruction contrary to good hygiene and safety practices, even if it comes from the dentist.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q09",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant accidentally disclosed confidential medical information about a patient to a third party. According to professional confidentiality, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is not bound by professional confidentiality",
+        "The assistant is bound by professional confidentiality like the dentist",
+        "Only the dentist is responsible for professional confidentiality",
+        "The disclosure is excusable because it was accidental"
+      ],
+      "correct": 1,
+      "explanation": "The dental assistant is bound by professional confidentiality, like all practice staff. Accidental disclosure of confidential information engages the assistant's and the dentist's responsibility.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q10",
+      "type": "single-choice",
+      "question": "Dr Sami asked his assistant to sign a care certificate for a patient she did not assist. According to deontology, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant can sign because she trusts the dentist",
+        "The assistant must refuse to sign a document she cannot authenticate",
+        "The assistant can sign if the dentist asks her to",
+        "The signature is not important"
+      ],
+      "correct": 1,
+      "explanation": "The dental assistant must never sign a document she cannot personally authenticate. She must not participate in fraud or false declaration, under penalty of engaging her responsibility.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q11",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant noticed that instruments were missing after a procedure. She did not report the loss. A patient was exposed to an infectious risk. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is responsible because she failed to report the loss",
+        "Dr Tarik is responsible because he did not check the equipment",
+        "Responsibility is shared, but failing to report is a serious fault",
+        "No fault is engaged"
+      ],
+      "correct": 2,
+      "explanation": "The assistant has a duty to report any anomaly (missing instruments) to the dentist. Failing to report a loss that exposes the patient to risk is a serious fault shared with the dentist who should have checked.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q12",
+      "type": "single-choice",
+      "question": "Dr Sami was implicated by a patient who had a complication after treatment. The assistant who assisted the procedure claims to have followed all procedures. According to responsibility in case of litigation, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is not concerned by the litigation",
+        "The assistant can be called as a witness but is not responsible",
+        "The assistant can be implicated if her negligence is proven",
+        "Only the dentist is responsible for complications"
+      ],
+      "correct": 2,
+      "explanation": "In case of litigation, the assistant can be implicated if her negligence (preparation error, poor sterilization, etc.) is proven and contributed to the complication.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q13",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant refused to perform a task she had not learned, for fear of doing it wrong. According to responsibilities, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is at fault because she must learn on the job",
+        "The assistant is right to refuse because she does not master the task",
+        "Dr Tarik can dismiss her for refusal to work",
+        "The task is not dangerous"
+      ],
+      "correct": 1,
+      "explanation": "The dental assistant has the right to refuse to perform a task she does not master, because it engages her responsibility. The dentist has the obligation to train his staff and ensure their competence.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q14",
+      "type": "single-choice",
+      "question": "Dr Sami noticed that his assistant used expired disinfection products. According to hygiene obligations, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible because she used the products",
+        "Dr Sami is responsible because he must control stocks",
+        "Responsibility is shared, as the dentist must ensure the validity of products",
+        "Expired products are not dangerous"
+      ],
+      "correct": 2,
+      "explanation": "The assistant used the products, but the dentist has the obligation to ensure that stocks are valid and that protocols are respected. Responsibility is shared.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q15",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant incorrectly positioned the patient on the chair, causing cervical pain. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible because she positioned the patient",
+        "Dr Tarik is responsible because he must supervise the positioning",
+        "Responsibility is shared, as the dentist must check the patient's position before the procedure",
+        "No fault is engaged"
+      ],
+      "correct": 2,
+      "explanation": "Patient positioning is an important task that engages the assistant's responsibility, but the dentist must check the position before starting the procedure. Responsibility is therefore shared.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q16",
+      "type": "single-choice",
+      "question": "Dr Sami asked his assistant to take a radiograph without protection because 'it was urgent'. According to radiation protection, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant must obey the dentist's instruction",
+        "The assistant must refuse and remind the radiation protection rules",
+        "The assistant can take the X-ray but inform the Order",
+        "The urgent X-ray justifies the lack of protection"
+      ],
+      "correct": 1,
+      "explanation": "Radiation protection is a legal obligation. The assistant has a duty to refuse to take an X-ray without protection, even in an emergency, because it endangers the patient's health.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q17",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant noticed that Dr Tarik billed for an act he did not perform. According to deontology, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant must remain silent",
+        "The assistant must report this fraud to the Order or authorities",
+        "The assistant can participate in the billing without problem",
+        "Billing does not concern the assistant"
+      ],
+      "correct": 1,
+      "explanation": "The dental assistant has a duty of integrity. If she notices fraud, she must report it to the competent authorities. Participation in fraud engages her responsibility.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q18",
+      "type": "single-choice",
+      "question": "Dr Sami was sued by a patient for a diagnostic error. The assistant claims to have correctly transmitted all information to the dentist. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is not responsible for the diagnosis",
+        "The assistant can be responsible if she failed to transmit information",
+        "Only the dentist is responsible for the diagnosis",
+        "The patient is responsible for their own diagnosis"
+      ],
+      "correct": 1,
+      "explanation": "The assistant is not responsible for the diagnosis itself, but she can be responsible if she failed to transmit important information to the dentist (e.g., medical history, allergy).",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q19",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant lost a patient file containing medical information. According to data protection, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible for the loss",
+        "Dr Tarik is responsible because he delegated file management",
+        "Responsibility is shared, but the loss engages the practice's responsibility",
+        "Losing a file is not serious"
+      ],
+      "correct": 2,
+      "explanation": "The loss of a patient file engages the practice's responsibility. The assistant has a duty of diligence, but the dentist is responsible for data management in his practice.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q20",
+      "type": "single-choice",
+      "question": "Dr Sami asked his assistant to falsify a medical document. According to deontology, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant must obey the dentist's request",
+        "The assistant must refuse and report the fraud attempt",
+        "The assistant can participate in the falsification",
+        "Falsification is acceptable in some cases"
+      ],
+      "correct": 1,
+      "explanation": "The dental assistant has a duty of integrity. She must refuse any attempt to falsify documents and report this practice to the competent authorities.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q21",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant received an emergency patient while Dr Tarik was late. She began preparing the patient without waiting for the dentist. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant can start emergency care",
+        "The assistant must not start care without the dentist's presence",
+        "The assistant can provide first aid",
+        "The patient can be treated without the dentist"
+      ],
+      "correct": 1,
+      "explanation": "The dental assistant cannot perform medical acts without the dentist's presence. She cannot treat the patient, even in an emergency, as this constitutes illegal practice of medicine.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q22",
+      "type": "single-choice",
+      "question": "Dr Sami was implicated for a lack of patient information. The assistant claims to have given the information leaflet to the patient. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is responsible because she gave the leaflet",
+        "Dr Sami is responsible because it is he who must inform the patient",
+        "Responsibility is shared, but it is the dentist who must ensure that the information was understood",
+        "The patient is responsible for reading the leaflet"
+      ],
+      "correct": 2,
+      "explanation": "The assistant can contribute to information, but it is the dentist who must ensure that the patient understood the risks and alternatives before giving consent.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q23",
+      "type": "single-choice",
+      "question": "Dr Tarik's assistant improperly cleaned the dental unit's water circuit, causing bacterial contamination. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible because she cleaned improperly",
+        "Dr Tarik is responsible because he must control maintenance",
+        "Responsibility is shared, as the dentist must ensure water quality",
+        "Contamination is not serious"
+      ],
+      "correct": 2,
+      "explanation": "The assistant has a duty of diligence, but the dentist is responsible for the quality of water used in his practice. He must control the maintenance of water circuits.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q24",
+      "type": "single-choice",
+      "question": "Dr Sami asked his assistant to replace a defective instrument, but she used a non-sterile replacement instrument. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible for using a non-sterile instrument",
+        "Dr Sami is responsible because he gave the instruction to replace the instrument",
+        "Responsibility is shared, as the dentist has a duty to verify the sterility of instruments",
+        "The non-sterile instrument is acceptable"
+      ],
+      "correct": 2,
+      "explanation": "The assistant must check the sterility of instruments before using them, but the dentist has the obligation to ensure that all instruments used are sterile. Responsibility is shared.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q25",
+      "type": "single-choice",
+      "question": "Dr Tarik was sued for a medication error. The assistant had prepared an anesthetic product but did not check the expiration date. According to responsibility, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant is solely responsible for the error",
+        "Dr Tarik is responsible because he must check before injecting",
+        "Responsibility is shared, as the dentist has the obligation to check before injection",
+        "The expiration date is not important"
+      ],
+      "correct": 2,
+      "explanation": "The assistant prepared the product, but the dentist has the obligation to check the product before injecting it to the patient. Responsibility is therefore shared.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "ASSI_D2_Q26",
+      "type": "single-choice",
+      "question": "Dr Sami's assistant witnessed a violent verbal exchange between Dr Sami and a patient. According to deontology, what is the situation?",
+      "media": [],
+      "options": [
+        "The assistant must take the side of Dr Sami",
+        "The assistant can intervene to calm the conflict, without taking sides",
+        "The assistant must remain silent",
+        "The assistant must take the patient's side"
+      ],
+      "correct": 1,
+      "explanation": "The assistant can play a mediation role in a conflict, remaining neutral and seeking to ease tensions. However, she must not take sides or interfere in clinical decisions.",
+      "difficulty": "easy",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

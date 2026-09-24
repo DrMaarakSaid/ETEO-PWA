@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "formes_juridiques_debutant2_001",
+    "title": "Formas Jurídicas – Principiante 2",
+    "specialty": "FORM",
+    "language": "fr",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1250
+  },
+  "questions": [
+    {
+      "id": "FORM_D2_Q01",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi, único socio de una SARL-AU, fallece repentinamente. Según las modificaciones de 2024 de la ley 5-96, ¿qué deben hacer sus herederos?",
+      "media": [],
+      "options": [
+        "Liquidar automáticamente la sociedad en un plazo de 30 días",
+        "Solicitar al tribunal el nombramiento de un representante en un plazo de 60 días",
+        "Transferir las participaciones sin ninguna formalidad",
+        "Vender el consultorio a un colega en un plazo de 15 días"
+      ],
+      "correct": 1,
+      "explanation": "Las modificaciones de 2024 (leyes 44.24 y 45.24) especifican que en caso de fallecimiento del único socio, el heredero puede solicitar al presidente del tribunal el nombramiento de un representante para convocar una asamblea general en un plazo de 60 días.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q02",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri es gerente de una SARL clásica. Quiere pedir un préstamo a su sociedad. Según el artículo 66 de la ley 5-96, ¿está permitido?",
+      "media": [],
+      "options": [
+        "Sí, si la asamblea general de socios lo autoriza",
+        "No, la prohibición es absoluta y se extiende a los familiares cercanos",
+        "Sí, si se trata de un préstamo inferior a 50 000 DH",
+        "No, pero su cónyuge puede hacerlo en su lugar"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 66 prohíbe a los gerentes y a los socios personas físicas pedir préstamos a la sociedad en cualquier forma. Esta prohibición también se extiende a los cónyuges, padres y familiares hasta el segundo grado.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q03",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi es gerente de una SARL. Quiere firmar un contrato de alquiler de 5 años en nombre de la sociedad. Una cláusula de los estatutos le obliga a obtener el consentimiento de los socios para cualquier contrato de más de 2 años. ¿Qué ocurrirá si firma de todos modos?",
+      "media": [],
+      "options": [
+        "El contrato es automáticamente nulo",
+        "El gerente incurre en responsabilidad civil frente a los socios",
+        "La sociedad se liquida automáticamente",
+        "El contrato se convierte en un contrato personal del gerente"
+      ],
+      "correct": 1,
+      "explanation": "Según el artículo 8 de la ley 5-96, en caso de infracción de una restricción estatutaria, el gerente incurre en responsabilidad civil frente a los socios. Las cláusulas estatutarias que limitan las facultades de los gerentes son inoponibles a terceros.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q04",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri es el único socio de una SARL-AU. En caso de fallecimiento, el heredero solicita el nombramiento de un representante. ¿Cuál es el plazo para este procedimiento?",
+      "media": [],
+      "options": [
+        "30 días desde el fallecimiento",
+        "60 días desde el fallecimiento",
+        "90 días desde el fallecimiento",
+        "6 meses desde el fallecimiento"
+      ],
+      "correct": 1,
+      "explanation": "La modificación de 2024 del artículo 85 de la ley 5-96 prevé un plazo de 60 días desde el fallecimiento para solicitar el nombramiento de un representante.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q05",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi, como persona física, quiere abrir una cuenta bancaria para su consultorio. Según el artículo 18 del Código de Comercio, ¿qué debe hacer?",
+      "media": [],
+      "options": [
+        "Usar su cuenta personal para simplificar la gestión",
+        "Abrir una cuenta profesional separada",
+        "Abrir una cuenta conjunta con su cónyuge",
+        "No hay obligación, puede trabajar en efectivo"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 18 del Código de Comercio obliga a cualquier comerciante a abrir una cuenta bancaria profesional para las necesidades de su comercio.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q06",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri tiene una SARL. Según el artículo 63 de la ley 5-96, ¿cuáles son las facultades del gerente frente a terceros?",
+      "media": [],
+      "options": [
+        "Solo puede obligar a la sociedad con actos expresamente autorizados por los estatutos",
+        "Obliga a la sociedad con actos que forman parte del objeto social",
+        "Debe obtener el consentimiento de todos los socios para cada acto",
+        "Solo puede obligar a la sociedad con actos de menos de 100 000 DH"
+      ],
+      "correct": 1,
+      "explanation": "Según el artículo 63, el gerente obliga a la sociedad con actos que forman parte del objeto social. Las cláusulas estatutarias que limitan sus facultades son inoponibles a terceros.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q07",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi es gerente de una SARL junto con su colega. Uno de ellos se opone a un contrato antes de su firma. Según la ley 5-96, ¿es esta oposición oponible a terceros?",
+      "media": [],
+      "options": [
+        "Sí, si la oposición se hace por escrito",
+        "No, la oposición no es oponible a terceros",
+        "Sí, si el tercero tenía conocimiento de ello",
+        "No, si el gerente es socio mayoritario"
+      ],
+      "correct": 1,
+      "explanation": "En caso de varios gerentes, la oposición de un gerente a los actos de otro no es oponible a terceros, a menos que se demuestre que tenían conocimiento de ello.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q08",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri, como persona física, está sujeto al Código de Comercio. En caso de dificultades financieras, ¿cuál es el principal riesgo?",
+      "media": [],
+      "options": [
+        "La liquidación automática de su consultorio",
+        "El embargo de su patrimonio personal por parte de los acreedores",
+        "La exclusión del registro del Consejo",
+        "La prohibición de ejercer durante 5 años"
+      ],
+      "correct": 1,
+      "explanation": "Como persona física, no hay distinción entre el patrimonio profesional y el personal. Los acreedores pueden embargar todos los bienes del dentista, incluido su patrimonio personal.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q09",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi, único socio de una SARL-AU, fallece. Sus herederos no hacen nada durante 60 días. Según la ley, ¿cuál es la consecuencia prevista?",
+      "media": [],
+      "options": [
+        "La sociedad se liquida automáticamente",
+        "La sociedad continúa su actividad sin cambios",
+        "La liquidación de la sociedad es una posible consecuencia de la inacción",
+        "Las participaciones se transfieren al cónyuge supérstite"
+      ],
+      "correct": 2,
+      "explanation": "La propuesta de modificación no prevé directamente una sanción por la inacción de los herederos durante 60 días, pero la liquidación de la sociedad es una posible consecuencia.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q10",
+      "type": "single-choice",
+      "question": "Según el artículo 6 del Código de Comercio, ¿es el cirujano-dentista un comerciante en el sentido comercial del término?",
+      "media": [],
+      "options": [
+        "Sí, porque ejerce una actividad lucrativa",
+        "No, los dentistas no están mencionados en el artículo 6",
+        "Sí, porque está sujeto al impuesto profesional",
+        "No, porque no compra para revender en el mismo estado"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 6 del Código de Comercio define los actos de comercio por su naturaleza. La actividad del dentista como profesión liberal médica no se menciona allí. El dentista no es comerciante en el sentido comercial, pero está sujeto al Código de Comercio en cuanto a sus obligaciones formales.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q11",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri tiene una SARL clásica con 3 socios. Uno de los socios quiere transferir sus participaciones a un colega. Según la ley 5-96, ¿qué regla se aplica?",
+      "media": [],
+      "options": [
+        "La transferencia es libre sin condiciones",
+        "La transferencia está sujeta a la aprobación de los socios si los estatutos lo prevén",
+        "La transferencia está prohibida durante los primeros 5 años",
+        "La transferencia es automática sin formalidades"
+      ],
+      "correct": 1,
+      "explanation": "La ley 5-96 permite a los socios incluir en los estatutos cláusulas de aprobación de la transferencia de participaciones. La libertad de transferencia no es absoluta en la SARL.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q12",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi, como persona física, tiene un volumen de negocios de 250 000 DH. Según el Código General de Impuestos, ¿qué régimen fiscal se le aplica?",
+      "media": [],
+      "options": [
+        "Régimen del resultado neto real (RNR)",
+        "Régimen del resultado neto simplificado (RNS)",
+        "Régimen de la cotización profesional única (CPU)",
+        "Régimen fijo"
+      ],
+      "correct": 1,
+      "explanation": "Para las profesiones liberales, el RNS se aplica a las personas físicas con un volumen de negocios de 250 000 a 500 000 DH.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q13",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri, único socio de una SARL-AU, quiere contratar a su hijo. Según las reglas de buena gestión, ¿qué debe verificar?",
+      "media": [],
+      "options": [
+        "Nada, la SARL-AU ofrece total libertad de contratación",
+        "El cumplimiento del Código de Trabajo y las reglas de conflicto de intereses",
+        "La obligación de declarar la contratación al Consejo de Dentistas",
+        "La autorización previa del tribunal de comercio"
+      ],
+      "correct": 1,
+      "explanation": "Incluso en una SARL-AU, la contratación de un familiar debe cumplir con el Código de Trabajo y evitar cualquier conflicto de intereses, especialmente en lo que respecta a la fijación del salario.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q14",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi, gerente de una SARL, quiere crear una sucursal. Según la ley 5-96, ¿cuál es la regla?",
+      "media": [],
+      "options": [
+        "Puede hacerlo libremente sin autorización",
+        "Debe obtener una decisión colectiva de los socios",
+        "Debe solicitar la autorización del tribunal",
+        "La creación de una sucursal está prohibida en la SARL"
+      ],
+      "correct": 0,
+      "explanation": "El gerente de una SARL tiene las más amplias facultades para actuar en nombre de la sociedad. La creación de una sucursal es un acto de gestión ordinario que entra en sus atribuciones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q15",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri, como persona física, está sujeto al régimen BNC. ¿Puede deducir los gastos relacionados con su vehículo personal?",
+      "media": [],
+      "options": [
+        "Sí, totalmente, si se utiliza para el consultorio",
+        "Solo la parte profesional, debidamente justificada",
+        "No, los gastos de vehículo nunca son deducibles",
+        "Sí, si el vehículo está registrado a su nombre"
+      ],
+      "correct": 1,
+      "explanation": "En el BNC, solo se deducen los gastos incurridos para las necesidades de la actividad profesional. La parte personal debe separarse de la parte profesional.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q16",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi, socio de una SARL, quiere recibir una remuneración. Según la ley 5-96, ¿cómo se determina?",
+      "media": [],
+      "options": [
+        "La fija libremente el gerente",
+        "La fija una decisión colectiva ordinaria de los socios",
+        "La fija un decreto ministerial",
+        "La fija definitivamente los estatutos"
+      ],
+      "correct": 1,
+      "explanation": "Los gerentes pueden recibir una remuneración, cuyas condiciones se determinan por decisión colectiva ordinaria de los socios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q17",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri, como persona física, ¿está sujeto al impuesto sobre sociedades (IS)?",
+      "media": [],
+      "options": [
+        "Sí, como cualquier profesional liberal",
+        "No, está sujeto al impuesto sobre la renta (IR)",
+        "Sí, si obtiene beneficios superiores a 200 000 DH",
+        "No, los dentistas están exentos de impuestos"
+      ],
+      "correct": 1,
+      "explanation": "Las personas físicas que ejercen por cuenta propia están sujetas al impuesto sobre la renta (IR), categoría BNC. El IS solo afecta a las personas jurídicas.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q18",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi, único socio de una SARL-AU, fallece. Sus herederos quieren continuar la actividad. Según la ley 5-96 modificada, ¿qué deben hacer?",
+      "media": [],
+      "options": [
+        "Nada, asumen automáticamente la gestión",
+        "Solicitar al tribunal el nombramiento de un representante para convocar una asamblea general",
+        "Crear una nueva sociedad en un plazo de 30 días",
+        "Vender las participaciones a un colega en un plazo de 15 días"
+      ],
+      "correct": 1,
+      "explanation": "Las modificaciones de 2024 del artículo 85 permiten a los herederos o sucesores solicitar al presidente del tribunal competente el nombramiento de un representante para celebrar una asamblea general y renovar los estatutos.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q19",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri, gerente de una SARL, quiere comprar un edificio. Según la ley 5-96, ¿este tipo de operación requiere la aprobación de los socios?",
+      "media": [],
+      "options": [
+        "Sí, si los estatutos lo prevén",
+        "No, el gerente tiene todas las facultades",
+        "Sí, es una decisión extraordinaria obligatoria",
+        "No, la compra de inmuebles está prohibida en la SARL"
+      ],
+      "correct": 0,
+      "explanation": "El gerente tiene las más amplias facultades para actuar en cualquier circunstancia en nombre de la sociedad. Sin embargo, los estatutos pueden limitar estas facultades, exigiendo el consentimiento previo de los socios para ciertas operaciones.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q20",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi, como persona física, tiene un volumen de negocios de 800 000 DH. ¿Cuál es el tipo de su contribución mínima?",
+      "media": [],
+      "options": [
+        "0,25 %",
+        "0,50 %",
+        "4 %",
+        "6 %"
+      ],
+      "correct": 3,
+      "explanation": "Para las personas físicas sujetas al IR, la CM se calcula al tipo del 6 % del volumen de negocios.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q21",
+      "type": "single-choice",
+      "question": "Según el Código de Deontología, ¿puede el Dr. Zemouri hacer publicidad de su consultorio utilizando descuentos comerciales?",
+      "media": [],
+      "options": [
+        "Sí, para atraer nuevos pacientes",
+        "No, la publicidad comercial está prohibida",
+        "Sí, si está aprobada por el Consejo",
+        "No, pero puede publicar ofertas en redes sociales"
+      ],
+      "correct": 1,
+      "explanation": "El Código de Deontología prohíbe cualquier publicidad comercial. El dentista no puede recurrir a prácticas mercantiles como descuentos para retener pacientes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q22",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi es gerente de una SARL. Según el artículo 66 de la ley 5-96, ¿puede obtener un aval de la sociedad para un crédito personal?",
+      "media": [],
+      "options": [
+        "Sí, si los socios están de acuerdo",
+        "No, esta prohibición es absoluta",
+        "Sí, por un importe inferior a 50 000 DH",
+        "Sí, si el crédito está destinado al consultorio"
+      ],
+      "correct": 1,
+      "explanation": "El artículo 66 prohíbe a los gerentes obtener un aval o endoso de la sociedad para sus obligaciones frente a terceros, cualquiera que sea el importe.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q23",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri, como persona física, tiene una pérdida fiscal de 50 000 DH. Según el régimen RNR, ¿durante cuántos años puede compensarla?",
+      "media": [],
+      "options": [
+        "2 años",
+        "3 años",
+        "4 años",
+        "5 años"
+      ],
+      "correct": 2,
+      "explanation": "En el marco del RNR, la pérdida se compensa con los beneficios de los cuatro años siguientes.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q24",
+      "type": "single-choice",
+      "question": "El Dr. Meknassi, único socio de una SARL-AU, quiere liquidar su sociedad. Según la ley 5-96, ¿cuál es el procedimiento?",
+      "media": [],
+      "options": [
+        "Puede hacerlo por simple decisión personal",
+        "Debe convocar una asamblea general extraordinaria",
+        "Debe obtener la aprobación del tribunal de comercio",
+        "Debe esperar el final del ejercicio fiscal en curso"
+      ],
+      "correct": 0,
+      "explanation": "El único socio ejerce las facultades conferidas a todos los socios. Puede decidir unilateralmente la liquidación de la sociedad sin convocar una asamblea.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "FORM_D2_Q25",
+      "type": "single-choice",
+      "question": "El Dr. Zemouri, como persona física, quiere crear una SARL con 3 colegas. ¿Cuál es la condición actual de capital mínimo?",
+      "media": [],
+      "options": [
+        "100 000 DH",
+        "50 000 DH",
+        "10 000 DH",
+        "1 dírham"
+      ],
+      "correct": 3,
+      "explanation": "Desde la adopción de la ley 24-10, el capital social se fija libremente por los socios. Un capital simbólico de 1 dírham es posible.",
+      "difficulty": "fácil",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}

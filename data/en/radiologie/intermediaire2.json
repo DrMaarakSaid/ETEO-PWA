@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "2.1",
+  "metadata": {
+    "id": "radiologie_intermediaire2_001",
+    "title": "Radiology - Intermediate 2",
+    "specialty": "RADI",
+    "language": "en",
+    "version": "2.0",
+    "author": "Dr. SAID MAARAK",
+    "status": "published",
+    "estimatedDuration": 1300
+  },
+  "questions": [
+    {
+      "id": "RADI_I2_Q01",
+      "type": "single-choice",
+      "question": "Dr. Nadia examines a radiograph of a benign tumor. Dr. Ayoub asks: 'What is the typical radiographic appearance of a benign tumor?'",
+      "media": [],
+      "options": [
+        "Well-defined borders and corticalization",
+        "Irregular and infiltrating borders",
+        "Diffuse radiolucency",
+        "Homogeneous radiopacity"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Benign tumors generally have well-defined borders with corticalization.' Dr. Ayoub: 'I will evaluate the borders of the lesion.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q02",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a tooth with a periapical lesion. Dr. Nadia asks him to differentiate between a granuloma and a cyst. What is the key criterion?",
+      "media": [],
+      "options": [
+        "The size of the lesion (> 1.5 cm for a cyst)",
+        "The shape of the lesion",
+        "The location of the lesion",
+        "The density of the lesion"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'A cyst is generally larger than a granuloma (> 1.5-2 cm).' Dr. Ayoub: 'I will measure the lesion.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q03",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a tooth with external resorption. Dr. Ayoub asks: 'How does external resorption appear?'",
+      "media": [],
+      "options": [
+        "An irregular radiolucent area on the external root contour",
+        "A symmetrical radiolucent area centered on the canal",
+        "Horizontal bone loss",
+        "A vertical root fracture"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'External resorption manifests as an irregular loss of substance on the external contour.' Dr. Ayoub: 'I will monitor the evolution.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q04",
+      "type": "single-choice",
+      "question": "Dr. Ayoub performed a CBCT for implant placement. Dr. Nadia asks him to evaluate the bone height. What parameter is measured on the CBCT?",
+      "media": [],
+      "options": [
+        "The available bone height from the crest to the sinus or nerve",
+        "The width of the tooth",
+        "The length of the root",
+        "Bone density in Hounsfield units"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'CBCT allows precise measurement of available bone height.' Dr. Ayoub: 'I will always perform a pre-implant CBCT.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q05",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a mandibular cystic lesion. Dr. Ayoub asks: 'What is the most frequent odontogenic cyst?'",
+      "media": [],
+      "options": [
+        "Radicular cyst (periapical)",
+        "Dentigerous cyst",
+        "Odontogenic keratocyst",
+        "Cleft cyst"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'The radicular cyst is the most frequent of the odontogenic cysts.' Dr. Ayoub: 'I will look for apical lesions.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q06",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with a malignant tumor. Dr. Nadia asks him to identify the radiographic signs. What is the key sign?",
+      "media": [],
+      "options": [
+        "Irregular borders and bone destruction",
+        "Well-defined borders",
+        "Corticalization",
+        "Homogeneous radiolucency"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Malignant tumors present irregular borders and bone destruction.' Dr. Ayoub: 'I will refer the patient quickly.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q07",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of an osteosarcoma. Dr. Ayoub asks: 'What is the typical radiographic appearance?'",
+      "media": [],
+      "options": [
+        "A mixed radiopaque and radiolucent lesion with spicules",
+        "A purely radiolucent lesion",
+        "A purely radiopaque lesion",
+        "Cortical expansion without spicules"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Osteosarcoma presents spicules (sunburst appearance) and a mixed lesion.' Dr. Ayoub: 'I will look for these signs.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q08",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with an ossifying fibroma. Dr. Nadia asks him: 'What is the radiographic appearance of an ossifying fibroma?'",
+      "media": [],
+      "options": [
+        "A radiolucent lesion with internal radiopaque areas",
+        "A purely radiolucent lesion",
+        "A purely radiopaque lesion",
+        "Massive cortical expansion"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Ossifying fibroma presents radiolucent areas with radiopaque islands.' Dr. Ayoub: 'I will monitor the evolution.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q09",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a tooth with a deep cavity. Dr. Ayoub asks: 'How does a deep cavity appear on a radiograph?'",
+      "media": [],
+      "options": [
+        "A radiolucent area that penetrates into the dentin",
+        "A radiopaque area",
+        "A root fracture",
+        "Bone loss"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'A cavity appears as a radiolucent (light) area that progresses into the dentin.' Dr. Ayoub: 'I will evaluate the depth.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q10",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with osteitis. Dr. Nadia asks him: 'How does alveolar osteitis appear?'",
+      "media": [],
+      "options": [
+        "A diffuse radiolucent area around the alveolus",
+        "A radiopaque area",
+        "A root fracture",
+        "An interproximal cavity"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Alveolar osteitis manifests as diffuse radiolucency around the alveolus.' Dr. Ayoub: 'I will prescribe treatment.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q11",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a tooth with an amalgam. Dr. Ayoub asks: 'Why does amalgam appear radiopaque?'",
+      "media": [],
+      "options": [
+        "Because of its high density (heavy metals)",
+        "Because of its low density",
+        "Because of its organic composition",
+        "Because of its color"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Amalgam contains heavy metals that absorb X-rays, appearing radiopaque (white).' Dr. Ayoub: 'I will identify restorations.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q12",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with osteomyelitis. Dr. Nadia asks him: 'How does osteomyelitis appear on a radiograph?'",
+      "media": [],
+      "options": [
+        "A radiolucent area with a sequestrum (bone separation)",
+        "A radiopaque area",
+        "A root fracture",
+        "An interproximal cavity"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Osteomyelitis presents radiolucency with a central radiopaque sequestrum.' Dr. Ayoub: 'I will prescribe urgent treatment.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q13",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a tooth with pulpal calcification. Dr. Ayoub asks: 'How does pulpal calcification appear?'",
+      "media": [],
+      "options": [
+        "Punctate radiopaque areas in the pulp chamber",
+        "A periapical radiolucent area",
+        "A root fracture",
+        "Bone loss"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Pulpal calcifications are radiopaque (white) areas in the canal.' Dr. Ayoub: 'I will identify the calcification.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q14",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with hypercementosis. Dr. Nadia asks him: 'How does hypercementosis appear?'",
+      "media": [],
+      "options": [
+        "A radiopaque thickening of the root cementum",
+        "A periapical radiolucent area",
+        "A root fracture",
+        "Bone loss"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Hypercementosis manifests as a radiopaque thickening of the cementum.' Dr. Ayoub: 'I will monitor the evolution.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q15",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a tooth with ankylosis. Dr. Ayoub asks: 'What is the radiographic sign of ankylosis?'",
+      "media": [],
+      "options": [
+        "Disappearance of the periodontal ligament in one area",
+        "A periapical radiolucent area",
+        "A root fracture",
+        "An interproximal cavity"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Ankylosis is characterized by the disappearance of the periodontal ligament.' Dr. Ayoub: 'I will evaluate the ligament.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q16",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with a dentigerous cyst. Dr. Nadia asks him: 'How does a dentigerous cyst appear?'",
+      "media": [],
+      "options": [
+        "A radiolucent area around the crown of an impacted tooth",
+        "A periapical radiolucent area",
+        "A radiopaque area",
+        "A root fracture"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'The dentigerous cyst appears as a radiolucency around the crown of an impacted tooth.' Dr. Ayoub: 'I will monitor the evolution.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q17",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a tooth with an enamel lesion. Dr. Ayoub asks: 'How does enamel caries appear on a radiograph?'",
+      "media": [],
+      "options": [
+        "A radiolucent area limited to the enamel",
+        "A radiolucent area that penetrates into the dentin",
+        "A radiopaque area",
+        "A root fracture"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Enamel caries is a radiolucent area limited to the enamel.' Dr. Ayoub: 'I will monitor progression.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q18",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with fibrosis. Dr. Nadia asks him: 'How does fibrosis appear on a radiograph?'",
+      "media": [],
+      "options": [
+        "A radiolucent area with trabeculations",
+        "A radiopaque area",
+        "A root fracture",
+        "An interproximal cavity"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Fibrosis presents radiolucency with trabeculations.' Dr. Ayoub: 'I will monitor the evolution.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q19",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a tooth with an impacted tooth. Dr. Ayoub asks: 'What is the most frequent location of impacted canines?'",
+      "media": [],
+      "options": [
+        "Maxillary canines",
+        "Mandibular canines",
+        "Incisors",
+        "Premolars"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Maxillary canines are the second most frequently impacted teeth.' Dr. Ayoub: 'I will always check the canines.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q20",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with an odontogenic tumor. Dr. Nadia asks him: 'What is the most frequent benign odontogenic tumor?'",
+      "media": [],
+      "options": [
+        "Odontoma",
+        "Ameloblastoma",
+        "Radicular cyst",
+        "Ossifying fibroma"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Odontoma is the most frequent benign odontogenic tumor.' Dr. Ayoub: 'I will monitor the evolution.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q21",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a tooth with an apical fracture. Dr. Ayoub asks: 'How does an apical fracture appear?'",
+      "media": [],
+      "options": [
+        "A thin radiolucent line at the apex level",
+        "A periapical radiolucent area",
+        "Bone loss",
+        "An interproximal cavity"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'An apical fracture appears as a thin radiolucent line at the apex level.' Dr. Ayoub: 'I will look for this line.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q22",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with osteodystrophy. Dr. Nadia asks him: 'How does osteodystrophy appear?'",
+      "media": [],
+      "options": [
+        "A radiolucent area with bone anomalies",
+        "A radiopaque area",
+        "A root fracture",
+        "An interproximal cavity"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Osteodystrophy manifests with bone anomalies.' Dr. Ayoub: 'I will monitor the evolution.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q23",
+      "type": "single-choice",
+      "question": "Dr. Nadia shows a radiograph of a tooth with dental ankylosis. Dr. Ayoub asks: 'What is the radiographic sign of ankylosis?'",
+      "media": [],
+      "options": [
+        "Disappearance of the periodontal ligament in one area",
+        "A periapical radiolucent area",
+        "A root fracture",
+        "An interproximal cavity"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Ankylosis is characterized by the disappearance of the periodontal ligament.' Dr. Ayoub: 'I will evaluate the ligament.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q24",
+      "type": "single-choice",
+      "question": "Dr. Ayoub took a radiograph of a patient with hyperdontia. Dr. Nadia asks him: 'How does hyperdontia appear?'",
+      "media": [],
+      "options": [
+        "A supernumerary tooth",
+        "A radiolucent area",
+        "A root fracture",
+        "An interproximal cavity"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Hyperdontia manifests as a supernumerary tooth.' Dr. Ayoub: 'I will identify the additional tooth.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    },
+    {
+      "id": "RADI_I2_Q25",
+      "type": "single-choice",
+      "question": "Dr. Ayoub, after having managed complex radiology cases with Dr. Nadia, receives her congratulations. What is the next step for Dr. Ayoub?",
+      "media": [],
+      "options": [
+        "Become an expert in clinical radiology and 3D imaging",
+        "Retire",
+        "Change specialty",
+        "Forget good practices"
+      ],
+      "correct": 0,
+      "explanation": "Dr. Nadia explains: 'Mastery of complex cases is a valuable skill. Becoming an expert is the next step.' Dr. Ayoub: 'I will train in 3D imaging.'",
+      "difficulty": "intermediate",
+      "category": "",
+      "timeLimit": 50,
+      "shuffleOptions": false,
+      "tts": true,
+      "tags": [],
+      "references": []
+    }
+  ]
+}
