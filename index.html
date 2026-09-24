@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO - E-learning To Every One</title>
+    
+    <!-- ✅ CSS EXTERNE -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- ✅ IMPORT MAP POUR LES MODULES -->
+    <script type="importmap">
+    {
+        "imports": {
+            "./js/": "./js/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!-- =========== CONTENEUR PRINCIPAL ============ -->
+    <!-- ============================================ -->
+    <div class="container">
+        
+        <!-- LOGO ETEO -->
+        <div class="logo-container">
+            <img src="images/C.jpg" alt="ETEO" class="logo-eteo">
+            <p class="subtitle" id="subtitleText">E-learning To Every One</p>
+        </div>
+
+        <!-- BETA BANNER -->
+        <div class="beta-banner">
+            <p id="betaText">🌟 « Borderless learning, right in your pocket »</p>
+        </div>
+
+        <!-- GRILLE DES LANGUES -->
+        <div class="languages-grid">
+            <button class="lang-btn" data-lang="fr" id="langBtnFr">Français</button>
+            <button class="lang-btn" data-lang="en" id="langBtnEn">English</button>
+            <button class="lang-btn" data-lang="es" id="langBtnEs">Español</button>
+            <button class="lang-btn" data-lang="de" id="langBtnDe">Deutsch</button>
+            <button class="lang-btn" data-lang="ru" id="langBtnRu">Русский</button>
+            <button class="lang-btn" data-lang="it" id="langBtnIt">Italiano</button>
+            <button class="lang-btn" data-lang="zh" id="langBtnZh">中文</button>
+        </div>
+
+        <!-- BOUTONS D'ACTION -->
+        <div class="actions">
+            <button class="listen-btn" id="listenBtn" disabled>
+                🔊 <span id="listenBtnText">Anweisungen anhören</span>
+            </button>
+            <button class="validate-btn" id="validateBtn" disabled>
+                ✅ <span id="validateBtnText">Bestätigen und fortfahren</span>
+            </button>
+            
+            <!-- ✅ BOUTON DASHBOARD -->
+            <button class="dashboard-btn" id="dashboardBtn" onclick="window.location.href='fr/dashboard.html'">
+                📊 <span id="dashboardBtnText">Dashboard</span>
+            </button>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p id="footerLine1">🎙️ KI-Sprachassistent | ⚡ Geschwindigkeitsbonus +5 Pkt.</p>
+            <p id="footerLine2">📤 Teile deine Ergebnisse | 🏆 Schalte alle Level frei</p>
+            <p id="footerLine3">© 2026 - Dr. SAID MAARAK 🇲🇦</p>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ============================================ -->
+    <!-- =========== SCRIPT PRINCIPAL =============== -->
+    <!-- ============================================ -->
+    
+    <!-- CHARGEMENT DU MODULE TTS -->
+    <script type="module">
+        import tts from './js/services/tts.js';
+        window.tts = tts;
+        console.log('✅ TTS Module loaded');
+    </script>
+
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { Logger } from './js/logger.js';
+        import { CONFIG } from './js/config.js';
+        import { StorageService } from './js/services/storage.js';
+        import { TranslateService } from './js/services/translate.js';
+        
+        // ============================================================
+        // CONFIGURATION - TOUS LES TEXTES DE L'INTERFACE
+        // ============================================================
+        
+        const LANG_CONFIG = {
+            fr: {
+                label: 'Français',
+                page: 'fr/inscription_fr.html',
+                dashboardPage: 'fr/dashboard.html',
+                ui: {
+                    subtitle: 'E-learning To Every One',
+                    betaText: '🌟 « Borderless learning, right in your pocket »',
+                    langBtnFr: 'Français',
+                    langBtnEn: 'English',
+                    langBtnEs: 'Español',
+                    langBtnDe: 'Deutsch',
+                    langBtnRu: 'Русский',
+                    langBtnIt: 'Italiano',
+                    langBtnZh: '中文',
+                    listenBtn: 'Écouter les instructions',
+                    validateBtn: 'Valider et continuer',
+                    dashboardBtn: '📊 Tableau de bord',
+                    footerLine1: '🎙️ AI Voice Assistant | ⚡ Speed bonus +5 pts',
+                    footerLine2: '📤 Share your scores | 🏆 Unlock all levels',
+                    footerLine3: '© 2026 - Dr. SAID MAARAK 🇲🇦',
+                    toastMessage: '✅ Message lu en français'
+                },
+                welcomeMessage: 'Bonjour à vous, que vous soyez docteur ou étudiant en médecine dentaire, soyez le ou la bienvenue dans ETEO. E-learning To Every One. L\'encyclopédie par excellence en médecine dentaire. Ici, vous trouverez tout : de la clinique à la gestion, en passant par les ressources humaines et les sciences fondamentales. Tout ce que vous devez savoir pour exceller dans votre profession. ETEO, c\'est votre bibliothèque, votre formateur, votre compagnon au quotidien. Alors, prêt à explorer ce trésor de connaissances ? On voit que vous avez choisi le français, alors bonne découverte et surtout AMUSEZ-VOUS bien tout en apprenant quelque chose de nouveau. ETEO vous souhaite une excellente expérience d\'apprentissage ! N\'oubliez pas de visiter régulièrement le tableau de bord pour suivre vos progressions, consulter vos badges, découvrir vos niveaux, voir votre classement et bien d\'autres choses encore !'
+            },
+            en: {
+                label: 'English',
+                page: 'en/inscription_en.html',
+                dashboardPage: 'en/dashboard_en.html',
+                ui: {
+                    subtitle: 'E-learning To Every One',
+                    betaText: '🌟 « Borderless learning, right in your pocket »',
+                    langBtnFr: 'French',
+                    langBtnEn: 'English',
+                    langBtnEs: 'Spanish',
+                    langBtnDe: 'German',
+                    langBtnRu: 'Russian',
+                    langBtnIt: 'Italian',
+                    langBtnZh: 'Chinese',
+                    listenBtn: 'Listen to instructions',
+                    validateBtn: 'Validate and continue',
+                    dashboardBtn: '📊 Dashboard',
+                    footerLine1: '🎙️ AI Voice Assistant | ⚡ Speed bonus +5 pts',
+                    footerLine2: '📤 Share your scores | 🏆 Unlock all levels',
+                    footerLine3: '© 2026 - Dr. SAID MAARAK 🇲🇦',
+                    toastMessage: '✅ Message read in English'
+                },
+                welcomeMessage: 'Welcome to you, whether you are a doctor or a dental medicine student, welcome to ETEO. E-learning To Every One. The ultimate encyclopedia in dental medicine. Here, you will find everything: from clinical practice to management, including human resources and fundamental sciences. Everything you need to know to excel in your profession. ETEO is your library, your trainer, your daily companion. So, ready to explore this treasure of knowledge? We see that you have chosen English, so enjoy your discovery and above all HAVE FUN while learning something new. ETEO wishes you an excellent learning experience! Don\'t forget to regularly visit the dashboard to track your progress, check your badges, discover your levels, see your ranking and many other things!'
+            },
+            es: {
+                label: 'Español',
+                page: 'es/inscription_es.html',
+                dashboardPage: 'es/dashboard_es.html',
+                ui: {
+                    subtitle: 'E-learning To Every One',
+                    betaText: '🌟 « Aprendizaje sin fronteras, justo en tu bolsillo »',
+                    langBtnFr: 'Francés',
+                    langBtnEn: 'Inglés',
+                    langBtnEs: 'Español',
+                    langBtnDe: 'Alemán',
+                    langBtnRu: 'Ruso',
+                    langBtnIt: 'Italiano',
+                    langBtnZh: 'Chino',
+                    listenBtn: 'Escuchar instrucciones',
+                    validateBtn: 'Validar y continuar',
+                    dashboardBtn: '📊 Panel de control',
+                    footerLine1: '🎙️ Asistente de voz AI | ⚡ Bono de velocidad +5 pts',
+                    footerLine2: '📤 Comparte tus resultados | 🏆 Desbloquea todos los niveles',
+                    footerLine3: '© 2026 - Dr. SAID MAARAK 🇲🇦',
+                    toastMessage: '✅ Mensaje leído en español'
+                },
+                welcomeMessage: 'Bienvenido, ya sea que seas doctor o estudiante de medicina dental, te damos la bienvenida a ETEO. E-learning To Every One. La enciclopedia por excelencia en medicina dental. Aquí encontrarás todo: desde la práctica clínica hasta la gestión, pasando por recursos humanos y ciencias fundamentales. Todo lo que necesitas saber para sobresalir en tu profesión. ETEO es tu biblioteca, tu formador, tu compañero diario. ¿Listo para explorar este tesoro de conocimiento? Vemos que has elegido el español, así que disfruta de tu descubrimiento y, sobre todo, DIVIÉRTETE mientras aprendes algo nuevo. ETEO te desea una excelente experiencia de aprendizaje. No olvides visitar regularmente el panel de control para seguir tu progreso, consultar tus insignias, descubrir tus niveles, ver tu clasificación y muchas otras cosas más.'
+            },
+            de: {
+                label: 'Deutsch',
+                page: 'de/inscription_de.html',
+                dashboardPage: 'de/dashboard_de.html',
+                ui: {
+                    subtitle: 'E-learning To Every One',
+                    betaText: '🌟 « Grenzenloses Lernen, direkt in deiner Tasche »',
+                    langBtnFr: 'Französisch',
+                    langBtnEn: 'Englisch',
+                    langBtnEs: 'Spanisch',
+                    langBtnDe: 'Deutsch',
+                    langBtnRu: 'Russisch',
+                    langBtnIt: 'Italienisch',
+                    langBtnZh: 'Chinesisch',
+                    listenBtn: 'Anweisungen anhören',
+                    validateBtn: 'Bestätigen und fortfahren',
+                    dashboardBtn: '📊 Dashboard',
+                    footerLine1: '🎙️ KI-Sprachassistent | ⚡ Geschwindigkeitsbonus +5 Pkt.',
+                    footerLine2: '📤 Teile deine Ergebnisse | 🏆 Schalte alle Level frei',
+                    footerLine3: '© 2026 - Dr. SAID MAARAK 🇲🇦',
+                    toastMessage: '✅ Nachricht auf Deutsch gelesen'
+                },
+                welcomeMessage: 'Willkommen, ob Sie Arzt oder Student der Zahnmedizin sind, willkommen bei ETEO. E-learning To Every One. Die beste Enzyklopädie für Zahnmedizin. Hier finden Sie alles: von der klinischen Praxis über das Management bis hin zu Personalwesen und Grundlagenwissenschaften. Alles, was Sie wissen müssen, um in Ihrem Beruf hervorragende Leistungen zu erbringen. ETEO ist Ihre Bibliothek, Ihr Trainer, Ihr täglicher Begleiter. Sind Sie bereit, diesen Wissensschatz zu erkunden? Wir sehen, dass Sie Deutsch gewählt haben, also wünschen wir Ihnen viel Freude beim Entdecken und vor allem VIEL SPASS beim Lernen von etwas Neuem. ETEO wünscht Ihnen ein hervorragendes Lernerlebnis! Vergessen Sie nicht, regelmäßig das Dashboard zu besuchen, um Ihren Fortschritt zu verfolgen, Ihre Abzeichen einzusehen, Ihre Level zu entdecken, Ihre Platzierung zu sehen und vieles mehr!'
+            },
+            ru: {
+                label: 'Русский',
+                page: 'ru/inscription_ru.html',
+                dashboardPage: 'ru/dashboard_ru.html',
+                ui: {
+                    subtitle: 'E-learning To Every One',
+                    betaText: '🌟 « Обучение без границ, прямо у вас в кармане »',
+                    langBtnFr: 'Французский',
+                    langBtnEn: 'Английский',
+                    langBtnEs: 'Испанский',
+                    langBtnDe: 'Немецкий',
+                    langBtnRu: 'Русский',
+                    langBtnIt: 'Итальянский',
+                    langBtnZh: 'Китайский',
+                    listenBtn: 'Слушать инструкции',
+                    validateBtn: 'Подтвердить и продолжить',
+                    dashboardBtn: '📊 Панель управления',
+                    footerLine1: '🎙️ Голосовой помощник AI | ⚡ Бонус скорости +5 pts',
+                    footerLine2: '📤 Поделиться результатами | 🏆 Открыть все уровни',
+                    footerLine3: '© 2026 - Др. САИД МААРАК 🇲🇦',
+                    toastMessage: '✅ Сообщение прочитано на русском'
+                },
+                welcomeMessage: 'Добро пожаловать, будь вы доктор или студент стоматологии, добро пожаловать в ETEO. E-learning To Every One. Лучшая энциклопедия по стоматологии. Здесь вы найдёте всё: от клинической практики до управления, включая кадровые ресурсы и фундаментальные науки. Всё, что вам нужно знать, чтобы преуспеть в своей профессии. ETEO — это ваша библиотека, ваш наставник, ваш ежедневный помощник. Готовы исследовать это сокровище знаний? Мы видим, что вы выбрали русский язык, так что желаем вам приятного открытия и, самое главное, УДОВОЛЬСТВИЯ от изучения чего-то нового. ETEO желает вам отличного опыта обучения! Не забывайте регулярно посещать панель управления, чтобы отслеживать свой прогресс, просматривать свои значки, открывать новые уровни, смотреть свой рейтинг и многое другое!'
+            },
+            it: {
+                label: 'Italiano',
+                page: 'it/registrazione_it.html',
+                dashboardPage: 'it/dashboard_it.html',
+                ui: {
+                    subtitle: 'E-learning To Every One',
+                    betaText: '🌟 « Apprendimento senza confini, direttamente in tasca »',
+                    langBtnFr: 'Francese',
+                    langBtnEn: 'Inglese',
+                    langBtnEs: 'Spagnolo',
+                    langBtnDe: 'Tedesco',
+                    langBtnRu: 'Russo',
+                    langBtnIt: 'Italiano',
+                    langBtnZh: 'Cinese',
+                    listenBtn: 'Ascolta le istruzioni',
+                    validateBtn: 'Conferma e continua',
+                    dashboardBtn: '📊 Dashboard',
+                    footerLine1: '🎙️ Assistente vocale AI | ⚡ Bonus velocità +5 pts',
+                    footerLine2: '📤 Condividi i tuoi risultati | 🏆 Sblocca tutti i livelli',
+                    footerLine3: '© 2026 - Dr. SAID MAARAK 🇲🇦',
+                    toastMessage: '✅ Messaggio letto in italiano'
+                },
+                welcomeMessage: 'Benvenuto, che tu sia un dottore o uno studente di medicina dentale, benvenuto in ETEO. E-learning To Every One. L\'enciclopedia per eccellenza in medicina dentale. Qui troverai tutto: dalla clinica alla gestione, passando per le risorse umane e le scienze fondamentali. Tutto ciò che devi sapere per eccellere nella tua professione. ETEO è la tua biblioteca, il tuo formatore, il tuo compagno quotidiano. Allora, pronto a esplorare questo tesoro di conoscenza? Vediamo che hai scelto l\'italiano, quindi buona scoperta e soprattutto DIVERTITI mentre impari qualcosa di nuovo. ETEO ti augura un\'eccellente esperienza di apprendimento! Non dimenticare di visitare regolarmente la dashboard per seguire i tuoi progressi, consultare i tuoi badge, scoprire i tuoi livelli, vedere la tua classifica e molte altre cose ancora!'
+            },
+            zh: {
+                label: '中文',
+                page: 'zh/inscription_zh.html',
+                dashboardPage: 'zh/dashboard_zh.html',
+                ui: {
+                    subtitle: 'E-learning To Every One',
+                    betaText: '🌟 « 无边界学习，就在您的口袋中 »',
+                    langBtnFr: '法语',
+                    langBtnEn: '英语',
+                    langBtnEs: '西班牙语',
+                    langBtnDe: '德语',
+                    langBtnRu: '俄语',
+                    langBtnIt: '意大利语',
+                    langBtnZh: '中文',
+                    listenBtn: '收听说明',
+                    validateBtn: '确认并继续',
+                    dashboardBtn: '📊 仪表板',
+                    footerLine1: '🎙️ AI 语音助手 | ⚡ 速度奖励 +5 分',
+                    footerLine2: '📤 分享您的成绩 | 🏆 解锁所有等级',
+                    footerLine3: '© 2026 - Dr. SAID MAARAK 🇲🇦',
+                    toastMessage: '✅ 消息已用中文朗读'
+                },
+                welcomeMessage: '欢迎，无论您是医生还是牙科医学生，欢迎来到 ETEO。E-learning To Every One。牙科医学的卓越百科全书。在这里，您将找到一切：从临床到管理，包括人力资源和基础科学。您需要了解的一切，以便在您的职业中脱颖而出。ETEO 是您的图书馆、您的导师、您的日常伙伴。那么，准备好探索这个知识宝藏了吗？我们看到您选择了中文，所以祝您发现愉快，最重要的是在学习新知识的同时玩得开心。ETEO 祝您学习体验愉快！不要忘记定期访问仪表板，跟踪您的进度、查看您的徽章、发现您的等级、查看您的排名以及更多其他内容！'
+            }
+        };
+        
+        // ============================================================
+        // ÉTAT
+        // ============================================================
+        
+        let selectedLang = null;
+        
+        const storage = new StorageService();
+        const translate = new TranslateService();
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const langBtns = document.querySelectorAll('.lang-btn');
+        const listenBtn = document.getElementById('listenBtn');
+        const validateBtn = document.getElementById('validateBtn');
+        const listenBtnText = document.getElementById('listenBtnText');
+        const validateBtnText = document.getElementById('validateBtnText');
+        const dashboardBtnText = document.getElementById('dashboardBtnText');
+        const toast = document.getElementById('toast');
+        const dashboardBtn = document.getElementById('dashboardBtn');
+        
+        // Nouveaux éléments pour la traduction complète
+        const subtitleText = document.getElementById('subtitleText');
+        const betaText = document.getElementById('betaText');
+        const langBtnFr = document.getElementById('langBtnFr');
+        const langBtnEn = document.getElementById('langBtnEn');
+        const langBtnEs = document.getElementById('langBtnEs');
+        const langBtnDe = document.getElementById('langBtnDe');
+        const langBtnRu = document.getElementById('langBtnRu');
+        const langBtnIt = document.getElementById('langBtnIt');
+        const langBtnZh = document.getElementById('langBtnZh');
+        const footerLine1 = document.getElementById('footerLine1');
+        const footerLine2 = document.getElementById('footerLine2');
+        const footerLine3 = document.getElementById('footerLine3');
+        
+        // ============================================================
+        // UTILITAIRES
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        function getLangFromButton(btn) {
+            return btn.dataset.lang;
+        }
+        
+        // ============================================================
+        // ⭐ FONCTION UNIVERSELLE POUR METTRE À JOUR TOUS LES TEXTES
+        // ============================================================
+        
+        function updateAllTexts(lang) {
+            const config = LANG_CONFIG[lang];
+            if (!config) return;
+            
+            const ui = config.ui;
+            
+            // Mise à jour de tous les éléments textuels
+            if (subtitleText) subtitleText.textContent = ui.subtitle;
+            if (betaText) betaText.textContent = ui.betaText;
+            if (langBtnFr) langBtnFr.textContent = ui.langBtnFr;
+            if (langBtnEn) langBtnEn.textContent = ui.langBtnEn;
+            if (langBtnEs) langBtnEs.textContent = ui.langBtnEs;
+            if (langBtnDe) langBtnDe.textContent = ui.langBtnDe;
+            if (langBtnRu) langBtnRu.textContent = ui.langBtnRu;
+            if (langBtnIt) langBtnIt.textContent = ui.langBtnIt;
+            if (langBtnZh) langBtnZh.textContent = ui.langBtnZh;
+            if (listenBtnText) listenBtnText.textContent = ui.listenBtn;
+            if (validateBtnText) validateBtnText.textContent = ui.validateBtn;
+            if (dashboardBtnText) dashboardBtnText.textContent = ui.dashboardBtn;
+            if (footerLine1) footerLine1.textContent = ui.footerLine1;
+            if (footerLine2) footerLine2.textContent = ui.footerLine2;
+            if (footerLine3) footerLine3.textContent = ui.footerLine3;
+            
+            // Mise à jour du titre de la page
+            document.title = `ETEO - ${ui.subtitle}`;
+            
+            Logger.info(`🔄 All interface texts updated for language: ${lang}`);
+        }
+        
+        // ============================================================
+        // GESTION DES LANGUES
+        // ============================================================
+        
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = getLangFromButton(btn);
+                selectLanguage(lang);
+            });
+        });
+        
+        function selectLanguage(lang) {
+            // Mise à jour de l'état visuel des boutons
+            langBtns.forEach(b => b.classList.remove('active'));
+            
+            const selectedBtn = document.querySelector(`.lang-btn[data-lang="${lang}"]`);
+            if (selectedBtn) {
+                selectedBtn.classList.add('active');
+            }
+            
+            selectedLang = lang;
+            
+            // Activation des boutons
+            validateBtn.disabled = false;
+            listenBtn.disabled = false;
+            
+            // ⭐ Mise à jour de TOUS les textes de l'interface
+            updateAllTexts(lang);
+            
+            // ✅ Mise à jour du dashboardBtn pour la redirection
+            const config = LANG_CONFIG[lang];
+            if (config && dashboardBtn) {
+                dashboardBtn.onclick = function() {
+                    window.location.href = config.dashboardPage;
+                };
+            }
+            
+            // Gestion du TTS
+            if (config && listenBtn) {
+                if (window.tts && window.tts.isSpeakingNow()) {
+                    window.tts.stop();
+                }
+                listenBtn.classList.remove('listening');
+                listenBtn.innerHTML = `🔊 <span id="listenBtnText">${config.ui.listenBtn}</span>`;
+                listenBtn.disabled = false;
+            }
+            
+            // Sauvegarde dans localStorage
+            const settings = storage.getSettings() || {};
+            settings.language = lang;
+            storage.saveSettings(settings);
+            
+            // Mise à jour du service de traduction
+            translate.currentLang = lang;
+            
+            Logger.info(`Language selected: ${lang}`);
+            showToast(`🌐 Language selected: ${config.label}`, 2000);
+        }
+        
+        // ============================================================
+        // BOUTON ÉCOUTER
+        // ============================================================
+        
+        listenBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            if (!window.tts) {
+                showToast('❌ TTS Module not available', 3000);
+                return;
+            }
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                const config = LANG_CONFIG[selectedLang || 'fr'];
+                this.innerHTML = `🔊 <span id="listenBtnText">${config.ui.listenBtn}</span>`;
+                this.classList.remove('listening');
+                this.disabled = false;
+                return;
+            }
+            
+            const lang = selectedLang || 'fr';
+            const config = LANG_CONFIG[lang];
+            
+            if (!config) {
+                showToast('❌ Language not supported', 3000);
+                return;
+            }
+            
+            this.innerHTML = `⏹️ <span id="listenBtnText">${config.ui.listenBtn}</span>`;
+            this.classList.add('listening');
+            this.disabled = false;
+            
+            window.tts.speak(
+                config.welcomeMessage,
+                lang,
+                0.9,
+                1.0,
+                () => {
+                    const currentConfig = LANG_CONFIG[selectedLang || 'fr'];
+                    this.innerHTML = `🔊 <span id="listenBtnText">${currentConfig.ui.listenBtn}</span>`;
+                    this.classList.remove('listening');
+                    this.disabled = false;
+                    showToast(currentConfig.ui.toastMessage, 2000);
+                },
+                (error) => {
+                    console.error('❌ TTS Error:', error);
+                    const currentConfig = LANG_CONFIG[selectedLang || 'fr'];
+                    this.innerHTML = `🔊 <span id="listenBtnText">${currentConfig.ui.listenBtn}</span>`;
+                    this.classList.remove('listening');
+                    this.disabled = false;
+                    showToast('❌ Voice reading error', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // BOUTON VALIDER
+        // ============================================================
+        
+        validateBtn.addEventListener('click', () => {
+            if (!selectedLang) {
+                showToast('⚠️ Please select a language first', 2500);
+                return;
+            }
+            
+            const config = LANG_CONFIG[selectedLang];
+            if (!config) {
+                showToast('❌ Language not supported', 3000);
+                return;
+            }
+            
+            const settings = storage.getSettings() || {};
+            settings.language = selectedLang;
+            storage.saveSettings(settings);
+            
+            showToast(`⏳ Redirecting to ${config.label}...`, 2000);
+            
+            validateBtn.disabled = true;
+            langBtns.forEach(b => b.style.opacity = '0.5');
+            
+            setTimeout(() => {
+                window.location.href = config.page;
+            }, 1500);
+        });
+        
+        // ============================================================
+        // INITIALISATION
+        // ============================================================
+        
+        // Nettoyage de l'ancienne langue sauvegardée (pour forcer le choix)
+        const settings = storage.getSettings() || {};
+        if (settings.language) {
+            delete settings.language;
+            storage.saveSettings(settings);
+            Logger.info('🗑️ Saved language deleted');
+        }
+        
+        // Aucune langue présélectionnée - les boutons restent désactivés
+        Logger.info('🚀 ETEO V2 - Home ready!');
+        Logger.info(`📊 ${Object.keys(LANG_CONFIG).length} languages available`);
+        console.log('📢 TTS Module loaded and ready!');
+        console.log('🌐 Select a language to activate buttons.');
+        console.log('✅ All interface texts will be updated dynamically');
+        
+        // ============================================================
+        // GESTION DE L'ICÔNE (fallback)
+        // ============================================================
+        
+        const logo = document.querySelector('.logo-eteo');
+        if (logo) {
+            logo.addEventListener('error', () => {
+                logo.style.display = 'none';
+                document.querySelector('.logo-container').innerHTML = `
+                    <div class="logo-text-fallback">
+                        <span class="letter-e">E</span>
+                        <span class="letter-t">T</span>
+                        <span class="letter-e">E</span>
+                        <span class="letter-o">O</span>
+                    </div>
+                    <p class="subtitle" id="subtitleText">E-learning To Every One</p>
+                `;
+                // Réattacher l'élément subtitle après le fallback
+                const newSubtitle = document.querySelector('.logo-container #subtitleText');
+                if (newSubtitle) {
+                    // Remplacer la référence globale
+                    window.subtitleText = newSubtitle;
+                }
+                Logger.warn('⚠️ ETEO icon not found, fallback to text');
+            });
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>注册 - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        /* ==================== SPINNER ==================== */
+        .spinner {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 0.8s ease-in-out infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .btn-content { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+
+        /* ==================== 动画 ==================== */
+        .form-group { animation: fadeInUp 0.5s ease forwards; opacity: 0; }
+        .form-group:nth-child(1) { animation-delay: 0.05s; }
+        .form-group:nth-child(2) { animation-delay: 0.10s; }
+        .form-group:nth-child(3) { animation-delay: 0.15s; }
+        .form-group:nth-child(4) { animation-delay: 0.20s; }
+        .form-group:nth-child(5) { animation-delay: 0.25s; }
+        .form-group:nth-child(6) { animation-delay: 0.30s; }
+        .form-group:nth-child(7) { animation-delay: 0.35s; }
+        .form-group:nth-child(8) { animation-delay: 0.40s; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ==================== 密码字段 ==================== */
+        .password-wrapper { position: relative; display: flex; align-items: center; }
+        .password-wrapper input { flex: 1; padding-right: 45px; }
+        .toggle-password {
+            position: absolute; right: 10px; background: none; border: none;
+            font-size: 1.2rem; cursor: pointer; padding: 5px; color: #888; transition: color 0.3s;
+        }
+        .toggle-password:hover { color: #333; }
+
+        /* ==================== 密码强度 ==================== */
+        .password-strength { margin-top: 8px; display: flex; align-items: center; gap: 12px; }
+        .strength-bar { flex: 1; height: 6px; background: #e0e0e0; border-radius: 3px; overflow: hidden; }
+        .strength-bar .strength-indicator { height: 100%; width: 0%; border-radius: 3px; transition: width 0.3s ease, background 0.3s ease; }
+        .strength-text { font-size: 0.8rem; color: #888; min-width: 60px; text-align: right; }
+        .strength-text.weak { color: #e74c3c; }
+        .strength-text.medium { color: #f39c12; }
+        .strength-text.strong { color: #2ecc71; }
+
+        /* ==================== 电话字段 ==================== */
+        .phone-wrapper { display: flex; gap: 8px; align-items: center; }
+        .phone-wrapper select {
+            width: 100px; padding: 12px 8px; border: 1px solid #ddd;
+            border-radius: 8px; font-size: 13px; background: #f9f9f9; flex-shrink: 0;
+        }
+        .phone-wrapper input { flex: 1; }
+
+        /* ==================== 条款复选框 ==================== */
+        .cgu-wrapper { display: flex; align-items: center; gap: 10px; padding: 10px 0; }
+        .cgu-wrapper input[type="checkbox"] {
+            width: 18px; height: 18px; cursor: pointer; accent-color: #4caf50; flex-shrink: 0;
+        }
+        .cgu-wrapper label { font-size: 0.95rem; color: #555; cursor: pointer; }
+        .cgu-wrapper a { color: #667eea; text-decoration: underline; font-weight: 500; }
+        .cgu-wrapper a:hover { color: #4caf50; }
+
+        /* ==================== 社交按钮 ==================== */
+        .social-buttons { display: flex; gap: 12px; margin-top: 15px; }
+        .social-btn {
+            flex: 1; padding: 12px; border: none; border-radius: 8px;
+            font-size: 0.95rem; font-weight: 600; cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        .social-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .social-btn.google { background: #fff; color: #333; border: 2px solid #ddd; }
+        .social-btn.apple { background: #000; color: #fff; }
+        .social-btn.google:hover { border-color: #4285f4; }
+        .social-btn.apple:hover { background: #333; }
+
+        /* ==================== 错误消息 ==================== */
+        .field-error { color: #e74c3c; font-size: 0.8rem; margin-top: 4px; display: none; }
+        .field-error.show { display: block; }
+        .form-group input.error, .form-group select.error { border-color: #e74c3c; }
+        .form-group input.success, .form-group select.success { border-color: #2ecc71; }
+
+        /* ==================== 分隔线 ==================== */
+        .separator { display: flex; align-items: center; gap: 15px; margin: 20px 0; color: #aaa; font-size: 0.85rem; }
+        .separator::before, .separator::after { content: ''; flex: 1; height: 1px; background: #ddd; }
+
+        /* ==================== 登录链接 ==================== */
+        .login-link-container {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .login-link-container p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        .login-link-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+        .login-link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* ==================== 模态框 ==================== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .modal-overlay.active { display: flex; }
+
+        .modal-content {
+            background: #fff;
+            border-radius: 16px;
+            max-width: 450px;
+            width: 100%;
+            padding: 30px 25px;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: modalFadeIn 0.3s ease;
+        }
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #999;
+            padding: 5px 10px;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+        .modal-close:hover { background: #f0f0f0; color: #333; }
+
+        .modal-header { text-align: center; margin-bottom: 25px; }
+        .modal-header h2 { font-size: 1.5rem; color: #333; margin-bottom: 8px; }
+        .modal-header p { color: #666; font-size: 0.9rem; }
+
+        .modal-form-group { margin-bottom: 18px; }
+        .modal-form-group label {
+            display: block; font-size: 0.9rem; color: #555;
+            margin-bottom: 6px; font-weight: 500;
+        }
+        .modal-form-group input {
+            width: 100%; padding: 12px 15px; border: 1px solid #ddd;
+            border-radius: 8px; font-size: 1rem; transition: border-color 0.3s;
+        }
+        .modal-form-group input:focus { outline: none; border-color: #667eea; }
+
+        .modal-btn {
+            width: 100%; padding: 14px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff; border: none; border-radius: 8px;
+            font-size: 1rem; font-weight: 600; cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s; margin-top: 10px;
+        }
+        .modal-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+        .modal-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+        .modal-forgot-password {
+            display: block; text-align: center; margin-top: 15px;
+            color: #667eea; font-size: 0.9rem; text-decoration: none; cursor: pointer;
+        }
+        .modal-forgot-password:hover { text-decoration: underline; }
+
+        .modal-error {
+            color: #e74c3c; font-size: 0.85rem; text-align: center;
+            margin-top: 15px; display: none;
+        }
+        .modal-error.show { display: block; }
+    </style>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container container-form">
+        
+        <!-- 导航 -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                ← 返回
+            </button>
+            <button class="listen-btn-small" id="listenBtn">
+                🔊 收听说明
+            </button>
+        </div>
+
+        <!-- 表单 -->
+        <div class="form-header">
+            <h1>📝 注册</h1>
+            <p>创建您的 ETEO 账户</p>
+        </div>
+
+        <form class="register-form" id="registerForm" novalidate>
+            <!-- 1. 全名 -->
+            <div class="form-group">
+                <label for="displayName">👤 全名</label>
+                <input type="text" id="displayName" placeholder="Dr. 张三" autocomplete="name" required>
+                <span class="field-error" id="displayNameError">⚠️ 请输入您的全名</span>
+            </div>
+
+            <!-- 2. 职业 -->
+            <div class="form-group">
+                <label for="profession">🦷 职业</label>
+                <select id="profession" required>
+                    <option value="">选择您的职业</option>
+                    <option value="Doctor">🦷 医生</option>
+                    <option value="Student">📚 学生</option>
+                </select>
+                <span class="field-error" id="professionError">⚠️ 请选择您的职业</span>
+            </div>
+
+            <!-- 3. 邮箱 -->
+            <div class="form-group">
+                <label for="email">📧 邮箱</label>
+                <input type="email" id="email" placeholder="zhangsan@email.com" autocomplete="email" required>
+                <span class="field-error" id="emailError">⚠️ 请输入有效的邮箱</span>
+            </div>
+
+            <!-- 4. 密码 -->
+            <div class="form-group">
+                <label for="password">🔑 密码</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="您的密码" autocomplete="new-password" required>
+                    <button type="button" class="toggle-password" id="togglePassword">👁️</button>
+                </div>
+                <small style="color:#888; font-size:0.75rem;">最少 6 个字符</small>
+                <div class="password-strength" id="strengthContainer" style="display:none;">
+                    <div class="strength-bar">
+                        <div class="strength-indicator" id="strengthIndicator"></div>
+                    </div>
+                    <span class="strength-text" id="strengthText">弱</span>
+                </div>
+                <span class="field-error" id="passwordError">⚠️ 密码必须至少 6 个字符</span>
+            </div>
+
+            <!-- 5. 确认密码 -->
+            <div class="form-group">
+                <label for="confirmPassword">🔐 确认密码</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirmPassword" placeholder="确认您的密码" autocomplete="new-password" required>
+                    <button type="button" class="toggle-password" id="toggleConfirmPassword">👁️</button>
+                </div>
+                <span class="field-error" id="confirmPasswordError">⚠️ 两次输入的密码不一致</span>
+            </div>
+
+            <!-- 6. 电话 -->
+            <div class="form-group">
+                <label for="phone">📱 电话</label>
+                <div class="phone-wrapper">
+                    <select id="countryCode">
+                        <optgroup label="🌍 非洲">
+                            <option value="+212" selected>🇲🇦 摩洛哥 +212</option>
+                            <option value="+213">🇩🇿 阿尔及利亚 +213</option>
+                            <option value="+216">🇹🇳 突尼斯 +216</option>
+                            <option value="+221">🇸🇳 塞内加尔 +221</option>
+                            <option value="+225">🇨🇮 科特迪瓦 +225</option>
+                            <option value="+237">🇨🇲 喀麦隆 +237</option>
+                            <option value="+20">🇪🇬 埃及 +20</option>
+                            <option value="+27">🇿🇦 南非 +27</option>
+                        </optgroup>
+                        <optgroup label="🌍 欧洲">
+                            <option value="+33">🇫🇷 法国 +33</option>
+                            <option value="+49">🇩🇪 德国 +49</option>
+                            <option value="+34">🇪🇸 西班牙 +34</option>
+                            <option value="+39">🇮🇹 意大利 +39</option>
+                            <option value="+44">🇬🇧 英国 +44</option>
+                            <option value="+41">🇨🇭 瑞士 +41</option>
+                            <option value="+7">🇷🇺 俄罗斯 +7</option>
+                            <option value="+351">🇵🇹 葡萄牙 +351</option>
+                        </optgroup>
+                        <optgroup label="🌎 美洲">
+                            <option value="+1">🇺🇸 美国 +1</option>
+                            <option value="+1">🇨🇦 加拿大 +1</option>
+                            <option value="+52">🇲🇽 墨西哥 +52</option>
+                            <option value="+55">🇧🇷 巴西 +55</option>
+                            <option value="+54">🇦🇷 阿根廷 +54</option>
+                        </optgroup>
+                        <optgroup label="🌏 亚洲 / 中东">
+                            <option value="+86">🇨🇳 中国 +86</option>
+                            <option value="+81">🇯🇵 日本 +81</option>
+                            <option value="+82">🇰🇷 韩国 +82</option>
+                            <option value="+966">🇸🇦 沙特阿拉伯 +966</option>
+                            <option value="+971">🇦🇪 阿联酋 +971</option>
+                            <option value="+974">🇶🇦 卡塔尔 +974</option>
+                            <option value="+90">🇹🇷 土耳其 +90</option>
+                            <option value="+91">🇮🇳 印度 +91</option>
+                        </optgroup>
+                    </select>
+                    <input type="tel" id="phone" placeholder="6 12 34 56 78">
+                </div>
+            </div>
+
+            <!-- 7. 国家 -->
+            <div class="form-group">
+                <label for="country">🌍 国家</label>
+                <select id="country" required>
+                    <option value="">选择您的国家</option>
+                    <optgroup label="亚洲">
+                        <option value="China">🇨🇳 中国</option>
+                        <option value="Japan">🇯🇵 日本</option>
+                        <option value="South Korea">🇰🇷 韩国</option>
+                        <option value="India">🇮🇳 印度</option>
+                        <option value="Saudi Arabia">🇸🇦 沙特阿拉伯</option>
+                        <option value="United Arab Emirates">🇦🇪 阿联酋</option>
+                        <option value="Qatar">🇶🇦 卡塔尔</option>
+                        <option value="Turkey">🇹🇷 土耳其</option>
+                    </optgroup>
+                    <optgroup label="欧洲">
+                        <option value="France">🇫🇷 法国</option>
+                        <option value="Germany">🇩🇪 德国</option>
+                        <option value="Spain">🇪🇸 西班牙</option>
+                        <option value="Italy">🇮🇹 意大利</option>
+                        <option value="United Kingdom">🇬🇧 英国</option>
+                        <option value="Switzerland">🇨🇭 瑞士</option>
+                        <option value="Russia">🇷🇺 俄罗斯</option>
+                        <option value="Portugal">🇵🇹 葡萄牙</option>
+                    </optgroup>
+                    <optgroup label="非洲">
+                        <option value="Morocco">🇲🇦 摩洛哥</option>
+                        <option value="Algeria">🇩🇿 阿尔及利亚</option>
+                        <option value="Tunisia">🇹🇳 突尼斯</option>
+                        <option value="Egypt">🇪🇬 埃及</option>
+                        <option value="Senegal">🇸🇳 塞内加尔</option>
+                        <option value="Ivory Coast">🇨🇮 科特迪瓦</option>
+                        <option value="Cameroon">🇨🇲 喀麦隆</option>
+                        <option value="South Africa">🇿🇦 南非</option>
+                    </optgroup>
+                    <optgroup label="美洲">
+                        <option value="United States">🇺🇸 美国</option>
+                        <option value="Canada">🇨🇦 加拿大</option>
+                        <option value="Mexico">🇲🇽 墨西哥</option>
+                        <option value="Brazil">🇧🇷 巴西</option>
+                        <option value="Argentina">🇦🇷 阿根廷</option>
+                    </optgroup>
+                </select>
+                <span class="field-error" id="countryError">⚠️ 请选择您的国家</span>
+            </div>
+
+            <!-- 8. 条款复选框 -->
+            <div class="form-group">
+                <div class="cgu-wrapper">
+                    <input type="checkbox" id="acceptTerms" required>
+                    <label for="acceptTerms">
+                        ✅ 我接受 
+                        <a href="https://docs.google.com/document/d/1lBgfN1VDAQx6dcQqULcYPeDq63jPHy_Dlnk7R-7Jqgg/view?usp=sharing" target="_blank">
+                              隐私政策 - ETEO
+                        </a>
+                    </label>
+                </div>
+                <span class="field-error" id="termsError">⚠️ 您必须接受隐私政策才能继续</span>
+            </div>
+
+            <!-- 9. 注册按钮 -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn" id="submitBtn" style="width:100%; background: linear-gradient(135deg, #4caf50, #43a047); padding: 14px; color: #fff; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer;">
+                    <span class="btn-content" id="btnContent">
+                        <span id="btnText">📝 注册</span>
+                        <span id="btnSpinner" style="display:none;">
+                            <span class="spinner"></span> 创建中...
+                        </span>
+                    </span>
+                </button>
+            </div>
+
+            <!-- 10. 分隔线 + GOOGLE/APPLE -->
+            <div class="separator">
+                <span>或使用以下方式注册</span>
+            </div>
+
+            <div class="social-buttons">
+                <button type="button" class="social-btn google" id="googleBtn">
+                    <svg width="20" height="20" viewBox="0 0 48 48">
+                        <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/>
+                        <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/>
+                        <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/>
+                        <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/>
+                    </svg>
+                    Google
+                </button>
+                <button type="button" class="social-btn apple" id="appleBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    Apple
+                </button>
+            </div>
+        </form>
+
+        <!-- ✅ 登录链接 -->
+        <div class="login-link-container">
+            <p>已经注册？</p>
+            <button type="button" class="login-link-btn" id="openLoginModal">
+                🔐 登录
+            </button>
+        </div>
+
+        <!-- ✅ 登录模态框 -->
+        <div class="modal-overlay" id="loginModal">
+            <div class="modal-content">
+                <button type="button" class="modal-close" id="closeLoginModal">✕</button>
+                
+                <div class="modal-header">
+                    <h2>🔐 登录</h2>
+                    <p>登录您的 ETEO 账户</p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="modal-form-group">
+                        <label for="loginEmail">📧 邮箱</label>
+                        <input type="email" id="loginEmail" placeholder="your@email.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="modal-form-group">
+                        <label for="loginPassword">🔑 密码</label>
+                        <input type="password" id="loginPassword" placeholder="您的密码" autocomplete="current-password" required>
+                    </div>
+
+                    <button type="submit" class="modal-btn" id="loginSubmitBtn">
+                        🔓 登录
+                    </button>
+
+                    <span class="modal-error" id="loginError"></span>
+
+                    <a class="modal-forgot-password" id="forgotPasswordLink">
+                        忘记密码？
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <script type="module">
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { initializeApp } from 'firebase/app';
+        import { 
+            getAuth, 
+            createUserWithEmailAndPassword, 
+            signInWithEmailAndPassword, 
+            onAuthStateChanged,
+            sendEmailVerification,
+            sendPasswordResetEmail,
+            GoogleAuthProvider,
+            signInWithPopup,
+            signInWithRedirect,
+            getRedirectResult,
+            OAuthProvider
+        } from 'firebase/auth';
+        import { getFirestore, doc, setDoc, getDoc, updateDoc, increment } from 'firebase/firestore';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE 配置
+        // ============================================================
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // ✅ 检测移动设备 vs 桌面
+        // ============================================================
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+                        || (window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
+        
+        console.log('📱 检测到的环境：', isMobile ? '📱 移动' : '💻 桌面');
+        
+        // ============================================================
+        // 验证 URL
+        // ============================================================
+        const isProduction = window.location.hostname !== 'localhost' && 
+                             window.location.hostname !== '127.0.0.1';
+        
+        const baseUrl = isProduction 
+            ? 'https://www.eteo.com'
+            : `${window.location.protocol}//${window.location.host}`;
+        
+        const actionCodeSettings = {
+            url: `${baseUrl}/www/zh/yanzheng_youxiang_zh.html`,
+            handleCodeInApp: true
+        };
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        const listenBtn = document.getElementById('listenBtn');
+        const form = document.getElementById('registerForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const toast = document.getElementById('toast');
+        const displayNameInput = document.getElementById('displayName');
+        const professionSelect = document.getElementById('profession');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirmPassword');
+        const phoneInput = document.getElementById('phone');
+        const countrySelect = document.getElementById('country');
+        const countryCodeSelect = document.getElementById('countryCode');
+        const acceptTermsCheckbox = document.getElementById('acceptTerms');
+        
+        const btnText = document.getElementById('btnText');
+        const btnSpinner = document.getElementById('btnSpinner');
+        
+        const strengthContainer = document.getElementById('strengthContainer');
+        const strengthIndicator = document.getElementById('strengthIndicator');
+        const strengthText = document.getElementById('strengthText');
+        
+        const displayNameError = document.getElementById('displayNameError');
+        const professionError = document.getElementById('professionError');
+        const emailError = document.getElementById('emailError');
+        const passwordError = document.getElementById('passwordError');
+        const confirmPasswordError = document.getElementById('confirmPasswordError');
+        const countryError = document.getElementById('countryError');
+        const termsError = document.getElementById('termsError');
+        
+        // Modal
+        const loginModal = document.getElementById('loginModal');
+        const openLoginModal = document.getElementById('openLoginModal');
+        const closeLoginModal = document.getElementById('closeLoginModal');
+        const loginForm = document.getElementById('loginForm');
+        const loginEmail = document.getElementById('loginEmail');
+        const loginPassword = document.getElementById('loginPassword');
+        const loginSubmitBtn = document.getElementById('loginSubmitBtn');
+        const loginError = document.getElementById('loginError');
+        const forgotPasswordLink = document.getElementById('forgotPasswordLink');
+        
+        const storage = new StorageService();
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        function showToast(message, duration = 3000) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // 验证
+        // ============================================================
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+        
+        function getPasswordStrength(password) {
+            if (password.length === 0) return { level: 0, label: '', color: '' };
+            let score = 0;
+            if (password.length >= 8) score += 1;
+            if (password.length >= 12) score += 1;
+            if (/[a-z]/.test(password)) score += 1;
+            if (/[A-Z]/.test(password)) score += 1;
+            if (/[0-9]/.test(password)) score += 1;
+            if (/[^a-zA-Z0-9]/.test(password)) score += 1;
+            
+            if (score <= 2) return { level: 0, label: '弱', color: '#e74c3c' };
+            if (score <= 4) return { level: 1, label: '中', color: '#f39c12' };
+            return { level: 2, label: '强', color: '#2ecc71' };
+        }
+        
+        // ============================================================
+        // 实时验证
+        // ============================================================
+        emailInput.addEventListener('blur', function() {
+            const email = this.value.trim();
+            if (email && !isValidEmail(email)) {
+                this.classList.add('error');
+                this.classList.remove('success');
+                emailError.classList.add('show');
+            } else if (email) {
+                this.classList.remove('error');
+                this.classList.add('success');
+                emailError.classList.remove('show');
+            }
+        });
+        
+        emailInput.addEventListener('input', function() {
+            if (this.classList.contains('error')) {
+                this.classList.remove('error');
+                emailError.classList.remove('show');
+            }
+        });
+        
+        passwordInput.addEventListener('input', function() {
+            const password = this.value;
+            if (password.length > 0) {
+                strengthContainer.style.display = 'flex';
+                const strength = getPasswordStrength(password);
+                if (strength.level === 0) {
+                    strengthIndicator.style.width = '33%';
+                    strengthIndicator.style.background = strength.color;
+                    strengthText.textContent = '弱';
+                    strengthText.className = 'strength-text weak';
+                } else if (strength.level === 1) {
+                    strengthIndicator.style.width = '66%';
+                    strengthIndicator.style.background = strength.color;
+                    strengthText.textContent = '中';
+                    strengthText.className = 'strength-text medium';
+                } else {
+                    strengthIndicator.style.width = '100%';
+                    strengthIndicator.style.background = strength.color;
+                    strengthText.textContent = '强';
+                    strengthText.className = 'strength-text strong';
+                }
+            } else {
+                strengthContainer.style.display = 'none';
+            }
+            
+            if (password.length > 0 && password.length < 6) {
+                this.classList.add('error');
+                passwordError.classList.add('show');
+            } else if (password.length >= 6) {
+                this.classList.remove('error');
+                this.classList.add('success');
+                passwordError.classList.remove('show');
+            }
+            checkPasswordMatch();
+        });
+        
+        function checkPasswordMatch() {
+            const password = passwordInput.value;
+            const confirm = confirmPasswordInput.value;
+            if (confirm.length > 0 && password !== confirm) {
+                confirmPasswordInput.classList.add('error');
+                confirmPasswordInput.classList.remove('success');
+                confirmPasswordError.classList.add('show');
+            } else if (confirm.length > 0) {
+                confirmPasswordInput.classList.remove('error');
+                confirmPasswordInput.classList.add('success');
+                confirmPasswordError.classList.remove('show');
+            }
+        }
+        
+        confirmPasswordInput.addEventListener('input', checkPasswordMatch);
+        
+        acceptTermsCheckbox.addEventListener('change', function() {
+            if (this.checked) termsError.classList.remove('show');
+        });
+        
+        // ============================================================
+        // 显示/隐藏密码
+        // ============================================================
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            this.textContent = type === 'password' ? '👁️' : '🙈';
+        });
+        
+        document.getElementById('toggleConfirmPassword').addEventListener('click', function() {
+            const type = confirmPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmPasswordInput.setAttribute('type', type);
+            this.textContent = type === 'password' ? '👁️' : '🙈';
+        });
+        
+        // ============================================================
+        // SPINNER
+        // ============================================================
+        function setLoading(state) {
+            if (state) {
+                btnText.style.display = 'none';
+                btnSpinner.style.display = 'inline-block';
+                submitBtn.disabled = true;
+            } else {
+                btnText.style.display = 'inline';
+                btnSpinner.style.display = 'none';
+                submitBtn.disabled = false;
+            }
+        }
+        
+        // ============================================================
+        // 收听按钮
+        // ============================================================
+        listenBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            if (!window.tts) {
+                showToast('❌ TTS 模块不可用', 3000);
+                return;
+            }
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 收听说明';
+                this.classList.remove('listening');
+                return;
+            }
+            const message = `欢迎，无论您是医生还是牙科医学生，欢迎来到 ETEO。要成为国际 ETEO 大家庭的成员，您必须注册。您的名字、姓氏、职业、邮箱和国家是您的全球排名所必需的。您的电话号码是可选的。那么，准备好加入国际 ETEO 大家庭了吗？填写表单并开始吧！`;
+            this.textContent = '⏹️ 停止';
+            this.classList.add('listening');
+            window.tts.speak(message, 'zh', 0.9, 1.0,
+                () => { this.textContent = '🔊 收听说明'; this.classList.remove('listening'); },
+                (error) => { console.error('❌ TTS 错误：', error); this.textContent = '🔊 收听说明'; this.classList.remove('listening'); showToast('❌ 语音朗读错误', 3000); }
+            );
+        });
+        
+        // ============================================================
+        // 创建账户
+        // ============================================================
+        async function createUserAccount(email, password, userData) {
+            try {
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const uid = userCredential.user.uid;
+                await sendEmailVerification(userCredential.user, actionCodeSettings);
+                console.log('✅ 验证邮件已发送至：', email);
+                
+                const userRef = doc(db, 'users_ios', uid);
+                await setDoc(userRef, {
+                    displayName: userData.displayName,
+                    profession: userData.profession || '未指定',
+                    email: userData.email,
+                    phone: userData.phone || '未指定',
+                    country: userData.country,
+                    registeredAt: new Date().toISOString(),
+                    emailVerified: false,
+                    scores: {}, subscriptions: { quiz: {} }, roulette: null,
+                    certificates: {}, totalLevels: 0, avgScore: 0, globalScore: 0,
+                    badges: [], rouletteStats: { freeQuizzesUsed: 0 }
+                });
+                
+                try {
+                    const statsRef = doc(db, 'stats', 'totalUsers');
+                    await setDoc(statsRef, { count: increment(1) }, { merge: true });
+                } catch (statsError) { console.warn('⚠️ 统计错误：', statsError); }
+                
+                const settings = storage.getSettings() || {};
+                settings.user = {
+                    uid: uid, displayName: userData.displayName,
+                    profession: userData.profession || '未指定',
+                    email: userData.email, phone: userData.phone || '未指定',
+                    country: userData.country, registeredAt: new Date().toISOString(),
+                    emailVerified: false
+                };
+                storage.saveSettings(settings);
+                return { success: true, uid, emailSent: true };
+            } catch (error) {
+                console.error('❌ 创建账户错误：', error);
+                return { success: false, error: error.message, code: error.code };
+            }
+        }
+        
+        // ============================================================
+        // 登录
+        // ============================================================
+        async function loginUser(email, password) {
+            try {
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+                
+                if (!user.emailVerified) {
+                    showToast('⛔ 账户未激活。请检查您的邮箱！', 5000);
+                    await auth.signOut();
+                    const settings = storage.getSettings() || {};
+                    delete settings.user;
+                    storage.saveSettings(settings);
+                    return;
+                }
+                
+                console.log('✅ 登录成功：', user.email);
+                const userRef = doc(db, 'users_ios', user.uid);
+                const snapshot = await getDoc(userRef);
+                if (snapshot.exists()) {
+                    const data = snapshot.data();
+                    const settings = storage.getSettings() || {};
+                    settings.user = {
+                        uid: user.uid, displayName: data.displayName || '医生',
+                        profession: data.profession || '未指定',
+                        email: data.email || user.email, phone: data.phone || '未指定',
+                        country: data.country || '🌍',
+                        registeredAt: data.registeredAt || new Date().toISOString(),
+                        emailVerified: user.emailVerified
+                    };
+                    storage.saveSettings(settings);
+                }
+                
+                showToast('✅ 欢迎回来！', 2000);
+                closeModal();
+                setTimeout(() => { window.location.href = 'dashboard_zh.html'; }, 1500);
+            } catch (error) {
+                console.error('❌ 登录错误：', error);
+                let msg = '❌ 登录错误';
+                if (error.code === 'auth/user-not-found') msg = '❌ 没有使用此邮箱的账户';
+                else if (error.code === 'auth/wrong-password' || error.code === 'auth/invalid-credential') msg = '❌ 密码错误';
+                else if (error.code === 'auth/invalid-email') msg = '❌ 邮箱无效';
+                else if (error.code === 'auth/too-many-requests') msg = '❌ 尝试次数过多。请稍后再试。';
+                else msg = '❌ ' + error.message;
+                
+                loginError.textContent = msg;
+                loginError.classList.add('show');
+            }
+        }
+        
+        // ============================================================
+        // ✅ GOOGLE/APPLE 登录（桌面用弹窗，移动用重定向）
+        // ============================================================
+        async function signInWithProvider(provider, providerName) {
+            try {
+                let result;
+                if (isMobile) {
+                    console.log('📱 使用 signInWithRedirect 于', providerName);
+                    await signInWithRedirect(auth, provider);
+                    return;
+                } else {
+                    console.log('💻 使用 signInWithPopup 于', providerName);
+                    result = await signInWithPopup(auth, provider);
+                }
+                
+                if (result) {
+                    await handleProviderResult(result);
+                }
+            } catch (error) {
+                console.error('❌ 错误', providerName, ':', error);
+                showToast('❌ 错误：' + error.message, 4000);
+            }
+        }
+        
+        // ✅ 结果处理（弹窗和重定向）
+        async function handleProviderResult(result) {
+            const user = result.user;
+            console.log('✅ 使用提供者登录成功：', user.email);
+            
+            const userRef = doc(db, 'users_ios', user.uid);
+            const snapshot = await getDoc(userRef);
+            
+            if (!snapshot.exists()) {
+                await setDoc(userRef, {
+                    displayName: user.displayName || '用户',
+                    profession: '未指定',
+                    email: user.email,
+                    phone: '未指定',
+                    country: '🌍',
+                    registeredAt: new Date().toISOString(),
+                    emailVerified: user.emailVerified,
+                    scores: {}, subscriptions: { quiz: {} }, roulette: null,
+                    certificates: {}, totalLevels: 0, avgScore: 0, globalScore: 0,
+                    badges: [], rouletteStats: { freeQuizzesUsed: 0 }
+                });
+                try {
+                    const statsRef = doc(db, 'stats', 'totalUsers');
+                    await setDoc(statsRef, { count: increment(1) }, { merge: true });
+                } catch (statsError) { console.warn('⚠️ 统计错误：', statsError); }
+            }
+            
+            const settings = storage.getSettings() || {};
+            settings.user = {
+                uid: user.uid, displayName: user.displayName || '用户',
+                profession: '未指定', email: user.email,
+                phone: '未指定', country: '🌍',
+                registeredAt: new Date().toISOString(),
+                emailVerified: user.emailVerified
+            };
+            storage.saveSettings(settings);
+            
+            showToast('✅ 欢迎！', 2000);
+            setTimeout(() => { window.location.href = 'dashboard_zh.html'; }, 1500);
+        }
+        
+        // ✅ 加载时：检查是否从重定向返回
+        getRedirectResult(auth).then(async (result) => {
+            if (result) {
+                console.log('✅ 检测到从重定向返回');
+                await handleProviderResult(result);
+            }
+        }).catch((error) => {
+            console.error('❌ getRedirectResult 错误：', error);
+        });
+        
+        document.getElementById('googleBtn').addEventListener('click', () => {
+            const provider = new GoogleAuthProvider();
+            signInWithProvider(provider, 'Google');
+        });
+        
+        document.getElementById('appleBtn').addEventListener('click', () => {
+            const provider = new OAuthProvider('apple.com');
+            provider.addScope('email');
+            provider.addScope('name');
+            signInWithProvider(provider, 'Apple');
+        });
+        
+        // ============================================================
+        // ✅ 登录模态框管理
+        // ============================================================
+        function openModal() {
+            loginModal.classList.add('active');
+            loginError.classList.remove('show');
+            loginError.textContent = '';
+        }
+        
+        function closeModal() {
+            loginModal.classList.remove('active');
+            loginEmail.value = '';
+            loginPassword.value = '';
+            loginError.classList.remove('show');
+        }
+        
+        openLoginModal.addEventListener('click', openModal);
+        closeLoginModal.addEventListener('click', closeModal);
+        
+        loginModal.addEventListener('click', (e) => {
+            if (e.target === loginModal) closeModal();
+        });
+        
+        // ============================================================
+        // ✅ 登录表单
+        // ============================================================
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = loginEmail.value.trim();
+            const password = loginPassword.value;
+            
+            if (!email || !isValidEmail(email)) {
+                loginError.textContent = '⚠️ 请输入有效的邮箱';
+                loginError.classList.add('show');
+                return;
+            }
+            if (!password) {
+                loginError.textContent = '⚠️ 请输入您的密码';
+                loginError.classList.add('show');
+                return;
+            }
+            
+            loginSubmitBtn.disabled = true;
+            loginSubmitBtn.textContent = '⏳ 登录中...';
+            loginError.classList.remove('show');
+            
+            await loginUser(email, password);
+            
+            loginSubmitBtn.disabled = false;
+            loginSubmitBtn.textContent = '🔓 登录';
+        });
+        
+        // ============================================================
+        // ✅ 忘记密码
+        // ============================================================
+        forgotPasswordLink.addEventListener('click', async (e) => {
+            e.preventDefault();
+            const email = loginEmail.value.trim();
+            
+            if (!email || !isValidEmail(email)) {
+                loginError.textContent = '⚠️ 请先在上方输入您的邮箱';
+                loginError.classList.add('show');
+                return;
+            }
+            
+            try {
+                await sendPasswordResetEmail(auth, email);
+                loginError.textContent = '✅ 重置邮件已发送！请检查您的收件箱。';
+                loginError.style.color = '#2ecc71';
+                loginError.classList.add('show');
+                setTimeout(() => {
+                    loginError.style.color = '#e74c3c';
+                }, 5000);
+            } catch (error) {
+                console.error('❌ 重置密码错误：', error);
+                loginError.textContent = '❌ 错误：' + error.message;
+                loginError.classList.add('show');
+            }
+        });
+        
+        // ============================================================
+        // 注册表单
+        // ============================================================
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const displayName = displayNameInput.value.trim();
+            const profession = professionSelect.value;
+            const email = emailInput.value.trim();
+            const password = passwordInput.value.trim();
+            const confirmPassword = confirmPasswordInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const country = countrySelect.value;
+            const countryCode = countryCodeSelect.value;
+            const acceptTerms = acceptTermsCheckbox.checked;
+            
+            let hasError = false;
+            
+            if (!displayName) { displayNameInput.classList.add('error'); displayNameError.classList.add('show'); hasError = true; }
+            else { displayNameInput.classList.remove('error'); displayNameError.classList.remove('show'); }
+            
+            if (!profession) { professionSelect.classList.add('error'); professionError.classList.add('show'); hasError = true; }
+            else { professionSelect.classList.remove('error'); professionError.classList.remove('show'); }
+            
+            if (!email || !isValidEmail(email)) { emailInput.classList.add('error'); emailError.classList.add('show'); hasError = true; }
+            else { emailInput.classList.remove('error'); emailError.classList.remove('show'); }
+            
+            if (!password || password.length < 6) { passwordInput.classList.add('error'); passwordError.classList.add('show'); hasError = true; }
+            else { passwordInput.classList.remove('error'); passwordError.classList.remove('show'); }
+            
+            if (password !== confirmPassword) { confirmPasswordInput.classList.add('error'); confirmPasswordError.classList.add('show'); hasError = true; }
+            else { confirmPasswordInput.classList.remove('error'); confirmPasswordError.classList.remove('show'); }
+            
+            if (!country) { countrySelect.classList.add('error'); countryError.classList.add('show'); hasError = true; }
+            else { countrySelect.classList.remove('error'); countryError.classList.remove('show'); }
+            
+            if (!acceptTerms) { termsError.classList.add('show'); hasError = true; }
+            else { termsError.classList.remove('show'); }
+            
+            if (hasError) {
+                showToast('⚠️ 请更正表单中的错误', 3000);
+                return;
+            }
+            
+            setLoading(true);
+            const fullPhone = phone ? countryCode + ' ' + phone : '';
+            
+            const result = await createUserAccount(email, password, {
+                displayName, profession, email, phone: fullPhone, country
+            });
+            
+            if (result.success) {
+                btnText.style.display = 'inline';
+                btnSpinner.style.display = 'none';
+                btnText.textContent = '✅ 账户已创建！';
+                submitBtn.disabled = false;
+                showToast('✅ 账户已创建！请检查您的邮箱。', 3000);
+                setTimeout(() => { window.location.href = 'yanzheng_youxiang_zh.html'; }, 1500);
+            } else {
+                setLoading(false);
+                if (result.code === 'auth/email-already-in-use') {
+                    showToast('❌ 此邮箱已被使用。请登录！', 4000);
+                    setTimeout(() => {
+                        openModal();
+                        loginEmail.value = email;
+                    }, 1500);
+                } else {
+                    showToast(`❌ ${result.error}`, 4000);
+                }
+                btnText.textContent = '📝 注册';
+            }
+        });
+        
+        // ============================================================
+        // 认证状态检查
+        // ============================================================
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                if (!user.emailVerified) {
+                    console.log('⛔ 邮箱未验证：', user.email);
+                    showToast('⛔ 账户未激活。请检查您的邮箱！', 5000);
+                    await auth.signOut();
+                    const settings = storage.getSettings() || {};
+                    delete settings.user;
+                    storage.saveSettings(settings);
+                    return;
+                }
+                console.log('✅ 邮箱已验证：', user.email);
+                const settings = storage.getSettings() || {};
+                if (!settings.user || !settings.user.uid) {
+                    try {
+                        const userRef = doc(db, 'users_ios', user.uid);
+                        const snapshot = await getDoc(userRef);
+                        if (snapshot.exists()) {
+                            const data = snapshot.data();
+                            settings.user = {
+                                uid: user.uid, displayName: data.displayName || '医生',
+                                profession: data.profession || '未指定',
+                                email: data.email || user.email, phone: data.phone || '未指定',
+                                country: data.country || '🌍',
+                                registeredAt: data.registeredAt || new Date().toISOString(),
+                                emailVerified: user.emailVerified
+                            };
+                            storage.saveSettings(settings);
+                        }
+                    } catch (error) { console.warn('⚠️ 加载错误：', error); }
+                }
+                console.log('✅ 用户已登录 - 正在跳转...');
+                showToast('✅ 欢迎回来！', 1500);
+                setTimeout(() => { window.location.href = 'dashboard_zh.html'; }, 1200);
+            } else {
+                console.log('👤 用户未登录');
+            }
+        });
+        
+        // ============================================================
+        // 初始化
+        // ============================================================
+        Logger.info('📝 注册页面 ZH 就绪（带登录 + 修正的 Google Sign-In）');
+        console.log('✅ 新：添加了"登录"按钮');
+        console.log('✅ 新：带邮箱/密码的登录模态框');
+        console.log('✅ 新：忘记密码');
+        console.log('✅ 新：Google/Apple Sign-In 已修正（移动 → 重定向）');
+        console.log('✅ 新：已使用邮箱的清晰消息');
+    </script>
+</body>
+</html>

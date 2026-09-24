@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Подтверждение email - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+    
+    <style>
+        /* Стили для страницы подтверждения */
+        .verify-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .verify-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .verify-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .verify-subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .verify-email {
+            font-weight: 600;
+            color: #4caf50;
+            background: #e8f5e9;
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 10px 0 20px;
+        }
+        
+        .verify-status {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            color: #856404;
+            font-size: 14px;
+        }
+        
+        .verify-status.success {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+        
+        .verify-status.error {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+        
+        .verify-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 25px;
+        }
+        
+        .btn-resend {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-resend:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-resend:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn-back {
+            background: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-back:hover {
+            background: #e8e8e8;
+        }
+        
+        .timer-text {
+            font-size: 14px;
+            color: #888;
+            margin-top: 10px;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 0.8s ease-in-out infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .checking-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px;
+            background: #e3f2fd;
+            border-radius: 12px;
+            margin: 15px 0;
+            color: #0d47a1;
+        }
+        
+        .checking-status .spinner-small {
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(13, 71, 161, 0.2);
+            border-radius: 50%;
+            border-top-color: #0d47a1;
+            animation: spin 0.8s ease-in-out infinite;
+        }
+        
+        .nav-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn {
+            background: none;
+            border: none;
+            font-size: 16px;
+            color: #667eea;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- ============================================================ -->
+        <!-- НАВИГАЦИЯ -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                ← На главную
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+        <!-- ============================================================ -->
+        <div class="verify-container">
+            
+            <span class="verify-icon">📧</span>
+            
+            <h1 class="verify-title">Подтвердите ваш email</h1>
+            
+            <p class="verify-subtitle">
+                Письмо с подтверждением было отправлено на :
+            </p>
+            
+            <div class="verify-email" id="userEmail">загрузка...</div>
+            
+            <div class="verify-status" id="statusMessage">
+                📩 Пожалуйста, перейдите по ссылке в письме, чтобы активировать ваш аккаунт.
+            </div>
+            
+            <div class="checking-status" id="checkingStatus">
+                <div class="spinner-small"></div>
+                <span>Автоматическая проверка выполняется...</span>
+            </div>
+            
+            <div class="verify-actions">
+                <button class="btn-resend" id="resendBtn">
+                    🔄 Отправить письмо повторно
+                </button>
+                
+                <button class="btn-back" onclick="window.location.href='inscription_ru.html'">
+                    ← Назад к регистрации
+                </button>
+            </div>
+            
+            <div class="timer-text" id="timerText">
+                Повторная отправка доступна через <span id="countdown">60</span> секунд
+            </div>
+            
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; font-size: 13px; color: #999;">
+                <p>💡 Совет : Проверьте папку со спамом, если не найдете письмо.</p>
+                <p>🔒 После подтверждения email вы получите доступ к панели управления.</p>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- TOAST -->
+        <!-- ============================================================ -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- ОСНОВНОЙ СКРИПТ -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { initializeApp } from 'firebase/app';
+        import { 
+            getAuth, 
+            onAuthStateChanged,
+            sendEmailVerification,
+            reload
+        } from 'firebase/auth';
+        import { getFirestore, doc, updateDoc } from 'firebase/firestore';
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const userEmailEl = document.getElementById('userEmail');
+        const statusMessageEl = document.getElementById('statusMessage');
+        const checkingStatusEl = document.getElementById('checkingStatus');
+        const resendBtn = document.getElementById('resendBtn');
+        const countdownEl = document.getElementById('countdown');
+        const timerTextEl = document.getElementById('timerText');
+        const toast = document.getElementById('toast');
+        
+        // ============================================================
+        // STORAGE
+        // ============================================================
+        
+        const storage = new StorageService();
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 3000) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // СОСТОЯНИЕ
+        // ============================================================
+        
+        let currentUser = null;
+        let countdown = 60;
+        let countdownInterval = null;
+        let checkInterval = null;
+        let isChecking = false;
+        
+        // ============================================================
+        // ОТОБРАЖЕНИЕ СООБЩЕНИЯ О СТАТУСЕ
+        // ============================================================
+        
+        function setStatus(message, type = 'info') {
+            statusMessageEl.textContent = message;
+            statusMessageEl.className = 'verify-status';
+            if (type === 'success') {
+                statusMessageEl.classList.add('success');
+            } else if (type === 'error') {
+                statusMessageEl.classList.add('error');
+            }
+        }
+        
+        // ============================================================
+        // УПРАВЛЕНИЕ ТАЙМЕРОМ
+        // ============================================================
+        
+        function startCountdown(seconds = 60) {
+            countdown = seconds;
+            countdownEl.textContent = countdown;
+            resendBtn.disabled = true;
+            timerTextEl.style.display = 'block';
+            
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+            
+            countdownInterval = setInterval(() => {
+                countdown--;
+                countdownEl.textContent = countdown;
+                
+                if (countdown <= 0) {
+                    clearInterval(countdownInterval);
+                    countdownInterval = null;
+                    resendBtn.disabled = false;
+                    timerTextEl.style.display = 'none';
+                }
+            }, 1000);
+        }
+        
+        // ============================================================
+        // ПОВТОРНАЯ ОТПРАВКА ПИСЬМА
+        // ============================================================
+        
+        async function resendVerificationEmail() {
+            if (!currentUser) {
+                showToast('❌ Пожалуйста, войдите снова', 3000);
+                return;
+            }
+            
+            try {
+                resendBtn.disabled = true;
+                resendBtn.innerHTML = '<span class="spinner"></span> Отправка...';
+                
+                await sendEmailVerification(currentUser);
+                
+                showToast('✅ Письмо отправлено повторно !', 3000);
+                setStatus('📩 Новое письмо с подтверждением отправлено. Проверьте почту.', 'success');
+                
+                startCountdown(60);
+                
+            } catch (error) {
+                console.error('❌ Ошибка повторной отправки:', error);
+                showToast('❌ Ошибка : ' + error.message, 3000);
+                setStatus('❌ Ошибка отправки : ' + error.message, 'error');
+                resendBtn.disabled = false;
+                resendBtn.textContent = '🔄 Отправить письмо повторно';
+            }
+        }
+        
+        // ============================================================
+        // ПРОВЕРКА СТАТУСА EMAIL
+        // ============================================================
+        
+        async function checkEmailVerification() {
+            if (isChecking) return;
+            if (!currentUser) return;
+            
+            isChecking = true;
+            
+            try {
+                // Обновляем данные пользователя
+                await reload(currentUser);
+                
+                if (currentUser.emailVerified) {
+                    // ✅ Email подтверждён !
+                    clearInterval(checkInterval);
+                    checkingStatusEl.style.display = 'none';
+                    
+                    setStatus('✅ Поздравляем ! Ваш email успешно подтверждён.', 'success');
+                    
+                    // Обновляем Firestore
+                    try {
+                        const userRef = doc(db, 'users_ios', currentUser.uid);
+                        await updateDoc(userRef, {
+                            emailVerified: true
+                        });
+                    } catch (e) {
+                        console.warn('⚠️ Ошибка обновления Firestore:', e);
+                    }
+                    
+                    // Обновляем локальное хранилище
+                    const settings = storage.getSettings() || {};
+                    if (settings.user) {
+                        settings.user.emailVerified = true;
+                        storage.saveSettings(settings);
+                    }
+                    
+                    showToast('✅ Email подтверждён ! Перенаправление на панель управления...', 2500);
+                    
+                    setTimeout(() => {
+                        window.location.href = 'dashboard.html';
+                    }, 2000);
+                    
+                    return true;
+                } else {
+                    // ❌ Email ещё не подтверждён
+                    setStatus('📩 Перейдите по ссылке в письме, чтобы активировать аккаунт.', 'info');
+                    return false;
+                }
+                
+            } catch (error) {
+                console.error('❌ Ошибка проверки:', error);
+                return false;
+            } finally {
+                isChecking = false;
+            }
+        }
+        
+        // ============================================================
+        // ИНИЦИАЛИЗАЦИЯ
+        // ============================================================
+        
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                currentUser = user;
+                userEmailEl.textContent = user.email || 'Email не указан';
+                
+                // Проверяем, подтверждён ли email
+                if (user.emailVerified) {
+                    // ✅ Уже подтверждён - перенаправляем
+                    showToast('✅ Email уже подтверждён. Перенаправление...', 2000);
+                    setTimeout(() => {
+                        window.location.href = 'dashboard.html';
+                    }, 1500);
+                    return;
+                }
+                
+                // Запускаем таймер для кнопки повторной отправки
+                startCountdown(60);
+                
+                // Автоматическая проверка каждые 5 секунд
+                checkInterval = setInterval(() => {
+                    checkEmailVerification();
+                }, 5000);
+                
+                // Немедленная проверка
+                setTimeout(() => {
+                    checkEmailVerification();
+                }, 1000);
+                
+                // Обработчик кнопки повторной отправки
+                resendBtn.addEventListener('click', resendVerificationEmail);
+                
+                Logger.info('📧 Страница подтверждения email загружена');
+                console.log('📧 Email:', user.email);
+                console.log('✅ Автоматическая проверка каждые 5 секунд');
+                
+            } else {
+                // Пользователь не авторизован - перенаправляем на регистрацию
+                showToast('⚠️ Пожалуйста, зарегистрируйтесь сначала', 2000);
+                setTimeout(() => {
+                    window.location.href = 'inscription_ru.html';
+                }, 1500);
+            }
+        });
+        
+        // Очистка интервалов при переходе
+        window.addEventListener('beforeunload', () => {
+            if (checkInterval) {
+                clearInterval(checkInterval);
+            }
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+        });
+        
+        console.log('📧 Страница подтверждения email загружена');
+        
+    </script>
+</body>
+</html>

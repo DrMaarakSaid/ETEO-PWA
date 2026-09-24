@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO - Classement mondial</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container classement-container">
+        
+        <!-- ============================================================ -->
+        <!-- NAVIGATION HAUT -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='dashboard.html'">
+                ← Retour
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 Accueil
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- HEADER -->
+        <!-- ============================================================ -->
+        <div class="classement-header">
+            <h1>🏆 Classement mondial ETEO 🌍</h1>
+            <p>Découvrez qui sont les meilleurs dentistes du monde sur ETEO</p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- IA DE BIENVENUE (MODULAIRE) -->
+        <!-- ============================================================ -->
+        <div class="ia-greeting" id="iaGreeting">
+            <div class="ia-avatar">🤖</div>
+            <div>
+                <p class="ia-message" id="iaClassementMessage">Chargement du message...</p>
+                <button class="listen-btn-small" id="listenClassementBtn">🔊 Écouter</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- CONTENEUR CLASSEMENT -->
+        <!-- ============================================================ -->
+        <div id="classementContainer">
+            <!-- Rempli par ClassementManager -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- TOP PAYS -->
+        <!-- ============================================================ -->
+        <div class="top-countries-grid">
+            <div id="topCountriesContainer"></div>
+            <div id="topCountriesMonthContainer"></div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- NAVIGATION BAS (DUPLIQUÉE) -->
+        <!-- ============================================================ -->
+        <div class="nav-bottom">
+            <button class="back-btn" onclick="window.location.href='dashboard.html'">
+                ← Retour
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 Accueil
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- FOOTER -->
+        <!-- ============================================================ -->
+        <div class="footer">
+            <p>🏆 Classement en temps réel • Mis à jour à chaque quiz</p>
+            <p>© 2026 - ETEO Dental Education | 🇲🇦 Dr. SAID MAARAK</p>
+        </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TOAST -->
+    <!-- ============================================================ -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ============================================================ -->
+    <!-- SCRIPT PRINCIPAL -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { RankingService } from '../js/services/rankingService.js';
+        import { ClassementManager } from '../js/ui/ClassementManager.js';
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        window.tts = tts;
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const container = document.getElementById('classementContainer');
+        const iaMessage = document.getElementById('iaClassementMessage');
+        const listenBtn = document.getElementById('listenClassementBtn');
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // CLEAN TTS
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // GÉNÉRER LE MESSAGE IA (CORRIGÉ)
+        // ============================================================
+        
+        async function generateIAMessage(uid) {
+            try {
+                const rankingService = new RankingService();
+                const top10 = await rankingService.getGlobalRanking(10);
+                const topCountries = await rankingService.getTopCountriesByTopUsers();
+                
+                const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
+                // ✅ CORRIGÉ : displayName pour iOS
+                const userName = settings.user?.displayName || settings.user?.fullName || 'Docteur';
+                const userProfession = settings.user?.profession || 'Docteur';
+                const userCountry = settings.user?.country || 'votre pays';
+                const professionEmoji = userProfession === 'Docteur' ? '🦷' : '📚';
+                
+                let userRank = top10.findIndex(u => u.uid === uid) + 1;
+                if (userRank === 0) {
+                    try {
+                        const rankData = await rankingService.getUserRank(uid);
+                        userRank = rankData.rank || 'hors du top 10';
+                    } catch (e) {
+                        userRank = 'hors du top 10';
+                    }
+                }
+                
+                let message = '';
+                let ttsMessage = '';
+                
+                message = `Bonjour ${userName} ! 👋<br>`;
+                message += `${professionEmoji} Vous êtes <strong>${userProfession}</strong>. Bienvenue sur le Classement mondial ETEO ! 🏆<br><br>`;
+                ttsMessage = `Bonjour ${userName}. Vous êtes ${userProfession}. Bienvenue sur le Classement mondial ETEO. `;
+                
+                if (userRank === 1) {
+                    message += `🏆 <strong>Félicitations ! Vous êtes numéro 1 mondial !</strong> 🌟<br>`;
+                    message += `Vous dominez le classement. Vos concurrents sont juste derrière vous...<br><br>`;
+                    ttsMessage += `Félicitations ! Vous êtes numéro 1 mondial. Vous dominez le classement. Vos concurrents sont juste derrière vous. `;
+                } else if (userRank <= 10) {
+                    message += `🏅 Vous êtes <strong>#${userRank} mondial</strong> !<br>`;
+                    message += `Vous faites partie des 10 meilleurs. Le sommet n'est pas loin...<br><br>`;
+                    ttsMessage += `Vous êtes numéro ${userRank} mondial. Vous faites partie des 10 meilleurs. Le sommet n'est pas loin. `;
+                } else {
+                    message += `📊 Vous êtes <strong>#${userRank} mondial</strong>.<br>`;
+                    message += `Chaque quiz vous rapproche du top 10. Ne lâchez rien ! 💪<br><br>`;
+                    ttsMessage += `Vous êtes numéro ${userRank} mondial. Chaque quiz vous rapproche du top 10. Ne lâchez rien. `;
+                }
+                
+                message += `<strong>📊 Comment votre score est calculé :</strong><br>`;
+                message += `• 70% = <strong>qualité</strong> (moyenne de vos scores)<br>`;
+                message += `• 30% = <strong>régularité</strong> (spécialités complétées)<br><br>`;
+                ttsMessage += `Comment votre score est calculé. 70 pour cent = qualité, la moyenne de vos scores. 30 pour cent = régularité, les spécialités complétées. `;
+                
+                if (top10.length > 0) {
+                    message += `<strong>👑 Les 3 meilleurs :</strong><br>`;
+                    const medals = ['🥇', '🥈', '🥉'];
+                    top10.slice(0, 3).forEach((user, index) => {
+                        const isUser = user.uid === uid;
+                        message += `• ${medals[index]} ${index+1}er : <strong>${user.fullName}</strong>${isUser ? ' ← VOUS !' : ''} (${user.country}) — ${user.score}%<br>`;
+                        ttsMessage += `${medals[index]} ${index+1}er : ${user.fullName} de ${user.country} avec ${user.score}%. `;
+                    });
+                    message += `<br>`;
+                }
+                
+                if (topCountries.length > 0) {
+                    message += `<strong>🌍 Top pays du mois :</strong><br>`;
+                    const medals = ['🥇', '🥈', '🥉'];
+                    topCountries.slice(0, 3).forEach((item, index) => {
+                        const isUserCountry = item.country === userCountry;
+                        message += `• ${medals[index]} ${index+1}er : <strong>${item.country}</strong>${isUserCountry ? ' ← VOTRE PAYS !' : ''} — ${item.count} utilisateur${item.count>1?'s':''} dans le top 10<br>`;
+                        ttsMessage += `${medals[index]} ${index+1}er : ${item.country} avec ${item.count} utilisateurs dans le top 10. `;
+                    });
+                    message += `<br>`;
+                }
+                
+                message += `<strong>💪 Conseils :</strong><br>`;
+                message += `• Complétez de nouvelles <strong>spécialités</strong><br>`;
+                message += `• Améliorez vos scores<br>`;
+                message += `• Revenez <strong>régulièrement</strong><br><br>`;
+                ttsMessage += `Conseils : complétez de nouvelles spécialités, améliorez vos scores, revenez régulièrement. `;
+                
+                if (userRank === 1) {
+                    message += `🔥 <strong>Alors, ${userName}, faites l'impossible pour que votre nom et votre pays (${userCountry}) restent numéro 1 mondial !</strong> 💪<br>`;
+                    ttsMessage += `Alors, ${userName}, faites l'impossible pour que votre nom et votre pays restent numéro 1 mondial. `;
+                } else if (userRank <= 10) {
+                    message += `🔥 <strong>Alors, ${userName}, faites l'impossible pour que votre nom et votre pays (${userCountry}) restent parmi les 10 premiers !</strong> 💪<br>`;
+                    ttsMessage += `Alors, ${userName}, faites l'impossible pour que votre nom et votre pays restent parmi les 10 premiers. `;
+                } else {
+                    message += `🔥 <strong>Alors, ${userName}, faites l'impossible pour que votre nom et votre pays (${userCountry}) entrent dans le top 10 !</strong> 💪<br>`;
+                    ttsMessage += `Alors, ${userName}, faites l'impossible pour que votre nom et votre pays entrent dans le top 10. `;
+                }
+                
+                message += `<br>Alors, prêt à relever le défi ? 🚀`;
+                ttsMessage += `Alors, prêt à relever le défi ?`;
+                
+                iaMessage.innerHTML = message;
+                window._ttsClassementMessage = cleanTextForTTS(ttsMessage);
+                
+                if (listenBtn) listenBtn.style.display = 'inline-block';
+                
+                setTimeout(() => autoSpeak(), 1200);
+                
+            } catch (error) {
+                console.error('❌ Erreur IA:', error);
+                iaMessage.innerHTML = '⚠️ Message non disponible. Rechargez la page.';
+            }
+        }
+        
+        // ============================================================
+        // LECTURE AUTO
+        // ============================================================
+        
+        let isAutoSpeaking = false;
+        
+        function autoSpeak() {
+            if (!window.tts || isAutoSpeaking) return;
+            isAutoSpeaking = true;
+            const text = window._ttsClassementMessage || '';
+            if (!text) { isAutoSpeaking = false; return; }
+            
+            if (listenBtn) {
+                listenBtn.textContent = '⏹️ Arrêter';
+                listenBtn.classList.add('listening');
+            }
+            
+            window.tts.speak(text, 'fr', 0.9, 1.0,
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 Écouter';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                },
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 Écouter';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                }
+            );
+        }
+        
+        // ============================================================
+        // BOUTON ÉCOUTER
+        // ============================================================
+        
+        listenBtn.addEventListener('click', function() {
+            if (!window.tts) return showToast('❌ TTS non disponible', 3000);
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 Écouter';
+                this.classList.remove('listening');
+                isAutoSpeaking = false;
+                return;
+            }
+            
+            const text = window._ttsClassementMessage || '';
+            if (!text) return showToast('⚠️ Message non disponible', 3000);
+            
+            this.textContent = '⏹️ Arrêter';
+            this.classList.add('listening');
+            
+            window.tts.speak(text, 'fr', 0.9, 1.0,
+                () => {
+                    this.textContent = '🔊 Écouter';
+                    this.classList.remove('listening');
+                },
+                () => {
+                    this.textContent = '🔊 Écouter';
+                    this.classList.remove('listening');
+                    showToast('❌ Erreur de lecture', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // INIT
+        // ============================================================
+        
+        async function init() {
+            Logger.info('🏆 Page classement chargée');
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    const uid = user.uid;
+                    const storage = new StorageService();
+                    const rankingService = new RankingService();
+                    const classementManager = new ClassementManager(rankingService, showToast);
+                    
+                    await classementManager.loadRanking(container);
+                    classementManager.setCurrentUser(uid);
+                    
+                    await generateIAMessage(uid);
+                    
+                    Logger.info('✅ Classement chargé');
+                } else {
+                    showToast('⚠️ Connectez-vous pour voir le classement', 3000);
+                    container.innerHTML = `
+                        <div style="text-align:center;padding:60px 20px;">
+                            <div style="font-size:3rem;">🔒</div>
+                            <div style="font-size:1.2rem;margin-top:20px;">Connectez-vous pour voir le classement</div>
+                            <button onclick="window.location.href='inscription_fr.html'" 
+                                    style="margin-top:20px;padding:12px 40px;border:none;border-radius:30px;
+                                           background:linear-gradient(135deg,#667eea,#764ba2);color:white;
+                                           cursor:pointer;font-weight:700;font-size:1rem;">
+                                🔑 Se connecter / S'inscrire
+                            </button>
+                        </div>
+                    `;
+                    iaMessage.innerHTML = '🤖 Connectez-vous pour découvrir votre classement personnalisé.';
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

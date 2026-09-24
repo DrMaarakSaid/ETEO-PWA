@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO - Мой прогресс</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "jspdf": "https://cdn.skypack.dev/jspdf@2.5.1",
+            "qrcode": "https://cdn.skypack.dev/qrcode@1.5.3"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container progression-container">
+        
+        <!-- ============================================================ -->
+        <!-- ВЕРХНЯЯ НАВИГАЦИЯ -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='dashboard_ru.html'">
+                ← Назад
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 Главная
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ЗАГОЛОВОК -->
+        <!-- ============================================================ -->
+        <div class="progression-header">
+            <h1>📊 Мой прогресс ETEO 📈</h1>
+            <p>Отслеживайте своё развитие уровень за уровнем</p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ПРИВЕТСТВЕННОЕ СООБЩЕНИЕ ИИ (ЦЕНТРИРОВАННОЕ) -->
+        <!-- ============================================================ -->
+        <div class="ia-greeting" id="iaGreeting" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="ia-avatar" style="display: block; text-align: center;">🤖</div>
+            <div style="width: 100%; text-align: center;">
+                <p class="ia-message" id="iaProgressionMessage" style="text-align: center; width: 100%;">Загрузка сообщения...</p>
+                <button class="listen-btn-small" id="listenProgressionBtn" style="display: inline-block; margin: 8px auto 0;">🔊 Слушать</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ВКЛАДКИ -->
+        <!-- ============================================================ -->
+        <div class="progression-tabs">
+            <button class="tab-btn active" data-tab="progression" id="tabProgression">
+                📊 Прогресс
+            </button>
+            <button class="tab-btn" data-tab="certificates" id="tabCertificates">
+                📜 Сертификаты
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- КОНТЕЙНЕР ПРОГРЕССА -->
+        <!-- ============================================================ -->
+        <div id="progressionContainer" class="tab-content">
+            <!-- Заполняется ProgressionManager -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- КОНТЕЙНЕР СЕРТИФИКАТОВ -->
+        <!-- ============================================================ -->
+        <div id="certificatesContainer" class="tab-content" style="display:none;">
+            <!-- Заполняется CertificateManager -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- НИЖНЯЯ НАВИГАЦИЯ (ДУБЛИРОВАННАЯ) -->
+        <!-- ============================================================ -->
+        <div class="nav-bottom">
+            <button class="back-btn" onclick="window.location.href='dashboard_ru.html'">
+                ← Назад
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 Главная
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ПОДВАЛ -->
+        <!-- ============================================================ -->
+        <div class="footer">
+            <p>📊 Прогресс в реальном времени • Синхронизирован с вашим аккаунтом</p>
+            <p>© 2026 - ETEO Dental Education | 🇲🇦 Др. САИД МААРАК</p>
+        </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TOAST -->
+    <!-- ============================================================ -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ============================================================ -->
+    <!-- ОСНОВНОЙ СКРИПТ -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore } from 'firebase/firestore';
+        import { ProgressionService } from '../js/services/progressionService.js';
+        import { ProgressionManager } from '../js/ui/ProgressionManager.js';
+        import { CertificateService } from '../js/services/certificateService.js';
+        import { CertificateManager } from '../js/ui/CertificateManager.js';
+        import { TranslateService } from '../js/services/translate.js';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const progressionContainer = document.getElementById('progressionContainer');
+        const certificatesContainer = document.getElementById('certificatesContainer');
+        const tabProgression = document.getElementById('tabProgression');
+        const tabCertificates = document.getElementById('tabCertificates');
+        const iaMessage = document.getElementById('iaProgressionMessage');
+        const listenBtn = document.getElementById('listenProgressionBtn');
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // ОЧИСТКА ЭМОДЗИ ДЛЯ TTS
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // ГЕНЕРАЦИЯ СООБЩЕНИЯ ИИ
+        // ============================================================
+        
+        function generateIAMessage() {
+            try {
+                const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
+                const userName = settings.user?.fullName || 'Доктор';
+                
+                const message = `
+                    Здравствуйте, <strong>${userName}</strong>! 👋<br>
+                    📊 Добро пожаловать на вашу панель прогресса.<br><br>
+                    Здесь вы видите все свои специальности, баллы и сертификаты.<br>
+                    Каждая специальность имеет <strong>6 уровней</strong>.<br>
+                    <span style="color: #4caf50;">✅ Зелёные</span> означают завершённые, <span style="color: #888;">🔒 Серые</span> — заблокированные.<br><br>
+                    🎯 Завершите все уровни, чтобы получить <strong>сертификат</strong>!<br><br>
+                    Готовы к прогрессу? 🚀
+                `;
+                
+                const ttsMessage = `
+                    Здравствуйте, ${userName}. Добро пожаловать на вашу панель прогресса.
+                    Здесь вы видите все свои специальности, баллы и сертификаты.
+                    Каждая специальность имеет 6 уровней. Зелёные означают завершённые, серые — заблокированные.
+                    Завершите все уровни, чтобы получить сертификат.
+                    Готовы к прогрессу?
+                `;
+                
+                iaMessage.innerHTML = message;
+                window._ttsProgressionMessage = cleanTextForTTS(ttsMessage);
+                
+                if (listenBtn) {
+                    listenBtn.style.display = 'inline-block';
+                }
+                
+                setTimeout(() => autoSpeak(), 1200);
+                
+            } catch (error) {
+                console.error('❌ Ошибка генерации ИИ:', error);
+                iaMessage.innerHTML = '⚠️ Сообщение недоступно. Перезагрузите страницу.';
+            }
+        }
+        
+        // ============================================================
+        // АВТОМАТИЧЕСКОЕ ЧТЕНИЕ
+        // ============================================================
+        
+        let isAutoSpeaking = false;
+        
+        function autoSpeak() {
+            if (!window.tts || isAutoSpeaking) return;
+            isAutoSpeaking = true;
+            const text = window._ttsProgressionMessage || '';
+            if (!text) { isAutoSpeaking = false; return; }
+            
+            if (listenBtn) {
+                listenBtn.textContent = '⏹️ Остановить';
+                listenBtn.classList.add('listening');
+            }
+            
+            window.tts.speak(text, 'ru', 0.9, 1.0,
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 Слушать';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                },
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 Слушать';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                }
+            );
+        }
+        
+        // ============================================================
+        // КНОПКА СЛУШАТЬ
+        // ============================================================
+        
+        listenBtn.addEventListener('click', function() {
+            if (!window.tts) return showToast('❌ TTS недоступен', 3000);
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 Слушать';
+                this.classList.remove('listening');
+                isAutoSpeaking = false;
+                return;
+            }
+            
+            const text = window._ttsProgressionMessage || '';
+            if (!text) return showToast('⚠️ Сообщение недоступно', 3000);
+            
+            this.textContent = '⏹️ Остановить';
+            this.classList.add('listening');
+            
+            window.tts.speak(text, 'ru', 0.9, 1.0,
+                () => {
+                    this.textContent = '🔊 Слушать';
+                    this.classList.remove('listening');
+                },
+                () => {
+                    this.textContent = '🔊 Слушать';
+                    this.classList.remove('listening');
+                    showToast('❌ Ошибка чтения', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // УПРАВЛЕНИЕ ВКЛАДКАМИ
+        // ============================================================
+        
+        function setupTabs() {
+            if (tabProgression) {
+                tabProgression.addEventListener('click', function() {
+                    tabProgression.classList.add('active');
+                    tabCertificates.classList.remove('active');
+                    progressionContainer.style.display = 'block';
+                    certificatesContainer.style.display = 'none';
+                });
+            }
+            
+            if (tabCertificates) {
+                tabCertificates.addEventListener('click', function() {
+                    tabCertificates.classList.add('active');
+                    tabProgression.classList.remove('active');
+                    certificatesContainer.style.display = 'block';
+                    progressionContainer.style.display = 'none';
+                });
+            }
+        }
+        
+        // ============================================================
+        // ИНИЦИАЛИЗАЦИЯ
+        // ============================================================
+        
+        async function init() {
+            Logger.info('📊 Страница прогресса загружена');
+            
+            setupTabs();
+            generateIAMessage();
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    const uid = user.uid;
+                    
+                    const progressionService = new ProgressionService();
+                    const certificateService = new CertificateService();
+                    
+                    const progressionManager = new ProgressionManager(progressionService, showToast);
+                    await progressionManager.loadProgression(progressionContainer, uid);
+                    
+                    const certificateManager = new CertificateManager(
+                        certificateService,
+                        progressionService,
+                        showToast
+                    );
+                    await certificateManager.loadCertificates(certificatesContainer, uid);
+                    
+                    Logger.info('✅ Прогресс и сертификаты загружены');
+                } else {
+                    showToast('⚠️ Войдите, чтобы увидеть свой прогресс', 3000);
+                    
+                    const message = `
+                        <div style="text-align: center; padding: 60px 20px;">
+                            <div style="font-size: 3rem;">🔒</div>
+                            <div style="font-size: 1.2rem; margin-top: 20px;">Войдите, чтобы увидеть свой прогресс</div>
+                            <div style="margin-top: 10px; color: #888;">Только авторизованные пользователи могут видеть свой прогресс</div>
+                            <button onclick="window.location.href='inscription_ru.html'" 
+                                    style="margin-top: 20px; padding: 12px 40px; border: none; border-radius: 30px; 
+                                           background: linear-gradient(135deg, #667eea, #764ba2); color: white; 
+                                           cursor: pointer; font-weight: 700; font-size: 1rem;">
+                                🔑 Войти / Зарегистрироваться
+                            </button>
+                        </div>
+                    `;
+                    
+                    progressionContainer.innerHTML = message;
+                    certificatesContainer.innerHTML = message;
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

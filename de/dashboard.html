@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO - Dashboard</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        /* ============================================================
+           ANIMATIONEN
+           ============================================================ */
+        
+        @keyframes iaPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        @keyframes pulseListen {
+            0% { box-shadow: 0 0 0 0 rgba(255, 152, 0, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 152, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 152, 0, 0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.1); }
+            50% { box-shadow: 0 0 40px rgba(102, 126, 234, 0.2); }
+        }
+        
+        .ia-avatar {
+            animation: iaPulse 2s ease-in-out infinite;
+        }
+        
+        .listen-btn-small.listening {
+            background: linear-gradient(135deg, #ff9800, #f57c00) !important;
+            animation: pulseListen 1.2s infinite;
+        }
+        
+        .ia-greeting {
+            transition: all 0.5s ease;
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        .ia-greeting:hover {
+            background: rgba(255,255,255,0.25) !important;
+            transform: translateY(-2px);
+        }
+        
+        .stat-card {
+            animation: fadeInUp 0.6s ease;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+        
+        .stat-card:nth-child(1) { animation-delay: 0.05s; }
+        .stat-card:nth-child(2) { animation-delay: 0.10s; }
+        .stat-card:nth-child(3) { animation-delay: 0.15s; }
+        .stat-card:nth-child(4) { animation-delay: 0.20s; }
+        .stat-card:nth-child(5) { animation-delay: 0.25s; }
+        .stat-card:nth-child(6) { animation-delay: 0.30s; }
+        
+        .progress-section {
+            animation: fadeInUp 0.7s ease;
+        }
+        
+        .daily-challenge {
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        .recent-section {
+            animation: fadeInUp 0.9s ease;
+        }
+        
+        .recommendation-section {
+            animation: fadeInUp 1.0s ease;
+        }
+        
+        .badges-section {
+            animation: fadeInUp 1.1s ease;
+        }
+        
+        .dashboard-actions {
+            animation: fadeInUp 1.2s ease;
+        }
+        
+        .recent-item {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .recent-item:hover {
+            transform: translateX(6px);
+            background: #e8edff !important;
+        }
+        
+        body.dark .recent-item:hover {
+            background: #33335a !important;
+        }
+        
+        .badge-item {
+            transition: all 0.3s ease;
+        }
+        
+        .badge-item.unlocked {
+            animation: pulseGlow 2s ease-in-out infinite;
+        }
+        
+        .badge-item.unlocked:hover {
+            transform: scale(1.05);
+        }
+        
+        .progress-fill-large {
+            transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        
+        .challenge-completed {
+            color: #4caf50 !important;
+        }
+        
+        .challenge-inprogress {
+            color: #ff9800 !important;
+        }
+        
+        .daily-objective {
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: 10px 14px;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .daily-objective .icon {
+            font-size: 1.3rem;
+        }
+        
+        .daily-objective .text {
+            font-size: 0.85rem;
+            color: #2c3e50;
+        }
+        
+        body.dark .daily-objective .text {
+            color: #eee;
+        }
+        
+        .daily-objective .action {
+            margin-left: auto;
+            padding: 4px 14px;
+            border: none;
+            border-radius: 20px;
+            background: #667eea;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .daily-objective .action:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .recommendation-btn {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .recommendation-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3);
+        }
+        
+        /* ============================================================
+           PROFILKARTE MIT UPLOAD - OHNE BEARBEITEN-BUTTON
+           ============================================================ */
+        
+        .profile-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .profile-avatar {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            flex-shrink: 0;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .profile-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .avatar-initials {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .avatar-upload-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 6px 0;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .profile-avatar:hover .avatar-upload-overlay {
+            opacity: 1;
+        }
+        
+        .avatar-upload-label {
+            color: white;
+            font-size: 0.6rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: block;
+            letter-spacing: 0.5px;
+        }
+        
+        .avatar-upload-label .icon {
+            font-size: 0.8rem;
+        }
+        
+        .profile-info {
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .profile-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .profile-rank {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 4px 0;
+        }
+        
+        .profile-rank .rank-badge {
+            font-size: 1.2rem;
+        }
+        
+        .profile-rank .rank-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .profile-details {
+            display: flex;
+            gap: 15px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            flex-wrap: wrap;
+        }
+        
+        .profile-world-rank {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            color: #ffd700;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+        
+        .profile-world-rank .world-rank-icon {
+            font-size: 1rem;
+        }
+        
+        .profile-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .profile-btn {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .profile-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .profile-btn.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .profile-btn.secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .profile-badge-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: rgba(255, 215, 0, 0.2);
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #ffd700;
+            margin-top: 4px;
+        }
+        
+        .score-details {
+            margin-top: 8px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.8);
+            display: none;
+        }
+        
+        .score-details .score-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        
+        .score-details .score-header .label {
+            font-weight: 700;
+        }
+        
+        .score-details .score-header .hint {
+            font-size: 0.6rem;
+            opacity: 0.6;
+        }
+        
+        .score-details .score-breakdown {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 4px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 520px) {
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-avatar {
+                width: 60px;
+                height: 60px;
+                font-size: 2rem;
+            }
+            
+            .profile-info {
+                text-align: center;
+            }
+            
+            .profile-rank {
+                justify-content: center;
+            }
+            
+            .profile-details {
+                justify-content: center;
+            }
+            
+            .profile-actions {
+                justify-content: center;
+                width: 100%;
+            }
+            
+            .profile-btn {
+                flex: 1;
+                text-align: center;
+                min-width: 120px;
+            }
+            
+            .profile-world-rank {
+                justify-content: center;
+            }
+            
+            .score-details .score-header {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .score-details .score-breakdown {
+                justify-content: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .ia-greeting {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .ia-avatar {
+                text-align: center;
+            }
+            
+            .daily-objective {
+                flex-wrap: wrap;
+            }
+            
+            .daily-objective .action {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+    
+    <!-- ✅ IMPORTMAP MIT FIREBASE (MODULAR) -->
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container dashboard-container">
+        
+        <!-- ============================================================ -->
+        <!-- NAVIGATION -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='choix_specialites_de.html'">
+                ← Zurück zu den Fachgebieten
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 Startseite
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PERSONALISIERTER KOPFBEREICH MIT PROFIL - OHNE BEARBEITEN-BUTTON -->
+        <!-- ============================================================ -->
+        <div class="dashboard-header" id="dashboardHeader">
+            
+            <!-- PROFILKARTE -->
+            <div class="profile-card">
+                <div class="profile-avatar" id="profileAvatar">
+                    <span class="avatar-initials">👤</span>
+                    <div class="avatar-upload-overlay">
+                        <label for="avatarInput" class="avatar-upload-label">
+                            <span class="icon">📷</span> Ändern
+                        </label>
+                        <input type="file" id="avatarInput" accept="image/*" style="display:none;">
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name" id="profileName">Doktor</div>
+                    <div class="profile-rank">
+                        <span class="rank-badge" id="profileRankBadge">🥉</span>
+                        <span class="rank-name" id="profileRankName">Lehrling</span>
+                    </div>
+                    <div class="profile-details">
+                        <span class="profile-email" id="profileEmail">doktor@email.com</span>
+                        <span class="profile-profession" id="profileProfession">🦷 Doktor</span>
+                        <span class="profile-since" id="profileSince">📅 Mitglied seit 2026</span>
+                    </div>
+                    <div class="profile-world-rank">
+                        <span class="world-rank-icon">🏆</span>
+                        <span class="world-rank-text">#<span id="worldRank">42</span> weltweit</span>
+                    </div>
+                    
+                    <!-- ✅ SCORE-DETAILS (TRANSPARENZ) -->
+                    <div class="score-details" id="scoreDetails">
+                        <div class="score-header">
+                            <span>📊 <span class="label">Punktzahl</span> : <span id="userScoreDisplay">0</span> / 100</span>
+                            <span class="hint">70% Qualität · 30% Vollständigkeit</span>
+                        </div>
+                        <div class="score-breakdown">
+                            <span>🎯 Qualität (70%) : <span id="qualityScoreDisplay">0</span></span>
+                            <span>📚 Vollständigkeit (30%) : <span id="completionScoreDisplay">0</span></span>
+                            <span>📖 Fachgebiete : <span id="completedSpecialtiesDisplay">0</span>/36</span>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-badge-count" id="profileBadgeCount">
+                        🏅 <span id="profileBadgeCountNumber">0</span> freigeschaltete Abzeichen
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <!-- ✅ NUR DER RANGLISTEN-BUTTON BLEIBT -->
+                    <button class="profile-btn secondary" onclick="window.location.href='classement_de.html'">🏆 Rangliste</button>
+                </div>
+            </div>
+            
+            <!-- BEGRÜSSUNG -->
+            <div class="user-greeting">
+                <span class="greeting-emoji">🌟</span>
+                <span class="greeting-text" id="greetingText">Hallo Doktor !</span>
+            </div>
+            <div class="user-rank" id="userRank">
+                <span class="rank-badge" id="rankBadge">🥉</span>
+                <span class="rank-name" id="rankName">Lehrling</span>
+                <span class="rank-progress" id="rankProgress">Nächster Rang : 3 Fachgebiete</span>
+            </div>
+            
+            <!-- KI-WILLKOMMENSBANNER -->
+            <div class="ia-greeting" id="iaGreeting" style="margin-top: 15px; background: rgba(255,255,255,0.15); border-radius: 16px; padding: 14px 18px; display: flex; align-items: flex-start; gap: 14px;">
+                <div class="ia-avatar" style="font-size: 2rem; flex-shrink: 0;">🤖</div>
+                <div style="flex: 1;">
+                    <p class="ia-message" id="iaSummaryMessage" style="font-size: 0.92rem; line-height: 1.6; margin: 0; color: white;">
+                        Ihre Zusammenfassung wird geladen...
+                    </p>
+                    <button class="listen-btn-small" id="listenSummaryBtn" style="margin-top: 8px; padding: 4px 14px; font-size: 0.75rem; background: rgba(255,255,255,0.2); border: none; border-radius: 20px; color: white; cursor: pointer;">
+                        🔊 Zusammenfassung anhören
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- SCHNELLSTATISTIKEN -->
+        <!-- ============================================================ -->
+        <div class="stats-grid" id="statsGrid">
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div class="stat-value" id="specialtiesCompleted">0</div>
+                <div class="stat-label">Abgeschlossene Fachgebiete</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⏱️</div>
+                <div class="stat-value" id="totalTime">0h00</div>
+                <div class="stat-label">Gesamtzeit</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-value" id="averageScore">0%</div>
+                <div class="stat-label">Durchschnittliche Punktzahl</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🔥</div>
+                <div class="stat-value" id="bestStreak">0</div>
+                <div class="stat-label">Beste Serie</div>
+            </div>
+            <div class="stat-card" style="background: linear-gradient(135deg, #fff8e1, #fff3cd); border-color: #ffc107;">
+                <div class="stat-icon">🎰</div>
+                <div class="stat-value" id="qdjStreak">0</div>
+                <div class="stat-label">🔥 Serie Quiz des Tages</div>
+            </div>
+            <div class="stat-card" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-color: #4caf50;">
+                <div class="stat-icon">📊</div>
+                <div class="stat-value" id="completionRate">0%</div>
+                <div class="stat-label">Abschlussquote</div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- GLOBALER FORTSCHRITT -->
+        <!-- ============================================================ -->
+        <div class="progress-section">
+            <div class="progress-header">
+                <span class="progress-title">📊 Globaler Fortschritt</span>
+                <span class="progress-percentage" id="globalProgress">0%</span>
+            </div>
+            <div class="progress-bar-large">
+                <div class="progress-fill-large" id="globalProgressFill" style="width: 0%;"></div>
+            </div>
+            <div class="progress-details">
+                <span id="progressDetails">0 von 36 Fachgebieten abgeschlossen</span>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- STATISTIKEN NACH KATEGORIE -->
+        <!-- ============================================================ -->
+        <div class="progress-section">
+            <div class="progress-header">
+                <span class="progress-title">📈 Punktzahlen nach Kategorie</span>
+                <span class="progress-percentage" style="font-size: 0.8rem; color: #888;" id="categoryCount">0/5 Kategorien</span>
+            </div>
+            <div id="categoryStats" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+                <!-- Von JavaScript generiert -->
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- HERAUSFORDERUNG DES TAGES + QUIZ DES TAGES + ZIEL -->
+        <!-- ============================================================ -->
+        <div class="daily-challenge" id="dailyChallenge">
+            <div class="challenge-header">
+                <span class="challenge-icon">🎯</span>
+                <span class="challenge-title">Herausforderung des Tages</span>
+            </div>
+            <div class="challenge-content" id="challengeContent">
+                <p>Schließen Sie heute ein Fachgebiet ab!</p>
+                <div class="challenge-progress">
+                    <span id="challengeStatus">⏳ In Bearbeitung</span>
+                </div>
+            </div>
+            
+            <!-- TAGESZIEL -->
+            <div id="dailyObjectiveContainer" style="margin-top: 12px;">
+                <!-- Von JavaScript generiert -->
+            </div>
+            
+            <!-- Integriertes Quiz des Tages -->
+            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed rgba(255,193,7,0.3);">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.5rem;">🎰</span>
+                    <div style="flex: 1;">
+                        <div style="font-weight: 700; font-size: 0.95rem; color: #2c3e50;">
+                            🎰 Roulette der Info
+                        </div>
+                        <div style="font-size: 0.8rem; color: #888;" id="quizDuJourStatus">
+                            🎯 Jeden Tag eine zufällige Frage!
+                        </div>
+                        <div style="font-size: 0.75rem; color: #999; margin-top: 2px;" id="lastQdjResult"></div>
+                    </div>
+                    <button class="recommendation-btn" onclick="window.location.href='roulette_de_l_info_de.html'" 
+                            style="padding: 8px 20px; font-size: 0.85rem; background: linear-gradient(135deg, #ff9800, #f57c00);">
+                        🎯 Spielen
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- LETZTE FACHGEBIETE - MIT DIREKTER WEITERLEITUNG -->
+        <!-- ============================================================ -->
+        <div class="recent-section">
+            <div class="recent-header">
+                <span class="recent-title">🔄 Letzte Fachgebiete</span>
+            </div>
+            <div class="recent-list" id="recentList">
+                <p style="color: #888; text-align: center; padding: 20px;">Bisher kein Fachgebiet abgeschlossen.</p>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- INTELLIGENTE EMPFEHLUNG - MIT DIREKTER WEITERLEITUNG -->
+        <!-- ============================================================ -->
+        <div class="recommendation-section">
+            <div class="recommendation-header">
+                <span class="recommendation-title">💡 Empfehlung</span>
+            </div>
+            <div class="recommendation-content" id="recommendationContent">
+                <p>Beginnen Sie mit einem Fachgebiet, das Sie interessiert!</p>
+                <button class="recommendation-btn" onclick="window.location.href='choix_specialites_de.html'">
+                    🚀 Fachgebiet wählen
+                </button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ABZEICHEN-SAMMLUNG - MIT ANWEISUNGS-BUTTON -->
+        <!-- ============================================================ -->
+        <div class="badges-section">
+            <div class="badges-header">
+                <span class="badges-title">🏅 Ihre Abzeichen</span>
+                <button class="badge-help-btn" id="badgeHelpBtn">
+                    ❓ Anweisungen Abzeichen
+                </button>
+            </div>
+            <div class="badges-grid" id="badgesGrid">
+                <!-- Von JavaScript generiert -->
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- AKTIONEN -->
+        <!-- ============================================================ -->
+        <div class="dashboard-actions">
+            <button class="action-btn primary" onclick="window.location.href='choix_specialites_de.html'">
+                📚 Fachgebiet wählen
+            </button>
+            <button class="action-btn" onclick="window.location.href='roulette_de_l_info_de.html'" 
+                    style="background: linear-gradient(135deg, #ff9800, #f57c00); color: white; border: none;">
+                🎰 Roulette der Info
+            </button>
+            <!-- ✅ HINZUGEFÜGT : BUTTON MEIN FORTSCHRITT -->
+            <button class="action-btn secondary" onclick="window.location.href='progression_de.html'">
+                📈 Mein Fortschritt
+            </button>
+            <button class="action-btn secondary" onclick="window.location.href='classement_de.html'">
+                🏆 Weltrangliste
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- FOOTER -->
+        <!-- ============================================================ -->
+        <div class="footer">
+            <p>© 2026 - Dr. SAID MAARAK 🇲🇦</p>
+        </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TOAST -->
+    <!-- ============================================================ -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ============================================================ -->
+    <!-- HAUPT-SKRIPT -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { TranslateService } from '../js/services/translate.js';
+        import tts from '../js/services/tts.js';
+        
+        // FIREBASE IMPORTS
+        import { initializeApp, getApps } from 'firebase/app';
+        import { getFirestore, doc, getDoc } from 'firebase/firestore';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth'; // ✅ Hinzufügung von onAuthStateChanged für die Überprüfung
+        
+        // MODULARE IMPORTS FÜR DIE ABZEICHEN
+        import { BadgeService } from '../js/services/badgeService.js';
+        import { BadgeModal } from '../js/ui/BadgeModal.js';
+        import { RANKS, CATEGORY_LABELS, SPECIALTIES } from '../js/config.js';
+        
+        // IMPORTS FÜR DAS BENACHRICHTIGUNGSSYSTEM
+        import { NotificationService } from '../js/services/notificationService.js';
+        
+        // IMPORTS FÜR DEN AVATAR (MODULAR)
+        import { AvatarService } from '../js/services/avatarService.js';
+        import { AvatarUpload } from '../js/ui/AvatarUpload.js';
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        // ✅ Firebase NUR EINMAL initialisieren
+        if (!getApps().length) {
+            initializeApp(firebaseConfig);
+        }
+        
+        const auth = getAuth();
+        const db = getFirestore();
+        
+        console.log('✅ Firebase im dashboard.html initialisiert');
+        
+        // ✅ DYNAMISCHER IMPORT von RankingService (nach initializeApp)
+        const { RankingService } = await import('../js/services/rankingService.js');
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // KONFIGURATION DER ABZEICHEN (für Kompatibilität)
+        // ============================================================
+        
+        const BADGES = [
+            { id: 'first_step', name: 'Erster Schritt', emoji: '🎯', condition: 'first_completed', description: '1 Fachgebiet abschließen' },
+            { id: 'streak', name: 'Serie', emoji: '🔥', condition: 'streak_3', description: 'Serie von 3 Tagen' },
+            { id: 'polyvalent', name: 'Vielseitig', emoji: '🧠', condition: 'categories_3', description: '3 Kategorien erkunden' },
+            { id: 'rapide', name: 'Schnell', emoji: '⚡', condition: 'fast_completion', description: 'Perfekte Punktzahl in einem Fachgebiet' },
+            { id: 'perseverant', name: 'Ausdauernd', emoji: '💪', condition: 'retry_success', description: 'Nach einem Misserfolg erfolgreich sein' },
+            { id: 'champion', name: 'Champion', emoji: '🏆', condition: 'top_10', description: '10 Fachgebiete abschließen' }
+        ];
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const greetingText = document.getElementById('greetingText');
+        const rankBadge = document.getElementById('rankBadge');
+        const rankName = document.getElementById('rankName');
+        const rankProgress = document.getElementById('rankProgress');
+        const specialtiesCompleted = document.getElementById('specialtiesCompleted');
+        const totalTime = document.getElementById('totalTime');
+        const averageScore = document.getElementById('averageScore');
+        const bestStreak = document.getElementById('bestStreak');
+        const completionRate = document.getElementById('completionRate');
+        const globalProgress = document.getElementById('globalProgress');
+        const globalProgressFill = document.getElementById('globalProgressFill');
+        const progressDetails = document.getElementById('progressDetails');
+        const recentList = document.getElementById('recentList');
+        const recommendationContent = document.getElementById('recommendationContent');
+        const badgesGrid = document.getElementById('badgesGrid');
+        const challengeStatus = document.getElementById('challengeStatus');
+        const qdjStreak = document.getElementById('qdjStreak');
+        const quizDuJourStatus = document.getElementById('quizDuJourStatus');
+        const lastQdjResult = document.getElementById('lastQdjResult');
+        const categoryStats = document.getElementById('categoryStats');
+        const categoryCount = document.getElementById('categoryCount');
+        const iaSummaryMessage = document.getElementById('iaSummaryMessage');
+        const listenSummaryBtn = document.getElementById('listenSummaryBtn');
+        const dailyObjectiveContainer = document.getElementById('dailyObjectiveContainer');
+        
+        // Profil-Elemente
+        const profileName = document.getElementById('profileName');
+        const profileRankBadge = document.getElementById('profileRankBadge');
+        const profileRankName = document.getElementById('profileRankName');
+        const profileEmail = document.getElementById('profileEmail');
+        const profileProfession = document.getElementById('profileProfession');
+        const profileAvatar = document.getElementById('profileAvatar');
+        const worldRank = document.getElementById('worldRank');
+        const profileBadgeCountNumber = document.getElementById('profileBadgeCountNumber');
+        const avatarInput = document.getElementById('avatarInput');
+        const profileSince = document.getElementById('profileSince');
+        const userScoreDisplay = document.getElementById('userScoreDisplay');
+        const qualityScoreDisplay = document.getElementById('qualityScoreDisplay');
+        const completionScoreDisplay = document.getElementById('completionScoreDisplay');
+        const completedSpecialtiesDisplay = document.getElementById('completedSpecialtiesDisplay');
+        const scoreDetails = document.getElementById('scoreDetails');
+        
+        // ============================================================
+        // DIENSTE
+        // ============================================================
+        
+        const storage = new StorageService();
+        const translate = new TranslateService();
+        
+        // Service Badge
+        const badgeService = new BadgeService(storage);
+        
+        // ✅ INSTANZ DES RANGLISTEN-DIENSTES
+        const rankingService = new RankingService();
+        
+        // Badge Modal mit Namensabruf
+        const badgeModal = new BadgeModal(
+            badgeService, 
+            tts, 
+            showToast,
+            () => {
+                const settings = storage.getSettings() || {};
+                return settings.user?.displayName || settings.user?.fullName || 'Doktor';
+            }
+        );
+        
+        // Benachrichtigungsdienst
+        const notificationService = new NotificationService(storage, showToast);
+        
+        // Avatar-Dienst
+        const avatarService = new AvatarService(storage);
+        const avatarUpload = new AvatarUpload(avatarService, showToast, (imageData) => {
+            console.log('✅ Avatar aktualisiert');
+        });
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // BEREINIGUNG VON EMOJIS FÜR DAS TTS
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // AUTOMATISCHES VORLESEN DER KI-ZUSAMMENFASSUNG
+        // ============================================================
+        
+        let isAutoSpeaking = false;
+        
+        function autoSpeakSummary() {
+            if (!window.tts) {
+                console.warn('⚠️ TTS nicht verfügbar');
+                return;
+            }
+            
+            if (isAutoSpeaking) return;
+            isAutoSpeaking = true;
+            
+            const text = window._ttsSummaryMessage || 'Ihre Zusammenfassung ist nicht verfügbar.';
+            
+            if (!text || text.trim() === '') {
+                console.warn('⚠️ Keine Zusammenfassung zum Vorlesen');
+                isAutoSpeaking = false;
+                return;
+            }
+            
+            if (listenSummaryBtn) {
+                listenSummaryBtn.textContent = '⏹️ Stoppen';
+                listenSummaryBtn.classList.add('listening');
+            }
+            
+            console.log('🔊 Automatisches Vorlesen der Dashboard-Zusammenfassung');
+            window.tts.speak(
+                text,
+                'de',
+                0.9,
+                1.0,
+                () => {
+                    if (listenSummaryBtn) {
+                        listenSummaryBtn.textContent = '🔊 Zusammenfassung anhören';
+                        listenSummaryBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                    console.log('✅ Zusammenfassung automatisch vorgelesen');
+                },
+                (error) => {
+                    console.warn('⚠️ Fehler beim automatischen Vorlesen:', error);
+                    if (listenSummaryBtn) {
+                        listenSummaryBtn.textContent = '🔊 Zusammenfassung anhören';
+                        listenSummaryBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                }
+            );
+        }
+        
+        // ============================================================
+        // ✅ IOS-VERSION : DATEN AUS users_ios LADEN
+        // ============================================================
+        
+        async function loadDashboard() {
+            const settings = storage.getSettings() || {};
+            let userData = settings.user || {};
+            let userScores = {};
+            
+            // ✅ AUS FIRESTORE LADEN (IOS)
+            const user = auth.currentUser;
+            if (user) {
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);
+                    const snapshot = await getDoc(userRef);
+                    if (snapshot.exists()) {
+                        const data = snapshot.data();
+                        userData = {
+                            uid: user.uid,
+                            displayName: data.displayName || userData.fullName || 'Doktor',
+                            email: data.email || userData.email,
+                            profession: data.profession || userData.profession || 'Nicht angegeben',
+                            country: data.country || userData.country || 'Nicht angegeben',
+                            registeredAt: data.registeredAt || userData.registeredAt,
+                            fullName: data.displayName || data.fullName || 'Doktor'
+                        };
+                        userScores = data.scores || {};
+                        // ✅ localStorage für Kompatibilität aktualisieren
+                        settings.user = userData;
+                        settings.scores = userScores;
+                        storage.saveSettings(settings);
+                    } else {
+                        console.warn('⚠️ Kein users_ios-Dokument für diesen Benutzer gefunden');
+                        // Fallback auf localStorage
+                        userData = settings.user || {};
+                        userScores = settings.scores || {};
+                    }
+                } catch (error) {
+                    console.warn('⚠️ Fehler beim Laden der iOS-Daten:', error);
+                    userData = settings.user || {};
+                    userScores = settings.scores || {};
+                }
+            } else {
+                userData = settings.user || {};
+                userScores = settings.scores || {};
+            }
+            
+            const userName = userData.displayName || userData.fullName || 'Doktor';
+            const userEmail = userData.email || 'doktor@email.com';
+            const userProfession = userData.profession || 'Nicht angegeben';
+            const userCountry = userData.country || 'Nicht angegeben';
+            const scores = userScores;
+            
+            // Profilkarte füllen
+            if (profileName) profileName.textContent = userName;
+            if (profileEmail) profileEmail.textContent = userEmail;
+            
+            // ✅ BERUF ANZEIGEN
+            if (profileProfession) {
+                const professionEmoji = userProfession === 'Docteur' ? '🦷' : userProfession === 'Étudiant' ? '📚' : '👤';
+                profileProfession.textContent = `${professionEmoji} ${userProfession}`;
+            }
+            
+            // ✅ KORREKTUR : Das echte Registrierungsdatum aus registeredAt lesen
+            const userSince = userData.registeredAt 
+                ? new Date(userData.registeredAt).toLocaleString('de-DE', {
+                    day: 'numeric',
+                    month: 'long',
+                    year: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                  })
+                : '2026';
+            
+            // Registrierungsdatum
+            if (profileSince) profileSince.textContent = `📅 Mitglied seit ${userSince}`;
+            
+            // Begrüßung
+            greetingText.textContent = `Hallo ${userName} ! 🌟`;
+            
+            let completedCount = 0;
+            let totalScore = 0;
+            let totalQuestions = 0;
+            let totalTimeSeconds = 0;
+            let completedSpecialties = [];
+            let categoriesCompleted = new Set();
+            let categoryScores = {};
+            let firstFailure = false;
+            let hasRetrySuccess = false;
+            
+            SPECIALTIES.forEach(spec => {
+                const specialtyScores = scores[spec.id] || {};
+                let hasCompleted = false;
+                let specTotalScore = 0;
+                let specTotalQuestions = 0;
+                let specTime = 0;
+                let specAttempts = 0;
+                let specFailures = 0;
+                
+                ['debutant1', 'debutant2', 'intermediaire1', 'intermediaire2', 'expert1', 'expert2'].forEach(level => {
+                    const levelScore = specialtyScores[level];
+                    if (levelScore) {
+                        specAttempts++;
+                        if (levelScore.percentage >= 60) {
+                            hasCompleted = true;
+                            specTotalScore += levelScore.score || 0;
+                            specTotalQuestions += levelScore.total || 0;
+                        } else {
+                            specFailures++;
+                        }
+                        if (levelScore.timeSpent) {
+                            specTime += levelScore.timeSpent || 0;
+                        }
+                    }
+                });
+                
+                if (specFailures > 0 && specAttempts > 0) {
+                    const hasSuccess = specialtyScores[Object.keys(specialtyScores).find(l => 
+                        specialtyScores[l]?.percentage >= 60
+                    )];
+                    if (hasSuccess) {
+                        hasRetrySuccess = true;
+                    }
+                    firstFailure = true;
+                }
+                
+                if (hasCompleted) {
+                    completedCount++;
+                    completedSpecialties.push({
+                        id: spec.id,
+                        name: spec.name,
+                        emoji: spec.emoji,
+                        category: spec.category,
+                        score: specTotalScore,
+                        total: specTotalQuestions || 10,
+                        percentage: specTotalQuestions > 0 ? (specTotalScore / specTotalQuestions) * 100 : 0,
+                        time: specTime
+                    });
+                    categoriesCompleted.add(spec.category);
+                    totalScore += specTotalScore;
+                    totalQuestions += specTotalQuestions || 10;
+                    totalTimeSeconds += specTime;
+                    
+                    if (!categoryScores[spec.category]) {
+                        categoryScores[spec.category] = { total: 0, count: 0 };
+                    }
+                    categoryScores[spec.category].total += (specTotalQuestions > 0 ? (specTotalScore / specTotalQuestions) * 100 : 0);
+                    categoryScores[spec.category].count++;
+                }
+            });
+            
+            // Aktuelle Serie (aufeinanderfolgende Tage)
+            let currentStreak = 0;
+            if (settings.dashboard && settings.dashboard.lastVisit) {
+                const lastVisit = new Date(settings.dashboard.lastVisit);
+                const today = new Date();
+                const diffDays = Math.floor((today - lastVisit) / (1000 * 60 * 60 * 24));
+                if (diffDays === 0) {
+                    currentStreak = settings.dashboard.currentStreak || 1;
+                } else if (diffDays === 1) {
+                    currentStreak = (settings.dashboard.currentStreak || 0) + 1;
+                } else {
+                    currentStreak = 0;
+                }
+            }
+            
+            // Beste Serie
+            let bestStreakCount = 0;
+            if (settings.dashboard && settings.dashboard.streakHistory) {
+                bestStreakCount = Math.max(...settings.dashboard.streakHistory) || 0;
+            }
+            if (currentStreak > bestStreakCount) {
+                bestStreakCount = currentStreak;
+            }
+            if (settings.dashboard && settings.dashboard.bestStreak) {
+                bestStreakCount = Math.max(bestStreakCount, settings.dashboard.bestStreak);
+            }
+            
+            specialtiesCompleted.textContent = completedCount;
+            
+            const hours = Math.floor(totalTimeSeconds / 3600);
+            const minutes = Math.floor((totalTimeSeconds % 3600) / 60);
+            totalTime.textContent = hours > 0 ? `${hours}h${String(minutes).padStart(2, '0')}` : `${minutes}min`;
+            
+            const avgScore = totalQuestions > 0 ? (totalScore / totalQuestions) * 100 : 0;
+            averageScore.textContent = `${Math.round(avgScore)}%`;
+            
+            bestStreak.textContent = Math.max(bestStreakCount, 0);
+            
+            const totalSpecialties = SPECIALTIES.length;
+            const completionRateValue = (completedCount / totalSpecialties) * 100;
+            completionRate.textContent = `${Math.round(completionRateValue)}%`;
+            
+            const progressPercent = (completedCount / totalSpecialties) * 100;
+            globalProgress.textContent = `${Math.round(progressPercent)}%`;
+            globalProgressFill.style.width = `${Math.min(progressPercent, 100)}%`;
+            progressDetails.textContent = `${completedCount} von ${totalSpecialties} Fachgebieten abgeschlossen`;
+            
+            // Rang
+            let currentRank = RANKS[0];
+            let nextRank = RANKS[1];
+            for (let i = RANKS.length - 1; i >= 0; i--) {
+                if (completedCount >= RANKS[i].minSpecialties) {
+                    currentRank = RANKS[i];
+                    break;
+                }
+            }
+            const nextRankIndex = RANKS.indexOf(currentRank) + 1;
+            nextRank = nextRankIndex < RANKS.length ? RANKS[nextRankIndex] : null;
+            
+            // Rang im Profil aktualisieren
+            if (profileRankBadge) profileRankBadge.textContent = currentRank.emoji;
+            if (profileRankName) {
+                profileRankName.textContent = currentRank.label;
+                profileRankName.style.color = currentRank.color;
+            }
+            
+            // Haupt-Rang aktualisieren
+            rankBadge.textContent = currentRank.emoji;
+            rankName.textContent = currentRank.label;
+            rankName.style.color = currentRank.color;
+            
+            if (nextRank) {
+                const remaining = nextRank.minSpecialties - completedCount;
+                rankProgress.textContent = `Nächster Rang : ${nextRank.emoji} ${nextRank.label} (${remaining} verbleibende Fachgebiete)`;
+            } else {
+                rankProgress.textContent = '🏆 Sie sind an der Spitze !';
+            }
+            
+            // Letzte Fachgebiete
+            renderRecentSpecialties(completedSpecialties);
+            
+            // Intelligente Empfehlung
+            renderSmartRecommendation(completedSpecialties, scores);
+            
+            // Abzeichen - Verwendung des Dienstes
+            const badgeStatus = renderBadges(completedCount, completedSpecialties, categoriesCompleted, scores, settings, hasRetrySuccess, currentStreak);
+            
+            // Abzeichen-Zähler im Profil aktualisieren
+            const unlockedCount = badgeStatus.filter(b => b.unlocked).length;
+            if (profileBadgeCountNumber) {
+                profileBadgeCountNumber.textContent = unlockedCount;
+            }
+            
+            // ✅ ECHTE WELTRANGLISTE (anstelle der fiktiven Berechnung)
+            if (worldRank) {
+                try {
+                    const uid = user?.uid;
+                    if (uid) {
+                        const rankData = await rankingService.getUserRank(uid);
+                        worldRank.textContent = rankData.rank > 0 ? rankData.rank : '—';
+                    } else {
+                        worldRank.textContent = '—';
+                    }
+                } catch (error) {
+                    console.warn('⚠️ Ranglistenfehler:', error);
+                    worldRank.textContent = '—';
+                }
+            }
+            
+            // ✅ SCORE-DETAILS ANZEIGEN (TRANSPARENZ)
+            if (scoreDetails) {
+                try {
+                    const uid = user?.uid;
+                    if (uid) {
+                        const rankDetails = await rankingService.getUserRankDetails(uid);
+                        if (rankDetails.details) {
+                            const d = rankDetails.details;
+                            if (userScoreDisplay) userScoreDisplay.textContent = d.finalScore;
+                            if (qualityScoreDisplay) qualityScoreDisplay.textContent = d.qualityScore;
+                            if (completionScoreDisplay) completionScoreDisplay.textContent = d.completionScore;
+                            if (completedSpecialtiesDisplay) completedSpecialtiesDisplay.textContent = d.completedCount;
+                            scoreDetails.style.display = 'block';
+                        }
+                    }
+                } catch (error) {
+                    console.warn('⚠️ Fehler beim Laden der Score-Details:', error);
+                }
+            }
+            
+            // Neu freigeschaltete Abzeichen überprüfen
+            const previousBadges = settings.badges?.unlocked || [];
+            const currentBadges = badgeStatus.filter(b => b.unlocked).map(b => b.id);
+            
+            if (currentBadges.length > 0) {
+                const newBadges = notificationService.checkNewBadges(previousBadges, currentBadges, badgeStatus);
+                
+                if (newBadges.length > 0) {
+                    if (!settings.badges) settings.badges = {};
+                    settings.badges.unlocked = currentBadges;
+                    storage.saveSettings(settings);
+                }
+            }
+            
+            // Herausforderung des Tages
+            renderDailyChallenge(completedCount);
+            
+            // Tagesziel
+            renderDailyObjective(completedSpecialties, scores);
+            
+            // Quiz des Tages
+            loadQuizDuJourStats();
+            
+            // Statistiken nach Kategorie
+            renderCategoryStats(categoryScores);
+            
+            // ✅ PERSONALISIERTE KI-NACHRICHT MIT DEM BERUF
+            generateIASummary(userName, userProfession, completedCount, totalSpecialties, avgScore, currentRank, completedSpecialties, currentStreak);
+            
+            // Fortschritt speichern
+            if (!settings.dashboard) settings.dashboard = {};
+            settings.dashboard.lastVisit = new Date().toISOString();
+            settings.dashboard.completedCount = completedCount;
+            settings.dashboard.rank = currentRank.id;
+            settings.dashboard.currentStreak = currentStreak;
+            if (!settings.dashboard.streakHistory) settings.dashboard.streakHistory = [];
+            settings.dashboard.streakHistory.push(completedCount);
+            if (settings.dashboard.streakHistory.length > 30) {
+                settings.dashboard.streakHistory = settings.dashboard.streakHistory.slice(-30);
+            }
+            if (currentStreak > (settings.dashboard.bestStreak || 0)) {
+                settings.dashboard.bestStreak = currentStreak;
+            }
+            if (hasRetrySuccess) {
+                settings.dashboard.retrySuccess = true;
+            }
+            storage.saveSettings(settings);
+            
+            // Avatar aktualisieren (über den Dienst)
+            if (profileAvatar) {
+                avatarUpload.updateDisplay();
+            }
+        }
+        
+        // ============================================================
+        // LETZTE FACHGEBIETE
+        // ============================================================
+        
+        function renderRecentSpecialties(completedSpecialties) {
+            const recent = completedSpecialties.slice(-5).reverse();
+            
+            if (recent.length === 0) {
+                recentList.innerHTML = `<p style="color: #888; text-align: center; padding: 20px;">Bisher kein Fachgebiet abgeschlossen.</p>`;
+                return;
+            }
+            
+            recentList.innerHTML = recent.map(spec => `
+                <div class="recent-item" onclick="window.location.href='choix_specialites_de.html?specialty=${spec.id}'" style="cursor: pointer;">
+                    <span class="recent-emoji">${spec.emoji}</span>
+                    <span class="recent-name">${spec.name}</span>
+                    <span class="recent-score">${Math.round(spec.percentage)}%</span>
+                    <span class="recent-status">✅</span>
+                </div>
+            `).join('');
+        }
+        
+        // ============================================================
+        // INTELLIGENTE EMPFEHLUNG
+        // ============================================================
+        
+        function renderSmartRecommendation(completedSpecialties, scores) {
+            const completedIds = completedSpecialties.map(s => s.id);
+            const notCompleted = SPECIALTIES.filter(s => !completedIds.includes(s.id));
+            
+            if (notCompleted.length === 0) {
+                recommendationContent.innerHTML = `
+                    <p>🎉 Sie haben ALLE Fachgebiete abgeschlossen !</p>
+                    <p style="font-size: 0.9rem; color: #888;">Sie sind eine wahre ETEO-Legende !</p>
+                    <button class="recommendation-btn" onclick="window.location.href='choix_specialites_de.html'">
+                        🔄 Ein Fachgebiet wiederholen
+                    </button>
+                `;
+                return;
+            }
+            
+            let bestCandidate = null;
+            let lowestScore = 100;
+            
+            notCompleted.forEach(spec => {
+                const specialtyScores = scores[spec.id] || {};
+                let totalScore = 0;
+                let totalQuestions = 0;
+                ['debutant1', 'debutant2', 'intermediaire1', 'intermediaire2', 'expert1', 'expert2'].forEach(level => {
+                    const levelScore = specialtyScores[level];
+                    if (levelScore) {
+                        totalScore += levelScore.score || 0;
+                        totalQuestions += levelScore.total || 0;
+                    }
+                });
+                if (totalQuestions > 0) {
+                    const percentage = (totalScore / totalQuestions) * 100;
+                    if (percentage < lowestScore) {
+                        lowestScore = percentage;
+                        bestCandidate = spec;
+                    }
+                }
+            });
+            
+            if (!bestCandidate) {
+                bestCandidate = notCompleted[Math.floor(Math.random() * notCompleted.length)];
+            }
+            
+            recommendationContent.innerHTML = `
+                <p>🎉 Wir empfehlen Ihnen <strong>${bestCandidate.emoji} ${bestCandidate.name}</strong> !</p>
+                <p style="font-size: 0.9rem; color: #888;">Dieses Fachgebiet wird Ihnen helfen, sich zur Exzellenz zu entwickeln.</p>
+                <button class="recommendation-btn" onclick="window.location.href='choix_specialites_de.html?specialty=${bestCandidate.id}'">
+                    🚀 Dieses Fachgebiet wählen
+                </button>
+            `;
+        }
+        
+        // ============================================================
+        // TAGESZIEL
+        // ============================================================
+        
+        function renderDailyObjective(completedSpecialties, scores) {
+            const completedIds = completedSpecialties.map(s => s.id);
+            const notCompleted = SPECIALTIES.filter(s => !completedIds.includes(s.id));
+            
+            if (notCompleted.length === 0) {
+                dailyObjectiveContainer.innerHTML = `
+                    <div class="daily-objective" style="border-color: #4caf50;">
+                        <span class="icon">🎉</span>
+                        <span class="text">Sie haben alle Fachgebiete abgeschlossen !</span>
+                    </div>
+                `;
+                return;
+            }
+            
+            let bestCandidate = null;
+            let lowestScore = 100;
+            
+            notCompleted.forEach(spec => {
+                const specialtyScores = scores[spec.id] || {};
+                let totalScore = 0;
+                let totalQuestions = 0;
+                
+                ['debutant1', 'debutant2', 'intermediaire1', 'intermediaire2', 'expert1', 'expert2'].forEach(level => {
+                    const levelScore = specialtyScores[level];
+                    if (levelScore) {
+                        totalScore += levelScore.score || 0;
+                        totalQuestions += levelScore.total || 0;
+                    }
+                });
+                
+                if (totalQuestions > 0) {
+                    const percentage = (totalScore / totalQuestions) * 100;
+                    if (percentage < lowestScore) {
+                        lowestScore = percentage;
+                        bestCandidate = spec;
+                    }
+                }
+            });
+            
+            if (!bestCandidate) {
+                bestCandidate = notCompleted[Math.floor(Math.random() * notCompleted.length)];
+            }
+            
+            dailyObjectiveContainer.innerHTML = `
+                <div class="daily-objective">
+                    <span class="icon">🎯</span>
+                    <span class="text">Tagesziel : <strong>${bestCandidate.emoji} ${bestCandidate.name}</strong></span>
+                    <button class="action" onclick="window.location.href='choix_specialites_de.html?specialty=${bestCandidate.id}'">
+                        Beginnen
+                    </button>
+                </div>
+            `;
+        }
+        
+        // ============================================================
+        // PERSONALISIERTE KI-NACHRICHT (MIT BERUF)
+        // ============================================================
+        
+        function generateIASummary(userName, profession, completedCount, totalSpecialties, avgScore, currentRank, completedSpecialties, currentStreak) {
+            const progressPercent = Math.round((completedCount / totalSpecialties) * 100);
+            const lastSpecialty = completedSpecialties.length > 0 ? completedSpecialties[completedSpecialties.length - 1] : null;
+            const categoriesCompleted = new Set(completedSpecialties.map(s => s.category));
+            const categoryCount = categoriesCompleted.size;
+            
+            const professionEmoji = profession === 'Docteur' ? '🦷' : profession === 'Étudiant' ? '📚' : '👤';
+            
+            let message = '';
+            let ttsMessage = '';
+            
+            // ✅ NACHRICHT MIT BERUF
+            message = `Hallo ${userName} ! 👋<br>`;
+            message += `${professionEmoji} Sie haben sich als <strong>${profession}</strong> registriert. Willkommen bei ETEO !<br><br>`;
+            ttsMessage = `Hallo ${userName}. Sie haben sich als ${profession} registriert. Willkommen bei ETEO. `;
+            
+            if (currentStreak > 0) {
+                message += `🔥 Sie sind auf einer Serie von <strong>${currentStreak}</strong> aufeinanderfolgenden Tagen !<br>`;
+                ttsMessage += ` Sie sind auf einer Serie von ${currentStreak} aufeinanderfolgenden Tagen.`;
+            }
+            
+            if (completedCount === 0) {
+                message += `🌟 Willkommen in Ihrem ETEO-Dashboard !<br>`;
+                message += `Sie haben noch kein Fachgebiet abgeschlossen. Der Weg zur Exzellenz beginnt mit einem ersten Schritt.<br><br>`;
+                message += `🎯 Heute haben Sie <strong>ZWEI entscheidende Möglichkeiten</strong> :<br>`;
+                message += `📚 Entweder Sie machen <strong>Fachgebiet für Fachgebiet</strong> Fortschritte, indem Sie zum Menü <strong>"Fachgebiet wählen"</strong> gehen.<br>`;
+                message += `🎰 Oder Sie fühlen sich bereit, eine Herausforderung anzunehmen und Ihr Wissen direkt auf Expertenniveau zu testen, indem Sie Ihr Glück bei der <strong>"Roulette der Info"</strong> versuchen !<br><br>`;
+                message += `Also, ${profession}, welchen Weg werden Sie heute wählen ? Die schrittweise Meisterung oder der direkte Angriff auf die Expertise ? 💪🔥`;
+                ttsMessage += ` Willkommen in Ihrem ETEO-Dashboard. Sie haben noch kein Fachgebiet abgeschlossen. Der Weg zur Exzellenz beginnt mit einem ersten Schritt. Heute haben Sie zwei entscheidende Möglichkeiten. Entweder Sie machen Fachgebiet für Fachgebiet Fortschritte, indem Sie zum Menü Fachgebiet wählen gehen. Oder Sie fühlen sich bereit, eine Herausforderung anzunehmen und Ihr Wissen direkt auf Expertenniveau zu testen, indem Sie Ihr Glück bei der Roulette der Info versuchen. Also, ${profession}, welchen Weg werden Sie heute wählen ? Die schrittweise Meisterung oder der direkte Angriff auf die Expertise ?`;
+            } else {
+                message += `📊 Sie haben <strong>${completedCount}</strong> Fachgebiet${completedCount > 1 ? 'e' : ''} von ${totalSpecialties} abgeschlossen (${progressPercent}%).<br>`;
+                ttsMessage += ` Sie haben ${completedCount} Fachgebiete von ${totalSpecialties} abgeschlossen, das sind ${progressPercent} Prozent.`;
+                
+                if (avgScore > 0) {
+                    message += `📈 Ihre durchschnittliche Punktzahl beträgt <strong>${Math.round(avgScore)}%</strong>.<br>`;
+                    ttsMessage += ` Ihre durchschnittliche Punktzahl beträgt ${Math.round(avgScore)} Prozent.`;
+                }
+                
+                message += `🏆 Sie sind <strong>${currentRank.label}</strong>.<br>`;
+                ttsMessage += ` Sie sind ${currentRank.label}.`;
+                
+                if (lastSpecialty) {
+                    message += `🔄 Ihr letztes Fachgebiet : <strong>${lastSpecialty.emoji} ${lastSpecialty.name}</strong> (${Math.round(lastSpecialty.percentage)}%).<br>`;
+                    ttsMessage += ` Ihr letztes Fachgebiet : ${lastSpecialty.name} mit ${Math.round(lastSpecialty.percentage)} Prozent.`;
+                }
+                
+                message += `🧩 Sie haben <strong>${categoryCount}</strong> verschiedene Kategorie${categoryCount > 1 ? 'n' : ''} erkundet.<br><br>`;
+                ttsMessage += ` Sie haben ${categoryCount} verschiedene Kategorien erkundet.`;
+                
+                message += `🎯 Heute haben Sie <strong>ZWEI entscheidende Möglichkeiten</strong> :<br>`;
+                message += `📚 Entweder Sie machen weiter <strong>Fachgebiet für Fachgebiet</strong> Fortschritte, indem Sie zum Menü <strong>"Fachgebiet wählen"</strong> gehen.<br>`;
+                message += `🎰 Oder Sie möchten Ihr Wissen im <strong>Herausforderungsmodus</strong> testen, indem Sie Ihr Glück bei der <strong>"Roulette der Info"</strong> versuchen !<br><br>`;
+                message += `Also, ${profession}, welchen Weg werden Sie heute wählen ? Die schrittweise Meisterung oder der direkte Angriff auf die Expertise ? 💪🔥`;
+                ttsMessage += ` Heute haben Sie zwei entscheidende Möglichkeiten. Entweder Sie machen weiter Fachgebiet für Fachgebiet Fortschritte, indem Sie zum Menü Fachgebiet wählen gehen. Oder Sie möchten Ihr Wissen im Herausforderungsmodus testen, indem Sie Ihr Glück bei der Roulette der Info versuchen. Also, ${profession}, welchen Weg werden Sie heute wählen ? Die schrittweise Meisterung oder der direkte Angriff auf die Expertise ?`;
+            }
+            
+            iaSummaryMessage.innerHTML = message;
+            window._ttsSummaryMessage = cleanTextForTTS(ttsMessage);
+            
+            if (listenSummaryBtn) {
+                listenSummaryBtn.style.display = 'inline-block';
+            }
+        }
+        
+        // ============================================================
+        // BUTTON "ZUSAMMENFASSUNG ANHÖREN"
+        // ============================================================
+        
+        listenSummaryBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            if (!window.tts) {
+                showToast('❌ TTS-Modul nicht verfügbar', 3000);
+                return;
+            }
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 Zusammenfassung anhören';
+                this.classList.remove('listening');
+                isAutoSpeaking = false;
+                return;
+            }
+            
+            const text = window._ttsSummaryMessage || 'Ihre Zusammenfassung ist nicht verfügbar.';
+            
+            this.textContent = '⏹️ Stoppen';
+            this.classList.add('listening');
+            
+            window.tts.speak(
+                text,
+                'de',
+                0.9,
+                1.0,
+                () => {
+                    this.textContent = '🔊 Zusammenfassung anhören';
+                    this.classList.remove('listening');
+                },
+                (error) => {
+                    console.error('❌ TTS-Fehler:', error);
+                    this.textContent = '🔊 Zusammenfassung anhören';
+                    this.classList.remove('listening');
+                    showToast('❌ Fehler bei der Sprachausgabe', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // QUIZ DES TAGES - STATISTIKEN
+        // ============================================================
+        
+        function loadQuizDuJourStats() {
+            const settings = storage.getSettings() || {};
+            const qdj = settings.quizDuJour || { history: [] };
+            
+            let streak = 0;
+            const history = qdj.history || [];
+            for (let i = history.length - 1; i >= 0; i--) {
+                if (history[i].isCorrect) {
+                    streak++;
+                } else {
+                    break;
+                }
+            }
+            
+            if (qdjStreak) qdjStreak.textContent = streak;
+            if (quizDuJourStatus) {
+                const total = history.length;
+                const correct = history.filter(h => h.isCorrect).length;
+                const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+                if (total === 0) {
+                    quizDuJourStatus.textContent = '🎯 Jeden Tag eine zufällige Frage !';
+                } else if (streak > 0) {
+                    quizDuJourStatus.textContent = `🔥 ${streak} Tage Serie ! (${total} Quiz, ${pct}%)`;
+                } else {
+                    quizDuJourStatus.textContent = `📊 ${total} gespielte Quiz (${pct}% Erfolgsquote)`;
+                }
+            }
+            if (lastQdjResult && history.length > 0) {
+                const last = history[history.length - 1];
+                lastQdjResult.textContent = `📝 Letztes Quiz : ${last.isCorrect ? '✅ Bestanden' : '❌ Zu wiederholen'}`;
+                lastQdjResult.style.color = last.isCorrect ? '#4caf50' : '#e74c3c';
+            }
+        }
+        
+        // ============================================================
+        // STATISTIKEN NACH KATEGORIE
+        // ============================================================
+        
+        function renderCategoryStats(categoryScores) {
+            const categories = Object.keys(CATEGORY_LABELS);
+            let html = '';
+            let completed = 0;
+            categories.forEach(cat => {
+                const data = categoryScores[cat];
+                const label = CATEGORY_LABELS[cat] || cat;
+                const score = data && data.count > 0 ? Math.round(data.total / data.count) : 0;
+                const hasData = data && data.count > 0;
+                if (hasData) completed++;
+                const color = hasData ? (score >= 70 ? '#4caf50' : score >= 50 ? '#ff9800' : '#e74c3c') : '#ddd';
+                html += `
+                    <div style="background: white; border-radius: 12px; padding: 12px 14px; border: 1px solid ${hasData ? '#e8e8e8' : '#f0f0f0'};">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: 600; font-size: 0.85rem; color: #2c3e50;">${label}</span>
+                            <span style="font-weight: 700; font-size: 0.9rem; color: ${color};">${hasData ? `${score}%` : '—'}</span>
+                        </div>
+                        <div style="width: 100%; height: 4px; background: #f0f0f0; border-radius: 4px; margin-top: 6px; overflow: hidden;">
+                            <div style="width: ${hasData ? Math.min(score, 100) : 0}%; height: 100%; background: ${color}; border-radius: 4px; transition: width 0.5s ease;"></div>
+                        </div>
+                    </div>
+                `;
+            });
+            categoryStats.innerHTML = html;
+            categoryCount.textContent = `${completed}/${categories.length} Kategorien`;
+        }
+        
+        // ============================================================
+        // ABZEICHEN RENDERN - VERWENDUNG DES DIENSTES
+        // ============================================================
+        
+        function renderBadges(completedCount, completedSpecialties, categoriesCompleted, scores, settings, hasRetrySuccess, currentStreak) {
+            const badgeStatus = badgeService.getBadgeStatus(scores, SPECIALTIES, settings);
+            
+            badgesGrid.innerHTML = badgeStatus.map(badge => `
+                <div class="badge-item ${badge.unlocked ? 'unlocked' : 'locked'}">
+                    <span class="badge-emoji">${badge.emoji}</span>
+                    <span class="badge-name">${badge.name}</span>
+                    <span class="badge-status" style="font-size: 0.6rem; color: ${badge.unlocked ? '#4caf50' : '#888'};">
+                        ${badge.unlocked ? '✅ Freigeschaltet' : '🔒 Gesperrt'}
+                    </span>
+                    <span style="font-size: 0.5rem; color: #999; margin-top: 2px;">${badge.description}</span>
+                </div>
+            `).join('');
+            
+            return badgeStatus;
+        }
+        
+        // ============================================================
+        // HERAUSFORDERUNG DES TAGES RENDERN
+        // ============================================================
+        
+        function renderDailyChallenge(completedCount) {
+            const today = new Date().toDateString();
+            const lastChallenge = localStorage.getItem('eteo_last_challenge');
+            if (lastChallenge !== today) {
+                const challenge = getRandomChallenge();
+                challengeStatus.textContent = `🎯 ${challenge}`;
+                challengeStatus.className = 'challenge-inprogress';
+                localStorage.setItem('eteo_last_challenge', today);
+                localStorage.setItem('eteo_challenge_completed', 'false');
+            } else {
+                const isCompleted = localStorage.getItem('eteo_challenge_completed') === 'true';
+                if (isCompleted) {
+                    challengeStatus.textContent = '✅ Herausforderung abgeschlossen ! Bravo ! 🎉';
+                    challengeStatus.className = 'challenge-completed';
+                } else {
+                    const challenge = localStorage.getItem('eteo_challenge_text') || 'Schließen Sie heute ein Fachgebiet ab !';
+                    challengeStatus.textContent = `⏳ ${challenge}`;
+                    challengeStatus.className = 'challenge-inprogress';
+                }
+            }
+        }
+        
+        function getRandomChallenge() {
+            const challenges = [
+                'Schließen Sie heute ein Fachgebiet ab !',
+                'Erreichen Sie 80% in einem Fachgebiet !',
+                'Schließen Sie heute 2 Fachgebiete ab !',
+                'Verbessern Sie Ihre Punktzahl um 10% !',
+                'Probieren Sie ein neues Fachgebiet aus !'
+            ];
+            const challenge = challenges[Math.floor(Math.random() * challenges.length)];
+            localStorage.setItem('eteo_challenge_text', challenge);
+            return challenge;
+        }
+        
+        // ============================================================
+        // ✅ INITIALISIERUNG MIT E-MAIL-ÜBERPRÜFUNG
+        // ============================================================
+        
+        async function init() {
+            Logger.info('📊 Dashboard iOS geladen');
+            
+            avatarUpload.init('profileAvatar', 'avatarInput');
+            
+            // ✅ ÜBERPRÜFUNG DER AUTHENTIFIZIERUNG UND DER E-MAIL
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    // ✅ NEU : Überprüfen, ob die E-Mail verifiziert ist
+                    if (!user.emailVerified) {
+                        console.log('⛔ E-Mail nicht verifiziert für:', user.email);
+                        showToast('📧 Bitte verifizieren Sie Ihre E-Mail, bevor Sie auf das Dashboard zugreifen', 3000);
+                        setTimeout(() => {
+                            window.location.href = 'verify_email_de.html';
+                        }, 1500);
+                        return; // ← Wir stoppen hier alles
+                    }
+                    
+                    // ✅ E-Mail verifiziert - Dashboard laden
+                    console.log('✅ E-Mail verifiziert für:', user.email);
+                    await loadDashboard();
+                    
+                    // Funktionen nach dem Laden initialisieren
+                    const badgeHelpBtn = document.getElementById('badgeHelpBtn');
+                    if (badgeHelpBtn) {
+                        badgeHelpBtn.addEventListener('click', () => {
+                            if (window.tts && window.tts.isSpeakingNow()) {
+                                window.tts.stop();
+                                console.log('⏹️ TTS durch den Button Anweisungen Abzeichen gestoppt');
+                            }
+                            
+                            if (listenSummaryBtn) {
+                                listenSummaryBtn.textContent = '🔊 Zusammenfassung anhören';
+                                listenSummaryBtn.classList.remove('listening');
+                            }
+                            
+                            isAutoSpeaking = false;
+                            
+                            const settings = storage.getSettings() || {};
+                            const scores = settings.scores || {};
+                            badgeModal.open(scores, SPECIALTIES, settings);
+                        });
+                    }
+                    
+                    setTimeout(() => {
+                        autoSpeakSummary();
+                    }, 1500);
+                    
+                    console.log('📢 Dashboard ETEO iOS bereit !');
+                    console.log('✅ iOS : Daten werden aus users_ios gelesen');
+                    console.log('✅ iOS : Anzeige von displayName');
+                    console.log('✅ iOS : Detaillierte Punktzahl (Qualität + Vollständigkeit)');
+                    
+                } else {
+                    // Benutzer nicht angemeldet - zur Registrierung weiterleiten
+                    console.log('👤 Benutzer nicht angemeldet, Weiterleitung zur Registrierung');
+                    window.location.href = 'inscription_de.html';
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

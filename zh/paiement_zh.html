@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>💳 支付 - ETEO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- ✅ EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #f0f4ff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        
+        .rib-container {
+            max-width: 680px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.10);
+        }
+        
+        .rib-container h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        .rib-container .subtitle {
+            text-align: center;
+            color: #888;
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+        
+        .amount-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .amount-box .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .amount-box .price {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin: 5px 0;
+        }
+        
+        .amount-box .sub {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        .steps {
+            text-align: left;
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .steps li {
+            padding: 12px 15px;
+            background: #f0f4ff;
+            margin: 6px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+        }
+        
+        .steps li .num {
+            background: #667eea;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+        
+        .form-group {
+            margin: 18px 0;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .form-group label .required {
+            color: #e74c3c;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+            background: white;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #667eea;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+        }
+        
+        .form-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        
+        .form-group .hint {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 4px;
+        }
+        
+        .btn-primary {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 5px;
+        }
+        
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(76, 175, 80, 0.35);
+        }
+        
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .btn-secondary {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #667eea;
+            border-radius: 30px;
+            background: transparent;
+            color: #667eea;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .btn-secondary:hover {
+            background: #f0f4ff;
+        }
+        
+        .success-box {
+            background: #e8f5e9;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
+            display: none;
+        }
+        
+        .success-box p {
+            margin: 0;
+            color: #2e7d32;
+            font-size: 0.95rem;
+        }
+        
+        .success-box .ref-display {
+            font-weight: 700;
+            color: #667eea;
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+        
+        .info-note {
+            background: #fff3cd;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: left;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .info-note p {
+            margin: 0;
+            color: #856404;
+            font-size: 0.9rem;
+        }
+        
+        .loading-container {
+            display: none;
+            text-align: center;
+            padding: 15px 0;
+        }
+        
+        .spinner {
+            width: 36px;
+            height: 36px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4caf50;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 8px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-container p {
+            color: #888;
+            font-size: 0.85rem;
+        }
+        
+        .toast-custom {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2c3e50;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            z-index: 9999;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            animation: fadeInToast 0.3s ease;
+            max-width: 90%;
+            text-align: center;
+        }
+        
+        @keyframes fadeInToast {
+            from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        
+        .form-group input[readonly] {
+            background: #f0f4ff;
+            cursor: not-allowed;
+            font-weight: 600;
+            color: #2c3e50;
+            border-color: #d0d8f0;
+        }
+
+        .hint-important {
+            color: #856404;
+            font-weight: 600;
+            background: #fff3cd;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin-top: 6px;
+            font-size: 0.9rem;
+        }
+
+        .hint-important strong {
+            color: #e67e22;
+        }
+
+        .listen-btn-small {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #7bed9f, #2ecc71);
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 0 20px rgba(46, 204, 113, 0.5);
+            animation: glowPulse 2s ease-in-out infinite;
+            letter-spacing: 0.5px;
+        }
+
+        .listen-btn-small:hover:not(.listening) {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 0 35px rgba(46, 204, 113, 0.7);
+        }
+
+        .listen-btn-small.listening {
+            background: linear-gradient(135deg, #27ae60, #1e8449);
+            color: white;
+            animation: pulseBtn 1.5s infinite;
+            box-shadow: 0 0 40px rgba(39, 174, 96, 0.6);
+        }
+
+        @keyframes glowPulse {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(46, 204, 113, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(46, 204, 113, 0.8), 0 0 60px rgba(46, 204, 113, 0.3);
+            }
+        }
+
+        @keyframes pulseBtn {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .section-hidden {
+            display: none !important;
+        }
+        
+        .rib-info-message {
+            background: #e8f0fe;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: center;
+            border-left: 3px solid #667eea;
+        }
+        
+        .rib-info-message strong {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="rib-container">
+        <h1 id="pageTitle">💳 ETEO 认证</h1>
+        <p class="subtitle" id="pageSubtitle">🎓 带二维码的个性化证书</p>
+
+        <div style="display: flex; justify-content: center; margin: 5px 0 15px 0;">
+            <button class="listen-btn-small" id="listenPaymentBtn">
+                🔊 收听说明
+            </button>
+        </div>
+
+        <div class="amount-box">
+            <div class="label">🎓 应付金额</div>
+            <div class="price">20 €</div>
+            <div class="sub">一次性付款</div>
+        </div>
+
+        <!-- ✅ 信息消息 - 银行信息将通过邮件发送 -->
+        <div class="rib-info-message">
+            💡 <strong>银行信息将通过邮件发送给您</strong><br>
+            <span style="font-size: 0.9rem; color: #555;">请填写下方表单以接收 IBAN 和说明。</span>
+        </div>
+
+        <!-- ✅ 简化说明 -->
+        <h3 style="text-align: left; color: #2c3e50; margin-top: 20px;">📋 说明</h3>
+        <ul class="steps">
+            <li><span class="num">1</span> 填写下方表单</li>
+            <li><span class="num">2</span> 查看您的邮件以获取说明</li>
+            <li><span class="num">3</span> 向提供的 IBAN 进行 <strong>20 €</strong> 的银行转账</li>
+            <li><span class="num">4</span> 使用邮件中的链接返回</li>
+        </ul>
+
+        <!-- 证书 -->
+        <div id="certificatContent">
+            <h3 style="text-align: left; color: #2c3e50; margin-top: 25px;">📤 发送付款凭证</h3>
+            
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label>👤 全名 <span class="required">*</span></label>
+                    <input type="text" id="fullName" placeholder="Dr. 张三" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>📧 邮箱 <span class="required">*</span></label>
+                    <input type="email" id="email" placeholder="zhangsan@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>📱 电话</label>
+                    <input type="tel" id="phone" placeholder="06 12 34 56 78">
+                </div>
+                
+                <div class="form-group">
+                    <label>🦷 专科 <span class="required">*</span></label>
+                    <select id="specialty" required>
+                        <option value="">选择一个专科</option>
+                        <option value="开诊协助">开诊协助</option>
+                        <option value="诊所布置">诊所布置</option>
+                        <option value="麻醉学">麻醉学</option>
+                        <option value="牙科助理">牙科助理</option>
+                        <option value="CAD/CAM 与 3D 打印">CAD/CAM 与 3D 打印</option>
+                        <option value="外科">外科</option>
+                        <option value="职业道德守则">职业道德守则</option>
+                        <option value="会计与税务">会计与税务</option>
+                        <option value="冲突与调解">冲突与调解</option>
+                        <option value="医保协议与 AMO">医保协议与 AMO</option>
+                        <option value="牙髓病学">牙髓病学</option>
+                        <option value="美学">美学</option>
+                        <option value="伦理与职业道德">伦理与职业道德</option>
+                        <option value="女性牙医">女性牙医</option>
+                        <option value="牙医税务">牙医税务</option>
+                        <option value="法律形式">法律形式</option>
+                        <option value="未来医生">未来医生</option>
+                        <option value="诊所管理">诊所管理</option>
+                        <option value="种植学">种植学</option>
+                        <option value="信息技术与牙科软件">信息技术与牙科软件</option>
+                        <option value="牙科材料">牙科材料</option>
+                        <option value="口腔医学">口腔医学</option>
+                        <option value="互助保险与报销">互助保险与报销</option>
+                        <option value="ONMD / CRS / CRN">ONMD / CRS / CRN</option>
+                        <option value="正畸学">正畸学</option>
+                        <option value="牙周病学">牙周病学</option>
+                        <option value="儿童牙科">儿童牙科</option>
+                        <option value="摄影">摄影</option>
+                        <option value="修复学">修复学</option>
+                        <option value="放射学">放射学</option>
+                        <option value="人际与心理运动">人际与心理运动</option>
+                        <option value="公共卫生">公共卫生</option>
+                        <option value="资深医师">资深医师</option>
+                        <option value="保守治疗">保守治疗</option>
+                        <option value="消毒灭菌">消毒灭菌</option>
+                        <option value="工会">工会</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>🔑 转账参考号 <span class="required">*</span></label>
+                    <input type="text" id="refInput" required readonly>
+                    <div class="hint-important">
+                        ⚠️ <strong>重要：</strong>此参考号是自动生成的。<br>
+                        <strong>您必须在转账备注中使用它。</strong>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>💬 消息（可选）</label>
+                    <textarea id="message" placeholder="附加信息..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary" id="submitBtn">
+                    📤 提交我的认证请求
+                </button>
+                
+                <div class="loading-container" id="loadingContainer">
+                    <div class="spinner"></div>
+                    <p>⏳ 发送中...</p>
+                </div>
+            </form>
+        </div>
+
+        <!-- 转盘 -->
+        <div id="rouletteContent" class="section-hidden">
+            <h3 style="text-align: left; color: #2c3e50; margin-top: 25px;">📤 激活我的订阅</h3>
+            <p style="color: #888; font-size: 0.9rem; margin-bottom: 15px;">
+                💎 付款后，您将可以<strong>在 1 年内</strong>无限访问信息转盘。
+            </p>
+            
+            <form id="rouletteForm">
+                <div class="form-group">
+                    <label>👤 全名 <span class="required">*</span></label>
+                    <input type="text" id="rouletteFullName" placeholder="Dr. 张三" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>📧 邮箱 <span class="required">*</span></label>
+                    <input type="email" id="rouletteEmail" placeholder="zhangsan@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>📱 电话</label>
+                    <input type="tel" id="roulettePhone" placeholder="06 12 34 56 78">
+                </div>
+                
+                <div class="form-group">
+                    <label>🔑 转账参考号 <span class="required">*</span></label>
+                    <input type="text" id="rouletteRefInput" required readonly>
+                    <div class="hint-important">
+                        ⚠️ <strong>重要：</strong>此参考号是自动生成的。<br>
+                        <strong>您必须在转账备注中使用它。</strong>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-primary" id="rouletteSubmitBtn">
+                    📤 激活我的订阅
+                </button>
+                
+                <div class="loading-container" id="rouletteLoadingContainer">
+                    <div class="spinner"></div>
+                    <p>⏳ 发送中...</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="success-box" id="successBox">
+            <p>✅ <strong>谢谢！</strong>您的请求已成功发送。</p>
+            <p style="margin-top: 8px;">
+                🔑 参考号：<span class="ref-display" id="successRef">CERTIF-XXXXXX</span>
+            </p>
+            <p style="margin-top: 8px; font-size: 0.9rem;">
+                📧 <strong>请查看您的邮箱</strong>，您将在那里找到所有说明。<br>
+                一个链接将让您在转账后轻松返回。
+            </p>
+        </div>
+
+        <div class="info-note">
+            <p>
+                💡 <strong>提示：</strong>请妥善保存您将收到的邮件。<br>
+                它包含 IBAN、参考号以及返回 ETEO 的链接。
+            </p>
+        </div>
+
+        <button class="btn-secondary" onclick="window.location.href='ceshi_zh.html'">
+            🔙 返回测验
+        </button>
+        
+        <p style="margin-top: 20px; font-size: 0.75rem; color: #999; text-align: center;">
+            🔒 安全转账
+        </p>
+    </div>
+
+    <script type="module">
+        // ============================================================
+        // 导入
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { initializeApp } from 'firebase/app';
+        import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE 配置
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+        window.tts = tts;
+        
+        // ============================================================
+        // 检测类型
+        // ============================================================
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const paymentType = urlParams.get('type') || 'certificat';
+        const source = urlParams.get('source') || '';
+        
+        const TEMPLATE_CERTIFICAT = 'template_ot010vp';
+        const TEMPLATE_ROULETTE = 'template_b49o22m';
+        
+        console.log('📋 支付类型：', paymentType);
+        
+        // ============================================================
+        // DOM 元素
+        // ============================================================
+        
+        const pageTitle = document.getElementById('pageTitle');
+        const pageSubtitle = document.getElementById('pageSubtitle');
+        const certificatContent = document.getElementById('certificatContent');
+        const rouletteContent = document.getElementById('rouletteContent');
+        const successBox = document.getElementById('successBox');
+        const successRef = document.getElementById('successRef');
+        
+        // ============================================================
+        // 适配界面
+        // ============================================================
+        
+        if (paymentType === 'roulette') {
+            pageTitle.textContent = '💳 ETEO 订阅';
+            pageSubtitle.textContent = '🎯 信息转盘 - 1 年无限访问';
+            certificatContent.classList.add('section-hidden');
+            rouletteContent.classList.remove('section-hidden');
+            
+            const refCode = 'ROUL-' + generateRef();
+            document.getElementById('rouletteRefInput').value = refCode;
+            
+            console.log('🎯 转盘模式已激活');
+        } else {
+            pageTitle.textContent = '💳 ETEO 认证';
+            pageSubtitle.textContent = '🎓 带二维码的个性化证书';
+            certificatContent.classList.remove('section-hidden');
+            rouletteContent.classList.add('section-hidden');
+            
+            const refCode = 'CERTIF-' + generateRef();
+            document.getElementById('refInput').value = refCode;
+            
+            console.log('🎓 证书模式已激活');
+        }
+        
+        // ============================================================
+        // DOM 元素（续）
+        // ============================================================
+        
+        const listenPaymentBtn = document.getElementById('listenPaymentBtn');
+        const submitBtn = document.getElementById('submitBtn');
+        const loadingContainer = document.getElementById('loadingContainer');
+        const rouletteSubmitBtn = document.getElementById('rouletteSubmitBtn');
+        const rouletteLoadingContainer = document.getElementById('rouletteLoadingContainer');
+        const rouletteFullName = document.getElementById('rouletteFullName');
+        const rouletteEmail = document.getElementById('rouletteEmail');
+        const roulettePhone = document.getElementById('roulettePhone');
+        const rouletteRefInput = document.getElementById('rouletteRefInput');
+        const fullName = document.getElementById('fullName');
+        const email = document.getElementById('email');
+        const phone = document.getElementById('phone');
+        const specialty = document.getElementById('specialty');
+        const refInput = document.getElementById('refInput');
+        const message = document.getElementById('message');
+        const paymentForm = document.getElementById('paymentForm');
+        const rouletteForm = document.getElementById('rouletteForm');
+        
+        const storage = new StorageService();
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            const existing = document.querySelector('.toast-custom');
+            if (existing && existing.style.display !== 'none') {
+                existing.textContent = message;
+                existing.style.display = 'block';
+                setTimeout(() => {
+                    existing.style.display = 'none';
+                }, duration);
+                return;
+            }
+            
+            const toast = document.querySelector('.toast-custom') || document.createElement('div');
+            toast.className = 'toast-custom';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            toast.style.display = 'block';
+            
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, duration);
+        }
+        
+        // ============================================================
+        // 生成参考号
+        // ============================================================
+        
+        function generateRef() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let ref = '';
+            for (let i = 0; i < 6; i++) {
+                ref += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return ref;
+        }
+        
+        // ============================================================
+        // TTS
+        // ============================================================
+        
+        listenPaymentBtn.addEventListener('click', function() {
+            if (!window.tts) {
+                showToast('❌ TTS 模块不可用', 3000);
+                return;
+            }
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 收听说明';
+                this.classList.remove('listening');
+                return;
+            }
+            
+            let message = '';
+            
+            if (paymentType === 'roulette') {
+                message = `您好，医生，要享受信息转盘的 1 年无限使用，只需填写下方表单。
+
+提交表单后，您将在您提供的地址收到一封个人邮件。
+
+在这封邮件中，您将找到所有需要遵循的说明，包括用于 20 欧元转账的 IBAN，以及一个轻松返回 ETEO 的链接。
+
+转账完成后，只需打开您的邮件并点击链接即可激活您的订阅。
+
+您的订阅将尽快被激活。
+
+那么，请填写表单并按照邮件中的说明操作！`;
+            } else {
+                message = `您好，医生，恭喜您通过认证考试。
+
+要获得您的证书，请填写下方表单，提供您的信息。
+
+提交表单后，您将在您提供的地址收到一封个人邮件。
+
+在这封邮件中，您将找到所有需要遵循的说明，包括用于 20 欧元转账的 IBAN，以及一个轻松返回 ETEO 的链接。
+
+转账完成后，只需打开您的邮件并点击链接即可完成您的请求。
+
+您的证书将在付款验证后通过邮件发送给您。
+
+那么，请填写表单并按照邮件中的说明操作！`;
+            }
+            
+            this.textContent = '⏹️ 停止';
+            this.classList.add('listening');
+            
+            window.tts.speak(
+                message,
+                'zh',
+                0.9,
+                1.0,
+                () => {
+                    this.textContent = '🔊 收听说明';
+                    this.classList.remove('listening');
+                },
+                (error) => {
+                    console.error('❌ TTS 错误：', error);
+                    this.textContent = '🔊 收听说明';
+                    this.classList.remove('listening');
+                    showToast('❌ 语音朗读错误', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // 自动保存
+        // ============================================================
+        
+        function saveFormData() {
+            let data = {};
+            
+            if (paymentType === 'roulette') {
+                data = {
+                    fullName: rouletteFullName.value.trim(),
+                    email: rouletteEmail.value.trim(),
+                    phone: roulettePhone.value.trim(),
+                    reference: rouletteRefInput.value.trim()
+                };
+            } else {
+                data = {
+                    fullName: fullName.value.trim(),
+                    email: email.value.trim(),
+                    phone: phone.value.trim(),
+                    specialty: specialty.value,
+                    reference: refInput.value.trim(),
+                    message: message.value.trim()
+                };
+            }
+            
+            const existing = JSON.parse(localStorage.getItem('eteo_payment_data') || '{}');
+            const merged = { ...existing, ...data, type: paymentType };
+            localStorage.setItem('eteo_payment_data', JSON.stringify(merged));
+        }
+        
+        document.addEventListener('input', saveFormData);
+        document.addEventListener('change', saveFormData);
+        
+        // ============================================================
+        // 证书提交
+        // ============================================================
+        
+        if (paymentForm) {
+            paymentForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                await handleCertificatSubmit();
+            });
+        }
+        
+        async function handleCertificatSubmit() {
+            const nameVal = fullName.value.trim();
+            const emailVal = email.value.trim();
+            const phoneVal = phone.value.trim();
+            const specialtyVal = specialty.value;
+            const refVal = refInput.value.trim();
+            const messageVal = message.value.trim();
+            
+            if (!nameVal) { showToast('❌ 请输入您的姓名'); return; }
+            if (!emailVal || !emailVal.includes('@')) { showToast('❌ 请输入有效的邮箱'); return; }
+            if (!specialtyVal) { showToast('❌ 请选择一个专科'); return; }
+            if (!refVal) { showToast('❌ 缺少参考号'); return; }
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ 发送中...';
+            loadingContainer.style.display = 'block';
+            
+            try {
+                const docData = {
+                    fullName: nameVal,
+                    email: emailVal,
+                    phone: phoneVal || '',
+                    specialty: specialtyVal,
+                    reference: refVal,
+                    message: messageVal || '',
+                    amount: 20,
+                    currency: 'EUR',
+                    status: 'pending',
+                    createdAt: serverTimestamp(),
+                    updatedAt: serverTimestamp(),
+                    source: 'paiement_rib'
+                };
+                
+                await addDoc(collection(db, 'certification_requests'), docData);
+                console.log('✅ 请求已保存到 Firebase');
+                
+                try {
+                    emailjs.init('1hut2BPScQz4KROG_');
+                    
+                    await emailjs.send('service_rffgbiz', TEMPLATE_CERTIFICAT, {
+                        to_email: emailVal,
+                        fullName: nameVal,
+                        specialty: specialtyVal,
+                        reference: refVal,
+                        phone: phoneVal || '未提供',
+                        message: messageVal || '无消息',
+                        // ✅ 银行信息
+                        banque: 'Banque Centrale Populaire (BCP)',
+                        agence: 'Agence 2 MARS - Casablanca',
+                        titulaire: 'Mr MAARAK SAID',
+                        iban: 'MA64 1907 8021 1111 1015 9900 9331',
+                        bic: 'BCPOMAMC',
+                        montant: '20,00 €',
+                        telephone: '0522264905',
+                        adresse: 'Angle Rue Omar El Idrissi et Avenue 2 Mars, Casablanca, MAROC'
+                    });
+                    
+                    console.log('📧 证书邮件发送成功！');
+                    
+                } catch (emailError) {
+                    console.error('❌ EmailJS 错误：', emailError);
+                    showToast('⚠️ 请求已保存，但邮件未发送');
+                }
+                
+                successBox.style.display = 'block';
+                successRef.textContent = refVal;
+                submitBtn.style.display = 'none';
+                loadingContainer.style.display = 'none';
+                
+                localStorage.removeItem('eteo_payment_data');
+                showToast('✅ 请求发送成功！');
+                showToast('📧 请查看您的邮件以获取说明。', 4000);
+                
+            } catch (error) {
+                console.error('❌ 错误：', error);
+                showToast('❌ 发送错误，请重试');
+                submitBtn.disabled = false;
+                submitBtn.textContent = '📤 提交我的认证请求';
+                loadingContainer.style.display = 'none';
+            }
+        }
+        
+        // ============================================================
+        // 转盘提交
+        // ============================================================
+        
+        if (rouletteForm) {
+            rouletteForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                await handleRouletteSubmit();
+            });
+        }
+        
+        async function handleRouletteSubmit() {
+            const nameVal = rouletteFullName.value.trim();
+            const emailVal = rouletteEmail.value.trim();
+            const phoneVal = roulettePhone.value.trim();
+            const refVal = rouletteRefInput.value.trim();
+            
+            if (!nameVal) { showToast('❌ 请输入您的姓名'); return; }
+            if (!emailVal || !emailVal.includes('@')) { showToast('❌ 请输入有效的邮箱'); return; }
+            if (!refVal) { showToast('❌ 缺少参考号'); return; }
+            
+            rouletteSubmitBtn.disabled = true;
+            rouletteSubmitBtn.textContent = '⏳ 发送中...';
+            rouletteLoadingContainer.style.display = 'block';
+            
+            try {
+                const docData = {
+                    userId: (await getCurrentUser())?.uid || 'anonymous',
+                    fullName: nameVal,
+                    email: emailVal,
+                    phone: phoneVal || '',
+                    reference: refVal,
+                    amount: 20,
+                    currency: 'EUR',
+                    type: 'roulette',
+                    status: 'pending',
+                    source: source || 'roulette_de_l_info',
+                    createdAt: serverTimestamp(),
+                    updatedAt: serverTimestamp()
+                };
+                
+                await addDoc(collection(db, 'roulette_subscriptions'), docData);
+                console.log('✅ 订阅请求已保存到 Firebase');
+                
+                try {
+                    emailjs.init('1hut2BPScQz4KROG_');
+                    
+                    await emailjs.send('service_rffgbiz', TEMPLATE_ROULETTE, {
+                        to_email: emailVal,
+                        fullName: nameVal,
+                        reference: refVal,
+                        phone: phoneVal || '未提供',
+                        // ✅ 银行信息
+                        banque: 'Banque Centrale Populaire (BCP)',
+                        agence: 'Agence 2 MARS - Casablanca',
+                        titulaire: 'Mr MAARAK SAID',
+                        iban: 'MA64 1907 8021 1111 1015 9900 9331',
+                        bic: 'BCPOMAMC',
+                        montant: '20,00 €',
+                        telephone: '0522264905',
+                        adresse: 'Angle Rue Omar El Idrissi et Avenue 2 Mars, Casablanca, MAROC'
+                    });
+                    
+                    console.log('📧 订阅邮件发送成功！');
+                    
+                } catch (emailError) {
+                    console.error('❌ EmailJS 错误：', emailError);
+                    showToast('⚠️ 请求已保存，但邮件未发送');
+                }
+                
+                successBox.style.display = 'block';
+                successRef.textContent = refVal;
+                rouletteSubmitBtn.style.display = 'none';
+                rouletteLoadingContainer.style.display = 'none';
+                
+                localStorage.removeItem('eteo_payment_data');
+                showToast('✅ 订阅请求发送成功！');
+                showToast('📧 请查看您的邮件以获取说明。', 4000);
+                
+            } catch (error) {
+                console.error('❌ 错误：', error);
+                showToast('❌ 发送错误，请重试');
+                rouletteSubmitBtn.disabled = false;
+                rouletteSubmitBtn.textContent = '📤 激活我的订阅';
+                rouletteLoadingContainer.style.display = 'none';
+            }
+        }
+        
+        // ============================================================
+        // 获取当前用户
+        // ============================================================
+        
+        function getCurrentUser() {
+            return new Promise((resolve) => {
+                onAuthStateChanged(auth, (user) => {
+                    resolve(user);
+                });
+            });
+        }
+        
+        // ============================================================
+        // 初始化
+        // ============================================================
+        
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                const settings = storage.getSettings() || {};
+                
+                if (paymentType === 'roulette') {
+                    if (!rouletteFullName.value) rouletteFullName.value = settings.user?.displayName || settings.user?.fullName || '';
+                    if (!rouletteEmail.value) rouletteEmail.value = settings.user?.email || user.email || '';
+                    if (!roulettePhone.value) roulettePhone.value = settings.user?.phone !== '未指定' ? settings.user?.phone : '';
+                } else {
+                    if (!fullName.value) fullName.value = settings.user?.displayName || settings.user?.fullName || '';
+                    if (!email.value) email.value = settings.user?.email || user.email || '';
+                    if (!phone.value) phone.value = settings.user?.phone !== '未指定' ? settings.user?.phone : '';
+                    if (!specialty.value) {
+                        const savedSpecialty = localStorage.getItem('eteo_selected_specialty');
+                        if (savedSpecialty) {
+                            const map = {
+                                'Relationnel&Psychomotricité': '人际与心理运动',
+                                'sterilisation': '消毒灭菌',
+                                'endo': '牙髓病学'
+                            };
+                            const displayName = map[savedSpecialty] || savedSpecialty;
+                            const options = specialty.options;
+                            for (let i = 0; i < options.length; i++) {
+                                if (options[i].value === displayName) {
+                                    specialty.value = displayName;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                console.log('👤 用户已连接：', user.email);
+            }
+        });
+        
+        // ============================================================
+        // 初始化
+        // ============================================================
+        
+        Logger.info(`💳 支付 IBAN 页面已加载（类型：${paymentType}）`);
+        console.log('📋 证书模板：', TEMPLATE_CERTIFICAT);
+        console.log('📋 转盘模板：', TEMPLATE_ROULETTE);
+        console.log('🔊 TTS：祝贺 + 邮件说明');
+        console.log('📧 IBAN 仅通过邮件发送');
+        console.log('🔒 支付页面不显示 IBAN');
+        console.log('✅ 所有步骤已翻译为中文');
+        
+    </script>
+</body>
+</html>

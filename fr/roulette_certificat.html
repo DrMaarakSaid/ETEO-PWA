@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🎓 Examen de Certification - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        /* ============================================================
+           STYLES SPÉCIFIQUES ROULETTE CERTIFICAT
+           ============================================================ */
+        
+        .roulette-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 10px auto;
+            max-width: 400px;
+        }
+        
+        .roulette-wrapper canvas {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.12);
+            display: block;
+        }
+        
+        .roulette-pointer {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+            filter: drop-shadow(0 0 8px #ff6b00) drop-shadow(0 0 20px #ff6b00);
+            animation: pointerPulse 1.5s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        .roulette-pointer svg {
+            width: 30px;
+            height: 36px;
+            display: block;
+        }
+        
+        @keyframes pointerPulse {
+            0% { filter: drop-shadow(0 0 8px #ff6b00) drop-shadow(0 0 20px #ff6b00); }
+            50% { filter: drop-shadow(0 0 15px #ff6b00) drop-shadow(0 0 35px #ff6b00) drop-shadow(0 0 60px rgba(255,107,0,0.3)); }
+            100% { filter: drop-shadow(0 0 8px #ff6b00) drop-shadow(0 0 20px #ff6b00); }
+        }
+        
+        .roulette-result {
+            display: none;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            padding: 10px 16px;
+            background: #f0f4ff;
+            border-radius: 14px;
+            border-left: 4px solid #667eea;
+            margin: 8px auto;
+            max-width: 400px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        
+        .roulette-result .highlight {
+            color: #667eea;
+            font-weight: 800;
+        }
+        
+        .roulette-spin-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #f57c00, #e65100);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(245, 124, 0, 0.3);
+            margin: 5px 0;
+        }
+        
+        .roulette-spin-btn:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 35px rgba(245, 124, 0, 0.4);
+        }
+        
+        .roulette-spin-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+            background: #b0b0b0;
+            box-shadow: none;
+        }
+        
+        .roulette-replay-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.25);
+        }
+        
+        .roulette-replay-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.35);
+        }
+        
+        .roulette-replay-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .ia-greeting {
+            background: linear-gradient(135deg, #e8eeff, #f0f4ff);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border: 1px solid #d0d8f0;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            text-align: left;
+            box-shadow: 0 2px 12px rgba(102, 126, 234, 0.08);
+        }
+        
+        .ia-avatar {
+            font-size: 2.5rem;
+            flex-shrink: 0;
+            animation: iaPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes iaPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .ia-message {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin: 0;
+            color: #2c3e50;
+        }
+        
+        .ia-message strong {
+            color: #4c6ef5;
+        }
+        
+        .ia-message .highlight-score {
+            color: #4caf50;
+            font-weight: 700;
+        }
+        
+        .ia-message .highlight-fail {
+            color: #e74c3c;
+            font-weight: 700;
+        }
+        
+        .question-progress {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 16px;
+            background: #f0f4ff;
+            border-radius: 30px;
+            margin: 10px 0;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .question-progress .progress-bar {
+            flex: 1;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            margin: 0 12px;
+            overflow: hidden;
+        }
+        
+        .question-progress .progress-bar .fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        
+        .question-counter {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #667eea;
+            white-space: nowrap;
+        }
+        
+        .certificate-result {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .certificate-result .score-big {
+            font-size: 4rem;
+            font-weight: 800;
+            color: #2c3e50;
+        }
+        
+        .certificate-result .score-big .correct {
+            color: #4caf50;
+        }
+        
+        .certificate-result .score-big .wrong {
+            color: #e74c3c;
+        }
+        
+        .certificate-result .percentage-big {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        
+        .certificate-result .percentage-big.success {
+            color: #4caf50;
+        }
+        
+        .certificate-result .percentage-big.fail {
+            color: #e74c3c;
+        }
+        
+        .certificate-result .message-big {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            color: #555;
+        }
+        
+        .btn-download-cert {
+            padding: 16px 40px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #ffd700, #f57c00);
+            color: #2c3e50;
+            font-weight: 800;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+            margin: 10px 0;
+        }
+        
+        .btn-download-cert:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 35px rgba(255, 215, 0, 0.5);
+        }
+        
+        .btn-retry-cert {
+            padding: 14px 35px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+        
+        .btn-retry-cert:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.35);
+        }
+        
+        .success-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #2c3e50;
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 10px 0;
+            animation: badgePulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes badgePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .btn-back-specialty {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+        
+        .btn-back-specialty:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+        }
+
+        #headerContainer {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        #headerContainer h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        #specialtyDisplay {
+            color: #555;
+            font-size: 1.2rem;
+            margin: 5px 0;
+            font-weight: 600;
+        }
+
+        #specialtyDisplay .specialty-name {
+            color: #4c6ef5;
+            font-weight: 800;
+            font-size: 1.3rem;
+        }
+        
+        .payment-lock-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        
+        .payment-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .payment-popup {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 380px;
+            width: 90%;
+            text-align: center;
+            animation: popupIn 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        @keyframes popupIn {
+            from { transform: scale(0.9) translateY(20px); opacity: 0; }
+            to { transform: scale(1) translateY(0); opacity: 1; }
+        }
+        
+        .payment-popup h2 {
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+        
+        .payment-popup p {
+            color: #666;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .payment-popup .features {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 12px;
+            margin: 15px 0;
+            text-align: left;
+        }
+        
+        .payment-popup .features p {
+            margin: 4px 0;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        
+        .payment-popup .pay-btn {
+            padding: 14px 40px;
+            background: linear-gradient(135deg, #ffd700, #f57c00);
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #2c3e50;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .payment-popup .pay-btn:hover:not(:disabled) {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+        }
+        
+        .payment-popup .pay-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .payment-popup .close-btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            width: 100%;
+            transition: color 0.3s ease;
+        }
+        
+        .payment-popup .close-btn:hover {
+            color: #333;
+        }
+        
+        .payment-popup .secure-text {
+            font-size: 0.7rem;
+            color: #aaa;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 520px) {
+            .ia-greeting {
+                padding: 12px 14px;
+                gap: 10px;
+            }
+            .ia-avatar {
+                font-size: 2rem;
+            }
+            .ia-message {
+                font-size: 0.85rem;
+            }
+            .roulette-pointer {
+                top: -6px;
+            }
+            .roulette-pointer svg {
+                width: 24px;
+                height: 30px;
+            }
+            .roulette-spin-btn {
+                font-size: 0.85rem;
+                padding: 10px 20px;
+            }
+            .roulette-result {
+                font-size: 0.85rem;
+                padding: 8px 12px;
+            }
+            .certificate-result .score-big {
+                font-size: 3rem;
+            }
+            .certificate-result .percentage-big {
+                font-size: 2rem;
+            }
+            .question-progress {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+            .btn-download-cert {
+                font-size: 1rem;
+                padding: 14px 25px;
+            }
+            #headerContainer h1 {
+                font-size: 1.4rem;
+            }
+            #specialtyDisplay {
+                font-size: 1rem;
+            }
+            #specialtyDisplay .specialty-name {
+                font-size: 1.1rem;
+            }
+            .payment-popup {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .ia-avatar {
+                font-size: 1.6rem;
+            }
+            .ia-message {
+                font-size: 0.78rem;
+            }
+            .roulette-pointer {
+                top: -4px;
+            }
+            .roulette-pointer svg {
+                width: 20px;
+                height: 26px;
+            }
+            #headerContainer h1 {
+                font-size: 1.2rem;
+            }
+            #specialtyDisplay {
+                font-size: 0.9rem;
+            }
+            #specialtyDisplay .specialty-name {
+                font-size: 1rem;
+            }
+            .payment-popup {
+                padding: 15px;
+            }
+        }
+    </style>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "jspdf": "https://cdn.skypack.dev/jspdf@2.5.1",
+            "qrcode": "https://cdn.skypack.dev/qrcode@1.5.3"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container quiz-container">
+        
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='dashboard.html'">📊 Dashboard</button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">🏠 Accueil</button>
+        </div>
+
+        <div id="headerContainer">
+            <h1>🎓 Examen de Certification</h1>
+            <p id="specialtyDisplay">
+                Spécialité : <span class="specialty-name" id="specialtyNameDisplay">Chargement...</span>
+            </p>
+        </div>
+
+        <!-- ÉCRAN 1 : ROULETTE -->
+        <div id="rouletteScreen">
+            
+            <div class="ia-greeting" id="iaGreeting">
+                <div class="ia-avatar" id="iaAvatar">🌟</div>
+                <p class="ia-message" id="iaMessage">
+                    Chargement du message personnalisé...
+                </p>
+            </div>
+
+            <div class="question-progress" id="progressContainer">
+                <span class="question-counter" id="questionCounter">0 / 50</span>
+                <div class="progress-bar">
+                    <div class="fill" id="progressFill" style="width: 0%;"></div>
+                </div>
+                <span id="scoreCounter" style="font-weight:700; color:#4caf50;">✅ 0</span>
+            </div>
+
+            <div class="roulette-wrapper">
+                <canvas id="rouletteCanvas" width="400" height="400"></canvas>
+                <div class="roulette-pointer" id="roulettePointer">
+                    <svg viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="15,36 3,0 10,0 15,22 20,0 27,0" fill="#ff6b00" stroke="#ffaa00" stroke-width="2"/>
+                        <polygon points="15,32 6,4 11,4 15,20 19,4 24,4" fill="#ffaa00" opacity="0.5"/>
+                        <polygon points="15,28 9,8 12,8 15,18 18,8 21,8" fill="#ffdd00" opacity="0.3"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 8px 0 5px 0;">
+                <button id="spinBtn" class="roulette-spin-btn">🎯 LANCER LA ROUE</button>
+            </div>
+
+            <div id="levelResult" class="roulette-result" style="display:none;">
+                <span>📊 Niveau : </span>
+                <span id="selectedLevelDisplay" class="highlight">?</span>
+            </div>
+
+            <div style="text-align: center; margin: 8px 0;">
+                <button id="startQuizBtn" class="roulette-replay-btn" style="display:none; background: linear-gradient(135deg, #4caf50, #43a047);">
+                    🚀 COMMENCER LA QUESTION
+                </button>
+            </div>
+
+            <div id="historyContainer" style="margin-top: 12px; display: none;">
+                <div style="font-size: 0.7rem; color: #888; text-align: center; margin-bottom: 4px;">📜 Historique des niveaux</div>
+                <div id="historyChips" style="display: flex; gap: 4px; justify-content: center; flex-wrap: wrap;"></div>
+            </div>
+        </div>
+
+        <!-- ÉCRAN 2 : QUESTION -->
+        <div id="questionContainer" style="display:none;">
+            <div class="question-progress" id="questionProgressContainer">
+                <span class="question-counter" id="questionCounter2">0 / 50</span>
+                <div class="progress-bar">
+                    <div class="fill" id="progressFill2" style="width: 0%;"></div>
+                </div>
+                <span id="scoreCounter2" style="font-weight:700; color:#4caf50;">✅ 0</span>
+            </div>
+            
+            <div style="font-size: 0.85rem; color: #888; text-align: center; margin-bottom: 5px;" id="levelTag">Niveau : ?</div>
+            
+            <div class="quiz-title" id="quizTitle">🎓 Examen de Certification</div>
+            <div class="question-text" id="questionText">Question en cours...</div>
+            
+            <div class="tts-button-row">
+                <button class="tts-btn" id="ttsQuestionBtn">🔊 Lire la question</button>
+            </div>
+            
+            <div class="options" id="optionsContainer"></div>
+            
+            <div class="feedback-container" id="feedbackContainer" style="display:none;">
+                <span id="feedbackMessage"></span>
+                <span class="points-badge" id="pointsBadge"></span>
+                <button class="tts-btn tts-feedback-btn" id="ttsFeedbackBtn" style="display:none;">🔊 Réécouter</button>
+            </div>
+            
+            <div class="explanation-box" id="explanationBox" style="display:none;">
+                <div class="explanation-title">📖 Explication</div>
+                <p id="explanationText"></p>
+                <div class="correct-answer" id="correctAnswerText"></div>
+                <button class="tts-btn tts-explanation-btn" id="ttsExplanationBtn" style="display:none;">🔊 Lire l'explication</button>
+            </div>
+            
+            <div class="timer-bottom" id="timerBottom">⏱️ Temps restant : <span id="timerBottomValue">30</span> secondes</div>
+            
+            <div class="nav-buttons">
+                <button class="nav-btn" id="quitBtn">🚪 Quitter l'examen</button>
+                <button class="nav-btn" id="nextBtn" disabled>Question suivante ➜</button>
+            </div>
+        </div>
+
+        <!-- ÉCRAN 3 : RÉSULTAT FINAL -->
+        <div id="resultContainer" style="display:none;">
+            <div class="certificate-result">
+                <h2 id="resultTitle" style="margin-bottom: 5px;">📊 Résultat de l'examen</h2>
+                
+                <div style="font-size: 1rem; color: #888; margin-bottom: 10px;" id="resultSpecialty">Spécialité : ?</div>
+                
+                <div class="score-big">
+                    <span id="finalScore">0</span>
+                    <span style="font-size: 2rem; color: #888;"> / 50</span>
+                </div>
+                
+                <div class="percentage-big" id="percentageDisplay">0%</div>
+                
+                <div class="message-big" id="resultMessage">🎉 Félicitations !</div>
+                
+                <div id="resultIaContainer"></div>
+                
+                <!-- ✅ CERTIFICAT : BOUTON TÉLÉCHARGER -->
+                <div id="certificateContainer" style="display:none;">
+                    <button class="btn-download-cert" id="downloadCertBtn">
+                        💳 TÉLÉCHARGER LE CERTIFICAT - 20€
+                    </button>
+                    <p style="font-size: 0.8rem; color: #888; margin-top: 8px;">
+                        🔒 Paiement sécurisé • Certificat nominatif • QR Code unique
+                    </p>
+                </div>
+                
+                <div id="failContainer" style="display:none;">
+                    <div style="font-size: 3rem; margin: 10px 0;">💪</div>
+                    <p style="font-size: 1.1rem; color: #555;">Vous n'avez pas atteint le seuil de 70%.</p>
+                    <p style="font-size: 0.95rem; color: #888;">Ne vous découragez pas ! Chaque essai vous rapproche de la réussite.</p>
+                    <button class="btn-retry-cert" id="retryBtn">🔄 Recommencer l'examen</button>
+                    <button class="btn-back-specialty" id="backToSpecialtyBtn">📚 Retour à la spécialité</button>
+                </div>
+                
+                <div class="result-buttons" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 15px;">
+                    <button class="roulette-replay-btn" id="menuBtn" style="background: linear-gradient(135deg, #667eea, #764ba2);">🏠 Menu</button>
+                    <button class="roulette-replay-btn" id="dashboardBtn" style="background: linear-gradient(135deg, #4caf50, #43a047);">📊 Dashboard</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <script type="module">
+        // ============================================================
+        // IMPORTS MODULAIRES
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { CertificateService } from '../js/services/certificateService.js';
+        import { ProgressionService } from '../js/services/progressionService.js';
+        import { ShareService } from '../js/services/shareService.js';
+        import tts from '../js/services/tts.js';
+        import { jsPDF } from 'jspdf';
+        import QRCode from 'qrcode';
+        
+        import { CertificateGenerator } from '../js/services/CertificateGenerator.js';
+        
+        // ============================================================
+        // FIREBASE
+        // ============================================================
+        
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore, doc, setDoc, collection, addDoc, query, getDocs, orderBy, limit } from 'firebase/firestore';
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // SERVICES
+        // ============================================================
+        
+        const storage = new StorageService();
+        const certificateService = new CertificateService();
+        const progressionService = new ProgressionService();
+        const shareService = new ShareService();
+        
+        const generator = new CertificateGenerator();
+        
+        // ============================================================
+        // NIVEAUX
+        // ============================================================
+        
+        const LEVELS = [
+            { id: 'debutant1', label: 'Débutant 1', emoji: '🌱' },
+            { id: 'debutant2', label: 'Débutant 2', emoji: '🌿' },
+            { id: 'intermediaire1', label: 'Intermédiaire 1', emoji: '🌳' },
+            { id: 'intermediaire2', label: 'Intermédiaire 2', emoji: '🌲' },
+            { id: 'expert1', label: 'Expert 1', emoji: '🔥' },
+            { id: 'expert2', label: 'Expert 2', emoji: '⭐' }
+        ];
+        
+        // ============================================================
+        // RÉCUPÉRATION DE LA SPÉCIALITÉ
+        // ============================================================
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        let currentSpecialty = urlParams.get('specialty') || sessionStorage.getItem('certificat_specialty');
+        
+        if (!currentSpecialty) {
+            window.location.href = 'choix_specialites_fr.html';
+        }
+        
+        const SPECIALTY_MAP = {
+            'aides_installation': 'Aides à l\'installation',
+            'amenagement_cabinet': 'Aménagement du cabinet',
+            'anesthesiologie': 'Anesthésiologie',
+            'assistantes_dentaires': 'Assistantes dentaires',
+            'cfao_impression3d': 'CFAO & Impression 3D',
+            'chirurgie': 'Chirurgie',
+            'code_deontologie': 'Code de déontologie',
+            'comptabilite_fiscalite': 'Comptabilité & Fiscalité',
+            'conflits_mediation': 'Conflits & Médiation',
+            'conventionnement_amo': 'Conventionnement & AMO',
+            'endo': 'Endodontie',
+            'esthetique': 'Esthétique',
+            'ethique_deontologie': 'Éthique & Déontologie',
+            'Femmes_dentistes': 'Femmes dentistes',
+            'fiscalite_dentiste': 'Fiscalité du dentiste',
+            'formes_juridiques': 'Formes juridiques',
+            'futur_docteur': 'Futur docteur',
+            'gestion_cabinet': 'Gestion du cabinet',
+            'implantologie': 'Implantologie',
+            'Informatique Logiciels dentaires': 'Informatique & Logiciels',
+            'materiaux_dentaires': 'Matériaux dentaires',
+            'Médecine_buccale': 'Médecine buccale',
+            'mutuelles_prises_en_charge': 'Mutuelles & Prise en charge',
+            'ONMD_CRS_CRN': 'ONMD / CRS / CRN',
+            'orthodontie': 'Orthodontie',
+            'parodontologie': 'Parodontologie',
+            'pedodontie': 'Pédodontie',
+            'photographie': 'Photographie',
+            'prothese': 'Prothèse',
+            'radiologie': 'Radiologie',
+            'Relationnel&Psychomotricité': 'Relationnel & Psychomotricité',
+            'sante_publique': 'Santé publique',
+            'seniors': 'Seniors',
+            'Soins_conservateurs': 'Soins conservateurs',
+            'sterilisation': 'Stérilisation',
+            'syndicat': 'Syndicat'
+        };
+        
+        const specialtyDisplayName = SPECIALTY_MAP[currentSpecialty] || currentSpecialty;
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const specialtyNameDisplay = document.getElementById('specialtyNameDisplay');
+        const spinBtn = document.getElementById('spinBtn');
+        const startQuizBtn = document.getElementById('startQuizBtn');
+        const levelResult = document.getElementById('levelResult');
+        const selectedLevelDisplay = document.getElementById('selectedLevelDisplay');
+        const progressFill = document.getElementById('progressFill');
+        const progressFill2 = document.getElementById('progressFill2');
+        const questionCounter = document.getElementById('questionCounter');
+        const questionCounter2 = document.getElementById('questionCounter2');
+        const scoreCounter = document.getElementById('scoreCounter');
+        const scoreCounter2 = document.getElementById('scoreCounter2');
+        const historyContainer = document.getElementById('historyContainer');
+        const historyChips = document.getElementById('historyChips');
+        const questionContainer = document.getElementById('questionContainer');
+        const questionText = document.getElementById('questionText');
+        const optionsContainer = document.getElementById('optionsContainer');
+        const feedbackContainer = document.getElementById('feedbackContainer');
+        const feedbackMessage = document.getElementById('feedbackMessage');
+        const pointsBadge = document.getElementById('pointsBadge');
+        const explanationBox = document.getElementById('explanationBox');
+        const explanationText = document.getElementById('explanationText');
+        const correctAnswerText = document.getElementById('correctAnswerText');
+        const timerBottomValue = document.getElementById('timerBottomValue');
+        const timerBottom = document.getElementById('timerBottom');
+        const nextBtn = document.getElementById('nextBtn');
+        const quitBtn = document.getElementById('quitBtn');
+        const resultContainer = document.getElementById('resultContainer');
+        const finalScore = document.getElementById('finalScore');
+        const percentageDisplay = document.getElementById('percentageDisplay');
+        const resultMessage = document.getElementById('resultMessage');
+        const resultTitle = document.getElementById('resultTitle');
+        const resultSpecialty = document.getElementById('resultSpecialty');
+        const certificateContainer = document.getElementById('certificateContainer');
+        const failContainer = document.getElementById('failContainer');
+        const downloadCertBtn = document.getElementById('downloadCertBtn');
+        const retryBtn = document.getElementById('retryBtn');
+        const backToSpecialtyBtn = document.getElementById('backToSpecialtyBtn');
+        const menuBtn = document.getElementById('menuBtn');
+        const dashboardBtn = document.getElementById('dashboardBtn');
+        const rouletteScreen = document.getElementById('rouletteScreen');
+        const ttsQuestionBtn = document.getElementById('ttsQuestionBtn');
+        const ttsFeedbackBtn = document.getElementById('ttsFeedbackBtn');
+        const ttsExplanationBtn = document.getElementById('ttsExplanationBtn');
+        const iaMessage = document.getElementById('iaMessage');
+        const iaAvatar = document.getElementById('iaAvatar');
+        const levelTag = document.getElementById('levelTag');
+        const resultIaContainer = document.getElementById('resultIaContainer');
+        
+        // ============================================================
+        // ÉTAT
+        // ============================================================
+        
+        let currentLevel = null;
+        let selectedQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let isAnswered = false;
+        let timerInterval = null;
+        let timeRemaining = 30;
+        let isSpinning = false;
+        let roulette = null;
+        let quizHistory = [];
+        let userId = null;
+        let userName = 'Docteur';
+        let levelScores = {};
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // ✅ TTS - FONCTION AMÉLIORÉE
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆🌱🌿🌳🌲]/g, '');
+            cleaned = cleaned.replace(/\n/g, ' ');
+            cleaned = cleaned.replace(/\r/g, ' ');
+            cleaned = cleaned.replace(/\.\s+([A-ZÉÈÊËÀÂÄÔÖÎÏÙÛÜÇ])/g, ', $1');
+            cleaned = cleaned.replace(/\.\s+([a-zéèêëàâäôöîïùûüç])/g, ', $1');
+            cleaned = cleaned.replace(/\.(\d)/g, '$1');
+            cleaned = cleaned.replace(/\.\s*$/, '');
+            cleaned = cleaned.replace(/\s\.\s/g, ' ');
+            cleaned = cleaned.replace(/\./g, ', ');
+            cleaned = cleaned.replace(/,\s*,/g, ',');
+            cleaned = cleaned.replace(/,\s*,\s*/g, ', ');
+            cleaned = cleaned.replace(/%/g, ' pour cent ');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/[«»]/g, '"');
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            
+            return cleaned;
+        }
+        
+        function stopTTS() {
+            try {
+                if (window.tts && typeof window.tts.stop === 'function') {
+                    window.tts.stop();
+                }
+            } catch (e) {}
+            document.querySelectorAll('.tts-btn.listening, .listen-btn.listening').forEach(btn => {
+                const originalText = btn.dataset.originalText || '🔊';
+                btn.textContent = originalText;
+                btn.classList.remove('listening');
+            });
+        }
+        
+        function speakText(text, button, buttonText = '🔊') {
+            if (!window.tts || typeof window.tts.speak !== 'function') {
+                if (button) {
+                    button.textContent = buttonText;
+                    button.classList.remove('listening');
+                }
+                return;
+            }
+            
+            const cleanText = cleanTextForTTS(text);
+            if (!cleanText || cleanText.trim() === '') {
+                if (button) {
+                    button.textContent = buttonText;
+                    button.classList.remove('listening');
+                }
+                return;
+            }
+            
+            try {
+                if (window.tts.isSpeakingNow && window.tts.isSpeakingNow()) {
+                    window.tts.stop();
+                }
+            } catch (e) {}
+            
+            document.querySelectorAll('.tts-btn.listening, .listen-btn.listening').forEach(btn => {
+                const originalText = btn.dataset.originalText || '🔊';
+                btn.textContent = originalText;
+                btn.classList.remove('listening');
+            });
+            
+            if (button) {
+                button.dataset.originalText = buttonText;
+                button.textContent = '⏹️ Arrêter';
+                button.classList.add('listening');
+            }
+            
+            try {
+                window.tts.speak(
+                    cleanText,
+                    'fr',
+                    0.9,
+                    1.0,
+                    () => {
+                        if (button) {
+                            button.textContent = buttonText;
+                            button.classList.remove('listening');
+                        }
+                    },
+                    () => {
+                        if (button) {
+                            button.textContent = buttonText;
+                            button.classList.remove('listening');
+                        }
+                    }
+                );
+            } catch (e) {}
+        }
+        
+        // ============================================================
+        // EFFETS SONORES
+        // ============================================================
+        
+        function playRouletteSound(type, totalDuration) {
+            try {
+                const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                if (type === 'spin') {
+                    if (!totalDuration) totalDuration = 4000;
+                    const minTicks = 15;
+                    const maxTicks = 35;
+                    const totalTicks = Math.min(maxTicks, Math.max(minTicks, Math.floor(totalDuration / 130)));
+                    let count = 0;
+                    const baseFreq = 523;
+                    const volume = 0.15;
+                    
+                    function playTick() {
+                        if (count >= totalTicks) return;
+                        const progress = count / totalTicks;
+                        const speedFactor = 0.4 + 0.6 * (1 - Math.sin(progress * Math.PI));
+                        const tickDelay = (totalDuration / totalTicks) * speedFactor * 0.9;
+                        
+                        const osc = audioCtx.createOscillator();
+                        const gain = audioCtx.createGain();
+                        osc.connect(gain);
+                        gain.connect(audioCtx.destination);
+                        const freqVariation = Math.sin(progress * Math.PI) * 200;
+                        osc.frequency.value = baseFreq + freqVariation;
+                        osc.type = 'square';
+                        gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                        gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.01);
+                        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+                        osc.start();
+                        osc.stop(audioCtx.currentTime + 0.05);
+                        count++;
+                        if (count < totalTicks) {
+                            setTimeout(playTick, tickDelay);
+                        }
+                    }
+                    setTimeout(playTick, 50);
+                    
+                } else if (type === 'win') {
+                    const notes = [392, 523, 659, 784, 1047];
+                    const volume = 0.25;
+                    const duration = 0.35;
+                    const delay = 140;
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'lose') {
+                    const notes = [523, 494, 466, 440];
+                    const volume = 0.25;
+                    const duration = 0.4;
+                    const delay = 140;
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'click') {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.frequency.value = 1200;
+                    osc.type = 'sine';
+                    gain.gain.setValueAtTime(0.20, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.05);
+                    
+                } else if (type === 'tada') {
+                    const notesTada = [523, 659, 784, 1047, 1318];
+                    notesTada.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + 0.12);
+                        }, i * 100);
+                    });
+                }
+            } catch (e) {}
+        }
+        
+        // ============================================================
+        // RÉCUPÉRATION DES SCORES DES NIVEAUX
+        // ============================================================
+        
+        function getLevelScores() {
+            const settings = storage.getSettings() || {};
+            const scores = settings.scores?.[currentSpecialty] || {};
+            
+            const result = {};
+            LEVELS.forEach(level => {
+                const data = scores[level.id];
+                if (data && data.percentage !== undefined) {
+                    result[level.id] = Math.round(data.percentage);
+                } else {
+                    result[level.id] = null;
+                }
+            });
+            
+            return result;
+        }
+        
+        // ============================================================
+        // GÉNÉRATION DU MESSAGE IA PERSONNALISÉ
+        // ============================================================
+        
+        function generateIAMessage(userName, levelScores) {
+            const allCompleted = LEVELS.every(level => levelScores[level.id] !== null);
+            const avgScore = LEVELS.reduce((sum, level) => {
+                return sum + (levelScores[level.id] || 0);
+            }, 0) / LEVELS.length;
+            
+            let message = '';
+            let avatar = '🌟';
+            
+            message = `<strong>Cher Dr. ${userName},</strong><br><br>`;
+            message += `Arriver jusqu'ici n'est pas un hasard.<br>`;
+            message += `C'est le fruit de votre <strong>détermination</strong>, de votre <strong>rigueur</strong> et de votre <strong>passion</strong> pour l'excellence.<br><br>`;
+            
+            if (allCompleted) {
+                message += `Vous avez déjà relevé avec succès les <strong>6 niveaux</strong> de la spécialité <strong>${specialtyDisplayName}</strong> :<br><br>`;
+            } else {
+                message += `Vous avez déjà accompli un parcours remarquable dans la spécialité <strong>${specialtyDisplayName}</strong> :<br><br>`;
+            }
+            
+            LEVELS.forEach(level => {
+                const score = levelScores[level.id];
+                const emoji = level.emoji;
+                const label = level.label;
+                
+                if (score !== null) {
+                    const passed = score >= 60;
+                    message += `${emoji} ${label} : <span class="${passed ? 'highlight-score' : 'highlight-fail'}">${score}%</span> ${passed ? '✅' : '⏳'}<br>`;
+                } else {
+                    message += `${emoji} ${label} : <span class="highlight-fail">Non complété</span> ⏳<br>`;
+                }
+            });
+            
+            message += `<br>`;
+            
+            if (allCompleted) {
+                const avg = Math.round(avgScore);
+                
+                if (avg >= 85) {
+                    message += `<strong>🌟 Exceptionnel !</strong> Vous avez démontré une maîtrise remarquable.<br>`;
+                    message += `Votre détermination et votre rigueur sont inspirantes.<br><br>`;
+                    avatar = '🏆';
+                } else if (avg >= 70) {
+                    message += `<strong>💪 Très solide !</strong> Vous avez travaillé dur et ça se voit.<br>`;
+                    message += `Vous êtes prêt à relever ce dernier défi.<br><br>`;
+                    avatar = '🔥';
+                } else if (avg >= 60) {
+                    message += `<strong>📚 Bon travail !</strong> Vous avez les bases solides.<br>`;
+                    message += `Ce dernier examen va consolider vos acquis.<br><br>`;
+                    avatar = '📈';
+                } else {
+                    message += `<strong>🌱 Chaque grand expert a commencé quelque part.</strong><br>`;
+                    message += `Vous avez fait le plus dur, maintenant finissez en beauté !<br><br>`;
+                    avatar = '🌱';
+                }
+                
+                message += `<strong>👏 Bravo ! Vous faites partie de ceux qui vont jusqu'au bout.</strong><br><br>`;
+                message += `Aujourd'hui, vous êtes à un tournant décisif.<br>`;
+                message += `L'<strong>examen de certification</strong> n'est pas une simple formalité.<br>`;
+                message += `C'est la <strong>consécration</strong> de tout le travail accompli.<br>`;
+                message += `C'est la preuve que vous <strong>visez l'excellence</strong> et que vous méritez le <strong>titre d'Expert Certifié ETEO</strong>.<br><br>`;
+                
+            } else {
+                const completedCount = LEVELS.filter(l => levelScores[l.id] !== null).length;
+                message += `📊 Vous avez complété <strong>${completedCount}/6</strong> niveaux.<br>`;
+                message += `💪 Continuez votre progression, chaque niveau vous rapproche de la certification !<br><br>`;
+                message += `L'<strong>examen de certification</strong> vous permet de valider l'ensemble de vos acquis.<br>`;
+                message += `C'est une <strong>étape clé</strong> vers l'obtention de votre titre d'Expert Certifié ETEO.<br><br>`;
+            }
+            
+            message += `<span style="font-size: 0.9rem; opacity: 0.9;">`;
+            message += `💪 50 questions • 30 secondes chacune • 70% pour réussir<br><br>`;
+            message += `<strong>Alors, êtes-vous prêt à décrocher votre certificat ?</strong><br>`;
+            message += `Lancez la roue et montrez au monde entier ce que vous valez ! 🚀`;
+            message += `</span>`;
+            
+            return { message, avatar };
+        }
+        
+        // ============================================================
+        // MESSAGE IA APRÈS RÉSULTAT
+        // ============================================================
+        
+        function generateResultIAMessage(userName, levelScores, examScore, examPct, passed) {
+            let message = '';
+            let avatar = passed ? '🎓' : '💪';
+            
+            if (passed) {
+                message = `<strong>Félicitations Dr. ${userName} !</strong> 🎉<br><br>`;
+                message += `Vous avez réussi l'examen de certification avec <strong>${examScore}/50 (${examPct}%)</strong>.<br><br>`;
+                message += `C'est un moment important dans votre parcours.<br>`;
+                message += `Vous venez de prouver votre <strong>excellence</strong> et votre <strong>maîtrise</strong> de la spécialité.<br><br>`;
+                
+                message += `<strong>📊 Récapitulatif de votre parcours :</strong><br>`;
+                LEVELS.forEach(level => {
+                    const score = levelScores[level.id];
+                    const emoji = level.emoji;
+                    const label = level.label;
+                    if (score !== null) {
+                        message += `${emoji} ${label} : <span class="highlight-score">${score}%</span> ✅<br>`;
+                    } else {
+                        message += `${emoji} ${label} : <span class="highlight-fail">Non complété</span> ⏳<br>`;
+                    }
+                });
+                
+                message += `<br>`;
+                message += `<strong>🎓 Votre certificat vous attend.</strong><br>`;
+                message += `C'est la <strong>preuve tangible</strong> de votre expertise.<br>`;
+                message += `Téléchargez-le maintenant pour le partager avec vos pairs, vos patients, votre réseau.<br><br>`;
+                
+                message += `<strong>📜 Un certificat unique :</strong><br>`;
+                message += `• ✅ Nominatif avec votre nom<br>`;
+                message += `• ✅ Code unique + QR Code vérifiable<br>`;
+                message += `• ✅ Signé par les fondateurs d'ETEO<br><br>`;
+                
+                message += `<strong>Alors, prêt à télécharger votre certificat ?</strong> 🚀`;
+                avatar = '🎓';
+                
+            } else {
+                message = `<strong>Cher Dr. ${userName},</strong><br><br>`;
+                message += `Vous avez obtenu <strong>${examScore}/50 (${examPct}%)</strong> à l'examen.<br>`;
+                message += `Le seuil de réussite est de <strong>70%</strong>.<br><br>`;
+                message += `<strong>Mais ne vous méprenez pas : ce n'est pas un échec.</strong><br>`;
+                message += `C'est une <strong>étape</strong> sur le chemin de la réussite.<br><br>`;
+                message += `<strong>Rappelez-vous ce que vous avez déjà accompli :</strong><br><br>`;
+                
+                LEVELS.forEach(level => {
+                    const score = levelScores[level.id];
+                    const emoji = level.emoji;
+                    const label = level.label;
+                    if (score !== null) {
+                        message += `${emoji} ${label} : <span class="highlight-score">${score}%</span> ✅<br>`;
+                    } else {
+                        message += `${emoji} ${label} : <span class="highlight-fail">Non complété</span> ⏳<br>`;
+                    }
+                });
+                message += `<br>`;
+                
+                message += `<strong>👏 Arriver jusqu'ici est déjà un exploit en soi.</strong><br>`;
+                message += `Vous avez montré que vous avez le <strong>cœur</strong>, la <strong>volonté</strong> et la <strong>discipline</strong> pour réussir.<br><br>`;
+                message += `💪 Cet examen n'est qu'une <strong>étape</strong>.<br>`;
+                message += `🔄 <strong>Recommencez</strong>, vous êtes plus près du but que vous ne le pensez.<br>`;
+                message += `🌟 Les grands champions ne sont pas ceux qui ne tombent jamais,<br>`;
+                message += `mais ceux qui se <strong>relèvent toujours plus forts</strong>.<br><br>`;
+                message += `<strong>Votre certificat vous attend. Allez le chercher !</strong> 🚀`;
+                
+                avatar = '💪';
+            }
+            
+            return { message, avatar };
+        }
+        
+        // ============================================================
+        // AFFICHER LE MESSAGE IA D'ACCUEIL
+        // ============================================================
+        
+        function displayIAWelcome() {
+            const settings = storage.getSettings() || {};
+            userName = settings.user?.fullName || 'Docteur';
+            
+            levelScores = getLevelScores();
+            const { message, avatar } = generateIAMessage(userName, levelScores);
+            
+            iaAvatar.textContent = avatar;
+            iaMessage.innerHTML = message;
+            
+            setTimeout(() => {
+                const ttsMessage = cleanTextForTTS(message.replace(/<[^>]*>/g, ''));
+                speakText(ttsMessage, null);
+            }, 1500);
+        }
+        
+        // ============================================================
+        // UI
+        // ============================================================
+        
+        function updateProgress() {
+            const total = 50;
+            const done = currentQuestionIndex;
+            const pct = (done / total) * 100;
+            
+            progressFill.style.width = pct + '%';
+            progressFill2.style.width = pct + '%';
+            questionCounter.textContent = `${done} / ${total}`;
+            questionCounter2.textContent = `${done} / ${total}`;
+            scoreCounter.textContent = `✅ ${score}`;
+            scoreCounter2.textContent = `✅ ${score}`;
+        }
+        
+        function renderHistory() {
+            if (quizHistory.length === 0) {
+                historyContainer.style.display = 'none';
+                return;
+            }
+            historyContainer.style.display = 'block';
+            historyChips.innerHTML = quizHistory.map(h => `
+                <span style="font-size: 0.6rem; padding: 2px 10px; border-radius: 12px; background: ${h.correct ? '#4caf50' : '#e74c3c'}; color: white; display: inline-block; margin: 2px;">
+                    ${h.emoji} ${h.level} ${h.correct ? '✅' : '❌'}
+                </span>
+            `).join('');
+        }
+        
+        // ============================================================
+        // CHARGEMENT DES QUESTIONS
+        // ============================================================
+        
+        async function loadAllQuestionsForSpecialty() {
+            try {
+                const allQuestions = [];
+                
+                for (const level of LEVELS) {
+                    const path = `../data/fr/${currentSpecialty}/${level.id}.json`;
+                    try {
+                        const response = await fetch(path);
+                        if (!response.ok) {
+                            console.warn(`⚠️ Fichier non trouvé: ${path}`);
+                            continue;
+                        }
+                        const data = await response.json();
+                        if (data.questions && data.questions.length > 0) {
+                            allQuestions.push({
+                                levelId: level.id,
+                                levelLabel: level.label,
+                                levelEmoji: level.emoji,
+                                questions: data.questions
+                            });
+                        }
+                    } catch (e) {
+                        console.warn(`⚠️ Erreur chargement ${path}:`, e);
+                    }
+                }
+                
+                if (allQuestions.length === 0) {
+                    showToast('❌ Aucune question trouvée pour cette spécialité', 3000);
+                    return null;
+                }
+                
+                const selected = [];
+                const allQ = [];
+                allQuestions.forEach(item => {
+                    item.questions.forEach(q => {
+                        allQ.push({
+                            ...q,
+                            _levelId: item.levelId,
+                            _levelLabel: item.levelLabel,
+                            _levelEmoji: item.levelEmoji
+                        });
+                    });
+                });
+                
+                for (let i = allQ.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [allQ[i], allQ[j]] = [allQ[j], allQ[i]];
+                }
+                
+                const count = Math.min(50, allQ.length);
+                for (let i = 0; i < count; i++) {
+                    selected.push(allQ[i]);
+                }
+                
+                while (selected.length < 50) {
+                    const idx = selected.length % allQ.length;
+                    selected.push({ ...allQ[idx], id: allQ[idx].id + '_dup_' + selected.length });
+                }
+                
+                return selected;
+                
+            } catch (error) {
+                console.error('❌ Erreur chargement des questions:', error);
+                showToast('❌ Erreur de chargement des questions', 3000);
+                return null;
+            }
+        }
+        
+        // ============================================================
+        // ROUE
+        // ============================================================
+        
+        function initRoulette() {
+            const canvas = document.getElementById('rouletteCanvas');
+            const ctx = canvas.getContext('2d');
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = Math.min(canvas.width, canvas.height) / 2 - 15;
+            const segmentAngle = (2 * Math.PI) / LEVELS.length;
+            let currentAngle = 0;
+            let animationId = null;
+            const colors = ['#4caf50', '#8bc34a', '#ff9800', '#f57c00', '#e74c3c', '#9b59b6'];
+            
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < LEVELS.length; i++) {
+                    const startAngle = currentAngle + i * segmentAngle;
+                    const endAngle = startAngle + segmentAngle;
+                    ctx.beginPath();
+                    ctx.moveTo(centerX, centerY);
+                    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+                    ctx.closePath();
+                    ctx.fillStyle = colors[i % colors.length];
+                    ctx.fill();
+                    ctx.strokeStyle = 'white';
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+                    ctx.save();
+                    ctx.translate(centerX, centerY);
+                    ctx.rotate(startAngle + segmentAngle / 2);
+                    ctx.textAlign = 'right';
+                    ctx.fillStyle = 'white';
+                    ctx.font = 'bold 11px Arial';
+                    ctx.fillText(LEVELS[i].emoji + ' ' + LEVELS[i].label, radius - 8, 4);
+                    ctx.restore();
+                }
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, 18, 0, 2 * Math.PI);
+                ctx.fillStyle = 'white';
+                ctx.fill();
+                ctx.strokeStyle = '#333';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                ctx.fillStyle = '#333';
+                ctx.font = 'bold 10px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('🎓', centerX, centerY);
+            }
+            
+            function spin(callback) {
+                if (isSpinning) return;
+                isSpinning = true;
+                
+                const extraSpins = 2 + Math.random() * 3;
+                const targetAngle = currentAngle + extraSpins * 2 * Math.PI + Math.random() * 2 * Math.PI;
+                const duration = 3500 + Math.random() * 1500;
+                const startTime = Date.now();
+                const startAngle = currentAngle;
+                
+                playRouletteSound('spin', duration);
+                
+                function animate() {
+                    const elapsed = Date.now() - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    currentAngle = startAngle + (targetAngle - startAngle) * easeOut;
+                    draw();
+                    
+                    if (progress < 1) {
+                        animationId = requestAnimationFrame(animate);
+                    } else {
+                        currentAngle = targetAngle;
+                        draw();
+                        isSpinning = false;
+                        
+                        const normalizedAngle = ((currentAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+                        const pointerAngle = 3 * Math.PI / 2;
+                        const resultAngle = (pointerAngle - normalizedAngle + 2 * Math.PI) % (2 * Math.PI);
+                        const index = Math.floor(resultAngle / segmentAngle) % LEVELS.length;
+                        
+                        const level = LEVELS[index];
+                        currentLevel = level.id;
+                        selectedLevelDisplay.textContent = `${level.emoji} ${level.label}`;
+                        levelResult.style.display = 'flex';
+                        playRouletteSound('click');
+                        
+                        if (callback) callback(level);
+                    }
+                }
+                animate();
+            }
+            
+            draw();
+            return { spin, draw, isSpinning: () => isSpinning };
+        }
+        
+        // ============================================================
+        // QUESTION
+        // ============================================================
+        
+        function startQuestion() {
+            if (currentQuestionIndex >= 50) {
+                showResults();
+                return;
+            }
+            
+            const question = selectedQuestions[currentQuestionIndex];
+            if (!question) {
+                showToast('❌ Question non disponible', 3000);
+                return;
+            }
+            
+            rouletteScreen.style.display = 'none';
+            questionContainer.style.display = 'block';
+            
+            displayQuestion(question);
+        }
+        
+        function displayQuestion(question) {
+            isAnswered = false;
+            timeRemaining = 30;
+            
+            const level = LEVELS.find(l => l.id === question._levelId);
+            levelTag.textContent = `📊 Niveau : ${level?.emoji || ''} ${level?.label || question._levelLabel || '?'}`;
+            
+            questionText.textContent = question.question || 'Question non disponible';
+            
+            optionsContainer.innerHTML = '';
+            const letters = ['A', 'B', 'C', 'D'];
+            
+            if (question.options && question.options.length > 0) {
+                question.options.forEach((option, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'option-btn';
+                    btn.innerHTML = `<span class="letter">${letters[i]}</span> ${option}`;
+                    btn.dataset.index = i;
+                    btn.addEventListener('click', () => handleOptionClick(i));
+                    optionsContainer.appendChild(btn);
+                });
+            }
+            
+            feedbackContainer.style.display = 'none';
+            feedbackContainer.className = 'feedback-container';
+            explanationBox.style.display = 'none';
+            explanationBox.classList.remove('show');
+            ttsFeedbackBtn.style.display = 'none';
+            ttsExplanationBtn.style.display = 'none';
+            nextBtn.disabled = true;
+            
+            timerBottomValue.textContent = timeRemaining;
+            timerBottom.style.color = '#e67e22';
+            
+            updateProgress();
+            startTimer();
+            
+            setTimeout(() => {
+                const cleanQuestion = cleanTextForTTS(question.question);
+                speakText(cleanQuestion, ttsQuestionBtn, '🔊 Lire la question');
+            }, 500);
+        }
+        
+        // ============================================================
+        // TIMER
+        // ============================================================
+        
+        function startTimer() {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                timerBottomValue.textContent = timeRemaining;
+                if (timeRemaining <= 5) {
+                    timerBottom.style.color = '#e74c3c';
+                }
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    handleTimeout();
+                }
+            }, 1000);
+        }
+        
+        function stopTimer() {
+            clearInterval(timerInterval);
+            timerBottom.style.color = '#e67e22';
+        }
+        
+        // ============================================================
+        // HANDLE OPTION CLICK
+        // ============================================================
+        
+        function handleOptionClick(index) {
+            if (isAnswered) return;
+            isAnswered = true;
+            stopTimer();
+            
+            const question = selectedQuestions[currentQuestionIndex];
+            if (!question) {
+                showToast('❌ Question non trouvée', 3000);
+                return;
+            }
+            
+            const isCorrect = index === question.correct;
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === question.correct) {
+                    btn.classList.add('correct');
+                }
+                if (i === index && !isCorrect) {
+                    btn.classList.add('wrong');
+                }
+            });
+            
+            feedbackContainer.style.display = 'block';
+            
+            if (isCorrect) {
+                feedbackContainer.className = 'feedback-container correct';
+                feedbackMessage.textContent = '✅ Bonne réponse !';
+                pointsBadge.textContent = '+1 point';
+                pointsBadge.className = 'points-badge correct';
+                score++;
+                playRouletteSound('win');
+                setTimeout(() => playRouletteSound('tada'), 300);
+            } else {
+                feedbackContainer.className = 'feedback-container wrong';
+                feedbackMessage.textContent = '❌ Mauvaise réponse';
+                pointsBadge.textContent = `Bonne réponse: ${question.options[question.correct]}`;
+                pointsBadge.className = 'points-badge wrong';
+                playRouletteSound('lose');
+            }
+            
+            ttsFeedbackBtn.style.display = 'inline-block';
+            ttsFeedbackBtn.textContent = '🔊 Réécouter';
+            ttsFeedbackBtn.classList.remove('listening');
+            
+            if (question.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = question.explanation;
+                correctAnswerText.textContent = `✅ Bonne réponse: ${question.options[question.correct]}`;
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 Lire l\'explication';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            
+            const level = LEVELS.find(l => l.id === question._levelId);
+            quizHistory.push({
+                level: level?.label || question._levelLabel || '?',
+                emoji: level?.emoji || question._levelEmoji || '📊',
+                correct: isCorrect
+            });
+            renderHistory();
+            updateProgress();
+            
+            nextBtn.disabled = false;
+            
+            setTimeout(() => {
+                let feedbackTTS = '';
+                if (isCorrect) {
+                    feedbackTTS = `Bravo ! La bonne réponse est : ${question.options[question.correct]}.`;
+                } else {
+                    feedbackTTS = `Désolé, ce n'est pas la bonne réponse. La bonne réponse est : ${question.options[question.correct]}.`;
+                }
+                const cleanFeedback = cleanTextForTTS(feedbackTTS);
+                speakText(cleanFeedback, ttsFeedbackBtn, '🔊 Réécouter');
+            }, 300);
+        }
+        
+        function handleTimeout() {
+            if (isAnswered) return;
+            isAnswered = true;
+            
+            const question = selectedQuestions[currentQuestionIndex];
+            if (!question) {
+                showToast('❌ Question non trouvée', 3000);
+                return;
+            }
+            
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === question.correct) {
+                    btn.classList.add('correct');
+                }
+            });
+            
+            feedbackContainer.style.display = 'block';
+            feedbackContainer.className = 'feedback-container wrong';
+            feedbackMessage.textContent = '⏰ Temps écoulé !';
+            pointsBadge.textContent = `Bonne réponse: ${question.options[question.correct]}`;
+            pointsBadge.className = 'points-badge wrong';
+            playRouletteSound('lose');
+            
+            if (question.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = question.explanation;
+                correctAnswerText.textContent = `✅ Bonne réponse: ${question.options[question.correct]}`;
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 Lire l\'explication';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            
+            const level = LEVELS.find(l => l.id === question._levelId);
+            quizHistory.push({
+                level: level?.label || question._levelLabel || '?',
+                emoji: level?.emoji || question._levelEmoji || '📊',
+                correct: false
+            });
+            renderHistory();
+            updateProgress();
+            
+            nextBtn.disabled = false;
+            
+            setTimeout(() => {
+                const feedbackTTS = `Temps écoulé. La bonne réponse est : ${question.options[question.correct]}.`;
+                const cleanFeedback = cleanTextForTTS(feedbackTTS);
+                speakText(cleanFeedback, ttsFeedbackBtn, '🔊 Réécouter');
+            }, 300);
+        }
+        
+        // ============================================================
+        // ✅ POPUP DE PAIEMENT AVEC ENREGISTREMENT FIREBASE + REDIRECTION VERS paiement_rib.html
+        // ============================================================
+        
+        function showCertificatePaymentPopup() {
+            const overlay = document.createElement('div');
+            overlay.className = 'payment-popup-overlay';
+            
+            const pct = Math.round((score / 50) * 100);
+            
+            overlay.innerHTML = `
+                <div class="payment-popup">
+                    <div class="payment-lock-icon">🔒</div>
+                    <h2>📜 Certificat de Réussite</h2>
+                    <p>
+                        <strong>Félicitations !</strong> Vous avez réussi l'examen avec <strong>${score}/50 (${pct}%)</strong> ! 🎉
+                    </p>
+                    <p>
+                        Pour télécharger votre certificat officiel, un paiement de <strong>20 €</strong> est requis.
+                    </p>
+                    <div class="features">
+                        <p>✅ Certificat nominatif à votre nom</p>
+                        <p>✅ Code unique + QR Code vérifiable</p>
+                        <p>✅ Validé par les fondateurs d'ETEO</p>
+                        <p>✅ Téléchargement immédiat après paiement</p>
+                    </div>
+                    <button class="pay-btn" id="payCertBtn">💳 Payer 20 € par virement</button>
+                    <button class="close-btn" id="closePaymentPopup">❌ Revenir plus tard</button>
+                    <p class="secure-text">🔒 Virement sécurisé • RIB fourni après clic</p>
+                </div>
+            `;
+            
+            document.body.appendChild(overlay);
+
+            // 🔥 BOUTON "PAYER" → ENREGISTRE DANS FIREBASE + REDIRIGE VERS paiement_rib.html
+            document.getElementById('payCertBtn').addEventListener('click', async function() {
+                this.textContent = '⏳ Enregistrement...';
+                this.disabled = true;
+
+                try {
+                    const pct = Math.round((score / 50) * 100);
+                    
+                    // ✅ ENREGISTRER DANS FIREBASE (payment_interests)
+                    const interestData = {
+                        userId: userId || 'anonymous',
+                        userName: userName,
+                        specialty: currentSpecialty,
+                        specialtyDisplay: specialtyDisplayName,
+                        score: score,
+                        total: 50,
+                        percentage: pct,
+                        passed: pct >= 70,
+                        email: null,
+                        interestedAt: new Date().toISOString(),
+                        timestamp: new Date().toISOString(),
+                        source: 'certificat_roulette',
+                        userAgent: navigator.userAgent || 'unknown',
+                        platform: navigator.platform || 'unknown',
+                        status: 'redirected_to_payment'
+                    };
+
+                    await addDoc(collection(db, 'payment_interests'), interestData);
+                    console.log('✅ Intérêt enregistré dans Firebase');
+                    showToast('📊 Redirection vers la page de paiement...', 2000);
+                    
+                } catch (e) {
+                    console.warn('⚠️ Erreur Firebase:', e);
+                    showToast('⚠️ Erreur d\'enregistrement, mais continuez', 2000);
+                }
+
+                // ✅ SUPPRIMER LA POPUP
+                overlay.remove();
+
+                // ✅ REDIRIGER VERS LA PAGE RIB POUR LE VIREMENT
+                window.location.href = `paiement_rib.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
+            });
+
+            document.getElementById('closePaymentPopup').addEventListener('click', function() {
+                overlay.remove();
+            });
+
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) overlay.remove();
+            });
+        }
+
+        // ============================================================
+        // ✅ TÉLÉCHARGEMENT DU CERTIFICAT AVEC VÉRIFICATION
+        // ============================================================
+        
+        async function downloadCertificate() {
+            try {
+                // ✅ VÉRIFIER SI DÉJÀ PAYÉ (localStorage)
+                const settings = storage.getSettings() || {};
+                const isPaid = settings?.certificates?.[currentSpecialty]?.paid || false;
+
+                // ✅ SI PAS PAYÉ → POPUP
+                if (!isPaid) {
+                    showCertificatePaymentPopup();
+                    return;
+                }
+
+                // ✅ SI DÉJÀ PAYÉ → TÉLÉCHARGER
+                showToast('📄 Génération du certificat en cours...', 3000);
+
+                const pct = Math.round((score / 50) * 100);
+                const certificateId = generator.generateCertificateId();
+                const date = new Date().toLocaleDateString('fr-FR', {
+                    day: '2-digit',
+                    month: 'long',
+                    year: 'numeric'
+                });
+
+                const data = {
+                    userName: userName,
+                    specialty: specialtyDisplayName,
+                    score: score,
+                    total: 50,
+                    percentage: pct,
+                    date: date,
+                    certificateId: certificateId
+                };
+
+                const pdfBlob = await generator.generateCertificate(data);
+
+                const url = URL.createObjectURL(pdfBlob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `Certificat_ETEO_${currentSpecialty}_${new Date().toISOString().slice(0,10)}.pdf`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                // Sauvegarde Firestore
+                try {
+                    if (userId) {
+                        const certRef = doc(db, 'certificates', certificateId);
+                        await setDoc(certRef, {
+                            userId: userId,
+                            userName: userName,
+                            specialty: currentSpecialty,
+                            specialtyDisplay: specialtyDisplayName,
+                            score: score,
+                            total: 50,
+                            percentage: pct,
+                            date: date,
+                            certificateId: certificateId,
+                            issuedAt: new Date().toISOString()
+                        });
+                        console.log('✅ Certificat sauvegardé dans Firestore');
+                    }
+                } catch (e) {
+                    console.warn('⚠️ Erreur sauvegarde Firestore:', e);
+                }
+
+                showToast('✅ Certificat téléchargé avec succès !', 3000);
+
+            } catch (error) {
+                console.error('❌ Erreur génération certificat:', error);
+                showToast('❌ Erreur lors de la génération du certificat', 3000);
+            }
+        }
+        
+        // ============================================================
+        // SHOW RESULTS (MODIFIÉ)
+        // ============================================================
+        
+        function showResults() {
+            stopTimer();
+            stopTTS();
+            
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+            rouletteScreen.style.display = 'none';
+            
+            const pct = Math.round((score / 50) * 100);
+            const passed = pct >= 70;
+            
+            finalScore.textContent = score;
+            percentageDisplay.textContent = pct + '%';
+            percentageDisplay.className = 'percentage-big ' + (passed ? 'success' : 'fail');
+            resultSpecialty.textContent = `Spécialité : ${specialtyDisplayName}`;
+            
+            // Sauvegarde
+            try {
+                const settings = storage.getSettings() || {};
+                if (!settings.scores) settings.scores = {};
+                if (!settings.scores[currentSpecialty]) settings.scores[currentSpecialty] = {};
+                
+                settings.scores[currentSpecialty].examen = {
+                    date: new Date().toISOString(),
+                    score: score,
+                    total: 50,
+                    percentage: pct,
+                    certificat_obtenu: passed,
+                    tentatives: (settings.scores[currentSpecialty].examen?.tentatives || 0) + 1
+                };
+                
+                storage.saveSettings(settings);
+                console.log(`✅ Examen enregistré : ${score}/50 (${pct}%) - ${passed ? 'CERTIFICAT OBTENU 🎓' : 'ÉCHEC ❌'}`);
+                
+            } catch (e) {
+                console.warn('⚠️ Erreur sauvegarde examen:', e);
+            }
+            
+            if (userId) {
+                try {
+                    progressionService.updateProgress(userId, currentSpecialty, {
+                        examen_score: score,
+                        examen_total: 50,
+                        examen_percentage: pct,
+                        examen_passed: passed,
+                        examen_date: new Date().toISOString()
+                    });
+                } catch (e) {
+                    console.warn('⚠️ Erreur Firebase:', e);
+                }
+            }
+            
+            // Message IA après résultat
+            levelScores = getLevelScores();
+            const { message, avatar } = generateResultIAMessage(userName, levelScores, score, pct, passed);
+            
+            resultIaContainer.innerHTML = `
+                <div class="ia-greeting" style="margin-top: 15px;">
+                    <div class="ia-avatar">${avatar}</div>
+                    <p class="ia-message">${message}</p>
+                </div>
+            `;
+            
+            setTimeout(() => {
+                const ttsMessage = cleanTextForTTS(message.replace(/<[^>]*>/g, ''));
+                speakText(ttsMessage, null);
+            }, 1200);
+            
+            // ✅ AFFICHAGE DU BOUTON TÉLÉCHARGER (avec vérification paiement)
+            if (passed) {
+                resultTitle.textContent = '🎓 Félicitations !';
+                resultMessage.textContent = `Vous avez réussi l'examen avec ${score}/50 (${pct}%) !`;
+                
+                certificateContainer.style.display = 'block';
+                failContainer.style.display = 'none';
+                
+                // ✅ Réattacher l'événement au bouton (version avec vérification)
+                const downloadBtn = document.getElementById('downloadCertBtn');
+                if (downloadBtn) {
+                    downloadBtn.removeEventListener('click', downloadCertificate);
+                    downloadBtn.addEventListener('click', downloadCertificate);
+                }
+                
+                playRouletteSound('win');
+                setTimeout(() => playRouletteSound('tada'), 400);
+                
+            } else {
+                resultTitle.textContent = '💪 Pas de panique !';
+                resultMessage.textContent = `Vous avez obtenu ${score}/50 (${pct}%). Le seuil de réussite est de 70%.`;
+                certificateContainer.style.display = 'none';
+                failContainer.style.display = 'block';
+                playRouletteSound('lose');
+            }
+        }
+        
+        // ============================================================
+        // RESET
+        // ============================================================
+        
+        function resetExam() {
+            stopTTS();
+            currentQuestionIndex = 0;
+            score = 0;
+            quizHistory = [];
+            selectedQuestions = [];
+            
+            resultContainer.style.display = 'none';
+            questionContainer.style.display = 'none';
+            rouletteScreen.style.display = 'block';
+            
+            levelResult.style.display = 'none';
+            startQuizBtn.style.display = 'none';
+            
+            spinBtn.disabled = false;
+            spinBtn.textContent = '🎯 LANCER LA ROUE';
+            
+            updateProgress();
+            renderHistory();
+            displayIAWelcome();
+            loadQuestions();
+        }
+        
+        async function loadQuestions() {
+            const questions = await loadAllQuestionsForSpecialty();
+            if (questions) {
+                selectedQuestions = questions;
+                updateProgress();
+                showToast('✅ Questions chargées ! Lancez la roue.', 2000);
+            }
+        }
+        
+        // ============================================================
+        // ÉVÉNEMENTS
+        // ============================================================
+        
+        spinBtn.addEventListener('click', () => {
+            if (roulette && !roulette.isSpinning()) {
+                if (selectedQuestions.length === 0) {
+                    showToast('⏳ Chargement des questions en cours...', 2000);
+                    return;
+                }
+                stopTTS();
+                levelResult.style.display = 'none';
+                startQuizBtn.style.display = 'none';
+                
+                spinBtn.disabled = true;
+                spinBtn.textContent = '⏳ En cours...';
+                
+                roulette.spin((level) => {
+                    startQuizBtn.style.display = 'inline-block';
+                    const msg = `Niveau ${level.label} sélectionné`;
+                    speakText(cleanTextForTTS(msg), null);
+                });
+            }
+        });
+        
+        startQuizBtn.addEventListener('click', () => {
+            if (currentQuestionIndex >= 50) {
+                showResults();
+                return;
+            }
+            startQuestion();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            stopTTS();
+            currentQuestionIndex++;
+            
+            if (currentQuestionIndex >= 50) {
+                showResults();
+                return;
+            }
+            
+            questionContainer.style.display = 'none';
+            rouletteScreen.style.display = 'block';
+            levelResult.style.display = 'none';
+            startQuizBtn.style.display = 'none';
+            
+            spinBtn.disabled = false;
+            spinBtn.textContent = '🎯 LANCER LA ROUE';
+            
+            updateProgress();
+        });
+        
+        quitBtn.addEventListener('click', () => {
+            if (confirm('Quitter l\'examen ? Votre progression sera perdue.')) {
+                stopTimer();
+                stopTTS();
+                window.location.href = 'choix_specialites_fr.html';
+            }
+        });
+        
+        menuBtn.addEventListener('click', () => {
+            stopTTS();
+            window.location.href = '../index.html';
+        });
+        
+        dashboardBtn.addEventListener('click', () => {
+            stopTTS();
+            window.location.href = 'dashboard.html';
+        });
+        
+        retryBtn.addEventListener('click', resetExam);
+        backToSpecialtyBtn.addEventListener('click', () => {
+            stopTTS();
+            window.location.href = `quiz.html?specialty=${currentSpecialty}`;
+        });
+        
+        // ============================================================
+        // TTS ÉVÉNEMENTS
+        // ============================================================
+        
+        ttsQuestionBtn.addEventListener('click', function() {
+            const cleanQuestion = cleanTextForTTS(questionText.textContent);
+            speakText(cleanQuestion, this, '🔊 Lire la question');
+        });
+        
+        ttsFeedbackBtn.addEventListener('click', function() {
+            const question = selectedQuestions[currentQuestionIndex];
+            if (!question) return;
+            
+            let feedbackTTS = '';
+            const isCorrect = feedbackContainer.classList.contains('correct');
+            if (isCorrect) {
+                feedbackTTS = `Bravo ! La bonne réponse est : ${question.options[question.correct]}.`;
+            } else {
+                feedbackTTS = `Désolé, ce n'est pas la bonne réponse. La bonne réponse est : ${question.options[question.correct]}.`;
+            }
+            speakText(cleanTextForTTS(feedbackTTS), this, '🔊 Réécouter');
+        });
+        
+        ttsExplanationBtn.addEventListener('click', function() {
+            const question = selectedQuestions[currentQuestionIndex];
+            if (!question) return;
+            
+            const explanationClean = cleanTextForTTS(explanationText.textContent);
+            const correctAnswerClean = cleanTextForTTS(`La bonne réponse est : ${question.options[question.correct]}`);
+            speakText(explanationClean + '. ' + correctAnswerClean, this, '🔊 Lire l\'explication');
+        });
+        
+        // ============================================================
+        // ✅ INIT
+        // ============================================================
+        
+        async function init() {
+            Logger.info('🎓 Roulette Certificat chargée');
+            
+            specialtyNameDisplay.textContent = specialtyDisplayName;
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    userId = user.uid;
+                    const settings = storage.getSettings() || {};
+                    userName = settings.user?.fullName || user.displayName || 'Docteur';
+                    
+                    console.log('✅ Accès gratuit à l\'examen de certification');
+                    
+                    displayIAWelcome();
+                    await loadQuestions();
+                    roulette = initRoulette();
+                    
+                    rouletteScreen.style.display = 'block';
+                    questionContainer.style.display = 'none';
+                    resultContainer.style.display = 'none';
+                    
+                    updateProgress();
+                    
+                    console.log('🎓 Roulette Certificat prête');
+                    console.log(`📚 Spécialité: ${currentSpecialty} (${specialtyDisplayName})`);
+                    console.log(`📝 ${selectedQuestions.length} questions chargées`);
+                    console.log('🎯 50 questions • 30 sec • 70% pour réussir');
+                    console.log('🤖 IA personnalisée activée');
+                    console.log('💳 Système de paiement : REDIRECTION VERS paiement_rib.html');
+                    console.log('📄 Certificat bloqué tant que non payé');
+                    
+                } else {
+                    showLoginRequired();
+                }
+            });
+        }
+        
+        // ============================================================
+        // LOGIN REQUIRED
+        // ============================================================
+        
+        function showLoginRequired() {
+            const iaGreeting = document.getElementById('iaGreeting');
+            const progressContainer = document.getElementById('progressContainer');
+            const rouletteWrapper = document.querySelector('.roulette-wrapper');
+            const spinBtn = document.getElementById('spinBtn');
+            
+            if (iaGreeting) iaGreeting.style.display = 'none';
+            if (progressContainer) progressContainer.style.display = 'none';
+            if (rouletteWrapper) rouletteWrapper.style.display = 'none';
+            if (spinBtn) spinBtn.style.display = 'none';
+            
+            rouletteScreen.innerHTML = `
+                <div style="text-align: center; padding: 40px 20px;">
+                    <div style="font-size: 3rem;">🔒</div>
+                    <h2 style="color: #2c3e50;">Connectez-vous pour accéder à l'examen</h2>
+                    <p style="color: #666;">Vous devez être connecté pour passer l'examen de certification.</p>
+                    <button onclick="window.location.href='inscription_fr.html'" 
+                            style="padding: 14px 40px; background: linear-gradient(135deg, #667eea, #764ba2); border: none; border-radius: 30px; font-weight: 700; font-size: 1rem; cursor: pointer; color: white; margin-top: 10px;">
+                        🔑 Se connecter
+                    </button>
+                </div>
+            `;
+        }
+        
+        // Lancement
+        init();
+        
+    </script>
+</body>
+</html>

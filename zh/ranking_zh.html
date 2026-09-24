@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO - 世界排名</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container classement-container">
+        
+        <!-- ============================================================ -->
+        <!-- 顶部导航 -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='yibiao_zh.html'">
+                ← 返回
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 首页
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 页头 -->
+        <!-- ============================================================ -->
+        <div class="classement-header">
+            <h1>🏆 ETEO 世界排名 🌍</h1>
+            <p>发现 ETEO 上世界上最优秀的牙医</p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- AI 欢迎（模块化） -->
+        <!-- ============================================================ -->
+        <div class="ia-greeting" id="iaGreeting">
+            <div class="ia-avatar">🤖</div>
+            <div>
+                <p class="ia-message" id="iaClassementMessage">正在加载消息...</p>
+                <button class="listen-btn-small" id="listenClassementBtn">🔊 收听</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 排名容器 -->
+        <!-- ============================================================ -->
+        <div id="classementContainer">
+            <!-- 由 ClassementManager 填充 -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 顶尖国家 -->
+        <!-- ============================================================ -->
+        <div class="top-countries-grid">
+            <div id="topCountriesContainer"></div>
+            <div id="topCountriesMonthContainer"></div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 底部导航（重复） -->
+        <!-- ============================================================ -->
+        <div class="nav-bottom">
+            <button class="back-btn" onclick="window.location.href='yibiao_zh.html'">
+                ← 返回
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 首页
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 页脚 -->
+        <!-- ============================================================ -->
+        <div class="footer">
+            <p>🏆 实时排名 • 每次测验后更新</p>
+            <p>© 2026 - ETEO Dental Education | 🇲🇦 Dr. SAID MAARAK</p>
+        </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TOAST -->
+    <!-- ============================================================ -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ============================================================ -->
+    <!-- 主脚本 -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // 导入
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { RankingService } from '../js/services/rankingService.js';
+        import { ClassementManager } from '../js/ui/ClassementManager.js';
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE 配置
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        window.tts = tts;
+        
+        // ============================================================
+        // DOM 元素
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const container = document.getElementById('classementContainer');
+        const iaMessage = document.getElementById('iaClassementMessage');
+        const listenBtn = document.getElementById('listenClassementBtn');
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // 清理 TTS
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // 生成 AI 消息（已修正）
+        // ============================================================
+        
+        async function generateIAMessage(uid) {
+            try {
+                const rankingService = new RankingService();
+                const top10 = await rankingService.getGlobalRanking(10);
+                const topCountries = await rankingService.getTopCountriesByTopUsers();
+                
+                const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
+                // ✅ 已修正：iOS 的 displayName
+                const userName = settings.user?.displayName || settings.user?.fullName || '医生';
+                const userProfession = settings.user?.profession || '医生';
+                const userCountry = settings.user?.country || '您的国家';
+                const professionEmoji = userProfession === 'Docteur' || userProfession === 'Doctor' ? '🦷' : '📚';
+                
+                let userRank = top10.findIndex(u => u.uid === uid) + 1;
+                if (userRank === 0) {
+                    try {
+                        const rankData = await rankingService.getUserRank(uid);
+                        userRank = rankData.rank || '前 10 名之外';
+                    } catch (e) {
+                        userRank = '前 10 名之外';
+                    }
+                }
+                
+                let message = '';
+                let ttsMessage = '';
+                
+                message = `你好 ${userName}！👋<br>`;
+                message += `${professionEmoji} 您是 <strong>${userProfession}</strong>。欢迎来到 ETEO 世界排名！🏆<br><br>`;
+                ttsMessage = `你好 ${userName}。您是 ${userProfession}。欢迎来到 ETEO 世界排名。`;
+                
+                if (userRank === 1) {
+                    message += `🏆 <strong>恭喜！您是世界第一名！</strong> 🌟<br>`;
+                    message += `您主宰了排名。您的竞争对手紧随其后...<br><br>`;
+                    ttsMessage += `恭喜！您是世界第一名。您主宰了排名。您的竞争对手紧随其后。`;
+                } else if (userRank <= 10) {
+                    message += `🏅 您是<strong>全球第 ${userRank} 名</strong>！<br>`;
+                    message += `您属于前 10 名。榜首已不远...<br><br>`;
+                    ttsMessage += `您是全球第 ${userRank} 名。您属于前 10 名。榜首已不远。`;
+                } else {
+                    message += `📊 您是<strong>全球第 ${userRank} 名</strong>。<br>`;
+                    message += `每次测验都让您更接近前 10 名。不要放弃！💪<br><br>`;
+                    ttsMessage += `您是全球第 ${userRank} 名。每次测验都让您更接近前 10 名。不要放弃。`;
+                }
+                
+                message += `<strong>📊 您的分数如何计算：</strong><br>`;
+                message += `• 70% = <strong>质量</strong>（您的平均分）<br>`;
+                message += `• 30% = <strong>持续性</strong>（完成的专科）<br><br>`;
+                ttsMessage += `您的分数如何计算。70% 是质量，即您的平均分。30% 是持续性，即完成的专科。`;
+                
+                if (top10.length > 0) {
+                    message += `<strong>👑 前 3 名玩家：</strong><br>`;
+                    const medals = ['🥇', '🥈', '🥉'];
+                    top10.slice(0, 3).forEach((user, index) => {
+                        const isUser = user.uid === uid;
+                        message += `• ${medals[index]} 第 ${index+1} 名：<strong>${user.fullName}</strong>${isUser ? ' ← 您！' : ''}（${user.country}）— ${user.score}%<br>`;
+                        ttsMessage += `${medals[index]} 第 ${index+1} 名：${user.fullName}，来自 ${user.country}，得分 ${user.score}%。`;
+                    });
+                    message += `<br>`;
+                }
+                
+                if (topCountries.length > 0) {
+                    message += `<strong>🌍 本月顶尖国家：</strong><br>`;
+                    const medals = ['🥇', '🥈', '🥉'];
+                    topCountries.slice(0, 3).forEach((item, index) => {
+                        const isUserCountry = item.country === userCountry;
+                        message += `• ${medals[index]} 第 ${index+1} 名：<strong>${item.country}</strong>${isUserCountry ? ' ← 您的国家！' : ''} — ${item.count} 位用户进入前 10 名<br>`;
+                        ttsMessage += `${medals[index]} 第 ${index+1} 名：${item.country}，有 ${item.count} 位用户进入前 10 名。`;
+                    });
+                    message += `<br>`;
+                }
+                
+                message += `<strong>💪 建议：</strong><br>`;
+                message += `• 完成新的<strong>专科</strong><br>`;
+                message += `• 提高您的分数<br>`;
+                message += `• <strong>定期</strong>回来<br><br>`;
+                ttsMessage += `建议：完成新的专科，提高您的分数，定期回来。`;
+                
+                if (userRank === 1) {
+                    message += `🔥 <strong>那么，${userName}，请尽一切可能让您的名字和您的国家（${userCountry}）保持世界第一！</strong> 💪<br>`;
+                    ttsMessage += `那么，${userName}，请尽一切可能让您的名字和您的国家保持世界第一。`;
+                } else if (userRank <= 10) {
+                    message += `🔥 <strong>那么，${userName}，请尽一切可能让您的名字和您的国家（${userCountry}）保持在前 10 名！</strong> 💪<br>`;
+                    ttsMessage += `那么，${userName}，请尽一切可能让您的名字和您的国家保持在前 10 名。`;
+                } else {
+                    message += `🔥 <strong>那么，${userName}，请尽一切可能让您的名字和您的国家（${userCountry}）进入前 10 名！</strong> 💪<br>`;
+                    ttsMessage += `那么，${userName}，请尽一切可能让您的名字和您的国家进入前 10 名。`;
+                }
+                
+                message += `<br>准备好接受挑战了吗？🚀`;
+                ttsMessage += `准备好接受挑战了吗？`;
+                
+                iaMessage.innerHTML = message;
+                window._ttsClassementMessage = cleanTextForTTS(ttsMessage);
+                
+                if (listenBtn) listenBtn.style.display = 'inline-block';
+                
+                setTimeout(() => autoSpeak(), 1200);
+                
+            } catch (error) {
+                console.error('❌ AI 错误：', error);
+                iaMessage.innerHTML = '⚠️ 消息不可用。请刷新页面。';
+            }
+        }
+        
+        // ============================================================
+        // 自动朗读
+        // ============================================================
+        
+        let isAutoSpeaking = false;
+        
+        function autoSpeak() {
+            if (!window.tts || isAutoSpeaking) return;
+            isAutoSpeaking = true;
+            const text = window._ttsClassementMessage || '';
+            if (!text) { isAutoSpeaking = false; return; }
+            
+            if (listenBtn) {
+                listenBtn.textContent = '⏹️ 停止';
+                listenBtn.classList.add('listening');
+            }
+            
+            window.tts.speak(text, 'zh', 0.9, 1.0,
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 收听';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                },
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 收听';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                }
+            );
+        }
+        
+        // ============================================================
+        // 收听按钮
+        // ============================================================
+        
+        listenBtn.addEventListener('click', function() {
+            if (!window.tts) return showToast('❌ TTS 不可用', 3000);
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 收听';
+                this.classList.remove('listening');
+                isAutoSpeaking = false;
+                return;
+            }
+            
+            const text = window._ttsClassementMessage || '';
+            if (!text) return showToast('⚠️ 消息不可用', 3000);
+            
+            this.textContent = '⏹️ 停止';
+            this.classList.add('listening');
+            
+            window.tts.speak(text, 'zh', 0.9, 1.0,
+                () => {
+                    this.textContent = '🔊 收听';
+                    this.classList.remove('listening');
+                },
+                () => {
+                    this.textContent = '🔊 收听';
+                    this.classList.remove('listening');
+                    showToast('❌ 朗读错误', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // 初始化
+        // ============================================================
+        
+        async function init() {
+            Logger.info('🏆 排名页面已加载');
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    const uid = user.uid;
+                    const storage = new StorageService();
+                    const rankingService = new RankingService();
+                    const classementManager = new ClassementManager(rankingService, showToast);
+                    
+                    await classementManager.loadRanking(container);
+                    classementManager.setCurrentUser(uid);
+                    
+                    await generateIAMessage(uid);
+                    
+                    Logger.info('✅ 排名已加载');
+                } else {
+                    showToast('⚠️ 登录以查看排名', 3000);
+                    container.innerHTML = `
+                        <div style="text-align:center;padding:60px 20px;">
+                            <div style="font-size:3rem;">🔒</div>
+                            <div style="font-size:1.2rem;margin-top:20px;">登录以查看排名</div>
+                            <button onclick="window.location.href='zhuce_zh.html'" 
+                                    style="margin-top:20px;padding:12px 40px;border:none;border-radius:30px;
+                                           background:linear-gradient(135deg,#667eea,#764ba2);color:white;
+                                           cursor:pointer;font-weight:700;font-size:1rem;">
+                                🔑 登录 / 注册
+                            </button>
+                        </div>
+                    `;
+                    iaMessage.innerHTML = '🤖 登录以发现您的个性化排名。';
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

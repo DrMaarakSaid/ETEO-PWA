@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO - Мировой рейтинг</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container classement-container">
+        
+        <!-- ============================================================ -->
+        <!-- НАВИГАЦИЯ ВВЕРХУ -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='dashboard_ru.html'">
+                ← Назад
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 Главная
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ЗАГОЛОВОК -->
+        <!-- ============================================================ -->
+        <div class="classement-header">
+            <h1>🏆 Мировой рейтинг ETEO 🌍</h1>
+            <p>Узнайте, кто является лучшими стоматологами мира на ETEO</p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ПРИВЕТСТВИЕ ОТ ИИ (МОДУЛЬНОЕ) -->
+        <!-- ============================================================ -->
+        <div class="ia-greeting" id="iaGreeting">
+            <div class="ia-avatar">🤖</div>
+            <div>
+                <p class="ia-message" id="iaClassementMessage">Загрузка сообщения...</p>
+                <button class="listen-btn-small" id="listenClassementBtn">🔊 Слушать</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- КОНТЕЙНЕР РЕЙТИНГА -->
+        <!-- ============================================================ -->
+        <div id="classementContainer">
+            <!-- Заполняется ClassementManager -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ТОП СТРАН -->
+        <!-- ============================================================ -->
+        <div class="top-countries-grid">
+            <div id="topCountriesContainer"></div>
+            <div id="topCountriesMonthContainer"></div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- НАВИГАЦИЯ ВНИЗУ (ДУБЛИРОВАННАЯ) -->
+        <!-- ============================================================ -->
+        <div class="nav-bottom">
+            <button class="back-btn" onclick="window.location.href='dashboard_ru.html'">
+                ← Назад
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 Главная
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ПОДВАЛ -->
+        <!-- ============================================================ -->
+        <div class="footer">
+            <p>🏆 Рейтинг в реальном времени • Обновляется после каждой викторины</p>
+            <p>© 2026 - ETEO Dental Education | 🇲🇦 Др. САИД МААРАК</p>
+        </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TOAST -->
+    <!-- ============================================================ -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ============================================================ -->
+    <!-- ОСНОВНОЙ СКРИПТ -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { RankingService } from '../js/services/rankingService.js';
+        import { ClassementManager } from '../js/ui/ClassementManager.js';
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        window.tts = tts;
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const container = document.getElementById('classementContainer');
+        const iaMessage = document.getElementById('iaClassementMessage');
+        const listenBtn = document.getElementById('listenClassementBtn');
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // ОЧИСТКА ТЕКСТА ДЛЯ TTS
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // ГЕНЕРАЦИЯ СООБЩЕНИЯ ИИ
+        // ============================================================
+        
+        async function generateIAMessage(uid) {
+            try {
+                const rankingService = new RankingService();
+                const top10 = await rankingService.getGlobalRanking(10);
+                const topCountries = await rankingService.getTopCountriesByTopUsers();
+                
+                const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
+                const userName = settings.user?.displayName || settings.user?.fullName || 'Доктор';
+                const userProfession = settings.user?.profession || 'Доктор';
+                const userCountry = settings.user?.country || 'ваша страна';
+                const professionEmoji = userProfession === 'Доктор' ? '🦷' : '📚';
+                
+                let userRank = top10.findIndex(u => u.uid === uid) + 1;
+                if (userRank === 0) {
+                    try {
+                        const rankData = await rankingService.getUserRank(uid);
+                        userRank = rankData.rank || 'вне топ-10';
+                    } catch (e) {
+                        userRank = 'вне топ-10';
+                    }
+                }
+                
+                let message = '';
+                let ttsMessage = '';
+                
+                message = `Здравствуйте, ${userName} ! 👋<br>`;
+                message += `${professionEmoji} Вы <strong>${userProfession}</strong>. Добро пожаловать в Мировой рейтинг ETEO ! 🏆<br><br>`;
+                ttsMessage = `Здравствуйте, ${userName}. Вы ${userProfession}. Добро пожаловать в Мировой рейтинг ETEO. `;
+                
+                if (userRank === 1) {
+                    message += `🏆 <strong>Поздравляем ! Вы номер 1 в мире !</strong> 🌟<br>`;
+                    message += `Вы лидируете в рейтинге. Ваши конкуренты прямо за вами...<br><br>`;
+                    ttsMessage += `Поздравляем ! Вы номер 1 в мире. Вы лидируете в рейтинге. Ваши конкуренты прямо за вами. `;
+                } else if (userRank <= 10) {
+                    message += `🏅 Вы <strong>#${userRank} в мире</strong> !<br>`;
+                    message += `Вы входите в топ-10. Вершина совсем рядом...<br><br>`;
+                    ttsMessage += `Вы номер ${userRank} в мире. Вы входите в топ-10. Вершина совсем рядом. `;
+                } else {
+                    message += `📊 Вы <strong>#${userRank} в мире</strong>.<br>`;
+                    message += `Каждая викторина приближает вас к топ-10. Не сдавайтесь ! 💪<br><br>`;
+                    ttsMessage += `Вы номер ${userRank} в мире. Каждая викторина приближает вас к топ-10. Не сдавайтесь. `;
+                }
+                
+                message += `<strong>📊 Как рассчитывается ваш балл :</strong><br>`;
+                message += `• 70% = <strong>качество</strong> (средний балл)<br>`;
+                message += `• 30% = <strong>регулярность</strong> (завершённые специальности)<br><br>`;
+                ttsMessage += `Как рассчитывается ваш балл. 70 процентов = качество, средний балл. 30 процентов = регулярность, завершённые специальности. `;
+                
+                if (top10.length > 0) {
+                    message += `<strong>👑 Топ-3 лучших :</strong><br>`;
+                    const medals = ['🥇', '🥈', '🥉'];
+                    top10.slice(0, 3).forEach((user, index) => {
+                        const isUser = user.uid === uid;
+                        message += `• ${medals[index]} ${index+1}-й : <strong>${user.fullName}</strong>${isUser ? ' ← ВЫ !' : ''} (${user.country}) — ${user.score}%<br>`;
+                        ttsMessage += `${medals[index]} ${index+1}-й : ${user.fullName} из ${user.country} с ${user.score}%. `;
+                    });
+                    message += `<br>`;
+                }
+                
+                if (topCountries.length > 0) {
+                    message += `<strong>🌍 Топ стран за месяц :</strong><br>`;
+                    const medals = ['🥇', '🥈', '🥉'];
+                    topCountries.slice(0, 3).forEach((item, index) => {
+                        const isUserCountry = item.country === userCountry;
+                        message += `• ${medals[index]} ${index+1}-е : <strong>${item.country}</strong>${isUserCountry ? ' ← ВАША СТРАНА !' : ''} — ${item.count} пользовател${item.count>1?'ей':'ь'} в топ-10<br>`;
+                        ttsMessage += `${medals[index]} ${index+1}-е : ${item.country} с ${item.count} пользователями в топ-10. `;
+                    });
+                    message += `<br>`;
+                }
+                
+                message += `<strong>💪 Советы :</strong><br>`;
+                message += `• Проходите новые <strong>специальности</strong><br>`;
+                message += `• Улучшайте свои баллы<br>`;
+                message += `• Возвращайтесь <strong>регулярно</strong><br><br>`;
+                ttsMessage += `Советы : проходите новые специальности, улучшайте свои баллы, возвращайтесь регулярно. `;
+                
+                if (userRank === 1) {
+                    message += `🔥 <strong>Итак, ${userName}, сделайте невозможное, чтобы ваше имя и ваша страна (${userCountry}) остались номером 1 в мире !</strong> 💪<br>`;
+                    ttsMessage += `Итак, ${userName}, сделайте невозможное, чтобы ваше имя и ваша страна остались номером 1 в мире. `;
+                } else if (userRank <= 10) {
+                    message += `🔥 <strong>Итак, ${userName}, сделайте невозможное, чтобы ваше имя и ваша страна (${userCountry}) остались в топ-10 !</strong> 💪<br>`;
+                    ttsMessage += `Итак, ${userName}, сделайте невозможное, чтобы ваше имя и ваша страна остались в топ-10. `;
+                } else {
+                    message += `🔥 <strong>Итак, ${userName}, сделайте невозможное, чтобы ваше имя и ваша страна (${userCountry}) вошли в топ-10 !</strong> 💪<br>`;
+                    ttsMessage += `Итак, ${userName}, сделайте невозможное, чтобы ваше имя и ваша страна вошли в топ-10. `;
+                }
+                
+                message += `<br>Итак, готовы принять вызов ? 🚀`;
+                ttsMessage += `Итак, готовы принять вызов ?`;
+                
+                iaMessage.innerHTML = message;
+                window._ttsClassementMessage = cleanTextForTTS(ttsMessage);
+                
+                if (listenBtn) listenBtn.style.display = 'inline-block';
+                
+                setTimeout(() => autoSpeak(), 1200);
+                
+            } catch (error) {
+                console.error('❌ Ошибка ИИ:', error);
+                iaMessage.innerHTML = '⚠️ Сообщение недоступно. Перезагрузите страницу.';
+            }
+        }
+        
+        // ============================================================
+        // АВТОМАТИЧЕСКОЕ ЧТЕНИЕ
+        // ============================================================
+        
+        let isAutoSpeaking = false;
+        
+        function autoSpeak() {
+            if (!window.tts || isAutoSpeaking) return;
+            isAutoSpeaking = true;
+            const text = window._ttsClassementMessage || '';
+            if (!text) { isAutoSpeaking = false; return; }
+            
+            if (listenBtn) {
+                listenBtn.textContent = '⏹️ Остановить';
+                listenBtn.classList.add('listening');
+            }
+            
+            window.tts.speak(text, 'ru', 0.9, 1.0,
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 Слушать';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                },
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 Слушать';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                }
+            );
+        }
+        
+        // ============================================================
+        // КНОПКА СЛУШАТЬ
+        // ============================================================
+        
+        listenBtn.addEventListener('click', function() {
+            if (!window.tts) return showToast('❌ TTS недоступен', 3000);
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 Слушать';
+                this.classList.remove('listening');
+                isAutoSpeaking = false;
+                return;
+            }
+            
+            const text = window._ttsClassementMessage || '';
+            if (!text) return showToast('⚠️ Сообщение недоступно', 3000);
+            
+            this.textContent = '⏹️ Остановить';
+            this.classList.add('listening');
+            
+            window.tts.speak(text, 'ru', 0.9, 1.0,
+                () => {
+                    this.textContent = '🔊 Слушать';
+                    this.classList.remove('listening');
+                },
+                () => {
+                    this.textContent = '🔊 Слушать';
+                    this.classList.remove('listening');
+                    showToast('❌ Ошибка чтения', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // ИНИЦИАЛИЗАЦИЯ
+        // ============================================================
+        
+        async function init() {
+            Logger.info('🏆 Страница рейтинга загружена');
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    const uid = user.uid;
+                    const storage = new StorageService();
+                    const rankingService = new RankingService();
+                    const classementManager = new ClassementManager(rankingService, showToast);
+                    
+                    await classementManager.loadRanking(container);
+                    classementManager.setCurrentUser(uid);
+                    
+                    await generateIAMessage(uid);
+                    
+                    Logger.info('✅ Рейтинг загружен');
+                } else {
+                    showToast('⚠️ Войдите, чтобы увидеть рейтинг', 3000);
+                    container.innerHTML = `
+                        <div style="text-align:center;padding:60px 20px;">
+                            <div style="font-size:3rem;">🔒</div>
+                            <div style="font-size:1.2rem;margin-top:20px;">Войдите, чтобы увидеть рейтинг</div>
+                            <button onclick="window.location.href='inscription_ru.html'" 
+                                    style="margin-top:20px;padding:12px 40px;border:none;border-radius:30px;
+                                           background:linear-gradient(135deg,#667eea,#764ba2);color:white;
+                                           cursor:pointer;font-weight:700;font-size:1rem;">
+                                🔑 Войти / Зарегистрироваться
+                            </button>
+                        </div>
+                    `;
+                    iaMessage.innerHTML = '🤖 Войдите, чтобы увидеть ваш персональный рейтинг.';
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

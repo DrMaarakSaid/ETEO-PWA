@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🎰 Рулетка информации - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        /* ============================================================
+           СПЕЦИФИЧЕСКИЕ СТИЛИ ДЛЯ ВИКТОРИНЫ ДНЯ
+           ============================================================ */
+        
+        .roulette-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 10px auto;
+            max-width: 400px;
+        }
+        
+        .roulette-wrapper canvas {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.12);
+            display: block;
+        }
+        
+        .roulette-pointer {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+            filter: drop-shadow(0 0 8px #ff6b00) drop-shadow(0 0 20px #ff6b00);
+            animation: pointerPulse 1.5s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        .roulette-pointer svg {
+            width: 30px;
+            height: 36px;
+            display: block;
+        }
+        
+        @keyframes pointerPulse {
+            0% { filter: drop-shadow(0 0 8px #ff6b00) drop-shadow(0 0 20px #ff6b00); }
+            50% { filter: drop-shadow(0 0 15px #ff6b00) drop-shadow(0 0 35px #ff6b00) drop-shadow(0 0 60px rgba(255,107,0,0.3)); }
+            100% { filter: drop-shadow(0 0 8px #ff6b00) drop-shadow(0 0 20px #ff6b00); }
+        }
+        
+        #levelRouletteContainer {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 20px;
+            border: 1px solid rgba(155,89,182,0.2);
+        }
+        
+        #levelRouletteContainer .roulette-wrapper {
+            max-width: 280px;
+        }
+        
+        #levelRouletteContainer .roulette-pointer {
+            top: -8px;
+        }
+        
+        #levelRouletteContainer .roulette-pointer svg {
+            width: 24px;
+            height: 30px;
+        }
+        
+        .roulette-result {
+            display: none;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            padding: 10px 16px;
+            background: #f0f4ff;
+            border-radius: 14px;
+            border-left: 4px solid #667eea;
+            margin: 8px auto;
+            max-width: 400px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        
+        .roulette-result .highlight {
+            color: #667eea;
+            font-weight: 800;
+        }
+        
+        .roulette-spin-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #f57c00, #e65100);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(245, 124, 0, 0.3);
+            margin: 5px 0;
+        }
+        
+        .roulette-spin-btn:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 35px rgba(245, 124, 0, 0.4);
+        }
+        
+        .roulette-spin-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+            background: #b0b0b0;
+            box-shadow: none;
+        }
+        
+        .roulette-replay-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.25);
+        }
+        
+        .roulette-replay-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.35);
+        }
+        
+        .roulette-replay-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .ia-greeting {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 15px;
+            color: white;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            text-align: left;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.25);
+        }
+        
+        .ia-avatar {
+            font-size: 2.5rem;
+            flex-shrink: 0;
+            animation: iaPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes iaPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .ia-message {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        .ia-message strong {
+            color: #ffd700;
+        }
+        
+        @keyframes iaPulseResult {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            25% { transform: scale(1.05) rotate(-5deg); }
+            75% { transform: scale(1.05) rotate(5deg); }
+        }
+        
+        .ia-result-avatar {
+            animation: iaPulseResult 2s ease-in-out infinite;
+        }
+        
+        .btn-share {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #1da1f2, #0d8bd9);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+        
+        .btn-share:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(29, 161, 242, 0.4);
+        }
+        
+        .roulette-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+        }
+        
+        .roulette-stat-item {
+            background: white;
+            border-radius: 12px;
+            padding: 12px 10px;
+            text-align: center;
+            border: 1px solid #e8e8e8;
+        }
+        
+        .roulette-stat-item .number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #2c3e50;
+        }
+        
+        .roulette-stat-item .label {
+            font-size: 0.7rem;
+            color: #888;
+            display: block;
+            margin-top: 4px;
+        }
+        
+        .roulette-section {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            padding: 16px;
+            margin-top: 16px;
+            border: 1px solid rgba(255, 152, 0, 0.2);
+        }
+        
+        .roulette-section h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        /* ============================================================
+           СТИЛИ ВСПЛЫВАЮЩЕГО ОКНА ОПЛАТЫ
+           ============================================================ */
+        
+        .payment-lock-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        
+        .payment-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .payment-popup {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 380px;
+            width: 90%;
+            text-align: center;
+            animation: popupIn 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        @keyframes popupIn {
+            from { transform: scale(0.9) translateY(20px); opacity: 0; }
+            to { transform: scale(1) translateY(0); opacity: 1; }
+        }
+        
+        .payment-popup h2 {
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+        
+        .payment-popup p {
+            color: #666;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .payment-popup .features {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 12px;
+            margin: 15px 0;
+            text-align: left;
+        }
+        
+        .payment-popup .features p {
+            margin: 4px 0;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        
+        .payment-popup .pay-btn {
+            padding: 14px 40px;
+            background: linear-gradient(135deg, #ffd700, #f57c00);
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #2c3e50;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .payment-popup .pay-btn:hover:not(:disabled) {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+        }
+        
+        .payment-popup .pay-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .payment-popup .close-btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            width: 100%;
+            transition: color 0.3s ease;
+        }
+        
+        .payment-popup .close-btn:hover {
+            color: #333;
+        }
+        
+        .payment-popup .secure-text {
+            font-size: 0.7rem;
+            color: #aaa;
+            margin-top: 10px;
+        }
+        
+        .payment-popup .info-box {
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+            text-align: left;
+        }
+        
+        .payment-popup .info-box.success {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .payment-popup .info-box.success p {
+            color: #2e7d32;
+        }
+        
+        .payment-popup .info-box.warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .payment-popup .info-box.warning p {
+            color: #856404;
+        }
+        
+        .payment-popup .email-section {
+            margin: 15px 0;
+        }
+        
+        .payment-popup .email-section p {
+            font-size: 0.9rem;
+            color: #555;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        
+        .payment-popup .email-input-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .payment-popup .email-input-group input {
+            flex: 1;
+            min-width: 180px;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        
+        .payment-popup .email-input-group input:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+        
+        .payment-popup .email-input-group .pay-btn {
+            width: auto;
+            padding: 12px 20px;
+            white-space: nowrap;
+        }
+        
+        .payment-popup .email-note {
+            font-size: 0.7rem;
+            color: #999;
+            margin-top: 5px;
+            text-align: left;
+        }
+        
+        .payment-popup .info-box.warning p {
+            margin: 0;
+        }
+        
+        /* ✅ СЧЁТЧИК ПОПЫТОК */
+        .quota-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin: 5px 0;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border: 2px solid #4caf50;
+        }
+        
+        .quota-badge.warning {
+            background: #fff3cd;
+            color: #856404;
+            border-color: #ffc107;
+        }
+        
+        .quota-badge.danger {
+            background: #ffebee;
+            color: #c62828;
+            border-color: #e74c3c;
+            animation: pulseBadge 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes pulseBadge {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .quota-badge.unlimited {
+            background: #bbdefb;
+            color: #0d47a1;
+            border-color: #667eea;
+        }
+        
+        @media (max-width: 520px) {
+            .ia-greeting {
+                padding: 12px 14px;
+                gap: 10px;
+            }
+            .ia-avatar {
+                font-size: 2rem;
+            }
+            .ia-message {
+                font-size: 0.85rem;
+            }
+            .roulette-pointer {
+                top: -6px;
+            }
+            .roulette-pointer svg {
+                width: 24px;
+                height: 30px;
+            }
+            #levelRouletteContainer .roulette-pointer {
+                top: -5px;
+            }
+            #levelRouletteContainer .roulette-pointer svg {
+                width: 20px;
+                height: 26px;
+            }
+            .roulette-spin-btn {
+                font-size: 0.85rem;
+                padding: 10px 20px;
+            }
+            .roulette-result {
+                font-size: 0.85rem;
+                padding: 8px 12px;
+            }
+            .btn-share {
+                font-size: 0.85rem;
+                padding: 10px 20px;
+            }
+            .roulette-stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .payment-popup {
+                padding: 20px;
+            }
+            .payment-popup .email-input-group input {
+                min-width: 140px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .ia-avatar {
+                font-size: 1.6rem;
+            }
+            .ia-message {
+                font-size: 0.78rem;
+            }
+            .roulette-pointer {
+                top: -4px;
+            }
+            .roulette-pointer svg {
+                width: 20px;
+                height: 26px;
+            }
+            .payment-popup {
+                padding: 15px;
+            }
+        }
+    </style>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "firebase/functions": "https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container quiz-container">
+        
+        <!-- ============================================================ -->
+        <!-- НАВИГАЦИЯ -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='../index.html'">🏠 Главная</button>
+            <button class="back-btn" onclick="window.location.href='dashboard_ru.html'">📊 Панель управления</button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ЭКРАН 1 : РУЛЕТКА -->
+        <!-- ============================================================ -->
+        <div id="rouletteScreen">
+            <div style="text-align: center; margin-bottom: 8px;">
+                <h1 style="font-size: 1.6rem; margin: 0; color: #2c3e50;">🎰 Рулетка информации</h1>
+            </div>
+
+            <!-- ✅ СЧЁТЧИК ПОПЫТОК -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <span id="quotaBadge" class="quota-badge">🎯 20 бесплатных попыток осталось</span>
+            </div>
+
+            <div class="ia-greeting" id="iaGreeting">
+                <div class="ia-avatar">🤖</div>
+                <p class="ia-message" id="iaMessage">
+                    Здравствуйте, <strong id="iaUserName">Доктор</strong>! 🌟<br>
+                    Добро пожаловать в <strong>🎰 Рулетку информации</strong>!<br>
+                    Вращайте колесо специальностей, затем колесо уровней и проверьте свои знания.<br>
+                    <span style="font-size: 0.85rem; opacity: 0.9;">🎯 Готовы принять вызов?</span>
+                </p>
+            </div>
+
+            <!-- КОЛЕСО 1 : 36 СПЕЦИАЛЬНОСТЕЙ -->
+            <div class="roulette-wrapper">
+                <canvas id="rouletteCanvas" width="400" height="400"></canvas>
+                <div class="roulette-pointer" id="roulettePointer">
+                    <svg viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="15,36 3,0 10,0 15,22 20,0 27,0" fill="#ff6b00" stroke="#ffaa00" stroke-width="2"/>
+                        <polygon points="15,32 6,4 11,4 15,20 19,4 24,4" fill="#ffaa00" opacity="0.5"/>
+                        <polygon points="15,28 9,8 12,8 15,18 18,8 21,8" fill="#ffdd00" opacity="0.3"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 8px 0 5px 0;">
+                <button id="spinBtn" class="roulette-spin-btn">🎯 ВРАЩАТЬ КОЛЕСО СПЕЦИАЛЬНОСТЕЙ</button>
+            </div>
+
+            <div id="specialtyResult" class="roulette-result">
+                <span>🦷 Специальность : </span>
+                <span id="selectedSpecialtyDisplay" class="highlight">?</span>
+            </div>
+
+            <!-- КОЛЕСО 2 : 6 УРОВНЕЙ -->
+            <div id="levelRouletteContainer">
+                <h3 style="color: #2c3e50; margin-bottom: 4px; font-size: 1.1rem;">🎯 Выберите свой уровень</h3>
+                <p style="color: #888; font-size: 0.85rem; margin-bottom: 10px;">Вращайте колесо уровней!</p>
+                
+                <div class="roulette-wrapper">
+                    <canvas id="levelRouletteCanvas" width="300" height="300"></canvas>
+                    <div class="roulette-pointer" id="levelRoulettePointer">
+                        <svg viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="12,30 2,0 8,0 12,18 16,0 22,0" fill="#ff6b00" stroke="#ffaa00" stroke-width="2"/>
+                            <polygon points="12,27 4,2 9,2 12,17 15,2 20,2" fill="#ffaa00" opacity="0.5"/>
+                            <polygon points="12,24 7,4 10,4 12,15 14,4 17,4" fill="#ffdd00" opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <button id="spinLevelBtn" class="roulette-spin-btn" style="margin-top: 10px; background: linear-gradient(135deg, #9b59b6, #8e44ad); display: none;">
+                    🎯 ВРАЩАТЬ УРОВЕНЬ
+                </button>
+                
+                <div id="levelResult" class="roulette-result" style="margin-top: 8px;">
+                    <span>📊 Уровень : </span>
+                    <span id="selectedLevelDisplay" class="highlight">?</span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 8px 0;">
+                <button id="startQuizBtn" class="roulette-replay-btn" style="display:none; background: linear-gradient(135deg, #4caf50, #43a047);">
+                    🚀 НАЧАТЬ ВИКТОРИНУ
+                </button>
+            </div>
+
+            <div id="tirageHistory" style="display: none; margin-top: 8px;">
+                <div style="font-size: 0.65rem; color: #888; text-align: center; margin-bottom: 4px;">📜 Последние розыгрыши</div>
+                <div id="historyChips" style="display: flex; gap: 5px; justify-content: center; flex-wrap: wrap;"></div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ЭКРАН 2 : ВИКТОРИНА (1 ВОПРОС) -->
+        <!-- ============================================================ -->
+        <div id="questionContainer" style="display:none;">
+            <div class="quiz-title" id="quizTitle">🎰 Рулетка информации</div>
+            <div class="question-text" id="questionText">Текущий вопрос...</div>
+            <div class="tts-button-row">
+                <button class="tts-btn" id="ttsQuestionBtn">🔊 Прочитать вопрос</button>
+            </div>
+            <div class="options" id="optionsContainer"></div>
+            <div class="feedback-container" id="feedbackContainer" style="display:none;">
+                <span id="feedbackMessage"></span>
+                <span class="points-badge" id="pointsBadge"></span>
+                <button class="tts-btn tts-feedback-btn" id="ttsFeedbackBtn" style="display:none;">🔊 Переслушать</button>
+            </div>
+            <div class="explanation-box" id="explanationBox" style="display:none;">
+                <div class="explanation-title">📖 Объяснение</div>
+                <p id="explanationText"></p>
+                <div class="correct-answer" id="correctAnswerText"></div>
+                <button class="tts-btn tts-explanation-btn" id="ttsExplanationBtn" style="display:none;">🔊 Прочитать объяснение</button>
+            </div>
+            <div class="timer-bottom" id="timerBottom">⏱️ Осталось времени : <span id="timerBottomValue">40</span> секунд</div>
+            <div class="nav-buttons">
+                <button class="nav-btn" id="quitBtn">🚪 Выйти</button>
+                <button class="nav-btn" id="nextBtn" disabled>Далее ➜</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ЭКРАН 3 : РЕЗУЛЬТАТ С ИИ -->
+        <!-- ============================================================ -->
+        <div class="result-container" id="resultContainer" style="display:none;">
+            <h2 id="resultTitle">✅ Викторина завершена!</h2>
+            <div class="final-score" id="finalScore">1/1</div>
+            <div class="percentage" id="percentage">100%</div>
+            <div class="message" id="resultMessage">🎉 Идеально!</div>
+            <div id="badgeContainer"></div>
+            <div id="iaResultContainer"></div>
+            <div class="result-buttons" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 15px;">
+                <button class="roulette-replay-btn" id="anotherQuizBtn" style="background: linear-gradient(135deg, #ff9800, #f57c00);">🎰 Другая викторина</button>
+                <button class="btn-levels" id="chooseSpecialtyBtn" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 12px 28px; border-radius: 30px; font-weight: 700; cursor: pointer;">📚 Выбрать специальность</button>
+                <button class="btn-menu" id="menuBtn">🏠 Меню</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- TOAST -->
+        <!-- ============================================================ -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <script type="module">
+        // ============================================================
+        // ЛЁГКИЕ ИМПОРТЫ
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import SubscriptionService from '../js/services/subscription.js';
+        import { RewardService } from '../js/services/rewardService.js';
+        import { ShareService } from '../js/services/shareService.js';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE
+        // ============================================================
+        
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore, doc, updateDoc, arrayUnion, getDoc, addDoc, collection, setDoc, increment } from 'firebase/firestore';
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // СПИСОК 36 СПЕЦИАЛЬНОСТЕЙ
+        // ============================================================
+        
+        const SPECIALTIES = [
+            { id: 'chirurgie', name: 'Хирургия', emoji: '🔪' },
+            { id: 'endo', name: 'Эндодонтия', emoji: '🦷' },
+            { id: 'esthetique', name: 'Эстетика', emoji: '✨' },
+            { id: 'implantologie', name: 'Имплантология', emoji: '🔩' },
+            { id: 'Médecine_buccale', name: 'Медицина полости рта', emoji: '👄' },
+            { id: 'orthodontie', name: 'Ортодонтия', emoji: '🦷' },
+            { id: 'parodontologie', name: 'Пародонтология', emoji: '🦷' },
+            { id: 'pedodontie', name: 'Педодонтия', emoji: '👶' },
+            { id: 'prothese', name: 'Протезирование', emoji: '🦷' },
+            { id: 'Relationnel&Psychomotricité', name: 'Коммуникация и психомоторика', emoji: '🧠' },
+            { id: 'Soins_conservateurs', name: 'Консервативное лечение', emoji: '🦷' },
+            { id: 'anesthesiologie', name: 'Анестезиология', emoji: '💉' },
+            { id: 'cfao_impression3d', name: 'CAD/CAM и 3D-печать', emoji: '🖨️' },
+            { id: 'photographie', name: 'Фотография', emoji: '📸' },
+            { id: 'radiologie', name: 'Радиология', emoji: '📷' },
+            { id: 'sterilisation', name: 'Стерилизация', emoji: '🧼' },
+            { id: 'aides_installation', name: 'Помощь в открытии кабинета', emoji: '🔧' },
+            { id: 'amenagement_cabinet', name: 'Обустройство кабинета', emoji: '🏥' },
+            { id: 'comptabilite_fiscalite', name: 'Бухгалтерия и налоги', emoji: '📊' },
+            { id: 'conventionnement_amo', name: 'Конвенционирование и AMO', emoji: '📋' },
+            { id: 'fiscalite_dentiste', name: 'Налогообложение стоматолога', emoji: '💰' },
+            { id: 'formes_juridiques', name: 'Юридические формы', emoji: '🏛️' },
+            { id: 'gestion_cabinet', name: 'Управление кабинетом', emoji: '📈' },
+            { id: 'Informatique Logiciels dentaires', name: 'IT и стоматологическое ПО', emoji: '💻' },
+            { id: 'mutuelles_prises_en_charge', name: 'Страховки и покрытие', emoji: '🛡️' },
+            { id: 'sante_publique', name: 'Общественное здоровье', emoji: '🌍' },
+            { id: 'assistantes_dentaires', name: 'Ассистенты стоматолога', emoji: '👩‍⚕️' },
+            { id: 'code_deontologie', name: 'Кодекс этики', emoji: '📜' },
+            { id: 'conflits_médiation', name: 'Конфликты и медиация', emoji: '🤝' },
+            { id: 'ethique_deontologie', name: 'Этика и деонтология', emoji: '⚖️' },
+            { id: 'Femmes_dentistes', name: 'Женщины-стоматологи', emoji: '👩‍⚕️' },
+            { id: 'futur_docteur', name: 'Будущий доктор', emoji: '🎓' },
+            { id: 'ONMD_CRS_CRN', name: 'ONMD / CRS / CRN', emoji: '📇' },
+            { id: 'seniors', name: 'Пожилые', emoji: '👴' },
+            { id: 'syndicat', name: 'Профсоюз', emoji: '🤝' },
+            { id: 'materiaux_dentaires', name: 'Стоматологические материалы', emoji: '🧪' }
+        ];
+        
+        const LEVELS = [
+            { id: 'debutant1', label: 'Начинающий 1', emoji: '🌱' },
+            { id: 'debutant2', label: 'Начинающий 2', emoji: '🌿' },
+            { id: 'intermediaire1', label: 'Средний 1', emoji: '🌳' },
+            { id: 'intermediaire2', label: 'Средний 2', emoji: '🌲' },
+            { id: 'expert1', label: 'Эксперт 1', emoji: '🔥' },
+            { id: 'expert2', label: 'Эксперт 2', emoji: '⭐' }
+        ];
+        
+        // ============================================================
+        // СЕРВИСЫ
+        // ============================================================
+        
+        const storage = new StorageService();
+        const subscription = new SubscriptionService();
+        const rewardService = new RewardService();
+        const shareService = new ShareService();
+        
+        // ============================================================
+        // DOM ЭЛЕМЕНТЫ
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const spinBtn = document.getElementById('spinBtn');
+        const spinLevelBtn = document.getElementById('spinLevelBtn');
+        const startQuizBtn = document.getElementById('startQuizBtn');
+        const specialtyResult = document.getElementById('specialtyResult');
+        const selectedSpecialtyDisplay = document.getElementById('selectedSpecialtyDisplay');
+        const levelResult = document.getElementById('levelResult');
+        const selectedLevelDisplay = document.getElementById('selectedLevelDisplay');
+        const levelRouletteContainer = document.getElementById('levelRouletteContainer');
+        const tirageHistory = document.getElementById('tirageHistory');
+        const historyChips = document.getElementById('historyChips');
+        const questionContainer = document.getElementById('questionContainer');
+        const questionText = document.getElementById('questionText');
+        const optionsContainer = document.getElementById('optionsContainer');
+        const feedbackContainer = document.getElementById('feedbackContainer');
+        const feedbackMessage = document.getElementById('feedbackMessage');
+        const pointsBadge = document.getElementById('pointsBadge');
+        const explanationBox = document.getElementById('explanationBox');
+        const explanationText = document.getElementById('explanationText');
+        const correctAnswerText = document.getElementById('correctAnswerText');
+        const timerBottomValue = document.getElementById('timerBottomValue');
+        const timerBottom = document.getElementById('timerBottom');
+        const nextBtn = document.getElementById('nextBtn');
+        const quitBtn = document.getElementById('quitBtn');
+        const resultContainer = document.getElementById('resultContainer');
+        const finalScore = document.getElementById('finalScore');
+        const percentage = document.getElementById('percentage');
+        const resultMessage = document.getElementById('resultMessage');
+        const badgeContainer = document.getElementById('badgeContainer');
+        const anotherQuizBtn = document.getElementById('anotherQuizBtn');
+        const chooseSpecialtyBtn = document.getElementById('chooseSpecialtyBtn');
+        const menuBtn = document.getElementById('menuBtn');
+        const rouletteScreen = document.getElementById('rouletteScreen');
+        const quizTitle = document.getElementById('quizTitle');
+        const resultTitle = document.getElementById('resultTitle');
+        const ttsQuestionBtn = document.getElementById('ttsQuestionBtn');
+        const ttsFeedbackBtn = document.getElementById('ttsFeedbackBtn');
+        const ttsExplanationBtn = document.getElementById('ttsExplanationBtn');
+        const iaMessage = document.getElementById('iaMessage');
+        const iaUserName = document.getElementById('iaUserName');
+        const iaResultContainer = document.getElementById('iaResultContainer');
+        const quotaBadge = document.getElementById('quotaBadge');
+        
+        // ============================================================
+        // СОСТОЯНИЕ
+        // ============================================================
+        
+        let currentSpecialty = null;
+        let currentLevel = null;
+        let currentQuestion = null;
+        let currentQuestions = [];
+        let isAnswered = false;
+        let timerInterval = null;
+        let timeRemaining = 30;
+        let quizHistory = [];
+        let userId = null;
+        let userName = 'Доктор';
+        let freeQuizzesUsed = 0;
+        let isSubscribed = false;
+        let subscriptionExpiresAt = null;
+        let MAX_FREE_QUIZZES = 20;
+        
+        // ============================================================
+        // ОЧИСТКА ТЕКСТА ДЛЯ TTS
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // ФУНКЦИЯ ОСТАНОВКИ TTS
+        // ============================================================
+        
+        function stopTTS() {
+            try {
+                if (window.tts && typeof window.tts.stop === 'function') {
+                    window.tts.stop();
+                }
+            } catch (e) {
+                console.warn('Ошибка при остановке TTS:', e);
+            }
+            document.querySelectorAll('.tts-btn.listening, .listen-btn.listening, .listen-synopsis-btn.listening, .listen-chapter-btn.listening').forEach(btn => {
+                const originalText = btn.dataset.originalText || '🔊';
+                btn.textContent = originalText;
+                btn.classList.remove('listening');
+            });
+        }
+        
+        // ============================================================
+        // TTS
+        // ============================================================
+        
+        function speakText(text, button, buttonText = '🔊') {
+            if (!window.tts || typeof window.tts.speak !== 'function') {
+                console.warn('⚠️ TTS недоступен');
+                if (button) {
+                    button.textContent = buttonText;
+                    button.classList.remove('listening');
+                }
+                return;
+            }
+            const cleanText = cleanTextForTTS(text);
+            if (!cleanText || cleanText.trim() === '') {
+                console.warn('⚠️ Текст TTS пуст после очистки');
+                if (button) {
+                    button.textContent = buttonText;
+                    button.classList.remove('listening');
+                }
+                return;
+            }
+            let wasSpeaking = false;
+            try {
+                if (window.tts.isSpeakingNow && window.tts.isSpeakingNow()) {
+                    wasSpeaking = true;
+                    window.tts.stop();
+                    console.log('⏹️ TTS остановлен перед новым сообщением');
+                }
+            } catch (e) {
+                console.warn('Ошибка при остановке TTS:', e);
+            }
+            document.querySelectorAll('.tts-btn.listening, .listen-btn.listening, .listen-synopsis-btn.listening, .listen-chapter-btn.listening').forEach(btn => {
+                const originalText = btn.dataset.originalText || '🔊';
+                btn.textContent = originalText;
+                btn.classList.remove('listening');
+            });
+            if (button) {
+                button.dataset.originalText = buttonText;
+                button.textContent = '⏹️ Остановить';
+                button.classList.add('listening');
+            }
+            const startSpeaking = () => {
+                try {
+                    window.tts.speak(
+                        cleanText,
+                        'ru',
+                        0.9,
+                        1.0,
+                        () => {
+                            if (button) {
+                                button.textContent = buttonText;
+                                button.classList.remove('listening');
+                            }
+                            console.log('✅ TTS завершён успешно');
+                        },
+                        (error) => {
+                            console.warn('⚠️ Ошибка TTS (игнорируется):', error);
+                            if (button) {
+                                button.textContent = buttonText;
+                                button.classList.remove('listening');
+                            }
+                        }
+                    );
+                } catch (e) {
+                    console.warn('⚠️ Ошибка при запуске TTS:', e);
+                    if (button) {
+                        button.textContent = buttonText;
+                        button.classList.remove('listening');
+                    }
+                }
+            };
+            if (wasSpeaking) {
+                console.log('⏳ Ожидание остановки TTS...');
+                setTimeout(startSpeaking, 200);
+            } else {
+                startSpeaking();
+            }
+        }
+        
+        // ============================================================
+        // ЗВУКОВЫЕ ЭФФЕКТЫ
+        // ============================================================
+        
+        function playRouletteSound(type, totalDuration) {
+            try {
+                const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                if (type === 'spin') {
+                    if (!totalDuration) totalDuration = 4000;
+                    
+                    const minTicks = 15;
+                    const maxTicks = 35;
+                    const totalTicks = Math.min(maxTicks, Math.max(minTicks, Math.floor(totalDuration / 130)));
+                    
+                    let count = 0;
+                    const baseFreq = 523;
+                    const volume = 0.15;
+                    
+                    function playTick() {
+                        if (count >= totalTicks) return;
+                        
+                        const progress = count / totalTicks;
+                        const speedFactor = 0.4 + 0.6 * (1 - Math.sin(progress * Math.PI));
+                        const tickDelay = (totalDuration / totalTicks) * speedFactor * 0.9;
+                        
+                        const osc = audioCtx.createOscillator();
+                        const gain = audioCtx.createGain();
+                        osc.connect(gain);
+                        gain.connect(audioCtx.destination);
+                        
+                        const freqVariation = Math.sin(progress * Math.PI) * 200;
+                        osc.frequency.value = baseFreq + freqVariation;
+                        osc.type = 'square';
+                        
+                        gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                        gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.01);
+                        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+                        
+                        const oscH = audioCtx.createOscillator();
+                        const gainH = audioCtx.createGain();
+                        oscH.connect(gainH);
+                        gainH.connect(audioCtx.destination);
+                        oscH.frequency.value = (baseFreq + freqVariation) * 2;
+                        oscH.type = 'square';
+                        gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                        gainH.gain.linearRampToValueAtTime(volume * 0.3, audioCtx.currentTime + 0.01);
+                        gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
+                        oscH.start();
+                        oscH.stop(audioCtx.currentTime + 0.04);
+                        
+                        osc.start();
+                        osc.stop(audioCtx.currentTime + 0.05);
+                        
+                        count++;
+                        
+                        if (count < totalTicks) {
+                            setTimeout(playTick, tickDelay);
+                        }
+                    }
+                    
+                    setTimeout(playTick, 50);
+                    
+                } else if (type === 'win') {
+                    const notes = [392, 523, 659, 784, 1047];
+                    const volume = 0.25;
+                    const duration = 0.35;
+                    const delay = 140;
+                    
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            
+                            const harmonics = [2, 3, 4];
+                            harmonics.forEach((h, j) => {
+                                const oscH = audioCtx.createOscillator();
+                                const gainH = audioCtx.createGain();
+                                oscH.connect(gainH);
+                                gainH.connect(audioCtx.destination);
+                                oscH.frequency.value = freq * h;
+                                oscH.type = 'square';
+                                const volH = volume / (j + 2) * 0.5;
+                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
+                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
+                                oscH.start();
+                                oscH.stop(audioCtx.currentTime + duration * 0.7);
+                            });
+                            
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'lose') {
+                    const notes = [523, 494, 466, 440];
+                    const volume = 0.25;
+                    const duration = 0.4;
+                    const delay = 140;
+                    
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            
+                            const harmonics = [2, 3, 4];
+                            harmonics.forEach((h, j) => {
+                                const oscH = audioCtx.createOscillator();
+                                const gainH = audioCtx.createGain();
+                                oscH.connect(gainH);
+                                gainH.connect(audioCtx.destination);
+                                oscH.frequency.value = freq * h;
+                                oscH.type = 'square';
+                                const volH = volume / (j + 2) * 0.5;
+                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
+                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
+                                oscH.start();
+                                oscH.stop(audioCtx.currentTime + duration * 0.7);
+                            });
+                            
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'click') {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.frequency.value = 1200;
+                    osc.type = 'sine';
+                    gain.gain.setValueAtTime(0.20, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.05);
+                    
+                } else if (type === 'tada') {
+                    const notesTada = [523, 659, 784, 1047, 1318];
+                    notesTada.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + 0.12);
+                        }, i * 100);
+                    });
+                }
+            } catch (e) {
+                // Без звука если Web Audio не поддерживается
+            }
+        }
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // ✅ УПРАВЛЕНИЕ КВОТАМИ И ПОДПИСКОЙ
+        // ============================================================
+        
+        async function loadUserData() {
+            const user = auth.currentUser;
+            if (!user) return false;
+            
+            userId = user.uid;
+            
+            try {
+                const userRef = doc(db, 'users_ios', userId);
+                const snapshot = await getDoc(userRef);
+                
+                if (snapshot.exists()) {
+                    const data = snapshot.data();
+                    
+                    userName = data.displayName || data.fullName || 'Доктор';
+                    freeQuizzesUsed = data?.rouletteStats?.freeQuizzesUsed || 0;
+                    
+                    const sub = data?.rouletteSubscription;
+                    if (sub && sub.active && sub.expiresAt) {
+                        const expires = new Date(sub.expiresAt);
+                        if (expires > new Date()) {
+                            isSubscribed = true;
+                            subscriptionExpiresAt = expires;
+                        } else {
+                            isSubscribed = false;
+                            await updateDoc(userRef, {
+                                'rouletteSubscription.active': false
+                            });
+                        }
+                    } else {
+                        isSubscribed = false;
+                    }
+                    
+                    console.log('📊 Данные пользователя загружены:');
+                    console.log('  👤 Имя:', userName);
+                    console.log('  🎯 Бесплатных попыток использовано:', freeQuizzesUsed);
+                    console.log('  💎 Подписан:', isSubscribed);
+                    if (isSubscribed) {
+                        console.log('  📅 Истекает:', subscriptionExpiresAt.toLocaleDateString('ru-RU'));
+                    }
+                    
+                    return true;
+                } else {
+                    await setDoc(userRef, {
+                        rouletteStats: {
+                            freeQuizzesUsed: 0,
+                            totalQuizzes: 0
+                        },
+                        rouletteSubscription: {
+                            active: false,
+                            expiresAt: null,
+                            paidAt: null
+                        }
+                    }, { merge: true });
+                    freeQuizzesUsed = 0;
+                    isSubscribed = false;
+                    return true;
+                }
+            } catch (error) {
+                console.error('❌ Ошибка загрузки данных:', error);
+                return false;
+            }
+        }
+        
+        function hasAccess() {
+            if (isSubscribed) {
+                return true;
+            }
+            const remaining = MAX_FREE_QUIZZES - freeQuizzesUsed;
+            if (remaining > 0) {
+                return true;
+            }
+            return false;
+        }
+        
+        function getRemainingQuizzes() {
+            if (isSubscribed) return '♾️';
+            return Math.max(0, MAX_FREE_QUIZZES - freeQuizzesUsed);
+        }
+        
+        function updateQuotaDisplay() {
+            const remaining = getRemainingQuizzes();
+            
+            if (isSubscribed) {
+                quotaBadge.textContent = '💎 Безлимитный доступ - Действует 1 год';
+                quotaBadge.className = 'quota-badge unlimited';
+            } else if (remaining > 5) {
+                quotaBadge.textContent = `🎯 ${remaining} бесплатных попыток осталось`;
+                quotaBadge.className = 'quota-badge';
+            } else if (remaining > 0) {
+                quotaBadge.textContent = `⚠️ Осталось ${remaining} попыт${remaining > 1 ? 'ки' : 'ка'}`;
+                quotaBadge.className = 'quota-badge warning';
+            } else {
+                quotaBadge.textContent = '🔒 Попыток больше нет - Подпишитесь!';
+                quotaBadge.className = 'quota-badge danger';
+            }
+        }
+        
+        async function incrementQuizCount() {
+            if (isSubscribed) return;
+            
+            try {
+                const userRef = doc(db, 'users_ios', userId);
+                await updateDoc(userRef, {
+                    'rouletteStats.freeQuizzesUsed': increment(1),
+                    'rouletteStats.totalQuizzes': increment(1)
+                });
+                freeQuizzesUsed++;
+                updateQuotaDisplay();
+                console.log(`✅ Викторина учтена: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
+            } catch (error) {
+                console.error('❌ Ошибка инкремента:', error);
+            }
+        }
+        
+        // ============================================================
+        // ✅ ВСПЛЫВАЮЩЕЕ ОКНО ОПЛАТЫ
+        // ============================================================
+        
+        function showPaymentPopup() {
+            stopTTS();
+            
+            if (document.querySelector('.payment-popup-overlay')) return;
+            
+            const overlay = document.createElement('div');
+            overlay.className = 'payment-popup-overlay';
+            
+            const remaining = getRemainingQuizzes();
+            
+            overlay.innerHTML = `
+                <div class="payment-popup">
+                    <div class="payment-lock-icon">🔒</div>
+                    <h2>🎯 Больше нет бесплатных попыток!</h2>
+                    <p>
+                        Вы использовали все <strong>${MAX_FREE_QUIZZES} бесплатных попыток</strong>.<br>
+                        <span style="font-size: 0.9rem; color: #888;">У вас не осталось попыток.</span>
+                    </p>
+                    <p style="margin-top: 10px;">
+                        Чтобы продолжать играть <strong>в течение 1 года</strong>,<br>
+                        оплатите <strong>20 €</strong> банковским переводом.
+                    </p>
+                    <div class="features">
+                        <p>✅ Безлимитный доступ на 1 год</p>
+                        <p>✅ Все специальности</p>
+                        <p>✅ Все уровни</p>
+                        <p>✅ Без ограничений на викторины</p>
+                    </div>
+                    <button class="pay-btn" id="payRouletteBtn">💳 Оплатить 20 € банковским переводом</button>
+                    <button class="close-btn" id="closePaymentPopup">❌ Вернуться позже</button>
+                    <p class="secure-text">🔒 Безопасный перевод • Реквизиты после клика</p>
+                </div>
+            `;
+            
+            document.body.appendChild(overlay);
+            
+            document.getElementById('payRouletteBtn').addEventListener('click', async function() {
+                this.textContent = '⏳ Запись...';
+                this.disabled = true;
+                
+                try {
+                    const interestData = {
+                        userId: userId || 'anonymous',
+                        userName: userName,
+                        type: 'roulette_subscription',
+                        amount: 20,
+                        currency: 'EUR',
+                        source: 'roulette_de_l_info',
+                        interestedAt: new Date().toISOString(),
+                        timestamp: new Date().toISOString(),
+                        userAgent: navigator.userAgent || 'unknown',
+                        platform: navigator.platform || 'unknown',
+                        status: 'redirected_to_payment'
+                    };
+                    
+                    await addDoc(collection(db, 'payment_interests'), interestData);
+                    console.log('✅ Интерес записан в Firebase');
+                    showToast('📊 Перенаправление на страницу оплаты...', 2000);
+                    
+                } catch (e) {
+                    console.warn('⚠️ Ошибка Firebase:', e);
+                }
+                
+                overlay.remove();
+                window.location.href = `paiement_rib_ru.html?type=roulette&amount=20&source=roulette`;
+            });
+            
+            document.getElementById('closePaymentPopup').addEventListener('click', function() {
+                overlay.remove();
+                showToast('💡 Вы можете вернуться позже, чтобы оформить подписку.', 3000);
+            });
+            
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) overlay.remove();
+            });
+            
+            setTimeout(() => {
+                const ttsMessage = `Вы использовали все ${MAX_FREE_QUIZZES} бесплатных попыток. Чтобы продолжать играть в течение 1 года, оплатите 20 евро банковским переводом. Нажмите кнопку Оплатить для получения реквизитов.`;
+                speakText(cleanTextForTTS(ttsMessage), null);
+            }, 500);
+        }
+        
+        // ============================================================
+        // ПРИВЕТСТВЕННОЕ СООБЩЕНИЕ ИИ
+        // ============================================================
+        
+        function displayIAWelcome() {
+            const settings = storage.getSettings() || {};
+            const name = settings.user?.fullName || userName || 'Доктор';
+            iaUserName.textContent = name;
+            
+            const remaining = getRemainingQuizzes();
+            
+            let message = '';
+            let ttsMessage = '';
+            
+            if (isSubscribed) {
+                const expireDate = subscriptionExpiresAt ? subscriptionExpiresAt.toLocaleDateString('ru-RU') : 'через 1 год';
+                message = `Здравствуйте, <strong>${name}</strong>! 🌟<br>Добро пожаловать в <strong>🎰 Рулетку информации</strong>!<br><br>💎 У вас <strong>безлимитная подписка</strong>, действительная до <strong>${expireDate}</strong>.<br><br>🎯 Вращайте колесо специальностей, затем колесо уровней и проверяйте свои знания без ограничений!<br><br>🔥 Готовы принять вызов?`;
+                ttsMessage = `Здравствуйте, ${name}. Добро пожаловать в Рулетку информации. У вас безлимитная подписка, действительная до ${expireDate}. Вращайте колёса и проверяйте свои знания без ограничений.`;
+            } else if (remaining > 0) {
+                message = `Здравствуйте, <strong>${name}</strong>! 🌟<br>Добро пожаловать в <strong>🎰 Рулетку информации</strong>!<br><br>🎯 У вас осталось <strong>${remaining} бесплатн${remaining > 1 ? 'ых попыток' : 'ая попытка'}</strong>.<br><br>Вращайте колесо специальностей, затем колесо уровней и проверяйте свои знания!<br><br>🔥 Готовы принять вызов?`;
+                ttsMessage = `Здравствуйте, ${name}. Добро пожаловать в Рулетку информации. У вас осталось ${remaining} бесплатных попыток. Вращайте колёса и проверяйте свои знания.`;
+            } else {
+                message = `Здравствуйте, <strong>${name}</strong>! 🌟<br>Добро пожаловать в <strong>🎰 Рулетку информации</strong>!<br><br>🔒 Вы использовали все <strong>${MAX_FREE_QUIZZES} бесплатных попыток</strong>.<br><br>💎 Чтобы продолжать играть <strong>1 год</strong>, оформите подписку за <strong>20€</strong>.<br><br>Нажмите кнопку "НАЧАТЬ ВИКТОРИНУ", чтобы увидеть варианты подписки.`;
+                ttsMessage = `Здравствуйте, ${name}. Добро пожаловать в Рулетку информации. Вы использовали все ${MAX_FREE_QUIZZES} бесплатных попыток. Оформите подписку за 20 евро в год, чтобы продолжать играть.`;
+            }
+            
+            iaMessage.innerHTML = message;
+            updateQuotaDisplay();
+            
+            setTimeout(() => {
+                const cleanMsg = cleanTextForTTS(ttsMessage);
+                speakText(cleanMsg, null);
+            }, 1500);
+        }
+        
+        // ============================================================
+        // КОЛЕСО 1 : 36 СПЕЦИАЛЬНОСТЕЙ
+        // ============================================================
+        
+        let roulette = null;
+        let isSpinning = false;
+        
+        function initRoulette() {
+            const canvas = document.getElementById('rouletteCanvas');
+            const ctx = canvas.getContext('2d');
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = Math.min(canvas.width, canvas.height) / 2 - 15;
+            const segmentAngle = (2 * Math.PI) / SPECIALTIES.length;
+            let currentAngle = 0;
+            let animationId = null;
+            const colors = ['#e94560', '#533483', '#0f3460', '#16213e', 
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e'];
+            
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < SPECIALTIES.length; i++) {
+                    const startAngle = currentAngle + i * segmentAngle;
+                    const endAngle = startAngle + segmentAngle;
+                    ctx.beginPath();
+                    ctx.moveTo(centerX, centerY);
+                    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+                    ctx.closePath();
+                    ctx.fillStyle = colors[i % colors.length];
+                    ctx.fill();
+                    ctx.strokeStyle = 'white';
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+                    ctx.save();
+                    ctx.translate(centerX, centerY);
+                    ctx.rotate(startAngle + segmentAngle / 2);
+                    ctx.textAlign = 'right';
+                    ctx.fillStyle = 'white';
+                    ctx.font = '10px Arial';
+                    const text = SPECIALTIES[i].emoji + ' ' + SPECIALTIES[i].name;
+                    let displayText = text;
+                    if (ctx.measureText(text).width > radius - 20) {
+                        displayText = SPECIALTIES[i].name.substring(0, 10) + '…';
+                    }
+                    ctx.fillText(displayText, radius - 10, 4);
+                    ctx.restore();
+                }
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, 22, 0, 2 * Math.PI);
+                ctx.fillStyle = 'white';
+                ctx.fill();
+                ctx.strokeStyle = '#333';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                ctx.fillStyle = '#333';
+                ctx.font = 'bold 11px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('🎯', centerX, centerY);
+            }
+            
+            function spin(callback) {
+                if (isSpinning) return;
+                isSpinning = true;
+                spinBtn.disabled = true;
+                spinBtn.textContent = '⏳ В процессе...';
+                
+                const extraSpins = 4 + Math.random() * 4;
+                const targetAngle = currentAngle + extraSpins * 2 * Math.PI + Math.random() * 2 * Math.PI;
+                const duration = 3500 + Math.random() * 1500;
+                const startTime = Date.now();
+                const startAngle = currentAngle;
+                
+                playRouletteSound('spin', duration);
+                
+                function animate() {
+                    const elapsed = Date.now() - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    currentAngle = startAngle + (targetAngle - startAngle) * easeOut;
+                    draw();
+                    
+                    if (progress < 1) {
+                        animationId = requestAnimationFrame(animate);
+                    } else {
+                        currentAngle = targetAngle;
+                        draw();
+                        isSpinning = false;
+                        spinBtn.disabled = true;
+                        spinBtn.textContent = '🎯 ВРАЩАТЬ КОЛЕСО СПЕЦИАЛЬНОСТЕЙ';
+                        
+                        const normalizedAngle = ((currentAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+                        const pointerAngle = 3 * Math.PI / 2;
+                        const resultAngle = (pointerAngle - normalizedAngle + 2 * Math.PI) % (2 * Math.PI);
+                        const index = Math.floor(resultAngle / segmentAngle) % SPECIALTIES.length;
+                        
+                        const segment = SPECIALTIES[index];
+                        currentSpecialty = segment.id;
+                        selectedSpecialtyDisplay.textContent = `${segment.emoji} ${segment.name}`;
+                        specialtyResult.style.display = 'flex';
+                        playRouletteSound('click');
+                        if (callback) callback();
+                    }
+                }
+                animate();
+            }
+            draw();
+            return { spin, draw, isSpinning: () => isSpinning };
+        }
+        
+        // ============================================================
+        // КОЛЕСО 2 : 6 УРОВНЕЙ
+        // ============================================================
+        
+        let levelRoulette = null;
+        let isLevelSpinning = false;
+        
+        function initLevelRoulette() {
+            const canvas = document.getElementById('levelRouletteCanvas');
+            const ctx = canvas.getContext('2d');
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = Math.min(canvas.width, canvas.height) / 2 - 15;
+            const segmentAngle = (2 * Math.PI) / LEVELS.length;
+            let currentAngle = 0;
+            let animationId = null;
+            const colors = ['#4caf50', '#8bc34a', '#ff9800', '#f57c00', '#e74c3c', '#9b59b6'];
+            
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < LEVELS.length; i++) {
+                    const startAngle = currentAngle + i * segmentAngle;
+                    const endAngle = startAngle + segmentAngle;
+                    ctx.beginPath();
+                    ctx.moveTo(centerX, centerY);
+                    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+                    ctx.closePath();
+                    ctx.fillStyle = colors[i % colors.length];
+                    ctx.fill();
+                    ctx.strokeStyle = 'white';
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+                    ctx.save();
+                    ctx.translate(centerX, centerY);
+                    ctx.rotate(startAngle + segmentAngle / 2);
+                    ctx.textAlign = 'right';
+                    ctx.fillStyle = 'white';
+                    ctx.font = 'bold 11px Arial';
+                    ctx.fillText(LEVELS[i].emoji + ' ' + LEVELS[i].label, radius - 8, 4);
+                    ctx.restore();
+                }
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, 18, 0, 2 * Math.PI);
+                ctx.fillStyle = 'white';
+                ctx.fill();
+                ctx.strokeStyle = '#333';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                ctx.fillStyle = '#333';
+                ctx.font = 'bold 10px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('🎯', centerX, centerY);
+            }
+            
+            function spin(callback) {
+                if (isLevelSpinning) return;
+                isLevelSpinning = true;
+                spinLevelBtn.disabled = true;
+                spinLevelBtn.textContent = '⏳ В процессе...';
+                
+                const extraSpins = 2 + Math.random() * 3;
+                const targetAngle = currentAngle + extraSpins * 2 * Math.PI + Math.random() * 2 * Math.PI;
+                const duration = 3500 + Math.random() * 1500;
+                const startTime = Date.now();
+                const startAngle = currentAngle;
+                
+                playRouletteSound('spin', duration);
+                
+                function animate() {
+                    const elapsed = Date.now() - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    currentAngle = startAngle + (targetAngle - startAngle) * easeOut;
+                    draw();
+                    if (progress < 1) {
+                        animationId = requestAnimationFrame(animate);
+                    } else {
+                        currentAngle = targetAngle;
+                        draw();
+                        isLevelSpinning = false;
+                        spinLevelBtn.disabled = true;
+                        spinLevelBtn.textContent = '🎯 ВРАЩАТЬ УРОВЕНЬ';
+                        
+                        const normalizedAngle = ((currentAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+                        const pointerAngle = 3 * Math.PI / 2;
+                        const resultAngle = (pointerAngle - normalizedAngle + 2 * Math.PI) % (2 * Math.PI);
+                        const index = Math.floor(resultAngle / segmentAngle) % LEVELS.length;
+                        currentLevel = LEVELS[index].id;
+                        selectedLevelDisplay.textContent = LEVELS[index].label;
+                        levelResult.style.display = 'flex';
+                        playRouletteSound('click');
+                        if (callback) callback();
+                    }
+                }
+                animate();
+            }
+            draw();
+            return { spin, draw, isSpinning: () => isLevelSpinning };
+        }
+        
+        // ============================================================
+        // ПОКАЗАТЬ КОЛЕСО 2
+        // ============================================================
+        
+        function showLevelRoulette() {
+            levelRouletteContainer.style.display = 'block';
+            spinLevelBtn.style.display = 'inline-block';
+            spinLevelBtn.disabled = false;
+            spinLevelBtn.textContent = '🎯 ВРАЩАТЬ УРОВЕНЬ';
+            if (levelRoulette) {
+                levelRoulette.draw();
+            }
+        }
+        
+        // ============================================================
+        // ИСТОРИЯ
+        // ============================================================
+        
+        function renderHistory() {
+            if (quizHistory.length === 0) {
+                tirageHistory.style.display = 'none';
+                return;
+            }
+            tirageHistory.style.display = 'block';
+            historyChips.innerHTML = quizHistory.slice(-5).reverse().map(h => `
+                <span style="font-size: 0.65rem; padding: 3px 10px; border-radius: 16px; background: #e8e8e8; color: #555; border: 1px solid #ddd; display: inline-block; margin: 2px;">
+                    ${h.emoji} ${h.specialty} (${h.level})
+                </span>
+            `).join('');
+        }
+        
+        // ============================================================
+        // ЗАГРУЗКА ВОПРОСА
+        // ============================================================
+        
+        async function loadQuestionForLevel(specialtyId, levelId) {
+            try {
+                const path = `../data/ru/${specialtyId}/${levelId}.json`;
+                const response = await fetch(path);
+                if (!response.ok) {
+                    throw new Error('Файл не найден');
+                }
+                const data = await response.json();
+                const questions = data.questions || [];
+                if (questions.length === 0) {
+                    throw new Error('Нет вопросов');
+                }
+                currentQuestions = questions;
+                const randomIndex = Math.floor(Math.random() * questions.length);
+                currentQuestion = questions[randomIndex];
+            } catch (error) {
+                console.error('❌ Ошибка загрузки:', error);
+                showToast('❌ Ошибка загрузки вопросов', 3000);
+            }
+        }
+        
+        // ============================================================
+        // СБРОС КНОПОК
+        // ============================================================
+        
+        function resetButtons() {
+            spinBtn.disabled = false;
+            spinBtn.textContent = '🎯 ВРАЩАТЬ КОЛЕСО СПЕЦИАЛЬНОСТЕЙ';
+            spinLevelBtn.disabled = false;
+            spinLevelBtn.textContent = '🎯 ВРАЩАТЬ УРОВЕНЬ';
+        }
+        
+        // ============================================================
+        // ✅ ЗАПУСК ВИКТОРИНЫ - С ПРОВЕРКОЙ ДОСТУПА
+        // ============================================================
+        
+        function startQuiz() {
+            if (!hasAccess()) {
+                showPaymentPopup();
+                return;
+            }
+            
+            incrementQuizCount();
+            
+            if (!currentQuestion) {
+                showToast('❌ Вопрос недоступен', 3000);
+                return;
+            }
+            
+            rouletteScreen.style.display = 'none';
+            questionContainer.style.display = 'block';
+            resultContainer.style.display = 'none';
+            displayQuestion(currentQuestion);
+        }
+        
+        // ============================================================
+        // ПОКАЗАТЬ ВОПРОС
+        // ============================================================
+        
+        function displayQuestion(question) {
+            isAnswered = false;
+            timeRemaining = 40;
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            const levelLabel = LEVELS.find(l => l.id === currentLevel)?.label || currentLevel;
+            quizTitle.textContent = `🎰 ${specialty?.emoji || ''} ${specialty?.name || ''} - ${levelLabel}`;
+            questionText.textContent = question.question || 'Вопрос недоступен';
+            optionsContainer.innerHTML = '';
+            const letters = ['A', 'B', 'C', 'D'];
+            if (question.options && question.options.length > 0) {
+                question.options.forEach((option, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'option-btn';
+                    btn.innerHTML = `<span class="letter">${letters[i]}</span> ${option}`;
+                    btn.dataset.index = i;
+                    btn.addEventListener('click', () => handleOptionClick(i));
+                    optionsContainer.appendChild(btn);
+                });
+            }
+            feedbackContainer.style.display = 'none';
+            feedbackContainer.className = 'feedback-container';
+            explanationBox.style.display = 'none';
+            explanationBox.classList.remove('show');
+            ttsFeedbackBtn.style.display = 'none';
+            ttsExplanationBtn.style.display = 'none';
+            nextBtn.disabled = true;
+            timerBottomValue.textContent = timeRemaining;
+            timerBottom.style.color = '#e67e22';
+            startTimer();
+            setTimeout(() => {
+                const cleanQuestion = cleanTextForTTS(question.question);
+                speakText(cleanQuestion, ttsQuestionBtn, '🔊 Прочитать вопрос');
+            }, 500);
+        }
+        
+        // ============================================================
+        // ТАЙМЕР
+        // ============================================================
+        
+        function startTimer() {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                timerBottomValue.textContent = timeRemaining;
+                if (timeRemaining <= 5) {
+                    timerBottom.style.color = '#e74c3c';
+                }
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    handleTimeout();
+                }
+            }, 1000);
+        }
+        
+        function stopTimer() {
+            clearInterval(timerInterval);
+            timerBottom.style.color = '#e67e22';
+        }
+        
+        // ============================================================
+        // ОБРАБОТКА КЛИКА
+        // ============================================================
+        
+        function handleOptionClick(index) {
+            if (isAnswered) return;
+            isAnswered = true;
+            stopTimer();
+            const isCorrect = index === currentQuestion.correct;
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === currentQuestion.correct) {
+                    btn.classList.add('correct');
+                }
+                if (i === index && !isCorrect) {
+                    btn.classList.add('wrong');
+                }
+            });
+            feedbackContainer.style.display = 'block';
+            if (isCorrect) {
+                feedbackContainer.className = 'feedback-container correct';
+                feedbackMessage.textContent = '✅ Правильный ответ!';
+                pointsBadge.textContent = '+1 балл';
+                pointsBadge.className = 'points-badge correct';
+                playRouletteSound('win');
+                setTimeout(() => playRouletteSound('tada'), 300);
+            } else {
+                feedbackContainer.className = 'feedback-container wrong';
+                feedbackMessage.textContent = '❌ Неправильный ответ';
+                pointsBadge.textContent = `Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}`;
+                pointsBadge.className = 'points-badge wrong';
+                playRouletteSound('lose');
+            }
+            ttsFeedbackBtn.style.display = 'inline-block';
+            ttsFeedbackBtn.textContent = '🔊 Переслушать';
+            ttsFeedbackBtn.classList.remove('listening');
+            if (currentQuestion.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = currentQuestion.explanation;
+                correctAnswerText.textContent = `✅ Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}`;
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 Прочитать объяснение';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            subscription.recordResult(
+                specialty?.name || currentSpecialty,
+                currentLevel,
+                currentQuestion.id,
+                isCorrect,
+                30 - timeRemaining
+            );
+            nextBtn.disabled = false;
+            setTimeout(() => {
+                let feedbackTTS = '';
+                if (isCorrect) {
+                    feedbackTTS = `Отлично! Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}.`;
+                } else {
+                    feedbackTTS = `Извините, это не правильный ответ. Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}.`;
+                }
+                const cleanFeedback = cleanTextForTTS(feedbackTTS);
+                speakText(cleanFeedback, ttsFeedbackBtn, '🔊 Переслушать');
+            }, 300);
+        }
+        
+        // ============================================================
+        // ТАЙМ-АУТ
+        // ============================================================
+        
+        function handleTimeout() {
+            if (isAnswered) return;
+            isAnswered = true;
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === currentQuestion.correct) {
+                    btn.classList.add('correct');
+                }
+            });
+            feedbackContainer.style.display = 'block';
+            feedbackContainer.className = 'feedback-container wrong';
+            feedbackMessage.textContent = '⏰ Время вышло!';
+            pointsBadge.textContent = `Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}`;
+            pointsBadge.className = 'points-badge wrong';
+            playRouletteSound('lose');
+            if (currentQuestion.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = currentQuestion.explanation;
+                correctAnswerText.textContent = `✅ Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}`;
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 Прочитать объяснение';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            subscription.recordResult(
+                specialty?.name || currentSpecialty,
+                currentLevel,
+                currentQuestion.id,
+                false,
+                30
+            );
+            nextBtn.disabled = false;
+            setTimeout(() => {
+                const feedbackTTS = `Время вышло. Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}.`;
+                const cleanFeedback = cleanTextForTTS(feedbackTTS);
+                speakText(cleanFeedback, ttsFeedbackBtn, '🔊 Переслушать');
+            }, 300);
+        }
+        
+        // ============================================================
+        // ПУБЛИКАЦИЯ РЕЗУЛЬТАТОВ
+        // ============================================================
+        
+        async function shareQuizResult() {
+            const settings = storage.getSettings() || {};
+            const name = settings.user?.fullName || userName || 'Доктор';
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            const isCorrect = feedbackContainer.classList.contains('correct');
+            const points = isCorrect ? 10 : 0;
+            
+            let unlockedBadges = [];
+            try {
+                const user = await rewardService.getCurrentUser();
+                if (user) {
+                    const userData = user.data;
+                    unlockedBadges = userData.badges || [];
+                }
+            } catch (e) {
+                console.warn('⚠️ Ошибка получения значков:', e);
+            }
+
+            const message = shareService.generateQuizShareMessage({
+                userName: name,
+                specialty: specialty?.name || 'Неизвестно',
+                level: LEVELS.find(l => l.id === currentLevel)?.label || 'Начинающий 1',
+                score: isCorrect ? 100 : 0,
+                points: points,
+                totalPoints: points,
+                badges: unlockedBadges,
+                streak: 0,
+                isCorrect: isCorrect,
+                url: window.location.origin
+            });
+
+            try {
+                await shareService.share(message);
+                showToast('✅ Результат успешно опубликован!', 3000);
+            } catch (error) {
+                console.error('❌ Ошибка публикации:', error);
+                showToast('❌ Ошибка публикации', 3000);
+            }
+        }
+        
+        // ============================================================
+        // ПОКАЗАТЬ РЕЗУЛЬТАТЫ
+        // ============================================================
+        
+        async function showResults() {
+            stopTimer();
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+            
+            const isCorrect = feedbackContainer.classList.contains('correct');
+            const settings = storage.getSettings() || {};
+            const name = settings.user?.fullName || userName || 'Доктор';
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            
+            finalScore.textContent = isCorrect ? '1/1' : '0/1';
+            percentage.textContent = isCorrect ? '100%' : '0%';
+            
+            let rewardMessage = '';
+            let unlockedBadges = [];
+            let pointsAdded = 0;
+            let newTotal = 0;
+            
+            try {
+                const user = await rewardService.getCurrentUser();
+                if (user) {
+                    const result = await rewardService.recordQuizResult(user.uid, {
+                        isCorrect: isCorrect,
+                        specialty: specialty?.name || currentSpecialty,
+                        level: currentLevel,
+                        timeSpent: 30 - timeRemaining
+                    });
+                    
+                    pointsAdded = result.pointsAdded;
+                    newTotal = result.newTotal;
+                    unlockedBadges = result.unlockedBadges;
+                    rewardMessage = result.message;
+                    
+                    if (unlockedBadges.length > 0) {
+                        const badgeNames = {
+                            'first_quiz': '🏅 Первая викторина',
+                            'streak_3': '🔥 Серия из 3',
+                            'rapide': '⚡ Быстрый',
+                            'parfait': '💯 Идеальный',
+                            'collectionneur': '📚 Коллекционер',
+                            'legende': '🌟 Легенда'
+                        };
+                        const badgeText = unlockedBadges.map(id => badgeNames[id] || id).join(', ');
+                        badgeContainer.innerHTML = `
+                            <div style="background: #ffd700; color: #2c3e50; padding: 10px 30px; border-radius: 30px; font-weight: 700; margin-top: 10px;">
+                                🏆 ${badgeText} разблокирован${unlockedBadges.length > 1 ? 'ы' : ''}! 
+                            </div>
+                        `;
+                    }
+                }
+            } catch (error) {
+                console.warn('⚠️ Ошибка наград:', error);
+            }
+            
+            const rewardsHTML = pointsAdded > 0 || unlockedBadges.length > 0 ? `
+                <div style="background: #f0f4ff; border-radius: 16px; padding: 12px 16px; margin: 10px 0; border-left: 4px solid #667eea;">
+                    <div style="font-weight: 600; color: #2c3e50;">🎁 Награды</div>
+                    <div style="font-size: 0.9rem; color: #667eea; margin-top: 4px;">
+                        ${pointsAdded > 0 ? `+${pointsAdded} баллов` : ''}
+                        ${unlockedBadges.length > 0 ? ` • 🏆 ${unlockedBadges.length} знач${unlockedBadges.length > 1 ? 'ка' : 'ок'} разблокирован${unlockedBadges.length > 1 ? 'о' : ''}` : ''}
+                        ${newTotal > 0 ? ` • Всего : ${newTotal} баллов` : ''}
+                    </div>
+                </div>
+            ` : '';
+            
+            const user = auth.currentUser;
+            if (user) {
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);
+                    
+                    await updateDoc(userRef, {
+                        rouletteHistory: arrayUnion({
+                            specialty: specialty?.name || currentSpecialty,
+                            level: currentLevel,
+                            isCorrect: isCorrect,
+                            date: new Date().toISOString(),
+                            questionId: currentQuestion?.id || 'unknown',
+                            timeSpent: 30 - timeRemaining || 0,
+                            specialtyId: currentSpecialty
+                        })
+                    });
+                    
+                    console.log('✅ Рулетка сохранена в users_ios/rouletteHistory');
+                    
+                } catch (error) {
+                    console.error('❌ Ошибка сохранения Firebase:', error);
+                }
+            }
+            
+            let iaMessageText = '';
+            let ttsMessageText = '';
+            
+            if (isCorrect) {
+                const correctMessages = [
+                    { display: `🎉 Отлично ${name}! Вы дали правильный ответ по ${specialty?.name || 'этой специальности'}! Продолжайте в том же духе! 🌟`,
+                      tts: `Отлично ${name}! Вы дали правильный ответ по ${specialty?.name || 'этой специальности'}! Продолжайте в том же духе!` },
+                    { display: `🌟 Превосходно ${name}! Вы отлично владеете ${specialty?.name || 'этой специальностью'}! 💪`,
+                      tts: `Превосходно ${name}! Вы отлично владеете ${specialty?.name || 'этой специальностью'}!` },
+                    { display: `🔥 ${name}, вы сегодня в огне! Правильный ответ по ${specialty?.name || 'этой специальности'}! 😉`,
+                      tts: `${name}, вы сегодня в огне! Правильный ответ по ${specialty?.name || 'этой специальности'}!` },
+                    { display: `💎 Идеально ${name}! ${specialty?.name || 'Эта специальность'} не имеет для вас секретов! 🏆`,
+                      tts: `Идеально ${name}! ${specialty?.name || 'Эта специальность'} не имеет для вас секретов!` },
+                    { display: `🎯 ${name}, вы настоящий эксперт! 🔥`,
+                      tts: `${name}, вы настоящий эксперт!` }
+                ];
+                const randomIndex = Math.floor(Math.random() * correctMessages.length);
+                iaMessageText = correctMessages[randomIndex].display;
+                ttsMessageText = correctMessages[randomIndex].tts;
+                resultTitle.textContent = '🎉 Отлично!';
+                resultMessage.textContent = 'Вы дали правильный ответ! 💪';
+                if (!unlockedBadges.length) {
+                    badgeContainer.innerHTML = `<div style="background: #4caf50; color: white; padding: 10px 30px; border-radius: 30px; font-weight: 700;">🌟 Идеально!</div>`;
+                }
+                playRouletteSound('win');
+                setTimeout(() => playRouletteSound('tada'), 400);
+            } else {
+                const wrongMessages = [
+                    { display: `💪 Не волнуйтесь ${name}! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}". Попробуйте ещё раз, я верю в вас! 📖`,
+                      tts: `Не волнуйтесь ${name}! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}". Попробуйте ещё раз, я верю в вас!` },
+                    { display: `🧠 ${name}, не отчаивайтесь! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}". У вас получится! 🌱`,
+                      tts: `${name}, не отчаивайтесь! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}". У вас получится!` },
+                    { display: `🔥 ${name}, вы сильнее этого! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}". 💪`,
+                      tts: `${name}, вы сильнее этого! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}".` },
+                    { display: `📚 ${name}, на ошибках учатся! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}". 🎯`,
+                      tts: `${name}, на ошибках учатся! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}".` },
+                    { display: `🌟 ${name}, не сдавайтесь! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}". 💎`,
+                      tts: `${name}, не сдавайтесь! Правильный ответ был: "${currentQuestion.options[currentQuestion.correct]}".` }
+                ];
+                const randomIndex = Math.floor(Math.random() * wrongMessages.length);
+                iaMessageText = wrongMessages[randomIndex].display;
+                ttsMessageText = wrongMessages[randomIndex].tts;
+                resultTitle.textContent = '💪 Не волнуйтесь!';
+                resultMessage.textContent = `Правильный ответ был: ${currentQuestion.options[currentQuestion.correct]}. 📖`;
+                if (!unlockedBadges.length) {
+                    badgeContainer.innerHTML = `<div style="background: #ff9800; color: white; padding: 10px 30px; border-radius: 30px; font-weight: 700;">📚 Продолжайте учиться</div>`;
+                }
+                playRouletteSound('lose');
+            }
+            
+            if (iaResultContainer) {
+                iaResultContainer.innerHTML = `
+                    <div style="background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 16px; padding: 14px 18px; margin: 12px 0; color: white; display: flex; align-items: flex-start; gap: 12px; text-align: left; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.25);">
+                        <div style="font-size: 2rem; flex-shrink: 0;" class="ia-result-avatar">🤖</div>
+                        <p style="margin: 0; font-size: 0.9rem; line-height: 1.6;">${iaMessageText}</p>
+                    </div>
+                    ${rewardsHTML}
+                `;
+            }
+            
+            const resultButtons = document.querySelector('.result-buttons');
+            if (resultButtons) {
+                const oldShareBtn = document.getElementById('shareResultBtn');
+                if (oldShareBtn) {
+                    oldShareBtn.remove();
+                }
+                
+                const shareBtn = document.createElement('button');
+                shareBtn.className = 'btn-share';
+                shareBtn.id = 'shareResultBtn';
+                shareBtn.textContent = '📤 Поделиться в соцсетях';
+                shareBtn.addEventListener('click', shareQuizResult);
+                resultButtons.insertBefore(shareBtn, resultButtons.firstChild);
+            }
+            
+            setTimeout(() => {
+                const cleanMessage = cleanTextForTTS(ttsMessageText);
+                speakText(cleanMessage, null);
+            }, 1200);
+        }
+        
+        // ============================================================
+        // СОБЫТИЯ
+        // ============================================================
+        
+        spinBtn.addEventListener('click', () => {
+            if (roulette && !roulette.isSpinning()) {
+                stopTTS();
+                levelRouletteContainer.style.display = 'none';
+                spinLevelBtn.style.display = 'none';
+                levelResult.style.display = 'none';
+                startQuizBtn.style.display = 'none';
+                specialtyResult.style.display = 'none';
+                roulette.spin(() => {
+                    setTimeout(() => {
+                        showLevelRoulette();
+                    }, 400);
+                });
+            }
+        });
+        
+        spinLevelBtn.addEventListener('click', () => {
+            if (levelRoulette && !levelRoulette.isSpinning()) {
+                stopTTS();
+                levelResult.style.display = 'none';
+                startQuizBtn.style.display = 'none';
+                levelRoulette.spin(() => {
+                    const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+                    quizHistory.push({
+                        specialty: specialty?.name || currentSpecialty,
+                        level: LEVELS.find(l => l.id === currentLevel)?.label || currentLevel,
+                        emoji: specialty?.emoji || '🦷'
+                    });
+                    renderHistory();
+                    startQuizBtn.style.display = 'inline-block';
+                    const msg = `Специальность ${specialty?.name || ''} уровень ${LEVELS.find(l => l.id === currentLevel)?.label || ''}`;
+                    const cleanMsg = cleanTextForTTS(msg);
+                    setTimeout(() => speakText(cleanMsg, null), 500);
+                    loadQuestionForLevel(currentSpecialty, currentLevel);
+                });
+            }
+        });
+        
+        startQuizBtn.addEventListener('click', startQuiz);
+        nextBtn.addEventListener('click', showResults);
+        
+        quitBtn.addEventListener('click', () => {
+            if (confirm('Выйти из викторины?')) {
+                stopTimer();
+                stopTTS();
+                window.location.href = 'choice_specialties_ru.html';
+            }
+        });
+        
+        anotherQuizBtn.addEventListener('click', () => {
+            stopTTS();
+            resultContainer.style.display = 'none';
+            rouletteScreen.style.display = 'block';
+            levelRouletteContainer.style.display = 'none';
+            levelResult.style.display = 'none';
+            startQuizBtn.style.display = 'none';
+            specialtyResult.style.display = 'none';
+            spinLevelBtn.style.display = 'none';
+            spinBtn.disabled = false;
+            spinBtn.textContent = '🎯 ВРАЩАТЬ КОЛЕСО СПЕЦИАЛЬНОСТЕЙ';
+            if (roulette) {
+                roulette.draw();
+            }
+            
+            loadUserData().then(() => {
+                updateQuotaDisplay();
+                displayIAWelcome();
+            });
+        });
+        
+        chooseSpecialtyBtn.addEventListener('click', () => {
+            stopTTS();
+            window.location.href = 'choice_specialties_ru.html';
+        });
+        
+        menuBtn.addEventListener('click', () => {
+            stopTTS();
+            window.location.href = '../index.html';
+        });
+        
+        document.querySelectorAll('.back-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                stopTTS();
+            });
+        });
+        
+        ttsQuestionBtn.addEventListener('click', function() {
+            const cleanQuestion = cleanTextForTTS(questionText.textContent);
+            speakText(cleanQuestion, this, '🔊 Прочитать вопрос');
+        });
+        
+        ttsFeedbackBtn.addEventListener('click', function() {
+            let feedbackTTS = '';
+            const isCorrect = feedbackContainer.classList.contains('correct');
+            if (isCorrect) {
+                feedbackTTS = `Отлично! Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}.`;
+            } else {
+                feedbackTTS = `Извините, это не правильный ответ. Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}.`;
+            }
+            const cleanFeedback = cleanTextForTTS(feedbackTTS);
+            speakText(cleanFeedback, this, '🔊 Переслушать');
+        });
+        
+        ttsExplanationBtn.addEventListener('click', function() {
+            const explanationClean = cleanTextForTTS(explanationText.textContent);
+            const correctAnswerClean = cleanTextForTTS(`Правильный ответ: ${currentQuestion.options[currentQuestion.correct]}`);
+            const fullText = explanationClean + '. ' + correctAnswerClean;
+            speakText(fullText, this, '🔊 Прочитать объяснение');
+        });
+        
+        // ============================================================
+        // ✅ ИНИЦИАЛИЗАЦИЯ
+        // ============================================================
+        
+        async function init() {
+            Logger.info('🎰 Рулетка информации загружена - Версия с подпиской');
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    console.log('👤 Пользователь подключён:', user.email);
+                    
+                    await loadUserData();
+                    
+                    updateQuotaDisplay();
+                    
+                    roulette = initRoulette();
+                    levelRoulette = initLevelRoulette();
+                    rouletteScreen.style.display = 'block';
+                    questionContainer.style.display = 'none';
+                    resultContainer.style.display = 'none';
+                    resetButtons();
+                    
+                    displayIAWelcome();
+                    
+                    console.log('🎰 Рулетка информации готова!');
+                    console.log(`🎯 Бесплатных попыток использовано: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
+                    console.log(`💎 Подписка активна: ${isSubscribed}`);
+                    if (isSubscribed) {
+                        console.log(`📅 Истекает: ${subscriptionExpiresAt?.toLocaleDateString('ru-RU')}`);
+                    }
+                    console.log('✅ Firebase: сохранение в users_ios/rouletteHistory');
+                    console.log('✅ Результаты Рулетки НЕ ВЛИЯЮТ на зелёные галочки специальностей');
+                    console.log('🔊 Звуковые эффекты синхронизированы с ОБОИМИ колёсами');
+                    console.log('🔒 Кнопки блокируются после каждого клика');
+                    console.log('✅ RewardService интегрирован: автоматические баллы и значки');
+                    console.log('✅ Интегрирована публикация в соцсетях');
+                    console.log('💳 Оплата банковским переводом: 20€ за 1 год безлимитного доступа');
+                    console.log('📱 Счётчик попыток: 20 бесплатных, затем оплата');
+                    
+                } else {
+                    console.log('👤 Пользователь не авторизован, перенаправление на регистрацию');
+                    window.location.href = 'inscription_ru.html';
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

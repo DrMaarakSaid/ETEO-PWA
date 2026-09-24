@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO - 选择专业</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        .specialties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 12px;
+            margin: 20px 0 30px;
+            text-align: left;
+        }
+        
+        .specialty-card {
+            padding: 14px 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 16px;
+            background: white;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.85rem;
+            text-align: center;
+            color: #2c3e50;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            position: relative;
+        }
+        
+        .specialty-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border-color: #667eea;
+        }
+        
+        .specialty-card.active {
+            border-color: #667eea;
+            background: #667eea;
+            color: white;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.25);
+        }
+        
+        .specialty-card .emoji {
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .specialty-card .category-badge {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            font-size: 0.6rem;
+            opacity: 0.5;
+        }
+        
+        .specialty-card .last-visited-badge {
+            position: absolute;
+            bottom: 6px;
+            right: 8px;
+            font-size: 0.55rem;
+            background: rgba(102, 126, 234, 0.15);
+            padding: 2px 8px;
+            border-radius: 12px;
+            color: #667eea;
+        }
+        
+        .specialty-card.last-visited {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.05);
+        }
+        
+        .specialty-card .specialty-name {
+            display: block;
+            margin-top: 4px;
+        }
+        
+        .specialty-card .specialty-score {
+            display: block;
+            font-size: 0.7rem;
+            color: #888;
+            margin-top: 2px;
+        }
+        
+        .specialty-card.active .specialty-score {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 30px;
+            background: transparent;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+        
+        .filter-btn.active {
+            border-color: #667eea;
+            background: #667eea;
+            color: white;
+        }
+        
+        .specialties-search {
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 16px;
+            font-size: 0.95rem;
+            width: 100%;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .specialties-search:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+        }
+        
+        .specialties-stats {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-divider {
+            color: #ddd;
+        }
+        
+        .selected-count {
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        @media (max-width: 520px) {
+            .specialties-grid {
+                grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+                gap: 10px;
+            }
+            
+            .specialty-card {
+                font-size: 0.75rem;
+                padding: 10px 8px;
+            }
+            
+            .specialty-card .emoji {
+                font-size: 1.2rem;
+            }
+            
+            .filter-container {
+                gap: 6px;
+            }
+            
+            .filter-btn {
+                font-size: 0.7rem;
+                padding: 6px 12px;
+            }
+            
+            .specialties-stats {
+                font-size: 0.7rem;
+                gap: 8px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .specialties-grid {
+                grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+                gap: 8px;
+            }
+            
+            .specialty-card {
+                font-size: 0.7rem;
+                padding: 8px 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- ============================================================ -->
+        <!-- 导航 -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='dashboard_zh.html'">
+                ← 返回
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 首页
+            </button>
+            <button class="back-btn" onclick="window.location.href='progression_zh.html'">
+                📈 进度
+            </button>
+            <button class="back-btn roulette-nav-btn" onclick="window.location.href='roulette_de_l_info_zh.html'">
+                🎰 信息轮盘
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 页眉 -->
+        <!-- ============================================================ -->
+        <div class="form-header">
+            <h1>📚 选择专业</h1>
+            <p>您好，<span id="userNameDisplay">医生</span>，选择您的专业，开启 ETEO 之旅！</p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- AI 欢迎消息 -->
+        <!-- ============================================================ -->
+        <div class="ia-greeting" id="iaGreeting" style="margin-bottom: 20px; background: rgba(102,126,234,0.08); border-radius: 16px; padding: 14px 18px; display: flex; align-items: flex-start; gap: 14px; border-left: 4px solid #667eea;">
+            <div class="ia-avatar" style="font-size: 2rem; flex-shrink: 0;">🤖</div>
+            <div style="flex: 1;">
+                <p class="ia-message" id="iaSpecialtiesMessage" style="font-size: 0.92rem; line-height: 1.6; margin: 0; color: #2c3e50;">
+                    正在加载消息……
+                </p>
+                <button class="listen-btn-small" id="listenSpecialtiesBtn" style="margin-top: 8px; padding: 4px 14px; font-size: 0.75rem; background: rgba(102,126,234,0.15); border: none; border-radius: 20px; color: #667eea; cursor: pointer;">
+                    🔊 收听
+                </button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 统计 -->
+        <!-- ============================================================ -->
+        <div class="specialties-stats" id="specialtiesStats">
+            <span>📚 共 <span id="totalSpecialties">36</span> 个专业</span>
+            <span class="stat-divider">|</span>
+            <span>🔄 最近访问：<span id="lastVisited">无</span></span>
+            <span class="stat-divider">|</span>
+            <span>📊 得分：<span id="userScore">0%</span></span>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 筛选 -->
+        <!-- ============================================================ -->
+        <div class="filter-container" id="filterContainer">
+            <button class="filter-btn active" data-filter="all">🔍 全部</button>
+            <button class="filter-btn" data-filter="clinique">🏥 临床</button>
+            <button class="filter-btn" data-filter="technique">🔬 技术</button>
+            <button class="filter-btn" data-filter="gestion">📊 管理</button>
+            <button class="filter-btn" data-filter="rh">👥 人力资源</button>
+            <button class="filter-btn" data-filter="sciences">🧬 科学</button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 搜索 -->
+        <!-- ============================================================ -->
+        <input type="text" class="specialties-search" id="searchInput" placeholder="🔍 搜索专业……">
+
+        <!-- ============================================================ -->
+        <!-- 专业网格 -->
+        <!-- ============================================================ -->
+        <div class="specialties-grid" id="specialtiesGrid">
+            <!-- 由 JavaScript 填充 -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 计数器 -->
+        <!-- ============================================================ -->
+        <div style="text-align: center; font-size: 0.85rem; color: #888; margin-top: 10px;">
+            已选择 <span id="selectedCount">0</span> 个专业
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 操作 -->
+        <!-- ============================================================ -->
+        <div class="actions" style="margin-top: 20px;">
+            <button class="validate-btn" id="startQuizBtn" disabled>
+                🚀 开始测验
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 页脚 -->
+        <!-- ============================================================ -->
+        <div class="footer">
+            <p>© 2026 - Dr. SAID MAARAK 🇲🇦</p>
+        </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 提示消息 -->
+    <!-- ============================================================ -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ============================================================ -->
+    <!-- 主脚本 -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // 导入
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { SPECIALTIES, CATEGORY_LABELS } from '../js/config.js';
+        import tts from '../js/services/tts.js';
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // DOM 元素
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const specialtiesGrid = document.getElementById('specialtiesGrid');
+        const searchInput = document.getElementById('searchInput');
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const startQuizBtn = document.getElementById('startQuizBtn');
+        const selectedCount = document.getElementById('selectedCount');
+        const totalSpecialties = document.getElementById('totalSpecialties');
+        const lastVisited = document.getElementById('lastVisited');
+        const userScore = document.getElementById('userScore');
+        const userNameDisplay = document.getElementById('userNameDisplay');
+        const iaSpecialtiesMessage = document.getElementById('iaSpecialtiesMessage');
+        const listenSpecialtiesBtn = document.getElementById('listenSpecialtiesBtn');
+        
+        // ============================================================
+        // 存储
+        // ============================================================
+        
+        const storage = new StorageService();
+        let selectedSpecialty = null;
+        let currentFilter = 'all';
+        let searchTerm = '';
+        
+        // ============================================================
+        // 提示消息
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // 清理 TTS 用表情符号
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // 读取 URL 参数
+        // ============================================================
+        
+        function getUrlParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        
+        // ============================================================
+        // 加载用户数据（iOS 版本）
+        // ============================================================
+        
+        function loadUserData() {
+            const settings = storage.getSettings() || {};
+            const user = settings.user || {};
+            
+            // ✅ iOS：displayName 带回退
+            const displayName = user.displayName || user.fullName || '医生';
+            if (userNameDisplay) {
+                userNameDisplay.textContent = displayName;
+            }
+            
+            // 最近访问的专业
+            if (settings.lastSpecialty) {
+                const spec = SPECIALTIES.find(s => s.id === settings.lastSpecialty);
+                if (spec) {
+                    lastVisited.textContent = spec.name;
+                }
+            }
+            
+            // 平均得分
+            const scores = settings.scores || {};
+            let totalScore = 0;
+            let totalCount = 0;
+            for (const [specId, levels] of Object.entries(scores)) {
+                if (typeof levels === 'object' && levels !== null) {
+                    for (const [level, data] of Object.entries(levels)) {
+                        if (data && data.percentage) {
+                            totalScore += data.percentage;
+                            totalCount++;
+                        }
+                    }
+                }
+            }
+            if (totalCount > 0) {
+                userScore.textContent = Math.round(totalScore / totalCount) + '%';
+            }
+            
+            totalSpecialties.textContent = SPECIALTIES.length;
+        }
+        
+        // ============================================================
+        // 生成 AI 消息
+        // ============================================================
+        
+        async function generateIAMessage() {
+            try {
+                const settings = storage.getSettings() || {};
+                // ✅ iOS：displayName 带回退
+                const userName = settings.user?.displayName || settings.user?.fullName || '医生';
+                
+                const scores = settings.scores || {};
+                let recommended = null;
+                let lowestScore = 100;
+                
+                SPECIALTIES.forEach(spec => {
+                    const specScores = scores[spec.id] || {};
+                    let specTotal = 0;
+                    let specCount = 0;
+                    for (const [level, data] of Object.entries(specScores)) {
+                        if (data && data.percentage) {
+                            specTotal += data.percentage;
+                            specCount++;
+                        }
+                    }
+                    if (specCount > 0) {
+                        const avg = specTotal / specCount;
+                        if (avg < lowestScore) {
+                            lowestScore = avg;
+                            recommended = spec;
+                        }
+                    }
+                });
+                
+                let message = '';
+                let ttsMessage = '';
+                
+                message = `您好，${userName}！ 👋<br>`;
+                message += `欢迎来到您的 ETEO 之旅。您将发现 <strong>${SPECIALTIES.length} 个迷人的牙科专业</strong>。<br>`;
+                message += `每一个都将为您带来新的技能和知识。<br><br>`;
+                ttsMessage = `您好，${userName}。欢迎来到您的 ETEO 之旅。您将发现 ${SPECIALTIES.length} 个迷人的牙科专业。每一个都将为您带来新的技能和知识。 `;
+                
+                if (recommended) {
+                    message += `💡 我还建议您练习 <strong>${recommended.emoji} ${recommended.name}</strong>，这是一个您可以取得更大进步的专业。<br>`;
+                    message += `这是加强您该领域技能的绝佳机会。<br><br>`;
+                    ttsMessage += `我还建议您练习 ${recommended.name}，这是一个您可以取得更大进步的专业。这是加强您该领域技能的绝佳机会。 `;
+                }
+                
+                message += `那么，今天您想从哪个专业开始？ 🚀`;
+                ttsMessage += `那么，今天您想从哪个专业开始？`;
+                
+                iaSpecialtiesMessage.innerHTML = message;
+                window._ttsSpecialtiesMessage = cleanTextForTTS(ttsMessage);
+                
+                if (listenSpecialtiesBtn) {
+                    listenSpecialtiesBtn.style.display = 'inline-block';
+                }
+                
+                setTimeout(() => {
+                    if (window.tts && typeof window.tts.speak === 'function') {
+                        const text = window._ttsSpecialtiesMessage || '';
+                        if (text) {
+                            window.tts.speak(text, 'zh', 0.9, 1.0);
+                        }
+                    }
+                }, 1200);
+                
+            } catch (error) {
+                console.error('❌ 生成 AI 消息时出错：', error);
+                iaSpecialtiesMessage.innerHTML = '⚠️ 消息不可用。';
+            }
+        }
+        
+        // ============================================================
+        // 收听按钮
+        // ============================================================
+        
+        listenSpecialtiesBtn.addEventListener('click', function() {
+            if (!window.tts || typeof window.tts.speak !== 'function') {
+                showToast('❌ TTS 不可用', 3000);
+                return;
+            }
+            
+            if (window.tts.isSpeakingNow && window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 收听';
+                this.classList.remove('listening');
+                return;
+            }
+            
+            const text = window._ttsSpecialtiesMessage || '';
+            if (!text) {
+                showToast('⚠️ 消息不可用', 3000);
+                return;
+            }
+            
+            this.textContent = '⏹️ 停止';
+            this.classList.add('listening');
+            
+            window.tts.speak(
+                text,
+                'zh',
+                0.9,
+                1.0,
+                () => {
+                    this.textContent = '🔊 收听';
+                    this.classList.remove('listening');
+                },
+                (error) => {
+                    console.error('❌ TTS 错误：', error);
+                    this.textContent = '🔊 收听';
+                    this.classList.remove('listening');
+                    showToast('❌ 语音朗读错误', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // 渲染专业（按字母顺序排序）
+        // ============================================================
+        
+        function renderSpecialties() {
+            const settings = storage.getSettings() || {};
+            const scores = settings.scores || {};
+            const lastSpecialty = settings.lastSpecialty;
+            
+            // ✅ 按字母顺序排序
+            let filtered = [...SPECIALTIES].sort((a, b) => a.name.localeCompare(b.name, 'zh'));
+            
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(spec => spec.category === currentFilter);
+            }
+            
+            if (searchTerm) {
+                const term = searchTerm.toLowerCase();
+                filtered = filtered.filter(spec => 
+                    spec.name.toLowerCase().includes(term) ||
+                    spec.id.toLowerCase().includes(term)
+                );
+            }
+            
+            if (filtered.length === 0) {
+                specialtiesGrid.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #888;">
+                        🔍 未找到专业
+                    </div>
+                `;
+                return;
+            }
+            
+            specialtiesGrid.innerHTML = filtered.map(spec => {
+                const isLast = spec.id === lastSpecialty;
+                const specScores = scores[spec.id] || {};
+                let levelCount = 0;
+                let totalPercentage = 0;
+                for (const [level, data] of Object.entries(specScores)) {
+                    if (data && data.percentage && data.percentage >= 60) {
+                        levelCount++;
+                        totalPercentage += data.percentage;
+                    }
+                }
+                const avgScore = levelCount > 0 ? Math.round(totalPercentage / levelCount) : 0;
+                const isActive = spec.id === selectedSpecialty;
+                
+                return `
+                    <div class="specialty-card ${isActive ? 'active' : ''} ${isLast ? 'last-visited' : ''}" 
+                         data-id="${spec.id}" 
+                         onclick="selectSpecialty('${spec.id}')">
+                        <span class="emoji">${spec.emoji}</span>
+                        <span class="specialty-name">${spec.name}</span>
+                        <span class="category-badge">${CATEGORY_LABELS[spec.category] || ''}</span>
+                        ${isLast ? '<span class="last-visited-badge">🔄 最近</span>' : ''}
+                        ${levelCount > 0 ? `<span class="specialty-score">📊 ${avgScore}% (${levelCount}/6)</span>` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // ============================================================
+        // 选择一个专业
+        // ============================================================
+        
+        window.selectSpecialty = function(id) {
+            if (selectedSpecialty === id) {
+                selectedSpecialty = null;
+            } else {
+                selectedSpecialty = id;
+            }
+            
+            const settings = storage.getSettings() || {};
+            settings.lastSpecialty = id;
+            storage.saveSettings(settings);
+            
+            updateSelection();
+            renderSpecialties();
+        };
+        
+        function updateSelection() {
+            if (selectedSpecialty) {
+                const spec = SPECIALTIES.find(s => s.id === selectedSpecialty);
+                if (spec) {
+                    selectedCount.textContent = `1（${spec.emoji} ${spec.name}）`;
+                    startQuizBtn.disabled = false;
+                    startQuizBtn.textContent = `🚀 开始 ${spec.name}`;
+                    return;
+                }
+            }
+            selectedCount.textContent = '0';
+            startQuizBtn.disabled = true;
+            startQuizBtn.textContent = '🚀 开始测验';
+        }
+        
+        // ============================================================
+        // 开始测验
+        // ============================================================
+        
+        startQuizBtn.addEventListener('click', () => {
+            if (!selectedSpecialty) {
+                showToast('⚠️ 请选择一个专业', 3000);
+                return;
+            }
+            
+            const settings = storage.getSettings() || {};
+            settings.selectedSpecialty = selectedSpecialty;
+            storage.saveSettings(settings);
+            
+            window.location.href = `quiz_zh.html?specialty=${selectedSpecialty}`;
+        });
+        
+        // ============================================================
+        // 筛选
+        // ============================================================
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderSpecialties();
+            });
+        });
+        
+        // ============================================================
+        // 搜索
+        // ============================================================
+        
+        searchInput.addEventListener('input', (e) => {
+            searchTerm = e.target.value.trim();
+            renderSpecialties();
+        });
+        
+        // ============================================================
+        // 初始化
+        // ============================================================
+        
+        function init() {
+            Logger.info('📚 选择专业页面 iOS 已加载（中文）');
+            
+            loadUserData();
+            renderSpecialties();
+            generateIAMessage();
+            
+            // ✅ 从 URL 自动选择
+            const specialtyParam = getUrlParam('specialty');
+            if (specialtyParam) {
+                const spec = SPECIALTIES.find(s => s.id === specialtyParam);
+                if (spec) {
+                    window.selectSpecialty(specialtyParam);
+                    setTimeout(() => {
+                        const card = document.querySelector(`.specialty-card[data-id="${specialtyParam}"]`);
+                        if (card) {
+                            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            card.style.transition = 'box-shadow 0.3s ease';
+                            card.style.boxShadow = '0 0 0 4px #667eea, 0 8px 30px rgba(102,126,234,0.3)';
+                            setTimeout(() => {
+                                card.style.boxShadow = '';
+                            }, 2000);
+                        }
+                    }, 300);
+                    
+                    console.log(`🎯 已自动选择专业：${spec.name}`);
+                }
+            }
+            
+            console.log('📚 ETEO iOS - 选择专业已就绪（中文）');
+            console.log(`📊 共 ${SPECIALTIES.length} 个专业可用（按字母顺序排序）`);
+            console.log('🔍 筛选和搜索可用');
+            console.log('🤖 AI：带推荐的个性化消息');
+            console.log('✅ iOS：支持 displayName');
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

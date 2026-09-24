@@ -1,0 +1,2310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🎰 Ruleta de la Información - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        /* ============================================================
+           ESTILOS ESPECÍFICOS QUIZ DEL DÍA
+           ============================================================ */
+        
+        .roulette-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 10px auto;
+            max-width: 400px;
+        }
+        
+        .roulette-wrapper canvas {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.12);
+            display: block;
+        }
+        
+        .roulette-pointer {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+            filter: drop-shadow(0 0 8px #ff6b00) drop-shadow(0 0 20px #ff6b00);
+            animation: pointerPulse 1.5s ease-in-out infinite;
+            pointer-events: none;
+        }
+        
+        .roulette-pointer svg {
+            width: 30px;
+            height: 36px;
+            display: block;
+        }
+        
+        @keyframes pointerPulse {
+            0% { filter: drop-shadow(0 0 8px #ff6b00) drop-shadow(0 0 20px #ff6b00); }
+            50% { filter: drop-shadow(0 0 15px #ff6b00) drop-shadow(0 0 35px #ff6b00) drop-shadow(0 0 60px rgba(255,107,0,0.3)); }
+            100% { filter: drop-shadow(0 0 8px #ff6b00) drop-shadow(0 0 20px #ff6b00); }
+        }
+        
+        #levelRouletteContainer {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 20px;
+            border: 1px solid rgba(155,89,182,0.2);
+        }
+        
+        #levelRouletteContainer .roulette-wrapper {
+            max-width: 280px;
+        }
+        
+        #levelRouletteContainer .roulette-pointer {
+            top: -8px;
+        }
+        
+        #levelRouletteContainer .roulette-pointer svg {
+            width: 24px;
+            height: 30px;
+        }
+        
+        .roulette-result {
+            display: none;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            padding: 10px 16px;
+            background: #f0f4ff;
+            border-radius: 14px;
+            border-left: 4px solid #667eea;
+            margin: 8px auto;
+            max-width: 400px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        
+        .roulette-result .highlight {
+            color: #667eea;
+            font-weight: 800;
+        }
+        
+        .roulette-spin-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #f57c00, #e65100);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(245, 124, 0, 0.3);
+            margin: 5px 0;
+        }
+        
+        .roulette-spin-btn:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 35px rgba(245, 124, 0, 0.4);
+        }
+        
+        .roulette-spin-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+            background: #b0b0b0;
+            box-shadow: none;
+        }
+        
+        .roulette-replay-btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.25);
+        }
+        
+        .roulette-replay-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.35);
+        }
+        
+        .roulette-replay-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .ia-greeting {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 15px;
+            color: white;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            text-align: left;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.25);
+        }
+        
+        .ia-avatar {
+            font-size: 2.5rem;
+            flex-shrink: 0;
+            animation: iaPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes iaPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .ia-message {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        .ia-message strong {
+            color: #ffd700;
+        }
+        
+        @keyframes iaPulseResult {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            25% { transform: scale(1.05) rotate(-5deg); }
+            75% { transform: scale(1.05) rotate(5deg); }
+        }
+        
+        .ia-result-avatar {
+            animation: iaPulseResult 2s ease-in-out infinite;
+        }
+        
+        .btn-share {
+            padding: 12px 28px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #1da1f2, #0d8bd9);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+        
+        .btn-share:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(29, 161, 242, 0.4);
+        }
+        
+        .roulette-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin: 10px 0;
+        }
+        
+        .roulette-stat-item {
+            background: white;
+            border-radius: 12px;
+            padding: 12px 10px;
+            text-align: center;
+            border: 1px solid #e8e8e8;
+        }
+        
+        .roulette-stat-item .number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #2c3e50;
+        }
+        
+        .roulette-stat-item .label {
+            font-size: 0.7rem;
+            color: #888;
+            display: block;
+            margin-top: 4px;
+        }
+        
+        .roulette-section {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            padding: 16px;
+            margin-top: 16px;
+            border: 1px solid rgba(255, 152, 0, 0.2);
+        }
+        
+        .roulette-section h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        /* ============================================================
+           ESTILOS POPUP PAGO
+           ============================================================ */
+        
+        .payment-lock-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        
+        .payment-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .payment-popup {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 380px;
+            width: 90%;
+            text-align: center;
+            animation: popupIn 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        @keyframes popupIn {
+            from { transform: scale(0.9) translateY(20px); opacity: 0; }
+            to { transform: scale(1) translateY(0); opacity: 1; }
+        }
+        
+        .payment-popup h2 {
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+        
+        .payment-popup p {
+            color: #666;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        .payment-popup .features {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 12px;
+            margin: 15px 0;
+            text-align: left;
+        }
+        
+        .payment-popup .features p {
+            margin: 4px 0;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        
+        .payment-popup .pay-btn {
+            padding: 14px 40px;
+            background: linear-gradient(135deg, #ffd700, #f57c00);
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #2c3e50;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .payment-popup .pay-btn:hover:not(:disabled) {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+        }
+        
+        .payment-popup .pay-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .payment-popup .close-btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            width: 100%;
+            transition: color 0.3s ease;
+        }
+        
+        .payment-popup .close-btn:hover {
+            color: #333;
+        }
+        
+        .payment-popup .secure-text {
+            font-size: 0.7rem;
+            color: #aaa;
+            margin-top: 10px;
+        }
+        
+        .payment-popup .info-box {
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+            text-align: left;
+        }
+        
+        .payment-popup .info-box.success {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .payment-popup .info-box.success p {
+            color: #2e7d32;
+        }
+        
+        .payment-popup .info-box.warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .payment-popup .info-box.warning p {
+            color: #856404;
+        }
+        
+        .payment-popup .email-section {
+            margin: 15px 0;
+        }
+        
+        .payment-popup .email-section p {
+            font-size: 0.9rem;
+            color: #555;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        
+        .payment-popup .email-input-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .payment-popup .email-input-group input {
+            flex: 1;
+            min-width: 180px;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        
+        .payment-popup .email-input-group input:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+        
+        .payment-popup .email-input-group .pay-btn {
+            width: auto;
+            padding: 12px 20px;
+            white-space: nowrap;
+        }
+        
+        .payment-popup .email-note {
+            font-size: 0.7rem;
+            color: #999;
+            margin-top: 5px;
+            text-align: left;
+        }
+        
+        .payment-popup .info-box.warning p {
+            margin: 0;
+        }
+        
+        /* ✅ CONTADOR DE INTENTOS */
+        .quota-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin: 5px 0;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border: 2px solid #4caf50;
+        }
+        
+        .quota-badge.warning {
+            background: #fff3cd;
+            color: #856404;
+            border-color: #ffc107;
+        }
+        
+        .quota-badge.danger {
+            background: #ffebee;
+            color: #c62828;
+            border-color: #e74c3c;
+            animation: pulseBadge 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes pulseBadge {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .quota-badge.unlimited {
+            background: #bbdefb;
+            color: #0d47a1;
+            border-color: #667eea;
+        }
+        
+        @media (max-width: 520px) {
+            .ia-greeting {
+                padding: 12px 14px;
+                gap: 10px;
+            }
+            .ia-avatar {
+                font-size: 2rem;
+            }
+            .ia-message {
+                font-size: 0.85rem;
+            }
+            .roulette-pointer {
+                top: -6px;
+            }
+            .roulette-pointer svg {
+                width: 24px;
+                height: 30px;
+            }
+            #levelRouletteContainer .roulette-pointer {
+                top: -5px;
+            }
+            #levelRouletteContainer .roulette-pointer svg {
+                width: 20px;
+                height: 26px;
+            }
+            .roulette-spin-btn {
+                font-size: 0.85rem;
+                padding: 10px 20px;
+            }
+            .roulette-result {
+                font-size: 0.85rem;
+                padding: 8px 12px;
+            }
+            .btn-share {
+                font-size: 0.85rem;
+                padding: 10px 20px;
+            }
+            .roulette-stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .payment-popup {
+                padding: 20px;
+            }
+            .payment-popup .email-input-group input {
+                min-width: 140px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .ia-avatar {
+                font-size: 1.6rem;
+            }
+            .ia-message {
+                font-size: 0.78rem;
+            }
+            .roulette-pointer {
+                top: -4px;
+            }
+            .roulette-pointer svg {
+                width: 20px;
+                height: 26px;
+            }
+            .payment-popup {
+                padding: 15px;
+            }
+        }
+    </style>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "firebase/functions": "https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container quiz-container">
+        
+        <!-- ============================================================ -->
+        <!-- NAVEGACIÓN -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='../index.html'">🏠 Inicio</button>
+            <button class="back-btn" onclick="window.location.href='dashboard_es.html'">📊 Dashboard</button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PANTALLA 1 : RULETA -->
+        <!-- ============================================================ -->
+        <div id="rouletteScreen">
+            <div style="text-align: center; margin-bottom: 8px;">
+                <h1 style="font-size: 1.6rem; margin: 0; color: #2c3e50;">🎰 Ruleta de la Información</h1>
+            </div>
+
+            <!-- ✅ CONTADOR DE INTENTOS -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <span id="quotaBadge" class="quota-badge">🎯 20 intentos gratuitos restantes</span>
+            </div>
+
+            <div class="ia-greeting" id="iaGreeting">
+                <div class="ia-avatar">🤖</div>
+                <p class="ia-message" id="iaMessage">
+                    Hola <strong id="iaUserName">Doctor</strong> ! 🌟<br>
+                    Bienvenido a la <strong>🎰 Ruleta de la Información</strong> !<br>
+                    Gira la rueda de especialidades, luego la de niveles, y pon a prueba tus conocimientos.<br>
+                    <span style="font-size: 0.85rem; opacity: 0.9;">🎯 ¿Listo para aceptar el desafío ?</span>
+                </p>
+            </div>
+
+            <!-- RUEDA 1 : 36 ESPECIALIDADES -->
+            <div class="roulette-wrapper">
+                <canvas id="rouletteCanvas" width="400" height="400"></canvas>
+                <div class="roulette-pointer" id="roulettePointer">
+                    <svg viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="15,36 3,0 10,0 15,22 20,0 27,0" fill="#ff6b00" stroke="#ffaa00" stroke-width="2"/>
+                        <polygon points="15,32 6,4 11,4 15,20 19,4 24,4" fill="#ffaa00" opacity="0.5"/>
+                        <polygon points="15,28 9,8 12,8 15,18 18,8 21,8" fill="#ffdd00" opacity="0.3"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 8px 0 5px 0;">
+                <button id="spinBtn" class="roulette-spin-btn">🎯 GIRAR LA RUEDA DE ESPECIALIDADES</button>
+            </div>
+
+            <div id="specialtyResult" class="roulette-result">
+                <span>🦷 Especialidad : </span>
+                <span id="selectedSpecialtyDisplay" class="highlight">?</span>
+            </div>
+
+            <!-- RUEDA 2 : 6 NIVELES -->
+            <div id="levelRouletteContainer">
+                <h3 style="color: #2c3e50; margin-bottom: 4px; font-size: 1.1rem;">🎯 Elige tu nivel</h3>
+                <p style="color: #888; font-size: 0.85rem; margin-bottom: 10px;">¡Gira la rueda de niveles !</p>
+                
+                <div class="roulette-wrapper">
+                    <canvas id="levelRouletteCanvas" width="300" height="300"></canvas>
+                    <div class="roulette-pointer" id="levelRoulettePointer">
+                        <svg viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="12,30 2,0 8,0 12,18 16,0 22,0" fill="#ff6b00" stroke="#ffaa00" stroke-width="2"/>
+                            <polygon points="12,27 4,2 9,2 12,17 15,2 20,2" fill="#ffaa00" opacity="0.5"/>
+                            <polygon points="12,24 7,4 10,4 12,15 14,4 17,4" fill="#ffdd00" opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <button id="spinLevelBtn" class="roulette-spin-btn" style="margin-top: 10px; background: linear-gradient(135deg, #9b59b6, #8e44ad); display: none;">
+                    🎯 GIRAR EL NIVEL
+                </button>
+                
+                <div id="levelResult" class="roulette-result" style="margin-top: 8px;">
+                    <span>📊 Nivel : </span>
+                    <span id="selectedLevelDisplay" class="highlight">?</span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 8px 0;">
+                <button id="startQuizBtn" class="roulette-replay-btn" style="display:none; background: linear-gradient(135deg, #4caf50, #43a047);">
+                    🚀 COMENZAR EL QUIZ
+                </button>
+            </div>
+
+            <div id="tirageHistory" style="display: none; margin-top: 8px;">
+                <div style="font-size: 0.65rem; color: #888; text-align: center; margin-bottom: 4px;">📜 Últimos sorteos</div>
+                <div id="historyChips" style="display: flex; gap: 5px; justify-content: center; flex-wrap: wrap;"></div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PANTALLA 2 : QUIZ (1 PREGUNTA) -->
+        <!-- ============================================================ -->
+        <div id="questionContainer" style="display:none;">
+            <div class="quiz-title" id="quizTitle">🎰 Ruleta de la Información</div>
+            <div class="question-text" id="questionText">Pregunta en curso...</div>
+            <div class="tts-button-row">
+                <button class="tts-btn" id="ttsQuestionBtn">🔊 Leer la pregunta</button>
+            </div>
+            <div class="options" id="optionsContainer"></div>
+            <div class="feedback-container" id="feedbackContainer" style="display:none;">
+                <span id="feedbackMessage"></span>
+                <span class="points-badge" id="pointsBadge"></span>
+                <button class="tts-btn tts-feedback-btn" id="ttsFeedbackBtn" style="display:none;">🔊 Reescuchar</button>
+            </div>
+            <div class="explanation-box" id="explanationBox" style="display:none;">
+                <div class="explanation-title">📖 Explicación</div>
+                <p id="explanationText"></p>
+                <div class="correct-answer" id="correctAnswerText"></div>
+                <button class="tts-btn tts-explanation-btn" id="ttsExplanationBtn" style="display:none;">🔊 Leer la explicación</button>
+            </div>
+            <div class="timer-bottom" id="timerBottom">⏱️ Tiempo restante : <span id="timerBottomValue">40</span> segundos</div>
+            <div class="nav-buttons">
+                <button class="nav-btn" id="quitBtn">🚪 Salir</button>
+                <button class="nav-btn" id="nextBtn" disabled>Siguiente ➜</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PANTALLA 3 : RESULTADO CON IA -->
+        <!-- ============================================================ -->
+        <div class="result-container" id="resultContainer" style="display:none;">
+            <h2 id="resultTitle">✅ ¡Quiz completado !</h2>
+            <div class="final-score" id="finalScore">1/1</div>
+            <div class="percentage" id="percentage">100%</div>
+            <div class="message" id="resultMessage">🎉 ¡Perfecto !</div>
+            <div id="badgeContainer"></div>
+            <div id="iaResultContainer"></div>
+            <div class="result-buttons" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 15px;">
+                <button class="roulette-replay-btn" id="anotherQuizBtn" style="background: linear-gradient(135deg, #ff9800, #f57c00);">🎰 Otro quiz</button>
+                <button class="btn-levels" id="chooseSpecialtyBtn" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 12px 28px; border-radius: 30px; font-weight: 700; cursor: pointer;">📚 Elegir una especialidad</button>
+                <button class="btn-menu" id="menuBtn">🏠 Menú</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- TOAST -->
+        <!-- ============================================================ -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <script type="module">
+        // ============================================================
+        // IMPORTS LIGEROS
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import SubscriptionService from '../js/services/subscription.js';
+        import { RewardService } from '../js/services/rewardService.js';
+        import { ShareService } from '../js/services/shareService.js';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE
+        // ============================================================
+        
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore, doc, updateDoc, arrayUnion, getDoc, addDoc, collection, setDoc, increment } from 'firebase/firestore';
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // LISTA DE LAS 36 ESPECIALIDADES
+        // ============================================================
+        
+        const SPECIALTIES = [
+            { id: 'chirurgie', name: 'Cirugía', emoji: '🔪' },
+            { id: 'endo', name: 'Endodoncia', emoji: '🦷' },
+            { id: 'esthetique', name: 'Estética', emoji: '✨' },
+            { id: 'implantologie', name: 'Implantología', emoji: '🔩' },
+            { id: 'Médecine_buccale', name: 'Medicina bucal', emoji: '👄' },
+            { id: 'orthodontie', name: 'Ortodoncia', emoji: '🦷' },
+            { id: 'parodontologie', name: 'Periodoncia', emoji: '🦷' },
+            { id: 'pedodontie', name: 'Odontopediatría', emoji: '👶' },
+            { id: 'prothese', name: 'Prótesis', emoji: '🦷' },
+            { id: 'Relationnel&Psychomotricité', name: 'Relacional y Psicomotricidad', emoji: '🧠' },
+            { id: 'Soins_conservateurs', name: 'Tratamientos conservadores', emoji: '🦷' },
+            { id: 'anesthesiologie', name: 'Anestesiología', emoji: '💉' },
+            { id: 'cfao_impression3d', name: 'CFAO e Impresión 3D', emoji: '🖨️' },
+            { id: 'photographie', name: 'Fotografía', emoji: '📸' },
+            { id: 'radiologie', name: 'Radiología', emoji: '📷' },
+            { id: 'sterilisation', name: 'Esterilización', emoji: '🧼' },
+            { id: 'aides_installation', name: 'Ayudas a la instalación', emoji: '🔧' },
+            { id: 'amenagement_cabinet', name: 'Acondicionamiento del consultorio', emoji: '🏥' },
+            { id: 'comptabilite_fiscalite', name: 'Contabilidad y Fiscalidad', emoji: '📊' },
+            { id: 'conventionnement_amo', name: 'Convenio y AMO', emoji: '📋' },
+            { id: 'fiscalite_dentiste', name: 'Fiscalidad del dentista', emoji: '💰' },
+            { id: 'formes_juridiques', name: 'Formas jurídicas', emoji: '🏛️' },
+            { id: 'gestion_cabinet', name: 'Gestión del consultorio', emoji: '📈' },
+            { id: 'Informatique Logiciels dentaires', name: 'Informática y Software', emoji: '💻' },
+            { id: 'mutuelles_prises_en_charge', name: 'Mutuas y Cobertura', emoji: '🛡️' },
+            { id: 'sante_publique', name: 'Salud pública', emoji: '🌍' },
+            { id: 'assistantes_dentaires', name: 'Asistentes dentales', emoji: '👩‍⚕️' },
+            { id: 'code_deontologie', name: 'Código deontológico', emoji: '📜' },
+            { id: 'conflits_médiation', name: 'Conflictos y Mediación', emoji: '🤝' },
+            { id: 'ethique_deontologie', name: 'Ética y Deontología', emoji: '⚖️' },
+            { id: 'Femmes_dentistes', name: 'Mujeres dentistas', emoji: '👩‍⚕️' },
+            { id: 'futur_docteur', name: 'Futuro doctor', emoji: '🎓' },
+            { id: 'ONMD_CRS_CRN', name: 'ONMD / CRS / CRN', emoji: '📇' },
+            { id: 'seniors', name: 'Mayores', emoji: '👴' },
+            { id: 'syndicat', name: 'Sindicato', emoji: '🤝' },
+            { id: 'materiaux_dentaires', name: 'Materiales dentales', emoji: '🧪' }
+        ];
+        
+        const LEVELS = [
+            { id: 'debutant1', label: 'Principiante 1', emoji: '🌱' },
+            { id: 'debutant2', label: 'Principiante 2', emoji: '🌿' },
+            { id: 'intermediaire1', label: 'Intermedio 1', emoji: '🌳' },
+            { id: 'intermediaire2', label: 'Intermedio 2', emoji: '🌲' },
+            { id: 'expert1', label: 'Experto 1', emoji: '🔥' },
+            { id: 'expert2', label: 'Experto 2', emoji: '⭐' }
+        ];
+        
+        // ============================================================
+        // SERVICIOS
+        // ============================================================
+        
+        const storage = new StorageService();
+        const subscription = new SubscriptionService();
+        const rewardService = new RewardService();
+        const shareService = new ShareService();
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const spinBtn = document.getElementById('spinBtn');
+        const spinLevelBtn = document.getElementById('spinLevelBtn');
+        const startQuizBtn = document.getElementById('startQuizBtn');
+        const specialtyResult = document.getElementById('specialtyResult');
+        const selectedSpecialtyDisplay = document.getElementById('selectedSpecialtyDisplay');
+        const levelResult = document.getElementById('levelResult');
+        const selectedLevelDisplay = document.getElementById('selectedLevelDisplay');
+        const levelRouletteContainer = document.getElementById('levelRouletteContainer');
+        const tirageHistory = document.getElementById('tirageHistory');
+        const historyChips = document.getElementById('historyChips');
+        const questionContainer = document.getElementById('questionContainer');
+        const questionText = document.getElementById('questionText');
+        const optionsContainer = document.getElementById('optionsContainer');
+        const feedbackContainer = document.getElementById('feedbackContainer');
+        const feedbackMessage = document.getElementById('feedbackMessage');
+        const pointsBadge = document.getElementById('pointsBadge');
+        const explanationBox = document.getElementById('explanationBox');
+        const explanationText = document.getElementById('explanationText');
+        const correctAnswerText = document.getElementById('correctAnswerText');
+        const timerBottomValue = document.getElementById('timerBottomValue');
+        const timerBottom = document.getElementById('timerBottom');
+        const nextBtn = document.getElementById('nextBtn');
+        const quitBtn = document.getElementById('quitBtn');
+        const resultContainer = document.getElementById('resultContainer');
+        const finalScore = document.getElementById('finalScore');
+        const percentage = document.getElementById('percentage');
+        const resultMessage = document.getElementById('resultMessage');
+        const badgeContainer = document.getElementById('badgeContainer');
+        const anotherQuizBtn = document.getElementById('anotherQuizBtn');
+        const chooseSpecialtyBtn = document.getElementById('chooseSpecialtyBtn');
+        const menuBtn = document.getElementById('menuBtn');
+        const rouletteScreen = document.getElementById('rouletteScreen');
+        const quizTitle = document.getElementById('quizTitle');
+        const resultTitle = document.getElementById('resultTitle');
+        const ttsQuestionBtn = document.getElementById('ttsQuestionBtn');
+        const ttsFeedbackBtn = document.getElementById('ttsFeedbackBtn');
+        const ttsExplanationBtn = document.getElementById('ttsExplanationBtn');
+        const iaMessage = document.getElementById('iaMessage');
+        const iaUserName = document.getElementById('iaUserName');
+        const iaResultContainer = document.getElementById('iaResultContainer');
+        const quotaBadge = document.getElementById('quotaBadge');
+        
+        // ============================================================
+        // ESTADO
+        // ============================================================
+        
+        let currentSpecialty = null;
+        let currentLevel = null;
+        let currentQuestion = null;
+        let currentQuestions = [];
+        let isAnswered = false;
+        let timerInterval = null;
+        let timeRemaining = 30;
+        let quizHistory = [];
+        let userId = null;
+        let userName = 'Doctor';
+        let freeQuizzesUsed = 0;
+        let isSubscribed = false;
+        let subscriptionExpiresAt = null;
+        let MAX_FREE_QUIZZES = 20;
+        
+        // ============================================================
+        // LIMPIAR TEXTO PARA TTS
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // FUNCIÓN PARA DETENER TTS
+        // ============================================================
+        
+        function stopTTS() {
+            try {
+                if (window.tts && typeof window.tts.stop === 'function') {
+                    window.tts.stop();
+                }
+            } catch (e) {
+                console.warn('Error al detener TTS:', e);
+            }
+            document.querySelectorAll('.tts-btn.listening, .listen-btn.listening, .listen-synopsis-btn.listening, .listen-chapter-btn.listening').forEach(btn => {
+                const originalText = btn.dataset.originalText || '🔊';
+                btn.textContent = originalText;
+                btn.classList.remove('listening');
+            });
+        }
+        
+        // ============================================================
+        // TTS
+        // ============================================================
+        
+        function speakText(text, button, buttonText = '🔊') {
+            if (!window.tts || typeof window.tts.speak !== 'function') {
+                console.warn('⚠️ TTS no disponible');
+                if (button) {
+                    button.textContent = buttonText;
+                    button.classList.remove('listening');
+                }
+                return;
+            }
+            const cleanText = cleanTextForTTS(text);
+            if (!cleanText || cleanText.trim() === '') {
+                console.warn('⚠️ Texto TTS vacío después de limpiar');
+                if (button) {
+                    button.textContent = buttonText;
+                    button.classList.remove('listening');
+                }
+                return;
+            }
+            let wasSpeaking = false;
+            try {
+                if (window.tts.isSpeakingNow && window.tts.isSpeakingNow()) {
+                    wasSpeaking = true;
+                    window.tts.stop();
+                    console.log('⏹️ TTS detenido antes de nuevo mensaje');
+                }
+            } catch (e) {
+                console.warn('Error al detener TTS:', e);
+            }
+            document.querySelectorAll('.tts-btn.listening, .listen-btn.listening, .listen-synopsis-btn.listening, .listen-chapter-btn.listening').forEach(btn => {
+                const originalText = btn.dataset.originalText || '🔊';
+                btn.textContent = originalText;
+                btn.classList.remove('listening');
+            });
+            if (button) {
+                button.dataset.originalText = buttonText;
+                button.textContent = '⏹️ Detener';
+                button.classList.add('listening');
+            }
+            const startSpeaking = () => {
+                try {
+                    window.tts.speak(
+                        cleanText,
+                        'es',
+                        0.9,
+                        1.0,
+                        () => {
+                            if (button) {
+                                button.textContent = buttonText;
+                                button.classList.remove('listening');
+                            }
+                            console.log('✅ TTS finalizado con éxito');
+                        },
+                        (error) => {
+                            console.warn('⚠️ Error TTS (ignorado):', error);
+                            if (button) {
+                                button.textContent = buttonText;
+                                button.classList.remove('listening');
+                            }
+                        }
+                    );
+                } catch (e) {
+                    console.warn('⚠️ Error al iniciar TTS:', e);
+                    if (button) {
+                        button.textContent = buttonText;
+                        button.classList.remove('listening');
+                    }
+                }
+            };
+            if (wasSpeaking) {
+                console.log('⏳ Esperando detención del TTS...');
+                setTimeout(startSpeaking, 200);
+            } else {
+                startSpeaking();
+            }
+        }
+        
+        // ============================================================
+        // EFECTOS DE SONIDO
+        // ============================================================
+        
+        function playRouletteSound(type, totalDuration) {
+            try {
+                const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                if (type === 'spin') {
+                    if (!totalDuration) totalDuration = 4000;
+                    
+                    const minTicks = 15;
+                    const maxTicks = 35;
+                    const totalTicks = Math.min(maxTicks, Math.max(minTicks, Math.floor(totalDuration / 130)));
+                    
+                    let count = 0;
+                    const baseFreq = 523;
+                    const volume = 0.15;
+                    
+                    function playTick() {
+                        if (count >= totalTicks) return;
+                        
+                        const progress = count / totalTicks;
+                        const speedFactor = 0.4 + 0.6 * (1 - Math.sin(progress * Math.PI));
+                        const tickDelay = (totalDuration / totalTicks) * speedFactor * 0.9;
+                        
+                        const osc = audioCtx.createOscillator();
+                        const gain = audioCtx.createGain();
+                        osc.connect(gain);
+                        gain.connect(audioCtx.destination);
+                        
+                        const freqVariation = Math.sin(progress * Math.PI) * 200;
+                        osc.frequency.value = baseFreq + freqVariation;
+                        osc.type = 'square';
+                        
+                        gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                        gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.01);
+                        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+                        
+                        const oscH = audioCtx.createOscillator();
+                        const gainH = audioCtx.createGain();
+                        oscH.connect(gainH);
+                        gainH.connect(audioCtx.destination);
+                        oscH.frequency.value = (baseFreq + freqVariation) * 2;
+                        oscH.type = 'square';
+                        gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                        gainH.gain.linearRampToValueAtTime(volume * 0.3, audioCtx.currentTime + 0.01);
+                        gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
+                        oscH.start();
+                        oscH.stop(audioCtx.currentTime + 0.04);
+                        
+                        osc.start();
+                        osc.stop(audioCtx.currentTime + 0.05);
+                        
+                        count++;
+                        
+                        if (count < totalTicks) {
+                            setTimeout(playTick, tickDelay);
+                        }
+                    }
+                    
+                    setTimeout(playTick, 50);
+                    
+                } else if (type === 'win') {
+                    const notes = [392, 523, 659, 784, 1047];
+                    const volume = 0.25;
+                    const duration = 0.35;
+                    const delay = 140;
+                    
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            
+                            const harmonics = [2, 3, 4];
+                            harmonics.forEach((h, j) => {
+                                const oscH = audioCtx.createOscillator();
+                                const gainH = audioCtx.createGain();
+                                oscH.connect(gainH);
+                                gainH.connect(audioCtx.destination);
+                                oscH.frequency.value = freq * h;
+                                oscH.type = 'square';
+                                const volH = volume / (j + 2) * 0.5;
+                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
+                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
+                                oscH.start();
+                                oscH.stop(audioCtx.currentTime + duration * 0.7);
+                            });
+                            
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'lose') {
+                    const notes = [523, 494, 466, 440];
+                    const volume = 0.25;
+                    const duration = 0.4;
+                    const delay = 140;
+                    
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            
+                            const harmonics = [2, 3, 4];
+                            harmonics.forEach((h, j) => {
+                                const oscH = audioCtx.createOscillator();
+                                const gainH = audioCtx.createGain();
+                                oscH.connect(gainH);
+                                gainH.connect(audioCtx.destination);
+                                oscH.frequency.value = freq * h;
+                                oscH.type = 'square';
+                                const volH = volume / (j + 2) * 0.5;
+                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
+                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
+                                oscH.start();
+                                oscH.stop(audioCtx.currentTime + duration * 0.7);
+                            });
+                            
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'click') {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.frequency.value = 1200;
+                    osc.type = 'sine';
+                    gain.gain.setValueAtTime(0.20, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.05);
+                    
+                } else if (type === 'tada') {
+                    const notesTada = [523, 659, 784, 1047, 1318];
+                    notesTada.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + 0.12);
+                        }, i * 100);
+                    });
+                }
+            } catch (e) {
+                // Silencioso si Web Audio no es compatible
+            }
+        }
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // ✅ GESTIÓN DE INTENTOS Y SUSCRIPCIÓN
+        // ============================================================
+        
+        async function loadUserData() {
+            const user = auth.currentUser;
+            if (!user) return false;
+            
+            userId = user.uid;
+            
+            try {
+                const userRef = doc(db, 'users_ios', userId);
+                const snapshot = await getDoc(userRef);
+                
+                if (snapshot.exists()) {
+                    const data = snapshot.data();
+                    
+                    // Obtener información del usuario
+                    userName = data.displayName || data.fullName || 'Doctor';
+                    
+                    // Obtener contador de intentos
+                    freeQuizzesUsed = data?.rouletteStats?.freeQuizzesUsed || 0;
+                    
+                    // Obtener suscripción
+                    const sub = data?.rouletteSubscription;
+                    if (sub && sub.active && sub.expiresAt) {
+                        const expires = new Date(sub.expiresAt);
+                        if (expires > new Date()) {
+                            isSubscribed = true;
+                            subscriptionExpiresAt = expires;
+                        } else {
+                            // Suscripción expirada
+                            isSubscribed = false;
+                            // Actualizar Firebase
+                            await updateDoc(userRef, {
+                                'rouletteSubscription.active': false
+                            });
+                        }
+                    } else {
+                        isSubscribed = false;
+                    }
+                    
+                    console.log('📊 Datos de usuario cargados:');
+                    console.log('  👤 Nombre:', userName);
+                    console.log('  🎯 Intentos gratuitos usados:', freeQuizzesUsed);
+                    console.log('  💎 Suscrito:', isSubscribed);
+                    if (isSubscribed) {
+                        console.log('  📅 Expira el:', subscriptionExpiresAt.toLocaleDateString('es-ES'));
+                    }
+                    
+                    return true;
+                } else {
+                    // Nuevo usuario - crear datos por defecto
+                    await setDoc(userRef, {
+                        rouletteStats: {
+                            freeQuizzesUsed: 0,
+                            totalQuizzes: 0
+                        },
+                        rouletteSubscription: {
+                            active: false,
+                            expiresAt: null,
+                            paidAt: null
+                        }
+                    }, { merge: true });
+                    freeQuizzesUsed = 0;
+                    isSubscribed = false;
+                    return true;
+                }
+            } catch (error) {
+                console.error('❌ Error cargando datos:', error);
+                return false;
+            }
+        }
+        
+        function hasAccess() {
+            // ✅ Si suscrito y no expirado → acceso ilimitado
+            if (isSubscribed) {
+                return true;
+            }
+            
+            // ✅ Si quedan intentos → acceso gratuito
+            const remaining = MAX_FREE_QUIZZES - freeQuizzesUsed;
+            if (remaining > 0) {
+                return true;
+            }
+            
+            // ❌ Sin intentos → acceso denegado
+            return false;
+        }
+        
+        function getRemainingQuizzes() {
+            if (isSubscribed) return '♾️';
+            return Math.max(0, MAX_FREE_QUIZZES - freeQuizzesUsed);
+        }
+        
+        function updateQuotaDisplay() {
+            const remaining = getRemainingQuizzes();
+            
+            if (isSubscribed) {
+                quotaBadge.textContent = '💎 Acceso ilimitado - Válido 1 año';
+                quotaBadge.className = 'quota-badge unlimited';
+            } else if (remaining > 5) {
+                quotaBadge.textContent = `🎯 ${remaining} intentos gratuitos restantes`;
+                quotaBadge.className = 'quota-badge';
+            } else if (remaining > 0) {
+                quotaBadge.textContent = `⚠️ ${remaining} intento${remaining > 1 ? 's' : ''} restante${remaining > 1 ? 's' : ''}`;
+                quotaBadge.className = 'quota-badge warning';
+            } else {
+                quotaBadge.textContent = '🔒 Sin intentos - ¡Suscríbete !';
+                quotaBadge.className = 'quota-badge danger';
+            }
+        }
+        
+        async function incrementQuizCount() {
+            if (isSubscribed) return; // No es necesario incrementar si está suscrito
+            
+            try {
+                const userRef = doc(db, 'users_ios', userId);
+                await updateDoc(userRef, {
+                    'rouletteStats.freeQuizzesUsed': increment(1),
+                    'rouletteStats.totalQuizzes': increment(1)
+                });
+                freeQuizzesUsed++;
+                updateQuotaDisplay();
+                console.log(`✅ Quiz contado: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
+            } catch (error) {
+                console.error('❌ Error incrementando:', error);
+            }
+        }
+        
+        // ============================================================
+        // ✅ POPUP DE PAGO
+        // ============================================================
+        
+        function showPaymentPopup() {
+            // Detener TTS
+            stopTTS();
+            
+            // Verificar si ya existe la popup
+            if (document.querySelector('.payment-popup-overlay')) return;
+            
+            const overlay = document.createElement('div');
+            overlay.className = 'payment-popup-overlay';
+            
+            const remaining = getRemainingQuizzes();
+            
+            overlay.innerHTML = `
+                <div class="payment-popup">
+                    <div class="payment-lock-icon">🔒</div>
+                    <h2>🎯 ¡Sin intentos gratuitos !</h2>
+                    <p>
+                        Has utilizado tus <strong>${MAX_FREE_QUIZZES} intentos gratuitos</strong>.<br>
+                        <span style="font-size: 0.9rem; color: #888;">No te queda ningún intento.</span>
+                    </p>
+                    <p style="margin-top: 10px;">
+                        Para seguir jugando <strong>durante 1 año</strong>,<br>
+                        paga <strong>20 €</strong> mediante transferencia.
+                    </p>
+                    <div class="features">
+                        <p>✅ Acceso ilimitado durante 1 año</p>
+                        <p>✅ Todas las especialidades</p>
+                        <p>✅ Todos los niveles</p>
+                        <p>✅ Sin límite de quizzes</p>
+                    </div>
+                    <button class="pay-btn" id="payRouletteBtn">💳 Pagar 20 € por transferencia</button>
+                    <button class="close-btn" id="closePaymentPopup">❌ Volver más tarde</button>
+                    <p class="secure-text">🔒 Transferencia segura • RIB proporcionado después del clic</p>
+                </div>
+            `;
+            
+            document.body.appendChild(overlay);
+            
+            // 🔥 BOTÓN "PAGAR" → REGISTRA + REDIRIGE
+            document.getElementById('payRouletteBtn').addEventListener('click', async function() {
+                this.textContent = '⏳ Registrando...';
+                this.disabled = true;
+                
+                try {
+                    // ✅ REGISTRAR EL INTERÉS EN FIREBASE
+                    const interestData = {
+                        userId: userId || 'anonymous',
+                        userName: userName,
+                        type: 'roulette_abonnement',
+                        amount: 20,
+                        currency: 'EUR',
+                        source: 'roulette_de_la_info',
+                        interestedAt: new Date().toISOString(),
+                        timestamp: new Date().toISOString(),
+                        userAgent: navigator.userAgent || 'unknown',
+                        platform: navigator.platform || 'unknown',
+                        status: 'redirected_to_payment'
+                    };
+                    
+                    await addDoc(collection(db, 'payment_interests'), interestData);
+                    console.log('✅ Interés registrado en Firebase');
+                    showToast('📊 Redirigiendo a la página de pago...', 2000);
+                    
+                } catch (e) {
+                    console.warn('⚠️ Error Firebase:', e);
+                }
+                
+                // ✅ ELIMINAR LA POPUP
+                overlay.remove();
+                
+                // ✅ REDIRIGIR A LA PÁGINA RIB
+                window.location.href = `paiement_rib.html?type=roulette&amount=20&source=roulette`;
+            });
+            
+            document.getElementById('closePaymentPopup').addEventListener('click', function() {
+                overlay.remove();
+                showToast('💡 Puedes volver más tarde para suscribirte.', 3000);
+            });
+            
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) overlay.remove();
+            });
+            
+            // ✅ LECTURA TTS DEL MENSAJE
+            setTimeout(() => {
+                const ttsMessage = `Has utilizado tus ${MAX_FREE_QUIZZES} intentos gratuitos. Para seguir jugando durante 1 año, paga 20 euros por transferencia. Haz clic en el botón Pagar para acceder al RIB.`;
+                speakText(cleanTextForTTS(ttsMessage), null);
+            }, 500);
+        }
+        
+        // ============================================================
+        // MENSAJE DE BIENVENIDA IA
+        // ============================================================
+        
+        function displayIAWelcome() {
+            const settings = storage.getSettings() || {};
+            const name = settings.user?.fullName || userName || 'Doctor';
+            iaUserName.textContent = name;
+            
+            const remaining = getRemainingQuizzes();
+            
+            let message = '';
+            let ttsMessage = '';
+            
+            if (isSubscribed) {
+                const expireDate = subscriptionExpiresAt ? subscriptionExpiresAt.toLocaleDateString('es-ES') : 'en 1 año';
+                message = `Hola <strong>${name}</strong> ! 🌟<br>Bienvenido a la <strong>🎰 Ruleta de la Información</strong> !<br><br>💎 Tienes una <strong>suscripción ilimitada</strong> válida hasta el <strong>${expireDate}</strong>.<br><br>🎯 Gira la rueda de especialidades, luego la de niveles, y pon a prueba tus conocimientos sin límite !<br><br>🔥 ¿Listo para aceptar el desafío ?`;
+                ttsMessage = `Hola ${name}. Bienvenido a la Ruleta de la Información. Tienes una suscripción ilimitada válida hasta el ${expireDate}. Gira las ruedas y pon a prueba tus conocimientos sin límite.`;
+            } else if (remaining > 0) {
+                message = `Hola <strong>${name}</strong> ! 🌟<br>Bienvenido a la <strong>🎰 Ruleta de la Información</strong> !<br><br>🎯 Te quedan <strong>${remaining} intento${remaining > 1 ? 's' : ''} gratuito${remaining > 1 ? 's' : ''}</strong>.<br><br>Gira la rueda de especialidades, luego la de niveles, y pon a prueba tus conocimientos !<br><br>🔥 ¿Listo para aceptar el desafío ?`;
+                ttsMessage = `Hola ${name}. Bienvenido a la Ruleta de la Información. Te quedan ${remaining} intentos gratuitos. Gira las ruedas y pon a prueba tus conocimientos.`;
+            } else {
+                message = `Hola <strong>${name}</strong> ! 🌟<br>Bienvenido a la <strong>🎰 Ruleta de la Información</strong> !<br><br>🔒 Has utilizado tus <strong>${MAX_FREE_QUIZZES} intentos gratuitos</strong>.<br><br>💎 Para seguir jugando durante <strong>1 año</strong>, suscríbete por <strong>20€</strong>.<br><br>Haz clic en el botón "COMENZAR EL QUIZ" para ver las opciones de suscripción.`;
+                ttsMessage = `Hola ${name}. Bienvenido a la Ruleta de la Información. Has utilizado tus ${MAX_FREE_QUIZZES} intentos gratuitos. Suscríbete por 20 euros al año para seguir jugando.`;
+            }
+            
+            iaMessage.innerHTML = message;
+            updateQuotaDisplay();
+            
+            setTimeout(() => {
+                const cleanMsg = cleanTextForTTS(ttsMessage);
+                speakText(cleanMsg, null);
+            }, 1500);
+        }
+        
+        // ============================================================
+        // RUEDA 1 : 36 ESPECIALIDADES
+        // ============================================================
+        
+        let roulette = null;
+        let isSpinning = false;
+        
+        function initRoulette() {
+            const canvas = document.getElementById('rouletteCanvas');
+            const ctx = canvas.getContext('2d');
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = Math.min(canvas.width, canvas.height) / 2 - 15;
+            const segmentAngle = (2 * Math.PI) / SPECIALTIES.length;
+            let currentAngle = 0;
+            let animationId = null;
+            const colors = ['#e94560', '#533483', '#0f3460', '#16213e', 
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e',
+                           '#e94560', '#533483', '#0f3460', '#16213e'];
+            
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < SPECIALTIES.length; i++) {
+                    const startAngle = currentAngle + i * segmentAngle;
+                    const endAngle = startAngle + segmentAngle;
+                    ctx.beginPath();
+                    ctx.moveTo(centerX, centerY);
+                    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+                    ctx.closePath();
+                    ctx.fillStyle = colors[i % colors.length];
+                    ctx.fill();
+                    ctx.strokeStyle = 'white';
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+                    ctx.save();
+                    ctx.translate(centerX, centerY);
+                    ctx.rotate(startAngle + segmentAngle / 2);
+                    ctx.textAlign = 'right';
+                    ctx.fillStyle = 'white';
+                    ctx.font = '10px Arial';
+                    const text = SPECIALTIES[i].emoji + ' ' + SPECIALTIES[i].name;
+                    let displayText = text;
+                    if (ctx.measureText(text).width > radius - 20) {
+                        displayText = SPECIALTIES[i].name.substring(0, 10) + '…';
+                    }
+                    ctx.fillText(displayText, radius - 10, 4);
+                    ctx.restore();
+                }
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, 22, 0, 2 * Math.PI);
+                ctx.fillStyle = 'white';
+                ctx.fill();
+                ctx.strokeStyle = '#333';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                ctx.fillStyle = '#333';
+                ctx.font = 'bold 11px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('🎯', centerX, centerY);
+            }
+            
+            function spin(callback) {
+                if (isSpinning) return;
+                isSpinning = true;
+                spinBtn.disabled = true;
+                spinBtn.textContent = '⏳ En curso...';
+                
+                const extraSpins = 4 + Math.random() * 4;
+                const targetAngle = currentAngle + extraSpins * 2 * Math.PI + Math.random() * 2 * Math.PI;
+                const duration = 3500 + Math.random() * 1500;
+                const startTime = Date.now();
+                const startAngle = currentAngle;
+                
+                playRouletteSound('spin', duration);
+                
+                function animate() {
+                    const elapsed = Date.now() - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    currentAngle = startAngle + (targetAngle - startAngle) * easeOut;
+                    draw();
+                    
+                    if (progress < 1) {
+                        animationId = requestAnimationFrame(animate);
+                    } else {
+                        currentAngle = targetAngle;
+                        draw();
+                        isSpinning = false;
+                        spinBtn.disabled = true;
+                        spinBtn.textContent = '🎯 GIRAR LA RUEDA DE ESPECIALIDADES';
+                        
+                        const normalizedAngle = ((currentAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+                        const pointerAngle = 3 * Math.PI / 2;
+                        const resultAngle = (pointerAngle - normalizedAngle + 2 * Math.PI) % (2 * Math.PI);
+                        const index = Math.floor(resultAngle / segmentAngle) % SPECIALTIES.length;
+                        
+                        const segment = SPECIALTIES[index];
+                        currentSpecialty = segment.id;
+                        selectedSpecialtyDisplay.textContent = `${segment.emoji} ${segment.name}`;
+                        specialtyResult.style.display = 'flex';
+                        playRouletteSound('click');
+                        if (callback) callback();
+                    }
+                }
+                animate();
+            }
+            draw();
+            return { spin, draw, isSpinning: () => isSpinning };
+        }
+        
+        // ============================================================
+        // RUEDA 2 : 6 NIVELES
+        // ============================================================
+        
+        let levelRoulette = null;
+        let isLevelSpinning = false;
+        
+        function initLevelRoulette() {
+            const canvas = document.getElementById('levelRouletteCanvas');
+            const ctx = canvas.getContext('2d');
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = Math.min(canvas.width, canvas.height) / 2 - 15;
+            const segmentAngle = (2 * Math.PI) / LEVELS.length;
+            let currentAngle = 0;
+            let animationId = null;
+            const colors = ['#4caf50', '#8bc34a', '#ff9800', '#f57c00', '#e74c3c', '#9b59b6'];
+            
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < LEVELS.length; i++) {
+                    const startAngle = currentAngle + i * segmentAngle;
+                    const endAngle = startAngle + segmentAngle;
+                    ctx.beginPath();
+                    ctx.moveTo(centerX, centerY);
+                    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+                    ctx.closePath();
+                    ctx.fillStyle = colors[i % colors.length];
+                    ctx.fill();
+                    ctx.strokeStyle = 'white';
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+                    ctx.save();
+                    ctx.translate(centerX, centerY);
+                    ctx.rotate(startAngle + segmentAngle / 2);
+                    ctx.textAlign = 'right';
+                    ctx.fillStyle = 'white';
+                    ctx.font = 'bold 11px Arial';
+                    ctx.fillText(LEVELS[i].emoji + ' ' + LEVELS[i].label, radius - 8, 4);
+                    ctx.restore();
+                }
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, 18, 0, 2 * Math.PI);
+                ctx.fillStyle = 'white';
+                ctx.fill();
+                ctx.strokeStyle = '#333';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                ctx.fillStyle = '#333';
+                ctx.font = 'bold 10px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('🎯', centerX, centerY);
+            }
+            
+            function spin(callback) {
+                if (isLevelSpinning) return;
+                isLevelSpinning = true;
+                spinLevelBtn.disabled = true;
+                spinLevelBtn.textContent = '⏳ En curso...';
+                
+                const extraSpins = 2 + Math.random() * 3;
+                const targetAngle = currentAngle + extraSpins * 2 * Math.PI + Math.random() * 2 * Math.PI;
+                const duration = 3500 + Math.random() * 1500;
+                const startTime = Date.now();
+                const startAngle = currentAngle;
+                
+                playRouletteSound('spin', duration);
+                
+                function animate() {
+                    const elapsed = Date.now() - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    currentAngle = startAngle + (targetAngle - startAngle) * easeOut;
+                    draw();
+                    if (progress < 1) {
+                        animationId = requestAnimationFrame(animate);
+                    } else {
+                        currentAngle = targetAngle;
+                        draw();
+                        isLevelSpinning = false;
+                        spinLevelBtn.disabled = true;
+                        spinLevelBtn.textContent = '🎯 GIRAR EL NIVEL';
+                        
+                        const normalizedAngle = ((currentAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+                        const pointerAngle = 3 * Math.PI / 2;
+                        const resultAngle = (pointerAngle - normalizedAngle + 2 * Math.PI) % (2 * Math.PI);
+                        const index = Math.floor(resultAngle / segmentAngle) % LEVELS.length;
+                        currentLevel = LEVELS[index].id;
+                        selectedLevelDisplay.textContent = LEVELS[index].label;
+                        levelResult.style.display = 'flex';
+                        playRouletteSound('click');
+                        if (callback) callback();
+                    }
+                }
+                animate();
+            }
+            draw();
+            return { spin, draw, isSpinning: () => isLevelSpinning };
+        }
+        
+        // ============================================================
+        // MOSTRAR LA RUEDA 2
+        // ============================================================
+        
+        function showLevelRoulette() {
+            levelRouletteContainer.style.display = 'block';
+            spinLevelBtn.style.display = 'inline-block';
+            spinLevelBtn.disabled = false;
+            spinLevelBtn.textContent = '🎯 GIRAR EL NIVEL';
+            if (levelRoulette) {
+                levelRoulette.draw();
+            }
+        }
+        
+        // ============================================================
+        // HISTORIAL
+        // ============================================================
+        
+        function renderHistory() {
+            if (quizHistory.length === 0) {
+                tirageHistory.style.display = 'none';
+                return;
+            }
+            tirageHistory.style.display = 'block';
+            historyChips.innerHTML = quizHistory.slice(-5).reverse().map(h => `
+                <span style="font-size: 0.65rem; padding: 3px 10px; border-radius: 16px; background: #e8e8e8; color: #555; border: 1px solid #ddd; display: inline-block; margin: 2px;">
+                    ${h.emoji} ${h.specialty} (${h.level})
+                </span>
+            `).join('');
+        }
+        
+        // ============================================================
+        // CARGAR UNA PREGUNTA
+        // ============================================================
+        
+        async function loadQuestionForLevel(specialtyId, levelId) {
+            try {
+                const path = `../data/es/${specialtyId}/${levelId}.json`;
+                const response = await fetch(path);
+                if (!response.ok) {
+                    throw new Error('Archivo no encontrado');
+                }
+                const data = await response.json();
+                const questions = data.questions || [];
+                if (questions.length === 0) {
+                    throw new Error('Sin preguntas');
+                }
+                currentQuestions = questions;
+                const randomIndex = Math.floor(Math.random() * questions.length);
+                currentQuestion = questions[randomIndex];
+            } catch (error) {
+                console.error('❌ Error cargando:', error);
+                showToast('❌ Error al cargar las preguntas', 3000);
+            }
+        }
+        
+        // ============================================================
+        // REACTIVAR BOTONES
+        // ============================================================
+        
+        function resetButtons() {
+            spinBtn.disabled = false;
+            spinBtn.textContent = '🎯 GIRAR LA RUEDA DE ESPECIALIDADES';
+            spinLevelBtn.disabled = false;
+            spinLevelBtn.textContent = '🎯 GIRAR EL NIVEL';
+        }
+        
+        // ============================================================
+        // ✅ INICIAR EL QUIZ - CON VERIFICACIÓN DE ACCESO
+        // ============================================================
+        
+        function startQuiz() {
+            // ✅ VERIFICAR SI EL USUARIO TIENE INTENTOS
+            if (!hasAccess()) {
+                showPaymentPopup();
+                return;
+            }
+            
+            // ✅ INCREMENTAR EL CONTADOR DE INTENTOS
+            incrementQuizCount();
+            
+            // ✅ INICIAR EL QUIZ
+            if (!currentQuestion) {
+                showToast('❌ Pregunta no disponible', 3000);
+                return;
+            }
+            
+            rouletteScreen.style.display = 'none';
+            questionContainer.style.display = 'block';
+            resultContainer.style.display = 'none';
+            displayQuestion(currentQuestion);
+        }
+        
+        // ============================================================
+        // MOSTRAR UNA PREGUNTA
+        // ============================================================
+        
+        function displayQuestion(question) {
+            isAnswered = false;
+            timeRemaining = 40;
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            const levelLabel = LEVELS.find(l => l.id === currentLevel)?.label || currentLevel;
+            quizTitle.textContent = `🎰 ${specialty?.emoji || ''} ${specialty?.name || ''} - ${levelLabel}`;
+            questionText.textContent = question.question || 'Pregunta no disponible';
+            optionsContainer.innerHTML = '';
+            const letters = ['A', 'B', 'C', 'D'];
+            if (question.options && question.options.length > 0) {
+                question.options.forEach((option, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'option-btn';
+                    btn.innerHTML = `<span class="letter">${letters[i]}</span> ${option}`;
+                    btn.dataset.index = i;
+                    btn.addEventListener('click', () => handleOptionClick(i));
+                    optionsContainer.appendChild(btn);
+                });
+            }
+            feedbackContainer.style.display = 'none';
+            feedbackContainer.className = 'feedback-container';
+            explanationBox.style.display = 'none';
+            explanationBox.classList.remove('show');
+            ttsFeedbackBtn.style.display = 'none';
+            ttsExplanationBtn.style.display = 'none';
+            nextBtn.disabled = true;
+            timerBottomValue.textContent = timeRemaining;
+            timerBottom.style.color = '#e67e22';
+            startTimer();
+            setTimeout(() => {
+                const cleanQuestion = cleanTextForTTS(question.question);
+                speakText(cleanQuestion, ttsQuestionBtn, '🔊 Leer la pregunta');
+            }, 500);
+        }
+        
+        // ============================================================
+        // TIMER
+        // ============================================================
+        
+        function startTimer() {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                timerBottomValue.textContent = timeRemaining;
+                if (timeRemaining <= 5) {
+                    timerBottom.style.color = '#e74c3c';
+                }
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    handleTimeout();
+                }
+            }, 1000);
+        }
+        
+        function stopTimer() {
+            clearInterval(timerInterval);
+            timerBottom.style.color = '#e67e22';
+        }
+        
+        // ============================================================
+        // MANEJAR EL CLIC
+        // ============================================================
+        
+        function handleOptionClick(index) {
+            if (isAnswered) return;
+            isAnswered = true;
+            stopTimer();
+            const isCorrect = index === currentQuestion.correct;
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === currentQuestion.correct) {
+                    btn.classList.add('correct');
+                }
+                if (i === index && !isCorrect) {
+                    btn.classList.add('wrong');
+                }
+            });
+            feedbackContainer.style.display = 'block';
+            if (isCorrect) {
+                feedbackContainer.className = 'feedback-container correct';
+                feedbackMessage.textContent = '✅ ¡Respuesta correcta !';
+                pointsBadge.textContent = '+1 punto';
+                pointsBadge.className = 'points-badge correct';
+                playRouletteSound('win');
+                setTimeout(() => playRouletteSound('tada'), 300);
+            } else {
+                feedbackContainer.className = 'feedback-container wrong';
+                feedbackMessage.textContent = '❌ Respuesta incorrecta';
+                pointsBadge.textContent = `Respuesta correcta: ${currentQuestion.options[currentQuestion.correct]}`;
+                pointsBadge.className = 'points-badge wrong';
+                playRouletteSound('lose');
+            }
+            ttsFeedbackBtn.style.display = 'inline-block';
+            ttsFeedbackBtn.textContent = '🔊 Reescuchar';
+            ttsFeedbackBtn.classList.remove('listening');
+            if (currentQuestion.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = currentQuestion.explanation;
+                correctAnswerText.textContent = `✅ Respuesta correcta: ${currentQuestion.options[currentQuestion.correct]}`;
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 Leer la explicación';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            subscription.recordResult(
+                specialty?.name || currentSpecialty,
+                currentLevel,
+                currentQuestion.id,
+                isCorrect,
+                30 - timeRemaining
+            );
+            nextBtn.disabled = false;
+            setTimeout(() => {
+                let feedbackTTS = '';
+                if (isCorrect) {
+                    feedbackTTS = `¡Bien hecho ! La respuesta correcta es : ${currentQuestion.options[currentQuestion.correct]}.`;
+                } else {
+                    feedbackTTS = `Lo siento, no es la respuesta correcta. La respuesta correcta es : ${currentQuestion.options[currentQuestion.correct]}.`;
+                }
+                const cleanFeedback = cleanTextForTTS(feedbackTTS);
+                speakText(cleanFeedback, ttsFeedbackBtn, '🔊 Reescuchar');
+            }, 300);
+        }
+        
+        // ============================================================
+        // TIMEOUT
+        // ============================================================
+        
+        function handleTimeout() {
+            if (isAnswered) return;
+            isAnswered = true;
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === currentQuestion.correct) {
+                    btn.classList.add('correct');
+                }
+            });
+            feedbackContainer.style.display = 'block';
+            feedbackContainer.className = 'feedback-container wrong';
+            feedbackMessage.textContent = '⏰ ¡Tiempo agotado !';
+            pointsBadge.textContent = `Respuesta correcta: ${currentQuestion.options[currentQuestion.correct]}`;
+            pointsBadge.className = 'points-badge wrong';
+            playRouletteSound('lose');
+            if (currentQuestion.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = currentQuestion.explanation;
+                correctAnswerText.textContent = `✅ Respuesta correcta: ${currentQuestion.options[currentQuestion.correct]}`;
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 Leer la explicación';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            subscription.recordResult(
+                specialty?.name || currentSpecialty,
+                currentLevel,
+                currentQuestion.id,
+                false,
+                30
+            );
+            nextBtn.disabled = false;
+            setTimeout(() => {
+                const feedbackTTS = `Tiempo agotado. La respuesta correcta es : ${currentQuestion.options[currentQuestion.correct]}.`;
+                const cleanFeedback = cleanTextForTTS(feedbackTTS);
+                speakText(cleanFeedback, ttsFeedbackBtn, '🔊 Reescuchar');
+            }, 300);
+        }
+        
+        // ============================================================
+        // COMPARTIR RESULTADOS
+        // ============================================================
+        
+        async function shareQuizResult() {
+            const settings = storage.getSettings() || {};
+            const name = settings.user?.fullName || userName || 'Doctor';
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            const isCorrect = feedbackContainer.classList.contains('correct');
+            const points = isCorrect ? 10 : 0;
+            
+            let unlockedBadges = [];
+            try {
+                const user = await rewardService.getCurrentUser();
+                if (user) {
+                    const userData = user.data;
+                    unlockedBadges = userData.badges || [];
+                }
+            } catch (e) {
+                console.warn('⚠️ Error obteniendo badges:', e);
+            }
+
+            const message = shareService.generateQuizShareMessage({
+                userName: name,
+                specialty: specialty?.name || 'Desconocida',
+                level: LEVELS.find(l => l.id === currentLevel)?.label || 'Principiante 1',
+                score: isCorrect ? 100 : 0,
+                points: points,
+                totalPoints: points,
+                badges: unlockedBadges,
+                streak: 0,
+                isCorrect: isCorrect,
+                url: window.location.origin
+            });
+
+            try {
+                await shareService.share(message);
+                showToast('✅ Resultado compartido con éxito !', 3000);
+            } catch (error) {
+                console.error('❌ Error al compartir:', error);
+                showToast('❌ Error al compartir', 3000);
+            }
+        }
+        
+        // ============================================================
+        // MOSTRAR RESULTADOS
+        // ============================================================
+        
+        async function showResults() {
+            stopTimer();
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+            
+            const isCorrect = feedbackContainer.classList.contains('correct');
+            const settings = storage.getSettings() || {};
+            const name = settings.user?.fullName || userName || 'Doctor';
+            const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+            
+            finalScore.textContent = isCorrect ? '1/1' : '0/1';
+            percentage.textContent = isCorrect ? '100%' : '0%';
+            
+            // ✅ REGISTRAR RECOMPENSAS
+            let rewardMessage = '';
+            let unlockedBadges = [];
+            let pointsAdded = 0;
+            let newTotal = 0;
+            
+            try {
+                const user = await rewardService.getCurrentUser();
+                if (user) {
+                    const result = await rewardService.recordQuizResult(user.uid, {
+                        isCorrect: isCorrect,
+                        specialty: specialty?.name || currentSpecialty,
+                        level: currentLevel,
+                        timeSpent: 30 - timeRemaining
+                    });
+                    
+                    pointsAdded = result.pointsAdded;
+                    newTotal = result.newTotal;
+                    unlockedBadges = result.unlockedBadges;
+                    rewardMessage = result.message;
+                    
+                    if (unlockedBadges.length > 0) {
+                        const badgeNames = {
+                            'first_quiz': '🏅 Primer quiz',
+                            'streak_3': '🔥 Racha de 3',
+                            'rapide': '⚡ Rápido',
+                            'parfait': '💯 Perfecto',
+                            'collectionneur': '📚 Coleccionista',
+                            'legende': '🌟 Leyenda'
+                        };
+                        const badgeText = unlockedBadges.map(id => badgeNames[id] || id).join(', ');
+                        badgeContainer.innerHTML = `
+                            <div style="background: #ffd700; color: #2c3e50; padding: 10px 30px; border-radius: 30px; font-weight: 700; margin-top: 10px;">
+                                🏆 ${badgeText} desbloqueado${unlockedBadges.length > 1 ? 's' : ''} ! 
+                            </div>
+                        `;
+                    }
+                }
+            } catch (error) {
+                console.warn('⚠️ Error de recompensas:', error);
+            }
+            
+            // ✅ MOSTRAR RECOMPENSAS
+            const rewardsHTML = pointsAdded > 0 || unlockedBadges.length > 0 ? `
+                <div style="background: #f0f4ff; border-radius: 16px; padding: 12px 16px; margin: 10px 0; border-left: 4px solid #667eea;">
+                    <div style="font-weight: 600; color: #2c3e50;">🎁 Recompensas</div>
+                    <div style="font-size: 0.9rem; color: #667eea; margin-top: 4px;">
+                        ${pointsAdded > 0 ? `+${pointsAdded} puntos` : ''}
+                        ${unlockedBadges.length > 0 ? ` • 🏆 ${unlockedBadges.length} badge${unlockedBadges.length > 1 ? 's' : ''} desbloqueado${unlockedBadges.length > 1 ? 's' : ''}` : ''}
+                        ${newTotal > 0 ? ` • Total : ${newTotal} puntos` : ''}
+                    </div>
+                </div>
+            ` : '';
+            
+            // ✅ GUARDAR EN rouletteHistory
+            const user = auth.currentUser;
+            if (user) {
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);
+                    
+                    await updateDoc(userRef, {
+                        rouletteHistory: arrayUnion({
+                            specialty: specialty?.name || currentSpecialty,
+                            level: currentLevel,
+                            isCorrect: isCorrect,
+                            date: new Date().toISOString(),
+                            questionId: currentQuestion?.id || 'unknown',
+                            timeSpent: 30 - timeRemaining || 0,
+                            specialtyId: currentSpecialty
+                        })
+                    });
+                    
+                    console.log('✅ Ruleta guardada en users_ios/rouletteHistory');
+                    
+                } catch (error) {
+                    console.error('❌ Error guardando en Firebase:', error);
+                }
+            }
+            
+            let iaMessage = '';
+            let ttsMessage = '';
+            
+            if (isCorrect) {
+                const correctMessages = [
+                    { display: `🎉 ¡Bien hecho ${name} ! Has encontrado la respuesta correcta sobre ${specialty?.name || 'esta especialidad'} ! ¡Sigue así ! 🌟`,
+                      tts: `¡Bien hecho ${name} ! Has encontrado la respuesta correcta sobre ${specialty?.name || 'esta especialidad'} ! ¡Sigue así !` },
+                    { display: `🌟 Excelente ${name} ! Domino perfectamente ${specialty?.name || 'esta especialidad'} ! 💪`,
+                      tts: `Excelente ${name} ! Domino perfectamente ${specialty?.name || 'esta especialidad'} !` },
+                    { display: `🔥 ${name}, ¡estás en llamas hoy ! Respuesta correcta sobre ${specialty?.name || 'esta especialidad'} ! 😉`,
+                      tts: `${name}, ¡estás en llamas hoy ! Respuesta correcta sobre ${specialty?.name || 'esta especialidad'} !` },
+                    { display: `💎 Perfecto ${name} ! ${specialty?.name || 'Esta especialidad'} no tiene secretos para ti ! 🏆`,
+                      tts: `Perfecto ${name} ! ${specialty?.name || 'Esta especialidad'} no tiene secretos para ti !` },
+                    { display: `🎯 ${name}, ¡eres un verdadero experto ! 🔥`,
+                      tts: `${name}, ¡eres un verdadero experto !` }
+                ];
+                const randomIndex = Math.floor(Math.random() * correctMessages.length);
+                iaMessage = correctMessages[randomIndex].display;
+                ttsMessage = correctMessages[randomIndex].tts;
+                resultTitle.textContent = '🎉 ¡Bien hecho !';
+                resultMessage.textContent = '¡Has encontrado la respuesta correcta ! 💪';
+                if (!unlockedBadges.length) {
+                    badgeContainer.innerHTML = `<div style="background: #4caf50; color: white; padding: 10px 30px; border-radius: 30px; font-weight: 700;">🌟 ¡Perfecto !</div>`;
+                }
+                playRouletteSound('win');
+                setTimeout(() => playRouletteSound('tada'), 400);
+            } else {
+                const wrongMessages = [
+                    { display: `💪 No te preocupes ${name} ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}". Vuelve a intentarlo, ¡creo en ti ! 📖`,
+                      tts: `No te preocupes ${name} ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}". Vuelve a intentarlo, ¡creo en ti !` },
+                    { display: `🧠 ${name}, ¡no te desanimes ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}". ¡Lo conseguirás ! 🌱`,
+                      tts: `${name}, ¡no te desanimes ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}". ¡Lo conseguirás !` },
+                    { display: `🔥 ${name}, ¡eres más fuerte que eso ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}". 💪`,
+                      tts: `${name}, ¡eres más fuerte que eso ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}".` },
+                    { display: `📚 ${name}, ¡es cometiendo errores como se aprende ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}". 🎯`,
+                      tts: `${name}, ¡es cometiendo errores como se aprende ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}".` },
+                    { display: `🌟 ${name}, ¡no te rindas ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}". 💎`,
+                      tts: `${name}, ¡no te rindas ! La respuesta correcta era : "${currentQuestion.options[currentQuestion.correct]}".` }
+                ];
+                const randomIndex = Math.floor(Math.random() * wrongMessages.length);
+                iaMessage = wrongMessages[randomIndex].display;
+                ttsMessage = wrongMessages[randomIndex].tts;
+                resultTitle.textContent = '💪 ¡No te preocupes !';
+                resultMessage.textContent = `La respuesta correcta era : ${currentQuestion.options[currentQuestion.correct]}. 📖`;
+                if (!unlockedBadges.length) {
+                    badgeContainer.innerHTML = `<div style="background: #ff9800; color: white; padding: 10px 30px; border-radius: 30px; font-weight: 700;">📚 Sigue aprendiendo</div>`;
+                }
+                playRouletteSound('lose');
+            }
+            
+            if (iaResultContainer) {
+                iaResultContainer.innerHTML = `
+                    <div style="background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 16px; padding: 14px 18px; margin: 12px 0; color: white; display: flex; align-items: flex-start; gap: 12px; text-align: left; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.25);">
+                        <div style="font-size: 2rem; flex-shrink: 0;" class="ia-result-avatar">🤖</div>
+                        <p style="margin: 0; font-size: 0.9rem; line-height: 1.6;">${iaMessage}</p>
+                    </div>
+                    ${rewardsHTML}
+                `;
+            }
+            
+            // ✅ AÑADIR BOTÓN DE COMPARTIR
+            const resultButtons = document.querySelector('.result-buttons');
+            if (resultButtons) {
+                const oldShareBtn = document.getElementById('shareResultBtn');
+                if (oldShareBtn) {
+                    oldShareBtn.remove();
+                }
+                
+                const shareBtn = document.createElement('button');
+                shareBtn.className = 'btn-share';
+                shareBtn.id = 'shareResultBtn';
+                shareBtn.textContent = '📤 Compartir en redes sociales';
+                shareBtn.addEventListener('click', shareQuizResult);
+                resultButtons.insertBefore(shareBtn, resultButtons.firstChild);
+            }
+            
+            setTimeout(() => {
+                const cleanMessage = cleanTextForTTS(ttsMessage);
+                speakText(cleanMessage, null);
+            }, 1200);
+        }
+        
+        // ============================================================
+        // EVENTOS
+        // ============================================================
+        
+        spinBtn.addEventListener('click', () => {
+            if (roulette && !roulette.isSpinning()) {
+                stopTTS();
+                levelRouletteContainer.style.display = 'none';
+                spinLevelBtn.style.display = 'none';
+                levelResult.style.display = 'none';
+                startQuizBtn.style.display = 'none';
+                specialtyResult.style.display = 'none';
+                roulette.spin(() => {
+                    setTimeout(() => {
+                        showLevelRoulette();
+                    }, 400);
+                });
+            }
+        });
+        
+        spinLevelBtn.addEventListener('click', () => {
+            if (levelRoulette && !levelRoulette.isSpinning()) {
+                stopTTS();
+                levelResult.style.display = 'none';
+                startQuizBtn.style.display = 'none';
+                levelRoulette.spin(() => {
+                    const specialty = SPECIALTIES.find(s => s.id === currentSpecialty);
+                    quizHistory.push({
+                        specialty: specialty?.name || currentSpecialty,
+                        level: LEVELS.find(l => l.id === currentLevel)?.label || currentLevel,
+                        emoji: specialty?.emoji || '🦷'
+                    });
+                    renderHistory();
+                    startQuizBtn.style.display = 'inline-block';
+                    const msg = `Especialidad ${specialty?.name || ''} nivel ${LEVELS.find(l => l.id === currentLevel)?.label || ''}`;
+                    const cleanMsg = cleanTextForTTS(msg);
+                    setTimeout(() => speakText(cleanMsg, null), 500);
+                    loadQuestionForLevel(currentSpecialty, currentLevel);
+                });
+            }
+        });
+        
+        startQuizBtn.addEventListener('click', startQuiz);
+        nextBtn.addEventListener('click', showResults);
+        
+        quitBtn.addEventListener('click', () => {
+            if (confirm('¿Salir del quiz ?')) {
+                stopTimer();
+                stopTTS();
+                window.location.href = 'elegir_especialidades_es.html';
+            }
+        });
+        
+        anotherQuizBtn.addEventListener('click', () => {
+            stopTTS();
+            resultContainer.style.display = 'none';
+            rouletteScreen.style.display = 'block';
+            levelRouletteContainer.style.display = 'none';
+            levelResult.style.display = 'none';
+            startQuizBtn.style.display = 'none';
+            specialtyResult.style.display = 'none';
+            spinLevelBtn.style.display = 'none';
+            spinBtn.disabled = false;
+            spinBtn.textContent = '🎯 GIRAR LA RUEDA DE ESPECIALIDADES';
+            if (roulette) {
+                roulette.draw();
+            }
+            
+            // ✅ RECARGAR DATOS DE USUARIO
+            loadUserData().then(() => {
+                updateQuotaDisplay();
+                displayIAWelcome();
+            });
+        });
+        
+        chooseSpecialtyBtn.addEventListener('click', () => {
+            stopTTS();
+            window.location.href = 'elegir_especialidades_es.html';
+        });
+        
+        menuBtn.addEventListener('click', () => {
+            stopTTS();
+            window.location.href = '../index.html';
+        });
+        
+        document.querySelectorAll('.back-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                stopTTS();
+            });
+        });
+        
+        ttsQuestionBtn.addEventListener('click', function() {
+            const cleanQuestion = cleanTextForTTS(questionText.textContent);
+            speakText(cleanQuestion, this, '🔊 Leer la pregunta');
+        });
+        
+        ttsFeedbackBtn.addEventListener('click', function() {
+            let feedbackTTS = '';
+            const isCorrect = feedbackContainer.classList.contains('correct');
+            if (isCorrect) {
+                feedbackTTS = `¡Bien hecho ! La respuesta correcta es : ${currentQuestion.options[currentQuestion.correct]}.`;
+            } else {
+                feedbackTTS = `Lo siento, no es la respuesta correcta. La respuesta correcta es : ${currentQuestion.options[currentQuestion.correct]}.`;
+            }
+            const cleanFeedback = cleanTextForTTS(feedbackTTS);
+            speakText(cleanFeedback, this, '🔊 Reescuchar');
+        });
+        
+        ttsExplanationBtn.addEventListener('click', function() {
+            const explanationClean = cleanTextForTTS(explanationText.textContent);
+            const correctAnswerClean = cleanTextForTTS(`La respuesta correcta es : ${currentQuestion.options[currentQuestion.correct]}`);
+            const fullText = explanationClean + '. ' + correctAnswerClean;
+            speakText(fullText, this, '🔊 Leer la explicación');
+        });
+        
+        // ============================================================
+        // ✅ INICIALIZACIÓN
+        // ============================================================
+        
+        async function init() {
+            Logger.info('🎰 Ruleta de la Información cargada - Versión con suscripción (español)');
+            
+            // ✅ VERIFICAR AUTENTIFICACIÓN
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    console.log('👤 Usuario conectado:', user.email);
+                    
+                    // ✅ CARGAR DATOS DE USUARIO
+                    await loadUserData();
+                    
+                    // ✅ ACTUALIZAR VISUALIZACIÓN
+                    updateQuotaDisplay();
+                    
+                    // ✅ INICIAR RUEDAS
+                    roulette = initRoulette();
+                    levelRoulette = initLevelRoulette();
+                    rouletteScreen.style.display = 'block';
+                    questionContainer.style.display = 'none';
+                    resultContainer.style.display = 'none';
+                    resetButtons();
+                    
+                    // ✅ MOSTRAR MENSAJE DE BIENVENIDA
+                    displayIAWelcome();
+                    
+                    console.log('🎰 Ruleta de la Información lista !');
+                    console.log(`🎯 Intentos gratuitos usados: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
+                    console.log(`💎 Suscripción activa: ${isSubscribed}`);
+                    if (isSubscribed) {
+                        console.log(`📅 Expira el: ${subscriptionExpiresAt?.toLocaleDateString('es-ES')}`);
+                    }
+                    console.log('✅ Firebase : guardado en users_ios/rouletteHistory');
+                    console.log('✅ Los puntajes de la Ruleta NO AFECTAN los casilleros verdes de especialidades');
+                    console.log('🔊 Efectos de sonido sincronizados con las DOS ruedas');
+                    console.log('🔒 Botones desactivados después de cada clic');
+                    console.log('✅ RewardService integrado : puntos e insignias automáticos');
+                    console.log('✅ Compartir en redes sociales integrado');
+                    console.log('💳 Pago por transferencia : 20€ por 1 año de acceso ilimitado');
+                    console.log('📱 Contador de intentos : 20 gratuitos luego pago');
+                    
+                } else {
+                    console.log('👤 Usuario no conectado, redirigiendo a registro');
+                    window.location.href = 'inscription_es.html';
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

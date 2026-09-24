@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO - 我的进展</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "jspdf": "https://cdn.skypack.dev/jspdf@2.5.1",
+            "qrcode": "https://cdn.skypack.dev/qrcode@1.5.3"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container progression-container">
+        
+        <!-- ============================================================ -->
+        <!-- 顶部导航 -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='yibiao_zh.html'">
+                ← 返回
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 首页
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 页头 -->
+        <!-- ============================================================ -->
+        <div class="progression-header">
+            <h1>📊 我的 ETEO 进展 📈</h1>
+            <p>逐级追踪您的成长</p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- AI 欢迎（居中） -->
+        <!-- ============================================================ -->
+        <div class="ia-greeting" id="iaGreeting" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="ia-avatar" style="display: block; text-align: center;">🤖</div>
+            <div style="width: 100%; text-align: center;">
+                <p class="ia-message" id="iaProgressionMessage" style="text-align: center; width: 100%;">正在加载消息...</p>
+                <button class="listen-btn-small" id="listenProgressionBtn" style="display: inline-block; margin: 8px auto 0;">🔊 收听</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 选项卡 -->
+        <!-- ============================================================ -->
+        <div class="progression-tabs">
+            <button class="tab-btn active" data-tab="progression" id="tabProgression">
+                📊 进展
+            </button>
+            <button class="tab-btn" data-tab="certificates" id="tabCertificates">
+                📜 证书
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 进展容器 -->
+        <!-- ============================================================ -->
+        <div id="progressionContainer" class="tab-content">
+            <!-- 由 ProgressionManager 填充 -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 证书容器 -->
+        <!-- ============================================================ -->
+        <div id="certificatesContainer" class="tab-content" style="display:none;">
+            <!-- 由 CertificateManager 填充 -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 底部导航（重复） -->
+        <!-- ============================================================ -->
+        <div class="nav-bottom">
+            <button class="back-btn" onclick="window.location.href='yibiao_zh.html'">
+                ← 返回
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 首页
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 页脚 -->
+        <!-- ============================================================ -->
+        <div class="footer">
+            <p>📊 实时进展 • 与您的账户同步</p>
+            <p>© 2026 - ETEO Dental Education | 🇲🇦 Dr. SAID MAARAK</p>
+        </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TOAST -->
+    <!-- ============================================================ -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ============================================================ -->
+    <!-- 主脚本 -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // 导入
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore } from 'firebase/firestore';
+        import { ProgressionService } from '../js/services/progressionService.js';
+        import { ProgressionManager } from '../js/ui/ProgressionManager.js';
+        import { CertificateService } from '../js/services/certificateService.js';
+        import { CertificateManager } from '../js/ui/CertificateManager.js';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE 配置
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // DOM 元素
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const progressionContainer = document.getElementById('progressionContainer');
+        const certificatesContainer = document.getElementById('certificatesContainer');
+        const tabProgression = document.getElementById('tabProgression');
+        const tabCertificates = document.getElementById('tabCertificates');
+        const iaMessage = document.getElementById('iaProgressionMessage');
+        const listenBtn = document.getElementById('listenProgressionBtn');
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // 清理表情符号以供 TTS 使用
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // 生成 AI 消息
+        // ============================================================
+        
+        function generateIAMessage() {
+            try {
+                const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
+                const userName = settings.user?.fullName || '医生';
+                
+                const message = `
+                    你好 <strong>${userName}</strong>！👋<br>
+                    📊 欢迎来到您的进展仪表盘。<br><br>
+                    在这里您可以看到所有的专科、分数和证书。<br>
+                    每个专科有 <strong>6 个等级</strong>。<br>
+                    <span style="color: #4caf50;">✅ 绿色</span> 表示已完成，<span style="color: #888;">🔒 灰色</span> 表示已锁定。<br><br>
+                    🎯 完成所有等级即可获得<strong>证书</strong>！<br><br>
+                    准备取得进步了吗？🚀
+                `;
+                
+                const ttsMessage = `
+                    你好 ${userName}。欢迎来到您的进展仪表盘。
+                    在这里您可以看到所有的专科、分数和证书。
+                    每个专科有 6 个等级。绿色表示已完成，灰色表示已锁定。
+                    完成所有等级即可获得证书。
+                    准备取得进步了吗？
+                `;
+                
+                iaMessage.innerHTML = message;
+                window._ttsProgressionMessage = cleanTextForTTS(ttsMessage);
+                
+                if (listenBtn) {
+                    listenBtn.style.display = 'inline-block';
+                }
+                
+                setTimeout(() => autoSpeak(), 1200);
+                
+            } catch (error) {
+                console.error('❌ 生成 AI 消息时出错：', error);
+                iaMessage.innerHTML = '⚠️ 消息不可用。请刷新页面。';
+            }
+        }
+        
+        // ============================================================
+        // 自动朗读
+        // ============================================================
+        
+        let isAutoSpeaking = false;
+        
+        function autoSpeak() {
+            if (!window.tts || isAutoSpeaking) return;
+            isAutoSpeaking = true;
+            const text = window._ttsProgressionMessage || '';
+            if (!text) { isAutoSpeaking = false; return; }
+            
+            if (listenBtn) {
+                listenBtn.textContent = '⏹️ 停止';
+                listenBtn.classList.add('listening');
+            }
+            
+            window.tts.speak(text, 'zh', 0.9, 1.0,
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 收听';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                },
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 收听';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                }
+            );
+        }
+        
+        // ============================================================
+        // 收听按钮
+        // ============================================================
+        
+        listenBtn.addEventListener('click', function() {
+            if (!window.tts) return showToast('❌ TTS 不可用', 3000);
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 收听';
+                this.classList.remove('listening');
+                isAutoSpeaking = false;
+                return;
+            }
+            
+            const text = window._ttsProgressionMessage || '';
+            if (!text) return showToast('⚠️ 消息不可用', 3000);
+            
+            this.textContent = '⏹️ 停止';
+            this.classList.add('listening');
+            
+            window.tts.speak(text, 'zh', 0.9, 1.0,
+                () => {
+                    this.textContent = '🔊 收听';
+                    this.classList.remove('listening');
+                },
+                () => {
+                    this.textContent = '🔊 收听';
+                    this.classList.remove('listening');
+                    showToast('❌ 朗读错误', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // 选项卡管理
+        // ============================================================
+        
+        function setupTabs() {
+            if (tabProgression) {
+                tabProgression.addEventListener('click', function() {
+                    tabProgression.classList.add('active');
+                    tabCertificates.classList.remove('active');
+                    progressionContainer.style.display = 'block';
+                    certificatesContainer.style.display = 'none';
+                });
+            }
+            
+            if (tabCertificates) {
+                tabCertificates.addEventListener('click', function() {
+                    tabCertificates.classList.add('active');
+                    tabProgression.classList.remove('active');
+                    certificatesContainer.style.display = 'block';
+                    progressionContainer.style.display = 'none';
+                });
+            }
+        }
+        
+        // ============================================================
+        // 初始化
+        // ============================================================
+        
+        async function init() {
+            Logger.info('📊 进展页面已加载');
+            
+            setupTabs();
+            generateIAMessage();
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    const uid = user.uid;
+                    
+                    const progressionService = new ProgressionService();
+                    const certificateService = new CertificateService();
+                    
+                    const progressionManager = new ProgressionManager(progressionService, showToast);
+                    await progressionManager.loadProgression(progressionContainer, uid);
+                    
+                    const certificateManager = new CertificateManager(
+                        certificateService,
+                        progressionService,
+                        showToast
+                    );
+                    await certificateManager.loadCertificates(certificatesContainer, uid);
+                    
+                    Logger.info('✅ 进展和证书已加载');
+                } else {
+                    showToast('⚠️ 请登录以查看您的进展', 3000);
+                    
+                    const message = `
+                        <div style="text-align: center; padding: 60px 20px;">
+                            <div style="font-size: 3rem;">🔒</div>
+                            <div style="font-size: 1.2rem; margin-top: 20px;">登录以查看您的进展</div>
+                            <div style="margin-top: 10px; color: #888;">只有登录的用户才能访问其进展</div>
+                            <button onclick="window.location.href='zhuce_zh.html'" 
+                                    style="margin-top: 20px; padding: 12px 40px; border: none; border-radius: 30px; 
+                                           background: linear-gradient(135deg, #667eea, #764ba2); color: white; 
+                                           cursor: pointer; font-weight: 700; font-size: 1rem;">
+                                🔑 登录 / 注册
+                            </button>
+                        </div>
+                    `;
+                    
+                    progressionContainer.innerHTML = message;
+                    certificatesContainer.innerHTML = message;
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

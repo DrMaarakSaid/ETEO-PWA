@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO V2 - Quiz</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container quiz-container">
+        
+        <!-- ============================================================ -->
+        <!-- HEADER (oculto al inicio) -->
+        <!-- ============================================================ -->
+        <div class="quiz-header" id="quizHeader" style="display:none;">
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar">
+                    <div class="quiz-progress-fill" id="progressFill" style="width: 0%;"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 5px;">
+                    <span id="questionCounter">Pregunta 1/10</span>
+                    <span id="specialtyName">Cargando...</span>
+                </div>
+            </div>
+            <div class="quiz-timer" id="timerDisplay">
+                ⏱️ <span id="timerValue">00:40</span>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PANTALLA DE BIENVENIDA CON HISTORIA Y 6 NIVELES -->
+        <!-- ============================================================ -->
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1 id="specialtyTitle">🎯 Especialidad</h1>
+            
+            <!-- HISTORIA -->
+            <div class="synopsis-container" id="synopsisContainer">
+                <p id="synopsisText">Cargando la historia...</p>
+                <button class="listen-synopsis-btn" id="listenSynopsisBtn">🔊 Escuchar la historia</button>
+            </div>
+            
+            <!-- 6 NIVELES EN CUADRÍCULA 2x2 -->
+            <div class="level-grid-horizontal" id="levelGrid">
+                <!-- Generado por JavaScript -->
+            </div>
+            
+            <button class="start-quiz-btn" id="startQuizBtn" style="display:none;">🚀 Comenzar el QCM</button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PANTALLA DE CAPÍTULO (NUEVO) -->
+        <!-- ============================================================ -->
+        <div class="chapter-screen" id="chapterScreen" style="display:none;">
+            <div class="chapter-header">
+                <span class="chapter-icon">📖</span>
+                <span class="chapter-level" id="chapterLevel">Intermedio 1</span>
+                <h2 id="chapterTitle">Los Peligros del Contrato de Arrendamiento Comercial</h2>
+            </div>
+            <div class="chapter-content" id="chapterContent">
+                <p id="chapterText">El Dr. Hachimi y el Dr. Chaoui han firmado su contrato de arrendamiento, pero la aventura apenas comienza...</p>
+            </div>
+            <div class="chapter-actions">
+                <button class="listen-chapter-btn" id="listenChapterBtn">🔊 Escuchar el capítulo</button>
+                <button class="start-chapter-quiz-btn" id="startChapterQuizBtn">🚀 Comenzar el QCM</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PANTALLA DEL QUIZ -->
+        <!-- ============================================================ -->
+        <div class="question-container" id="questionContainer" style="display:none;">
+            <div class="quiz-title" id="quizTitle">Esterilización - Principiante Nivel 1</div>
+            
+            <div class="question-text" id="questionText">Pregunta en curso...</div>
+            
+            <div class="tts-button-row">
+                <button class="tts-btn" id="ttsQuestionBtn">🔊 Leer la pregunta</button>
+            </div>
+            
+            <div class="options" id="optionsContainer">
+                <!-- Opciones generadas por JavaScript -->
+            </div>
+            
+            <div class="feedback-container" id="feedbackContainer" style="display:none;">
+                <span id="feedbackMessage"></span>
+                <span class="points-badge" id="pointsBadge"></span>
+                <button class="tts-btn tts-feedback-btn" id="ttsFeedbackBtn" style="display:none;">🔊 Reescuchar el feedback</button>
+            </div>
+            
+            <div class="explanation-box" id="explanationBox" style="display:none;">
+                <div class="explanation-title">📖 Explicación</div>
+                <p id="explanationText"></p>
+                <div class="correct-answer" id="correctAnswerText"></div>
+                <button class="tts-btn tts-explanation-btn" id="ttsExplanationBtn" style="display:none;">🔊 Leer la explicación</button>
+            </div>
+            
+            <div class="score" id="scoreDisplay">Puntuación: 0/0</div>
+            
+            <div class="timer-bottom" id="timerBottom">⏱️ Tiempo restante : <span id="timerBottomValue">40</span> segundos</div>
+            
+            <div class="nav-buttons">
+                <button class="nav-btn" id="quitBtn">🚪 Salir</button>
+                <button class="nav-btn" id="nextBtn" disabled>Siguiente ➜</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PANTALLA DE RESULTADOS -->
+        <!-- ============================================================ -->
+        <div class="result-container" id="resultContainer" style="display:none;">
+            <h2>🏆 ¡Quiz completado!</h2>
+            <div class="final-score" id="finalScore">0/0</div>
+            <div class="percentage" id="percentage">0%</div>
+            <div class="message" id="resultMessage">¡Bien hecho!</div>
+            <div id="badgeContainer"></div>
+            <div id="levelUnlockMessage" style="margin-top: 10px; font-weight: 700;"></div>
+            
+            <div class="result-buttons">
+                <button class="btn-levels" id="levelsBtn">📚 Ver los niveles</button>
+                <button class="btn-menu" id="menuBtn">🏠 Menú</button>
+                <button class="btn-ranking" id="retryBtn">🔄 Reintentar</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- PANTALLA FINAL EXPERTO 2 -->
+        <!-- ============================================================ -->
+        <div class="expert-final-container" id="expertFinalContainer" style="display:none;">
+            <div class="expert-final-header">
+                <div class="expert-final-badge">🏆</div>
+                <h1 class="expert-final-title">Felicitaciones, <span id="expertUserName">Doctor</span> !</h1>
+                <p class="expert-final-subtitle">¡Has completado TODOS los niveles de <span id="expertSpecialtyName">Esterilización</span> !</p>
+            </div>
+
+            <div class="expert-final-stats">
+                <div class="expert-stat-item">
+                    <span class="expert-stat-icon">🔥</span>
+                    <span class="expert-stat-value" id="expertFinalLevel">Experto 2</span>
+                    <span class="expert-stat-label">Nivel alcanzado</span>
+                </div>
+                <div class="expert-stat-item">
+                    <span class="expert-stat-icon">📊</span>
+                    <span class="expert-stat-value" id="expertFinalScore">92%</span>
+                    <span class="expert-stat-label">Puntuación global</span>
+                </div>
+                <div class="expert-stat-item">
+                    <span class="expert-stat-icon">⏱️</span>
+                    <span class="expert-stat-value" id="expertFinalTime">4h25</span>
+                    <span class="expert-stat-label">Tiempo total</span>
+                </div>
+                <div class="expert-stat-item">
+                    <span class="expert-stat-icon">📚</span>
+                    <span class="expert-stat-value">6/6</span>
+                    <span class="expert-stat-label">Niveles completados</span>
+                </div>
+            </div>
+
+            <div class="expert-final-divider">
+                <span>🎓 CERTIFICACIÓN ETEO</span>
+            </div>
+
+            <div class="expert-certification-section">
+                <div class="expert-cert-icon">📜</div>
+                <h2>¡Demuestra tu experiencia!</h2>
+                <p>Realiza el examen de certificación ETEO y obtén tu certificado nominativo.</p>
+                
+                <div class="expert-cert-details">
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">📋</span>
+                        <span><strong>50</strong> preguntas aleatorias</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">⏱️</span>
+                        <span><strong>40</strong> segundos por pregunta</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">🎯</span>
+                        <span><strong>75%</strong> requerido para aprobar</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">🔄</span>
+                        <span><strong>2</strong> intentos permitidos</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">🏅</span>
+                        <span>Certificado nominativo</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">💰</span>
+                        <span><strong>20€</strong> por examen</span>
+                    </div>
+                </div>
+
+                <div class="expert-final-buttons">
+                    <button class="expert-btn-primary" id="expertExamBtn">🎓 Realizar el examen de certificación</button>
+                    <button class="expert-btn-secondary" id="expertLevelsBtn">📚 Ver los niveles</button>
+                </div>
+            </div>
+
+            <div class="expert-final-divider">
+                <span>🎙️ Un mensaje de tu IA</span>
+            </div>
+
+            <div class="expert-final-message">
+                <div class="expert-avatar">🤖</div>
+                <p id="expertAIMessage">"Dr. <span id="expertAIName">Karim</span>, ¡eres una verdadera leyenda! Tu trayectoria es inspiradora. La certificación es el paso definitivo para validar tu experiencia. ¡Creo en ti!"</p>
+            </div>
+
+            <div class="expert-final-actions">
+                <button class="expert-btn-menu" id="expertMenuBtn">🏠 Menú</button>
+                <button class="expert-btn-dashboard" id="expertDashboardBtn">📊 Dashboard</button>
+            </div>
+        </div>
+
+        <!-- TOAST -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SCRIPT PRINCIPAL -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { TranslateService } from '../js/services/translate.js';
+        import { QuizEngine } from '../js/core/quiz.js';
+        import { Timer } from '../js/core/timer.js';
+        import { Score } from '../js/core/score.js';
+        import { Progress } from '../js/core/progress.js';
+        import tts from '../js/services/tts.js';
+        
+        // ✅ IMPORTS FIREBASE
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore, doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
+        import { AccessService } from '../js/services/AccessService.js';
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        // ============================================================
+        // CONFIGURACIÓN DE LOS 6 NIVELES
+        // ============================================================
+        
+        const LEVELS = [
+            { id: 'debutant1', label: 'Principiante 1' },
+            { id: 'debutant2', label: 'Principiante 2' },
+            { id: 'intermediaire1', label: 'Intermedio 1' },
+            { id: 'intermediaire2', label: 'Intermedio 2' },
+            { id: 'expert1', label: 'Experto 1' },
+            { id: 'expert2', label: 'Experto 2' }
+        ];
+        
+        const UNLOCK_ORDER = ['debutant1', 'debutant2', 'intermediaire1', 'intermediaire2', 'expert1', 'expert2'];
+        const UNLOCK_THRESHOLD = 60;
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const welcomeScreen = document.getElementById('welcomeScreen');
+        const chapterScreen = document.getElementById('chapterScreen');
+        const questionContainer = document.getElementById('questionContainer');
+        const resultContainer = document.getElementById('resultContainer');
+        const expertFinalContainer = document.getElementById('expertFinalContainer');
+        const quizHeader = document.getElementById('quizHeader');
+        const startQuizBtn = document.getElementById('startQuizBtn');
+        const startChapterQuizBtn = document.getElementById('startChapterQuizBtn');
+        const listenChapterBtn = document.getElementById('listenChapterBtn');
+        const chapterTitle = document.getElementById('chapterTitle');
+        const chapterText = document.getElementById('chapterText');
+        const chapterLevel = document.getElementById('chapterLevel');
+        const questionText = document.getElementById('questionText');
+        const optionsContainer = document.getElementById('optionsContainer');
+        const feedbackContainer = document.getElementById('feedbackContainer');
+        const feedbackMessage = document.getElementById('feedbackMessage');
+        const pointsBadge = document.getElementById('pointsBadge');
+        const explanationBox = document.getElementById('explanationBox');
+        const explanationText = document.getElementById('explanationText');
+        const correctAnswerText = document.getElementById('correctAnswerText');
+        const progressFill = document.getElementById('progressFill');
+        const questionCounter = document.getElementById('questionCounter');
+        const specialtyName = document.getElementById('specialtyName');
+        const specialtyTitle = document.getElementById('specialtyTitle');
+        const timerValue = document.getElementById('timerValue');
+        const timerBottomValue = document.getElementById('timerBottomValue');
+        const timerBottom = document.getElementById('timerBottom');
+        const scoreDisplay = document.getElementById('scoreDisplay');
+        const nextBtn = document.getElementById('nextBtn');
+        const quitBtn = document.getElementById('quitBtn');
+        const retryBtn = document.getElementById('retryBtn');
+        const finalScore = document.getElementById('finalScore');
+        const percentage = document.getElementById('percentage');
+        const resultMessage = document.getElementById('resultMessage');
+        const badgeContainer = document.getElementById('badgeContainer');
+        const levelUnlockMessage = document.getElementById('levelUnlockMessage');
+        const levelGrid = document.getElementById('levelGrid');
+        const synopsisText = document.getElementById('synopsisText');
+        const listenSynopsisBtn = document.getElementById('listenSynopsisBtn');
+        const quizTitle = document.getElementById('quizTitle');
+        
+        const ttsQuestionBtn = document.getElementById('ttsQuestionBtn');
+        const ttsFeedbackBtn = document.getElementById('ttsFeedbackBtn');
+        const ttsExplanationBtn = document.getElementById('ttsExplanationBtn');
+        
+        // ============================================================
+        // SERVICES
+        // ============================================================
+        
+        const storage = new StorageService();
+        const translate = new TranslateService();
+        const quiz = new QuizEngine();
+        const timer = new Timer(40);
+        const score = new Score();
+        const progress = new Progress(0);
+        
+        let accessService = null;
+        
+        // ============================================================
+        // ESTADO
+        // ============================================================
+        
+        let selectedSpecialty = null;
+        let currentLevel = 'debutant1';
+        let questions = [];
+        let storyData = null;
+        let isAnswered = false;
+        let isSynopsisPlaying = false;
+        let isChapterPlaying = false;
+        let currentQuestionIndex = 0;
+        let totalQuestions = 0;
+        let currentQuestionText = '';
+        let currentFeedbackText = '';
+        let currentFeedbackReplayText = '';
+        let currentExplanationText = '';
+        let pendingLevelId = null;
+        let isChapterMode = false;
+        let timeRemaining = 40;
+        
+        // ============================================================
+        // ✅ FUNCIÓN DE LIMPIEZA PARA TTS (ELIMINA EMOJIS + HTML)
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            
+            // 1️⃣ Eliminar etiquetas HTML
+            let cleaned = text.replace(/<[^>]*>/g, ' ');
+            
+            // 2️⃣ Eliminar emojis (Unicode)
+            cleaned = cleaned.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[\u2600-\u27BF]/g, '');
+            cleaned = cleaned.replace(/[\u2700-\u27BF]/g, '');
+            cleaned = cleaned.replace(/[\uFE00-\uFEFF]/g, '');
+            cleaned = cleaned.replace(/[\u2300-\u23FF]/g, '');
+            
+            // 3️⃣ Eliminar emojis específicos
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆🌱🌿🌳🌲🏆📈🎯💰📋⏱️🔄🏅🎙️🤖]/g, '');
+            
+            // 4️⃣ Eliminar saltos de línea
+            cleaned = cleaned.replace(/\n/g, ' ');
+            cleaned = cleaned.replace(/\r/g, ' ');
+            
+            // 5️⃣ Limpiar espacios
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            
+            return cleaned;
+        }
+        
+        // ============================================================
+        // EFECTOS DE SONIDO (WEB AUDIO API)
+        // ============================================================
+        
+        function playSound(type) {
+            try {
+                const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                if (type === 'win') {
+                    const notes = [392, 523, 659, 784, 1047];
+                    const volume = 0.25;
+                    const duration = 0.35;
+                    const delay = 140;
+                    
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            
+                            const harmonics = [2, 3, 4];
+                            harmonics.forEach((h, j) => {
+                                const oscH = audioCtx.createOscillator();
+                                const gainH = audioCtx.createGain();
+                                oscH.connect(gainH);
+                                gainH.connect(audioCtx.destination);
+                                oscH.frequency.value = freq * h;
+                                oscH.type = 'square';
+                                const volH = volume / (j + 2) * 0.5;
+                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
+                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
+                                oscH.start();
+                                oscH.stop(audioCtx.currentTime + duration * 0.7);
+                            });
+                            
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'lose') {
+                    const notes = [523, 494, 466, 440];
+                    const volume = 0.25;
+                    const duration = 0.4;
+                    const delay = 140;
+                    
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            
+                            const harmonics = [2, 3, 4];
+                            harmonics.forEach((h, j) => {
+                                const oscH = audioCtx.createOscillator();
+                                const gainH = audioCtx.createGain();
+                                oscH.connect(gainH);
+                                gainH.connect(audioCtx.destination);
+                                oscH.frequency.value = freq * h;
+                                oscH.type = 'square';
+                                const volH = volume / (j + 2) * 0.5;
+                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
+                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
+                                oscH.start();
+                                oscH.stop(audioCtx.currentTime + duration * 0.7);
+                            });
+                            
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'click') {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.frequency.value = 1200;
+                    osc.type = 'sine';
+                    gain.gain.setValueAtTime(0.20, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.05);
+                    
+                } else if (type === 'tada') {
+                    const notesTada = [523, 659, 784, 1047, 1318];
+                    notesTada.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + 0.12);
+                        }, i * 100);
+                    });
+                }
+            } catch (e) {
+                // Silencioso si Web Audio no es compatible
+            }
+        }
+        
+        // ============================================================
+        // CONFETTIS PARA LA VICTORIA
+        // ============================================================
+        
+        function launchConfetti() {
+            try {
+                const container = document.createElement('div');
+                container.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;overflow:hidden;';
+                document.body.appendChild(container);
+                
+                const emojis = ['🎉', '🎊', '🌟', '⭐', '💪', '🏆', '✨', '🔥', '🎯', '👑'];
+                const colors = ['#ff6b6b', '#ffd93d', '#6bcb77', '#4d96ff', '#ff6bff', '#ffa94d'];
+                
+                for (let i = 0; i < 80; i++) {
+                    const el = document.createElement('div');
+                    const isEmoji = Math.random() > 0.5;
+                    el.textContent = isEmoji ? emojis[Math.floor(Math.random() * emojis.length)] : '✦';
+                    el.style.cssText = `
+                        position: absolute;
+                        top: -20px;
+                        left: ${Math.random() * 100}%;
+                        font-size: ${1 + Math.random() * 2}rem;
+                        color: ${colors[Math.floor(Math.random() * colors.length)]};
+                        animation: confettiFall ${2 + Math.random() * 3}s linear forwards;
+                        animation-delay: ${Math.random() * 0.8}s;
+                        transform: rotate(${Math.random() * 360}deg);
+                        opacity: 0;
+                    `;
+                    container.appendChild(el);
+                }
+                
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes confettiFall {
+                        0% { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
+                        100% { opacity: 0; transform: translateY(100vh) rotate(720deg) scale(0.3); }
+                    }
+                `;
+                document.head.appendChild(style);
+                
+                setTimeout(() => {
+                    container.remove();
+                    style.remove();
+                }, 5000);
+                
+            } catch (e) {
+                console.warn('⚠️ Confettis no disponibles:', e);
+            }
+        }
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // TTS MEJORADO : FUERZA LA RE-LECTURA SIN STOP
+        // ============================================================
+        
+        function speakText(text, button, buttonText = '🔊') {
+            if (!window.tts) {
+                showToast('❌ Módulo TTS no disponible', 3000);
+                return;
+            }
+            
+            const cleanText = cleanTextForTTS(text);
+            if (!cleanText || cleanText.trim() === '') {
+                showToast('❌ Texto no disponible', 3000);
+                return;
+            }
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+            }
+            
+            if (button) {
+                button.textContent = '⏹️ Detener';
+                button.classList.add('listening');
+            }
+            
+            window.tts.speak(
+                cleanText,
+                'es',
+                0.9,
+                1.0,
+                () => {
+                    if (button) {
+                        button.textContent = buttonText;
+                        button.classList.remove('listening');
+                    }
+                },
+                (error) => {
+                    console.error('❌ Error TTS:', error);
+                    if (button) {
+                        button.textContent = buttonText;
+                        button.classList.remove('listening');
+                    }
+                    showToast('❌ Error de lectura de voz', 3000);
+                }
+            );
+        }
+        
+        // ============================================================
+        // LECTURA DE RESULTADOS CON MENSAJES PERSONALIZADOS
+        // ============================================================
+        
+        function speakResultMessage(score, totalQuestions, userName) {
+            const percent = Math.round((score / totalQuestions) * 100);
+            const name = userName || 'Doctor';
+            let message = '';
+            
+            if (percent === 100) {
+                message = `¡Perfecto ${name} ! Has obtenido ${score} de ${totalQuestions}, es decir, 100 por ciento. ¡Eres un verdadero experto! Estoy impresionado por tu dominio. Sigue así, eres increíble. Estaremos encantados de verte de nuevo para nuevos desafíos. ¡Hasta pronto ${name} !`;
+            } else if (percent >= 80) {
+                message = `¡Excelente trabajo ${name} ! Has obtenido ${score} de ${totalQuestions}, es decir, ${percent} por ciento. Dominas perfectamente este tema. Estás en el buen camino para convertirte en un experto. Sigue brillando como lo haces. Estaremos encantados de verte la próxima vez. ¡Hasta pronto ${name} !`;
+            } else if (percent >= 60) {
+                message = `¡Muy buen resultado ${name} ! Has obtenido ${score} de ${totalQuestions}, es decir, ${percent} por ciento. Tienes buenas bases. Sigue practicando para alcanzar la excelencia. Tienes todo lo necesario para triunfar. Estaremos encantados de verte de nuevo para continuar. ¡Hasta pronto ${name} !`;
+            } else if (percent >= 40) {
+                message = `¡Buen comienzo ${name} ! Has obtenido ${score} de ${totalQuestions}, es decir, ${percent} por ciento. Tienes conocimientos sólidos. Con un poco más de práctica, vas a progresar rápidamente. No te rindas, estás en el buen camino. Estaremos encantados de verte de nuevo para continuar tu progreso. ¡Hasta pronto ${name} !`;
+            } else if (percent >= 20) {
+                message = `No te desanimes ${name} ! Has obtenido ${score} de ${totalQuestions}, es decir, ${percent} por ciento. Cada error es una oportunidad para aprender. Inténtalo de nuevo, lo conseguirás. Creo en ti. Estaremos encantados de verte de nuevo para que puedas superarte. ¡Hasta muy pronto ${name} !`;
+            } else {
+                message = `No era tu día ${name}. Has obtenido ${score} de ${totalQuestions}, es decir, ${percent} por ciento. Pero no abandones. La perseverancia es la clave del éxito. Vuelve a intentarlo, sé que puedes hacerlo. Estaremos encantados de verte de nuevo para este nuevo intento. ¡Hasta pronto ${name} !`;
+            }
+            
+            setTimeout(() => {
+                if (window.tts) {
+                    window.tts.speak(cleanTextForTTS(message), 'es', 0.9, 1.0);
+                }
+            }, 1200);
+        }
+        
+        // ============================================================
+        // CARGAR LA ESPECIALIDAD
+        // ============================================================
+        
+        function loadSavedSpecialty() {
+            const settings = storage.getSettings() || {};
+            selectedSpecialty = settings.selectedSpecialty || localStorage.getItem('eteo_selected_specialty');
+            
+            if (!selectedSpecialty) {
+                showToast('⚠️ Por favor, elige una especialidad', 3000);
+                setTimeout(() => window.location.href = 'elegir_especialidades_es.html', 1500);
+                return null;
+            }
+            
+            currentLevel = localStorage.getItem('eteo_current_level') || 'debutant1';
+            return selectedSpecialty;
+        }
+        
+        // ============================================================
+        // CARGAR LA HISTORIA
+        // ============================================================
+        
+        async function loadStory() {
+            try {
+                const path = `../data/es/${selectedSpecialty}/stories/story_v1.json`;
+                console.log('📂 Cargando historia :', path);
+                const response = await fetch(path);
+                if (response.ok) {
+                    storyData = await response.json();
+                    return storyData;
+                } else {
+                    throw new Error('Historia no encontrada');
+                }
+            } catch (error) {
+                const displayName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                storyData = {
+                    title: displayName,
+                    subtitle: '',
+                    synopsis: `Bienvenido a la especialidad ${displayName}. Selecciona un nivel para empezar.`,
+                    characters: [],
+                    chapters: {},
+                    chapterTitles: {},
+                    chapterEndings: {}
+                };
+                return storyData;
+            }
+        }
+        
+        // ============================================================
+        // CARGAR LOS DATOS
+        // ============================================================
+        
+        async function loadSpecialtyData() {
+            await loadStory();
+            const displayName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            specialtyTitle.textContent = `🎯 ${storyData.title || displayName}`;
+            synopsisText.textContent = storyData.synopsis || `Bienvenido a la especialidad ${displayName}.`;
+            listenSynopsisBtn.textContent = '🔊 Escuchar la historia';
+            return storyData;
+        }
+        
+        // ============================================================
+        // ✅ VERIFICAR ACCESO - TODOS LOS NIVELES GRATUITOS
+        // ============================================================
+        
+        function canAccessLevel(levelId) {
+            return true;
+        }
+        
+        // ============================================================
+        // MOSTRAR PANTALLA DE CAPÍTULO
+        // ============================================================
+        
+        function showChapterScreen(levelId) {
+            const levelLabel = LEVELS.find(l => l.id === levelId)?.label || levelId;
+            const chapterTitleText = storyData.chapterTitles?.[levelId] || `${levelLabel}`;
+            const chapterTextContent = storyData.chapters?.[levelId] || `Bienvenido al nivel ${levelLabel}.`;
+            
+            chapterTitle.textContent = chapterTitleText;
+            chapterText.textContent = chapterTextContent;
+            chapterLevel.textContent = levelLabel;
+            pendingLevelId = levelId;
+            isChapterMode = true;
+            
+            welcomeScreen.style.display = 'none';
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'none';
+            expertFinalContainer.style.display = 'none';
+            quizHeader.style.display = 'none';
+            chapterScreen.style.display = 'block';
+            
+            listenChapterBtn.textContent = '🔊 Escuchar el capítulo';
+            listenChapterBtn.classList.remove('listening');
+            isChapterPlaying = false;
+            
+            setTimeout(() => {
+                if (window.tts && chapterTextContent) {
+                    isChapterPlaying = true;
+                    listenChapterBtn.textContent = '⏹️ Detener';
+                    listenChapterBtn.classList.add('listening');
+                    window.tts.speak(cleanTextForTTS(chapterTextContent), 'es', 0.9, 1.0, () => {
+                        isChapterPlaying = false;
+                        listenChapterBtn.textContent = '🔊 Escuchar el capítulo';
+                        listenChapterBtn.classList.remove('listening');
+                    });
+                }
+            }, 500);
+        }
+        
+        // ============================================================
+        // INICIAR EL QUIZ DESDE EL CAPÍTULO
+        // ============================================================
+        
+        async function startQuizFromChapter() {
+            if (!pendingLevelId) return;
+            
+            isChapterMode = false;
+            chapterScreen.style.display = 'none';
+            quizHeader.style.display = 'flex';
+            
+            await loadQuestionsForLevel(pendingLevelId);
+            
+            if (!questions || questions.length === 0) {
+                showToast('❌ No hay preguntas disponibles', 3000);
+                return;
+            }
+            
+            try {
+                quiz.loadQuestions({ questions: questions });
+                quiz.start();
+                
+                timer.reset();
+                timer.start();
+                
+                score.reset();
+                progress.init(questions.length);
+                
+                currentQuestionIndex = 0;
+                isAnswered = false;
+                timeRemaining = 40;
+                
+                const displayName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                const levelLabel = LEVELS.find(l => l.id === pendingLevelId)?.label || pendingLevelId;
+                quizTitle.textContent = `${displayName} - ${levelLabel}`;
+                
+                questionContainer.style.display = 'block';
+                resultContainer.style.display = 'none';
+                expertFinalContainer.style.display = 'none';
+                
+                showQuestion(0);
+                
+            } catch (error) {
+                console.error('❌ Error iniciando quiz:', error);
+                showToast(`❌ Error: ${error.message}`, 3000);
+            }
+        }
+        
+        // ============================================================
+        // MOSTRAR LOS NIVELES
+        // ============================================================
+        
+        function renderLevels() {
+            const settings = storage.getSettings() || {};
+            const scores = settings.scores || {};
+            const specialtyScores = scores[selectedSpecialty] || {};
+            
+            let unlockedLevels = ['debutant1'];
+            for (let i = 0; i < UNLOCK_ORDER.length - 1; i++) {
+                const current = UNLOCK_ORDER[i];
+                const next = UNLOCK_ORDER[i + 1];
+                const levelScore = specialtyScores[current];
+                if (levelScore && levelScore.percentage >= UNLOCK_THRESHOLD) {
+                    unlockedLevels.push(next);
+                } else {
+                    break;
+                }
+            }
+            
+            levelGrid.innerHTML = '';
+            
+            for (let i = 0; i < LEVELS.length; i += 2) {
+                const row = document.createElement('div');
+                row.className = 'level-row';
+                
+                const level1 = LEVELS[i];
+                if (level1) {
+                    const card1 = createLevelCard(level1, unlockedLevels, specialtyScores);
+                    row.appendChild(card1);
+                }
+                
+                const level2 = LEVELS[i + 1];
+                if (level2) {
+                    const card2 = createLevelCard(level2, unlockedLevels, specialtyScores);
+                    row.appendChild(card2);
+                }
+                
+                levelGrid.appendChild(row);
+            }
+            
+            if (currentLevel && unlockedLevels.includes(currentLevel)) {
+                startQuizBtn.style.display = 'block';
+                startQuizBtn.textContent = '🚀 Comenzar el QCM';
+            } else {
+                startQuizBtn.style.display = 'none';
+            }
+        }
+        
+        // ============================================================
+        // CREAR UNA TARJETA DE NIVEL
+        // ============================================================
+        
+        function createLevelCard(level, unlockedLevels, specialtyScores) {
+            const isUnlocked = unlockedLevels.includes(level.id);
+            const isActive = level.id === currentLevel;
+            const levelScore = specialtyScores[level.id];
+            const hasScore = levelScore && levelScore.score !== undefined;
+            const isCompleted = hasScore && levelScore.percentage >= UNLOCK_THRESHOLD;
+            
+            const card = document.createElement('div');
+            card.className = `level-btn-small ${isCompleted ? 'completed' : ''}`;
+            
+            let statusText = level.label;
+            if (!isUnlocked) {
+                statusText = `${level.label} 🔒`;
+            }
+            
+            if (isActive && isUnlocked) {
+                card.classList.add('active');
+            }
+            
+            const scoreText = hasScore ? `${Math.round(levelScore.percentage)}%` : '';
+            
+            card.innerHTML = `
+                <span class="level-label">${statusText}</span>
+                ${scoreText ? `<span class="level-score-badge">${scoreText}</span>` : ''}
+            `;
+            
+            if (isUnlocked) {
+                card.addEventListener('click', () => {
+                    const levelId = level.id;
+                    currentLevel = levelId;
+                    localStorage.setItem('eteo_current_level', levelId);
+                    
+                    document.querySelectorAll('.level-btn-small').forEach(el => {
+                        el.classList.remove('active');
+                    });
+                    card.classList.add('active');
+                    
+                    showChapterScreen(levelId);
+                });
+                card.style.cursor = 'pointer';
+            } else {
+                card.style.opacity = '0.5';
+                card.style.cursor = 'not-allowed';
+                card.title = 'Nivel bloqueado (60% requerido)';
+            }
+            
+            return card;
+        }
+        
+        // ============================================================
+        // SELECCIONAR UN NIVEL
+        // ============================================================
+        
+        async function selectLevel(levelId) {
+            currentLevel = levelId;
+            localStorage.setItem('eteo_current_level', levelId);
+            
+            document.querySelectorAll('.level-btn-small').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            const allCards = document.querySelectorAll('.level-btn-small');
+            const index = LEVELS.findIndex(l => l.id === levelId);
+            if (allCards[index]) {
+                allCards[index].classList.add('active');
+            }
+            
+            startQuizBtn.textContent = '🚀 Comenzar el QCM';
+            startQuizBtn.style.display = 'block';
+            
+            await loadQuestionsForLevel(levelId);
+            
+            const label = LEVELS.find(l => l.id === levelId)?.label || levelId;
+            showToast(`📚 Nivel seleccionado: ${label}`, 2000);
+        }
+        
+        // ============================================================
+        // CARGAR LAS PREGUNTAS
+        // ============================================================
+        
+        async function loadQuestionsForLevel(levelId) {
+            try {
+                const path = `../data/es/${selectedSpecialty}/${levelId}.json`;
+                console.log('📂 Cargando preguntas :', path);
+                
+                const response = await fetch(path);
+                if (!response.ok) {
+                    throw new Error(`Archivo no encontrado: ${path}`);
+                }
+                
+                const data = await response.json();
+                let rawQuestions = data.questions || [];
+                
+                if (rawQuestions.length === 0) {
+                    throw new Error('No hay preguntas en el archivo');
+                }
+                
+                questions = rawQuestions.map(q => ({
+                    id: q.id || `q_${Math.random().toString(36).substr(2, 9)}`,
+                    type: q.type || 'single-choice',
+                    text: q.question || q.text || 'Pregunta sin texto',
+                    options: q.options || [],
+                    correct: q.correct !== undefined ? q.correct : 0,
+                    explanation: q.explanation || ''
+                }));
+                
+                questions = questions.filter(q => q.options && q.options.length > 0);
+                
+                if (questions.length === 0) {
+                    throw new Error('No hay preguntas válidas (sin opciones)');
+                }
+                
+                questions = questions.map(q => {
+                    const optionsWithCorrect = q.options.map((opt, idx) => ({
+                        option: opt,
+                        isCorrect: idx === q.correct
+                    }));
+                    
+                    for (let i = optionsWithCorrect.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [optionsWithCorrect[i], optionsWithCorrect[j]] = [optionsWithCorrect[j], optionsWithCorrect[i]];
+                    }
+                    
+                    return {
+                        ...q,
+                        options: optionsWithCorrect.map(item => item.option),
+                        correct: optionsWithCorrect.findIndex(item => item.isCorrect)
+                    };
+                });
+                
+                totalQuestions = questions.length;
+                return questions;
+                
+            } catch (error) {
+                console.error('❌ Error:', error);
+                showToast(`❌ Error: ${error.message}`, 3000);
+                questions = [];
+                totalQuestions = 0;
+                return [];
+            }
+        }
+        
+        // ============================================================
+        // ESCUCHAR LA HISTORIA
+        // ============================================================
+        
+        listenSynopsisBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            if (!window.tts) {
+                showToast('❌ Módulo TTS no disponible', 3000);
+                return;
+            }
+            
+            if (isSynopsisPlaying || window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                isSynopsisPlaying = false;
+                this.textContent = '🔊 Escuchar la historia';
+                this.classList.remove('listening');
+                return;
+            }
+            
+            const text = synopsisText.textContent;
+            if (!text || text === 'Cargando la historia...') {
+                showToast('❌ Historia no disponible', 3000);
+                return;
+            }
+            
+            isSynopsisPlaying = true;
+            this.textContent = '⏹️ Detener';
+            this.classList.add('listening');
+            
+            window.tts.speak(
+                cleanTextForTTS(text),
+                'es',
+                0.9,
+                1.0,
+                () => {
+                    isSynopsisPlaying = false;
+                    this.textContent = '🔊 Escuchar la historia';
+                    this.classList.remove('listening');
+                },
+                (error) => {
+                    console.error('❌ Error TTS:', error);
+                    isSynopsisPlaying = false;
+                    this.textContent = '🔊 Escuchar la historia';
+                    this.classList.remove('listening');
+                    showToast('❌ Error de lectura de voz', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // ESCUCHAR EL CAPÍTULO
+        // ============================================================
+        
+        listenChapterBtn.addEventListener('click', function() {
+            const text = chapterText.textContent;
+            if (!text || text === '') {
+                showToast('❌ Capítulo no disponible', 3000);
+                return;
+            }
+            
+            if (isChapterPlaying || window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                isChapterPlaying = false;
+                this.textContent = '🔊 Escuchar el capítulo';
+                this.classList.remove('listening');
+                return;
+            }
+            
+            isChapterPlaying = true;
+            this.textContent = '⏹️ Detener';
+            this.classList.add('listening');
+            
+            window.tts.speak(
+                cleanTextForTTS(text),
+                'es',
+                0.9,
+                1.0,
+                () => {
+                    isChapterPlaying = false;
+                    this.textContent = '🔊 Escuchar el capítulo';
+                    this.classList.remove('listening');
+                },
+                (error) => {
+                    console.error('❌ Error TTS:', error);
+                    isChapterPlaying = false;
+                    this.textContent = '🔊 Escuchar el capítulo';
+                    this.classList.remove('listening');
+                    showToast('❌ Error de lectura de voz', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // INICIAR EL QUIZ (desde el botón "Comenzar")
+        // ============================================================
+        
+        startQuizBtn.addEventListener('click', () => {
+            showChapterScreen(currentLevel);
+        });
+        
+        // ============================================================
+        // INICIAR EL QUIZ DESDE EL CAPÍTULO
+        // ============================================================
+        
+        startChapterQuizBtn.addEventListener('click', startQuizFromChapter);
+        
+        // ============================================================
+        // TIMER
+        // ============================================================
+        
+        let timerInterval = null;
+        
+        function startTimer() {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                timerValue.textContent = formatTime(timeRemaining);
+                timerBottomValue.textContent = timeRemaining;
+                if (timeRemaining <= 5) {
+                    timerBottom.style.color = '#e74c3c';
+                }
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    handleTimeout();
+                }
+            }, 1000);
+        }
+        
+        function stopTimer() {
+            clearInterval(timerInterval);
+            timerBottom.style.color = '#e67e22';
+        }
+        
+        // ============================================================
+        // MOSTRAR UNA PREGUNTA (CON LECTURA AUTO)
+        // ============================================================
+        
+        function showQuestion(index) {
+            try {
+                const question = quiz.getCurrentQuestion();
+                
+                if (!question) {
+                    if (currentLevel === 'expert2') {
+                        showExpertFinal();
+                    } else {
+                        showResults();
+                    }
+                    return;
+                }
+                
+                currentQuestionIndex = index;
+                isAnswered = false;
+                timeRemaining = 40;
+                
+                currentQuestionText = question.text || question.question || 'Pregunta sin texto';
+                questionText.textContent = currentQuestionText;
+                
+                ttsQuestionBtn.style.display = 'inline-block';
+                ttsQuestionBtn.textContent = '🔊 Leer la pregunta';
+                ttsQuestionBtn.classList.remove('listening');
+                
+                ttsFeedbackBtn.style.display = 'none';
+                ttsExplanationBtn.style.display = 'none';
+                
+                optionsContainer.innerHTML = '';
+                const letters = ['A', 'B', 'C', 'D'];
+                
+                if (question.options && question.options.length > 0) {
+                    question.options.forEach((option, i) => {
+                        const btn = document.createElement('button');
+                        btn.className = 'option-btn';
+                        btn.innerHTML = `<span class="letter">${letters[i]}</span> ${option}`;
+                        btn.dataset.index = i;
+                        btn.addEventListener('click', () => handleOptionClick(i));
+                        optionsContainer.appendChild(btn);
+                    });
+                }
+                
+                feedbackContainer.style.display = 'none';
+                feedbackContainer.className = 'feedback-container';
+                explanationBox.style.display = 'none';
+                explanationBox.classList.remove('show');
+                
+                nextBtn.disabled = true;
+                
+                timer.reset();
+                startTimer();
+                timerValue.textContent = formatTime(timeRemaining);
+                timerBottomValue.textContent = timeRemaining;
+                timerBottom.style.color = '#e67e22';
+                
+                updateUI(index);
+                
+                // LECTURA AUTOMÁTICA DE LA PREGUNTA
+                setTimeout(() => {
+                    if (window.tts && currentQuestionText) {
+                        speakText(currentQuestionText, null);
+                    }
+                }, 500);
+                
+            } catch (error) {
+                console.error('❌ Error mostrando pregunta:', error);
+                showToast('❌ Error de visualización', 3000);
+            }
+        }
+        
+        // ============================================================
+        // MANEJAR EL CLIC (CON SONIDO + IA)
+        // ============================================================
+        
+        function handleOptionClick(index) {
+            if (isAnswered) return;
+            
+            isAnswered = true;
+            stopTimer();
+            
+            const timeSpent = 40 - timeRemaining;
+            
+            const question = quiz.getCurrentQuestion();
+            const isCorrect = quiz.submitAnswer(index);
+            
+            let autoFeedbackText = '';
+            let replayFeedbackText = '';
+            
+            if (isCorrect) {
+                score.addCorrect();
+                autoFeedbackText = `¡Respuesta correcta ! +1 punto.`;
+                replayFeedbackText = `¡Bien hecho ! Esa es la respuesta correcta. Ganas 1 punto.`;
+                playSound('win');
+                setTimeout(() => playSound('tada'), 400);
+                speakText('¡Respuesta correcta !', null);
+            } else {
+                score.addIncorrect();
+                autoFeedbackText = `Respuesta incorrecta, cero puntos. La respuesta correcta era ${question.options[question.correct]}.`;
+                replayFeedbackText = `Lo siento, no es la respuesta correcta. La respuesta correcta era ${question.options[question.correct]}.`;
+                playSound('lose');
+                speakText('Respuesta incorrecta.', null);
+            }
+            
+            currentFeedbackText = autoFeedbackText;
+            currentFeedbackReplayText = replayFeedbackText;
+            currentExplanationText = question.explanation || '';
+            
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === question.correct) btn.classList.add('correct');
+                else if (i === index && !isCorrect) btn.classList.add('wrong');
+            });
+            
+            feedbackContainer.style.display = 'block';
+            if (isCorrect) {
+                feedbackContainer.className = 'feedback-container correct';
+                feedbackMessage.textContent = '✅ ¡Correcto !';
+                pointsBadge.textContent = '+1 punto';
+                pointsBadge.className = 'points-badge correct';
+            } else {
+                feedbackContainer.className = 'feedback-container wrong';
+                feedbackMessage.textContent = '❌ Incorrecto';
+                pointsBadge.textContent = 'Respuesta correcta: ' + question.options[question.correct];
+                pointsBadge.className = 'points-badge wrong';
+            }
+            
+            ttsFeedbackBtn.style.display = 'inline-block';
+            ttsFeedbackBtn.textContent = '🔊 Reescuchar el feedback';
+            ttsFeedbackBtn.classList.remove('listening');
+            
+            if (question.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = question.explanation;
+                correctAnswerText.textContent = `✅ Respuesta correcta: ${question.options[question.correct]}`;
+                
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 Leer la explicación';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            
+            progress.next();
+            nextBtn.disabled = false;
+            
+            updateUI(quiz.getCurrentIndex());
+            
+            setTimeout(() => {
+                if (window.tts && currentFeedbackText) {
+                    speakText(currentFeedbackText, null);
+                }
+            }, 300);
+        }
+        
+        // ============================================================
+        // BOTONES TTS (FUERZAN LA RE-LECTURA)
+        // ============================================================
+        
+        ttsQuestionBtn.addEventListener('click', function() {
+            speakText(currentQuestionText, this, '🔊 Leer la pregunta');
+        });
+        
+        ttsFeedbackBtn.addEventListener('click', function() {
+            speakText(currentFeedbackReplayText, this, '🔊 Reescuchar el feedback');
+        });
+        
+        ttsExplanationBtn.addEventListener('click', function() {
+            speakText(currentExplanationText, this, '🔊 Leer la explicación');
+        });
+        
+        // ============================================================
+        // TIMEOUT
+        // ============================================================
+        
+        function handleTimeout() {
+            if (isAnswered) return;
+            isAnswered = true;
+            const question = quiz.getCurrentQuestion();
+            
+            const timeSpent = 40;
+            
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === question.correct) btn.classList.add('correct');
+            });
+            
+            feedbackContainer.style.display = 'block';
+            feedbackContainer.className = 'feedback-container wrong';
+            feedbackMessage.textContent = '⏰ ¡Tiempo agotado !';
+            pointsBadge.textContent = `Respuesta correcta: ${question.options[question.correct]}`;
+            pointsBadge.className = 'points-badge wrong';
+            
+            currentFeedbackText = `Tiempo agotado. La respuesta correcta era ${question.options[question.correct]}.`;
+            currentFeedbackReplayText = currentFeedbackText;
+            
+            if (question.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = question.explanation;
+                correctAnswerText.textContent = `✅ Respuesta correcta: ${question.options[question.correct]}`;
+                currentExplanationText = question.explanation;
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 Leer la explicación';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            
+            score.addTimeout();
+            progress.next();
+            nextBtn.disabled = false;
+            updateUI(quiz.getCurrentIndex());
+        }
+        
+        // ============================================================
+        // FORMATEAR EL TIEMPO
+        // ============================================================
+        
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        }
+        
+        // ============================================================
+        // ACTUALIZAR LA UI
+        // ============================================================
+        
+        function updateUI(index) {
+            const total = quiz.getTotalQuestions();
+            const current = index + 1;
+            const progressPercent = progress.getPercentage();
+            
+            progressFill.style.width = `${progressPercent}%`;
+            questionCounter.textContent = `Pregunta ${current}/${total}`;
+            scoreDisplay.textContent = `Puntuación: ${score.getCorrect()}/${score.getTotal()}`;
+        }
+        
+        // ============================================================
+        // SIGUIENTE PREGUNTA
+        // ============================================================
+        
+        function goToNext() {
+            const hasNext = quiz.nextQuestion();
+            if (hasNext) {
+                showQuestion(quiz.getCurrentIndex());
+            } else {
+                if (currentLevel === 'expert2') {
+                    showExpertFinal();
+                } else {
+                    showResults();
+                }
+            }
+        }
+        
+        // ============================================================
+        // MOSTRAR RESULTADOS (CON EFECTOS SONIDO + CONFETTIS + GUARDADO FIREBASE)
+        // ============================================================
+        
+        async function showResults() {
+            stopTimer();
+            
+            const correct = score.getCorrect();
+            const percent = score.getPercentage(totalQuestions);
+            
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+            chapterScreen.style.display = 'none';
+            expertFinalContainer.style.display = 'none';
+            
+            finalScore.textContent = `${correct}/${totalQuestions}`;
+            percentage.textContent = `${Math.round(percent)}%`;
+            
+            let message, badge;
+            if (percent >= 80) {
+                message = '🌟 ¡Excelente ! Dominas perfectamente este tema.';
+                badge = '🏆 Experto';
+            } else if (percent >= 60) {
+                message = '👏 ¡Muy bien ! Sigue practicando.';
+                badge = '📈 Intermedio';
+            } else if (percent >= 40) {
+                message = '💪 ¡Buen comienzo ! Consulta las explicaciones.';
+                badge = '📚 Principiante';
+            } else {
+                message = '📖 Revisa y vuelve a intentarlo.';
+                badge = '🔄 Revisar';
+            }
+            
+            resultMessage.textContent = message;
+            badgeContainer.innerHTML = `<div class="unlock-badge">${badge}</div>`;
+            
+            const isUnlocked = percent >= UNLOCK_THRESHOLD;
+            if (isUnlocked) {
+                levelUnlockMessage.textContent = '✅ ¡Nivel validado ! Puedes pasar al siguiente nivel.';
+                levelUnlockMessage.style.color = '#4caf50';
+            } else {
+                levelUnlockMessage.textContent = `🔒 ${UNLOCK_THRESHOLD - Math.round(percent)}% requerido para desbloquear el siguiente nivel.`;
+                levelUnlockMessage.style.color = '#e74c3c';
+            }
+            
+            // ✅ GUARDADO LOCALSTORAGE (existente)
+            const settings = storage.getSettings() || {};
+            if (!settings.scores) settings.scores = {};
+            if (!settings.scores[selectedSpecialty]) settings.scores[selectedSpecialty] = {};
+            settings.scores[selectedSpecialty][currentLevel] = {
+                date: new Date().toISOString(),
+                score: correct,
+                total: totalQuestions,
+                percentage: percent
+            };
+            storage.saveSettings(settings);
+            
+            // ✅ GUARDADO FIREBASE
+            const user = auth.currentUser;
+            if (user) {
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);
+                    
+                    await updateDoc(userRef, {
+                        rewardHistory: arrayUnion({
+                            specialty: selectedSpecialty,
+                            level: currentLevel,
+                            isCorrect: percent >= 60,
+                            points: correct,
+                            total: totalQuestions,
+                            date: new Date().toISOString(),
+                            timeSpent: 40 - timeRemaining || 0,
+                            percentage: Math.round(percent)
+                        })
+                    });
+                    
+                    console.log('✅ Quiz guardado en Firebase (rewardHistory)');
+                    
+                    const snapshot = await getDoc(userRef);
+                    const data = snapshot.data() || {};
+                    const scores = data.scores || {};
+                    
+                    const totalLevels = Object.keys(scores).length + 1;
+                    const totalScore = Object.values(scores).reduce((sum, s) => sum + (s.percentage || 0), 0) + percent;
+                    const avgScore = Math.round(totalScore / totalLevels);
+                    
+                    await updateDoc(userRef, {
+                        totalLevels: totalLevels,
+                        avgScore: avgScore,
+                        globalScore: Math.round(((totalLevels / 216) * 70) + (avgScore * 0.3)),
+                        lastQuizDate: new Date().toISOString()
+                    });
+                    
+                    console.log('✅ Estadísticas globales actualizadas en Firebase');
+                    
+                } catch (error) {
+                    console.error('❌ Error guardando en Firebase:', error);
+                }
+            }
+            
+            const userName = storage.getSettings()?.user?.fullName || 'Doctor';
+            speakResultMessage(correct, totalQuestions, userName);
+            
+            const isSuccess = percent >= UNLOCK_THRESHOLD;
+            if (isSuccess) {
+                playSound('win');
+                setTimeout(() => playSound('tada'), 400);
+                launchConfetti();
+            } else {
+                playSound('lose');
+                showToast('💪 ¡No te desanimes ! ¡Vuelve a intentarlo, lo conseguirás !', 3000);
+            }
+        }
+        
+        // ============================================================
+        // 🔥 MOSTRAR PANTALLA FINAL EXPERTO 2 (CON SPEECH MARKETING)
+        // ============================================================
+        
+        async function showExpertFinal() {
+            stopTimer();
+            
+            const correct = score.getCorrect();
+            const percent = score.getPercentage(totalQuestions);
+            const userName = storage.getSettings()?.user?.fullName || 'Doctor';
+            const displayName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'none';
+            chapterScreen.style.display = 'none';
+            expertFinalContainer.style.display = 'block';
+            
+            document.getElementById('expertUserName').textContent = userName;
+            document.getElementById('expertSpecialtyName').textContent = displayName;
+            document.getElementById('expertFinalScore').textContent = `${Math.round(percent)}%`;
+            document.getElementById('expertFinalLevel').textContent = 'Experto 2';
+            document.getElementById('expertAIName').textContent = userName;
+            
+            // ============================================================
+            // 🔥 NUEVO SPEECH MARKETING (SIN EMOJIS EN EL TTS)
+            // ============================================================
+            
+            let msg = '';
+            let msgForDisplay = '';
+            
+            // MENSAJE PARA LA PANTALLA (CON EMOJIS)
+            msgForDisplay = `<div style="text-align: left; font-size: 1rem; line-height: 1.8;">
+
+<strong>✨ Querido/a Dr. ${userName},</strong><br><br>
+
+Acabas de vivir un <strong>recorrido excepcional</strong>.<br>
+6 niveles. 6 desafíos. <strong>6 victorias</strong>.<br><br>
+
+<strong>👏 Pero no te detengas aquí.</strong><br>
+Porque <strong>las leyendas no se detienen en la cima</strong>.<br>
+<strong>Plantan su bandera</strong>.<br><br>
+
+<strong>🏆 Eres una pieza rara.</strong><br>
+Solo <strong>5% de los usuarios de ETEO</strong> alcanzan este nivel de maestría.<br>
+No formas parte de los aprendices, <strong>formas parte de las leyendas</strong>.<br><br>
+
+🌍 Hoy, el mundo necesita <strong>tu experiencia</strong>.<br>
+Tus pacientes necesitan <strong>a ese médico excepcional</strong> en el que te has convertido.<br><br>
+
+<strong>🎓 La Certificación ETEO : tu pasaporte a la excelencia</strong><br><br>
+
+📜 <strong>Un certificado nominativo</strong>, firmado por los fundadores.<br>
+🔐 <strong>Un código QR único</strong> para verificar su autenticidad.<br>
+🏛️ <strong>Un documento oficial</strong> que podrás colgar en tu consultorio.<br>
+🌍 <strong>El reconocimiento</strong> de tus colegas y tus pacientes.<br><br>
+
+<strong>⚡ Pero atención :</strong><br>
+La certificación ETEO no se da a todo el mundo.<br>
+Es un <strong>privilegio reservado a la élite</strong>.<br>
+Es la prueba de que <strong>has llegado hasta el final</strong>.<br>
+Es el <strong>reconocimiento</strong> de tu experiencia.<br><br>
+
+<strong>🔥 Solo los mejores llegan hasta el final.</strong><br>
+<strong>💎 Tú eres uno de ellos.</strong><br><br>
+
+<strong>🚀 Entonces, ¿listo para obtener tu certificado ?</strong><br>
+La aventura continúa. <strong>El examen de certificación te espera</strong>.<br>
+<strong>50 preguntas</strong> para demostrar al mundo entero <strong>quién eres</strong>.<br><br>
+
+<span style="font-size: 0.95rem; color: #555;">
+📋 50 preguntas • 30 segundos cada una • 70% para aprobar<br>
+🔒 2 intentos permitidos • Pago de 20€ para el certificado
+</span><br><br>
+
+<strong>👏 Has hecho lo más difícil. La recompensa está al alcance de la mano.</strong><br>
+<strong>¡Vamos, allá vamos !</strong> 🚀
+
+</div>`;
+            
+            // MENSAJE PARA EL TTS (SIN EMOJIS, SIN HTML)
+            msg = `Querido Doctor ${userName}. Acabas de vivir un recorrido excepcional. 6 niveles, 6 desafíos, 6 victorias. Pero no te detengas aquí. Porque las leyendas no se detienen en la cima. Plantan su bandera. Eres una pieza rara. Solo 5 por ciento de los usuarios de ETEO alcanzan este nivel de maestría. No formas parte de los aprendices, formas parte de las leyendas. Hoy, el mundo necesita tu experiencia. Tus pacientes necesitan a ese médico excepcional en el que te has convertido. La Certificación ETEO : tu pasaporte a la excelencia. Un certificado nominativo, firmado por los fundadores. Un código QR único para verificar su autenticidad. Un documento oficial que podrás colgar en tu consultorio. El reconocimiento de tus colegas y tus pacientes. Pero atención : la certificación ETEO no se da a todo el mundo. Es un privilegio reservado a la élite. Es la prueba de que has llegado hasta el final. Es el reconocimiento de tu experiencia. Solo los mejores llegan hasta el final. Tú eres uno de ellos. Entonces, ¿listo para obtener tu certificado ? La aventura continúa. El examen de certificación te espera. 50 preguntas para demostrar al mundo entero quién eres. 50 preguntas, 30 segundos cada una, 70 por ciento para aprobar. 2 intentos permitidos. Pago de 20 euros para el certificado. Has hecho lo más difícil. La recompensa está al alcance de la mano. ¡Vamos, allá vamos !`;
+            
+            document.getElementById('expertAIMessage').innerHTML = msgForDisplay;
+            
+            // ✅ LECTURA TTS AUTOMÁTICA DEL MENSAJE (LIMPIADO)
+            setTimeout(() => {
+                if (window.tts && typeof window.tts.speak === 'function') {
+                    try {
+                        window.tts.speak(msg, 'es', 0.9, 1.0);
+                        console.log('🔊 Lectura TTS lanzada !');
+                    } catch (e) {
+                        console.error('❌ Error TTS:', e);
+                    }
+                } else {
+                    console.warn('⚠️ TTS no disponible');
+                }
+            }, 1500);
+            
+            // ✅ GUARDADO LOCALSTORAGE
+            const settings = storage.getSettings() || {};
+            if (!settings.completed) settings.completed = {};
+            if (!settings.completed[selectedSpecialty]) settings.completed[selectedSpecialty] = {};
+            settings.completed[selectedSpecialty].expert2 = true;
+            storage.saveSettings(settings);
+            
+            // ✅ GUARDADO FIREBASE
+            const user = auth.currentUser;
+            if (user) {
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);
+                    
+                    await updateDoc(userRef, {
+                        [`completedSpecialties.${selectedSpecialty}`]: {
+                            completedAt: new Date().toISOString(),
+                            finalScore: Math.round(percent),
+                            level: 'expert2'
+                        }
+                    });
+                    
+                    if (percent >= 75) {
+                        await updateDoc(userRef, {
+                            certificates: arrayUnion(selectedSpecialty)
+                        });
+                        showToast('🎓 ¡Felicidades ! ¡Has obtenido un certificado !', 3000);
+                    }
+                    
+                    console.log('✅ Experto 2 guardado en Firebase');
+                    
+                } catch (error) {
+                    console.error('❌ Error guardando Experto 2:', error);
+                }
+            }
+        }
+        
+        // ============================================================
+        // EVENTOS
+        // ============================================================
+        
+        nextBtn.addEventListener('click', goToNext);
+        
+        quitBtn.addEventListener('click', () => {
+            if (confirm('¿Salir del quiz ?')) {
+                stopTimer();
+                window.location.href = 'elegir_especialidades_es.html';
+            }
+        });
+        
+        retryBtn.addEventListener('click', () => {
+            resultContainer.style.display = 'none';
+            welcomeScreen.style.display = 'block';
+            quizHeader.style.display = 'none';
+            chapterScreen.style.display = 'none';
+            renderLevels();
+        });
+        
+        document.getElementById('menuBtn').addEventListener('click', () => {
+            window.location.href = '../index.html';
+        });
+        
+        document.getElementById('levelsBtn').addEventListener('click', () => {
+            window.location.href = 'quiz_es.html';
+        });
+        
+        // ============================================================
+        // 🔥 EVENTOS DE LA PANTALLA EXPERTO 2 - CORREGIDOS
+        // ============================================================
+        
+        document.getElementById('expertExamBtn').addEventListener('click', () => {
+            // ✅ LANZAR EL EXAMEN GRATUITO DE CERTIFICACIÓN HACIA EL ARCHIVO CORRECTO
+            window.location.href = `ruleta_certificado_es.html?specialty=${selectedSpecialty}&level=expert2`;
+        });
+        
+        document.getElementById('expertLevelsBtn').addEventListener('click', () => {
+            window.location.href = 'quiz_es.html';
+        });
+        
+        document.getElementById('expertMenuBtn').addEventListener('click', () => {
+            window.location.href = '../index.html';
+        });
+        
+        document.getElementById('expertDashboardBtn').addEventListener('click', () => {
+            window.location.href = 'dashboard_es.html';
+        });
+        
+        // ============================================================
+        // INIT
+        // ============================================================
+        
+        async function init() {
+            const specialty = loadSavedSpecialty();
+            if (!specialty) return;
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    console.log('👤 Usuario conectado:', user.uid);
+                    
+                    accessService = new AccessService();
+                    await accessService.init();
+                    
+                    await loadSpecialtyData();
+                    renderLevels();
+                    await loadQuestionsForLevel(currentLevel);
+                    
+                    quizHeader.style.display = 'none';
+                    welcomeScreen.style.display = 'block';
+                    questionContainer.style.display = 'none';
+                    resultContainer.style.display = 'none';
+                    chapterScreen.style.display = 'none';
+                    expertFinalContainer.style.display = 'none';
+                    
+                    Logger.info(`📚 Quiz V2 listo para ${specialty} (español)`);
+                    Logger.info('✅ Todos los niveles son gratuitos - Solo la certificación es de pago');
+                    Logger.info('🔊 Lectura automática de preguntas');
+                    Logger.info('🎤 IA : "Respuesta correcta" / "Respuesta incorrecta"');
+                    Logger.info('🔊 Botones TTS : relectura forzada sin stop');
+                    Logger.info('🎵 Efectos de sonido activados (win/lose/click/tada)');
+                    Logger.info('🎊 ¡Confettis para la victoria !');
+                    Logger.info('🔥 Firebase : guardado en rewardHistory !');
+                    Logger.info('📂 Corrección de rutas : ../data/ → ../data/es/');
+                    Logger.info('📂 Eliminación del manejo de acentos');
+                    Logger.info('🎙️ Speech marketing Experto 2 activado !');
+                    Logger.info('🔇 TTS : emojis eliminados para una voz natural');
+                    Logger.info('📝 Examen de certificación gratuito → ruleta_certificado_es.html');
+                } else {
+                    console.log('👤 Usuario no conectado, redirigiendo a registro');
+                    window.location.href = 'inscription_es.html';
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO - Ma progression</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "jspdf": "https://cdn.skypack.dev/jspdf@2.5.1",
+            "qrcode": "https://cdn.skypack.dev/qrcode@1.5.3"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container progression-container">
+        
+        <!-- ============================================================ -->
+        <!-- NAVIGATION HAUT -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='dashboard.html'">
+                ← Retour
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 Accueil
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- HEADER -->
+        <!-- ============================================================ -->
+        <div class="progression-header">
+            <h1>📊 Ma progression ETEO 📈</h1>
+            <p>Suivez votre évolution niveau par niveau</p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- IA DE BIENVENUE (CENTRÉE) -->
+        <!-- ============================================================ -->
+        <div class="ia-greeting" id="iaGreeting" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="ia-avatar" style="display: block; text-align: center;">🤖</div>
+            <div style="width: 100%; text-align: center;">
+                <p class="ia-message" id="iaProgressionMessage" style="text-align: center; width: 100%;">Chargement du message...</p>
+                <button class="listen-btn-small" id="listenProgressionBtn" style="display: inline-block; margin: 8px auto 0;">🔊 Écouter</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- ONGLETS -->
+        <!-- ============================================================ -->
+        <div class="progression-tabs">
+            <button class="tab-btn active" data-tab="progression" id="tabProgression">
+                📊 Progression
+            </button>
+            <button class="tab-btn" data-tab="certificates" id="tabCertificates">
+                📜 Certificats
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- CONTENEUR PROGRESSION -->
+        <!-- ============================================================ -->
+        <div id="progressionContainer" class="tab-content">
+            <!-- Rempli par ProgressionManager -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- CONTENEUR CERTIFICATS -->
+        <!-- ============================================================ -->
+        <div id="certificatesContainer" class="tab-content" style="display:none;">
+            <!-- Rempli par CertificateManager -->
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- NAVIGATION BAS (DUPLIQUÉE) -->
+        <!-- ============================================================ -->
+        <div class="nav-bottom">
+            <button class="back-btn" onclick="window.location.href='dashboard.html'">
+                ← Retour
+            </button>
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                🏠 Accueil
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- FOOTER -->
+        <!-- ============================================================ -->
+        <div class="footer">
+            <p>📊 Progression en temps réel • Synchronisée avec votre compte</p>
+            <p>© 2026 - ETEO Dental Education | 🇲🇦 Dr. SAID MAARAK</p>
+        </div>
+
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TOAST -->
+    <!-- ============================================================ -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ============================================================ -->
+    <!-- SCRIPT PRINCIPAL -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore } from 'firebase/firestore';
+        import { ProgressionService } from '../js/services/progressionService.js';
+        import { ProgressionManager } from '../js/ui/ProgressionManager.js';
+        import { CertificateService } from '../js/services/certificateService.js';
+        import { CertificateManager } from '../js/ui/CertificateManager.js';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const progressionContainer = document.getElementById('progressionContainer');
+        const certificatesContainer = document.getElementById('certificatesContainer');
+        const tabProgression = document.getElementById('tabProgression');
+        const tabCertificates = document.getElementById('tabCertificates');
+        const iaMessage = document.getElementById('iaProgressionMessage');
+        const listenBtn = document.getElementById('listenProgressionBtn');
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // NETTOYAGE DES ÉMOJIS POUR LE TTS
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆]/g, '');
+            cleaned = cleaned.replace(/[""]/g, '"');
+            cleaned = cleaned.replace(/['']/g, "'");
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            return cleaned;
+        }
+        
+        // ============================================================
+        // GÉNÉRER LE MESSAGE IA
+        // ============================================================
+        
+        function generateIAMessage() {
+            try {
+                const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
+                const userName = settings.user?.fullName || 'Docteur';
+                
+                const message = `
+                    Bonjour <strong>${userName}</strong> ! 👋<br>
+                    📊 Bienvenue sur votre tableau de progression.<br><br>
+                    Ici, vous voyez toutes vos spécialités, vos scores et vos certificats.<br>
+                    Chaque spécialité a <strong>6 niveaux</strong>.<br>
+                    Les <span style="color: #4caf50;">✅ verts</span> sont réussis, les <span style="color: #888;">🔒 gris</span> sont à débloquer.<br><br>
+                    🎯 Complétez tous les niveaux pour obtenir un <strong>certificat</strong> !<br><br>
+                    Alors, prêt à progresser ? 🚀
+                `;
+                
+                const ttsMessage = `
+                    Bonjour ${userName}. Bienvenue sur votre tableau de progression.
+                    Ici, vous voyez toutes vos spécialités, vos scores et vos certificats.
+                    Chaque spécialité a 6 niveaux. Les verts sont réussis, les gris sont à débloquer.
+                    Complétez tous les niveaux pour obtenir un certificat.
+                    Alors, prêt à progresser ?
+                `;
+                
+                iaMessage.innerHTML = message;
+                window._ttsProgressionMessage = cleanTextForTTS(ttsMessage);
+                
+                if (listenBtn) {
+                    listenBtn.style.display = 'inline-block';
+                }
+                
+                setTimeout(() => autoSpeak(), 1200);
+                
+            } catch (error) {
+                console.error('❌ Erreur génération IA:', error);
+                iaMessage.innerHTML = '⚠️ Message non disponible. Rechargez la page.';
+            }
+        }
+        
+        // ============================================================
+        // LECTURE AUTO
+        // ============================================================
+        
+        let isAutoSpeaking = false;
+        
+        function autoSpeak() {
+            if (!window.tts || isAutoSpeaking) return;
+            isAutoSpeaking = true;
+            const text = window._ttsProgressionMessage || '';
+            if (!text) { isAutoSpeaking = false; return; }
+            
+            if (listenBtn) {
+                listenBtn.textContent = '⏹️ Arrêter';
+                listenBtn.classList.add('listening');
+            }
+            
+            window.tts.speak(text, 'fr', 0.9, 1.0,
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 Écouter';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                },
+                () => {
+                    if (listenBtn) {
+                        listenBtn.textContent = '🔊 Écouter';
+                        listenBtn.classList.remove('listening');
+                    }
+                    isAutoSpeaking = false;
+                }
+            );
+        }
+        
+        // ============================================================
+        // BOUTON ÉCOUTER
+        // ============================================================
+        
+        listenBtn.addEventListener('click', function() {
+            if (!window.tts) return showToast('❌ TTS non disponible', 3000);
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 Écouter';
+                this.classList.remove('listening');
+                isAutoSpeaking = false;
+                return;
+            }
+            
+            const text = window._ttsProgressionMessage || '';
+            if (!text) return showToast('⚠️ Message non disponible', 3000);
+            
+            this.textContent = '⏹️ Arrêter';
+            this.classList.add('listening');
+            
+            window.tts.speak(text, 'fr', 0.9, 1.0,
+                () => {
+                    this.textContent = '🔊 Écouter';
+                    this.classList.remove('listening');
+                },
+                () => {
+                    this.textContent = '🔊 Écouter';
+                    this.classList.remove('listening');
+                    showToast('❌ Erreur de lecture', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // GESTION DES ONGLETS
+        // ============================================================
+        
+        function setupTabs() {
+            if (tabProgression) {
+                tabProgression.addEventListener('click', function() {
+                    tabProgression.classList.add('active');
+                    tabCertificates.classList.remove('active');
+                    progressionContainer.style.display = 'block';
+                    certificatesContainer.style.display = 'none';
+                });
+            }
+            
+            if (tabCertificates) {
+                tabCertificates.addEventListener('click', function() {
+                    tabCertificates.classList.add('active');
+                    tabProgression.classList.remove('active');
+                    certificatesContainer.style.display = 'block';
+                    progressionContainer.style.display = 'none';
+                });
+            }
+        }
+        
+        // ============================================================
+        // INITIALISATION
+        // ============================================================
+        
+        async function init() {
+            Logger.info('📊 Page progression chargée');
+            
+            setupTabs();
+            generateIAMessage();
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    const uid = user.uid;
+                    
+                    const progressionService = new ProgressionService();
+                    const certificateService = new CertificateService();
+                    
+                    const progressionManager = new ProgressionManager(progressionService, showToast);
+                    await progressionManager.loadProgression(progressionContainer, uid);
+                    
+                    const certificateManager = new CertificateManager(
+                        certificateService,
+                        progressionService,
+                        showToast
+                    );
+                    await certificateManager.loadCertificates(certificatesContainer, uid);
+                    
+                    Logger.info('✅ Progression et certificats chargés');
+                } else {
+                    showToast('⚠️ Veuillez vous connecter pour voir votre progression', 3000);
+                    
+                    const message = `
+                        <div style="text-align: center; padding: 60px 20px;">
+                            <div style="font-size: 3rem;">🔒</div>
+                            <div style="font-size: 1.2rem; margin-top: 20px;">Connectez-vous pour voir votre progression</div>
+                            <div style="margin-top: 10px; color: #888;">Seuls les utilisateurs connectés peuvent accéder à leur progression</div>
+                            <button onclick="window.location.href='inscription_fr.html'" 
+                                    style="margin-top: 20px; padding: 12px 40px; border: none; border-radius: 30px; 
+                                           background: linear-gradient(135deg, #667eea, #764ba2); color: white; 
+                                           cursor: pointer; font-weight: 700; font-size: 1rem;">
+                                🔑 Se connecter / S'inscrire
+                            </button>
+                        </div>
+                    `;
+                    
+                    progressionContainer.innerHTML = message;
+                    certificatesContainer.innerHTML = message;
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

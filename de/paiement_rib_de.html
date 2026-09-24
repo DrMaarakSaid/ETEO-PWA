@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>💳 Zahlung - ETEO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- ✅ EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #f0f4ff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        
+        .rib-container {
+            max-width: 680px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.10);
+        }
+        
+        .rib-container h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        .rib-container .subtitle {
+            text-align: center;
+            color: #888;
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+        
+        .amount-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .amount-box .label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .amount-box .price {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin: 5px 0;
+        }
+        
+        .amount-box .sub {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        .steps {
+            text-align: left;
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .steps li {
+            padding: 12px 15px;
+            background: #f0f4ff;
+            margin: 6px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+        }
+        
+        .steps li .num {
+            background: #667eea;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+        
+        .form-group {
+            margin: 18px 0;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .form-group label .required {
+            color: #e74c3c;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+            background: white;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #667eea;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+        }
+        
+        .form-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+        
+        .form-group .hint {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 4px;
+        }
+        
+        .btn-primary {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 5px;
+        }
+        
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(76, 175, 80, 0.35);
+        }
+        
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .btn-secondary {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #667eea;
+            border-radius: 30px;
+            background: transparent;
+            color: #667eea;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .btn-secondary:hover {
+            background: #f0f4ff;
+        }
+        
+        .success-box {
+            background: #e8f5e9;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
+            display: none;
+        }
+        
+        .success-box p {
+            margin: 0;
+            color: #2e7d32;
+            font-size: 0.95rem;
+        }
+        
+        .success-box .ref-display {
+            font-weight: 700;
+            color: #667eea;
+            font-family: monospace;
+            font-size: 1.1rem;
+        }
+        
+        .info-note {
+            background: #fff3cd;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: left;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .info-note p {
+            margin: 0;
+            color: #856404;
+            font-size: 0.9rem;
+        }
+        
+        .loading-container {
+            display: none;
+            text-align: center;
+            padding: 15px 0;
+        }
+        
+        .spinner {
+            width: 36px;
+            height: 36px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #4caf50;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 8px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-container p {
+            color: #888;
+            font-size: 0.85rem;
+        }
+        
+        .toast-custom {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2c3e50;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            z-index: 9999;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            animation: fadeInToast 0.3s ease;
+            max-width: 90%;
+            text-align: center;
+        }
+        
+        @keyframes fadeInToast {
+            from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        
+        .form-group input[readonly] {
+            background: #f0f4ff;
+            cursor: not-allowed;
+            font-weight: 600;
+            color: #2c3e50;
+            border-color: #d0d8f0;
+        }
+
+        .hint-important {
+            color: #856404;
+            font-weight: 600;
+            background: #fff3cd;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin-top: 6px;
+            font-size: 0.9rem;
+        }
+
+        .hint-important strong {
+            color: #e67e22;
+        }
+
+        .listen-btn-small {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #7bed9f, #2ecc71);
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 0 20px rgba(46, 204, 113, 0.5);
+            animation: glowPulse 2s ease-in-out infinite;
+            letter-spacing: 0.5px;
+        }
+
+        .listen-btn-small:hover:not(.listening) {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 0 35px rgba(46, 204, 113, 0.7);
+        }
+
+        .listen-btn-small.listening {
+            background: linear-gradient(135deg, #27ae60, #1e8449);
+            color: white;
+            animation: pulseBtn 1.5s infinite;
+            box-shadow: 0 0 40px rgba(39, 174, 96, 0.6);
+        }
+
+        @keyframes glowPulse {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(46, 204, 113, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(46, 204, 113, 0.8), 0 0 60px rgba(46, 204, 113, 0.3);
+            }
+        }
+
+        @keyframes pulseBtn {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .section-hidden {
+            display: none !important;
+        }
+        
+        .rib-info-message {
+            background: #e8f0fe;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: center;
+            border-left: 3px solid #667eea;
+        }
+        
+        .rib-info-message strong {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="rib-container">
+        <h1 id="pageTitle">💳 ETEO-Zertifizierung</h1>
+        <p class="subtitle" id="pageSubtitle">🎓 Personalisiertes Zertifikat mit QR-Code</p>
+
+        <div style="display: flex; justify-content: center; margin: 5px 0 15px 0;">
+            <button class="listen-btn-small" id="listenPaymentBtn">
+                🔊 Anweisungen anhören
+            </button>
+        </div>
+
+        <div class="amount-box">
+            <div class="label">🎓 Zu zahlender Betrag</div>
+            <div class="price">20 €</div>
+            <div class="sub">Einmalige Zahlung</div>
+        </div>
+
+        <!-- ✅ INFORMATIVE NACHRICHT - DIE IBAN WIRD PER E-MAIL GESENDET -->
+        <div class="rib-info-message">
+            💡 <strong>Die Bankverbindung wird Ihnen per E-Mail zugesendet</strong><br>
+            <span style="font-size: 0.9rem; color: #555;">Füllen Sie das untenstehende Formular aus, um die IBAN und die Anweisungen zu erhalten.</span>
+        </div>
+
+        <!-- ✅ VEREINFACHTE ANWEISUNGEN -->
+        <h3 style="text-align: left; color: #2c3e50; margin-top: 20px;">📋 Anweisungen</h3>
+        <ul class="steps">
+            <li><span class="num">1</span> Füllen Sie das untenstehende Formular aus</li>
+            <li><span class="num">2</span> Überprüfen Sie Ihre E-Mail, dort finden Sie die Anweisungen</li>
+            <li><span class="num">3</span> Führen Sie die Überweisung von <strong>20 €</strong> auf die erhaltene IBAN durch</li>
+            <li><span class="num">4</span> Verwenden Sie den Link in der E-Mail, um zurückzukehren</li>
+        </ul>
+
+        <!-- ZERTIFIKAT -->
+        <div id="certificatContent">
+            <h3 style="text-align: left; color: #2c3e50; margin-top: 25px;">📤 Zahlungsnachweis senden</h3>
+            
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label>👤 Vollständiger Name <span class="required">*</span></label>
+                    <input type="text" id="fullName" placeholder="Dr. Jean Dupont" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>📧 E-Mail <span class="required">*</span></label>
+                    <input type="email" id="email" placeholder="jean.dupont@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>📱 Telefon</label>
+                    <input type="tel" id="phone" placeholder="06 12 34 56 78">
+                </div>
+                
+                <div class="form-group">
+                    <label>🦷 Fachgebiet <span class="required">*</span></label>
+                    <select id="specialty" required>
+                        <option value="">Wählen Sie ein Fachgebiet</option>
+                        <option value="Installationshilfen">Installationshilfen</option>
+                        <option value="Praxisgestaltung">Praxisgestaltung</option>
+                        <option value="Anästhesiologie">Anästhesiologie</option>
+                        <option value="Zahnarzthelferinnen">Zahnarzthelferinnen</option>
+                        <option value="CAD/CAM & 3D-Druck">CAD/CAM & 3D-Druck</option>
+                        <option value="Chirurgie">Chirurgie</option>
+                        <option value="Berufsordnung">Berufsordnung</option>
+                        <option value="Buchhaltung & Steuern">Buchhaltung & Steuern</option>
+                        <option value="Konflikte & Mediation">Konflikte & Mediation</option>
+                        <option value="Konventionierung & AMO">Konventionierung & AMO</option>
+                        <option value="Endodontie">Endodontie</option>
+                        <option value="Ästhetik">Ästhetik</option>
+                        <option value="Ethik & Deontologie">Ethik & Deontologie</option>
+                        <option value="Zahnärztinnen">Zahnärztinnen</option>
+                        <option value="Steuern des Zahnarztes">Steuern des Zahnarztes</option>
+                        <option value="Rechtsformen">Rechtsformen</option>
+                        <option value="Zukünftiger Doktor">Zukünftiger Doktor</option>
+                        <option value="Praxismanagement">Praxismanagement</option>
+                        <option value="Implantologie">Implantologie</option>
+                        <option value="Informatik & Software">Informatik & Software</option>
+                        <option value="Dentalmaterialien">Dentalmaterialien</option>
+                        <option value="Mundmedizin">Mundmedizin</option>
+                        <option value="Krankenkassen & Kostenerstattung">Krankenkassen & Kostenerstattung</option>
+                        <option value="ONMD / CRS / CRN">ONMD / CRS / CRN</option>
+                        <option value="Kieferorthopädie">Kieferorthopädie</option>
+                        <option value="Parodontologie">Parodontologie</option>
+                        <option value="Kinderzahnheilkunde">Kinderzahnheilkunde</option>
+                        <option value="Fotografie">Fotografie</option>
+                        <option value="Prothetik">Prothetik</option>
+                        <option value="Radiologie">Radiologie</option>
+                        <option value="Beziehung & Psychomotorik">Beziehung & Psychomotorik</option>
+                        <option value="Öffentliche Gesundheit">Öffentliche Gesundheit</option>
+                        <option value="Senioren">Senioren</option>
+                        <option value="Konservierende Zahnheilkunde">Konservierende Zahnheilkunde</option>
+                        <option value="Sterilisation">Sterilisation</option>
+                        <option value="Gewerkschaft">Gewerkschaft</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>🔑 Überweisungsreferenz <span class="required">*</span></label>
+                    <input type="text" id="refInput" required readonly>
+                    <div class="hint-important">
+                        ⚠️ <strong>WICHTIG :</strong> Diese Referenz wird automatisch generiert.<br>
+                        <strong>Verwenden Sie sie unbedingt</strong> im Verwendungszweck Ihrer Überweisung.
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>💬 Nachricht (optional)</label>
+                    <textarea id="message" placeholder="Zusätzliche Informationen..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary" id="submitBtn">
+                    📤 Meine Zertifizierungsanfrage senden
+                </button>
+                
+                <div class="loading-container" id="loadingContainer">
+                    <div class="spinner"></div>
+                    <p>⏳ Wird gesendet...</p>
+                </div>
+            </form>
+        </div>
+
+        <!-- ROULETTE -->
+        <div id="rouletteContent" class="section-hidden">
+            <h3 style="text-align: left; color: #2c3e50; margin-top: 25px;">📤 Mein Abonnement aktivieren</h3>
+            <p style="color: #888; font-size: 0.9rem; margin-bottom: 15px;">
+                💎 Nach der Zahlung haben Sie <strong>1 Jahr lang</strong> unbegrenzten Zugang zur Roulette der Info.
+            </p>
+            
+            <form id="rouletteForm">
+                <div class="form-group">
+                    <label>👤 Vollständiger Name <span class="required">*</span></label>
+                    <input type="text" id="rouletteFullName" placeholder="Dr. Jean Dupont" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>📧 E-Mail <span class="required">*</span></label>
+                    <input type="email" id="rouletteEmail" placeholder="jean.dupont@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>📱 Telefon</label>
+                    <input type="tel" id="roulettePhone" placeholder="06 12 34 56 78">
+                </div>
+                
+                <div class="form-group">
+                    <label>🔑 Überweisungsreferenz <span class="required">*</span></label>
+                    <input type="text" id="rouletteRefInput" required readonly>
+                    <div class="hint-important">
+                        ⚠️ <strong>WICHTIG :</strong> Diese Referenz wird automatisch generiert.<br>
+                        <strong>Verwenden Sie sie unbedingt</strong> im Verwendungszweck Ihrer Überweisung.
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-primary" id="rouletteSubmitBtn">
+                    📤 Mein Abonnement aktivieren
+                </button>
+                
+                <div class="loading-container" id="rouletteLoadingContainer">
+                    <div class="spinner"></div>
+                    <p>⏳ Wird gesendet...</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="success-box" id="successBox">
+            <p>✅ <strong>Vielen Dank !</strong> Ihre Anfrage wurde erfolgreich gesendet.</p>
+            <p style="margin-top: 8px;">
+                🔑 Referenz : <span class="ref-display" id="successRef">CERTIF-XXXXXX</span>
+            </p>
+            <p style="margin-top: 8px; font-size: 0.9rem;">
+                📧 <strong>Überprüfen Sie Ihre E-Mail</strong>, dort finden Sie alle Anweisungen.<br>
+                Ein Link ermöglicht es Ihnen, nach Ihrer Überweisung einfach zurückzukehren.
+            </p>
+        </div>
+
+        <div class="info-note">
+            <p>
+                💡 <strong>Tipp :</strong> Bewahren Sie die E-Mail, die Sie erhalten werden, gut auf.<br>
+                Sie enthält die IBAN, die Referenz und einen Link, um zu ETEO zurückzukehren.
+            </p>
+        </div>
+
+        <button class="btn-secondary" onclick="window.location.href='quiz.html'">
+            🔙 Zurück zum Quiz
+        </button>
+        
+        <p style="margin-top: 20px; font-size: 0.75rem; color: #999; text-align: center;">
+            🔒 Sichere Überweisung
+        </p>
+    </div>
+
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { initializeApp } from 'firebase/app';
+        import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+        window.tts = tts;
+        
+        // ============================================================
+        // TYP-ERKENNUNG
+        // ============================================================
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const paymentType = urlParams.get('type') || 'certificat';
+        const source = urlParams.get('source') || '';
+        
+        const TEMPLATE_CERTIFICAT = 'template_ot010vp';
+        const TEMPLATE_ROULETTE = 'template_b49o22m';
+        
+        console.log('📋 Zahlungstyp:', paymentType);
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        
+        const pageTitle = document.getElementById('pageTitle');
+        const pageSubtitle = document.getElementById('pageSubtitle');
+        const certificatContent = document.getElementById('certificatContent');
+        const rouletteContent = document.getElementById('rouletteContent');
+        const successBox = document.getElementById('successBox');
+        const successRef = document.getElementById('successRef');
+        
+        // ✅ step4Label ENTFERNT - Kein Fehler mehr !
+        
+        // ============================================================
+        // ANPASSUNG DER OBERFLÄCHE
+        // ============================================================
+        
+        if (paymentType === 'roulette') {
+            pageTitle.textContent = '💳 ETEO-Abonnement';
+            pageSubtitle.textContent = '🎯 Roulette der Info - Unbegrenzter Zugang für 1 Jahr';
+            certificatContent.classList.add('section-hidden');
+            rouletteContent.classList.remove('section-hidden');
+            
+            const refCode = 'ROUL-' + generateRef();
+            document.getElementById('rouletteRefInput').value = refCode;
+            
+            console.log('🎯 Roulette-Modus aktiviert');
+        } else {
+            pageTitle.textContent = '💳 ETEO-Zertifizierung';
+            pageSubtitle.textContent = '🎓 Personalisiertes Zertifikat mit QR-Code';
+            certificatContent.classList.remove('section-hidden');
+            rouletteContent.classList.add('section-hidden');
+            
+            const refCode = 'CERTIF-' + generateRef();
+            document.getElementById('refCode').textContent = refCode;
+            document.getElementById('refInput').value = refCode;
+            
+            console.log('🎓 Zertifikat-Modus aktiviert');
+        }
+        
+        // ============================================================
+        // DOM ELEMENTS (Fortsetzung)
+        // ============================================================
+        
+        const listenPaymentBtn = document.getElementById('listenPaymentBtn');
+        const submitBtn = document.getElementById('submitBtn');
+        const loadingContainer = document.getElementById('loadingContainer');
+        const rouletteSubmitBtn = document.getElementById('rouletteSubmitBtn');
+        const rouletteLoadingContainer = document.getElementById('rouletteLoadingContainer');
+        const rouletteFullName = document.getElementById('rouletteFullName');
+        const rouletteEmail = document.getElementById('rouletteEmail');
+        const roulettePhone = document.getElementById('roulettePhone');
+        const rouletteRefInput = document.getElementById('rouletteRefInput');
+        const fullName = document.getElementById('fullName');
+        const email = document.getElementById('email');
+        const phone = document.getElementById('phone');
+        const specialty = document.getElementById('specialty');
+        const refInput = document.getElementById('refInput');
+        const message = document.getElementById('message');
+        const paymentForm = document.getElementById('paymentForm');
+        const rouletteForm = document.getElementById('rouletteForm');
+        
+        const storage = new StorageService();
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            const existing = document.querySelector('.toast-custom');
+            if (existing && existing.style.display !== 'none') {
+                existing.textContent = message;
+                existing.style.display = 'block';
+                setTimeout(() => {
+                    existing.style.display = 'none';
+                }, duration);
+                return;
+            }
+            
+            const toast = document.querySelector('.toast-custom') || document.createElement('div');
+            toast.className = 'toast-custom';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            toast.style.display = 'block';
+            
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, duration);
+        }
+        
+        // ============================================================
+        // KOPIEREN
+        // ============================================================
+        
+        window.copyText = function(id) {
+            let label = '';
+            if (id === 'ibanValue') label = 'IBAN';
+            else if (id === 'bicValue') label = 'SWIFT/BIC-Code';
+            else if (id === 'refCode') label = 'Referenz';
+            else label = 'Text';
+            
+            const text = document.getElementById(id).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('✅ ' + label + ' kopiert !');
+            }).catch(() => {
+                const range = document.createRange();
+                const el = document.getElementById(id);
+                range.selectNode(el);
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+                document.execCommand('copy');
+                showToast('✅ ' + label + ' kopiert !');
+            });
+        };
+        
+        // ============================================================
+        // REFERENZ-GENERIERUNG
+        // ============================================================
+        
+        function generateRef() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let ref = '';
+            for (let i = 0; i < 6; i++) {
+                ref += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return ref;
+        }
+        
+        // ============================================================
+        // TTS
+        // ============================================================
+        
+        listenPaymentBtn.addEventListener('click', function() {
+            if (!window.tts) {
+                showToast('❌ TTS-Modul nicht verfügbar', 3000);
+                return;
+            }
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 Anweisungen anhören';
+                this.classList.remove('listening');
+                return;
+            }
+            
+            let message = '';
+            
+            if (paymentType === 'roulette') {
+                message = `Hallo Doktor, um die Roulette der Info 1 Jahr lang unbegrenzt zu nutzen, füllen Sie einfach das untenstehende Formular aus.
+
+Sobald das Formular gesendet wurde, erhalten Sie eine persönliche E-Mail an die von Ihnen angegebene Adresse.
+
+In dieser E-Mail finden Sie alle Anweisungen, insbesondere die IBAN für die Überweisung von 20 Euro sowie einen Link, um einfach zu ETEO zurückzukehren.
+
+Sobald die Überweisung erfolgt ist, öffnen Sie einfach Ihre E-Mail und klicken auf den Link, um Ihr Abonnement zu aktivieren.
+
+Ihr Abonnement wird dann schnellstmöglich aktiviert.
+
+Also, füllen Sie das Formular aus und folgen Sie den Anweisungen in Ihrer E-Mail !`;
+            } else {
+                message = `Hallo Doktor, und herzlichen Glückwunsch zum Bestehen der Zertifizierungsprüfung.
+
+Um Ihr Zertifikat zu erhalten, füllen Sie das untenstehende Formular mit Ihren Informationen aus.
+
+Sobald das Formular gesendet wurde, erhalten Sie eine persönliche E-Mail an die von Ihnen angegebene Adresse.
+
+In dieser E-Mail finden Sie alle Anweisungen, insbesondere die IBAN für die Überweisung von 20 Euro sowie einen Link, um einfach zu ETEO zurückzukehren.
+
+Sobald die Überweisung erfolgt ist, öffnen Sie einfach Ihre E-Mail und klicken auf den Link, um Ihre Anfrage abzuschließen.
+
+Ihr Zertifikat wird Ihnen dann nach Validierung Ihrer Zahlung per E-Mail zugesendet.
+
+Also, füllen Sie das Formular aus und folgen Sie den Anweisungen in Ihrer E-Mail !`;
+            }
+            
+            this.textContent = '⏹️ Stoppen';
+            this.classList.add('listening');
+            
+            window.tts.speak(
+                message,
+                'de',
+                0.9,
+                1.0,
+                () => {
+                    this.textContent = '🔊 Anweisungen anhören';
+                    this.classList.remove('listening');
+                },
+                (error) => {
+                    console.error('❌ TTS-Fehler:', error);
+                    this.textContent = '🔊 Anweisungen anhören';
+                    this.classList.remove('listening');
+                    showToast('❌ Fehler bei der Sprachausgabe', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // AUTOMATISCHE SPEICHERUNG
+        // ============================================================
+        
+        function saveFormData() {
+            let data = {};
+            
+            if (paymentType === 'roulette') {
+                data = {
+                    fullName: rouletteFullName.value.trim(),
+                    email: rouletteEmail.value.trim(),
+                    phone: roulettePhone.value.trim(),
+                    reference: rouletteRefInput.value.trim()
+                };
+            } else {
+                data = {
+                    fullName: fullName.value.trim(),
+                    email: email.value.trim(),
+                    phone: phone.value.trim(),
+                    specialty: specialty.value,
+                    reference: refInput.value.trim(),
+                    message: message.value.trim()
+                };
+            }
+            
+            const existing = JSON.parse(localStorage.getItem('eteo_payment_data') || '{}');
+            const merged = { ...existing, ...data, type: paymentType };
+            localStorage.setItem('eteo_payment_data', JSON.stringify(merged));
+        }
+        
+        document.addEventListener('input', saveFormData);
+        document.addEventListener('change', saveFormData);
+        
+        // ============================================================
+        // ZERTIFIKAT SENDEN
+        // ============================================================
+        
+        if (paymentForm) {
+            paymentForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                await handleCertificatSubmit();
+            });
+        }
+        
+        async function handleCertificatSubmit() {
+            const nameVal = fullName.value.trim();
+            const emailVal = email.value.trim();
+            const phoneVal = phone.value.trim();
+            const specialtyVal = specialty.value;
+            const refVal = refInput.value.trim();
+            const messageVal = message.value.trim();
+            
+            if (!nameVal) { showToast('❌ Bitte geben Sie Ihren Namen ein'); return; }
+            if (!emailVal || !emailVal.includes('@')) { showToast('❌ Bitte geben Sie eine gültige E-Mail ein'); return; }
+            if (!specialtyVal) { showToast('❌ Bitte wählen Sie ein Fachgebiet'); return; }
+            if (!refVal) { showToast('❌ Referenz fehlt'); return; }
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ Wird gesendet...';
+            loadingContainer.style.display = 'block';
+            
+            try {
+                const docData = {
+                    fullName: nameVal,
+                    email: emailVal,
+                    phone: phoneVal || '',
+                    specialty: specialtyVal,
+                    reference: refVal,
+                    message: messageVal || '',
+                    amount: 20,
+                    currency: 'EUR',
+                    status: 'pending',
+                    createdAt: serverTimestamp(),
+                    updatedAt: serverTimestamp(),
+                    source: 'paiement_rib'
+                };
+                
+                await addDoc(collection(db, 'certification_requests'), docData);
+                console.log('✅ Anfrage in Firebase gespeichert');
+                
+                try {
+                    emailjs.init('1hut2BPScQz4KROG_');
+                    
+                    await emailjs.send('service_rffgbiz', TEMPLATE_CERTIFICAT, {
+                        to_email: emailVal,
+                        fullName: nameVal,
+                        specialty: specialtyVal,
+                        reference: refVal,
+                        phone: phoneVal || 'Nicht angegeben',
+                        message: messageVal || 'Keine Nachricht',
+                        // ✅ BANKINFORMATIONEN
+                        banque: 'Banque Centrale Populaire (BCP)',
+                        agence: 'Agence 2 MARS - Casablanca',
+                        titulaire: 'Mr MAARAK SAID',
+                        iban: 'MA64 1907 8021 1111 1015 9900 9331',
+                        bic: 'BCPOMAMC',
+                        montant: '20,00 €',
+                        telephone: '0522264905',
+                        adresse: 'Angle Rue Omar El Idrissi et Avenue 2 Mars, Casablanca, MAROC'
+                    });
+                    
+                    console.log('📧 Zertifikats-E-Mail erfolgreich gesendet !');
+                    
+                } catch (emailError) {
+                    console.error('❌ EmailJS-Fehler:', emailError);
+                    showToast('⚠️ Anfrage gespeichert, aber E-Mail nicht gesendet');
+                }
+                
+                successBox.style.display = 'block';
+                successRef.textContent = refVal;
+                submitBtn.style.display = 'none';
+                loadingContainer.style.display = 'none';
+                
+                localStorage.removeItem('eteo_payment_data');
+                showToast('✅ Anfrage erfolgreich gesendet !');
+                showToast('📧 Überprüfen Sie Ihre E-Mail, die Anweisungen warten dort auf Sie.', 4000);
+                
+            } catch (error) {
+                console.error('❌ Fehler:', error);
+                showToast('❌ Fehler beim Senden, bitte versuchen Sie es erneut');
+                submitBtn.disabled = false;
+                submitBtn.textContent = '📤 Meine Zertifizierungsanfrage senden';
+                loadingContainer.style.display = 'none';
+            }
+        }
+        
+        // ============================================================
+        // ROULETTE SENDEN
+        // ============================================================
+        
+        if (rouletteForm) {
+            rouletteForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                await handleRouletteSubmit();
+            });
+        }
+        
+        async function handleRouletteSubmit() {
+            const nameVal = rouletteFullName.value.trim();
+            const emailVal = rouletteEmail.value.trim();
+            const phoneVal = roulettePhone.value.trim();
+            const refVal = rouletteRefInput.value.trim();
+            
+            if (!nameVal) { showToast('❌ Bitte geben Sie Ihren Namen ein'); return; }
+            if (!emailVal || !emailVal.includes('@')) { showToast('❌ Bitte geben Sie eine gültige E-Mail ein'); return; }
+            if (!refVal) { showToast('❌ Referenz fehlt'); return; }
+            
+            rouletteSubmitBtn.disabled = true;
+            rouletteSubmitBtn.textContent = '⏳ Wird gesendet...';
+            rouletteLoadingContainer.style.display = 'block';
+            
+            try {
+                const docData = {
+                    userId: (await getCurrentUser())?.uid || 'anonymous',
+                    fullName: nameVal,
+                    email: emailVal,
+                    phone: phoneVal || '',
+                    reference: refVal,
+                    amount: 20,
+                    currency: 'EUR',
+                    type: 'roulette',
+                    status: 'pending',
+                    source: source || 'roulette_de_l_info',
+                    createdAt: serverTimestamp(),
+                    updatedAt: serverTimestamp()
+                };
+                
+                await addDoc(collection(db, 'roulette_subscriptions'), docData);
+                console.log('✅ Abonnement-Anfrage in Firebase gespeichert');
+                
+                try {
+                    emailjs.init('1hut2BPScQz4KROG_');
+                    
+                    await emailjs.send('service_rffgbiz', TEMPLATE_ROULETTE, {
+                        to_email: emailVal,
+                        fullName: nameVal,
+                        reference: refVal,
+                        phone: phoneVal || 'Nicht angegeben',
+                        // ✅ BANKINFORMATIONEN
+                        banque: 'Banque Centrale Populaire (BCP)',
+                        agence: 'Agence 2 MARS - Casablanca',
+                        titulaire: 'Mr MAARAK SAID',
+                        iban: 'MA64 1907 8021 1111 1015 9900 9331',
+                        bic: 'BCPOMAMC',
+                        montant: '20,00 €',
+                        telephone: '0522264905',
+                        adresse: 'Angle Rue Omar El Idrissi et Avenue 2 Mars, Casablanca, MAROC'
+                    });
+                    
+                    console.log('📧 Abonnement-E-Mail erfolgreich gesendet !');
+                    
+                } catch (emailError) {
+                    console.error('❌ EmailJS-Fehler:', emailError);
+                    showToast('⚠️ Anfrage gespeichert, aber E-Mail nicht gesendet');
+                }
+                
+                successBox.style.display = 'block';
+                successRef.textContent = refVal;
+                rouletteSubmitBtn.style.display = 'none';
+                rouletteLoadingContainer.style.display = 'none';
+                
+                localStorage.removeItem('eteo_payment_data');
+                showToast('✅ Abonnement-Anfrage erfolgreich gesendet !');
+                showToast('📧 Überprüfen Sie Ihre E-Mail, die Anweisungen warten dort auf Sie.', 4000);
+                
+            } catch (error) {
+                console.error('❌ Fehler:', error);
+                showToast('❌ Fehler beim Senden, bitte versuchen Sie es erneut');
+                rouletteSubmitBtn.disabled = false;
+                rouletteSubmitBtn.textContent = '📤 Mein Abonnement aktivieren';
+                rouletteLoadingContainer.style.display = 'none';
+            }
+        }
+        
+        // ============================================================
+        // BENUTZER ABRUFEN
+        // ============================================================
+        
+        function getCurrentUser() {
+            return new Promise((resolve) => {
+                onAuthStateChanged(auth, (user) => {
+                    resolve(user);
+                });
+            });
+        }
+        
+        // ============================================================
+        // INITIALISIERUNG
+        // ============================================================
+        
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                const settings = storage.getSettings() || {};
+                
+                if (paymentType === 'roulette') {
+                    if (!rouletteFullName.value) rouletteFullName.value = settings.user?.displayName || settings.user?.fullName || '';
+                    if (!rouletteEmail.value) rouletteEmail.value = settings.user?.email || user.email || '';
+                    if (!roulettePhone.value) roulettePhone.value = settings.user?.phone !== 'Nicht angegeben' ? settings.user?.phone : '';
+                } else {
+                    if (!fullName.value) fullName.value = settings.user?.displayName || settings.user?.fullName || '';
+                    if (!email.value) email.value = settings.user?.email || user.email || '';
+                    if (!phone.value) phone.value = settings.user?.phone !== 'Nicht angegeben' ? settings.user?.phone : '';
+                    if (!specialty.value) {
+                        const savedSpecialty = localStorage.getItem('eteo_selected_specialty');
+                        if (savedSpecialty) {
+                            const map = {
+                                'Relationnel&Psychomotricité': 'Beziehung & Psychomotorik',
+                                'sterilisation': 'Sterilisation',
+                                'endo': 'Endodontie'
+                            };
+                            const displayName = map[savedSpecialty] || savedSpecialty;
+                            const options = specialty.options;
+                            for (let i = 0; i < options.length; i++) {
+                                if (options[i].value === displayName) {
+                                    specialty.value = displayName;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                console.log('👤 Benutzer angemeldet:', user.email);
+            }
+        });
+        
+        // ============================================================
+        // INIT
+        // ============================================================
+        
+        Logger.info(`💳 Zahlungsseite IBAN geladen (Typ: ${paymentType})`);
+        console.log('📋 Template Zertifikat:', TEMPLATE_CERTIFICAT);
+        console.log('📋 Template Roulette:', TEMPLATE_ROULETTE);
+        console.log('🔊 TTS : Glückwünsche + E-Mail-Anweisungen');
+        console.log('📧 IBAN wird NUR per E-Mail gesendet');
+        console.log('🔒 Zahlungsseite ohne sichtbare IBAN');
+        console.log('✅ step4Label entfernt - Kein Fehler mehr !');
+        
+    </script>
+</body>
+</html>

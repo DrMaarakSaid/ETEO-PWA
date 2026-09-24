@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>邮箱验证 - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+    
+    <style>
+        /* 验证页面专用样式 */
+        .verify-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .verify-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .verify-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .verify-subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .verify-email {
+            font-weight: 600;
+            color: #4caf50;
+            background: #e8f5e9;
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 10px 0 20px;
+        }
+        
+        .verify-status {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            color: #856404;
+            font-size: 14px;
+        }
+        
+        .verify-status.success {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+        
+        .verify-status.error {
+            background: #f8d7da;
+            border-color: #dc3545;
+            color: #721c24;
+        }
+        
+        .verify-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 25px;
+        }
+        
+        .btn-resend {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-resend:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-resend:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn-back {
+            background: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-back:hover {
+            background: #e8e8e8;
+        }
+        
+        .timer-text {
+            font-size: 14px;
+            color: #888;
+            margin-top: 10px;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 0.8s ease-in-out infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .checking-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px;
+            background: #e3f2fd;
+            border-radius: 12px;
+            margin: 15px 0;
+            color: #0d47a1;
+        }
+        
+        .checking-status .spinner-small {
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(13, 71, 161, 0.2);
+            border-radius: 50%;
+            border-top-color: #0d47a1;
+            animation: spin 0.8s ease-in-out infinite;
+        }
+        
+        .nav-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn {
+            background: none;
+            border: none;
+            font-size: 16px;
+            color: #667eea;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- ============================================================ -->
+        <!-- 导航 -->
+        <!-- ============================================================ -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                ← 返回首页
+            </button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 主要内容 -->
+        <!-- ============================================================ -->
+        <div class="verify-container">
+            
+            <span class="verify-icon">📧</span>
+            
+            <h1 class="verify-title">验证您的邮箱</h1>
+            
+            <p class="verify-subtitle">
+                一封验证邮件已发送至：
+            </p>
+            
+            <div class="verify-email" id="userEmail">加载中...</div>
+            
+            <div class="verify-status" id="statusMessage">
+                📩 请点击我们发送给您的邮件中的链接以激活您的账户。
+            </div>
+            
+            <div class="checking-status" id="checkingStatus">
+                <div class="spinner-small"></div>
+                <span>正在自动验证...</span>
+            </div>
+            
+            <div class="verify-actions">
+                <button class="btn-resend" id="resendBtn">
+                    🔄 重新发送验证邮件
+                </button>
+                
+                <button class="btn-back" onclick="window.location.href='zhuce_zh.html'">
+                    ← 返回注册
+                </button>
+            </div>
+            
+            <div class="timer-text" id="timerText">
+                您可以在 <span id="countdown">60</span> 秒后重新发送邮件
+            </div>
+            
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; font-size: 13px; color: #999;">
+                <p>💡 提示：如果您找不到邮件，请检查您的垃圾邮件文件夹。</p>
+                <p>🔒 一旦您的邮箱验证成功，您将可以访问您的仪表盘。</p>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- TOAST -->
+        <!-- ============================================================ -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 主脚本 -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // 导入
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { initializeApp } from 'firebase/app';
+        import { 
+            getAuth, 
+            onAuthStateChanged,
+            sendEmailVerification,
+            reload
+        } from 'firebase/auth';
+        import { getFirestore, doc, updateDoc } from 'firebase/firestore';
+        
+        // ============================================================
+        // FIREBASE 配置
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        // ============================================================
+        // DOM 元素
+        // ============================================================
+        
+        const userEmailEl = document.getElementById('userEmail');
+        const statusMessageEl = document.getElementById('statusMessage');
+        const checkingStatusEl = document.getElementById('checkingStatus');
+        const resendBtn = document.getElementById('resendBtn');
+        const countdownEl = document.getElementById('countdown');
+        const timerTextEl = document.getElementById('timerText');
+        const toast = document.getElementById('toast');
+        
+        // ============================================================
+        // STORAGE
+        // ============================================================
+        
+        const storage = new StorageService();
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 3000) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // 状态
+        // ============================================================
+        
+        let currentUser = null;
+        let countdown = 60;
+        let countdownInterval = null;
+        let checkInterval = null;
+        let isChecking = false;
+        
+        // ============================================================
+        // 设置状态消息
+        // ============================================================
+        
+        function setStatus(message, type = 'info') {
+            statusMessageEl.textContent = message;
+            statusMessageEl.className = 'verify-status';
+            if (type === 'success') {
+                statusMessageEl.classList.add('success');
+            } else if (type === 'error') {
+                statusMessageEl.classList.add('error');
+            }
+        }
+        
+        // ============================================================
+        // 倒计时管理
+        // ============================================================
+        
+        function startCountdown(seconds = 60) {
+            countdown = seconds;
+            countdownEl.textContent = countdown;
+            resendBtn.disabled = true;
+            timerTextEl.style.display = 'block';
+            
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+            
+            countdownInterval = setInterval(() => {
+                countdown--;
+                countdownEl.textContent = countdown;
+                
+                if (countdown <= 0) {
+                    clearInterval(countdownInterval);
+                    countdownInterval = null;
+                    resendBtn.disabled = false;
+                    timerTextEl.style.display = 'none';
+                }
+            }, 1000);
+        }
+        
+        // ============================================================
+        // 重新发送验证邮件
+        // ============================================================
+        
+        async function resendVerificationEmail() {
+            if (!currentUser) {
+                showToast('❌ 请重新登录', 3000);
+                return;
+            }
+            
+            try {
+                resendBtn.disabled = true;
+                resendBtn.innerHTML = '<span class="spinner"></span> 发送中...';
+                
+                await sendEmailVerification(currentUser);
+                
+                showToast('✅ 验证邮件已重新发送！', 3000);
+                setStatus('📩 一封新的验证邮件已发送。请检查您的收件箱。', 'success');
+                
+                startCountdown(60);
+                
+            } catch (error) {
+                console.error('❌ 重新发送错误：', error);
+                showToast('❌ 错误：' + error.message, 3000);
+                setStatus('❌ 发送错误：' + error.message, 'error');
+                resendBtn.disabled = false;
+                resendBtn.textContent = '🔄 重新发送验证邮件';
+            }
+        }
+        
+        // ============================================================
+        // 检查邮箱验证状态
+        // ============================================================
+        
+        async function checkEmailVerification() {
+            if (isChecking) return;
+            if (!currentUser) return;
+            
+            isChecking = true;
+            
+            try {
+                await reload(currentUser);
+                
+                if (currentUser.emailVerified) {
+                    // ✅ 邮箱已验证！
+                    clearInterval(checkInterval);
+                    checkingStatusEl.style.display = 'none';
+                    
+                    setStatus('✅ 恭喜！您的邮箱已成功验证。', 'success');
+                    
+                    // 更新 Firestore
+                    try {
+                        const userRef = doc(db, 'users_ios', currentUser.uid);
+                        await updateDoc(userRef, {
+                            emailVerified: true
+                        });
+                    } catch (e) {
+                        console.warn('⚠️ Firestore 更新错误：', e);
+                    }
+                    
+                    // 更新本地存储
+                    const settings = storage.getSettings() || {};
+                    if (settings.user) {
+                        settings.user.emailVerified = true;
+                        storage.saveSettings(settings);
+                    }
+                    
+                    showToast('✅ 邮箱已验证！正在跳转到仪表盘...', 2500);
+                    
+                    setTimeout(() => {
+                        window.location.href = 'yibiao_zh.html';
+                    }, 2000);
+                    
+                    return true;
+                } else {
+                    // ❌ 邮箱尚未验证
+                    setStatus('📩 请点击邮件中的链接以激活您的账户。', 'info');
+                    return false;
+                }
+                
+            } catch (error) {
+                console.error('❌ 验证错误：', error);
+                return false;
+            } finally {
+                isChecking = false;
+            }
+        }
+        
+        // ============================================================
+        // 初始化
+        // ============================================================
+        
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                currentUser = user;
+                userEmailEl.textContent = user.email || '邮箱不可用';
+                
+                // 检查邮箱是否已经验证
+                if (user.emailVerified) {
+                    // ✅ 已验证 - 直接跳转
+                    showToast('✅ 邮箱已验证。正在跳转...', 2000);
+                    setTimeout(() => {
+                        window.location.href = 'yibiao_zh.html';
+                    }, 1500);
+                    return;
+                }
+                
+                // 为重新发送按钮启动倒计时
+                startCountdown(60);
+                
+                // 每 5 秒自动检查一次
+                checkInterval = setInterval(() => {
+                    checkEmailVerification();
+                }, 5000);
+                
+                // 立即检查一次
+                setTimeout(() => {
+                    checkEmailVerification();
+                }, 1000);
+                
+                // 处理重新发送按钮点击
+                resendBtn.addEventListener('click', resendEmailVerification);
+                
+                Logger.info('📧 邮箱验证页面已加载');
+                console.log('📧 邮箱：', user.email);
+                console.log('✅ 每 5 秒自动验证');
+                
+            } else {
+                // 没有用户登录 - 跳转到注册页
+                showToast('⚠️ 请先注册', 2000);
+                setTimeout(() => {
+                    window.location.href = 'zhuce_zh.html';
+                }, 1500);
+            }
+        });
+        
+        // 页面卸载时清除定时器
+        window.addEventListener('beforeunload', () => {
+            if (checkInterval) {
+                clearInterval(checkInterval);
+            }
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+            }
+        });
+        
+        console.log('📧 邮箱验证页面已成功加载');
+        
+    </script>
+</body>
+</html>

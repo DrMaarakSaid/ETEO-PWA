@@ -1,0 +1,453 @@
+{
+    "app": {
+        "title": "ETEO V2 - Surgery Quiz",
+        "welcome": "Welcome to ETEO V2",
+        "loading": "Loading..."
+    },
+
+    "auth": {
+        "login": "Log in",
+        "register": "Sign up",
+        "logout": "Log out",
+        "email": "Email",
+        "password": "Password",
+        "confirm_password": "Confirm password",
+        "forgot_password": "Forgot password?",
+        "reset_password": "Reset password",
+        "verify_email": "Verify your email",
+        "verification_sent": "A verification email has been sent to {email}",
+        "email_verified": "✅ Email verified!",
+        "verification_required": "📧 Please verify your email before continuing",
+        "login_success": "✅ Login successful!",
+        "login_failed": "❌ Login failed",
+        "register_success": "✅ Registration successful!",
+        "register_failed": "❌ Registration failed",
+        "password_reset_sent": "✅ A reset email has been sent",
+        "password_reset_failed": "❌ Reset failed",
+        "already_registered": "Already registered?",
+        "not_registered": "Not registered yet?",
+        "profession": "Profession",
+        "country": "Country",
+        "full_name": "Full name"
+    },
+
+    "quiz": {
+        "question": "Question",
+        "of": "of",
+        "next": "Next",
+        "previous": "Previous",
+        "submit": "Submit",
+        "time_left": "Time left",
+        "score": "Score",
+        "correct": "Correct answer",
+        "incorrect": "Wrong answer",
+        "results": "Results",
+        "complete": "Quiz complete",
+        "restart": "Restart",
+        "your_score": "Your score",
+        "out_of": "out of",
+        "level": "Level",
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "expert": "Expert"
+    },
+
+    "errors": {
+        "load_failed": "Data loading error",
+        "invalid_question": "Invalid question",
+        "timeout": "Time expired",
+        "no_questions": "No questions found",
+        "network_error": "Network error",
+        "server_error": "Server error",
+        "unauthorized": "Unauthorized access",
+        "tts_unavailable": "❌ TTS unavailable",
+        "tts_error": "❌ Voice reading error"
+    },
+
+    "messages": {
+        "welcome_quiz": "Ready to start the quiz?",
+        "good_luck": "Good luck!",
+        "well_done": "Well done!",
+        "try_again": "Try again",
+        "congratulations": "🎉 Congratulations!",
+        "keep_going": "💪 Keep it up!",
+        "almost_there": "🎯 You're almost there!"
+    },
+
+    "dashboard": {
+        "title": "ETEO - Dashboard",
+        "greeting": "Hello {name}!",
+        "welcome": "Welcome to your dashboard",
+        "back_to_specialties": "← Back to specialties",
+        "home": "🏠 Home",
+        "no_specialties": "No specialties completed yet.",
+        "choose_specialty": "📚 Choose a specialty",
+        "info_roulette": "🎰 Info Roulette",
+        "my_progress": "📈 My progress",
+        "world_ranking": "🏆 World ranking",
+        "loading_summary": "Loading your summary..."
+    },
+
+    "statistics": {
+        "specialties_completed": "Specialties completed",
+        "total_time": "Total time",
+        "average_score": "Average score",
+        "best_streak": "Best streak",
+        "completion_rate": "Completion rate",
+        "quiz_streak": "🔥 Quiz of the Day streak",
+        "global_progress": "📊 Global progress",
+        "scores_by_category": "📈 Scores by category",
+        "categories_explored": "categories explored",
+        "specialties_out_of": "specialties completed out of {total}",
+        "total_specialties": "Total specialties",
+        "completed": "Completed",
+        "score": "Score"
+    },
+
+    "profile": {
+        "member_since": "📅 Member since {date}",
+        "badges_unlocked": "🏅 {count} badges unlocked",
+        "ranking": "🏆 Ranking",
+        "world_rank": "#{rank} worldwide",
+        "score": "📊 Score: {score} / 100",
+        "quality": "🎯 Quality (70%): {score}",
+        "completion": "📚 Completion (30%): {score}",
+        "specialties": "📖 Specialties: {count}/36",
+        "edit_profile": "✏️ Edit profile",
+        "change_avatar": "📷 Change avatar"
+    },
+
+    "badges": {
+        "first_step": {
+            "name": "First step",
+            "description": "Complete 1 specialty",
+            "tip": "Tip: Start with any specialty. The first one is always the most memorable!"
+        },
+        "streak": {
+            "name": "Streak",
+            "description": "3-day streak",
+            "tip": "Tip: Log in 3 days in a row. Even 5 minutes a day is enough!"
+        },
+        "polyvalent": {
+            "name": "Polyvalent",
+            "description": "Explore 3 categories",
+            "tip": "Tip: Try specialties in 3 different areas: Clinical, Management, HR, Technical, or Sciences."
+        },
+        "rapide": {
+            "name": "Fast",
+            "description": "Perfect score on a specialty",
+            "tip": "Tip: Focus on one specialty and revise until you get 100% at all levels."
+        },
+        "perseverant": {
+            "name": "Perseverant",
+            "description": "Succeed after a failure",
+            "tip": "Tip: Don't be afraid to fail! Fail and try again until you succeed."
+        },
+        "champion": {
+            "name": "Champion",
+            "description": "Complete 10 specialties",
+            "tip": "Tip: Persistence pays off! Keep completing specialties, one by one."
+        }
+    },
+
+    "badge_modal": {
+        "title": "🏅 Your badges",
+        "unlocked": "Unlocked",
+        "locked": "Locked",
+        "listen_button": "🔊 Listen to instructions",
+        "close_button": "Got it!",
+        "instructions_intro": "Here are the instructions for your badges",
+        "unlocked_badges": "Unlocked badges",
+        "locked_badges": "Locked badges",
+        "all_unlocked": "🎉 ALL UNLOCKED! You're a legend!",
+        "remaining": "{count} more badge(s) to unlock to win it all!",
+        "tip_prefix": "Tip",
+        "welcome_guide": "Welcome to the ETEO badge guide.",
+        "legend": "You are a true legend!",
+        "unlocked_count": "You currently have {count} badge(s) unlocked out of {total}.",
+        "remaining_instruction": "You have {count} badge(s) left to unlock.",
+        "unlocked_badge": "You unlocked the badge {name}: {description}. Congratulations!",
+        "locked_badge": "For the badge {name}, you need {description}. {tip}",
+        "almost_there": "Come on, {name}, you're almost there!",
+        "keep_inspiring": "Keep inspiring others.",
+        "no_instructions": "❌ No instructions to read"
+    },
+
+    "certificates": {
+        "title": "📜 My certificates",
+        "no_certificates": "No certificates available at the moment.",
+        "download": "📥 Download",
+        "view": "👁️ View",
+        "date": "Date",
+        "certificate_of_completion": "Certificate of Completion",
+        "awarded_to": "Awarded to",
+        "for_completing": "For completing",
+        "congratulations": "🎉 Congratulations!",
+        "expert_level": "Expert Level achieved!",
+        "share": "📤 Share",
+        "generate": "Generate a certificate",
+        "completed": "You completed {specialty} with {score}%",
+        "download_success": "Certificate downloaded!",
+        "download_error": "❌ Download error",
+        "share_error": "❌ Share error",
+        "load_error": "❌ Error loading certificates",
+        "copied": "📋 Certificate details copied to clipboard!",
+        "certificates_obtained": "📜 Certificates obtained",
+        "specialties_certified": "🏅 Certified specialties",
+        "folders_certified": "📁 Certified folders",
+        "eteo_complete": "🏆 ETEO Complete",
+        "specialty_certificates": "🏅 Specialty certificates",
+        "folder_certificates": "📁 Folder certificates",
+        "full_certificate": "🏆 Complete ETEO Certificate",
+        "global_score": "Global score",
+        "levels": "levels",
+        "unlock_full": "Complete all specialties to unlock this ultimate certificate",
+        "specialty_not_found": "❌ Specialty not found",
+        "levels_required": "❌ All levels must be completed",
+        "folder_not_completed": "❌ Folder not completed",
+        "full_not_available": "❌ Complete certificate not available",
+        "print_started": "🖨️ Print started!",
+        "print_error": "❌ Print error",
+        "buttons": {
+            "print": "🖨️ Print",
+            "download": "📥 Download"
+        }
+    },
+
+    "daily_challenge": {
+        "title": "🎯 Daily challenge",
+        "complete_today": "Complete a specialty today!",
+        "in_progress": "⏳ In progress",
+        "completed": "✅ Challenge completed! Well done! 🎉",
+        "objective": "🎯 Today's objective: {specialty}",
+        "next_challenge": "Next challenge tomorrow!"
+    },
+
+    "ranking": {
+        "title": "🏆 World ranking",
+        "your_rank": "Your position",
+        "rank": "#{rank}",
+        "player": "Player",
+        "score": "Score",
+        "specialties": "Specialties",
+        "no_data": "No ranking available at the moment.",
+        "top_players": "🏅 Top players",
+        "you": "👤 You",
+        "previous_rank": "Previous rank",
+        "progress": "Progress",
+        "loading": "Loading ranking...",
+        "please_wait": "Please wait",
+        "error_load": "Ranking loading error",
+        "error_message": "Unable to load ranking",
+        "retry": "🔄 Retry",
+        "users": "👥 Users",
+        "ranked": "🏅 Ranked",
+        "displayed": "🔍 Displayed",
+        "search_placeholder": "🔍 Search for a user...",
+        "user": "User",
+        "country": "Country",
+        "levels": "Levels",
+        "badges": "Badges",
+        "no_user_found": "🔍 No user found",
+        "no_users": "🏆 No users",
+        "previous": "← Previous",
+        "next": "Next →",
+        "page": "Page {current} of {total}",
+        "top_countries_title": "🌍 Top 10 countries",
+        "top_countries_empty": "🌍 No registered countries",
+        "top_countries_error": "⚠️ Loading error",
+        "top_countries_month_title": "🏆 Top countries this month",
+        "top_countries_month_sub": "Based on the top 10 users",
+        "top_countries_month_empty": "🏆 No registered countries",
+        "top_countries_month_count": "in the top 10"
+    },
+
+    "progression": {
+        "title": "📈 My progress",
+        "overview": "Overview",
+        "specialty_progress": "Progress by specialty",
+        "levels": {
+            "beginner": "Beginner",
+            "intermediate": "Intermediate",
+            "expert": "Expert"
+        },
+        "status": {
+            "not_started": "Not started",
+            "in_progress": "In progress",
+            "completed": "✅ Completed",
+            "failed": "❌ To review"
+        },
+        "details": "Specialty details",
+        "time_spent": "Time spent",
+        "attempts": "Attempts",
+        "best_score": "Best score",
+        "percentage": "Percentage",
+        "completed_at": "Completed on"
+    },
+
+    "roulette": {
+        "title": "🎰 Info Roulette",
+        "question": "Random question",
+        "spin": "🎡 Spin the wheel",
+        "level": "Level: {level}",
+        "expert_mode": "🏆 Expert Mode",
+        "streak": "🔥 Streak: {count}",
+        "correct_answer": "✅ Correct answer!",
+        "wrong_answer": "❌ Wrong answer. The correct answer was: {answer}",
+        "daily_quiz": "📅 Quiz of the Day",
+        "already_played": "You've already played today. Come back tomorrow!",
+        "perfect_score": "🎉 Perfect score!",
+        "random_question": "Random question",
+        "next_question": "Next question",
+        
+        "stats": {
+            "total_quizzes": "Quizzes played",
+            "success_rate": "Success rate",
+            "correct_answers": "Correct answers",
+            "best_specialty": "Best specialty",
+            "message": "🎯 Play the Roulette to see your stats by specialty"
+        }
+    },
+
+    "admin": {
+        "title": "🔧 Administration",
+        "dashboard": "Admin dashboard",
+        "users": "Users",
+        "specialties": "Specialties",
+        "certificates": "Certificates",
+        "statistics": "Statistics",
+        "total_users": "Total users: {count}",
+        "total_specialties": "Total specialties: {count}",
+        "total_certificates": "Total certificates: {count}",
+        "manage_users": "Manage users",
+        "manage_specialties": "Manage specialties",
+        "manage_certificates": "Manage certificates",
+        "system_settings": "System settings"
+    },
+
+    "notifications": {
+        "title": "🔔 Notifications",
+        "no_notifications": "No notifications",
+        "badge_unlocked": "🏅 Badge unlocked: {badge}",
+        "level_completed": "✅ Level {level} completed!",
+        "streak_milestone": "🔥 {days} days streak!",
+        "new_ranking": "📊 New ranking: #{rank}",
+        "certificate_available": "📜 Certificate available for {specialty}",
+        "all_read": "✅ Mark all as read",
+        "clear_all": "🗑️ Clear all"
+    },
+
+    "payment": {
+        "title": "💰 Payment",
+        "rib": "RIB",
+        "bank_transfer": "Bank transfer",
+        "amount": "Amount: {amount} €",
+        "status": {
+            "pending": "⏳ Pending",
+            "completed": "✅ Paid",
+            "failed": "❌ Failed",
+            "refunded": "🔄 Refunded"
+        },
+        "confirmation": "Payment confirmation",
+        "receipt": "📄 Receipt",
+        "error": "❌ Payment error",
+        "payment_method": "Payment method",
+        "card": "Credit card",
+        "bank": "Bank transfer",
+        "subscription": "Subscription"
+    },
+
+    "recommendation": {
+        "title": "💡 Recommendation",
+        "start": "Start with a specialty that interests you!",
+        "we_recommend": "🎉 We recommend <strong>{specialty}</strong>!",
+        "will_help": "This specialty will help you progress toward excellence.",
+        "choose": "🚀 Choose this specialty",
+        "based_on_progress": "Based on your progress",
+        "next_specialty": "Next recommended specialty"
+    },
+
+    "recent": {
+        "title": "🔄 Recent specialties",
+        "no_specialties": "No specialties completed yet.",
+        "completed_on": "Completed on {date}",
+        "view_details": "View details"
+    },
+
+    "ai_summary": {
+        "hello": "Hello {name}! 👋",
+        "registered_as": "{emoji} You are registered as <strong>{profession}</strong>. Welcome to ETEO!",
+        "streak": "🔥 You are on a <strong>{days}</strong> day streak!",
+        "welcome_dashboard": "🌟 Welcome to your ETEO dashboard!",
+        "no_specialties": "You haven't completed any specialties yet. The path to excellence starts with a first step.",
+        "two_choices": "🎯 Today, you have <strong>TWO key choices</strong>:",
+        "choice_progress": "📚 Either progress <strong>specialty by specialty</strong> by going to <strong>\"Choose a specialty\"</strong>.",
+        "choice_roulette": "🎰 Or test your knowledge in <strong>challenge mode</strong> by trying your luck at <strong>\"Info Roulette\"</strong>!",
+        "question": "So, {profession}, which path will you take today? Progressive mastery or a direct assault on expertise? 💪🔥",
+        "completed_count": "📊 You have completed <strong>{count}</strong> specialt{plural} out of {total} ({percent}%).",
+        "average_score": "📈 Your average score is <strong>{score}%</strong>.",
+        "rank": "🏆 You are <strong>{rank}</strong>.",
+        "last_specialty": "🔄 Your last specialty: <strong>{emoji} {name}</strong> ({percent}%).",
+        "categories_explored": "🧩 You have explored <strong>{count}</strong> different categor{plural}.",
+        "choice_continue": "📚 Either continue progressing <strong>specialty by specialty</strong> by going to <strong>\"Choose a specialty\"</strong>.",
+        "choice_challenge": "🎰 Or test your knowledge in <strong>challenge mode</strong> by trying your luck at <strong>\"Info Roulette\"</strong>!"
+    },
+
+    "buttons": {
+        "listen_summary": "🔊 Listen to summary",
+        "stop": "⏹️ Stop",
+        "back": "← Back",
+        "play": "🎯 Play",
+        "start": "Start",
+        "review": "🔄 Review a specialty",
+        "save": "💾 Save",
+        "cancel": "❌ Cancel",
+        "delete": "🗑️ Delete",
+        "edit": "✏️ Edit",
+        "close": "Close",
+        "confirm": "Confirm",
+        "yes": "Yes",
+        "no": "No",
+        "retry": "🔄 Retry",
+        "continue": "Continue",
+        "finish": "Finish",
+        "print": "🖨️ Print"
+    },
+
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "success": "✅ Success!",
+        "save": "💾 Save",
+        "cancel": "❌ Cancel",
+        "delete": "🗑️ Delete",
+        "edit": "✏️ Edit",
+        "close": "Close",
+        "back": "← Back",
+        "next": "Next →",
+        "previous": "← Previous",
+        "confirm": "Confirm",
+        "yes": "Yes",
+        "no": "No",
+        "all": "All",
+        "none": "None",
+        "search": "🔍 Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "view": "👁️ View",
+        "more": "See more",
+        "less": "See less",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "tomorrow": "Tomorrow",
+        "now": "Now"
+    },
+
+    "footer": {
+        "copyright": "© 2026 - Dr. SAID MAARAK 🇲🇦",
+        "rights_reserved": "All rights reserved",
+        "privacy_policy": "Privacy policy",
+        "terms": "Terms of use",
+        "contact": "Contact"
+    }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔐 Verifica certificato - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"
+        }
+    }
+    </script>
+    
+    <style>
+        .verify-container {
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .verify-container h1 {
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+        .verify-container p {
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .verify-container input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+        .verify-container input:focus {
+            border-color: #4c6ef5;
+            outline: none;
+        }
+        .verify-container button {
+            margin-top: 15px;
+            padding: 14px 50px;
+            background: linear-gradient(135deg, #4c6ef5, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .verify-container button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(76, 110, 245, 0.4);
+        }
+        #result {
+            margin-top: 30px;
+            display: none;
+        }
+        .result-valid {
+            background: #e8f5e9;
+            padding: 30px;
+            border-radius: 16px;
+            border: 2px solid #4caf50;
+        }
+        .result-valid .icon {
+            font-size: 48px;
+        }
+        .result-valid h2 {
+            color: #2e7d32;
+        }
+        .result-valid .detail {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        .result-valid .detail strong {
+            color: #2c3e50;
+        }
+        .result-invalid {
+            background: #ffebee;
+            padding: 30px;
+            border-radius: 16px;
+            border: 2px solid #e74c3c;
+        }
+        .result-invalid .icon {
+            font-size: 48px;
+        }
+        .result-invalid h2 {
+            color: #c62828;
+        }
+        .badge-verified {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+        .footer-verify {
+            margin-top: 30px;
+            color: #999;
+            font-size: 12px;
+        }
+        .example-code {
+            color: #4c6ef5;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .example-code:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 520px) {
+            .verify-container {
+                margin: 20px auto;
+                padding: 15px;
+            }
+            .verify-container h1 {
+                font-size: 1.5rem;
+            }
+            .verify-container input {
+                font-size: 14px;
+                padding: 12px;
+            }
+            .result-valid, .result-invalid {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container verify-container">
+        
+        <div style="margin-bottom: 10px;">
+            <span style="font-size: 3rem;">🔐</span>
+        </div>
+        
+        <h1>Verifica certificato</h1>
+        <p>Inserisci il codice univoco presente sul tuo certificato ETEO per verificarne l'autenticità.</p>
+        
+        <input type="text" id="certCode" placeholder="Es: CERT-XXXXXXXX" maxlength="14" autofocus>
+        
+        <button id="verifyBtn">🔍 Verifica</button>
+        
+        <div id="result"></div>
+        
+        <div style="margin-top: 20px; font-size: 13px; color: #999;">
+            💡 Esempio: <span class="example-code" onclick="document.getElementById('certCode').value='CERT-USXH1N7G'">CERT-USXH1N7G</span>
+        </div>
+        
+        <div class="footer-verify">
+            <p>© 2026 - ETEO Dental Education | Tutti i diritti riservati</p>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from 'firebase/app';
+        import { getFirestore, collection, query, where, getDocs } from 'firebase/firestore';
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            projectId: "eteo-endo-to-every-one"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        
+        window.verifyCertificate = async function() {
+            const code = document.getElementById('certCode').value.trim().toUpperCase();
+            const result = document.getElementById('result');
+            
+            if (!code) {
+                result.style.display = 'block';
+                result.innerHTML = `
+                    <div class="result-invalid">
+                        <div class="icon">⚠️</div>
+                        <h2>Codice richiesto</h2>
+                        <p>Inserisci un codice certificato valido.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            if (!/^CERT-[A-Z0-9]{8}$/.test(code)) {
+                result.style.display = 'block';
+                result.innerHTML = `
+                    <div class="result-invalid">
+                        <div class="icon">❌</div>
+                        <h2>Formato non valido</h2>
+                        <p>Il codice deve essere nel formato: <strong>CERT-XXXXXXXX</strong></p>
+                        <p style="font-size:14px;color:#888;">Esempio: CERT-USXH1N7G</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            result.style.display = 'block';
+            result.innerHTML = `<p style="color:#888;">⏳ Verifica in corso...</p>`;
+            
+            try {
+                const q = query(collection(db, 'certification_requests'), where('certificateId', '==', code));
+                const querySnapshot = await getDocs(q);
+                
+                if (!querySnapshot.empty) {
+                    const data = querySnapshot.docs[0].data();
+                    
+                    if (data.status === 'completed') {
+                        result.innerHTML = `
+                            <div class="result-valid">
+                                <div class="icon">✅</div>
+                                <h2>Certificato valido</h2>
+                                <span class="badge-verified">✓ Certificato da ETEO</span>
+                                <div style="margin-top: 15px; text-align: left; max-width: 400px; margin-left: auto; margin-right: auto;">
+                                    <div class="detail"><strong>👤 Nome:</strong> ${data.fullName || data.userName || 'Non specificato'}</div>
+                                    <div class="detail"><strong>📚 Specialità:</strong> ${data.specialty || 'Non specificata'}</div>
+                                    <div class="detail"><strong>📅 Rilasciato il:</strong> ${data.date || data.updatedAt || 'Non specificato'}</div>
+                                    <div class="detail"><strong>🔑 Riferimento:</strong> ${data.reference || 'Non specificato'}</div>
+                                    <div class="detail" style="margin-top:10px; font-size:12px; color:#999;">
+                                        <strong>🔐 Codice:</strong> ${code}
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        result.innerHTML = `
+                            <div class="result-invalid">
+                                <div class="icon">⏳</div>
+                                <h2>Certificato in sospeso</h2>
+                                <p>Questo certificato non è ancora stato finalizzato.<br>Stato attuale: <strong>${data.status || 'sconosciuto'}</strong></p>
+                            </div>
+                        `;
+                    }
+                } else {
+                    result.innerHTML = `
+                        <div class="result-invalid">
+                            <div class="icon">❌</div>
+                            <h2>Certificato non trovato</h2>
+                            <p>Nessun certificato valido corrisponde a questo codice.</p>
+                            <p style="font-size:14px;color:#888;margin-top:10px;">
+                                💡 Assicurati di aver inserito il codice completo.<br>
+                                Il codice deve essere nel formato: <strong>CERT-XXXXXXXX</strong>
+                            </p>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('Errore di verifica:', error);
+                result.innerHTML = `
+                    <div class="result-invalid">
+                        <div class="icon">⚠️</div>
+                        <h2>Errore tecnico</h2>
+                        <p>Si è verificato un errore durante la verifica. Riprova più tardi.</p>
+                    </div>
+                `;
+            }
+        };
+        
+        document.getElementById('verifyBtn').addEventListener('click', window.verifyCertificate);
+        
+        document.getElementById('certCode').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                window.verifyCertificate();
+            }
+        });
+        
+        document.getElementById('certCode').addEventListener('input', function(e) {
+            this.value = this.value.replace(/\s/g, '').toUpperCase();
+        });
+    </script>
+</body>
+</html>

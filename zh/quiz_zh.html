@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>ETEO V2 - 测验</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container quiz-container">
+        
+        <!-- ============================================================ -->
+        <!-- 页头（初始隐藏） -->
+        <!-- ============================================================ -->
+        <div class="quiz-header" id="quizHeader" style="display:none;">
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar">
+                    <div class="quiz-progress-fill" id="progressFill" style="width: 0%;"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 5px;">
+                    <span id="questionCounter">第 1/10 题</span>
+                    <span id="specialtyName">加载中...</span>
+                </div>
+            </div>
+            <div class="quiz-timer" id="timerDisplay">
+                ⏱️ <span id="timerValue">00:40</span>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 欢迎屏幕（带故事和 6 个等级） -->
+        <!-- ============================================================ -->
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1 id="specialtyTitle">🎯 专科</h1>
+            
+            <!-- 故事 -->
+            <div class="synopsis-container" id="synopsisContainer">
+                <p id="synopsisText">正在加载故事...</p>
+                <button class="listen-synopsis-btn" id="listenSynopsisBtn">🔊 收听故事</button>
+            </div>
+            
+            <!-- 6 个等级（2x2 网格） -->
+            <div class="level-grid-horizontal" id="levelGrid">
+                <!-- 由 JavaScript 生成 -->
+            </div>
+            
+            <button class="start-quiz-btn" id="startQuizBtn" style="display:none;">🚀 开始测验</button>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 章节屏幕（新） -->
+        <!-- ============================================================ -->
+        <div class="chapter-screen" id="chapterScreen" style="display:none;">
+            <div class="chapter-header">
+                <span class="chapter-icon">📖</span>
+                <span class="chapter-level" id="chapterLevel">中级 1</span>
+                <h2 id="chapterTitle">商业租赁的陷阱</h2>
+            </div>
+            <div class="chapter-content" id="chapterContent">
+                <p id="chapterText">Hachimi 医生和 Chaoui 医生已经签署了他们的租约，但冒险才刚刚开始...</p>
+            </div>
+            <div class="chapter-actions">
+                <button class="listen-chapter-btn" id="listenChapterBtn">🔊 收听章节</button>
+                <button class="start-chapter-quiz-btn" id="startChapterQuizBtn">🚀 开始测验</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 测验屏幕 -->
+        <!-- ============================================================ -->
+        <div class="question-container" id="questionContainer" style="display:none;">
+            <div class="quiz-title" id="quizTitle">消毒灭菌 - 初级 1</div>
+            
+            <div class="question-text" id="questionText">正在加载题目...</div>
+            
+            <div class="tts-button-row">
+                <button class="tts-btn" id="ttsQuestionBtn">🔊 朗读题目</button>
+            </div>
+            
+            <div class="options" id="optionsContainer">
+                <!-- 选项由 JavaScript 生成 -->
+            </div>
+            
+            <div class="feedback-container" id="feedbackContainer" style="display:none;">
+                <span id="feedbackMessage"></span>
+                <span class="points-badge" id="pointsBadge"></span>
+                <button class="tts-btn tts-feedback-btn" id="ttsFeedbackBtn" style="display:none;">🔊 重新朗读反馈</button>
+            </div>
+            
+            <div class="explanation-box" id="explanationBox" style="display:none;">
+                <div class="explanation-title">📖 解析</div>
+                <p id="explanationText"></p>
+                <div class="correct-answer" id="correctAnswerText"></div>
+                <button class="tts-btn tts-explanation-btn" id="ttsExplanationBtn" style="display:none;">🔊 朗读解析</button>
+            </div>
+            
+            <div class="score" id="scoreDisplay">得分：0/0</div>
+            
+            <div class="timer-bottom" id="timerBottom">⏱️ 剩余时间 : <span id="timerBottomValue">40</span> 秒</div>
+            
+            <div class="nav-buttons">
+                <button class="nav-btn" id="quitBtn">🚪 退出</button>
+                <button class="nav-btn" id="nextBtn" disabled>下一题 ➜</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 结果屏幕 -->
+        <!-- ============================================================ -->
+        <div class="result-container" id="resultContainer" style="display:none;">
+            <h2>🏆 测验完成！</h2>
+            <div class="final-score" id="finalScore">0/0</div>
+            <div class="percentage" id="percentage">0%</div>
+            <div class="message" id="resultMessage">做得好！</div>
+            <div id="badgeContainer"></div>
+            <div id="levelUnlockMessage" style="margin-top: 10px; font-weight: 700;"></div>
+            
+            <div class="result-buttons">
+                <button class="btn-levels" id="levelsBtn">📚 查看等级</button>
+                <button class="btn-menu" id="menuBtn">🏠 菜单</button>
+                <button class="btn-ranking" id="retryBtn">🔄 重试</button>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 专家 2 最终屏幕 -->
+        <!-- ============================================================ -->
+        <div class="expert-final-container" id="expertFinalContainer" style="display:none;">
+            <div class="expert-final-header">
+                <div class="expert-final-badge">🏆</div>
+                <h1 class="expert-final-title">恭喜，<span id="expertUserName">医生</span>！</h1>
+                <p class="expert-final-subtitle">您已完成 <span id="expertSpecialtyName">消毒灭菌</span> 的全部等级！</p>
+            </div>
+
+            <div class="expert-final-stats">
+                <div class="expert-stat-item">
+                    <span class="expert-stat-icon">🔥</span>
+                    <span class="expert-stat-value" id="expertFinalLevel">专家 2</span>
+                    <span class="expert-stat-label">达到的等级</span>
+                </div>
+                <div class="expert-stat-item">
+                    <span class="expert-stat-icon">📊</span>
+                    <span class="expert-stat-value" id="expertFinalScore">92%</span>
+                    <span class="expert-stat-label">总体得分</span>
+                </div>
+                <div class="expert-stat-item">
+                    <span class="expert-stat-icon">⏱️</span>
+                    <span class="expert-stat-value" id="expertFinalTime">4h25</span>
+                    <span class="expert-stat-label">总时间</span>
+                </div>
+                <div class="expert-stat-item">
+                    <span class="expert-stat-icon">📚</span>
+                    <span class="expert-stat-value">6/6</span>
+                    <span class="expert-stat-label">已完成的等级</span>
+                </div>
+            </div>
+
+            <div class="expert-final-divider">
+                <span>🎓 ETEO 认证</span>
+            </div>
+
+            <div class="expert-certification-section">
+                <div class="expert-cert-icon">📜</div>
+                <h2>证明您的专业能力！</h2>
+                <p>参加 ETEO 认证考试，获得您的个性化证书。</p>
+                
+                <div class="expert-cert-details">
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">📋</span>
+                        <span><strong>50</strong> 道随机题</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">⏱️</span>
+                        <span>每题 <strong>40</strong> 秒</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">🎯</span>
+                        <span><strong>75%</strong> 及格</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">🔄</span>
+                        <span>允许 <strong>2</strong> 次尝试</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">🏅</span>
+                        <span>个性化证书</span>
+                    </div>
+                    <div class="expert-cert-detail">
+                        <span class="detail-icon">💰</span>
+                        <span>每次考试 <strong>20€</strong></span>
+                    </div>
+                </div>
+
+                <div class="expert-final-buttons">
+                    <button class="expert-btn-primary" id="expertExamBtn">🎓 参加认证考试</button>
+                    <button class="expert-btn-secondary" id="expertLevelsBtn">📚 查看等级</button>
+                </div>
+            </div>
+
+            <div class="expert-final-divider">
+                <span>🎙️ 来自您 AI 的一句话</span>
+            </div>
+
+            <div class="expert-final-message">
+                <div class="expert-avatar">🤖</div>
+                <p id="expertAIMessage">"<span id="expertAIName">Karim</span> 医生，您是真正的传奇！您的旅程令人振奋。认证是验证您专业能力的最终一步。我相信您！"</p>
+            </div>
+
+            <div class="expert-final-actions">
+                <button class="expert-btn-menu" id="expertMenuBtn">🏠 菜单</button>
+                <button class="expert-btn-dashboard" id="expertDashboardBtn">📊 仪表盘</button>
+            </div>
+        </div>
+
+        <!-- TOAST -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 主脚本 -->
+    <!-- ============================================================ -->
+    
+    <script type="module">
+        // ============================================================
+        // 导入
+        // ============================================================
+        
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { TranslateService } from '../js/services/translate.js';
+        import { QuizEngine } from '../js/core/quiz.js';
+        import { Timer } from '../js/core/timer.js';
+        import { Score } from '../js/core/score.js';
+        import { Progress } from '../js/core/progress.js';
+        import tts from '../js/services/tts.js';
+        
+        // ✅ FIREBASE 导入
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore, doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
+        import { AccessService } from '../js/services/AccessService.js';
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // FIREBASE 配置
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        // ============================================================
+        // 等级配置
+        // ============================================================
+        
+        const LEVELS = [
+            { id: 'debutant1', label: '初级 1' },
+            { id: 'debutant2', label: '初级 2' },
+            { id: 'intermediaire1', label: '中级 1' },
+            { id: 'intermediaire2', label: '中级 2' },
+            { id: 'expert1', label: '专家 1' },
+            { id: 'expert2', label: '专家 2' }
+        ];
+        
+        const UNLOCK_ORDER = ['debutant1', 'debutant2', 'intermediaire1', 'intermediaire2', 'expert1', 'expert2'];
+        const UNLOCK_THRESHOLD = 60;
+        
+        // ============================================================
+        // DOM 元素
+        // ============================================================
+        
+        const toast = document.getElementById('toast');
+        const welcomeScreen = document.getElementById('welcomeScreen');
+        const chapterScreen = document.getElementById('chapterScreen');
+        const questionContainer = document.getElementById('questionContainer');
+        const resultContainer = document.getElementById('resultContainer');
+        const expertFinalContainer = document.getElementById('expertFinalContainer');
+        const quizHeader = document.getElementById('quizHeader');
+        const startQuizBtn = document.getElementById('startQuizBtn');
+        const startChapterQuizBtn = document.getElementById('startChapterQuizBtn');
+        const listenChapterBtn = document.getElementById('listenChapterBtn');
+        const chapterTitle = document.getElementById('chapterTitle');
+        const chapterText = document.getElementById('chapterText');
+        const chapterLevel = document.getElementById('chapterLevel');
+        const questionText = document.getElementById('questionText');
+        const optionsContainer = document.getElementById('optionsContainer');
+        const feedbackContainer = document.getElementById('feedbackContainer');
+        const feedbackMessage = document.getElementById('feedbackMessage');
+        const pointsBadge = document.getElementById('pointsBadge');
+        const explanationBox = document.getElementById('explanationBox');
+        const explanationText = document.getElementById('explanationText');
+        const correctAnswerText = document.getElementById('correctAnswerText');
+        const progressFill = document.getElementById('progressFill');
+        const questionCounter = document.getElementById('questionCounter');
+        const specialtyName = document.getElementById('specialtyName');
+        const specialtyTitle = document.getElementById('specialtyTitle');
+        const timerValue = document.getElementById('timerValue');
+        const timerBottomValue = document.getElementById('timerBottomValue');
+        const timerBottom = document.getElementById('timerBottom');
+        const scoreDisplay = document.getElementById('scoreDisplay');
+        const nextBtn = document.getElementById('nextBtn');
+        const quitBtn = document.getElementById('quitBtn');
+        const retryBtn = document.getElementById('retryBtn');
+        const finalScore = document.getElementById('finalScore');
+        const percentage = document.getElementById('percentage');
+        const resultMessage = document.getElementById('resultMessage');
+        const badgeContainer = document.getElementById('badgeContainer');
+        const levelUnlockMessage = document.getElementById('levelUnlockMessage');
+        const levelGrid = document.getElementById('levelGrid');
+        const synopsisText = document.getElementById('synopsisText');
+        const listenSynopsisBtn = document.getElementById('listenSynopsisBtn');
+        const quizTitle = document.getElementById('quizTitle');
+        
+        const ttsQuestionBtn = document.getElementById('ttsQuestionBtn');
+        const ttsFeedbackBtn = document.getElementById('ttsFeedbackBtn');
+        const ttsExplanationBtn = document.getElementById('ttsExplanationBtn');
+        
+        // ============================================================
+        // 服务
+        // ============================================================
+        
+        const storage = new StorageService();
+        const translate = new TranslateService();
+        const quiz = new QuizEngine();
+        const timer = new Timer(40);
+        const score = new Score();
+        const progress = new Progress(0);
+        
+        let accessService = null;
+        
+        // ============================================================
+        // 状态
+        // ============================================================
+        
+        let selectedSpecialty = null;
+        let currentLevel = 'debutant1';
+        let questions = [];
+        let storyData = null;
+        let isAnswered = false;
+        let isSynopsisPlaying = false;
+        let isChapterPlaying = false;
+        let currentQuestionIndex = 0;
+        let totalQuestions = 0;
+        let currentQuestionText = '';
+        let currentFeedbackText = '';
+        let currentFeedbackReplayText = '';
+        let currentExplanationText = '';
+        let pendingLevelId = null;
+        let isChapterMode = false;
+        let timeRemaining = 40;
+        
+        // ============================================================
+        // ✅ 为 TTS 清理文本的函数（移除表情符号 + HTML）
+        // ============================================================
+        
+        function cleanTextForTTS(text) {
+            if (!text) return '';
+            
+            // 1️⃣ 移除 HTML 标签
+            let cleaned = text.replace(/<[^>]*>/g, ' ');
+            
+            // 2️⃣ 移除表情符号（Unicode）
+            cleaned = cleaned.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
+            cleaned = cleaned.replace(/[\u2600-\u27BF]/g, '');
+            cleaned = cleaned.replace(/[\u2700-\u27BF]/g, '');
+            cleaned = cleaned.replace(/[\uFE00-\uFEFF]/g, '');
+            cleaned = cleaned.replace(/[\u2300-\u23FF]/g, '');
+            
+            // 3️⃣ 移除特定表情符号
+            cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆🌱🌿🌳🌲🏆📈🎯💰📋⏱️🔄🏅🎙️🤖]/g, '');
+            
+            // 4️⃣ 移除换行符
+            cleaned = cleaned.replace(/\n/g, ' ');
+            cleaned = cleaned.replace(/\r/g, ' ');
+            
+            // 5️⃣ 清理空格
+            cleaned = cleaned.replace(/\s+/g, ' ').trim();
+            
+            return cleaned;
+        }
+        
+        // ============================================================
+        // 音效（Web Audio API）
+        // ============================================================
+        
+        function playSound(type) {
+            try {
+                const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                
+                if (type === 'win') {
+                    const notes = [392, 523, 659, 784, 1047];
+                    const volume = 0.25;
+                    const duration = 0.35;
+                    const delay = 140;
+                    
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            
+                            const harmonics = [2, 3, 4];
+                            harmonics.forEach((h, j) => {
+                                const oscH = audioCtx.createOscillator();
+                                const gainH = audioCtx.createGain();
+                                oscH.connect(gainH);
+                                gainH.connect(audioCtx.destination);
+                                oscH.frequency.value = freq * h;
+                                oscH.type = 'square';
+                                const volH = volume / (j + 2) * 0.5;
+                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
+                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
+                                oscH.start();
+                                oscH.stop(audioCtx.currentTime + duration * 0.7);
+                            });
+                            
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'lose') {
+                    const notes = [523, 494, 466, 440];
+                    const volume = 0.25;
+                    const duration = 0.4;
+                    const delay = 140;
+                    
+                    notes.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            
+                            gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                            gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+                            
+                            const harmonics = [2, 3, 4];
+                            harmonics.forEach((h, j) => {
+                                const oscH = audioCtx.createOscillator();
+                                const gainH = audioCtx.createGain();
+                                oscH.connect(gainH);
+                                gainH.connect(audioCtx.destination);
+                                oscH.frequency.value = freq * h;
+                                oscH.type = 'square';
+                                const volH = volume / (j + 2) * 0.5;
+                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
+                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
+                                oscH.start();
+                                oscH.stop(audioCtx.currentTime + duration * 0.7);
+                            });
+                            
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + duration);
+                        }, i * delay);
+                    });
+                    
+                } else if (type === 'click') {
+                    const osc = audioCtx.createOscillator();
+                    const gain = audioCtx.createGain();
+                    osc.connect(gain);
+                    gain.connect(audioCtx.destination);
+                    osc.frequency.value = 1200;
+                    osc.type = 'sine';
+                    gain.gain.setValueAtTime(0.20, audioCtx.currentTime);
+                    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + 0.05);
+                    
+                } else if (type === 'tada') {
+                    const notesTada = [523, 659, 784, 1047, 1318];
+                    notesTada.forEach((freq, i) => {
+                        setTimeout(() => {
+                            const osc = audioCtx.createOscillator();
+                            const gain = audioCtx.createGain();
+                            osc.connect(gain);
+                            gain.connect(audioCtx.destination);
+                            osc.frequency.value = freq;
+                            osc.type = 'square';
+                            gain.gain.setValueAtTime(0.25, audioCtx.currentTime);
+                            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.12);
+                            osc.start();
+                            osc.stop(audioCtx.currentTime + 0.12);
+                        }, i * 100);
+                    });
+                }
+            } catch (e) {
+                // 如果不支持 Web Audio 则静默
+            }
+        }
+        
+        // ============================================================
+        // 胜利彩带
+        // ============================================================
+        
+        function launchConfetti() {
+            try {
+                const container = document.createElement('div');
+                container.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;overflow:hidden;';
+                document.body.appendChild(container);
+                
+                const emojis = ['🎉', '🎊', '🌟', '⭐', '💪', '🏆', '✨', '🔥', '🎯', '👑'];
+                const colors = ['#ff6b6b', '#ffd93d', '#6bcb77', '#4d96ff', '#ff6bff', '#ffa94d'];
+                
+                for (let i = 0; i < 80; i++) {
+                    const el = document.createElement('div');
+                    const isEmoji = Math.random() > 0.5;
+                    el.textContent = isEmoji ? emojis[Math.floor(Math.random() * emojis.length)] : '✦';
+                    el.style.cssText = `
+                        position: absolute;
+                        top: -20px;
+                        left: ${Math.random() * 100}%;
+                        font-size: ${1 + Math.random() * 2}rem;
+                        color: ${colors[Math.floor(Math.random() * colors.length)]};
+                        animation: confettiFall ${2 + Math.random() * 3}s linear forwards;
+                        animation-delay: ${Math.random() * 0.8}s;
+                        transform: rotate(${Math.random() * 360}deg);
+                        opacity: 0;
+                    `;
+                    container.appendChild(el);
+                }
+                
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes confettiFall {
+                        0% { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
+                        100% { opacity: 0; transform: translateY(100vh) rotate(720deg) scale(0.3); }
+                    }
+                `;
+                document.head.appendChild(style);
+                
+                setTimeout(() => {
+                    container.remove();
+                    style.remove();
+                }, 5000);
+                
+            } catch (e) {
+                console.warn('⚠️ 彩带不可用：', e);
+            }
+        }
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message, duration = 2500) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // 改进的 TTS：强制重新朗读而不停止
+        // ============================================================
+        
+        function speakText(text, button, buttonText = '🔊') {
+            if (!window.tts) {
+                showToast('❌ TTS 模块不可用', 3000);
+                return;
+            }
+            
+            const cleanText = cleanTextForTTS(text);
+            if (!cleanText || cleanText.trim() === '') {
+                showToast('❌ 文本不可用', 3000);
+                return;
+            }
+            
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+            }
+            
+            if (button) {
+                button.textContent = '⏹️ 停止';
+                button.classList.add('listening');
+            }
+            
+            window.tts.speak(
+                cleanText,
+                'zh',
+                0.9,
+                1.0,
+                () => {
+                    if (button) {
+                        button.textContent = buttonText;
+                        button.classList.remove('listening');
+                    }
+                },
+                (error) => {
+                    console.error('❌ TTS 错误：', error);
+                    if (button) {
+                        button.textContent = buttonText;
+                        button.classList.remove('listening');
+                    }
+                    showToast('❌ 语音朗读错误', 3000);
+                }
+            );
+        }
+        
+        // ============================================================
+        // 带个性化消息的结果朗读
+        // ============================================================
+        
+        function speakResultMessage(score, totalQuestions, userName) {
+            const percent = Math.round((score / totalQuestions) * 100);
+            const name = userName || '医生';
+            let message = '';
+            
+            if (percent === 100) {
+                message = `完美 ${name}！您答对了 ${score}/${totalQuestions}，即 100%。您是真正的专家！您的掌握让我印象深刻。继续保持，您太棒了！我们期待再次看到您接受新挑战。很快见 ${name}！`;
+            } else if (percent >= 80) {
+                message = `优秀 ${name}！您答对了 ${score}/${totalQuestions}，即 ${percent}%。您完美掌握了这个主题。您正在成为专家的正确道路上。继续发光。我们期待下次再见。很快见 ${name}！`;
+            } else if (percent >= 60) {
+                message = `很好的成绩 ${name}！您答对了 ${score}/${totalQuestions}，即 ${percent}%。您有扎实的基础。继续练习以达到卓越。您具备成功的条件。我们期待在下一部分再见。很快见 ${name}！`;
+            } else if (percent >= 40) {
+                message = `好的开始 ${name}！您答对了 ${score}/${totalQuestions}，即 ${percent}%。您有扎实的知识。再多一点练习，您会快速进步。不要放弃，您在正确的道路上。我们期待再次见到您继续您的进步。很快见 ${name}！`;
+            } else if (percent >= 20) {
+                message = `不要气馁 ${name}！您答对了 ${score}/${totalQuestions}，即 ${percent}%。每个错误都是学习的机会。再试一次，您会成功的。我相信您。我们期待再次看到您超越自己。很快见 ${name}！`;
+            } else {
+                message = `这不是您的日子 ${name}。您答对了 ${score}/${totalQuestions}，即 ${percent}%。但不要放弃！坚持是成功的关键。再试一次，我知道您可以。我们期待再次看到您进行这次新尝试。很快见 ${name}！`;
+            }
+            
+            setTimeout(() => {
+                if (window.tts) {
+                    window.tts.speak(cleanTextForTTS(message), 'zh', 0.9, 1.0);
+                }
+            }, 1200);
+        }
+        
+        // ============================================================
+        // 加载专科
+        // ============================================================
+        
+        function loadSavedSpecialty() {
+            const settings = storage.getSettings() || {};
+            selectedSpecialty = settings.selectedSpecialty || localStorage.getItem('eteo_selected_specialty');
+            
+            if (!selectedSpecialty) {
+                showToast('⚠️ 请选择一个专科', 3000);
+                setTimeout(() => window.location.href = 'xuanze_zhuanke_zh.html', 1500);
+                return null;
+            }
+            
+            currentLevel = localStorage.getItem('eteo_current_level') || 'debutant1';
+            return selectedSpecialty;
+        }
+        
+        // ============================================================
+        // 加载故事
+        // ============================================================
+        
+        async function loadStory() {
+            try {
+                const path = `../data/zh/${selectedSpecialty}/stories/story_v1.json`;
+                console.log('📂 加载故事：', path);
+                const response = await fetch(path);
+                if (response.ok) {
+                    storyData = await response.json();
+                    return storyData;
+                } else {
+                    throw new Error('故事未找到');
+                }
+            } catch (error) {
+                const displayName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                storyData = {
+                    title: displayName,
+                    subtitle: '',
+                    synopsis: `欢迎来到 ${displayName} 专科。选择一个等级开始。`,
+                    characters: [],
+                    chapters: {},
+                    chapterTitles: {},
+                    chapterEndings: {}
+                };
+                return storyData;
+            }
+        }
+        
+        // ============================================================
+        // 加载数据
+        // ============================================================
+        
+        async function loadSpecialtyData() {
+            await loadStory();
+            const displayName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            specialtyTitle.textContent = `🎯 ${storyData.title || displayName}`;
+            synopsisText.textContent = storyData.synopsis || `欢迎来到 ${displayName} 专科。`;
+            listenSynopsisBtn.textContent = '🔊 收听故事';
+            return storyData;
+        }
+        
+        // ============================================================
+        // ✅ 检查访问权限 - 所有等级免费（已修改）
+        // ============================================================
+        
+        function canAccessLevel(levelId) {
+            return true;
+        }
+        
+        // ============================================================
+        // 显示章节屏幕
+        // ============================================================
+        
+        function showChapterScreen(levelId) {
+            const levelLabel = LEVELS.find(l => l.id === levelId)?.label || levelId;
+            const chapterTitleText = storyData.chapterTitles?.[levelId] || `${levelLabel}`;
+            const chapterTextContent = storyData.chapters?.[levelId] || `欢迎来到 ${levelLabel} 等级。`;
+            
+            chapterTitle.textContent = chapterTitleText;
+            chapterText.textContent = chapterTextContent;
+            chapterLevel.textContent = levelLabel;
+            pendingLevelId = levelId;
+            isChapterMode = true;
+            
+            welcomeScreen.style.display = 'none';
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'none';
+            expertFinalContainer.style.display = 'none';
+            quizHeader.style.display = 'none';
+            chapterScreen.style.display = 'block';
+            
+            listenChapterBtn.textContent = '🔊 收听章节';
+            listenChapterBtn.classList.remove('listening');
+            isChapterPlaying = false;
+            
+            setTimeout(() => {
+                if (window.tts && chapterTextContent) {
+                    isChapterPlaying = true;
+                    listenChapterBtn.textContent = '⏹️ 停止';
+                    listenChapterBtn.classList.add('listening');
+                    window.tts.speak(cleanTextForTTS(chapterTextContent), 'zh', 0.9, 1.0, () => {
+                        isChapterPlaying = false;
+                        listenChapterBtn.textContent = '🔊 收听章节';
+                        listenChapterBtn.classList.remove('listening');
+                    });
+                }
+            }, 500);
+        }
+        
+        // ============================================================
+        // 从章节开始测验
+        // ============================================================
+        
+        async function startQuizFromChapter() {
+            if (!pendingLevelId) return;
+            
+            isChapterMode = false;
+            chapterScreen.style.display = 'none';
+            quizHeader.style.display = 'flex';
+            
+            await loadQuestionsForLevel(pendingLevelId);
+            
+            if (!questions || questions.length === 0) {
+                showToast('❌ 没有可用题目', 3000);
+                return;
+            }
+            
+            try {
+                quiz.loadQuestions({ questions: questions });
+                quiz.start();
+                
+                timer.reset();
+                timer.start();
+                
+                score.reset();
+                progress.init(questions.length);
+                
+                currentQuestionIndex = 0;
+                isAnswered = false;
+                timeRemaining = 40;
+                
+                const displayName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                const levelLabel = LEVELS.find(l => l.id === pendingLevelId)?.label || pendingLevelId;
+                quizTitle.textContent = `${displayName} - ${levelLabel}`;
+                
+                questionContainer.style.display = 'block';
+                resultContainer.style.display = 'none';
+                expertFinalContainer.style.display = 'none';
+                
+                showQuestion(0);
+                
+            } catch (error) {
+                console.error('❌ 启动测验错误：', error);
+                showToast(`❌ 错误：${error.message}`, 3000);
+            }
+        }
+        
+        // ============================================================
+        // 渲染等级
+        // ============================================================
+        
+        function renderLevels() {
+            const settings = storage.getSettings() || {};
+            const scores = settings.scores || {};
+            const specialtyScores = scores[selectedSpecialty] || {};
+            
+            let unlockedLevels = ['debutant1'];
+            for (let i = 0; i < UNLOCK_ORDER.length - 1; i++) {
+                const current = UNLOCK_ORDER[i];
+                const next = UNLOCK_ORDER[i + 1];
+                const levelScore = specialtyScores[current];
+                if (levelScore && levelScore.percentage >= UNLOCK_THRESHOLD) {
+                    unlockedLevels.push(next);
+                } else {
+                    break;
+                }
+            }
+            
+            levelGrid.innerHTML = '';
+            
+            for (let i = 0; i < LEVELS.length; i += 2) {
+                const row = document.createElement('div');
+                row.className = 'level-row';
+                
+                const level1 = LEVELS[i];
+                if (level1) {
+                    const card1 = createLevelCard(level1, unlockedLevels, specialtyScores);
+                    row.appendChild(card1);
+                }
+                
+                const level2 = LEVELS[i + 1];
+                if (level2) {
+                    const card2 = createLevelCard(level2, unlockedLevels, specialtyScores);
+                    row.appendChild(card2);
+                }
+                
+                levelGrid.appendChild(row);
+            }
+            
+            if (currentLevel && unlockedLevels.includes(currentLevel)) {
+                startQuizBtn.style.display = 'block';
+                startQuizBtn.textContent = '🚀 开始测验';
+            } else {
+                startQuizBtn.style.display = 'none';
+            }
+        }
+        
+        // ============================================================
+        // 创建等级卡片
+        // ============================================================
+        
+        function createLevelCard(level, unlockedLevels, specialtyScores) {
+            const isUnlocked = unlockedLevels.includes(level.id);
+            const isActive = level.id === currentLevel;
+            const levelScore = specialtyScores[level.id];
+            const hasScore = levelScore && levelScore.score !== undefined;
+            const isCompleted = hasScore && levelScore.percentage >= UNLOCK_THRESHOLD;
+            
+            const card = document.createElement('div');
+            card.className = `level-btn-small ${isCompleted ? 'completed' : ''}`;
+            
+            let statusText = level.label;
+            if (!isUnlocked) {
+                statusText = `${level.label} 🔒`;
+            }
+            
+            if (isActive && isUnlocked) {
+                card.classList.add('active');
+            }
+            
+            const scoreText = hasScore ? `${Math.round(levelScore.percentage)}%` : '';
+            
+            card.innerHTML = `
+                <span class="level-label">${statusText}</span>
+                ${scoreText ? `<span class="level-score-badge">${scoreText}</span>` : ''}
+            `;
+            
+            if (isUnlocked) {
+                card.addEventListener('click', () => {
+                    const levelId = level.id;
+                    currentLevel = levelId;
+                    localStorage.setItem('eteo_current_level', levelId);
+                    
+                    document.querySelectorAll('.level-btn-small').forEach(el => {
+                        el.classList.remove('active');
+                    });
+                    card.classList.add('active');
+                    
+                    showChapterScreen(levelId);
+                });
+                card.style.cursor = 'pointer';
+            } else {
+                card.style.opacity = '0.5';
+                card.style.cursor = 'not-allowed';
+                card.title = '等级锁定（需要 60%）';
+            }
+            
+            return card;
+        }
+        
+        // ============================================================
+        // 选择等级
+        // ============================================================
+        
+        async function selectLevel(levelId) {
+            currentLevel = levelId;
+            localStorage.setItem('eteo_current_level', levelId);
+            
+            document.querySelectorAll('.level-btn-small').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            const allCards = document.querySelectorAll('.level-btn-small');
+            const index = LEVELS.findIndex(l => l.id === levelId);
+            if (allCards[index]) {
+                allCards[index].classList.add('active');
+            }
+            
+            startQuizBtn.textContent = '🚀 开始测验';
+            startQuizBtn.style.display = 'block';
+            
+            await loadQuestionsForLevel(levelId);
+            
+            const label = LEVELS.find(l => l.id === levelId)?.label || levelId;
+            showToast(`📚 已选择等级：${label}`, 2000);
+        }
+        
+        // ============================================================
+        // 加载题目
+        // ============================================================
+        
+        async function loadQuestionsForLevel(levelId) {
+            try {
+                const path = `../data/zh/${selectedSpecialty}/${levelId}.json`;
+                console.log('📂 加载题目：', path);
+                
+                const response = await fetch(path);
+                if (!response.ok) {
+                    throw new Error(`文件未找到：${path}`);
+                }
+                
+                const data = await response.json();
+                let rawQuestions = data.questions || [];
+                
+                if (rawQuestions.length === 0) {
+                    throw new Error('文件中没有题目');
+                }
+                
+                questions = rawQuestions.map(q => ({
+                    id: q.id || `q_${Math.random().toString(36).substr(2, 9)}`,
+                    type: q.type || 'single-choice',
+                    text: q.question || q.text || '无文本题目',
+                    options: q.options || [],
+                    correct: q.correct !== undefined ? q.correct : 0,
+                    explanation: q.explanation || ''
+                }));
+                
+                questions = questions.filter(q => q.options && q.options.length > 0);
+                
+                if (questions.length === 0) {
+                    throw new Error('没有有效题目（无选项）');
+                }
+                
+                questions = questions.map(q => {
+                    const optionsWithCorrect = q.options.map((opt, idx) => ({
+                        option: opt,
+                        isCorrect: idx === q.correct
+                    }));
+                    
+                    for (let i = optionsWithCorrect.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [optionsWithCorrect[i], optionsWithCorrect[j]] = [optionsWithCorrect[j], optionsWithCorrect[i]];
+                    }
+                    
+                    return {
+                        ...q,
+                        options: optionsWithCorrect.map(item => item.option),
+                        correct: optionsWithCorrect.findIndex(item => item.isCorrect)
+                    };
+                });
+                
+                totalQuestions = questions.length;
+                return questions;
+                
+            } catch (error) {
+                console.error('❌ 错误：', error);
+                showToast(`❌ 错误：${error.message}`, 3000);
+                questions = [];
+                totalQuestions = 0;
+                return [];
+            }
+        }
+        
+        // ============================================================
+        // 收听故事
+        // ============================================================
+        
+        listenSynopsisBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            if (!window.tts) {
+                showToast('❌ TTS 模块不可用', 3000);
+                return;
+            }
+            
+            if (isSynopsisPlaying || window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                isSynopsisPlaying = false;
+                this.textContent = '🔊 收听故事';
+                this.classList.remove('listening');
+                return;
+            }
+            
+            const text = synopsisText.textContent;
+            if (!text || text === '正在加载故事...') {
+                showToast('❌ 故事不可用', 3000);
+                return;
+            }
+            
+            isSynopsisPlaying = true;
+            this.textContent = '⏹️ 停止';
+            this.classList.add('listening');
+            
+            window.tts.speak(
+                cleanTextForTTS(text),
+                'zh',
+                0.9,
+                1.0,
+                () => {
+                    isSynopsisPlaying = false;
+                    this.textContent = '🔊 收听故事';
+                    this.classList.remove('listening');
+                },
+                (error) => {
+                    console.error('❌ TTS 错误：', error);
+                    isSynopsisPlaying = false;
+                    this.textContent = '🔊 收听故事';
+                    this.classList.remove('listening');
+                    showToast('❌ 语音朗读错误', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // 收听章节
+        // ============================================================
+        
+        listenChapterBtn.addEventListener('click', function() {
+            const text = chapterText.textContent;
+            if (!text || text === '') {
+                showToast('❌ 章节不可用', 3000);
+                return;
+            }
+            
+            if (isChapterPlaying || window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                isChapterPlaying = false;
+                this.textContent = '🔊 收听章节';
+                this.classList.remove('listening');
+                return;
+            }
+            
+            isChapterPlaying = true;
+            this.textContent = '⏹️ 停止';
+            this.classList.add('listening');
+            
+            window.tts.speak(
+                cleanTextForTTS(text),
+                'zh',
+                0.9,
+                1.0,
+                () => {
+                    isChapterPlaying = false;
+                    this.textContent = '🔊 收听章节';
+                    this.classList.remove('listening');
+                },
+                (error) => {
+                    console.error('❌ TTS 错误：', error);
+                    isChapterPlaying = false;
+                    this.textContent = '🔊 收听章节';
+                    this.classList.remove('listening');
+                    showToast('❌ 语音朗读错误', 3000);
+                }
+            );
+        });
+        
+        // ============================================================
+        // 开始测验（从"开始"按钮）
+        // ============================================================
+        
+        startQuizBtn.addEventListener('click', () => {
+            showChapterScreen(currentLevel);
+        });
+        
+        // ============================================================
+        // 从章节开始测验
+        // ============================================================
+        
+        startChapterQuizBtn.addEventListener('click', startQuizFromChapter);
+        
+        // ============================================================
+        // 计时器
+        // ============================================================
+        
+        let timerInterval = null;
+        
+        function startTimer() {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                timerValue.textContent = formatTime(timeRemaining);
+                timerBottomValue.textContent = timeRemaining;
+                if (timeRemaining <= 5) {
+                    timerBottom.style.color = '#e74c3c';
+                }
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    handleTimeout();
+                }
+            }, 1000);
+        }
+        
+        function stopTimer() {
+            clearInterval(timerInterval);
+            timerBottom.style.color = '#e67e22';
+        }
+        
+        // ============================================================
+        // 显示题目（带自动朗读）
+        // ============================================================
+        
+        function showQuestion(index) {
+            try {
+                const question = quiz.getCurrentQuestion();
+                
+                if (!question) {
+                    if (currentLevel === 'expert2') {
+                        showExpertFinal();
+                    } else {
+                        showResults();
+                    }
+                    return;
+                }
+                
+                currentQuestionIndex = index;
+                isAnswered = false;
+                timeRemaining = 40;
+                
+                currentQuestionText = question.text || question.question || '无文本题目';
+                questionText.textContent = currentQuestionText;
+                
+                ttsQuestionBtn.style.display = 'inline-block';
+                ttsQuestionBtn.textContent = '🔊 朗读题目';
+                ttsQuestionBtn.classList.remove('listening');
+                
+                ttsFeedbackBtn.style.display = 'none';
+                ttsExplanationBtn.style.display = 'none';
+                
+                optionsContainer.innerHTML = '';
+                const letters = ['A', 'B', 'C', 'D'];
+                
+                if (question.options && question.options.length > 0) {
+                    question.options.forEach((option, i) => {
+                        const btn = document.createElement('button');
+                        btn.className = 'option-btn';
+                        btn.innerHTML = `<span class="letter">${letters[i]}</span> ${option}`;
+                        btn.dataset.index = i;
+                        btn.addEventListener('click', () => handleOptionClick(i));
+                        optionsContainer.appendChild(btn);
+                    });
+                }
+                
+                feedbackContainer.style.display = 'none';
+                feedbackContainer.className = 'feedback-container';
+                explanationBox.style.display = 'none';
+                explanationBox.classList.remove('show');
+                
+                nextBtn.disabled = true;
+                
+                timer.reset();
+                startTimer();
+                timerValue.textContent = formatTime(timeRemaining);
+                timerBottomValue.textContent = timeRemaining;
+                timerBottom.style.color = '#e67e22';
+                
+                updateUI(index);
+                
+                // 自动朗读题目
+                setTimeout(() => {
+                    if (window.tts && currentQuestionText) {
+                        speakText(currentQuestionText, null);
+                    }
+                }, 500);
+                
+            } catch (error) {
+                console.error('❌ 显示题目错误：', error);
+                showToast('❌ 显示错误', 3000);
+            }
+        }
+        
+        // ============================================================
+        // 处理点击（带音效 + AI）
+        // ============================================================
+        
+        function handleOptionClick(index) {
+            if (isAnswered) return;
+            
+            isAnswered = true;
+            stopTimer();
+            
+            const timeSpent = 40 - timeRemaining;
+            
+            const question = quiz.getCurrentQuestion();
+            const isCorrect = quiz.submitAnswer(index);
+            
+            let autoFeedbackText = '';
+            let replayFeedbackText = '';
+            
+            if (isCorrect) {
+                score.addCorrect();
+                autoFeedbackText = `回答正确！+1 分。`;
+                replayFeedbackText = `做得好！这是正确答案。您获得 1 分。`;
+                playSound('win');
+                setTimeout(() => playSound('tada'), 400);
+                speakText('回答正确！', null);
+            } else {
+                score.addIncorrect();
+                autoFeedbackText = `回答错误，零分。正确答案是 ${question.options[question.correct]}。`;
+                replayFeedbackText = `抱歉，这不是正确答案。正确答案是 ${question.options[question.correct]}。`;
+                playSound('lose');
+                speakText('回答错误。', null);
+            }
+            
+            currentFeedbackText = autoFeedbackText;
+            currentFeedbackReplayText = replayFeedbackText;
+            currentExplanationText = question.explanation || '';
+            
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === question.correct) btn.classList.add('correct');
+                else if (i === index && !isCorrect) btn.classList.add('wrong');
+            });
+            
+            feedbackContainer.style.display = 'block';
+            if (isCorrect) {
+                feedbackContainer.className = 'feedback-container correct';
+                feedbackMessage.textContent = '✅ 正确！';
+                pointsBadge.textContent = '+1 分';
+                pointsBadge.className = 'points-badge correct';
+            } else {
+                feedbackContainer.className = 'feedback-container wrong';
+                feedbackMessage.textContent = '❌ 错误';
+                pointsBadge.textContent = '正确答案：' + question.options[question.correct];
+                pointsBadge.className = 'points-badge wrong';
+            }
+            
+            ttsFeedbackBtn.style.display = 'inline-block';
+            ttsFeedbackBtn.textContent = '🔊 重新朗读反馈';
+            ttsFeedbackBtn.classList.remove('listening');
+            
+            if (question.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = question.explanation;
+                correctAnswerText.textContent = `✅ 正确答案：${question.options[question.correct]}`;
+                
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 朗读解析';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            
+            progress.next();
+            nextBtn.disabled = false;
+            
+            updateUI(quiz.getCurrentIndex());
+            
+            setTimeout(() => {
+                if (window.tts && currentFeedbackText) {
+                    speakText(currentFeedbackText, null);
+                }
+            }, 300);
+        }
+        
+        // ============================================================
+        // TTS 按钮（强制重新朗读）
+        // ============================================================
+        
+        ttsQuestionBtn.addEventListener('click', function() {
+            speakText(currentQuestionText, this, '🔊 朗读题目');
+        });
+        
+        ttsFeedbackBtn.addEventListener('click', function() {
+            speakText(currentFeedbackReplayText, this, '🔊 重新朗读反馈');
+        });
+        
+        ttsExplanationBtn.addEventListener('click', function() {
+            speakText(currentExplanationText, this, '🔊 朗读解析');
+        });
+        
+        // ============================================================
+        // 超时
+        // ============================================================
+        
+        function handleTimeout() {
+            if (isAnswered) return;
+            isAnswered = true;
+            const question = quiz.getCurrentQuestion();
+            
+            const timeSpent = 40;
+            
+            const optionBtns = optionsContainer.querySelectorAll('.option-btn');
+            optionBtns.forEach((btn, i) => {
+                btn.classList.add('disabled');
+                if (i === question.correct) btn.classList.add('correct');
+            });
+            
+            feedbackContainer.style.display = 'block';
+            feedbackContainer.className = 'feedback-container wrong';
+            feedbackMessage.textContent = '⏰ 时间到！';
+            pointsBadge.textContent = `正确答案：${question.options[question.correct]}`;
+            pointsBadge.className = 'points-badge wrong';
+            
+            currentFeedbackText = `时间到。正确答案是 ${question.options[question.correct]}。`;
+            currentFeedbackReplayText = currentFeedbackText;
+            
+            if (question.explanation) {
+                explanationBox.style.display = 'block';
+                explanationBox.classList.add('show');
+                explanationText.textContent = question.explanation;
+                correctAnswerText.textContent = `✅ 正确答案：${question.options[question.correct]}`;
+                currentExplanationText = question.explanation;
+                ttsExplanationBtn.style.display = 'inline-block';
+                ttsExplanationBtn.textContent = '🔊 朗读解析';
+                ttsExplanationBtn.classList.remove('listening');
+            }
+            
+            score.addTimeout();
+            progress.next();
+            nextBtn.disabled = false;
+            updateUI(quiz.getCurrentIndex());
+        }
+        
+        // ============================================================
+        // 格式化时间
+        // ============================================================
+        
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        }
+        
+        // ============================================================
+        // 更新 UI
+        // ============================================================
+        
+        function updateUI(index) {
+            const total = quiz.getTotalQuestions();
+            const current = index + 1;
+            const progressPercent = progress.getPercentage();
+            
+            progressFill.style.width = `${progressPercent}%`;
+            questionCounter.textContent = `第 ${current}/${total} 题`;
+            scoreDisplay.textContent = `得分：${score.getCorrect()}/${score.getTotal()}`;
+        }
+        
+        // ============================================================
+        // 下一题
+        // ============================================================
+        
+        function goToNext() {
+            const hasNext = quiz.nextQuestion();
+            if (hasNext) {
+                showQuestion(quiz.getCurrentIndex());
+            } else {
+                if (currentLevel === 'expert2') {
+                    showExpertFinal();
+                } else {
+                    showResults();
+                }
+            }
+        }
+        
+        // ============================================================
+        // 显示结果（带音效 + 彩带 + Firebase 保存）
+        // ============================================================
+        
+        async function showResults() {
+            stopTimer();
+            
+            const correct = score.getCorrect();
+            const percent = score.getPercentage(totalQuestions);
+            
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+            chapterScreen.style.display = 'none';
+            expertFinalContainer.style.display = 'none';
+            
+            finalScore.textContent = `${correct}/${totalQuestions}`;
+            percentage.textContent = `${Math.round(percent)}%`;
+            
+            let message, badge;
+            if (percent >= 80) {
+                message = '🌟 优秀！您完美掌握了这个主题。';
+                badge = '🏆 专家';
+            } else if (percent >= 60) {
+                message = '👏 非常好！继续练习。';
+                badge = '📈 中级';
+            } else if (percent >= 40) {
+                message = '💪 好的开始！查看解析。';
+                badge = '📚 初级';
+            } else {
+                message = '📖 复习并重试。';
+                badge = '🔄 待复习';
+            }
+            
+            resultMessage.textContent = message;
+            badgeContainer.innerHTML = `<div class="unlock-badge">${badge}</div>`;
+            
+            const isUnlocked = percent >= UNLOCK_THRESHOLD;
+            if (isUnlocked) {
+                levelUnlockMessage.textContent = '✅ 等级已通过！您可以进入下一个等级。';
+                levelUnlockMessage.style.color = '#4caf50';
+            } else {
+                levelUnlockMessage.textContent = `🔒 需要 ${UNLOCK_THRESHOLD - Math.round(percent)}% 才能解锁下一个等级。`;
+                levelUnlockMessage.style.color = '#e74c3c';
+            }
+            
+            // ✅ LOCALSTORAGE 保存（现有）
+            const settings = storage.getSettings() || {};
+            if (!settings.scores) settings.scores = {};
+            if (!settings.scores[selectedSpecialty]) settings.scores[selectedSpecialty] = {};
+            settings.scores[selectedSpecialty][currentLevel] = {
+                date: new Date().toISOString(),
+                score: correct,
+                total: totalQuestions,
+                percentage: percent
+            };
+            storage.saveSettings(settings);
+            
+            // ✅ FIREBASE 保存
+            const user = auth.currentUser;
+            if (user) {
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);  // ✅ Corrigé                    
+                    await updateDoc(userRef, {
+                        rewardHistory: arrayUnion({
+                            specialty: selectedSpecialty,
+                            level: currentLevel,
+                            isCorrect: percent >= 60,
+                            points: correct,
+                            total: totalQuestions,
+                            date: new Date().toISOString(),
+                            timeSpent: 40 - timeRemaining || 0,
+                            percentage: Math.round(percent)
+                        })
+                    });
+                    
+                    console.log('✅ 测验已保存到 Firebase (rewardHistory)');
+                    
+                    const snapshot = await getDoc(userRef);
+                    const data = snapshot.data() || {};
+                    const scores = data.scores || {};
+                    
+                    const totalLevels = Object.keys(scores).length + 1;
+                    const totalScore = Object.values(scores).reduce((sum, s) => sum + (s.percentage || 0), 0) + percent;
+                    const avgScore = Math.round(totalScore / totalLevels);
+                    
+                    await updateDoc(userRef, {
+                        totalLevels: totalLevels,
+                        avgScore: avgScore,
+                        globalScore: Math.round(((totalLevels / 216) * 70) + (avgScore * 0.3)),
+                        lastQuizDate: new Date().toISOString()
+                    });
+                    
+                    console.log('✅ 全局统计已在 Firebase 中更新');
+                    
+                } catch (error) {
+                    console.error('❌ Firebase 保存错误：', error);
+                }
+            }
+            
+            const userName = storage.getSettings()?.user?.fullName || '医生';
+            speakResultMessage(correct, totalQuestions, userName);
+            
+            const isSuccess = percent >= UNLOCK_THRESHOLD;
+            if (isSuccess) {
+                playSound('win');
+                setTimeout(() => playSound('tada'), 400);
+                launchConfetti();
+            } else {
+                playSound('lose');
+                showToast('💪 不要气馁！再试一次，您会成功的！', 3000);
+            }
+        }
+        
+        // ============================================================
+        // 🔥 显示专家 2 最终屏幕（带营销演讲）
+        // ============================================================
+        
+        async function showExpertFinal() {
+            stopTimer();
+            
+            const correct = score.getCorrect();
+            const percent = score.getPercentage(totalQuestions);
+            const userName = storage.getSettings()?.user?.fullName || '医生';
+            const displayName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'none';
+            chapterScreen.style.display = 'none';
+            expertFinalContainer.style.display = 'block';
+            
+            document.getElementById('expertUserName').textContent = userName;
+            document.getElementById('expertSpecialtyName').textContent = displayName;
+            document.getElementById('expertFinalScore').textContent = `${Math.round(percent)}%`;
+            document.getElementById('expertFinalLevel').textContent = '专家 2';
+            document.getElementById('expertAIName').textContent = userName;
+            
+            // ============================================================
+            // 🔥 新营销演讲（TTS 中无表情符号）
+            // ============================================================
+            
+            let msg = '';
+            let msgForDisplay = '';
+            
+            // 显示消息（带表情符号）
+            msgForDisplay = `<div style="text-align: left; font-size: 1rem; line-height: 1.8;">
+
+<strong>✨ 亲爱的 ${userName} 医生，</strong><br><br>
+
+您刚刚经历了一段<strong>非凡的旅程</strong>。<br>
+6 个等级。6 个挑战。<strong>6 次胜利</strong>。<br><br>
+
+<strong>👏 但不要止步于此。</strong><br>
+因为<strong>传奇不会停留在巅峰</strong>。<br>
+他们<strong>插上自己的旗帜</strong>。<br><br>
+
+<strong>🏆 您是稀世珍宝。</strong><br>
+只有 <strong>5% 的 ETEO 用户</strong>达到这种掌握水平。<br>
+您不属于学习者，<strong>您属于传奇</strong>。<br><br>
+
+🌍 今天，世界需要<strong>您的专业能力</strong>。<br>
+您的患者需要<strong>这位非凡的医生</strong>——您已经成为的医生。<br><br>
+
+<strong>🎓 ETEO 认证：您通往卓越的护照</strong><br><br>
+
+📜 <strong>一份个性化证书</strong>，由创始人签署。<br>
+🔐 <strong>一个独特的二维码</strong>用于验证其真实性。<br>
+🏛️ <strong>一份官方文件</strong>，您可以挂在诊所里。<br>
+🌍 <strong>来自同行和患者的认可</strong>。<br><br>
+
+<strong>⚡ 但请注意：</strong><br>
+ETEO 认证不是给每个人的。<br>
+它是<strong>精英专属的特权</strong>。<br>
+它证明<strong>您走完了全程</strong>。<br>
+它是对您专业能力的<strong>认可</strong>。<br><br>
+
+<strong>🔥 只有最优秀的人才能走到最后。</strong><br>
+<strong>💎 您就是其中之一。</strong><br><br>
+
+<strong>🚀 那么，准备好获得您的证书了吗？</strong><br>
+冒险继续。<strong>认证考试在等着您</strong>。<br>
+<strong>50 道题</strong>向世界证明<strong>您是谁</strong>。<br><br>
+
+<span style="font-size: 0.95rem; color: #555;">
+📋 50 道题 • 每题 30 秒 • 70% 及格<br>
+🔒 允许 2 次尝试 • 证书支付 20€
+</span><br><br>
+
+<strong>👏 您已经完成了最艰难的部分。回报就在眼前。</strong><br>
+<strong>出发吧！</strong> 🚀
+
+</div>`;
+            
+            // TTS 消息（无表情符号、无 HTML）
+            msg = `亲爱的 ${userName} 医生。您刚刚经历了一段非凡的旅程。6 个等级，6 个挑战，6 次胜利。但不要止步于此。因为传奇不会停留在巅峰。他们插上自己的旗帜。您是稀世珍宝。只有 5% 的 ETEO 用户达到这种掌握水平。您不属于学习者，您属于传奇。今天，世界需要您的专业能力。您的患者需要这位非凡的医生——您已经成为的医生。ETEO 认证：您通往卓越的护照。一份个性化证书，由创始人签署。一个独特的二维码用于验证其真实性。一份官方文件，您可以挂在诊所里。来自同行和患者的认可。但请注意：ETEO 认证不是给每个人的。它是精英专属的特权。它证明您走完了全程。它是对您专业能力的认可。只有最优秀的人才能走到最后。您就是其中之一。那么，准备好获得您的证书了吗？冒险继续。认证考试在等着您。50 道题向世界证明您是谁。50 道题，每题 30 秒，70% 及格。允许 2 次尝试。证书支付 20 欧元。您已经完成了最艰难的部分。回报就在眼前。出发吧！`;
+            
+            document.getElementById('expertAIMessage').innerHTML = msgForDisplay;
+            
+            // ✅ 自动 TTS 朗读消息（已清理）
+            setTimeout(() => {
+                if (window.tts && typeof window.tts.speak === 'function') {
+                    try {
+                        window.tts.speak(msg, 'zh', 0.9, 1.0);
+                        console.log('🔊 TTS 朗读已启动！');
+                    } catch (e) {
+                        console.error('❌ TTS 错误：', e);
+                    }
+                } else {
+                    console.warn('⚠️ TTS 不可用');
+                }
+            }, 1500);
+            
+            // ✅ LOCALSTORAGE 保存
+            const settings = storage.getSettings() || {};
+            if (!settings.completed) settings.completed = {};
+            if (!settings.completed[selectedSpecialty]) settings.completed[selectedSpecialty] = {};
+            settings.completed[selectedSpecialty].expert2 = true;
+            storage.saveSettings(settings);
+            
+            // ✅ FIREBASE 保存
+            const user = auth.currentUser;
+            if (user) {
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);  // ✅ Corrigé
+                    
+                    await updateDoc(userRef, {
+                        [`completedSpecialties.${selectedSpecialty}`]: {
+                            completedAt: new Date().toISOString(),
+                            finalScore: Math.round(percent),
+                            level: 'expert2'
+                        }
+                    });
+                    
+                    if (percent >= 75) {
+                        await updateDoc(userRef, {
+                            certificates: arrayUnion(selectedSpecialty)
+                        });
+                        showToast('🎓 恭喜！您已获得证书！', 3000);
+                    }
+                    
+                    console.log('✅ 专家 2 已保存到 Firebase');
+                    
+                } catch (error) {
+                    console.error('❌ 专家 2 保存错误：', error);
+                }
+            }
+        }
+        
+        // ============================================================
+        // 事件
+        // ============================================================
+        
+        nextBtn.addEventListener('click', goToNext);
+        
+        quitBtn.addEventListener('click', () => {
+            if (confirm('退出测验？')) {
+                stopTimer();
+                window.location.href = 'xuanze_zhuanke_zh.html';
+            }
+        });
+        
+        retryBtn.addEventListener('click', () => {
+            resultContainer.style.display = 'none';
+            welcomeScreen.style.display = 'block';
+            quizHeader.style.display = 'none';
+            chapterScreen.style.display = 'none';
+            renderLevels();
+        });
+        
+        document.getElementById('menuBtn').addEventListener('click', () => {
+            window.location.href = '../index.html';
+        });
+        
+        document.getElementById('levelsBtn').addEventListener('click', () => {
+            window.location.href = 'ceshi_zh.html';
+        });
+        
+        // ============================================================
+        // 🔥 专家 2 屏幕事件 - 在此修正！
+        // ============================================================
+        
+        document.getElementById('expertExamBtn').addEventListener('click', () => {
+            // ✅ 启动免费认证考试，跳转到正确的文件
+            window.location.href = `zhengshu_kaoshi_zh.html?specialty=${selectedSpecialty}&level=expert2`;
+        });
+        
+        document.getElementById('expertLevelsBtn').addEventListener('click', () => {
+            window.location.href = 'ceshi_zh.html';
+        });
+        
+        document.getElementById('expertMenuBtn').addEventListener('click', () => {
+            window.location.href = '../index.html';
+        });
+        
+        document.getElementById('expertDashboardBtn').addEventListener('click', () => {
+            window.location.href = 'yibiao_zh.html';
+        });
+        
+        // ============================================================
+        // 初始化
+        // ============================================================
+        
+        async function init() {
+            const specialty = loadSavedSpecialty();
+            if (!specialty) return;
+            
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    console.log('👤 用户已连接：', user.uid);
+                    
+                    accessService = new AccessService();
+                    await accessService.init();
+                    
+                    await loadSpecialtyData();
+                    renderLevels();
+                    await loadQuestionsForLevel(currentLevel);
+                    
+                    quizHeader.style.display = 'none';
+                    welcomeScreen.style.display = 'block';
+                    questionContainer.style.display = 'none';
+                    resultContainer.style.display = 'none';
+                    chapterScreen.style.display = 'none';
+                    expertFinalContainer.style.display = 'none';
+                    
+                    Logger.info(`📚 测验 V2 已为 ${specialty} 准备就绪`);
+                    Logger.info('✅ 所有等级免费 - 只有认证付费');
+                    Logger.info('🔊 自动朗读题目');
+                    Logger.info('🎤 AI："回答正确" / "回答错误"');
+                    Logger.info('🔊 TTS 按钮：强制重新朗读而不停止');
+                    Logger.info('🎵 音效已启用（win/lose/click/tada）');
+                    Logger.info('🎊 胜利彩带！');
+                    Logger.info('🔥 Firebase：保存到 rewardHistory！');
+                    Logger.info('📂 路径修正：../data/ → ../data/zh/');
+                    Logger.info('🗑️ 移除重音管理');
+                    Logger.info('🎙️ 专家 2 营销演讲已激活！');
+                    Logger.info('🔇 TTS：移除表情符号以实现自然语音');
+                    Logger.info('📝 免费认证考试 → zhengshu_kaoshi_zh.html');
+                } else {
+                    console.log('👤 用户未登录，跳转到注册页');
+                    window.location.href = 'zhuce_zh.html';
+                }
+            });
+        }
+        
+        init();
+        
+    </script>
+</body>
+</html>

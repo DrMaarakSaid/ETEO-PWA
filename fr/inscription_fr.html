@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Inscription - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <style>
+        /* ==================== SPINNER ==================== */
+        .spinner {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 0.8s ease-in-out infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .btn-content { display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+
+        /* ==================== ANIMATIONS ==================== */
+        .form-group { animation: fadeInUp 0.5s ease forwards; opacity: 0; }
+        .form-group:nth-child(1) { animation-delay: 0.05s; }
+        .form-group:nth-child(2) { animation-delay: 0.10s; }
+        .form-group:nth-child(3) { animation-delay: 0.15s; }
+        .form-group:nth-child(4) { animation-delay: 0.20s; }
+        .form-group:nth-child(5) { animation-delay: 0.25s; }
+        .form-group:nth-child(6) { animation-delay: 0.30s; }
+        .form-group:nth-child(7) { animation-delay: 0.35s; }
+        .form-group:nth-child(8) { animation-delay: 0.40s; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ==================== MOT DE PASSE ==================== */
+        .password-wrapper { position: relative; display: flex; align-items: center; }
+        .password-wrapper input { flex: 1; padding-right: 45px; }
+        .toggle-password {
+            position: absolute; right: 10px; background: none; border: none;
+            font-size: 1.2rem; cursor: pointer; padding: 5px; color: #888; transition: color 0.3s;
+        }
+        .toggle-password:hover { color: #333; }
+
+        /* ==================== FORCE MOT DE PASSE ==================== */
+        .password-strength { margin-top: 8px; display: flex; align-items: center; gap: 12px; }
+        .strength-bar { flex: 1; height: 6px; background: #e0e0e0; border-radius: 3px; overflow: hidden; }
+        .strength-bar .strength-indicator { height: 100%; width: 0%; border-radius: 3px; transition: width 0.3s ease, background 0.3s ease; }
+        .strength-text { font-size: 0.8rem; color: #888; min-width: 60px; text-align: right; }
+        .strength-text.faible { color: #e74c3c; }
+        .strength-text.moyen { color: #f39c12; }
+        .strength-text.fort { color: #2ecc71; }
+
+        /* ==================== TÉLÉPHONE ==================== */
+        .phone-wrapper { display: flex; gap: 8px; align-items: center; }
+        .phone-wrapper select {
+            width: 100px; padding: 12px 8px; border: 1px solid #ddd;
+            border-radius: 8px; font-size: 13px; background: #f9f9f9; flex-shrink: 0;
+        }
+        .phone-wrapper input { flex: 1; }
+
+        /* ==================== CASE CGU ==================== */
+        .cgu-wrapper { display: flex; align-items: center; gap: 10px; padding: 10px 0; }
+        .cgu-wrapper input[type="checkbox"] {
+            width: 18px; height: 18px; cursor: pointer; accent-color: #4caf50; flex-shrink: 0;
+        }
+        .cgu-wrapper label { font-size: 0.95rem; color: #555; cursor: pointer; }
+        .cgu-wrapper a { color: #667eea; text-decoration: underline; font-weight: 500; }
+        .cgu-wrapper a:hover { color: #4caf50; }
+
+        /* ==================== BOUTONS SOCIAUX ==================== */
+        .social-buttons { display: flex; gap: 12px; margin-top: 15px; }
+        .social-btn {
+            flex: 1; padding: 12px; border: none; border-radius: 8px;
+            font-size: 0.95rem; font-weight: 600; cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
+        .social-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .social-btn.google { background: #fff; color: #333; border: 2px solid #ddd; }
+        .social-btn.apple { background: #000; color: #fff; }
+        .social-btn.google:hover { border-color: #4285f4; }
+        .social-btn.apple:hover { background: #333; }
+
+        /* ==================== ERREURS ==================== */
+        .field-error { color: #e74c3c; font-size: 0.8rem; margin-top: 4px; display: none; }
+        .field-error.show { display: block; }
+        .form-group input.error, .form-group select.error { border-color: #e74c3c; }
+        .form-group input.success, .form-group select.success { border-color: #2ecc71; }
+
+        /* ==================== SÉPARATEUR ==================== */
+        .separator { display: flex; align-items: center; gap: 15px; margin: 20px 0; color: #aaa; font-size: 0.85rem; }
+        .separator::before, .separator::after { content: ''; flex: 1; height: 1px; background: #ddd; }
+
+        /* ==================== LIEN "SE CONNECTER" ==================== */
+        .login-link-container {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .login-link-container p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+        .login-link-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+        .login-link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* ==================== MODAL DE CONNEXION ==================== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .modal-overlay.active { display: flex; }
+
+        .modal-content {
+            background: #fff;
+            border-radius: 16px;
+            max-width: 450px;
+            width: 100%;
+            padding: 30px 25px;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: modalFadeIn 0.3s ease;
+        }
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #999;
+            padding: 5px 10px;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+        .modal-close:hover { background: #f0f0f0; color: #333; }
+
+        .modal-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .modal-header h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .modal-header p { color: #666; font-size: 0.9rem; }
+
+        .modal-form-group {
+            margin-bottom: 18px;
+        }
+        .modal-form-group label {
+            display: block;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .modal-form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .modal-form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .modal-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+        .modal-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+        .modal-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+        .modal-forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #667eea;
+            font-size: 0.9rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal-forgot-password:hover { text-decoration: underline; }
+
+        .modal-error {
+            color: #e74c3c;
+            font-size: 0.85rem;
+            text-align: center;
+            margin-top: 15px;
+            display: none;
+        }
+        .modal-error.show { display: block; }
+    </style>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container container-form">
+        
+        <!-- NAVIGATION -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="window.location.href='../index.html'">
+                ← Retour
+            </button>
+            <button class="listen-btn-small" id="listenBtn">
+                🔊 Écouter les instructions
+            </button>
+        </div>
+
+        <!-- FORMULAIRE -->
+        <div class="form-header">
+            <h1>📝 Inscription</h1>
+            <p>Créez votre compte ETEO</p>
+        </div>
+
+        <form class="register-form" id="registerForm" novalidate>
+            <!-- 1. NOM COMPLET -->
+            <div class="form-group">
+                <label for="displayName">👤 Nom complet</label>
+                <input type="text" id="displayName" placeholder="Dr. Jean Dupont" autocomplete="name" required>
+                <span class="field-error" id="displayNameError">⚠️ Veuillez entrer votre nom complet</span>
+            </div>
+
+            <!-- 2. PROFESSION -->
+            <div class="form-group">
+                <label for="profession">🦷 Profession</label>
+                <select id="profession" required>
+                    <option value="">Sélectionnez votre profession</option>
+                    <option value="Docteur">🦷 Docteur</option>
+                    <option value="Étudiant">📚 Étudiant</option>
+                </select>
+                <span class="field-error" id="professionError">⚠️ Veuillez sélectionner votre profession</span>
+            </div>
+
+            <!-- 3. EMAIL -->
+            <div class="form-group">
+                <label for="email">📧 Email</label>
+                <input type="email" id="email" placeholder="jean.dupont@email.com" autocomplete="email" required>
+                <span class="field-error" id="emailError">⚠️ Veuillez entrer un email valide</span>
+            </div>
+
+            <!-- 4. MOT DE PASSE -->
+            <div class="form-group">
+                <label for="password">🔑 Mot de passe</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Votre mot de passe" autocomplete="new-password" required>
+                    <button type="button" class="toggle-password" id="togglePassword">👁️</button>
+                </div>
+                <small style="color:#888; font-size:0.75rem;">Minimum 6 caractères</small>
+                <div class="password-strength" id="strengthContainer" style="display:none;">
+                    <div class="strength-bar">
+                        <div class="strength-indicator" id="strengthIndicator"></div>
+                    </div>
+                    <span class="strength-text" id="strengthText">Faible</span>
+                </div>
+                <span class="field-error" id="passwordError">⚠️ Le mot de passe doit contenir au moins 6 caractères</span>
+            </div>
+
+            <!-- 5. CONFIRMATION MOT DE PASSE -->
+            <div class="form-group">
+                <label for="confirmPassword">🔐 Confirmer le mot de passe</label>
+                <div class="password-wrapper">
+                    <input type="password" id="confirmPassword" placeholder="Confirmez votre mot de passe" autocomplete="new-password" required>
+                    <button type="button" class="toggle-password" id="toggleConfirmPassword">👁️</button>
+                </div>
+                <span class="field-error" id="confirmPasswordError">⚠️ Les mots de passe ne correspondent pas</span>
+            </div>
+
+            <!-- 6. TÉLÉPHONE -->
+            <div class="form-group">
+                <label for="phone">📱 Téléphone</label>
+                <div class="phone-wrapper">
+                    <select id="countryCode">
+                        <optgroup label="🌍 Afrique">
+                            <option value="+212" selected>🇲🇦 Maroc +212</option>
+                            <option value="+213">🇩🇿 Algérie +213</option>
+                            <option value="+216">🇹🇳 Tunisie +216</option>
+                            <option value="+221">🇸🇳 Sénégal +221</option>
+                            <option value="+225">🇨🇮 Côte d'Ivoire +225</option>
+                            <option value="+237">🇨🇲 Cameroun +237</option>
+                            <option value="+20">🇪🇬 Égypte +20</option>
+                            <option value="+27">🇿🇦 Afrique du Sud +27</option>
+                        </optgroup>
+                        <optgroup label="🌍 Europe">
+                            <option value="+33">🇫🇷 France +33</option>
+                            <option value="+32">🇧🇪 Belgique +32</option>
+                            <option value="+41">🇨🇭 Suisse +41</option>
+                            <option value="+49">🇩🇪 Allemagne +49</option>
+                            <option value="+34">🇪🇸 Espagne +34</option>
+                            <option value="+39">🇮🇹 Italie +39</option>
+                            <option value="+44">🇬🇧 Royaume-Uni +44</option>
+                            <option value="+31">🇳🇱 Pays-Bas +31</option>
+                            <option value="+351">🇵🇹 Portugal +351</option>
+                        </optgroup>
+                        <optgroup label="🌎 Amérique">
+                            <option value="+1">🇺🇸 États-Unis +1</option>
+                            <option value="+1">🇨🇦 Canada +1</option>
+                            <option value="+52">🇲🇽 Mexique +52</option>
+                            <option value="+55">🇧🇷 Brésil +55</option>
+                        </optgroup>
+                        <optgroup label="🌏 Asie / Moyen-Orient">
+                            <option value="+966">🇸🇦 Arabie Saoudite +966</option>
+                            <option value="+971">🇦🇪 Émirats +971</option>
+                            <option value="+974">🇶🇦 Qatar +974</option>
+                            <option value="+965">🇰🇼 Koweït +965</option>
+                            <option value="+90">🇹🇷 Turquie +90</option>
+                            <option value="+86">🇨🇳 Chine +86</option>
+                            <option value="+81">🇯🇵 Japon +81</option>
+                            <option value="+91">🇮🇳 Inde +91</option>
+                        </optgroup>
+                    </select>
+                    <input type="tel" id="phone" placeholder="6 12 34 56 78">
+                </div>
+            </div>
+
+            <!-- 7. PAYS -->
+            <div class="form-group">
+                <label for="country">🌍 Pays</label>
+                <select id="country" required>
+                    <option value="">Sélectionnez votre pays</option>
+                    <optgroup label="Afrique">
+                        <option value="Maroc">🇲🇦 Maroc</option>
+                        <option value="Algérie">🇩🇿 Algérie</option>
+                        <option value="Tunisie">🇹🇳 Tunisie</option>
+                        <option value="Égypte">🇪🇬 Égypte</option>
+                        <option value="Sénégal">🇸🇳 Sénégal</option>
+                        <option value="Côte d'Ivoire">🇨🇮 Côte d'Ivoire</option>
+                        <option value="Cameroun">🇨🇲 Cameroun</option>
+                        <option value="Afrique du Sud">🇿🇦 Afrique du Sud</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="France">🇫🇷 France</option>
+                        <option value="Belgique">🇧🇪 Belgique</option>
+                        <option value="Suisse">🇨🇭 Suisse</option>
+                        <option value="Allemagne">🇩🇪 Allemagne</option>
+                        <option value="Espagne">🇪🇸 Espagne</option>
+                        <option value="Italie">🇮🇹 Italie</option>
+                        <option value="Royaume-Uni">🇬🇧 Royaume-Uni</option>
+                        <option value="Pays-Bas">🇳🇱 Pays-Bas</option>
+                        <option value="Portugal">🇵🇹 Portugal</option>
+                    </optgroup>
+                    <optgroup label="Amérique">
+                        <option value="États-Unis">🇺🇸 États-Unis</option>
+                        <option value="Canada">🇨🇦 Canada</option>
+                        <option value="Mexique">🇲🇽 Mexique</option>
+                        <option value="Brésil">🇧🇷 Brésil</option>
+                    </optgroup>
+                    <optgroup label="Asie / Moyen-Orient">
+                        <option value="Arabie Saoudite">🇸🇦 Arabie Saoudite</option>
+                        <option value="Émirats Arabes Unis">🇦🇪 Émirats Arabes Unis</option>
+                        <option value="Qatar">🇶🇦 Qatar</option>
+                        <option value="Turquie">🇹🇷 Turquie</option>
+                        <option value="Chine">🇨🇳 Chine</option>
+                        <option value="Japon">🇯🇵 Japon</option>
+                        <option value="Inde">🇮🇳 Inde</option>
+                    </optgroup>
+                </select>
+                <span class="field-error" id="countryError">⚠️ Veuillez sélectionner votre pays</span>
+            </div>
+
+            <!-- 8. CASE CGU -->
+            <div class="form-group">
+                <div class="cgu-wrapper">
+                    <input type="checkbox" id="acceptTerms" required>
+                    <label for="acceptTerms">
+                        ✅ J'accepte la 
+                        <a href="https://docs.google.com/document/d/1lBgfN1VDAQx6dcQqULcYPeDq63jPHy_Dlnk7R-7Jqgg/view?usp=sharing" target="_blank">
+                              Politique de Confidentialité - ETEO
+                        </a>
+                    </label>
+                </div>
+                <span class="field-error" id="termsError">⚠️ Vous devez accepter la Politique de Confidentialité pour continuer</span>
+            </div>
+
+            <!-- 9. BOUTON INSCRIPTION -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn" id="submitBtn" style="width:100%; background: linear-gradient(135deg, #4caf50, #43a047); padding: 14px; color: #fff; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer;">
+                    <span class="btn-content" id="btnContent">
+                        <span id="btnText">📝 S'inscrire</span>
+                        <span id="btnSpinner" style="display:none;">
+                            <span class="spinner"></span> Création...
+                        </span>
+                    </span>
+                </button>
+            </div>
+
+            <!-- 10. SÉPARATEUR + GOOGLE/APPLE -->
+            <div class="separator">
+                <span>ou inscrivez-vous avec</span>
+            </div>
+
+            <div class="social-buttons">
+                <button type="button" class="social-btn google" id="googleBtn">
+                    <svg width="20" height="20" viewBox="0 0 48 48">
+                        <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/>
+                        <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/>
+                        <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/>
+                        <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/>
+                    </svg>
+                    Google
+                </button>
+                <button type="button" class="social-btn apple" id="appleBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    Apple
+                </button>
+            </div>
+        </form>
+
+        <!-- ✅ LIEN "SE CONNECTER" -->
+        <div class="login-link-container">
+            <p>Déjà inscrit ?</p>
+            <button type="button" class="login-link-btn" id="openLoginModal">
+                🔐 Se connecter
+            </button>
+        </div>
+
+        <!-- ✅ MODAL DE CONNEXION -->
+        <div class="modal-overlay" id="loginModal">
+            <div class="modal-content">
+                <button type="button" class="modal-close" id="closeLoginModal">✕</button>
+                
+                <div class="modal-header">
+                    <h2>🔐 Connexion</h2>
+                    <p>Connectez-vous à votre compte ETEO</p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="modal-form-group">
+                        <label for="loginEmail">📧 Email</label>
+                        <input type="email" id="loginEmail" placeholder="votre@email.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="modal-form-group">
+                        <label for="loginPassword">🔑 Mot de passe</label>
+                        <input type="password" id="loginPassword" placeholder="Votre mot de passe" autocomplete="current-password" required>
+                    </div>
+
+                    <button type="submit" class="modal-btn" id="loginSubmitBtn">
+                        🔓 Se connecter
+                    </button>
+
+                    <span class="modal-error" id="loginError"></span>
+
+                    <a class="modal-forgot-password" id="forgotPasswordLink">
+                        Mot de passe oublié ?
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <script type="module">
+        import { Logger } from '../js/logger.js';
+        import { StorageService } from '../js/services/storage.js';
+        import { initializeApp } from 'firebase/app';
+        import { 
+            getAuth, 
+            createUserWithEmailAndPassword, 
+            signInWithEmailAndPassword, 
+            onAuthStateChanged,
+            sendEmailVerification,
+            sendPasswordResetEmail,
+            GoogleAuthProvider,
+            signInWithPopup,
+            signInWithRedirect,
+            getRedirectResult,
+            OAuthProvider
+        } from 'firebase/auth';
+        import { getFirestore, doc, setDoc, getDoc, updateDoc, increment } from 'firebase/firestore';
+        import tts from '../js/services/tts.js';
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        
+        window.tts = tts;
+        
+        // ============================================================
+        // ✅ DÉTECTION MOBILE vs DESKTOP
+        // ============================================================
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+                        || (window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
+        
+        console.log('📱 Environnement détecté :', isMobile ? '📱 MOBILE' : '💻 DESKTOP');
+        
+        // ============================================================
+        // URL DE VÉRIFICATION
+        // ============================================================
+        const isProduction = window.location.hostname !== 'localhost' && 
+                             window.location.hostname !== '127.0.0.1';
+        
+        const baseUrl = isProduction 
+            ? 'https://www.eteo.com'
+            : `${window.location.protocol}//${window.location.host}`;
+        
+        const actionCodeSettings = {
+            url: `${baseUrl}/www/fr/verify_email_fr.html`,
+            handleCodeInApp: true
+        };
+        
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        const listenBtn = document.getElementById('listenBtn');
+        const form = document.getElementById('registerForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const toast = document.getElementById('toast');
+        const displayNameInput = document.getElementById('displayName');
+        const professionSelect = document.getElementById('profession');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirmPassword');
+        const phoneInput = document.getElementById('phone');
+        const countrySelect = document.getElementById('country');
+        const countryCodeSelect = document.getElementById('countryCode');
+        const acceptTermsCheckbox = document.getElementById('acceptTerms');
+        
+        const btnText = document.getElementById('btnText');
+        const btnSpinner = document.getElementById('btnSpinner');
+        
+        const strengthContainer = document.getElementById('strengthContainer');
+        const strengthIndicator = document.getElementById('strengthIndicator');
+        const strengthText = document.getElementById('strengthText');
+        
+        const displayNameError = document.getElementById('displayNameError');
+        const professionError = document.getElementById('professionError');
+        const emailError = document.getElementById('emailError');
+        const passwordError = document.getElementById('passwordError');
+        const confirmPasswordError = document.getElementById('confirmPasswordError');
+        const countryError = document.getElementById('countryError');
+        const termsError = document.getElementById('termsError');
+        
+        // Modal
+        const loginModal = document.getElementById('loginModal');
+        const openLoginModal = document.getElementById('openLoginModal');
+        const closeLoginModal = document.getElementById('closeLoginModal');
+        const loginForm = document.getElementById('loginForm');
+        const loginEmail = document.getElementById('loginEmail');
+        const loginPassword = document.getElementById('loginPassword');
+        const loginSubmitBtn = document.getElementById('loginSubmitBtn');
+        const loginError = document.getElementById('loginError');
+        const forgotPasswordLink = document.getElementById('forgotPasswordLink');
+        
+        const storage = new StorageService();
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        function showToast(message, duration = 3000) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+        
+        // ============================================================
+        // VALIDATION
+        // ============================================================
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+        
+        function getPasswordStrength(password) {
+            if (password.length === 0) return { level: 0, label: '', color: '' };
+            let score = 0;
+            if (password.length >= 8) score += 1;
+            if (password.length >= 12) score += 1;
+            if (/[a-z]/.test(password)) score += 1;
+            if (/[A-Z]/.test(password)) score += 1;
+            if (/[0-9]/.test(password)) score += 1;
+            if (/[^a-zA-Z0-9]/.test(password)) score += 1;
+            
+            if (score <= 2) return { level: 0, label: 'Faible', color: '#e74c3c' };
+            if (score <= 4) return { level: 1, label: 'Moyen', color: '#f39c12' };
+            return { level: 2, label: 'Fort', color: '#2ecc71' };
+        }
+        
+        // ============================================================
+        // VALIDATION TEMPS RÉEL
+        // ============================================================
+        emailInput.addEventListener('blur', function() {
+            const email = this.value.trim();
+            if (email && !isValidEmail(email)) {
+                this.classList.add('error');
+                this.classList.remove('success');
+                emailError.classList.add('show');
+            } else if (email) {
+                this.classList.remove('error');
+                this.classList.add('success');
+                emailError.classList.remove('show');
+            }
+        });
+        
+        emailInput.addEventListener('input', function() {
+            if (this.classList.contains('error')) {
+                this.classList.remove('error');
+                emailError.classList.remove('show');
+            }
+        });
+        
+        passwordInput.addEventListener('input', function() {
+            const password = this.value;
+            if (password.length > 0) {
+                strengthContainer.style.display = 'flex';
+                const strength = getPasswordStrength(password);
+                if (strength.level === 0) {
+                    strengthIndicator.style.width = '33%';
+                    strengthIndicator.style.background = strength.color;
+                    strengthText.textContent = 'Faible';
+                    strengthText.className = 'strength-text faible';
+                } else if (strength.level === 1) {
+                    strengthIndicator.style.width = '66%';
+                    strengthIndicator.style.background = strength.color;
+                    strengthText.textContent = 'Moyen';
+                    strengthText.className = 'strength-text moyen';
+                } else {
+                    strengthIndicator.style.width = '100%';
+                    strengthIndicator.style.background = strength.color;
+                    strengthText.textContent = 'Fort';
+                    strengthText.className = 'strength-text fort';
+                }
+            } else {
+                strengthContainer.style.display = 'none';
+            }
+            
+            if (password.length > 0 && password.length < 6) {
+                this.classList.add('error');
+                passwordError.classList.add('show');
+            } else if (password.length >= 6) {
+                this.classList.remove('error');
+                this.classList.add('success');
+                passwordError.classList.remove('show');
+            }
+            checkPasswordMatch();
+        });
+        
+        function checkPasswordMatch() {
+            const password = passwordInput.value;
+            const confirm = confirmPasswordInput.value;
+            if (confirm.length > 0 && password !== confirm) {
+                confirmPasswordInput.classList.add('error');
+                confirmPasswordInput.classList.remove('success');
+                confirmPasswordError.classList.add('show');
+            } else if (confirm.length > 0) {
+                confirmPasswordInput.classList.remove('error');
+                confirmPasswordInput.classList.add('success');
+                confirmPasswordError.classList.remove('show');
+            }
+        }
+        
+        confirmPasswordInput.addEventListener('input', checkPasswordMatch);
+        
+        acceptTermsCheckbox.addEventListener('change', function() {
+            if (this.checked) termsError.classList.remove('show');
+        });
+        
+        // ============================================================
+        // AFFICHER/CACHER MOT DE PASSE
+        // ============================================================
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            this.textContent = type === 'password' ? '👁️' : '🙈';
+        });
+        
+        document.getElementById('toggleConfirmPassword').addEventListener('click', function() {
+            const type = confirmPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmPasswordInput.setAttribute('type', type);
+            this.textContent = type === 'password' ? '👁️' : '🙈';
+        });
+        
+        // ============================================================
+        // SPINNER
+        // ============================================================
+        function setLoading(state) {
+            if (state) {
+                btnText.style.display = 'none';
+                btnSpinner.style.display = 'inline-block';
+                submitBtn.disabled = true;
+            } else {
+                btnText.style.display = 'inline';
+                btnSpinner.style.display = 'none';
+                submitBtn.disabled = false;
+            }
+        }
+        
+        // ============================================================
+        // BOUTON ÉCOUTER
+        // ============================================================
+        listenBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            if (!window.tts) {
+                showToast('❌ Module TTS non disponible', 3000);
+                return;
+            }
+            if (window.tts.isSpeakingNow()) {
+                window.tts.stop();
+                this.textContent = '🔊 Écouter les instructions';
+                this.classList.remove('listening');
+                return;
+            }
+            const message = `Bonjour à vous, que vous soyez docteur ou étudiant en médecine dentaire, soyez le ou la bienvenue dans ETEO. Pour être membre de la famille INTERNATIONALE ETEO, il faut vous inscrire. Votre nom, votre prénom, votre profession, votre email et votre pays sont obligatoires pour votre classement mondial. Votre téléphone reste optionnel. Alors, prêt à rejoindre la famille internationale ETEO ? Remplissez le formulaire et lancez-vous !`;
+            this.textContent = '⏹️ Arrêter';
+            this.classList.add('listening');
+            window.tts.speak(message, 'fr', 0.9, 1.0,
+                () => { this.textContent = '🔊 Écouter les instructions'; this.classList.remove('listening'); },
+                (error) => { console.error('❌ Erreur TTS:', error); this.textContent = '🔊 Écouter les instructions'; this.classList.remove('listening'); showToast('❌ Erreur de lecture vocale', 3000); }
+            );
+        });
+        
+        // ============================================================
+        // CRÉATION COMPTE
+        // ============================================================
+        async function createUserAccount(email, password, userData) {
+            try {
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const uid = userCredential.user.uid;
+                await sendEmailVerification(userCredential.user, actionCodeSettings);
+                console.log('✅ Email de vérification envoyé à:', email);
+                
+                const userRef = doc(db, 'users_ios', uid);
+                await setDoc(userRef, {
+                    displayName: userData.displayName,
+                    profession: userData.profession || 'Non renseigné',
+                    email: userData.email,
+                    phone: userData.phone || 'Non renseigné',
+                    country: userData.country,
+                    registeredAt: new Date().toISOString(),
+                    emailVerified: false,
+                    scores: {}, subscriptions: { quiz: {} }, roulette: null,
+                    certificates: {}, totalLevels: 0, avgScore: 0, globalScore: 0,
+                    badges: [], rouletteStats: { freeQuizzesUsed: 0 }
+                });
+                
+                try {
+                    const statsRef = doc(db, 'stats', 'totalUsers');
+                    await setDoc(statsRef, { count: increment(1) }, { merge: true });
+                } catch (statsError) { console.warn('⚠️ Erreur stats:', statsError); }
+                
+                const settings = storage.getSettings() || {};
+                settings.user = {
+                    uid: uid, displayName: userData.displayName,
+                    profession: userData.profession || 'Non renseigné',
+                    email: userData.email, phone: userData.phone || 'Non renseigné',
+                    country: userData.country, registeredAt: new Date().toISOString(),
+                    emailVerified: false
+                };
+                storage.saveSettings(settings);
+                return { success: true, uid, emailSent: true };
+            } catch (error) {
+                console.error('❌ Erreur création compte:', error);
+                return { success: false, error: error.message, code: error.code };
+            }
+        }
+        
+        // ============================================================
+        // CONNEXION
+        // ============================================================
+        async function loginUser(email, password) {
+            try {
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+                
+                if (!user.emailVerified) {
+                    showToast('⛔ Compte non activé. Vérifiez votre email !', 5000);
+                    await auth.signOut();
+                    const settings = storage.getSettings() || {};
+                    delete settings.user;
+                    storage.saveSettings(settings);
+                    return;
+                }
+                
+                console.log('✅ Connexion réussie pour:', user.email);
+                const userRef = doc(db, 'users_ios', user.uid);
+                const snapshot = await getDoc(userRef);
+                if (snapshot.exists()) {
+                    const data = snapshot.data();
+                    const settings = storage.getSettings() || {};
+                    settings.user = {
+                        uid: user.uid, displayName: data.displayName || 'Docteur',
+                        profession: data.profession || 'Non renseigné',
+                        email: data.email || user.email, phone: data.phone || 'Non renseigné',
+                        country: data.country || '🌍',
+                        registeredAt: data.registeredAt || new Date().toISOString(),
+                        emailVerified: user.emailVerified
+                    };
+                    storage.saveSettings(settings);
+                }
+                
+                showToast('✅ Bienvenue !', 2000);
+                closeModal();
+                setTimeout(() => { window.location.href = 'dashboard.html'; }, 1500);
+            } catch (error) {
+                console.error('❌ Erreur connexion:', error);
+                let msg = '❌ Erreur de connexion';
+                if (error.code === 'auth/user-not-found') msg = '❌ Aucun compte avec cet email';
+                else if (error.code === 'auth/wrong-password' || error.code === 'auth/invalid-credential') msg = '❌ Mot de passe incorrect';
+                else if (error.code === 'auth/invalid-email') msg = '❌ Email invalide';
+                else if (error.code === 'auth/too-many-requests') msg = '❌ Trop de tentatives. Réessayez plus tard.';
+                else msg = '❌ ' + error.message;
+                
+                loginError.textContent = msg;
+                loginError.classList.add('show');
+            }
+        }
+        
+        // ============================================================
+        // ✅ GOOGLE/APPLE SIGN-IN (Popup sur PC, Redirect sur Mobile)
+        // ============================================================
+        async function signInWithProvider(provider, providerName) {
+            try {
+                let result;
+                if (isMobile) {
+                    // ✅ MOBILE : utiliser redirect
+                    console.log('📱 Utilisation de signInWithRedirect pour', providerName);
+                    await signInWithRedirect(auth, provider);
+                    return; // La redirection quitte la page, la suite est gérée par getRedirectResult
+                } else {
+                    // ✅ DESKTOP : utiliser popup
+                    console.log('💻 Utilisation de signInWithPopup pour', providerName);
+                    result = await signInWithPopup(auth, provider);
+                }
+                
+                if (result) {
+                    await handleProviderResult(result);
+                }
+            } catch (error) {
+                console.error('❌ Erreur connexion avec', providerName, ':', error);
+                showToast('❌ Erreur: ' + error.message, 4000);
+            }
+        }
+        
+        // ✅ GESTION DU RÉSULTAT (utilisé pour popup ET redirect)
+        async function handleProviderResult(result) {
+            const user = result.user;
+            console.log('✅ Connexion réussie avec provider:', user.email);
+            
+            const userRef = doc(db, 'users_ios', user.uid);
+            const snapshot = await getDoc(userRef);
+            
+            if (!snapshot.exists()) {
+                await setDoc(userRef, {
+                    displayName: user.displayName || 'Utilisateur',
+                    profession: 'Non renseigné',
+                    email: user.email,
+                    phone: 'Non renseigné',
+                    country: '🌍',
+                    registeredAt: new Date().toISOString(),
+                    emailVerified: user.emailVerified,
+                    scores: {}, subscriptions: { quiz: {} }, roulette: null,
+                    certificates: {}, totalLevels: 0, avgScore: 0, globalScore: 0,
+                    badges: [], rouletteStats: { freeQuizzesUsed: 0 }
+                });
+                try {
+                    const statsRef = doc(db, 'stats', 'totalUsers');
+                    await setDoc(statsRef, { count: increment(1) }, { merge: true });
+                } catch (statsError) { console.warn('⚠️ Erreur stats:', statsError); }
+            }
+            
+            const settings = storage.getSettings() || {};
+            settings.user = {
+                uid: user.uid, displayName: user.displayName || 'Utilisateur',
+                profession: 'Non renseigné', email: user.email,
+                phone: 'Non renseigné', country: '🌍',
+                registeredAt: new Date().toISOString(),
+                emailVerified: user.emailVerified
+            };
+            storage.saveSettings(settings);
+            
+            showToast('✅ Bienvenue !', 2000);
+            setTimeout(() => { window.location.href = 'dashboard.html'; }, 1500);
+        }
+        
+        // ✅ AU CHARGEMENT : vérifier si on revient d'un redirect
+        getRedirectResult(auth).then(async (result) => {
+            if (result) {
+                console.log('✅ Retour de redirect détecté');
+                await handleProviderResult(result);
+            }
+        }).catch((error) => {
+            console.error('❌ Erreur getRedirectResult:', error);
+        });
+        
+        document.getElementById('googleBtn').addEventListener('click', () => {
+            const provider = new GoogleAuthProvider();
+            signInWithProvider(provider, 'Google');
+        });
+        
+        document.getElementById('appleBtn').addEventListener('click', () => {
+            const provider = new OAuthProvider('apple.com');
+            provider.addScope('email');
+            provider.addScope('name');
+            signInWithProvider(provider, 'Apple');
+        });
+        
+        // ============================================================
+        // ✅ GESTION MODAL CONNEXION
+        // ============================================================
+        function openModal() {
+            loginModal.classList.add('active');
+            loginError.classList.remove('show');
+            loginError.textContent = '';
+        }
+        
+        function closeModal() {
+            loginModal.classList.remove('active');
+            loginEmail.value = '';
+            loginPassword.value = '';
+            loginError.classList.remove('show');
+        }
+        
+        openLoginModal.addEventListener('click', openModal);
+        closeLoginModal.addEventListener('click', closeModal);
+        
+        // Fermer en cliquant en dehors du modal
+        loginModal.addEventListener('click', (e) => {
+            if (e.target === loginModal) closeModal();
+        });
+        
+        // ============================================================
+        // ✅ SOUMISSION FORMULAIRE DE CONNEXION
+        // ============================================================
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = loginEmail.value.trim();
+            const password = loginPassword.value;
+            
+            if (!email || !isValidEmail(email)) {
+                loginError.textContent = '⚠️ Veuillez entrer un email valide';
+                loginError.classList.add('show');
+                return;
+            }
+            if (!password) {
+                loginError.textContent = '⚠️ Veuillez entrer votre mot de passe';
+                loginError.classList.add('show');
+                return;
+            }
+            
+            loginSubmitBtn.disabled = true;
+            loginSubmitBtn.textContent = '⏳ Connexion...';
+            loginError.classList.remove('show');
+            
+            await loginUser(email, password);
+            
+            loginSubmitBtn.disabled = false;
+            loginSubmitBtn.textContent = '🔓 Se connecter';
+        });
+        
+        // ============================================================
+        // ✅ MOT DE PASSE OUBLIÉ
+        // ============================================================
+        forgotPasswordLink.addEventListener('click', async (e) => {
+            e.preventDefault();
+            const email = loginEmail.value.trim();
+            
+            if (!email || !isValidEmail(email)) {
+                loginError.textContent = '⚠️ Entrez d\'abord votre email ci-dessus';
+                loginError.classList.add('show');
+                return;
+            }
+            
+            try {
+                await sendPasswordResetEmail(auth, email);
+                loginError.textContent = '✅ Email de réinitialisation envoyé ! Vérifiez votre boîte.';
+                loginError.style.color = '#2ecc71';
+                loginError.classList.add('show');
+                setTimeout(() => {
+                    loginError.style.color = '#e74c3c';
+                }, 5000);
+            } catch (error) {
+                console.error('❌ Erreur reset password:', error);
+                loginError.textContent = '❌ Erreur: ' + error.message;
+                loginError.classList.add('show');
+            }
+        });
+        
+        // ============================================================
+        // SOUMISSION FORMULAIRE D'INSCRIPTION
+        // ============================================================
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const displayName = displayNameInput.value.trim();
+            const profession = professionSelect.value;
+            const email = emailInput.value.trim();
+            const password = passwordInput.value.trim();
+            const confirmPassword = confirmPasswordInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const country = countrySelect.value;
+            const countryCode = countryCodeSelect.value;
+            const acceptTerms = acceptTermsCheckbox.checked;
+            
+            let hasError = false;
+            
+            if (!displayName) { displayNameInput.classList.add('error'); displayNameError.classList.add('show'); hasError = true; }
+            else { displayNameInput.classList.remove('error'); displayNameError.classList.remove('show'); }
+            
+            if (!profession) { professionSelect.classList.add('error'); professionError.classList.add('show'); hasError = true; }
+            else { professionSelect.classList.remove('error'); professionError.classList.remove('show'); }
+            
+            if (!email || !isValidEmail(email)) { emailInput.classList.add('error'); emailError.classList.add('show'); hasError = true; }
+            else { emailInput.classList.remove('error'); emailError.classList.remove('show'); }
+            
+            if (!password || password.length < 6) { passwordInput.classList.add('error'); passwordError.classList.add('show'); hasError = true; }
+            else { passwordInput.classList.remove('error'); passwordError.classList.remove('show'); }
+            
+            if (password !== confirmPassword) { confirmPasswordInput.classList.add('error'); confirmPasswordError.classList.add('show'); hasError = true; }
+            else { confirmPasswordInput.classList.remove('error'); confirmPasswordError.classList.remove('show'); }
+            
+            if (!country) { countrySelect.classList.add('error'); countryError.classList.add('show'); hasError = true; }
+            else { countrySelect.classList.remove('error'); countryError.classList.remove('show'); }
+            
+            if (!acceptTerms) { termsError.classList.add('show'); hasError = true; }
+            else { termsError.classList.remove('show'); }
+            
+            if (hasError) {
+                showToast('⚠️ Veuillez corriger les erreurs', 3000);
+                return;
+            }
+            
+            setLoading(true);
+            const fullPhone = phone ? countryCode + ' ' + phone : '';
+            
+            const result = await createUserAccount(email, password, {
+                displayName, profession, email, phone: fullPhone, country
+            });
+            
+            if (result.success) {
+                btnText.style.display = 'inline';
+                btnSpinner.style.display = 'none';
+                btnText.textContent = '✅ Compte créé !';
+                submitBtn.disabled = false;
+                showToast('✅ Compte créé ! Vérifiez votre email.', 3000);
+                setTimeout(() => { window.location.href = 'verify_email_fr.html'; }, 1500);
+            } else {
+                setLoading(false);
+                // ✅ MESSAGE AMÉLIORÉ POUR EMAIL DÉJÀ UTILISÉ
+                if (result.code === 'auth/email-already-in-use') {
+                    showToast('❌ Cet email est déjà utilisé. Connectez-vous !', 4000);
+                    // Ouvrir automatiquement le modal de connexion
+                    setTimeout(() => {
+                        openModal();
+                        loginEmail.value = email;
+                    }, 1500);
+                } else {
+                    showToast(`❌ ${result.error}`, 4000);
+                }
+                btnText.textContent = '📝 S\'inscrire';
+            }
+        });
+        
+        // ============================================================
+        // VÉRIFICATION AUTH
+        // ============================================================
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                if (!user.emailVerified) {
+                    console.log('⛔ Email NON vérifié:', user.email);
+                    showToast('⛔ Compte non activé. Vérifiez votre email !', 5000);
+                    await auth.signOut();
+                    const settings = storage.getSettings() || {};
+                    delete settings.user;
+                    storage.saveSettings(settings);
+                    return;
+                }
+                console.log('✅ Email vérifié pour:', user.email);
+                const settings = storage.getSettings() || {};
+                if (!settings.user || !settings.user.uid) {
+                    try {
+                        const userRef = doc(db, 'users_ios', user.uid);
+                        const snapshot = await getDoc(userRef);
+                        if (snapshot.exists()) {
+                            const data = snapshot.data();
+                            settings.user = {
+                                uid: user.uid, displayName: data.displayName || 'Docteur',
+                                profession: data.profession || 'Non renseigné',
+                                email: data.email || user.email, phone: data.phone || 'Non renseigné',
+                                country: data.country || '🌍',
+                                registeredAt: data.registeredAt || new Date().toISOString(),
+                                emailVerified: user.emailVerified
+                            };
+                            storage.saveSettings(settings);
+                        }
+                    } catch (error) { console.warn('⚠️ Erreur chargement:', error); }
+                }
+                console.log('✅ Utilisateur connecté - Redirection...');
+                showToast('✅ Bon retour !', 1500);
+                setTimeout(() => { window.location.href = 'dashboard.html'; }, 1200);
+            } else {
+                console.log('👤 Utilisateur non connecté');
+            }
+        });
+        
+        // ============================================================
+        // INITIALISATION
+        // ============================================================
+        Logger.info('📝 Page d\'inscription FR prête (avec connexion + Google Sign-In corrigé)');
+        console.log('✅ NOUVEAU : Bouton "Se connecter" ajouté');
+        console.log('✅ NOUVEAU : Modal de connexion avec email/mot de passe');
+        console.log('✅ NOUVEAU : Mot de passe oublié');
+        console.log('✅ NOUVEAU : Google/Apple Sign-In corrigé (mobile → redirect)');
+        console.log('✅ NOUVEAU : Message clair pour email déjà utilisé');
+    </script>
+</body>
+</html>

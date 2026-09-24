@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>📋 Admin - Certifications ETEO</title>
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"
+        }
+    }
+    </script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: #f0f4ff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .admin-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.10);
+        }
+        
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .admin-header h1 { color: #2c3e50; font-size: 1.6rem; }
+        .admin-header .user-info { color: #667eea; font-weight: 600; font-size: 0.9rem; }
+        
+        .stats {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-badge {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .stat-badge.pending { background: #fff3cd; color: #856404; }
+        .stat-badge.verified { background: #c8e6c9; color: #2e7d32; }
+        .stat-badge.completed { background: #bbdefb; color: #0d47a1; }
+        .stat-badge.rejected { background: #ffcdd2; color: #c62828; }
+        .stat-badge.total { background: #e8e8e8; color: #555; }
+        
+        .badge-status {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+        
+        .badge-status.pending { background: #fff3cd; color: #856404; }
+        .badge-status.verified { background: #c8e6c9; color: #2e7d32; }
+        .badge-status.completed { background: #bbdefb; color: #0d47a1; }
+        .badge-status.rejected { background: #ffcdd2; color: #c62828; }
+        
+        .request-card {
+            border: 1px solid #e8e8e8;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 12px 0;
+            background: #fafafa;
+            transition: all 0.3s ease;
+        }
+        
+        .request-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .request-card .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .request-card .info { flex: 1; min-width: 200px; }
+        .request-card .info .name { font-weight: 700; color: #2c3e50; font-size: 1.1rem; }
+        .request-card .info .email { color: #667eea; }
+        .request-card .info .ref { color: #888; font-size: 0.85rem; font-family: monospace; }
+        .request-card .info .date { color: #999; font-size: 0.8rem; }
+        .request-card .info .specialty {
+            display: inline-block;
+            background: #e8f0fe;
+            padding: 2px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #667eea;
+        }
+        
+        .actions {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .btn-verify {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 20px;
+            background: #4caf50;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+        }
+        .btn-verify:hover { transform: scale(1.05); background: #388e3c; }
+        
+        .btn-reject {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 20px;
+            background: #e74c3c;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+        }
+        .btn-reject:hover { transform: scale(1.05); background: #c62828; }
+        
+        .btn-complete {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 20px;
+            background: #ff9800;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+        }
+        .btn-complete:hover { transform: scale(1.05); background: #f57c00; }
+        
+        .btn-download {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 20px;
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+        }
+        .btn-download:hover { transform: scale(1.05); background: #5a6fd6; }
+        
+        .btn-delete {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 20px;
+            background: #e74c3c;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.85rem;
+        }
+        .btn-delete:hover { transform: scale(1.05); background: #c62828; }
+        
+        .empty-state { text-align: center; padding: 60px; color: #888; }
+        .empty-state .icon { font-size: 4rem; }
+        
+        .loading { text-align: center; padding: 40px; }
+        .spinner {
+            width: 40px; height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2c3e50;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            z-index: 9999;
+            animation: fadeIn 0.3s ease;
+            max-width: 90%;
+            text-align: center;
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .filters { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .filter-btn {
+            padding: 8px 20px;
+            border: 2px solid #ddd;
+            border-radius: 20px;
+            background: white;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active { border-color: #667eea; background: #667eea; color: white; }
+        .filter-btn:hover:not(.active) { border-color: #667eea; }
+        
+        .admin-footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        .admin-footer a { color: #667eea; text-decoration: none; }
+        
+        .login-required {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .login-required .icon { font-size: 4rem; }
+        .login-required h2 { color: #2c3e50; margin: 10px 0; }
+        .login-required p { color: #888; }
+        .btn-login {
+            padding: 14px 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .btn-login:hover { transform: scale(1.05); }
+        
+        .access-denied {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .access-denied .icon { font-size: 4rem; }
+        .access-denied h2 { color: #e74c3c; margin: 10px 0; }
+        .access-denied p { color: #888; }
+        
+        @media (max-width: 600px) {
+            .admin-container { padding: 15px; }
+            .request-card .row { flex-direction: column; }
+            .request-card .actions { width: 100%; }
+            .admin-header { flex-direction: column; gap: 10px; text-align: center; }
+            .stats { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <div>
+                <h1>📋 Administration - Certifications</h1>
+                <p style="color: #888; font-size: 0.9rem;">Gérez les demandes de certification ETEO</p>
+            </div>
+            <div class="stats">
+                <span class="stat-badge total" id="totalCount">📋 Total: 0</span>
+                <span class="stat-badge pending" id="pendingCount">⏳ En attente: 0</span>
+                <span class="stat-badge verified" id="verifiedCount">✅ Vérifiées: 0</span>
+                <span class="stat-badge completed" id="completedCount">🎓 Certifiées: 0</span>
+                <span class="stat-badge rejected" id="rejectedCount">❌ Rejetées: 0</span>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">📋 Toutes</button>
+            <button class="filter-btn" data-filter="pending">⏳ En attente</button>
+            <button class="filter-btn" data-filter="verified">✅ Vérifiées</button>
+            <button class="filter-btn" data-filter="completed">🎓 Certifiées</button>
+            <button class="filter-btn" data-filter="rejected">❌ Rejetées</button>
+            <button class="filter-btn" id="refreshBtn" style="background:#667eea;color:white;border-color:#667eea;">🔄 Actualiser</button>
+        </div>
+        
+        <div id="requestsContainer">
+            <div class="loading" id="loading"><div class="spinner"></div><p style="margin-top:10px;color:#888;">Chargement des demandes...</p></div>
+            <div id="requestsList"></div>
+        </div>
+        
+        <div class="admin-footer">
+            <span>🔒 Accès admin • <span id="currentDate"></span></span>
+            <a href="quiz.html">🔙 Retour au quiz</a>
+            <button onclick="window.location.href='../index.html'" style="background:transparent;border:none;color:#667eea;cursor:pointer;">🏠 Accueil</button>
+        </div>
+    </div>
+    
+    <script type="module">
+        // ============================================================
+        // IMPORTS
+        // ============================================================
+        
+        import { initializeApp } from 'firebase/app';
+        import { getFirestore, collection, query, getDocs, updateDoc, doc, orderBy, onSnapshot, deleteDoc } from 'firebase/firestore';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+        
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+        
+        // ============================================================
+        // ÉTAT
+        // ============================================================
+        
+        let allRequests = [];
+        let currentFilter = 'all';
+        let currentUser = null;
+        let isAdmin = false;
+        
+        // ============================================================
+        // AUTH
+        // ============================================================
+        
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                currentUser = user;
+                console.log('👤 Utilisateur connecté:', user.email);
+                
+                // ✅ VÉRIFIER SI C'EST UN ADMIN
+                try {
+                    const adminDoc = await getDocs(collection(db, 'admins'));
+                    let found = false;
+                    adminDoc.forEach((doc) => {
+                        if (doc.data().email === user.email) {
+                            found = true;
+                            isAdmin = true;
+                        }
+                    });
+                    
+                    if (found) {
+                        console.log('✅ Admin reconnu :', user.email);
+                        document.querySelector('.admin-header .user-info')?.remove();
+                        const header = document.querySelector('.admin-header');
+                        const info = document.createElement('div');
+                        info.className = 'user-info';
+                        info.textContent = `👤 ${user.email} (Admin)`;
+                        header.appendChild(info);
+                        loadRequests();
+                    } else {
+                        console.warn('⛔ Accès refusé:', user.email);
+                        showAccessDenied();
+                    }
+                } catch (e) {
+                    console.error('❌ Erreur vérification admin:', e);
+                    showAccessDenied();
+                }
+            } else {
+                showLoginRequired();
+            }
+        });
+        
+        // ============================================================
+        // AFFICHAGES
+        // ============================================================
+        
+        function showLoginRequired() {
+            document.getElementById('requestsContainer').innerHTML = `
+                <div class="login-required">
+                    <div class="icon">🔒</div>
+                    <h2>Accès réservé</h2>
+                    <p>Connectez-vous avec votre compte administrateur.</p>
+                    <button class="btn-login" onclick="window.location.href='inscription_fr.html'">🔑 Se connecter</button>
+                </div>
+            `;
+            document.getElementById('loading').style.display = 'none';
+        }
+        
+        function showAccessDenied() {
+            document.getElementById('requestsContainer').innerHTML = `
+                <div class="access-denied">
+                    <div class="icon">⛔</div>
+                    <h2>Accès refusé</h2>
+                    <p>Vous n'avez pas les droits d'administration.</p>
+                    <button class="btn-login" onclick="window.location.href='quiz.html'" style="background:#667eea;">📚 Retour au quiz</button>
+                </div>
+            `;
+            document.getElementById('loading').style.display = 'none';
+        }
+        
+        // ============================================================
+        // DATE
+        // ============================================================
+        
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString('fr-FR', {
+            day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit'
+        });
+        
+        // ============================================================
+        // TOAST
+        // ============================================================
+        
+        function showToast(message) {
+            const existing = document.querySelector('.toast');
+            if (existing) existing.remove();
+            
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transition = 'opacity 0.3s ease';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+        
+        // ============================================================
+        // CHARGER LES DEMANDES
+        // ============================================================
+        
+        function loadRequests() {
+            const loading = document.getElementById('loading');
+            const list = document.getElementById('requestsList');
+            
+            loading.style.display = 'block';
+            list.innerHTML = '';
+            
+            const q = query(
+                collection(db, 'certification_requests'),
+                orderBy('createdAt', 'desc')
+            );
+            
+            onSnapshot(q, (snapshot) => {
+                allRequests = [];
+                snapshot.forEach((doc) => {
+                    allRequests.push({ id: doc.id, ...doc.data() });
+                });
+                
+                loading.style.display = 'none';
+                updateStats();
+                renderRequests(currentFilter);
+                
+                console.log('✅ Demandes chargées:', allRequests.length);
+                
+            }, (error) => {
+                console.error('❌ Erreur:', error);
+                loading.style.display = 'none';
+                list.innerHTML = `
+                    <div class="empty-state">
+                        <div class="icon">⚠️</div>
+                        <p>Erreur de chargement: ${error.message}</p>
+                        <button onclick="loadRequests()" style="margin-top:10px;padding:8px 20px;border:none;border-radius:20px;background:#667eea;color:white;cursor:pointer;">🔄 Réessayer</button>
+                    </div>
+                `;
+            });
+        }
+        
+        // ============================================================
+        // STATISTIQUES
+        // ============================================================
+        
+        function updateStats() {
+            const total = allRequests.length;
+            const pending = allRequests.filter(r => r.status === 'pending').length;
+            const verified = allRequests.filter(r => r.status === 'verified').length;
+            const completed = allRequests.filter(r => r.status === 'completed').length;
+            const rejected = allRequests.filter(r => r.status === 'rejected').length;
+            
+            document.getElementById('totalCount').textContent = `📋 Total: ${total}`;
+            document.getElementById('pendingCount').textContent = `⏳ En attente: ${pending}`;
+            document.getElementById('verifiedCount').textContent = `✅ Vérifiées: ${verified}`;
+            document.getElementById('completedCount').textContent = `🎓 Certifiées: ${completed}`;
+            document.getElementById('rejectedCount').textContent = `❌ Rejetées: ${rejected}`;
+        }
+        
+        // ============================================================
+        // RENDU DES DEMANDES
+        // ============================================================
+        
+        function renderRequests(filter) {
+            const list = document.getElementById('requestsList');
+            
+            let filtered = allRequests;
+            if (filter !== 'all') {
+                filtered = allRequests.filter(r => r.status === filter);
+            }
+            
+            if (filtered.length === 0) {
+                list.innerHTML = `
+                    <div class="empty-state">
+                        <div class="icon">📭</div>
+                        <h3>Aucune demande ${filter !== 'all' ? filter : ''}</h3>
+                        <p>Les nouvelles demandes apparaîtront ici automatiquement.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            const statusLabels = {
+                pending: { label: '⏳ En attente', class: 'pending' },
+                verified: { label: '✅ Vérifiée', class: 'verified' },
+                completed: { label: '🎓 Certifiée', class: 'completed' },
+                rejected: { label: '❌ Rejetée', class: 'rejected' }
+            };
+            
+            list.innerHTML = filtered.map(request => {
+                const status = statusLabels[request.status] || statusLabels.pending;
+                const date = request.createdAt?.toDate?.() ? 
+                    request.createdAt.toDate().toLocaleDateString('fr-FR', { 
+                        day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' 
+                    }) : 
+                    request.createdAt || 'Date inconnue';
+                
+                let actions = '';
+                
+                if (request.status === 'pending') {
+                    actions = `
+                        <button class="btn-verify" onclick="updateStatus('${request.id}', 'verified')">✅ Vérifier</button>
+                        <button class="btn-reject" onclick="updateStatus('${request.id}', 'rejected')">❌ Rejeter</button>
+                    `;
+                } else if (request.status === 'verified') {
+                    actions = `
+                        <button class="btn-complete" onclick="generateCertificate('${request.id}')">🎓 Générer</button>
+                        <button class="btn-reject" onclick="updateStatus('${request.id}', 'rejected')">❌ Rejeter</button>
+                    `;
+                } else if (request.status === 'completed') {
+                    actions = `
+                        <button class="btn-download" onclick="downloadCertificate('${request.id}')">📥 Télécharger</button>
+                        <button class="btn-delete" onclick="deleteRequest('${request.id}')">🗑️ Supprimer</button>
+                    `;
+                } else if (request.status === 'rejected') {
+                    actions = `
+                        <button class="btn-verify" onclick="updateStatus('${request.id}', 'pending')">🔄 Réactiver</button>
+                        <button class="btn-delete" onclick="deleteRequest('${request.id}')">🗑️ Supprimer</button>
+                    `;
+                }
+                
+                return `
+                    <div class="request-card">
+                        <div class="row">
+                            <div class="info">
+                                <div class="name">👤 ${request.fullName || 'Nom inconnu'}</div>
+                                <div class="email">📧 ${request.email || 'Email inconnu'}</div>
+                                <div style="margin-top:4px;">
+                                    <span class="specialty">🦷 ${request.specialty || 'Non spécifiée'}</span>
+                                    <span class="badge-status ${status.class}">${status.label}</span>
+                                </div>
+                                <div class="ref">🔑 ${request.reference || 'Sans référence'}</div>
+                                <div class="date">📅 ${date}</div>
+                                ${request.certificateId ? `<div style="font-size:0.8rem;color:#667eea;margin-top:4px;">📜 Certificat: ${request.certificateId}</div>` : ''}
+                                ${request.message ? `<div style="font-size:0.85rem;color:#888;margin-top:4px;">💬 ${request.message}</div>` : ''}
+                            </div>
+                            <div class="actions">
+                                ${actions}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // ============================================================
+        // ACTIONS
+        // ============================================================
+        
+        window.updateStatus = async function(id, newStatus) {
+            if (!confirm(`Confirmer le passage au statut "${newStatus}" ?`)) return;
+            
+            try {
+                const docRef = doc(db, 'certification_requests', id);
+                await updateDoc(docRef, { 
+                    status: newStatus, 
+                    updatedAt: new Date().toISOString() 
+                });
+                showToast(`✅ Statut mis à jour : ${newStatus}`);
+            } catch (error) {
+                console.error('❌ Erreur:', error);
+                showToast('❌ Erreur lors de la mise à jour');
+            }
+        };
+        
+        // ============================================================
+        // ✅ GÉNÉRER LE CERTIFICAT - CORRIGÉ
+        // ============================================================
+        
+        window.generateCertificate = async function(id) {
+            const request = allRequests.find(r => r.id === id);
+            if (!request) { showToast('❌ Demande introuvable'); return; }
+            if (!confirm(`Générer le certificat pour ${request.fullName} ?`)) return;
+            
+            try {
+                showToast('📄 Génération du certificat en cours...', 3000);
+                
+                // 1. Importer le générateur
+                const { CertificateGenerator } = await import('../js/services/CertificateGenerator.js');
+                const generator = new CertificateGenerator();
+                
+                // 2. Préparer les données
+                const certificateId = 'CERT-' + Math.random().toString(36).substring(2, 10).toUpperCase();
+                const date = new Date().toLocaleDateString('fr-FR', {
+                    day: '2-digit',
+                    month: 'long',
+                    year: 'numeric'
+                });
+                
+                const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
+                const userName = request.fullName || settings.user?.displayName || 'Docteur';
+                
+                const data = {
+                    userName: userName,
+                    specialty: request.specialty,
+                    score: 50,
+                    total: 50,
+                    percentage: 100,
+                    date: date,
+                    certificateId: certificateId
+                };
+                
+                // 3. Générer le PDF
+                const pdfBlob = await generator.generateCertificate(data);
+                console.log('✅ PDF généré');
+                
+                // 4. TÉLÉCHARGER DIRECTEMENT
+                const url = URL.createObjectURL(pdfBlob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `Certificat_${certificateId}.pdf`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                console.log('✅ PDF téléchargé');
+                
+                // 5. Mettre à jour Firebase
+                const docRef = doc(db, 'certification_requests', id);
+                await updateDoc(docRef, {
+                    status: 'completed',
+                    certificateId: certificateId,
+                    updatedAt: new Date().toISOString()
+                });
+                console.log('✅ Firebase mis à jour');
+                
+                showToast('🎓 Certificat généré et téléchargé !');
+                
+            } catch (error) {
+                console.error('❌ Erreur:', error);
+                showToast('❌ Erreur: ' + error.message);
+            }
+        };
+        
+        // ============================================================
+        // ✅ TÉLÉCHARGER LE CERTIFICAT - CORRIGÉ
+        // ============================================================
+        
+        window.downloadCertificate = function(id) {
+            const request = allRequests.find(r => r.id === id);
+            if (!request) { showToast('❌ Certificat non disponible'); return; }
+            
+            try {
+                showToast('📄 Génération du certificat...', 3000);
+                
+                // Importer le générateur
+                import('../js/services/CertificateGenerator.js').then(async (module) => {
+                    const generator = new module.CertificateGenerator();
+                    
+                    // Préparer les données
+                    const certificateId = request.certificateId || 'CERT-' + Math.random().toString(36).substring(2, 10).toUpperCase();
+                    const date = new Date().toLocaleDateString('fr-FR', {
+                        day: '2-digit',
+                        month: 'long',
+                        year: 'numeric'
+                    });
+                    
+                    const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
+                    const userName = request.fullName || settings.user?.displayName || 'Docteur';
+                    
+                    const data = {
+                        userName: userName,
+                        specialty: request.specialty,
+                        score: 50,
+                        total: 50,
+                        percentage: 100,
+                        date: date,
+                        certificateId: certificateId
+                    };
+                    
+                    // Générer le PDF
+                    const pdfBlob = await generator.generateCertificate(data);
+                    
+                    // Télécharger directement
+                    const url = URL.createObjectURL(pdfBlob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `Certificat_${certificateId}.pdf`;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    
+                    showToast('✅ Certificat téléchargé !');
+                }).catch((error) => {
+                    console.error('❌ Erreur:', error);
+                    showToast('❌ Erreur: ' + error.message);
+                });
+                
+            } catch (error) {
+                console.error('❌ Erreur:', error);
+                showToast('❌ Erreur: ' + error.message);
+            }
+        };
+        
+        window.deleteRequest = async function(id) {
+            if (!confirm('Confirmer la suppression définitive ?')) return;
+            
+            try {
+                const docRef = doc(db, 'certification_requests', id);
+                await deleteDoc(docRef);
+                showToast('🗑️ Demande supprimée');
+            } catch (error) {
+                console.error('❌ Erreur:', error);
+                showToast('❌ Erreur lors de la suppression');
+            }
+        };
+        
+        // ============================================================
+        // FILTRES
+        // ============================================================
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (this.id === 'refreshBtn') {
+                    showToast('🔄 Actualisation...');
+                    loadRequests();
+                    return;
+                }
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                renderRequests(currentFilter);
+            });
+        });
+    </script>
+</body>
+</html>
