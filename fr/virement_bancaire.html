@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Paiement par virement - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+    
+    <style>
+        .payment-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .payment-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .payment-header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .payment-header p {
+            color: #7f8c8d;
+            font-size: 15px;
+        }
+        
+        .amount-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 15px 0;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+        }
+        
+        .bank-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid #667eea;
+        }
+        
+        .bank-card h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .bank-info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .bank-info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .bank-info-label {
+            font-weight: 600;
+            color: #7f8c8d;
+            font-size: 14px;
+            min-width: 120px;
+        }
+        
+        .bank-info-value {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 15px;
+            font-family: 'Courier New', monospace;
+            flex: 1;
+            text-align: right;
+        }
+        
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 8px;
+            transition: all 0.2s;
+        }
+        
+        .copy-btn:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+        }
+        
+        .reference-highlight {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .reference-highlight .ref-label {
+            font-size: 13px;
+            color: #856404;
+            margin-bottom: 5px;
+        }
+        
+        .reference-highlight .ref-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #856404;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+        }
+        
+        .warning-box {
+            background: #f8d7da;
+            border: 2px solid #dc3545;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            color: #721c24;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .warning-box strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-section {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .form-section h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 18px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="date"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: all 0.3s;
+            box-sizing: border-box;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+        }
+        
+        .file-upload {
+            border: 3px dashed #cbd5e0;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: #f8f9fa;
+        }
+        
+        .file-upload:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .file-upload input[type="file"] {
+            display: none;
+        }
+        
+        .file-upload-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .file-upload-text {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .file-upload.has-file {
+            border-color: #4caf50;
+            background: #e8f5e9;
+        }
+        
+        .file-upload.has-file .file-upload-icon {
+            color: #4caf50;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .steps-list {
+            background: #e3f2fd;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-top: 20px;
+        }
+        
+        .steps-list h3 {
+            color: #0d47a1;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .steps-list ol {
+            margin: 0;
+            padding-left: 20px;
+            color: #1565c0;
+            line-height: 2;
+        }
+        
+        .steps-list ol li {
+            font-size: 14px;
+        }
+        
+        .success-screen {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .success-screen.active {
+            display: block;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .success-screen h2 {
+            color: #4caf50;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        
+        .success-screen p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .pending-badge {
+            display: inline-block;
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        
+        .nav-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn {
+            background: none;
+            border: none;
+            font-size: 15px;
+            color: #667eea;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 520px) {
+            .bank-info-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .bank-info-value {
+                text-align: left;
+                word-break: break-all;
+            }
+            .amount-badge {
+                font-size: 24px;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- NAVIGATION -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="history.back()">
+                ← Retour
+            </button>
+            <button class="back-btn" onclick="window.location.href='dashboard.html'">
+                🏠 Tableau de bord
+            </button>
+        </div>
+
+        <div class="payment-container">
+            
+            <!-- HEADER -->
+            <div class="payment-header">
+                <h1>🎓 Obtenir votre certificat ETEO</h1>
+                <p>Félicitations ! Vous avez réussi l'examen de certification.</p>
+                <div class="amount-badge">20,00 €</div>
+            </div>
+
+            <!-- ÉCRAN PRINCIPAL -->
+            <div id="paymentScreen">
+                
+                <!-- COORDONNÉES BANCAIRES -->
+                <div class="bank-card">
+                    <h2>🏦 Coordonnées bancaires</h2>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">🏦 Banque</span>
+                        <span class="bank-info-value">Banque Centrale Populaire (BCP)</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">📍 Agence</span>
+                        <span class="bank-info-value">Agence 2 MARS - Casablanca</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">📌 Titulaire</span>
+                        <span class="bank-info-value">Mr MAARAK SAID</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">🔢 IBAN</span>
+                        <span class="bank-info-value">
+                            <span id="ibanText">MA64 1907 8021 1111 1015 9900 9331</span>
+                            <button class="copy-btn" onclick="copyToClipboard('ibanText')">📋 Copier</button>
+                        </span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">🏛️ SWIFT / BIC</span>
+                        <span class="bank-info-value">
+                            <span id="swiftText">BCPOMAMC</span>
+                            <button class="copy-btn" onclick="copyToClipboard('swiftText')">📋 Copier</button>
+                        </span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">💰 Montant</span>
+                        <span class="bank-info-value" style="color: #4caf50; font-size: 18px;">20,00 €</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">📍 Domiciliation</span>
+                        <span class="bank-info-value" style="font-family: inherit; font-size: 13px;">Angle Rue Omar El Idrissi et Avenue 2 Mars, Casablanca, MAROC</span>
+                    </div>
+                </div>
+
+                <!-- RÉFÉRENCE UNIQUE -->
+                <div class="reference-highlight">
+                    <div class="ref-label">🔑 Votre référence unique de paiement</div>
+                    <div class="ref-value" id="referenceText">CERT-XXXXXX</div>
+                    <button class="copy-btn" onclick="copyToClipboard('referenceText')" style="margin-top: 10px;">📋 Copier la référence</button>
+                </div>
+
+                <!-- AVERTISSEMENT -->
+                <div class="warning-box">
+                    <strong>⚠️ IMPORTANT :</strong>
+                    Vous devez obligatoirement indiquer cette référence <strong>dans le libellé de votre virement</strong>.
+                    Sans cette référence, nous ne pourrons pas identifier votre paiement et votre demande sera automatiquement rejetée.
+                </div>
+
+                <!-- FORMULAIRE DE CONFIRMATION -->
+                <div class="form-section">
+                    <h2>📝 Confirmer votre virement</h2>
+                    
+                    <div class="form-group">
+                        <label for="fullName">👤 Nom complet (titulaire du compte)</label>
+                        <input type="text" id="fullName" placeholder="Dr. Jean Dupont" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">📧 Email (pour recevoir le certificat)</label>
+                        <input type="email" id="email" placeholder="votre@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="transferDate">📅 Date du virement</label>
+                        <input type="date" id="transferDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>📎 Preuve de virement (capture d'écran ou PDF)</label>
+                        <div class="file-upload" id="fileUploadBox">
+                            <input type="file" id="proofFile" accept="image/*,.pdf">
+                            <div class="file-upload-icon">📤</div>
+                            <div class="file-upload-text" id="fileUploadText">
+                                Cliquez pour joindre une preuve<br>
+                                <small>(JPG, PNG ou PDF - max 5 Mo)</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="submit-btn" id="submitBtn">
+                        ✅ Confirmer le virement
+                    </button>
+                </div>
+
+                <!-- PROCHAINES ÉTAPES -->
+                <div class="steps-list">
+                    <h3>📋 Prochaines étapes :</h3>
+                    <ol>
+                        <li>Effectuez le virement de <strong>20,00 €</strong> sur le RIB ci-dessus</li>
+                        <li>Mentionnez la référence <strong>CERT-XXXXXX</strong> dans le libellé</li>
+                        <li>Confirmez votre virement sur cette page</li>
+                        <li>Attendez la validation (24-48h)</li>
+                        <li>Recevez votre certificat par email</li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <!-- ÉCRAN DE SUCCÈS -->
+            <div class="success-screen" id="successScreen">
+                <div class="success-icon">✅</div>
+                <h2>Demande envoyée !</h2>
+                <p>
+                    Nous avons bien reçu votre demande de certificat.<br>
+                    Votre virement sera vérifié sous <strong>24-48h</strong>.
+                </p>
+                <div class="pending-badge">⏸️ En attente de validation</div>
+                <p style="font-size: 13px; color: #999; margin-top: 20px;">
+                    Une copie de votre demande a été envoyée à notre équipe.<br>
+                    Vous recevrez votre certificat par email dès validation.
+                </p>
+                <button class="submit-btn" onclick="window.location.href='dashboard.html'" style="max-width: 300px; margin: 20px auto 0;">
+                    🏠 Retour au tableau de bord
+                </button>
+            </div>
+
+        </div>
+
+        <!-- TOAST -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <!-- SCRIPT PRINCIPAL -->
+    <script type="module">
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore, doc, getDoc, setDoc, collection, addDoc } from 'firebase/firestore';
+
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // ============================================================
+        // CONFIGURATION
+        // ============================================================
+        const ADMIN_EMAIL = 'maarak.said@gmail.com';
+        const CERTIFICATE_PRICE = 20;
+        const CURRENCY = 'EUR';
+
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        const paymentScreen = document.getElementById('paymentScreen');
+        const successScreen = document.getElementById('successScreen');
+        const fullNameInput = document.getElementById('fullName');
+        const emailInput = document.getElementById('email');
+        const transferDateInput = document.getElementById('transferDate');
+        const proofFileInput = document.getElementById('proofFile');
+        const fileUploadBox = document.getElementById('fileUploadBox');
+        const fileUploadText = document.getElementById('fileUploadText');
+        const submitBtn = document.getElementById('submitBtn');
+        const referenceText = document.getElementById('referenceText');
+        const toast = document.getElementById('toast');
+
+        // ============================================================
+        // ÉTAT
+        // ============================================================
+        let currentUser = null;
+        let certificateReference = null;
+        let currentSpecialty = null;
+
+        // ============================================================
+        // TOAST
+        // ============================================================
+        function showToast(message, duration = 3000) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+
+        // ============================================================
+        // COPIER DANS LE PRESSE-PAPIERS
+        // ============================================================
+        window.copyToClipboard = function(elementId) {
+            const text = document.getElementById(elementId).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('✅ Copié dans le presse-papiers !', 2000);
+            }).catch(() => {
+                showToast('❌ Erreur de copie', 2000);
+            });
+        };
+
+        // ============================================================
+        // GÉNÉRER UNE RÉFÉRENCE UNIQUE
+        // ============================================================
+        function generateReference() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let ref = 'CERT-';
+            for (let i = 0; i < 6; i++) {
+                ref += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return ref;
+        }
+
+        // ============================================================
+        // UPLOAD DU FICHIER
+        // ============================================================
+        proofFileInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                if (file.size > 5 * 1024 * 1024) {
+                    showToast('❌ Fichier trop volumineux (max 5 Mo)', 3000);
+                    this.value = '';
+                    return;
+                }
+                fileUploadBox.classList.add('has-file');
+                fileUploadText.innerHTML = `✅ <strong>${file.name}</strong><br><small>${(file.size / 1024).toFixed(0)} Ko</small>`;
+            } else {
+                fileUploadBox.classList.remove('has-file');
+                fileUploadText.innerHTML = 'Cliquez pour joindre une preuve<br><small>(JPG, PNG ou PDF - max 5 Mo)</small>';
+            }
+        });
+
+        fileUploadBox.addEventListener('click', () => proofFileInput.click());
+
+        // ============================================================
+        // CONVERTIR FICHIER EN BASE64
+        // ============================================================
+        function fileToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
+
+        // ============================================================
+        // SOUMISSION DU FORMULAIRE
+        // ============================================================
+        submitBtn.addEventListener('click', async () => {
+            // Vérifications
+            const fullName = fullNameInput.value.trim();
+            const email = emailInput.value.trim();
+            const transferDate = transferDateInput.value;
+            const proofFile = proofFileInput.files[0];
+
+            if (!fullName) {
+                showToast('⚠️ Veuillez entrer votre nom complet', 3000);
+                fullNameInput.focus();
+                return;
+            }
+
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                showToast('⚠️ Veuillez entrer un email valide', 3000);
+                emailInput.focus();
+                return;
+            }
+
+            if (!transferDate) {
+                showToast('⚠️ Veuillez indiquer la date du virement', 3000);
+                transferDateInput.focus();
+                return;
+            }
+
+            if (!proofFile) {
+                showToast('⚠️ Veuillez joindre une preuve de virement', 3000);
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ Envoi en cours...';
+
+            try {
+                // 1. Convertir le fichier en Base64
+                const proofBase64 = await fileToBase64(proofFile);
+
+                // 2. Créer la demande dans Firestore
+                const paymentRequest = {
+                    userId: currentUser ? currentUser.uid : null,
+                    userEmail: currentUser ? currentUser.email : email,
+                    contactEmail: email,
+                    userName: fullName,
+                    specialty: currentSpecialty || 'general',
+                    amount: CERTIFICATE_PRICE,
+                    currency: CURRENCY,
+                    reference: certificateReference,
+                    status: 'pending',
+                    transferDate: transferDate,
+                    proofFileName: proofFile.name,
+                    proofFileSize: proofFile.size,
+                    proofBase64: proofBase64,
+                    createdAt: new Date().toISOString(),
+                    validatedAt: null,
+                    validatedBy: null
+                };
+
+                const docRef = await addDoc(collection(db, 'payment_requests'), paymentRequest);
+                console.log('✅ Demande créée avec ID:', docRef.id);
+
+                // 3. Envoyer l'email à l'admin via FormSubmit.co
+                try {
+                    await fetch('https://formsubmit.co/ajax/' + ADMIN_EMAIL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            _subject: `🎓 Nouvelle demande de certificat - ${certificateReference}`,
+                            _template: 'table',
+                            _captcha: 'false',
+                            Reference: certificateReference,
+                            Nom: fullName,
+                            Email: email,
+                            Specialite: currentSpecialty || 'general',
+                            Montant: `${CERTIFICATE_PRICE} ${CURRENCY}`,
+                            Date_virement: transferDate,
+                            Fichier: proofFile.name,
+                            Document_ID: docRef.id,
+                            Action: `Valider ici : https://www.eteo-dental.com/fr/admin_virements.html`
+                        })
+                    });
+                    console.log('✅ Email envoyé à l\'admin');
+                } catch (emailError) {
+                    console.warn('⚠️ Erreur envoi email:', emailError);
+                }
+
+                // 4. Afficher l'écran de succès
+                paymentScreen.style.display = 'none';
+                successScreen.classList.add('active');
+
+                // 5. Scroller en haut
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            } catch (error) {
+                console.error('❌ Erreur:', error);
+                showToast('❌ Erreur lors de l\'envoi. Réessayez.', 4000);
+                submitBtn.disabled = false;
+                submitBtn.textContent = '✅ Confirmer le virement';
+            }
+        });
+
+        // ============================================================
+        // INITIALISATION
+        // ============================================================
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                currentUser = user;
+                console.log('👤 Utilisateur connecté:', user.email);
+
+                // Charger les données utilisateur
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);
+                    const userSnap = await getDoc(userRef);
+                    if (userSnap.exists()) {
+                        const userData = userSnap.data();
+                        if (userData.displayName) {
+                            fullNameInput.value = userData.displayName;
+                        }
+                    }
+                } catch (e) {
+                    console.warn('⚠️ Erreur chargement user:', e);
+                }
+
+                if (user.email) {
+                    emailInput.value = user.email;
+                }
+
+                // Récupérer la spécialité depuis l'URL
+                const urlParams = new URLSearchParams(window.location.search);
+                currentSpecialty = urlParams.get('specialty') || null;
+
+            } else {
+                console.log('👤 Utilisateur non connecté');
+                showToast('⚠️ Vous devez être connecté pour continuer', 3000);
+                setTimeout(() => {
+                    window.location.href = 'inscription_fr.html';
+                }, 2000);
+                return;
+            }
+
+            // Générer la référence unique
+            certificateReference = generateReference();
+            referenceText.textContent = certificateReference;
+
+            // Mettre la date du jour par défaut
+            const today = new Date().toISOString().split('T')[0];
+            transferDateInput.value = today;
+
+            console.log('📋 Référence:', certificateReference);
+            console.log('💰 Montant:', CERTIFICATE_PRICE, CURRENCY);
+        });
+
+    </script>
+</body>
+</html>

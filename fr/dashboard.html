@@ -392,6 +392,111 @@
             margin-top: 4px;
         }
         
+        /* ============================================================
+           CERTIFICATS SECTION (NOUVEAU)
+           ============================================================ */
+        
+        .certificates-section {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 5px solid #4caf50;
+            animation: fadeInUp 0.95s ease;
+        }
+        
+        .certificates-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .certificates-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .certificate-card {
+            background: linear-gradient(135deg, #f8f9ff, #ffffff);
+            border: 2px solid #e8e8e8;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            transition: all 0.3s ease;
+        }
+        
+        .certificate-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .certificate-info {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .certificate-title-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .certificate-details {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+        
+        .certificate-details strong {
+            color: #2c3e50;
+        }
+        
+        .certificate-download-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .certificate-download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+        }
+        
+        .certificate-download-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .no-certificates {
+            text-align: center;
+            padding: 30px 20px;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+        }
+        
         /* Responsive */
         @media (max-width: 520px) {
             .profile-card {
@@ -461,6 +566,15 @@
             .daily-objective .action {
                 width: 100%;
                 text-align: center;
+            }
+            
+            .certificate-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .certificate-download-btn {
+                width: 100%;
             }
         }
     </style>
@@ -691,6 +805,18 @@
         </div>
 
         <!-- ============================================================ -->
+        <!-- 🎓 CERTIFICATS - NOUVELLE SECTION -->
+        <!-- ============================================================ -->
+        <div class="certificates-section" id="certificatesSection" style="display: none;">
+            <div class="certificates-header">
+                <span class="certificates-title">🎓 Mes certificats</span>
+            </div>
+            <div id="certificatesGrid">
+                <!-- Généré par JavaScript -->
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
         <!-- RECOMMANDATION INTELLIGENTE - AVEC REDIRECTION DIRECTE -->
         <!-- ============================================================ -->
         <div class="recommendation-section">
@@ -771,7 +897,7 @@
         // IMPORTS FIREBASE
         import { initializeApp, getApps } from 'firebase/app';
         import { getFirestore, doc, getDoc } from 'firebase/firestore';
-        import { getAuth, onAuthStateChanged } from 'firebase/auth'; // ✅ Ajout de onAuthStateChanged pour la vérification
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
         
         // IMPORTS MODULAIRES POUR LES BADGES
         import { BadgeService } from '../js/services/badgeService.js';
@@ -784,6 +910,9 @@
         // IMPORTS POUR L'AVATAR (MODULAIRE)
         import { AvatarService } from '../js/services/avatarService.js';
         import { AvatarUpload } from '../js/ui/AvatarUpload.js';
+        
+        // ✅ IMPORTS POUR LES CERTIFICATS (NOUVEAU)
+        import { CertificateService } from '../js/services/certificateService.js';
         
         // ============================================================
         // FIREBASE CONFIG
@@ -857,6 +986,10 @@
         const listenSummaryBtn = document.getElementById('listenSummaryBtn');
         const dailyObjectiveContainer = document.getElementById('dailyObjectiveContainer');
         
+        // ✅ NOUVEAU : Éléments des certificats
+        const certificatesSection = document.getElementById('certificatesSection');
+        const certificatesGrid = document.getElementById('certificatesGrid');
+        
         // Éléments du profil
         const profileName = document.getElementById('profileName');
         const profileRankBadge = document.getElementById('profileRankBadge');
@@ -886,6 +1019,9 @@
         
         // ✅ INSTANCE DU SERVICE DE CLASSEMENT
         const rankingService = new RankingService();
+        
+        // ✅ NOUVEAU : Instance du service de certificats
+        const certificateService = new CertificateService();
         
         // Badge Modal avec récupération du nom
         const badgeModal = new BadgeModal(
@@ -932,6 +1068,161 @@
             cleaned = cleaned.replace(/['']/g, "'");
             cleaned = cleaned.replace(/\s+/g, ' ').trim();
             return cleaned;
+        }
+        
+        // ============================================================
+        // 🎓 FONCTION : AFFICHER LES CERTIFICATS (NOUVEAU)
+        // ============================================================
+        
+        async function renderCertificates(userId) {
+            try {
+                // Récupérer les certificats depuis Firestore
+                const userRef = doc(db, 'users_ios', userId);
+                const snapshot = await getDoc(userRef);
+                
+                if (!snapshot.exists()) {
+                    console.log('⚠️ Aucun document utilisateur trouvé');
+                    return;
+                }
+                
+                const userData = snapshot.data();
+                const certificates = userData.certificates || {};
+                const certificateKeys = Object.keys(certificates).filter(key => 
+                    certificates[key] && certificates[key].purchased === true
+                );
+                
+                if (certificateKeys.length === 0) {
+                    // Pas de certificats - masquer la section
+                    certificatesSection.style.display = 'none';
+                    return;
+                }
+                
+                // Afficher la section
+                certificatesSection.style.display = 'block';
+                
+                // Construire le HTML des certificats
+                certificatesGrid.innerHTML = certificateKeys.map(specialtyId => {
+                    const cert = certificates[specialtyId];
+                    const specialty = SPECIALTIES.find(s => s.id === specialtyId) || {
+                        name: specialtyId,
+                        emoji: '🎓'
+                    };
+                    
+                    const deliveredDate = cert.deliveredAt 
+                        ? new Date(cert.deliveredAt).toLocaleDateString('fr-FR', {
+                            day: 'numeric',
+                            month: 'long',
+                            year: 'numeric'
+                        })
+                        : 'Date inconnue';
+                    
+                    return `
+                        <div class="certificate-card">
+                            <div class="certificate-info">
+                                <div class="certificate-title-text">
+                                    ✅ Certificat ETEO - ${specialty.emoji} ${specialty.name}
+                                </div>
+                                <div class="certificate-details">
+                                    📅 Délivré le <strong>${deliveredDate}</strong><br>
+                                    🔑 Référence : <strong>${cert.paymentReference || 'N/A'}</strong><br>
+                                    🎯 Score : <strong>${cert.score || 0} / ${cert.total || 50} (${cert.percentage || 0}%)</strong>
+                                </div>
+                            </div>
+                            <button class="certificate-download-btn" data-specialty="${specialtyId}">
+                                📥 Télécharger mon certificat
+                            </button>
+                        </div>
+                    `;
+                }).join('');
+                
+                // Ajouter les écouteurs de clic
+                document.querySelectorAll('.certificate-download-btn').forEach(btn => {
+                    btn.addEventListener('click', async (e) => {
+                        const specialtyId = e.target.dataset.specialty;
+                        await downloadCertificate(userId, specialtyId);
+                    });
+                });
+                
+                console.log(`✅ ${certificateKeys.length} certificat(s) affiché(s)`);
+                
+            } catch (error) {
+                console.error('❌ Erreur affichage certificats:', error);
+                certificatesSection.style.display = 'none';
+            }
+        }
+        
+        // ============================================================
+        // 🎓 FONCTION : TÉLÉCHARGER UN CERTIFICAT (NOUVEAU)
+        // ============================================================
+        
+        async function downloadCertificate(userId, specialtyId) {
+            const button = event.target;
+            const originalText = button.textContent;
+            
+            try {
+                // 1. Désactiver le bouton
+                button.disabled = true;
+                button.textContent = '⏳ Génération...';
+                
+                // 2. Récupérer les données du certificat
+                const userRef = doc(db, 'users_ios', userId);
+                const snapshot = await getDoc(userRef);
+                
+                if (!snapshot.exists()) {
+                    throw new Error('Utilisateur non trouvé');
+                }
+                
+                const userData = snapshot.data();
+                const cert = userData.certificates?.[specialtyId];
+                
+                if (!cert || !cert.purchased) {
+                    throw new Error('Certificat non trouvé');
+                }
+                
+                // 3. Récupérer le nom de la spécialité
+                const specialty = SPECIALTIES.find(s => s.id === specialtyId) || {
+                    name: specialtyId
+                };
+                
+                // 4. Construire les données du certificat
+                const certificateData = {
+                    userName: userData.displayName || userData.fullName || 'Docteur',
+                    specialty: specialty.name,
+                    score: cert.score || 0,
+                    total: cert.total || 50,
+                    percentage: cert.percentage || 0,
+                    date: new Date(cert.deliveredAt || new Date()).toLocaleDateString('fr-FR', {
+                        day: '2-digit',
+                        month: 'long',
+                        year: 'numeric'
+                    }),
+                    certificateId: cert.paymentReference || 'N/A'
+                };
+                
+                // 5. Générer le PDF
+                console.log('📄 Génération du PDF...', certificateData);
+                const blob = await certificateService.generateCertificatePDF(certificateData);
+                
+                // 6. Télécharger
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `Certificat_ETEO_${specialtyId}_${new Date().toISOString().slice(0, 10)}.pdf`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                showToast('✅ Certificat téléchargé !', 3000);
+                console.log('✅ Certificat téléchargé');
+                
+            } catch (error) {
+                console.error('❌ Erreur téléchargement:', error);
+                showToast('❌ Erreur : ' + error.message, 4000);
+            } finally {
+                button.disabled = false;
+                button.textContent = originalText;
+            }
         }
         
         // ============================================================
@@ -1265,6 +1556,11 @@
                 } catch (error) {
                     console.warn('⚠️ Erreur chargement détails score:', error);
                 }
+            }
+            
+            // ✅ NOUVEAU : AFFICHER LES CERTIFICATS
+            if (user?.uid) {
+                await renderCertificates(user.uid);
             }
             
             // Vérifier les badges nouvellement débloqués
@@ -1753,6 +2049,7 @@
                     console.log('✅ iOS : Lecture des données depuis users_ios');
                     console.log('✅ iOS : Affichage de displayName');
                     console.log('✅ iOS : Score détaillé (qualité + complétion)');
+                    console.log('✅ iOS : Section certificats activée');
                     
                 } else {
                     // Utilisateur non connecté - rediriger vers l'inscription
