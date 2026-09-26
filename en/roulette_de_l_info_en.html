@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     
     <style>
-        /* ============================================================
-           SPECIFIC STYLES FOR QUIZ OF THE DAY
-           ============================================================ */
-        
         .roulette-wrapper {
             position: relative;
             display: flex;
@@ -210,52 +206,6 @@
             box-shadow: 0 8px 25px rgba(29, 161, 242, 0.4);
         }
         
-        .roulette-stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin: 10px 0;
-        }
-        
-        .roulette-stat-item {
-            background: white;
-            border-radius: 12px;
-            padding: 12px 10px;
-            text-align: center;
-            border: 1px solid #e8e8e8;
-        }
-        
-        .roulette-stat-item .number {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #2c3e50;
-        }
-        
-        .roulette-stat-item .label {
-            font-size: 0.7rem;
-            color: #888;
-            display: block;
-            margin-top: 4px;
-        }
-        
-        .roulette-section {
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 16px;
-            padding: 16px;
-            margin-top: 16px;
-            border: 1px solid rgba(255, 152, 0, 0.2);
-        }
-        
-        .roulette-section h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-        
-        /* ============================================================
-           PAYMENT POPUP STYLES
-           ============================================================ */
-        
         .payment-lock-icon {
             font-size: 3rem;
             margin-bottom: 10px;
@@ -306,20 +256,6 @@
             color: #666;
             margin: 10px 0;
             line-height: 1.6;
-        }
-        
-        .payment-popup .features {
-            background: #f8f9fa;
-            border-radius: 12px;
-            padding: 12px;
-            margin: 15px 0;
-            text-align: left;
-        }
-        
-        .payment-popup .features p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-            color: #333;
         }
         
         .payment-popup .pay-btn {
@@ -393,57 +329,6 @@
             color: #856404;
         }
         
-        .payment-popup .email-section {
-            margin: 15px 0;
-        }
-        
-        .payment-popup .email-section p {
-            font-size: 0.9rem;
-            color: #555;
-            text-align: left;
-            margin-bottom: 5px;
-        }
-        
-        .payment-popup .email-input-group {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        
-        .payment-popup .email-input-group input {
-            flex: 1;
-            min-width: 180px;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            font-size: 0.95rem;
-            box-sizing: border-box;
-            transition: border-color 0.3s ease;
-        }
-        
-        .payment-popup .email-input-group input:focus {
-            border-color: #667eea;
-            outline: none;
-        }
-        
-        .payment-popup .email-input-group .pay-btn {
-            width: auto;
-            padding: 12px 20px;
-            white-space: nowrap;
-        }
-        
-        .payment-popup .email-note {
-            font-size: 0.7rem;
-            color: #999;
-            margin-top: 5px;
-            text-align: left;
-        }
-        
-        .payment-popup .info-box.warning p {
-            margin: 0;
-        }
-        
-        /* ✅ QUOTA BADGE */
         .quota-badge {
             display: inline-block;
             padding: 6px 16px;
@@ -472,12 +357,6 @@
         @keyframes pulseBadge {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
-        }
-        
-        .quota-badge.unlimited {
-            background: #bbdefb;
-            color: #0d47a1;
-            border-color: #667eea;
         }
         
         @media (max-width: 520px) {
@@ -517,14 +396,8 @@
                 font-size: 0.85rem;
                 padding: 10px 20px;
             }
-            .roulette-stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
             .payment-popup {
                 padding: 20px;
-            }
-            .payment-popup .email-input-group input {
-                min-width: 140px;
             }
         }
         
@@ -563,25 +436,18 @@
 <body>
     <div class="container quiz-container">
         
-        <!-- ============================================================ -->
-        <!-- NAVIGATION -->
-        <!-- ============================================================ -->
         <div class="nav-top">
             <button class="back-btn" onclick="window.location.href='../index.html'">🏠 Home</button>
             <button class="back-btn" onclick="window.location.href='dashboard_en.html'">📊 Dashboard</button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SCREEN 1 : ROULETTE -->
-        <!-- ============================================================ -->
         <div id="rouletteScreen">
             <div style="text-align: center; margin-bottom: 8px;">
                 <h1 style="font-size: 1.6rem; margin: 0; color: #2c3e50;">🎰 Info Roulette</h1>
             </div>
 
-            <!-- ✅ QUOTA COUNTER -->
             <div style="text-align: center; margin-bottom: 10px;">
-                <span id="quotaBadge" class="quota-badge">🎯 20 free attempts remaining</span>
+                <span id="quotaBadge" class="quota-badge">🎯 10 free quizzes per day</span>
             </div>
 
             <div class="ia-greeting" id="iaGreeting">
@@ -594,7 +460,6 @@
                 </p>
             </div>
 
-            <!-- WHEEL 1 : 36 SPECIALTIES -->
             <div class="roulette-wrapper">
                 <canvas id="rouletteCanvas" width="400" height="400"></canvas>
                 <div class="roulette-pointer" id="roulettePointer">
@@ -615,7 +480,6 @@
                 <span id="selectedSpecialtyDisplay" class="highlight">?</span>
             </div>
 
-            <!-- WHEEL 2 : 6 LEVELS -->
             <div id="levelRouletteContainer">
                 <h3 style="color: #2c3e50; margin-bottom: 4px; font-size: 1.1rem;">🎯 Choose your level</h3>
                 <p style="color: #888; font-size: 0.85rem; margin-bottom: 10px;">Spin the level wheel!</p>
@@ -653,9 +517,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SCREEN 2 : QUIZ (1 QUESTION) -->
-        <!-- ============================================================ -->
         <div id="questionContainer" style="display:none;">
             <div class="quiz-title" id="quizTitle">🎰 Info Roulette</div>
             <div class="question-text" id="questionText">Loading question...</div>
@@ -681,9 +542,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SCREEN 3 : RESULT WITH AI -->
-        <!-- ============================================================ -->
         <div class="result-container" id="resultContainer" style="display:none;">
             <h2 id="resultTitle">✅ Quiz completed!</h2>
             <div class="final-score" id="finalScore">1/1</div>
@@ -698,27 +556,16 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- TOAST -->
-        <!-- ============================================================ -->
         <div class="toast" id="toast"></div>
     </div>
 
     <script type="module">
-        // ============================================================
-        // LIGHT IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import SubscriptionService from '../js/services/subscription.js';
         import { RewardService } from '../js/services/rewardService.js';
         import { ShareService } from '../js/services/shareService.js';
         import tts from '../js/services/tts.js';
-        
-        // ============================================================
-        // FIREBASE
-        // ============================================================
         
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -740,9 +587,7 @@
         
         window.tts = tts;
         
-        // ============================================================
-        // LIST OF 36 SPECIALTIES
-        // ============================================================
+        const MAX_DAILY_QUIZZES = 10;
         
         const SPECIALTIES = [
             { id: 'chirurgie', name: 'Surgery', emoji: '🔪' },
@@ -792,18 +637,10 @@
             { id: 'expert2', label: 'Expert 2', emoji: '⭐' }
         ];
         
-        // ============================================================
-        // SERVICES
-        // ============================================================
-        
         const storage = new StorageService();
         const subscription = new SubscriptionService();
         const rewardService = new RewardService();
         const shareService = new ShareService();
-        
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
         
         const toast = document.getElementById('toast');
         const spinBtn = document.getElementById('spinBtn');
@@ -848,10 +685,6 @@
         const iaResultContainer = document.getElementById('iaResultContainer');
         const quotaBadge = document.getElementById('quotaBadge');
         
-        // ============================================================
-        // STATE
-        // ============================================================
-        
         let currentSpecialty = null;
         let currentLevel = null;
         let currentQuestion = null;
@@ -862,14 +695,9 @@
         let quizHistory = [];
         let userId = null;
         let userName = 'Doctor';
-        let freeQuizzesUsed = 0;
-        let isSubscribed = false;
-        let subscriptionExpiresAt = null;
-        let MAX_FREE_QUIZZES = 20;
-        
-        // ============================================================
-        // CLEAN TEXT FOR TTS
-        // ============================================================
+        let dailyQuizzesCount = 0;
+        let dailyDate = null;
+        let totalQuizzesAllTime = 0;
         
         function cleanTextForTTS(text) {
             if (!text) return '';
@@ -880,10 +708,6 @@
             cleaned = cleaned.replace(/\s+/g, ' ').trim();
             return cleaned;
         }
-        
-        // ============================================================
-        // STOP TTS FUNCTION
-        // ============================================================
         
         function stopTTS() {
             try {
@@ -899,10 +723,6 @@
                 btn.classList.remove('listening');
             });
         }
-        
-        // ============================================================
-        // TTS
-        // ============================================================
         
         function speakText(text, button, buttonText = '🔊') {
             if (!window.tts || typeof window.tts.speak !== 'function') {
@@ -927,7 +747,6 @@
                 if (window.tts.isSpeakingNow && window.tts.isSpeakingNow()) {
                     wasSpeaking = true;
                     window.tts.stop();
-                    console.log('⏹️ TTS stopped before new message');
                 }
             } catch (e) {
                 console.warn('Error stopping TTS:', e);
@@ -954,10 +773,8 @@
                                 button.textContent = buttonText;
                                 button.classList.remove('listening');
                             }
-                            console.log('✅ TTS completed successfully');
                         },
                         (error) => {
-                            console.warn('⚠️ TTS error (ignored):', error);
                             if (button) {
                                 button.textContent = buttonText;
                                 button.classList.remove('listening');
@@ -965,7 +782,6 @@
                         }
                     );
                 } catch (e) {
-                    console.warn('⚠️ Error launching TTS:', e);
                     if (button) {
                         button.textContent = buttonText;
                         button.classList.remove('listening');
@@ -973,16 +789,11 @@
                 }
             };
             if (wasSpeaking) {
-                console.log('⏳ Waiting for TTS to stop...');
                 setTimeout(startSpeaking, 200);
             } else {
                 startSpeaking();
             }
         }
-        
-        // ============================================================
-        // SOUND EFFECTS
-        // ============================================================
         
         function playRouletteSound(type, totalDuration) {
             try {
@@ -990,18 +801,15 @@
                 
                 if (type === 'spin') {
                     if (!totalDuration) totalDuration = 4000;
-                    
                     const minTicks = 15;
                     const maxTicks = 35;
                     const totalTicks = Math.min(maxTicks, Math.max(minTicks, Math.floor(totalDuration / 130)));
-                    
                     let count = 0;
                     const baseFreq = 523;
                     const volume = 0.15;
                     
                     function playTick() {
                         if (count >= totalTicks) return;
-                        
                         const progress = count / totalTicks;
                         const speedFactor = 0.4 + 0.6 * (1 - Math.sin(progress * Math.PI));
                         const tickDelay = (totalDuration / totalTicks) * speedFactor * 0.9;
@@ -1010,37 +818,19 @@
                         const gain = audioCtx.createGain();
                         osc.connect(gain);
                         gain.connect(audioCtx.destination);
-                        
                         const freqVariation = Math.sin(progress * Math.PI) * 200;
                         osc.frequency.value = baseFreq + freqVariation;
                         osc.type = 'square';
-                        
                         gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                         gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.01);
                         gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
-                        
-                        const oscH = audioCtx.createOscillator();
-                        const gainH = audioCtx.createGain();
-                        oscH.connect(gainH);
-                        gainH.connect(audioCtx.destination);
-                        oscH.frequency.value = (baseFreq + freqVariation) * 2;
-                        oscH.type = 'square';
-                        gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                        gainH.gain.linearRampToValueAtTime(volume * 0.3, audioCtx.currentTime + 0.01);
-                        gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
-                        oscH.start();
-                        oscH.stop(audioCtx.currentTime + 0.04);
-                        
                         osc.start();
                         osc.stop(audioCtx.currentTime + 0.05);
-                        
                         count++;
-                        
                         if (count < totalTicks) {
                             setTimeout(playTick, tickDelay);
                         }
                     }
-                    
                     setTimeout(playTick, 50);
                     
                 } else if (type === 'win') {
@@ -1048,7 +838,6 @@
                     const volume = 0.25;
                     const duration = 0.35;
                     const delay = 140;
-                    
                     notes.forEach((freq, i) => {
                         setTimeout(() => {
                             const osc = audioCtx.createOscillator();
@@ -1057,27 +846,9 @@
                             gain.connect(audioCtx.destination);
                             osc.frequency.value = freq;
                             osc.type = 'square';
-                            
                             gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                             gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
                             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-                            
-                            const harmonics = [2, 3, 4];
-                            harmonics.forEach((h, j) => {
-                                const oscH = audioCtx.createOscillator();
-                                const gainH = audioCtx.createGain();
-                                oscH.connect(gainH);
-                                gainH.connect(audioCtx.destination);
-                                oscH.frequency.value = freq * h;
-                                oscH.type = 'square';
-                                const volH = volume / (j + 2) * 0.5;
-                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
-                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
-                                oscH.start();
-                                oscH.stop(audioCtx.currentTime + duration * 0.7);
-                            });
-                            
                             osc.start();
                             osc.stop(audioCtx.currentTime + duration);
                         }, i * delay);
@@ -1088,7 +859,6 @@
                     const volume = 0.25;
                     const duration = 0.4;
                     const delay = 140;
-                    
                     notes.forEach((freq, i) => {
                         setTimeout(() => {
                             const osc = audioCtx.createOscillator();
@@ -1097,27 +867,9 @@
                             gain.connect(audioCtx.destination);
                             osc.frequency.value = freq;
                             osc.type = 'square';
-                            
                             gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                             gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
                             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-                            
-                            const harmonics = [2, 3, 4];
-                            harmonics.forEach((h, j) => {
-                                const oscH = audioCtx.createOscillator();
-                                const gainH = audioCtx.createGain();
-                                oscH.connect(gainH);
-                                gainH.connect(audioCtx.destination);
-                                oscH.frequency.value = freq * h;
-                                oscH.type = 'square';
-                                const volH = volume / (j + 2) * 0.5;
-                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
-                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
-                                oscH.start();
-                                oscH.stop(audioCtx.currentTime + duration * 0.7);
-                            });
-                            
                             osc.start();
                             osc.stop(audioCtx.currentTime + duration);
                         }, i * delay);
@@ -1152,14 +904,8 @@
                         }, i * 100);
                     });
                 }
-            } catch (e) {
-                // Silent if Web Audio not supported
-            }
+            } catch (e) {}
         }
-        
-        // ============================================================
-        // TOAST
-        // ============================================================
         
         function showToast(message, duration = 2500) {
             toast.textContent = message;
@@ -1170,15 +916,20 @@
             }, duration);
         }
         
-        // ============================================================
-        // ✅ QUOTA AND SUBSCRIPTION MANAGEMENT
-        // ============================================================
+        function getTodayDateString() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
         
         async function loadUserData() {
             const user = auth.currentUser;
             if (!user) return false;
             
             userId = user.uid;
+            const today = getTodayDateString();
             
             try {
                 const userRef = doc(db, 'users_ios', userId);
@@ -1186,32 +937,25 @@
                 
                 if (snapshot.exists()) {
                     const data = snapshot.data();
-                    
                     userName = data.displayName || data.fullName || 'Doctor';
-                    freeQuizzesUsed = data?.rouletteStats?.freeQuizzesUsed || 0;
+                    totalQuizzesAllTime = data?.rouletteStats?.totalQuizzes || 0;
                     
-                    const sub = data?.rouletteSubscription;
-                    if (sub && sub.active && sub.expiresAt) {
-                        const expires = new Date(sub.expiresAt);
-                        if (expires > new Date()) {
-                            isSubscribed = true;
-                            subscriptionExpiresAt = expires;
-                        } else {
-                            isSubscribed = false;
-                            await updateDoc(userRef, {
-                                'rouletteSubscription.active': false
-                            });
-                        }
-                    } else {
-                        isSubscribed = false;
-                    }
+                    const daily = data?.rouletteDaily || {};
+                    dailyDate = daily.date || null;
+                    dailyQuizzesCount = daily.count || 0;
                     
-                    console.log('📊 User data loaded:');
-                    console.log('  👤 Name:', userName);
-                    console.log('  🎯 Free quizzes used:', freeQuizzesUsed);
-                    console.log('  💎 Subscribed:', isSubscribed);
-                    if (isSubscribed) {
-                        console.log('  📅 Expires on:', subscriptionExpiresAt.toLocaleDateString('en-US'));
+                    if (dailyDate !== today) {
+                        console.log('🔄 New day detected, resetting counter');
+                        dailyQuizzesCount = 0;
+                        dailyDate = today;
+                        
+                        await setDoc(userRef, {
+                            rouletteDaily: {
+                                count: 0,
+                                date: today,
+                                lastReset: new Date().toISOString()
+                            }
+                        }, { merge: true });
                     }
                     
                     return true;
@@ -1221,14 +965,14 @@
                             freeQuizzesUsed: 0,
                             totalQuizzes: 0
                         },
-                        rouletteSubscription: {
-                            active: false,
-                            expiresAt: null,
-                            paidAt: null
+                        rouletteDaily: {
+                            count: 0,
+                            date: today,
+                            lastReset: new Date().toISOString()
                         }
                     }, { merge: true });
-                    freeQuizzesUsed = 0;
-                    isSubscribed = false;
+                    dailyQuizzesCount = 0;
+                    dailyDate = today;
                     return true;
                 }
             } catch (error) {
@@ -1238,61 +982,67 @@
         }
         
         function hasAccess() {
-            if (isSubscribed) {
-                return true;
+            const today = getTodayDateString();
+            if (dailyDate !== today) {
+                dailyQuizzesCount = 0;
+                dailyDate = today;
             }
-            const remaining = MAX_FREE_QUIZZES - freeQuizzesUsed;
-            if (remaining > 0) {
-                return true;
-            }
-            return false;
+            return dailyQuizzesCount < MAX_DAILY_QUIZZES;
         }
         
         function getRemainingQuizzes() {
-            if (isSubscribed) return '♾️';
-            return Math.max(0, MAX_FREE_QUIZZES - freeQuizzesUsed);
+            const today = getTodayDateString();
+            if (dailyDate !== today) {
+                return MAX_DAILY_QUIZZES;
+            }
+            return Math.max(0, MAX_DAILY_QUIZZES - dailyQuizzesCount);
         }
         
         function updateQuotaDisplay() {
             const remaining = getRemainingQuizzes();
             
-            if (isSubscribed) {
-                quotaBadge.textContent = '💎 Unlimited access - Valid for 1 year';
-                quotaBadge.className = 'quota-badge unlimited';
-            } else if (remaining > 5) {
-                quotaBadge.textContent = `🎯 ${remaining} free attempts remaining`;
+            if (remaining > 5) {
+                quotaBadge.textContent = `🎯 ${remaining} quiz remaining today`;
                 quotaBadge.className = 'quota-badge';
             } else if (remaining > 0) {
-                quotaBadge.textContent = `⚠️ ${remaining} attempt${remaining > 1 ? 's' : ''} remaining`;
+                quotaBadge.textContent = `⚠️ ${remaining} quiz remaining today`;
                 quotaBadge.className = 'quota-badge warning';
             } else {
-                quotaBadge.textContent = '🔒 No more attempts - Subscribe now!';
+                quotaBadge.textContent = '🔒 No more quizzes today - Come back tomorrow!';
                 quotaBadge.className = 'quota-badge danger';
             }
         }
         
         async function incrementQuizCount() {
-            if (isSubscribed) return;
+            const today = getTodayDateString();
             
             try {
                 const userRef = doc(db, 'users_ios', userId);
-                await updateDoc(userRef, {
-                    'rouletteStats.freeQuizzesUsed': increment(1),
+                
+                if (dailyDate !== today) {
+                    dailyQuizzesCount = 0;
+                    dailyDate = today;
+                }
+                
+                dailyQuizzesCount++;
+                
+                await setDoc(userRef, {
+                    rouletteDaily: {
+                        count: dailyQuizzesCount,
+                        date: today,
+                        lastUpdated: new Date().toISOString()
+                    },
                     'rouletteStats.totalQuizzes': increment(1)
-                });
-                freeQuizzesUsed++;
+                }, { merge: true });
+                
+                totalQuizzesAllTime++;
                 updateQuotaDisplay();
-                console.log(`✅ Quiz counted: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
             } catch (error) {
                 console.error('❌ Error incrementing:', error);
             }
         }
         
-        // ============================================================
-        // ✅ PAYMENT POPUP
-        // ============================================================
-        
-        function showPaymentPopup() {
+        function showDailyLimitPopup() {
             stopTTS();
             
             if (document.querySelector('.payment-popup-overlay')) return;
@@ -1300,83 +1050,42 @@
             const overlay = document.createElement('div');
             overlay.className = 'payment-popup-overlay';
             
-            const remaining = getRemainingQuizzes();
-            
             overlay.innerHTML = `
                 <div class="payment-popup">
-                    <div class="payment-lock-icon">🔒</div>
-                    <h2>🎯 No more free attempts!</h2>
+                    <div class="payment-lock-icon">🌙</div>
+                    <h2>🎯 You have reached your daily limit!</h2>
                     <p>
-                        You have used your <strong>${MAX_FREE_QUIZZES} free attempts</strong>.<br>
-                        <span style="font-size: 0.9rem; color: #888;">You have no attempts left.</span>
+                        You have used your <strong>${MAX_DAILY_QUIZZES} free quizzes</strong> for today.
                     </p>
-                    <p style="margin-top: 10px;">
-                        To continue playing <strong>for 1 year</strong>,<br>
-                        pay <strong>20 €</strong> by bank transfer.
+                    <p style="margin-top: 10px; font-size: 1.05rem; color: #667eea; font-weight: 600;">
+                        Come back tomorrow for ${MAX_DAILY_QUIZZES} new quizzes!
                     </p>
-                    <div class="features">
-                        <p>✅ Unlimited access for 1 year</p>
-                        <p>✅ All specialties</p>
-                        <p>✅ All levels</p>
-                        <p>✅ No quiz limits</p>
+                    <div class="info-box success">
+                        <p style="margin: 0;">✅ It's <strong>100% free</strong>, every day!</p>
                     </div>
-                    <button class="pay-btn" id="payRouletteBtn">💳 Pay 20 € by bank transfer</button>
-                    <button class="close-btn" id="closePaymentPopup">❌ Come back later</button>
-                    <p class="secure-text">🔒 Secure transfer • RIB provided after click</p>
+                    <div class="info-box warning">
+                        <p style="margin: 0;">⏰ Next session: tomorrow at midnight</p>
+                    </div>
+                    <button class="pay-btn" id="closeLimitPopup" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+                        👍 OK, see you tomorrow!
+                    </button>
+                    <p class="secure-text">💡 Tip: Come back every day to not miss anything!</p>
                 </div>
             `;
             
             document.body.appendChild(overlay);
             
-            document.getElementById('payRouletteBtn').addEventListener('click', async function() {
-                this.textContent = '⏳ Recording...';
-                this.disabled = true;
-                
-                try {
-                    const interestData = {
-                        userId: userId || 'anonymous',
-                        userName: userName,
-                        type: 'roulette_subscription',
-                        amount: 20,
-                        currency: 'EUR',
-                        source: 'roulette_de_l_info',
-                        interestedAt: new Date().toISOString(),
-                        timestamp: new Date().toISOString(),
-                        userAgent: navigator.userAgent || 'unknown',
-                        platform: navigator.platform || 'unknown',
-                        status: 'redirected_to_payment'
-                    };
-                    
-                    await addDoc(collection(db, 'payment_interests'), interestData);
-                    console.log('✅ Interest recorded in Firebase');
-                    showToast('📊 Redirecting to payment page...', 2000);
-                    
-                } catch (e) {
-                    console.warn('⚠️ Firebase error:', e);
-                }
-                
+            document.getElementById('closeLimitPopup').addEventListener('click', function() {
                 overlay.remove();
-                window.location.href = `paiement_rib_en.html?type=roulette&amount=20&source=roulette`;
-            });
-            
-            document.getElementById('closePaymentPopup').addEventListener('click', function() {
-                overlay.remove();
-                showToast('💡 You can come back later to subscribe.', 3000);
+                showToast('👋 See you tomorrow for new quizzes!', 3000);
             });
             
             overlay.addEventListener('click', function(e) {
                 if (e.target === overlay) overlay.remove();
             });
             
-            setTimeout(() => {
-                const ttsMessage = `You have used your ${MAX_FREE_QUIZZES} free attempts. To continue playing for 1 year, pay 20 euros by bank transfer. Click the Pay button to access the RIB.`;
-                speakText(cleanTextForTTS(ttsMessage), null);
-            }, 500);
+            // 🔇 Auto-read disabled - popup stays silent
         }
-        
-        // ============================================================
-        // AI WELCOME MESSAGE
-        // ============================================================
         
         function displayIAWelcome() {
             const settings = storage.getSettings() || {};
@@ -1388,30 +1097,20 @@
             let message = '';
             let ttsMessage = '';
             
-            if (isSubscribed) {
-                const expireDate = subscriptionExpiresAt ? subscriptionExpiresAt.toLocaleDateString('en-US') : 'in 1 year';
-                message = `Hello <strong>${name}</strong>! 🌟<br>Welcome to the <strong>🎰 Info Roulette</strong>!<br><br>💎 You have an <strong>unlimited subscription</strong> valid until <strong>${expireDate}</strong>.<br><br>🎯 Spin the specialty wheel, then the level wheel, and test your knowledge without limits!<br><br>🔥 Ready for the challenge?`;
-                ttsMessage = `Hello ${name}. Welcome to the Info Roulette. You have an unlimited subscription valid until ${expireDate}. Spin the wheels and test your knowledge without limits.`;
-            } else if (remaining > 0) {
-                message = `Hello <strong>${name}</strong>! 🌟<br>Welcome to the <strong>🎰 Info Roulette</strong>!<br><br>🎯 You have <strong>${remaining} free attempt${remaining > 1 ? 's' : ''}</strong> left.<br><br>Spin the specialty wheel, then the level wheel, and test your knowledge!<br><br>🔥 Ready for the challenge?`;
-                ttsMessage = `Hello ${name}. Welcome to the Info Roulette. You have ${remaining} free attempts left. Spin the wheels and test your knowledge.`;
+            if (remaining > 0) {
+                message = `Hello <strong>${name}</strong>! 🌟<br>Welcome to the <strong>🎰 Info Roulette</strong>!<br><br>🎯 You have <strong>${remaining} quiz${remaining > 1 ? 'zes' : ''}</strong> left today (out of ${MAX_DAILY_QUIZZES}).<br><br>Spin the specialty wheel, then the level wheel, and test your knowledge!<br><br>🔥 So, ready to take on the challenge?`;
+                ttsMessage = `Hello ${name}. Welcome to the Info Roulette. You have ${remaining} quizzes left today. Spin the wheels and test your knowledge.`;
             } else {
-                message = `Hello <strong>${name}</strong>! 🌟<br>Welcome to the <strong>🎰 Info Roulette</strong>!<br><br>🔒 You have used your <strong>${MAX_FREE_QUIZZES} free attempts</strong>.<br><br>💎 To continue playing for <strong>1 year</strong>, subscribe for <strong>20€</strong>.<br><br>Click on "START THE QUIZ" to see subscription options.`;
-                ttsMessage = `Hello ${name}. Welcome to the Info Roulette. You have used your ${MAX_FREE_QUIZZES} free attempts. Subscribe for 20 euros per year to continue playing.`;
+                message = `Hello <strong>${name}</strong>! 🌟<br>Welcome to the <strong>🎰 Info Roulette</strong>!<br><br>🌙 You have used your <strong>${MAX_DAILY_QUIZZES} quizzes</strong> for today.<br><br>💡 Come back <strong>tomorrow</strong> for ${MAX_DAILY_QUIZZES} new free quizzes!`;
+                ttsMessage = `Hello ${name}. Welcome to the Info Roulette. You have used your ${MAX_DAILY_QUIZZES} quizzes for today. Come back tomorrow for new free quizzes.`;
             }
             
             iaMessage.innerHTML = message;
             updateQuotaDisplay();
             
-            setTimeout(() => {
-                const cleanMsg = cleanTextForTTS(ttsMessage);
-                speakText(cleanMsg, null);
-            }, 1500);
+            // 🔇 Auto-read DISABLED at page load
+            // User can click a button if they want to hear it (none provided)
         }
-        
-        // ============================================================
-        // WHEEL 1 : 36 SPECIALTIES
-        // ============================================================
         
         let roulette = null;
         let isSpinning = false;
@@ -1526,10 +1225,6 @@
             return { spin, draw, isSpinning: () => isSpinning };
         }
         
-        // ============================================================
-        // WHEEL 2 : 6 LEVELS
-        // ============================================================
-        
         let levelRoulette = null;
         let isLevelSpinning = false;
         
@@ -1627,10 +1322,6 @@
             return { spin, draw, isSpinning: () => isLevelSpinning };
         }
         
-        // ============================================================
-        // SHOW LEVEL WHEEL
-        // ============================================================
-        
         function showLevelRoulette() {
             levelRouletteContainer.style.display = 'block';
             spinLevelBtn.style.display = 'inline-block';
@@ -1640,10 +1331,6 @@
                 levelRoulette.draw();
             }
         }
-        
-        // ============================================================
-        // HISTORY
-        // ============================================================
         
         function renderHistory() {
             if (quizHistory.length === 0) {
@@ -1657,10 +1344,6 @@
                 </span>
             `).join('');
         }
-        
-        // ============================================================
-        // LOAD A QUESTION
-        // ============================================================
         
         async function loadQuestionForLevel(specialtyId, levelId) {
             try {
@@ -1683,10 +1366,6 @@
             }
         }
         
-        // ============================================================
-        // RESET BUTTONS
-        // ============================================================
-        
         function resetButtons() {
             spinBtn.disabled = false;
             spinBtn.textContent = '🎯 SPIN THE SPECIALTY WHEEL';
@@ -1694,13 +1373,9 @@
             spinLevelBtn.textContent = '🎯 SPIN THE LEVEL';
         }
         
-        // ============================================================
-        // ✅ START QUIZ - WITH ACCESS CHECK
-        // ============================================================
-        
         function startQuiz() {
             if (!hasAccess()) {
-                showPaymentPopup();
+                showDailyLimitPopup();
                 return;
             }
             
@@ -1716,10 +1391,6 @@
             resultContainer.style.display = 'none';
             displayQuestion(currentQuestion);
         }
-        
-        // ============================================================
-        // DISPLAY A QUESTION
-        // ============================================================
         
         function displayQuestion(question) {
             isAnswered = false;
@@ -1756,10 +1427,6 @@
             }, 500);
         }
         
-        // ============================================================
-        // TIMER
-        // ============================================================
-        
         function startTimer() {
             clearInterval(timerInterval);
             timerInterval = setInterval(() => {
@@ -1779,10 +1446,6 @@
             clearInterval(timerInterval);
             timerBottom.style.color = '#e67e22';
         }
-        
-        // ============================================================
-        // HANDLE CLICK
-        // ============================================================
         
         function handleOptionClick(index) {
             if (isAnswered) return;
@@ -1847,10 +1510,6 @@
             }, 300);
         }
         
-        // ============================================================
-        // TIMEOUT
-        // ============================================================
-        
         function handleTimeout() {
             if (isAnswered) return;
             isAnswered = true;
@@ -1892,10 +1551,6 @@
             }, 300);
         }
         
-        // ============================================================
-        // SHARE RESULTS
-        // ============================================================
-        
         async function shareQuizResult() {
             const settings = storage.getSettings() || {};
             const name = settings.user?.fullName || userName || 'Doctor';
@@ -1935,10 +1590,6 @@
                 showToast('❌ Share error', 3000);
             }
         }
-        
-        // ============================================================
-        // SHOW RESULTS
-        // ============================================================
         
         async function showResults() {
             stopTimer();
@@ -2021,9 +1672,6 @@
                             specialtyId: currentSpecialty
                         })
                     });
-                    
-                    console.log('✅ Roulette saved in users_ios/rouletteHistory');
-                    
                 } catch (error) {
                     console.error('❌ Firebase save error:', error);
                 }
@@ -2109,10 +1757,6 @@
                 speakText(cleanMessage, null);
             }, 1200);
         }
-        
-        // ============================================================
-        // EVENTS
-        // ============================================================
         
         spinBtn.addEventListener('click', () => {
             if (roulette && !roulette.isSpinning()) {
@@ -2224,19 +1868,14 @@
             speakText(fullText, this, '🔊 Read explanation');
         });
         
-        // ============================================================
-        // ✅ INITIALIZATION
-        // ============================================================
-        
         async function init() {
-            Logger.info('🎰 Info Roulette loaded - Version with subscription');
+            Logger.info('🎰 Info Roulette loaded - 10 free quizzes per day');
             
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
                     console.log('👤 User connected:', user.email);
                     
                     await loadUserData();
-                    
                     updateQuotaDisplay();
                     
                     roulette = initRoulette();
@@ -2249,19 +1888,12 @@
                     displayIAWelcome();
                     
                     console.log('🎰 Info Roulette ready!');
-                    console.log(`🎯 Free attempts used: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
-                    console.log(`💎 Subscription active: ${isSubscribed}`);
-                    if (isSubscribed) {
-                        console.log(`📅 Expires on: ${subscriptionExpiresAt?.toLocaleDateString('en-US')}`);
-                    }
-                    console.log('✅ Firebase: saving to users_ios/rouletteHistory');
-                    console.log('✅ Roulette scores do NOT affect specialty green checkmarks');
-                    console.log('🔊 Sound effects synchronized with BOTH wheels');
-                    console.log('🔒 Buttons disabled after each click');
-                    console.log('✅ RewardService integrated: automatic points and badges');
-                    console.log('✅ Social media sharing integrated');
-                    console.log('💳 Payment by bank transfer: 20€ for 1 year unlimited access');
-                    console.log('📱 Attempt counter: 20 free then payment');
+                    console.log(`🎯 ${MAX_DAILY_QUIZZES} free quizzes per day`);
+                    console.log(`📊 Quizzes today: ${dailyQuizzesCount}/${MAX_DAILY_QUIZZES}`);
+                    console.log(`📈 Historical total: ${totalQuizzesAllTime}`);
+                    console.log('✅ 100% FREE - No payment');
+                    console.log('🌙 Automatic reset at midnight');
+                    console.log('🔇 AI message in SILENCE');
                     
                 } else {
                     console.log('👤 User not logged in, redirecting to registration');

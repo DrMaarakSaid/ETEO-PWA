@@ -190,6 +190,75 @@
             box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3);
         }
         
+        /* ✅ NOUVEAU : 2 GRANDS BOUTONS DÉFI DU JOUR */
+        .daily-buttons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .daily-big-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 30px 20px;
+            color: white;
+            border: none;
+            border-radius: 16px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        .daily-big-btn:hover {
+            transform: translateY(-4px);
+        }
+        
+        .daily-big-btn .btn-emoji {
+            font-size: 2.5rem;
+        }
+        
+        .daily-big-btn .btn-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        
+        .daily-big-btn .btn-subtitle {
+            font-size: 0.75rem;
+            opacity: 0.9;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        .daily-big-btn.quiz {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .daily-big-btn.quiz:hover {
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+        }
+        
+        .daily-big-btn.roulette {
+            background: linear-gradient(135deg, #ff9800, #f57c00);
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+        }
+        
+        .daily-big-btn.roulette:hover {
+            box-shadow: 0 8px 25px rgba(255, 152, 0, 0.5);
+        }
+        
+        @media (max-width: 520px) {
+            .daily-buttons-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
         /* ============================================================
            PROFIL CARD AVEC UPLOAD - SANS BOUTON MODIFIER
            ============================================================ */
@@ -752,7 +821,7 @@
         </div>
 
         <!-- ============================================================ -->
-        <!-- DÉFI DU JOUR + QUIZ DU JOUR + OBJECTIF -->
+        <!-- ✅ DÉFI DU JOUR AVEC 2 GRANDS BOUTONS : QUIZ + ROULETTE -->
         <!-- ============================================================ -->
         <div class="daily-challenge" id="dailyChallenge">
             <div class="challenge-header">
@@ -760,35 +829,28 @@
                 <span class="challenge-title">Défi du jour</span>
             </div>
             <div class="challenge-content" id="challengeContent">
-                <p>Complétez une spécialité aujourd'hui !</p>
-                <div class="challenge-progress">
-                    <span id="challengeStatus">⏳ En cours</span>
-                </div>
+                <p style="font-size: 0.95rem; color: #666; text-align: center; margin: 10px 0 0 0;">
+                    Choisissez votre mode d'apprentissage :
+                </p>
             </div>
             
-            <!-- OBJECTIF DU JOUR -->
-            <div id="dailyObjectiveContainer" style="margin-top: 12px;">
-                <!-- Généré par JavaScript -->
-            </div>
-            
-            <!-- Quiz du Jour intégré -->
-            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed rgba(255,193,7,0.3);">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                    <span style="font-size: 1.5rem;">🎰</span>
-                    <div style="flex: 1;">
-                        <div style="font-weight: 700; font-size: 0.95rem; color: #2c3e50;">
-                            🎰 Roulette de l'Info
-                        </div>
-                        <div style="font-size: 0.8rem; color: #888;" id="quizDuJourStatus">
-                            🎯 Une question aléatoire chaque jour !
-                        </div>
-                        <div style="font-size: 0.75rem; color: #999; margin-top: 2px;" id="lastQdjResult"></div>
-                    </div>
-                    <button class="recommendation-btn" onclick="window.location.href='roulette_de_l_info_fr.html'" 
-                            style="padding: 8px 20px; font-size: 0.85rem; background: linear-gradient(135deg, #ff9800, #f57c00);">
-                        🎯 Jouer
-                    </button>
-                </div>
+            <!-- ✅ 2 GRANDS BOUTONS : QUIZ + ROULETTE -->
+            <div class="daily-buttons-grid">
+                
+                <!-- 📚 BOUTON QUIZ -->
+                <button class="daily-big-btn quiz" onclick="window.location.href='choix_specialites_fr.html'">
+                    <span class="btn-emoji">📚</span>
+                    <span class="btn-title">QUIZ</span>
+                    <span class="btn-subtitle">Choisir une spécialité</span>
+                </button>
+                
+                <!-- 🎰 BOUTON ROULETTE -->
+                <button class="daily-big-btn roulette" onclick="window.location.href='roulette_de_l_info_fr.html'">
+                    <span class="btn-emoji">🎰</span>
+                    <span class="btn-title">ROULETTE DE L'INFO</span>
+                    <span class="btn-subtitle">Une question aléatoire</span>
+                </button>
+                
             </div>
         </div>
 
@@ -1695,10 +1757,13 @@
         }
         
         // ============================================================
-        // OBJECTIF DU JOUR
+        // OBJECTIF DU JOUR - ✅ AVEC GARDE-FOU
         // ============================================================
         
         function renderDailyObjective(completedSpecialties, scores) {
+            // ✅ GARDE-FOU : sortir si l'élément n'existe plus dans le DOM
+            if (!dailyObjectiveContainer) return;
+            
             const completedIds = completedSpecialties.map(s => s.id);
             const notCompleted = SPECIALTIES.filter(s => !completedIds.includes(s.id));
             
@@ -1955,10 +2020,13 @@
         }
         
         // ============================================================
-        // RENDRE LE DÉFI DU JOUR
+        // RENDRE LE DÉFI DU JOUR - ✅ AVEC GARDE-FOU
         // ============================================================
         
         function renderDailyChallenge(completedCount) {
+            // ✅ GARDE-FOU : sortir si l'élément n'existe plus dans le DOM
+            if (!challengeStatus) return;
+            
             const today = new Date().toDateString();
             const lastChallenge = localStorage.getItem('eteo_last_challenge');
             if (lastChallenge !== today) {
@@ -2041,15 +2109,15 @@
                         });
                     }
                     
-                    setTimeout(() => {
-                        autoSpeakSummary();
-                    }, 1500);
+                    // 🔇 Lecture automatique du résumé désactivée
+                    // L'utilisateur clique sur "🔊 Écouter le résumé" s'il veut l'entendre
                     
                     console.log('📢 Dashboard ETEO iOS prêt !');
                     console.log('✅ iOS : Lecture des données depuis users_ios');
                     console.log('✅ iOS : Affichage de displayName');
                     console.log('✅ iOS : Score détaillé (qualité + complétion)');
                     console.log('✅ iOS : Section certificats activée');
+                    console.log('🔇 Résumé IA en SILENCE (l\'utilisateur clique s\'il veut)');
                     
                 } else {
                     // Utilisateur non connecté - rediriger vers l'inscription

@@ -935,57 +935,9 @@
         }
         
         // ============================================================
-        // 自动朗读 AI 摘要
+        // ✅ SILENCIO IA : lecture auto supprimée au chargement
+        // L'utilisateur peut cliquer sur le bouton 🔊 s'il veut écouter.
         // ============================================================
-        
-        let isAutoSpeaking = false;
-        
-        function autoSpeakSummary() {
-            if (!window.tts) {
-                console.warn('⚠️ TTS 不可用');
-                return;
-            }
-            
-            if (isAutoSpeaking) return;
-            isAutoSpeaking = true;
-            
-            const text = window._ttsSummaryMessage || '您的摘要不可用。';
-            
-            if (!text || text.trim() === '') {
-                console.warn('⚠️ 没有可朗读的摘要');
-                isAutoSpeaking = false;
-                return;
-            }
-            
-            if (listenSummaryBtn) {
-                listenSummaryBtn.textContent = '⏹️ 停止';
-                listenSummaryBtn.classList.add('listening');
-            }
-            
-            console.log('🔊 自动朗读仪表板摘要（中文）');
-            window.tts.speak(
-                text,
-                'zh',
-                0.9,
-                1.0,
-                () => {
-                    if (listenSummaryBtn) {
-                        listenSummaryBtn.textContent = '🔊 收听摘要';
-                        listenSummaryBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                    console.log('✅ 摘要自动朗读完成');
-                },
-                (error) => {
-                    console.warn('⚠️ 自动朗读错误：', error);
-                    if (listenSummaryBtn) {
-                        listenSummaryBtn.textContent = '🔊 收听摘要';
-                        listenSummaryBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                }
-            );
-        }
         
         // ============================================================
         // ✅ iOS 版本：从 users_ios 加载数据
@@ -1542,7 +1494,7 @@
         }
         
         // ============================================================
-        // 收听摘要按钮
+        // 收听摘要按钮（用户触发）
         // ============================================================
         
         listenSummaryBtn.addEventListener('click', function(event) {
@@ -1558,7 +1510,6 @@
                 window.tts.stop();
                 this.textContent = '🔊 收听摘要';
                 this.classList.remove('listening');
-                isAutoSpeaking = false;
                 return;
             }
             
@@ -1754,29 +1705,26 @@
                                 listenSummaryBtn.classList.remove('listening');
                             }
                             
-                            isAutoSpeaking = false;
-                            
                             const settings = storage.getSettings() || {};
                             const scores = settings.scores || {};
                             
-                            // ✅ 打开弹窗（现在使用 translate.js）
                             badgeModal.open(scores, SPECIALTIES, settings);
                         });
                     }
                     
-                    setTimeout(() => {
-                        autoSpeakSummary();
-                    }, 1500);
+                    // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+                    // L'utilisateur peut cliquer sur 🔊 "收听摘要" s'il veut écouter.
                     
                     console.log('📢 ETEO 仪表板已就绪（中文）！');
                     console.log('✅ iOS：从 users_ios 读取数据');
                     console.log('✅ iOS：显示 displayName');
                     console.log('✅ iOS：详细分数（质量 + 完成度）');
+                    console.log('🔇 SILENCIO IA : pas de lecture auto du résumé au chargement');
                     
                 } else {
                     // 用户未登录 - 重定向到注册
                     console.log('👤 用户未登录，重定向到注册');
-                    window.location.href = 'register_zh.html';
+                    window.location.href = 'inscription_zh.html';
                 }
             });
         }

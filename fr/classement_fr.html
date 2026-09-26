@@ -265,7 +265,8 @@
                 
                 if (listenBtn) listenBtn.style.display = 'inline-block';
                 
-                setTimeout(() => autoSpeak(), 1200);
+                // 🔇 Lecture automatique désactivée
+                // L'utilisateur clique sur "🔊 Écouter" s'il veut l'entendre
                 
             } catch (error) {
                 console.error('❌ Erreur IA:', error);
@@ -274,7 +275,7 @@
         }
         
         // ============================================================
-        // LECTURE AUTO
+        // LECTURE AUTO (gardée mais PLUS APPELÉE)
         // ============================================================
         
         let isAutoSpeaking = false;
@@ -362,6 +363,7 @@
                     await generateIAMessage(uid);
                     
                     Logger.info('✅ Classement chargé');
+                    Logger.info('🔇 Message IA en SILENCE (l\'utilisateur clique s\'il veut)');
                 } else {
                     showToast('⚠️ Connectez-vous pour voir le classement', 3000);
                     container.innerHTML = `

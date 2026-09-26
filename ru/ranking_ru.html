@@ -166,7 +166,7 @@
         }
         
         // ============================================================
-        // ГЕНЕРАЦИЯ СООБЩЕНИЯ ИИ
+        // ✅ ГЕНЕРАЦИЯ СООБЩЕНИЯ ИИ (СИЛЕНСИО АЛ КАРИКАМЕНТО)
         // ============================================================
         
         async function generateIAMessage(uid) {
@@ -264,7 +264,8 @@
                 
                 if (listenBtn) listenBtn.style.display = 'inline-block';
                 
-                setTimeout(() => autoSpeak(), 1200);
+                // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+                // L'utilisateur peut cliquer sur le bouton 🔊 "Слушать" s'il veut écouter.
                 
             } catch (error) {
                 console.error('❌ Ошибка ИИ:', error);
@@ -273,42 +274,7 @@
         }
         
         // ============================================================
-        // АВТОМАТИЧЕСКОЕ ЧТЕНИЕ
-        // ============================================================
-        
-        let isAutoSpeaking = false;
-        
-        function autoSpeak() {
-            if (!window.tts || isAutoSpeaking) return;
-            isAutoSpeaking = true;
-            const text = window._ttsClassementMessage || '';
-            if (!text) { isAutoSpeaking = false; return; }
-            
-            if (listenBtn) {
-                listenBtn.textContent = '⏹️ Остановить';
-                listenBtn.classList.add('listening');
-            }
-            
-            window.tts.speak(text, 'ru', 0.9, 1.0,
-                () => {
-                    if (listenBtn) {
-                        listenBtn.textContent = '🔊 Слушать';
-                        listenBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                },
-                () => {
-                    if (listenBtn) {
-                        listenBtn.textContent = '🔊 Слушать';
-                        listenBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                }
-            );
-        }
-        
-        // ============================================================
-        // КНОПКА СЛУШАТЬ
+        // ✅ КНОПКА СЛУШАТЬ (déclenché par l'utilisateur)
         // ============================================================
         
         listenBtn.addEventListener('click', function() {
@@ -318,7 +284,6 @@
                 window.tts.stop();
                 this.textContent = '🔊 Слушать';
                 this.classList.remove('listening');
-                isAutoSpeaking = false;
                 return;
             }
             
@@ -346,7 +311,7 @@
         // ============================================================
         
         async function init() {
-            Logger.info('🏆 Страница рейтинга загружена');
+            Logger.info('🏆 Страница рейтинга загружена (RU)');
             
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
@@ -361,6 +326,7 @@
                     await generateIAMessage(uid);
                     
                     Logger.info('✅ Рейтинг загружен');
+                    Logger.info('🔇 SILENCIO IA : pas de lecture auto au chargement');
                 } else {
                     showToast('⚠️ Войдите, чтобы увидеть рейтинг', 3000);
                     container.innerHTML = `

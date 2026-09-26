@@ -1740,7 +1740,7 @@
         }
         
         // ============================================================
-        // ✅ POPUP DE PAIEMENT AVEC ENREGISTREMENT FIREBASE + REDIRECTION VERS paiement_rib.html
+        // ✅ POPUP DE PAIEMENT AVEC ENREGISTREMENT FIREBASE + REDIRECTION VERS virement_bancaire.html
         // ============================================================
         
         function showCertificatePaymentPopup() {
@@ -1773,7 +1773,7 @@
             
             document.body.appendChild(overlay);
 
-            // 🔥 BOUTON "PAYER" → ENREGISTRE DANS FIREBASE + REDIRIGE VERS paiement_rib.html
+            // 🔥 BOUTON "PAYER" → ENREGISTRE DANS FIREBASE + REDIRIGE VERS virement_bancaire.html
             document.getElementById('payCertBtn').addEventListener('click', async function() {
                 this.textContent = '⏳ Enregistrement...';
                 this.disabled = true;
@@ -1797,7 +1797,7 @@
                         source: 'certificat_roulette',
                         userAgent: navigator.userAgent || 'unknown',
                         platform: navigator.platform || 'unknown',
-                        status: 'redirected_to_payment'
+                        status: 'redirected_to_virement'
                     };
 
                     await addDoc(collection(db, 'payment_interests'), interestData);
@@ -1812,8 +1812,8 @@
                 // ✅ SUPPRIMER LA POPUP
                 overlay.remove();
 
-                // ✅ REDIRIGER VERS LA PAGE RIB POUR LE VIREMENT
-                window.location.href = `paiement_rib.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
+                // ✅ REDIRIGER VERS LA PAGE DE VIREMENT BANCAIRE
+                window.location.href = `virement_bancaire.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
             });
 
             document.getElementById('closePaymentPopup').addEventListener('click', function() {
@@ -2179,7 +2179,7 @@
                     console.log(`📝 ${selectedQuestions.length} questions chargées`);
                     console.log('🎯 50 questions • 30 sec • 70% pour réussir');
                     console.log('🤖 IA personnalisée activée');
-                    console.log('💳 Système de paiement : REDIRECTION VERS paiement_rib.html');
+                    console.log('💳 Système de paiement : REDIRECTION VERS virement_bancaire.html');
                     console.log('📄 Certificat bloqué tant que non payé');
                     
                 } else {

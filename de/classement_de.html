@@ -21,9 +21,6 @@
 <body>
     <div class="container classement-container">
         
-        <!-- ============================================================ -->
-        <!-- NAVIGATION OBEN -->
-        <!-- ============================================================ -->
         <div class="nav-top">
             <button class="back-btn" onclick="window.location.href='dashboard.html'">
                 ← Zurück
@@ -33,17 +30,11 @@
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- HEADER -->
-        <!-- ============================================================ -->
         <div class="classement-header">
             <h1>🏆 ETEO Weltrangliste 🌍</h1>
             <p>Entdecken Sie die besten Zahnärzte der Welt auf ETEO</p>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- KI-BEGRÜSSUNG (MODULAR) -->
-        <!-- ============================================================ -->
         <div class="ia-greeting" id="iaGreeting">
             <div class="ia-avatar">🤖</div>
             <div>
@@ -52,24 +43,14 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- RANGLISTEN-CONTAINER -->
-        <!-- ============================================================ -->
         <div id="classementContainer">
-            <!-- Von ClassementManager gefüllt -->
         </div>
 
-        <!-- ============================================================ -->
-        <!-- TOP-LÄNDER -->
-        <!-- ============================================================ -->
         <div class="top-countries-grid">
             <div id="topCountriesContainer"></div>
             <div id="topCountriesMonthContainer"></div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- NAVIGATION UNTEN (DUPLIZIERT) -->
-        <!-- ============================================================ -->
         <div class="nav-bottom">
             <button class="back-btn" onclick="window.location.href='dashboard.html'">
                 ← Zurück
@@ -79,9 +60,6 @@
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- FOOTER -->
-        <!-- ============================================================ -->
         <div class="footer">
             <p>🏆 Rangliste in Echtzeit • Bei jedem Quiz aktualisiert</p>
             <p>© 2026 - ETEO Dental Education | 🇲🇦 Dr. SAID MAARAK</p>
@@ -89,20 +67,9 @@
 
     </div>
 
-    <!-- ============================================================ -->
-    <!-- TOAST -->
-    <!-- ============================================================ -->
     <div class="toast" id="toast"></div>
 
-    <!-- ============================================================ -->
-    <!-- HAUPT-SKRIPT -->
-    <!-- ============================================================ -->
-    
     <script type="module">
-        // ============================================================
-        // IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import { RankingService } from '../js/services/rankingService.js';
@@ -110,10 +77,6 @@
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
         import tts from '../js/services/tts.js';
-        
-        // ============================================================
-        // FIREBASE CONFIG
-        // ============================================================
         
         const firebaseConfig = {
             apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
@@ -129,18 +92,10 @@
         const auth = getAuth(app);
         window.tts = tts;
         
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
-        
         const toast = document.getElementById('toast');
         const container = document.getElementById('classementContainer');
         const iaMessage = document.getElementById('iaClassementMessage');
         const listenBtn = document.getElementById('listenClassementBtn');
-        
-        // ============================================================
-        // TOAST
-        // ============================================================
         
         function showToast(message, duration = 2500) {
             toast.textContent = message;
@@ -150,10 +105,6 @@
                 toast.classList.remove('show');
             }, duration);
         }
-        
-        // ============================================================
-        // TTS BEREINIGEN
-        // ============================================================
         
         function cleanTextForTTS(text) {
             if (!text) return '';
@@ -165,10 +116,6 @@
             return cleaned;
         }
         
-        // ============================================================
-        // KI-NACHRICHT GENERIEREN (KORRIGIERT)
-        // ============================================================
-        
         async function generateIAMessage(uid) {
             try {
                 const rankingService = new RankingService();
@@ -176,7 +123,6 @@
                 const topCountries = await rankingService.getTopCountriesByTopUsers();
                 
                 const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
-                // ✅ KORRIGIERT : displayName für iOS
                 const userName = settings.user?.displayName || settings.user?.fullName || 'Doktor';
                 const userProfession = settings.user?.profession || 'Doktor';
                 const userCountry = settings.user?.country || 'Ihr Land';
@@ -234,7 +180,7 @@
                     const medals = ['🥇', '🥈', '🥉'];
                     topCountries.slice(0, 3).forEach((item, index) => {
                         const isUserCountry = item.country === userCountry;
-                        message += `• ${medals[index]} ${index+1}. : <strong>${item.country}</strong>${isUserCountry ? ' ← IHR LAND !' : ''} — ${item.count} Benutzer${item.count>1?'':''} in den Top 10<br>`;
+                        message += `• ${medals[index]} ${index+1}. : <strong>${item.country}</strong>${isUserCountry ? ' ← IHR LAND !' : ''} — ${item.count} Benutzer in den Top 10<br>`;
                         ttsMessage += `${medals[index]} ${index+1}. : ${item.country} mit ${item.count} Benutzern in den Top 10. `;
                     });
                     message += `<br>`;
@@ -265,17 +211,14 @@
                 
                 if (listenBtn) listenBtn.style.display = 'inline-block';
                 
-                setTimeout(() => autoSpeak(), 1200);
+                // 🔇 Automatisches Vorlesen beim Laden DEAKTIVIERT
+                // Der Benutzer klickt auf "🔊 Anhören", wenn er zuhören möchte
                 
             } catch (error) {
                 console.error('❌ KI-Fehler:', error);
                 iaMessage.innerHTML = '⚠️ Nachricht nicht verfügbar. Laden Sie die Seite neu.';
             }
         }
-        
-        // ============================================================
-        // AUTO-VORLESEN
-        // ============================================================
         
         let isAutoSpeaking = false;
         
@@ -308,10 +251,6 @@
             );
         }
         
-        // ============================================================
-        // BUTTON "ANHÖREN"
-        // ============================================================
-        
         listenBtn.addEventListener('click', function() {
             if (!window.tts) return showToast('❌ TTS nicht verfügbar', 3000);
             
@@ -342,12 +281,8 @@
             );
         });
         
-        // ============================================================
-        // INIT
-        // ============================================================
-        
         async function init() {
-            Logger.info('🏆 Ranglistenseite geladen');
+            Logger.info('🏆 Ranglistenseite geladen (DE)');
             
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
@@ -362,6 +297,7 @@
                     await generateIAMessage(uid);
                     
                     Logger.info('✅ Rangliste geladen');
+                    Logger.info('🔇 KI-Nachricht in STILLE (Benutzer klickt, wenn gewünscht)');
                 } else {
                     showToast('⚠️ Melden Sie sich an, um die Rangliste zu sehen', 3000);
                     container.innerHTML = `

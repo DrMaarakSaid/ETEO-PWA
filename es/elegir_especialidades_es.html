@@ -431,7 +431,7 @@
         }
         
         // ============================================================
-        // GENERAR MENSAJE IA
+        // ✅ GENERAR MENSAJE IA (SILENCIO AU CHARGEMENT)
         // ============================================================
         
         async function generateIAMessage() {
@@ -487,14 +487,8 @@
                     listenSpecialtiesBtn.style.display = 'inline-block';
                 }
                 
-                setTimeout(() => {
-                    if (window.tts && typeof window.tts.speak === 'function') {
-                        const text = window._ttsSpecialtiesMessage || '';
-                        if (text) {
-                            window.tts.speak(text, 'es', 0.9, 1.0);
-                        }
-                    }
-                }, 1200);
+                // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+                // L'utilisateur peut cliquer sur le bouton 🔊 "Escuchar" s'il veut écouter.
                 
             } catch (error) {
                 console.error('❌ Error generación IA:', error);
@@ -718,6 +712,7 @@
             console.log('🔍 Filtros y búsqueda disponibles');
             console.log('🤖 IA : Mensaje personalizado con recomendación');
             console.log('✅ iOS : displayName soportado');
+            console.log('🔇 SILENCIO IA : pas de lecture auto au chargement');
         }
         
         init();

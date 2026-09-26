@@ -935,57 +935,9 @@
         }
         
         // ============================================================
-        // LECTURA AUTOMÁTICA DEL RESUMEN IA
+        // ✅ SILENCIO IA : lecture auto supprimée au chargement
+        // L'utilisateur peut cliquer sur le bouton 🔊 s'il veut écouter.
         // ============================================================
-        
-        let isAutoSpeaking = false;
-        
-        function autoSpeakSummary() {
-            if (!window.tts) {
-                console.warn('⚠️ TTS no disponible');
-                return;
-            }
-            
-            if (isAutoSpeaking) return;
-            isAutoSpeaking = true;
-            
-            const text = window._ttsSummaryMessage || 'Su resumen no está disponible.';
-            
-            if (!text || text.trim() === '') {
-                console.warn('⚠️ No hay resumen para leer');
-                isAutoSpeaking = false;
-                return;
-            }
-            
-            if (listenSummaryBtn) {
-                listenSummaryBtn.textContent = '⏹️ Detener';
-                listenSummaryBtn.classList.add('listening');
-            }
-            
-            console.log('🔊 Lectura automática del resumen del Dashboard');
-            window.tts.speak(
-                text,
-                'es',
-                0.9,
-                1.0,
-                () => {
-                    if (listenSummaryBtn) {
-                        listenSummaryBtn.textContent = '🔊 Escuchar resumen';
-                        listenSummaryBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                    console.log('✅ Resumen leído automáticamente');
-                },
-                (error) => {
-                    console.warn('⚠️ Error lectura automática:', error);
-                    if (listenSummaryBtn) {
-                        listenSummaryBtn.textContent = '🔊 Escuchar resumen';
-                        listenSummaryBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                }
-            );
-        }
         
         // ============================================================
         // ✅ VERSIÓN IOS : CARGAR DATOS DESDE users_ios
@@ -1525,7 +1477,7 @@
         }
         
         // ============================================================
-        // BOTÓN ESCUCHAR EL RESUMEN
+        // BOTÓN ESCUCHAR EL RESUMEN (déclenché par l'utilisateur)
         // ============================================================
         
         listenSummaryBtn.addEventListener('click', function(event) {
@@ -1541,7 +1493,6 @@
                 window.tts.stop();
                 this.textContent = '🔊 Escuchar resumen';
                 this.classList.remove('listening');
-                isAutoSpeaking = false;
                 return;
             }
             
@@ -1737,22 +1688,20 @@
                                 listenSummaryBtn.classList.remove('listening');
                             }
                             
-                            isAutoSpeaking = false;
-                            
                             const settings = storage.getSettings() || {};
                             const scores = settings.scores || {};
                             badgeModal.open(scores, SPECIALTIES, settings);
                         });
                     }
                     
-                    setTimeout(() => {
-                        autoSpeakSummary();
-                    }, 1500);
+                    // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+                    // L'utilisateur clique sur 🔊 "Escuchar resumen" s'il veut écouter.
                     
                     console.log('📢 Dashboard ETEO iOS listo!');
                     console.log('✅ iOS : Lectura de datos desde users_ios');
                     console.log('✅ iOS : Visualización de displayName');
                     console.log('✅ iOS : Puntuación detallada (calidad + finalización)');
+                    console.log('🔇 SILENCIO IA : pas de lecture auto du résumé au chargement');
                     
                 } else {
                     // Usuario no conectado - redirigir al registro

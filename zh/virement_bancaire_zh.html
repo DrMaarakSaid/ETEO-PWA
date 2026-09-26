@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>银行转账支付 - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+    
+    <style>
+        .payment-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .payment-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .payment-header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .payment-header p {
+            color: #7f8c8d;
+            font-size: 15px;
+        }
+        
+        .amount-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 15px 0;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+        }
+        
+        .bank-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid #667eea;
+        }
+        
+        .bank-card h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .bank-info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .bank-info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .bank-info-label {
+            font-weight: 600;
+            color: #7f8c8d;
+            font-size: 14px;
+            min-width: 120px;
+        }
+        
+        .bank-info-value {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 15px;
+            font-family: 'Courier New', monospace;
+            flex: 1;
+            text-align: right;
+        }
+        
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 8px;
+            transition: all 0.2s;
+        }
+        
+        .copy-btn:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+        }
+        
+        .reference-highlight {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .reference-highlight .ref-label {
+            font-size: 13px;
+            color: #856404;
+            margin-bottom: 5px;
+        }
+        
+        .reference-highlight .ref-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #856404;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+        }
+        
+        .warning-box {
+            background: #f8d7da;
+            border: 2px solid #dc3545;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            color: #721c24;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .warning-box strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-section {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .form-section h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 18px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="date"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: all 0.3s;
+            box-sizing: border-box;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+        }
+        
+        .file-upload {
+            border: 3px dashed #cbd5e0;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: #f8f9fa;
+        }
+        
+        .file-upload:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .file-upload input[type="file"] {
+            display: none;
+        }
+        
+        .file-upload-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .file-upload-text {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .file-upload.has-file {
+            border-color: #4caf50;
+            background: #e8f5e9;
+        }
+        
+        .file-upload.has-file .file-upload-icon {
+            color: #4caf50;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .steps-list {
+            background: #e3f2fd;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-top: 20px;
+        }
+        
+        .steps-list h3 {
+            color: #0d47a1;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .steps-list ol {
+            margin: 0;
+            padding-left: 20px;
+            color: #1565c0;
+            line-height: 2;
+        }
+        
+        .steps-list ol li {
+            font-size: 14px;
+        }
+        
+        .success-screen {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .success-screen.active {
+            display: block;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .success-screen h2 {
+            color: #4caf50;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        
+        .success-screen p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .pending-badge {
+            display: inline-block;
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        
+        .nav-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn {
+            background: none;
+            border: none;
+            font-size: 15px;
+            color: #667eea;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 520px) {
+            .bank-info-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .bank-info-value {
+                text-align: left;
+                word-break: break-all;
+            }
+            .amount-badge {
+                font-size: 24px;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- 导航 -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="history.back()">
+                ← 返回
+            </button>
+            <button class="back-btn" onclick="window.location.href='dashboard_zh.html'">
+                🏠 仪表盘
+            </button>
+        </div>
+
+        <div class="payment-container">
+            
+            <!-- 标题 -->
+            <div class="payment-header">
+                <h1>🎓 获取您的 ETEO 证书</h1>
+                <p>恭喜！您已通过认证考试。</p>
+                <div class="amount-badge">20.00 €</div>
+            </div>
+
+            <!-- 主页面 -->
+            <div id="paymentScreen">
+                
+                <!-- 银行信息 -->
+                <div class="bank-card">
+                    <h2>🏦 银行信息</h2>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">🏦 银行</span>
+                        <span class="bank-info-value">人民银行 (BCP)</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">📍 分行</span>
+                        <span class="bank-info-value">2 MARS 分行 - 卡萨布兰卡</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">📌 账户持有人</span>
+                        <span class="bank-info-value">MAARAK SAID 先生</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">🔢 IBAN</span>
+                        <span class="bank-info-value">
+                            <span id="ibanText">MA64 1907 8021 1111 1015 9900 9331</span>
+                            <button class="copy-btn" onclick="copyToClipboard('ibanText')">📋 复制</button>
+                        </span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">🏛️ SWIFT / BIC</span>
+                        <span class="bank-info-value">
+                            <span id="swiftText">BCPOMAMC</span>
+                            <button class="copy-btn" onclick="copyToClipboard('swiftText')">📋 复制</button>
+                        </span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">💰 金额</span>
+                        <span class="bank-info-value" style="color: #4caf50; font-size: 18px;">20.00 €</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">📍 银行地址</span>
+                        <span class="bank-info-value" style="font-family: inherit; font-size: 13px;">Angle Rue Omar El Idrissi et Avenue 2 Mars, 卡萨布兰卡, 摩洛哥</span>
+                    </div>
+                </div>
+
+                <!-- 唯一参考号 -->
+                <div class="reference-highlight">
+                    <div class="ref-label">🔑 您的唯一付款参考号</div>
+                    <div class="ref-value" id="referenceText">CERT-XXXXXX</div>
+                    <button class="copy-btn" onclick="copyToClipboard('referenceText')" style="margin-top: 10px;">📋 复制参考号</button>
+                </div>
+
+                <!-- 重要警告 -->
+                <div class="warning-box">
+                    <strong>⚠️ 重要：</strong>
+                    您必须在<strong>转账备注中</strong>注明此参考号。
+                    如果没有此参考号，我们将无法识别您的付款，您的申请将被自动拒绝。
+                </div>
+
+                <!-- 确认表单 -->
+                <div class="form-section">
+                    <h2>📝 确认您的转账</h2>
+                    
+                    <div class="form-group">
+                        <label for="fullName">👤 全名（账户持有人）</label>
+                        <input type="text" id="fullName" placeholder="张三医生" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">📧 邮箱（用于接收证书）</label>
+                        <input type="email" id="email" placeholder="您的@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="transferDate">📅 转账日期</label>
+                        <input type="date" id="transferDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>📎 转账凭证（截图或 PDF）</label>
+                        <div class="file-upload" id="fileUploadBox">
+                            <input type="file" id="proofFile" accept="image/*,.pdf">
+                            <div class="file-upload-icon">📤</div>
+                            <div class="file-upload-text" id="fileUploadText">
+                                点击附上凭证<br>
+                                <small>(JPG、PNG 或 PDF - 最大 5 MB)</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="submit-btn" id="submitBtn">
+                        ✅ 确认转账
+                    </button>
+                </div>
+
+                <!-- 后续步骤 -->
+                <div class="steps-list">
+                    <h3>📋 后续步骤：</h3>
+                    <ol>
+                        <li>将 <strong>20.00 €</strong> 转账至上方账户</li>
+                        <li>在备注中注明参考号 <strong>CERT-XXXXXX</strong></li>
+                        <li>在此页面确认您的转账</li>
+                        <li>等待审核（24-48小时）</li>
+                        <li>通过邮箱接收您的证书</li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <!-- 成功页面 -->
+            <div class="success-screen" id="successScreen">
+                <div class="success-icon">✅</div>
+                <h2>申请已提交！</h2>
+                <p>
+                    我们已成功收到您的证书申请。<br>
+                    您的转账将在 <strong>24-48小时</strong>内核实。
+                </p>
+                <div class="pending-badge">⏸️ 等待审核</div>
+                <p style="font-size: 13px; color: #999; margin-top: 20px;">
+                    您的申请副本已发送给我们的团队。<br>
+                    审核通过后，您将通过邮箱收到证书。
+                </p>
+                <button class="submit-btn" onclick="window.location.href='dashboard_zh.html'" style="max-width: 300px; margin: 20px auto 0;">
+                    🏠 返回仪表盘
+                </button>
+            </div>
+
+        </div>
+
+        <!-- TOAST -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <!-- 主脚本 -->
+    <script type="module">
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore, doc, getDoc, setDoc, collection, addDoc } from 'firebase/firestore';
+
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // ============================================================
+        // 配置
+        // ============================================================
+        const ADMIN_EMAIL = 'maarak.said@gmail.com';
+        const CERTIFICATE_PRICE = 20;
+        const CURRENCY = 'EUR';
+
+        // ============================================================
+        // DOM 元素
+        // ============================================================
+        const paymentScreen = document.getElementById('paymentScreen');
+        const successScreen = document.getElementById('successScreen');
+        const fullNameInput = document.getElementById('fullName');
+        const emailInput = document.getElementById('email');
+        const transferDateInput = document.getElementById('transferDate');
+        const proofFileInput = document.getElementById('proofFile');
+        const fileUploadBox = document.getElementById('fileUploadBox');
+        const fileUploadText = document.getElementById('fileUploadText');
+        const submitBtn = document.getElementById('submitBtn');
+        const referenceText = document.getElementById('referenceText');
+        const toast = document.getElementById('toast');
+
+        // ============================================================
+        // 状态
+        // ============================================================
+        let currentUser = null;
+        let certificateReference = null;
+        let currentSpecialty = null;
+
+        // ============================================================
+        // TOAST
+        // ============================================================
+        function showToast(message, duration = 3000) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+
+        // ============================================================
+        // 复制到剪贴板
+        // ============================================================
+        window.copyToClipboard = function(elementId) {
+            const text = document.getElementById(elementId).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('✅ 已复制到剪贴板！', 2000);
+            }).catch(() => {
+                showToast('❌ 复制失败', 2000);
+            });
+        };
+
+        // ============================================================
+        // 生成唯一参考号
+        // ============================================================
+        function generateReference() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let ref = 'CERT-';
+            for (let i = 0; i < 6; i++) {
+                ref += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return ref;
+        }
+
+        // ============================================================
+        // 上传文件
+        // ============================================================
+        proofFileInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                if (file.size > 5 * 1024 * 1024) {
+                    showToast('❌ 文件过大（最大 5 MB）', 3000);
+                    this.value = '';
+                    return;
+                }
+                fileUploadBox.classList.add('has-file');
+                fileUploadText.innerHTML = `✅ <strong>${file.name}</strong><br><small>${(file.size / 1024).toFixed(0)} KB</small>`;
+            } else {
+                fileUploadBox.classList.remove('has-file');
+                fileUploadText.innerHTML = '点击附上凭证<br><small>(JPG、PNG 或 PDF - 最大 5 MB)</small>';
+            }
+        });
+
+        fileUploadBox.addEventListener('click', () => proofFileInput.click());
+
+        // ============================================================
+        // 将文件转换为 Base64
+        // ============================================================
+        function fileToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
+
+        // ============================================================
+        // 提交表单
+        // ============================================================
+        submitBtn.addEventListener('click', async () => {
+            // 验证
+            const fullName = fullNameInput.value.trim();
+            const email = emailInput.value.trim();
+            const transferDate = transferDateInput.value;
+            const proofFile = proofFileInput.files[0];
+
+            if (!fullName) {
+                showToast('⚠️ 请输入您的全名', 3000);
+                fullNameInput.focus();
+                return;
+            }
+
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                showToast('⚠️ 请输入有效的邮箱', 3000);
+                emailInput.focus();
+                return;
+            }
+
+            if (!transferDate) {
+                showToast('⚠️ 请注明转账日期', 3000);
+                transferDateInput.focus();
+                return;
+            }
+
+            if (!proofFile) {
+                showToast('⚠️ 请附上转账凭证', 3000);
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ 正在提交...';
+
+            try {
+                // 1. 将文件转换为 Base64
+                const proofBase64 = await fileToBase64(proofFile);
+
+                // 2. 在 Firestore 中创建请求
+                const paymentRequest = {
+                    userId: currentUser ? currentUser.uid : null,
+                    userEmail: currentUser ? currentUser.email : email,
+                    contactEmail: email,
+                    userName: fullName,
+                    specialty: currentSpecialty || 'general',
+                    amount: CERTIFICATE_PRICE,
+                    currency: CURRENCY,
+                    reference: certificateReference,
+                    status: 'pending',
+                    transferDate: transferDate,
+                    proofFileName: proofFile.name,
+                    proofFileSize: proofFile.size,
+                    proofBase64: proofBase64,
+                    createdAt: new Date().toISOString(),
+                    validatedAt: null,
+                    validatedBy: null,
+                    language: 'zh'
+                };
+
+                const docRef = await addDoc(collection(db, 'payment_requests'), paymentRequest);
+                console.log('✅ 请求已创建，ID：', docRef.id);
+
+                // 3. 通过 FormSubmit.co 向管理员发送邮件
+                try {
+                    await fetch('https://formsubmit.co/ajax/' + ADMIN_EMAIL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            _subject: `🎓 新证书申请 - ${certificateReference}`,
+                            _template: 'table',
+                            _captcha: 'false',
+                            参考号: certificateReference,
+                            姓名: fullName,
+                            邮箱: email,
+                            专科: currentSpecialty || 'general',
+                            金额: `${CERTIFICATE_PRICE} ${CURRENCY}`,
+                            转账日期: transferDate,
+                            文件: proofFile.name,
+                            文档ID: docRef.id,
+                            语言: '中文',
+                            操作: `在此处审核：https://www.eteo-dental.com/fr/admin_virements.html`
+                        })
+                    });
+                    console.log('✅ 邮件已发送给管理员');
+                } catch (emailError) {
+                    console.warn('⚠️ 邮件发送错误：', emailError);
+                }
+
+                // 4. 显示成功页面
+                paymentScreen.style.display = 'none';
+                successScreen.classList.add('active');
+
+                // 5. 滚动到顶部
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            } catch (error) {
+                console.error('❌ 错误：', error);
+                showToast('❌ 提交时出错。请重试。', 4000);
+                submitBtn.disabled = false;
+                submitBtn.textContent = '✅ 确认转账';
+            }
+        });
+
+        // ============================================================
+        // 初始化
+        // ============================================================
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                currentUser = user;
+                console.log('👤 用户已登录：', user.email);
+
+                // 加载用户数据
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);
+                    const userSnap = await getDoc(userRef);
+                    if (userSnap.exists()) {
+                        const userData = userSnap.data();
+                        if (userData.displayName) {
+                            fullNameInput.value = userData.displayName;
+                        }
+                    }
+                } catch (e) {
+                    console.warn('⚠️ 用户加载错误：', e);
+                }
+
+                if (user.email) {
+                    emailInput.value = user.email;
+                }
+
+                // 从 URL 获取专科
+                const urlParams = new URLSearchParams(window.location.search);
+                currentSpecialty = urlParams.get('specialty') || null;
+
+            } else {
+                console.log('👤 用户未登录');
+                showToast('⚠️ 您必须登录才能继续', 3000);
+                setTimeout(() => {
+                    window.location.href = 'inscription_zh.html';
+                }, 2000);
+                return;
+            }
+
+            // 生成唯一参考号
+            certificateReference = generateReference();
+            referenceText.textContent = certificateReference;
+
+            // 默认今天的日期
+            const today = new Date().toISOString().split('T')[0];
+            transferDateInput.value = today;
+
+            console.log('📋 参考号：', certificateReference);
+            console.log('💰 金额：', CERTIFICATE_PRICE, CURRENCY);
+        });
+
+    </script>
+</body>
+</html>

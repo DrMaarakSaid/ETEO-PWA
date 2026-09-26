@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     
     <style>
-        /* ============================================================
-           SPEZIFISCHE STYLES FÜR DAS QUIZ DES TAGES
-           ============================================================ */
-        
         .roulette-wrapper {
             position: relative;
             display: flex;
@@ -210,52 +206,6 @@
             box-shadow: 0 8px 25px rgba(29, 161, 242, 0.4);
         }
         
-        .roulette-stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin: 10px 0;
-        }
-        
-        .roulette-stat-item {
-            background: white;
-            border-radius: 12px;
-            padding: 12px 10px;
-            text-align: center;
-            border: 1px solid #e8e8e8;
-        }
-        
-        .roulette-stat-item .number {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #2c3e50;
-        }
-        
-        .roulette-stat-item .label {
-            font-size: 0.7rem;
-            color: #888;
-            display: block;
-            margin-top: 4px;
-        }
-        
-        .roulette-section {
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 16px;
-            padding: 16px;
-            margin-top: 16px;
-            border: 1px solid rgba(255, 152, 0, 0.2);
-        }
-        
-        .roulette-section h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-        
-        /* ============================================================
-           STYLES FÜR DAS ZAHLUNGS-POPUP
-           ============================================================ */
-        
         .payment-lock-icon {
             font-size: 3rem;
             margin-bottom: 10px;
@@ -308,58 +258,28 @@
             line-height: 1.6;
         }
         
-        .payment-popup .features {
-            background: #f8f9fa;
-            border-radius: 12px;
-            padding: 12px;
-            margin: 15px 0;
-            text-align: left;
-        }
-        
-        .payment-popup .features p {
-            margin: 4px 0;
-            font-size: 0.9rem;
-            color: #333;
-        }
-        
         .payment-popup .pay-btn {
             padding: 14px 40px;
-            background: linear-gradient(135deg, #ffd700, #f57c00);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             border: none;
             border-radius: 30px;
             font-weight: 700;
             font-size: 1rem;
             cursor: pointer;
-            color: #2c3e50;
+            color: white;
             width: 100%;
             transition: all 0.3s ease;
         }
         
         .payment-popup .pay-btn:hover:not(:disabled) {
             transform: scale(1.02);
-            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
         }
         
         .payment-popup .pay-btn:disabled {
             opacity: 0.6;
             cursor: not-allowed;
             transform: none !important;
-        }
-        
-        .payment-popup .close-btn {
-            padding: 10px 20px;
-            background: transparent;
-            border: none;
-            color: #888;
-            cursor: pointer;
-            font-size: 0.9rem;
-            margin-top: 10px;
-            width: 100%;
-            transition: color 0.3s ease;
-        }
-        
-        .payment-popup .close-btn:hover {
-            color: #333;
         }
         
         .payment-popup .secure-text {
@@ -382,6 +302,7 @@
         
         .payment-popup .info-box.success p {
             color: #2e7d32;
+            margin: 0;
         }
         
         .payment-popup .info-box.warning {
@@ -391,59 +312,9 @@
         
         .payment-popup .info-box.warning p {
             color: #856404;
-        }
-        
-        .payment-popup .email-section {
-            margin: 15px 0;
-        }
-        
-        .payment-popup .email-section p {
-            font-size: 0.9rem;
-            color: #555;
-            text-align: left;
-            margin-bottom: 5px;
-        }
-        
-        .payment-popup .email-input-group {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        
-        .payment-popup .email-input-group input {
-            flex: 1;
-            min-width: 180px;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            font-size: 0.95rem;
-            box-sizing: border-box;
-            transition: border-color 0.3s ease;
-        }
-        
-        .payment-popup .email-input-group input:focus {
-            border-color: #667eea;
-            outline: none;
-        }
-        
-        .payment-popup .email-input-group .pay-btn {
-            width: auto;
-            padding: 12px 20px;
-            white-space: nowrap;
-        }
-        
-        .payment-popup .email-note {
-            font-size: 0.7rem;
-            color: #999;
-            margin-top: 5px;
-            text-align: left;
-        }
-        
-        .payment-popup .info-box.warning p {
             margin: 0;
         }
         
-        /* ✅ VERSUCHSZÄHLER */
         .quota-badge {
             display: inline-block;
             padding: 6px 16px;
@@ -472,12 +343,6 @@
         @keyframes pulseBadge {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
-        }
-        
-        .quota-badge.unlimited {
-            background: #bbdefb;
-            color: #0d47a1;
-            border-color: #667eea;
         }
         
         @media (max-width: 520px) {
@@ -517,14 +382,8 @@
                 font-size: 0.85rem;
                 padding: 10px 20px;
             }
-            .roulette-stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
             .payment-popup {
                 padding: 20px;
-            }
-            .payment-popup .email-input-group input {
-                min-width: 140px;
             }
         }
         
@@ -563,25 +422,18 @@
 <body>
     <div class="container quiz-container">
         
-        <!-- ============================================================ -->
-        <!-- NAVIGATION -->
-        <!-- ============================================================ -->
         <div class="nav-top">
             <button class="back-btn" onclick="window.location.href='../index.html'">🏠 Startseite</button>
             <button class="back-btn" onclick="window.location.href='dashboard.html'">📊 Dashboard</button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- BILDSCHIRM 1 : ROULETTE -->
-        <!-- ============================================================ -->
         <div id="rouletteScreen">
             <div style="text-align: center; margin-bottom: 8px;">
                 <h1 style="font-size: 1.6rem; margin: 0; color: #2c3e50;">🎰 Roulette der Info</h1>
             </div>
 
-            <!-- ✅ VERSUCHSZÄHLER -->
             <div style="text-align: center; margin-bottom: 10px;">
-                <span id="quotaBadge" class="quota-badge">🎯 20 kostenlose Versuche übrig</span>
+                <span id="quotaBadge" class="quota-badge">🎯 10 kostenlose Quiz pro Tag</span>
             </div>
 
             <div class="ia-greeting" id="iaGreeting">
@@ -594,7 +446,6 @@
                 </p>
             </div>
 
-            <!-- RAD 1 : 36 FACHGEBIETE -->
             <div class="roulette-wrapper">
                 <canvas id="rouletteCanvas" width="400" height="400"></canvas>
                 <div class="roulette-pointer" id="roulettePointer">
@@ -615,7 +466,6 @@
                 <span id="selectedSpecialtyDisplay" class="highlight">?</span>
             </div>
 
-            <!-- RAD 2 : 6 LEVELS -->
             <div id="levelRouletteContainer">
                 <h3 style="color: #2c3e50; margin-bottom: 4px; font-size: 1.1rem;">🎯 Wählen Sie Ihr Level</h3>
                 <p style="color: #888; font-size: 0.85rem; margin-bottom: 10px;">Drehen Sie das Rad der Levels !</p>
@@ -653,9 +503,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- BILDSCHIRM 2 : QUIZ (1 FRAGE) -->
-        <!-- ============================================================ -->
         <div id="questionContainer" style="display:none;">
             <div class="quiz-title" id="quizTitle">🎰 Roulette der Info</div>
             <div class="question-text" id="questionText">Frage läuft...</div>
@@ -681,9 +528,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- BILDSCHIRM 3 : ERGEBNIS MIT KI -->
-        <!-- ============================================================ -->
         <div class="result-container" id="resultContainer" style="display:none;">
             <h2 id="resultTitle">✅ Quiz beendet !</h2>
             <div class="final-score" id="finalScore">1/1</div>
@@ -698,27 +542,16 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- TOAST -->
-        <!-- ============================================================ -->
         <div class="toast" id="toast"></div>
     </div>
 
     <script type="module">
-        // ============================================================
-        // LEICHTE IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import SubscriptionService from '../js/services/subscription.js';
         import { RewardService } from '../js/services/rewardService.js';
         import { ShareService } from '../js/services/shareService.js';
         import tts from '../js/services/tts.js';
-        
-        // ============================================================
-        // FIREBASE
-        // ============================================================
         
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -740,9 +573,7 @@
         
         window.tts = tts;
         
-        // ============================================================
-        // LISTE DER 36 FACHGEBIETE
-        // ============================================================
+        const MAX_DAILY_QUIZZES = 10;
         
         const SPECIALTIES = [
             { id: 'chirurgie', name: 'Chirurgie', emoji: '🔪' },
@@ -792,18 +623,10 @@
             { id: 'expert2', label: 'Experte 2', emoji: '⭐' }
         ];
         
-        // ============================================================
-        // DIENSTE
-        // ============================================================
-        
         const storage = new StorageService();
         const subscription = new SubscriptionService();
         const rewardService = new RewardService();
         const shareService = new ShareService();
-        
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
         
         const toast = document.getElementById('toast');
         const spinBtn = document.getElementById('spinBtn');
@@ -848,10 +671,6 @@
         const iaResultContainer = document.getElementById('iaResultContainer');
         const quotaBadge = document.getElementById('quotaBadge');
         
-        // ============================================================
-        // ZUSTAND
-        // ============================================================
-        
         let currentSpecialty = null;
         let currentLevel = null;
         let currentQuestion = null;
@@ -862,14 +681,9 @@
         let quizHistory = [];
         let userId = null;
         let userName = 'Doktor';
-        let freeQuizzesUsed = 0;
-        let isSubscribed = false;
-        let subscriptionExpiresAt = null;
-        let MAX_FREE_QUIZZES = 20;
-        
-        // ============================================================
-        // TEXT FÜR TTS BEREINIGEN
-        // ============================================================
+        let dailyQuizzesCount = 0;
+        let dailyDate = null;
+        let totalQuizzesAllTime = 0;
         
         function cleanTextForTTS(text) {
             if (!text) return '';
@@ -880,10 +694,6 @@
             cleaned = cleaned.replace(/\s+/g, ' ').trim();
             return cleaned;
         }
-        
-        // ============================================================
-        // FUNKTION ZUM STOPPEN DES TTS
-        // ============================================================
         
         function stopTTS() {
             try {
@@ -899,10 +709,6 @@
                 btn.classList.remove('listening');
             });
         }
-        
-        // ============================================================
-        // TTS
-        // ============================================================
         
         function speakText(text, button, buttonText = '🔊') {
             if (!window.tts || typeof window.tts.speak !== 'function') {
@@ -927,11 +733,8 @@
                 if (window.tts.isSpeakingNow && window.tts.isSpeakingNow()) {
                     wasSpeaking = true;
                     window.tts.stop();
-                    console.log('⏹️ TTS vor neuer Nachricht gestoppt');
                 }
-            } catch (e) {
-                console.warn('Fehler beim Stoppen des TTS:', e);
-            }
+            } catch (e) {}
             document.querySelectorAll('.tts-btn.listening, .listen-btn.listening, .listen-synopsis-btn.listening, .listen-chapter-btn.listening').forEach(btn => {
                 const originalText = btn.dataset.originalText || '🔊';
                 btn.textContent = originalText;
@@ -954,10 +757,8 @@
                                 button.textContent = buttonText;
                                 button.classList.remove('listening');
                             }
-                            console.log('✅ TTS erfolgreich beendet');
                         },
                         (error) => {
-                            console.warn('⚠️ TTS-Fehler (ignoriert):', error);
                             if (button) {
                                 button.textContent = buttonText;
                                 button.classList.remove('listening');
@@ -965,7 +766,6 @@
                         }
                     );
                 } catch (e) {
-                    console.warn('⚠️ Fehler beim Starten des TTS:', e);
                     if (button) {
                         button.textContent = buttonText;
                         button.classList.remove('listening');
@@ -973,16 +773,11 @@
                 }
             };
             if (wasSpeaking) {
-                console.log('⏳ Warten auf das Stoppen des TTS...');
                 setTimeout(startSpeaking, 200);
             } else {
                 startSpeaking();
             }
         }
-        
-        // ============================================================
-        // SOUNDEFFEKTE
-        // ============================================================
         
         function playRouletteSound(type, totalDuration) {
             try {
@@ -990,18 +785,15 @@
                 
                 if (type === 'spin') {
                     if (!totalDuration) totalDuration = 4000;
-                    
                     const minTicks = 15;
                     const maxTicks = 35;
                     const totalTicks = Math.min(maxTicks, Math.max(minTicks, Math.floor(totalDuration / 130)));
-                    
                     let count = 0;
                     const baseFreq = 523;
                     const volume = 0.15;
                     
                     function playTick() {
                         if (count >= totalTicks) return;
-                        
                         const progress = count / totalTicks;
                         const speedFactor = 0.4 + 0.6 * (1 - Math.sin(progress * Math.PI));
                         const tickDelay = (totalDuration / totalTicks) * speedFactor * 0.9;
@@ -1010,37 +802,19 @@
                         const gain = audioCtx.createGain();
                         osc.connect(gain);
                         gain.connect(audioCtx.destination);
-                        
                         const freqVariation = Math.sin(progress * Math.PI) * 200;
                         osc.frequency.value = baseFreq + freqVariation;
                         osc.type = 'square';
-                        
                         gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                         gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.01);
                         gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
-                        
-                        const oscH = audioCtx.createOscillator();
-                        const gainH = audioCtx.createGain();
-                        oscH.connect(gainH);
-                        gainH.connect(audioCtx.destination);
-                        oscH.frequency.value = (baseFreq + freqVariation) * 2;
-                        oscH.type = 'square';
-                        gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                        gainH.gain.linearRampToValueAtTime(volume * 0.3, audioCtx.currentTime + 0.01);
-                        gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
-                        oscH.start();
-                        oscH.stop(audioCtx.currentTime + 0.04);
-                        
                         osc.start();
                         osc.stop(audioCtx.currentTime + 0.05);
-                        
                         count++;
-                        
                         if (count < totalTicks) {
                             setTimeout(playTick, tickDelay);
                         }
                     }
-                    
                     setTimeout(playTick, 50);
                     
                 } else if (type === 'win') {
@@ -1048,7 +822,6 @@
                     const volume = 0.25;
                     const duration = 0.35;
                     const delay = 140;
-                    
                     notes.forEach((freq, i) => {
                         setTimeout(() => {
                             const osc = audioCtx.createOscillator();
@@ -1057,27 +830,9 @@
                             gain.connect(audioCtx.destination);
                             osc.frequency.value = freq;
                             osc.type = 'square';
-                            
                             gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                             gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
                             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-                            
-                            const harmonics = [2, 3, 4];
-                            harmonics.forEach((h, j) => {
-                                const oscH = audioCtx.createOscillator();
-                                const gainH = audioCtx.createGain();
-                                oscH.connect(gainH);
-                                gainH.connect(audioCtx.destination);
-                                oscH.frequency.value = freq * h;
-                                oscH.type = 'square';
-                                const volH = volume / (j + 2) * 0.5;
-                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
-                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
-                                oscH.start();
-                                oscH.stop(audioCtx.currentTime + duration * 0.7);
-                            });
-                            
                             osc.start();
                             osc.stop(audioCtx.currentTime + duration);
                         }, i * delay);
@@ -1088,7 +843,6 @@
                     const volume = 0.25;
                     const duration = 0.4;
                     const delay = 140;
-                    
                     notes.forEach((freq, i) => {
                         setTimeout(() => {
                             const osc = audioCtx.createOscillator();
@@ -1097,27 +851,9 @@
                             gain.connect(audioCtx.destination);
                             osc.frequency.value = freq;
                             osc.type = 'square';
-                            
                             gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                             gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
                             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-                            
-                            const harmonics = [2, 3, 4];
-                            harmonics.forEach((h, j) => {
-                                const oscH = audioCtx.createOscillator();
-                                const gainH = audioCtx.createGain();
-                                oscH.connect(gainH);
-                                gainH.connect(audioCtx.destination);
-                                oscH.frequency.value = freq * h;
-                                oscH.type = 'square';
-                                const volH = volume / (j + 2) * 0.5;
-                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
-                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
-                                oscH.start();
-                                oscH.stop(audioCtx.currentTime + duration * 0.7);
-                            });
-                            
                             osc.start();
                             osc.stop(audioCtx.currentTime + duration);
                         }, i * delay);
@@ -1152,14 +888,8 @@
                         }, i * 100);
                     });
                 }
-            } catch (e) {
-                // Still, wenn Web Audio nicht unterstützt wird
-            }
+            } catch (e) {}
         }
-        
-        // ============================================================
-        // TOAST
-        // ============================================================
         
         function showToast(message, duration = 2500) {
             toast.textContent = message;
@@ -1170,15 +900,20 @@
             }, duration);
         }
         
-        // ============================================================
-        // ✅ VERWALTUNG DER VERSUCHE UND ABONNEMENTS
-        // ============================================================
+        function getTodayDateString() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
         
         async function loadUserData() {
             const user = auth.currentUser;
             if (!user) return false;
             
             userId = user.uid;
+            const today = getTodayDateString();
             
             try {
                 const userRef = doc(db, 'users_ios', userId);
@@ -1186,56 +921,42 @@
                 
                 if (snapshot.exists()) {
                     const data = snapshot.data();
-                    
-                    // Benutzerinformationen abrufen
                     userName = data.displayName || data.fullName || 'Doktor';
+                    totalQuizzesAllTime = data?.rouletteStats?.totalQuizzes || 0;
                     
-                    // Versuchszähler abrufen
-                    freeQuizzesUsed = data?.rouletteStats?.freeQuizzesUsed || 0;
+                    const daily = data?.rouletteDaily || {};
+                    dailyDate = daily.date || null;
+                    dailyQuizzesCount = daily.count || 0;
                     
-                    // Abonnement abrufen
-                    const sub = data?.rouletteSubscription;
-                    if (sub && sub.active && sub.expiresAt) {
-                        const expires = new Date(sub.expiresAt);
-                        if (expires > new Date()) {
-                            isSubscribed = true;
-                            subscriptionExpiresAt = expires;
-                        } else {
-                            // Abonnement abgelaufen
-                            isSubscribed = false;
-                            // Firebase aktualisieren
-                            await updateDoc(userRef, {
-                                'rouletteSubscription.active': false
-                            });
-                        }
-                    } else {
-                        isSubscribed = false;
-                    }
-                    
-                    console.log('📊 Benutzerdaten geladen:');
-                    console.log('  👤 Name:', userName);
-                    console.log('  🎯 Verwendete kostenlose Versuche:', freeQuizzesUsed);
-                    console.log('  💎 Abonniert:', isSubscribed);
-                    if (isSubscribed) {
-                        console.log('  📅 Läuft ab am:', subscriptionExpiresAt.toLocaleDateString('de-DE'));
+                    if (dailyDate !== today) {
+                        console.log('🔄 Neuer Tag erkannt, Zähler wird zurückgesetzt');
+                        dailyQuizzesCount = 0;
+                        dailyDate = today;
+                        
+                        await setDoc(userRef, {
+                            rouletteDaily: {
+                                count: 0,
+                                date: today,
+                                lastReset: new Date().toISOString()
+                            }
+                        }, { merge: true });
                     }
                     
                     return true;
                 } else {
-                    // Neuer Benutzer - Standarddaten erstellen
                     await setDoc(userRef, {
                         rouletteStats: {
                             freeQuizzesUsed: 0,
                             totalQuizzes: 0
                         },
-                        rouletteSubscription: {
-                            active: false,
-                            expiresAt: null,
-                            paidAt: null
+                        rouletteDaily: {
+                            count: 0,
+                            date: today,
+                            lastReset: new Date().toISOString()
                         }
                     }, { merge: true });
-                    freeQuizzesUsed = 0;
-                    isSubscribed = false;
+                    dailyQuizzesCount = 0;
+                    dailyDate = today;
                     return true;
                 }
             } catch (error) {
@@ -1245,158 +966,110 @@
         }
         
         function hasAccess() {
-            // ✅ Wenn abonniert und nicht abgelaufen → unbegrenzter Zugriff
-            if (isSubscribed) {
-                return true;
+            const today = getTodayDateString();
+            if (dailyDate !== today) {
+                dailyQuizzesCount = 0;
+                dailyDate = today;
             }
-            
-            // ✅ Wenn Versuche übrig → kostenloser Zugriff
-            const remaining = MAX_FREE_QUIZZES - freeQuizzesUsed;
-            if (remaining > 0) {
-                return true;
-            }
-            
-            // ❌ Keine Versuche mehr → Zugriff verweigert
-            return false;
+            return dailyQuizzesCount < MAX_DAILY_QUIZZES;
         }
         
         function getRemainingQuizzes() {
-            if (isSubscribed) return '♾️';
-            return Math.max(0, MAX_FREE_QUIZZES - freeQuizzesUsed);
+            const today = getTodayDateString();
+            if (dailyDate !== today) {
+                return MAX_DAILY_QUIZZES;
+            }
+            return Math.max(0, MAX_DAILY_QUIZZES - dailyQuizzesCount);
         }
         
         function updateQuotaDisplay() {
             const remaining = getRemainingQuizzes();
             
-            if (isSubscribed) {
-                quotaBadge.textContent = '💎 Unbegrenzter Zugriff - 1 Jahr gültig';
-                quotaBadge.className = 'quota-badge unlimited';
-            } else if (remaining > 5) {
-                quotaBadge.textContent = `🎯 ${remaining} kostenlose Versuche übrig`;
+            if (remaining > 5) {
+                quotaBadge.textContent = `🎯 ${remaining} Quiz heute übrig`;
                 quotaBadge.className = 'quota-badge';
             } else if (remaining > 0) {
-                quotaBadge.textContent = `⚠️ ${remaining} Versuch${remaining > 1 ? 'e' : ''} übrig`;
+                quotaBadge.textContent = `⚠️ ${remaining} Quiz heute übrig`;
                 quotaBadge.className = 'quota-badge warning';
             } else {
-                quotaBadge.textContent = '🔒 Keine Versuche mehr - Abonnieren Sie !';
+                quotaBadge.textContent = '🔒 Keine Quiz mehr heute - Kommen Sie morgen wieder !';
                 quotaBadge.className = 'quota-badge danger';
             }
         }
         
         async function incrementQuizCount() {
-            if (isSubscribed) return; // Kein Inkrement nötig, wenn abonniert
+            const today = getTodayDateString();
             
             try {
                 const userRef = doc(db, 'users_ios', userId);
-                await updateDoc(userRef, {
-                    'rouletteStats.freeQuizzesUsed': increment(1),
+                
+                if (dailyDate !== today) {
+                    dailyQuizzesCount = 0;
+                    dailyDate = today;
+                }
+                
+                dailyQuizzesCount++;
+                
+                await setDoc(userRef, {
+                    rouletteDaily: {
+                        count: dailyQuizzesCount,
+                        date: today,
+                        lastUpdated: new Date().toISOString()
+                    },
                     'rouletteStats.totalQuizzes': increment(1)
-                });
-                freeQuizzesUsed++;
+                }, { merge: true });
+                
+                totalQuizzesAllTime++;
                 updateQuotaDisplay();
-                console.log(`✅ Quiz gezählt: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
             } catch (error) {
                 console.error('❌ Fehler beim Inkrementieren:', error);
             }
         }
         
-        // ============================================================
-        // ✅ ZAHLUNGS-POPUP
-        // ============================================================
-        
-        function showPaymentPopup() {
-            // TTS stoppen
+        function showDailyLimitPopup() {
             stopTTS();
             
-            // Überprüfen, ob das Popup bereits existiert
             if (document.querySelector('.payment-popup-overlay')) return;
             
             const overlay = document.createElement('div');
             overlay.className = 'payment-popup-overlay';
             
-            const remaining = getRemainingQuizzes();
-            
             overlay.innerHTML = `
                 <div class="payment-popup">
-                    <div class="payment-lock-icon">🔒</div>
-                    <h2>🎯 Keine kostenlosen Versuche mehr !</h2>
+                    <div class="payment-lock-icon">🌙</div>
+                    <h2>🎯 Sie haben Ihr Tageslimit erreicht !</h2>
                     <p>
-                        Sie haben Ihre <strong>${MAX_FREE_QUIZZES} kostenlosen Versuche</strong> aufgebraucht.<br>
-                        <span style="font-size: 0.9rem; color: #888;">Es bleibt Ihnen kein Versuch mehr.</span>
+                        Sie haben Ihre <strong>${MAX_DAILY_QUIZZES} kostenlosen Quiz</strong> für heute aufgebraucht.
                     </p>
-                    <p style="margin-top: 10px;">
-                        Um <strong>1 Jahr lang</strong> weiterspielen zu können,<br>
-                        zahlen Sie <strong>20 €</strong> per Überweisung.
+                    <p style="margin-top: 10px; font-size: 1.05rem; color: #667eea; font-weight: 600;">
+                        Kommen Sie morgen für ${MAX_DAILY_QUIZZES} neue Quiz wieder !
                     </p>
-                    <div class="features">
-                        <p>✅ Unbegrenzter Zugriff für 1 Jahr</p>
-                        <p>✅ Alle Fachgebiete</p>
-                        <p>✅ Alle Levels</p>
-                        <p>✅ Keine Quiz-Begrenzung</p>
+                    <div class="info-box success">
+                        <p>✅ Es ist <strong>100% kostenlos</strong>, jeden Tag !</p>
                     </div>
-                    <button class="pay-btn" id="payRouletteBtn">💳 20 € per Überweisung zahlen</button>
-                    <button class="close-btn" id="closePaymentPopup">❌ Später wiederkommen</button>
-                    <p class="secure-text">🔒 Sichere Überweisung • IBAN wird nach Klick bereitgestellt</p>
+                    <div class="info-box warning">
+                        <p>⏰ Nächste Sitzung : morgen um Mitternacht</p>
+                    </div>
+                    <button class="pay-btn" id="closeLimitPopup">
+                        👍 OK, bis morgen !
+                    </button>
+                    <p class="secure-text">💡 Tipp : Kommen Sie jeden Tag wieder, um nichts zu verpassen !</p>
                 </div>
             `;
             
             document.body.appendChild(overlay);
             
-            // 🔥 BUTTON "ZAHLEN" → SPEICHERT + LEITET WEITER
-            document.getElementById('payRouletteBtn').addEventListener('click', async function() {
-                this.textContent = '⏳ Wird gespeichert...';
-                this.disabled = true;
-                
-                try {
-                    // ✅ INTERESSE IN FIREBASE SPEICHERN
-                    const interestData = {
-                        userId: userId || 'anonymous',
-                        userName: userName,
-                        type: 'roulette_abonnement',
-                        amount: 20,
-                        currency: 'EUR',
-                        source: 'roulette_de_l_info',
-                        interestedAt: new Date().toISOString(),
-                        timestamp: new Date().toISOString(),
-                        userAgent: navigator.userAgent || 'unknown',
-                        platform: navigator.platform || 'unknown',
-                        status: 'redirected_to_payment'
-                    };
-                    
-                    await addDoc(collection(db, 'payment_interests'), interestData);
-                    console.log('✅ Interesse in Firebase gespeichert');
-                    showToast('📊 Weiterleitung zur Zahlungsseite...', 2000);
-                    
-                } catch (e) {
-                    console.warn('⚠️ Firebase-Fehler:', e);
-                }
-                
-                // ✅ POPUP ENTFERNEN
+            document.getElementById('closeLimitPopup').addEventListener('click', function() {
                 overlay.remove();
-                
-                // ✅ ZUR IBAN-SEITE WEITERLEITEN
-                window.location.href = `paiement_rib.html?type=roulette&amount=20&source=roulette`;
-            });
-            
-            document.getElementById('closePaymentPopup').addEventListener('click', function() {
-                overlay.remove();
-                showToast('💡 Sie können später wiederkommen, um zu abonnieren.', 3000);
+                showToast('👋 Bis morgen für neue Quiz !', 3000);
             });
             
             overlay.addEventListener('click', function(e) {
                 if (e.target === overlay) overlay.remove();
             });
             
-            // ✅ TTS-VORLESEN DER NACHRICHT
-            setTimeout(() => {
-                const ttsMessage = `Sie haben Ihre ${MAX_FREE_QUIZZES} kostenlosen Versuche aufgebraucht. Um 1 Jahr lang weiterspielen zu können, zahlen Sie 20 Euro per Überweisung. Klicken Sie auf den Button Zahlen, um zur IBAN zu gelangen.`;
-                speakText(cleanTextForTTS(ttsMessage), null);
-            }, 500);
+            // 🔇 Automatisches Vorlesen deaktiviert - Popup bleibt still
         }
-        
-        // ============================================================
-        // KI-WILLKOMMENSNACHRICHT
-        // ============================================================
         
         function displayIAWelcome() {
             const settings = storage.getSettings() || {};
@@ -1408,30 +1081,19 @@
             let message = '';
             let ttsMessage = '';
             
-            if (isSubscribed) {
-                const expireDate = subscriptionExpiresAt ? subscriptionExpiresAt.toLocaleDateString('de-DE') : 'in 1 Jahr';
-                message = `Hallo <strong>${name}</strong> ! 🌟<br>Willkommen bei der <strong>🎰 Roulette der Info</strong> !<br><br>💎 Sie haben ein <strong>unbegrenztes Abonnement</strong>, gültig bis zum <strong>${expireDate}</strong>.<br><br>🎯 Drehen Sie das Rad der Fachgebiete, dann das der Levels, und testen Sie Ihr Wissen ohne Limit !<br><br>🔥 Also, bereit, die Herausforderung anzunehmen ?`;
-                ttsMessage = `Hallo ${name}. Willkommen bei der Roulette der Info. Sie haben ein unbegrenztes Abonnement, gültig bis zum ${expireDate}. Drehen Sie die Räder und testen Sie Ihr Wissen ohne Limit !`;
-            } else if (remaining > 0) {
-                message = `Hallo <strong>${name}</strong> ! 🌟<br>Willkommen bei der <strong>🎰 Roulette der Info</strong> !<br><br>🎯 Es bleiben Ihnen <strong>${remaining} kostenlose${remaining > 1 ? '' : ''} Versuch${remaining > 1 ? 'e' : ''}</strong>.<br><br>Drehen Sie das Rad der Fachgebiete, dann das der Levels, und testen Sie Ihr Wissen !<br><br>🔥 Also, bereit, die Herausforderung anzunehmen ?`;
-                ttsMessage = `Hallo ${name}. Willkommen bei der Roulette der Info. Es bleiben Ihnen ${remaining} kostenlose Versuche. Drehen Sie die Räder und testen Sie Ihr Wissen.`;
+            if (remaining > 0) {
+                message = `Hallo <strong>${name}</strong> ! 🌟<br>Willkommen bei der <strong>🎰 Roulette der Info</strong> !<br><br>🎯 Es bleiben Ihnen <strong>${remaining} Quiz</strong> heute (von ${MAX_DAILY_QUIZZES}).<br><br>Drehen Sie das Rad der Fachgebiete, dann das der Levels, und testen Sie Ihr Wissen !<br><br>🔥 Also, bereit, die Herausforderung anzunehmen ?`;
+                ttsMessage = `Hallo ${name}. Willkommen bei der Roulette der Info. Es bleiben Ihnen ${remaining} Quiz heute. Drehen Sie die Räder und testen Sie Ihr Wissen.`;
             } else {
-                message = `Hallo <strong>${name}</strong> ! 🌟<br>Willkommen bei der <strong>🎰 Roulette der Info</strong> !<br><br>🔒 Sie haben Ihre <strong>${MAX_FREE_QUIZZES} kostenlosen Versuche</strong> aufgebraucht.<br><br>💎 Um <strong>1 Jahr lang</strong> weiterspielen zu können, abonnieren Sie für <strong>20€</strong>.<br><br>Klicken Sie auf den Button "QUIZ STARTEN", um die Abonnementoptionen zu sehen.`;
-                ttsMessage = `Hallo ${name}. Willkommen bei der Roulette der Info. Sie haben Ihre ${MAX_FREE_QUIZZES} kostenlosen Versuche aufgebraucht. Abonnieren Sie für 20 Euro pro Jahr, um weiterspielen zu können.`;
+                message = `Hallo <strong>${name}</strong> ! 🌟<br>Willkommen bei der <strong>🎰 Roulette der Info</strong> !<br><br>🌙 Sie haben Ihre <strong>${MAX_DAILY_QUIZZES} Quiz</strong> für heute aufgebraucht.<br><br>💡 Kommen Sie <strong>morgen</strong> für ${MAX_DAILY_QUIZZES} neue kostenlose Quiz wieder !`;
+                ttsMessage = `Hallo ${name}. Willkommen bei der Roulette der Info. Sie haben Ihre ${MAX_DAILY_QUIZZES} Quiz für heute aufgebraucht. Kommen Sie morgen für neue kostenlose Quiz wieder.`;
             }
             
             iaMessage.innerHTML = message;
             updateQuotaDisplay();
             
-            setTimeout(() => {
-                const cleanMsg = cleanTextForTTS(ttsMessage);
-                speakText(cleanMsg, null);
-            }, 1500);
+            // 🔇 Automatisches Vorlesen beim Laden DEAKTIVIERT
         }
-        
-        // ============================================================
-        // RAD 1 : 36 FACHGEBIETE
-        // ============================================================
         
         let roulette = null;
         let isSpinning = false;
@@ -1546,10 +1208,6 @@
             return { spin, draw, isSpinning: () => isSpinning };
         }
         
-        // ============================================================
-        // RAD 2 : 6 LEVELS
-        // ============================================================
-        
         let levelRoulette = null;
         let isLevelSpinning = false;
         
@@ -1647,10 +1305,6 @@
             return { spin, draw, isSpinning: () => isLevelSpinning };
         }
         
-        // ============================================================
-        // RAD 2 ANZEIGEN
-        // ============================================================
-        
         function showLevelRoulette() {
             levelRouletteContainer.style.display = 'block';
             spinLevelBtn.style.display = 'inline-block';
@@ -1660,10 +1314,6 @@
                 levelRoulette.draw();
             }
         }
-        
-        // ============================================================
-        // VERLAUF
-        // ============================================================
         
         function renderHistory() {
             if (quizHistory.length === 0) {
@@ -1677,10 +1327,6 @@
                 </span>
             `).join('');
         }
-        
-        // ============================================================
-        // FRAGE LADEN
-        // ============================================================
         
         async function loadQuestionForLevel(specialtyId, levelId) {
             try {
@@ -1703,10 +1349,6 @@
             }
         }
         
-        // ============================================================
-        // BUTTONS REAKTIVIEREN
-        // ============================================================
-        
         function resetButtons() {
             spinBtn.disabled = false;
             spinBtn.textContent = '🎯 RAD DER FACHGEBIETE DREHEN';
@@ -1714,21 +1356,14 @@
             spinLevelBtn.textContent = '🎯 LEVEL DREHEN';
         }
         
-        // ============================================================
-        // ✅ QUIZ STARTEN - MIT ZUGRIFFSPRÜFUNG
-        // ============================================================
-        
         function startQuiz() {
-            // ✅ ÜBERPRÜFEN, OB DER BENUTZER NOCH VERSUCHE HAT
             if (!hasAccess()) {
-                showPaymentPopup();
+                showDailyLimitPopup();
                 return;
             }
             
-            // ✅ VERSUCHSZÄHLER INKREMENTIEREN
             incrementQuizCount();
             
-            // ✅ QUIZ STARTEN
             if (!currentQuestion) {
                 showToast('❌ Frage nicht verfügbar', 3000);
                 return;
@@ -1739,10 +1374,6 @@
             resultContainer.style.display = 'none';
             displayQuestion(currentQuestion);
         }
-        
-        // ============================================================
-        // FRAGE ANZEIGEN
-        // ============================================================
         
         function displayQuestion(question) {
             isAnswered = false;
@@ -1773,15 +1404,12 @@
             timerBottomValue.textContent = timeRemaining;
             timerBottom.style.color = '#e67e22';
             startTimer();
+            // 🔊 Frage wird automatisch vorgelesen (Kern von ETEO)
             setTimeout(() => {
                 const cleanQuestion = cleanTextForTTS(question.question);
                 speakText(cleanQuestion, ttsQuestionBtn, '🔊 Frage vorlesen');
             }, 500);
         }
-        
-        // ============================================================
-        // TIMER
-        // ============================================================
         
         function startTimer() {
             clearInterval(timerInterval);
@@ -1802,10 +1430,6 @@
             clearInterval(timerInterval);
             timerBottom.style.color = '#e67e22';
         }
-        
-        // ============================================================
-        // KLICK VERARBEITEN
-        // ============================================================
         
         function handleOptionClick(index) {
             if (isAnswered) return;
@@ -1858,6 +1482,7 @@
                 30 - timeRemaining
             );
             nextBtn.disabled = false;
+            // 🔊 Feedback wird automatisch vorgelesen
             setTimeout(() => {
                 let feedbackTTS = '';
                 if (isCorrect) {
@@ -1869,10 +1494,6 @@
                 speakText(cleanFeedback, ttsFeedbackBtn, '🔊 Erneut anhören');
             }, 300);
         }
-        
-        // ============================================================
-        // TIMEOUT
-        // ============================================================
         
         function handleTimeout() {
             if (isAnswered) return;
@@ -1915,10 +1536,6 @@
             }, 300);
         }
         
-        // ============================================================
-        // TEILEN DER ERGEBNISSE
-        // ============================================================
-        
         async function shareQuizResult() {
             const settings = storage.getSettings() || {};
             const name = settings.user?.fullName || userName || 'Doktor';
@@ -1959,10 +1576,6 @@
             }
         }
         
-        // ============================================================
-        // ERGEBNISSE ANZEIGEN
-        // ============================================================
-        
         async function showResults() {
             stopTimer();
             questionContainer.style.display = 'none';
@@ -1976,7 +1589,6 @@
             finalScore.textContent = isCorrect ? '1/1' : '0/1';
             percentage.textContent = isCorrect ? '100%' : '0%';
             
-            // ✅ BELOHNUNGEN SPEICHERN
             let rewardMessage = '';
             let unlockedBadges = [];
             let pointsAdded = 0;
@@ -2009,7 +1621,7 @@
                         const badgeText = unlockedBadges.map(id => badgeNames[id] || id).join(', ');
                         badgeContainer.innerHTML = `
                             <div style="background: #ffd700; color: #2c3e50; padding: 10px 30px; border-radius: 30px; font-weight: 700; margin-top: 10px;">
-                                🏆 ${badgeText} freigeschaltet${unlockedBadges.length > 1 ? '' : ''} ! 
+                                🏆 ${badgeText} freigeschaltet ! 
                             </div>
                         `;
                     }
@@ -2018,7 +1630,6 @@
                 console.warn('⚠️ Belohnungsfehler:', error);
             }
             
-            // ✅ BELOHNUNGEN ANZEIGEN
             const rewardsHTML = pointsAdded > 0 || unlockedBadges.length > 0 ? `
                 <div style="background: #f0f4ff; border-radius: 16px; padding: 12px 16px; margin: 10px 0; border-left: 4px solid #667eea;">
                     <div style="font-weight: 600; color: #2c3e50;">🎁 Belohnungen</div>
@@ -2030,7 +1641,6 @@
                 </div>
             ` : '';
             
-            // ✅ IN rouletteHistory SPEICHERN
             const user = auth.currentUser;
             if (user) {
                 try {
@@ -2047,16 +1657,13 @@
                             specialtyId: currentSpecialty
                         })
                     });
-                    
-                    console.log('✅ Roulette in users_ios/rouletteHistory gespeichert');
-                    
                 } catch (error) {
                     console.error('❌ Firebase-Speicherfehler:', error);
                 }
             }
             
-            let iaMessage = '';
-            let ttsMessage = '';
+            let iaMessageText = '';
+            let ttsMessageText = '';
             
             if (isCorrect) {
                 const correctMessages = [
@@ -2072,8 +1679,8 @@
                       tts: `${name}, Sie sind ein wahrer Experte !` }
                 ];
                 const randomIndex = Math.floor(Math.random() * correctMessages.length);
-                iaMessage = correctMessages[randomIndex].display;
-                ttsMessage = correctMessages[randomIndex].tts;
+                iaMessageText = correctMessages[randomIndex].display;
+                ttsMessageText = correctMessages[randomIndex].tts;
                 resultTitle.textContent = '🎉 Bravo !';
                 resultMessage.textContent = 'Sie haben die richtige Antwort gefunden ! 💪';
                 if (!unlockedBadges.length) {
@@ -2095,8 +1702,8 @@
                       tts: `${name}, geben Sie nicht auf ! Die richtige Antwort war : "${currentQuestion.options[currentQuestion.correct]}".` }
                 ];
                 const randomIndex = Math.floor(Math.random() * wrongMessages.length);
-                iaMessage = wrongMessages[randomIndex].display;
-                ttsMessage = wrongMessages[randomIndex].tts;
+                iaMessageText = wrongMessages[randomIndex].display;
+                ttsMessageText = wrongMessages[randomIndex].tts;
                 resultTitle.textContent = '💪 Keine Panik !';
                 resultMessage.textContent = `Die richtige Antwort war : ${currentQuestion.options[currentQuestion.correct]}. 📖`;
                 if (!unlockedBadges.length) {
@@ -2109,13 +1716,12 @@
                 iaResultContainer.innerHTML = `
                     <div style="background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 16px; padding: 14px 18px; margin: 12px 0; color: white; display: flex; align-items: flex-start; gap: 12px; text-align: left; box-shadow: 0 4px 20px rgba(102, 126, 234, 0.25);">
                         <div style="font-size: 2rem; flex-shrink: 0;" class="ia-result-avatar">🤖</div>
-                        <p style="margin: 0; font-size: 0.9rem; line-height: 1.6;">${iaMessage}</p>
+                        <p style="margin: 0; font-size: 0.9rem; line-height: 1.6;">${iaMessageText}</p>
                     </div>
                     ${rewardsHTML}
                 `;
             }
             
-            // ✅ HINZUFÜGEN DES TEILEN-BUTTONS
             const resultButtons = document.querySelector('.result-buttons');
             if (resultButtons) {
                 const oldShareBtn = document.getElementById('shareResultBtn');
@@ -2132,14 +1738,10 @@
             }
             
             setTimeout(() => {
-                const cleanMessage = cleanTextForTTS(ttsMessage);
+                const cleanMessage = cleanTextForTTS(ttsMessageText);
                 speakText(cleanMessage, null);
             }, 1200);
         }
-        
-        // ============================================================
-        // EREIGNISSE
-        // ============================================================
         
         spinBtn.addEventListener('click', () => {
             if (roulette && !roulette.isSpinning()) {
@@ -2205,7 +1807,6 @@
                 roulette.draw();
             }
             
-            // ✅ BENUTZERDATEN NEU LADEN
             loadUserData().then(() => {
                 updateQuotaDisplay();
                 displayIAWelcome();
@@ -2252,25 +1853,16 @@
             speakText(fullText, this, '🔊 Erklärung vorlesen');
         });
         
-        // ============================================================
-        // ✅ INITIALISIERUNG
-        // ============================================================
-        
         async function init() {
-            Logger.info('🎰 Roulette der Info geladen - Version mit Abonnement');
+            Logger.info('🎰 Roulette der Info geladen - 10 kostenlose Quiz pro Tag');
             
-            // ✅ AUTHENTIFIZIERUNG ÜBERPRÜFEN
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
                     console.log('👤 Benutzer angemeldet:', user.email);
                     
-                    // ✅ BENUTZERDATEN LADEN
                     await loadUserData();
-                    
-                    // ✅ ANZEIGE AKTUALISIEREN
                     updateQuotaDisplay();
                     
-                    // ✅ RAD STARTEN
                     roulette = initRoulette();
                     levelRoulette = initLevelRoulette();
                     rouletteScreen.style.display = 'block';
@@ -2278,23 +1870,15 @@
                     resultContainer.style.display = 'none';
                     resetButtons();
                     
-                    // ✅ WILLKOMMENSNACHRICHT ANZEIGEN
                     displayIAWelcome();
                     
                     console.log('🎰 Roulette der Info bereit !');
-                    console.log(`🎯 Verwendete kostenlose Versuche: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
-                    console.log(`💎 Abonnement aktiv: ${isSubscribed}`);
-                    if (isSubscribed) {
-                        console.log(`📅 Läuft ab am: ${subscriptionExpiresAt?.toLocaleDateString('de-DE')}`);
-                    }
-                    console.log('✅ Firebase : Speicherung in users_ios/rouletteHistory');
-                    console.log('✅ Die Punktzahlen der Roulette BEEINFLUSSEN NICHT die grünen Kästchen der Fachgebiete');
-                    console.log('🔊 Soundeffekte synchron mit BEIDEN Rädern');
-                    console.log('🔒 Buttons nach jedem Klick ausgegraut');
-                    console.log('✅ RewardService integriert : Punkte und Abzeichen automatisch');
-                    console.log('✅ Teilen in sozialen Netzwerken integriert');
-                    console.log('💳 Zahlung per Überweisung : 20€ für 1 Jahr unbegrenzten Zugriff');
-                    console.log('📱 Versuchszähler : 20 kostenlos, dann Zahlung');
+                    console.log(`🎯 ${MAX_DAILY_QUIZZES} kostenlose Quiz pro Tag`);
+                    console.log(`📊 Quiz heute: ${dailyQuizzesCount}/${MAX_DAILY_QUIZZES}`);
+                    console.log(`📈 Historische Gesamtzahl: ${totalQuizzesAllTime}`);
+                    console.log('✅ 100% KOSTENLOS - Keine Zahlung');
+                    console.log('🌙 Automatischer Reset um Mitternacht');
+                    console.log('🔇 KI-Nachricht in STILLE');
                     
                 } else {
                     console.log('👤 Benutzer nicht angemeldet, Weiterleitung zur Registrierung');

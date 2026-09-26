@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Pagamento con bonifico - ETEO</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script type="importmap">
+    {
+        "imports": {
+            "../js/": "../js/",
+            "firebase/auth": "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js",
+            "firebase/firestore": "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js",
+            "firebase/app": "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+        }
+    }
+    </script>
+    
+    <style>
+        .payment-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .payment-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .payment-header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .payment-header p {
+            color: #7f8c8d;
+            font-size: 15px;
+        }
+        
+        .amount-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 15px 0;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+        }
+        
+        .bank-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid #667eea;
+        }
+        
+        .bank-card h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .bank-info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .bank-info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .bank-info-label {
+            font-weight: 600;
+            color: #7f8c8d;
+            font-size: 14px;
+            min-width: 120px;
+        }
+        
+        .bank-info-value {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 15px;
+            font-family: 'Courier New', monospace;
+            flex: 1;
+            text-align: right;
+        }
+        
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 8px;
+            transition: all 0.2s;
+        }
+        
+        .copy-btn:hover {
+            background: #5568d3;
+            transform: scale(1.05);
+        }
+        
+        .reference-highlight {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .reference-highlight .ref-label {
+            font-size: 13px;
+            color: #856404;
+            margin-bottom: 5px;
+        }
+        
+        .reference-highlight .ref-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #856404;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+        }
+        
+        .warning-box {
+            background: #f8d7da;
+            border: 2px solid #dc3545;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            color: #721c24;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .warning-box strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-section {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .form-section h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 18px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="date"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: all 0.3s;
+            box-sizing: border-box;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+        }
+        
+        .file-upload {
+            border: 3px dashed #cbd5e0;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: #f8f9fa;
+        }
+        
+        .file-upload:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .file-upload input[type="file"] {
+            display: none;
+        }
+        
+        .file-upload-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .file-upload-text {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .file-upload.has-file {
+            border-color: #4caf50;
+            background: #e8f5e9;
+        }
+        
+        .file-upload.has-file .file-upload-icon {
+            color: #4caf50;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #4caf50, #43a047);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .steps-list {
+            background: #e3f2fd;
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-top: 20px;
+        }
+        
+        .steps-list h3 {
+            color: #0d47a1;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .steps-list ol {
+            margin: 0;
+            padding-left: 20px;
+            color: #1565c0;
+            line-height: 2;
+        }
+        
+        .steps-list ol li {
+            font-size: 14px;
+        }
+        
+        .success-screen {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .success-screen.active {
+            display: block;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .success-screen h2 {
+            color: #4caf50;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        
+        .success-screen p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .pending-badge {
+            display: inline-block;
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        
+        .nav-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn {
+            background: none;
+            border: none;
+            font-size: 15px;
+            color: #667eea;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 520px) {
+            .bank-info-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .bank-info-value {
+                text-align: left;
+                word-break: break-all;
+            }
+            .amount-badge {
+                font-size: 24px;
+                padding: 12px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- NAVIGAZIONE -->
+        <div class="nav-top">
+            <button class="back-btn" onclick="history.back()">
+                ← Indietro
+            </button>
+            <button class="back-btn" onclick="window.location.href='dashboard_it.html'">
+                🏠 Dashboard
+            </button>
+        </div>
+
+        <div class="payment-container">
+            
+            <!-- INTESTAZIONE -->
+            <div class="payment-header">
+                <h1>🎓 Ottieni il tuo certificato ETEO</h1>
+                <p>Congratulazioni! Hai superato l'esame di certificazione.</p>
+                <div class="amount-badge">20,00 €</div>
+            </div>
+
+            <!-- SCHERMATA PRINCIPALE -->
+            <div id="paymentScreen">
+                
+                <!-- COORDINATE BANCARIE -->
+                <div class="bank-card">
+                    <h2>🏦 Coordinate bancarie</h2>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">🏦 Banca</span>
+                        <span class="bank-info-value">Banca Centrale Popolare (BCP)</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">📍 Agenzia</span>
+                        <span class="bank-info-value">Agenzia 2 MARS - Casablanca</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">📌 Titolare</span>
+                        <span class="bank-info-value">Sig. MAARAK SAID</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">🔢 IBAN</span>
+                        <span class="bank-info-value">
+                            <span id="ibanText">MA64 1907 8021 1111 1015 9900 9331</span>
+                            <button class="copy-btn" onclick="copyToClipboard('ibanText')">📋 Copia</button>
+                        </span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">🏛️ SWIFT / BIC</span>
+                        <span class="bank-info-value">
+                            <span id="swiftText">BCPOMAMC</span>
+                            <button class="copy-btn" onclick="copyToClipboard('swiftText')">📋 Copia</button>
+                        </span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">💰 Importo</span>
+                        <span class="bank-info-value" style="color: #4caf50; font-size: 18px;">20,00 €</span>
+                    </div>
+                    
+                    <div class="bank-info-row">
+                        <span class="bank-info-label">📍 Domiciliazione</span>
+                        <span class="bank-info-value" style="font-family: inherit; font-size: 13px;">Angle Rue Omar El Idrissi et Avenue 2 Mars, Casablanca, MAROCCO</span>
+                    </div>
+                </div>
+
+                <!-- RIFERIMENTO UNIVOCO -->
+                <div class="reference-highlight">
+                    <div class="ref-label">🔑 Il tuo riferimento univoco di pagamento</div>
+                    <div class="ref-value" id="referenceText">CERT-XXXXXX</div>
+                    <button class="copy-btn" onclick="copyToClipboard('referenceText')" style="margin-top: 10px;">📋 Copia il riferimento</button>
+                </div>
+
+                <!-- AVVERTENZA -->
+                <div class="warning-box">
+                    <strong>⚠️ IMPORTANTE:</strong>
+                    Devi indicare obbligatoriamente questo riferimento <strong>nella causale del tuo bonifico</strong>.
+                    Senza questo riferimento, non potremo identificare il tuo pagamento e la tua richiesta sarà automaticamente respinta.
+                </div>
+
+                <!-- MODULO DI CONFERMA -->
+                <div class="form-section">
+                    <h2>📝 Conferma il tuo bonifico</h2>
+                    
+                    <div class="form-group">
+                        <label for="fullName">👤 Nome completo (titolare del conto)</label>
+                        <input type="text" id="fullName" placeholder="Dr. Mario Rossi" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">📧 Email (per ricevere il certificato)</label>
+                        <input type="email" id="email" placeholder="tua@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="transferDate">📅 Data del bonifico</label>
+                        <input type="date" id="transferDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>📎 Ricevuta del bonifico (screenshot o PDF)</label>
+                        <div class="file-upload" id="fileUploadBox">
+                            <input type="file" id="proofFile" accept="image/*,.pdf">
+                            <div class="file-upload-icon">📤</div>
+                            <div class="file-upload-text" id="fileUploadText">
+                                Clicca per allegare una ricevuta<br>
+                                <small>(JPG, PNG o PDF - max 5 MB)</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="submit-btn" id="submitBtn">
+                        ✅ Conferma il bonifico
+                    </button>
+                </div>
+
+                <!-- PROSSIMI PASSI -->
+                <div class="steps-list">
+                    <h3>📋 Prossimi passi:</h3>
+                    <ol>
+                        <li>Effettua il bonifico di <strong>20,00 €</strong> sul conto indicato sopra</li>
+                        <li>Indica il riferimento <strong>CERT-XXXXXX</strong> nella causale</li>
+                        <li>Conferma il tuo bonifico su questa pagina</li>
+                        <li>Attendi la validazione (24-48h)</li>
+                        <li>Ricevi il tuo certificato via email</li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <!-- SCHERMATA DI SUCCESSO -->
+            <div class="success-screen" id="successScreen">
+                <div class="success-icon">✅</div>
+                <h2>Richiesta inviata!</h2>
+                <p>
+                    Abbiamo ricevuto correttamente la tua richiesta di certificato.<br>
+                    Il tuo bonifico sarà verificato entro <strong>24-48h</strong>.
+                </p>
+                <div class="pending-badge">⏸️ In attesa di validazione</div>
+                <p style="font-size: 13px; color: #999; margin-top: 20px;">
+                    Una copia della tua richiesta è stata inviata al nostro team.<br>
+                    Riceverai il tuo certificato via email non appena sarà validato.
+                </p>
+                <button class="submit-btn" onclick="window.location.href='dashboard_it.html'" style="max-width: 300px; margin: 20px auto 0;">
+                    🏠 Torna alla dashboard
+                </button>
+            </div>
+
+        </div>
+
+        <!-- TOAST -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <!-- SCRIPT PRINCIPALE -->
+    <script type="module">
+        import { initializeApp } from 'firebase/app';
+        import { getAuth, onAuthStateChanged } from 'firebase/auth';
+        import { getFirestore, doc, getDoc, setDoc, collection, addDoc } from 'firebase/firestore';
+
+        // ============================================================
+        // FIREBASE CONFIG
+        // ============================================================
+        const firebaseConfig = {
+            apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
+            authDomain: "eteo-endo-to-every-one.firebaseapp.com",
+            databaseURL: "https://eteo-endo-to-every-one-default-rtdb.firebaseio.com",
+            projectId: "eteo-endo-to-every-one",
+            storageBucket: "eteo-endo-to-every-one.firebasestorage.app",
+            messagingSenderId: "511524282020",
+            appId: "1:511524282020:web:5a25c021fd84f026969031"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // ============================================================
+        // CONFIGURAZIONE
+        // ============================================================
+        const ADMIN_EMAIL = 'maarak.said@gmail.com';
+        const CERTIFICATE_PRICE = 20;
+        const CURRENCY = 'EUR';
+
+        // ============================================================
+        // DOM ELEMENTS
+        // ============================================================
+        const paymentScreen = document.getElementById('paymentScreen');
+        const successScreen = document.getElementById('successScreen');
+        const fullNameInput = document.getElementById('fullName');
+        const emailInput = document.getElementById('email');
+        const transferDateInput = document.getElementById('transferDate');
+        const proofFileInput = document.getElementById('proofFile');
+        const fileUploadBox = document.getElementById('fileUploadBox');
+        const fileUploadText = document.getElementById('fileUploadText');
+        const submitBtn = document.getElementById('submitBtn');
+        const referenceText = document.getElementById('referenceText');
+        const toast = document.getElementById('toast');
+
+        // ============================================================
+        // STATO
+        // ============================================================
+        let currentUser = null;
+        let certificateReference = null;
+        let currentSpecialty = null;
+
+        // ============================================================
+        // TOAST
+        // ============================================================
+        function showToast(message, duration = 3000) {
+            toast.textContent = message;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, duration);
+        }
+
+        // ============================================================
+        // COPIA NEGLI APPUNTI
+        // ============================================================
+        window.copyToClipboard = function(elementId) {
+            const text = document.getElementById(elementId).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('✅ Copiato negli appunti!', 2000);
+            }).catch(() => {
+                showToast('❌ Errore di copia', 2000);
+            });
+        };
+
+        // ============================================================
+        // GENERA UN RIFERIMENTO UNIVOCO
+        // ============================================================
+        function generateReference() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let ref = 'CERT-';
+            for (let i = 0; i < 6; i++) {
+                ref += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return ref;
+        }
+
+        // ============================================================
+        // CARICAMENTO FILE
+        // ============================================================
+        proofFileInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                if (file.size > 5 * 1024 * 1024) {
+                    showToast('❌ File troppo grande (max 5 MB)', 3000);
+                    this.value = '';
+                    return;
+                }
+                fileUploadBox.classList.add('has-file');
+                fileUploadText.innerHTML = `✅ <strong>${file.name}</strong><br><small>${(file.size / 1024).toFixed(0)} KB</small>`;
+            } else {
+                fileUploadBox.classList.remove('has-file');
+                fileUploadText.innerHTML = 'Clicca per allegare una ricevuta<br><small>(JPG, PNG o PDF - max 5 MB)</small>';
+            }
+        });
+
+        fileUploadBox.addEventListener('click', () => proofFileInput.click());
+
+        // ============================================================
+        // CONVERTI FILE IN BASE64
+        // ============================================================
+        function fileToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
+
+        // ============================================================
+        // INVIO MODULO
+        // ============================================================
+        submitBtn.addEventListener('click', async () => {
+            // Verifiche
+            const fullName = fullNameInput.value.trim();
+            const email = emailInput.value.trim();
+            const transferDate = transferDateInput.value;
+            const proofFile = proofFileInput.files[0];
+
+            if (!fullName) {
+                showToast('⚠️ Inserisci il tuo nome completo', 3000);
+                fullNameInput.focus();
+                return;
+            }
+
+            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                showToast('⚠️ Inserisci un\'email valida', 3000);
+                emailInput.focus();
+                return;
+            }
+
+            if (!transferDate) {
+                showToast('⚠️ Indica la data del bonifico', 3000);
+                transferDateInput.focus();
+                return;
+            }
+
+            if (!proofFile) {
+                showToast('⚠️ Allega una ricevuta del bonifico', 3000);
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = '⏳ Invio in corso...';
+
+            try {
+                // 1. Converti il file in Base64
+                const proofBase64 = await fileToBase64(proofFile);
+
+                // 2. Crea la richiesta in Firestore
+                const paymentRequest = {
+                    userId: currentUser ? currentUser.uid : null,
+                    userEmail: currentUser ? currentUser.email : email,
+                    contactEmail: email,
+                    userName: fullName,
+                    specialty: currentSpecialty || 'general',
+                    amount: CERTIFICATE_PRICE,
+                    currency: CURRENCY,
+                    reference: certificateReference,
+                    status: 'pending',
+                    transferDate: transferDate,
+                    proofFileName: proofFile.name,
+                    proofFileSize: proofFile.size,
+                    proofBase64: proofBase64,
+                    createdAt: new Date().toISOString(),
+                    validatedAt: null,
+                    validatedBy: null,
+                    language: 'it'
+                };
+
+                const docRef = await addDoc(collection(db, 'payment_requests'), paymentRequest);
+                console.log('✅ Richiesta creata con ID:', docRef.id);
+
+                // 3. Invia email all'admin via FormSubmit.co
+                try {
+                    await fetch('https://formsubmit.co/ajax/' + ADMIN_EMAIL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            _subject: `🎓 Nuova richiesta di certificato - ${certificateReference}`,
+                            _template: 'table',
+                            _captcha: 'false',
+                            Riferimento: certificateReference,
+                            Nome: fullName,
+                            Email: email,
+                            Specialita: currentSpecialty || 'general',
+                            Importo: `${CERTIFICATE_PRICE} ${CURRENCY}`,
+                            Data_bonifico: transferDate,
+                            File: proofFile.name,
+                            Documento_ID: docRef.id,
+                            Lingua: 'Italiano',
+                            Azione: `Valida qui: https://www.eteo-dental.com/fr/admin_virements.html`
+                        })
+                    });
+                    console.log('✅ Email inviata all\'admin');
+                } catch (emailError) {
+                    console.warn('⚠️ Errore invio email:', emailError);
+                }
+
+                // 4. Mostra la schermata di successo
+                paymentScreen.style.display = 'none';
+                successScreen.classList.add('active');
+
+                // 5. Scroll in alto
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            } catch (error) {
+                console.error('❌ Errore:', error);
+                showToast('❌ Errore durante l\'invio. Riprova.', 4000);
+                submitBtn.disabled = false;
+                submitBtn.textContent = '✅ Conferma il bonifico';
+            }
+        });
+
+        // ============================================================
+        // INIZIALIZZAZIONE
+        // ============================================================
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                currentUser = user;
+                console.log('👤 Utente connesso:', user.email);
+
+                // Carica i dati dell'utente
+                try {
+                    const userRef = doc(db, 'users_ios', user.uid);
+                    const userSnap = await getDoc(userRef);
+                    if (userSnap.exists()) {
+                        const userData = userSnap.data();
+                        if (userData.displayName) {
+                            fullNameInput.value = userData.displayName;
+                        }
+                    }
+                } catch (e) {
+                    console.warn('⚠️ Errore caricamento utente:', e);
+                }
+
+                if (user.email) {
+                    emailInput.value = user.email;
+                }
+
+                // Ottieni la specialità dall'URL
+                const urlParams = new URLSearchParams(window.location.search);
+                currentSpecialty = urlParams.get('specialty') || null;
+
+            } else {
+                console.log('👤 Utente non connesso');
+                showToast('⚠️ Devi essere connesso per continuare', 3000);
+                setTimeout(() => {
+                    window.location.href = 'registrazione_it.html';
+                }, 2000);
+                return;
+            }
+
+            // Genera il riferimento univoco
+            certificateReference = generateReference();
+            referenceText.textContent = certificateReference;
+
+            // Data di oggi per default
+            const today = new Date().toISOString().split('T')[0];
+            transferDateInput.value = today;
+
+            console.log('📋 Riferimento:', certificateReference);
+            console.log('💰 Importo:', CERTIFICATE_PRICE, CURRENCY);
+        });
+
+    </script>
+</body>
+</html>

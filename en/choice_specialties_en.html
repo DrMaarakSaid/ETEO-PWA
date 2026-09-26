@@ -203,9 +203,6 @@
 <body>
     <div class="container">
         
-        <!-- ============================================================ -->
-        <!-- NAVIGATION -->
-        <!-- ============================================================ -->
         <div class="nav-top">
             <button class="back-btn" onclick="window.location.href='dashboard_en.html'">
                 ← Back
@@ -221,17 +218,11 @@
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- HEADER -->
-        <!-- ============================================================ -->
         <div class="form-header">
             <h1>📚 Choose a Specialty</h1>
             <p>Hello <span id="userNameDisplay">Doctor</span>, choose your specialty to start your ETEO journey!</p>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- AI WELCOME MESSAGE -->
-        <!-- ============================================================ -->
         <div class="ia-greeting" id="iaGreeting" style="margin-bottom: 20px; background: rgba(102,126,234,0.08); border-radius: 16px; padding: 14px 18px; display: flex; align-items: flex-start; gap: 14px; border-left: 4px solid #667eea;">
             <div class="ia-avatar" style="font-size: 2rem; flex-shrink: 0;">🤖</div>
             <div style="flex: 1;">
@@ -244,9 +235,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- STATISTICS -->
-        <!-- ============================================================ -->
         <div class="specialties-stats" id="specialtiesStats">
             <span>📚 <span id="totalSpecialties">36</span> specialties available</span>
             <span class="stat-divider">|</span>
@@ -255,9 +243,6 @@
             <span>📊 Score : <span id="userScore">0%</span></span>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- FILTERS -->
-        <!-- ============================================================ -->
         <div class="filter-container" id="filterContainer">
             <button class="filter-btn active" data-filter="all">🔍 All</button>
             <button class="filter-btn" data-filter="clinique">🏥 Clinical</button>
@@ -267,67 +252,36 @@
             <button class="filter-btn" data-filter="sciences">🧬 Sciences</button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SEARCH -->
-        <!-- ============================================================ -->
         <input type="text" class="specialties-search" id="searchInput" placeholder="🔍 Search for a specialty...">
 
-        <!-- ============================================================ -->
-        <!-- SPECIALTIES GRID -->
-        <!-- ============================================================ -->
         <div class="specialties-grid" id="specialtiesGrid">
-            <!-- Filled by JavaScript -->
         </div>
 
-        <!-- ============================================================ -->
-        <!-- COUNTER -->
-        <!-- ============================================================ -->
         <div style="text-align: center; font-size: 0.85rem; color: #888; margin-top: 10px;">
             <span id="selectedCount">0</span> specialty(ies) selected
         </div>
 
-        <!-- ============================================================ -->
-        <!-- ACTIONS -->
-        <!-- ============================================================ -->
         <div class="actions" style="margin-top: 20px;">
             <button class="validate-btn" id="startQuizBtn" disabled>
                 🚀 Start the quiz
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- FOOTER -->
-        <!-- ============================================================ -->
         <div class="footer">
             <p>© 2026 - Dr. SAID MAARAK 🇲🇦</p>
         </div>
 
     </div>
 
-    <!-- ============================================================ -->
-    <!-- TOAST -->
-    <!-- ============================================================ -->
     <div class="toast" id="toast"></div>
 
-    <!-- ============================================================ -->
-    <!-- MAIN SCRIPT -->
-    <!-- ============================================================ -->
-    
     <script type="module">
-        // ============================================================
-        // IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import { SPECIALTIES, CATEGORY_LABELS } from '../js/config.js';
         import tts from '../js/services/tts.js';
         
         window.tts = tts;
-        
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
         
         const toast = document.getElementById('toast');
         const specialtiesGrid = document.getElementById('specialtiesGrid');
@@ -342,18 +296,10 @@
         const iaSpecialtiesMessage = document.getElementById('iaSpecialtiesMessage');
         const listenSpecialtiesBtn = document.getElementById('listenSpecialtiesBtn');
         
-        // ============================================================
-        // STORAGE
-        // ============================================================
-        
         const storage = new StorageService();
         let selectedSpecialty = null;
         let currentFilter = 'all';
         let searchTerm = '';
-        
-        // ============================================================
-        // TOAST
-        // ============================================================
         
         function showToast(message, duration = 2500) {
             toast.textContent = message;
@@ -363,10 +309,6 @@
                 toast.classList.remove('show');
             }, duration);
         }
-        
-        // ============================================================
-        // CLEAN EMOJIS FOR TTS
-        // ============================================================
         
         function cleanTextForTTS(text) {
             if (!text) return '';
@@ -378,30 +320,20 @@
             return cleaned;
         }
         
-        // ============================================================
-        // READ URL PARAMETER
-        // ============================================================
-        
         function getUrlParam(param) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(param);
         }
         
-        // ============================================================
-        // LOAD USER DATA (iOS VERSION)
-        // ============================================================
-        
         function loadUserData() {
             const settings = storage.getSettings() || {};
             const user = settings.user || {};
             
-            // ✅ iOS : displayName with fallback
             const displayName = user.displayName || user.fullName || 'Doctor';
             if (userNameDisplay) {
                 userNameDisplay.textContent = displayName;
             }
             
-            // Last visited specialty
             if (settings.lastSpecialty) {
                 const spec = SPECIALTIES.find(s => s.id === settings.lastSpecialty);
                 if (spec) {
@@ -409,7 +341,6 @@
                 }
             }
             
-            // Average score
             const scores = settings.scores || {};
             let totalScore = 0;
             let totalCount = 0;
@@ -430,14 +361,9 @@
             totalSpecialties.textContent = SPECIALTIES.length;
         }
         
-        // ============================================================
-        // GENERATE AI MESSAGE
-        // ============================================================
-        
         async function generateIAMessage() {
             try {
                 const settings = storage.getSettings() || {};
-                // ✅ iOS : displayName with fallback
                 const userName = settings.user?.displayName || settings.user?.fullName || 'Doctor';
                 
                 const scores = settings.scores || {};
@@ -487,24 +413,14 @@
                     listenSpecialtiesBtn.style.display = 'inline-block';
                 }
                 
-                setTimeout(() => {
-                    if (window.tts && typeof window.tts.speak === 'function') {
-                        const text = window._ttsSpecialtiesMessage || '';
-                        if (text) {
-                            window.tts.speak(text, 'en', 0.9, 1.0);
-                        }
-                    }
-                }, 1200);
+                // 🔇 Auto-read of AI message DISABLED
+                // User clicks "🔊 Listen" if they want to hear it
                 
             } catch (error) {
                 console.error('❌ Error generating AI message:', error);
                 iaSpecialtiesMessage.innerHTML = '⚠️ Message not available.';
             }
         }
-        
-        // ============================================================
-        // LISTEN BUTTON
-        // ============================================================
         
         listenSpecialtiesBtn.addEventListener('click', function() {
             if (!window.tts || typeof window.tts.speak !== 'function') {
@@ -546,16 +462,11 @@
             );
         });
         
-        // ============================================================
-        // RENDER SPECIALTIES (SORTED ALPHABETICALLY)
-        // ============================================================
-        
         function renderSpecialties() {
             const settings = storage.getSettings() || {};
             const scores = settings.scores || {};
             const lastSpecialty = settings.lastSpecialty;
             
-            // ✅ ALPHABETICAL SORT
             let filtered = [...SPECIALTIES].sort((a, b) => a.name.localeCompare(b.name));
             
             if (currentFilter !== 'all') {
@@ -607,10 +518,6 @@
             }).join('');
         }
         
-        // ============================================================
-        // SELECT A SPECIALTY
-        // ============================================================
-        
         window.selectSpecialty = function(id) {
             if (selectedSpecialty === id) {
                 selectedSpecialty = null;
@@ -641,10 +548,6 @@
             startQuizBtn.textContent = '🚀 Start the quiz';
         }
         
-        // ============================================================
-        // START THE QUIZ
-        // ============================================================
-        
         startQuizBtn.addEventListener('click', () => {
             if (!selectedSpecialty) {
                 showToast('⚠️ Please select a specialty', 3000);
@@ -658,10 +561,6 @@
             window.location.href = `quiz_en.html?specialty=${selectedSpecialty}`;
         });
         
-        // ============================================================
-        // FILTERS
-        // ============================================================
-        
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 filterBtns.forEach(b => b.classList.remove('active'));
@@ -671,18 +570,10 @@
             });
         });
         
-        // ============================================================
-        // SEARCH
-        // ============================================================
-        
         searchInput.addEventListener('input', (e) => {
             searchTerm = e.target.value.trim();
             renderSpecialties();
         });
-        
-        // ============================================================
-        // INITIALIZATION
-        // ============================================================
         
         function init() {
             Logger.info('📚 Choose specialties page iOS loaded (EN)');
@@ -691,7 +582,6 @@
             renderSpecialties();
             generateIAMessage();
             
-            // ✅ AUTO SELECTION FROM URL
             const specialtyParam = getUrlParam('specialty');
             if (specialtyParam) {
                 const spec = SPECIALTIES.find(s => s.id === specialtyParam);
@@ -715,9 +605,8 @@
             
             console.log('📚 ETEO iOS - Choose specialties ready (EN)');
             console.log(`📊 ${SPECIALTIES.length} specialties available (sorted alphabetically)`);
+            console.log('🔇 AI message in SILENCE (user clicks if they want)');
             console.log('🔍 Filters and search available');
-            console.log('🤖 AI: Personalized message with recommendation');
-            console.log('✅ iOS: displayName supported');
         }
         
         init();

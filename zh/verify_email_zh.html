@@ -234,7 +234,8 @@
                     🔄 重新发送验证邮件
                 </button>
                 
-                <button class="btn-back" onclick="window.location.href='zhuce_zh.html'">
+                <!-- ✅ CORRIGÉ : inscription_zh.html au lieu de zhuce_zh.html -->
+                <button class="btn-back" onclick="window.location.href='inscription_zh.html'">
                     ← 返回注册
                 </button>
             </div>
@@ -444,8 +445,9 @@
                     
                     showToast('✅ 邮箱已验证！正在跳转到仪表盘...', 2500);
                     
+                    // ✅ CORRIGÉ : dashboard_zh.html au lieu de yibiao_zh.html
                     setTimeout(() => {
-                        window.location.href = 'yibiao_zh.html';
+                        window.location.href = 'dashboard_zh.html';
                     }, 2000);
                     
                     return true;
@@ -476,8 +478,9 @@
                 if (user.emailVerified) {
                     // ✅ 已验证 - 直接跳转
                     showToast('✅ 邮箱已验证。正在跳转...', 2000);
+                    // ✅ CORRIGÉ : dashboard_zh.html au lieu de yibiao_zh.html
                     setTimeout(() => {
-                        window.location.href = 'yibiao_zh.html';
+                        window.location.href = 'dashboard_zh.html';
                     }, 1500);
                     return;
                 }
@@ -496,17 +499,19 @@
                 }, 1000);
                 
                 // 处理重新发送按钮点击
-                resendBtn.addEventListener('click', resendEmailVerification);
+                resendBtn.addEventListener('click', resendVerificationEmail);
                 
-                Logger.info('📧 邮箱验证页面已加载');
+                Logger.info('📧 邮箱验证页面已加载（中文）');
                 console.log('📧 邮箱：', user.email);
                 console.log('✅ 每 5 秒自动验证');
+                console.log('✅ CORRIGÉ : dashboard_zh.html et inscription_zh.html');
                 
             } else {
                 // 没有用户登录 - 跳转到注册页
                 showToast('⚠️ 请先注册', 2000);
+                // ✅ CORRIGÉ : inscription_zh.html au lieu de zhuce_zh.html
                 setTimeout(() => {
-                    window.location.href = 'zhuce_zh.html';
+                    window.location.href = 'inscription_zh.html';
                 }, 1500);
             }
         });
@@ -521,7 +526,7 @@
             }
         });
         
-        console.log('📧 邮箱验证页面已成功加载');
+        console.log('📧 邮箱验证页面已成功加载（中文）');
         
     </script>
 </body>

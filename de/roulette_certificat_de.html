@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     
     <style>
-        /* ============================================================
-           SPEZIFISCHE STYLES FÜR DIE ZERTIFIKATS-ROULETTE
-           ============================================================ */
-        
         .roulette-wrapper {
             position: relative;
             display: flex;
@@ -564,7 +560,6 @@
             </p>
         </div>
 
-        <!-- BILDSCHIRM 1 : ROULETTE -->
         <div id="rouletteScreen">
             
             <div class="ia-greeting" id="iaGreeting">
@@ -614,7 +609,6 @@
             </div>
         </div>
 
-        <!-- BILDSCHIRM 2 : FRAGE -->
         <div id="questionContainer" style="display:none;">
             <div class="question-progress" id="questionProgressContainer">
                 <span class="question-counter" id="questionCounter2">0 / 50</span>
@@ -656,7 +650,6 @@
             </div>
         </div>
 
-        <!-- BILDSCHIRM 3 : ENDERGEBNIS -->
         <div id="resultContainer" style="display:none;">
             <div class="certificate-result">
                 <h2 id="resultTitle" style="margin-bottom: 5px;">📊 Prüfungsergebnis</h2>
@@ -674,7 +667,6 @@
                 
                 <div id="resultIaContainer"></div>
                 
-                <!-- ✅ ZERTIFIKAT : DOWNLOAD-BUTTON -->
                 <div id="certificateContainer" style="display:none;">
                     <button class="btn-download-cert" id="downloadCertBtn">
                         💳 ZERTIFIKAT HERUNTERLADEN - 20€
@@ -703,10 +695,6 @@
     </div>
 
     <script type="module">
-        // ============================================================
-        // MODULARE IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import { CertificateService } from '../js/services/certificateService.js';
@@ -717,10 +705,6 @@
         import QRCode from 'qrcode';
         
         import { CertificateGenerator } from '../js/services/CertificateGenerator.js';
-        
-        // ============================================================
-        // FIREBASE
-        // ============================================================
         
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -742,20 +726,12 @@
         
         window.tts = tts;
         
-        // ============================================================
-        // DIENSTE
-        // ============================================================
-        
         const storage = new StorageService();
         const certificateService = new CertificateService();
         const progressionService = new ProgressionService();
         const shareService = new ShareService();
         
         const generator = new CertificateGenerator();
-        
-        // ============================================================
-        // LEVELS
-        // ============================================================
         
         const LEVELS = [
             { id: 'debutant1', label: 'Anfänger 1', emoji: '🌱' },
@@ -765,10 +741,6 @@
             { id: 'expert1', label: 'Experte 1', emoji: '🔥' },
             { id: 'expert2', label: 'Experte 2', emoji: '⭐' }
         ];
-        
-        // ============================================================
-        // FACHGEBIET ABRUFEN
-        // ============================================================
         
         const urlParams = new URLSearchParams(window.location.search);
         let currentSpecialty = urlParams.get('specialty') || sessionStorage.getItem('certificat_specialty');
@@ -817,10 +789,6 @@
         };
         
         const specialtyDisplayName = SPECIALTY_MAP[currentSpecialty] || currentSpecialty;
-        
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
         
         const toast = document.getElementById('toast');
         const specialtyNameDisplay = document.getElementById('specialtyNameDisplay');
@@ -871,10 +839,6 @@
         const levelTag = document.getElementById('levelTag');
         const resultIaContainer = document.getElementById('resultIaContainer');
         
-        // ============================================================
-        // ZUSTAND
-        // ============================================================
-        
         let currentLevel = null;
         let selectedQuestions = [];
         let currentQuestionIndex = 0;
@@ -889,10 +853,6 @@
         let userName = 'Doktor';
         let levelScores = {};
         
-        // ============================================================
-        // TOAST
-        // ============================================================
-        
         function showToast(message, duration = 2500) {
             toast.textContent = message;
             toast.classList.add('show');
@@ -901,10 +861,6 @@
                 toast.classList.remove('show');
             }, duration);
         }
-        
-        // ============================================================
-        // ✅ TTS - VERBESSERTE FUNKTION
-        // ============================================================
         
         function cleanTextForTTS(text) {
             if (!text) return '';
@@ -1000,10 +956,6 @@
                 );
             } catch (e) {}
         }
-        
-        // ============================================================
-        // SOUNDEFFEKTE
-        // ============================================================
         
         function playRouletteSound(type, totalDuration) {
             try {
@@ -1117,10 +1069,6 @@
             } catch (e) {}
         }
         
-        // ============================================================
-        // LEVEL-PUNKTE ABRUFEN
-        // ============================================================
-        
         function getLevelScores() {
             const settings = storage.getSettings() || {};
             const scores = settings.scores?.[currentSpecialty] || {};
@@ -1137,10 +1085,6 @@
             
             return result;
         }
-        
-        // ============================================================
-        // PERSONALISIERTE KI-NACHRICHT GENERIEREN
-        // ============================================================
         
         function generateIAMessage(userName, levelScores) {
             const allCompleted = LEVELS.every(level => levelScores[level.id] !== null);
@@ -1220,10 +1164,6 @@
             return { message, avatar };
         }
         
-        // ============================================================
-        // KI-NACHRICHT NACH DEM ERGEBNIS
-        // ============================================================
-        
         function generateResultIAMessage(userName, levelScores, examScore, examPct, passed) {
             let message = '';
             let avatar = passed ? '🎓' : '💪';
@@ -1293,10 +1233,6 @@
             return { message, avatar };
         }
         
-        // ============================================================
-        // KI-WILLKOMMENSNACHRICHT ANZEIGEN
-        // ============================================================
-        
         function displayIAWelcome() {
             const settings = storage.getSettings() || {};
             userName = settings.user?.fullName || 'Doktor';
@@ -1307,15 +1243,10 @@
             iaAvatar.textContent = avatar;
             iaMessage.innerHTML = message;
             
-            setTimeout(() => {
-                const ttsMessage = cleanTextForTTS(message.replace(/<[^>]*>/g, ''));
-                speakText(ttsMessage, null);
-            }, 1500);
+            // 🔇 Automatisches Vorlesen beim Laden DEAKTIVIERT
+            // Der Benutzer kann auf 🔊 klicken, wenn er zuhören möchte
+            // (Fragen und Feedbacks werden weiterhin automatisch vorgelesen)
         }
-        
-        // ============================================================
-        // UI
-        // ============================================================
         
         function updateProgress() {
             const total = 50;
@@ -1342,10 +1273,6 @@
                 </span>
             `).join('');
         }
-        
-        // ============================================================
-        // FRAGEN LADEN
-        // ============================================================
         
         async function loadAllQuestionsForSpecialty() {
             try {
@@ -1414,10 +1341,6 @@
                 return null;
             }
         }
-        
-        // ============================================================
-        // ROULETTE
-        // ============================================================
         
         function initRoulette() {
             const canvas = document.getElementById('rouletteCanvas');
@@ -1514,10 +1437,6 @@
             return { spin, draw, isSpinning: () => isSpinning };
         }
         
-        // ============================================================
-        // FRAGE
-        // ============================================================
-        
         function startQuestion() {
             if (currentQuestionIndex >= 50) {
                 showResults();
@@ -1573,15 +1492,12 @@
             updateProgress();
             startTimer();
             
+            // 🔊 Frage automatisch vorlesen (Kern von ETEO)
             setTimeout(() => {
                 const cleanQuestion = cleanTextForTTS(question.question);
                 speakText(cleanQuestion, ttsQuestionBtn, '🔊 Frage vorlesen');
             }, 500);
         }
-        
-        // ============================================================
-        // TIMER
-        // ============================================================
         
         function startTimer() {
             clearInterval(timerInterval);
@@ -1602,10 +1518,6 @@
             clearInterval(timerInterval);
             timerBottom.style.color = '#e67e22';
         }
-        
-        // ============================================================
-        // OPTION-KLICK VERARBEITEN
-        // ============================================================
         
         function handleOptionClick(index) {
             if (isAnswered) return;
@@ -1674,6 +1586,7 @@
             
             nextBtn.disabled = false;
             
+            // 🔊 Feedback automatisch vorlesen (Kern von ETEO)
             setTimeout(() => {
                 let feedbackTTS = '';
                 if (isCorrect) {
@@ -1739,10 +1652,6 @@
             }, 300);
         }
         
-        // ============================================================
-        // ✅ ZAHLUNGS-POPUP MIT FIREBASE-SPEICHERUNG + WEITERLEITUNG ZU paiement_rib.html
-        // ============================================================
-        
         function showCertificatePaymentPopup() {
             const overlay = document.createElement('div');
             overlay.className = 'payment-popup-overlay';
@@ -1773,7 +1682,7 @@
             
             document.body.appendChild(overlay);
 
-            // 🔥 BUTTON "ZAHLEN" → SPEICHERT IN FIREBASE + LEITET WEITER ZU paiement_rib.html
+            // 🔥 BUTTON "ZAHLEN" → SPEICHERT IN FIREBASE + LEITET WEITER ZU virement_bancaire_de.html
             document.getElementById('payCertBtn').addEventListener('click', async function() {
                 this.textContent = '⏳ Wird gespeichert...';
                 this.disabled = true;
@@ -1781,7 +1690,6 @@
                 try {
                     const pct = Math.round((score / 50) * 100);
                     
-                    // ✅ IN FIREBASE SPEICHERN (payment_interests)
                     const interestData = {
                         userId: userId || 'anonymous',
                         userName: userName,
@@ -1797,7 +1705,7 @@
                         source: 'certificat_roulette',
                         userAgent: navigator.userAgent || 'unknown',
                         platform: navigator.platform || 'unknown',
-                        status: 'redirected_to_payment'
+                        status: 'redirected_to_virement'
                     };
 
                     await addDoc(collection(db, 'payment_interests'), interestData);
@@ -1809,11 +1717,9 @@
                     showToast('⚠️ Speicherfehler, aber fahren Sie fort', 2000);
                 }
 
-                // ✅ POPUP ENTFERNEN
                 overlay.remove();
 
-                // ✅ ZUR IBAN-SEITE FÜR DIE ÜBERWEISUNG WEITERLEITEN
-                window.location.href = `paiement_rib.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
+                window.location.href = `virement_bancaire_de.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
             });
 
             document.getElementById('closePaymentPopup').addEventListener('click', function() {
@@ -1825,23 +1731,16 @@
             });
         }
 
-        // ============================================================
-        // ✅ ZERTIFIKAT HERUNTERLADEN MIT ÜBERPRÜFUNG
-        // ============================================================
-        
         async function downloadCertificate() {
             try {
-                // ✅ ÜBERPRÜFEN, OB BEREITS BEZAHLT (localStorage)
                 const settings = storage.getSettings() || {};
                 const isPaid = settings?.certificates?.[currentSpecialty]?.paid || false;
 
-                // ✅ WENN NICHT BEZAHLT → POPUP
                 if (!isPaid) {
                     showCertificatePaymentPopup();
                     return;
                 }
 
-                // ✅ WENN BEREITS BEZAHLT → HERUNTERLADEN
                 showToast('📄 Zertifikat wird generiert...', 3000);
 
                 const pct = Math.round((score / 50) * 100);
@@ -1873,7 +1772,6 @@
                 document.body.removeChild(a);
                 URL.revokeObjectURL(url);
 
-                // Firestore-Speicherung
                 try {
                     if (userId) {
                         const certRef = doc(db, 'certificates', certificateId);
@@ -1903,10 +1801,6 @@
             }
         }
         
-        // ============================================================
-        // ERGEBNISSE ANZEIGEN (GEÄNDERT)
-        // ============================================================
-        
         function showResults() {
             stopTimer();
             stopTTS();
@@ -1923,7 +1817,6 @@
             percentageDisplay.className = 'percentage-big ' + (passed ? 'success' : 'fail');
             resultSpecialty.textContent = `Fachgebiet : ${specialtyDisplayName}`;
             
-            // Speicherung
             try {
                 const settings = storage.getSettings() || {};
                 if (!settings.scores) settings.scores = {};
@@ -1959,7 +1852,6 @@
                 }
             }
             
-            // KI-Nachricht nach dem Ergebnis
             levelScores = getLevelScores();
             const { message, avatar } = generateResultIAMessage(userName, levelScores, score, pct, passed);
             
@@ -1970,12 +1862,12 @@
                 </div>
             `;
             
+            // 🔊 Ergebnis automatisch vorlesen (Kern von ETEO)
             setTimeout(() => {
                 const ttsMessage = cleanTextForTTS(message.replace(/<[^>]*>/g, ''));
                 speakText(ttsMessage, null);
             }, 1200);
             
-            // ✅ ANZEIGE DES DOWNLOAD-BUTTONS (mit Zahlungsüberprüfung)
             if (passed) {
                 resultTitle.textContent = '🎓 Herzlichen Glückwunsch !';
                 resultMessage.textContent = `Sie haben die Prüfung mit ${score}/50 (${pct}%) bestanden !`;
@@ -1983,7 +1875,6 @@
                 certificateContainer.style.display = 'block';
                 failContainer.style.display = 'none';
                 
-                // ✅ Ereignis erneut an den Button anhängen (Version mit Überprüfung)
                 const downloadBtn = document.getElementById('downloadCertBtn');
                 if (downloadBtn) {
                     downloadBtn.removeEventListener('click', downloadCertificate);
@@ -2001,10 +1892,6 @@
                 playRouletteSound('lose');
             }
         }
-        
-        // ============================================================
-        // RESET
-        // ============================================================
         
         function resetExam() {
             stopTTS();
@@ -2037,10 +1924,6 @@
                 showToast('✅ Fragen geladen ! Drehen Sie das Rad.', 2000);
             }
         }
-        
-        // ============================================================
-        // EREIGNISSE
-        // ============================================================
         
         spinBtn.addEventListener('click', () => {
             if (roulette && !roulette.isSpinning()) {
@@ -2115,10 +1998,6 @@
             window.location.href = `quiz.html?specialty=${currentSpecialty}`;
         });
         
-        // ============================================================
-        // TTS-EREIGNISSE
-        // ============================================================
-        
         ttsQuestionBtn.addEventListener('click', function() {
             const cleanQuestion = cleanTextForTTS(questionText.textContent);
             speakText(cleanQuestion, this, '🔊 Frage vorlesen');
@@ -2147,12 +2026,8 @@
             speakText(explanationClean + '. ' + correctAnswerClean, this, '🔊 Erklärung vorlesen');
         });
         
-        // ============================================================
-        // ✅ INIT
-        // ============================================================
-        
         async function init() {
-            Logger.info('🎓 Zertifikats-Roulette geladen');
+            Logger.info('🎓 Zertifikats-Roulette geladen (DE)');
             
             specialtyNameDisplay.textContent = specialtyDisplayName;
             
@@ -2178,8 +2053,9 @@
                     console.log(`📚 Fachgebiet: ${currentSpecialty} (${specialtyDisplayName})`);
                     console.log(`📝 ${selectedQuestions.length} Fragen geladen`);
                     console.log('🎯 50 Fragen • 30 Sek • 70% zum Bestehen');
-                    console.log('🤖 Personalisierte KI aktiviert');
-                    console.log('💳 Zahlungssystem : WEITERLEITUNG ZU paiement_rib.html');
+                    console.log('🔇 KI-Begrüßung in STILLE (Benutzer klickt, wenn gewünscht)');
+                    console.log('🔊 Frage + Feedback + Ergebnis automatisch vorgelesen');
+                    console.log('💳 Zahlungssystem: WEITERLEITUNG ZU virement_bancaire_de.html');
                     console.log('📄 Zertifikat gesperrt, bis bezahlt');
                     
                 } else {
@@ -2187,10 +2063,6 @@
                 }
             });
         }
-        
-        // ============================================================
-        // ANMELDUNG ERFORDERLICH
-        // ============================================================
         
         function showLoginRequired() {
             const iaGreeting = document.getElementById('iaGreeting');
@@ -2216,7 +2088,6 @@
             `;
         }
         
-        // Start
         init();
         
     </script>

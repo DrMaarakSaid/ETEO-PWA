@@ -21,9 +21,6 @@
 <body>
     <div class="container classement-container">
         
-        <!-- ============================================================ -->
-        <!-- TOP NAVIGATION -->
-        <!-- ============================================================ -->
         <div class="nav-top">
             <button class="back-btn" onclick="window.location.href='dashboard_en.html'">
                 ← Back
@@ -33,17 +30,11 @@
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- HEADER -->
-        <!-- ============================================================ -->
         <div class="classement-header">
             <h1>🏆 ETEO World Ranking 🌍</h1>
             <p>Discover who are the best dentists in the world on ETEO</p>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- AI WELCOME (MODULAR) -->
-        <!-- ============================================================ -->
         <div class="ia-greeting" id="iaGreeting">
             <div class="ia-avatar">🤖</div>
             <div>
@@ -52,24 +43,14 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- RANKING CONTAINER -->
-        <!-- ============================================================ -->
         <div id="classementContainer">
-            <!-- Filled by ClassementManager -->
         </div>
 
-        <!-- ============================================================ -->
-        <!-- TOP COUNTRIES -->
-        <!-- ============================================================ -->
         <div class="top-countries-grid">
             <div id="topCountriesContainer"></div>
             <div id="topCountriesMonthContainer"></div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- BOTTOM NAVIGATION (DUPLICATED) -->
-        <!-- ============================================================ -->
         <div class="nav-bottom">
             <button class="back-btn" onclick="window.location.href='dashboard_en.html'">
                 ← Back
@@ -79,9 +60,6 @@
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- FOOTER -->
-        <!-- ============================================================ -->
         <div class="footer">
             <p>🏆 Real-time ranking • Updated with every quiz</p>
             <p>© 2026 - ETEO Dental Education | 🇲🇦 Dr. SAID MAARAK</p>
@@ -89,20 +67,9 @@
 
     </div>
 
-    <!-- ============================================================ -->
-    <!-- TOAST -->
-    <!-- ============================================================ -->
     <div class="toast" id="toast"></div>
 
-    <!-- ============================================================ -->
-    <!-- MAIN SCRIPT -->
-    <!-- ============================================================ -->
-    
     <script type="module">
-        // ============================================================
-        // IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import { RankingService } from '../js/services/rankingService.js';
@@ -110,10 +77,6 @@
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
         import tts from '../js/services/tts.js';
-        
-        // ============================================================
-        // FIREBASE CONFIG
-        // ============================================================
         
         const firebaseConfig = {
             apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
@@ -129,18 +92,10 @@
         const auth = getAuth(app);
         window.tts = tts;
         
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
-        
         const toast = document.getElementById('toast');
         const container = document.getElementById('classementContainer');
         const iaMessage = document.getElementById('iaClassementMessage');
         const listenBtn = document.getElementById('listenClassementBtn');
-        
-        // ============================================================
-        // TOAST
-        // ============================================================
         
         function showToast(message, duration = 2500) {
             toast.textContent = message;
@@ -150,10 +105,6 @@
                 toast.classList.remove('show');
             }, duration);
         }
-        
-        // ============================================================
-        // CLEAN TTS
-        // ============================================================
         
         function cleanTextForTTS(text) {
             if (!text) return '';
@@ -165,10 +116,6 @@
             return cleaned;
         }
         
-        // ============================================================
-        // GENERATE AI MESSAGE (FIXED)
-        // ============================================================
-        
         async function generateIAMessage(uid) {
             try {
                 const rankingService = new RankingService();
@@ -176,7 +123,6 @@
                 const topCountries = await rankingService.getTopCountriesByTopUsers();
                 
                 const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
-                // ✅ FIXED: displayName for iOS
                 const userName = settings.user?.displayName || settings.user?.fullName || 'Doctor';
                 const userProfession = settings.user?.profession || 'Doctor';
                 const userCountry = settings.user?.country || 'your country';
@@ -265,17 +211,14 @@
                 
                 if (listenBtn) listenBtn.style.display = 'inline-block';
                 
-                setTimeout(() => autoSpeak(), 1200);
+                // 🔇 Auto-read DISABLED at page load
+                // User clicks "🔊 Listen" if they want to hear it
                 
             } catch (error) {
                 console.error('❌ AI error:', error);
                 iaMessage.innerHTML = '⚠️ Message not available. Please refresh the page.';
             }
         }
-        
-        // ============================================================
-        // AUTO SPEAK
-        // ============================================================
         
         let isAutoSpeaking = false;
         
@@ -308,10 +251,6 @@
             );
         }
         
-        // ============================================================
-        // LISTEN BUTTON
-        // ============================================================
-        
         listenBtn.addEventListener('click', function() {
             if (!window.tts) return showToast('❌ TTS not available', 3000);
             
@@ -342,12 +281,8 @@
             );
         });
         
-        // ============================================================
-        // INIT
-        // ============================================================
-        
         async function init() {
-            Logger.info('🏆 Ranking page loaded');
+            Logger.info('🏆 Ranking page loaded (EN)');
             
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
@@ -362,6 +297,7 @@
                     await generateIAMessage(uid);
                     
                     Logger.info('✅ Ranking loaded');
+                    Logger.info('🔇 AI message in SILENCE (user clicks if they want)');
                 } else {
                     showToast('⚠️ Log in to view the ranking', 3000);
                     container.innerHTML = `

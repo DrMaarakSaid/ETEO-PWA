@@ -249,7 +249,7 @@
         // ✅ FIREBASE IMPORTS
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
-        import { getFirestore, doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
+        import { getFirestore, doc, updateDoc, arrayUnion, getDoc, collection, addDoc } from 'firebase/firestore';
         import { AccessService } from '../js/services/AccessService.js';
         
         window.tts = tts;
@@ -379,24 +379,18 @@
         function cleanTextForTTS(text) {
             if (!text) return '';
             
-            // 1️⃣ Rimuovi tag HTML
             let cleaned = text.replace(/<[^>]*>/g, ' ');
             
-            // 2️⃣ Rimuovi emoji (Unicode)
             cleaned = cleaned.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
             cleaned = cleaned.replace(/[\u2600-\u27BF]/g, '');
             cleaned = cleaned.replace(/[\u2700-\u27BF]/g, '');
             cleaned = cleaned.replace(/[\uFE00-\uFEFF]/g, '');
             cleaned = cleaned.replace(/[\u2300-\u23FF]/g, '');
             
-            // 3️⃣ Rimuovi emoji specifiche
             cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆🌱🌿🌳🌲🏆📈🎯💰📋⏱️🔄🏅🎙️🤖]/g, '');
             
-            // 4️⃣ Rimuovi interruzioni di riga
             cleaned = cleaned.replace(/\n/g, ' ');
             cleaned = cleaned.replace(/\r/g, ' ');
-            
-            // 5️⃣ Pulisci spazi
             cleaned = cleaned.replace(/\s+/g, ' ').trim();
             
             return cleaned;
@@ -635,6 +629,44 @@
         }
         
         // ============================================================
+        // ✅ TRACCIAMENTO INIZIO QUIZ (NUOVO - quiz_starts)
+        // ============================================================
+        
+        async function trackQuizStart(levelId) {
+            try {
+                const user = auth.currentUser;
+                if (!user) {
+                    console.warn('⚠️ Nessun utente connesso, tracciamento non registrato');
+                    return;
+                }
+                
+                const levelLabel = LEVELS.find(l => l.id === levelId)?.label || levelId;
+                const settings = storage.getSettings() || {};
+                const userName = settings.user?.fullName || user.displayName || 'Dottore';
+                
+                const startData = {
+                    userId: user.uid,
+                    userName: userName,
+                    userEmail: user.email || null,
+                    specialty: selectedSpecialty,
+                    specialtyName: specialtyName.textContent || selectedSpecialty,
+                    level: levelId,
+                    levelName: levelLabel,
+                    startedAt: new Date().toISOString(),
+                    userAgent: navigator.userAgent || 'unknown',
+                    platform: navigator.platform || 'unknown',
+                    language: 'it'
+                };
+                
+                await addDoc(collection(db, 'quiz_starts'), startData);
+                console.log('✅ Inizio quiz registrato in quiz_starts:', levelId);
+                
+            } catch (error) {
+                console.warn('⚠️ Errore registrazione inizio quiz:', error);
+            }
+        }
+        
+        // ============================================================
         // LETTURA RISULTATI CON MESSAGGI PERSONALIZZATI
         // ============================================================
         
@@ -726,7 +758,7 @@
         }
         
         // ============================================================
-        // ✅ CONTROLLA ACCESSO - TUTTI I LIVELLI GRATUITI (MODIFICATO)
+        // ✅ CONTROLLA ACCESSO - TUTTI I LIVELLI GRATUITI
         // ============================================================
         
         function canAccessLevel(levelId) {
@@ -734,7 +766,7 @@
         }
         
         // ============================================================
-        // MOSTRA SCHERMATA CAPITOLO
+        // ✅ MOSTRA SCHERMATA CAPITOLO (SILENZIO IA AL CARICAMENTO)
         // ============================================================
         
         function showChapterScreen(levelId) {
@@ -759,26 +791,19 @@
             listenChapterBtn.classList.remove('listening');
             isChapterPlaying = false;
             
-            setTimeout(() => {
-                if (window.tts && chapterTextContent) {
-                    isChapterPlaying = true;
-                    listenChapterBtn.textContent = '⏹️ Ferma';
-                    listenChapterBtn.classList.add('listening');
-                    window.tts.speak(cleanTextForTTS(chapterTextContent), 'it', 0.9, 1.0, () => {
-                        isChapterPlaying = false;
-                        listenChapterBtn.textContent = '🔊 Ascolta il capitolo';
-                        listenChapterBtn.classList.remove('listening');
-                    });
-                }
-            }, 500);
+            // ✅ SILENZIO IA : Plus de lecture automatique du chapitre au chargement.
+            // L'utilisateur peut cliquer sur le bouton 🔊 s'il veut écouter.
         }
         
         // ============================================================
-        // AVVIA QUIZ DAL CAPITOLO
+        // AVVIA QUIZ DAL CAPITOLO (CON TRACCIAMENTO)
         // ============================================================
         
         async function startQuizFromChapter() {
             if (!pendingLevelId) return;
+            
+            // ✅ TRAÇABILITÉ : enregistrer le début du quiz
+            await trackQuizStart(pendingLevelId);
             
             isChapterMode = false;
             chapterScreen.style.display = 'none';
@@ -1212,7 +1237,7 @@
                 
                 updateUI(index);
                 
-                // LETTURA AUTOMATICA DELLA DOMANDA
+                // LETTURA AUTOMATICA DELLA DOMANDA (ECCEZIONE QUIZ : CONSERVÉE)
                 setTimeout(() => {
                     if (window.tts && currentQuestionText) {
                         speakText(currentQuestionText, null);
@@ -1454,7 +1479,7 @@
                 levelUnlockMessage.style.color = '#e74c3c';
             }
             
-            // ✅ SALVATAGGIO LOCALSTORAGE (esistente)
+            // ✅ SALVATAGGIO LOCALSTORAGE
             const settings = storage.getSettings() || {};
             if (!settings.scores) settings.scores = {};
             if (!settings.scores[selectedSpecialty]) settings.scores[selectedSpecialty] = {};
@@ -1470,7 +1495,7 @@
             const user = auth.currentUser;
             if (user) {
                 try {
-                    const userRef = doc(db, 'users_ios', user.uid);  // ✅ Corrigé
+                    const userRef = doc(db, 'users_ios', user.uid);
                     
                     await updateDoc(userRef, {
                         rewardHistory: arrayUnion({
@@ -1525,6 +1550,7 @@
         
         // ============================================================
         // 🔥 MOSTRA SCHERMATA FINALE ESPERTO 2 (CON SPEECH MARKETING)
+        // ✅ CORREZIONE : RIMOZIONE DEL FALSO CERTIFICATO
         // ============================================================
         
         async function showExpertFinal() {
@@ -1547,13 +1573,12 @@
             document.getElementById('expertAIName').textContent = userName;
             
             // ============================================================
-            // 🔥 NUOVO SPEECH MARKETING (SENZA EMOJI NEL TTS)
+            // 🔥 SPEECH MARKETING (SENZA EMOJI NEL TTS)
             // ============================================================
             
             let msg = '';
             let msgForDisplay = '';
             
-            // MESSAGGIO PER LA VISUALIZZAZIONE (CON EMOJI)
             msgForDisplay = `<div style="text-align: left; font-size: 1rem; line-height: 1.8;">
 
 <strong>✨ Caro Dr. ${userName},</strong><br><br>
@@ -1602,12 +1627,11 @@ L'avventura continua. <strong>L'esame di certificazione ti aspetta</strong>.<br>
 
 </div>`;
             
-            // MESSAGGIO PER TTS (SENZA EMOJI, SENZA HTML)
             msg = `Caro Dottore ${userName}. Hai appena vissuto un percorso eccezionale. 6 livelli, 6 sfide, 6 vittorie. Ma non fermarti qui. Perché le leggende non si fermano alla vetta. Piantano la loro bandiera. Sei un gioiello raro. Solo il 5 per cento degli utenti ETEO raggiunge questo livello di padronanza. Non fai parte degli studenti, fai parte delle leggende. Oggi, il mondo ha bisogno della tua competenza. I tuoi pazienti hanno bisogno di questo medico eccezionale che sei diventato. La Certificazione ETEO: il tuo passaporto per l'eccellenza. Un certificato personalizzato, firmato dai fondatori. Un QR Code univoco per verificarne l'autenticità. Un documento ufficiale che potrai appendere nel tuo studio. Il riconoscimento dei tuoi colleghi e dei tuoi pazienti. Ma attenzione: la certificazione ETEO non viene data a tutti. È un privilegio riservato all'élite. È la prova che sei andato fino in fondo. È il riconoscimento della tua competenza. Solo i migliori vanno fino in fondo. Tu sei uno di loro. Allora, pronto a ottenere il tuo certificato? L'avventura continua. L'esame di certificazione ti aspetta. 50 domande per dimostrare al mondo chi sei. 50 domande, 30 secondi ciascuna, 70 per cento per superare. 2 tentativi consentiti. Pagamento di 20 euro per il certificato. Hai fatto la parte più difficile. La ricompensa è a portata di mano. Andiamo!`;
             
             document.getElementById('expertAIMessage').innerHTML = msgForDisplay;
             
-            // ✅ LETTURA TTS AUTOMATICA DEL MESSAGGIO (PULITO)
+            // ✅ LETTURA TTS AUTOMATICA DEL MESSAGGIO (ECCEZIONE : risultato finale, conservée)
             setTimeout(() => {
                 if (window.tts && typeof window.tts.speak === 'function') {
                     try {
@@ -1632,7 +1656,7 @@ L'avventura continua. <strong>L'esame di certificazione ti aspetta</strong>.<br>
             const user = auth.currentUser;
             if (user) {
                 try {
-                    const userRef = doc(db, 'users_ios', user.uid);  // ✅ Corrigé
+                    const userRef = doc(db, 'users_ios', user.uid);
                     
                     await updateDoc(userRef, {
                         [`completedSpecialties.${selectedSpecialty}`]: {
@@ -1642,14 +1666,10 @@ L'avventura continua. <strong>L'esame di certificazione ti aspetta</strong>.<br>
                         }
                     });
                     
-                    if (percent >= 75) {
-                        await updateDoc(userRef, {
-                            certificates: arrayUnion(selectedSpecialty)
-                        });
-                        showToast('🎓 Congratulazioni! Hai ottenuto un certificato!', 3000);
-                    }
-                    
-                    console.log('✅ Esperto 2 salvato in Firebase');
+                    // ✅ CORREZIONE BUG #2 : RIMOZIONE DEL FALSO CERTIFICATO
+                    // PRIMA : if (percent >= 75) { certificates: arrayUnion(selectedSpecialty) } → FALSO CERTIFICATO
+                    // DOPO : Niente. L'utente deve pagare per ottenere il certificato.
+                    console.log('✅ Esperto 2 salvato in Firebase (senza falso certificato)');
                     
                 } catch (error) {
                     console.error('❌ Errore salvataggio Esperto 2:', error);
@@ -1687,11 +1707,10 @@ L'avventura continua. <strong>L'esame di certificazione ti aspetta</strong>.<br>
         });
         
         // ============================================================
-        // 🔥 EVENTI SCHERMATA ESPERTO 2 - CORRETTI QUI!
+        // 🔥 EVENTI SCHERMATA ESPERTO 2
         // ============================================================
         
         document.getElementById('expertExamBtn').addEventListener('click', () => {
-            // ✅ AVVIA L'ESAME GRATUITO DI CERTIFICAZIONE VERSO IL FILE CORRETTO
             window.location.href = `roulette_certificato_it.html?specialty=${selectedSpecialty}&level=expert2`;
         });
         
@@ -1742,10 +1761,12 @@ L'avventura continua. <strong>L'esame di certificazione ti aspetta</strong>.<br>
                     Logger.info('🎊 Coriandoli per la vittoria!');
                     Logger.info('🔥 Firebase: salvataggio in rewardHistory!');
                     Logger.info('📂 Percorsi corretti: ../data/ → ../data/it/');
-                    Logger.info('🗑️ Rimossa la gestione degli accenti');
                     Logger.info('🎙️ Speech marketing Esperto 2 attivato!');
                     Logger.info('🔇 TTS: emoji rimosse per una voce naturale');
                     Logger.info('📝 Esame di certificazione gratuito → roulette_certificato_it.html');
+                    Logger.info('🔇 SILENZIO IA : capitolo in silenzio al caricamento');
+                    Logger.info('🎯 TRACCIAMENTO : quiz_starts attivato');
+                    Logger.info('✅ BUG #2 CORRETTO : nessun falso certificato in Esperto 2');
                 } else {
                     console.log('👤 Utente non connesso, reindirizzamento alla registrazione');
                     window.location.href = 'registrazione_it.html';

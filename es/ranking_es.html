@@ -166,7 +166,7 @@
         }
         
         // ============================================================
-        // GENERAR MENSAJE IA (CORREGIDO)
+        // ✅ GENERAR MENSAJE IA (SILENCIO AU CHARGEMENT)
         // ============================================================
         
         async function generateIAMessage(uid) {
@@ -265,7 +265,8 @@
                 
                 if (listenBtn) listenBtn.style.display = 'inline-block';
                 
-                setTimeout(() => autoSpeak(), 1200);
+                // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+                // L'utilisateur peut cliquer sur le bouton 🔊 "Escuchar" s'il veut écouter.
                 
             } catch (error) {
                 console.error('❌ Error IA:', error);
@@ -274,42 +275,7 @@
         }
         
         // ============================================================
-        // LECTURA AUTOMÁTICA
-        // ============================================================
-        
-        let isAutoSpeaking = false;
-        
-        function autoSpeak() {
-            if (!window.tts || isAutoSpeaking) return;
-            isAutoSpeaking = true;
-            const text = window._ttsClassementMessage || '';
-            if (!text) { isAutoSpeaking = false; return; }
-            
-            if (listenBtn) {
-                listenBtn.textContent = '⏹️ Detener';
-                listenBtn.classList.add('listening');
-            }
-            
-            window.tts.speak(text, 'es', 0.9, 1.0,
-                () => {
-                    if (listenBtn) {
-                        listenBtn.textContent = '🔊 Escuchar';
-                        listenBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                },
-                () => {
-                    if (listenBtn) {
-                        listenBtn.textContent = '🔊 Escuchar';
-                        listenBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                }
-            );
-        }
-        
-        // ============================================================
-        // BOTÓN ESCUCHAR
+        // ✅ BOTÓN ESCUCHAR (déclenché par l'utilisateur)
         // ============================================================
         
         listenBtn.addEventListener('click', function() {
@@ -319,7 +285,6 @@
                 window.tts.stop();
                 this.textContent = '🔊 Escuchar';
                 this.classList.remove('listening');
-                isAutoSpeaking = false;
                 return;
             }
             
@@ -362,6 +327,7 @@
                     await generateIAMessage(uid);
                     
                     Logger.info('✅ Clasificación cargada');
+                    Logger.info('🔇 SILENCIO IA : pas de lecture auto au chargement');
                 } else {
                     showToast('⚠️ Conéctate para ver la clasificación', 3000);
                     container.innerHTML = `

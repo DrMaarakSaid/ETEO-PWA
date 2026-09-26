@@ -216,7 +216,7 @@
             <button class="back-btn" onclick="window.location.href='progressione_it.html'">
                 📈 Progressi
             </button>
-            <button class="back-btn roulette-nav-btn" onclick="window.location.href='roulette_de_l_info_it.html'">
+            <button class="back-btn roulette-nav-btn" onclick="window.location.href='roulette_info_it.html'">
                 🎰 Roulette dell'Info
             </button>
         </div>
@@ -431,7 +431,7 @@
         }
         
         // ============================================================
-        // GENERA MESSAGGIO IA
+        // ✅ GENERA MESSAGGIO IA (SILENZIO AL CARICAMENTO)
         // ============================================================
         
         async function generateIAMessage() {
@@ -487,14 +487,8 @@
                     listenSpecialtiesBtn.style.display = 'inline-block';
                 }
                 
-                setTimeout(() => {
-                    if (window.tts && typeof window.tts.speak === 'function') {
-                        const text = window._ttsSpecialtiesMessage || '';
-                        if (text) {
-                            window.tts.speak(text, 'it', 0.9, 1.0);
-                        }
-                    }
-                }, 1200);
+                // ✅ SILENZIO IA : plus de lecture automatique au chargement.
+                // L'utilisateur peut cliquer sur le bouton 🔊 "Ascolta" s'il veut écouter.
                 
             } catch (error) {
                 console.error('❌ Errore generazione messaggio IA:', error);
@@ -718,6 +712,8 @@
             console.log('🔍 Filtri e ricerca disponibili');
             console.log('🤖 IA : Messaggio personalizzato con raccomandazione');
             console.log('✅ iOS : displayName supportato');
+            console.log('🔇 SILENZIO IA : pas de lecture auto au chargement');
+            console.log('🔗 Lien corrigé : roulette_info_it.html');
         }
         
         init();

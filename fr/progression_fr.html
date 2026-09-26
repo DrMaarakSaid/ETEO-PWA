@@ -219,7 +219,8 @@
                     listenBtn.style.display = 'inline-block';
                 }
                 
-                setTimeout(() => autoSpeak(), 1200);
+                // 🔇 Lecture automatique désactivée
+                // L'utilisateur clique sur "🔊 Écouter" s'il veut l'entendre
                 
             } catch (error) {
                 console.error('❌ Erreur génération IA:', error);
@@ -228,7 +229,7 @@
         }
         
         // ============================================================
-        // LECTURE AUTO
+        // LECTURE AUTO (gardée pour compatibilité, mais PLUS APPELÉE)
         // ============================================================
         
         let isAutoSpeaking = false;
@@ -348,6 +349,7 @@
                     await certificateManager.loadCertificates(certificatesContainer, uid);
                     
                     Logger.info('✅ Progression et certificats chargés');
+                    Logger.info('🔇 Message IA en SILENCE (l\'utilisateur clique s\'il veut)');
                 } else {
                     showToast('⚠️ Veuillez vous connecter pour voir votre progression', 3000);
                     

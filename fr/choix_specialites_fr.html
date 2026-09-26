@@ -487,14 +487,8 @@
                     listenSpecialtiesBtn.style.display = 'inline-block';
                 }
                 
-                setTimeout(() => {
-                    if (window.tts && typeof window.tts.speak === 'function') {
-                        const text = window._ttsSpecialtiesMessage || '';
-                        if (text) {
-                            window.tts.speak(text, 'fr', 0.9, 1.0);
-                        }
-                    }
-                }, 1200);
+                // 🔇 Lecture automatique désactivée
+                // L'utilisateur clique sur "🔊 Écouter" s'il veut l'entendre
                 
             } catch (error) {
                 console.error('❌ Erreur génération IA:', error);
@@ -718,6 +712,7 @@
             console.log('🔍 Filtres et recherche disponibles');
             console.log('🤖 IA : Message personnalisé avec recommandation');
             console.log('✅ iOS : displayName supporté');
+            console.log('🔇 Lecture automatique désactivée');
         }
         
         init();

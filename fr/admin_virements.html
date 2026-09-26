@@ -42,6 +42,19 @@
             opacity: 0.9;
         }
         
+        /* ✅ BANDEAU ADMIN CONNECTÉ */
+        .admin-badge {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.25);
+            color: #ffd700;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 10px;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+        }
+        
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -223,56 +236,91 @@
             margin-bottom: 15px;
         }
         
-        .login-screen {
-            max-width: 400px;
-            margin: 100px auto;
+        /* ✅ NOUVEAU : ÉCRAN "ACCÈS REFUSÉ" */
+        .access-denied {
+            max-width: 450px;
+            margin: 80px auto;
             background: white;
             border-radius: 16px;
-            padding: 40px 30px;
+            padding: 45px 30px;
             text-align: center;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         }
         
-        .login-screen h2 {
-            color: #2c3e50;
+        .access-denied .icon {
+            font-size: 70px;
             margin-bottom: 20px;
-            font-size: 22px;
         }
         
-        .login-screen input {
-            width: 100%;
-            padding: 14px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 16px;
+        .access-denied h2 {
+            color: #e74c3c;
             margin-bottom: 15px;
-            box-sizing: border-box;
+            font-size: 24px;
         }
         
-        .login-screen input:focus {
-            outline: none;
-            border-color: #667eea;
+        .access-denied p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
         
-        .login-screen button {
-            width: 100%;
-            padding: 14px;
-            background: #667eea;
+        .access-denied .email-info {
+            background: #f8f9fa;
+            padding: 12px 16px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 13px;
+            color: #555;
+            font-family: monospace;
+            word-break: break-all;
+        }
+        
+        .access-denied .btn-home {
+            display: inline-block;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             border: none;
             border-radius: 10px;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 600;
             cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: transform 0.2s;
         }
         
-        .login-screen button:hover { background: #5568d3; }
+        .access-denied .btn-home:hover {
+            transform: translateY(-2px);
+        }
         
-        .login-error {
-            color: #e74c3c;
-            font-size: 14px;
-            margin-top: 10px;
-            min-height: 20px;
+        /* ✅ NOUVEAU : ÉCRAN DE CHARGEMENT */
+        .loading-screen {
+            max-width: 400px;
+            margin: 120px auto;
+            text-align: center;
+            color: #667eea;
+        }
+        
+        .loading-screen .spinner {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(102, 126, 234, 0.2);
+            border-top-color: #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .loading-screen p {
+            color: #7f8c8d;
+            font-size: 15px;
         }
         
         .toast {
@@ -311,21 +359,36 @@
 </head>
 <body>
 
-    <!-- ÉCRAN DE LOGIN -->
-    <div id="loginScreen" class="login-screen">
-        <h2>🔐 Accès administrateur</h2>
-        <p style="color: #7f8c8d; margin-bottom: 20px; font-size: 14px;">Entrez le mot de passe pour continuer</p>
-        <input type="password" id="adminPassword" placeholder="Mot de passe" autocomplete="off">
-        <button onclick="checkPassword()">🔓 Accéder</button>
-        <div class="login-error" id="loginError"></div>
+    <!-- ✅ ÉCRAN DE CHARGEMENT (pendant la vérification admin) -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="spinner"></div>
+        <p>🔐 Vérification des droits d'accès...</p>
     </div>
 
-    <!-- ÉCRAN ADMIN -->
+    <!-- ✅ ÉCRAN "ACCÈS REFUSÉ" (si pas admin) -->
+    <div id="accessDeniedScreen" class="access-denied" style="display: none;">
+        <div class="icon">⛔</div>
+        <h2>Accès refusé</h2>
+        <p>Cette page est réservée à l'administrateur d'ETEO.</p>
+        <div class="email-info">
+            <strong>Compte connecté :</strong><br>
+            <span id="deniedEmail">-</span>
+        </div>
+        <p style="font-size: 13px; color: #999;">
+            Si vous pensez qu'il s'agit d'une erreur, contactez le support.
+        </p>
+        <a href="dashboard.html" class="btn-home">🏠 Retour au tableau de bord</a>
+    </div>
+
+    <!-- ✅ ÉCRAN ADMIN (si admin vérifié) -->
     <div id="adminScreen" style="display: none;">
         
         <div class="admin-header">
             <h1>🎓 Gestion des virements - ETEO</h1>
             <p>Validez ou rejetez les demandes de certificat</p>
+            <div class="admin-badge">
+                👑 Connecté en tant que <span id="adminEmail">-</span>
+            </div>
         </div>
         
         <div class="container">
@@ -384,7 +447,8 @@
             updateDoc, 
             query, 
             orderBy,
-            getDoc
+            getDoc,
+            where
         } from 'firebase/firestore';
 
         // ============================================================
@@ -405,16 +469,17 @@
         const auth = getAuth(app);
 
         // ============================================================
-        // CONFIGURATION ADMIN
+        // ⚠️ ANCIENNE CONSTANTE - SUPPRIMÉE (sécurité)
         // ============================================================
-        const ADMIN_PASSWORD = 'ETEO2026Admin!';
-        
+        // const ADMIN_PASSWORD = 'ETEO2026Admin!'; // ❌ SUPPRIMÉ
+
         // ============================================================
         // ÉTAT
         // ============================================================
         let allPayments = [];
         let currentFilter = 'pending';
         let toast = document.getElementById('toast');
+        let isVerifiedAdmin = false;
 
         // ============================================================
         // TOAST
@@ -429,63 +494,85 @@
         }
 
         // ============================================================
-        // VÉRIFICATION AUTH FIREBASE
+        // ✅ VÉRIFICATION ADMIN PAR EMAIL (NOUVELLE MÉTHODE SÉCURISÉE)
         // ============================================================
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-                console.log('✅ Utilisateur Firebase connecté:', user.email);
-            } else {
-                console.log('⛔ Aucun utilisateur Firebase connecté');
-                const loginScreen = document.getElementById('loginScreen');
-                if (loginScreen) {
-                    loginScreen.innerHTML = `
-                        <h2>⚠️ Connexion requise</h2>
-                        <p style="color: #7f8c8d; margin-bottom: 20px; font-size: 14px;">
-                            Vous devez être connecté à ETEO pour accéder à cette page.
-                        </p>
-                        <button onclick="window.location.href='inscription_fr.html'" 
-                                style="width: 100%; padding: 14px; background: #667eea; color: white; border: none; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer;">
-                            🔐 Se connecter
-                        </button>
-                    `;
-                }
+        async function checkIfAdmin(user) {
+            if (!user || !user.email) {
+                return false;
             }
-        });
 
-        // ============================================================
-        // VÉRIFICATION DU MOT DE PASSE
-        // ============================================================
-        window.checkPassword = function() {
-            const input = document.getElementById('adminPassword').value;
-            const error = document.getElementById('loginError');
-            
-            if (input === ADMIN_PASSWORD) {
-                if (!auth.currentUser) {
-                    error.textContent = '⚠️ Vous devez être connecté à ETEO. Redirection...';
-                    setTimeout(() => {
-                        window.location.href = 'inscription_fr.html';
-                    }, 2000);
-                    return;
+            try {
+                // ✅ Recherche dans la collection 'admins' par email
+                const adminsRef = collection(db, 'admins');
+                const q = query(adminsRef, where('email', '==', user.email));
+                const snapshot = await getDocs(q);
+
+                if (snapshot.empty) {
+                    console.log('⛔ Aucun document admin trouvé pour:', user.email);
+                    return false;
                 }
-                
-                document.getElementById('loginScreen').style.display = 'none';
-                document.getElementById('adminScreen').style.display = 'block';
-                sessionStorage.setItem('eteo_admin_auth', 'true');
-                loadPayments();
-            } else {
-                error.textContent = '❌ Mot de passe incorrect';
-                document.getElementById('adminPassword').value = '';
-            }
-        };
 
-        if (sessionStorage.getItem('eteo_admin_auth') === 'true') {
-            document.getElementById('loginScreen').style.display = 'none';
-            document.getElementById('adminScreen').style.display = 'block';
-            setTimeout(() => loadPayments(), 500);
+                // ✅ Vérifier le rôle
+                const adminDoc = snapshot.docs[0].data();
+                if (adminDoc.role === 'admin') {
+                    console.log('✅ Admin vérifié:', user.email);
+                    return true;
+                } else {
+                    console.log('⛔ Rôle insuffisant pour:', user.email);
+                    return false;
+                }
+            } catch (error) {
+                console.error('❌ Erreur vérification admin:', error);
+                return false;
+            }
         }
 
-        document.getElementById('adminPassword').addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') checkPassword();
+        // ============================================================
+        // ✅ AFFICHER L'ÉCRAN ADMIN
+        // ============================================================
+        function showAdminScreen(user) {
+            document.getElementById('loadingScreen').style.display = 'none';
+            document.getElementById('accessDeniedScreen').style.display = 'none';
+            document.getElementById('adminScreen').style.display = 'block';
+            document.getElementById('adminEmail').textContent = user.email;
+            isVerifiedAdmin = true;
+            loadPayments();
+        }
+
+        // ============================================================
+        // ✅ AFFICHER L'ÉCRAN "ACCÈS REFUSÉ"
+        // ============================================================
+        function showAccessDenied(user) {
+            document.getElementById('loadingScreen').style.display = 'none';
+            document.getElementById('adminScreen').style.display = 'none';
+            document.getElementById('accessDeniedScreen').style.display = 'block';
+            const emailEl = document.getElementById('deniedEmail');
+            if (emailEl) {
+                emailEl.textContent = user && user.email ? user.email : 'Non connecté';
+            }
+        }
+
+        // ============================================================
+        // ✅ VÉRIFICATION AUTH + ADMIN AU CHARGEMENT
+        // ============================================================
+        onAuthStateChanged(auth, async (user) => {
+            if (!user) {
+                // ❌ Pas connecté → redirection vers inscription
+                console.log('⛔ Aucun utilisateur connecté → redirection');
+                window.location.href = 'inscription_fr.html';
+                return;
+            }
+
+            console.log('👤 Utilisateur connecté:', user.email);
+            console.log('🔍 Vérification des droits admin...');
+
+            const isAdmin = await checkIfAdmin(user);
+
+            if (isAdmin) {
+                showAdminScreen(user);
+            } else {
+                showAccessDenied(user);
+            }
         });
 
         // ============================================================

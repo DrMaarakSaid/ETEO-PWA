@@ -1294,7 +1294,7 @@
         }
         
         // ============================================================
-        // MOSTRA BENVENUTO IA
+        // ✅ MOSTRA BENVENUTO IA (SILENZIO AL CARICAMENTO)
         // ============================================================
         
         function displayIAWelcome() {
@@ -1307,10 +1307,8 @@
             iaAvatar.textContent = avatar;
             iaMessage.innerHTML = message;
             
-            setTimeout(() => {
-                const ttsMessage = cleanTextForTTS(message.replace(/<[^>]*>/g, ''));
-                speakText(ttsMessage, null);
-            }, 1500);
+            // ✅ SILENZIO IA : plus de lecture automatique au chargement.
+            // L'utilisateur peut cliquer sur le bouton 🔊 s'il veut écouter.
         }
         
         // ============================================================
@@ -1740,7 +1738,7 @@
         }
         
         // ============================================================
-        // ✅ POPUP PAGAMENTO CON FIREBASE + REINDIRIZZAMENTO A pagamento_iban.html
+        // ✅ POPUP PAGAMENTO CON FIREBASE + REINDIRIZZAMENTO A virement_bancaire_it.html
         // ============================================================
         
         function showCertificatePaymentPopup() {
@@ -1808,7 +1806,7 @@
                 }
 
                 overlay.remove();
-                window.location.href = `pagamento_iban_it.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
+                window.location.href = `virement_bancaire_it.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
             });
 
             document.getElementById('closePaymentPopup').addEventListener('click', function() {
@@ -2166,8 +2164,9 @@
                     console.log(`📝 ${selectedQuestions.length} domande caricate`);
                     console.log('🎯 50 domande • 30 sec • 70% per superare');
                     console.log('🤖 IA personalizzata attivata');
-                    console.log('💳 Sistema di pagamento: REINDIRIZZAMENTO A pagamento_iban.html');
+                    console.log('💳 Sistema di pagamento: REINDIRIZZAMENTO A virement_bancaire_it.html');
                     console.log('📄 Certificato bloccato fino al pagamento');
+                    console.log('🔇 SILENZIO IA : pas de lecture auto au chargement');
                     
                 } else {
                     showLoginRequired();

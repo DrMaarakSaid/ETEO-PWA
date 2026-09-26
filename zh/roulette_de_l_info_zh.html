@@ -253,7 +253,7 @@
         }
         
         /* ============================================================
-           支付弹窗样式
+           弹窗样式（明天再来）
            ============================================================ */
         
         .payment-lock-icon {
@@ -324,20 +324,20 @@
         
         .payment-popup .pay-btn {
             padding: 14px 40px;
-            background: linear-gradient(135deg, #ffd700, #f57c00);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             border: none;
             border-radius: 30px;
             font-weight: 700;
             font-size: 1rem;
             cursor: pointer;
-            color: #2c3e50;
+            color: white;
             width: 100%;
             transition: all 0.3s ease;
         }
         
         .payment-popup .pay-btn:hover:not(:disabled) {
             transform: scale(1.02);
-            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
         }
         
         .payment-popup .pay-btn:disabled {
@@ -393,56 +393,6 @@
             color: #856404;
         }
         
-        .payment-popup .email-section {
-            margin: 15px 0;
-        }
-        
-        .payment-popup .email-section p {
-            font-size: 0.9rem;
-            color: #555;
-            text-align: left;
-            margin-bottom: 5px;
-        }
-        
-        .payment-popup .email-input-group {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        
-        .payment-popup .email-input-group input {
-            flex: 1;
-            min-width: 180px;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            font-size: 0.95rem;
-            box-sizing: border-box;
-            transition: border-color 0.3s ease;
-        }
-        
-        .payment-popup .email-input-group input:focus {
-            border-color: #667eea;
-            outline: none;
-        }
-        
-        .payment-popup .email-input-group .pay-btn {
-            width: auto;
-            padding: 12px 20px;
-            white-space: nowrap;
-        }
-        
-        .payment-popup .email-note {
-            font-size: 0.7rem;
-            color: #999;
-            margin-top: 5px;
-            text-align: left;
-        }
-        
-        .payment-popup .info-box.warning p {
-            margin: 0;
-        }
-        
         /* ✅ 配额徽章 */
         .quota-badge {
             display: inline-block;
@@ -472,12 +422,6 @@
         @keyframes pulseBadge {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
-        }
-        
-        .quota-badge.unlimited {
-            background: #bbdefb;
-            color: #0d47a1;
-            border-color: #667eea;
         }
         
         @media (max-width: 520px) {
@@ -522,9 +466,6 @@
             }
             .payment-popup {
                 padding: 20px;
-            }
-            .payment-popup .email-input-group input {
-                min-width: 140px;
             }
         }
         
@@ -581,7 +522,7 @@
 
             <!-- ✅ 配额计数器 -->
             <div style="text-align: center; margin-bottom: 10px;">
-                <span id="quotaBadge" class="quota-badge">🎯 剩余 20 次免费尝试</span>
+                <span id="quotaBadge" class="quota-badge">🎯 每天 10 次免费测验</span>
             </div>
 
             <div class="ia-greeting" id="iaGreeting">
@@ -740,6 +681,9 @@
         
         window.tts = tts;
         
+        // ✅ 新系统：每天 10 次免费测验（无限期）
+        const MAX_DAILY_QUIZZES = 10;
+        
         // ============================================================
         // 36 个专科列表
         // ============================================================
@@ -862,10 +806,9 @@
         let quizHistory = [];
         let userId = null;
         let userName = '医生';
-        let freeQuizzesUsed = 0;
-        let isSubscribed = false;
-        let subscriptionExpiresAt = null;
-        let MAX_FREE_QUIZZES = 20;
+        let dailyQuizzesCount = 0;      // ✅ 新：每日计数器
+        let dailyDate = null;           // ✅ 新：当天日期
+        let totalQuizzesAllTime = 0;
         
         // ============================================================
         // 为 TTS 清理文本
@@ -927,11 +870,8 @@
                 if (window.tts.isSpeakingNow && window.tts.isSpeakingNow()) {
                     wasSpeaking = true;
                     window.tts.stop();
-                    console.log('⏹️ 新消息前已停止 TTS');
                 }
-            } catch (e) {
-                console.warn('停止 TTS 时出错：', e);
-            }
+            } catch (e) {}
             document.querySelectorAll('.tts-btn.listening, .listen-btn.listening, .listen-synopsis-btn.listening, .listen-chapter-btn.listening').forEach(btn => {
                 const originalText = btn.dataset.originalText || '🔊';
                 btn.textContent = originalText;
@@ -954,10 +894,8 @@
                                 button.textContent = buttonText;
                                 button.classList.remove('listening');
                             }
-                            console.log('✅ TTS 成功完成');
                         },
                         (error) => {
-                            console.warn('⚠️ TTS 错误（已忽略）：', error);
                             if (button) {
                                 button.textContent = buttonText;
                                 button.classList.remove('listening');
@@ -965,7 +903,6 @@
                         }
                     );
                 } catch (e) {
-                    console.warn('⚠️ 启动 TTS 时出错：', e);
                     if (button) {
                         button.textContent = buttonText;
                         button.classList.remove('listening');
@@ -973,7 +910,6 @@
                 }
             };
             if (wasSpeaking) {
-                console.log('⏳ 等待 TTS 停止...');
                 setTimeout(startSpeaking, 200);
             } else {
                 startSpeaking();
@@ -990,18 +926,15 @@
                 
                 if (type === 'spin') {
                     if (!totalDuration) totalDuration = 4000;
-                    
                     const minTicks = 15;
                     const maxTicks = 35;
                     const totalTicks = Math.min(maxTicks, Math.max(minTicks, Math.floor(totalDuration / 130)));
-                    
                     let count = 0;
                     const baseFreq = 523;
                     const volume = 0.15;
                     
                     function playTick() {
                         if (count >= totalTicks) return;
-                        
                         const progress = count / totalTicks;
                         const speedFactor = 0.4 + 0.6 * (1 - Math.sin(progress * Math.PI));
                         const tickDelay = (totalDuration / totalTicks) * speedFactor * 0.9;
@@ -1010,37 +943,20 @@
                         const gain = audioCtx.createGain();
                         osc.connect(gain);
                         gain.connect(audioCtx.destination);
-                        
                         const freqVariation = Math.sin(progress * Math.PI) * 200;
                         osc.frequency.value = baseFreq + freqVariation;
                         osc.type = 'square';
-                        
                         gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                         gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.01);
                         gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
-                        
-                        const oscH = audioCtx.createOscillator();
-                        const gainH = audioCtx.createGain();
-                        oscH.connect(gainH);
-                        gainH.connect(audioCtx.destination);
-                        oscH.frequency.value = (baseFreq + freqVariation) * 2;
-                        oscH.type = 'square';
-                        gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                        gainH.gain.linearRampToValueAtTime(volume * 0.3, audioCtx.currentTime + 0.01);
-                        gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
-                        oscH.start();
-                        oscH.stop(audioCtx.currentTime + 0.04);
-                        
                         osc.start();
                         osc.stop(audioCtx.currentTime + 0.05);
                         
                         count++;
-                        
                         if (count < totalTicks) {
                             setTimeout(playTick, tickDelay);
                         }
                     }
-                    
                     setTimeout(playTick, 50);
                     
                 } else if (type === 'win') {
@@ -1048,7 +964,6 @@
                     const volume = 0.25;
                     const duration = 0.35;
                     const delay = 140;
-                    
                     notes.forEach((freq, i) => {
                         setTimeout(() => {
                             const osc = audioCtx.createOscillator();
@@ -1057,27 +972,9 @@
                             gain.connect(audioCtx.destination);
                             osc.frequency.value = freq;
                             osc.type = 'square';
-                            
                             gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                             gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
                             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-                            
-                            const harmonics = [2, 3, 4];
-                            harmonics.forEach((h, j) => {
-                                const oscH = audioCtx.createOscillator();
-                                const gainH = audioCtx.createGain();
-                                oscH.connect(gainH);
-                                gainH.connect(audioCtx.destination);
-                                oscH.frequency.value = freq * h;
-                                oscH.type = 'square';
-                                const volH = volume / (j + 2) * 0.5;
-                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
-                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
-                                oscH.start();
-                                oscH.stop(audioCtx.currentTime + duration * 0.7);
-                            });
-                            
                             osc.start();
                             osc.stop(audioCtx.currentTime + duration);
                         }, i * delay);
@@ -1088,7 +985,6 @@
                     const volume = 0.25;
                     const duration = 0.4;
                     const delay = 140;
-                    
                     notes.forEach((freq, i) => {
                         setTimeout(() => {
                             const osc = audioCtx.createOscillator();
@@ -1097,27 +993,9 @@
                             gain.connect(audioCtx.destination);
                             osc.frequency.value = freq;
                             osc.type = 'square';
-                            
                             gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                             gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
                             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-                            
-                            const harmonics = [2, 3, 4];
-                            harmonics.forEach((h, j) => {
-                                const oscH = audioCtx.createOscillator();
-                                const gainH = audioCtx.createGain();
-                                oscH.connect(gainH);
-                                gainH.connect(audioCtx.destination);
-                                oscH.frequency.value = freq * h;
-                                oscH.type = 'square';
-                                const volH = volume / (j + 2) * 0.5;
-                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
-                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
-                                oscH.start();
-                                oscH.stop(audioCtx.currentTime + duration * 0.7);
-                            });
-                            
                             osc.start();
                             osc.stop(audioCtx.currentTime + duration);
                         }, i * delay);
@@ -1152,9 +1030,7 @@
                         }, i * 100);
                     });
                 }
-            } catch (e) {
-                // 如果不支持 Web Audio 则静默
-            }
+            } catch (e) {}
         }
         
         // ============================================================
@@ -1171,7 +1047,19 @@
         }
         
         // ============================================================
-        // ✅ 配额和订阅管理
+        // ✅ 当天日期字符串（YYYY-MM-DD）
+        // ============================================================
+        
+        function getTodayDateString() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+        
+        // ============================================================
+        // ✅ 加载数据 - 每天 10 次系统
         // ============================================================
         
         async function loadUserData() {
@@ -1179,6 +1067,7 @@
             if (!user) return false;
             
             userId = user.uid;
+            const today = getTodayDateString();
             
             try {
                 const userRef = doc(db, 'users_ios', userId);
@@ -1186,49 +1075,44 @@
                 
                 if (snapshot.exists()) {
                     const data = snapshot.data();
-                    
                     userName = data.displayName || data.fullName || '医生';
-                    freeQuizzesUsed = data?.rouletteStats?.freeQuizzesUsed || 0;
+                    totalQuizzesAllTime = data?.rouletteStats?.totalQuizzes || 0;
                     
-                    const sub = data?.rouletteSubscription;
-                    if (sub && sub.active && sub.expiresAt) {
-                        const expires = new Date(sub.expiresAt);
-                        if (expires > new Date()) {
-                            isSubscribed = true;
-                            subscriptionExpiresAt = expires;
-                        } else {
-                            isSubscribed = false;
-                            await updateDoc(userRef, {
-                                'rouletteSubscription.active': false
-                            });
-                        }
-                    } else {
-                        isSubscribed = false;
-                    }
+                    const daily = data?.rouletteDaily || {};
+                    dailyDate = daily.date || null;
+                    dailyQuizzesCount = daily.count || 0;
                     
-                    console.log('📊 用户数据已加载：');
-                    console.log('  👤 姓名：', userName);
-                    console.log('  🎯 已用免费测验：', freeQuizzesUsed);
-                    console.log('  💎 已订阅：', isSubscribed);
-                    if (isSubscribed) {
-                        console.log('  📅 到期日期：', subscriptionExpiresAt.toLocaleDateString('zh-CN'));
+                    // ✅ 如果是新的一天，自动重置
+                    if (dailyDate !== today) {
+                        console.log('🔄 检测到新的一天，重置计数器');
+                        dailyQuizzesCount = 0;
+                        dailyDate = today;
+                        
+                        await setDoc(userRef, {
+                            rouletteDaily: {
+                                count: 0,
+                                date: today,
+                                lastReset: new Date().toISOString()
+                            }
+                        }, { merge: true });
                     }
                     
                     return true;
                 } else {
+                    // 新用户
                     await setDoc(userRef, {
                         rouletteStats: {
                             freeQuizzesUsed: 0,
                             totalQuizzes: 0
                         },
-                        rouletteSubscription: {
-                            active: false,
-                            expiresAt: null,
-                            paidAt: null
+                        rouletteDaily: {
+                            count: 0,
+                            date: today,
+                            lastReset: new Date().toISOString()
                         }
                     }, { merge: true });
-                    freeQuizzesUsed = 0;
-                    isSubscribed = false;
+                    dailyQuizzesCount = 0;
+                    dailyDate = today;
                     return true;
                 }
             } catch (error) {
@@ -1237,62 +1121,85 @@
             }
         }
         
+        // ============================================================
+        // ✅ 检查访问权限（每天 10 次）
+        // ============================================================
+        
         function hasAccess() {
-            if (isSubscribed) {
-                return true;
+            const today = getTodayDateString();
+            if (dailyDate !== today) {
+                dailyQuizzesCount = 0;
+                dailyDate = today;
             }
-            const remaining = MAX_FREE_QUIZZES - freeQuizzesUsed;
-            if (remaining > 0) {
-                return true;
-            }
-            return false;
+            return dailyQuizzesCount < MAX_DAILY_QUIZZES;
         }
         
         function getRemainingQuizzes() {
-            if (isSubscribed) return '♾️';
-            return Math.max(0, MAX_FREE_QUIZZES - freeQuizzesUsed);
+            const today = getTodayDateString();
+            if (dailyDate !== today) {
+                return MAX_DAILY_QUIZZES;
+            }
+            return Math.max(0, MAX_DAILY_QUIZZES - dailyQuizzesCount);
         }
+        
+        // ============================================================
+        // ✅ 更新配额显示
+        // ============================================================
         
         function updateQuotaDisplay() {
             const remaining = getRemainingQuizzes();
             
-            if (isSubscribed) {
-                quotaBadge.textContent = '💎 无限访问 - 有效期 1 年';
-                quotaBadge.className = 'quota-badge unlimited';
-            } else if (remaining > 5) {
-                quotaBadge.textContent = `🎯 剩余 ${remaining} 次免费尝试`;
+            if (remaining > 5) {
+                quotaBadge.textContent = `🎯 今天还剩 ${remaining} 次测验`;
                 quotaBadge.className = 'quota-badge';
             } else if (remaining > 0) {
-                quotaBadge.textContent = `⚠️ 剩余 ${remaining} 次尝试`;
+                quotaBadge.textContent = `⚠️ 今天还剩 ${remaining} 次测验`;
                 quotaBadge.className = 'quota-badge warning';
             } else {
-                quotaBadge.textContent = '🔒 没有更多尝试 - 立即订阅！';
+                quotaBadge.textContent = '🔒 今天没有测验了 - 明天再来！';
                 quotaBadge.className = 'quota-badge danger';
             }
         }
         
+        // ============================================================
+        // ✅ 增加每日计数器
+        // ============================================================
+        
         async function incrementQuizCount() {
-            if (isSubscribed) return;
+            const today = getTodayDateString();
             
             try {
                 const userRef = doc(db, 'users_ios', userId);
-                await updateDoc(userRef, {
-                    'rouletteStats.freeQuizzesUsed': increment(1),
+                
+                if (dailyDate !== today) {
+                    dailyQuizzesCount = 0;
+                    dailyDate = today;
+                }
+                
+                dailyQuizzesCount++;
+                
+                await setDoc(userRef, {
+                    rouletteDaily: {
+                        count: dailyQuizzesCount,
+                        date: today,
+                        lastUpdated: new Date().toISOString()
+                    },
                     'rouletteStats.totalQuizzes': increment(1)
-                });
-                freeQuizzesUsed++;
+                }, { merge: true });
+                
+                totalQuizzesAllTime++;
                 updateQuotaDisplay();
-                console.log(`✅ 测验已计数：${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
+                console.log(`✅ 测验已计数：今天 ${dailyQuizzesCount}/${MAX_DAILY_QUIZZES}`);
             } catch (error) {
                 console.error('❌ 增加计数时出错：', error);
             }
         }
         
         // ============================================================
-        // ✅ 支付弹窗
+        // ✅ 弹窗"明天再来"（无支付）
         // ============================================================
         
-        function showPaymentPopup() {
+        function showDailyLimitPopup() {
             stopTTS();
             
             if (document.querySelector('.payment-popup-overlay')) return;
@@ -1300,82 +1207,45 @@
             const overlay = document.createElement('div');
             overlay.className = 'payment-popup-overlay';
             
-            const remaining = getRemainingQuizzes();
-            
             overlay.innerHTML = `
                 <div class="payment-popup">
-                    <div class="payment-lock-icon">🔒</div>
-                    <h2>🎯 没有免费尝试了！</h2>
+                    <div class="payment-lock-icon">🌙</div>
+                    <h2>🎯 您已达到每日上限！</h2>
                     <p>
-                        您已用完 <strong>${MAX_FREE_QUIZZES} 次免费尝试</strong>。<br>
-                        <span style="font-size: 0.9rem; color: #888;">您已没有剩余尝试次数。</span>
+                        您已用完今天的 <strong>${MAX_DAILY_QUIZZES} 次免费测验</strong>。
                     </p>
-                    <p style="margin-top: 10px;">
-                        要<strong>继续玩 1 年</strong>，<br>
-                        请通过银行转账支付 <strong>20 €</strong>。
+                    <p style="margin-top: 10px; font-size: 1.05rem; color: #667eea; font-weight: 600;">
+                        明天再来，还有 ${MAX_DAILY_QUIZZES} 次新测验！
                     </p>
-                    <div class="features">
-                        <p>✅ 1 年无限访问</p>
-                        <p>✅ 所有专科</p>
-                        <p>✅ 所有等级</p>
-                        <p>✅ 无测验限制</p>
+                    <div class="info-box success">
+                        <p style="margin: 0;">✅ 这是<strong>100% 免费</strong>的，每天都有！</p>
                     </div>
-                    <button class="pay-btn" id="payRouletteBtn">💳 通过银行转账支付 20 €</button>
-                    <button class="close-btn" id="closePaymentPopup">❌ 稍后再来</button>
-                    <p class="secure-text">🔒 安全转账 • 点击后提供 IBAN</p>
+                    <div class="info-box warning">
+                        <p style="margin: 0;">⏰ 下次开放：明天午夜</p>
+                    </div>
+                    <button class="pay-btn" id="closeLimitPopup">
+                        👍 好的，明天见！
+                    </button>
+                    <p class="secure-text">💡 小提示：每天都回来，不要错过任何内容！</p>
                 </div>
             `;
             
             document.body.appendChild(overlay);
             
-            document.getElementById('payRouletteBtn').addEventListener('click', async function() {
-                this.textContent = '⏳ 正在记录...';
-                this.disabled = true;
-                
-                try {
-                    const interestData = {
-                        userId: userId || 'anonymous',
-                        userName: userName,
-                        type: 'roulette_subscription',
-                        amount: 20,
-                        currency: 'EUR',
-                        source: 'roulette_de_l_info',
-                        interestedAt: new Date().toISOString(),
-                        timestamp: new Date().toISOString(),
-                        userAgent: navigator.userAgent || 'unknown',
-                        platform: navigator.platform || 'unknown',
-                        status: 'redirected_to_payment'
-                    };
-                    
-                    await addDoc(collection(db, 'payment_interests'), interestData);
-                    console.log('✅ 意向已记录到 Firebase');
-                    showToast('📊 正在跳转到支付页面...', 2000);
-                    
-                } catch (e) {
-                    console.warn('⚠️ Firebase 错误：', e);
-                }
-                
+            document.getElementById('closeLimitPopup').addEventListener('click', function() {
                 overlay.remove();
-                window.location.href = `zhifu_iban_zh.html?type=roulette&amount=20&source=roulette`;
-            });
-            
-            document.getElementById('closePaymentPopup').addEventListener('click', function() {
-                overlay.remove();
-                showToast('💡 您可以稍后再来订阅。', 3000);
+                showToast('👋 明天见，还有新测验！', 3000);
             });
             
             overlay.addEventListener('click', function(e) {
                 if (e.target === overlay) overlay.remove();
             });
             
-            setTimeout(() => {
-                const ttsMessage = `您已用完 ${MAX_FREE_QUIZZES} 次免费尝试。要再玩 1 年，请通过银行转账支付 20 欧元。点击支付按钮访问 IBAN。`;
-                speakText(cleanTextForTTS(ttsMessage), null);
-            }, 500);
+            // 🔇 自动朗读已禁用（静音 AI）
         }
         
         // ============================================================
-        // AI 欢迎消息
+        // ✅ AI 欢迎消息（加载时静音）
         // ============================================================
         
         function displayIAWelcome() {
@@ -1386,27 +1256,18 @@
             const remaining = getRemainingQuizzes();
             
             let message = '';
-            let ttsMessage = '';
             
-            if (isSubscribed) {
-                const expireDate = subscriptionExpiresAt ? subscriptionExpiresAt.toLocaleDateString('zh-CN') : '1 年内';
-                message = `你好 <strong>${name}</strong>！🌟<br>欢迎来到 <strong>🎰 信息转盘</strong>！<br><br>💎 您有<strong>无限订阅</strong>，有效期至 <strong>${expireDate}</strong>。<br><br>🎯 转动专科转盘，然后转动等级转盘，无限制地测试您的知识！<br><br>🔥 准备好接受挑战了吗？`;
-                ttsMessage = `你好 ${name}。欢迎来到信息转盘。您有无限订阅，有效期至 ${expireDate}。转动转盘，无限制地测试您的知识。`;
-            } else if (remaining > 0) {
-                message = `你好 <strong>${name}</strong>！🌟<br>欢迎来到 <strong>🎰 信息转盘</strong>！<br><br>🎯 您还有 <strong>${remaining} 次免费尝试</strong>。<br><br>转动专科转盘，然后转动等级转盘，测试您的知识！<br><br>🔥 准备好接受挑战了吗？`;
-                ttsMessage = `你好 ${name}。欢迎来到信息转盘。您还有 ${remaining} 次免费尝试。转动转盘，测试您的知识。`;
+            if (remaining > 0) {
+                message = `你好 <strong>${name}</strong>！🌟<br>欢迎来到 <strong>🎰 信息转盘</strong>！<br><br>🎯 今天还剩 <strong>${remaining} 次测验</strong>（共 ${MAX_DAILY_QUIZZES} 次）。<br><br>转动专科转盘，然后转动等级转盘，测试您的知识！<br><br>🔥 准备好接受挑战了吗？`;
             } else {
-                message = `你好 <strong>${name}</strong>！🌟<br>欢迎来到 <strong>🎰 信息转盘</strong>！<br><br>🔒 您已用完 <strong>${MAX_FREE_QUIZZES} 次免费尝试</strong>。<br><br>💎 要<strong>继续玩 1 年</strong>，请订阅 <strong>20€</strong>。<br><br>点击"开始测验"查看订阅选项。`;
-                ttsMessage = `你好 ${name}。欢迎来到信息转盘。您已用完 ${MAX_FREE_QUIZZES} 次免费尝试。订阅 20 欧元/年以继续玩。`;
+                message = `你好 <strong>${name}</strong>！🌟<br>欢迎来到 <strong>🎰 信息转盘</strong>！<br><br>🌙 您已用完今天的 <strong>${MAX_DAILY_QUIZZES} 次测验</strong>。<br><br>💡 请<strong>明天</strong>回来，还有 ${MAX_DAILY_QUIZZES} 次新免费测验！`;
             }
             
             iaMessage.innerHTML = message;
             updateQuotaDisplay();
             
-            setTimeout(() => {
-                const cleanMsg = cleanTextForTTS(ttsMessage);
-                speakText(cleanMsg, null);
-            }, 1500);
+            // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+            // L'utilisateur peut cliquer sur 🔊 s'il veut écouter.
         }
         
         // ============================================================
@@ -1695,12 +1556,12 @@
         }
         
         // ============================================================
-        // ✅ 开始测验 - 带访问检查
+        // ✅ 开始测验 - 带访问检查（每天 10 次）
         // ============================================================
         
         function startQuiz() {
             if (!hasAccess()) {
-                showPaymentPopup();
+                showDailyLimitPopup();
                 return;
             }
             
@@ -2229,14 +2090,13 @@
         // ============================================================
         
         async function init() {
-            Logger.info('🎰 信息转盘已加载 - 带订阅版本');
+            Logger.info('🎰 信息转盘已加载 - 每天 10 次免费（中文）');
             
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
                     console.log('👤 用户已连接：', user.email);
                     
                     await loadUserData();
-                    
                     updateQuotaDisplay();
                     
                     roulette = initRoulette();
@@ -2249,19 +2109,12 @@
                     displayIAWelcome();
                     
                     console.log('🎰 信息转盘已就绪！');
-                    console.log(`🎯 已用免费尝试：${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
-                    console.log(`💎 订阅状态：${isSubscribed}`);
-                    if (isSubscribed) {
-                        console.log(`📅 到期日期：${subscriptionExpiresAt?.toLocaleDateString('zh-CN')}`);
-                    }
-                    console.log('✅ Firebase：保存到 users_ios/rouletteHistory');
-                    console.log('✅ 转盘分数不影响专科绿色勾选标记');
-                    console.log('🔊 音效与两个转盘同步');
-                    console.log('🔒 每次点击后按钮禁用');
-                    console.log('✅ RewardService 集成：自动积分和徽章');
-                    console.log('✅ 社交媒体分享集成');
-                    console.log('💳 银行转账支付：20€ 一年无限访问');
-                    console.log('📱 尝试计数器：20 次免费后付款');
+                    console.log(`🎯 每天 ${MAX_DAILY_QUIZZES} 次免费测验`);
+                    console.log(`📊 今天测验数：${dailyQuizzesCount}/${MAX_DAILY_QUIZZES}`);
+                    console.log(`📈 历史总数：${totalQuizzesAllTime}`);
+                    console.log('✅ 100% 免费 - 无需付款');
+                    console.log('🌙 午夜自动重置');
+                    console.log('🔇 SILENCIO IA : pas de lecture auto au chargement');
                     
                 } else {
                     console.log('👤 用户未登录，跳转到注册页');

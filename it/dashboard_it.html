@@ -727,7 +727,7 @@
             <button class="action-btn primary" onclick="window.location.href='scelta_specialita_it.html'">
                 📚 Scegli una specialità
             </button>
-            <button class="action-btn" onclick="window.location.href='roulette_de_l_info_it.html'" 
+            <button class="action-btn" onclick="window.location.href='roulette_info_it.html'" 
                     style="background: linear-gradient(135deg, #ff9800, #f57c00); color: white; border: none;">
                 🎰 Roulette dell'Info
             </button>
@@ -898,8 +898,7 @@
             }
         );
         
-        // Servizio di notifica
-        const notificationService = new NotificationService(storage, showToast);
+        // Servizio di notifica        const notificationService = new NotificationService(storage, showToast);
         
         // Servizio Avatar
         const avatarService = new AvatarService(storage);
@@ -921,7 +920,7 @@
         }
         
         // ============================================================
-        // BEREINIGUNG VON EMOJIS FÜR DAS TTS
+        // PULIZIA EMOJI PER TTS
         // ============================================================
         
         function cleanTextForTTS(text) {
@@ -935,57 +934,9 @@
         }
         
         // ============================================================
-        // LETTURA AUTOMATICA DEL RIEPILOGO IA
+        // ✅ SILENZIO IA : lecture auto supprimée au chargement
+        // L'utilisateur peut cliquer sur le bouton 🔊 s'il veut écouter.
         // ============================================================
-        
-        let isAutoSpeaking = false;
-        
-        function autoSpeakSummary() {
-            if (!window.tts) {
-                console.warn('⚠️ TTS non disponibile');
-                return;
-            }
-            
-            if (isAutoSpeaking) return;
-            isAutoSpeaking = true;
-            
-            const text = window._ttsSummaryMessage || 'Il tuo riepilogo non è disponibile.';
-            
-            if (!text || text.trim() === '') {
-                console.warn('⚠️ Nessun riepilogo da leggere');
-                isAutoSpeaking = false;
-                return;
-            }
-            
-            if (listenSummaryBtn) {
-                listenSummaryBtn.textContent = '⏹️ Ferma';
-                listenSummaryBtn.classList.add('listening');
-            }
-            
-            console.log('🔊 Lettura automatica del riepilogo Dashboard (IT)');
-            window.tts.speak(
-                text,
-                'it',
-                0.9,
-                1.0,
-                () => {
-                    if (listenSummaryBtn) {
-                        listenSummaryBtn.textContent = '🔊 Ascolta il riepilogo';
-                        listenSummaryBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                    console.log('✅ Riepilogo letto automaticamente');
-                },
-                (error) => {
-                    console.warn('⚠️ Errore lettura automatica:', error);
-                    if (listenSummaryBtn) {
-                        listenSummaryBtn.textContent = '🔊 Ascolta il riepilogo';
-                        listenSummaryBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                }
-            );
-        }
         
         // ============================================================
         // ✅ VERSIONE IOS: CARICA I DATI DA users_ios
@@ -1020,7 +971,6 @@
                         storage.saveSettings(settings);
                     } else {
                         console.warn('⚠️ Nessun documento users_ios trovato per questo utente');
-                        // Fallback su localStorage
                         userData = settings.user || {};
                         userScores = settings.scores || {};
                     }
@@ -1069,10 +1019,8 @@
                   })
                 : '2026';
             
-            // Data di registrazione
             if (profileSince) profileSince.textContent = `📅 Membro dal ${userSince}`;
             
-            // Saluto
             greetingText.textContent = `Ciao ${userName}! 🌟`;
             
             let completedCount = 0;
@@ -1146,7 +1094,6 @@
                 }
             });
             
-            // Serie attuale (giorni consecutivi)
             let currentStreak = 0;
             if (settings.dashboard && settings.dashboard.lastVisit) {
                 const lastVisit = new Date(settings.dashboard.lastVisit);
@@ -1161,7 +1108,6 @@
                 }
             }
             
-            // Serie migliore
             let bestStreakCount = 0;
             if (settings.dashboard && settings.dashboard.streakHistory) {
                 bestStreakCount = Math.max(...settings.dashboard.streakHistory) || 0;
@@ -1193,7 +1139,6 @@
             globalProgressFill.style.width = `${Math.min(progressPercent, 100)}%`;
             progressDetails.textContent = `${completedCount} specialità completate su ${totalSpecialties}`;
             
-            // Grado
             let currentRank = RANKS[0];
             let nextRank = RANKS[1];
             for (let i = RANKS.length - 1; i >= 0; i--) {
@@ -1205,14 +1150,12 @@
             const nextRankIndex = RANKS.indexOf(currentRank) + 1;
             nextRank = nextRankIndex < RANKS.length ? RANKS[nextRankIndex] : null;
             
-            // Aggiorna il grado nel profilo
             if (profileRankBadge) profileRankBadge.textContent = currentRank.emoji;
             if (profileRankName) {
                 profileRankName.textContent = currentRank.label;
                 profileRankName.style.color = currentRank.color;
             }
             
-            // Aggiorna il grado principale
             rankBadge.textContent = currentRank.emoji;
             rankName.textContent = currentRank.label;
             rankName.style.color = currentRank.color;
@@ -1224,22 +1167,16 @@
                 rankProgress.textContent = '🏆 Sei in cima !';
             }
             
-            // Ultime specialità
             renderRecentSpecialties(completedSpecialties);
-            
-            // Raccomandazione intelligente
             renderSmartRecommendation(completedSpecialties, scores);
             
-            // Badge - Utilizzo del servizio
             const badgeStatus = renderBadges(completedCount, completedSpecialties, categoriesCompleted, scores, settings, hasRetrySuccess, currentStreak);
             
-            // Aggiorna il contatore dei badge nel profilo
             const unlockedCount = badgeStatus.filter(b => b.unlocked).length;
             if (profileBadgeCountNumber) {
                 profileBadgeCountNumber.textContent = unlockedCount;
             }
             
-            // ✅ CLASSIFICA MONDIALE REALE (invece del calcolo fittizio)
             if (worldRank) {
                 try {
                     const uid = user?.uid;
@@ -1255,7 +1192,6 @@
                 }
             }
             
-            // ✅ MOSTRA I DETTAGLI DEL PUNTEGGIO (TRASPARENZA)
             if (scoreDetails) {
                 try {
                     const uid = user?.uid;
@@ -1275,7 +1211,6 @@
                 }
             }
             
-            // Controlla i badge appena sbloccati
             const previousBadges = settings.badges?.unlocked || [];
             const currentBadges = badgeStatus.filter(b => b.unlocked).map(b => b.id);
             
@@ -1289,22 +1224,13 @@
                 }
             }
             
-            // Sfida del giorno
             renderDailyChallenge(completedCount);
-            
-            // Obiettivo del giorno
             renderDailyObjective(completedSpecialties, scores);
-            
-            // Quiz del Giorno
             loadQuizDuJourStats();
-            
-            // Statistiche per categoria
             renderCategoryStats(categoryScores);
             
-            // ✅ MESSAGGIO IA PERSONALIZZATO IN ITALIANO
             generateIASummary(userName, userProfession, completedCount, totalSpecialties, avgScore, currentRank, completedSpecialties, currentStreak);
             
-            // Salva il progresso
             if (!settings.dashboard) settings.dashboard = {};
             settings.dashboard.lastVisit = new Date().toISOString();
             settings.dashboard.completedCount = completedCount;
@@ -1323,7 +1249,6 @@
             }
             storage.saveSettings(settings);
             
-            // Aggiorna l'avatar (tramite il servizio)
             if (profileAvatar) {
                 avatarUpload.updateDisplay();
             }
@@ -1488,7 +1413,6 @@
             let message = '';
             let ttsMessage = '';
             
-            // ✅ MESSAGGIO IN ITALIANO
             message = `Ciao ${userName}! 👋<br>`;
             message += `${professionEmoji} Sei registrato come <strong>${professionDisplay}</strong>. Benvenuto in ETEO!<br><br>`;
             ttsMessage = `Ciao ${userName}. Sei registrato come ${professionDisplay}. Benvenuto in ETEO. `;
@@ -1542,7 +1466,7 @@
         }
         
         // ============================================================
-        // PULSANTE ASCOLTA RIEPILOGO
+        // PULSANTE ASCOLTA RIEPILOGO (déclenché par l'utilisateur)
         // ============================================================
         
         listenSummaryBtn.addEventListener('click', function(event) {
@@ -1558,7 +1482,6 @@
                 window.tts.stop();
                 this.textContent = '🔊 Ascolta il riepilogo';
                 this.classList.remove('listening');
-                isAutoSpeaking = false;
                 return;
             }
             
@@ -1726,21 +1649,19 @@
             // ✅ VERIFICA AUTENTICAZIONE E EMAIL
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
-                    // ✅ NUOVO : Verifica se l'email è verificata
+                    // ✅ Verifica email
                     if (!user.emailVerified) {
                         console.log('⛔ Email non verificata per:', user.email);
                         showToast('📧 Verifica la tua email prima di accedere alla dashboard', 3000);
                         setTimeout(() => {
                             window.location.href = 'verifica_email_it.html';
                         }, 1500);
-                        return; // ← Ferma tutto qui
+                        return;
                     }
                     
-                    // ✅ Email verificata - Carica la dashboard
                     console.log('✅ Email verificata per:', user.email);
                     await loadDashboard();
                     
-                    // Inizializza le funzionalità dopo il caricamento
                     const badgeHelpBtn = document.getElementById('badgeHelpBtn');
                     if (badgeHelpBtn) {
                         badgeHelpBtn.addEventListener('click', () => {
@@ -1754,27 +1675,22 @@
                                 listenSummaryBtn.classList.remove('listening');
                             }
                             
-                            isAutoSpeaking = false;
-                            
                             const settings = storage.getSettings() || {};
                             const scores = settings.scores || {};
-                            
-                            // ✅ Apri il modal (ora usa translate.js)
                             badgeModal.open(scores, SPECIALTIES, settings);
                         });
                     }
                     
-                    setTimeout(() => {
-                        autoSpeakSummary();
-                    }, 1500);
+                    // ✅ SILENZIO IA : plus de lecture automatique au chargement.
+                    // L'utilisateur peut cliquer sur 🔊 "Ascolta il riepilogo" s'il veut écouter.
                     
                     console.log('📢 Dashboard ETEO pronta (IT)!');
                     console.log('✅ iOS: Lettura dati da users_ios');
                     console.log('✅ iOS: Visualizzazione displayName');
                     console.log('✅ iOS: Punteggio dettagliato (qualità + completamento)');
+                    console.log('🔇 SILENZIO IA : pas de lecture auto du résumé au chargement');
                     
                 } else {
-                    // Utente non connesso - reindirizza alla registrazione
                     console.log('👤 Utente non connesso, reindirizzamento alla registrazione');
                     window.location.href = 'registrazione_it.html';
                 }

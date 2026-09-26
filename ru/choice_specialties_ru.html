@@ -431,7 +431,7 @@
         }
         
         // ============================================================
-        // ГЕНЕРАЦИЯ СООБЩЕНИЯ ИИ
+        // ✅ ГЕНЕРАЦИЯ СООБЩЕНИЯ ИИ (СИЛЕНСИО АЛ КАРИКАМЕНТО)
         // ============================================================
         
         async function generateIAMessage() {
@@ -487,14 +487,8 @@
                     listenSpecialtiesBtn.style.display = 'inline-block';
                 }
                 
-                setTimeout(() => {
-                    if (window.tts && typeof window.tts.speak === 'function') {
-                        const text = window._ttsSpecialtiesMessage || '';
-                        if (text) {
-                            window.tts.speak(text, 'ru', 0.9, 1.0);
-                        }
-                    }
-                }, 1200);
+                // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+                // L'utilisateur peut cliquer sur le bouton 🔊 "Слушать" s'il veut écouter.
                 
             } catch (error) {
                 console.error('❌ Ошибка генерации ИИ:', error);
@@ -503,7 +497,7 @@
         }
         
         // ============================================================
-        // КНОПКА СЛУШАТЬ
+        // КНОПКА СЛУШАТЬ (déclenché par l'utilisateur)
         // ============================================================
         
         listenSpecialtiesBtn.addEventListener('click', function() {
@@ -685,7 +679,7 @@
         // ============================================================
         
         function init() {
-            Logger.info('📚 Страница выбора специальностей iOS загружена');
+            Logger.info('📚 Страница выбора специальностей iOS загружена (RU)');
             
             loadUserData();
             renderSpecialties();
@@ -718,6 +712,7 @@
             console.log('🔍 Фильтры и поиск доступны');
             console.log('🤖 ИИ: Персонализированное сообщение с рекомендацией');
             console.log('✅ iOS: displayName поддерживается');
+            console.log('🔇 SILENCIO IA : pas de lecture auto au chargement');
         }
         
         init();

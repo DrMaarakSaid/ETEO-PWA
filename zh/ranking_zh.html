@@ -25,7 +25,7 @@
         <!-- 顶部导航 -->
         <!-- ============================================================ -->
         <div class="nav-top">
-            <button class="back-btn" onclick="window.location.href='yibiao_zh.html'">
+            <button class="back-btn" onclick="window.location.href='dashboard_zh.html'">
                 ← 返回
             </button>
             <button class="back-btn" onclick="window.location.href='../index.html'">
@@ -71,7 +71,7 @@
         <!-- 底部导航（重复） -->
         <!-- ============================================================ -->
         <div class="nav-bottom">
-            <button class="back-btn" onclick="window.location.href='yibiao_zh.html'">
+            <button class="back-btn" onclick="window.location.href='dashboard_zh.html'">
                 ← 返回
             </button>
             <button class="back-btn" onclick="window.location.href='../index.html'">
@@ -166,7 +166,7 @@
         }
         
         // ============================================================
-        // 生成 AI 消息（已修正）
+        // ✅ 生成 AI 消息（加载时静音）
         // ============================================================
         
         async function generateIAMessage(uid) {
@@ -176,7 +176,6 @@
                 const topCountries = await rankingService.getTopCountriesByTopUsers();
                 
                 const settings = JSON.parse(localStorage.getItem('eteo_settings') || '{}');
-                // ✅ 已修正：iOS 的 displayName
                 const userName = settings.user?.displayName || settings.user?.fullName || '医生';
                 const userProfession = settings.user?.profession || '医生';
                 const userCountry = settings.user?.country || '您的国家';
@@ -265,7 +264,8 @@
                 
                 if (listenBtn) listenBtn.style.display = 'inline-block';
                 
-                setTimeout(() => autoSpeak(), 1200);
+                // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+                // L'utilisateur peut cliquer sur le bouton 🔊 "收听" s'il veut écouter.
                 
             } catch (error) {
                 console.error('❌ AI 错误：', error);
@@ -274,42 +274,7 @@
         }
         
         // ============================================================
-        // 自动朗读
-        // ============================================================
-        
-        let isAutoSpeaking = false;
-        
-        function autoSpeak() {
-            if (!window.tts || isAutoSpeaking) return;
-            isAutoSpeaking = true;
-            const text = window._ttsClassementMessage || '';
-            if (!text) { isAutoSpeaking = false; return; }
-            
-            if (listenBtn) {
-                listenBtn.textContent = '⏹️ 停止';
-                listenBtn.classList.add('listening');
-            }
-            
-            window.tts.speak(text, 'zh', 0.9, 1.0,
-                () => {
-                    if (listenBtn) {
-                        listenBtn.textContent = '🔊 收听';
-                        listenBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                },
-                () => {
-                    if (listenBtn) {
-                        listenBtn.textContent = '🔊 收听';
-                        listenBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                }
-            );
-        }
-        
-        // ============================================================
-        // 收听按钮
+        // ✅ 收听按钮（用户触发）
         // ============================================================
         
         listenBtn.addEventListener('click', function() {
@@ -319,7 +284,6 @@
                 window.tts.stop();
                 this.textContent = '🔊 收听';
                 this.classList.remove('listening');
-                isAutoSpeaking = false;
                 return;
             }
             
@@ -347,7 +311,7 @@
         // ============================================================
         
         async function init() {
-            Logger.info('🏆 排名页面已加载');
+            Logger.info('🏆 排名页面已加载（中文）');
             
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
@@ -362,13 +326,14 @@
                     await generateIAMessage(uid);
                     
                     Logger.info('✅ 排名已加载');
+                    Logger.info('🔇 SILENCIO IA : pas de lecture auto au chargement');
                 } else {
                     showToast('⚠️ 登录以查看排名', 3000);
                     container.innerHTML = `
                         <div style="text-align:center;padding:60px 20px;">
                             <div style="font-size:3rem;">🔒</div>
                             <div style="font-size:1.2rem;margin-top:20px;">登录以查看排名</div>
-                            <button onclick="window.location.href='zhuce_zh.html'" 
+                            <button onclick="window.location.href='inscription_zh.html'" 
                                     style="margin-top:20px;padding:12px 40px;border:none;border-radius:30px;
                                            background:linear-gradient(135deg,#667eea,#764ba2);color:white;
                                            cursor:pointer;font-weight:700;font-size:1rem;">

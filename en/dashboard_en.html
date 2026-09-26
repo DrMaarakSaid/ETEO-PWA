@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     
     <style>
-        /* ============================================================
-           ANIMATIONS
-           ============================================================ */
-        
         @keyframes iaPulse {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
@@ -189,10 +185,6 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3);
         }
-        
-        /* ============================================================
-           PROFILE CARD WITH UPLOAD - NO EDIT BUTTON
-           ============================================================ */
         
         .profile-card {
             display: flex;
@@ -392,7 +384,6 @@
             margin-top: 4px;
         }
         
-        /* Responsive */
         @media (max-width: 520px) {
             .profile-card {
                 flex-direction: column;
@@ -465,7 +456,6 @@
         }
     </style>
     
-    <!-- ✅ IMPORTMAP WITH FIREBASE (MODULAR) -->
     <script type="importmap">
     {
         "imports": {
@@ -480,9 +470,6 @@
 <body>
     <div class="container dashboard-container">
         
-        <!-- ============================================================ -->
-        <!-- NAVIGATION -->
-        <!-- ============================================================ -->
         <div class="nav-top">
             <button class="back-btn" onclick="window.location.href='choice_specialties_en.html'">
                 ← Back to Specialties
@@ -492,12 +479,8 @@
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- PERSONALIZED HEADER WITH PROFILE - NO EDIT BUTTON -->
-        <!-- ============================================================ -->
         <div class="dashboard-header" id="dashboardHeader">
             
-            <!-- PROFILE CARD -->
             <div class="profile-card">
                 <div class="profile-avatar" id="profileAvatar">
                     <span class="avatar-initials">👤</span>
@@ -524,7 +507,6 @@
                         <span class="world-rank-text">#<span id="worldRank">42</span> worldwide</span>
                     </div>
                     
-                    <!-- ✅ SCORE DETAILS (TRANSPARENCY) -->
                     <div class="score-details" id="scoreDetails">
                         <div class="score-header">
                             <span>📊 <span class="label">Score</span> : <span id="userScoreDisplay">0</span> / 100</span>
@@ -542,12 +524,10 @@
                     </div>
                 </div>
                 <div class="profile-actions">
-                    <!-- ✅ ONLY RANKING BUTTON REMAINS -->
                     <button class="profile-btn secondary" onclick="window.location.href='ranking_en.html'">🏆 Ranking</button>
                 </div>
             </div>
             
-            <!-- GREETING -->
             <div class="user-greeting">
                 <span class="greeting-emoji">🌟</span>
                 <span class="greeting-text" id="greetingText">Good morning Doctor!</span>
@@ -558,7 +538,6 @@
                 <span class="rank-progress" id="rankProgress">Next rank: 3 specialties</span>
             </div>
             
-            <!-- AI WELCOME BANNER -->
             <div class="ia-greeting" id="iaGreeting" style="margin-top: 15px; background: rgba(255,255,255,0.15); border-radius: 16px; padding: 14px 18px; display: flex; align-items: flex-start; gap: 14px;">
                 <div class="ia-avatar" style="font-size: 2rem; flex-shrink: 0;">🤖</div>
                 <div style="flex: 1;">
@@ -572,9 +551,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- QUICK STATISTICS -->
-        <!-- ============================================================ -->
         <div class="stats-grid" id="statsGrid">
             <div class="stat-card">
                 <div class="stat-icon">📚</div>
@@ -608,9 +584,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- GLOBAL PROGRESS -->
-        <!-- ============================================================ -->
         <div class="progress-section">
             <div class="progress-header">
                 <span class="progress-title">📊 Global progress</span>
@@ -624,22 +597,15 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- STATISTICS BY CATEGORY -->
-        <!-- ============================================================ -->
         <div class="progress-section">
             <div class="progress-header">
                 <span class="progress-title">📈 Scores by category</span>
                 <span class="progress-percentage" style="font-size: 0.8rem; color: #888;" id="categoryCount">0/5 categories</span>
             </div>
             <div id="categoryStats" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
-                <!-- Generated by JavaScript -->
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- DAILY CHALLENGE + QUIZ OF THE DAY + OBJECTIVE -->
-        <!-- ============================================================ -->
         <div class="daily-challenge" id="dailyChallenge">
             <div class="challenge-header">
                 <span class="challenge-icon">🎯</span>
@@ -652,12 +618,9 @@
                 </div>
             </div>
             
-            <!-- DAILY OBJECTIVE -->
             <div id="dailyObjectiveContainer" style="margin-top: 12px;">
-                <!-- Generated by JavaScript -->
             </div>
             
-            <!-- Quiz of the Day integrated -->
             <div style="margin-top: 15px; padding-top: 15px; border-top: 1px dashed rgba(255,193,7,0.3);">
                 <div style="display: flex; align-items: center; gap: 10px;">
                     <span style="font-size: 1.5rem;">🎰</span>
@@ -678,9 +641,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- RECENT SPECIALTIES - WITH DIRECT REDIRECTION -->
-        <!-- ============================================================ -->
         <div class="recent-section">
             <div class="recent-header">
                 <span class="recent-title">🔄 Recent specialties</span>
@@ -690,9 +650,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SMART RECOMMENDATION - WITH DIRECT REDIRECTION -->
-        <!-- ============================================================ -->
         <div class="recommendation-section">
             <div class="recommendation-header">
                 <span class="recommendation-title">💡 Recommendation</span>
@@ -705,9 +662,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- BADGES COLLECTION - WITH INSTRUCTIONS BUTTON -->
-        <!-- ============================================================ -->
         <div class="badges-section">
             <div class="badges-header">
                 <span class="badges-title">🏅 Your badges</span>
@@ -716,13 +670,9 @@
                 </button>
             </div>
             <div class="badges-grid" id="badgesGrid">
-                <!-- Generated by JavaScript -->
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- ACTIONS -->
-        <!-- ============================================================ -->
         <div class="dashboard-actions">
             <button class="action-btn primary" onclick="window.location.href='choice_specialties_en.html'">
                 📚 Choose a specialty
@@ -731,7 +681,6 @@
                     style="background: linear-gradient(135deg, #ff9800, #f57c00); color: white; border: none;">
                 🎰 Info Roulette
             </button>
-            <!-- ✅ ADD: MY PROGRESS BUTTON -->
             <button class="action-btn secondary" onclick="window.location.href='progression_en.html'">
                 📈 My progress
             </button>
@@ -740,54 +689,32 @@
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- FOOTER -->
-        <!-- ============================================================ -->
         <div class="footer">
             <p>© 2026 - Dr. SAID MAARAK 🇲🇦</p>
         </div>
 
     </div>
 
-    <!-- ============================================================ -->
-    <!-- TOAST -->
-    <!-- ============================================================ -->
     <div class="toast" id="toast"></div>
 
-    <!-- ============================================================ -->
-    <!-- MAIN SCRIPT -->
-    <!-- ============================================================ -->
-    
     <script type="module">
-        // ============================================================
-        // IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import { TranslateService } from '../js/services/translate.js';
         import tts from '../js/services/tts.js';
         
-        // FIREBASE IMPORTS
         import { initializeApp, getApps } from 'firebase/app';
         import { getFirestore, doc, getDoc } from 'firebase/firestore';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
         
-        // MODULAR IMPORTS FOR BADGES
         import { BadgeService } from '../js/services/badgeService.js';
         import { BadgeModal } from '../js/ui/BadgeModal.js';
         import { RANKS, CATEGORY_LABELS, SPECIALTIES } from '../js/config.js';
         
-        // IMPORTS FOR NOTIFICATION SYSTEM
         import { NotificationService } from '../js/services/notificationService.js';
         
-        // IMPORTS FOR AVATAR (MODULAR)
         import { AvatarService } from '../js/services/avatarService.js';
         import { AvatarUpload } from '../js/ui/AvatarUpload.js';
-        
-        // ============================================================
-        // FIREBASE CONFIG
-        // ============================================================
         
         const firebaseConfig = {
             apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
@@ -799,7 +726,6 @@
             appId: "1:511524282020:web:5a25c021fd84f026969031"
         };
         
-        // ✅ Initialize Firebase ONCE
         if (!getApps().length) {
             initializeApp(firebaseConfig);
         }
@@ -809,14 +735,9 @@
         
         console.log('✅ Firebase initialized in dashboard_en.html');
         
-        // ✅ DYNAMIC IMPORT OF RankingService (after initializeApp)
         const { RankingService } = await import('../js/services/rankingService.js');
         
         window.tts = tts;
-        
-        // ============================================================
-        // BADGE CONFIGURATION (for compatibility)
-        // ============================================================
         
         const BADGES = [
             { id: 'first_step', name: 'First Step', emoji: '🎯', condition: 'first_completed', description: 'Complete 1 specialty' },
@@ -826,10 +747,6 @@
             { id: 'perseverant', name: 'Perseverant', emoji: '💪', condition: 'retry_success', description: 'Succeed after a failure' },
             { id: 'champion', name: 'Champion', emoji: '🏆', condition: 'top_10', description: 'Complete 10 specialties' }
         ];
-        
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
         
         const toast = document.getElementById('toast');
         const greetingText = document.getElementById('greetingText');
@@ -857,7 +774,6 @@
         const listenSummaryBtn = document.getElementById('listenSummaryBtn');
         const dailyObjectiveContainer = document.getElementById('dailyObjectiveContainer');
         
-        // Profile elements
         const profileName = document.getElementById('profileName');
         const profileRankBadge = document.getElementById('profileRankBadge');
         const profileRankName = document.getElementById('profileRankName');
@@ -874,20 +790,12 @@
         const completedSpecialtiesDisplay = document.getElementById('completedSpecialtiesDisplay');
         const scoreDetails = document.getElementById('scoreDetails');
         
-        // ============================================================
-        // SERVICES
-        // ============================================================
-        
         const storage = new StorageService();
         const translate = new TranslateService();
         
-        // Badge Service
         const badgeService = new BadgeService(storage);
-        
-        // ✅ INSTANCE OF RANKING SERVICE
         const rankingService = new RankingService();
         
-        // Badge Modal with name retrieval
         const badgeModal = new BadgeModal(
             badgeService, 
             tts, 
@@ -898,18 +806,12 @@
             }
         );
         
-        // Notification Service
         const notificationService = new NotificationService(storage, showToast);
         
-        // Avatar Service
         const avatarService = new AvatarService(storage);
         const avatarUpload = new AvatarUpload(avatarService, showToast, (imageData) => {
             console.log('✅ Avatar updated');
         });
-        
-        // ============================================================
-        // TOAST
-        // ============================================================
         
         function showToast(message, duration = 2500) {
             toast.textContent = message;
@@ -920,10 +822,6 @@
             }, duration);
         }
         
-        // ============================================================
-        // CLEAN EMOJIS FOR TTS
-        // ============================================================
-        
         function cleanTextForTTS(text) {
             if (!text) return '';
             let cleaned = text.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
@@ -933,10 +831,6 @@
             cleaned = cleaned.replace(/\s+/g, ' ').trim();
             return cleaned;
         }
-        
-        // ============================================================
-        // AUTOMATIC READING OF AI SUMMARY
-        // ============================================================
         
         let isAutoSpeaking = false;
         
@@ -987,16 +881,11 @@
             );
         }
         
-        // ============================================================
-        // ✅ IOS VERSION: LOAD DATA FROM users_ios
-        // ============================================================
-        
         async function loadDashboard() {
             const settings = storage.getSettings() || {};
             let userData = settings.user || {};
             let userScores = {};
             
-            // ✅ LOAD FROM FIRESTORE (IOS)
             const user = auth.currentUser;
             if (user) {
                 try {
@@ -1014,13 +903,11 @@
                             fullName: data.displayName || data.fullName || 'Doctor'
                         };
                         userScores = data.scores || {};
-                        // ✅ Update localStorage for compatibility
                         settings.user = userData;
                         settings.scores = userScores;
                         storage.saveSettings(settings);
                     } else {
                         console.warn('⚠️ No users_ios document found for this user');
-                        // Fallback to localStorage
                         userData = settings.user || {};
                         userScores = settings.scores || {};
                     }
@@ -1040,11 +927,9 @@
             const userCountry = userData.country || 'Not specified';
             const scores = userScores;
             
-            // Fill profile card
             if (profileName) profileName.textContent = userName;
             if (profileEmail) profileEmail.textContent = userEmail;
             
-            // ✅ DISPLAY PROFESSION (translated)
             if (profileProfession) {
                 let displayProfession = userProfession;
                 let professionEmoji = '👤';
@@ -1058,7 +943,6 @@
                 profileProfession.textContent = `${professionEmoji} ${displayProfession}`;
             }
             
-            // ✅ FIX: Read real registration date from registeredAt
             const userSince = userData.registeredAt 
                 ? new Date(userData.registeredAt).toLocaleString('en-US', {
                     day: 'numeric',
@@ -1069,10 +953,8 @@
                   })
                 : '2026';
             
-            // Registration date
             if (profileSince) profileSince.textContent = `📅 Member since ${userSince}`;
             
-            // Greeting
             greetingText.textContent = `Hello ${userName}! 🌟`;
             
             let completedCount = 0;
@@ -1146,7 +1028,6 @@
                 }
             });
             
-            // Current streak (consecutive days)
             let currentStreak = 0;
             if (settings.dashboard && settings.dashboard.lastVisit) {
                 const lastVisit = new Date(settings.dashboard.lastVisit);
@@ -1161,7 +1042,6 @@
                 }
             }
             
-            // Best streak
             let bestStreakCount = 0;
             if (settings.dashboard && settings.dashboard.streakHistory) {
                 bestStreakCount = Math.max(...settings.dashboard.streakHistory) || 0;
@@ -1193,7 +1073,6 @@
             globalProgressFill.style.width = `${Math.min(progressPercent, 100)}%`;
             progressDetails.textContent = `${completedCount} specialties completed out of ${totalSpecialties}`;
             
-            // Rank
             let currentRank = RANKS[0];
             let nextRank = RANKS[1];
             for (let i = RANKS.length - 1; i >= 0; i--) {
@@ -1205,14 +1084,12 @@
             const nextRankIndex = RANKS.indexOf(currentRank) + 1;
             nextRank = nextRankIndex < RANKS.length ? RANKS[nextRankIndex] : null;
             
-            // Update rank in profile
             if (profileRankBadge) profileRankBadge.textContent = currentRank.emoji;
             if (profileRankName) {
                 profileRankName.textContent = currentRank.label;
                 profileRankName.style.color = currentRank.color;
             }
             
-            // Update main rank
             rankBadge.textContent = currentRank.emoji;
             rankName.textContent = currentRank.label;
             rankName.style.color = currentRank.color;
@@ -1224,22 +1101,16 @@
                 rankProgress.textContent = '🏆 You are at the top!';
             }
             
-            // Recent specialties
             renderRecentSpecialties(completedSpecialties);
-            
-            // Smart recommendation
             renderSmartRecommendation(completedSpecialties, scores);
             
-            // Badges - Using the service
             const badgeStatus = renderBadges(completedCount, completedSpecialties, categoriesCompleted, scores, settings, hasRetrySuccess, currentStreak);
             
-            // Update badge count in profile
             const unlockedCount = badgeStatus.filter(b => b.unlocked).length;
             if (profileBadgeCountNumber) {
                 profileBadgeCountNumber.textContent = unlockedCount;
             }
             
-            // ✅ REAL WORLD RANKING (instead of fake calculation)
             if (worldRank) {
                 try {
                     const uid = user?.uid;
@@ -1255,7 +1126,6 @@
                 }
             }
             
-            // ✅ DISPLAY SCORE DETAILS (TRANSPARENCY)
             if (scoreDetails) {
                 try {
                     const uid = user?.uid;
@@ -1275,7 +1145,6 @@
                 }
             }
             
-            // Check newly unlocked badges
             const previousBadges = settings.badges?.unlocked || [];
             const currentBadges = badgeStatus.filter(b => b.unlocked).map(b => b.id);
             
@@ -1289,22 +1158,13 @@
                 }
             }
             
-            // Daily challenge
             renderDailyChallenge(completedCount);
-            
-            // Daily objective
             renderDailyObjective(completedSpecialties, scores);
-            
-            // Quiz of the Day
             loadQuizDuJourStats();
-            
-            // Statistics by category
             renderCategoryStats(categoryScores);
             
-            // ✅ PERSONALIZED AI MESSAGE IN ENGLISH
             generateIASummary(userName, userProfession, completedCount, totalSpecialties, avgScore, currentRank, completedSpecialties, currentStreak);
             
-            // Save progress
             if (!settings.dashboard) settings.dashboard = {};
             settings.dashboard.lastVisit = new Date().toISOString();
             settings.dashboard.completedCount = completedCount;
@@ -1323,15 +1183,10 @@
             }
             storage.saveSettings(settings);
             
-            // Update avatar (via service)
             if (profileAvatar) {
                 avatarUpload.updateDisplay();
             }
         }
-        
-        // ============================================================
-        // RECENT SPECIALTIES
-        // ============================================================
         
         function renderRecentSpecialties(completedSpecialties) {
             const recent = completedSpecialties.slice(-5).reverse();
@@ -1350,10 +1205,6 @@
                 </div>
             `).join('');
         }
-        
-        // ============================================================
-        // SMART RECOMMENDATION
-        // ============================================================
         
         function renderSmartRecommendation(completedSpecialties, scores) {
             const completedIds = completedSpecialties.map(s => s.id);
@@ -1405,10 +1256,6 @@
                 </button>
             `;
         }
-        
-        // ============================================================
-        // DAILY OBJECTIVE
-        // ============================================================
         
         function renderDailyObjective(completedSpecialties, scores) {
             const completedIds = completedSpecialties.map(s => s.id);
@@ -1464,17 +1311,12 @@
             `;
         }
         
-        // ============================================================
-        // ✅ AI PERSONALIZED MESSAGE IN ENGLISH
-        // ============================================================
-        
         function generateIASummary(userName, profession, completedCount, totalSpecialties, avgScore, currentRank, completedSpecialties, currentStreak) {
             const progressPercent = Math.round((completedCount / totalSpecialties) * 100);
             const lastSpecialty = completedSpecialties.length > 0 ? completedSpecialties[completedSpecialties.length - 1] : null;
             const categoriesCompleted = new Set(completedSpecialties.map(s => s.category));
             const categoryCount = categoriesCompleted.size;
             
-            // ✅ TRANSLATION OF PROFESSION
             let professionDisplay = profession;
             let professionEmoji = '👤';
             if (profession === 'Docteur' || profession === 'Doctor') {
@@ -1488,7 +1330,6 @@
             let message = '';
             let ttsMessage = '';
             
-            // ✅ MESSAGE IN ENGLISH
             message = `Hello ${userName}! 👋<br>`;
             message += `${professionEmoji} You are registered as <strong>${professionDisplay}</strong>. Welcome to ETEO!<br><br>`;
             ttsMessage = `Hello ${userName}. You are registered as ${professionDisplay}. Welcome to ETEO. `;
@@ -1541,10 +1382,6 @@
             }
         }
         
-        // ============================================================
-        // LISTEN SUMMARY BUTTON
-        // ============================================================
-        
         listenSummaryBtn.addEventListener('click', function(event) {
             event.preventDefault();
             event.stopPropagation();
@@ -1585,10 +1422,6 @@
             );
         });
         
-        // ============================================================
-        // QUIZ OF THE DAY - STATISTICS
-        // ============================================================
-        
         function loadQuizDuJourStats() {
             const settings = storage.getSettings() || {};
             const qdj = settings.quizDuJour || { history: [] };
@@ -1623,10 +1456,6 @@
             }
         }
         
-        // ============================================================
-        // STATISTICS BY CATEGORY
-        // ============================================================
-        
         function renderCategoryStats(categoryScores) {
             const categories = Object.keys(CATEGORY_LABELS);
             let html = '';
@@ -1654,10 +1483,6 @@
             categoryCount.textContent = `${completed}/${categories.length} categories`;
         }
         
-        // ============================================================
-        // RENDER BADGES - USING SERVICE
-        // ============================================================
-        
         function renderBadges(completedCount, completedSpecialties, categoriesCompleted, scores, settings, hasRetrySuccess, currentStreak) {
             const badgeStatus = badgeService.getBadgeStatus(scores, SPECIALTIES, settings);
             
@@ -1674,10 +1499,6 @@
             
             return badgeStatus;
         }
-        
-        // ============================================================
-        // RENDER DAILY CHALLENGE
-        // ============================================================
         
         function renderDailyChallenge(completedCount) {
             const today = new Date().toDateString();
@@ -1714,33 +1535,25 @@
             return challenge;
         }
         
-        // ============================================================
-        // ✅ INITIALIZATION WITH EMAIL VERIFICATION
-        // ============================================================
-        
         async function init() {
             Logger.info('📊 iOS Dashboard loaded (EN)');
             
             avatarUpload.init('profileAvatar', 'avatarInput');
             
-            // ✅ AUTHENTICATION AND EMAIL VERIFICATION
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
-                    // ✅ NEW: Check if email is verified
                     if (!user.emailVerified) {
                         console.log('⛔ Email not verified for:', user.email);
                         showToast('📧 Please verify your email before accessing the dashboard', 3000);
                         setTimeout(() => {
                             window.location.href = 'verify_email_en.html';
                         }, 1500);
-                        return; // ← Stop everything here
+                        return;
                     }
                     
-                    // ✅ Email verified - Load dashboard
                     console.log('✅ Email verified for:', user.email);
                     await loadDashboard();
                     
-                    // Initialize features after loading
                     const badgeHelpBtn = document.getElementById('badgeHelpBtn');
                     if (badgeHelpBtn) {
                         badgeHelpBtn.addEventListener('click', () => {
@@ -1759,22 +1572,20 @@
                             const settings = storage.getSettings() || {};
                             const scores = settings.scores || {};
                             
-                            // ✅ Open modal (now uses translate.js)
                             badgeModal.open(scores, SPECIALTIES, settings);
                         });
                     }
                     
-                    setTimeout(() => {
-                        autoSpeakSummary();
-                    }, 1500);
+                    // 🔇 Auto-read of AI summary DISABLED
+                    // User clicks "🔊 Listen to summary" if they want to hear it
                     
                     console.log('📢 ETEO Dashboard ready (EN)!');
+                    console.log('🔇 AI summary in SILENCE (user clicks if they want)');
                     console.log('✅ iOS: Reading data from users_ios');
                     console.log('✅ iOS: Displaying displayName');
                     console.log('✅ iOS: Detailed score (quality + completion)');
                     
                 } else {
-                    // User not logged in - redirect to registration
                     console.log('👤 User not logged in, redirecting to registration');
                     window.location.href = 'register_en.html';
                 }

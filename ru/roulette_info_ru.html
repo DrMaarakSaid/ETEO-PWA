@@ -253,7 +253,7 @@
         }
         
         /* ============================================================
-           СТИЛИ ВСПЛЫВАЮЩЕГО ОКНА ОПЛАТЫ
+           СТИЛИ ВСПЛЫВАЮЩЕГО ОКНА "ВОЗВРАЩАЙТЕСЬ ЗАВТРА"
            ============================================================ */
         
         .payment-lock-icon {
@@ -393,56 +393,6 @@
             color: #856404;
         }
         
-        .payment-popup .email-section {
-            margin: 15px 0;
-        }
-        
-        .payment-popup .email-section p {
-            font-size: 0.9rem;
-            color: #555;
-            text-align: left;
-            margin-bottom: 5px;
-        }
-        
-        .payment-popup .email-input-group {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-        
-        .payment-popup .email-input-group input {
-            flex: 1;
-            min-width: 180px;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            font-size: 0.95rem;
-            box-sizing: border-box;
-            transition: border-color 0.3s ease;
-        }
-        
-        .payment-popup .email-input-group input:focus {
-            border-color: #667eea;
-            outline: none;
-        }
-        
-        .payment-popup .email-input-group .pay-btn {
-            width: auto;
-            padding: 12px 20px;
-            white-space: nowrap;
-        }
-        
-        .payment-popup .email-note {
-            font-size: 0.7rem;
-            color: #999;
-            margin-top: 5px;
-            text-align: left;
-        }
-        
-        .payment-popup .info-box.warning p {
-            margin: 0;
-        }
-        
         /* ✅ СЧЁТЧИК ПОПЫТОК */
         .quota-badge {
             display: inline-block;
@@ -472,12 +422,6 @@
         @keyframes pulseBadge {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.05); }
-        }
-        
-        .quota-badge.unlimited {
-            background: #bbdefb;
-            color: #0d47a1;
-            border-color: #667eea;
         }
         
         @media (max-width: 520px) {
@@ -522,9 +466,6 @@
             }
             .payment-popup {
                 padding: 20px;
-            }
-            .payment-popup .email-input-group input {
-                min-width: 140px;
             }
         }
         
@@ -581,7 +522,7 @@
 
             <!-- ✅ СЧЁТЧИК ПОПЫТОК -->
             <div style="text-align: center; margin-bottom: 10px;">
-                <span id="quotaBadge" class="quota-badge">🎯 20 бесплатных попыток осталось</span>
+                <span id="quotaBadge" class="quota-badge">🎯 10 бесплатных викторин в день</span>
             </div>
 
             <div class="ia-greeting" id="iaGreeting">
@@ -740,6 +681,9 @@
         
         window.tts = tts;
         
+        // ✅ НОВОЕ : 10 бесплатных викторин В ДЕНЬ (бесконечно)
+        const MAX_DAILY_QUIZZES = 10;
+        
         // ============================================================
         // СПИСОК 36 СПЕЦИАЛЬНОСТЕЙ
         // ============================================================
@@ -862,10 +806,9 @@
         let quizHistory = [];
         let userId = null;
         let userName = 'Доктор';
-        let freeQuizzesUsed = 0;
-        let isSubscribed = false;
-        let subscriptionExpiresAt = null;
-        let MAX_FREE_QUIZZES = 20;
+        let dailyQuizzesCount = 0;      // ✅ НОВОЕ : дневной счётчик
+        let dailyDate = null;           // ✅ НОВОЕ : дата дня
+        let totalQuizzesAllTime = 0;
         
         // ============================================================
         // ОЧИСТКА ТЕКСТА ДЛЯ TTS
@@ -927,11 +870,8 @@
                 if (window.tts.isSpeakingNow && window.tts.isSpeakingNow()) {
                     wasSpeaking = true;
                     window.tts.stop();
-                    console.log('⏹️ TTS остановлен перед новым сообщением');
                 }
-            } catch (e) {
-                console.warn('Ошибка при остановке TTS:', e);
-            }
+            } catch (e) {}
             document.querySelectorAll('.tts-btn.listening, .listen-btn.listening, .listen-synopsis-btn.listening, .listen-chapter-btn.listening').forEach(btn => {
                 const originalText = btn.dataset.originalText || '🔊';
                 btn.textContent = originalText;
@@ -954,10 +894,8 @@
                                 button.textContent = buttonText;
                                 button.classList.remove('listening');
                             }
-                            console.log('✅ TTS завершён успешно');
                         },
                         (error) => {
-                            console.warn('⚠️ Ошибка TTS (игнорируется):', error);
                             if (button) {
                                 button.textContent = buttonText;
                                 button.classList.remove('listening');
@@ -965,7 +903,6 @@
                         }
                     );
                 } catch (e) {
-                    console.warn('⚠️ Ошибка при запуске TTS:', e);
                     if (button) {
                         button.textContent = buttonText;
                         button.classList.remove('listening');
@@ -973,7 +910,6 @@
                 }
             };
             if (wasSpeaking) {
-                console.log('⏳ Ожидание остановки TTS...');
                 setTimeout(startSpeaking, 200);
             } else {
                 startSpeaking();
@@ -990,18 +926,15 @@
                 
                 if (type === 'spin') {
                     if (!totalDuration) totalDuration = 4000;
-                    
                     const minTicks = 15;
                     const maxTicks = 35;
                     const totalTicks = Math.min(maxTicks, Math.max(minTicks, Math.floor(totalDuration / 130)));
-                    
                     let count = 0;
                     const baseFreq = 523;
                     const volume = 0.15;
                     
                     function playTick() {
                         if (count >= totalTicks) return;
-                        
                         const progress = count / totalTicks;
                         const speedFactor = 0.4 + 0.6 * (1 - Math.sin(progress * Math.PI));
                         const tickDelay = (totalDuration / totalTicks) * speedFactor * 0.9;
@@ -1010,37 +943,20 @@
                         const gain = audioCtx.createGain();
                         osc.connect(gain);
                         gain.connect(audioCtx.destination);
-                        
                         const freqVariation = Math.sin(progress * Math.PI) * 200;
                         osc.frequency.value = baseFreq + freqVariation;
                         osc.type = 'square';
-                        
                         gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                         gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.01);
                         gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
-                        
-                        const oscH = audioCtx.createOscillator();
-                        const gainH = audioCtx.createGain();
-                        oscH.connect(gainH);
-                        gainH.connect(audioCtx.destination);
-                        oscH.frequency.value = (baseFreq + freqVariation) * 2;
-                        oscH.type = 'square';
-                        gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                        gainH.gain.linearRampToValueAtTime(volume * 0.3, audioCtx.currentTime + 0.01);
-                        gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.04);
-                        oscH.start();
-                        oscH.stop(audioCtx.currentTime + 0.04);
-                        
                         osc.start();
                         osc.stop(audioCtx.currentTime + 0.05);
                         
                         count++;
-                        
                         if (count < totalTicks) {
                             setTimeout(playTick, tickDelay);
                         }
                     }
-                    
                     setTimeout(playTick, 50);
                     
                 } else if (type === 'win') {
@@ -1048,7 +964,6 @@
                     const volume = 0.25;
                     const duration = 0.35;
                     const delay = 140;
-                    
                     notes.forEach((freq, i) => {
                         setTimeout(() => {
                             const osc = audioCtx.createOscillator();
@@ -1057,27 +972,9 @@
                             gain.connect(audioCtx.destination);
                             osc.frequency.value = freq;
                             osc.type = 'square';
-                            
                             gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                             gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
                             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-                            
-                            const harmonics = [2, 3, 4];
-                            harmonics.forEach((h, j) => {
-                                const oscH = audioCtx.createOscillator();
-                                const gainH = audioCtx.createGain();
-                                oscH.connect(gainH);
-                                gainH.connect(audioCtx.destination);
-                                oscH.frequency.value = freq * h;
-                                oscH.type = 'square';
-                                const volH = volume / (j + 2) * 0.5;
-                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
-                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
-                                oscH.start();
-                                oscH.stop(audioCtx.currentTime + duration * 0.7);
-                            });
-                            
                             osc.start();
                             osc.stop(audioCtx.currentTime + duration);
                         }, i * delay);
@@ -1088,7 +985,6 @@
                     const volume = 0.25;
                     const duration = 0.4;
                     const delay = 140;
-                    
                     notes.forEach((freq, i) => {
                         setTimeout(() => {
                             const osc = audioCtx.createOscillator();
@@ -1097,27 +993,9 @@
                             gain.connect(audioCtx.destination);
                             osc.frequency.value = freq;
                             osc.type = 'square';
-                            
                             gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
                             gain.gain.linearRampToValueAtTime(volume, audioCtx.currentTime + 0.04);
                             gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
-                            
-                            const harmonics = [2, 3, 4];
-                            harmonics.forEach((h, j) => {
-                                const oscH = audioCtx.createOscillator();
-                                const gainH = audioCtx.createGain();
-                                oscH.connect(gainH);
-                                gainH.connect(audioCtx.destination);
-                                oscH.frequency.value = freq * h;
-                                oscH.type = 'square';
-                                const volH = volume / (j + 2) * 0.5;
-                                gainH.gain.setValueAtTime(0.001, audioCtx.currentTime);
-                                gainH.gain.linearRampToValueAtTime(volH, audioCtx.currentTime + 0.04);
-                                gainH.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration * 0.7);
-                                oscH.start();
-                                oscH.stop(audioCtx.currentTime + duration * 0.7);
-                            });
-                            
                             osc.start();
                             osc.stop(audioCtx.currentTime + duration);
                         }, i * delay);
@@ -1152,9 +1030,7 @@
                         }, i * 100);
                     });
                 }
-            } catch (e) {
-                // Без звука если Web Audio не поддерживается
-            }
+            } catch (e) {}
         }
         
         // ============================================================
@@ -1171,7 +1047,19 @@
         }
         
         // ============================================================
-        // ✅ УПРАВЛЕНИЕ КВОТАМИ И ПОДПИСКОЙ
+        // ✅ ДАТА ДНЯ (YYYY-MM-DD)
+        // ============================================================
+        
+        function getTodayDateString() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+        
+        // ============================================================
+        // ✅ ЗАГРУЗКА ДАННЫХ - СИСТЕМА 10/ДЕНЬ
         // ============================================================
         
         async function loadUserData() {
@@ -1179,6 +1067,7 @@
             if (!user) return false;
             
             userId = user.uid;
+            const today = getTodayDateString();
             
             try {
                 const userRef = doc(db, 'users_ios', userId);
@@ -1186,32 +1075,26 @@
                 
                 if (snapshot.exists()) {
                     const data = snapshot.data();
-                    
                     userName = data.displayName || data.fullName || 'Доктор';
-                    freeQuizzesUsed = data?.rouletteStats?.freeQuizzesUsed || 0;
+                    totalQuizzesAllTime = data?.rouletteStats?.totalQuizzes || 0;
                     
-                    const sub = data?.rouletteSubscription;
-                    if (sub && sub.active && sub.expiresAt) {
-                        const expires = new Date(sub.expiresAt);
-                        if (expires > new Date()) {
-                            isSubscribed = true;
-                            subscriptionExpiresAt = expires;
-                        } else {
-                            isSubscribed = false;
-                            await updateDoc(userRef, {
-                                'rouletteSubscription.active': false
-                            });
-                        }
-                    } else {
-                        isSubscribed = false;
-                    }
+                    const daily = data?.rouletteDaily || {};
+                    dailyDate = daily.date || null;
+                    dailyQuizzesCount = daily.count || 0;
                     
-                    console.log('📊 Данные пользователя загружены:');
-                    console.log('  👤 Имя:', userName);
-                    console.log('  🎯 Бесплатных попыток использовано:', freeQuizzesUsed);
-                    console.log('  💎 Подписан:', isSubscribed);
-                    if (isSubscribed) {
-                        console.log('  📅 Истекает:', subscriptionExpiresAt.toLocaleDateString('ru-RU'));
+                    // ✅ АВТОМАТИЧЕСКИЙ СБРОС ЕСЛИ НОВЫЙ ДЕНЬ
+                    if (dailyDate !== today) {
+                        console.log('🔄 Обнаружен новый день, сброс счётчика');
+                        dailyQuizzesCount = 0;
+                        dailyDate = today;
+                        
+                        await setDoc(userRef, {
+                            rouletteDaily: {
+                                count: 0,
+                                date: today,
+                                lastReset: new Date().toISOString()
+                            }
+                        }, { merge: true });
                     }
                     
                     return true;
@@ -1221,14 +1104,14 @@
                             freeQuizzesUsed: 0,
                             totalQuizzes: 0
                         },
-                        rouletteSubscription: {
-                            active: false,
-                            expiresAt: null,
-                            paidAt: null
+                        rouletteDaily: {
+                            count: 0,
+                            date: today,
+                            lastReset: new Date().toISOString()
                         }
                     }, { merge: true });
-                    freeQuizzesUsed = 0;
-                    isSubscribed = false;
+                    dailyQuizzesCount = 0;
+                    dailyDate = today;
                     return true;
                 }
             } catch (error) {
@@ -1237,62 +1120,85 @@
             }
         }
         
+        // ============================================================
+        // ✅ ПРОВЕРКА ДОСТУПА (10/ДЕНЬ)
+        // ============================================================
+        
         function hasAccess() {
-            if (isSubscribed) {
-                return true;
+            const today = getTodayDateString();
+            if (dailyDate !== today) {
+                dailyQuizzesCount = 0;
+                dailyDate = today;
             }
-            const remaining = MAX_FREE_QUIZZES - freeQuizzesUsed;
-            if (remaining > 0) {
-                return true;
-            }
-            return false;
+            return dailyQuizzesCount < MAX_DAILY_QUIZZES;
         }
         
         function getRemainingQuizzes() {
-            if (isSubscribed) return '♾️';
-            return Math.max(0, MAX_FREE_QUIZZES - freeQuizzesUsed);
+            const today = getTodayDateString();
+            if (dailyDate !== today) {
+                return MAX_DAILY_QUIZZES;
+            }
+            return Math.max(0, MAX_DAILY_QUIZZES - dailyQuizzesCount);
         }
+        
+        // ============================================================
+        // ✅ ОБНОВЛЕНИЕ ОТОБРАЖЕНИЯ КВОТЫ
+        // ============================================================
         
         function updateQuotaDisplay() {
             const remaining = getRemainingQuizzes();
             
-            if (isSubscribed) {
-                quotaBadge.textContent = '💎 Безлимитный доступ - Действует 1 год';
-                quotaBadge.className = 'quota-badge unlimited';
-            } else if (remaining > 5) {
-                quotaBadge.textContent = `🎯 ${remaining} бесплатных попыток осталось`;
+            if (remaining > 5) {
+                quotaBadge.textContent = `🎯 ${remaining} викторин осталось сегодня`;
                 quotaBadge.className = 'quota-badge';
             } else if (remaining > 0) {
-                quotaBadge.textContent = `⚠️ Осталось ${remaining} попыт${remaining > 1 ? 'ки' : 'ка'}`;
+                quotaBadge.textContent = `⚠️ ${remaining} викторин${remaining > 1 ? 'ы' : 'а'} осталось сегодня`;
                 quotaBadge.className = 'quota-badge warning';
             } else {
-                quotaBadge.textContent = '🔒 Попыток больше нет - Подпишитесь!';
+                quotaBadge.textContent = '🔒 Викторин нет - Возвращайтесь завтра!';
                 quotaBadge.className = 'quota-badge danger';
             }
         }
         
+        // ============================================================
+        // ✅ ИНКРЕМЕНТ ДНЕВНОГО СЧЁТЧИКА
+        // ============================================================
+        
         async function incrementQuizCount() {
-            if (isSubscribed) return;
+            const today = getTodayDateString();
             
             try {
                 const userRef = doc(db, 'users_ios', userId);
-                await updateDoc(userRef, {
-                    'rouletteStats.freeQuizzesUsed': increment(1),
+                
+                if (dailyDate !== today) {
+                    dailyQuizzesCount = 0;
+                    dailyDate = today;
+                }
+                
+                dailyQuizzesCount++;
+                
+                await setDoc(userRef, {
+                    rouletteDaily: {
+                        count: dailyQuizzesCount,
+                        date: today,
+                        lastUpdated: new Date().toISOString()
+                    },
                     'rouletteStats.totalQuizzes': increment(1)
-                });
-                freeQuizzesUsed++;
+                }, { merge: true });
+                
+                totalQuizzesAllTime++;
                 updateQuotaDisplay();
-                console.log(`✅ Викторина учтена: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
+                console.log(`✅ Викторина учтена: ${dailyQuizzesCount}/${MAX_DAILY_QUIZZES} сегодня`);
             } catch (error) {
                 console.error('❌ Ошибка инкремента:', error);
             }
         }
         
         // ============================================================
-        // ✅ ВСПЛЫВАЮЩЕЕ ОКНО ОПЛАТЫ
+        // ✅ ВСПЛЫВАЮЩЕЕ ОКНО "ВОЗВРАЩАЙТЕСЬ ЗАВТРА" (БЕЗ ОПЛАТЫ)
         // ============================================================
         
-        function showPaymentPopup() {
+        function showDailyLimitPopup() {
             stopTTS();
             
             if (document.querySelector('.payment-popup-overlay')) return;
@@ -1300,82 +1206,45 @@
             const overlay = document.createElement('div');
             overlay.className = 'payment-popup-overlay';
             
-            const remaining = getRemainingQuizzes();
-            
             overlay.innerHTML = `
                 <div class="payment-popup">
-                    <div class="payment-lock-icon">🔒</div>
-                    <h2>🎯 Больше нет бесплатных попыток!</h2>
+                    <div class="payment-lock-icon">🌙</div>
+                    <h2>🎯 Вы достигли дневного лимита!</h2>
                     <p>
-                        Вы использовали все <strong>${MAX_FREE_QUIZZES} бесплатных попыток</strong>.<br>
-                        <span style="font-size: 0.9rem; color: #888;">У вас не осталось попыток.</span>
+                        Вы использовали все <strong>${MAX_DAILY_QUIZZES} бесплатных викторин</strong> дня.
                     </p>
-                    <p style="margin-top: 10px;">
-                        Чтобы продолжать играть <strong>в течение 1 года</strong>,<br>
-                        оплатите <strong>20 €</strong> банковским переводом.
+                    <p style="margin-top: 10px; font-size: 1.05rem; color: #667eea; font-weight: 600;">
+                        Возвращайтесь завтра за ${MAX_DAILY_QUIZZES} новыми викторинами!
                     </p>
-                    <div class="features">
-                        <p>✅ Безлимитный доступ на 1 год</p>
-                        <p>✅ Все специальности</p>
-                        <p>✅ Все уровни</p>
-                        <p>✅ Без ограничений на викторины</p>
+                    <div class="info-box success">
+                        <p style="margin: 0;">✅ Это <strong>100% бесплатно</strong>, каждый день!</p>
                     </div>
-                    <button class="pay-btn" id="payRouletteBtn">💳 Оплатить 20 € банковским переводом</button>
-                    <button class="close-btn" id="closePaymentPopup">❌ Вернуться позже</button>
-                    <p class="secure-text">🔒 Безопасный перевод • Реквизиты после клика</p>
+                    <div class="info-box warning">
+                        <p style="margin: 0;">⏰ Следующая сессия : завтра в полночь</p>
+                    </div>
+                    <button class="pay-btn" id="closeLimitPopup" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white;">
+                        👍 OK, до завтра!
+                    </button>
+                    <p class="secure-text">💡 Совет : возвращайтесь каждый день, чтобы ничего не пропустить!</p>
                 </div>
             `;
             
             document.body.appendChild(overlay);
             
-            document.getElementById('payRouletteBtn').addEventListener('click', async function() {
-                this.textContent = '⏳ Запись...';
-                this.disabled = true;
-                
-                try {
-                    const interestData = {
-                        userId: userId || 'anonymous',
-                        userName: userName,
-                        type: 'roulette_subscription',
-                        amount: 20,
-                        currency: 'EUR',
-                        source: 'roulette_de_l_info',
-                        interestedAt: new Date().toISOString(),
-                        timestamp: new Date().toISOString(),
-                        userAgent: navigator.userAgent || 'unknown',
-                        platform: navigator.platform || 'unknown',
-                        status: 'redirected_to_payment'
-                    };
-                    
-                    await addDoc(collection(db, 'payment_interests'), interestData);
-                    console.log('✅ Интерес записан в Firebase');
-                    showToast('📊 Перенаправление на страницу оплаты...', 2000);
-                    
-                } catch (e) {
-                    console.warn('⚠️ Ошибка Firebase:', e);
-                }
-                
+            document.getElementById('closeLimitPopup').addEventListener('click', function() {
                 overlay.remove();
-                window.location.href = `paiement_rib_ru.html?type=roulette&amount=20&source=roulette`;
-            });
-            
-            document.getElementById('closePaymentPopup').addEventListener('click', function() {
-                overlay.remove();
-                showToast('💡 Вы можете вернуться позже, чтобы оформить подписку.', 3000);
+                showToast('👋 До завтра за новыми викторинами!', 3000);
             });
             
             overlay.addEventListener('click', function(e) {
                 if (e.target === overlay) overlay.remove();
             });
             
-            setTimeout(() => {
-                const ttsMessage = `Вы использовали все ${MAX_FREE_QUIZZES} бесплатных попыток. Чтобы продолжать играть в течение 1 года, оплатите 20 евро банковским переводом. Нажмите кнопку Оплатить для получения реквизитов.`;
-                speakText(cleanTextForTTS(ttsMessage), null);
-            }, 500);
+            // 🔇 Автоматическое чтение отключено (silence IA)
         }
         
         // ============================================================
-        // ПРИВЕТСТВЕННОЕ СООБЩЕНИЕ ИИ
+        // ✅ ПРИВЕТСТВЕННОЕ СООБЩЕНИЕ ИИ (СИЛЕНСИО АЛ КАРИКАМЕНТО)
         // ============================================================
         
         function displayIAWelcome() {
@@ -1386,27 +1255,18 @@
             const remaining = getRemainingQuizzes();
             
             let message = '';
-            let ttsMessage = '';
             
-            if (isSubscribed) {
-                const expireDate = subscriptionExpiresAt ? subscriptionExpiresAt.toLocaleDateString('ru-RU') : 'через 1 год';
-                message = `Здравствуйте, <strong>${name}</strong>! 🌟<br>Добро пожаловать в <strong>🎰 Рулетку информации</strong>!<br><br>💎 У вас <strong>безлимитная подписка</strong>, действительная до <strong>${expireDate}</strong>.<br><br>🎯 Вращайте колесо специальностей, затем колесо уровней и проверяйте свои знания без ограничений!<br><br>🔥 Готовы принять вызов?`;
-                ttsMessage = `Здравствуйте, ${name}. Добро пожаловать в Рулетку информации. У вас безлимитная подписка, действительная до ${expireDate}. Вращайте колёса и проверяйте свои знания без ограничений.`;
-            } else if (remaining > 0) {
-                message = `Здравствуйте, <strong>${name}</strong>! 🌟<br>Добро пожаловать в <strong>🎰 Рулетку информации</strong>!<br><br>🎯 У вас осталось <strong>${remaining} бесплатн${remaining > 1 ? 'ых попыток' : 'ая попытка'}</strong>.<br><br>Вращайте колесо специальностей, затем колесо уровней и проверяйте свои знания!<br><br>🔥 Готовы принять вызов?`;
-                ttsMessage = `Здравствуйте, ${name}. Добро пожаловать в Рулетку информации. У вас осталось ${remaining} бесплатных попыток. Вращайте колёса и проверяйте свои знания.`;
+            if (remaining > 0) {
+                message = `Здравствуйте, <strong>${name}</strong>! 🌟<br>Добро пожаловать в <strong>🎰 Рулетку информации</strong>!<br><br>🎯 У вас осталось <strong>${remaining} викторин</strong> сегодня (из ${MAX_DAILY_QUIZZES}).<br><br>Вращайте колесо специальностей, затем колесо уровней и проверяйте свои знания!<br><br>🔥 Готовы принять вызов?`;
             } else {
-                message = `Здравствуйте, <strong>${name}</strong>! 🌟<br>Добро пожаловать в <strong>🎰 Рулетку информации</strong>!<br><br>🔒 Вы использовали все <strong>${MAX_FREE_QUIZZES} бесплатных попыток</strong>.<br><br>💎 Чтобы продолжать играть <strong>1 год</strong>, оформите подписку за <strong>20€</strong>.<br><br>Нажмите кнопку "НАЧАТЬ ВИКТОРИНУ", чтобы увидеть варианты подписки.`;
-                ttsMessage = `Здравствуйте, ${name}. Добро пожаловать в Рулетку информации. Вы использовали все ${MAX_FREE_QUIZZES} бесплатных попыток. Оформите подписку за 20 евро в год, чтобы продолжать играть.`;
+                message = `Здравствуйте, <strong>${name}</strong>! 🌟<br>Добро пожаловать в <strong>🎰 Рулетку информации</strong>!<br><br>🌙 Вы использовали все <strong>${MAX_DAILY_QUIZZES} викторин</strong> дня.<br><br>💡 Возвращайтесь <strong>завтра</strong> за ${MAX_DAILY_QUIZZES} новыми бесплатными викторинами!`;
             }
             
             iaMessage.innerHTML = message;
             updateQuotaDisplay();
             
-            setTimeout(() => {
-                const cleanMsg = cleanTextForTTS(ttsMessage);
-                speakText(cleanMsg, null);
-            }, 1500);
+            // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+            // L'utilisateur peut cliquer sur 🔊 s'il veut écouter.
         }
         
         // ============================================================
@@ -1695,12 +1555,12 @@
         }
         
         // ============================================================
-        // ✅ ЗАПУСК ВИКТОРИНЫ - С ПРОВЕРКОЙ ДОСТУПА
+        // ✅ ЗАПУСК ВИКТОРИНЫ - С ПРОВЕРКОЙ ДОСТУПА 10/ДЕНЬ
         // ============================================================
         
         function startQuiz() {
             if (!hasAccess()) {
-                showPaymentPopup();
+                showDailyLimitPopup();
                 return;
             }
             
@@ -2229,14 +2089,13 @@
         // ============================================================
         
         async function init() {
-            Logger.info('🎰 Рулетка информации загружена - Версия с подпиской');
+            Logger.info('🎰 Рулетка информации загружена - 10 викторин/день бесплатно (RU)');
             
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
                     console.log('👤 Пользователь подключён:', user.email);
                     
                     await loadUserData();
-                    
                     updateQuotaDisplay();
                     
                     roulette = initRoulette();
@@ -2249,19 +2108,12 @@
                     displayIAWelcome();
                     
                     console.log('🎰 Рулетка информации готова!');
-                    console.log(`🎯 Бесплатных попыток использовано: ${freeQuizzesUsed}/${MAX_FREE_QUIZZES}`);
-                    console.log(`💎 Подписка активна: ${isSubscribed}`);
-                    if (isSubscribed) {
-                        console.log(`📅 Истекает: ${subscriptionExpiresAt?.toLocaleDateString('ru-RU')}`);
-                    }
-                    console.log('✅ Firebase: сохранение в users_ios/rouletteHistory');
-                    console.log('✅ Результаты Рулетки НЕ ВЛИЯЮТ на зелёные галочки специальностей');
-                    console.log('🔊 Звуковые эффекты синхронизированы с ОБОИМИ колёсами');
-                    console.log('🔒 Кнопки блокируются после каждого клика');
-                    console.log('✅ RewardService интегрирован: автоматические баллы и значки');
-                    console.log('✅ Интегрирована публикация в соцсетях');
-                    console.log('💳 Оплата банковским переводом: 20€ за 1 год безлимитного доступа');
-                    console.log('📱 Счётчик попыток: 20 бесплатных, затем оплата');
+                    console.log(`🎯 ${MAX_DAILY_QUIZZES} бесплатных викторин в день`);
+                    console.log(`📊 Викторин сегодня: ${dailyQuizzesCount}/${MAX_DAILY_QUIZZES}`);
+                    console.log(`📈 Всего исторически: ${totalQuizzesAllTime}`);
+                    console.log('✅ 100% БЕСПЛАТНО - Без оплаты');
+                    console.log('🌙 Автоматический сброс в полночь');
+                    console.log('🔇 SILENCIO IA : pas de lecture auto au chargement');
                     
                 } else {
                     console.log('👤 Пользователь не авторизован, перенаправление на регистрацию');

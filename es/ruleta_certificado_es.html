@@ -1294,7 +1294,7 @@
         }
         
         // ============================================================
-        // MOSTRAR MENSAJE IA DE BIENVENIDA
+        // ✅ MOSTRAR MENSAJE IA DE BIENVENIDA (SIN LECTURA AUTO)
         // ============================================================
         
         function displayIAWelcome() {
@@ -1307,10 +1307,8 @@
             iaAvatar.textContent = avatar;
             iaMessage.innerHTML = message;
             
-            setTimeout(() => {
-                const ttsMessage = cleanTextForTTS(message.replace(/<[^>]*>/g, ''));
-                speakText(ttsMessage, null);
-            }, 1500);
+            // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+            // L'utilisateur peut cliquer sur le bouton 🔊 s'il veut écouter.
         }
         
         // ============================================================
@@ -1740,7 +1738,7 @@
         }
         
         // ============================================================
-        // ✅ POPUP DE PAGO CON REGISTRO FIREBASE + REDIRECCIÓN A paiement_rib.html
+        // ✅ POPUP DE PAGO CON REGISTRO FIREBASE + REDIRECCIÓN A virement_bancaire_es.html
         // ============================================================
         
         function showCertificatePaymentPopup() {
@@ -1773,7 +1771,7 @@
             
             document.body.appendChild(overlay);
 
-            // 🔥 BOTÓN "PAGAR" → REGISTRA EN FIREBASE + REDIRIGE A paiement_rib.html
+            // 🔥 BOTÓN "PAGAR" → REGISTRA EN FIREBASE + REDIRIGE A virement_bancaire_es.html
             document.getElementById('payCertBtn').addEventListener('click', async function() {
                 this.textContent = '⏳ Registrando...';
                 this.disabled = true;
@@ -1812,8 +1810,8 @@
                 // ✅ ELIMINAR LA POPUP
                 overlay.remove();
 
-                // ✅ REDIRIGIR A LA PÁGINA RIB PARA LA TRANSFERENCIA
-                window.location.href = `paiement_rib.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
+                // ✅ REDIRIGIR A LA PÁGINA DE PAGO POR TRANSFERENCIA (ESPAÑOL)
+                window.location.href = `virement_bancaire_es.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
             });
 
             document.getElementById('closePaymentPopup').addEventListener('click', function() {
@@ -1959,7 +1957,7 @@
                 }
             }
             
-            // Mensaje IA después del resultado
+            // Mensaje IA después del resultado (✅ EXCEPCIÓN : lecture auto conservée pour le résultat final)
             levelScores = getLevelScores();
             const { message, avatar } = generateResultIAMessage(userName, levelScores, score, pct, passed);
             
@@ -2179,7 +2177,7 @@
                     console.log(`📝 ${selectedQuestions.length} preguntas cargadas`);
                     console.log('🎯 50 preguntas • 30 seg • 70% para aprobar');
                     console.log('🤖 IA personalizada activada');
-                    console.log('💳 Sistema de pago : REDIRECCIÓN A paiement_rib.html');
+                    console.log('💳 Sistema de pago : REDIRECCIÓN A virement_bancaire_es.html');
                     console.log('📄 Certificado bloqueado hasta que se pague');
                     
                 } else {

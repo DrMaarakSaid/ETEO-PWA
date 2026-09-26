@@ -531,7 +531,7 @@
         console.log('📱 检测到的环境：', isMobile ? '📱 移动' : '💻 桌面');
         
         // ============================================================
-        // 验证 URL
+        // ✅ 验证 URL — CORRIGÉ
         // ============================================================
         const isProduction = window.location.hostname !== 'localhost' && 
                              window.location.hostname !== '127.0.0.1';
@@ -541,7 +541,8 @@
             : `${window.location.protocol}//${window.location.host}`;
         
         const actionCodeSettings = {
-            url: `${baseUrl}/www/zh/yanzheng_youxiang_zh.html`,
+            // ✅ CORRIGÉ : verify_email_zh.html au lieu de yanzheng_youxiang_zh.html
+            url: `${baseUrl}/zh/verify_email_zh.html`,
             handleCodeInApp: true
         };
         
@@ -1078,7 +1079,8 @@
                 btnText.textContent = '✅ 账户已创建！';
                 submitBtn.disabled = false;
                 showToast('✅ 账户已创建！请检查您的邮箱。', 3000);
-                setTimeout(() => { window.location.href = 'yanzheng_youxiang_zh.html'; }, 1500);
+                // ✅ CORRIGÉ : verify_email_zh.html au lieu de yanzheng_youxiang_zh.html
+                setTimeout(() => { window.location.href = 'verify_email_zh.html'; }, 1500);
             } else {
                 setLoading(false);
                 if (result.code === 'auth/email-already-in-use') {
@@ -1145,6 +1147,7 @@
         console.log('✅ 新：忘记密码');
         console.log('✅ 新：Google/Apple Sign-In 已修正（移动 → 重定向）');
         console.log('✅ 新：已使用邮箱的清晰消息');
+        console.log('✅ CORRIGÉ : verify_email_zh.html au lieu de yanzheng_youxiang_zh.html');
     </script>
 </body>
 </html>

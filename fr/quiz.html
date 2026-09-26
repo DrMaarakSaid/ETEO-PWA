@@ -21,9 +21,6 @@
 <body>
     <div class="container quiz-container">
         
-        <!-- ============================================================ -->
-        <!-- HEADER (caché au départ) -->
-        <!-- ============================================================ -->
         <div class="quiz-header" id="quizHeader" style="display:none;">
             <div class="quiz-progress">
                 <div class="quiz-progress-bar">
@@ -39,29 +36,20 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- ÉCRAN D'ACCUEIL AVEC HISTOIRE ET 6 NIVEAUX -->
-        <!-- ============================================================ -->
         <div class="welcome-screen" id="welcomeScreen">
             <h1 id="specialtyTitle">🎯 Spécialité</h1>
             
-            <!-- HISTOIRE -->
             <div class="synopsis-container" id="synopsisContainer">
                 <p id="synopsisText">Chargement de l'histoire...</p>
                 <button class="listen-synopsis-btn" id="listenSynopsisBtn">🔊 Écouter l'histoire</button>
             </div>
             
-            <!-- 6 NIVEAUX EN GRILLE 2x2 -->
             <div class="level-grid-horizontal" id="levelGrid">
-                <!-- Généré par JavaScript -->
             </div>
             
             <button class="start-quiz-btn" id="startQuizBtn" style="display:none;">🚀 Commencer le QCM</button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- ÉCRAN DE CHAPITRE (NOUVEAU) -->
-        <!-- ============================================================ -->
         <div class="chapter-screen" id="chapterScreen" style="display:none;">
             <div class="chapter-header">
                 <span class="chapter-icon">📖</span>
@@ -77,9 +65,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- ÉCRAN DU QUIZ -->
-        <!-- ============================================================ -->
         <div class="question-container" id="questionContainer" style="display:none;">
             <div class="quiz-title" id="quizTitle">Stérilisation - Débutant Niveau 1</div>
             
@@ -90,7 +75,6 @@
             </div>
             
             <div class="options" id="optionsContainer">
-                <!-- Options générées par JavaScript -->
             </div>
             
             <div class="feedback-container" id="feedbackContainer" style="display:none;">
@@ -116,9 +100,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- ÉCRAN DES RÉSULTATS -->
-        <!-- ============================================================ -->
         <div class="result-container" id="resultContainer" style="display:none;">
             <h2>🏆 Quiz terminé !</h2>
             <div class="final-score" id="finalScore">0/0</div>
@@ -134,9 +115,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- ÉCRAN DE FIN EXPERT 2 -->
-        <!-- ============================================================ -->
         <div class="expert-final-container" id="expertFinalContainer" style="display:none;">
             <div class="expert-final-header">
                 <div class="expert-final-badge">🏆</div>
@@ -224,19 +202,10 @@
             </div>
         </div>
 
-        <!-- TOAST -->
         <div class="toast" id="toast"></div>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- SCRIPT PRINCIPAL -->
-    <!-- ============================================================ -->
-    
     <script type="module">
-        // ============================================================
-        // IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import { TranslateService } from '../js/services/translate.js';
@@ -246,17 +215,12 @@
         import { Progress } from '../js/core/progress.js';
         import tts from '../js/services/tts.js';
         
-        // ✅ IMPORTS FIREBASE
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
-        import { getFirestore, doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
+        import { getFirestore, doc, updateDoc, arrayUnion, getDoc, collection, addDoc } from 'firebase/firestore';
         import { AccessService } from '../js/services/AccessService.js';
         
         window.tts = tts;
-        
-        // ============================================================
-        // FIREBASE CONFIG
-        // ============================================================
         
         const firebaseConfig = {
             apiKey: "AIzaSyDcIvbmmqiEqWbjNqTUwx1JGWkj6dxK-DE",
@@ -272,10 +236,6 @@
         const auth = getAuth(app);
         const db = getFirestore(app);
         
-        // ============================================================
-        // CONFIGURATION DES 6 NIVEAUX
-        // ============================================================
-        
         const LEVELS = [
             { id: 'debutant1', label: 'Débutant 1' },
             { id: 'debutant2', label: 'Débutant 2' },
@@ -287,10 +247,6 @@
         
         const UNLOCK_ORDER = ['debutant1', 'debutant2', 'intermediaire1', 'intermediaire2', 'expert1', 'expert2'];
         const UNLOCK_THRESHOLD = 60;
-        
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
         
         const toast = document.getElementById('toast');
         const welcomeScreen = document.getElementById('welcomeScreen');
@@ -338,10 +294,6 @@
         const ttsFeedbackBtn = document.getElementById('ttsFeedbackBtn');
         const ttsExplanationBtn = document.getElementById('ttsExplanationBtn');
         
-        // ============================================================
-        // SERVICES
-        // ============================================================
-        
         const storage = new StorageService();
         const translate = new TranslateService();
         const quiz = new QuizEngine();
@@ -350,10 +302,6 @@
         const progress = new Progress(0);
         
         let accessService = null;
-        
-        // ============================================================
-        // ÉTAT
-        // ============================================================
         
         let selectedSpecialty = null;
         let currentLevel = 'debutant1';
@@ -372,39 +320,20 @@
         let isChapterMode = false;
         let timeRemaining = 40;
         
-        // ============================================================
-        // ✅ FONCTION DE NETTOYAGE POUR TTS (SUPPRIME ÉMOJIS + HTML)
-        // ============================================================
-        
         function cleanTextForTTS(text) {
             if (!text) return '';
-            
-            // 1️⃣ Supprimer les balises HTML
             let cleaned = text.replace(/<[^>]*>/g, ' ');
-            
-            // 2️⃣ Supprimer les emojis (Unicode)
             cleaned = cleaned.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
             cleaned = cleaned.replace(/[\u2600-\u27BF]/g, '');
             cleaned = cleaned.replace(/[\u2700-\u27BF]/g, '');
             cleaned = cleaned.replace(/[\uFE00-\uFEFF]/g, '');
             cleaned = cleaned.replace(/[\u2300-\u23FF]/g, '');
-            
-            // 3️⃣ Supprimer les emojis spécifiques
             cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆🌱🌿🌳🌲🏆📈🎯💰📋⏱️🔄🏅🎙️🤖]/g, '');
-            
-            // 4️⃣ Supprimer les retours à la ligne
             cleaned = cleaned.replace(/\n/g, ' ');
             cleaned = cleaned.replace(/\r/g, ' ');
-            
-            // 5️⃣ Nettoyer les espaces
             cleaned = cleaned.replace(/\s+/g, ' ').trim();
-            
             return cleaned;
         }
-        
-        // ============================================================
-        // EFFETS SONORES (WEB AUDIO API)
-        // ============================================================
         
         function playSound(type) {
             try {
@@ -519,14 +448,8 @@
                         }, i * 100);
                     });
                 }
-            } catch (e) {
-                // Silencieux si Web Audio non supporté
-            }
+            } catch (e) {}
         }
-        
-        // ============================================================
-        // CONFETTIS POUR LA VICTOIRE
-        // ============================================================
         
         function launchConfetti() {
             try {
@@ -574,10 +497,6 @@
             }
         }
         
-        // ============================================================
-        // TOAST
-        // ============================================================
-        
         function showToast(message, duration = 2500) {
             toast.textContent = message;
             toast.classList.add('show');
@@ -586,10 +505,6 @@
                 toast.classList.remove('show');
             }, duration);
         }
-        
-        // ============================================================
-        // TTS AMÉLIORÉ : FORCE LA RELECTURE SANS STOP
-        // ============================================================
         
         function speakText(text, button, buttonText = '🔊') {
             if (!window.tts) {
@@ -634,10 +549,6 @@
             );
         }
         
-        // ============================================================
-        // LECTURE DES RÉSULTATS AVEC MESSAGES PERSONNALISÉS
-        // ============================================================
-        
         function speakResultMessage(score, totalQuestions, userName) {
             const percent = Math.round((score / totalQuestions) * 100);
             const name = userName || 'Docteur';
@@ -664,10 +575,6 @@
             }, 1200);
         }
         
-        // ============================================================
-        // CHARGER LA SPÉCIALITÉ
-        // ============================================================
-        
         function loadSavedSpecialty() {
             const settings = storage.getSettings() || {};
             selectedSpecialty = settings.selectedSpecialty || localStorage.getItem('eteo_selected_specialty');
@@ -681,10 +588,6 @@
             currentLevel = localStorage.getItem('eteo_current_level') || 'debutant1';
             return selectedSpecialty;
         }
-        
-        // ============================================================
-        // CHARGER L'HISTOIRE
-        // ============================================================
         
         async function loadStory() {
             try {
@@ -712,10 +615,6 @@
             }
         }
         
-        // ============================================================
-        // CHARGER LES DONNÉES
-        // ============================================================
-        
         async function loadSpecialtyData() {
             await loadStory();
             const displayName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
@@ -725,17 +624,9 @@
             return storyData;
         }
         
-        // ============================================================
-        // ✅ VÉRIFIER L'ACCÈS - TOUS LES NIVEAUX GRATUITS (MODIFIÉ)
-        // ============================================================
-        
         function canAccessLevel(levelId) {
             return true;
         }
-        
-        // ============================================================
-        // AFFICHER L'ÉCRAN DE CHAPITRE
-        // ============================================================
         
         function showChapterScreen(levelId) {
             const levelLabel = LEVELS.find(l => l.id === levelId)?.label || levelId;
@@ -759,26 +650,40 @@
             listenChapterBtn.classList.remove('listening');
             isChapterPlaying = false;
             
-            setTimeout(() => {
-                if (window.tts && chapterTextContent) {
-                    isChapterPlaying = true;
-                    listenChapterBtn.textContent = '⏹️ Arrêter';
-                    listenChapterBtn.classList.add('listening');
-                    window.tts.speak(cleanTextForTTS(chapterTextContent), 'fr', 0.9, 1.0, () => {
-                        isChapterPlaying = false;
-                        listenChapterBtn.textContent = '🔊 Écouter le chapitre';
-                        listenChapterBtn.classList.remove('listening');
-                    });
-                }
-            }, 500);
+            // 🔇 Lecture automatique du chapitre désactivée
+            // L'utilisateur clique sur "🔊 Écouter le chapitre" s'il veut l'entendre
         }
-        
-        // ============================================================
-        // DÉMARRER LE QUIZ DEPUIS LE CHAPITRE
-        // ============================================================
         
         async function startQuizFromChapter() {
             if (!pendingLevelId) return;
+            
+            // 📊 Enregistrer le démarrage dans Firebase
+            try {
+                const user = auth.currentUser;
+                if (user) {
+                    const settings = storage.getSettings() || {};
+                    const userName = settings.user?.displayName || settings.user?.fullName || 'Docteur';
+                    const specialtyName = selectedSpecialty.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+                    const levelName = LEVELS.find(l => l.id === pendingLevelId)?.label || pendingLevelId;
+                    
+                    await addDoc(collection(db, 'quiz_starts'), {
+                        userId: user.uid,
+                        userName: userName,
+                        userEmail: user.email || 'unknown',
+                        specialty: selectedSpecialty,
+                        specialtyName: specialtyName,
+                        level: pendingLevelId,
+                        levelName: levelName,
+                        startedAt: new Date().toISOString(),
+                        userAgent: navigator.userAgent || 'unknown',
+                        platform: navigator.platform || 'unknown'
+                    });
+                    
+                    console.log('✅ Démarrage quiz enregistré dans Firebase :', specialtyName, '-', levelName);
+                }
+            } catch (err) {
+                console.warn('⚠️ Impossible d\'enregistrer le démarrage (le quiz continue) :', err);
+            }
             
             isChapterMode = false;
             chapterScreen.style.display = 'none';
@@ -820,10 +725,6 @@
                 showToast(`❌ Erreur: ${error.message}`, 3000);
             }
         }
-        
-        // ============================================================
-        // AFFICHER LES NIVEAUX
-        // ============================================================
         
         function renderLevels() {
             const settings = storage.getSettings() || {};
@@ -870,10 +771,6 @@
                 startQuizBtn.style.display = 'none';
             }
         }
-        
-        // ============================================================
-        // CRÉER UNE CARTE DE NIVEAU
-        // ============================================================
         
         function createLevelCard(level, unlockedLevels, specialtyScores) {
             const isUnlocked = unlockedLevels.includes(level.id);
@@ -924,10 +821,6 @@
             return card;
         }
         
-        // ============================================================
-        // SÉLECTIONNER UN NIVEAU
-        // ============================================================
-        
         async function selectLevel(levelId) {
             currentLevel = levelId;
             localStorage.setItem('eteo_current_level', levelId);
@@ -950,10 +843,6 @@
             const label = LEVELS.find(l => l.id === levelId)?.label || levelId;
             showToast(`📚 Niveau sélectionné: ${label}`, 2000);
         }
-        
-        // ============================================================
-        // CHARGER LES QUESTIONS
-        // ============================================================
         
         async function loadQuestionsForLevel(levelId) {
             try {
@@ -1017,10 +906,6 @@
             }
         }
         
-        // ============================================================
-        // ÉCOUTER L'HISTOIRE
-        // ============================================================
-        
         listenSynopsisBtn.addEventListener('click', function(event) {
             event.preventDefault();
             event.stopPropagation();
@@ -1068,10 +953,6 @@
             );
         });
         
-        // ============================================================
-        // ÉCOUTER LE CHAPITRE
-        // ============================================================
-        
         listenChapterBtn.addEventListener('click', function() {
             const text = chapterText.textContent;
             if (!text || text === '') {
@@ -1111,23 +992,11 @@
             );
         });
         
-        // ============================================================
-        // DÉMARRER LE QUIZ (depuis le bouton "Commencer")
-        // ============================================================
-        
         startQuizBtn.addEventListener('click', () => {
             showChapterScreen(currentLevel);
         });
         
-        // ============================================================
-        // DÉMARRER LE QUIZ DEPUIS LE CHAPITRE
-        // ============================================================
-        
         startChapterQuizBtn.addEventListener('click', startQuizFromChapter);
-        
-        // ============================================================
-        // TIMER
-        // ============================================================
         
         let timerInterval = null;
         
@@ -1151,10 +1020,6 @@
             clearInterval(timerInterval);
             timerBottom.style.color = '#e67e22';
         }
-        
-        // ============================================================
-        // AFFICHER UNE QUESTION (AVEC LECTURE AUTO)
-        // ============================================================
         
         function showQuestion(index) {
             try {
@@ -1212,7 +1077,7 @@
                 
                 updateUI(index);
                 
-                // LECTURE AUTOMATIQUE DE LA QUESTION
+                // 🔊 Lecture automatique de la QUESTION (gardée - cœur d'ETEO)
                 setTimeout(() => {
                     if (window.tts && currentQuestionText) {
                         speakText(currentQuestionText, null);
@@ -1224,10 +1089,6 @@
                 showToast('❌ Erreur d\'affichage', 3000);
             }
         }
-        
-        // ============================================================
-        // GÉRER LE CLIC (AVEC SON + IA)
-        // ============================================================
         
         function handleOptionClick(index) {
             if (isAnswered) return;
@@ -1302,16 +1163,13 @@
             
             updateUI(quiz.getCurrentIndex());
             
+            // 🔊 Lecture automatique du FEEDBACK (gardée)
             setTimeout(() => {
                 if (window.tts && currentFeedbackText) {
                     speakText(currentFeedbackText, null);
                 }
             }, 300);
         }
-        
-        // ============================================================
-        // BOUTONS TTS (FORCENT LA RELECTURE)
-        // ============================================================
         
         ttsQuestionBtn.addEventListener('click', function() {
             speakText(currentQuestionText, this, '🔊 Lire la question');
@@ -1324,10 +1182,6 @@
         ttsExplanationBtn.addEventListener('click', function() {
             speakText(currentExplanationText, this, '🔊 Lire l\'explication');
         });
-        
-        // ============================================================
-        // TIMEOUT
-        // ============================================================
         
         function handleTimeout() {
             if (isAnswered) return;
@@ -1368,19 +1222,11 @@
             updateUI(quiz.getCurrentIndex());
         }
         
-        // ============================================================
-        // FORMATER LE TEMPS
-        // ============================================================
-        
         function formatTime(seconds) {
             const mins = Math.floor(seconds / 60);
             const secs = seconds % 60;
             return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
         }
-        
-        // ============================================================
-        // METTRE À JOUR L'UI
-        // ============================================================
         
         function updateUI(index) {
             const total = quiz.getTotalQuestions();
@@ -1391,10 +1237,6 @@
             questionCounter.textContent = `Question ${current}/${total}`;
             scoreDisplay.textContent = `Score: ${score.getCorrect()}/${score.getTotal()}`;
         }
-        
-        // ============================================================
-        // QUESTION SUIVANTE
-        // ============================================================
         
         function goToNext() {
             const hasNext = quiz.nextQuestion();
@@ -1408,10 +1250,6 @@
                 }
             }
         }
-        
-        // ============================================================
-        // AFFICHER LES RÉSULTATS (AVEC EFFETS SON + CONFETTIS + SAUVEGARDE FIREBASE)
-        // ============================================================
         
         async function showResults() {
             stopTimer();
@@ -1454,7 +1292,6 @@
                 levelUnlockMessage.style.color = '#e74c3c';
             }
             
-            // ✅ SAUVEGARDE LOCALSTORAGE (existant)
             const settings = storage.getSettings() || {};
             if (!settings.scores) settings.scores = {};
             if (!settings.scores[selectedSpecialty]) settings.scores[selectedSpecialty] = {};
@@ -1466,7 +1303,6 @@
             };
             storage.saveSettings(settings);
             
-            // ✅ SAUVEGARDE FIREBASE
             const user = auth.currentUser;
             if (user) {
                 try {
@@ -1523,10 +1359,6 @@
             }
         }
         
-        // ============================================================
-        // 🔥 AFFICHER L'ÉCRAN DE FIN EXPERT 2 (AVEC SPEECH MARKETING)
-        // ============================================================
-        
         async function showExpertFinal() {
             stopTimer();
             
@@ -1546,14 +1378,9 @@
             document.getElementById('expertFinalLevel').textContent = 'Expert 2';
             document.getElementById('expertAIName').textContent = userName;
             
-            // ============================================================
-            // 🔥 NOUVEAU SPEECH MARKETING (SANS ÉMOJIS DANS LE TTS)
-            // ============================================================
-            
             let msg = '';
             let msgForDisplay = '';
             
-            // MESSAGE POUR L'AFFICHAGE (AVEC ÉMOJIS)
             msgForDisplay = `<div style="text-align: left; font-size: 1rem; line-height: 1.8;">
 
 <strong>✨ Cher(e) Dr. ${userName},</strong><br><br>
@@ -1602,12 +1429,10 @@ L'aventure continue. <strong>L'examen de certification vous attend</strong>.<br>
 
 </div>`;
             
-            // MESSAGE POUR LE TTS (SANS ÉMOJIS, SANS HTML)
             msg = `Cher Docteur ${userName}. Vous venez de vivre un parcours d'exception. 6 niveaux, 6 défis, 6 victoires. Mais ne vous arrêtez pas là. Parce que les légendes ne s'arrêtent pas au sommet. Elles plantent leur drapeau. Vous êtes un maillon rare. Seuls 5 pour cent des utilisateurs ETEO atteignent ce niveau de maîtrise. Vous ne faites pas partie des apprenants, vous faites partie des légendes. Aujourd'hui, le monde a besoin de votre expertise. Vos patients ont besoin de ce médecin exceptionnel que vous êtes devenu. La Certification ETEO : votre passeport pour l'excellence. Un certificat nominatif, signé des fondateurs. Un QR Code unique pour vérifier son authenticité. Un document officiel que vous pourrez accrocher dans votre cabinet. La reconnaissance de vos pairs et de vos patients. Mais attention : la certification ETEO n'est pas donnée à tout le monde. C'est un privilège réservé à l'élite. C'est la preuve que vous êtes allé au bout. C'est la reconnaissance de votre expertise. Seuls les meilleurs vont jusqu'au bout. Vous êtes de ceux-là. Alors, prêt à décrocher votre certificat ? L'aventure continue. L'examen de certification vous attend. 50 questions pour prouver au monde entier qui vous êtes. 50 questions, 30 secondes chacune, 70 pour cent pour réussir. 2 tentatives autorisées. Paiement de 20 euros pour le certificat. Vous avez fait le plus dur. La récompense est à portée de main. Allez, on y va !`;
             
             document.getElementById('expertAIMessage').innerHTML = msgForDisplay;
             
-            // ✅ LECTURE TTS AUTOMATIQUE DU MESSAGE (NETTOYÉ)
             setTimeout(() => {
                 if (window.tts && typeof window.tts.speak === 'function') {
                     try {
@@ -1621,14 +1446,12 @@ L'aventure continue. <strong>L'examen de certification vous attend</strong>.<br>
                 }
             }, 1500);
             
-            // ✅ SAUVEGARDE LOCALSTORAGE
             const settings = storage.getSettings() || {};
             if (!settings.completed) settings.completed = {};
             if (!settings.completed[selectedSpecialty]) settings.completed[selectedSpecialty] = {};
             settings.completed[selectedSpecialty].expert2 = true;
             storage.saveSettings(settings);
             
-            // ✅ SAUVEGARDE FIREBASE
             const user = auth.currentUser;
             if (user) {
                 try {
@@ -1642,24 +1465,17 @@ L'aventure continue. <strong>L'examen de certification vous attend</strong>.<br>
                         }
                     });
                     
-                    if (percent >= 75) {
-                        await updateDoc(userRef, {
-                            certificates: arrayUnion(selectedSpecialty)
-                        });
-                        showToast('🎓 Félicitations ! Vous avez obtenu un certificat !', 3000);
-                    }
+                    // ✅ SUPPRIMÉ : Ce code donnait un faux certificat automatique.
+                    // Le vrai certificat s'obtient uniquement via roulette_certificat.html
+                    // (bouton "Passer l'examen de certification" en bas de cet écran)
                     
-                    console.log('✅ Expert 2 sauvegardé dans Firebase');
+                    console.log('✅ Expert 2 sauvegardé dans Firebase (sans certificat auto)');
                     
                 } catch (error) {
                     console.error('❌ Erreur sauvegarde Expert 2:', error);
                 }
             }
         }
-        
-        // ============================================================
-        // ÉVÉNEMENTS
-        // ============================================================
         
         nextBtn.addEventListener('click', goToNext);
         
@@ -1686,12 +1502,7 @@ L'aventure continue. <strong>L'examen de certification vous attend</strong>.<br>
             window.location.href = 'quiz.html';
         });
         
-        // ============================================================
-        // 🔥 ÉVÉNEMENTS DE L'ÉCRAN EXPERT 2 - CORRIGÉ ICI !
-        // ============================================================
-        
         document.getElementById('expertExamBtn').addEventListener('click', () => {
-            // ✅ LANCER L'EXAMEN GRATUIT DE CERTIFICATION VERS LE BON FICHIER
             window.location.href = `roulette_certificat.html?specialty=${selectedSpecialty}&level=expert2`;
         });
         
@@ -1706,10 +1517,6 @@ L'aventure continue. <strong>L'examen de certification vous attend</strong>.<br>
         document.getElementById('expertDashboardBtn').addEventListener('click', () => {
             window.location.href = 'dashboard.html';
         });
-        
-        // ============================================================
-        // INIT
-        // ============================================================
         
         async function init() {
             const specialty = loadSavedSpecialty();
@@ -1734,18 +1541,10 @@ L'aventure continue. <strong>L'examen de certification vous attend</strong>.<br>
                     expertFinalContainer.style.display = 'none';
                     
                     Logger.info(`📚 Quiz V2 prêt pour ${specialty}`);
-                    Logger.info('✅ Tous les niveaux sont gratuits - Seule la certification est payante');
-                    Logger.info('🔊 Lecture automatique des questions');
-                    Logger.info('🎤 IA : "Bonne réponse" / "Mauvaise réponse"');
-                    Logger.info('🔊 Boutons TTS : relecture forcée sans stop');
-                    Logger.info('🎵 Effets sonores activés (win/lose/click/tada)');
-                    Logger.info('🎊 Confettis pour la victoire !');
-                    Logger.info('🔥 Firebase : sauvegarde dans rewardHistory !');
-                    Logger.info('📂 Correction des chemins : ../data/ → ../data/fr/');
-                    Logger.info('📂 Suppression de la gestion des accents');
-                    Logger.info('🎙️ Speech marketing Expert 2 activé !');
-                    Logger.info('🔇 TTS : émojis supprimés pour une voix naturelle');
-                    Logger.info('📝 Examen de certification gratuit → roulette_certificat.html');
+                    Logger.info('🔇 Synopsis et chapitre en SILENCE');
+                    Logger.info('🔊 Question + Feedback + Résultat en LECTURE AUTO');
+                    Logger.info('📊 NOUVEAU : Traçage des démarrages dans quiz_starts');
+                    Logger.info('✅ CORRIGÉ : Plus de faux certificat à la fin d\'Expert 2');
                 } else {
                     console.log('👤 Utilisateur non connecté, redirection vers inscription');
                     window.location.href = 'inscription_fr.html';

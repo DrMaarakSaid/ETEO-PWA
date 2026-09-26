@@ -935,57 +935,9 @@
         }
         
         // ============================================================
-        // АВТОМАТИЧЕСКОЕ ЧТЕНИЕ РЕЗЮМЕ ИИ
+        // ✅ SILENCIO IA : lecture auto supprimée au chargement
+        // L'utilisateur peut cliquer sur le bouton 🔊 s'il veut écouter.
         // ============================================================
-        
-        let isAutoSpeaking = false;
-        
-        function autoSpeakSummary() {
-            if (!window.tts) {
-                console.warn('⚠️ TTS недоступен');
-                return;
-            }
-            
-            if (isAutoSpeaking) return;
-            isAutoSpeaking = true;
-            
-            const text = window._ttsSummaryMessage || 'Ваше резюме недоступно.';
-            
-            if (!text || text.trim() === '') {
-                console.warn('⚠️ Нет резюме для чтения');
-                isAutoSpeaking = false;
-                return;
-            }
-            
-            if (listenSummaryBtn) {
-                listenSummaryBtn.textContent = '⏹️ Остановить';
-                listenSummaryBtn.classList.add('listening');
-            }
-            
-            console.log('🔊 Автоматическое чтение резюме Dashboard');
-            window.tts.speak(
-                text,
-                'ru',
-                0.9,
-                1.0,
-                () => {
-                    if (listenSummaryBtn) {
-                        listenSummaryBtn.textContent = '🔊 Слушать резюме';
-                        listenSummaryBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                    console.log('✅ Резюме прочитано автоматически');
-                },
-                (error) => {
-                    console.warn('⚠️ Ошибка автоматического чтения:', error);
-                    if (listenSummaryBtn) {
-                        listenSummaryBtn.textContent = '🔊 Слушать резюме';
-                        listenSummaryBtn.classList.remove('listening');
-                    }
-                    isAutoSpeaking = false;
-                }
-            );
-        }
         
         // ============================================================
         // ✅ IOS ВЕРСИЯ: ЗАГРУЗКА ДАННЫХ ИЗ users_ios
@@ -1014,13 +966,11 @@
                             fullName: data.displayName || data.fullName || 'Доктор'
                         };
                         userScores = data.scores || {};
-                        // ✅ Обновить localStorage для совместимости
                         settings.user = userData;
                         settings.scores = userScores;
                         storage.saveSettings(settings);
                     } else {
                         console.warn('⚠️ Документ users_ios не найден для этого пользователя');
-                        // Fallback на localStorage
                         userData = settings.user || {};
                         userScores = settings.scores || {};
                     }
@@ -1040,7 +990,6 @@
             const userCountry = userData.country || 'Не указано';
             const scores = userScores;
             
-            // Заполнить карточку профиля
             if (profileName) profileName.textContent = userName;
             if (profileEmail) profileEmail.textContent = userEmail;
             
@@ -1048,10 +997,10 @@
             if (profileProfession) {
                 let displayProfession = userProfession;
                 let professionEmoji = '👤';
-                if (userProfession === 'Доктор') {
+                if (userProfession === 'Доктор' || userProfession === 'Docteur' || userProfession === 'Doctor') {
                     displayProfession = 'Доктор';
                     professionEmoji = '🦷';
-                } else if (userProfession === 'Студент') {
+                } else if (userProfession === 'Студент' || userProfession === 'Étudiant' || userProfession === 'Student') {
                     displayProfession = 'Студент';
                     professionEmoji = '📚';
                 }
@@ -1069,10 +1018,8 @@
                   })
                 : '2026';
             
-            // Дата регистрации
             if (profileSince) profileSince.textContent = `📅 Участник с ${userSince}`;
             
-            // Приветствие
             greetingText.textContent = `Здравствуйте, ${userName}! 🌟`;
             
             let completedCount = 0;
@@ -1146,7 +1093,6 @@
                 }
             });
             
-            // Текущая серия (последовательные дни)
             let currentStreak = 0;
             if (settings.dashboard && settings.dashboard.lastVisit) {
                 const lastVisit = new Date(settings.dashboard.lastVisit);
@@ -1161,7 +1107,6 @@
                 }
             }
             
-            // Лучшая серия
             let bestStreakCount = 0;
             if (settings.dashboard && settings.dashboard.streakHistory) {
                 bestStreakCount = Math.max(...settings.dashboard.streakHistory) || 0;
@@ -1193,7 +1138,6 @@
             globalProgressFill.style.width = `${Math.min(progressPercent, 100)}%`;
             progressDetails.textContent = `${completedCount} специальностей завершено из ${totalSpecialties}`;
             
-            // Ранг
             let currentRank = RANKS[0];
             let nextRank = RANKS[1];
             for (let i = RANKS.length - 1; i >= 0; i--) {
@@ -1205,14 +1149,12 @@
             const nextRankIndex = RANKS.indexOf(currentRank) + 1;
             nextRank = nextRankIndex < RANKS.length ? RANKS[nextRankIndex] : null;
             
-            // Обновить ранг в профиле
             if (profileRankBadge) profileRankBadge.textContent = currentRank.emoji;
             if (profileRankName) {
                 profileRankName.textContent = currentRank.label;
                 profileRankName.style.color = currentRank.color;
             }
             
-            // Обновить основной ранг
             rankBadge.textContent = currentRank.emoji;
             rankName.textContent = currentRank.label;
             rankName.style.color = currentRank.color;
@@ -1224,22 +1166,16 @@
                 rankProgress.textContent = '🏆 Вы на вершине!';
             }
             
-            // Недавние специальности
             renderRecentSpecialties(completedSpecialties);
-            
-            // Умная рекомендация
             renderSmartRecommendation(completedSpecialties, scores);
             
-            // Значки - Использование сервиса
             const badgeStatus = renderBadges(completedCount, completedSpecialties, categoriesCompleted, scores, settings, hasRetrySuccess, currentStreak);
             
-            // Обновить счетчик значков в профиле
             const unlockedCount = badgeStatus.filter(b => b.unlocked).length;
             if (profileBadgeCountNumber) {
                 profileBadgeCountNumber.textContent = unlockedCount;
             }
             
-            // ✅ РЕАЛЬНЫЙ МИРОВОЙ РЕЙТИНГ (вместо фиктивного расчета)
             if (worldRank) {
                 try {
                     const uid = user?.uid;
@@ -1255,7 +1191,6 @@
                 }
             }
             
-            // ✅ ОТОБРАЖЕНИЕ ДЕТАЛЕЙ СЧЁТА (ПРОЗРАЧНОСТЬ)
             if (scoreDetails) {
                 try {
                     const uid = user?.uid;
@@ -1275,7 +1210,6 @@
                 }
             }
             
-            // Проверить новые разблокированные значки
             const previousBadges = settings.badges?.unlocked || [];
             const currentBadges = badgeStatus.filter(b => b.unlocked).map(b => b.id);
             
@@ -1289,22 +1223,13 @@
                 }
             }
             
-            // Ежедневный вызов
             renderDailyChallenge(completedCount);
-            
-            // Ежедневная цель
             renderDailyObjective(completedSpecialties, scores);
-            
-            // Викторина дня
             loadQuizDuJourStats();
-            
-            // Статистика по категориям
             renderCategoryStats(categoryScores);
             
-            // ✅ ПЕРСОНАЛЬНОЕ СООБЩЕНИЕ ИИ С ПРОФЕССИЕЙ
             generateIASummary(userName, userProfession, completedCount, totalSpecialties, avgScore, currentRank, completedSpecialties, currentStreak);
             
-            // Сохранить прогресс
             if (!settings.dashboard) settings.dashboard = {};
             settings.dashboard.lastVisit = new Date().toISOString();
             settings.dashboard.completedCount = completedCount;
@@ -1323,7 +1248,6 @@
             }
             storage.saveSettings(settings);
             
-            // Обновить аватар (через сервис)
             if (profileAvatar) {
                 avatarUpload.updateDisplay();
             }
@@ -1476,10 +1400,10 @@
             
             let professionDisplay = profession;
             let professionEmoji = '👤';
-            if (profession === 'Доктор') {
+            if (profession === 'Доктор' || profession === 'Docteur' || profession === 'Doctor') {
                 professionDisplay = 'Доктор';
                 professionEmoji = '🦷';
-            } else if (profession === 'Студент') {
+            } else if (profession === 'Студент' || profession === 'Étudiant' || profession === 'Student') {
                 professionDisplay = 'Студент';
                 professionEmoji = '📚';
             }
@@ -1540,7 +1464,7 @@
         }
         
         // ============================================================
-        // КНОПКА СЛУШАТЬ РЕЗЮМЕ
+        // КНОПКА СЛУШАТЬ РЕЗЮМЕ (déclenché par l'utilisateur)
         // ============================================================
         
         listenSummaryBtn.addEventListener('click', function(event) {
@@ -1556,7 +1480,6 @@
                 window.tts.stop();
                 this.textContent = '🔊 Слушать резюме';
                 this.classList.remove('listening');
-                isAutoSpeaking = false;
                 return;
             }
             
@@ -1717,28 +1640,26 @@
         // ============================================================
         
         async function init() {
-            Logger.info('📊 Dashboard iOS загружен');
+            Logger.info('📊 Dashboard iOS загружен (RU)');
             
             avatarUpload.init('profileAvatar', 'avatarInput');
             
             // ✅ ПРОВЕРКА АУТЕНТИФИКАЦИИ И EMAIL
             onAuthStateChanged(auth, async (user) => {
                 if (user) {
-                    // ✅ НОВОЕ: Проверить, подтверждён ли email
+                    // ✅ Проверить, подтверждён ли email
                     if (!user.emailVerified) {
                         console.log('⛔ Email не подтверждён для:', user.email);
                         showToast('📧 Пожалуйста, подтвердите ваш email перед доступом к панели управления', 3000);
                         setTimeout(() => {
-                            window.location.href = 'verify_email_ru.html';
+                            window.location.href = 'verify-email_ru.html';
                         }, 1500);
-                        return; // ← Останавливаем всё здесь
+                        return;
                     }
                     
-                    // ✅ Email подтверждён - Загрузить dashboard
                     console.log('✅ Email подтверждён для:', user.email);
                     await loadDashboard();
                     
-                    // Инициализировать функции после загрузки
                     const badgeHelpBtn = document.getElementById('badgeHelpBtn');
                     if (badgeHelpBtn) {
                         badgeHelpBtn.addEventListener('click', () => {
@@ -1752,25 +1673,22 @@
                                 listenSummaryBtn.classList.remove('listening');
                             }
                             
-                            isAutoSpeaking = false;
-                            
                             const settings = storage.getSettings() || {};
                             const scores = settings.scores || {};
                             badgeModal.open(scores, SPECIALTIES, settings);
                         });
                     }
                     
-                    setTimeout(() => {
-                        autoSpeakSummary();
-                    }, 1500);
+                    // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+                    // L'utilisateur peut cliquer sur 🔊 "Слушать резюме" s'il veut écouter.
                     
                     console.log('📢 Dashboard ETEO iOS готов!');
                     console.log('✅ iOS: Чтение данных из users_ios');
                     console.log('✅ iOS: Отображение displayName');
                     console.log('✅ iOS: Детальный счёт (качество + завершение)');
+                    console.log('🔇 SILENCIO IA : pas de lecture auto du résumé au chargement');
                     
                 } else {
-                    // Пользователь не авторизован - перенаправить на регистрацию
                     console.log('👤 Пользователь не авторизован, перенаправление на регистрацию');
                     window.location.href = 'inscription_ru.html';
                 }

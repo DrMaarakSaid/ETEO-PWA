@@ -249,7 +249,7 @@
         // ✅ IMPORTS FIREBASE
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
-        import { getFirestore, doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
+        import { getFirestore, doc, updateDoc, arrayUnion, getDoc, collection, addDoc } from 'firebase/firestore';
         import { AccessService } from '../js/services/AccessService.js';
         
         window.tts = tts;
@@ -635,6 +635,44 @@
         }
         
         // ============================================================
+        // ✅ TRAZABILIDAD DE INICIO DE QUIZ (NUEVO - quiz_starts)
+        // ============================================================
+        
+        async function trackQuizStart(levelId) {
+            try {
+                const user = auth.currentUser;
+                if (!user) {
+                    console.warn('⚠️ No hay usuario conectado, no se registra el inicio');
+                    return;
+                }
+                
+                const levelLabel = LEVELS.find(l => l.id === levelId)?.label || levelId;
+                const settings = storage.getSettings() || {};
+                const userName = settings.user?.fullName || user.displayName || 'Doctor';
+                
+                const startData = {
+                    userId: user.uid,
+                    userName: userName,
+                    userEmail: user.email || null,
+                    specialty: selectedSpecialty,
+                    specialtyName: specialtyName.textContent || selectedSpecialty,
+                    level: levelId,
+                    levelName: levelLabel,
+                    startedAt: new Date().toISOString(),
+                    userAgent: navigator.userAgent || 'unknown',
+                    platform: navigator.platform || 'unknown',
+                    language: 'es'
+                };
+                
+                await addDoc(collection(db, 'quiz_starts'), startData);
+                console.log('✅ Inicio de quiz registrado en quiz_starts:', levelId);
+                
+            } catch (error) {
+                console.warn('⚠️ Error al registrar el inicio del quiz:', error);
+            }
+        }
+        
+        // ============================================================
         // LECTURA DE RESULTADOS CON MENSAJES PERSONALIZADOS
         // ============================================================
         
@@ -734,7 +772,7 @@
         }
         
         // ============================================================
-        // MOSTRAR PANTALLA DE CAPÍTULO
+        // ✅ MOSTRAR PANTALLA DE CAPÍTULO (SILENCIO IA AU CHARGEMENT)
         // ============================================================
         
         function showChapterScreen(levelId) {
@@ -759,26 +797,19 @@
             listenChapterBtn.classList.remove('listening');
             isChapterPlaying = false;
             
-            setTimeout(() => {
-                if (window.tts && chapterTextContent) {
-                    isChapterPlaying = true;
-                    listenChapterBtn.textContent = '⏹️ Detener';
-                    listenChapterBtn.classList.add('listening');
-                    window.tts.speak(cleanTextForTTS(chapterTextContent), 'es', 0.9, 1.0, () => {
-                        isChapterPlaying = false;
-                        listenChapterBtn.textContent = '🔊 Escuchar el capítulo';
-                        listenChapterBtn.classList.remove('listening');
-                    });
-                }
-            }, 500);
+            // ✅ SILENCIO IA : Plus de lecture automatique du chapitre au chargement.
+            // L'utilisateur peut cliquer sur le bouton 🔊 s'il veut écouter.
         }
         
         // ============================================================
-        // INICIAR EL QUIZ DESDE EL CAPÍTULO
+        // INICIAR EL QUIZ DESDE EL CAPÍTULO (CON TRAZABILIDAD)
         // ============================================================
         
         async function startQuizFromChapter() {
             if (!pendingLevelId) return;
+            
+            // ✅ TRAZABILIDAD: registrar el inicio del quiz
+            await trackQuizStart(pendingLevelId);
             
             isChapterMode = false;
             chapterScreen.style.display = 'none';
@@ -1212,7 +1243,7 @@
                 
                 updateUI(index);
                 
-                // LECTURA AUTOMÁTICA DE LA PREGUNTA
+                // LECTURA AUTOMÁTICA DE LA PREGUNTA (EXCEPTION QUIZ : CONSERVÉE)
                 setTimeout(() => {
                     if (window.tts && currentQuestionText) {
                         speakText(currentQuestionText, null);
@@ -1525,6 +1556,7 @@
         
         // ============================================================
         // 🔥 MOSTRAR PANTALLA FINAL EXPERTO 2 (CON SPEECH MARKETING)
+        // ✅ CORRECTION : SUPPRESSION DU FAUX CERTIFICAT
         // ============================================================
         
         async function showExpertFinal() {
@@ -1547,7 +1579,7 @@
             document.getElementById('expertAIName').textContent = userName;
             
             // ============================================================
-            // 🔥 NUEVO SPEECH MARKETING (SIN EMOJIS EN EL TTS)
+            // 🔥 SPEECH MARKETING (SIN EMOJIS EN EL TTS)
             // ============================================================
             
             let msg = '';
@@ -1607,7 +1639,7 @@ La aventura continúa. <strong>El examen de certificación te espera</strong>.<b
             
             document.getElementById('expertAIMessage').innerHTML = msgForDisplay;
             
-            // ✅ LECTURA TTS AUTOMÁTICA DEL MENSAJE (LIMPIADO)
+            // ✅ LECTURA TTS AUTOMÁTICA DEL MENSAJE (EXCEPTION : résultat final, conservée)
             setTimeout(() => {
                 if (window.tts && typeof window.tts.speak === 'function') {
                     try {
@@ -1642,14 +1674,10 @@ La aventura continúa. <strong>El examen de certificación te espera</strong>.<b
                         }
                     });
                     
-                    if (percent >= 75) {
-                        await updateDoc(userRef, {
-                            certificates: arrayUnion(selectedSpecialty)
-                        });
-                        showToast('🎓 ¡Felicidades ! ¡Has obtenido un certificado !', 3000);
-                    }
-                    
-                    console.log('✅ Experto 2 guardado en Firebase');
+                    // ✅ CORRECTION BUG #2 : SUPPRESSION DU FAUX CERTIFICAT
+                    // AVANT : if (percent >= 75) { certificates: arrayUnion(selectedSpecialty) } → FAUX CERTIFICAT
+                    // APRÈS : Plus rien. L'utilisateur doit payer pour obtenir son certificat.
+                    console.log('✅ Experto 2 guardado en Firebase (sin falso certificado)');
                     
                 } catch (error) {
                     console.error('❌ Error guardando Experto 2:', error);
@@ -1687,7 +1715,7 @@ La aventura continúa. <strong>El examen de certificación te espera</strong>.<b
         });
         
         // ============================================================
-        // 🔥 EVENTOS DE LA PANTALLA EXPERTO 2 - CORREGIDOS
+        // 🔥 EVENTOS DE LA PANTALLA EXPERTO 2
         // ============================================================
         
         document.getElementById('expertExamBtn').addEventListener('click', () => {
@@ -1746,6 +1774,9 @@ La aventura continúa. <strong>El examen de certificación te espera</strong>.<b
                     Logger.info('🎙️ Speech marketing Experto 2 activado !');
                     Logger.info('🔇 TTS : emojis eliminados para una voz natural');
                     Logger.info('📝 Examen de certificación gratuito → ruleta_certificado_es.html');
+                    Logger.info('🔇 SILENCIO IA : synopsis + capítulo en silencio');
+                    Logger.info('🎯 TRAZABILIDAD : quiz_starts activado');
+                    Logger.info('✅ BUG #2 CORREGIDO : sin falso certificado en Expert 2');
                 } else {
                     console.log('👤 Usuario no conectado, redirigiendo a registro');
                     window.location.href = 'inscription_es.html';

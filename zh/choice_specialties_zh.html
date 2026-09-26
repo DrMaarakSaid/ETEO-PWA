@@ -431,7 +431,7 @@
         }
         
         // ============================================================
-        // 生成 AI 消息
+        // ✅ 生成 AI 消息（加载时静音）
         // ============================================================
         
         async function generateIAMessage() {
@@ -487,14 +487,8 @@
                     listenSpecialtiesBtn.style.display = 'inline-block';
                 }
                 
-                setTimeout(() => {
-                    if (window.tts && typeof window.tts.speak === 'function') {
-                        const text = window._ttsSpecialtiesMessage || '';
-                        if (text) {
-                            window.tts.speak(text, 'zh', 0.9, 1.0);
-                        }
-                    }
-                }, 1200);
+                // ✅ SILENCIO IA : plus de lecture automatique au chargement.
+                // L'utilisateur peut cliquer sur le bouton 🔊 "收听" s'il veut écouter.
                 
             } catch (error) {
                 console.error('❌ 生成 AI 消息时出错：', error);
@@ -503,7 +497,7 @@
         }
         
         // ============================================================
-        // 收听按钮
+        // 收听按钮（用户触发）
         // ============================================================
         
         listenSpecialtiesBtn.addEventListener('click', function() {
@@ -718,6 +712,7 @@
             console.log('🔍 筛选和搜索可用');
             console.log('🤖 AI：带推荐的个性化消息');
             console.log('✅ iOS：支持 displayName');
+            console.log('🔇 SILENCIO IA : pas de lecture auto au chargement');
         }
         
         init();

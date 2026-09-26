@@ -249,7 +249,7 @@
         // ✅ FIREBASE 导入
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
-        import { getFirestore, doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
+        import { getFirestore, doc, updateDoc, arrayUnion, getDoc, collection, addDoc } from 'firebase/firestore';
         import { AccessService } from '../js/services/AccessService.js';
         
         window.tts = tts;
@@ -379,24 +379,18 @@
         function cleanTextForTTS(text) {
             if (!text) return '';
             
-            // 1️⃣ 移除 HTML 标签
             let cleaned = text.replace(/<[^>]*>/g, ' ');
             
-            // 2️⃣ 移除表情符号（Unicode）
             cleaned = cleaned.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
             cleaned = cleaned.replace(/[\u2600-\u27BF]/g, '');
             cleaned = cleaned.replace(/[\u2700-\u27BF]/g, '');
             cleaned = cleaned.replace(/[\uFE00-\uFEFF]/g, '');
             cleaned = cleaned.replace(/[\u2300-\u23FF]/g, '');
             
-            // 3️⃣ 移除特定表情符号
             cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆🌱🌿🌳🌲🏆📈🎯💰📋⏱️🔄🏅🎙️🤖]/g, '');
             
-            // 4️⃣ 移除换行符
             cleaned = cleaned.replace(/\n/g, ' ');
             cleaned = cleaned.replace(/\r/g, ' ');
-            
-            // 5️⃣ 清理空格
             cleaned = cleaned.replace(/\s+/g, ' ').trim();
             
             return cleaned;
@@ -635,6 +629,44 @@
         }
         
         // ============================================================
+        // ✅ 追踪测验开始（新 - quiz_starts）
+        // ============================================================
+        
+        async function trackQuizStart(levelId) {
+            try {
+                const user = auth.currentUser;
+                if (!user) {
+                    console.warn('⚠️ 无已连接用户，不记录追踪');
+                    return;
+                }
+                
+                const levelLabel = LEVELS.find(l => l.id === levelId)?.label || levelId;
+                const settings = storage.getSettings() || {};
+                const userName = settings.user?.fullName || user.displayName || '医生';
+                
+                const startData = {
+                    userId: user.uid,
+                    userName: userName,
+                    userEmail: user.email || null,
+                    specialty: selectedSpecialty,
+                    specialtyName: specialtyName.textContent || selectedSpecialty,
+                    level: levelId,
+                    levelName: levelLabel,
+                    startedAt: new Date().toISOString(),
+                    userAgent: navigator.userAgent || 'unknown',
+                    platform: navigator.platform || 'unknown',
+                    language: 'zh'
+                };
+                
+                await addDoc(collection(db, 'quiz_starts'), startData);
+                console.log('✅ 测验开始已记录到 quiz_starts：', levelId);
+                
+            } catch (error) {
+                console.warn('⚠️ 记录测验开始错误：', error);
+            }
+        }
+        
+        // ============================================================
         // 带个性化消息的结果朗读
         // ============================================================
         
@@ -726,7 +758,7 @@
         }
         
         // ============================================================
-        // ✅ 检查访问权限 - 所有等级免费（已修改）
+        // ✅ 检查访问权限 - 所有等级免费
         // ============================================================
         
         function canAccessLevel(levelId) {
@@ -734,7 +766,7 @@
         }
         
         // ============================================================
-        // 显示章节屏幕
+        // ✅ 显示章节屏幕（加载时静音）
         // ============================================================
         
         function showChapterScreen(levelId) {
@@ -759,26 +791,19 @@
             listenChapterBtn.classList.remove('listening');
             isChapterPlaying = false;
             
-            setTimeout(() => {
-                if (window.tts && chapterTextContent) {
-                    isChapterPlaying = true;
-                    listenChapterBtn.textContent = '⏹️ 停止';
-                    listenChapterBtn.classList.add('listening');
-                    window.tts.speak(cleanTextForTTS(chapterTextContent), 'zh', 0.9, 1.0, () => {
-                        isChapterPlaying = false;
-                        listenChapterBtn.textContent = '🔊 收听章节';
-                        listenChapterBtn.classList.remove('listening');
-                    });
-                }
-            }, 500);
+            // ✅ 静音 AI：加载时不再自动朗读章节。
+            // 用户如想收听，可点击 🔊 按钮。
         }
         
         // ============================================================
-        // 从章节开始测验
+        // 从章节开始测验（带追踪）
         // ============================================================
         
         async function startQuizFromChapter() {
             if (!pendingLevelId) return;
+            
+            // ✅ 追踪：记录测验开始
+            await trackQuizStart(pendingLevelId);
             
             isChapterMode = false;
             chapterScreen.style.display = 'none';
@@ -1212,7 +1237,7 @@
                 
                 updateUI(index);
                 
-                // 自动朗读题目
+                // 自动朗读题目（测验例外：保留）
                 setTimeout(() => {
                     if (window.tts && currentQuestionText) {
                         speakText(currentQuestionText, null);
@@ -1454,7 +1479,7 @@
                 levelUnlockMessage.style.color = '#e74c3c';
             }
             
-            // ✅ LOCALSTORAGE 保存（现有）
+            // ✅ LOCALSTORAGE 保存
             const settings = storage.getSettings() || {};
             if (!settings.scores) settings.scores = {};
             if (!settings.scores[selectedSpecialty]) settings.scores[selectedSpecialty] = {};
@@ -1470,7 +1495,8 @@
             const user = auth.currentUser;
             if (user) {
                 try {
-                    const userRef = doc(db, 'users_ios', user.uid);  // ✅ Corrigé                    
+                    const userRef = doc(db, 'users_ios', user.uid);
+                    
                     await updateDoc(userRef, {
                         rewardHistory: arrayUnion({
                             specialty: selectedSpecialty,
@@ -1524,6 +1550,7 @@
         
         // ============================================================
         // 🔥 显示专家 2 最终屏幕（带营销演讲）
+        // ✅ 修正：移除假证书
         // ============================================================
         
         async function showExpertFinal() {
@@ -1546,13 +1573,12 @@
             document.getElementById('expertAIName').textContent = userName;
             
             // ============================================================
-            // 🔥 新营销演讲（TTS 中无表情符号）
+            // 🔥 营销演讲（TTS 中无表情符号）
             // ============================================================
             
             let msg = '';
             let msgForDisplay = '';
             
-            // 显示消息（带表情符号）
             msgForDisplay = `<div style="text-align: left; font-size: 1rem; line-height: 1.8;">
 
 <strong>✨ 亲爱的 ${userName} 医生，</strong><br><br>
@@ -1601,12 +1627,11 @@ ETEO 认证不是给每个人的。<br>
 
 </div>`;
             
-            // TTS 消息（无表情符号、无 HTML）
             msg = `亲爱的 ${userName} 医生。您刚刚经历了一段非凡的旅程。6 个等级，6 个挑战，6 次胜利。但不要止步于此。因为传奇不会停留在巅峰。他们插上自己的旗帜。您是稀世珍宝。只有 5% 的 ETEO 用户达到这种掌握水平。您不属于学习者，您属于传奇。今天，世界需要您的专业能力。您的患者需要这位非凡的医生——您已经成为的医生。ETEO 认证：您通往卓越的护照。一份个性化证书，由创始人签署。一个独特的二维码用于验证其真实性。一份官方文件，您可以挂在诊所里。来自同行和患者的认可。但请注意：ETEO 认证不是给每个人的。它是精英专属的特权。它证明您走完了全程。它是对您专业能力的认可。只有最优秀的人才能走到最后。您就是其中之一。那么，准备好获得您的证书了吗？冒险继续。认证考试在等着您。50 道题向世界证明您是谁。50 道题，每题 30 秒，70% 及格。允许 2 次尝试。证书支付 20 欧元。您已经完成了最艰难的部分。回报就在眼前。出发吧！`;
             
             document.getElementById('expertAIMessage').innerHTML = msgForDisplay;
             
-            // ✅ 自动 TTS 朗读消息（已清理）
+            // ✅ 自动 TTS 朗读消息（例外：最终结果，保留）
             setTimeout(() => {
                 if (window.tts && typeof window.tts.speak === 'function') {
                     try {
@@ -1631,7 +1656,7 @@ ETEO 认证不是给每个人的。<br>
             const user = auth.currentUser;
             if (user) {
                 try {
-                    const userRef = doc(db, 'users_ios', user.uid);  // ✅ Corrigé
+                    const userRef = doc(db, 'users_ios', user.uid);
                     
                     await updateDoc(userRef, {
                         [`completedSpecialties.${selectedSpecialty}`]: {
@@ -1641,14 +1666,10 @@ ETEO 认证不是给每个人的。<br>
                         }
                     });
                     
-                    if (percent >= 75) {
-                        await updateDoc(userRef, {
-                            certificates: arrayUnion(selectedSpecialty)
-                        });
-                        showToast('🎓 恭喜！您已获得证书！', 3000);
-                    }
-                    
-                    console.log('✅ 专家 2 已保存到 Firebase');
+                    // ✅ 修正 Bug #2：移除假证书
+                    // 之前：if (percent >= 75) { certificates: arrayUnion(selectedSpecialty) } → 假证书
+                    // 之后：无。用户必须付款才能获得证书。
+                    console.log('✅ 专家 2 已保存到 Firebase（无假证书）');
                     
                 } catch (error) {
                     console.error('❌ 专家 2 保存错误：', error);
@@ -1686,11 +1707,10 @@ ETEO 认证不是给每个人的。<br>
         });
         
         // ============================================================
-        // 🔥 专家 2 屏幕事件 - 在此修正！
+        // 🔥 专家 2 屏幕事件
         // ============================================================
         
         document.getElementById('expertExamBtn').addEventListener('click', () => {
-            // ✅ 启动免费认证考试，跳转到正确的文件
             window.location.href = `zhengshu_kaoshi_zh.html?specialty=${selectedSpecialty}&level=expert2`;
         });
         
@@ -1741,10 +1761,12 @@ ETEO 认证不是给每个人的。<br>
                     Logger.info('🎊 胜利彩带！');
                     Logger.info('🔥 Firebase：保存到 rewardHistory！');
                     Logger.info('📂 路径修正：../data/ → ../data/zh/');
-                    Logger.info('🗑️ 移除重音管理');
                     Logger.info('🎙️ 专家 2 营销演讲已激活！');
                     Logger.info('🔇 TTS：移除表情符号以实现自然语音');
                     Logger.info('📝 免费认证考试 → zhengshu_kaoshi_zh.html');
+                    Logger.info('🔇 静音 AI：加载时章节不自动朗读');
+                    Logger.info('🎯 追踪：quiz_starts 已激活');
+                    Logger.info('✅ 修正 Bug #2：专家 2 中无假证书');
                 } else {
                     console.log('👤 用户未登录，跳转到注册页');
                     window.location.href = 'zhuce_zh.html';

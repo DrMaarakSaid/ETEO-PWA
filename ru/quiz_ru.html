@@ -249,7 +249,7 @@
         // ✅ IMPORTS FIREBASE
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
-        import { getFirestore, doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
+        import { getFirestore, doc, updateDoc, arrayUnion, getDoc, collection, addDoc } from 'firebase/firestore';
         import { AccessService } from '../js/services/AccessService.js';
         
         window.tts = tts;
@@ -379,24 +379,18 @@
         function cleanTextForTTS(text) {
             if (!text) return '';
             
-            // 1️⃣ Удалить HTML теги
             let cleaned = text.replace(/<[^>]*>/g, ' ');
             
-            // 2️⃣ Удалить эмодзи (Unicode)
             cleaned = cleaned.replace(/[\u{1F000}-\u{1FFFF}]/gu, '');
             cleaned = cleaned.replace(/[\u2600-\u27BF]/g, '');
             cleaned = cleaned.replace(/[\u2700-\u27BF]/g, '');
             cleaned = cleaned.replace(/[\uFE00-\uFEFF]/g, '');
             cleaned = cleaned.replace(/[\u2300-\u23FF]/g, '');
             
-            // 3️⃣ Удалить специфические эмодзи
             cleaned = cleaned.replace(/[⭐🌟🔥💎🎯🎉💪🧠📚📖🔊✅❌⏰🎰🦷🔪✨🔩👄👶💉🖨️📸📷🧼🔧🏥📊📋💰🏛️📈💻🛡️🌍👩‍⚕️📜🤝⚖️🎓📇👴🧪🎡👆🌱🌿🌳🌲🏆📈🎯💰📋⏱️🔄🏅🎙️🤖]/g, '');
             
-            // 4️⃣ Удалить переносы строк
             cleaned = cleaned.replace(/\n/g, ' ');
             cleaned = cleaned.replace(/\r/g, ' ');
-            
-            // 5️⃣ Очистить пробелы
             cleaned = cleaned.replace(/\s+/g, ' ').trim();
             
             return cleaned;
@@ -635,6 +629,44 @@
         }
         
         // ============================================================
+        // ✅ ТРАССИРОВКА НАЧАЛА ВИКТОРИНЫ (НОВОЕ - quiz_starts)
+        // ============================================================
+        
+        async function trackQuizStart(levelId) {
+            try {
+                const user = auth.currentUser;
+                if (!user) {
+                    console.warn('⚠️ Нет подключённого пользователя, трассировка не записана');
+                    return;
+                }
+                
+                const levelLabel = LEVELS.find(l => l.id === levelId)?.label || levelId;
+                const settings = storage.getSettings() || {};
+                const userName = settings.user?.fullName || user.displayName || 'Доктор';
+                
+                const startData = {
+                    userId: user.uid,
+                    userName: userName,
+                    userEmail: user.email || null,
+                    specialty: selectedSpecialty,
+                    specialtyName: specialtyName.textContent || selectedSpecialty,
+                    level: levelId,
+                    levelName: levelLabel,
+                    startedAt: new Date().toISOString(),
+                    userAgent: navigator.userAgent || 'unknown',
+                    platform: navigator.platform || 'unknown',
+                    language: 'ru'
+                };
+                
+                await addDoc(collection(db, 'quiz_starts'), startData);
+                console.log('✅ Начало викторины записано в quiz_starts:', levelId);
+                
+            } catch (error) {
+                console.warn('⚠️ Ошибка регистрации начала викторины:', error);
+            }
+        }
+        
+        // ============================================================
         // ЧТЕНИЕ РЕЗУЛЬТАТОВ С ПЕРСОНАЛИЗИРОВАННЫМИ СООБЩЕНИЯМИ
         // ============================================================
         
@@ -726,7 +758,7 @@
         }
         
         // ============================================================
-        // ✅ ПРОВЕРКА ДОСТУПА - ВСЕ УРОВНИ БЕСПЛАТНЫ (ИЗМЕНЕНО)
+        // ✅ ПРОВЕРКА ДОСТУПА - ВСЕ УРОВНИ БЕСПЛАТНЫ
         // ============================================================
         
         function canAccessLevel(levelId) {
@@ -734,7 +766,7 @@
         }
         
         // ============================================================
-        // ПОКАЗАТЬ ЭКРАН ГЛАВЫ
+        // ✅ ПОКАЗАТЬ ЭКРАН ГЛАВЫ (СИЛЕНСИО АЛ КАРИКАМЕНТО)
         // ============================================================
         
         function showChapterScreen(levelId) {
@@ -759,26 +791,19 @@
             listenChapterBtn.classList.remove('listening');
             isChapterPlaying = false;
             
-            setTimeout(() => {
-                if (window.tts && chapterTextContent) {
-                    isChapterPlaying = true;
-                    listenChapterBtn.textContent = '⏹️ Остановить';
-                    listenChapterBtn.classList.add('listening');
-                    window.tts.speak(cleanTextForTTS(chapterTextContent), 'ru', 0.9, 1.0, () => {
-                        isChapterPlaying = false;
-                        listenChapterBtn.textContent = '🔊 Слушать главу';
-                        listenChapterBtn.classList.remove('listening');
-                    });
-                }
-            }, 500);
+            // ✅ SILENCIO IA : plus de lecture automatique du chapitre au chargement.
+            // L'utilisateur peut cliquer sur le bouton 🔊 s'il veut écouter.
         }
         
         // ============================================================
-        // ЗАПУСК ВИКТОРИНЫ ИЗ ГЛАВЫ
+        // ЗАПУСК ВИКТОРИНЫ ИЗ ГЛАВЫ (С ТРАССИРОВКОЙ)
         // ============================================================
         
         async function startQuizFromChapter() {
             if (!pendingLevelId) return;
+            
+            // ✅ ТРАССИРОВКА: записать начало викторины
+            await trackQuizStart(pendingLevelId);
             
             isChapterMode = false;
             chapterScreen.style.display = 'none';
@@ -1212,7 +1237,7 @@
                 
                 updateUI(index);
                 
-                // АВТОМАТИЧЕСКОЕ ЧТЕНИЕ ВОПРОСА
+                // АВТОМАТИЧЕСКОЕ ЧТЕНИЕ ВОПРОСА (ИСКЛЮЧЕНИЕ ВИКТОРИНЫ : СОХРАНЕНО)
                 setTimeout(() => {
                     if (window.tts && currentQuestionText) {
                         speakText(currentQuestionText, null);
@@ -1454,7 +1479,7 @@
                 levelUnlockMessage.style.color = '#e74c3c';
             }
             
-            // ✅ СОХРАНЕНИЕ В LOCALSTORAGE (существующее)
+            // ✅ СОХРАНЕНИЕ В LOCALSTORAGE
             const settings = storage.getSettings() || {};
             if (!settings.scores) settings.scores = {};
             if (!settings.scores[selectedSpecialty]) settings.scores[selectedSpecialty] = {};
@@ -1470,7 +1495,7 @@
             const user = auth.currentUser;
             if (user) {
                 try {
-                    const userRef = doc(db, 'users_ios', user.uid);  // ✅ Corrigé
+                    const userRef = doc(db, 'users_ios', user.uid);
                     
                     await updateDoc(userRef, {
                         rewardHistory: arrayUnion({
@@ -1525,6 +1550,7 @@
         
         // ============================================================
         // 🔥 ПОКАЗАТЬ ФИНАЛЬНЫЙ ЭКРАН ЭКСПЕРТ 2 (С МАРКЕТИНГОВОЙ РЕЧЬЮ)
+        // ✅ ИСПРАВЛЕНИЕ : УДАЛЕНИЕ ФАЛЬШИВОГО СЕРТИФИКАТА
         // ============================================================
         
         async function showExpertFinal() {
@@ -1547,13 +1573,12 @@
             document.getElementById('expertAIName').textContent = userName;
             
             // ============================================================
-            // 🔥 НОВАЯ МАРКЕТИНГОВАЯ РЕЧЬ (БЕЗ ЭМОДЗИ В TTS)
+            // 🔥 МАРКЕТИНГОВАЯ РЕЧЬ (БЕЗ ЭМОДЗИ В TTS)
             // ============================================================
             
             let msg = '';
             let msgForDisplay = '';
             
-            // СООБЩЕНИЕ ДЛЯ ОТОБРАЖЕНИЯ (С ЭМОДЗИ)
             msgForDisplay = `<div style="text-align: left; font-size: 1rem; line-height: 1.8;">
 
 <strong>✨ Дорог(ая) Др. ${userName},</strong><br><br>
@@ -1602,12 +1627,11 @@
 
 </div>`;
             
-            // СООБЩЕНИЕ ДЛЯ TTS (БЕЗ ЭМОДЗИ, БЕЗ HTML)
             msg = `Дорогой Доктор ${userName}. Вы только что прожили исключительный путь. 6 уровней, 6 вызовов, 6 побед. Но не останавливайтесь на достигнутом. Потому что легенды не останавливаются на вершине. Они водружают свой флаг. Вы — редкое звено. Только 5 процентов пользователей ETEO достигают этого уровня мастерства. Вы не просто ученик, вы — часть легенд. Сегодня мир нуждается в вашей экспертизе. Ваши пациенты нуждаются в этом исключительном враче, которым вы стали. Сертификация ETEO: ваш паспорт к совершенству. Именной сертификат, подписанный основателями. Уникальный QR-код для проверки подлинности. Официальный документ, который можно повесить в кабинете. Признание коллег и пациентов. Но будьте внимательны: сертификация ETEO даётся не каждому. Это привилегия для избранных. Это доказательство того, что вы прошли до конца. Это признание вашей экспертизы. Только лучшие идут до конца. Вы — один из них. Итак, готовы получить свой сертификат? Приключение продолжается. Экзамен на сертификацию ждёт вас. 50 вопросов, чтобы доказать всему миру кто вы есть. 50 вопросов, 30 секунд на каждый, 70 процентов для сдачи. 2 попытки разрешены. Оплата 20 евро за сертификат. Вы сделали самое трудное. Награда уже близко. Поехали!`;
             
             document.getElementById('expertAIMessage').innerHTML = msgForDisplay;
             
-            // ✅ АВТОМАТИЧЕСКОЕ TTS ЧТЕНИЕ СООБЩЕНИЯ (ОЧИЩЕННОЕ)
+            // ✅ АВТОМАТИЧЕСКОЕ TTS ЧТЕНИЕ СООБЩЕНИЯ (ИСКЛЮЧЕНИЕ : résultat final, conservée)
             setTimeout(() => {
                 if (window.tts && typeof window.tts.speak === 'function') {
                     try {
@@ -1632,7 +1656,7 @@
             const user = auth.currentUser;
             if (user) {
                 try {
-                    const userRef = doc(db, 'users_ios', user.uid);  // ✅ Corrigé
+                    const userRef = doc(db, 'users_ios', user.uid);
                     
                     await updateDoc(userRef, {
                         [`completedSpecialties.${selectedSpecialty}`]: {
@@ -1642,14 +1666,10 @@
                         }
                     });
                     
-                    if (percent >= 75) {
-                        await updateDoc(userRef, {
-                            certificates: arrayUnion(selectedSpecialty)
-                        });
-                        showToast('🎓 Поздравляем! Вы получили сертификат!', 3000);
-                    }
-                    
-                    console.log('✅ Эксперт 2 сохранён в Firebase');
+                    // ✅ ИСПРАВЛЕНИЕ BUG #2 : УДАЛЕНИЕ ФАЛЬШИВОГО СЕРТИФИКАТА
+                    // ДО : if (percent >= 75) { certificates: arrayUnion(selectedSpecialty) } → ФАЛЬШИВЫЙ СЕРТИФИКАТ
+                    // ПОСЛЕ : Ничего. Пользователь должен заплатить, чтобы получить сертификат.
+                    console.log('✅ Эксперт 2 сохранён в Firebase (без фальшивого сертификата)');
                     
                 } catch (error) {
                     console.error('❌ Ошибка сохранения Эксперт 2:', error);
@@ -1687,11 +1707,10 @@
         });
         
         // ============================================================
-        // 🔥 СОБЫТИЯ ЭКРАНА ЭКСПЕРТ 2 - ИСПРАВЛЕНЫ ЗДЕСЬ!
+        // 🔥 СОБЫТИЯ ЭКРАНА ЭКСПЕРТ 2
         // ============================================================
         
         document.getElementById('expertExamBtn').addEventListener('click', () => {
-            // ✅ ЗАПУСК БЕСПЛАТНОГО ЭКЗАМЕНА НА СЕРТИФИКАЦИЮ К ПРАВИЛЬНОМУ ФАЙЛУ
             window.location.href = `roulette_certificate_ru.html?specialty=${selectedSpecialty}&level=expert2`;
         });
         
@@ -1742,10 +1761,12 @@
                     Logger.info('🎊 Конфетти для победы!');
                     Logger.info('🔥 Firebase: сохранение в rewardHistory!');
                     Logger.info('📂 Исправлены пути: ../data/ → ../data/ru/');
-                    Logger.info('🗑️ Удалено управление акцентами');
                     Logger.info('🎙️ Маркетинговая речь Эксперт 2 активирована!');
                     Logger.info('🔇 TTS: эмодзи удалены для естественного голоса');
                     Logger.info('📝 Бесплатный экзамен на сертификацию → roulette_certificate_ru.html');
+                    Logger.info('🔇 SILENCIO IA : глава в тишине при загрузке');
+                    Logger.info('🎯 ТРАССИРОВКА : quiz_starts активирована');
+                    Logger.info('✅ ИСПРАВЛЕНИЕ BUG #2 : без фальшивого сертификата в Эксперт 2');
                 } else {
                     console.log('👤 Пользователь не авторизован, перенаправление на регистрацию');
                     window.location.href = 'inscription_ru.html';

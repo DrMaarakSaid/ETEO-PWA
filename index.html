@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -45,25 +45,25 @@
             <button class="lang-btn" data-lang="zh" id="langBtnZh">中文</button>
         </div>
 
-        <!-- BOUTONS D'ACTION -->
+        <!-- BOUTONS D'ACTION (✅ TOUS GRISÉS AU DÉPART) -->
         <div class="actions">
             <button class="listen-btn" id="listenBtn" disabled>
-                🔊 <span id="listenBtnText">Anweisungen anhören</span>
+                🔊 <span id="listenBtnText">Listen to instructions</span>
             </button>
             <button class="validate-btn" id="validateBtn" disabled>
-                ✅ <span id="validateBtnText">Bestätigen und fortfahren</span>
+                ✅ <span id="validateBtnText">Validate and continue</span>
             </button>
             
-            <!-- ✅ BOUTON DASHBOARD -->
-            <button class="dashboard-btn" id="dashboardBtn" onclick="window.location.href='fr/dashboard.html'">
+            <!-- ✅ BOUTON DASHBOARD : GRISÉ + SANS onclick EN DUR -->
+            <button class="dashboard-btn" id="dashboardBtn" disabled>
                 📊 <span id="dashboardBtnText">Dashboard</span>
             </button>
         </div>
 
-        <!-- FOOTER -->
+        <!-- FOOTER (✅ ANGLAIS PAR DÉFAUT) -->
         <div class="footer">
-            <p id="footerLine1">🎙️ KI-Sprachassistent | ⚡ Geschwindigkeitsbonus +5 Pkt.</p>
-            <p id="footerLine2">📤 Teile deine Ergebnisse | 🏆 Schalte alle Level frei</p>
+            <p id="footerLine1">🎙️ AI Voice Assistant | ⚡ Speed bonus +5 pts</p>
+            <p id="footerLine2">📤 Share your scores | 🏆 Unlock all levels</p>
             <p id="footerLine3">© 2026 - Dr. SAID MAARAK 🇲🇦</p>
         </div>
     </div>
@@ -88,7 +88,7 @@
         // ============================================================
         
         import { Logger } from './js/logger.js';
-        import { CONFIG } from './js/config.js';
+        // ✅ CONFIG retiré (import inutilisé)
         import { StorageService } from './js/services/storage.js';
         import { TranslateService } from './js/services/translate.js';
         
@@ -103,7 +103,7 @@
                 dashboardPage: 'fr/dashboard.html',
                 ui: {
                     subtitle: 'E-learning To Every One',
-                    betaText: '🌟 « Borderless learning, right in your pocket »',
+                    betaText: '🌟 « Apprentissage sans frontières, directement dans votre poche »',
                     langBtnFr: 'Français',
                     langBtnEn: 'English',
                     langBtnEs: 'Español',
@@ -347,8 +347,9 @@
             if (footerLine2) footerLine2.textContent = ui.footerLine2;
             if (footerLine3) footerLine3.textContent = ui.footerLine3;
             
-            // Mise à jour du titre de la page
+            // ✅ Mise à jour du titre + attribut lang de la page
             document.title = `ETEO - ${ui.subtitle}`;
+            document.documentElement.lang = lang;
             
             Logger.info(`🔄 All interface texts updated for language: ${lang}`);
         }
@@ -375,9 +376,10 @@
             
             selectedLang = lang;
             
-            // Activation des boutons
+            // ✅ Activation de TOUS les boutons d'action (y compris Dashboard)
             validateBtn.disabled = false;
             listenBtn.disabled = false;
+            dashboardBtn.disabled = false;
             
             // ⭐ Mise à jour de TOUS les textes de l'interface
             updateAllTexts(lang);
@@ -427,14 +429,14 @@
             
             if (window.tts.isSpeakingNow()) {
                 window.tts.stop();
-                const config = LANG_CONFIG[selectedLang || 'fr'];
+                const config = LANG_CONFIG[selectedLang || 'en'];
                 this.innerHTML = `🔊 <span id="listenBtnText">${config.ui.listenBtn}</span>`;
                 this.classList.remove('listening');
                 this.disabled = false;
                 return;
             }
             
-            const lang = selectedLang || 'fr';
+            const lang = selectedLang || 'en';
             const config = LANG_CONFIG[lang];
             
             if (!config) {
@@ -452,7 +454,7 @@
                 0.9,
                 1.0,
                 () => {
-                    const currentConfig = LANG_CONFIG[selectedLang || 'fr'];
+                    const currentConfig = LANG_CONFIG[selectedLang || 'en'];
                     this.innerHTML = `🔊 <span id="listenBtnText">${currentConfig.ui.listenBtn}</span>`;
                     this.classList.remove('listening');
                     this.disabled = false;
@@ -460,7 +462,7 @@
                 },
                 (error) => {
                     console.error('❌ TTS Error:', error);
-                    const currentConfig = LANG_CONFIG[selectedLang || 'fr'];
+                    const currentConfig = LANG_CONFIG[selectedLang || 'en'];
                     this.innerHTML = `🔊 <span id="listenBtnText">${currentConfig.ui.listenBtn}</span>`;
                     this.classList.remove('listening');
                     this.disabled = false;
@@ -519,14 +521,15 @@
         console.log('✅ All interface texts will be updated dynamically');
         
         // ============================================================
-        // GESTION DE L'ICÔNE (fallback)
+        // GESTION DE L'ICÔNE (fallback) — ✅ CORRIGÉ
         // ============================================================
         
         const logo = document.querySelector('.logo-eteo');
         if (logo) {
             logo.addEventListener('error', () => {
                 logo.style.display = 'none';
-                document.querySelector('.logo-container').innerHTML = `
+                const container = document.querySelector('.logo-container');
+                container.innerHTML = `
                     <div class="logo-text-fallback">
                         <span class="letter-e">E</span>
                         <span class="letter-t">T</span>
@@ -535,11 +538,10 @@
                     </div>
                     <p class="subtitle" id="subtitleText">E-learning To Every One</p>
                 `;
-                // Réattacher l'élément subtitle après le fallback
-                const newSubtitle = document.querySelector('.logo-container #subtitleText');
-                if (newSubtitle) {
-                    // Remplacer la référence globale
-                    window.subtitleText = newSubtitle;
+                // ✅ Correction : réattacher l'écouteur au nouveau subtitleText
+                const newSubtitle = document.getElementById('subtitleText');
+                if (newSubtitle && selectedLang) {
+                    newSubtitle.textContent = LANG_CONFIG[selectedLang].ui.subtitle;
                 }
                 Logger.warn('⚠️ ETEO icon not found, fallback to text');
             });

@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     
     <style>
-        /* ============================================================
-           SPECIFIC STYLES FOR CERTIFICATE ROULETTE
-           ============================================================ */
-        
         .roulette-wrapper {
             position: relative;
             display: flex;
@@ -564,7 +560,6 @@
             </p>
         </div>
 
-        <!-- SCREEN 1 : ROULETTE -->
         <div id="rouletteScreen">
             
             <div class="ia-greeting" id="iaGreeting">
@@ -614,7 +609,6 @@
             </div>
         </div>
 
-        <!-- SCREEN 2 : QUESTION -->
         <div id="questionContainer" style="display:none;">
             <div class="question-progress" id="questionProgressContainer">
                 <span class="question-counter" id="questionCounter2">0 / 50</span>
@@ -656,7 +650,6 @@
             </div>
         </div>
 
-        <!-- SCREEN 3 : FINAL RESULT -->
         <div id="resultContainer" style="display:none;">
             <div class="certificate-result">
                 <h2 id="resultTitle" style="margin-bottom: 5px;">📊 Exam Results</h2>
@@ -674,7 +667,6 @@
                 
                 <div id="resultIaContainer"></div>
                 
-                <!-- ✅ CERTIFICATE : DOWNLOAD BUTTON -->
                 <div id="certificateContainer" style="display:none;">
                     <button class="btn-download-cert" id="downloadCertBtn">
                         💳 DOWNLOAD CERTIFICATE - 20€
@@ -703,10 +695,6 @@
     </div>
 
     <script type="module">
-        // ============================================================
-        // MODULAR IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import { CertificateService } from '../js/services/certificateService.js';
@@ -717,10 +705,6 @@
         import QRCode from 'qrcode';
         
         import { CertificateGenerator } from '../js/services/CertificateGenerator.js';
-        
-        // ============================================================
-        // FIREBASE
-        // ============================================================
         
         import { initializeApp } from 'firebase/app';
         import { getAuth, onAuthStateChanged } from 'firebase/auth';
@@ -742,20 +726,12 @@
         
         window.tts = tts;
         
-        // ============================================================
-        // SERVICES
-        // ============================================================
-        
         const storage = new StorageService();
         const certificateService = new CertificateService();
         const progressionService = new ProgressionService();
         const shareService = new ShareService();
         
         const generator = new CertificateGenerator();
-        
-        // ============================================================
-        // LEVELS
-        // ============================================================
         
         const LEVELS = [
             { id: 'debutant1', label: 'Beginner 1', emoji: '🌱' },
@@ -765,10 +741,6 @@
             { id: 'expert1', label: 'Expert 1', emoji: '🔥' },
             { id: 'expert2', label: 'Expert 2', emoji: '⭐' }
         ];
-        
-        // ============================================================
-        // GET SPECIALTY
-        // ============================================================
         
         const urlParams = new URLSearchParams(window.location.search);
         let currentSpecialty = urlParams.get('specialty') || sessionStorage.getItem('certificat_specialty');
@@ -817,10 +789,6 @@
         };
         
         const specialtyDisplayName = SPECIALTY_MAP[currentSpecialty] || currentSpecialty;
-        
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
         
         const toast = document.getElementById('toast');
         const specialtyNameDisplay = document.getElementById('specialtyNameDisplay');
@@ -871,10 +839,6 @@
         const levelTag = document.getElementById('levelTag');
         const resultIaContainer = document.getElementById('resultIaContainer');
         
-        // ============================================================
-        // STATE
-        // ============================================================
-        
         let currentLevel = null;
         let selectedQuestions = [];
         let currentQuestionIndex = 0;
@@ -889,10 +853,6 @@
         let userName = 'Doctor';
         let levelScores = {};
         
-        // ============================================================
-        // TOAST
-        // ============================================================
-        
         function showToast(message, duration = 2500) {
             toast.textContent = message;
             toast.classList.add('show');
@@ -901,10 +861,6 @@
                 toast.classList.remove('show');
             }, duration);
         }
-        
-        // ============================================================
-        // ✅ TTS - IMPROVED FUNCTION
-        // ============================================================
         
         function cleanTextForTTS(text) {
             if (!text) return '';
@@ -1000,10 +956,6 @@
                 );
             } catch (e) {}
         }
-        
-        // ============================================================
-        // SOUND EFFECTS
-        // ============================================================
         
         function playRouletteSound(type, totalDuration) {
             try {
@@ -1117,10 +1069,6 @@
             } catch (e) {}
         }
         
-        // ============================================================
-        // GET LEVEL SCORES
-        // ============================================================
-        
         function getLevelScores() {
             const settings = storage.getSettings() || {};
             const scores = settings.scores?.[currentSpecialty] || {};
@@ -1137,10 +1085,6 @@
             
             return result;
         }
-        
-        // ============================================================
-        // GENERATE AI WELCOME MESSAGE
-        // ============================================================
         
         function generateIAMessage(userName, levelScores) {
             const allCompleted = LEVELS.every(level => levelScores[level.id] !== null);
@@ -1220,10 +1164,6 @@
             return { message, avatar };
         }
         
-        // ============================================================
-        // AI RESULT MESSAGE
-        // ============================================================
-        
         function generateResultIAMessage(userName, levelScores, examScore, examPct, passed) {
             let message = '';
             let avatar = passed ? '🎓' : '💪';
@@ -1293,10 +1233,6 @@
             return { message, avatar };
         }
         
-        // ============================================================
-        // DISPLAY AI WELCOME
-        // ============================================================
-        
         function displayIAWelcome() {
             const settings = storage.getSettings() || {};
             userName = settings.user?.fullName || 'Doctor';
@@ -1307,15 +1243,10 @@
             iaAvatar.textContent = avatar;
             iaMessage.innerHTML = message;
             
-            setTimeout(() => {
-                const ttsMessage = cleanTextForTTS(message.replace(/<[^>]*>/g, ''));
-                speakText(ttsMessage, null);
-            }, 1500);
+            // 🔇 Lecture automatique au chargement DÉSACTIVÉE
+            // L'utilisateur peut cliquer sur 🔊 pour écouter s'il veut
+            // (Les questions et feedbacks restent lus automatiquement - cœur d'ETEO)
         }
-        
-        // ============================================================
-        // UI
-        // ============================================================
         
         function updateProgress() {
             const total = 50;
@@ -1342,10 +1273,6 @@
                 </span>
             `).join('');
         }
-        
-        // ============================================================
-        // LOAD QUESTIONS
-        // ============================================================
         
         async function loadAllQuestionsForSpecialty() {
             try {
@@ -1414,10 +1341,6 @@
                 return null;
             }
         }
-        
-        // ============================================================
-        // ROULETTE
-        // ============================================================
         
         function initRoulette() {
             const canvas = document.getElementById('rouletteCanvas');
@@ -1514,10 +1437,6 @@
             return { spin, draw, isSpinning: () => isSpinning };
         }
         
-        // ============================================================
-        // QUESTION
-        // ============================================================
-        
         function startQuestion() {
             if (currentQuestionIndex >= 50) {
                 showResults();
@@ -1573,15 +1492,12 @@
             updateProgress();
             startTimer();
             
+            // 🔊 Question lue automatiquement (cœur d'ETEO)
             setTimeout(() => {
                 const cleanQuestion = cleanTextForTTS(question.question);
                 speakText(cleanQuestion, ttsQuestionBtn, '🔊 Read question');
             }, 500);
         }
-        
-        // ============================================================
-        // TIMER
-        // ============================================================
         
         function startTimer() {
             clearInterval(timerInterval);
@@ -1602,10 +1518,6 @@
             clearInterval(timerInterval);
             timerBottom.style.color = '#e67e22';
         }
-        
-        // ============================================================
-        // HANDLE OPTION CLICK
-        // ============================================================
         
         function handleOptionClick(index) {
             if (isAnswered) return;
@@ -1674,6 +1586,7 @@
             
             nextBtn.disabled = false;
             
+            // 🔊 Feedback lu automatiquement (cœur d'ETEO)
             setTimeout(() => {
                 let feedbackTTS = '';
                 if (isCorrect) {
@@ -1732,16 +1645,13 @@
             
             nextBtn.disabled = false;
             
+            // 🔊 Feedback lu automatiquement
             setTimeout(() => {
                 const feedbackTTS = `Time out. The correct answer is: ${question.options[question.correct]}.`;
                 const cleanFeedback = cleanTextForTTS(feedbackTTS);
                 speakText(cleanFeedback, ttsFeedbackBtn, '🔊 Re-listen');
             }, 300);
         }
-        
-        // ============================================================
-        // ✅ PAYMENT POPUP WITH FIREBASE + REDIRECT TO paiement_rib.html
-        // ============================================================
         
         function showCertificatePaymentPopup() {
             const overlay = document.createElement('div');
@@ -1773,6 +1683,7 @@
             
             document.body.appendChild(overlay);
 
+            // 🔥 "PAY" BUTTON → SAVE TO FIREBASE + REDIRECT TO virement_bancaire_en.html
             document.getElementById('payCertBtn').addEventListener('click', async function() {
                 this.textContent = '⏳ Recording...';
                 this.disabled = true;
@@ -1795,7 +1706,7 @@
                         source: 'certificat_roulette',
                         userAgent: navigator.userAgent || 'unknown',
                         platform: navigator.platform || 'unknown',
-                        status: 'redirected_to_payment'
+                        status: 'redirected_to_virement'
                     };
 
                     await addDoc(collection(db, 'payment_interests'), interestData);
@@ -1808,7 +1719,7 @@
                 }
 
                 overlay.remove();
-                window.location.href = `paiement_rib_en.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
+                window.location.href = `virement_bancaire_en.html?specialty=${currentSpecialty}&score=${score}&pct=${pct}`;
             });
 
             document.getElementById('closePaymentPopup').addEventListener('click', function() {
@@ -1820,10 +1731,6 @@
             });
         }
 
-        // ============================================================
-        // ✅ DOWNLOAD CERTIFICATE WITH VERIFICATION
-        // ============================================================
-        
         async function downloadCertificate() {
             try {
                 const settings = storage.getSettings() || {};
@@ -1894,10 +1801,6 @@
             }
         }
         
-        // ============================================================
-        // SHOW RESULTS (MODIFIED)
-        // ============================================================
-        
         function showResults() {
             stopTimer();
             stopTTS();
@@ -1959,6 +1862,7 @@
                 </div>
             `;
             
+            // 🔊 Résultat lu automatiquement (cœur d'ETEO)
             setTimeout(() => {
                 const ttsMessage = cleanTextForTTS(message.replace(/<[^>]*>/g, ''));
                 speakText(ttsMessage, null);
@@ -1988,10 +1892,6 @@
                 playRouletteSound('lose');
             }
         }
-        
-        // ============================================================
-        // RESET
-        // ============================================================
         
         function resetExam() {
             stopTTS();
@@ -2024,10 +1924,6 @@
                 showToast('✅ Questions loaded! Spin the wheel.', 2000);
             }
         }
-        
-        // ============================================================
-        // EVENTS
-        // ============================================================
         
         spinBtn.addEventListener('click', () => {
             if (roulette && !roulette.isSpinning()) {
@@ -2102,10 +1998,6 @@
             window.location.href = `quiz_en.html?specialty=${currentSpecialty}`;
         });
         
-        // ============================================================
-        // TTS EVENTS
-        // ============================================================
-        
         ttsQuestionBtn.addEventListener('click', function() {
             const cleanQuestion = cleanTextForTTS(questionText.textContent);
             speakText(cleanQuestion, this, '🔊 Read question');
@@ -2133,10 +2025,6 @@
             const correctAnswerClean = cleanTextForTTS(`The correct answer is: ${question.options[question.correct]}`);
             speakText(explanationClean + '. ' + correctAnswerClean, this, '🔊 Read explanation');
         });
-        
-        // ============================================================
-        // ✅ INIT
-        // ============================================================
         
         async function init() {
             Logger.info('🎓 Certificate Roulette loaded');
@@ -2166,7 +2054,9 @@
                     console.log(`📝 ${selectedQuestions.length} questions loaded`);
                     console.log('🎯 50 questions • 30 sec • 70% to pass');
                     console.log('🤖 Personalized AI activated');
-                    console.log('💳 Payment system: REDIRECT TO paiement_rib.html');
+                    console.log('🔇 AI silent at page load (user decides when to listen)');
+                    console.log('🔊 Question + Feedback + Result auto-read (core of ETEO)');
+                    console.log('💳 Payment system: REDIRECT TO virement_bancaire_en.html');
                     console.log('📄 Certificate locked until paid');
                     
                 } else {
@@ -2174,10 +2064,6 @@
                 }
             });
         }
-        
-        // ============================================================
-        // LOGIN REQUIRED
-        // ============================================================
         
         function showLoginRequired() {
             const iaGreeting = document.getElementById('iaGreeting');

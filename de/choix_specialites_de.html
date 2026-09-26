@@ -203,9 +203,6 @@
 <body>
     <div class="container">
         
-        <!-- ============================================================ -->
-        <!-- NAVIGATION -->
-        <!-- ============================================================ -->
         <div class="nav-top">
             <button class="back-btn" onclick="window.location.href='dashboard.html'">
                 ← Zurück
@@ -221,17 +218,11 @@
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- HEADER -->
-        <!-- ============================================================ -->
         <div class="form-header">
             <h1>📚 Auswahl der Fachgebiete</h1>
             <p>Hallo <span id="userNameDisplay">Doktor</span>, wählen Sie Ihr Fachgebiet, um Ihr ETEO-Abenteuer zu beginnen !</p>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- KI-BEGRÜSSUNG -->
-        <!-- ============================================================ -->
         <div class="ia-greeting" id="iaGreeting" style="margin-bottom: 20px; background: rgba(102,126,234,0.08); border-radius: 16px; padding: 14px 18px; display: flex; align-items: flex-start; gap: 14px; border-left: 4px solid #667eea;">
             <div class="ia-avatar" style="font-size: 2rem; flex-shrink: 0;">🤖</div>
             <div style="flex: 1;">
@@ -244,9 +235,6 @@
             </div>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- STATISTIKEN -->
-        <!-- ============================================================ -->
         <div class="specialties-stats" id="specialtiesStats">
             <span>📚 <span id="totalSpecialties">36</span> verfügbare Fachgebiete</span>
             <span class="stat-divider">|</span>
@@ -255,9 +243,6 @@
             <span>📊 Punktzahl : <span id="userScore">0%</span></span>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- FILTER -->
-        <!-- ============================================================ -->
         <div class="filter-container" id="filterContainer">
             <button class="filter-btn active" data-filter="all">🔍 Alle</button>
             <button class="filter-btn" data-filter="clinique">🏥 Klinik</button>
@@ -267,67 +252,36 @@
             <button class="filter-btn" data-filter="sciences">🧬 Wissenschaften</button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SUCHE -->
-        <!-- ============================================================ -->
         <input type="text" class="specialties-search" id="searchInput" placeholder="🔍 Fachgebiet suchen...">
 
-        <!-- ============================================================ -->
-        <!-- RASTER DER FACHGEBIETE -->
-        <!-- ============================================================ -->
         <div class="specialties-grid" id="specialtiesGrid">
-            <!-- Von JavaScript gefüllt -->
         </div>
 
-        <!-- ============================================================ -->
-        <!-- ZÄHLER -->
-        <!-- ============================================================ -->
         <div style="text-align: center; font-size: 0.85rem; color: #888; margin-top: 10px;">
             <span id="selectedCount">0</span> ausgewähltes Fachgebiet
         </div>
 
-        <!-- ============================================================ -->
-        <!-- AKTIONEN -->
-        <!-- ============================================================ -->
         <div class="actions" style="margin-top: 20px;">
             <button class="validate-btn" id="startQuizBtn" disabled>
                 🚀 Quiz starten
             </button>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- FOOTER -->
-        <!-- ============================================================ -->
         <div class="footer">
             <p>© 2026 - Dr. SAID MAARAK 🇲🇦</p>
         </div>
 
     </div>
 
-    <!-- ============================================================ -->
-    <!-- TOAST -->
-    <!-- ============================================================ -->
     <div class="toast" id="toast"></div>
 
-    <!-- ============================================================ -->
-    <!-- HAUPT-SKRIPT -->
-    <!-- ============================================================ -->
-    
     <script type="module">
-        // ============================================================
-        // IMPORTS
-        // ============================================================
-        
         import { Logger } from '../js/logger.js';
         import { StorageService } from '../js/services/storage.js';
         import { SPECIALTIES, CATEGORY_LABELS } from '../js/config.js';
         import tts from '../js/services/tts.js';
         
         window.tts = tts;
-        
-        // ============================================================
-        // DOM ELEMENTS
-        // ============================================================
         
         const toast = document.getElementById('toast');
         const specialtiesGrid = document.getElementById('specialtiesGrid');
@@ -342,18 +296,10 @@
         const iaSpecialtiesMessage = document.getElementById('iaSpecialtiesMessage');
         const listenSpecialtiesBtn = document.getElementById('listenSpecialtiesBtn');
         
-        // ============================================================
-        // STORAGE
-        // ============================================================
-        
         const storage = new StorageService();
         let selectedSpecialty = null;
         let currentFilter = 'all';
         let searchTerm = '';
-        
-        // ============================================================
-        // TOAST
-        // ============================================================
         
         function showToast(message, duration = 2500) {
             toast.textContent = message;
@@ -363,10 +309,6 @@
                 toast.classList.remove('show');
             }, duration);
         }
-        
-        // ============================================================
-        // BEREINIGUNG VON EMOJIS FÜR DAS TTS
-        // ============================================================
         
         function cleanTextForTTS(text) {
             if (!text) return '';
@@ -378,30 +320,20 @@
             return cleaned;
         }
         
-        // ============================================================
-        // URL-PARAMETER LESEN
-        // ============================================================
-        
         function getUrlParam(param) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(param);
         }
         
-        // ============================================================
-        // BENUTZERDATEN LADEN (IOS-VERSION)
-        // ============================================================
-        
         function loadUserData() {
             const settings = storage.getSettings() || {};
             const user = settings.user || {};
             
-            // ✅ iOS : displayName mit Fallback
             const displayName = user.displayName || user.fullName || 'Doktor';
             if (userNameDisplay) {
                 userNameDisplay.textContent = displayName;
             }
             
-            // Letztes besuchtes Fachgebiet
             if (settings.lastSpecialty) {
                 const spec = SPECIALTIES.find(s => s.id === settings.lastSpecialty);
                 if (spec) {
@@ -409,7 +341,6 @@
                 }
             }
             
-            // Durchschnittliche Punktzahl
             const scores = settings.scores || {};
             let totalScore = 0;
             let totalCount = 0;
@@ -430,14 +361,9 @@
             totalSpecialties.textContent = SPECIALTIES.length;
         }
         
-        // ============================================================
-        // KI-NACHRICHT GENERIEREN
-        // ============================================================
-        
         async function generateIAMessage() {
             try {
                 const settings = storage.getSettings() || {};
-                // ✅ iOS : displayName mit Fallback
                 const userName = settings.user?.displayName || settings.user?.fullName || 'Doktor';
                 
                 const scores = settings.scores || {};
@@ -487,24 +413,14 @@
                     listenSpecialtiesBtn.style.display = 'inline-block';
                 }
                 
-                setTimeout(() => {
-                    if (window.tts && typeof window.tts.speak === 'function') {
-                        const text = window._ttsSpecialtiesMessage || '';
-                        if (text) {
-                            window.tts.speak(text, 'de', 0.9, 1.0);
-                        }
-                    }
-                }, 1200);
+                // 🔇 Automatisches Vorlesen beim Laden DEAKTIVIERT
+                // Der Benutzer klickt auf "🔊 Anhören", wenn er zuhören möchte
                 
             } catch (error) {
                 console.error('❌ Fehler bei der KI-Generierung:', error);
                 iaSpecialtiesMessage.innerHTML = '⚠️ Nachricht nicht verfügbar.';
             }
         }
-        
-        // ============================================================
-        // BUTTON "ANHÖREN"
-        // ============================================================
         
         listenSpecialtiesBtn.addEventListener('click', function() {
             if (!window.tts || typeof window.tts.speak !== 'function') {
@@ -546,16 +462,11 @@
             );
         });
         
-        // ============================================================
-        // FACHGEBIETE ANZEIGEN (ALPHABETISCH SORTIERT)
-        // ============================================================
-        
         function renderSpecialties() {
             const settings = storage.getSettings() || {};
             const scores = settings.scores || {};
             const lastSpecialty = settings.lastSpecialty;
             
-            // ✅ ALPHABETISCHE SORTIERUNG
             let filtered = [...SPECIALTIES].sort((a, b) => a.name.localeCompare(b.name));
             
             if (currentFilter !== 'all') {
@@ -607,10 +518,6 @@
             }).join('');
         }
         
-        // ============================================================
-        // FACHGEBIET AUSWÄHLEN
-        // ============================================================
-        
         window.selectSpecialty = function(id) {
             if (selectedSpecialty === id) {
                 selectedSpecialty = null;
@@ -641,10 +548,6 @@
             startQuizBtn.textContent = '🚀 Quiz starten';
         }
         
-        // ============================================================
-        // QUIZ STARTEN
-        // ============================================================
-        
         startQuizBtn.addEventListener('click', () => {
             if (!selectedSpecialty) {
                 showToast('⚠️ Bitte wählen Sie ein Fachgebiet', 3000);
@@ -658,10 +561,6 @@
             window.location.href = `quiz.html?specialty=${selectedSpecialty}`;
         });
         
-        // ============================================================
-        // FILTER
-        // ============================================================
-        
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 filterBtns.forEach(b => b.classList.remove('active'));
@@ -671,18 +570,10 @@
             });
         });
         
-        // ============================================================
-        // SUCHE
-        // ============================================================
-        
         searchInput.addEventListener('input', (e) => {
             searchTerm = e.target.value.trim();
             renderSpecialties();
         });
-        
-        // ============================================================
-        // INITIALISIERUNG
-        // ============================================================
         
         function init() {
             Logger.info('📚 Seite zur Auswahl der Fachgebiete iOS geladen');
@@ -691,7 +582,6 @@
             renderSpecialties();
             generateIAMessage();
             
-            // ✅ AUTOMATISCHE AUSWAHL AUS DER URL
             const specialtyParam = getUrlParam('specialty');
             if (specialtyParam) {
                 const spec = SPECIALTIES.find(s => s.id === specialtyParam);
@@ -714,10 +604,8 @@
             }
             
             console.log('📚 ETEO iOS - Auswahl der Fachgebiete bereit');
+            console.log('🔇 KI-Nachricht in STILLE (Benutzer klickt, wenn gewünscht)');
             console.log(`📊 ${SPECIALTIES.length} verfügbare Fachgebiete (alphabetisch sortiert)`);
-            console.log('🔍 Filter und Suche verfügbar');
-            console.log('🤖 KI : Personalisierte Nachricht mit Empfehlung');
-            console.log('✅ iOS : displayName unterstützt');
         }
         
         init();
